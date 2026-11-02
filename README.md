@@ -37,7 +37,7 @@
 需要 Node.js 22 或以上。
 
 ```powershell
-cd E:\code\xuefeng\tcm
+cd E:\code\qihuang-tcm
 npm install
 npm run dev
 ```
@@ -57,7 +57,7 @@ npm run build
 ## 目录
 
 ```text
-tcm/
+qihuang-tcm/
 ├── public/
 │   ├── data/sample_data.json      # 全部样例内容与出处
 │   └── images/herbs/real/         # 27 张实拍照片（iNaturalist，CC 许可）
@@ -112,10 +112,24 @@ npm run validate:data
 
 ## 3D 模型说明
 
-- MakeHuman CC0 基础网格改造，男性化；青色腰布、头巾，裸露上身，无性器官细节，仅用于经络穴位学习。
+- MakeHuman CC0 基础网格改造，男性化；短发、贴身穿青色短裤，无性器官细节，仅用于经络穴位学习。
 - `bodyModel.coordinateFrame = makehuman-body-v2`；换模型必须同步重跑坐标预计算。
 - 手太阴肺经、足少阴肾经、任脉、督脉有具体示意走向线；其余经络以穴位点为主。
 - 3D 模型基于 MakeHuman CC0 基础网格改造；本草实拍图片来自 iNaturalist，逐张许可见 `docs/PHOTO-CREDITS.md`。
+
+## 开发工具
+
+Vite 开发服务器已配置：
+
+- **Vue DevTools**：页面内调试组件与状态；开发服务器启动后按 `Alt+Shift+D` 打开。
+- **vite-plugin-checker**：开发时实时运行 `vue-tsc`，类型错误会在编辑器角落弹出，不阻塞预览。
+- **rollup-plugin-visualizer**：每次 `npm run build` 生成 `dist/stats.html`，用浏览器打开可看各 chunk 体积；不参与运行时。
+
+OpenCode 桌面端插件（全局配置，不在本项目仓库内）：
+
+- `@tarquinen/opencode-dcp`：上下文压缩，已写入 `~/.config/opencode/opencode.json`。
+- `opencode-subagent-statusline`：TUI 子代理状态栏，已写入 `~/.config/opencode/cli.json`；需重启 OpenCode 后生效。
+- 该状态栏版本与 OpenCode 自带的 OpenTUI 存在 peer 依赖版本差，采用本地缓存安装；若重启后未显示或报错，先移除 `cli.json` 中的该项。
 
 ## 免责声明
 
