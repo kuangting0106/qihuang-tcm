@@ -12,6 +12,7 @@ const counts = computed(() => ({
   formulas: data.value?.formulas.length ?? 0,
   points: data.value?.acupoints.length ?? 0,
   meridians: data.value?.meridians.length ?? 0,
+  processing: data.value?.herbs.filter((h) => h.processing).length ?? 0,
 }))
 
 const modules = computed(() => [
@@ -180,12 +181,12 @@ const modules = computed(() => [
         <RouterLink to="/processing" class="collection-card collection-card--processing">
           <div class="collection-card__top">
             <span class="collection-card__kicker">PROCESSING / 药材的炮制</span>
-            <span class="collection-card__status">方法待收录</span>
+            <span class="collection-card__status">{{ counts.processing }} 味已收录</span>
           </div>
           <h3>药材的炮制</h3>
           <p>
-            收集草木类、蛇虫类、金石类等多味药材的炮制方法。
-            每法回引原书、药典或炮制规范，毒性药材单独标注减毒与使用限制。
+            已接入 {{ counts.processing }} 味常用药材的净制、切制、炒、炙、蒸、煮等方法。
+            每法回引药典或炮制规范，毒性药材单独标注减毒与使用限制。
           </p>
           <ul>
             <li>草木类 · 根茎叶花果</li>

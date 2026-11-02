@@ -66,6 +66,15 @@ for (const h of data.herbs ?? []) {
   if (!Array.isArray(h.images) || h.images.length !== 3) {
     errors.push(`药材 ${h.id}: 必须正好 3 张图片`)
   } else {
+    const slots = h.images.map((im) => im.slot)
+    for (const slot of ['whole', 'part', 'medicinal']) {
+      if (!slots.includes(slot)) {
+        errors.push(`药材 ${h.id}: 缺少 ${slot} 图（全图 / 入药部位图 / 药材高清切片图）`)
+      }
+    }
+    if (new Set(slots).size !== slots.length) {
+      errors.push(`药材 ${h.id}: 图片槽位重复`)
+    }
     for (const im of h.images) {
       if (!im.url) errors.push(`药材 ${h.id}: 图片缺少 url`)
       else if (im.url.startsWith('/')) {
@@ -91,6 +100,36 @@ for (const h of data.herbs ?? []) {
   }
   if (!Array.isArray(h.meridianIds) || h.meridianIds.length === 0) {
     errors.push(`药材 ${h.id}: 缺少归经 meridianIds`)
+  }
+
+  const processing = h.processing
+  const processingCategoryIds = new Set(['plants', 'animals', 'minerals'])
+  if (!processing) {
+    errors.push(`药材 ${h.id}: 缺少炮制方法 processing`)
+  } else {
+    if (!processingCategoryIds.has(processing.categoryId)) {
+      errors.push(`药材 ${h.id}: 炮制分类无效 ${processing.categoryId}`)
+    }
+    if (!processing.summary) errors.push(`药材 ${h.id}: 炮制缺少 summary`)
+    if (!Array.isArray(processing.methods) || processing.methods.length === 0) {
+      errors.push(`药材 ${h.id}: 炮制缺少具体方法 methods`)
+    } else {
+      for (const method of processing.methods) {
+        if (!method.label) errors.push(`药材 ${h.id}: 炮制方法缺少 label`)
+        if (!method.text) errors.push(`药材 ${h.id}: 炮制方法缺少正文`)
+        if (!['quote', 'paraphrase', 'analysis'].includes(method.kind)) {
+          errors.push(`药材 ${h.id}: 炮制方法 ${method.label} 的 kind 无效`)
+        }
+        checkCitationIds(method.citationIds, `药材 ${h.id} 炮制 ${method.label}`)
+      }
+    }
+    if (!processing.product) errors.push(`药材 ${h.id}: 炮制缺少成品性状 product`)
+    if (!Array.isArray(processing.cautions)) {
+      errors.push(`药材 ${h.id}: 炮制 cautions 必须是数组`)
+    }
+    if (!['reference', 'pending'].includes(processing.verification)) {
+      errors.push(`药材 ${h.id}: 炮制 verification 无效`)
+    }
   }
 }
 
@@ -128,6 +167,23 @@ if (!taxonomy) {
   for (const r of taxonomy.ranks ?? []) {
     checkCitationIds(r.citationIds, `三经 ${r.id}`)
   }
+}
+
+const exampleIds = new Set()
+for (const example of data.processingExamples ?? []) {
+  if (!example.id || exampleIds.has(example.id)) {
+    errors.push(`炮制待核线索 id 缺失或重复: ${example.id}`)
+  }
+  exampleIds.add(example.id)
+  if (!example.herbName) errors.push(`炮制待核线索 ${example.id}: 缺少 herbName`)
+  if (example.status !== '待核') errors.push(`炮制待核线索 ${example.id}: 状态必须为待核`)
+  if (!['plants', 'animals', 'minerals'].includes(example.categoryId)) {
+    errors.push(`炮制待核线索 ${example.id}: 分类无效 ${example.categoryId}`)
+  }
+  if (!Array.isArray(example.lines) || example.lines.length === 0) {
+    errors.push(`炮制待核线索 ${example.id}: 缺少线索正文`)
+  }
+  if (!example.note) errors.push(`炮制待核线索 ${example.id}: 缺少待核说明`)
 }
 
 const meridianIds = new Set()
@@ -293,6 +349,8 @@ const counts = {
   herbs: data.herbs.length,
   herbRanks: data.herbTaxonomy?.ranks?.length ?? 0,
   herbCategories: data.herbTaxonomy?.categories?.length ?? 0,
+  processingEntries: data.herbs.filter((h) => h.processing).length,
+  processingExamples: data.processingExamples?.length ?? 0,
   formulas: data.formulas.length,
   meridians: data.meridians.length,
   regularMeridians: regular.length,

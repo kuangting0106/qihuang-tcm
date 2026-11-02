@@ -37,6 +37,41 @@ export interface HerbImage {
   pending?: boolean
 }
 
+export const HERB_IMAGE_SLOT_LABELS = {
+  whole: '全图',
+  part: '入药部位图',
+  medicinal: '药材高清切片图',
+} as const
+
+export type ProcessingCategoryId = 'plants' | 'animals' | 'minerals'
+
+export interface HerbProcessingStep {
+  label: string
+  text: string
+  kind: ClaimKind
+  citationIds: string[]
+}
+
+export interface HerbProcessing {
+  categoryId: ProcessingCategoryId
+  summary: string
+  methods: HerbProcessingStep[]
+  product: string
+  cautions: string[]
+  note?: string
+  verification: 'reference' | 'pending'
+}
+
+export interface ProcessingExample {
+  id: string
+  herbName: string
+  rankHint?: string
+  categoryId: ProcessingCategoryId
+  status: '待核'
+  lines: string[]
+  note: string
+}
+
 export interface HerbPairing {
   herbId: string
   label: string
@@ -69,6 +104,7 @@ export interface Herb {
   classicRankId: string
   therapyCategoryIds: string[]
   properties: HerbProperties
+  processing: HerbProcessing
   images: HerbImage[]
   pairings: HerbPairing[]
   verification: 'verified' | 'reference' | 'pending'
@@ -283,6 +319,7 @@ export interface TcmData {
   sources: Citation[]
   herbs: Herb[]
   herbTaxonomy: HerbTaxonomy
+  processingExamples: ProcessingExample[]
   formulas: Formula[]
   meridians: Meridian[]
   acupoints: Acupoint[]

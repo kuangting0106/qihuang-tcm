@@ -3,6 +3,7 @@ import { computed, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import CitationBadge from '@/components/CitationBadge.vue'
 import SourcedText from '@/components/SourcedText.vue'
+import { HERB_IMAGE_SLOT_LABELS } from '@/types/tcm'
 import { useTcmData } from '@/composables/useTcmData'
 
 const route = useRoute()
@@ -46,10 +47,10 @@ const pairings = computed(() =>
 
 const currentImage = computed(() => herb.value?.images[activeImage.value] ?? herb.value?.images[0])
 
-const slotLabels = { whole: '全株', part: '部位', medicinal: '药材' } as const
+const slotLabels = HERB_IMAGE_SLOT_LABELS
 const currentSlotLabel = computed(() => {
   const slot = currentImage.value?.slot
-  return slot ? slotLabels[slot] : '全株'
+  return slot ? slotLabels[slot] : '全图'
 })
 </script>
 
@@ -145,7 +146,7 @@ const currentSlotLabel = computed(() => {
             <small>{{ currentImage.credit }}</small>
           </div>
           <p class="gallery__note">
-            三格按“全株 / 部位 / 药材”排列。个别药材的饮片切片图暂未找到可授权实拍，
+            三格固定为“全图 / 入药部位图 / 药材高清切片图”。个别药材的切片图暂未找到可授权实拍，
             标为“待补”，没有拿相似图片替代。
           </p>
         </section>
@@ -231,6 +232,61 @@ const currentSlotLabel = computed(() => {
           </RouterLink>
         </div>
         <p v-else class="empty-inline">本样例暂未收录该药的配伍关系。</p>
+      </section>
+
+      <section class="detail-section processing-section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">PROCESSING / 炮制</p>
+            <h2>炮制方法</h2>
+          </div>
+          <p>
+            本栏与首页「药材的炮制」共用同一份数据；标为“摘录”的方法据药典【炮制】项归纳，
+            不是逐字原文，也不构成自行炮制建议。
+          </p>
+        </div>
+
+        <div v-if="herb.processing" class="processing-detail paper-panel">
+          <div class="processing-detail__top">
+            <p class="processing-detail__summary">{{ herb.processing.summary }}</p>
+            <RouterLink class="text-link" to="/processing">查看全部炮制条目 →</RouterLink>
+          </div>
+
+          <ol class="processing-methods">
+            <li v-for="(m, index) in herb.processing.methods" :key="m.label">
+              <span class="processing-methods__num">{{ String(index + 1).padStart(2, '0') }}</span>
+              <div>
+                <div class="processing-methods__head">
+                  <h3>{{ m.label }}</h3>
+                  <span class="kind-badge kind-badge--paraphrase">摘录</span>
+                  <CitationBadge :citation-ids="m.citationIds" label="炮制出处" tone="muted" compact />
+                </div>
+                <p>{{ m.text }}</p>
+              </div>
+            </li>
+          </ol>
+
+          <dl class="processing-meta">
+            <div>
+              <dt>成品性状</dt>
+              <dd>{{ herb.processing.product }}</dd>
+            </div>
+            <div v-if="herb.processing.cautions.length">
+              <dt>使用注意</dt>
+              <dd>
+                <ul>
+                  <li v-for="caution in herb.processing.cautions" :key="caution">{{ caution }}</li>
+                </ul>
+              </dd>
+            </div>
+          </dl>
+
+          <p v-if="herb.processing.note" class="processing-detail__note">{{ herb.processing.note }}</p>
+        </div>
+        <p v-else class="empty-inline">
+          该药炮制方法待核，暂不写操作步骤。可先查看
+          <RouterLink class="text-link" to="/processing">药材的炮制</RouterLink>。
+        </p>
       </section>
 
       <section class="coverage paper-panel">
@@ -635,6 +691,111 @@ const currentSlotLabel = computed(() => {
 
 .related-formula__arrow {
   color: var(--cinnabar);
+}
+
+.processing-detail {
+  padding: 22px 24px;
+}
+
+.processing-detail__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.processing-detail__summary {
+  max-width: 760px;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  line-height: 1.8;
+}
+
+.processing-detail__top .text-link {
+  flex-shrink: 0;
+  font-size: 0.78rem;
+}
+
+.processing-methods {
+  display: grid;
+  gap: 16px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.processing-methods li {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 12px;
+}
+
+.processing-methods__num {
+  color: var(--gold);
+  font-family: var(--serif);
+  font-size: 0.98rem;
+}
+
+.processing-methods__head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.processing-methods__head h3 {
+  font-size: 0.98rem;
+}
+
+.processing-methods p {
+  margin-top: 5px;
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+  line-height: 1.85;
+}
+
+.processing-meta {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.processing-meta > div {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 12px;
+}
+
+.processing-meta dt {
+  color: var(--ink-faint);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+}
+
+.processing-meta dd {
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+  line-height: 1.8;
+}
+
+.processing-meta ul {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.processing-detail__note {
+  margin-top: 14px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: rgba(237, 224, 200, 0.3);
+  color: var(--ink-faint);
+  font-size: 0.74rem;
+  line-height: 1.75;
 }
 
 .coverage {

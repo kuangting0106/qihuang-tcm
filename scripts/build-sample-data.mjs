@@ -7,6 +7,7 @@ import { meridians } from './content/meridians.mjs'
 import { acupoints } from './content/acupoints.mjs'
 import { formulas } from './content/formulas.mjs'
 import { herbTaxonomy } from './content/herb-taxonomy.mjs'
+import { herbProcessing, processingExamples } from './content/herb-processing.mjs'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const dataDir = path.join(root, 'public', 'data')
@@ -20,10 +21,13 @@ const herbPhotos = fs.existsSync(photoFile)
 const enrichedHerbs = herbs.map((h) => {
   const assignment = herbTaxonomy.assignments[h.id]
   if (!assignment) throw new Error(`Missing herb taxonomy assignment: ${h.id}`)
+  const processing = herbProcessing[h.id]
+  if (!processing) throw new Error(`Missing herb processing entry: ${h.id}`)
   return {
     ...h,
     classicRankId: assignment.rankId,
     therapyCategoryIds: assignment.categoryIds,
+    processing,
     images:
       herbPhotos[h.id]?.images?.length === 3
         ? herbPhotos[h.id].images
@@ -68,6 +72,7 @@ const data = {
   sources,
   herbs: enrichedHerbs,
   herbTaxonomy,
+  processingExamples,
   formulas,
   meridians: enrichedMeridians,
   acupoints: enrichedAcupoints,
