@@ -7,6 +7,7 @@ import { meridians } from './content/meridians.mjs'
 import { acupoints } from './content/acupoints.mjs'
 import { formulas } from './content/formulas.mjs'
 import { herbTaxonomy } from './content/herb-taxonomy.mjs'
+import { herbPrinciples } from './content/herb-principles.mjs'
 import { herbProcessing, processingExamples } from './content/herb-processing.mjs'
 import { buildClassics } from './build-classics.mjs'
 
@@ -73,6 +74,7 @@ const data = {
   sources,
   herbs: enrichedHerbs,
   herbTaxonomy,
+  herbPrinciples,
   processingExamples,
   formulas,
   meridians: enrichedMeridians,

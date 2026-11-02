@@ -169,6 +169,38 @@ if (!taxonomy) {
   }
 }
 
+const principles = data.herbPrinciples
+if (!principles) {
+  errors.push('缺少 herbPrinciples 药性基础法则')
+} else {
+  if (!principles.title) errors.push('herbPrinciples: 缺少标题')
+  if (!principles.intro) errors.push('herbPrinciples: 缺少导语')
+  if (!Array.isArray(principles.branches) || principles.branches.length < 6) {
+    errors.push(`herbPrinciples: 分支至少 6 组，实际 ${principles.branches?.length ?? 0}`)
+  }
+  const branchIds = new Set()
+  for (const branch of principles.branches ?? []) {
+    if (!branch.id || branchIds.has(branch.id)) {
+      errors.push(`herbPrinciples: 分支 id 缺失或重复 ${branch.id}`)
+    }
+    branchIds.add(branch.id)
+    if (!branch.title || !branch.subtitle || !branch.summary) {
+      errors.push(`herbPrinciples ${branch.id}: 缺少标题、副标题或总述`)
+    }
+    if (!branch.kindLabel) errors.push(`herbPrinciples ${branch.id}: 缺少文本层级标注`)
+    checkCitationIds(branch.citationIds, `herbPrinciples ${branch.id}`)
+    if (!Array.isArray(branch.items) || branch.items.length === 0) {
+      errors.push(`herbPrinciples ${branch.id}: 缺少条目`)
+    } else {
+      for (const [index, item] of branch.items.entries()) {
+        if (!item.label || !item.text?.trim()) {
+          errors.push(`herbPrinciples ${branch.id}: 第 ${index + 1} 条缺少 label/text`)
+        }
+      }
+    }
+  }
+}
+
 const exampleIds = new Set()
 for (const example of data.processingExamples ?? []) {
   if (!example.id || exampleIds.has(example.id)) {
@@ -405,6 +437,7 @@ const counts = {
   herbs: data.herbs.length,
   herbRanks: data.herbTaxonomy?.ranks?.length ?? 0,
   herbCategories: data.herbTaxonomy?.categories?.length ?? 0,
+  herbPrincipleBranches: data.herbPrinciples?.branches?.length ?? 0,
   processingEntries: data.herbs.filter((h) => h.processing).length,
   processingExamples: data.processingExamples?.length ?? 0,
   formulas: data.formulas.length,

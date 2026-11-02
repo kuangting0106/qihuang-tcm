@@ -2,6 +2,7 @@
 import { computed, nextTick, ref, watch } from 'vue'
 import { RouterLink, useRoute, useRouter } from 'vue-router'
 import HerbCard from '@/components/HerbCard.vue'
+import HerbPropertyPrinciples from '@/components/HerbPropertyPrinciples.vue'
 import { useTcmData } from '@/composables/useTcmData'
 
 const { data, allFlavorTags, allMeridians, meridianName } = useTcmData()
@@ -128,6 +129,8 @@ const meridianOptions = computed(() =>
           <small>首方剂交叉索引</small>
         </div>
       </header>
+
+      <HerbPropertyPrinciples />
 
       <section v-if="taxonomy" class="taxonomy-section" aria-label="本草分类">
         <div class="taxonomy-head">
@@ -277,21 +280,21 @@ const meridianOptions = computed(() =>
 .page-hero__stat {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 0 12px;
+  gap: 1px 10px;
   align-items: baseline;
-  padding-left: 24px;
+  padding-left: 20px;
   border-left: 1px solid var(--line-strong);
 }
 
 .page-hero__stat span {
   font-family: var(--serif);
-  font-size: 2.2rem;
-  line-height: 1.2;
+  font-size: 1.45rem;
+  line-height: 1.25;
 }
 
 .page-hero__stat small {
   color: var(--ink-soft);
-  font-size: 0.76rem;
+  font-size: 0.68rem;
 }
 
 .taxonomy-section {

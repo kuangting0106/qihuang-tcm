@@ -133,6 +133,31 @@ export interface HerbTaxonomy {
   note: string
 }
 
+export interface HerbPrincipleItem {
+  label: string
+  text: string
+}
+
+export interface HerbPrincipleBranch {
+  id: string
+  index: string
+  title: string
+  subtitle: string
+  tone: 'jade' | 'gold' | 'cinnabar' | 'plum' | 'stone' | 'moss'
+  summary: string
+  items: HerbPrincipleItem[]
+  note: string
+  kindLabel: string
+  citationIds: string[]
+}
+
+export interface HerbPrinciples {
+  title: string
+  intro: string
+  branches: HerbPrincipleBranch[]
+  closing: string
+}
+
 export type FormulaRole = '君' | '臣' | '佐' | '使' | '佐使' | '未标注'
 
 export interface DosageRatio {
@@ -319,6 +344,7 @@ export interface TcmData {
   sources: Citation[]
   herbs: Herb[]
   herbTaxonomy: HerbTaxonomy
+  herbPrinciples: HerbPrinciples
   processingExamples: ProcessingExample[]
   formulas: Formula[]
   meridians: Meridian[]
