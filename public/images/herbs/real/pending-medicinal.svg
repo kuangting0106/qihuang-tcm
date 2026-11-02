@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <pattern id="grain" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.7" fill="#8a6a32" opacity="0.08"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="#f4efe4"/>
+  <rect width="800" height="600" fill="url(#grain)"/>
+  <rect x="26" y="26" width="748" height="548" rx="18" fill="none" stroke="#8a6a32" stroke-opacity="0.24" stroke-width="1.5"/>
+  <rect x="38" y="38" width="724" height="524" rx="12" fill="none" stroke="#b08a4a" stroke-opacity="0.28" stroke-width="1"/>
+  <circle cx="400" cy="260" r="96" fill="#b08a4a" opacity="0.07"/>
+  <g transform="translate(400 250)" fill="none" stroke="#8a6a32" stroke-opacity="0.45" stroke-width="2" stroke-linecap="round">
+    <path d="M-58 32 C-30 -4 8 -28 52 -38"/>
+    <path d="M-30 12 C-38 -10 -30 -30 -12 -46"/>
+    <path d="M-6 -8 C10 -24 34 -30 52 -26"/>
+    <path d="M-46 22 C-58 8 -60 -8 -50 -24"/>
+    <circle cx="52" cy="-38" r="5"/>
+    <circle cx="-12" cy="-46" r="4"/>
+    <circle cx="-50" cy="-24" r="4"/>
+  </g>
+  <text x="400" y="390" text-anchor="middle" font-family="'Noto Serif SC','Songti SC','SimSun',serif" font-size="30" fill="#6f542e" letter-spacing="3">药材切片图待补</text>
+  <text x="400" y="426" text-anchor="middle" font-family="'Noto Sans SC','Microsoft YaHei',sans-serif" font-size="15" fill="#8a6f45" letter-spacing="1">公开授权图库暂缺 · 未用相似图片替代</text>
+  <text x="400" y="458" text-anchor="middle" font-family="'Noto Sans SC','Microsoft YaHei',sans-serif" font-size="13" fill="#8a6f45" opacity="0.7">收到授权实拍后替换此占位图</text>
+</svg>

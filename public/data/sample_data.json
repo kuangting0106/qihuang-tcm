@@ -1,0 +1,5265 @@
+{
+  "schemaVersion": "1.0.0",
+  "contentVersion": "2026.11.1-prototype",
+  "generatedAt": "2026-11-02T04:08:26.310Z",
+  "title": "岐黄图鉴",
+  "disclaimer": "本站为中医知识学习原型，不构成诊疗建议。针刺、艾灸、用药须由执业中医师辨证操作；方剂与药性内容请以原书及现行标准为准。",
+  "contentPrinciples": [
+    "每条中医内容都挂出处，没有出处的内容不展示。",
+    "原文、摘录、后世方解分开标注，不把教材归纳冒充经典原文。",
+    "查不到确切出处的字段宁可不写，也不用模型记忆补全。",
+    "3D 穴位坐标使用离线预计算表，运行时不做人体表面映射。"
+  ],
+  "bodyModel": {
+    "id": "makehuman-base",
+    "coordinateFrame": "makehuman-body-v2",
+    "height": 1.84,
+    "notes": "MakeHuman CC0 基础网格改造的针灸铜人风格模型；青色腰布与头巾，无性器官细节，仅用于经络穴位学习。换模型必须同步更换坐标表版本。"
+  },
+  "sources": [
+    {
+      "id": "src-shanghan-12",
+      "type": "classic",
+      "work": "伤寒论",
+      "parentWork": "伤寒杂病论",
+      "parentNote": "《伤寒论》为张仲景《伤寒杂病论》的伤寒部分；《金匮要略》为杂病部分。",
+      "author": "张仲景",
+      "edition": "宋本",
+      "locator": "辨太阳病脉证并治上·第12条",
+      "quote": "太阳中风，阳浮而阴弱，阳浮者，热自发，阴弱者，汗自出，啬啬恶寒，淅淅恶风，翕翕发热，鼻鸣干呕者，桂枝汤主之。桂枝三两（去皮） 芍药三两 甘草二两（炙） 生姜三两（切） 大枣十二枚（擘） 上五味，㕮咀三味，以水七升，微火煮取三升，去滓，适寒温，服一升。服已须臾，啜热稀粥一升余，以助药力。温覆令一时许，遍身漐漐微似有汗者益佳，不可令如水流漓，病必不除。",
+      "note": "方后注中的煎服法保留原文，供学习；本原型不提供临床用药建议。"
+    },
+    {
+      "id": "src-shanghan-96",
+      "type": "classic",
+      "work": "伤寒论",
+      "parentWork": "伤寒杂病论",
+      "parentNote": "《伤寒论》为张仲景《伤寒杂病论》的伤寒部分；《金匮要略》为杂病部分。",
+      "author": "张仲景",
+      "edition": "宋本",
+      "locator": "辨太阳病脉证并治中·第96条",
+      "quote": "伤寒五六日，中风，往来寒热，胸胁苦满，嘿嘿不欲饮食，心烦喜呕，或胸中烦而不呕，或渴，或腹中痛，或胁下痞硬，或心下悸、小便不利，或不渴、身有微热，或咳者，小柴胡汤主之。柴胡半斤 黄芩三两 人参三两 半夏半升（洗） 甘草三两（炙） 生姜三两（切） 大枣十二枚（擘） 上七味，以水一斗二升，煮取六升，去滓，再煎取三升，温服一升，日三服。若胸中烦而不呕者，去半夏、人参，加栝楼实一枚；若渴，去半夏，加人参合前成四两半、栝楼根四两；若腹中痛者，去黄芩，加芍药三两；若胁下痞硬，去大枣，加牡蛎四两；若心下悸、小便不利者，去黄芩，加茯苓四两；若不渴，外有微热者，去人参，加桂枝三两，温覆微汗愈；若咳者，去人参、大枣、生姜，加五味子半升、干姜二两。",
+      "note": "小柴胡汤的加减法均见本条原文。"
+    },
+    {
+      "id": "src-lingshu-jingmai",
+      "type": "classic",
+      "work": "灵枢",
+      "author": "佚名（托名黄帝内经）",
+      "edition": "《灵枢·经脉》",
+      "locator": "经脉第十",
+      "quote": "肺手太阴之脉，起于中焦，下络大肠，还循胃口，上膈属肺，从肺系横出腋下，下循臑内，行少阴心主之前，下肘中，循臂内上骨下廉，入寸口，上鱼，循鱼际，出大指之端；其支者，从腕后直出次指内廉，出其端。",
+      "note": "十二正经的循行描述均以《灵枢·经脉》为本；本原型只对肺经录入完整原文，其余经脉为据原文归纳。"
+    },
+    {
+      "id": "src-nanjing-28",
+      "type": "classic",
+      "work": "难经",
+      "edition": "八十一难",
+      "locator": "第二十八难",
+      "quote": "督脉者，起于下极之俞，并于脊里，上至风府，入属于脑。任脉者，起于中极之下，以上毛际，循腹里，上关元，至咽喉，上颐循面入目。冲脉者，起于气冲，并足阳明之经，夹脐上行，至胸中而散。带脉者，起于季胁，回身一周。",
+      "note": "任、督、冲、带的循行原文；维脉、跷脉的循行描述另据《针灸学》教材归纳。"
+    },
+    {
+      "id": "src-shennong-bencaojing",
+      "type": "classic",
+      "work": "神农本草经",
+      "edition": "辑复本",
+      "locator": "各药条·释名",
+      "note": "古名、别名据《神农本草经》及后世本草文献归纳；本原型未逐条附原文，正式上线前应补具体辑复本页码。"
+    },
+    {
+      "id": "src-bencao-gangmu",
+      "type": "classic",
+      "work": "本草纲目",
+      "author": "李时珍",
+      "edition": "明万历刻本",
+      "locator": "草部/木部·释名",
+      "note": "古名、别名与部分产地商品名据《本草纲目》释名及后世本草文献归纳；未逐条附原文。"
+    },
+    {
+      "id": "src-nanjing-45",
+      "type": "classic",
+      "work": "难经",
+      "edition": "八十一难",
+      "locator": "第四十五难",
+      "quote": "经言八会者，何也？然：府会太仓，藏会季胁，筋会阳陵泉，髓会绝骨，血会膈俞，骨会大杼，脉会太渊，气会三焦外一筋直两乳内也。",
+      "note": "八会穴的经典出处。"
+    },
+    {
+      "id": "src-nanjing-69",
+      "type": "classic",
+      "work": "难经",
+      "edition": "八十一难",
+      "locator": "第六十九难",
+      "quote": "经言虚者补之，实者泻之，不虚不实，以经取之，何谓也？然：虚者补其母，实者泻其子，当先补之，然后泻之。不虚不实，以经取之者，是正经自生病，不中他邪也，当自取其经，故言以经取之。",
+      "note": "母穴、子穴的经典依据；具体五输穴五行归属按《针灸学》教材。"
+    },
+    {
+      "id": "src-yaodian-gancao",
+      "type": "standard",
+      "work": "中华人民共和国药典",
+      "edition": "2020年版一部",
+      "locator": "甘草",
+      "quote": "甘，平。归心、肺、脾、胃经。补脾益气，清热解毒，祛痰止咳，缓急止痛，调和诸药。用于脾胃虚弱，倦怠乏力，心悸气短，咳嗽痰多，脘腹、四肢挛急疼痛，痈肿疮毒，缓解药物毒性、烈性。",
+      "note": "药性、归经、功效、主治按该版药典该药条目摘录；正式上线前应按现行版药典复核。"
+    },
+    {
+      "id": "src-yaodian-guizhi",
+      "type": "standard",
+      "work": "中华人民共和国药典",
+      "edition": "2020年版一部",
+      "locator": "桂枝",
+      "quote": "辛、甘，温。归心、肺、膀胱经。发汗解肌，温通经脉，助阳化气，平冲降气。用于风寒感冒，脘腹冷痛，血寒经闭，关节痹痛，痰饮，水肿，心悸，奔豚。",
+      "note": "药性、归经、功效、主治按该版药典该药条目摘录；正式上线前应按现行版药典复核。"
+    },
+    {
+      "id": "src-yaodian-baishao",
+      "type": "standard",
+      "work": "中华人民共和国药典",
+      "edition": "2020年版一部",
+      "locator": "白芍",
+      "quote": "苦、酸，微寒。归肝、脾经。养血调经，敛阴止汗，柔肝止痛，平抑肝阳。用于血虚萎黄，月经不调，自汗，盗汗，胁痛，腹痛，四肢挛痛，头痛眩晕。",
+      "note": "药性、归经、功效、主治按该版药典该药条目摘录；正式上线前应按现行版药典复核。"
+    },
+    {
+      "id": "src-yaodian-shengjiang",
+      "type": "standard",
+      "work": "中华人民共和国药典",
+      "edition": "2020年版一部",
+      "locator": "生姜",
+      "quote": "辛，微温。归肺、脾、胃经。解表散寒，温中止呕，化痰止咳，解鱼蟹毒。用于风寒感冒，胃寒呕吐，寒痰咳嗽，鱼蟹中毒。",
+      "note": "药性、归经、功效、主治按该版药典该药条目摘录；正式上线前应按现行版药典复核。"
+    },
+    {
+      "id": "src-yaodian-dazao",
+      "type": "standard",
+      "work": "中华人民共和国药典",
+      "edition": "2020年版一部",
+      "locator": "大枣",
+      "quote": "甘，温。归脾、胃、心经。补中益气，养血安神。用于脾虚食少，乏力便溏，妇人脏躁。",
+      "note": "药性、归经、功效、主治按该版药典该药条目摘录；正式上线前应按现行版药典复核。"
+    },
+    {
+      "id": "src-yaodian-chaihu",
+      "type": "standard",
+      "work": "中华人民共和国药典",
+      "edition": "2020年版一部",
+      "locator": "柴胡",
+      "quote": "辛、苦，微寒。归肝、胆、肺经。疏散退热，疏肝解郁，升举阳气。用于感冒发热，寒热往来，胸胁胀痛，月经不调，子宫脱垂，脱肛。",
+      "note": "药性、归经、功效、主治按该版药典该药条目摘录；正式上线前应按现行版药典复核。"
+    },
+    {
+      "id": "src-yaodian-huangqin",
+      "type": "standard",
+      "work": "中华人民共和国药典",
+      "edition": "2020年版一部",
+      "locator": "黄芩",
+      "quote": "苦，寒。归肺、胆、脾、大肠、小肠经。清热燥湿，泻火解毒，止血，安胎。用于湿温、暑湿，胸闷呕恶，湿热痞满，泻痢，黄疸，肺热咳嗽，高热烦渴，血热吐衄，痈肿疮毒，胎动不安。",
+      "note": "药性、归经、功效、主治按该版药典该药条目摘录；正式上线前应按现行版药典复核。"
+    },
+    {
+      "id": "src-yaodian-banxia",
+      "type": "standard",
+      "work": "中华人民共和国药典",
+      "edition": "2020年版一部",
+      "locator": "半夏",
+      "quote": "辛、温；有毒。归脾、胃、肺经。燥湿化痰，降逆止呕，消痞散结。用于湿痰寒痰，咳喘痰多，痰饮眩悸，风痰眩晕，痰厥头痛，呕吐反胃，胸脘痞闷，梅核气；外治痈肿痰核。",
+      "note": "药性、归经、功效、主治按该版药典该药条目摘录；正式上线前应按现行版药典复核。"
+    },
+    {
+      "id": "src-yaodian-renshen",
+      "type": "standard",
+      "work": "中华人民共和国药典",
+      "edition": "2020年版一部",
+      "locator": "人参",
+      "quote": "甘、微苦，微温。归脾、肺、心、肾经。大补元气，复脉固脱，补脾益肺，生津养血，安神益智。用于体虚欲脱，肢冷脉微，脾虚食少，肺虚喘咳，津伤口渴，内热消渴，气血亏虚，久病虚羸，惊悸失眠，阳痿宫冷。",
+      "note": "药性、归经、功效、主治按该版药典该药条目摘录；正式上线前应按现行版药典复核。"
+    },
+    {
+      "id": "src-gb-12346",
+      "type": "standard",
+      "work": "GB/T 12346-2021",
+      "edition": "经穴名称与定位",
+      "locator": "经穴定位条文",
+      "note": "穴位定位按该国家标准录入；本原型用于学习，不替代临床定位。"
+    },
+    {
+      "id": "src-zhenjiuxue",
+      "type": "textbook",
+      "work": "针灸学",
+      "edition": "全国中医药行业高等教育规划教材",
+      "locator": "经络腧穴各论·特定穴",
+      "note": "穴位主治、特定穴分类、针刺与灸法参考按教材归纳；具体操作须由执业中医师完成。"
+    },
+    {
+      "id": "src-fangjixue",
+      "type": "textbook",
+      "work": "方剂学",
+      "edition": "全国中医药行业高等教育规划教材",
+      "locator": "解表剂·和解剂",
+      "note": "君臣佐使与方解属后世教材归纳，不是《伤寒论》原文。"
+    },
+    {
+      "id": "src-zhongyaoxue",
+      "type": "textbook",
+      "work": "中药学",
+      "edition": "全国中医药行业高等教育规划教材",
+      "locator": "中药配伍·七情；用药禁忌；产地与商品名",
+      "note": "配伍关系、使用注意/禁忌、产地与商品名按教材归纳；不等于临床处方建议。"
+    }
+  ],
+  "herbs": [
+    {
+      "id": "gancao",
+      "name": "甘草",
+      "pinyin": "Gān Cǎo",
+      "aliases": [
+        "国老",
+        "甜草"
+      ],
+      "names": {
+        "ancient": {
+          "text": "美草、密甘、密草、国老。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-shennong-bencaojing",
+            "src-bencao-gangmu"
+          ],
+          "locator": "甘草"
+        },
+        "regional": {
+          "text": "商品名有西草、东草；主产于内蒙古、新疆、甘肃等地。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-zhongyaoxue",
+            "src-yaodian-gancao"
+          ],
+          "locator": "甘草"
+        }
+      },
+      "flavorTags": [
+        "甘",
+        "平"
+      ],
+      "meridianIds": [
+        "heart",
+        "lung",
+        "spleen",
+        "stomach"
+      ],
+      "properties": {
+        "natureFlavor": {
+          "text": "甘，平。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-gancao"
+          ],
+          "locator": "甘草"
+        },
+        "meridians": {
+          "text": "归心、肺、脾、胃经。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-gancao"
+          ],
+          "locator": "甘草"
+        },
+        "effects": {
+          "text": "补脾益气，清热解毒，祛痰止咳，缓急止痛，调和诸药。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-gancao"
+          ],
+          "locator": "甘草"
+        },
+        "indications": {
+          "text": "用于脾胃虚弱，倦怠乏力，心悸气短，咳嗽痰多，脘腹、四肢挛急疼痛，痈肿疮毒，缓解药物毒性、烈性。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-gancao"
+          ],
+          "locator": "甘草"
+        },
+        "contraindications": {
+          "text": "不宜与甘遂、大戟、海藻、芫花同用（十八反）；湿盛胀满、水肿者不宜用；久服大剂量可致水钠潴留、浮肿。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-zhongyaoxue",
+            "src-yaodian-gancao"
+          ],
+          "locator": "甘草"
+        }
+      },
+      "images": [
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/gancao-1.jpeg",
+          "alt": "Glycyrrhiza uralensis 植株与花序",
+          "caption": "植株与花序",
+          "credit": "(c) Виктория Билоус, some rights reserved (CC BY)",
+          "license": "CC-BY",
+          "sourceUrl": "https://www.inaturalist.org/observations/95428012",
+          "bytes": 616726,
+          "slot": "whole"
+        },
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/gancao-3.jpg",
+          "alt": "Glycyrrhiza uralensis 群落",
+          "caption": "群落",
+          "credit": "(c) Oleg Kosterin, some rights reserved (CC BY)",
+          "license": "CC-BY",
+          "sourceUrl": "https://www.inaturalist.org/observations/100291274",
+          "bytes": 1031383,
+          "slot": "part"
+        },
+        {
+          "type": "pending",
+          "url": "/images/herbs/real/pending-medicinal.svg",
+          "alt": "药材切片图待补",
+          "caption": "药材切片图待补",
+          "credit": "待补：公开授权图库暂缺",
+          "license": "—",
+          "slot": "medicinal",
+          "pending": true
+        }
+      ],
+      "pairings": [
+        {
+          "herbId": "guizhi",
+          "label": "辛甘化阳",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "桂枝汤方解，属后世教材归纳。"
+        },
+        {
+          "herbId": "baishao",
+          "label": "酸甘化阴、缓急止痛",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "桂枝汤方解，属后世教材归纳。"
+        },
+        {
+          "herbId": "banxia",
+          "label": "调和诸药，缓解半夏毒性",
+          "kind": "analysis",
+          "citationIds": [
+            "src-zhongyaoxue"
+          ],
+          "note": "甘草调和诸药；半夏有毒，临床须炮制并遵医嘱。"
+        }
+      ],
+      "verification": "reference"
+    },
+    {
+      "id": "guizhi",
+      "name": "桂枝",
+      "pinyin": "Guì Zhī",
+      "aliases": [
+        "柳桂"
+      ],
+      "names": {
+        "ancient": {
+          "text": "桂、牡桂、菌桂。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-shennong-bencaojing",
+            "src-bencao-gangmu"
+          ],
+          "locator": "桂枝"
+        },
+        "regional": {
+          "text": "商品规格有桂尖、桂枝木；主产于广西、广东等地。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-zhongyaoxue",
+            "src-yaodian-guizhi"
+          ],
+          "locator": "桂枝"
+        }
+      },
+      "flavorTags": [
+        "辛",
+        "甘",
+        "温"
+      ],
+      "meridianIds": [
+        "heart",
+        "lung",
+        "bladder"
+      ],
+      "properties": {
+        "natureFlavor": {
+          "text": "辛、甘，温。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-guizhi"
+          ],
+          "locator": "桂枝"
+        },
+        "meridians": {
+          "text": "归心、肺、膀胱经。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-guizhi"
+          ],
+          "locator": "桂枝"
+        },
+        "effects": {
+          "text": "发汗解肌，温通经脉，助阳化气，平冲降气。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-guizhi"
+          ],
+          "locator": "桂枝"
+        },
+        "indications": {
+          "text": "用于风寒感冒，脘腹冷痛，血寒经闭，关节痹痛，痰饮，水肿，心悸，奔豚。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-guizhi"
+          ],
+          "locator": "桂枝"
+        },
+        "contraindications": {
+          "text": "温热病、阴虚火旺、血热妄行者忌用；孕妇慎用。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-zhongyaoxue",
+            "src-yaodian-guizhi"
+          ],
+          "locator": "桂枝"
+        }
+      },
+      "images": [
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/guizhi-3.jpg",
+          "alt": "Cinnamomum cassia 叶",
+          "caption": "叶",
+          "credit": "(c) 胡正恆(Jackson Hu), some rights reserved (CC BY)",
+          "license": "CC-BY",
+          "sourceUrl": "https://www.inaturalist.org/observations/149819745",
+          "bytes": 336233,
+          "slot": "whole"
+        },
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/guizhi-2.jpg",
+          "alt": "Cinnamomum cassia 花蕾",
+          "caption": "花蕾",
+          "credit": "no rights reserved",
+          "license": "CC0",
+          "sourceUrl": "https://www.inaturalist.org/observations/340155238",
+          "bytes": 332527,
+          "slot": "part"
+        },
+        {
+          "type": "pending",
+          "url": "/images/herbs/real/pending-medicinal.svg",
+          "alt": "药材切片图待补",
+          "caption": "药材切片图待补",
+          "credit": "待补：公开授权图库暂缺",
+          "license": "—",
+          "slot": "medicinal",
+          "pending": true
+        }
+      ],
+      "pairings": [
+        {
+          "herbId": "baishao",
+          "label": "调和营卫",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "桂枝汤方解，属后世教材归纳。"
+        },
+        {
+          "herbId": "gancao",
+          "label": "辛甘化阳",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "桂枝汤方解，属后世教材归纳。"
+        },
+        {
+          "herbId": "shengjiang",
+          "label": "解表散寒，和胃止呕",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "桂枝汤方解，属后世教材归纳。"
+        }
+      ],
+      "verification": "reference"
+    },
+    {
+      "id": "baishao",
+      "name": "白芍",
+      "pinyin": "Bái Sháo",
+      "aliases": [
+        "芍药",
+        "白芍药"
+      ],
+      "names": {
+        "ancient": {
+          "text": "芍药、将离、离草。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-shennong-bencaojing",
+            "src-bencao-gangmu"
+          ],
+          "locator": "白芍"
+        },
+        "regional": {
+          "text": "商品名有杭白芍、亳白芍、川白芍；主产于浙江、安徽、四川等地。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-zhongyaoxue",
+            "src-yaodian-baishao"
+          ],
+          "locator": "白芍"
+        }
+      },
+      "flavorTags": [
+        "苦",
+        "酸",
+        "微寒"
+      ],
+      "meridianIds": [
+        "liver",
+        "spleen"
+      ],
+      "properties": {
+        "natureFlavor": {
+          "text": "苦、酸，微寒。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-baishao"
+          ],
+          "locator": "白芍"
+        },
+        "meridians": {
+          "text": "归肝、脾经。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-baishao"
+          ],
+          "locator": "白芍"
+        },
+        "effects": {
+          "text": "养血调经，敛阴止汗，柔肝止痛，平抑肝阳。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-baishao"
+          ],
+          "locator": "白芍"
+        },
+        "indications": {
+          "text": "用于血虚萎黄，月经不调，自汗，盗汗，胁痛，腹痛，四肢挛痛，头痛眩晕。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-baishao"
+          ],
+          "locator": "白芍"
+        },
+        "contraindications": {
+          "text": "不宜与藜芦同用（十八反：诸参辛芍叛藜芦）；阳衰虚寒之证不宜单独使用；脾胃虚寒者慎用。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-zhongyaoxue",
+            "src-yaodian-baishao"
+          ],
+          "locator": "白芍"
+        }
+      },
+      "images": [
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/baishao-2.jpg",
+          "alt": "Paeonia lactiflora 叶",
+          "caption": "叶",
+          "credit": "(c) Tatyana Petrenko, some rights reserved (CC BY)",
+          "license": "CC-BY",
+          "sourceUrl": "https://www.inaturalist.org/observations/187088591",
+          "bytes": 640306,
+          "slot": "whole"
+        },
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/baishao-1.jpg",
+          "alt": "Paeonia lactiflora 花",
+          "caption": "花",
+          "credit": "no rights reserved",
+          "license": "CC0",
+          "sourceUrl": "https://www.inaturalist.org/observations/376014961",
+          "bytes": 372323,
+          "slot": "part"
+        },
+        {
+          "type": "pending",
+          "url": "/images/herbs/real/pending-medicinal.svg",
+          "alt": "药材切片图待补",
+          "caption": "药材切片图待补",
+          "credit": "待补：公开授权图库暂缺",
+          "license": "—",
+          "slot": "medicinal",
+          "pending": true
+        }
+      ],
+      "pairings": [
+        {
+          "herbId": "gancao",
+          "label": "酸甘化阴、缓急止痛",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "桂枝汤方解，属后世教材归纳。"
+        },
+        {
+          "herbId": "guizhi",
+          "label": "调和营卫",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "桂枝汤方解，属后世教材归纳。"
+        }
+      ],
+      "verification": "reference",
+      "note": "《伤寒论》桂枝汤原文作“芍药”；本方样例按现代药材名“白芍”建条目。"
+    },
+    {
+      "id": "shengjiang",
+      "name": "生姜",
+      "pinyin": "Shēng Jiāng",
+      "aliases": [
+        "姜"
+      ],
+      "names": {
+        "ancient": {
+          "text": "姜、鲜姜。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-shennong-bencaojing",
+            "src-bencao-gangmu"
+          ],
+          "locator": "生姜"
+        },
+        "regional": {
+          "text": "主产于山东、四川、贵州等地；贵州小黄姜为常见商品名。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-zhongyaoxue",
+            "src-yaodian-shengjiang"
+          ],
+          "locator": "生姜"
+        }
+      },
+      "flavorTags": [
+        "辛",
+        "微温"
+      ],
+      "meridianIds": [
+        "lung",
+        "spleen",
+        "stomach"
+      ],
+      "properties": {
+        "natureFlavor": {
+          "text": "辛，微温。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-shengjiang"
+          ],
+          "locator": "生姜"
+        },
+        "meridians": {
+          "text": "归肺、脾、胃经。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-shengjiang"
+          ],
+          "locator": "生姜"
+        },
+        "effects": {
+          "text": "解表散寒，温中止呕，化痰止咳，解鱼蟹毒。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-shengjiang"
+          ],
+          "locator": "生姜"
+        },
+        "indications": {
+          "text": "用于风寒感冒，胃寒呕吐，寒痰咳嗽，鱼蟹中毒。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-shengjiang"
+          ],
+          "locator": "生姜"
+        },
+        "contraindications": {
+          "text": "阴虚内热、血热妄行者忌用；热盛或阴虚火旺者不宜多服。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-zhongyaoxue",
+            "src-yaodian-shengjiang"
+          ],
+          "locator": "生姜"
+        }
+      },
+      "images": [
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/shengjiang-1.jpg",
+          "alt": "Zingiber officinale 叶",
+          "caption": "叶",
+          "credit": "(c) zebedeugalinha, some rights reserved (CC BY)",
+          "license": "CC-BY",
+          "sourceUrl": "https://www.inaturalist.org/observations/326388409",
+          "bytes": 193175,
+          "slot": "whole"
+        },
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/shengjiang-root1.jpg",
+          "alt": "Zingiber officinale 根茎",
+          "caption": "根茎",
+          "credit": "(c) Angel Thakur, some rights reserved (CC BY-NC)",
+          "license": "CC-BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/observations/332600510",
+          "bytes": 509167,
+          "slot": "part"
+        },
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/shengjiang-root2.jpg",
+          "alt": "Zingiber officinale 根茎",
+          "caption": "根茎",
+          "credit": "(c) Angel Thakur, some rights reserved (CC BY-NC)",
+          "license": "CC-BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/observations/332600510",
+          "bytes": 599362,
+          "slot": "medicinal"
+        }
+      ],
+      "pairings": [
+        {
+          "herbId": "banxia",
+          "label": "相杀：生姜杀半夏",
+          "kind": "analysis",
+          "citationIds": [
+            "src-zhongyaoxue"
+          ],
+          "note": "属于中药七情中的相杀关系；不代表可以自行处理生半夏。"
+        },
+        {
+          "herbId": "dazao",
+          "label": "调和脾胃",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "桂枝汤方解，属后世教材归纳。"
+        }
+      ],
+      "verification": "reference"
+    },
+    {
+      "id": "dazao",
+      "name": "大枣",
+      "pinyin": "Dà Zǎo",
+      "aliases": [
+        "红枣",
+        "枣"
+      ],
+      "names": {
+        "ancient": {
+          "text": "枣、干枣、美枣、良枣。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-shennong-bencaojing",
+            "src-bencao-gangmu"
+          ],
+          "locator": "大枣"
+        },
+        "regional": {
+          "text": "商品名有山东乐陵金丝小枣、新疆和田枣、河北沧州枣等。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-zhongyaoxue",
+            "src-yaodian-dazao"
+          ],
+          "locator": "大枣"
+        }
+      },
+      "flavorTags": [
+        "甘",
+        "温"
+      ],
+      "meridianIds": [
+        "spleen",
+        "stomach",
+        "heart"
+      ],
+      "properties": {
+        "natureFlavor": {
+          "text": "甘，温。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-dazao"
+          ],
+          "locator": "大枣"
+        },
+        "meridians": {
+          "text": "归脾、胃、心经。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-dazao"
+          ],
+          "locator": "大枣"
+        },
+        "effects": {
+          "text": "补中益气，养血安神。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-dazao"
+          ],
+          "locator": "大枣"
+        },
+        "indications": {
+          "text": "用于脾虚食少，乏力便溏，妇人脏躁。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-dazao"
+          ],
+          "locator": "大枣"
+        },
+        "contraindications": {
+          "text": "湿盛脘腹胀满、痰热、食积、虫积者不宜；齿病者慎用。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-zhongyaoxue",
+            "src-yaodian-dazao"
+          ],
+          "locator": "大枣"
+        }
+      },
+      "images": [
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/dazao-3.jpeg",
+          "alt": "Ziziphus jujuba 叶与果",
+          "caption": "叶与果",
+          "credit": "(c) Paul Maier, some rights reserved (CC BY-NC)",
+          "license": "CC-BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/observations/62895029",
+          "bytes": 493119,
+          "slot": "whole"
+        },
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/dazao-fruit2.jpg",
+          "alt": "Ziziphus jujuba 果实与叶",
+          "caption": "果实与叶",
+          "credit": "(c) Kristof & Yulia, some rights reserved (CC BY)",
+          "license": "CC-BY",
+          "sourceUrl": "https://www.inaturalist.org/observations/5305507",
+          "bytes": 541891,
+          "slot": "part"
+        },
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/dazao-fruit1.jpg",
+          "alt": "Ziziphus jujuba 果实",
+          "caption": "果实",
+          "credit": "(c) Kristof & Yulia, some rights reserved (CC BY)",
+          "license": "CC-BY",
+          "sourceUrl": "https://www.inaturalist.org/observations/5305507",
+          "bytes": 286954,
+          "slot": "medicinal"
+        }
+      ],
+      "pairings": [
+        {
+          "herbId": "shengjiang",
+          "label": "调和脾胃",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "桂枝汤方解，属后世教材归纳。"
+        },
+        {
+          "herbId": "gancao",
+          "label": "补中益气、调和诸药",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "属方剂配伍归纳。"
+        }
+      ],
+      "verification": "reference"
+    },
+    {
+      "id": "chaihu",
+      "name": "柴胡",
+      "pinyin": "Chái Hú",
+      "aliases": [
+        "北柴胡",
+        "南柴胡"
+      ],
+      "names": {
+        "ancient": {
+          "text": "茈胡、地熏、山菜、茹草。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-shennong-bencaojing",
+            "src-bencao-gangmu"
+          ],
+          "locator": "柴胡"
+        },
+        "regional": {
+          "text": "商品名有北柴胡、南柴胡；主产于河北、河南、辽宁等地。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-zhongyaoxue",
+            "src-yaodian-chaihu"
+          ],
+          "locator": "柴胡"
+        }
+      },
+      "flavorTags": [
+        "辛",
+        "苦",
+        "微寒"
+      ],
+      "meridianIds": [
+        "liver",
+        "gallbladder",
+        "lung"
+      ],
+      "properties": {
+        "natureFlavor": {
+          "text": "辛、苦，微寒。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-chaihu"
+          ],
+          "locator": "柴胡"
+        },
+        "meridians": {
+          "text": "归肝、胆、肺经。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-chaihu"
+          ],
+          "locator": "柴胡"
+        },
+        "effects": {
+          "text": "疏散退热，疏肝解郁，升举阳气。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-chaihu"
+          ],
+          "locator": "柴胡"
+        },
+        "indications": {
+          "text": "用于感冒发热，寒热往来，胸胁胀痛，月经不调，子宫脱垂，脱肛。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-chaihu"
+          ],
+          "locator": "柴胡"
+        },
+        "contraindications": {
+          "text": "真阴亏损、肝阳上亢、阴虚火旺者慎用；柴胡劫肝阴，不宜长期大量服用。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-zhongyaoxue",
+            "src-yaodian-chaihu"
+          ],
+          "locator": "柴胡"
+        }
+      },
+      "images": [
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/chaihu-2.jpg",
+          "alt": "Bupleurum chinense 植株",
+          "caption": "植株",
+          "credit": "(c) 红梅, some rights reserved (CC BY-NC)",
+          "license": "CC-BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/observations/310681246",
+          "bytes": 341061,
+          "slot": "whole"
+        },
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/chaihu-1.jpeg",
+          "alt": "Bupleurum chinense 花序",
+          "caption": "花序",
+          "credit": "(c) 红梅, some rights reserved (CC BY-NC)",
+          "license": "CC-BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/observations/236824503",
+          "bytes": 429464,
+          "slot": "part"
+        },
+        {
+          "type": "pending",
+          "url": "/images/herbs/real/pending-medicinal.svg",
+          "alt": "药材切片图待补",
+          "caption": "药材切片图待补",
+          "credit": "待补：公开授权图库暂缺",
+          "license": "—",
+          "slot": "medicinal",
+          "pending": true
+        }
+      ],
+      "pairings": [
+        {
+          "herbId": "huangqin",
+          "label": "和解少阳",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "小柴胡汤方解，属后世教材归纳。"
+        },
+        {
+          "herbId": "banxia",
+          "label": "和胃降逆",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "小柴胡汤方解，属后世教材归纳。"
+        },
+        {
+          "herbId": "renshen",
+          "label": "扶正达邪",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "小柴胡汤方解，属后世教材归纳。"
+        }
+      ],
+      "verification": "reference"
+    },
+    {
+      "id": "huangqin",
+      "name": "黄芩",
+      "pinyin": "Huáng Qín",
+      "aliases": [
+        "黄金茶根"
+      ],
+      "names": {
+        "ancient": {
+          "text": "腐肠、黄文、妒妇、经芩。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-shennong-bencaojing",
+            "src-bencao-gangmu"
+          ],
+          "locator": "黄芩"
+        },
+        "regional": {
+          "text": "商品规格有枯芩、条芩、子芩；主产于河北、山西、内蒙古等地。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-zhongyaoxue",
+            "src-yaodian-huangqin"
+          ],
+          "locator": "黄芩"
+        }
+      },
+      "flavorTags": [
+        "苦",
+        "寒"
+      ],
+      "meridianIds": [
+        "lung",
+        "gallbladder",
+        "spleen",
+        "large-intestine",
+        "small-intestine"
+      ],
+      "properties": {
+        "natureFlavor": {
+          "text": "苦，寒。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-huangqin"
+          ],
+          "locator": "黄芩"
+        },
+        "meridians": {
+          "text": "归肺、胆、脾、大肠、小肠经。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-huangqin"
+          ],
+          "locator": "黄芩"
+        },
+        "effects": {
+          "text": "清热燥湿，泻火解毒，止血，安胎。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-huangqin"
+          ],
+          "locator": "黄芩"
+        },
+        "indications": {
+          "text": "用于湿温、暑湿，胸闷呕恶，湿热痞满，泻痢，黄疸，肺热咳嗽，高热烦渴，血热吐衄，痈肿疮毒，胎动不安。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-huangqin"
+          ],
+          "locator": "黄芩"
+        },
+        "contraindications": {
+          "text": "脾胃虚寒者慎用；苦寒伤胃，不宜久服大剂量。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-zhongyaoxue",
+            "src-yaodian-huangqin"
+          ],
+          "locator": "黄芩"
+        }
+      },
+      "images": [
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/huangqin-2.jpg",
+          "alt": "Scutellaria baicalensis 花序",
+          "caption": "花序",
+          "credit": "(c) Святослав Власенко, some rights reserved (CC BY)",
+          "license": "CC-BY",
+          "sourceUrl": "https://www.inaturalist.org/observations/308619072",
+          "bytes": 808371,
+          "slot": "whole"
+        },
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/huangqin-c1.jpeg",
+          "alt": "Scutellaria baicalensis 花",
+          "caption": "花",
+          "credit": "(c) Юрій Бенгус, some rights reserved (CC BY-NC)",
+          "license": "CC-BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/observations/124349409",
+          "bytes": 456419,
+          "slot": "part"
+        },
+        {
+          "type": "pending",
+          "url": "/images/herbs/real/pending-medicinal.svg",
+          "alt": "药材切片图待补",
+          "caption": "药材切片图待补",
+          "credit": "待补：公开授权图库暂缺",
+          "license": "—",
+          "slot": "medicinal",
+          "pending": true
+        }
+      ],
+      "pairings": [
+        {
+          "herbId": "chaihu",
+          "label": "和解少阳",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "小柴胡汤方解，属后世教材归纳。"
+        },
+        {
+          "herbId": "banxia",
+          "label": "清热和胃",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "属小柴胡汤方解归纳。"
+        }
+      ],
+      "verification": "reference"
+    },
+    {
+      "id": "banxia",
+      "name": "半夏",
+      "pinyin": "Bàn Xià",
+      "aliases": [
+        "三叶半夏",
+        "地文"
+      ],
+      "names": {
+        "ancient": {
+          "text": "地文、水玉、守田、示姑。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-shennong-bencaojing",
+            "src-bencao-gangmu"
+          ],
+          "locator": "半夏"
+        },
+        "regional": {
+          "text": "炮制规格有法半夏、姜半夏、清半夏；主产于四川、湖北、江苏等地。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-zhongyaoxue",
+            "src-yaodian-banxia"
+          ],
+          "locator": "半夏"
+        }
+      },
+      "flavorTags": [
+        "辛",
+        "温"
+      ],
+      "meridianIds": [
+        "spleen",
+        "stomach",
+        "lung"
+      ],
+      "properties": {
+        "natureFlavor": {
+          "text": "辛、温；有毒。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-banxia"
+          ],
+          "locator": "半夏"
+        },
+        "meridians": {
+          "text": "归脾、胃、肺经。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-banxia"
+          ],
+          "locator": "半夏"
+        },
+        "effects": {
+          "text": "燥湿化痰，降逆止呕，消痞散结。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-banxia"
+          ],
+          "locator": "半夏"
+        },
+        "indications": {
+          "text": "用于湿痰寒痰，咳喘痰多，痰饮眩悸，风痰眩晕，痰厥头痛，呕吐反胃，胸脘痞闷，梅核气；外治痈肿痰核。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-banxia"
+          ],
+          "locator": "半夏"
+        },
+        "contraindications": {
+          "text": "生半夏有毒，不宜与川乌、制川乌、草乌、制草乌、附子同用（十八反：半蒌贝蔹及攻乌）；阴虚燥咳、血证、热痰、燥痰者慎用；孕妇慎用。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-zhongyaoxue",
+            "src-yaodian-banxia"
+          ],
+          "locator": "半夏"
+        }
+      },
+      "images": [
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/banxia-2.jpeg",
+          "alt": "Pinellia ternata 叶",
+          "caption": "叶",
+          "credit": "(c) Erin Lalime, some rights reserved (CC BY)",
+          "license": "CC-BY",
+          "sourceUrl": "https://www.inaturalist.org/observations/45420796",
+          "bytes": 351218,
+          "slot": "whole"
+        },
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/banxia-1.jpg",
+          "alt": "Pinellia ternata 佛焰苞",
+          "caption": "佛焰苞",
+          "credit": "no rights reserved",
+          "license": "CC0",
+          "sourceUrl": "https://www.inaturalist.org/observations/86015175",
+          "bytes": 49502,
+          "slot": "part"
+        },
+        {
+          "type": "pending",
+          "url": "/images/herbs/real/pending-medicinal.svg",
+          "alt": "药材切片图待补",
+          "caption": "药材切片图待补",
+          "credit": "待补：公开授权图库暂缺",
+          "license": "—",
+          "slot": "medicinal",
+          "pending": true
+        }
+      ],
+      "pairings": [
+        {
+          "herbId": "shengjiang",
+          "label": "相杀：生姜杀半夏",
+          "kind": "analysis",
+          "citationIds": [
+            "src-zhongyaoxue"
+          ],
+          "note": "属于中药七情中的相杀关系；不代表可以自行处理生半夏。"
+        },
+        {
+          "herbId": "chaihu",
+          "label": "和胃降逆",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "小柴胡汤方解，属后世教材归纳。"
+        }
+      ],
+      "verification": "reference",
+      "note": "半夏有毒，须经炮制并在专业医师指导下使用；本原型不提供自行用药建议。"
+    },
+    {
+      "id": "renshen",
+      "name": "人参",
+      "pinyin": "Rén Shēn",
+      "aliases": [
+        "吉林参",
+        "园参"
+      ],
+      "names": {
+        "ancient": {
+          "text": "人衔、鬼盖、土精、神草、黄参、血参。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-shennong-bencaojing",
+            "src-bencao-gangmu"
+          ],
+          "locator": "人参"
+        },
+        "regional": {
+          "text": "商品规格有山参、园参、红参、生晒参；主产于吉林长白山、辽宁、黑龙江等地。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-zhongyaoxue",
+            "src-yaodian-renshen"
+          ],
+          "locator": "人参"
+        }
+      },
+      "flavorTags": [
+        "甘",
+        "苦",
+        "微温"
+      ],
+      "meridianIds": [
+        "spleen",
+        "lung",
+        "heart",
+        "kidney"
+      ],
+      "properties": {
+        "natureFlavor": {
+          "text": "甘、微苦，微温。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-renshen"
+          ],
+          "locator": "人参"
+        },
+        "meridians": {
+          "text": "归脾、肺、心、肾经。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-renshen"
+          ],
+          "locator": "人参"
+        },
+        "effects": {
+          "text": "大补元气，复脉固脱，补脾益肺，生津养血，安神益智。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-renshen"
+          ],
+          "locator": "人参"
+        },
+        "indications": {
+          "text": "用于体虚欲脱，肢冷脉微，脾虚食少，肺虚喘咳，津伤口渴，内热消渴，气血亏虚，久病虚羸，惊悸失眠，阳痿宫冷。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-yaodian-renshen"
+          ],
+          "locator": "人参"
+        },
+        "contraindications": {
+          "text": "不宜与藜芦、五灵脂同用（十八反/十九畏）；实热、湿热、正气不虚者忌用；传统认为服人参期间不宜同时饮浓茶、食萝卜。",
+          "kind": "paraphrase",
+          "citationIds": [
+            "src-zhongyaoxue",
+            "src-yaodian-renshen"
+          ],
+          "locator": "人参"
+        }
+      },
+      "images": [
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/renshen-2.jpeg",
+          "alt": "Panax ginseng 生境",
+          "caption": "生境",
+          "credit": "(c) Maria Khoreva, some rights reserved (CC BY)",
+          "license": "CC-BY",
+          "sourceUrl": "https://www.inaturalist.org/observations/244678306",
+          "bytes": 515254,
+          "slot": "whole"
+        },
+        {
+          "type": "photo",
+          "url": "/images/herbs/real/renshen-1.jpg",
+          "alt": "Panax ginseng 叶",
+          "caption": "叶",
+          "credit": "(c) Nina Filippova, some rights reserved (CC BY)",
+          "license": "CC-BY",
+          "sourceUrl": "https://www.inaturalist.org/observations/93914221",
+          "bytes": 170075,
+          "slot": "part"
+        },
+        {
+          "type": "pending",
+          "url": "/images/herbs/real/pending-medicinal.svg",
+          "alt": "药材切片图待补",
+          "caption": "药材切片图待补",
+          "credit": "待补：公开授权图库暂缺",
+          "license": "—",
+          "slot": "medicinal",
+          "pending": true
+        }
+      ],
+      "pairings": [
+        {
+          "herbId": "gancao",
+          "label": "益气和中",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "小柴胡汤方解，属后世教材归纳。"
+        },
+        {
+          "herbId": "chaihu",
+          "label": "扶正达邪",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "小柴胡汤方解，属后世教材归纳。"
+        }
+      ],
+      "verification": "reference"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "guizhi-tang",
+      "name": "桂枝汤",
+      "pinyin": "Guì Zhī Tāng",
+      "sourceCitationId": "src-shanghan-12",
+      "originalText": {
+        "text": "太阳中风，阳浮而阴弱，阳浮者，热自发，阴弱者，汗自出，啬啬恶寒，淅淅恶风，翕翕发热，鼻鸣干呕者，桂枝汤主之。桂枝三两（去皮） 芍药三两 甘草二两（炙） 生姜三两（切） 大枣十二枚（擘） 上五味，㕮咀三味，以水七升，微火煮取三升，去滓，适寒温，服一升。服已须臾，啜热稀粥一升余，以助药力。温覆令一时许，遍身漐漐微似有汗者益佳，不可令如水流漓，病必不除。",
+        "kind": "quote",
+        "citationIds": [
+          "src-shanghan-12"
+        ],
+        "locator": "辨太阳病脉证并治上·第12条"
+      },
+      "effects": {
+        "text": "解肌发表，调和营卫。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-fangjixue"
+        ],
+        "locator": "桂枝汤方解"
+      },
+      "symptoms": [
+        {
+          "text": "太阳中风，阳浮而阴弱，阳浮者，热自发，阴弱者，汗自出，啬啬恶寒，淅淅恶风，翕翕发热，鼻鸣干呕者，桂枝汤主之。",
+          "kind": "quote",
+          "citationIds": [
+            "src-shanghan-12"
+          ],
+          "locator": "辨太阳病脉证并治上·第12条"
+        }
+      ],
+      "originalAnnotations": [
+        {
+          "id": "guizhi-yangfu-yinruo",
+          "phrase": "阳浮而阴弱",
+          "note": "指卫气浮盛于外、营阴不足于内，是营卫不和的表现。",
+          "citationIds": [
+            "src-fangjixue"
+          ]
+        },
+        {
+          "id": "guizhi-sese-ehan",
+          "phrase": "啬啬恶寒",
+          "note": "形容畏寒蜷缩、怕冷明显。",
+          "citationIds": [
+            "src-fangjixue"
+          ]
+        },
+        {
+          "id": "guizhi-xixi-efeng",
+          "phrase": "淅淅恶风",
+          "note": "形容怕风，像冷水淋身一样。",
+          "citationIds": [
+            "src-fangjixue"
+          ]
+        },
+        {
+          "id": "guizhi-xixi-fare",
+          "phrase": "翕翕发热",
+          "note": "形容发热轻浅，像羽毛覆在身上。",
+          "citationIds": [
+            "src-fangjixue"
+          ]
+        },
+        {
+          "id": "guizhi-biming-ganou",
+          "phrase": "鼻鸣干呕",
+          "note": "鼻塞而呼吸有声；胃气上逆而干呕。",
+          "citationIds": [
+            "src-fangjixue"
+          ]
+        }
+      ],
+      "preparation": {
+        "ingredients": {
+          "text": "桂枝三两（去皮） 芍药三两 甘草二两（炙） 生姜三两（切） 大枣十二枚（擘）",
+          "kind": "quote",
+          "citationIds": [
+            "src-shanghan-12"
+          ],
+          "locator": "辨太阳病脉证并治上·第12条·方后注"
+        },
+        "decoction": {
+          "text": "上五味，㕮咀三味，以水七升，微火煮取三升，去滓",
+          "kind": "quote",
+          "citationIds": [
+            "src-shanghan-12"
+          ],
+          "locator": "辨太阳病脉证并治上·第12条·方后注"
+        },
+        "administration": {
+          "text": "适寒温，服一升。服已须臾，啜热稀粥一升余，以助药力。温覆令一时许，遍身漐漐微似有汗者益佳，不可令如水流漓，病必不除。",
+          "kind": "quote",
+          "citationIds": [
+            "src-shanghan-12"
+          ],
+          "locator": "辨太阳病脉证并治上·第12条·方后注"
+        },
+        "modernDecoction": "9 碗水煮至 3 碗水，去滓。",
+        "modernAdministration": "空腹温服，一天三次；服后啜热稀粥，温覆取微汗。",
+        "modernNote": "现代用法为学习参考，不是《伤寒论》原文；具体煎服请遵医嘱。"
+      },
+      "meaning": {
+        "herbMeanings": [
+          {
+            "herbId": "guizhi",
+            "text": "辛甘温，解肌发表，温通卫阳。"
+          },
+          {
+            "herbId": "baishao",
+            "text": "酸苦微寒，敛阴和营，缓急止痛。"
+          },
+          {
+            "herbId": "shengjiang",
+            "text": "辛温，散寒解表，和胃止呕。"
+          },
+          {
+            "herbId": "dazao",
+            "text": "甘温，补中益气，护胃安中。"
+          },
+          {
+            "herbId": "gancao",
+            "text": "甘平，调和诸药，益气和中。"
+          }
+        ],
+        "summary": {
+          "text": "诸药合用，解肌发表、调和营卫。主治太阳中风表虚证：发热、汗出、恶风、鼻鸣干呕，苔白不渴，脉浮缓或浮弱。",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "locator": "桂枝汤方义"
+        }
+      },
+      "composition": [
+        {
+          "herbId": "guizhi",
+          "dosage": "三两（去皮）",
+          "role": "君",
+          "roleCitationIds": [
+            "src-fangjixue"
+          ],
+          "ratio": {
+            "group": "两",
+            "value": 3,
+            "text": "3 两"
+          },
+          "modernDose": "3 钱",
+          "modernRatio": {
+            "group": "今用钱",
+            "value": 3,
+            "text": "3 钱"
+          },
+          "action": {
+            "text": "解肌发表，温通卫阳",
+            "kind": "analysis",
+            "citationIds": [
+              "src-fangjixue"
+            ]
+          }
+        },
+        {
+          "herbId": "baishao",
+          "dosage": "三两",
+          "role": "臣",
+          "roleCitationIds": [
+            "src-fangjixue"
+          ],
+          "note": "《伤寒论》原文作“芍药”；本样例按现代药材名“白芍”建条目。",
+          "ratio": {
+            "group": "两",
+            "value": 3,
+            "text": "3 两"
+          },
+          "modernDose": "3 钱",
+          "modernRatio": {
+            "group": "今用钱",
+            "value": 3,
+            "text": "3 钱"
+          },
+          "action": {
+            "text": "敛阴和营，缓急止痛",
+            "kind": "analysis",
+            "citationIds": [
+              "src-fangjixue"
+            ]
+          }
+        },
+        {
+          "herbId": "shengjiang",
+          "dosage": "三两（切）",
+          "role": "佐",
+          "roleCitationIds": [
+            "src-fangjixue"
+          ],
+          "ratio": {
+            "group": "两",
+            "value": 3,
+            "text": "3 两"
+          },
+          "modernDose": "3 钱",
+          "modernRatio": {
+            "group": "今用钱",
+            "value": 3,
+            "text": "3 钱"
+          },
+          "action": {
+            "text": "散寒解表，和胃止呕",
+            "kind": "analysis",
+            "citationIds": [
+              "src-fangjixue"
+            ]
+          }
+        },
+        {
+          "herbId": "dazao",
+          "dosage": "十二枚（擘）",
+          "role": "佐",
+          "roleCitationIds": [
+            "src-fangjixue"
+          ],
+          "ratio": {
+            "group": "枚",
+            "value": 12,
+            "text": "12 枚"
+          },
+          "modernDose": "12 枚（擘）",
+          "modernRatio": {
+            "group": "今用枚",
+            "value": 12,
+            "text": "12 枚",
+            "note": "单独计量"
+          },
+          "action": {
+            "text": "补中益气，护胃安中",
+            "kind": "analysis",
+            "citationIds": [
+              "src-fangjixue"
+            ]
+          }
+        },
+        {
+          "herbId": "gancao",
+          "dosage": "二两（炙）",
+          "role": "使",
+          "roleCitationIds": [
+            "src-fangjixue"
+          ],
+          "ratio": {
+            "group": "两",
+            "value": 2,
+            "text": "2 两"
+          },
+          "modernDose": "2 钱",
+          "modernRatio": {
+            "group": "今用钱",
+            "value": 2,
+            "text": "2 钱"
+          },
+          "action": {
+            "text": "调和诸药，益气和中",
+            "kind": "analysis",
+            "citationIds": [
+              "src-fangjixue"
+            ]
+          }
+        }
+      ],
+      "dosageNote": "原方以“两”和“枚”计量；比例只在同一单位组内比较，不把“两”与“枚”相加。",
+      "dosageRatioSummary": "两：桂枝 3 : 白芍 3 : 生姜 3 : 甘草 2；大枣 12 枚（单独计量）",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "这是本站统一采用的经方折算约定，便于对照今用剂量；汉代度量衡考证另有异说，折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernDoseSummary": "桂枝3钱，白芍3钱，生姜3钱，大枣12枚（擘），甘草2钱。3:3:3:2",
+      "modernRatioSummary": "今用：桂枝 3 : 白芍 3 : 生姜 3 : 甘草 2；大枣 12 枚（单独计量）",
+      "modernGramDoses": {
+        "guizhi": "9 g",
+        "baishao": "9 g",
+        "shengjiang": "3 片",
+        "dazao": "12 个（劈）",
+        "gancao": "6 g（炙）"
+      },
+      "modernGramNote": "本站中使用方剂用量不等于实际处方的用量。",
+      "modernDoseNote": "按“一两 = 现今的一钱”直接折算：原方三两即今用三钱，二两即二钱；大枣仍按枚单独计量。折算值只作经方用量参考，不是临床处方。",
+      "symptomTags": [
+        "发热",
+        "汗出",
+        "恶风",
+        "鼻鸣",
+        "干呕"
+      ],
+      "modifications": [],
+      "modificationsNote": "《伤寒论》第12条原文未列加减法；相关变方（如桂枝加葛根汤）本样例暂未收录，不在此处硬编。",
+      "corePairs": [
+        {
+          "from": "guizhi",
+          "to": "baishao",
+          "label": "调和营卫",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "桂枝汤方解，属后世教材归纳。"
+        },
+        {
+          "from": "guizhi",
+          "to": "gancao",
+          "label": "辛甘化阳",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "桂枝汤方解，属后世教材归纳。"
+        },
+        {
+          "from": "baishao",
+          "to": "gancao",
+          "label": "酸甘化阴、缓急止痛",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "桂枝汤方解，属后世教材归纳。"
+        }
+      ],
+      "commentaries": [],
+      "commentarySlots": [
+        {
+          "id": "guizhi-tang-commentary-classic",
+          "kind": "classic",
+          "label": "古籍条曰",
+          "work": "书名待补",
+          "locator": "卷/条待补",
+          "quote": "某古籍中条曰：……",
+          "status": "待补充"
+        },
+        {
+          "id": "guizhi-tang-commentary-physician",
+          "kind": "physician",
+          "label": "历代医家解说",
+          "work": "医家 · 书名待补",
+          "locator": "卷/条待补",
+          "quote": "某医家曰：……",
+          "status": "待补充"
+        }
+      ],
+      "additionalIndications": [],
+      "commentaryNote": "历代注家、名家医案与扩展主治待逐条补充；收到典籍原文后按“书名·卷/条·原文”录入。这里不把当代教材当作古籍解说。",
+      "verification": "verified"
+    },
+    {
+      "id": "xiao-chai-hu-tang",
+      "name": "小柴胡汤",
+      "pinyin": "Xiǎo Chái Hú Tāng",
+      "sourceCitationId": "src-shanghan-96",
+      "originalText": {
+        "text": "伤寒五六日，中风，往来寒热，胸胁苦满，嘿嘿不欲饮食，心烦喜呕，或胸中烦而不呕，或渴，或腹中痛，或胁下痞硬，或心下悸、小便不利，或不渴、身有微热，或咳者，小柴胡汤主之。柴胡半斤 黄芩三两 人参三两 半夏半升（洗） 甘草三两（炙） 生姜三两（切） 大枣十二枚（擘） 上七味，以水一斗二升，煮取六升，去滓，再煎取三升，温服一升，日三服。若胸中烦而不呕者，去半夏、人参，加栝楼实一枚；若渴，去半夏，加人参合前成四两半、栝楼根四两；若腹中痛者，去黄芩，加芍药三两；若胁下痞硬，去大枣，加牡蛎四两；若心下悸、小便不利者，去黄芩，加茯苓四两；若不渴，外有微热者，去人参，加桂枝三两，温覆微汗愈；若咳者，去人参、大枣、生姜，加五味子半升、干姜二两。",
+        "kind": "quote",
+        "citationIds": [
+          "src-shanghan-96"
+        ],
+        "locator": "辨太阳病脉证并治中·第96条"
+      },
+      "effects": {
+        "text": "和解少阳。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-fangjixue"
+        ],
+        "locator": "小柴胡汤方解"
+      },
+      "modernExplanation": {
+        "text": "当有太阳表症兼阳明症、少阳症时，当和解少阳，用小柴胡汤。\n女性生理期感冒可直接用小柴胡汤，不使用桂枝汤或麻黄汤解表。\n以小柴胡汤为基础方进行加减，对各种肝胆病、甲状腺、乳腺、淋巴、男女胞宫类疾病均可。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-fangjixue"
+        ],
+        "locator": "现代病症解说"
+      },
+      "symptoms": [
+        {
+          "text": "伤寒五六日，中风，往来寒热，胸胁苦满，嘿嘿不欲饮食，心烦喜呕，或胸中烦而不呕，或渴，或腹中痛，或胁下痞硬，或心下悸、小便不利，或不渴、身有微热，或咳者，小柴胡汤主之。",
+          "kind": "quote",
+          "citationIds": [
+            "src-shanghan-96"
+          ],
+          "locator": "辨太阳病脉证并治中·第96条"
+        }
+      ],
+      "originalAnnotations": [
+        {
+          "id": "xiaochaihu-wanglai-hanre",
+          "phrase": "往来寒热",
+          "note": "恶寒与发热交替出现，是少阳病半表半里的典型热型。",
+          "citationIds": [
+            "src-fangjixue"
+          ]
+        },
+        {
+          "id": "xiaochaihu-xiongxie-kuman",
+          "phrase": "胸胁苦满",
+          "note": "胸胁部胀满不舒，为少阳经气不利。",
+          "citationIds": [
+            "src-fangjixue"
+          ]
+        },
+        {
+          "id": "xiaochaihu-hehe-buyinshi",
+          "phrase": "嘿嘿不欲饮食",
+          "note": "神情沉默、不想饮食，属胆胃不和。",
+          "citationIds": [
+            "src-fangjixue"
+          ]
+        },
+        {
+          "id": "xiaochaihu-xinfan-xinou",
+          "phrase": "心烦喜呕",
+          "note": "心中烦热，容易恶心呕吐。",
+          "citationIds": [
+            "src-fangjixue"
+          ]
+        }
+      ],
+      "preparation": {
+        "ingredients": {
+          "text": "柴胡半斤 黄芩三两 人参三两 半夏半升（洗） 甘草三两（炙） 生姜三两（切） 大枣十二枚（擘）",
+          "kind": "quote",
+          "citationIds": [
+            "src-shanghan-96"
+          ],
+          "locator": "辨太阳病脉证并治中·第96条·方后注"
+        },
+        "decoction": {
+          "text": "上七味，以水一斗二升，煮取六升，去滓，再煎取三升",
+          "kind": "quote",
+          "citationIds": [
+            "src-shanghan-96"
+          ],
+          "locator": "辨太阳病脉证并治中·第96条·方后注"
+        },
+        "administration": {
+          "text": "温服一升，日三服",
+          "kind": "quote",
+          "citationIds": [
+            "src-shanghan-96"
+          ],
+          "locator": "辨太阳病脉证并治中·第96条·方后注"
+        },
+        "modernDecoction": "9 碗水煮至 3 碗水，去滓。",
+        "modernAdministration": "空腹温服，一天三次。",
+        "modernNote": "现代用法为学习参考，不是《伤寒论》原文；具体煎服请遵医嘱。"
+      },
+      "meaning": {
+        "herbMeanings": [
+          {
+            "herbId": "chaihu",
+            "text": "性苦平，入肝胆经，泻少阳之邪，舒肝胆气之郁滞。"
+          },
+          {
+            "herbId": "huangqin",
+            "text": "性苦寒，清泄少阳肝胆之热。"
+          },
+          {
+            "herbId": "banxia",
+            "text": "降逆，去水，止呕。"
+          },
+          {
+            "herbId": "shengjiang",
+            "text": "温胃，去胃中之水，止吐。"
+          },
+          {
+            "herbId": "renshen",
+            "text": "益气补津。"
+          },
+          {
+            "herbId": "dazao",
+            "text": "护胃。"
+          },
+          {
+            "herbId": "gancao",
+            "text": "调和诸药，益气和中。"
+          }
+        ],
+        "summary": {
+          "text": "诸药合用，主治：\n1. 少阳伤寒症，往来寒热，胸胁苦满，不思饮食，心烦躁，见呕吐、口干、口苦、咽干、头昏目眩、舌苔白薄。\n2. 女性得表症，热入血室（女性月经期）\n3. 疟疾、黄疸等少阳症状",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "locator": "小柴胡汤方义"
+        }
+      },
+      "composition": [
+        {
+          "herbId": "chaihu",
+          "dosage": "半斤",
+          "role": "君",
+          "roleCitationIds": [
+            "src-fangjixue"
+          ],
+          "note": "半斤按汉代 1 斤 = 16 两折算为 8 两；页面同时保留原文“半斤”。",
+          "ratio": {
+            "group": "两",
+            "value": 8,
+            "text": "半斤（8 两）",
+            "note": "折算"
+          },
+          "modernDose": "5 钱",
+          "modernRatio": {
+            "group": "今用钱",
+            "value": 5,
+            "text": "5 钱"
+          },
+          "action": {
+            "text": "疏肝胆",
+            "kind": "analysis",
+            "citationIds": [
+              "src-fangjixue"
+            ]
+          }
+        },
+        {
+          "herbId": "huangqin",
+          "dosage": "三两",
+          "role": "臣",
+          "roleCitationIds": [
+            "src-fangjixue"
+          ],
+          "ratio": {
+            "group": "两",
+            "value": 3,
+            "text": "3 两"
+          },
+          "modernDose": "3 钱",
+          "modernRatio": {
+            "group": "今用钱",
+            "value": 3,
+            "text": "3 钱"
+          },
+          "action": {
+            "text": "清热",
+            "kind": "analysis",
+            "citationIds": [
+              "src-fangjixue"
+            ]
+          }
+        },
+        {
+          "herbId": "renshen",
+          "dosage": "三两",
+          "role": "佐",
+          "roleCitationIds": [
+            "src-fangjixue"
+          ],
+          "ratio": {
+            "group": "两",
+            "value": 3,
+            "text": "3 两"
+          },
+          "modernDose": "3 钱",
+          "modernRatio": {
+            "group": "今用钱",
+            "value": 3,
+            "text": "3 钱"
+          },
+          "action": {
+            "text": "滋阴、生津",
+            "kind": "analysis",
+            "citationIds": [
+              "src-fangjixue"
+            ]
+          }
+        },
+        {
+          "herbId": "banxia",
+          "dosage": "半升（洗）",
+          "role": "佐",
+          "roleCitationIds": [
+            "src-fangjixue"
+          ],
+          "ratio": {
+            "group": "升",
+            "value": 0.5,
+            "text": "半升"
+          },
+          "modernDose": "5 钱",
+          "modernRatio": {
+            "group": "今用钱",
+            "value": 5,
+            "text": "5 钱"
+          },
+          "action": {
+            "text": "去三焦水、行气、降逆、止呕",
+            "kind": "analysis",
+            "citationIds": [
+              "src-fangjixue"
+            ]
+          }
+        },
+        {
+          "herbId": "shengjiang",
+          "dosage": "三两（切）",
+          "role": "佐",
+          "roleCitationIds": [
+            "src-fangjixue"
+          ],
+          "ratio": {
+            "group": "两",
+            "value": 3,
+            "text": "3 两"
+          },
+          "modernDose": "3 钱",
+          "modernRatio": {
+            "group": "今用钱",
+            "value": 3,
+            "text": "3 钱"
+          },
+          "action": {
+            "text": "温胃、去胃中水、止吐",
+            "kind": "analysis",
+            "citationIds": [
+              "src-fangjixue"
+            ]
+          }
+        },
+        {
+          "herbId": "dazao",
+          "dosage": "十二枚（擘）",
+          "role": "佐",
+          "roleCitationIds": [
+            "src-fangjixue"
+          ],
+          "ratio": {
+            "group": "枚",
+            "value": 12,
+            "text": "12 枚"
+          },
+          "modernDose": "12 个（劈）",
+          "modernRatio": {
+            "group": "今用枚",
+            "value": 12,
+            "text": "12 个",
+            "note": "单独计量"
+          },
+          "action": {
+            "text": "护胃",
+            "kind": "analysis",
+            "citationIds": [
+              "src-fangjixue"
+            ]
+          }
+        },
+        {
+          "herbId": "gancao",
+          "dosage": "三两（炙）",
+          "role": "佐使",
+          "roleCitationIds": [
+            "src-fangjixue"
+          ],
+          "ratio": {
+            "group": "两",
+            "value": 3,
+            "text": "3 两"
+          },
+          "modernDose": "3 钱",
+          "modernRatio": {
+            "group": "今用钱",
+            "value": 3,
+            "text": "3 钱"
+          },
+          "action": {
+            "text": "调和诸药，益气和中",
+            "kind": "analysis",
+            "citationIds": [
+              "src-fangjixue"
+            ]
+          }
+        }
+      ],
+      "dosageNote": "柴胡半斤按汉代 1 斤 = 16 两折算为 8 两；半夏按升、大枣按枚，另行计量，不同单位不合并计算。",
+      "dosageRatioSummary": "两：柴胡 8（半斤折算） : 黄芩 3 : 人参 3 : 甘草 3 : 生姜 3；半夏 半升、大枣 12 枚（单独计量）",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "这是本站统一采用的经方折算约定，便于对照今用剂量；汉代度量衡考证另有异说，折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernDoseSummary": "柴胡5钱，黄芩3钱，人参3钱，半夏5钱，甘草3钱，生姜3钱，大枣12个劈。5:3:3:5:3:3",
+      "modernRatioSummary": "今用：柴胡 5 : 黄芩 3 : 人参 3 : 半夏 5 : 甘草 3 : 生姜 3；大枣 12 个（单独计量）",
+      "modernGramDoses": {
+        "chaihu": "20 g",
+        "huangqin": "12 g",
+        "renshen": "12 g",
+        "banxia": "20 g",
+        "shengjiang": "3 片",
+        "dazao": "12 个（劈）",
+        "gancao": "12 g（炙）"
+      },
+      "modernGramNote": "本站中使用方剂用量不等于实际处方的用量。",
+      "modernDoseNote": "今用剂量按常见今用配比录入：柴胡、半夏各 5 钱，黄芩、人参、甘草、生姜各 3 钱，大枣 12 个（劈）。5:3:3:5:3:3 为柴、芩、参、半、草、姜的今用比例，大枣按个单独计量。今用配比与原文按“一两 = 一钱”直接折算不完全等同，也不是《伤寒论》原文。",
+      "symptomTags": [
+        "往来寒热",
+        "胸胁苦满",
+        "不欲饮食",
+        "心烦喜呕",
+        "或然症"
+      ],
+      "modifications": [
+        {
+          "condition": "若胸中烦而不呕者",
+          "change": "去半夏、人参，加栝楼实一枚",
+          "citationIds": [
+            "src-shanghan-96"
+          ],
+          "kind": "quote"
+        },
+        {
+          "condition": "若渴",
+          "change": "去半夏，加人参合前成四两半、栝楼根四两",
+          "citationIds": [
+            "src-shanghan-96"
+          ],
+          "kind": "quote"
+        },
+        {
+          "condition": "若腹中痛者",
+          "change": "去黄芩，加芍药三两",
+          "citationIds": [
+            "src-shanghan-96"
+          ],
+          "kind": "quote"
+        },
+        {
+          "condition": "若胁下痞硬",
+          "change": "去大枣，加牡蛎四两",
+          "citationIds": [
+            "src-shanghan-96"
+          ],
+          "kind": "quote"
+        },
+        {
+          "condition": "若心下悸、小便不利者",
+          "change": "去黄芩，加茯苓四两",
+          "citationIds": [
+            "src-shanghan-96"
+          ],
+          "kind": "quote"
+        },
+        {
+          "condition": "若不渴，外有微热者",
+          "change": "去人参，加桂枝三两，温覆微汗愈",
+          "citationIds": [
+            "src-shanghan-96"
+          ],
+          "kind": "quote"
+        },
+        {
+          "condition": "若咳者",
+          "change": "去人参、大枣、生姜，加五味子半升、干姜二两",
+          "citationIds": [
+            "src-shanghan-96"
+          ],
+          "kind": "quote"
+        }
+      ],
+      "modificationsNote": "以上加减均见《伤寒论》第96条原文；加减后的方剂需由医师辨证使用。",
+      "corePairs": [
+        {
+          "from": "chaihu",
+          "to": "huangqin",
+          "label": "和解少阳",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "小柴胡汤方解，属后世教材归纳。"
+        },
+        {
+          "from": "banxia",
+          "to": "shengjiang",
+          "label": "和胃降逆，生姜杀半夏",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue",
+            "src-zhongyaoxue"
+          ],
+          "note": "属方解与七情归纳。"
+        },
+        {
+          "from": "renshen",
+          "to": "gancao",
+          "label": "益气和中",
+          "kind": "analysis",
+          "citationIds": [
+            "src-fangjixue"
+          ],
+          "note": "小柴胡汤方解，属后世教材归纳。"
+        }
+      ],
+      "commentaries": [],
+      "commentarySlots": [
+        {
+          "id": "xiao-chai-hu-tang-commentary-classic",
+          "kind": "classic",
+          "label": "古籍条曰",
+          "work": "书名待补",
+          "locator": "卷/条待补",
+          "quote": "某古籍中条曰：……",
+          "status": "待补充"
+        },
+        {
+          "id": "xiao-chai-hu-tang-commentary-physician",
+          "kind": "physician",
+          "label": "历代医家解说",
+          "work": "医家 · 书名待补",
+          "locator": "卷/条待补",
+          "quote": "某医家曰：……",
+          "status": "待补充"
+        }
+      ],
+      "additionalIndications": [],
+      "commentaryNote": "历代注家、名家医案与扩展主治待逐条补充；收到典籍原文后按“书名·卷/条·原文”录入。这里不把当代教材当作古籍解说。",
+      "verification": "verified"
+    }
+  ],
+  "meridians": [
+    {
+      "id": "lung",
+      "name": "手太阴肺经",
+      "abbr": "LU",
+      "category": "regular",
+      "hasOwnPoints": true,
+      "flowLabel": "胸 → 手",
+      "description": {
+        "text": "肺手太阴之脉，起于中焦，下络大肠，还循胃口，上膈属肺，从肺系横出腋下，下循臑内，行少阴心主之前，下肘中，循臂内上骨下廉，入寸口，上鱼，循鱼际，出大指之端；其支者，从腕后直出次指内廉，出其端。",
+        "kind": "quote",
+        "citationIds": [
+          "src-lingshu-jingmai"
+        ]
+      },
+      "path": [
+        [
+          0,
+          1.341,
+          0.032
+        ],
+        [
+          0.143,
+          1.401,
+          0.009
+        ],
+        [
+          0.183,
+          1.439,
+          -0.031
+        ],
+        [
+          0.257,
+          1.347,
+          -0.097
+        ],
+        [
+          0.347,
+          1.269,
+          -0.048
+        ],
+        [
+          0.357,
+          1.288,
+          -0.041
+        ],
+        [
+          0.418,
+          1.238,
+          0.024
+        ],
+        [
+          0.453,
+          1.193,
+          0.08
+        ],
+        [
+          0.456,
+          1.182,
+          0.092
+        ],
+        [
+          0.474,
+          1.174,
+          0.134
+        ],
+        [
+          0.492,
+          1.103,
+          0.22
+        ],
+        [
+          0.513,
+          1.052,
+          0.183
+        ]
+      ],
+      "pathNote": "3D 走向为示意线，不是解剖定位，也不代表针刺路径。",
+      "totalPoints": 11,
+      "acupointIds": [
+        "LU1",
+        "LU5",
+        "LU6",
+        "LU7",
+        "LU9",
+        "LU2",
+        "LU3",
+        "LU4",
+        "LU8",
+        "LU10",
+        "LU11"
+      ]
+    },
+    {
+      "id": "large-intestine",
+      "name": "手阳明大肠经",
+      "abbr": "LI",
+      "category": "regular",
+      "hasOwnPoints": true,
+      "flowLabel": "手 → 头",
+      "description": {
+        "text": "起于食指桡侧端，沿前臂外侧上行，过肘外侧，上肩，入缺盆，络肺，下膈，属大肠；支脉上颈贯颊，入下齿，环口交人中，止于对侧鼻旁。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-lingshu-jingmai"
+        ]
+      },
+      "totalPoints": 20,
+      "acupointIds": [
+        "LI4"
+      ]
+    },
+    {
+      "id": "stomach",
+      "name": "足阳明胃经",
+      "abbr": "ST",
+      "category": "regular",
+      "hasOwnPoints": true,
+      "flowLabel": "头 → 足",
+      "description": {
+        "text": "起于鼻旁，上行至额，下沿面颊、颈部、胸腹前外侧下行，经股前外侧、胫骨前外侧，止于第二趾外侧端。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-lingshu-jingmai"
+        ]
+      },
+      "totalPoints": 45,
+      "acupointIds": [
+        "ST25",
+        "ST36"
+      ]
+    },
+    {
+      "id": "spleen",
+      "name": "足太阴脾经",
+      "abbr": "SP",
+      "category": "regular",
+      "hasOwnPoints": true,
+      "flowLabel": "足 → 腹胸",
+      "description": {
+        "text": "起于足大趾内侧端，沿下肢内侧上行，入腹属脾络胃，上膈，挟咽，连舌本，散舌下。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-lingshu-jingmai"
+        ]
+      },
+      "totalPoints": 21,
+      "acupointIds": [
+        "SP4",
+        "SP6"
+      ]
+    },
+    {
+      "id": "heart",
+      "name": "手少阴心经",
+      "abbr": "HT",
+      "category": "regular",
+      "hasOwnPoints": true,
+      "flowLabel": "胸 → 手",
+      "description": {
+        "text": "起于心中，出属心系，下膈络小肠；支脉从心系上挟咽，系目系；直行者上肺，出腋下，沿上肢内侧后缘下行，止于小指桡侧端。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-lingshu-jingmai"
+        ]
+      },
+      "totalPoints": 9,
+      "acupointIds": [
+        "HT7"
+      ]
+    },
+    {
+      "id": "small-intestine",
+      "name": "手太阳小肠经",
+      "abbr": "SI",
+      "category": "regular",
+      "hasOwnPoints": true,
+      "flowLabel": "手 → 头",
+      "description": {
+        "text": "起于小指尺侧端，沿上肢外侧后缘上行，绕肩胛，交肩上，入缺盆，络心，下膈，属小肠；支脉上颈至面颊、目外眦，入耳中。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-lingshu-jingmai"
+        ]
+      },
+      "totalPoints": 19,
+      "path": [
+        [
+          -0.495,
+          1.105,
+          0.09
+        ],
+        [
+          -0.477,
+          1.097,
+          0.191
+        ],
+        [
+          -0.451,
+          1.176,
+          0.008
+        ],
+        [
+          -0.404,
+          1.269,
+          -0.107
+        ],
+        [
+          -0.343,
+          1.362,
+          -0.136
+        ],
+        [
+          -0.261,
+          1.441,
+          -0.158
+        ],
+        [
+          -0.18,
+          1.502,
+          -0.171
+        ],
+        [
+          -0.111,
+          1.507,
+          -0.039
+        ],
+        [
+          -0.02,
+          1.62,
+          -0.139
+        ],
+        [
+          0.064,
+          1.66,
+          0.02
+        ],
+        [
+          0.076,
+          1.7,
+          0.002
+        ],
+        [
+          0.074,
+          1.72,
+          0.002
+        ]
+      ],
+      "acupointIds": [
+        "SI3"
+      ]
+    },
+    {
+      "id": "bladder",
+      "name": "足太阳膀胱经",
+      "abbr": "BL",
+      "category": "regular",
+      "hasOwnPoints": true,
+      "flowLabel": "头 → 足",
+      "description": {
+        "text": "起于目内眦，上额交巅，下项，挟脊两旁下行，经腰、臀、下肢后侧，止于小趾外侧端。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-lingshu-jingmai"
+        ]
+      },
+      "totalPoints": 67,
+      "path": [
+        [
+          0.032,
+          1.75,
+          0.043
+        ],
+        [
+          0.043,
+          1.814,
+          0.003
+        ],
+        [
+          0.032,
+          1.772,
+          -0.161
+        ],
+        [
+          0.054,
+          1.649,
+          -0.124
+        ],
+        [
+          0.06,
+          1.501,
+          -0.182
+        ],
+        [
+          0.06,
+          1.379,
+          -0.177
+        ],
+        [
+          0.062,
+          1.239,
+          -0.147
+        ],
+        [
+          0.06,
+          1.102,
+          -0.17
+        ],
+        [
+          0.059,
+          0.96,
+          -0.236
+        ],
+        [
+          0.088,
+          0.799,
+          -0.183
+        ],
+        [
+          0.118,
+          0.62,
+          -0.158
+        ],
+        [
+          0.148,
+          0.441,
+          -0.173
+        ],
+        [
+          0.178,
+          0.258,
+          -0.181
+        ],
+        [
+          0.197,
+          0.11,
+          -0.158
+        ],
+        [
+          0.233,
+          0.04,
+          0.001
+        ],
+        [
+          0.244,
+          0.016,
+          0.05
+        ]
+      ],
+      "acupointIds": [
+        "BL62",
+        "BL17",
+        "BL11"
+      ]
+    },
+    {
+      "id": "kidney",
+      "name": "足少阴肾经",
+      "abbr": "KI",
+      "category": "regular",
+      "hasOwnPoints": true,
+      "flowLabel": "足 → 胸",
+      "description": {
+        "text": "起于足小趾下，斜走足心，出内踝后，沿下肢内侧后缘上行，入腹属肾络膀胱，上贯肝膈，入肺，挟舌本。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-lingshu-jingmai"
+        ]
+      },
+      "totalPoints": 27,
+      "path": [
+        [
+          0.199,
+          0.034,
+          0.068
+        ],
+        [
+          0.176,
+          0.062,
+          -0.028
+        ],
+        [
+          0.186,
+          0.066,
+          -0.022
+        ],
+        [
+          0.188,
+          0.253,
+          -0.082
+        ],
+        [
+          0.157,
+          0.359,
+          -0.076
+        ],
+        [
+          0.171,
+          0.479,
+          -0.026
+        ],
+        [
+          0.16,
+          0.619,
+          -0.006
+        ],
+        [
+          0.119,
+          0.8,
+          0.006
+        ],
+        [
+          0.09,
+          0.94,
+          0.013
+        ],
+        [
+          0.072,
+          1.06,
+          0.028
+        ],
+        [
+          0.061,
+          1.179,
+          0.042
+        ],
+        [
+          0.05,
+          1.3,
+          0.038
+        ],
+        [
+          0.04,
+          1.422,
+          0.015
+        ],
+        [
+          0.03,
+          1.503,
+          -0.021
+        ]
+      ],
+      "acupointIds": [
+        "KI3",
+        "KI6"
+      ]
+    },
+    {
+      "id": "pericardium",
+      "name": "手厥阴心包经",
+      "abbr": "PC",
+      "category": "regular",
+      "hasOwnPoints": true,
+      "flowLabel": "胸 → 手",
+      "description": {
+        "text": "起于胸中，出属心包络，下膈，历络三焦；支脉循胸出胁，上抵腋下，沿上肢内侧中线下行，止于中指端。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-lingshu-jingmai"
+        ]
+      },
+      "totalPoints": 9,
+      "acupointIds": [
+        "PC6"
+      ]
+    },
+    {
+      "id": "triple-burner",
+      "name": "手少阳三焦经",
+      "abbr": "SJ",
+      "category": "regular",
+      "hasOwnPoints": true,
+      "flowLabel": "手 → 头",
+      "description": {
+        "text": "起于无名指尺侧端，沿上肢外侧中线上行，过肘、肩，入缺盆，布膻中，散络心包，下膈，遍属三焦；支脉上项，系耳后，止于目外眦。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-lingshu-jingmai"
+        ]
+      },
+      "totalPoints": 23,
+      "acupointIds": [
+        "SJ5"
+      ]
+    },
+    {
+      "id": "gallbladder",
+      "name": "足少阳胆经",
+      "abbr": "GB",
+      "category": "regular",
+      "hasOwnPoints": true,
+      "flowLabel": "头 → 足",
+      "description": {
+        "text": "起于目外眦，上抵头角，下耳后，循颈，行胁，经髋、下肢外侧，止于第四趾外侧端。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-lingshu-jingmai"
+        ]
+      },
+      "totalPoints": 44,
+      "acupointIds": [
+        "GB41",
+        "GB34",
+        "GB39",
+        "GB20"
+      ]
+    },
+    {
+      "id": "liver",
+      "name": "足厥阴肝经",
+      "abbr": "LR",
+      "category": "regular",
+      "hasOwnPoints": true,
+      "flowLabel": "足 → 腹胸",
+      "description": {
+        "text": "起于足大趾丛毛之际，沿足背、下肢内侧上行，绕阴器，入腹，挟胃属肝络胆，上贯膈，布胁肋，连目系，上出额，与督脉会于巅。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-lingshu-jingmai"
+        ]
+      },
+      "totalPoints": 14,
+      "acupointIds": [
+        "LR3",
+        "LR13"
+      ]
+    },
+    {
+      "id": "ren",
+      "name": "任脉",
+      "abbr": "REN",
+      "category": "extraordinary",
+      "hasOwnPoints": true,
+      "flowLabel": "下 → 上",
+      "description": {
+        "text": "任脉者，起于中极之下，以上毛际，循腹里，上关元，至咽喉，上颐循面入目。",
+        "kind": "quote",
+        "citationIds": [
+          "src-nanjing-28"
+        ]
+      },
+      "path": [
+        [
+          0,
+          0.898,
+          0.012
+        ],
+        [
+          0,
+          0.959,
+          0.033
+        ],
+        [
+          0.003,
+          1.101,
+          0.034
+        ],
+        [
+          0.001,
+          1.159,
+          0.044
+        ],
+        [
+          0,
+          1.341,
+          0.032
+        ],
+        [
+          0,
+          1.462,
+          -0.005
+        ],
+        [
+          0,
+          1.559,
+          -0.037
+        ]
+      ],
+      "pathNote": "3D 走向为示意线，不是解剖定位。",
+      "totalPoints": 24,
+      "acupointIds": [
+        "REN17",
+        "REN12",
+        "REN4"
+      ]
+    },
+    {
+      "id": "du",
+      "name": "督脉",
+      "abbr": "DU",
+      "category": "extraordinary",
+      "hasOwnPoints": true,
+      "flowLabel": "下 → 上",
+      "description": {
+        "text": "督脉者，起于下极之俞，并于脊里，上至风府，入属于脑。",
+        "kind": "quote",
+        "citationIds": [
+          "src-nanjing-28"
+        ]
+      },
+      "path": [
+        [
+          0.004,
+          0.898,
+          -0.181
+        ],
+        [
+          0.001,
+          1.052,
+          -0.192
+        ],
+        [
+          0,
+          1.2,
+          -0.147
+        ],
+        [
+          0.001,
+          1.349,
+          -0.168
+        ],
+        [
+          0,
+          1.522,
+          -0.17
+        ],
+        [
+          0,
+          1.648,
+          -0.143
+        ],
+        [
+          -0.001,
+          1.827,
+          0.003
+        ]
+      ],
+      "pathNote": "3D 走向为示意线，不是解剖定位。",
+      "totalPoints": 28,
+      "acupointIds": [
+        "DU20",
+        "DU14"
+      ]
+    },
+    {
+      "id": "chong",
+      "name": "冲脉",
+      "abbr": "CHONG",
+      "category": "extraordinary",
+      "hasOwnPoints": false,
+      "flowLabel": "下 → 上",
+      "description": {
+        "text": "起于气冲，并足阳明之经，夹脐上行，至胸中而散。本原型用八脉交会穴公孙作为冲脉的落点。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-nanjing-28"
+        ]
+      },
+      "acupointIds": []
+    },
+    {
+      "id": "dai",
+      "name": "带脉",
+      "abbr": "DAI",
+      "category": "extraordinary",
+      "hasOwnPoints": false,
+      "flowLabel": "环腰一周",
+      "description": {
+        "text": "起于季胁，回身一周。本原型用八脉交会穴足临泣作为带脉的落点。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-nanjing-28"
+        ]
+      },
+      "acupointIds": []
+    },
+    {
+      "id": "yinwei",
+      "name": "阴维脉",
+      "abbr": "YINWEI",
+      "category": "extraordinary",
+      "hasOwnPoints": false,
+      "flowLabel": "下肢内侧 → 咽喉",
+      "description": {
+        "text": "维系诸阴，起于小腿内侧，沿下肢内侧上行，至咽喉、舌本。本原型用八脉交会穴内关作为阴维脉的落点。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ]
+      },
+      "acupointIds": []
+    },
+    {
+      "id": "yangwei",
+      "name": "阳维脉",
+      "abbr": "YANGWEI",
+      "category": "extraordinary",
+      "hasOwnPoints": false,
+      "flowLabel": "下肢外侧 → 头项",
+      "description": {
+        "text": "维系诸阳，起于足外踝下，沿下肢外侧上行，经肩、颈至头项。本原型用八脉交会穴外关作为阳维脉的落点。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ]
+      },
+      "acupointIds": []
+    },
+    {
+      "id": "yinqiao",
+      "name": "阴跷脉",
+      "abbr": "YINQIAO",
+      "category": "extraordinary",
+      "hasOwnPoints": false,
+      "flowLabel": "足跟内侧 → 目内眦",
+      "description": {
+        "text": "起于足跟内侧，沿内踝上行，经下肢内侧、腹胸，至目内眦。本原型用八脉交会穴照海作为阴跷脉的落点。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ]
+      },
+      "acupointIds": []
+    },
+    {
+      "id": "yangqiao",
+      "name": "阳跷脉",
+      "abbr": "YANGQIAO",
+      "category": "extraordinary",
+      "hasOwnPoints": false,
+      "flowLabel": "足跟外侧 → 目内眦",
+      "description": {
+        "text": "起于足跟外侧，沿外踝上行，经下肢外侧、肩、颈，至目内眦。本原型用八脉交会穴申脉作为阳跷脉的落点。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ]
+      },
+      "acupointIds": []
+    }
+  ],
+  "acupoints": [
+    {
+      "id": "LU1",
+      "name": "中府",
+      "pinyin": "Zhōng Fǔ",
+      "meridianId": "lung",
+      "region": "trunk",
+      "pointTypes": [
+        {
+          "label": "募穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ],
+          "note": "肺募穴"
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在胸部，横平第1肋间隙，锁骨下窝外侧，前正中线旁开6寸。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "中府 LU1"
+      },
+      "indications": {
+        "text": "咳嗽、气喘、胸痛、肩背痛。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "中府 LU1"
+      },
+      "needle": {
+        "text": "针刺参考主治：咳嗽、气喘、胸痛、肩背痛。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "中府 LU1"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "中府 LU1"
+      },
+      "coordinates": [
+        0.143,
+        1.401,
+        0.009
+      ],
+      "annotation": "肺募",
+      "verification": "reference",
+      "safety": "胸部穴位，操作需专业人员，避免伤及肺脏。"
+    },
+    {
+      "id": "LU5",
+      "name": "尺泽",
+      "pinyin": "Chǐ Zé",
+      "meridianId": "lung",
+      "region": "upper-limb",
+      "pointTypes": [
+        {
+          "label": "合穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        },
+        {
+          "label": "子穴",
+          "citationIds": [
+            "src-nanjing-69",
+            "src-zhenjiuxue"
+          ],
+          "note": "肺经子穴"
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在肘区，肘横纹上，肱二头肌腱桡侧缘凹陷中。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "尺泽 LU5"
+      },
+      "indications": {
+        "text": "咳嗽、气喘、咯血、咽喉肿痛、肘臂挛痛。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "尺泽 LU5"
+      },
+      "needle": {
+        "text": "针刺参考主治：咳嗽、气喘、咯血、咽喉肿痛、肘臂挛痛。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "尺泽 LU5"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "尺泽 LU5"
+      },
+      "coordinates": [
+        0.357,
+        1.288,
+        -0.041
+      ],
+      "orderFromDistal": 7,
+      "annotation": "合·子",
+      "verification": "reference"
+    },
+    {
+      "id": "LU6",
+      "name": "孔最",
+      "pinyin": "Kǒng Zuì",
+      "meridianId": "lung",
+      "region": "upper-limb",
+      "pointTypes": [
+        {
+          "label": "郄穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在前臂前区，腕掌侧远端横纹上7寸，尺泽与太渊连线上。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "孔最 LU6"
+      },
+      "indications": {
+        "text": "咯血、咳嗽、气喘、咽喉肿痛、肘臂挛痛。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "孔最 LU6"
+      },
+      "needle": {
+        "text": "针刺参考主治：咯血、咳嗽、气喘、咽喉肿痛、肘臂挛痛。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "孔最 LU6"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "孔最 LU6"
+      },
+      "coordinates": [
+        0.418,
+        1.238,
+        0.024
+      ],
+      "orderFromDistal": 6,
+      "annotation": "郄",
+      "verification": "reference"
+    },
+    {
+      "id": "LU7",
+      "name": "列缺",
+      "pinyin": "Liè Quē",
+      "meridianId": "lung",
+      "region": "upper-limb",
+      "pointTypes": [
+        {
+          "label": "络穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        },
+        {
+          "label": "八脉交会穴·任脉",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [
+        {
+          "vesselId": "ren",
+          "label": "通任脉",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "location": {
+        "text": "在前臂，腕掌侧远端横纹上1.5寸，拇短伸肌腱与拇长展肌腱之间，拇长展肌腱沟的凹陷中。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "列缺 LU7"
+      },
+      "indications": {
+        "text": "咳嗽、气喘、咽喉肿痛、头痛、齿痛、项强、口眼歪斜。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "列缺 LU7"
+      },
+      "needle": {
+        "text": "针刺参考主治：咳嗽、气喘、咽喉肿痛、头痛、齿痛、项强、口眼歪斜。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "列缺 LU7"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "列缺 LU7"
+      },
+      "coordinates": [
+        0.453,
+        1.193,
+        0.08
+      ],
+      "orderFromDistal": 5,
+      "annotation": "络·任",
+      "verification": "reference"
+    },
+    {
+      "id": "LU9",
+      "name": "太渊",
+      "pinyin": "Tài Yuān",
+      "meridianId": "lung",
+      "region": "upper-limb",
+      "pointTypes": [
+        {
+          "label": "输穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        },
+        {
+          "label": "原穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        },
+        {
+          "label": "八会穴·脉会",
+          "citationIds": [
+            "src-nanjing-45",
+            "src-zhenjiuxue"
+          ]
+        },
+        {
+          "label": "母穴",
+          "citationIds": [
+            "src-nanjing-69",
+            "src-zhenjiuxue"
+          ],
+          "note": "肺经母穴，五行属土"
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在腕前区，桡骨茎突与舟状骨之间，拇长展肌腱尺侧凹陷中。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "太渊 LU9"
+      },
+      "indications": {
+        "text": "咳嗽、气喘、咯血、胸痛、咽喉肿痛、无脉症、腕臂痛。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "太渊 LU9"
+      },
+      "needle": {
+        "text": "针刺参考主治：咳嗽、气喘、咯血、胸痛、咽喉肿痛、无脉症、腕臂痛。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "太渊 LU9"
+      },
+      "moxa": {
+        "text": "灸法参考：虚寒性咳喘、胸痛；阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "太渊 LU9"
+      },
+      "coordinates": [
+        0.474,
+        1.174,
+        0.134
+      ],
+      "orderFromDistal": 3,
+      "annotation": "原·输·脉会·母",
+      "verification": "reference",
+      "safety": "腕部桡动脉处，操作需专业人员。"
+    },
+    {
+      "id": "LU2",
+      "name": "云门",
+      "pinyin": "Yún Mén",
+      "meridianId": "lung",
+      "region": "trunk",
+      "pointTypes": [
+        {
+          "label": "肺经胸部穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在胸部，锁骨下窝凹陷中，肩胛骨喙突内缘，前正中线旁开6寸。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "云门 LU2"
+      },
+      "indications": {
+        "text": "咳嗽、气喘、胸痛、肩背痛。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "云门 LU2"
+      },
+      "needle": {
+        "text": "针刺参考主治：咳嗽、气喘、胸痛、肩背痛。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "云门 LU2"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "云门 LU2"
+      },
+      "coordinates": [
+        0.183,
+        1.439,
+        -0.031
+      ],
+      "annotation": "肺经",
+      "verification": "reference",
+      "safety": "胸部穴位，操作需专业人员，避免伤及肺脏。"
+    },
+    {
+      "id": "LU3",
+      "name": "天府",
+      "pinyin": "Tiān Fǔ",
+      "meridianId": "lung",
+      "region": "upper-limb",
+      "pointTypes": [
+        {
+          "label": "肺经上臂穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在上臂前区，腋前纹头下3寸，肱二头肌桡侧缘。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "天府 LU3"
+      },
+      "indications": {
+        "text": "咳嗽、气喘、鼻衄、瘿气、上臂痛。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "天府 LU3"
+      },
+      "needle": {
+        "text": "针刺参考主治：咳嗽、气喘、鼻衄、瘿气、上臂痛。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "天府 LU3"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "天府 LU3"
+      },
+      "coordinates": [
+        0.257,
+        1.347,
+        -0.097
+      ],
+      "orderFromDistal": 9,
+      "annotation": "肺经",
+      "verification": "reference"
+    },
+    {
+      "id": "LU4",
+      "name": "侠白",
+      "pinyin": "Xiá Bái",
+      "meridianId": "lung",
+      "region": "upper-limb",
+      "pointTypes": [
+        {
+          "label": "肺经上臂穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在上臂前区，腋前纹头下4寸，肱二头肌桡侧缘。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "侠白 LU4"
+      },
+      "indications": {
+        "text": "咳嗽、气喘、干呕、上臂痛。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "侠白 LU4"
+      },
+      "needle": {
+        "text": "针刺参考主治：咳嗽、气喘、干呕、上臂痛。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "侠白 LU4"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "侠白 LU4"
+      },
+      "coordinates": [
+        0.347,
+        1.269,
+        -0.048
+      ],
+      "orderFromDistal": 8,
+      "annotation": "肺经",
+      "verification": "reference"
+    },
+    {
+      "id": "LU8",
+      "name": "经渠",
+      "pinyin": "Jīng Qú",
+      "meridianId": "lung",
+      "region": "upper-limb",
+      "pointTypes": [
+        {
+          "label": "经穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在前臂前区，腕掌侧远端横纹上1寸，桡骨茎突与桡动脉之间。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "经渠 LU8"
+      },
+      "indications": {
+        "text": "咳嗽、气喘、咽喉肿痛、胸痛、腕痛。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "经渠 LU8"
+      },
+      "needle": {
+        "text": "针刺参考主治：咳嗽、气喘、咽喉肿痛、胸痛、腕痛。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "经渠 LU8"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "经渠 LU8"
+      },
+      "coordinates": [
+        0.456,
+        1.182,
+        0.092
+      ],
+      "orderFromDistal": 4,
+      "annotation": "经",
+      "verification": "reference",
+      "safety": "邻近桡动脉，操作需专业人员。"
+    },
+    {
+      "id": "LU10",
+      "name": "鱼际",
+      "pinyin": "Yú Jì",
+      "meridianId": "lung",
+      "region": "upper-limb",
+      "pointTypes": [
+        {
+          "label": "荥穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在手外侧，第1掌骨桡侧中点赤白肉际处。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "鱼际 LU10"
+      },
+      "indications": {
+        "text": "咳嗽、咯血、咽干、咽喉肿痛、失音、掌中热。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "鱼际 LU10"
+      },
+      "needle": {
+        "text": "针刺参考主治：咳嗽、咯血、咽干、咽喉肿痛、失音、掌中热。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "鱼际 LU10"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "鱼际 LU10"
+      },
+      "coordinates": [
+        0.492,
+        1.103,
+        0.22
+      ],
+      "orderFromDistal": 2,
+      "annotation": "荥",
+      "verification": "reference"
+    },
+    {
+      "id": "LU11",
+      "name": "少商",
+      "pinyin": "Shào Shāng",
+      "meridianId": "lung",
+      "region": "upper-limb",
+      "pointTypes": [
+        {
+          "label": "井穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在手指，拇指末节桡侧，指甲根角侧上方0.1寸。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "少商 LU11"
+      },
+      "indications": {
+        "text": "咽喉肿痛、鼻衄、高热、昏迷、癫狂。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "少商 LU11"
+      },
+      "needle": {
+        "text": "针刺参考主治：咽喉肿痛、鼻衄、高热、昏迷、癫狂。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "少商 LU11"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "少商 LU11"
+      },
+      "coordinates": [
+        0.513,
+        1.052,
+        0.183
+      ],
+      "orderFromDistal": 1,
+      "annotation": "井",
+      "verification": "reference"
+    },
+    {
+      "id": "LI4",
+      "name": "合谷",
+      "pinyin": "Hé Gǔ",
+      "meridianId": "large-intestine",
+      "region": "upper-limb",
+      "pointTypes": [
+        {
+          "label": "原穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在手背，第2掌骨桡侧的中点处。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "合谷 LI4"
+      },
+      "indications": {
+        "text": "头痛、目赤肿痛、齿痛、鼻衄、口眼歪斜、耳聋、痄腮、咽喉肿痛、热病无汗、多汗、腹痛、便秘、经闭、滞产。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "合谷 LI4"
+      },
+      "needle": {
+        "text": "针刺参考主治：头痛、目赤肿痛、齿痛、鼻衄、口眼歪斜、耳聋、痄腮、咽喉肿痛、热病无汗、多汗、腹痛、便秘、经闭、滞产。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "合谷 LI4"
+      },
+      "moxa": {
+        "text": "灸法参考：寒证、虚证；孕妇及实热证慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "合谷 LI4"
+      },
+      "coordinates": [
+        -0.492,
+        1.103,
+        0.22
+      ],
+      "orderFromDistal": 1,
+      "annotation": "原",
+      "verification": "reference",
+      "safety": "孕妇慎用；针刺需专业人员。"
+    },
+    {
+      "id": "HT7",
+      "name": "神门",
+      "pinyin": "Shén Mén",
+      "meridianId": "heart",
+      "region": "upper-limb",
+      "pointTypes": [
+        {
+          "label": "输穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        },
+        {
+          "label": "原穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        },
+        {
+          "label": "子穴",
+          "citationIds": [
+            "src-nanjing-69",
+            "src-zhenjiuxue"
+          ],
+          "note": "心经子穴，五行属土"
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在腕前区，腕掌侧远端横纹尺侧端，尺侧腕屈肌腱的桡侧缘。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "神门 HT7"
+      },
+      "indications": {
+        "text": "心痛、心烦、惊悸、怔忡、健忘、失眠、癫狂痫、胸胁痛。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "神门 HT7"
+      },
+      "needle": {
+        "text": "针刺参考主治：心痛、心烦、惊悸、怔忡、健忘、失眠、癫狂痫、胸胁痛。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "神门 HT7"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "神门 HT7"
+      },
+      "coordinates": [
+        -0.474,
+        1.174,
+        0.134
+      ],
+      "orderFromDistal": 3,
+      "annotation": "原·输·子",
+      "verification": "reference",
+      "safety": "腕部邻近尺动脉与神经，操作需专业人员。"
+    },
+    {
+      "id": "SI3",
+      "name": "后溪",
+      "pinyin": "Hòu Xī",
+      "meridianId": "small-intestine",
+      "region": "upper-limb",
+      "pointTypes": [
+        {
+          "label": "输穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        },
+        {
+          "label": "八脉交会穴·督脉",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [
+        {
+          "vesselId": "du",
+          "label": "通督脉",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "location": {
+        "text": "在手内侧，第5掌指关节尺侧近端赤白肉际凹陷中。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "后溪 SI3"
+      },
+      "indications": {
+        "text": "头项强痛、腰背痛、手指及肘臂挛痛、耳聋、目赤、咽喉肿痛、癫狂痫、疟疾。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "后溪 SI3"
+      },
+      "needle": {
+        "text": "针刺参考主治：头项强痛、腰背痛、手指及肘臂挛痛、耳聋、目赤、咽喉肿痛、癫狂痫、疟疾。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "后溪 SI3"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "后溪 SI3"
+      },
+      "coordinates": [
+        -0.49,
+        1.096,
+        0.092
+      ],
+      "orderFromDistal": 2,
+      "annotation": "输·督",
+      "verification": "reference"
+    },
+    {
+      "id": "PC6",
+      "name": "内关",
+      "pinyin": "Nèi Guān",
+      "meridianId": "pericardium",
+      "region": "upper-limb",
+      "pointTypes": [
+        {
+          "label": "络穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        },
+        {
+          "label": "八脉交会穴·阴维脉",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [
+        {
+          "vesselId": "yinwei",
+          "label": "通阴维脉",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "location": {
+        "text": "在前臂前区，腕掌侧远端横纹上2寸，掌长肌腱与桡侧腕屈肌腱之间。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "内关 PC6"
+      },
+      "indications": {
+        "text": "心痛、心悸、胸闷、胸痛、呕吐、呃逆、失眠、郁证、癫狂痫、肘臂挛痛。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "内关 PC6"
+      },
+      "needle": {
+        "text": "针刺参考主治：心痛、心悸、胸闷、胸痛、呕吐、呃逆、失眠、郁证、癫狂痫、肘臂挛痛。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "内关 PC6"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "内关 PC6"
+      },
+      "coordinates": [
+        -0.427,
+        1.202,
+        0.055
+      ],
+      "orderFromDistal": 6,
+      "annotation": "络·阴维",
+      "verification": "reference",
+      "safety": "前臂正中神经附近，操作需专业人员。"
+    },
+    {
+      "id": "SJ5",
+      "name": "外关",
+      "pinyin": "Wài Guān",
+      "meridianId": "triple-burner",
+      "region": "upper-limb",
+      "pointTypes": [
+        {
+          "label": "络穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        },
+        {
+          "label": "八脉交会穴·阳维脉",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [
+        {
+          "vesselId": "yangwei",
+          "label": "通阳维脉",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "location": {
+        "text": "在前臂后区，腕背侧远端横纹上2寸，尺骨与桡骨间隙中点。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "外关 SJ5"
+      },
+      "indications": {
+        "text": "热病、头痛、目赤肿痛、耳鸣、耳聋、胁肋痛、上肢痿痹、肘臂屈伸不利。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "外关 SJ5"
+      },
+      "needle": {
+        "text": "针刺参考主治：热病、头痛、目赤肿痛、耳鸣、耳聋、胁肋痛、上肢痿痹、肘臂屈伸不利。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "外关 SJ5"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "外关 SJ5"
+      },
+      "coordinates": [
+        -0.441,
+        1.196,
+        -0.024
+      ],
+      "orderFromDistal": 7,
+      "annotation": "络·阳维",
+      "verification": "reference"
+    },
+    {
+      "id": "SP4",
+      "name": "公孙",
+      "pinyin": "Gōng Sūn",
+      "meridianId": "spleen",
+      "region": "lower-limb",
+      "pointTypes": [
+        {
+          "label": "络穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        },
+        {
+          "label": "八脉交会穴·冲脉",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [
+        {
+          "vesselId": "chong",
+          "label": "通冲脉",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "location": {
+        "text": "在跖区，第1跖骨底的前下缘赤白肉际处。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "公孙 SP4"
+      },
+      "indications": {
+        "text": "胃痛、呕吐、腹痛、泄泻、痢疾、心烦失眠、逆气里急。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "公孙 SP4"
+      },
+      "needle": {
+        "text": "针刺参考主治：胃痛、呕吐、腹痛、泄泻、痢疾、心烦失眠、逆气里急。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "公孙 SP4"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "公孙 SP4"
+      },
+      "coordinates": [
+        0.19,
+        0.039,
+        0.034
+      ],
+      "orderFromDistal": 3,
+      "annotation": "络·冲",
+      "verification": "reference"
+    },
+    {
+      "id": "LR3",
+      "name": "太冲",
+      "pinyin": "Tài Chōng",
+      "meridianId": "liver",
+      "region": "lower-limb",
+      "pointTypes": [
+        {
+          "label": "输穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        },
+        {
+          "label": "原穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在足背，第1、2跖骨间，跖骨底结合部前方凹陷中，或触及动脉搏动。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "太冲 LR3"
+      },
+      "indications": {
+        "text": "头痛、眩晕、目赤肿痛、口歪、胁痛、遗尿、疝气、崩漏、月经不调、癫痫、呕逆、下肢痿痹。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "太冲 LR3"
+      },
+      "needle": {
+        "text": "针刺参考主治：头痛、眩晕、目赤肿痛、口歪、胁痛、遗尿、疝气、崩漏、月经不调、癫痫、呕逆、下肢痿痹。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "太冲 LR3"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "太冲 LR3"
+      },
+      "coordinates": [
+        0.222,
+        0.034,
+        0.027
+      ],
+      "orderFromDistal": 2,
+      "annotation": "原·输",
+      "verification": "reference"
+    },
+    {
+      "id": "KI3",
+      "name": "太溪",
+      "pinyin": "Tài Xī",
+      "meridianId": "kidney",
+      "region": "lower-limb",
+      "pointTypes": [
+        {
+          "label": "输穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        },
+        {
+          "label": "原穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在踝区，内踝尖与跟腱之间的凹陷中。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "太溪 KI3"
+      },
+      "indications": {
+        "text": "头痛、目眩、咽喉肿痛、齿痛、耳聋、耳鸣、咳嗽、气喘、咯血、消渴、月经不调、失眠、健忘、遗精、阳痿、小便频数、腰脊痛。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "太溪 KI3"
+      },
+      "needle": {
+        "text": "针刺参考主治：头痛、目眩、咽喉肿痛、齿痛、耳聋、耳鸣、咳嗽、气喘、咯血、消渴、月经不调、失眠、健忘、遗精、阳痿、小便频数、腰脊痛。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "太溪 KI3"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "太溪 KI3"
+      },
+      "coordinates": [
+        0.175,
+        0.081,
+        -0.1
+      ],
+      "orderFromDistal": 4,
+      "annotation": "原·输",
+      "verification": "reference"
+    },
+    {
+      "id": "BL62",
+      "name": "申脉",
+      "pinyin": "Shēn Mài",
+      "meridianId": "bladder",
+      "region": "lower-limb",
+      "pointTypes": [
+        {
+          "label": "八脉交会穴·阳跷脉",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [
+        {
+          "vesselId": "yangqiao",
+          "label": "通阳跷脉",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "location": {
+        "text": "在踝区，外踝尖直下，外踝下缘与跟骨之间凹陷中。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "申脉 BL62"
+      },
+      "indications": {
+        "text": "头痛、眩晕、失眠、嗜睡、癫狂痫、目赤痛、腰腿痛、足踝痛。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "申脉 BL62"
+      },
+      "needle": {
+        "text": "针刺参考主治：头痛、眩晕、失眠、嗜睡、癫狂痫、目赤痛、腰腿痛、足踝痛。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "申脉 BL62"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "申脉 BL62"
+      },
+      "coordinates": [
+        0.243,
+        0.081,
+        -0.098
+      ],
+      "orderFromDistal": 6,
+      "annotation": "阳跷",
+      "verification": "reference"
+    },
+    {
+      "id": "KI6",
+      "name": "照海",
+      "pinyin": "Zhào Hǎi",
+      "meridianId": "kidney",
+      "region": "lower-limb",
+      "pointTypes": [
+        {
+          "label": "八脉交会穴·阴跷脉",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [
+        {
+          "vesselId": "yinqiao",
+          "label": "通阴跷脉",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "location": {
+        "text": "在踝区，内踝尖下1寸，内踝下缘边际凹陷中。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "照海 KI6"
+      },
+      "indications": {
+        "text": "咽喉干痛、目赤肿痛、失眠、嗜睡、癫狂痫、月经不调、带下、小便频数、便秘。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "照海 KI6"
+      },
+      "needle": {
+        "text": "针刺参考主治：咽喉干痛、目赤肿痛、失眠、嗜睡、癫狂痫、月经不调、带下、小便频数、便秘。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "照海 KI6"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "照海 KI6"
+      },
+      "coordinates": [
+        0.172,
+        0.062,
+        -0.05
+      ],
+      "orderFromDistal": 5,
+      "annotation": "阴跷",
+      "verification": "reference"
+    },
+    {
+      "id": "GB41",
+      "name": "足临泣",
+      "pinyin": "Zú Lín Qì",
+      "meridianId": "gallbladder",
+      "region": "lower-limb",
+      "pointTypes": [
+        {
+          "label": "输穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        },
+        {
+          "label": "八脉交会穴·带脉",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [
+        {
+          "vesselId": "dai",
+          "label": "通带脉",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "location": {
+        "text": "在足背，第4、5跖骨底结合部的前方，第5趾长伸肌腱外侧凹陷中。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "足临泣 GB41"
+      },
+      "indications": {
+        "text": "头痛、目赤肿痛、胁肋疼痛、月经不调、乳痈、瘰疬、足跗疼痛。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "足临泣 GB41"
+      },
+      "needle": {
+        "text": "针刺参考主治：头痛、目赤肿痛、胁肋疼痛、月经不调、乳痈、瘰疬、足跗疼痛。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "足临泣 GB41"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "足临泣 GB41"
+      },
+      "coordinates": [
+        0.242,
+        0.034,
+        0.01
+      ],
+      "orderFromDistal": 1,
+      "annotation": "输·带",
+      "verification": "reference"
+    },
+    {
+      "id": "ST25",
+      "name": "天枢",
+      "pinyin": "Tiān Shū",
+      "meridianId": "stomach",
+      "region": "trunk",
+      "pointTypes": [
+        {
+          "label": "募穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ],
+          "note": "大肠募穴"
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在腹部，横平脐中，前正中线旁开2寸。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "天枢 ST25"
+      },
+      "indications": {
+        "text": "腹痛、腹胀、便秘、泄泻、痢疾、月经不调、痛经。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "天枢 ST25"
+      },
+      "needle": {
+        "text": "针刺参考主治：腹痛、腹胀、便秘、泄泻、痢疾、月经不调、痛经。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "天枢 ST25"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "天枢 ST25"
+      },
+      "coordinates": [
+        0.072,
+        1.1,
+        0.029
+      ],
+      "annotation": "大肠募",
+      "verification": "reference"
+    },
+    {
+      "id": "ST36",
+      "name": "足三里",
+      "pinyin": "Zú Sān Lǐ",
+      "meridianId": "stomach",
+      "region": "lower-limb",
+      "pointTypes": [
+        {
+          "label": "合穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        },
+        {
+          "label": "胃下合穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在小腿外侧，犊鼻下3寸，胫骨前嵴外一横指处，犊鼻与解溪连线上。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "足三里 ST36"
+      },
+      "indications": {
+        "text": "胃痛、呕吐、腹胀、泄泻、便秘、痢疾、消化不良、下肢痿痹、虚劳羸瘦、心悸、失眠、眩晕、水肿。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "足三里 ST36"
+      },
+      "needle": {
+        "text": "针刺参考主治：胃痛、呕吐、腹胀、泄泻、便秘、痢疾、消化不良、下肢痿痹、虚劳羸瘦、心悸、失眠、眩晕、水肿。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "足三里 ST36"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "足三里 ST36"
+      },
+      "coordinates": [
+        0.202,
+        0.36,
+        -0.063
+      ],
+      "orderFromDistal": 9,
+      "annotation": "合·胃下合",
+      "verification": "reference"
+    },
+    {
+      "id": "SP6",
+      "name": "三阴交",
+      "pinyin": "Sān Yīn Jiāo",
+      "meridianId": "spleen",
+      "region": "lower-limb",
+      "pointTypes": [
+        {
+          "label": "交会穴·足三阴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在小腿内侧，内踝尖上3寸，胫骨内侧缘后际。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "三阴交 SP6"
+      },
+      "indications": {
+        "text": "月经不调、带下、阴挺、不孕、滞产、遗精、阳痿、遗尿、水肿、腹胀、泄泻、失眠、下肢痿痹。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "三阴交 SP6"
+      },
+      "needle": {
+        "text": "针刺参考主治：月经不调、带下、阴挺、不孕、滞产、遗精、阳痿、遗尿、水肿、腹胀、泄泻、失眠、下肢痿痹。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "三阴交 SP6"
+      },
+      "moxa": {
+        "text": "灸法参考：虚寒性妇科、脾胃病证；孕妇慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "三阴交 SP6"
+      },
+      "coordinates": [
+        0.176,
+        0.239,
+        -0.087
+      ],
+      "orderFromDistal": 8,
+      "annotation": "足三阴交会",
+      "verification": "reference",
+      "safety": "孕妇慎用。"
+    },
+    {
+      "id": "GB34",
+      "name": "阳陵泉",
+      "pinyin": "Yáng Líng Quán",
+      "meridianId": "gallbladder",
+      "region": "lower-limb",
+      "pointTypes": [
+        {
+          "label": "合穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        },
+        {
+          "label": "八会穴·筋会",
+          "citationIds": [
+            "src-nanjing-45",
+            "src-zhenjiuxue"
+          ]
+        },
+        {
+          "label": "胆下合穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在小腿外侧，腓骨头前下方凹陷中。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "阳陵泉 GB34"
+      },
+      "indications": {
+        "text": "黄疸、口苦、呕吐、胁肋疼痛、下肢痿痹、膝膑肿痛、脚气、小儿惊风。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "阳陵泉 GB34"
+      },
+      "needle": {
+        "text": "针刺参考主治：黄疸、口苦、呕吐、胁肋疼痛、下肢痿痹、膝膑肿痛、脚气、小儿惊风。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "阳陵泉 GB34"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "阳陵泉 GB34"
+      },
+      "coordinates": [
+        0.204,
+        0.44,
+        -0.059
+      ],
+      "orderFromDistal": 10,
+      "annotation": "合·筋会",
+      "verification": "reference"
+    },
+    {
+      "id": "GB39",
+      "name": "悬钟",
+      "pinyin": "Xuán Zhōng",
+      "meridianId": "gallbladder",
+      "region": "lower-limb",
+      "pointTypes": [
+        {
+          "label": "八会穴·髓会",
+          "citationIds": [
+            "src-nanjing-45",
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在小腿外侧，外踝尖上3寸，腓骨前缘。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "悬钟 GB39"
+      },
+      "indications": {
+        "text": "项强、胸胁胀痛、下肢痿痹、咽喉肿痛、脚气、痴呆、中风。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "悬钟 GB39"
+      },
+      "needle": {
+        "text": "针刺参考主治：项强、胸胁胀痛、下肢痿痹、咽喉肿痛、脚气、痴呆、中风。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "悬钟 GB39"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "悬钟 GB39"
+      },
+      "coordinates": [
+        0.223,
+        0.2,
+        -0.084
+      ],
+      "orderFromDistal": 7,
+      "annotation": "髓会",
+      "verification": "reference"
+    },
+    {
+      "id": "BL17",
+      "name": "膈俞",
+      "pinyin": "Gé Shù",
+      "meridianId": "bladder",
+      "region": "trunk",
+      "pointTypes": [
+        {
+          "label": "八会穴·血会",
+          "citationIds": [
+            "src-nanjing-45",
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在脊柱区，第7胸椎棘突下，后正中线旁开1.5寸。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "膈俞 BL17"
+      },
+      "indications": {
+        "text": "呕吐、呃逆、气喘、咳嗽、吐血、贫血、潮热、盗汗、背痛。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "膈俞 BL17"
+      },
+      "needle": {
+        "text": "针刺参考主治：呕吐、呃逆、气喘、咳嗽、吐血、贫血、潮热、盗汗、背痛。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "膈俞 BL17"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "膈俞 BL17"
+      },
+      "coordinates": [
+        0.061,
+        1.279,
+        -0.155
+      ],
+      "annotation": "血会",
+      "verification": "reference",
+      "safety": "背部穴位，操作需专业人员。"
+    },
+    {
+      "id": "BL11",
+      "name": "大杼",
+      "pinyin": "Dà Zhù",
+      "meridianId": "bladder",
+      "region": "trunk",
+      "pointTypes": [
+        {
+          "label": "八会穴·骨会",
+          "citationIds": [
+            "src-nanjing-45",
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在脊柱区，第1胸椎棘突下，后正中线旁开1.5寸。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "大杼 BL11"
+      },
+      "indications": {
+        "text": "咳嗽、发热、项强、肩背痛、骨节疼痛。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "大杼 BL11"
+      },
+      "needle": {
+        "text": "针刺参考主治：咳嗽、发热、项强、肩背痛、骨节疼痛。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "大杼 BL11"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "大杼 BL11"
+      },
+      "coordinates": [
+        0.061,
+        1.43,
+        -0.182
+      ],
+      "annotation": "骨会",
+      "verification": "reference",
+      "safety": "背部穴位，操作需专业人员。"
+    },
+    {
+      "id": "LR13",
+      "name": "章门",
+      "pinyin": "Zhāng Mén",
+      "meridianId": "liver",
+      "region": "trunk",
+      "pointTypes": [
+        {
+          "label": "募穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ],
+          "note": "脾募穴"
+        },
+        {
+          "label": "八会穴·脏会",
+          "citationIds": [
+            "src-nanjing-45",
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在侧腹部，第11肋游离端的下际。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "章门 LR13"
+      },
+      "indications": {
+        "text": "腹痛、腹胀、泄泻、呕吐、胁痛、痞块、黄疸。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "章门 LR13"
+      },
+      "needle": {
+        "text": "针刺参考主治：腹痛、腹胀、泄泻、呕吐、胁痛、痞块、黄疸。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "章门 LR13"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "章门 LR13"
+      },
+      "coordinates": [
+        0.145,
+        1.121,
+        -0.018
+      ],
+      "annotation": "脾募·脏会",
+      "verification": "reference",
+      "safety": "侧腹部穴位，操作需专业人员。"
+    },
+    {
+      "id": "REN17",
+      "name": "膻中",
+      "pinyin": "Dàn Zhōng",
+      "meridianId": "ren",
+      "region": "trunk",
+      "pointTypes": [
+        {
+          "label": "募穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ],
+          "note": "心包募穴"
+        },
+        {
+          "label": "八会穴·气会",
+          "citationIds": [
+            "src-nanjing-45",
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在胸部，横平第4肋间隙，前正中线上。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "膻中 REN17"
+      },
+      "indications": {
+        "text": "咳嗽、气喘、胸痛、心悸、乳少、呕吐、噎膈。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "膻中 REN17"
+      },
+      "needle": {
+        "text": "针刺参考主治：咳嗽、气喘、胸痛、心悸、乳少、呕吐、噎膈。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "膻中 REN17"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "膻中 REN17"
+      },
+      "coordinates": [
+        0,
+        1.341,
+        0.032
+      ],
+      "annotation": "心包募·气会",
+      "verification": "reference",
+      "safety": "胸部穴位，操作需专业人员。"
+    },
+    {
+      "id": "REN12",
+      "name": "中脘",
+      "pinyin": "Zhōng Wǎn",
+      "meridianId": "ren",
+      "region": "trunk",
+      "pointTypes": [
+        {
+          "label": "募穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ],
+          "note": "胃募穴"
+        },
+        {
+          "label": "八会穴·腑会",
+          "citationIds": [
+            "src-nanjing-45",
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在上腹部，脐中上4寸，前正中线上。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "中脘 REN12"
+      },
+      "indications": {
+        "text": "胃痛、腹胀、呕吐、呃逆、吞酸、泄泻、黄疸、癫狂、失眠。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "中脘 REN12"
+      },
+      "needle": {
+        "text": "针刺参考主治：胃痛、腹胀、呕吐、呃逆、吞酸、泄泻、黄疸、癫狂、失眠。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "中脘 REN12"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "中脘 REN12"
+      },
+      "coordinates": [
+        0.001,
+        1.159,
+        0.044
+      ],
+      "annotation": "胃募·腑会",
+      "verification": "reference",
+      "safety": "上腹部穴位，操作需专业人员。"
+    },
+    {
+      "id": "REN4",
+      "name": "关元",
+      "pinyin": "Guān Yuán",
+      "meridianId": "ren",
+      "region": "trunk",
+      "pointTypes": [
+        {
+          "label": "募穴",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ],
+          "note": "小肠募穴"
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在下腹部，脐中下3寸，前正中线上。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "关元 REN4"
+      },
+      "indications": {
+        "text": "遗尿、小便频数、尿闭、遗精、阳痿、月经不调、痛经、不孕、崩漏、带下、虚劳羸瘦、中风脱证。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "关元 REN4"
+      },
+      "needle": {
+        "text": "针刺参考主治：遗尿、小便频数、尿闭、遗精、阳痿、月经不调、痛经、不孕、崩漏、带下、虚劳羸瘦、中风脱证。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "关元 REN4"
+      },
+      "moxa": {
+        "text": "灸法参考：下焦虚寒、虚劳、月经不调；孕妇慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "关元 REN4"
+      },
+      "coordinates": [
+        0,
+        0.959,
+        0.033
+      ],
+      "annotation": "小肠募",
+      "verification": "reference",
+      "safety": "孕妇慎用；膀胱充盈时慎针。"
+    },
+    {
+      "id": "DU20",
+      "name": "百会",
+      "pinyin": "Bǎi Huì",
+      "meridianId": "du",
+      "region": "head-neck",
+      "pointTypes": [
+        {
+          "label": "交会穴·督脉与足太阳、少阳",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在头部，前发际正中直上5寸，或头顶正中线与两耳尖连线的交点处。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "百会 DU20"
+      },
+      "indications": {
+        "text": "头痛、眩晕、中风、失语、癫狂痫、失眠、健忘、脱肛、阴挺、久泄。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "百会 DU20"
+      },
+      "needle": {
+        "text": "针刺参考主治：头痛、眩晕、中风、失语、癫狂痫、失眠、健忘、脱肛、阴挺、久泄。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "百会 DU20"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "百会 DU20"
+      },
+      "coordinates": [
+        -0.001,
+        1.827,
+        0.003
+      ],
+      "annotation": "督脉",
+      "verification": "reference"
+    },
+    {
+      "id": "DU14",
+      "name": "大椎",
+      "pinyin": "Dà Zhuī",
+      "meridianId": "du",
+      "region": "head-neck",
+      "pointTypes": [
+        {
+          "label": "交会穴·手足三阳与督脉",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在脊柱区，第7颈椎棘突下凹陷中，后正中线上。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "大椎 DU14"
+      },
+      "indications": {
+        "text": "热病、疟疾、恶寒发热、咳嗽、气喘、骨蒸盗汗、癫狂痫、项强、肩背痛。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "大椎 DU14"
+      },
+      "needle": {
+        "text": "针刺参考主治：热病、疟疾、恶寒发热、咳嗽、气喘、骨蒸盗汗、癫狂痫、项强、肩背痛。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "大椎 DU14"
+      },
+      "moxa": {
+        "text": "灸法参考：同本穴主治，偏寒、偏虚者更宜；实热、阴虚火旺者慎灸。具体操作须由执业中医师完成。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "大椎 DU14"
+      },
+      "coordinates": [
+        0,
+        1.522,
+        -0.17
+      ],
+      "annotation": "督脉",
+      "verification": "reference",
+      "safety": "项背部穴位，操作需专业人员。"
+    },
+    {
+      "id": "GB20",
+      "name": "风池",
+      "pinyin": "Fēng Chí",
+      "meridianId": "gallbladder",
+      "region": "head-neck",
+      "pointTypes": [
+        {
+          "label": "交会穴·足少阳与阳维",
+          "citationIds": [
+            "src-zhenjiuxue"
+          ]
+        }
+      ],
+      "extraordinaryConnections": [],
+      "location": {
+        "text": "在颈后区，枕骨之下，胸锁乳突肌上端与斜方肌上端之间的凹陷中。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-gb-12346"
+        ],
+        "locator": "风池 GB20"
+      },
+      "indications": {
+        "text": "头痛、眩晕、失眠、颈项强痛、目赤肿痛、鼻塞、耳鸣、中风、癫痫。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "风池 GB20"
+      },
+      "needle": {
+        "text": "针刺参考主治：头痛、眩晕、失眠、颈项强痛、目赤肿痛、鼻塞、耳鸣、中风、癫痫。具体操作须由执业中医师完成。",
+        "kind": "paraphrase",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "风池 GB20"
+      },
+      "moxa": {
+        "text": "本穴以针刺为主；艾灸需由专业人员辨证操作。",
+        "kind": "analysis",
+        "citationIds": [
+          "src-zhenjiuxue"
+        ],
+        "locator": "风池 GB20"
+      },
+      "coordinates": [
+        0.052,
+        1.581,
+        -0.135
+      ],
+      "annotation": "胆经",
+      "verification": "reference",
+      "safety": "颈项部穴位，深部邻近重要结构，必须由专业人员操作。"
+    }
+  ]
+}

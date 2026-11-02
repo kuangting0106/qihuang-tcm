@@ -1,0 +1,337 @@
+{
+  "gancao": {
+    "taxon": "Glycyrrhiza uralensis",
+    "images": [
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/gancao-1.jpeg",
+        "alt": "Glycyrrhiza uralensis 植株与花序",
+        "caption": "植株与花序",
+        "credit": "(c) Виктория Билоус, some rights reserved (CC BY)",
+        "license": "CC-BY",
+        "sourceUrl": "https://www.inaturalist.org/observations/95428012",
+        "bytes": 616726,
+        "slot": "whole"
+      },
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/gancao-3.jpg",
+        "alt": "Glycyrrhiza uralensis 群落",
+        "caption": "群落",
+        "credit": "(c) Oleg Kosterin, some rights reserved (CC BY)",
+        "license": "CC-BY",
+        "sourceUrl": "https://www.inaturalist.org/observations/100291274",
+        "bytes": 1031383,
+        "slot": "part"
+      },
+      {
+        "type": "pending",
+        "url": "/images/herbs/real/pending-medicinal.svg",
+        "alt": "药材切片图待补",
+        "caption": "药材切片图待补",
+        "credit": "待补：公开授权图库暂缺",
+        "license": "—",
+        "slot": "medicinal",
+        "pending": true
+      }
+    ]
+  },
+  "guizhi": {
+    "taxon": "Cinnamomum cassia",
+    "images": [
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/guizhi-3.jpg",
+        "alt": "Cinnamomum cassia 叶",
+        "caption": "叶",
+        "credit": "(c) 胡正恆(Jackson Hu), some rights reserved (CC BY)",
+        "license": "CC-BY",
+        "sourceUrl": "https://www.inaturalist.org/observations/149819745",
+        "bytes": 336233,
+        "slot": "whole"
+      },
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/guizhi-2.jpg",
+        "alt": "Cinnamomum cassia 花蕾",
+        "caption": "花蕾",
+        "credit": "no rights reserved",
+        "license": "CC0",
+        "sourceUrl": "https://www.inaturalist.org/observations/340155238",
+        "bytes": 332527,
+        "slot": "part"
+      },
+      {
+        "type": "pending",
+        "url": "/images/herbs/real/pending-medicinal.svg",
+        "alt": "药材切片图待补",
+        "caption": "药材切片图待补",
+        "credit": "待补：公开授权图库暂缺",
+        "license": "—",
+        "slot": "medicinal",
+        "pending": true
+      }
+    ]
+  },
+  "baishao": {
+    "taxon": "Paeonia lactiflora",
+    "images": [
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/baishao-2.jpg",
+        "alt": "Paeonia lactiflora 叶",
+        "caption": "叶",
+        "credit": "(c) Tatyana Petrenko, some rights reserved (CC BY)",
+        "license": "CC-BY",
+        "sourceUrl": "https://www.inaturalist.org/observations/187088591",
+        "bytes": 640306,
+        "slot": "whole"
+      },
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/baishao-1.jpg",
+        "alt": "Paeonia lactiflora 花",
+        "caption": "花",
+        "credit": "no rights reserved",
+        "license": "CC0",
+        "sourceUrl": "https://www.inaturalist.org/observations/376014961",
+        "bytes": 372323,
+        "slot": "part"
+      },
+      {
+        "type": "pending",
+        "url": "/images/herbs/real/pending-medicinal.svg",
+        "alt": "药材切片图待补",
+        "caption": "药材切片图待补",
+        "credit": "待补：公开授权图库暂缺",
+        "license": "—",
+        "slot": "medicinal",
+        "pending": true
+      }
+    ]
+  },
+  "shengjiang": {
+    "taxon": "Zingiber officinale",
+    "images": [
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/shengjiang-1.jpg",
+        "alt": "Zingiber officinale 叶",
+        "caption": "叶",
+        "credit": "(c) zebedeugalinha, some rights reserved (CC BY)",
+        "license": "CC-BY",
+        "sourceUrl": "https://www.inaturalist.org/observations/326388409",
+        "bytes": 193175,
+        "slot": "whole"
+      },
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/shengjiang-root1.jpg",
+        "alt": "Zingiber officinale 根茎",
+        "caption": "根茎",
+        "credit": "(c) Angel Thakur, some rights reserved (CC BY-NC)",
+        "license": "CC-BY-NC",
+        "sourceUrl": "https://www.inaturalist.org/observations/332600510",
+        "bytes": 509167,
+        "slot": "part"
+      },
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/shengjiang-root2.jpg",
+        "alt": "Zingiber officinale 根茎",
+        "caption": "根茎",
+        "credit": "(c) Angel Thakur, some rights reserved (CC BY-NC)",
+        "license": "CC-BY-NC",
+        "sourceUrl": "https://www.inaturalist.org/observations/332600510",
+        "bytes": 599362,
+        "slot": "medicinal"
+      }
+    ]
+  },
+  "dazao": {
+    "taxon": "Ziziphus jujuba",
+    "images": [
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/dazao-3.jpeg",
+        "alt": "Ziziphus jujuba 叶与果",
+        "caption": "叶与果",
+        "credit": "(c) Paul Maier, some rights reserved (CC BY-NC)",
+        "license": "CC-BY-NC",
+        "sourceUrl": "https://www.inaturalist.org/observations/62895029",
+        "bytes": 493119,
+        "slot": "whole"
+      },
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/dazao-fruit2.jpg",
+        "alt": "Ziziphus jujuba 果实与叶",
+        "caption": "果实与叶",
+        "credit": "(c) Kristof & Yulia, some rights reserved (CC BY)",
+        "license": "CC-BY",
+        "sourceUrl": "https://www.inaturalist.org/observations/5305507",
+        "bytes": 541891,
+        "slot": "part"
+      },
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/dazao-fruit1.jpg",
+        "alt": "Ziziphus jujuba 果实",
+        "caption": "果实",
+        "credit": "(c) Kristof & Yulia, some rights reserved (CC BY)",
+        "license": "CC-BY",
+        "sourceUrl": "https://www.inaturalist.org/observations/5305507",
+        "bytes": 286954,
+        "slot": "medicinal"
+      }
+    ]
+  },
+  "chaihu": {
+    "taxon": "Bupleurum chinense",
+    "images": [
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/chaihu-2.jpg",
+        "alt": "Bupleurum chinense 植株",
+        "caption": "植株",
+        "credit": "(c) 红梅, some rights reserved (CC BY-NC)",
+        "license": "CC-BY-NC",
+        "sourceUrl": "https://www.inaturalist.org/observations/310681246",
+        "bytes": 341061,
+        "slot": "whole"
+      },
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/chaihu-1.jpeg",
+        "alt": "Bupleurum chinense 花序",
+        "caption": "花序",
+        "credit": "(c) 红梅, some rights reserved (CC BY-NC)",
+        "license": "CC-BY-NC",
+        "sourceUrl": "https://www.inaturalist.org/observations/236824503",
+        "bytes": 429464,
+        "slot": "part"
+      },
+      {
+        "type": "pending",
+        "url": "/images/herbs/real/pending-medicinal.svg",
+        "alt": "药材切片图待补",
+        "caption": "药材切片图待补",
+        "credit": "待补：公开授权图库暂缺",
+        "license": "—",
+        "slot": "medicinal",
+        "pending": true
+      }
+    ]
+  },
+  "huangqin": {
+    "taxon": "Scutellaria baicalensis",
+    "images": [
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/huangqin-2.jpg",
+        "alt": "Scutellaria baicalensis 花序",
+        "caption": "花序",
+        "credit": "(c) Святослав Власенко, some rights reserved (CC BY)",
+        "license": "CC-BY",
+        "sourceUrl": "https://www.inaturalist.org/observations/308619072",
+        "bytes": 808371,
+        "slot": "whole"
+      },
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/huangqin-c1.jpeg",
+        "alt": "Scutellaria baicalensis 花",
+        "caption": "花",
+        "credit": "(c) Юрій Бенгус, some rights reserved (CC BY-NC)",
+        "license": "CC-BY-NC",
+        "sourceUrl": "https://www.inaturalist.org/observations/124349409",
+        "bytes": 456419,
+        "slot": "part"
+      },
+      {
+        "type": "pending",
+        "url": "/images/herbs/real/pending-medicinal.svg",
+        "alt": "药材切片图待补",
+        "caption": "药材切片图待补",
+        "credit": "待补：公开授权图库暂缺",
+        "license": "—",
+        "slot": "medicinal",
+        "pending": true
+      }
+    ]
+  },
+  "banxia": {
+    "taxon": "Pinellia ternata",
+    "images": [
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/banxia-2.jpeg",
+        "alt": "Pinellia ternata 叶",
+        "caption": "叶",
+        "credit": "(c) Erin Lalime, some rights reserved (CC BY)",
+        "license": "CC-BY",
+        "sourceUrl": "https://www.inaturalist.org/observations/45420796",
+        "bytes": 351218,
+        "slot": "whole"
+      },
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/banxia-1.jpg",
+        "alt": "Pinellia ternata 佛焰苞",
+        "caption": "佛焰苞",
+        "credit": "no rights reserved",
+        "license": "CC0",
+        "sourceUrl": "https://www.inaturalist.org/observations/86015175",
+        "bytes": 49502,
+        "slot": "part"
+      },
+      {
+        "type": "pending",
+        "url": "/images/herbs/real/pending-medicinal.svg",
+        "alt": "药材切片图待补",
+        "caption": "药材切片图待补",
+        "credit": "待补：公开授权图库暂缺",
+        "license": "—",
+        "slot": "medicinal",
+        "pending": true
+      }
+    ]
+  },
+  "renshen": {
+    "taxon": "Panax ginseng",
+    "images": [
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/renshen-2.jpeg",
+        "alt": "Panax ginseng 生境",
+        "caption": "生境",
+        "credit": "(c) Maria Khoreva, some rights reserved (CC BY)",
+        "license": "CC-BY",
+        "sourceUrl": "https://www.inaturalist.org/observations/244678306",
+        "bytes": 515254,
+        "slot": "whole"
+      },
+      {
+        "type": "photo",
+        "url": "/images/herbs/real/renshen-1.jpg",
+        "alt": "Panax ginseng 叶",
+        "caption": "叶",
+        "credit": "(c) Nina Filippova, some rights reserved (CC BY)",
+        "license": "CC-BY",
+        "sourceUrl": "https://www.inaturalist.org/observations/93914221",
+        "bytes": 170075,
+        "slot": "part"
+      },
+      {
+        "type": "pending",
+        "url": "/images/herbs/real/pending-medicinal.svg",
+        "alt": "药材切片图待补",
+        "caption": "药材切片图待补",
+        "credit": "待补：公开授权图库暂缺",
+        "license": "—",
+        "slot": "medicinal",
+        "pending": true
+      }
+    ]
+  }
+}
