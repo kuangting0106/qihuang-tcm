@@ -47,7 +47,7 @@ const modules = computed(() => [
   <div class="home">
     <section class="hero container">
       <div class="hero__copy">
-        <p class="eyebrow">TCM KNOWLEDGE ATLAS · 学习原型</p>
+        <p class="eyebrow">TCM KNOWLEDGE ATLAS · 中医易学</p>
         <h1>岐黄图鉴</h1>
         <p class="hero__lead">
           把经络、本草、方剂放在同一张可点击的知识地图上。
@@ -80,14 +80,6 @@ const modules = computed(() => [
     </section>
 
     <section class="module-section container">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">THREE ENTRANCES</p>
-          <h2>从三个入口进入</h2>
-        </div>
-        <p>第一版用样例数据跑通闭环：可点击、可旋转、可跳转、可查出处。</p>
-      </div>
-
       <div class="module-grid">
         <RouterLink
           v-for="(m, index) in modules"

@@ -89,7 +89,6 @@ const currentSlotLabel = computed(() => {
           </div>
           <div class="detail-tags">
             <span v-for="t in herb.flavorTags" :key="t" class="chip chip--cinnabar">{{ t }}</span>
-            <span v-for="m in meridianLinks" :key="m.id" class="chip chip--jade">{{ m.name }}</span>
             <span class="chip chip--gold">{{ herb.verification === 'reference' ? '药典依据' : '待核验' }}</span>
           </div>
           <div class="taxonomy-links">
