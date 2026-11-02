@@ -295,15 +295,16 @@ const modules = computed(() => [
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 4px 2px;
+  gap: 4px 6px;
   margin-top: 26px;
   padding-top: 14px;
-  max-width: 560px;
+  max-width: 840px;
   border-top: 1px solid var(--line-strong);
 }
 
 .hero-index__label {
-  margin-right: 8px;
+  flex-basis: 100%;
+  margin: 0 0 6px;
   color: var(--ink-faint);
   font-family: var(--serif);
   font-size: 0.68rem;
@@ -311,10 +312,10 @@ const modules = computed(() => [
 }
 
 .hero-index a {
-  padding: 5px 9px;
+  padding: 5px 10px;
   border-radius: 999px;
   color: var(--ink-soft);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   transition: color 0.18s ease, background 0.18s ease;
 }
 
@@ -324,28 +325,28 @@ const modules = computed(() => [
 }
 
 .hero__stats {
-  margin: 30px 0 0;
+  margin: 26px 0 0;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-  max-width: 520px;
+  gap: 12px;
+  max-width: 440px;
 }
 
 .hero__stats div {
   border-top: 1px solid var(--line-strong);
-  padding-top: 12px;
+  padding-top: 10px;
 }
 
 .hero__stats dt {
   font-family: var(--serif);
-  font-size: 1.7rem;
+  font-size: 1.12rem;
   line-height: 1;
 }
 
 .hero__stats dd {
-  margin: 6px 0 0;
+  margin: 5px 0 0;
   color: var(--ink-soft);
-  font-size: 0.76rem;
+  font-size: 0.66rem;
 }
 
 .module-section {
@@ -799,7 +800,7 @@ const modules = computed(() => [
 
   .hero-index a {
     padding: 5px 7px;
-    font-size: 0.76rem;
+    font-size: 0.84rem;
   }
 
   .section-head {

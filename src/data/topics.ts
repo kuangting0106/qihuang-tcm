@@ -69,6 +69,7 @@ export const caseTopics: Topic[] = [
   { id: 'abscess', title: '脓疡', subtitle: '痈疽、脓疡类医案。' },
   { id: 'gynecology', title: '孕妇科', subtitle: '妇科、妊娠相关医案。' },
   { id: 'andrology', title: '男科', subtitle: '男科相关医案与按语。' },
+  { id: 'mental', title: '精神', subtitle: '精神情志类医案与按语；具体内容待按原文录入。' },
 ]
 
 export const topicSections = {
