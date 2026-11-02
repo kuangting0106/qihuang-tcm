@@ -47,8 +47,8 @@ const modules = computed(() => [
   <div class="home">
     <section class="hero container">
       <div class="hero__copy">
-        <p class="eyebrow">TCM KNOWLEDGE ATLAS · 中医易学</p>
-        <h1>岐黄图鉴</h1>
+        <p class="eyebrow">TCM KNOWLEDGE ATLAS · 岐黄图鉴</p>
+        <h1>中医易学</h1>
         <p class="hero__lead">
           把经络、本草、方剂放在同一张可点击的知识地图上。
           <span>先看原文，再看方解；每一条中医内容，都能找到出处。</span>

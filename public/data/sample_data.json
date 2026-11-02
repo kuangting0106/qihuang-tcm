@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "contentVersion": "2026.11.1-prototype",
-  "generatedAt": "2026-11-02T04:08:26.310Z",
+  "generatedAt": "2026-11-02T08:25:35.424Z",
   "title": "岐黄图鉴",
   "disclaimer": "本站为中医知识学习原型，不构成诊疗建议。针刺、艾灸、用药须由执业中医师辨证操作；方剂与药性内容请以原书及现行标准为准。",
   "contentPrinciples": [
@@ -69,6 +69,15 @@
       "note": "古名、别名据《神农本草经》及后世本草文献归纳；本原型未逐条附原文，正式上线前应补具体辑复本页码。"
     },
     {
+      "id": "src-shennong-bencaojing-xulu",
+      "type": "classic",
+      "work": "神农本草经",
+      "edition": "辑复本",
+      "locator": "序录",
+      "quote": "上药一百二十种为君，主养命以应天，无毒，多服久服不伤人，欲轻身益气，不老延年者，本上经。中药一百二十种为臣，主养性以应人，无毒有毒，斟酌其宜，欲遏病补虚羸者，本中经。下药一百二十五种为佐使，主治病以应地，多毒，不可久服，欲除寒热邪气，破积聚，愈疾者，本下经。",
+      "note": "三品分类的经典依据；具体药物归品仍以辑复本各药条为准。"
+    },
+    {
       "id": "src-bencao-gangmu",
       "type": "classic",
       "work": "本草纲目",
@@ -94,6 +103,14 @@
       "locator": "第六十九难",
       "quote": "经言虚者补之，实者泻之，不虚不实，以经取之，何谓也？然：虚者补其母，实者泻其子，当先补之，然后泻之。不虚不实，以经取之者，是正经自生病，不中他邪也，当自取其经，故言以经取之。",
       "note": "母穴、子穴的经典依据；具体五输穴五行归属按《针灸学》教材。"
+    },
+    {
+      "id": "src-yaodian-paozhi",
+      "type": "standard",
+      "work": "中华人民共和国药典",
+      "edition": "2020 年版一部",
+      "locator": "炮制通则及各药【炮制】项",
+      "note": "各药炮制方法据药典【炮制】项归纳，属“摘录”，不是逐字原文；具体工艺、辅料比例与成品性状须以现行版药典及当地炮制规范复核。本页不构成自行炮制建议。"
     },
     {
       "id": "src-yaodian-gancao",
@@ -354,7 +371,41 @@
           "note": "甘草调和诸药；半夏有毒，临床须炮制并遵医嘱。"
         }
       ],
-      "verification": "reference"
+      "verification": "reference",
+      "classicRankId": "upper",
+      "therapyCategoryIds": [
+        "warm-tonic",
+        "cough-phlegm"
+      ],
+      "processing": {
+        "categoryId": "plants",
+        "summary": "生甘草洗净、润透、切厚片；炙甘草以炼蜜拌炒至黄色至深黄色、不粘手。",
+        "methods": [
+          {
+            "label": "净制与切制",
+            "text": "除去杂质，洗净，润透，切厚片，干燥。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          },
+          {
+            "label": "蜜炙（炙甘草）",
+            "text": "取甘草片，加炼蜜拌匀，闷透，置锅内，用文火炒至黄色至深黄色、不粘手时取出，晾凉。每 100 kg 甘草片，用炼蜜 25 kg。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          }
+        ],
+        "product": "饮片为类圆形或椭圆形厚片，表面红棕色或灰棕色；蜜炙后表面黄色至深黄色，微有光泽，略带黏性。",
+        "cautions": [
+          "蜜炙后偏于补脾益气；湿盛胀满、水肿者不宜。",
+          "不宜与海藻、京大戟、红大戟、甘遂、芫花同用。"
+        ],
+        "note": "药典【炮制】项归纳；炼蜜比例与火候以现行版药典及当地炮制规范为准。",
+        "verification": "reference"
+      }
     },
     {
       "id": "guizhi",
@@ -499,7 +550,31 @@
           "note": "桂枝汤方解，属后世教材归纳。"
         }
       ],
-      "verification": "reference"
+      "verification": "reference",
+      "classicRankId": "upper",
+      "therapyCategoryIds": [
+        "exterior"
+      ],
+      "processing": {
+        "categoryId": "plants",
+        "summary": "除去杂质，稍浸洗净，润透后切薄片，晾干。",
+        "methods": [
+          {
+            "label": "净制与切制",
+            "text": "除去杂质，稍浸，洗净，润透，切薄片，晾干。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          }
+        ],
+        "product": "类圆形或椭圆形薄片，皮部红棕色，木部黄白色至浅黄棕色，髓部略呈方形，有特异香气。",
+        "cautions": [
+          "温热病、阴虚火旺、血热妄行者忌用；孕妇慎用。"
+        ],
+        "note": "药典【炮制】项归纳；桂枝与肉桂为不同药材，不可互相替代。",
+        "verification": "reference"
+      }
     },
     {
       "id": "baishao",
@@ -636,7 +711,64 @@
         }
       ],
       "verification": "reference",
-      "note": "《伤寒论》桂枝汤原文作“芍药”；本方样例按现代药材名“白芍”建条目。"
+      "note": "《伤寒论》桂枝汤原文作“芍药”；本方样例按现代药材名“白芍”建条目。",
+      "classicRankId": "middle",
+      "therapyCategoryIds": [
+        "astringent"
+      ],
+      "processing": {
+        "categoryId": "plants",
+        "summary": "沸水煮后去皮（或去皮再煮）、晒干；润透切薄片。另有炒、酒炙、醋炙等规格。",
+        "methods": [
+          {
+            "label": "净制",
+            "text": "洗净，除去头尾及细根，置沸水中煮后除去外皮，或去皮后再煮，晒干。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          },
+          {
+            "label": "切制",
+            "text": "洗净，润透，切薄片，干燥。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          },
+          {
+            "label": "炒白芍",
+            "text": "取白芍片，照清炒法炒至微黄色。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          },
+          {
+            "label": "酒白芍",
+            "text": "取白芍片，照酒炙法炒至微黄色。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          },
+          {
+            "label": "醋白芍",
+            "text": "取白芍片，照醋炙法炒至微黄色。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          }
+        ],
+        "product": "类圆形或椭圆形薄片，表面淡棕红色或类白色，平滑；切面类白色或微带棕红色，形成层环明显。",
+        "cautions": [
+          "不宜与藜芦同用。",
+          "阳衰虚寒之证不宜单独应用。"
+        ],
+        "note": "煮制、去皮与酒/醋炙规格据药典【炮制】项；辅料用量与火候待逐条补页码。",
+        "verification": "reference"
+      }
     },
     {
       "id": "shengjiang",
@@ -772,7 +904,41 @@
           "note": "桂枝汤方解，属后世教材归纳。"
         }
       ],
-      "verification": "reference"
+      "verification": "reference",
+      "classicRankId": "middle",
+      "therapyCategoryIds": [
+        "exterior",
+        "warm-tonic",
+        "cough-phlegm"
+      ],
+      "processing": {
+        "categoryId": "plants",
+        "summary": "除去杂质，洗净，切厚片；可捣碎榨取生姜汁。",
+        "methods": [
+          {
+            "label": "净制与切制",
+            "text": "除去杂质，洗净，切厚片。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          },
+          {
+            "label": "生姜汁",
+            "text": "取生姜，洗净，捣碎，榨取汁。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          }
+        ],
+        "product": "不规则厚片，表面黄白色或灰白色，有环节；切面浅黄色，可见明显环纹，具辛辣香气。",
+        "cautions": [
+          "阴虚内热、血热妄行者忌用。"
+        ],
+        "note": "煨姜、姜炭等规格见于地方炮制规范，本原型未逐条核对，暂不收录。",
+        "verification": "reference"
+      }
     },
     {
       "id": "dazao",
@@ -909,7 +1075,40 @@
           "note": "属方剂配伍归纳。"
         }
       ],
-      "verification": "reference"
+      "verification": "reference",
+      "classicRankId": "upper",
+      "therapyCategoryIds": [
+        "warm-tonic",
+        "calm-open"
+      ],
+      "processing": {
+        "categoryId": "plants",
+        "summary": "除去杂质，洗净，晒干；用时破开或去核。",
+        "methods": [
+          {
+            "label": "净制",
+            "text": "除去杂质，洗净，晒干。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          },
+          {
+            "label": "临用",
+            "text": "用时破开或去核。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          }
+        ],
+        "product": "椭圆形或球形，表面暗红色，略带光泽，有不规则皱纹；果肉柔软，富糖性而油润，味甜。",
+        "cautions": [
+          "湿盛胀满、痰热、食积、虫积者不宜。"
+        ],
+        "note": "药典【炮制】项归纳；破开或去核为煎煮前的临用处理。",
+        "verification": "reference"
+      }
     },
     {
       "id": "chaihu",
@@ -1055,7 +1254,40 @@
           "note": "小柴胡汤方解，属后世教材归纳。"
         }
       ],
-      "verification": "reference"
+      "verification": "reference",
+      "classicRankId": "upper",
+      "therapyCategoryIds": [
+        "exterior",
+        "qi-digest"
+      ],
+      "processing": {
+        "categoryId": "plants",
+        "summary": "除去杂质和残茎，洗净润透，切厚片干燥；醋柴胡以醋炙炒干。",
+        "methods": [
+          {
+            "label": "净制与切制",
+            "text": "除去杂质和残茎，洗净，润透，切厚片，干燥。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          },
+          {
+            "label": "醋炙（醋柴胡）",
+            "text": "取柴胡片，照醋炙法炒干。每 100 kg 柴胡片，用醋 20 kg。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          }
+        ],
+        "product": "类圆形或椭圆形厚片，外表皮黑褐色或浅棕色，具纵皱纹和支根痕；切面淡黄白色，纤维性。",
+        "cautions": [
+          "真阴亏损、肝阳上亢、阴虚火旺者慎用；不宜长期大量服用。"
+        ],
+        "note": "醋柴胡比例据药典【炮制】项；南北柴胡基原不同，饮片性状略有差异。",
+        "verification": "reference"
+      }
     },
     {
       "id": "huangqin",
@@ -1192,7 +1424,40 @@
           "note": "属小柴胡汤方解归纳。"
         }
       ],
-      "verification": "reference"
+      "verification": "reference",
+      "classicRankId": "middle",
+      "therapyCategoryIds": [
+        "clear-heat",
+        "stop-bleeding"
+      ],
+      "processing": {
+        "categoryId": "plants",
+        "summary": "沸水煮或蒸后切薄片干燥；酒黄芩以黄酒炙炒干。",
+        "methods": [
+          {
+            "label": "净制与切制",
+            "text": "除去杂质，置沸水中煮 10 分钟，取出，闷透，切薄片，干燥；或蒸半小时，取出，切薄片，干燥（注意避免暴晒）。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          },
+          {
+            "label": "酒炙（酒黄芩）",
+            "text": "取黄芩片，照酒炙法炒干。每 100 kg 黄芩片，用黄酒 10 kg。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          }
+        ],
+        "product": "类圆形或不规则形薄片，外表皮黄棕色至棕褐色，切面黄棕色或黄绿色，具放射状纹理。",
+        "cautions": [
+          "脾胃虚寒者不宜。"
+        ],
+        "note": "“煮/蒸”与“避免暴晒”是药典写明的关键点；火候与时间以现行版药典为准。",
+        "verification": "reference"
+      }
     },
     {
       "id": "banxia",
@@ -1329,7 +1594,59 @@
         }
       ],
       "verification": "reference",
-      "note": "半夏有毒，须经炮制并在专业医师指导下使用；本原型不提供自行用药建议。"
+      "note": "半夏有毒，须经炮制并在专业医师指导下使用；本原型不提供自行用药建议。",
+      "classicRankId": "lower",
+      "therapyCategoryIds": [
+        "qi-digest",
+        "cough-phlegm",
+        "attack-cold"
+      ],
+      "processing": {
+        "categoryId": "plants",
+        "summary": "生半夏有毒；临床多用清半夏、姜半夏、法半夏等炮制品。",
+        "methods": [
+          {
+            "label": "生半夏",
+            "text": "除去杂质，洗净，干燥。生半夏有毒，内服须炮制。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          },
+          {
+            "label": "清半夏",
+            "text": "取净半夏，大小分开，用 8% 白矾溶液浸泡至内无干心、口尝微有麻舌感，取出，洗净，切厚片，干燥。每 100 kg 净半夏，用白矾 20 kg。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          },
+          {
+            "label": "姜半夏",
+            "text": "取净半夏，大小分开，用水浸泡至内无干心，取出；另取生姜切片煎汤，加白矾与半夏共煮至透心，取出，晾至半干，切薄片，干燥。每 100 kg 净半夏，用生姜 25 kg、白矾 12.5 kg。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          },
+          {
+            "label": "法半夏",
+            "text": "取净半夏，大小分开，用水浸泡至内无干心，取出；另取甘草加水煎煮二次，合并煎液，倒入石灰液中，加入半夏浸泡，每日搅拌 1～2 次，保持浸液 pH 12 以上，至剖面黄色均匀、口尝微有麻舌感，取出洗净，阴干或烘干。每 100 kg 净半夏，用甘草 15 kg、生石灰 10 kg。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          }
+        ],
+        "product": "清半夏为类圆形或椭圆形厚片，表面淡灰黄色；姜半夏表面棕色至棕褐色；法半夏表面淡黄白色、黄色或棕黄色。",
+        "cautions": [
+          "生半夏有毒，内服一般炮制后使用。",
+          "不宜与川乌、制川乌、草乌、制草乌、附子同用。",
+          "炮制须由具备资质的人员按规范完成，本页不提供自行炮制建议。"
+        ],
+        "note": "半夏炮制直接关系减毒，药典对白矾、生姜、甘草与石灰的用量有明确规定；本页只作知识整理。",
+        "verification": "reference"
+      }
     },
     {
       "id": "renshen",
@@ -1467,7 +1784,257 @@
           "note": "小柴胡汤方解，属后世教材归纳。"
         }
       ],
-      "verification": "reference"
+      "verification": "reference",
+      "classicRankId": "upper",
+      "therapyCategoryIds": [
+        "warm-tonic",
+        "calm-open"
+      ],
+      "processing": {
+        "categoryId": "plants",
+        "summary": "洗净润透，切薄片干燥；或用时粉碎、捣碎。",
+        "methods": [
+          {
+            "label": "净制与切制",
+            "text": "除去杂质，洗净，润透，切薄片，干燥，或用时粉碎、捣碎。",
+            "kind": "paraphrase",
+            "citationIds": [
+              "src-yaodian-paozhi"
+            ]
+          }
+        ],
+        "product": "圆形或类圆形薄片，外表皮灰黄色，切面淡黄白色或类白色，可见放射状裂隙及明显形成层环。",
+        "cautions": [
+          "不宜与藜芦、五灵脂同用。",
+          "实证、热证而正气不虚者忌用。"
+        ],
+        "note": "红参为药典另列的加工品，不并入人参饮片炮制条目；本页不展开红参加工工艺。",
+        "verification": "reference"
+      }
+    }
+  ],
+  "herbTaxonomy": {
+    "ranks": [
+      {
+        "id": "upper",
+        "title": "上经",
+        "subtitle": "益气延年养生",
+        "description": "《神农本草经》序录以上药为君，主养命以应天，无毒，多服久服不伤人；本栏按“益气延年养生”作阅读标签。",
+        "citationIds": [
+          "src-shennong-bencaojing-xulu"
+        ]
+      },
+      {
+        "id": "middle",
+        "title": "中经",
+        "subtitle": "治病",
+        "description": "《神农本草经》序录以中药为臣，主养性以应人，无毒有毒，斟酌其宜；本栏按“治病”作阅读标签。",
+        "citationIds": [
+          "src-shennong-bencaojing-xulu"
+        ]
+      },
+      {
+        "id": "lower",
+        "title": "下经",
+        "subtitle": "治大病或有微毒",
+        "description": "《神农本草经》序录以下药为佐使，主治病以应地，多毒，不可久服；本栏按“治大病或有微毒”作阅读标签。",
+        "citationIds": [
+          "src-shennong-bencaojing-xulu"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "exterior",
+        "title": "解表药",
+        "description": "发散表邪，解除表证。",
+        "pending": []
+      },
+      {
+        "id": "clear-heat",
+        "title": "清热药",
+        "description": "清泄里热，凉血解毒。",
+        "pending": []
+      },
+      {
+        "id": "purgative",
+        "title": "泻下药",
+        "description": "通利大便，攻逐水饮。",
+        "pending": [
+          "大黄",
+          "芒硝"
+        ]
+      },
+      {
+        "id": "wind-damp",
+        "title": "祛风去湿利水药",
+        "description": "祛风除湿，通利水道。",
+        "pending": [
+          "白术",
+          "茯苓"
+        ]
+      },
+      {
+        "id": "qi-digest",
+        "title": "理气消食药",
+        "description": "疏理气机，消食化积。",
+        "pending": []
+      },
+      {
+        "id": "stop-bleeding",
+        "title": "止血凉血药",
+        "description": "制止出血，清解血热。",
+        "pending": []
+      },
+      {
+        "id": "blood-moving",
+        "title": "活血化瘀药",
+        "description": "活血通经，散瘀止痛。",
+        "pending": [
+          "川芎",
+          "丹参"
+        ]
+      },
+      {
+        "id": "cough-phlegm",
+        "title": "止咳平喘化痰药",
+        "description": "止咳平喘，化痰利咽。",
+        "pending": []
+      },
+      {
+        "id": "warm-tonic",
+        "title": "温中补虚药",
+        "description": "温中散寒，补益虚损。",
+        "pending": []
+      },
+      {
+        "id": "astringent",
+        "title": "收敛固涩药",
+        "description": "收敛固涩，止汗止泻。",
+        "pending": []
+      },
+      {
+        "id": "calm-open",
+        "title": "安神开窍药",
+        "description": "安神定志，开窍醒神。",
+        "pending": [
+          "远志",
+          "石菖蒲"
+        ]
+      },
+      {
+        "id": "attack-cold",
+        "title": "攻坚去实去寒药",
+        "description": "攻逐坚积，去实散寒。",
+        "pending": [
+          "细辛"
+        ]
+      }
+    ],
+    "assignments": {
+      "gancao": {
+        "rankId": "upper",
+        "categoryIds": [
+          "warm-tonic",
+          "cough-phlegm"
+        ]
+      },
+      "guizhi": {
+        "rankId": "upper",
+        "categoryIds": [
+          "exterior"
+        ]
+      },
+      "baishao": {
+        "rankId": "middle",
+        "categoryIds": [
+          "astringent"
+        ]
+      },
+      "shengjiang": {
+        "rankId": "middle",
+        "categoryIds": [
+          "exterior",
+          "warm-tonic",
+          "cough-phlegm"
+        ]
+      },
+      "dazao": {
+        "rankId": "upper",
+        "categoryIds": [
+          "warm-tonic",
+          "calm-open"
+        ]
+      },
+      "chaihu": {
+        "rankId": "upper",
+        "categoryIds": [
+          "exterior",
+          "qi-digest"
+        ]
+      },
+      "huangqin": {
+        "rankId": "middle",
+        "categoryIds": [
+          "clear-heat",
+          "stop-bleeding"
+        ]
+      },
+      "banxia": {
+        "rankId": "lower",
+        "categoryIds": [
+          "qi-digest",
+          "cough-phlegm",
+          "attack-cold"
+        ]
+      },
+      "renshen": {
+        "rankId": "upper",
+        "categoryIds": [
+          "warm-tonic",
+          "calm-open"
+        ]
+      }
+    },
+    "note": "三经名目见《神农本草经》序录；十二个功效分类是本站导航标签，不是《神农本草经》原文，具体药物归入需逐条核对。"
+  },
+  "processingExamples": [
+    {
+      "id": "mahuang",
+      "herbName": "麻黄",
+      "rankHint": "中经",
+      "categoryId": "plants",
+      "status": "待核",
+      "lines": [
+        "去节，发汗；纯麻黄节，止汗。",
+        "使用时要分拣麻黄节与麻黄茎。",
+        "心脏不好的人禁用。",
+        "煎药时先煮麻黄，去浮沫后再入其他药同煮。"
+      ],
+      "note": "读者提供线索，尚未核对《伤寒论》麻黄汤原文及现行药典/炮制规范，暂不作为已收录炮制方法。"
+    },
+    {
+      "id": "lufengfang",
+      "herbName": "露蜂房",
+      "rankHint": "中经",
+      "categoryId": "animals",
+      "status": "待核",
+      "lines": [
+        "药材放干净的石板或瓦片上，小火炙烤，微黄方可。"
+      ],
+      "note": "读者提供线索，尚未核对原书与现行炮制规范，暂不作为已收录炮制方法。"
+    },
+    {
+      "id": "niumeng",
+      "herbName": "牛虻",
+      "rankHint": "下经",
+      "categoryId": "animals",
+      "status": "待核",
+      "lines": [
+        "生虫去其头脚翅翼。",
+        "放干净的石板或瓦片上，小火炙烤，微黄方可。"
+      ],
+      "note": "读者提供线索，尚未核对原书与现行炮制规范，暂不作为已收录炮制方法。"
     }
   ],
   "formulas": [
