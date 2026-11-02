@@ -1,6 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { pinyin } from 'pinyin-pro'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const sourceDir = path.join(root, 'scripts', 'content', 'bencao-lectures')
@@ -227,6 +228,75 @@ function countChars(sections) {
 
 const FLAVOR_ORDER = ['辛', '甘', '酸', '苦', '咸', '淡', '涩']
 
+const profilesFile = path.join(root, 'scripts', 'content', 'bencao-profiles.json')
+const profiles = fs.existsSync(profilesFile)
+  ? JSON.parse(fs.readFileSync(profilesFile, 'utf8'))
+  : { items: {} }
+
+const MERIDIAN_MAP = {
+  心包: { id: 'pericardium', name: '手厥阴心包经' },
+  心: { id: 'heart', name: '手少阴心经' },
+  肝: { id: 'liver', name: '足厥阴肝经' },
+  脾: { id: 'spleen', name: '足太阴脾经' },
+  肺: { id: 'lung', name: '手太阴肺经' },
+  肾: { id: 'kidney', name: '足少阴肾经' },
+  胃: { id: 'stomach', name: '足阳明胃经' },
+  胆: { id: 'gallbladder', name: '足少阳胆经' },
+  膀胱: { id: 'bladder', name: '足太阳膀胱经' },
+  大肠: { id: 'large-intestine', name: '手阳明大肠经' },
+  小肠: { id: 'small-intestine', name: '手太阳小肠经' },
+  三焦: { id: 'triple-burner', name: '手少阳三焦经' },
+}
+
+const PINYIN_FIXES = {
+  白术: 'bái zhú',
+  苍术: 'cāng zhú',
+  黄芩: 'huáng qín',
+  栀子: 'zhī zǐ',
+  枳实: 'zhǐ shí',
+  枳壳: 'zhǐ ké',
+  桔梗: 'jié gěng',
+  茜根: 'qiàn gēn',
+  秦艽: 'qín jiāo',
+  阿胶: 'ē jiāo',
+  龟甲: 'guī jiǎ',
+  牡蛎: 'mǔ lì',
+  菟丝子: 'tù sī zǐ',
+  川芎: 'chuān xiōng',
+  芎穷: 'xiōng qióng',
+  荨麻: 'qián má',
+  大枣: 'dà zǎo',
+  枸杞: 'gǒu qǐ',
+  厚朴: 'hòu pò',
+  萆薢: 'bì xiè',
+  射干: 'yè gān',
+  藿香: 'huò xiāng',
+  熟地黄: 'shú dì huáng',
+  干地黄: 'gān dì huáng',
+}
+
+function pinyinFor(name) {
+  if (PINYIN_FIXES[name]) return PINYIN_FIXES[name]
+  try {
+    return pinyin(name, { toneType: 'symbol', type: 'array' }).join(' ')
+  } catch {
+    return ''
+  }
+}
+
+function normalizeMeridians(list) {
+  const result = []
+  for (const raw of list ?? []) {
+    const text = String(raw).replace(/\s/g, '')
+    for (const [organ, target] of Object.entries(MERIDIAN_MAP)) {
+      if (text.includes(organ) && !result.some((item) => item.id === target.id)) {
+        result.push(target)
+      }
+    }
+  }
+  return result
+}
+
 function sectionText(entry, labels) {
   const names = Array.isArray(labels) ? labels : [labels]
   const section = entry.sections.find((s) => names.includes(s.label))
@@ -257,6 +327,70 @@ function extractAliases(entry) {
     .map((item) => item.replace(/^别名[:：]?/, '').trim())
     .filter((item) => item && item.length <= 12)
     .slice(0, 8)
+}
+
+function originalText(entry) {
+  return sectionText(entry, ['本经原文', '本经', '本草原文', '本绖原文', '原经文'])
+}
+
+function extractIndication(text) {
+  if (!text) return ''
+  const match = text.match(/主([^。；]{2,70})/)
+  return match ? `主${match[1]}` : ''
+}
+
+function firstParagraph(entry) {
+  for (const section of entry.sections) {
+    const paragraph = section.blocks.find((block) => block.type === 'p' && block.text.trim())
+    if (paragraph) return paragraph.text.trim()
+  }
+  return ''
+}
+
+function buildProfile(entry) {
+  const record = profiles.items?.[entry.title]
+  const flavorText = sectionText(entry, '性味')
+  const original = originalText(entry)
+  const lectureFlavors = [
+    ...extractFlavors(flavorText),
+    ...extractFlavors(original.slice(0, 80)),
+  ]
+  const recordFlavors = (record?.flavor ?? '').split('').filter((char) => FLAVOR_ORDER.includes(char))
+  const flavorTags = FLAVOR_ORDER.filter((flavor) =>
+    [...lectureFlavors, ...recordFlavors].includes(flavor),
+  )
+  const nature =
+    extractNature(flavorText) || extractNature(original.slice(0, 80)) || record?.nature || ''
+  const meridians = normalizeMeridians(record?.meridians ?? [])
+  const lectureEffects = sectionText(entry, ['主治', '主冶', '效用', '倪师用法'])
+  const fallback = firstParagraph(entry)
+  const effects =
+    lectureEffects || record?.action || extractIndication(original) || fallback.slice(0, 100)
+  const indications = extractIndication(original) || extractIndication(effects) || effects
+  const contraindications = sectionText(entry, '禁忌') || record?.contraindication || ''
+
+  const usedLecture = Boolean(flavorText || original || lectureEffects || fallback)
+  const usedRecord = Boolean(
+    record &&
+      ((!extractFlavors(flavorText).length && recordFlavors.length) ||
+        (!extractNature(flavorText) && record.nature) ||
+        meridians.length ||
+        (!lectureEffects && record.action) ||
+        (!contraindications && record.contraindication)),
+  )
+
+  return {
+    flavorTags,
+    nature,
+    meridianIds: meridians.map((item) => item.id),
+    meridianNames: meridians.map((item) => item.name),
+    effects,
+    indications,
+    contraindications,
+    dosage: record?.dosage ?? '',
+    meridianPending: meridians.length === 0,
+    sources: [...(usedLecture ? ['讲义原文'] : []), ...(usedRecord ? ['中医Buddy 中药数据'] : [])],
+  }
 }
 
 const RANK_BY_GROUP = {
@@ -319,6 +453,10 @@ function readGroup(def) {
       sections: parsed.sections,
     }
     if (fix?.note) entry.note = fix.note
+    if (def.id !== 'intro') {
+      entry.pinyin = pinyinFor(title)
+      entry.profile = buildProfile(entry)
+    }
     entries.push(entry)
   }
 
@@ -372,19 +510,28 @@ const catalogItems = groups
       const flavorText = sectionText(entry, '性味')
       const mainText = sectionText(entry, ['主治', '主冶', '效用'])
       const processingText = sectionText(entry, ['炮制', '泡制'])
+      const profile = entry.profile
       const item = {
         key: `${group.id}:${entry.id}`,
         name: entry.title,
+        pinyin: entry.pinyin,
         groupId: group.id,
         entryId: entry.id,
         rankId: RANK_BY_GROUP[group.id],
         number: entry.number,
-        flavorTags: extractFlavors(flavorText),
-        nature: extractNature(flavorText),
-        summary: mainText.replace(/^主治[:：]?/, '').slice(0, 120),
+        flavorTags: profile.flavorTags,
+        nature: profile.nature,
+        meridianIds: profile.meridianIds,
+        meridianNames: profile.meridianNames,
+        effects: profile.effects,
+        indications: profile.indications,
+        contraindications: profile.contraindications,
+        summary: (profile.effects || mainText).replace(/^主治[:：]?/, '').slice(0, 120),
         charCount: entry.charCount,
         hasProcessing: Boolean(processingText),
         aliases: extractAliases(entry),
+        meridianPending: profile.meridianPending,
+        profileSources: profile.sources,
       }
       if (processingText) item.processingText = processingText
       if (CURATED_IDS[entry.title]) item.curatedId = CURATED_IDS[entry.title]
@@ -455,3 +602,9 @@ console.log(
 for (const group of groups) {
   console.log(`  ${group.title}: ${group.entries.length} 条`)
 }
+console.log(
+  `  profiles: flavor ${catalogItems.filter((i) => i.flavorTags.length).length}, ` +
+    `nature ${catalogItems.filter((i) => i.nature).length}, ` +
+    `meridians ${catalogItems.filter((i) => i.meridianIds.length).length}, ` +
+    `meridianPending ${catalogItems.filter((i) => i.meridianPending).length}`,
+)

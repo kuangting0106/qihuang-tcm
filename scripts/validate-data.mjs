@@ -485,6 +485,19 @@ if (bencaoIndex) {
         errors.push(`讲义条目 ${entry.id}: 没有分节`)
         continue
       }
+      if (meta.id !== 'intro') {
+        if (!entry.pinyin) errors.push(`讲义条目 ${entry.id}: 缺少拼音`)
+        if (!entry.profile) {
+          errors.push(`讲义条目 ${entry.id}: 缺少药性概览`)
+        } else {
+          for (const key of ['flavorTags', 'meridianIds', 'meridianNames', 'sources']) {
+            if (!Array.isArray(entry.profile[key])) {
+              errors.push(`讲义条目 ${entry.id}: profile.${key} 应为数组`)
+            }
+          }
+          if (!entry.profile.effects) errors.push(`讲义条目 ${entry.id}: 缺少功效`)
+        }
+      }
       let entryChars = 0
       for (const section of entry.sections) {
         if (!allowedBencaoKinds.has(section.kind)) {
@@ -513,6 +526,51 @@ if (bencaoIndex) {
     }
     bencaoEntries += group.entries.length
     bencaoChars += chars
+  }
+}
+
+const catalogPath = path.join(bencaoDir, 'catalog.json')
+let bencaoCatalog = null
+try {
+  bencaoCatalog = JSON.parse(fs.readFileSync(catalogPath, 'utf8'))
+} catch {
+  errors.push('缺少 public/data/bencao-lectures/catalog.json')
+}
+if (bencaoCatalog) {
+  if (bencaoCatalog.total !== 422) errors.push(`讲义目录总数应为 422，实际 ${bencaoCatalog.total}`)
+  if (bencaoCatalog.threeRanks !== 357) {
+    errors.push(`三经目录条数应为 357，实际 ${bencaoCatalog.threeRanks}`)
+  }
+  if (bencaoCatalog.items?.length !== bencaoCatalog.total) {
+    errors.push('讲义目录 items 与 total 不一致')
+  }
+  const withFlavor = bencaoCatalog.items.filter((item) => item.flavorTags?.length).length
+  const withNature = bencaoCatalog.items.filter((item) => item.nature).length
+  const withMeridian = bencaoCatalog.items.filter((item) => item.meridianIds?.length).length
+  if (withFlavor < 400) errors.push(`带性味的讲义药材过少：${withFlavor}/422`)
+  if (withNature < 400) errors.push(`带气（寒热温凉平）的讲义药材过少：${withNature}/422`)
+  if (withMeridian < 150) errors.push(`带归经的讲义药材过少：${withMeridian}/422`)
+  for (const item of bencaoCatalog.items) {
+    if (!item.pinyin) errors.push(`讲义目录 ${item.name}: 缺少拼音`)
+    if (!item.effects) errors.push(`讲义目录 ${item.name}: 缺少功效`)
+    if (!Array.isArray(item.profileSources) || item.profileSources.length === 0) {
+      errors.push(`讲义目录 ${item.name}: 缺少药性来源标注`)
+    }
+  }
+}
+
+const profilesFile = path.join(root, 'scripts', 'content', 'bencao-profiles.json')
+let bencaoProfiles = null
+try {
+  bencaoProfiles = JSON.parse(fs.readFileSync(profilesFile, 'utf8'))
+} catch {
+  errors.push('缺少 scripts/content/bencao-profiles.json，请运行 npm run build:profiles')
+}
+if (bencaoProfiles) {
+  if (!bencaoProfiles.source?.commit) errors.push('药性补全数据缺少来源 commit')
+  if (!bencaoProfiles.source?.note) errors.push('药性补全数据缺少来源说明')
+  if (Object.keys(bencaoProfiles.items ?? {}).length < 380) {
+    errors.push(`药性补全条目过少：${Object.keys(bencaoProfiles.items ?? {}).length}`)
   }
 }
 

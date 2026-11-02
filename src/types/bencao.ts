@@ -20,6 +20,19 @@ export interface BencaoSection {
   blocks: BencaoBlock[]
 }
 
+export interface BencaoProfile {
+  flavorTags: string[]
+  nature: string
+  meridianIds: string[]
+  meridianNames: string[]
+  effects: string
+  indications: string
+  contraindications: string
+  dosage: string
+  meridianPending: boolean
+  sources: string[]
+}
+
 export interface BencaoEntry {
   id: string
   groupId: string
@@ -29,6 +42,8 @@ export interface BencaoEntry {
   charCount: number
   sections: BencaoSection[]
   note?: string
+  pinyin?: string
+  profile?: BencaoProfile
 }
 
 export interface BencaoGroupMeta {
@@ -78,17 +93,25 @@ export type BencaoRankId = 'upper' | 'middle' | 'lower' | 'nishi' | 'editor'
 export interface BencaoCatalogItem {
   key: string
   name: string
+  pinyin: string
   groupId: string
   entryId: string
   rankId: BencaoRankId
   number: number | null
   flavorTags: string[]
   nature: string
+  meridianIds: string[]
+  meridianNames: string[]
+  effects: string
+  indications: string
+  contraindications: string
   summary: string
   charCount: number
   hasProcessing: boolean
   processingText?: string
   aliases: string[]
+  meridianPending: boolean
+  profileSources: string[]
   curatedId?: string
 }
 

@@ -104,6 +104,41 @@ function isProcessingSection(label: string): boolean {
           本条属整理者增补，不是倪海厦原讲义正文。
         </p>
 
+        <section v-if="entry.profile" class="entry-profile" aria-label="药性概览">
+          <div class="entry-profile__item">
+            <span class="entry-profile__label">性味</span>
+            <p class="entry-profile__value">
+              <span v-for="t in entry.profile.flavorTags" :key="t" class="chip chip--cinnabar">{{ t }}</span>
+              <span v-if="entry.profile.nature" class="chip chip--cinnabar">{{ entry.profile.nature }}</span>
+              <span v-if="!entry.profile.flavorTags.length && !entry.profile.nature" class="is-pending">待考</span>
+            </p>
+          </div>
+          <div class="entry-profile__item">
+            <span class="entry-profile__label">归经</span>
+            <p class="entry-profile__value">
+              <span v-for="m in entry.profile.meridianNames" :key="m" class="chip chip--jade">{{ m }}</span>
+              <span v-if="entry.profile.meridianPending" class="is-pending">归经待考</span>
+            </p>
+          </div>
+          <div class="entry-profile__item">
+            <span class="entry-profile__label">功效</span>
+            <p class="entry-profile__value entry-profile__value--text">{{ entry.profile.effects || '待考' }}</p>
+          </div>
+          <div class="entry-profile__item">
+            <span class="entry-profile__label">主治</span>
+            <p class="entry-profile__value entry-profile__value--text">{{ entry.profile.indications || '待考' }}</p>
+          </div>
+          <div class="entry-profile__item">
+            <span class="entry-profile__label">禁忌</span>
+            <p class="entry-profile__value entry-profile__value--text">{{ entry.profile.contraindications || '讲义未载，待考' }}</p>
+          </div>
+        </section>
+
+        <p v-if="entry.profile?.sources.length" class="entry-profile__note">
+          药性概览来源：{{ entry.profile.sources.join(' · ') }}。
+          讲义未载的性味、归经与功效，仅用公开中药资料补足，不作校勘依据；用药请以原书与现行药典为准。
+        </p>
+
         <article class="entry-body">
           <section
             v-for="(section, sectionIndex) in entry.sections"
@@ -226,6 +261,56 @@ function isProcessingSection(label: string): boolean {
   border-left-color: var(--cinnabar);
   background: rgba(241, 221, 214, 0.3);
   color: var(--cinnabar);
+}
+
+.entry-profile {
+  display: grid;
+  grid-template-columns: 0.7fr 0.8fr 1fr 1.2fr 1fr;
+  gap: 1px;
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--line);
+  overflow: hidden;
+}
+
+.entry-profile__item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  background: rgba(255, 252, 245, 0.72);
+}
+
+.entry-profile__label {
+  color: var(--ink-faint);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+}
+
+.entry-profile__value {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  color: var(--ink-soft);
+  font-size: 0.74rem;
+  line-height: 1.65;
+}
+
+.entry-profile__value--text {
+  display: block;
+}
+
+.entry-profile__value .is-pending {
+  color: var(--ink-faint);
+  font-size: 0.7rem;
+}
+
+.entry-profile__note {
+  margin-top: 8px;
+  color: var(--ink-faint);
+  font-size: 0.64rem;
+  line-height: 1.7;
 }
 
 .entry-body {
@@ -404,7 +489,25 @@ function isProcessingSection(label: string): boolean {
   margin-bottom: 8px;
 }
 
+@media (max-width: 900px) {
+  .entry-profile {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .entry-profile__item:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
 @media (max-width: 700px) {
+  .entry-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-profile__item:last-child {
+    grid-column: auto;
+  }
+
   .entry-head {
     flex-direction: column;
     align-items: flex-start;

@@ -8,6 +8,7 @@
     "build": "npm run precompute:body && npm run build:data && npm run build:lectures && npm run validate:data && vite build && vue-tsc --noEmit",
     "build:data": "node scripts/build-sample-data.mjs",
     "build:lectures": "node scripts/build-bencao-lectures.mjs",
+    "build:profiles": "node scripts/build-bencao-profiles.mjs",
     "precompute:body": "tsx scripts/precompute-body.mts",
     "preview": "vite preview",
     "typecheck": "vue-tsc --noEmit",
@@ -15,6 +16,7 @@
     "start": "vite --open"
   },
   "dependencies": {
+    "pinyin-pro": "^3.29.5",
     "three": "^0.170.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"

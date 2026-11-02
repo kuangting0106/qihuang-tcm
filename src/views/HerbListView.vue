@@ -2,13 +2,14 @@
 import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute, useRouter } from 'vue-router'
 import HerbCard from '@/components/HerbCard.vue'
+import BencaoHerbCard from '@/components/BencaoHerbCard.vue'
 import HerbPropertyPrinciples from '@/components/HerbPropertyPrinciples.vue'
 import {
   formatCharCount,
   loadBencaoCatalog,
   loadBencaoIndex,
 } from '@/composables/useBencaoLectures'
-import type { BencaoCatalog, BencaoCatalogItem } from '@/types/bencao'
+import type { BencaoCatalog } from '@/types/bencao'
 import { useTcmData } from '@/composables/useTcmData'
 
 const { data, allFlavorTags, allMeridians, meridianName } = useTcmData()
@@ -54,13 +55,24 @@ const lectureItems = computed(() =>
 )
 
 const lectureFiltered = computed(() => {
-  if (categoryFilter.value || meridian.value) return []
+  if (categoryFilter.value) return []
   const q = query.value.trim().toLowerCase()
   return lectureItems.value.filter((item) => {
     if (rankFilter.value && item.rankId !== rankFilter.value) return false
     if (flavor.value && !item.flavorTags.includes(flavor.value)) return false
+    if (meridian.value && !item.meridianIds.includes(meridian.value)) return false
     if (!q) return true
-    return [item.name, item.nature, ...item.flavorTags, ...item.aliases, item.summary]
+    return [
+      item.name,
+      item.pinyin,
+      item.nature,
+      ...item.flavorTags,
+      ...item.aliases,
+      ...item.meridianNames,
+      item.effects,
+      item.indications,
+      item.summary,
+    ]
       .join(' ')
       .toLowerCase()
       .includes(q)
@@ -78,10 +90,6 @@ function lectureRankCount(rankId: string) {
   return (catalog.value?.items ?? []).filter(
     (item) => item.rankId === rankId && !item.curatedId,
   ).length
-}
-
-function lectureHref(item: BencaoCatalogItem) {
-  return `/bencao/${item.groupId}/${item.entryId}`
 }
 
 function rankLabel(rankId: string) {
@@ -178,7 +186,11 @@ function scrollToResults() {
 }
 
 const meridianOptions = computed(() =>
-  allMeridians.value.filter((m) => herbs.value.some((h) => h.meridianIds.includes(m.id))),
+  allMeridians.value.filter(
+    (m) =>
+      herbs.value.some((h) => h.meridianIds.includes(m.id)) ||
+      lectureItems.value.some((item) => item.meridianIds.includes(m.id)),
+  ),
 )
 </script>
 
@@ -348,24 +360,12 @@ const meridianOptions = computed(() =>
         </div>
 
         <div class="lecture-grid">
-          <RouterLink
+          <BencaoHerbCard
             v-for="item in visibleLecture"
             :key="item.key"
-            class="lecture-card"
-            :to="lectureHref(item)"
-          >
-            <span class="lecture-card__top">
-              <span class="lecture-card__rank">{{ rankLabel(item.rankId) }}</span>
-              <span v-if="item.number" class="lecture-card__number">{{ item.number }}</span>
-            </span>
-            <strong>{{ item.name }}</strong>
-            <span class="lecture-card__meta">
-              <span v-for="tag in item.flavorTags.slice(0, 3)" :key="tag">{{ tag }}</span>
-              <span v-if="item.nature">{{ item.nature }}</span>
-              <span v-if="item.hasProcessing" class="lecture-card__processing">炮制</span>
-            </span>
-            <span v-if="item.summary" class="lecture-card__summary">{{ item.summary }}</span>
-          </RouterLink>
+            :item="item"
+            :rank-title="rankLabel(item.rankId)"
+          />
         </div>
 
         <button
@@ -867,75 +867,20 @@ const meridianOptions = computed(() =>
 .lecture-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 10px;
+  gap: 14px;
 }
 
-.lecture-card {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  min-width: 0;
-  padding: 11px 12px 12px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: rgba(255, 252, 245, 0.5);
-  transition: border-color 0.16s ease, transform 0.16s ease, background 0.16s ease;
+.lecture-grid :deep(.lecture-card__body) {
+  padding: 14px 14px 12px;
 }
 
-.lecture-card:hover {
-  border-color: var(--jade-2);
-  background: rgba(255, 252, 245, 0.9);
-  transform: translateY(-2px);
+.lecture-grid :deep(.lecture-card__title h3) {
+  font-size: 1.15rem;
 }
 
-.lecture-card__top {
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-  color: var(--jade);
-  font-size: 0.6rem;
-  letter-spacing: 0.06em;
-}
-
-.lecture-card__number {
-  color: var(--ink-faint);
-  font-family: var(--serif);
-}
-
-.lecture-card strong {
-  font-family: var(--serif);
-  font-size: 1.02rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-}
-
-.lecture-card__meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-  color: var(--ink-soft);
-  font-size: 0.62rem;
-}
-
-.lecture-card__meta > span {
-  padding: 1px 5px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-}
-
-.lecture-card__meta .lecture-card__processing {
-  border-color: color-mix(in srgb, var(--cinnabar) 38%, transparent);
-  color: var(--cinnabar);
-}
-
-.lecture-card__summary {
-  display: -webkit-box;
-  overflow: hidden;
-  color: var(--ink-faint);
-  font-size: 0.66rem;
+.lecture-grid :deep(.lecture-card__effect) {
+  font-size: 0.78rem;
   line-height: 1.6;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
 }
 
 .lecture-list__more {
