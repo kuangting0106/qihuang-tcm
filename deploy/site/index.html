@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>岐黄图鉴 · 部署环境已就绪</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: "Noto Serif SC", "Songti SC", SimSun, serif;
+        background: #f4efe4;
+        color: #2f3a35;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+      main {
+        max-width: 560px;
+        padding: 36px 40px;
+        border: 1px solid rgba(138, 106, 50, 0.28);
+        border-radius: 18px;
+        background: rgba(255, 252, 245, 0.75);
+      }
+      .seal {
+        width: 56px;
+        height: 56px;
+        display: grid;
+        place-items: center;
+        border-radius: 16px;
+        background: #2f6f6b;
+        color: #f7f1e3;
+        font-size: 1.8rem;
+      }
+      h1 {
+        margin: 22px 0 10px;
+        font-size: 1.8rem;
+        letter-spacing: 0.06em;
+      }
+      p {
+        margin: 8px 0;
+        line-height: 1.9;
+        color: #5d6b64;
+      }
+      code {
+        padding: 2px 6px;
+        border-radius: 6px;
+        background: #e9dfcf;
+        color: #7a3b2e;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="seal">岐</div>
+      <h1>部署环境已就绪</h1>
+      <p>这是岐黄图鉴的独立 Docker 站点目录，尚未发布正式构建。</p>
+      <p>发布时把本地 <code>dist/</code> 内容上传到服务器 <code>/opt/qihuang-tcm/site/</code> 即可。</p>
+      <p>现有 xuefeng 站点不受影响。</p>
+    </main>
+  </body>
+</html>

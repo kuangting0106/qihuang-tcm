@@ -42,7 +42,7 @@ npm install
 npm run dev
 ```
 
-打开 <http://127.0.0.1:5174/>。
+打开 <http://127.0.0.1:5173/>。
 
 也可以双击 `start.bat`，首次会自动安装依赖。
 
@@ -53,6 +53,14 @@ npm run build
 ```
 
 产物在 `dist/`，可以放到任意静态服务器。构建前会自动运行数据校验；出处、引用、坐标或覆盖检查不通过会直接失败。
+
+## 服务器部署
+
+独立 Docker 部署目录见 `deploy/`，当前临时预览：<http://182.255.94.89:8081/>。
+
+- 服务器目录：`/opt/qihuang-tcm`，与 `/opt/xuefeng` 完全独立，不共用 Compose 或 Caddy。
+- 发布：`npm run build` 后运行 `deploy/publish.ps1`，或按 `deploy/README.md` 手动上传 `dist/`。
+- 80/443 仍由现有 xuefeng 入口占用；本项目当前走 8081，域名与 HTTPS 后加。
 
 ## 目录
 
@@ -70,6 +78,7 @@ qihuang-tcm/
 │   ├── views/                     # 首页 / 本草 / 方剂 / 经络 / 出处
 │   ├── three/createBody.ts        # 程序化针灸铜人低模
 │   └── types/tcm.ts               # 数据类型
+├── deploy/                        # 独立 Docker 部署（/opt/qihuang-tcm）
 └── docs/                          # 来源说明、资产许可、截图
 ```
 

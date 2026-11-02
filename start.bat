@@ -9,7 +9,7 @@ if not exist node_modules (
 )
 
 echo.
-echo 岐黄图鉴启动中：http://127.0.0.1:5174/
+echo 岐黄图鉴启动中：http://127.0.0.1:5173/
 echo 关闭此窗口即可停止。
 echo.
 call npm run dev -- --open

@@ -23,7 +23,7 @@ npm run dev -- --host 127.0.0.1
 默认地址：
 
 ```text
-http://127.0.0.1:5174/
+http://127.0.0.1:5173/
 ```
 
 如果端口被占用，Vite 会换端口，以终端输出为准。
@@ -88,7 +88,7 @@ http://127.0.0.1:5174/
 
 ```powershell
 $chrome='C:\Program Files\Google\Chrome\Application\chrome.exe'
-& $chrome --headless=new --hide-scrollbars --enable-unsafe-swiftshader --use-gl=angle --use-angle=swiftshader --window-size=1440,1600 --virtual-time-budget=12000 --screenshot='E:\code\qihuang-tcm\docs\check.png' 'http://127.0.0.1:5174/meridians/lung'
+& $chrome --headless=new --hide-scrollbars --enable-unsafe-swiftshader --use-gl=angle --use-angle=swiftshader --window-size=1440,1600 --virtual-time-budget=12000 --screenshot='E:\code\qihuang-tcm\docs\check.png' 'http://127.0.0.1:5173/meridians/lung'
 ```
 
 - 3D 页面需要 `--enable-unsafe-swiftshader`，否则 WebGL 可能空白。

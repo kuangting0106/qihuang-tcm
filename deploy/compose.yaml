@@ -1,0 +1,28 @@
+name: qihuang-tcm
+
+services:
+  web:
+    image: caddy:2-alpine
+    container_name: qihuang-tcm-web
+    restart: unless-stopped
+    ports:
+      - "${QIHUANG_PORT:-8081}:80"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./site:/srv:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:80/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  caddy_data:
+  caddy_config:
