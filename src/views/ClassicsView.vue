@@ -1,10 +1,35 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import { useTcmData } from '@/composables/useTcmData'
+import { formatCharCount, loadClassicIndex } from '@/composables/useClassicLibrary'
 import type { Citation } from '@/types/tcm'
+import type { ClassicLibraryIndex } from '@/types/classics'
 
 const { data } = useTcmData()
+
+const library = ref<ClassicLibraryIndex | null>(null)
+const libraryError = ref('')
+
+onMounted(() => {
+  loadClassicIndex()
+    .then((index) => {
+      library.value = index
+    })
+    .catch((err: unknown) => {
+      libraryError.value = err instanceof Error ? err.message : '古籍目录加载失败'
+    })
+})
+
+const libraryStats = computed(() => {
+  const books = library.value?.books ?? []
+  return {
+    books: books.length,
+    chapters: books.reduce((sum, book) => sum + book.stats.chapterCount, 0),
+    prefaces: books.reduce((sum, book) => sum + book.stats.prefaceCount, 0),
+    chars: books.reduce((sum, book) => sum + book.stats.charCount, 0),
+  }
+})
 
 const classics = computed(
   () => (data.value?.sources ?? []).filter((source) => source.type === 'classic'),
@@ -58,15 +83,48 @@ const stats = computed(() => ({
         <p class="eyebrow">CLASSICS / 医家经典古籍</p>
         <h1>医家经典古籍</h1>
         <p>
-          这里收本项目已经引用的古籍与条文：书名、作者、版本、篇卷条号与原文摘录。
-          具体内容页旁的“出处”仍可直接打开对应引文；本页只把已录入的古籍集中呈现，不另做全书索引。
+          四部医书可逐卷读全文：先看序跋，再按篇名进入正文。
+          下方另列本项目已经引用的古籍条文，出处、篇卷与原文摘录分开登记。
         </p>
         <div class="classic-stats">
-          <div><strong>{{ stats.works }}</strong><span>部古籍</span></div>
+          <div><strong>{{ libraryStats.books }}</strong><span>部全文</span></div>
+          <div><strong>{{ libraryStats.chapters }}</strong><span>篇正文</span></div>
+          <div><strong>{{ libraryStats.chars ? formatCharCount(libraryStats.chars) : '—' }}</strong><span>原文规模</span></div>
           <div><strong>{{ stats.entries }}</strong><span>条引文</span></div>
-          <div><strong>{{ stats.quotes }}</strong><span>条带原文</span></div>
         </div>
       </header>
+
+      <section class="fulltext-library" aria-labelledby="fulltext-title">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">FULL TEXT / 原书全文</p>
+            <h2 id="fulltext-title">四部医书</h2>
+          </div>
+          <p>四本书各自独立。详情页只列作者、序跋与篇名；点开篇名进入该篇原文。</p>
+        </div>
+
+        <p v-if="libraryError" class="library-state">{{ libraryError }}</p>
+        <p v-else-if="!library" class="library-state">正在展开书页…</p>
+
+        <div v-else class="book-grid">
+          <RouterLink
+            v-for="book in library.books"
+            :key="book.id"
+            :to="`/classics/${book.id}`"
+            class="book-card paper-panel"
+          >
+            <span class="book-card__kicker">FULL TEXT</span>
+            <h3>{{ book.title }}</h3>
+            <p class="book-card__author">作者：{{ book.author }}</p>
+            <p class="book-card__meta">
+              {{ book.stats.chapterCount }} 篇 · {{ book.stats.prefaceCount }} 篇序跋 ·
+              {{ book.stats.volumeCount }} 卷
+            </p>
+            <p class="book-card__size">{{ formatCharCount(book.stats.charCount) }}</p>
+            <span class="book-card__link">进入全书 →</span>
+          </RouterLink>
+        </div>
+      </section>
 
       <section class="classics-principle paper-panel">
         <div>
@@ -74,11 +132,19 @@ const stats = computed(() => ({
           <h2>先看原书，再看归纳</h2>
         </div>
         <ul>
-          <li><strong>只列已录入的古籍</strong>：没有核对到书名、篇卷或条号的内容，不在这里硬补。</li>
-          <li><strong>原文与归纳分开</strong>：有原文的条目直接展示；只有书名与条号者，明确标“未附逐字原文”。</li>
-          <li><strong>不替代逐条出处</strong>：本草、方剂、经络页面中的“出处”按钮才是具体内容的引用入口。</li>
+          <li><strong>四部全文据用户提供文本整理</strong>：只转编码、分篇与分段，不改字；未做校勘，个别字仍以原书为准。</li>
+          <li><strong>原文与归纳分开</strong>：全文页只呈原书文字；本草、方剂页中的后世方解不混入正文。</li>
+          <li><strong>不替代逐条出处</strong>：下方引文索引才是本草、方剂、经络页面的具体引用入口。</li>
         </ul>
       </section>
+
+      <div class="section-head work-list-head">
+        <div>
+          <p class="eyebrow">CITED WORKS / 引文索引</p>
+          <h2>已引古籍条目</h2>
+        </div>
+        <p>这里只列项目实际引用到的书名、篇卷、条号与原文摘录。</p>
+      </div>
 
       <section class="work-list" aria-label="古籍条目">
         <article v-for="work in works" :key="work.key" class="work-card paper-panel">
@@ -168,6 +234,118 @@ const stats = computed(() => ({
 .classic-stats span {
   color: var(--ink-soft);
   font-size: 0.74rem;
+}
+
+.fulltext-library {
+  padding: 34px 0 38px;
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.section-head h2 {
+  margin-top: 4px;
+  font-size: 1.9rem;
+}
+
+.section-head > p {
+  max-width: 420px;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  line-height: 1.8;
+  text-align: right;
+}
+
+.library-state {
+  padding: 24px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 14px;
+  color: var(--ink-faint);
+  font-size: 0.84rem;
+  text-align: center;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.book-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 230px;
+  padding: 22px 20px 18px;
+  overflow: hidden;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.book-card::after {
+  content: "书";
+  position: absolute;
+  right: 12px;
+  bottom: -10px;
+  color: var(--jade);
+  font-family: var(--serif);
+  font-size: 5.6rem;
+  line-height: 1;
+  opacity: 0.07;
+  pointer-events: none;
+}
+
+.book-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--jade);
+  box-shadow: var(--shadow-soft);
+}
+
+.book-card__kicker {
+  color: var(--jade);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.book-card h3 {
+  margin: 10px 0 8px;
+  font-size: 1.7rem;
+  letter-spacing: 0.05em;
+}
+
+.book-card__author {
+  color: var(--cinnabar);
+  font-size: 0.8rem;
+}
+
+.book-card__meta {
+  margin-top: 10px;
+  color: var(--ink-soft);
+  font-size: 0.74rem;
+  line-height: 1.8;
+}
+
+.book-card__size {
+  margin-top: 3px;
+  color: var(--ink-faint);
+  font-size: 0.7rem;
+}
+
+.book-card__link {
+  margin-top: auto;
+  padding-top: 18px;
+  color: var(--jade);
+  font-size: 0.76rem;
+}
+
+.work-list-head {
+  margin-top: 34px;
 }
 
 .classics-principle {
@@ -329,6 +507,30 @@ const stats = computed(() => ({
 
   .work-card__head {
     flex-direction: column;
+  }
+
+  .book-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .section-head > p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 560px) {
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .book-card {
+    min-height: 0;
   }
 }
 </style>

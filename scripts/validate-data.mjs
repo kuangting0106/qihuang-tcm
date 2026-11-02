@@ -344,6 +344,62 @@ if (data.bodyModel?.coordinateFrame === 'bronze-body-v1') {
   warnings.push('当前仍是旧版 bronze-body-v1 坐标表，请运行 npm run precompute:body')
 }
 
+// 四部医书全文
+const classicsDir = path.join(root, 'public', 'data', 'classics')
+let classicsIndex = null
+try {
+  classicsIndex = JSON.parse(fs.readFileSync(path.join(classicsDir, 'index.json'), 'utf8'))
+} catch {
+  errors.push('缺少 public/data/classics/index.json，请运行 node scripts/build-sample-data.mjs')
+}
+const expectedClassicAuthors = {
+  血证论: '唐容川',
+  伤寒捷诀: '严则庵纂辑、裘庆元辑',
+  伤寒论辑义: '丹波元简',
+  石室秘录: '陈士铎',
+}
+let classicChapters = 0
+let classicChars = 0
+if (classicsIndex) {
+  if (classicsIndex.books.length !== 4) {
+    errors.push(`医书全文数量应为 4，实际 ${classicsIndex.books.length}`)
+  }
+  for (const summary of classicsIndex.books) {
+    const bookPath = path.join(classicsDir, `${summary.id}.json`)
+    if (!fs.existsSync(bookPath)) {
+      errors.push(`医书 ${summary.title}: 缺少 ${summary.id}.json`)
+      continue
+    }
+    const book = JSON.parse(fs.readFileSync(bookPath, 'utf8'))
+    if (book.author !== expectedClassicAuthors[book.title]) {
+      errors.push(`医书 ${book.title}: 作者应为 ${expectedClassicAuthors[book.title]}，实际 ${book.author}`)
+    }
+    const sections = [
+      ...book.prefaces,
+      ...book.postscripts,
+      ...book.frontMatter,
+      ...book.volumes.flatMap((v) => v.chapters),
+    ]
+    if (sections.length === 0) errors.push(`医书 ${book.title}: 没有任何篇章`)
+    for (const section of sections) {
+      if (!section.id || !section.title) errors.push(`医书 ${book.title}: 篇章缺少 id/title`)
+      if (!Array.isArray(section.paragraphs) || section.paragraphs.length === 0) {
+        errors.push(`医书 ${book.title} / ${section.title}: 正文为空`)
+      }
+      const body = (section.paragraphs ?? []).join('')
+      if (/<篇名>|<目录>|属性：|\\x/.test(body)) {
+        errors.push(`医书 ${book.title} / ${section.title}: 正文残留源文件控制标记`)
+      }
+    }
+    const actualChapters = book.volumes.reduce((sum, v) => sum + v.chapters.length, 0)
+    if (actualChapters !== book.stats.chapterCount) {
+      errors.push(`医书 ${book.title}: 篇数统计不一致`)
+    }
+    classicChapters += actualChapters
+    classicChars += book.stats.charCount
+  }
+}
+
 const counts = {
   sources: data.sources.length,
   herbs: data.herbs.length,
@@ -357,6 +413,9 @@ const counts = {
   extraordinaryMeridians: extraordinary.length,
   acupoints: data.acupoints.length,
   regions: [...regions],
+  classicBooks: classicsIndex?.books?.length ?? 0,
+  classicChapters,
+  classicChars,
   quoteClaims: 0,
 }
 
@@ -379,4 +438,4 @@ if (errors.length) {
   for (const e of errors) console.error(`  - ${e}`)
   process.exit(1)
 }
-console.log('\n通过：出处、引用、组成、坐标、八类穴与八脉交会覆盖检查均正常。')
+console.log('\n通过：出处、引用、组成、坐标、八类穴、八脉交会与四部医书全文检查均正常。')

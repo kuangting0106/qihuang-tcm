@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-11-02T08:46:58.277Z",
+  "books": [
+    {
+      "id": "xuezhenglun",
+      "title": "血证论",
+      "author": "唐容川",
+      "stats": {
+        "prefaceCount": 1,
+        "postscriptCount": 0,
+        "frontMatterCount": 1,
+        "chapterCount": 80,
+        "volumeCount": 8,
+        "charCount": 111477
+      }
+    },
+    {
+      "id": "shanghan-jiejue",
+      "title": "伤寒捷诀",
+      "author": "严则庵纂辑、裘庆元辑",
+      "stats": {
+        "prefaceCount": 1,
+        "postscriptCount": 0,
+        "frontMatterCount": 0,
+        "chapterCount": 98,
+        "volumeCount": 1,
+        "charCount": 19171
+      }
+    },
+    {
+      "id": "shanghanlun-jiyi",
+      "title": "伤寒论辑义",
+      "author": "丹波元简",
+      "stats": {
+        "prefaceCount": 2,
+        "postscriptCount": 0,
+        "frontMatterCount": 1,
+        "chapterCount": 10,
+        "volumeCount": 7,
+        "charCount": 248403
+      }
+    },
+    {
+      "id": "shishimilu",
+      "title": "石室秘录",
+      "author": "陈士铎",
+      "stats": {
+        "prefaceCount": 5,
+        "postscriptCount": 1,
+        "frontMatterCount": 0,
+        "chapterCount": 179,
+        "volumeCount": 7,
+        "charCount": 180811
+      }
+    }
+  ]
+}

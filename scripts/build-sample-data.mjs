@@ -8,6 +8,7 @@ import { acupoints } from './content/acupoints.mjs'
 import { formulas } from './content/formulas.mjs'
 import { herbTaxonomy } from './content/herb-taxonomy.mjs'
 import { herbProcessing, processingExamples } from './content/herb-processing.mjs'
+import { buildClassics } from './build-classics.mjs'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const dataDir = path.join(root, 'public', 'data')
@@ -79,6 +80,7 @@ const data = {
 }
 
 fs.writeFileSync(path.join(dataDir, 'sample_data.json'), JSON.stringify(data, null, 2), 'utf8')
+buildClassics()
 
 console.log(
   `Wrote ${path.relative(root, path.join(dataDir, 'sample_data.json'))}: ` +

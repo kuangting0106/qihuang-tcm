@@ -11,7 +11,7 @@
 - 名家讲堂：以张仲景、傅青主、李时珍、孙思邈等医家与典籍为线索，收集后世/当代名家的视频课件；历史医家无影像，讲授者、版本与授权分开标注。
 - 药材的炮制：按草木类、蛇虫类、金石类分栏，已收录 9 味样例药的净制、切制与加辅料炮制；每法回引药典 2020 年版一部【炮制】项，标“摘录”，成品性状与使用注意同页展示。麻黄、露蜂房、牛虻的读者线索单列“待核”，不写成已收录方法。
 - 阅读说明：原首页“内容方法论”移入页脚“关于本站”，鼠标悬停或点击打开；说明原文/方解分层、坐标离线预计算与大方向排版规则。
-- 医家经典古籍：集中展示项目已引用的《伤寒论》《灵枢》《难经》《神农本草经》《本草纲目》等古籍与条文；不再单设“出处索引”，具体条目的出处仍在各内容页旁点击查看。
+- 医家经典古籍：四部医书全文各自独立——《血证论》《伤寒捷诀》《伤寒论辑义》《石室秘录》。详情页只列作者、序跋、卷次与篇名；点篇名进入该篇原文，序、跋与正文按原书次序排列。另集中展示项目已引用的《伤寒论》《灵枢》《难经》《神农本草经》《本草纲目》等古籍条文，具体条目的出处仍在各内容页旁点击查看。
 - 所有中医内容标注出处；原文、摘录、后世方解分开标注；方剂出处写具体古籍（《伤寒论》《金匮要略》或傅青主具体书名），不用“方剂学”代替古籍出处；治疗法门篇与医案目前只立栏目，正文待录。
 
 ## 预览
@@ -39,6 +39,10 @@
 | 名家讲堂 | 药材的炮制 |
 |---|---|
 | ![名家讲堂](docs/preview-lectures.png) | ![药材的炮制](docs/preview-processing.png) |
+
+| 医家经典古籍 | 全书目录 |
+|---|---|
+| ![医家经典古籍](docs/preview-classics.png) | ![全书目录](docs/preview-classic-book.png) |
 
 ## 运行
 
@@ -76,10 +80,13 @@ npm run build
 qihuang-tcm/
 ├── public/
 │   ├── data/sample_data.json      # 全部样例内容与出处
+│   ├── data/classics/             # 四部医书的分卷 JSON（按需加载）
 │   └── images/herbs/real/         # 27 张实拍照片（iNaturalist，CC 许可）
 ├── scripts/
 │   ├── content/                   # 内容源（sources/herbs/...）
+│   ├── content/classics/          # 四部医书的 UTF-8 底本
 │   ├── build-sample-data.mjs      # 生成 sample_data.json 与图片
+│   ├── build-classics.mjs         # 拆序跋、卷次、篇名与正文
 │   └── validate-data.mjs          # 构建前校验
 ├── src/
 │   ├── components/                # 图谱、引用抽屉、3D 人体等
@@ -107,6 +114,8 @@ qihuang-tcm/
 - `meridians.mjs`：经络
 - `acupoints.mjs`：穴位
 - `formulas.mjs`：方剂
+- `classics.mjs`：四部医书的书名、作者与底本文件
+- `classics/*.txt`：四部医书 UTF-8 底本
 
 修改后运行：
 
@@ -115,7 +124,7 @@ node scripts/build-sample-data.mjs
 npm run validate:data
 ```
 
-会重新生成 `public/data/sample_data.json`；实拍图片版权见 `docs/PHOTO-CREDITS.md`。
+会重新生成 `public/data/sample_data.json` 和 `public/data/classics/*.json`；实拍图片版权见 `docs/PHOTO-CREDITS.md`。
 
 ## 方剂布局
 

@@ -103,6 +103,18 @@ const router = createRouter({
       meta: { title: '医家经典古籍' },
     },
     {
+      path: '/classics/:bookId',
+      name: 'classic-book',
+      component: () => import('@/views/ClassicBookView.vue'),
+      meta: { title: '古籍全文' },
+    },
+    {
+      path: '/classics/:bookId/:chapterId',
+      name: 'classic-chapter',
+      component: () => import('@/views/ClassicChapterView.vue'),
+      meta: { title: '古籍原文' },
+    },
+    {
       path: '/sources',
       redirect: '/classics',
     },
