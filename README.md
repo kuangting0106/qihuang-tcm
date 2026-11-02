@@ -128,8 +128,7 @@ Vite 开发服务器已配置：
 OpenCode 桌面端插件（全局配置，不在本项目仓库内）：
 
 - `@tarquinen/opencode-dcp`：上下文压缩，已写入 `~/.config/opencode/opencode.json`。
-- `opencode-subagent-statusline`：TUI 子代理状态栏，已写入 `~/.config/opencode/cli.json`；需重启 OpenCode 后生效。
-- 该状态栏版本与 OpenCode 自带的 OpenTUI 存在 peer 依赖版本差，采用本地缓存安装；若重启后未显示或报错，先移除 `cli.json` 中的该项。
+- `opencode-subagent-statusline`：**只支持终端 TUI**，会在侧栏显示子代理状态，桌面 GUI 不渲染；已从 `cli.json` 移除。需要在终端使用时，再把包名加回 `~/.config/opencode/cli.json` 的 `plugins` 数组并重启 OpenCode。
 
 ## 免责声明
 
