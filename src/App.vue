@@ -2,11 +2,13 @@
 import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, RouterView, useRouter } from 'vue-router'
 import CitationDrawer from '@/components/CitationDrawer.vue'
+import AboutSiteModal from '@/components/AboutSiteModal.vue'
 import { loadTcmData, useTcmData } from '@/composables/useTcmData'
 
 const { data, loading, error } = useTcmData()
 const router = useRouter()
 const menuOpen = ref(false)
+const aboutOpen = ref(false)
 const isHome = computed(() => router.currentRoute.value.path === '/')
 
 onMounted(() => {
@@ -17,6 +19,7 @@ watch(
   () => router.currentRoute.value.fullPath,
   () => {
     menuOpen.value = false
+    aboutOpen.value = false
   },
 )
 
@@ -99,6 +102,17 @@ function retry() {
           <RouterLink to="/classics">医家经典古籍</RouterLink>
           <RouterLink to="/cases">医案</RouterLink>
           <RouterLink to="/lab/formula-scale">布局演示</RouterLink>
+          <button
+            class="footer-about"
+            type="button"
+            aria-haspopup="dialog"
+            :aria-expanded="aboutOpen"
+            @mouseenter="aboutOpen = true"
+            @click="aboutOpen = true"
+            @focus="aboutOpen = true"
+          >
+            关于本站
+          </button>
         </div>
       </div>
       <div class="footer-bottom">
@@ -107,6 +121,7 @@ function retry() {
       </div>
     </footer>
 
+    <AboutSiteModal :open="aboutOpen" @close="aboutOpen = false" />
     <CitationDrawer />
   </template>
 </template>

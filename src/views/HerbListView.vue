@@ -1,19 +1,35 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, nextTick, ref, watch } from 'vue'
+import { RouterLink, useRoute, useRouter } from 'vue-router'
 import HerbCard from '@/components/HerbCard.vue'
 import { useTcmData } from '@/composables/useTcmData'
 
 const { data, allFlavorTags, allMeridians, meridianName } = useTcmData()
+const route = useRoute()
+const router = useRouter()
 
 const query = ref('')
 const flavor = ref('')
 const meridian = ref('')
+const rankFilter = ref(typeof route.query.rank === 'string' ? route.query.rank : '')
+const categoryFilter = ref(typeof route.query.category === 'string' ? route.query.category : '')
+
+watch(
+  () => [route.query.rank, route.query.category],
+  ([rank, category]) => {
+    rankFilter.value = typeof rank === 'string' ? rank : ''
+    categoryFilter.value = typeof category === 'string' ? category : ''
+  },
+)
 
 const herbs = computed(() => data.value?.herbs ?? [])
+const taxonomy = computed(() => data.value?.herbTaxonomy ?? null)
 
 const filtered = computed(() => {
   const q = query.value.trim().toLowerCase()
   return herbs.value.filter((h) => {
+    if (rankFilter.value && h.classicRankId !== rankFilter.value) return false
+    if (categoryFilter.value && !h.therapyCategoryIds.includes(categoryFilter.value)) return false
     if (flavor.value && !h.flavorTags.includes(flavor.value)) return false
     if (meridian.value && !h.meridianIds.includes(meridian.value)) return false
     if (!q) return true
@@ -32,12 +48,60 @@ const filtered = computed(() => {
   })
 })
 
-const activeFilters = computed(() => [query.value, flavor.value, meridian.value].filter(Boolean).length)
+const activeFilters = computed(
+  () => [query.value, flavor.value, meridian.value, rankFilter.value, categoryFilter.value].filter(Boolean).length,
+)
 
 function reset() {
   query.value = ''
   flavor.value = ''
   meridian.value = ''
+  rankFilter.value = ''
+  categoryFilter.value = ''
+  syncTaxonomyQuery()
+}
+
+function syncTaxonomyQuery() {
+  const next = { ...route.query }
+  if (rankFilter.value) next.rank = rankFilter.value
+  else delete next.rank
+  if (categoryFilter.value) next.category = categoryFilter.value
+  else delete next.category
+  router.replace({ query: next })
+}
+
+function rankHerbs(rankId: string) {
+  return herbs.value.filter((h) => h.classicRankId === rankId)
+}
+
+function categoryHerbs(categoryId: string) {
+  return herbs.value.filter((h) => h.therapyCategoryIds.includes(categoryId))
+}
+
+function toggleRank(rankId: string) {
+  rankFilter.value = rankFilter.value === rankId ? '' : rankId
+  categoryFilter.value = ''
+  syncTaxonomyQuery()
+  scrollToResults()
+}
+
+function toggleCategory(categoryId: string) {
+  categoryFilter.value = categoryFilter.value === categoryId ? '' : categoryId
+  rankFilter.value = ''
+  syncTaxonomyQuery()
+  scrollToResults()
+}
+
+function clearTaxonomy() {
+  rankFilter.value = ''
+  categoryFilter.value = ''
+  syncTaxonomyQuery()
+}
+
+function scrollToResults() {
+  nextTick(() => {
+    document.getElementById('herb-results')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  })
 }
 
 const meridianOptions = computed(() =>
@@ -65,6 +129,73 @@ const meridianOptions = computed(() =>
         </div>
       </header>
 
+      <section v-if="taxonomy" class="taxonomy-section" aria-label="本草分类">
+        <div class="taxonomy-head">
+          <div>
+            <p class="eyebrow">CLASSIFICATION / 分类</p>
+            <h2>三经为纲，功效分类为目</h2>
+          </div>
+          <p class="taxonomy-head__note">
+            三经名目见《神农本草经》序录；十二个功效分类是本站导航标签，不是经典原文。
+            同一味药可以同时出现在三经与多个功效分类中。
+          </p>
+        </div>
+
+        <div class="rank-grid">
+          <article
+            v-for="rank in taxonomy.ranks"
+            :key="rank.id"
+            class="rank-card"
+            :class="[`rank-card--${rank.id}`, { 'rank-card--active': rankFilter === rank.id }]"
+          >
+            <button class="rank-card__select" type="button" :aria-pressed="rankFilter === rank.id" @click="toggleRank(rank.id)">
+              <span class="rank-card__title">{{ rank.title }}</span>
+              <span class="rank-card__subtitle">{{ rank.subtitle }}</span>
+              <span class="rank-card__count">{{ rankHerbs(rank.id).length }} 味已收录</span>
+            </button>
+            <p class="rank-card__desc">{{ rank.description }}</p>
+            <div class="rank-card__herbs">
+              <RouterLink v-for="h in rankHerbs(rank.id)" :key="h.id" :to="`/herbs/${h.id}`">
+                {{ h.name }}
+              </RouterLink>
+              <span v-if="!rankHerbs(rank.id).length" class="pending-text">待收录</span>
+            </div>
+            <span class="rank-card__hint">{{ rankFilter === rank.id ? '正在按本经筛选' : '点击筛选本经' }}</span>
+          </article>
+        </div>
+
+        <div class="therapy-grid">
+          <article
+            v-for="cat in taxonomy.categories"
+            :key="cat.id"
+            class="therapy-card"
+            :class="{ 'therapy-card--active': categoryFilter === cat.id }"
+          >
+            <button class="therapy-card__head" type="button" :aria-pressed="categoryFilter === cat.id" @click="toggleCategory(cat.id)">
+              <h3>{{ cat.title }}</h3>
+              <span>{{ categoryHerbs(cat.id).length }} 味</span>
+            </button>
+            <p class="therapy-card__desc">{{ cat.description }}</p>
+            <div class="therapy-card__herbs">
+              <RouterLink v-for="h in categoryHerbs(cat.id)" :key="h.id" :to="`/herbs/${h.id}`">
+                {{ h.name }}
+              </RouterLink>
+              <span v-for="name in cat.pending" :key="name" class="pending-herb">
+                {{ name }}<em>待收</em>
+              </span>
+              <span v-if="!categoryHerbs(cat.id).length && !cat.pending.length" class="pending-text">待收录</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="taxonomy-foot">
+          {{ taxonomy.note }}
+          <button v-if="rankFilter || categoryFilter" class="text-button" type="button" @click="clearTaxonomy">
+            清除分类筛选
+          </button>
+        </p>
+      </section>
+
       <section class="filter-bar paper-panel" aria-label="药材筛选">
         <label class="search-field">
           <span class="search-field__icon" aria-hidden="true">⌕</span>
@@ -89,7 +220,7 @@ const meridianOptions = computed(() =>
         </button>
       </section>
 
-      <div class="result-line">
+      <div id="herb-results" class="result-line">
         <p>
           共 <strong>{{ filtered.length }}</strong> 味
           <span v-if="activeFilters">· 已筛选 {{ activeFilters }} 项</span>
@@ -103,7 +234,7 @@ const meridianOptions = computed(() =>
 
       <div v-else class="empty-state paper-panel">
         <h2>没有找到这味药</h2>
-        <p>试试只搜一个字，或清除性味、归经筛选。</p>
+        <p>试试只搜一个字，或清除性味、归经、三经与功效分类筛选。</p>
         <button class="btn btn--primary" type="button" @click="reset">清除筛选</button>
       </div>
 
@@ -161,6 +292,233 @@ const meridianOptions = computed(() =>
 .page-hero__stat small {
   color: var(--ink-soft);
   font-size: 0.76rem;
+}
+
+.taxonomy-section {
+  padding: 30px 0 8px;
+  border-top: 1px solid var(--line-strong);
+}
+
+.taxonomy-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.taxonomy-head h2 {
+  margin-top: 4px;
+  font-size: 1.6rem;
+}
+
+.taxonomy-head__note {
+  max-width: 520px;
+  color: var(--ink-soft);
+  font-size: 0.76rem;
+  line-height: 1.8;
+}
+
+.rank-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.rank-card {
+  --rank-color: var(--jade);
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 17px 18px 13px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 252, 245, 0.5);
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.rank-card--middle {
+  --rank-color: var(--gold);
+}
+
+.rank-card--lower {
+  --rank-color: var(--cinnabar);
+}
+
+.rank-card--active {
+  border-color: var(--rank-color);
+  background: rgba(255, 252, 245, 0.9);
+  box-shadow: var(--shadow-soft);
+}
+
+.rank-card__select {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.rank-card__title {
+  color: var(--rank-color);
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+}
+
+.rank-card__subtitle {
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+}
+
+.rank-card__count {
+  color: var(--ink-faint);
+  font-size: 0.68rem;
+}
+
+.rank-card__desc {
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+  line-height: 1.7;
+}
+
+.rank-card__herbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.rank-card__herbs a {
+  padding: 3px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: 0.72rem;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.rank-card__herbs a:hover {
+  border-color: var(--rank-color);
+  color: var(--rank-color);
+}
+
+.rank-card__hint {
+  color: var(--rank-color);
+  font-size: 0.64rem;
+}
+
+.therapy-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.therapy-card {
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 252, 245, 0.4);
+  transition: border-color 0.16s ease, background 0.16s ease;
+}
+
+.therapy-card--active {
+  border-color: var(--cinnabar);
+  background: rgba(241, 221, 214, 0.26);
+}
+
+.therapy-card__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.therapy-card__head h3 {
+  font-size: 0.92rem;
+}
+
+.therapy-card__head span {
+  color: var(--ink-faint);
+  font-size: 0.64rem;
+  white-space: nowrap;
+}
+
+.therapy-card__desc {
+  margin-top: 4px;
+  color: var(--ink-faint);
+  font-size: 0.7rem;
+  line-height: 1.6;
+}
+
+.therapy-card__herbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 8px;
+  margin-top: 8px;
+}
+
+.therapy-card__herbs a {
+  color: var(--cinnabar);
+  font-size: 0.72rem;
+}
+
+.therapy-card__herbs a:hover {
+  text-decoration: underline;
+}
+
+.pending-herb {
+  color: var(--ink-faint);
+  font-size: 0.68rem;
+}
+
+.pending-herb em {
+  margin-left: 3px;
+  padding: 0 3px;
+  border-radius: 3px;
+  background: var(--paper-2);
+  font-size: 0.56rem;
+  font-style: normal;
+}
+
+.pending-text {
+  color: var(--ink-faint);
+  font-size: 0.7rem;
+}
+
+.taxonomy-foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-top: 12px;
+  color: var(--ink-faint);
+  font-size: 0.7rem;
+  line-height: 1.7;
+}
+
+.text-button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--cinnabar);
+  font-size: 0.7rem;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .filter-bar {
@@ -288,11 +646,21 @@ const meridianOptions = computed(() =>
   .herb-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+
+  .therapy-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 960px) {
   .herb-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .taxonomy-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
 
   .page-hero {
@@ -311,6 +679,14 @@ const meridianOptions = computed(() =>
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .rank-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .therapy-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .result-line {
     flex-direction: column;
     gap: 4px;
@@ -319,6 +695,10 @@ const meridianOptions = computed(() =>
 
 @media (max-width: 520px) {
   .herb-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .therapy-grid {
     grid-template-columns: 1fr;
   }
 }

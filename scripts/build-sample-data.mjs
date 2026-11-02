@@ -6,6 +6,7 @@ import { herbs } from './content/herbs.mjs'
 import { meridians } from './content/meridians.mjs'
 import { acupoints } from './content/acupoints.mjs'
 import { formulas } from './content/formulas.mjs'
+import { herbTaxonomy } from './content/herb-taxonomy.mjs'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const dataDir = path.join(root, 'public', 'data')
@@ -16,13 +17,19 @@ const photoFile = path.join(root, 'scripts', 'content', 'herb-photos.json')
 const herbPhotos = fs.existsSync(photoFile)
   ? JSON.parse(fs.readFileSync(photoFile, 'utf8'))
   : {}
-const enrichedHerbs = herbs.map((h) => ({
-  ...h,
-  images:
-    herbPhotos[h.id]?.images?.length === 3
-      ? herbPhotos[h.id].images
-      : h.images,
-}))
+const enrichedHerbs = herbs.map((h) => {
+  const assignment = herbTaxonomy.assignments[h.id]
+  if (!assignment) throw new Error(`Missing herb taxonomy assignment: ${h.id}`)
+  return {
+    ...h,
+    classicRankId: assignment.rankId,
+    therapyCategoryIds: assignment.categoryIds,
+    images:
+      herbPhotos[h.id]?.images?.length === 3
+        ? herbPhotos[h.id].images
+        : h.images,
+  }
+})
 
 const bodyPointsFile = path.join(root, 'scripts', 'content', 'body_points.json')
 const bodyPoints = fs.existsSync(bodyPointsFile)
@@ -60,6 +67,7 @@ const data = {
   },
   sources,
   herbs: enrichedHerbs,
+  herbTaxonomy,
   formulas,
   meridians: enrichedMeridians,
   acupoints: enrichedAcupoints,

@@ -473,6 +473,22 @@ img {
   color: var(--cinnabar);
 }
 
+.footer-about {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink-soft);
+  font: inherit;
+  cursor: pointer;
+}
+
+.footer-about:hover,
+.footer-about:focus-visible {
+  color: var(--cinnabar);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .footer-bottom {
   width: min(1320px, calc(100% - 40px));
   margin: 0 auto;

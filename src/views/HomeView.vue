@@ -114,7 +114,7 @@ const modules = computed(() => [
           <div>
             <span class="eyebrow">METHOD / 治疗法门篇</span>
             <h3>治疗法门篇</h3>
-            <p>看诊十问、脉诊、望诊、听诊、治疗法门、治癌法门、治病先后主次。</p>
+            <p>看诊十问、脉诊、望诊、听诊、治疗法门、治癌法门、治病先后主次、灸、针。</p>
           </div>
           <span class="extra-card__count">{{ methodTopics.length }} 个栏目 →</span>
         </RouterLink>
@@ -122,7 +122,7 @@ const modules = computed(() => [
           <div>
             <span class="eyebrow">CASE / 医案</span>
             <h3>医案</h3>
-            <p>按病类整理医案：风湿、表证、肠胃、肺篇、心胸、腹篇、积饮、消渴、水病、痢、脓疡、孕妇科、男科。</p>
+            <p>按病类整理医案：风湿、表证、肠胃、肺篇、心胸、腹篇、积饮、消渴、水病、痢、脓疡、孕妇科、男科、精神。</p>
           </div>
           <span class="extra-card__count">{{ caseTopics.length }} 个栏目 →</span>
         </RouterLink>
@@ -205,37 +205,8 @@ const modules = computed(() => [
       <div class="container source-strip__inner">
         <span class="eyebrow">SOURCES</span>
         <p>
-          伤寒论 · 灵枢 · 难经 · 中华人民共和国药典 · GB/T 12346-2021 · 针灸学 · 方剂学 · 中药学
+          伤寒论 · 灵枢 · 难经 · 神农本草经 · 中华人民共和国药典 · GB/T 12346-2021 · 针灸学 · 方剂学 · 中药学
         </p>
-      </div>
-    </section>
-
-    <section class="principles container">
-      <div class="principles__intro">
-        <p class="eyebrow">HOW TO READ</p>
-        <h2>这不是一份“看起来很像”的中医文案</h2>
-        <p>
-          原型里的每一条内容都挂在来源上。经典原文、药典/标准、教材归纳分别标注；
-          查不到确切出处的字段宁可不写。
-        </p>
-        <RouterLink class="text-link" to="/classics">查看医家经典古籍 →</RouterLink>
-      </div>
-      <div class="principle-list">
-        <article>
-          <span class="principle-list__num">01</span>
-          <h3>原文与方解分开</h3>
-          <p>“桂枝为君”不是《伤寒论》原文，而是后世方书归纳，页面会明确标成“后世方解”。</p>
-        </article>
-        <article>
-          <span class="principle-list__num">02</span>
-          <h3>穴位坐标离线预计算</h3>
-          <p>3D 只读 JSON 坐标表，不在运行时把点贴到人体表面，换模型必须换坐标版本。</p>
-        </article>
-        <article>
-          <span class="principle-list__num">03</span>
-          <h3>方剂大方不画成乱麻</h3>
-          <p>1～8 味用同心环；21 味以上默认按角色分组列表，全部展开，不折叠。</p>
-        </article>
       </div>
     </section>
   </div>
@@ -564,60 +535,6 @@ const modules = computed(() => [
   color: var(--accent);
 }
 
-.principles {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: 56px;
-  padding-top: 54px;
-  padding-bottom: 90px;
-}
-
-.principles__intro h2 {
-  margin: 4px 0 14px;
-}
-
-.principles__intro p {
-  color: var(--ink-soft);
-  line-height: 1.9;
-}
-
-.principles__intro .text-link {
-  display: inline-block;
-  margin-top: 18px;
-  font-size: 0.86rem;
-}
-
-.principle-list {
-  display: grid;
-  gap: 12px;
-}
-
-.principle-list article {
-  display: grid;
-  grid-template-columns: 48px minmax(0, 1fr);
-  gap: 12px 16px;
-  padding: 18px 20px;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  background: rgba(255, 252, 245, 0.46);
-}
-
-.principle-list__num {
-  grid-row: span 2;
-  color: var(--cinnabar);
-  font-family: var(--serif);
-  font-size: 1.05rem;
-}
-
-.principle-list h3 {
-  font-size: 1rem;
-}
-
-.principle-list p {
-  color: var(--ink-soft);
-  font-size: 0.84rem;
-}
-
 .collections {
   padding-bottom: 92px;
 }
@@ -776,11 +693,6 @@ const modules = computed(() => [
 
   .extra-sections {
     grid-template-columns: 1fr;
-  }
-
-  .principles {
-    grid-template-columns: 1fr;
-    gap: 30px;
   }
 
   .collection-grid {

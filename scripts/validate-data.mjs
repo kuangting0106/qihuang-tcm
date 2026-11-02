@@ -94,6 +94,42 @@ for (const h of data.herbs ?? []) {
   }
 }
 
+const taxonomy = data.herbTaxonomy
+if (!taxonomy) {
+  errors.push('缺少 herbTaxonomy 本草分类')
+} else {
+  if (!Array.isArray(taxonomy.ranks) || taxonomy.ranks.length !== 3) {
+    errors.push('herbTaxonomy: 三经必须正好 3 项')
+  }
+  if (!Array.isArray(taxonomy.categories) || taxonomy.categories.length !== 12) {
+    errors.push('herbTaxonomy: 功效分类必须正好 12 项')
+  }
+  const rankIds = new Set((taxonomy.ranks ?? []).map((r) => r.id))
+  const categoryIds = new Set((taxonomy.categories ?? []).map((c) => c.id))
+  if (rankIds.size !== 3) errors.push('herbTaxonomy: 三经 id 缺失或重复')
+  if (categoryIds.size !== 12) errors.push('herbTaxonomy: 功效分类 id 缺失或重复')
+  for (const h of data.herbs ?? []) {
+    if (!rankIds.has(h.classicRankId)) {
+      errors.push(`药材 ${h.id}: 三经分类无效 ${h.classicRankId}`)
+    }
+    if (!Array.isArray(h.therapyCategoryIds) || h.therapyCategoryIds.length === 0) {
+      errors.push(`药材 ${h.id}: 缺少功效分类 therapyCategoryIds`)
+    } else if (new Set(h.therapyCategoryIds).size !== h.therapyCategoryIds.length) {
+      errors.push(`药材 ${h.id}: 功效分类重复`)
+    } else {
+      for (const id of h.therapyCategoryIds) {
+        if (!categoryIds.has(id)) errors.push(`药材 ${h.id}: 功效分类不存在 ${id}`)
+      }
+    }
+  }
+  for (const id of Object.keys(taxonomy.assignments ?? {})) {
+    if (!herbIds.has(id)) errors.push(`herbTaxonomy: 分类指向不存在的药材 ${id}`)
+  }
+  for (const r of taxonomy.ranks ?? []) {
+    checkCitationIds(r.citationIds, `三经 ${r.id}`)
+  }
+}
+
 const meridianIds = new Set()
 for (const m of data.meridians ?? []) {
   if (!m.id || meridianIds.has(m.id)) errors.push(`经络 id 缺失或重复: ${m.id}`)
@@ -255,6 +291,8 @@ if (data.bodyModel?.coordinateFrame === 'bronze-body-v1') {
 const counts = {
   sources: data.sources.length,
   herbs: data.herbs.length,
+  herbRanks: data.herbTaxonomy?.ranks?.length ?? 0,
+  herbCategories: data.herbTaxonomy?.categories?.length ?? 0,
   formulas: data.formulas.length,
   meridians: data.meridians.length,
   regularMeridians: regular.length,

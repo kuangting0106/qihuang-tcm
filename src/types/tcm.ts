@@ -66,11 +66,35 @@ export interface Herb {
   names: HerbNameNotes
   flavorTags: string[]
   meridianIds: string[]
+  classicRankId: string
+  therapyCategoryIds: string[]
   properties: HerbProperties
   images: HerbImage[]
   pairings: HerbPairing[]
   verification: 'verified' | 'reference' | 'pending'
   note?: string
+}
+
+export interface HerbClassicRank {
+  id: string
+  title: string
+  subtitle: string
+  description: string
+  citationIds: string[]
+}
+
+export interface HerbTherapyCategory {
+  id: string
+  title: string
+  description: string
+  pending: string[]
+}
+
+export interface HerbTaxonomy {
+  ranks: HerbClassicRank[]
+  categories: HerbTherapyCategory[]
+  assignments: Record<string, { rankId: string; categoryIds: string[] }>
+  note: string
 }
 
 export type FormulaRole = '君' | '臣' | '佐' | '使' | '佐使' | '未标注'
@@ -258,6 +282,7 @@ export interface TcmData {
   bodyModel: BodyModel
   sources: Citation[]
   herbs: Herb[]
+  herbTaxonomy: HerbTaxonomy
   formulas: Formula[]
   meridians: Meridian[]
   acupoints: Acupoint[]

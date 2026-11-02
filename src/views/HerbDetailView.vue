@@ -6,10 +6,20 @@ import SourcedText from '@/components/SourcedText.vue'
 import { useTcmData } from '@/composables/useTcmData'
 
 const route = useRoute()
-const { herbsById, meridianName } = useTcmData()
+const { data, herbsById, meridianName } = useTcmData()
 
 const herb = computed(() => herbsById.value.get(String(route.params.id)) ?? null)
 const activeImage = ref(0)
+
+const taxonomy = computed(() => data.value?.herbTaxonomy ?? null)
+const rank = computed(() =>
+  taxonomy.value?.ranks.find((r) => r.id === herb.value?.classicRankId) ?? null,
+)
+const categories = computed(() =>
+  (herb.value?.therapyCategoryIds ?? [])
+    .map((id) => taxonomy.value?.categories.find((c) => c.id === id))
+    .filter((c) => !!c),
+)
 
 watch(
   () => route.params.id,
@@ -80,6 +90,20 @@ const currentSlotLabel = computed(() => {
             <span v-for="t in herb.flavorTags" :key="t" class="chip chip--cinnabar">{{ t }}</span>
             <span v-for="m in meridianLinks" :key="m.id" class="chip chip--jade">{{ m.name }}</span>
             <span class="chip chip--gold">{{ herb.verification === 'reference' ? '药典依据' : '待核验' }}</span>
+          </div>
+          <div class="taxonomy-links">
+            <span class="taxonomy-links__label">分类</span>
+            <RouterLink v-if="rank" class="chip chip--gold" :to="`/herbs?rank=${rank.id}`">
+              {{ rank.title }} · {{ rank.subtitle }}
+            </RouterLink>
+            <RouterLink
+              v-for="cat in categories"
+              :key="cat.id"
+              class="chip"
+              :to="`/herbs?category=${cat.id}`"
+            >
+              {{ cat.title }}
+            </RouterLink>
           </div>
         </div>
         <div class="detail-head__source">
@@ -316,6 +340,24 @@ const currentSlotLabel = computed(() => {
   flex-wrap: wrap;
   gap: 6px;
   margin-top: 14px;
+}
+
+.taxonomy-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.taxonomy-links__label {
+  color: var(--ink-faint);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+}
+
+.taxonomy-links .chip {
+  font-size: 0.68rem;
 }
 
 .detail-head__source {
