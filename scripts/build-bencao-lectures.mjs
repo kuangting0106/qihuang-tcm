@@ -2,6 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { pinyin } from 'pinyin-pro'
+import { canonicalName, herbAliasGroups } from './content/herb-aliases.mjs'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const sourceDir = path.join(root, 'scripts', 'content', 'bencao-lectures')
@@ -348,7 +349,8 @@ function firstParagraph(entry) {
 }
 
 function buildProfile(entry) {
-  const record = profiles.items?.[entry.title]
+  const record =
+    profiles.items?.[entry.title] ?? profiles.items?.[canonicalName(entry.title)]
   const flavorText = sectionText(entry, '性味')
   const original = originalText(entry)
   const lectureFlavors = [
@@ -472,7 +474,76 @@ function readGroup(def) {
   return { ...def, entries }
 }
 
-const groups = GROUP_DEFS.map(readGroup)
+const RANK_PRIORITY = { shangjing: 0, zhongjing: 1, xiajing: 2, nishi: 3, editor: 4 }
+const entryRedirects = {}
+
+// 基本不用、已难考实或公开资料反复错配的条目，整条删除，不并入其他药。
+const DROPPED_NAMES = new Set(['蘼芜', '青蘘', '肤青', '白马茎', '牛角鳃', '翳螉', '女萎'])
+
+function mergeAliasEntries(groups) {
+  const buckets = new Map()
+  for (const group of groups) {
+    if (group.id === 'intro') continue
+    for (const entry of group.entries) {
+      if (DROPPED_NAMES.has(entry.title)) continue
+      const canonical = canonicalName(entry.title)
+      if (!buckets.has(canonical)) buckets.set(canonical, [])
+      buckets.get(canonical).push(entry)
+    }
+  }
+
+  const mergedByGroup = new Map()
+  for (const [canonical, list] of buckets) {
+    list.sort((a, b) => {
+      const rankDiff = (RANK_PRIORITY[a.groupId] ?? 9) - (RANK_PRIORITY[b.groupId] ?? 9)
+      if (rankDiff) return rankDiff
+      return (a.number ?? 9999) - (b.number ?? 9999)
+    })
+
+    const primary = list[0]
+    const aliasSet = new Set(primary.alsoKnownAs ?? [])
+    const groupAliases = herbAliasGroups.find((item) => item.canonical === canonical)?.aliases ?? []
+    for (const alias of groupAliases) aliasSet.add(alias)
+
+    for (const other of list.slice(1)) {
+      entryRedirects[`${other.groupId}:${other.id}`] = {
+        groupId: primary.groupId,
+        entryId: primary.id,
+        name: canonical,
+      }
+      aliasSet.add(other.title)
+      for (const alias of other.alsoKnownAs ?? []) aliasSet.add(alias)
+      for (const section of other.sections) {
+        primary.sections.push({
+          ...section,
+          label: section.label ? `${other.title} · ${section.label}` : `${other.title} · 正文`,
+        })
+      }
+      primary.charCount += other.charCount
+    }
+
+    if (primary.title !== canonical) primary.ancientName = primary.title
+    primary.title = canonical
+    primary.canonicalName = canonical
+    primary.alsoKnownAs = [...aliasSet].filter((name) => name && name !== canonical)
+    primary.pinyin = pinyinFor(canonical)
+    if (!mergedByGroup.has(primary.groupId)) mergedByGroup.set(primary.groupId, [])
+    mergedByGroup.get(primary.groupId).push(primary)
+  }
+
+  for (const group of groups) {
+    if (group.id === 'intro') continue
+    group.entries = (mergedByGroup.get(group.id) ?? []).sort((a, b) => {
+      if (a.number === null && b.number === null) return a.id.localeCompare(b.id)
+      if (a.number === null) return -1
+      if (b.number === null) return 1
+      return a.number - b.number
+    })
+  }
+  return groups
+}
+
+const groups = mergeAliasEntries(GROUP_DEFS.map(readGroup))
 const all = groups.flatMap((g) => g.entries)
 
 const errors = []
@@ -491,10 +562,10 @@ for (const group of groups) {
   }
 }
 
-const EXPECTED = { intro: 5, shangjing: 142, zhongjing: 112, xiajing: 103, nishi: 28, editor: 37 }
-for (const [id, count] of Object.entries(EXPECTED)) {
+const EXPECTED_MIN = { intro: 5, shangjing: 130, zhongjing: 100, xiajing: 95, nishi: 25, editor: 30 }
+for (const [id, count] of Object.entries(EXPECTED_MIN)) {
   const actual = groups.find((g) => g.id === id)?.entries.length ?? 0
-  if (actual !== count) errors.push(`${id}: 条目数应为 ${count}，实际 ${actual}`)
+  if (actual < count) errors.push(`${id}: 条目数少于 ${count}，实际 ${actual}`)
 }
 
 if (errors.length) {
@@ -516,6 +587,7 @@ const catalogItems = groups
       const item = {
         key: `${group.id}:${entry.id}`,
         name: entry.title,
+        ancientName: entry.ancientName,
         pinyin: entry.pinyin,
         groupId: group.id,
         entryId: entry.id,
@@ -531,7 +603,8 @@ const catalogItems = groups
         summary: (profile.effects || mainText).replace(/^主治[:：]?/, '').slice(0, 120),
         charCount: entry.charCount,
         hasProcessing: Boolean(processingText),
-        aliases: extractAliases(entry),
+        aliases: [...new Set([...(entry.alsoKnownAs ?? []), ...extractAliases(entry)])],
+        alsoKnownAs: entry.alsoKnownAs ?? [],
         meridianPending: profile.meridianPending,
         therapyCategoryIds: profile.therapyCategoryIds,
         sourceCategory: profile.sourceCategory,
@@ -561,9 +634,9 @@ const catalog = {
   items: catalogItems,
 }
 
-if (catalog.total !== 422 || catalog.threeRanks !== 357) {
+if (catalog.total < 390 || catalog.threeRanks < 340) {
   console.error(
-    `本草讲义目录条数异常：total=${catalog.total}（应为 422），threeRanks=${catalog.threeRanks}（应为 357）`,
+    `本草讲义目录条数异常：total=${catalog.total}，threeRanks=${catalog.threeRanks}`,
   )
   process.exit(1)
 }
@@ -584,6 +657,7 @@ const index = {
   intro: groups
     .find((g) => g.id === 'intro')
     .entries.map((e) => ({ id: e.id, title: e.title, subtitle: e.subtitle, charCount: e.charCount })),
+  entryRedirects,
 }
 
 fs.writeFileSync(path.join(outDir, 'index.json'), JSON.stringify(index, null, 2) + '\n', 'utf8')

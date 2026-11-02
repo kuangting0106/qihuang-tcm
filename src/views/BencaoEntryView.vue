@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
-import { RouterLink, useRoute } from 'vue-router'
+import { RouterLink, useRoute, useRouter } from 'vue-router'
 import { findBencaoEntry, formatCharCount, loadBencaoGroup, loadBencaoIndex } from '@/composables/useBencaoLectures'
 import { useTcmData } from '@/composables/useTcmData'
 import type { BencaoEntry, BencaoGroup, BencaoLectureIndex } from '@/types/bencao'
 
 const route = useRoute()
+const router = useRouter()
 const { data } = useTcmData()
 const index = ref<BencaoLectureIndex | null>(null)
 const group = ref<BencaoGroup | null>(null)
@@ -26,7 +27,14 @@ async function load(gid: string, eid: string) {
     index.value = library
     group.value = payload
     const found = findBencaoEntry(payload, eid)
-    if (!found) throw new Error('没有找到这条讲义')
+    if (!found) {
+      const redirect = library.entryRedirects?.[`${gid}:${eid}`]
+      if (redirect) {
+        await router.replace(`/bencao/${redirect.groupId}/${redirect.entryId}`)
+        return
+      }
+      throw new Error('没有找到这条讲义')
+    }
     entry.value = found.entry
     position.value = found.index
   } catch (err: unknown) {
@@ -74,6 +82,12 @@ const therapyCategories = computed(() => {
   return taxonomy.categories.filter((category) => ids.includes(category.id))
 })
 
+const otherNames = computed(() =>
+  (entry.value?.alsoKnownAs ?? []).filter(
+    (name) => name && name !== entry.value?.ancientName && name !== entry.value?.title,
+  ),
+)
+
 function sectionHeading(label: string): string {
   if (label) return label
   return group.value?.id === 'intro' ? '讲义' : '课堂讲授'
@@ -119,6 +133,12 @@ function brief(text: string | undefined, limit = 120): string {
             <p class="entry-head__sub">
               {{ entry.subtitle }}
               <span v-if="entry.number !== null"> · 第 {{ entry.number }} 条</span>
+            </p>
+            <p v-if="entry.ancientName" class="entry-head__alias entry-head__alias--ancient">
+              古籍名：{{ entry.ancientName }}
+            </p>
+            <p v-if="otherNames.length" class="entry-head__alias">
+              又名：{{ otherNames.join('、') }}
             </p>
           </div>
           <dl class="entry-head__stats">
@@ -263,6 +283,18 @@ function brief(text: string | undefined, limit = 120): string {
 .entry-head__sub {
   color: var(--ink-faint);
   font-size: 0.74rem;
+}
+
+.entry-head__alias {
+  max-width: 760px;
+  margin-top: 6px;
+  color: var(--ink-soft);
+  font-size: 0.68rem;
+  line-height: 1.7;
+}
+
+.entry-head__alias--ancient {
+  color: var(--cinnabar);
 }
 
 .entry-head__stats {

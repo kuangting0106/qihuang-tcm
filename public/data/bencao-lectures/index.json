@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T13:59:12.572Z",
+  "generatedAt": "2026-11-02T15:55:46.267Z",
   "source": {
     "id": "nihaixia-bencao",
     "title": "倪海厦《神农本草经》讲义",
@@ -24,40 +24,40 @@
       "title": "上经",
       "subtitle": "上药养命",
       "description": "上药共一百二十种，为君主养命以应天，皆无毒，多服久服不伤人；欲轻身益气、不老延年者，本于上经。",
-      "count": 142,
-      "charCount": 113361
+      "count": 137,
+      "charCount": 112356
     },
     {
       "id": "zhongjing",
       "title": "中经",
       "subtitle": "中药遏病",
       "description": "中药共一百二十种，为臣，主养性以应人，有毒无毒斟酌其宜；欲遏病补虚羸者，本于中经。",
-      "count": 112,
-      "charCount": 51092
+      "count": 108,
+      "charCount": 54788
     },
     {
       "id": "xiajing",
       "title": "下经",
       "subtitle": "下药除邪",
       "description": "下药共一百二十五种，为佐使，主治病以应地，多毒不可久服；欲除寒热邪气、破积聚、愈疾者，本于下经。",
-      "count": 103,
-      "charCount": 40080
+      "count": 100,
+      "charCount": 38938
     },
     {
       "id": "nishi",
       "title": "倪师补充药物",
       "subtitle": "《伤寒》《金匮》所用而《本经》未收",
       "description": "倪海厦按：以下药物原不见于《神农本草经》，但张仲景《伤寒论》《金匮要略》中有使用，另列并附使用说明。",
-      "count": 28,
-      "charCount": 11428
+      "count": 27,
+      "charCount": 10945
     },
     {
       "id": "editor",
       "title": "小编补充药物",
       "subtitle": "整理者增补 · 非倪师原讲义",
       "description": "课程整理者增补的常用药，不属于倪海厦原讲义正文；阅读时与倪师讲授内容分开看待。",
-      "count": 37,
-      "charCount": 41841
+      "count": 34,
+      "charCount": 38562
     }
   ],
   "intro": [
@@ -91,5 +91,52 @@
       "subtitle": "讲义导读",
       "charCount": 508
     }
-  ]
+  ],
+  "entryRedirects": {
+    "editor:editor-030": {
+      "groupId": "shangjing",
+      "entryId": "shangjing-031",
+      "name": "柴胡"
+    },
+    "xiajing:xiajing-275": {
+      "groupId": "shangjing",
+      "entryId": "shangjing-072",
+      "name": "旋覆花"
+    },
+    "shangjing:shangjing-093": {
+      "groupId": "shangjing",
+      "entryId": "shangjing-092",
+      "name": "肉桂"
+    },
+    "shangjing:shangjing-128": {
+      "groupId": "shangjing",
+      "entryId": "shangjing-127",
+      "name": "蛤壳"
+    },
+    "nishi:nishi-015": {
+      "groupId": "zhongjing",
+      "entryId": "zhongjing-173",
+      "name": "白芷"
+    },
+    "editor:editor-007": {
+      "groupId": "zhongjing",
+      "entryId": "zhongjing-179",
+      "name": "紫菀"
+    },
+    "xiajing:xiajing-314": {
+      "groupId": "zhongjing",
+      "entryId": "zhongjing-213",
+      "name": "花椒"
+    },
+    "editor:editor-004": {
+      "groupId": "zhongjing",
+      "entryId": "zhongjing-233",
+      "name": "鳖甲"
+    },
+    "zhongjing:zhongjing-244": {
+      "groupId": "zhongjing",
+      "entryId": "zhongjing-243",
+      "name": "虻虫"
+    }
+  }
 }

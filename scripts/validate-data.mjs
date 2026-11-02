@@ -442,11 +442,11 @@ try {
 }
 const expectedBencaoCounts = {
   intro: 5,
-  shangjing: 142,
-  zhongjing: 112,
-  xiajing: 103,
-  nishi: 28,
-  editor: 37,
+  shangjing: 137,
+  zhongjing: 108,
+  xiajing: 100,
+  nishi: 27,
+  editor: 34,
 }
 const allowedBencaoKinds = new Set(['original', 'commentary', 'study', 'nishi', 'lecture', 'lesson'])
 let bencaoEntries = 0
@@ -537,9 +537,12 @@ try {
   errors.push('缺少 public/data/bencao-lectures/catalog.json')
 }
 if (bencaoCatalog) {
-  if (bencaoCatalog.total !== 422) errors.push(`讲义目录总数应为 422，实际 ${bencaoCatalog.total}`)
-  if (bencaoCatalog.threeRanks !== 357) {
-    errors.push(`三经目录条数应为 357，实际 ${bencaoCatalog.threeRanks}`)
+  if (bencaoCatalog.total !== 406) errors.push(`讲义目录总数应为 406，实际 ${bencaoCatalog.total}`)
+  if (bencaoCatalog.threeRanks !== 345) {
+    errors.push(`三经目录条数应为 345，实际 ${bencaoCatalog.threeRanks}`)
+  }
+  if (bencaoChars !== 267172) {
+    errors.push(`讲义总字数应为 267172，实际 ${bencaoChars}`)
   }
   if (bencaoCatalog.items?.length !== bencaoCatalog.total) {
     errors.push('讲义目录 items 与 total 不一致')
@@ -547,15 +550,18 @@ if (bencaoCatalog) {
   const withFlavor = bencaoCatalog.items.filter((item) => item.flavorTags?.length).length
   const withNature = bencaoCatalog.items.filter((item) => item.nature).length
   const withMeridian = bencaoCatalog.items.filter((item) => item.meridianIds?.length).length
-  if (withFlavor < 400) errors.push(`带性味的讲义药材过少：${withFlavor}/422`)
-  if (withNature < 400) errors.push(`带气（寒热温凉平）的讲义药材过少：${withNature}/422`)
-  if (withMeridian < 150) errors.push(`带归经的讲义药材过少：${withMeridian}/422`)
+  if (withFlavor < 390) errors.push(`带性味的讲义药材过少：${withFlavor}/406`)
+  if (withNature < 390) errors.push(`带气（寒热温凉平）的讲义药材过少：${withNature}/406`)
+  if (withMeridian < 120) errors.push(`带归经的讲义药材过少：${withMeridian}/406`)
+  const seenNames = new Set()
   for (const item of bencaoCatalog.items) {
     if (!item.pinyin) errors.push(`讲义目录 ${item.name}: 缺少拼音`)
     if (!item.effects) errors.push(`讲义目录 ${item.name}: 缺少功效`)
     if (!Array.isArray(item.profileSources) || item.profileSources.length === 0) {
       errors.push(`讲义目录 ${item.name}: 缺少药性来源标注`)
     }
+    if (seenNames.has(item.name)) errors.push(`讲义目录仍有重复药名: ${item.name}`)
+    seenNames.add(item.name)
   }
 }
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T15:12:51.282Z",
+  "generatedAt": "2026-11-02T15:55:06.937Z",
   "source": {
     "id": "zhongyi-buddy-herbs",
     "name": "中医Buddy 中药数据",
@@ -9,7 +9,7 @@
     "license": "仓库未声明许可",
     "note": "公开整理的中药资料，原项目注明数据移植自 nihaixia-app，属倪海厦一系资料，并非独立药典或校勘本。仅抽取性味、归经、功效、剂量、禁忌等事实字段用于补足讲义条目，引用时须与讲义原文及原书核对。"
   },
-  "total": 417,
+  "total": 397,
   "items": {
     "丹砂": {
       "matchedName": "丹砂",
@@ -52,7 +52,7 @@
         "clear-heat"
       ]
     },
-    "石钟乳": {
+    "钟乳石": {
       "matchedName": "石钟乳",
       "flavor": "甘",
       "nature": "温",
@@ -80,7 +80,7 @@
         "clear-heat"
       ]
     },
-    "消石": {
+    "硝石": {
       "matchedName": "消石",
       "flavor": "苦",
       "nature": "寒",
@@ -93,7 +93,7 @@
         "wind-damp"
       ]
     },
-    "朴消": {
+    "朴硝": {
       "matchedName": "朴消",
       "flavor": "辛苦咸",
       "nature": "寒",
@@ -121,7 +121,7 @@
         "wind-damp"
       ]
     },
-    "石胆（又名胆矾）": {
+    "胆矾": {
       "matchedName": "石胆（又名胆矾）",
       "flavor": "辛酸",
       "nature": "寒",
@@ -222,7 +222,7 @@
         "warm-tonic"
       ]
     },
-    "青石赤石黄石白石黑石脂等": {
+    "五色石脂": {
       "matchedName": "五色石脂",
       "flavor": "甘",
       "nature": "平",
@@ -265,7 +265,7 @@
         "attack-cold"
       ]
     },
-    "昌蒲": {
+    "菖蒲": {
       "matchedName": "昌蒲",
       "flavor": "辛",
       "nature": "温",
@@ -282,14 +282,17 @@
         "exterior"
       ]
     },
-    "鞠华": {
-      "matchedName": "鞠华",
-      "flavor": "甘苦",
+    "菊花": {
+      "matchedName": "菊花",
+      "flavor": "苦甘",
       "nature": "平",
-      "meridians": [],
-      "action": "菊花为清风热明目解毒要药，主诸风头眩肿痛，目痛翳膜，利血脉，治疔疮。",
+      "meridians": [
+        "肝",
+        "肺"
+      ],
+      "action": "菊花为疏风清热要药，明目解毒。",
       "dosage": "普通一钱至三钱。",
-      "contraindication": "味苦辣者，陈久者，不堪用，其甘者亦名甘菊，可饮可食亦入药。",
+      "contraindication": "味苦辣者、陈久者不堪用。菊花不喜陈。",
       "sourceCategory": "清热药",
       "therapyCategoryIds": [
         "clear-heat"
@@ -308,7 +311,7 @@
         "warm-tonic"
       ]
     },
-    "天门冬": {
+    "天冬": {
       "matchedName": "天门冬",
       "flavor": "",
       "nature": "平",
@@ -404,7 +407,7 @@
         "warm-tonic"
       ]
     },
-    "充蔚子": {
+    "茺蔚子": {
       "matchedName": "充蔚子",
       "flavor": "辛苦",
       "nature": "寒",
@@ -415,19 +418,6 @@
       "sourceCategory": "活血化瘀药",
       "therapyCategoryIds": [
         "blood-moving"
-      ]
-    },
-    "女萎": {
-      "matchedName": "女萎",
-      "flavor": "甘",
-      "nature": "平",
-      "meridians": [],
-      "action": "萎蕤为治风热风湿入肌作痛要药，功能祛风清热，除湿止痛，主邪热头痛，及腰痛身痛，补劳伤。",
-      "dosage": "普通二钱至四钱，大剂二三两。",
-      "contraindication": "畏咸卤。",
-      "sourceCategory": "清热药",
-      "therapyCategoryIds": [
-        "clear-heat"
       ]
     },
     "防葵": {
@@ -443,8 +433,8 @@
         "wind-damp"
       ]
     },
-    "茈胡": {
-      "matchedName": "茈胡",
+    "柴胡": {
+      "matchedName": "柴胡",
       "flavor": "苦",
       "nature": "平",
       "meridians": [
@@ -452,29 +442,29 @@
         "胆",
         "三焦"
       ],
-      "action": "柴胡为发表清热要药，功能散三焦肝胆诸经之热邪，主治寒热疟疾，口苦耳聋，头痛眩晕。",
-      "dosage": "普通八分至一钱，大剂三四钱。",
-      "contraindication": "凡虚人气升呕吐，及阴虚火热炎上，法同所忌。 汪昂曰凡胁痛，多属肝旺，宜小柴胡汤。加青皮川芎白芍，左胁痛宜治活血行气，右胁痛宜消食行痰，因胁痛须开郁，故加柴胡则皆宜也。",
+      "action": "柴胡为少阳要药，疏肝解郁，发表清热。",
+      "dosage": "普通八分至一钱，大剂三四钱。小朋友一钱，体格大两三钱。",
+      "contraindication": "凡虚人气升呕吐，及阴虚火热炎上者忌。",
       "sourceCategory": "解表药",
       "therapyCategoryIds": [
         "exterior"
       ]
     },
-    "麦门冬": {
-      "matchedName": "麦门冬",
+    "麦冬": {
+      "matchedName": "麦冬",
       "flavor": "甘",
       "nature": "寒",
       "meridians": [
-        "肺",
         "心",
+        "肺",
         "胃"
       ],
-      "action": "麦冬为润肺清火要药，主治肺中伏火，痰多，心腹结气，肺弱胃弱，津少口渴，止咳嗽，疗肺病吐脓血。",
-      "dosage": "普通一钱至三钱。",
-      "contraindication": "麦冬性寒，虽主脾胃而虚寒泄泻及痘疮虚寒作泻，产后虚寒作泻均忌，入补药，酒浸良。秉水阴，能滋肺以清气分。",
-      "sourceCategory": "清热药",
+      "action": "麦冬为润肺养阴要药，清心除烦。",
+      "dosage": "普通一钱至三钱。入补药酒浸良。",
+      "contraindication": "性微寒，虚寒泄泻及痘疮虚寒作泻者忌。",
+      "sourceCategory": "补阴药",
       "therapyCategoryIds": [
-        "clear-heat"
+        "warm-tonic"
       ]
     },
     "独活": {
@@ -524,7 +514,7 @@
         "qi-digest"
       ]
     },
-    "署豫": {
+    "山药": {
       "matchedName": "署豫",
       "flavor": "甘",
       "nature": "温",
@@ -679,7 +669,7 @@
         "wind-damp"
       ]
     },
-    "赤箭": {
+    "天麻": {
       "matchedName": "赤箭",
       "flavor": "辛",
       "nature": "平",
@@ -718,7 +708,7 @@
         "warm-tonic"
       ]
     },
-    "赤芝黑芝青芝白芝黄芝紫芝": {
+    "灵芝": {
       "matchedName": "赤芝黑芝青芝白芝黄芝紫芝",
       "flavor": "",
       "nature": "平",
@@ -744,7 +734,7 @@
         "blood-moving"
       ]
     },
-    "蓝实": {
+    "青黛": {
       "matchedName": "蓝实",
       "flavor": "咸",
       "nature": "寒",
@@ -757,37 +747,21 @@
         "clear-heat"
       ]
     },
-    "芎穷": {
-      "matchedName": "芎穷",
+    "川芎": {
+      "matchedName": "川芎",
       "flavor": "辛",
       "nature": "温",
       "meridians": [
         "肝",
-        "心"
+        "胆",
+        "心包"
       ],
-      "action": "川芎为顺气行血要药，功能行气开郁，入肝理血，上行头目，下行血海，主治头痛及妇女一切气郁血郁，心腹痛，腰脚软，破宿血，养新血，补肝散风。",
-      "dosage": "普通三分至钱半。",
-      "contraindication": "其性疏散，不宜久服，反能损肝，畏黄连，伏雌黄。",
-      "sourceCategory": "解表药",
+      "action": "川芎为行气活血要药，祛风止痛。",
+      "dosage": "普通三分至钱半。治病大剂可到一两。",
+      "contraindication": "性疏散不宜久服，反能损肝，畏黄连伏雌黄。",
+      "sourceCategory": "本站据讲义主治纠正",
       "therapyCategoryIds": [
-        "exterior"
-      ]
-    },
-    "蘼芜": {
-      "matchedName": "蘼芜",
-      "flavor": "苦",
-      "nature": "寒",
-      "meridians": [
-        "肝",
-        "胃",
-        "胆"
-      ],
-      "action": "黄连为清火除湿健胃要药，功能治湿滞，解热毒，益肝胆，厚肠胃，主治肠澼下痢，天行热疾，胎毒疳疾，效益甚多。",
-      "dosage": "普通三分至一钱。",
-      "contraindication": "血少气虚，致惊悸烦燥，小儿痘疮阳虚作泄，行浆后泄泻，老人脾胃虚寒泻，真阴不足内热均忌。",
-      "sourceCategory": "清热药",
-      "therapyCategoryIds": [
-        "clear-heat"
+        "blood-moving"
       ]
     },
     "黄连": {
@@ -810,7 +784,7 @@
         "clear-heat"
       ]
     },
-    "络石 络石藤": {
+    "络石藤": {
       "matchedName": "络石",
       "flavor": "苦",
       "nature": "寒",
@@ -823,7 +797,7 @@
         "clear-heat"
       ]
     },
-    "蒺藜子": {
+    "蒺藜": {
       "matchedName": "蒺藜子",
       "flavor": "苦",
       "nature": "温",
@@ -835,11 +809,9 @@
       "dosage": "一钱至三钱。",
       "contraindication": "血虚生风者慎用。",
       "sourceCategory": "明目药",
-      "therapyCategoryIds": [
-        "calm-open"
-      ]
+      "therapyCategoryIds": []
     },
-    "黄耆 黄芪": {
+    "黄芪": {
       "matchedName": "黄芪",
       "flavor": "甘",
       "nature": "微温",
@@ -851,19 +823,6 @@
       "dosage": "生者钱半至三钱，炙者八分至三钱，大剂一二两。",
       "contraindication": "有表邪者忌，胸膈气闭闷、肠胃有积滞者忌，阳盛阴虚者忌。",
       "sourceCategory": "补气药",
-      "therapyCategoryIds": [
-        "warm-tonic"
-      ]
-    },
-    "肉松容": {
-      "matchedName": "",
-      "flavor": "",
-      "nature": "",
-      "meridians": [],
-      "action": "",
-      "dosage": "",
-      "contraindication": "",
-      "sourceCategory": "",
       "therapyCategoryIds": [
         "warm-tonic"
       ]
@@ -998,7 +957,7 @@
         "blood-moving"
       ]
     },
-    "茜根": {
+    "茜草": {
       "matchedName": "茜根",
       "flavor": "酸咸",
       "nature": "寒",
@@ -1042,20 +1001,24 @@
         "warm-tonic"
       ]
     },
-    "旋华": {
-      "matchedName": "旋华",
-      "flavor": "甘苦",
+    "旋覆花": {
+      "matchedName": "旋覆花",
+      "flavor": "咸",
       "nature": "温",
-      "meridians": [],
-      "action": "旋花为固精强壮药并可合金疮，补劳损。",
-      "dosage": "普通五分至一二钱。",
-      "contraindication": "无。",
-      "sourceCategory": "补益药",
+      "meridians": [
+        "肺",
+        "胃",
+        "大肠"
+      ],
+      "action": "旋覆花为降气化痰要药，消痰行水。",
+      "dosage": "普通一钱至二三钱。质轻，两三钱就很多。",
+      "contraindication": "病人涉虚者忌多服，冷利大肠，虚寒人禁用。",
+      "sourceCategory": "化痰药",
       "therapyCategoryIds": [
-        "warm-tonic"
+        "cough-phlegm"
       ]
     },
-    "兰草": {
+    "佩兰": {
       "matchedName": "兰草",
       "flavor": "辛",
       "nature": "平",
@@ -1184,7 +1147,7 @@
         "attack-cold"
       ]
     },
-    "石龙刍": {
+    "龙须草": {
       "matchedName": "石龙刍",
       "flavor": "苦",
       "nature": "寒",
@@ -1253,21 +1216,6 @@
         "exterior"
       ]
     },
-    "青蘘": {
-      "matchedName": "青蘘",
-      "flavor": "甘",
-      "nature": "平",
-      "meridians": [
-        "小肠"
-      ],
-      "action": "胡麻主长肌肉，补虚羸，滋润五脏，利大小肠，其油亦作解毒用。",
-      "dosage": "普通一钱至三钱。",
-      "contraindication": "多用为服食，少以入药，如入药，大便溏泄者忌之。",
-      "sourceCategory": "清热药",
-      "therapyCategoryIds": [
-        "clear-heat"
-      ]
-    },
     "别羁": {
       "matchedName": "别羁",
       "flavor": "",
@@ -1303,37 +1251,25 @@
       "sourceCategory": "草药",
       "therapyCategoryIds": []
     },
-    "牡桂": {
-      "matchedName": "牡桂",
+    "肉桂": {
+      "matchedName": "肉桂",
       "flavor": "辛甘",
-      "nature": "温",
+      "nature": "大热",
       "meridians": [
-        "肺"
+        "肾",
+        "脾",
+        "心",
+        "肝"
       ],
-      "action": "桂枝为发表解肌要药。主温经通脉，表虚中风，治手足痛风，伤寒头痛，无汗能发，有汗能止，行肺气，散寒邪，调和营卫，横通肢节。",
-      "dosage": "普通三分至钱半。",
-      "contraindication": "凡阴虚火炎，温病大热，喉症血症均忌。",
-      "sourceCategory": "解表药",
-      "therapyCategoryIds": [
-        "exterior"
-      ]
-    },
-    "菌桂": {
-      "matchedName": "菌桂",
-      "flavor": "辛甘",
-      "nature": "热",
-      "meridians": [
-        "心"
-      ],
-      "action": "肉桂为温补要药，主扶火助阳，温中逐寒，能引火归元，治上热下寒，破沉寒痼冷，疗霍乱转筋，心腹诸痛，疝瘕奔豚。",
-      "dosage": "普通三分至一钱。",
-      "contraindication": "忌生葱石脂及火炙，凡阴虚内热。液少口干者慎用，食木实或瓜类中毒，及闭口蜀椒中毒，俱用肉桂煎汁饮之可解。 肉桂——一般生用冲服之，力更大。 禀地二之火，入血分，但仲景取其化气，非是化血。肉桂导心火下交于水，须有附子来 振肾阳以蒸动其气，此肉桂之能化气也，因为附子。",
+      "action": "肉桂为温补命门要药，引火归元。",
+      "dosage": "普通三分至一钱（冲服）。生用冲服力更大。",
+      "contraindication": "忌生葱石脂及火炙，阴虚内热液少口干者慎用。",
       "sourceCategory": "温里药",
       "therapyCategoryIds": [
         "warm-tonic"
       ]
     },
-    "松脂": {
+    "松香": {
       "matchedName": "松脂",
       "flavor": "甘苦",
       "nature": "温",
@@ -1348,7 +1284,7 @@
         "warm-tonic"
       ]
     },
-    "槐实": {
+    "槐角": {
       "matchedName": "槐实",
       "flavor": "苦",
       "nature": "平",
@@ -1356,12 +1292,12 @@
         "肝",
         "大肠"
       ],
-      "action": "槐花为凉血要药，主五痔肠风，解毒杀虫，凉大肠，润肝燥，治吐衄，崩中，痢疾，漏下。",
+      "action": "",
       "dosage": "普通一钱至三钱。",
       "contraindication": "病人虚寒作泄及阴虚血热而非实热者均忌。",
-      "sourceCategory": "清热药",
+      "sourceCategory": "本站据讲义主治归类",
       "therapyCategoryIds": [
-        "clear-heat"
+        "stop-bleeding"
       ]
     },
     "枸杞": {
@@ -1381,7 +1317,7 @@
         "warm-tonic"
       ]
     },
-    "柏实": {
+    "柏子仁": {
       "matchedName": "柏实",
       "flavor": "甘",
       "nature": "平",
@@ -1415,7 +1351,7 @@
         "wind-damp"
       ]
     },
-    "榆皮": {
+    "榆白皮": {
       "matchedName": "榆皮",
       "flavor": "甘",
       "nature": "平",
@@ -1446,20 +1382,20 @@
         "warm-tonic"
       ]
     },
-    "檗木": {
-      "matchedName": "檗木",
+    "黄柏": {
+      "matchedName": "黄柏",
       "flavor": "苦",
       "nature": "寒",
       "meridians": [
         "肾",
-        "胃",
         "膀胱"
       ],
-      "action": "黄柏为除热杀虫，坚肾益阴要药，主结热，黄疸，诸痿，瘫痪，治诸疮痛，泄痢，下血，泻膀胱相火，疗淋浊白带，肠胃结热。",
+      "action": "黄柏为清热燥湿要药，泻相火。",
       "dosage": "普通五分至二钱。",
-      "contraindication": "恶干漆，伏硫磺，阴阳两虚，脾胃薄弱者均忌。",
-      "sourceCategory": "利水渗湿药",
+      "contraindication": "恶干漆伏硫磺，阴阳两虚脾胃薄弱者均忌。",
+      "sourceCategory": "清热燥湿药",
       "therapyCategoryIds": [
+        "clear-heat",
         "wind-damp"
       ]
     },
@@ -1491,7 +1427,7 @@
         "wind-damp"
       ]
     },
-    "蔓荆实": {
+    "蔓荆子": {
       "matchedName": "蔓荆实",
       "flavor": "辛苦",
       "nature": "寒",
@@ -1520,7 +1456,7 @@
         "exterior"
       ]
     },
-    "桑上寄生": {
+    "桑寄生": {
       "matchedName": "桑上寄生",
       "flavor": "苦",
       "nature": "平",
@@ -1551,7 +1487,7 @@
         "warm-tonic"
       ]
     },
-    "女贞实": {
+    "女贞子": {
       "matchedName": "女贞实",
       "flavor": "苦",
       "nature": "平",
@@ -1577,7 +1513,7 @@
         "blood-moving"
       ]
     },
-    "蕤核": {
+    "蕤仁": {
       "matchedName": "蕤核",
       "flavor": "甘",
       "nature": "温",
@@ -1588,11 +1524,9 @@
       "dosage": "普通一钱至三钱。",
       "contraindication": "能补肝虚，今人多用治眼疾，然非火风暴眼所宜用也。",
       "sourceCategory": "明目药",
-      "therapyCategoryIds": [
-        "clear-heat"
-      ]
+      "therapyCategoryIds": []
     },
-    "橘柚": {
+    "橘皮": {
       "matchedName": "橘柚",
       "flavor": "辛苦",
       "nature": "温",
@@ -1678,7 +1612,7 @@
         "attack-cold"
       ]
     },
-    "白胶": {
+    "鹿角胶": {
       "matchedName": "白胶",
       "flavor": "甘",
       "nature": "平",
@@ -1734,7 +1668,7 @@
         "wind-damp"
       ]
     },
-    "石蜜": {
+    "蜂蜜": {
       "matchedName": "石蜜",
       "flavor": "甘",
       "nature": "平",
@@ -1815,22 +1749,23 @@
         "blood-moving"
       ]
     },
-    "桑蜱蛸": {
-      "matchedName": "桑蜱蛸",
+    "桑螵蛸": {
+      "matchedName": "桑螵蛸",
       "flavor": "甘咸",
       "nature": "平",
       "meridians": [
+        "肝",
         "肾"
       ],
-      "action": "桑蜱蛸为固肾益精要药，主遗尿，滑精，治白浊疝瘕，肾衰阴痿，通五淋，疗便浊。",
-      "dosage": "普通一钱至三钱。",
-      "contraindication": "凡膀胱有热，小便短数者忌之。",
-      "sourceCategory": "补益药",
+      "action": "桑螵蛸为固精缩尿要药。收涩固摄，补肾助阳。",
+      "dosage": "一般二至四钱。",
+      "contraindication": "阴虚火旺者不宜。",
+      "sourceCategory": "固涩药",
       "therapyCategoryIds": [
-        "warm-tonic"
+        "astringent"
       ]
     },
-    "海蛤": {
+    "蛤壳": {
       "matchedName": "海蛤",
       "flavor": "苦咸",
       "nature": "平",
@@ -1843,20 +1778,7 @@
         "wind-damp"
       ]
     },
-    "文蛤": {
-      "matchedName": "文蛤",
-      "flavor": "咸",
-      "nature": "平",
-      "meridians": [],
-      "action": "主咳逆胸痹，腰痛胁急，女人崩中漏下，止烦渴，利小便，化痰软坚，敷治口鼻中蚀疳，恶疮五痔。",
-      "dosage": "普通一至二钱，外用无定量。",
-      "contraindication": "畏甘遂芫花，虽善消痰积血块，然脾胃虚寒者宜少用。",
-      "sourceCategory": "利水渗湿药",
-      "therapyCategoryIds": [
-        "wind-damp"
-      ]
-    },
-    "蠡鱼": {
+    "鳢鱼": {
       "matchedName": "蠡鱼",
       "flavor": "甘",
       "nature": "平",
@@ -1884,21 +1806,21 @@
         "clear-heat"
       ]
     },
-    "藕实茎": {
-      "matchedName": "藕实茎",
-      "flavor": "甘",
+    "莲子": {
+      "matchedName": "莲子",
+      "flavor": "甘涩",
       "nature": "平",
       "meridians": [
-        "心",
         "脾",
-        "胃"
+        "肾",
+        "心"
       ],
-      "action": "莲子为健脾，养胃，清心，固精，资益气血，主补中倍力，除烦养神，治白浊梦遗，女子崩带，疗久痢，脾虚泄泻。",
-      "dosage": "普通三至四钱。",
-      "contraindication": "莲子甘平无毒，于诸疾并无所忤，第生者食之过多，微动冷气胀人，熟者食之过多，涩大便，莲藕忌犯铁。",
-      "sourceCategory": "清热药",
+      "action": "莲子为补脾止泻要药，养心安神。",
+      "dosage": "普通三至四钱。记得去芯否则吃多心烦。",
+      "contraindication": "生食过多微动冷气胀人，熟食过多涩大便，莲藕忌犯铁。",
+      "sourceCategory": "补益药",
       "therapyCategoryIds": [
-        "clear-heat"
+        "warm-tonic"
       ]
     },
     "大枣": {
@@ -1919,7 +1841,7 @@
         "warm-tonic"
       ]
     },
-    "蒲萄": {
+    "葡萄": {
       "matchedName": "蒲萄",
       "flavor": "甘",
       "nature": "平",
@@ -1947,20 +1869,23 @@
         "warm-tonic"
       ]
     },
-    "鸡头实": {
-      "matchedName": "鸡头实",
+    "芡实": {
+      "matchedName": "芡实",
       "flavor": "甘淡",
       "nature": "平",
-      "meridians": [],
-      "action": "芡实为固本益精要药，主泄泻遗精，带下白浊，治湿痹腰脊膝痛。",
+      "meridians": [
+        "脾",
+        "肾"
+      ],
+      "action": "芡实为益肾固精要药，健脾止泻。",
       "dosage": "普通二至三钱。",
-      "contraindication": "生食动冷气，小儿不宜多食，以难化也，故食芡必细嚼，使华液流通，转相灌输，其功胜于乳汁。",
-      "sourceCategory": "补益药",
+      "contraindication": "生食动冷气，小儿不宜多食（难化），食芡必细嚼。",
+      "sourceCategory": "固涩药",
       "therapyCategoryIds": [
-        "warm-tonic"
+        "astringent"
       ]
     },
-    "胡麻": {
+    "黑芝麻": {
       "matchedName": "胡麻",
       "flavor": "甘",
       "nature": "平",
@@ -2012,7 +1937,7 @@
         "attack-cold"
       ]
     },
-    "瓜蒂": {
+    "甜瓜蒂": {
       "matchedName": "瓜蒂",
       "flavor": "苦",
       "nature": "寒",
@@ -2025,7 +1950,7 @@
         "purgative"
       ]
     },
-    "白瓜子": {
+    "冬瓜子": {
       "matchedName": "白瓜子",
       "flavor": "甘",
       "nature": "寒",
@@ -2067,7 +1992,7 @@
         "clear-heat"
       ]
     },
-    "石硫黄": {
+    "硫黄": {
       "matchedName": "石硫黄",
       "flavor": "酸",
       "nature": "温",
@@ -2127,20 +2052,7 @@
         "exterior"
       ]
     },
-    "慈石": {
-      "matchedName": "",
-      "flavor": "",
-      "nature": "",
-      "meridians": [],
-      "action": "",
-      "dosage": "",
-      "contraindication": "",
-      "sourceCategory": "",
-      "therapyCategoryIds": [
-        "calm-open"
-      ]
-    },
-    "凝水石": {
+    "寒水石": {
       "matchedName": "凝水石",
       "flavor": "辛咸",
       "nature": "寒",
@@ -2231,19 +2143,6 @@
         "attack-cold"
       ]
     },
-    "肤青": {
-      "matchedName": "肤青",
-      "flavor": "辛",
-      "nature": "温",
-      "meridians": [],
-      "action": "干姜为除寒散结要药，主温中逐寒，回阳通脉，治四肢逆冷，中寒霍乱，冷痛疝气，寒泻腹痛，开脏腑，宣脉络。",
-      "dosage": "普通一钱至三钱，大剂上两许。",
-      "contraindication": "生姜干姜炮姜禁忌同，久服伤阴损目，误服劫津耗液，凡阴虚内热，阴虚咳嗽吐血，表虚有热，汗出自汗盗汗，脏毒下血，因热呕恶，火热胀痛均忌。",
-      "sourceCategory": "清热药",
-      "therapyCategoryIds": [
-        "clear-heat"
-      ]
-    },
     "干姜": {
       "matchedName": "干姜",
       "flavor": "辛",
@@ -2262,7 +2161,7 @@
         "warm-tonic"
       ]
     },
-    "枲耳实": {
+    "苍耳子": {
       "matchedName": "枲耳实",
       "flavor": "",
       "nature": "平",
@@ -2290,21 +2189,20 @@
         "exterior"
       ]
     },
-    "瓜篓根": {
-      "matchedName": "瓜篓根",
-      "flavor": "甘",
-      "nature": "寒",
+    "天花粉": {
+      "matchedName": "天花粉",
+      "flavor": "甘苦",
+      "nature": "微寒",
       "meridians": [
         "肺",
-        "心",
         "胃"
       ],
-      "action": "瓜篓实为润肺降气要药，主袪痰止嗽，涤胸中垢腻，润心肺及胃，治吐血，天花粉主消渴，烦满大热，通乳消肿。",
-      "dosage": "普通一钱至三钱。",
-      "contraindication": "脾胃虚寒作泄者忌，恶干姜畏牛膝，反乌头，忌铁。",
-      "sourceCategory": "利水渗湿药",
+      "action": "天花粉为生津止渴要药。清热生津，消肿排脓。",
+      "dosage": "一般三至五钱。",
+      "contraindication": "脾胃虚寒者慎用。",
+      "sourceCategory": "生津药",
       "therapyCategoryIds": [
-        "wind-damp"
+        "warm-tonic"
       ]
     },
     "苦参": {
@@ -2374,7 +2272,7 @@
         "肝",
         "脾"
       ],
-      "action": "白芍为泻肝安脾，缓中去水要药，功能养血散瘀清热利肠，止腹痛，治痢疾，治胎 产前后诸病，为女科良药。",
+      "action": "",
       "dosage": "普通二钱而五钱，大剂一两以上。",
       "contraindication": "凡中寒腹痛，中寒作泄，肠胃中觉冷，均忌，反藜芦恶芒硝，鳖甲，小蓟。",
       "sourceCategory": "清热药",
@@ -2382,7 +2280,7 @@
         "clear-heat"
       ]
     },
-    "蠡实": {
+    "马蔺子": {
       "matchedName": "蠡实",
       "flavor": "甘",
       "nature": "平",
@@ -2559,7 +2457,7 @@
         "warm-tonic"
       ]
     },
-    "茅根": {
+    "白茅根": {
       "matchedName": "茅根",
       "flavor": "甘",
       "nature": "寒",
@@ -2574,17 +2472,17 @@
         "wind-damp"
       ]
     },
-    "紫苑": {
-      "matchedName": "紫苑",
+    "紫菀": {
+      "matchedName": "紫菀",
       "flavor": "辛苦",
       "nature": "温",
       "meridians": [
         "肺"
       ],
-      "action": "紫苑为祛痰止咳要药，主治咳逆，痰涎，吐脓血，益肺气。",
-      "dosage": "普通七分至钱半。",
-      "contraindication": "肺病咳逆喘嗽，皆阴虚肺热也，忌独用多用，即用亦须与二冬百部桑皮等苦寒药参用，方无害以其性温也。",
-      "sourceCategory": "化痰止咳药",
+      "action": "紫菀为止咳要药。温润不燥，润肺下气。",
+      "dosage": "一般二至四钱。",
+      "contraindication": "有实热者慎用。",
+      "sourceCategory": "止咳药",
       "therapyCategoryIds": [
         "cough-phlegm"
       ]
@@ -2602,7 +2500,7 @@
         "clear-heat"
       ]
     },
-    "败酱": {
+    "败酱草": {
       "matchedName": "败酱",
       "flavor": "苦",
       "nature": "平",
@@ -2656,7 +2554,7 @@
         "blood-moving"
       ]
     },
-    "槀本": {
+    "藁本": {
       "matchedName": "槀本",
       "flavor": "辛苦",
       "nature": "温",
@@ -2669,20 +2567,20 @@
         "wind-damp"
       ]
     },
-    "石苇": {
-      "matchedName": "石苇",
-      "flavor": "甘苦",
-      "nature": "寒",
+    "石韦": {
+      "matchedName": "石韦",
+      "flavor": "苦甘",
+      "nature": "微寒",
       "meridians": [
         "肺",
         "膀胱"
       ],
-      "action": "石苇为利尿治淋要药，主清肺火以滋源，通膀胱以利水，益精气，治淋闭。",
-      "dosage": "普通一至二钱。",
-      "contraindication": "制丹砂矾石，得菖蒲滑石射干良。",
-      "sourceCategory": "补益药",
+      "action": "石韦为利水通淋要药，清热止血。",
+      "dosage": "二至四钱。",
+      "contraindication": "无湿热者不宜。",
+      "sourceCategory": "利水药",
       "therapyCategoryIds": [
-        "warm-tonic"
+        "wind-damp"
       ]
     },
     "萆薢": {
@@ -2715,7 +2613,7 @@
         "clear-heat"
       ]
     },
-    "水萍": {
+    "浮萍": {
       "matchedName": "水萍",
       "flavor": "辛",
       "nature": "寒",
@@ -2814,16 +2712,21 @@
         "cough-phlegm"
       ]
     },
-    "牡丹": {
-      "matchedName": "牡丹",
+    "牡丹皮": {
+      "matchedName": "牡丹皮",
       "flavor": "辛苦",
-      "nature": "温",
-      "meridians": [],
-      "action": "丹皮为理血要药，功能清伏火，凉血热，通月经，排瘀血。主治胎前产后，冷热气血之病，为女科良剂。",
+      "nature": "微寒",
+      "meridians": [
+        "心",
+        "肝",
+        "肾"
+      ],
+      "action": "牡丹皮为清热凉血要药，活血化瘀。",
       "dosage": "普通一钱至三钱。",
-      "contraindication": "入血凉血能行血，凡女子血崩，及经血过期不尽，均忌与行血药同用。忌蒜及芫荽铁器。",
-      "sourceCategory": "清热药",
+      "contraindication": "女子血崩及经血过期不尽者忌与行血药同用，忌蒜及芫荽铁器。",
+      "sourceCategory": "清热凉血药",
       "therapyCategoryIds": [
+        "stop-bleeding",
         "clear-heat"
       ]
     },
@@ -2909,7 +2812,7 @@
         "blood-moving"
       ]
     },
-    "假苏": {
+    "荆芥": {
       "matchedName": "假苏",
       "flavor": "辛",
       "nature": "温",
@@ -2935,20 +2838,19 @@
         "attack-cold"
       ]
     },
-    "桑根白皮": {
-      "matchedName": "桑根白皮",
-      "flavor": "辛甘",
+    "桑白皮": {
+      "matchedName": "桑白皮",
+      "flavor": "甘",
       "nature": "寒",
       "meridians": [
-        "肺",
-        "胃"
+        "肺"
       ],
-      "action": "桑白皮为泻肺火行水道要药，主肺气喘满伤中，益气，开胃，消痰，解渴，治咳嗽吐血，去肺中水气，水肿腹满。",
-      "dosage": "普通一钱至三钱。",
-      "contraindication": "肺虚无火，因风寒而嗽者均忌。",
-      "sourceCategory": "补益药",
+      "action": "桑白皮为泻肺要药。专清肺热，泻肺利水。",
+      "dosage": "一般二至四钱。",
+      "contraindication": "肺虚无火者不宜。",
+      "sourceCategory": "清肺药",
       "therapyCategoryIds": [
-        "warm-tonic"
+        "cough-phlegm"
       ]
     },
     "竹叶": {
@@ -3055,17 +2957,20 @@
         "warm-tonic"
       ]
     },
-    "秦椒": {
-      "matchedName": "秦椒",
+    "花椒": {
+      "matchedName": "蜀椒",
       "flavor": "辛",
       "nature": "温",
-      "meridians": [],
-      "action": "秦椒主温中去寒，除风邪气，治风湿痹，喉痹吐逆，疝瘕老血。",
+      "meridians": [
+        "肺",
+        "脾"
+      ],
+      "action": "蜀椒为散寒祛湿，补火温中要药，主邪气咳逆，寒热痹痛，宣肺燥脾，治骨节皮肤死肌，止呕逆，伏蚘虫。",
       "dosage": "普通五分至钱半。",
-      "contraindication": "用椒红，去目，恶栝楼防葵，畏雌黄，闭口者有毒勿用。参看蜀椒条。",
-      "sourceCategory": "温里药",
+      "contraindication": "久服令人失明伤血脉，多忘乏气，杏仁为使，得盐味佳，中其毒者，火麻仁浆解之，闭口者有毒勿用。",
+      "sourceCategory": "解表药",
       "therapyCategoryIds": [
-        "warm-tonic"
+        "exterior"
       ]
     },
     "山茱萸": {
@@ -3081,7 +2986,7 @@
         "warm-tonic"
       ]
     },
-    "紫葳": {
+    "凌霄花": {
       "matchedName": "紫葳",
       "flavor": "酸",
       "nature": "寒",
@@ -3120,7 +3025,7 @@
       "sourceCategory": "草药",
       "therapyCategoryIds": []
     },
-    "龙眼": {
+    "龙眼肉": {
       "matchedName": "龙眼",
       "flavor": "甘",
       "nature": "平",
@@ -3149,7 +3054,7 @@
         "cough-phlegm"
       ]
     },
-    "卫矛": {
+    "鬼箭羽": {
       "matchedName": "卫矛",
       "flavor": "苦",
       "nature": "寒",
@@ -3162,7 +3067,7 @@
         "blood-moving"
       ]
     },
-    "合欢": {
+    "合欢皮": {
       "matchedName": "合欢",
       "flavor": "甘",
       "nature": "平",
@@ -3175,19 +3080,6 @@
       "sourceCategory": "利水渗湿药",
       "therapyCategoryIds": [
         "wind-damp"
-      ]
-    },
-    "白马茎": {
-      "matchedName": "白马茎",
-      "flavor": "甘咸",
-      "nature": "温",
-      "meridians": [],
-      "action": "鹿茸为大补真阳要药，主养血益阳，强筋健骨，生精充髓，治男子虚劳，老人精衰，腰膝无力，滑精，眩晕，妇人崩瘘带下。",
-      "dosage": "普通七分至钱半。",
-      "contraindication": "壮年慎用，阴虚火旺者忌之，麻勃为使，畏大黄，不可嗅，有虫恐入鼻颡，药不能治，男子阴茎近入易于痿弱。 鹿胎—浑然元气所在，归下焦而不上行，为种子益肾补胞宫之要药。",
-      "sourceCategory": "补益药",
-      "therapyCategoryIds": [
-        "warm-tonic"
       ]
     },
     "鹿茸": {
@@ -3207,24 +3099,7 @@
         "warm-tonic"
       ]
     },
-    "牛角鳃": {
-      "matchedName": "牛角鳃",
-      "flavor": "甘苦",
-      "nature": "凉",
-      "meridians": [
-        "肝",
-        "心",
-        "胆"
-      ],
-      "action": "牛黄为泻热定惊，利痰清心要药，主惊痫，寒热中恶，口噤，小儿惊邪，痘疮发狂，治痰迷，径急，斑痧，疮毒，益肝胆，定魂魄。",
-      "dosage": "普通五分至一钱。",
-      "contraindication": "恶龙骨龙胆，地黄常山蜚蠊，畏牛膝干漆，风热未深入者忌用。",
-      "sourceCategory": "补益药",
-      "therapyCategoryIds": [
-        "warm-tonic"
-      ]
-    },
-    "羖羊角": {
+    "山羊角": {
       "matchedName": "羖羊角",
       "flavor": "",
       "nature": "平",
@@ -3237,7 +3112,7 @@
         "attack-cold"
       ]
     },
-    "牡狗阴茎": {
+    "狗鞭": {
       "matchedName": "牡狗阴茎",
       "flavor": "咸",
       "nature": "平",
@@ -3296,7 +3171,7 @@
         "attack-cold"
       ]
     },
-    "猬皮": {
+    "刺猬皮": {
       "matchedName": "猬皮",
       "flavor": "苦",
       "nature": "平",
@@ -3311,7 +3186,7 @@
         "stop-bleeding"
       ]
     },
-    "露蜂房": {
+    "蜂房": {
       "matchedName": "露蜂房",
       "flavor": "甘咸",
       "nature": "平",
@@ -3383,7 +3258,7 @@
         "attack-cold"
       ]
     },
-    "乌贼鱼骨": {
+    "海螵蛸": {
       "matchedName": "乌贼鱼骨",
       "flavor": "咸",
       "nature": "温",
@@ -3398,7 +3273,7 @@
         "blood-moving"
       ]
     },
-    "白僵蚕": {
+    "僵蚕": {
       "matchedName": "白僵蚕",
       "flavor": "辛咸",
       "nature": "平",
@@ -3463,7 +3338,7 @@
         "wind-damp"
       ]
     },
-    "木虻": {
+    "虻虫": {
       "matchedName": "木虻",
       "flavor": "",
       "nature": "平",
@@ -3476,20 +3351,7 @@
         "attack-cold"
       ]
     },
-    "蜚虻": {
-      "matchedName": "蜚虻",
-      "flavor": "苦",
-      "nature": "寒",
-      "meridians": [],
-      "action": "活血化瘀，专攻妇女子脏之瘀，与少腹中之瘀血。",
-      "dosage": "一般一钱至三钱",
-      "contraindication": "下利者忌用。",
-      "sourceCategory": "活血化瘀药",
-      "therapyCategoryIds": [
-        "blood-moving"
-      ]
-    },
-    "蜚蠊": {
+    "蟑螂": {
       "matchedName": "蜚蠊",
       "flavor": "",
       "nature": "平",
@@ -3502,7 +3364,7 @@
         "attack-cold"
       ]
     },
-    "蟅虫": {
+    "土鳖虫": {
       "matchedName": "蟅虫",
       "flavor": "咸",
       "nature": "寒",
@@ -3517,7 +3379,7 @@
         "attack-cold"
       ]
     },
-    "伏翼": {
+    "蝙蝠": {
       "matchedName": "伏翼",
       "flavor": "辛",
       "nature": "寒",
@@ -3561,7 +3423,7 @@
         "wind-damp"
       ]
     },
-    "粟米": {
+    "小米": {
       "matchedName": "粟米",
       "flavor": "",
       "nature": "平",
@@ -3574,7 +3436,7 @@
         "attack-cold"
       ]
     },
-    "黍米": {
+    "黄米": {
       "matchedName": "黍米",
       "flavor": "",
       "nature": "平",
@@ -3600,7 +3462,7 @@
         "attack-cold"
       ]
     },
-    "葱实": {
+    "葱子": {
       "matchedName": "葱实",
       "flavor": "",
       "nature": "平",
@@ -3657,18 +3519,15 @@
     },
     "铅丹": {
       "matchedName": "铅丹",
-      "flavor": "甘",
-      "nature": "寒",
-      "meridians": [
-        "肝",
-        "心"
-      ],
-      "action": "铅为镇心坠痰解毒要药，主治积聚，噎膈，恶疮，性重平肝逆，能堕胎。",
+      "flavor": "",
+      "nature": "",
+      "meridians": [],
+      "action": "",
       "dosage": "内服用量宜少，外用无定量。",
       "contraindication": "性质重坠，能碍消化，虚者慎用，孕妇忌用。",
-      "sourceCategory": "清热药",
+      "sourceCategory": "本站据讲义主治归类",
       "therapyCategoryIds": [
-        "clear-heat"
+        "attack-cold"
       ]
     },
     "粉钖": {
@@ -3684,19 +3543,21 @@
         "attack-cold"
       ]
     },
-    "代赭": {
-      "matchedName": "代赭",
-      "flavor": "甘苦",
+    "代赭石": {
+      "matchedName": "代赭石",
+      "flavor": "苦甘",
       "nature": "寒",
       "meridians": [
-        "胃"
+        "肝",
+        "胃",
+        "心包"
       ],
-      "action": "代赭石为镇虚祛，养阴血要药，功能避邪毒，治气逆，痰逆，反胃，血中热，血痹，血痢，女子赤白带下。",
-      "dosage": "入煎剂钱半至三钱，水飞用五分至一钱。",
-      "contraindication": "下部虚寒及阳虚阴痿者忌，胎前慎用，畏天雄附子，凡使，醋淬，研末，水飞用。",
-      "sourceCategory": "补益药",
+      "action": "代赭石为重镇降逆要药，平肝潜阳，降气化痰。",
+      "dosage": "入煎剂钱半至三钱，水飞用五分至一钱。醋淬研末水飞用。",
+      "contraindication": "下部虚寒及阳虚阴痿者忌，胎前慎用，畏天雄附子。",
+      "sourceCategory": "平肝药",
       "therapyCategoryIds": [
-        "warm-tonic"
+        "calm-open"
       ]
     },
     "卤咸": {
@@ -3816,7 +3677,7 @@
         "exterior"
       ]
     },
-    "虎掌": {
+    "虎掌南星": {
       "matchedName": "虎掌",
       "flavor": "苦",
       "nature": "温",
@@ -3857,20 +3718,20 @@
         "clear-heat"
       ]
     },
-    "葶苈": {
-      "matchedName": "葶苈",
+    "葶苈子": {
+      "matchedName": "葶苈子",
       "flavor": "辛苦",
-      "nature": "寒",
+      "nature": "大寒",
       "meridians": [
         "肺",
         "膀胱"
       ],
-      "action": "葶苈子为下气行水要药，功能降肺气，逐痰饮，止喘促，下膀胱水，治面目浮肿。",
-      "dosage": "普通八分至二、三钱。",
-      "contraindication": "肿满由脾虚不能制水，小便不通，由膀胱虚无气以化者均忌，肺气虚者亦忌，宜大枣为辅、恶僵蚕。",
-      "sourceCategory": "利水渗湿药",
+      "action": "葶苈子为泻肺平喘要药，利水消肿。",
+      "dosage": "普通八分至二三钱。入药前须炒过。",
+      "contraindication": "脾虚不能制水、膀胱虚无气者忌，肺气虚者忌，宜大枣为辅，恶僵蚕。",
+      "sourceCategory": "泻肺药",
       "therapyCategoryIds": [
-        "wind-damp"
+        "cough-phlegm"
       ]
     },
     "桔梗": {
@@ -3888,7 +3749,7 @@
         "exterior"
       ]
     },
-    "莨菪子": {
+    "天仙子": {
       "matchedName": "莨菪子",
       "flavor": "苦",
       "nature": "寒",
@@ -3904,7 +3765,7 @@
         "attack-cold"
       ]
     },
-    "草蒿": {
+    "青蒿": {
       "matchedName": "草蒿",
       "flavor": "苦",
       "nature": "寒",
@@ -3915,22 +3776,6 @@
       "sourceCategory": "清热药",
       "therapyCategoryIds": [
         "clear-heat"
-      ]
-    },
-    "旋复花": {
-      "matchedName": "旋复花",
-      "flavor": "咸",
-      "nature": "温",
-      "meridians": [
-        "肺",
-        "胃"
-      ],
-      "action": "旋覆花为下气祛痰健胃行水要药，主治肺胃气虚，痰水胶结，上气喘急，根能续筋断。",
-      "dosage": "普通一钱至二、三钱。",
-      "contraindication": "病人涉虚者，忌多服，冷利大肠，虚寒人禁用。",
-      "sourceCategory": "利水渗湿药",
-      "therapyCategoryIds": [
-        "wind-damp"
       ]
     },
     "藜芦": {
@@ -3987,17 +3832,17 @@
         "clear-heat"
       ]
     },
-    "恒山": {
+    "常山": {
       "matchedName": "恒山",
       "flavor": "辛苦",
       "nature": "寒",
       "meridians": [],
-      "action": "蜀漆为驱痰截疟要药，主袪老痰积饮，治新久诸疟，能引痰上行使吐，下行使下，逐水消肿，杀虫，疗蛊。 （春夏用蜀漆，秋冬用常山）",
+      "action": "常山为驱痰截疟要药，主祛老痰积饮，治新久诸疟；能引痰上行使吐，下行使下，逐水消肿。",
       "dosage": "普通八分至三钱。",
       "contraindication": "凡真气虚者忌，忌葱菜及菘茗，得甘草吐疟痰，酒炒用良。",
-      "sourceCategory": "利水渗湿药",
+      "sourceCategory": "本站据讲义主治纠正",
       "therapyCategoryIds": [
-        "wind-damp"
+        "cough-phlegm"
       ]
     },
     "蜀漆": {
@@ -4030,7 +3875,7 @@
         "wind-damp"
       ]
     },
-    "白敛": {
+    "白蔹": {
       "matchedName": "白敛",
       "flavor": "苦",
       "nature": "平",
@@ -4166,7 +4011,7 @@
         "attack-cold"
       ]
     },
-    "羊踯躅": {
+    "闹羊花": {
       "matchedName": "羊踯躅",
       "flavor": "辛",
       "nature": "温",
@@ -4339,7 +4184,7 @@
         "clear-heat"
       ]
     },
-    "蚤休": {
+    "重楼": {
       "matchedName": "蚤休",
       "flavor": "苦",
       "nature": "寒",
@@ -4365,7 +4210,7 @@
         "clear-heat"
       ]
     },
-    "陆英": {
+    "接骨草": {
       "matchedName": "陆英",
       "flavor": "",
       "nature": "平",
@@ -4428,22 +4273,6 @@
         "wind-damp"
       ]
     },
-    "蜀椒": {
-      "matchedName": "蜀椒",
-      "flavor": "辛",
-      "nature": "温",
-      "meridians": [
-        "肺",
-        "脾"
-      ],
-      "action": "蜀椒为散寒祛湿，补火温中要药，主邪气咳逆，寒热痹痛，宣肺燥脾，治骨节皮肤死肌，止呕逆，伏蚘虫。",
-      "dosage": "普通五分至钱半。",
-      "contraindication": "久服令人失明伤血脉，多忘乏气，杏仁为使，得盐味佳，中其毒者，火麻仁浆解之，闭口者有毒勿用。",
-      "sourceCategory": "解表药",
-      "therapyCategoryIds": [
-        "exterior"
-      ]
-    },
     "皂荚": {
       "matchedName": "皂荚",
       "flavor": "辛咸",
@@ -4470,7 +4299,7 @@
         "wind-damp"
       ]
     },
-    "楝实": {
+    "川楝子": {
       "matchedName": "楝实",
       "flavor": "苦",
       "nature": "寒",
@@ -4742,31 +4571,19 @@
         "attack-cold"
       ]
     },
-    "白颈蚯蚓": {
-      "matchedName": "白颈蚯蚓",
-      "flavor": "甘酸",
+    "地龙": {
+      "matchedName": "地龙",
+      "flavor": "咸",
       "nature": "寒",
-      "meridians": [],
-      "action": "蚯蚓主解毒，傅疮，小便不通，赤白痢疾。",
-      "dosage": "普通一钱至三钱。",
-      "contraindication": "内服宜煎汁澄清，不必用渣。",
-      "sourceCategory": "清热药",
-      "therapyCategoryIds": [
-        "clear-heat"
-      ]
-    },
-    "翳螉": {
-      "matchedName": "翳螉",
-      "flavor": "辛",
-      "nature": "温",
       "meridians": [
         "肝",
-        "胃"
+        "脾",
+        "膀胱"
       ],
-      "action": "蜈蚣为驱风散结要药，主小儿惊痫，风搐脐风，治寒热积聚，堕胎，去恶血，制蛇毒。",
-      "dosage": "普通一至二钱。",
-      "contraindication": "蜈蚣有毒，必风气暴烈，药病相当，乃可设，或过剂，以蚯蚓桑皮解之，畏蛞蝓，被蜈蚣螫伤，捣蛞蝓涂之即止痛。",
-      "sourceCategory": "动物药",
+      "action": "地龙为通络要药。走窜力非常强，能钻到最细的经络里面去，中风后半身不遂、经络堵塞必用。",
+      "dosage": "一般二至四钱。",
+      "contraindication": "脾胃虚寒者不宜。",
+      "sourceCategory": "通络药",
       "therapyCategoryIds": [
         "attack-cold"
       ]
@@ -4799,7 +4616,7 @@
         "blood-moving"
       ]
     },
-    "斑蟊（猫）": {
+    "斑蝥": {
       "matchedName": "斑蟊（猫）",
       "flavor": "辛",
       "nature": "寒",
@@ -4918,7 +4735,7 @@
         "attack-cold"
       ]
     },
-    "萤火": {
+    "萤火虫": {
       "matchedName": "萤火",
       "flavor": "",
       "nature": "平",
@@ -4944,35 +4761,37 @@
         "wind-damp"
       ]
     },
-    "桃核仁": {
-      "matchedName": "桃核仁",
-      "flavor": "甘苦",
+    "桃仁": {
+      "matchedName": "桃仁",
+      "flavor": "苦甘",
       "nature": "平",
       "meridians": [
-        "心"
+        "心",
+        "肝",
+        "大肠"
       ],
-      "action": "桃仁为破血润燥要药，主行瘀血，消心下坚硬，治血晕血痞血积血痢，血热燥痒，蓄血发狂，通月经。",
+      "action": "桃仁为破血逐瘀要药，润燥通便。",
       "dosage": "普通一钱至二至三钱。",
-      "contraindication": "生桃实多食，令人膨胀及生疮疽，与鳖同食患心痛，服术人忌之，作脯食，益颜色，肺病宜之。桃仁散而不收，泻而无补，过用或不当，能使血下不止，损伤真阴，故凡经闭由于血枯，产后腹痛由于血虚，大便闭涩由于津液不足者均忌，双仁者有毒，不可食。",
+      "contraindication": "桃仁散而不收泻而无补，经闭血枯、产后血虚、大便津液不足者忌，双仁者有毒。",
       "sourceCategory": "活血化瘀药",
       "therapyCategoryIds": [
         "blood-moving"
       ]
     },
-    "杏核仁": {
-      "matchedName": "杏核仁",
+    "杏仁": {
+      "matchedName": "杏仁",
       "flavor": "甘苦",
       "nature": "温",
       "meridians": [
         "肺",
         "大肠"
       ],
-      "action": "杏仁为咳逆痰气要药，主咳嗽气急，能下气平喘，治风寒痰滞，能宣肺解肌，除风散寒，润燥消积，利胸膈气滞。通大肠气闭。",
-      "dosage": "普通钱半至三钱。",
-      "contraindication": "凡杏子性皆热，小儿多食致疮痈膈热，多食动宿疾，产妇尤忌，杏仁双仁者有毒能杀人，阴虚咳嗽，肺家有虚热痰者均忌，恶黄耆葛根。",
-      "sourceCategory": "解表药",
+      "action": "杏仁为止咳平喘要药，宣肺润燥。",
+      "dosage": "普通钱半至三钱。入药时打碎去煮。",
+      "contraindication": "杏子性热多食致疮痈膈热，产妇尤忌，杏仁双仁者有毒，阴虚咳嗽、肺家虚热痰者忌，恶黄耆葛根。",
+      "sourceCategory": "止咳化痰药",
       "therapyCategoryIds": [
-        "exterior"
+        "cough-phlegm"
       ]
     },
     "腐婢": {
@@ -4988,7 +4807,7 @@
         "clear-heat"
       ]
     },
-    "苦瓠": {
+    "苦葫芦": {
       "matchedName": "苦瓠",
       "flavor": "苦",
       "nature": "寒",
@@ -5001,7 +4820,7 @@
         "wind-damp"
       ]
     },
-    "水斳": {
+    "水芹": {
       "matchedName": "水斳",
       "flavor": "甘",
       "nature": "平",
@@ -5016,7 +4835,7 @@
         "stop-bleeding"
       ]
     },
-    "彼子": {
+    "榧子": {
       "matchedName": "彼子",
       "flavor": "",
       "nature": "平",
@@ -5029,7 +4848,7 @@
         "attack-cold"
       ]
     },
-    "青盐": {
+    "大青盐": {
       "matchedName": "青盐",
       "flavor": "甘咸",
       "nature": "寒",
@@ -5038,11 +4857,9 @@
       "dosage": "普通五分至一钱。",
       "contraindication": "多食伤肺，走血，渗津，发渴。凡血病，哮喘，水肿，消渴人为大忌。",
       "sourceCategory": "明目药",
-      "therapyCategoryIds": [
-        "attack-cold"
-      ]
+      "therapyCategoryIds": []
     },
-    "诃黎勒（诃子）": {
+    "诃子": {
       "matchedName": "诃黎勒（诃子）",
       "flavor": "苦酸",
       "nature": "温",
@@ -5144,7 +4961,7 @@
         "warm-tonic"
       ]
     },
-    "柏叶（侧柏叶）": {
+    "侧柏叶": {
       "matchedName": "柏叶（侧柏叶）",
       "flavor": "苦",
       "nature": "寒",
@@ -5157,7 +4974,7 @@
         "clear-heat"
       ]
     },
-    "豆豉": {
+    "淡豆豉": {
       "matchedName": "豆豉",
       "flavor": "咸",
       "nature": "平",
@@ -5185,7 +5002,7 @@
         "wind-damp"
       ]
     },
-    "蒴翟细叶": {
+    "蒴藋": {
       "matchedName": "蒴翟",
       "flavor": "酸",
       "nature": "温",
@@ -5402,34 +5219,7 @@
         "warm-tonic"
       ]
     },
-    "灶心土": {
-      "matchedName": "",
-      "flavor": "",
-      "nature": "",
-      "meridians": [],
-      "action": "",
-      "dosage": "",
-      "contraindication": "",
-      "sourceCategory": "",
-      "therapyCategoryIds": [
-        "stop-bleeding",
-        "warm-tonic"
-      ]
-    },
-    "灯芯草": {
-      "matchedName": "",
-      "flavor": "",
-      "nature": "",
-      "meridians": [],
-      "action": "",
-      "dosage": "",
-      "contraindication": "",
-      "sourceCategory": "",
-      "therapyCategoryIds": [
-        "wind-damp"
-      ]
-    },
-    "密陀僧 密陀曾": {
+    "密陀僧": {
       "matchedName": "",
       "flavor": "",
       "nature": "",
@@ -5458,21 +5248,6 @@
       "sourceCategory": "理气药",
       "therapyCategoryIds": [
         "qi-digest"
-      ]
-    },
-    "炙鳖甲": {
-      "matchedName": "鳖甲",
-      "flavor": "咸",
-      "nature": "平",
-      "meridians": [
-        "心"
-      ],
-      "action": "鳖甲为益阴除热散结要药，主心腹症瘕坚积寒热，治老疟疟母，骨节间劳热，消肿下瘀，能堕胎。",
-      "dosage": "普通二钱至四钱。",
-      "contraindication": "妊娠及阴虚胃弱，阴虚泄泻，产后泄泻，产后饮食不消，不思食及呕恶等证均忌。",
-      "sourceCategory": "清热药",
-      "therapyCategoryIds": [
-        "clear-heat"
       ]
     },
     "黄精": {
@@ -5505,21 +5280,6 @@
       "sourceCategory": "排脓药",
       "therapyCategoryIds": [
         "attack-cold"
-      ]
-    },
-    "紫菀": {
-      "matchedName": "紫菀",
-      "flavor": "辛苦",
-      "nature": "温",
-      "meridians": [
-        "肺"
-      ],
-      "action": "紫菀为止咳要药。温润不燥，润肺下气。",
-      "dosage": "一般二至四钱。",
-      "contraindication": "有实热者慎用。",
-      "sourceCategory": "止咳药",
-      "therapyCategoryIds": [
-        "cough-phlegm"
       ]
     },
     "土茯苓": {
@@ -5617,7 +5377,7 @@
         "wind-damp"
       ]
     },
-    "银花": {
+    "金银花": {
       "matchedName": "金银花",
       "flavor": "甘",
       "nature": "寒",
@@ -5686,7 +5446,7 @@
         "wind-damp"
       ]
     },
-    "蝎子 全蝎": {
+    "全蝎": {
       "matchedName": "",
       "flavor": "",
       "nature": "",
@@ -5730,19 +5490,6 @@
       "sourceCategory": "补阳药",
       "therapyCategoryIds": [
         "warm-tonic"
-      ]
-    },
-    "夜交藤": {
-      "matchedName": "",
-      "flavor": "",
-      "nature": "",
-      "meridians": [],
-      "action": "",
-      "dosage": "",
-      "contraindication": "",
-      "sourceCategory": "",
-      "therapyCategoryIds": [
-        "calm-open"
       ]
     },
     "乌药": {
@@ -5837,23 +5584,6 @@
       "sourceCategory": "燥湿药",
       "therapyCategoryIds": [
         "wind-damp"
-      ]
-    },
-    "南柴胡": {
-      "matchedName": "柴胡",
-      "flavor": "苦",
-      "nature": "平",
-      "meridians": [
-        "肝",
-        "胆",
-        "三焦"
-      ],
-      "action": "柴胡为少阳要药，疏肝解郁，发表清热。",
-      "dosage": "普通八分至一钱，大剂三四钱。小朋友一钱，体格大两三钱。",
-      "contraindication": "凡虚人气升呕吐，及阴虚火热炎上者忌。",
-      "sourceCategory": "解表药",
-      "therapyCategoryIds": [
-        "exterior"
       ]
     },
     "黄明胶": {

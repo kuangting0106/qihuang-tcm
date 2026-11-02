@@ -45,6 +45,9 @@ export interface BencaoEntry {
   sections: BencaoSection[]
   note?: string
   pinyin?: string
+  canonicalName?: string
+  ancientName?: string
+  alsoKnownAs?: string[]
   profile?: BencaoProfile
 }
 
@@ -80,6 +83,7 @@ export interface BencaoLectureIndex {
   source: BencaoLectureSource
   groups: BencaoGroupMeta[]
   intro: BencaoIntroItem[]
+  entryRedirects?: Record<string, { groupId: string; entryId: string; name: string }>
 }
 
 export interface BencaoGroup {
@@ -95,6 +99,8 @@ export type BencaoRankId = 'upper' | 'middle' | 'lower' | 'nishi' | 'editor'
 export interface BencaoCatalogItem {
   key: string
   name: string
+  ancientName?: string
+  alsoKnownAs?: string[]
   pinyin: string
   groupId: string
   entryId: string

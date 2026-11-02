@@ -36,7 +36,11 @@ const filtered = computed(() => {
   const q = query.value.trim()
   if (!q) return entries
   return entries.filter(
-    (entry) => entry.title.includes(q) || entry.subtitle.includes(q) || entry.note?.includes(q),
+    (entry) =>
+      entry.title.includes(q) ||
+      entry.subtitle.includes(q) ||
+      entry.note?.includes(q) ||
+      entry.alsoKnownAs?.some((name) => name.includes(q)),
   )
 })
 

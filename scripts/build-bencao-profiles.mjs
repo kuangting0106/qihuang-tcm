@@ -78,7 +78,36 @@ function mapCategories(value) {
   return ids
 }
 
-// 公开资料未收的少数条目，按讲义主治与常见功效作保守归类；只用于导航，不写成经典分类。
+// 公开资料分类明显有误的个别药，按讲义主治纠正。
+const CATEGORY_OVERRIDES = {
+  芎穷: ['blood-moving'],
+  川芎: ['blood-moving'],
+}
+
+// 公开资料中个别条目与讲义药名相近但并非同一药，或同一植物不同药用部位；
+// 这些字段回退到讲义原文，避免把另一味药的功效写成这一味。
+const PROFILE_FIXES = {
+  常山: {
+    action:
+      '常山为驱痰截疟要药，主祛老痰积饮，治新久诸疟；能引痰上行使吐，下行使下，逐水消肿。',
+    therapyCategoryIds: ['cough-phlegm'],
+    sourceCategory: '本站据讲义主治纠正',
+  },
+  槐角: {
+    action: '',
+    therapyCategoryIds: ['stop-bleeding'],
+    sourceCategory: '本站据讲义主治归类',
+  },
+  铅丹: {
+    action: '',
+    flavor: '',
+    nature: '',
+    meridians: [],
+    therapyCategoryIds: ['attack-cold'],
+    sourceCategory: '本站据讲义主治归类',
+  },
+  芍药: { action: '' },
+}
 const CATEGORY_FALLBACK = {
   肉松容: ['warm-tonic'],
   五加皮: ['wind-damp'],
@@ -122,8 +151,16 @@ const CATEGORY_FALLBACK = {
   '密陀僧 密陀曾': ['attack-cold'],
   '蝎子 全蝎': ['calm-open'],
   '（鼯）鼠': ['attack-cold'],
+  龙须草: ['wind-damp'],
+  青黛: ['clear-heat'],
+  常山: ['purgative'],
 }
 
+
+function applyProfileFixes(name, item) {
+  const fix = PROFILE_FIXES[name]
+  return fix ? { ...item, ...fix } : item
+}
 
 const byName = new Map()
 for (const herb of source.herbs) {
@@ -138,11 +175,12 @@ const unresolved = []
 for (const entry of catalog.items) {
   const candidates = [entry.name, ALIASES[entry.name], ...(entry.aliases ?? [])].filter(Boolean)
   const herb = candidates.map((name) => byName.get(name)).find(Boolean)
+  const override = CATEGORY_OVERRIDES[entry.name]
   if (!herb) {
     unresolved.push(entry.name)
-    const fallback = CATEGORY_FALLBACK[entry.name] ?? []
+    const fallback = override ?? CATEGORY_FALLBACK[entry.name] ?? []
     if (fallback.length) {
-      items[entry.name] = {
+      items[entry.name] = applyProfileFixes(entry.name, {
         matchedName: '',
         flavor: '',
         nature: '',
@@ -150,9 +188,9 @@ for (const entry of catalog.items) {
         action: '',
         dosage: '',
         contraindication: '',
-        sourceCategory: '',
+        sourceCategory: override ? '本站据讲义主治纠正' : '',
         therapyCategoryIds: fallback,
-      }
+      })
     }
     continue
   }
@@ -164,7 +202,7 @@ for (const entry of catalog.items) {
   const sourceCategory = clean(herb.category)
   const therapyCategoryIds = mapCategories(sourceCategory)
 
-  items[entry.name] = {
+  items[entry.name] = applyProfileFixes(entry.name, {
     matchedName: clean(herb.name),
     flavor: [...new Set(flavor)].join(''),
     nature,
@@ -172,11 +210,13 @@ for (const entry of catalog.items) {
     action: clean(herb.action),
     dosage: clean(herb.dosage),
     contraindication: clean(herb.contraindication),
-    sourceCategory,
-    therapyCategoryIds: therapyCategoryIds.length
-      ? therapyCategoryIds
-      : (CATEGORY_FALLBACK[entry.name] ?? []),
-  }
+    sourceCategory: override ? '本站据讲义主治纠正' : sourceCategory,
+    therapyCategoryIds: override
+      ? override
+      : therapyCategoryIds.length
+        ? therapyCategoryIds
+        : (CATEGORY_FALLBACK[entry.name] ?? []),
+  })
   matched.add(entry.name)
 }
 
