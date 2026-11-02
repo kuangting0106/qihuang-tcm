@@ -28,7 +28,6 @@ const modules = computed(() => [
     desc: `在可旋转的人体上查看 ${counts.value.points} 个常用重点穴，按经络、区域、穴位类型筛选。`,
     stat: `${counts.value.points} 个穴位 · ${counts.value.meridians} 条经络`,
     tone: 'jade',
-    icon: 'meridian',
   },
   {
     to: '/herbs',
@@ -37,7 +36,6 @@ const modules = computed(() => [
     desc: '性味、归经、功效、主治与配伍关系，每一个字段都能点开看出处。',
     stat: `${counts.value.herbs} 味样例药材`,
     tone: 'gold',
-    icon: 'herb',
   },
   {
     to: '/formulas',
@@ -46,7 +44,6 @@ const modules = computed(() => [
     desc: '原文、症状、君臣佐使、加减与关系图谱双轨呈现，药材可跳转本草。',
     stat: `${counts.value.formulas} 首伤寒方`,
     tone: 'cinnabar',
-    icon: 'formula',
   },
 ])
 </script>
@@ -66,6 +63,18 @@ const modules = computed(() => [
           <RouterLink class="btn btn--primary" to="/meridians/lung">进入经络图</RouterLink>
           <RouterLink class="btn" to="/formulas/guizhi-tang">从桂枝汤开始</RouterLink>
         </div>
+
+        <nav class="hero-index" aria-label="首页主导航">
+          <span class="hero-index__label">图鉴目录</span>
+          <RouterLink to="/methods">治疗法门篇</RouterLink>
+          <RouterLink to="/meridians/lung">经络图</RouterLink>
+          <RouterLink to="/herbs">本草</RouterLink>
+          <RouterLink to="/formulas">方剂</RouterLink>
+          <RouterLink to="/cases">案列篇</RouterLink>
+          <RouterLink to="/exercises">古法锻炼</RouterLink>
+          <RouterLink to="/sources">出处索引</RouterLink>
+        </nav>
+
         <dl class="hero__stats">
           <div><dt>{{ counts.points }}</dt><dd>常用重点穴</dd></div>
           <div><dt>{{ counts.herbs }}</dt><dd>样例药材</dd></div>
@@ -168,26 +177,6 @@ const modules = computed(() => [
           <div class="module-card__top">
             <span class="module-card__kicker">{{ m.kicker }}</span>
             <span class="module-card__arrow" aria-hidden="true">↗</span>
-          </div>
-          <div class="module-card__icon" aria-hidden="true">
-            <svg v-if="m.icon === 'meridian'" viewBox="0 0 64 64">
-              <circle cx="32" cy="13" r="7" fill="none" stroke="currentColor" stroke-width="2" />
-              <path d="M32 20v10M32 30c-8 0-11 6-11 12M32 30c8 0 11 6 11 12M21 42l-6 14M43 42l6 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-              <circle cx="32" cy="30" r="2.5" fill="currentColor" />
-              <circle cx="21" cy="42" r="2.5" fill="currentColor" />
-              <circle cx="43" cy="42" r="2.5" fill="currentColor" />
-            </svg>
-            <svg v-else-if="m.icon === 'herb'" viewBox="0 0 64 64">
-              <path d="M32 57c0-18 0-28 0-40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-              <path d="M32 33c-12 0-18-7-18-15 10 0 18 5 18 15Z" fill="none" stroke="currentColor" stroke-width="2" />
-              <path d="M32 22c10 0 16-6 16-13-9 0-16 4-16 13Z" fill="none" stroke="currentColor" stroke-width="2" />
-              <circle cx="32" cy="15" r="4" fill="none" stroke="currentColor" stroke-width="2" />
-            </svg>
-            <svg v-else viewBox="0 0 64 64">
-              <rect x="14" y="10" width="36" height="44" rx="3" fill="none" stroke="currentColor" stroke-width="2" />
-              <path d="M22 22h20M22 30h20M22 38h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-              <path d="M42 48c4-3 7-7 7-12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-            </svg>
           </div>
           <h3>{{ m.title }}</h3>
           <p>{{ m.desc }}</p>
@@ -338,8 +327,40 @@ const modules = computed(() => [
   gap: 12px;
 }
 
+.hero-index {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 2px;
+  margin-top: 26px;
+  padding-top: 14px;
+  max-width: 560px;
+  border-top: 1px solid var(--line-strong);
+}
+
+.hero-index__label {
+  margin-right: 8px;
+  color: var(--ink-faint);
+  font-family: var(--serif);
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+}
+
+.hero-index a {
+  padding: 5px 9px;
+  border-radius: 999px;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  transition: color 0.18s ease, background 0.18s ease;
+}
+
+.hero-index a:hover {
+  color: var(--cinnabar);
+  background: var(--cinnabar-pale);
+}
+
 .hero__stats {
-  margin: 42px 0 0;
+  margin: 30px 0 0;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
@@ -596,7 +617,7 @@ const modules = computed(() => [
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 330px;
+  min-height: 270px;
   padding: 24px;
   border: 1px solid var(--line);
   border-radius: 22px;
@@ -682,21 +703,11 @@ const modules = computed(() => [
   color: var(--accent);
 }
 
-.module-card__icon {
-  width: 62px;
-  height: 62px;
-  margin: 30px 0 18px;
-  color: var(--accent);
-}
-
-.module-card__icon svg {
-  width: 100%;
-  height: 100%;
-}
-
 .module-card h3 {
-  font-size: 1.7rem;
-  margin-bottom: 8px;
+  margin-top: 34px;
+  margin-bottom: 10px;
+  font-size: 2.3rem;
+  letter-spacing: 0.06em;
 }
 
 .module-card p {
@@ -868,6 +879,16 @@ const modules = computed(() => [
 @media (max-width: 680px) {
   .hero__stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-index__label {
+    width: 100%;
+    margin: 0 0 2px;
+  }
+
+  .hero-index a {
+    padding: 5px 7px;
+    font-size: 0.76rem;
   }
 
   .hero__visual {

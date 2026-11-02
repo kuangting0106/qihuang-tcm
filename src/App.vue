@@ -1,19 +1,20 @@
 <script setup lang="ts">
-import { onMounted, ref, watch } from 'vue'
-import { RouterLink, RouterView, useRoute } from 'vue-router'
+import { computed, onMounted, ref, watch } from 'vue'
+import { RouterLink, RouterView, useRouter } from 'vue-router'
 import CitationDrawer from '@/components/CitationDrawer.vue'
 import { loadTcmData, useTcmData } from '@/composables/useTcmData'
 
 const { data, loading, error } = useTcmData()
-const route = useRoute()
+const router = useRouter()
 const menuOpen = ref(false)
+const isHome = computed(() => router.currentRoute.value.path === '/')
 
 onMounted(() => {
   loadTcmData().catch(() => {})
 })
 
 watch(
-  () => route.fullPath,
+  () => router.currentRoute.value.fullPath,
   () => {
     menuOpen.value = false
   },
@@ -50,25 +51,27 @@ function retry() {
           </span>
         </RouterLink>
 
-        <button
-          class="menu-toggle"
-          type="button"
-          :aria-expanded="menuOpen"
-          aria-label="打开导航"
-          @click="menuOpen = !menuOpen"
-        >
-          <span></span><span></span><span></span>
-        </button>
+        <template v-if="!isHome">
+          <button
+            class="menu-toggle"
+            type="button"
+            :aria-expanded="menuOpen"
+            aria-label="打开导航"
+            @click="menuOpen = !menuOpen"
+          >
+            <span></span><span></span><span></span>
+          </button>
 
-        <nav class="site-nav" :class="{ 'site-nav--open': menuOpen }" aria-label="主导航">
-          <RouterLink to="/methods">治疗法门篇</RouterLink>
-          <RouterLink to="/meridians/lung">经络图</RouterLink>
-          <RouterLink to="/herbs">本草</RouterLink>
-          <RouterLink to="/formulas">方剂</RouterLink>
-          <RouterLink to="/cases">案列篇</RouterLink>
-          <RouterLink to="/exercises">古法锻炼</RouterLink>
-          <RouterLink to="/sources">出处索引</RouterLink>
-        </nav>
+          <nav class="site-nav" :class="{ 'site-nav--open': menuOpen }" aria-label="主导航">
+            <RouterLink to="/methods">治疗法门篇</RouterLink>
+            <RouterLink to="/meridians/lung">经络图</RouterLink>
+            <RouterLink to="/herbs">本草</RouterLink>
+            <RouterLink to="/formulas">方剂</RouterLink>
+            <RouterLink to="/cases">案列篇</RouterLink>
+            <RouterLink to="/exercises">古法锻炼</RouterLink>
+            <RouterLink to="/sources">出处索引</RouterLink>
+          </nav>
+        </template>
       </div>
     </header>
 
