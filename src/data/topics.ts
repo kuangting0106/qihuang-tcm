@@ -81,8 +81,8 @@ export const topicSections = {
   },
   cases: {
     key: 'cases' as const,
-    eyebrow: 'CASE / 案列篇',
-    title: '案列篇',
+    eyebrow: 'CASE / 医案',
+    title: '医案',
     lead: '按病类整理医案：先看症状与病机，再看治法、方药与转归。每则医案都必须回到原文出处。',
     topics: caseTopics,
   },

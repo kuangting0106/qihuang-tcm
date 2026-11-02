@@ -41,10 +41,12 @@ http://127.0.0.1:5173/
 | 方剂列表 | `/formulas` |
 | 桂枝汤 | `/formulas/guizhi-tang` |
 | 小柴胡汤 | `/formulas/xiao-chai-hu-tang` |
-| 案列篇 | `/cases` |
+| 医案 | `/cases` |
 | 古法锻炼 | `/exercises` |
 | 五禽戏 | `/exercises/wuqinxi` |
-| 出处索引 | `/sources` |
+| 名家讲堂 | `/lectures` |
+| 药材的炮制 | `/processing` |
+| 医家经典古籍 | `/classics` |
 | 大方布局演示 | `/lab/formula-scale` |
 
 ## 每次必查

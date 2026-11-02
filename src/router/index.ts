@@ -54,13 +54,13 @@ const router = createRouter({
       path: '/cases',
       name: 'cases',
       component: () => import('@/views/TopicIndexView.vue'),
-      meta: { title: '案列篇', section: 'cases' },
+      meta: { title: '医案', section: 'cases' },
     },
     {
       path: '/cases/:id',
       name: 'case-detail',
       component: () => import('@/views/TopicDetailView.vue'),
-      meta: { title: '案列篇 · 栏目', section: 'cases' },
+      meta: { title: '医案 · 栏目', section: 'cases' },
     },
     {
       path: '/exercises',
@@ -75,6 +75,18 @@ const router = createRouter({
       meta: { title: '古法锻炼 · 收藏页' },
     },
     {
+      path: '/lectures',
+      name: 'lectures',
+      component: () => import('@/views/LecturesView.vue'),
+      meta: { title: '名家讲堂' },
+    },
+    {
+      path: '/processing',
+      name: 'processing',
+      component: () => import('@/views/ProcessingView.vue'),
+      meta: { title: '药材的炮制' },
+    },
+    {
       path: '/meridians',
       redirect: '/meridians/lung',
     },
@@ -85,10 +97,14 @@ const router = createRouter({
       meta: { title: '经络图' },
     },
     {
+      path: '/classics',
+      name: 'classics',
+      component: () => import('@/views/ClassicsView.vue'),
+      meta: { title: '医家经典古籍' },
+    },
+    {
       path: '/sources',
-      name: 'sources',
-      component: () => import('@/views/SourcesView.vue'),
-      meta: { title: '出处索引' },
+      redirect: '/classics',
     },
     {
       path: '/lab/formula-scale',

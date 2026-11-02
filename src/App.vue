@@ -67,9 +67,9 @@ function retry() {
             <RouterLink to="/meridians/lung">经络图</RouterLink>
             <RouterLink to="/herbs">本草</RouterLink>
             <RouterLink to="/formulas">方剂</RouterLink>
-            <RouterLink to="/cases">案列篇</RouterLink>
             <RouterLink to="/exercises">古法锻炼</RouterLink>
-            <RouterLink to="/sources">出处索引</RouterLink>
+            <RouterLink to="/classics">医家经典古籍</RouterLink>
+            <RouterLink to="/cases">医案</RouterLink>
           </nav>
         </template>
       </div>
@@ -93,9 +93,11 @@ function retry() {
           <RouterLink to="/meridians/lung">经络图</RouterLink>
           <RouterLink to="/herbs">本草</RouterLink>
           <RouterLink to="/formulas">方剂</RouterLink>
-          <RouterLink to="/cases">案列篇</RouterLink>
           <RouterLink to="/exercises">古法锻炼</RouterLink>
-          <RouterLink to="/sources">出处索引</RouterLink>
+          <RouterLink to="/lectures">名家讲堂</RouterLink>
+          <RouterLink to="/processing">药材炮制</RouterLink>
+          <RouterLink to="/classics">医家经典古籍</RouterLink>
+          <RouterLink to="/cases">医案</RouterLink>
           <RouterLink to="/lab/formula-scale">布局演示</RouterLink>
         </div>
       </div>

@@ -218,7 +218,6 @@ const currentSlotLabel = computed(() => {
           性味、归经、功效、主治按药典该药条目摘录；配伍关系按后世方书与教材归纳，标为“后世方解”。
           点击任意“出处”可查看书名、版次、条号与原文。
         </p>
-        <RouterLink class="text-link" to="/sources">查看全部出处 →</RouterLink>
       </section>
     </div>
   </div>

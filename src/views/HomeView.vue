@@ -5,7 +5,7 @@ import { useTcmData } from '@/composables/useTcmData'
 import { caseTopics, methodTopics } from '@/data/topics'
 import { exercises } from '@/data/exercises'
 
-const { data, acupointsById } = useTcmData()
+const { data } = useTcmData()
 
 const counts = computed(() => ({
   herbs: data.value?.herbs.length ?? 0,
@@ -13,12 +13,6 @@ const counts = computed(() => ({
   points: data.value?.acupoints.length ?? 0,
   meridians: data.value?.meridians.length ?? 0,
 }))
-
-const featuredPoints = computed(() =>
-  ['LU9', 'REN17', 'REN4', 'ST36', 'GB20']
-    .map((id) => acupointsById.value.get(id))
-    .filter((p) => !!p),
-)
 
 const modules = computed(() => [
   {
@@ -70,9 +64,9 @@ const modules = computed(() => [
           <RouterLink to="/meridians/lung">经络图</RouterLink>
           <RouterLink to="/herbs">本草</RouterLink>
           <RouterLink to="/formulas">方剂</RouterLink>
-          <RouterLink to="/cases">案列篇</RouterLink>
           <RouterLink to="/exercises">古法锻炼</RouterLink>
-          <RouterLink to="/sources">出处索引</RouterLink>
+          <RouterLink to="/classics">医家经典古籍</RouterLink>
+          <RouterLink to="/cases">医案</RouterLink>
         </nav>
 
         <dl class="hero__stats">
@@ -81,78 +75,6 @@ const modules = computed(() => [
           <div><dt>{{ counts.formulas }}</dt><dd>伤寒方</dd></div>
           <div><dt>100%</dt><dd>内容带出处</dd></div>
         </dl>
-      </div>
-
-      <div class="hero__visual" aria-hidden="true">
-        <div class="figure-card">
-          <div class="figure-card__head">
-            <span>正面 · 经络示意</span>
-            <span class="figure-card__dot"></span>
-          </div>
-          <svg viewBox="0 0 300 520" class="body-figure">
-            <defs>
-              <linearGradient id="bodyWash" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#d8c6a8" stop-opacity="0.62" />
-                <stop offset="100%" stop-color="#b08a4a" stop-opacity="0.12" />
-              </linearGradient>
-              <linearGradient id="meridianGold" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#a33a2b" />
-                <stop offset="100%" stop-color="#b08a4a" />
-              </linearGradient>
-            </defs>
-            <path
-              d="M150 28 C132 28 120 42 120 58 C120 72 128 84 138 88 L136 96 C122 100 106 110 98 128 L78 190 L64 250 L78 255 L98 205 L108 230 L110 300 L102 380 L96 450 L122 452 L134 380 L142 320 L150 300 L158 320 L166 380 L178 452 L204 450 L198 380 L190 300 L192 230 L202 205 L222 255 L236 250 L222 190 L202 128 C194 110 178 100 164 96 L162 88 C172 84 180 72 180 58 C180 42 168 28 150 28Z"
-              fill="url(#bodyWash)"
-              stroke="#6f5a3d"
-              stroke-opacity="0.4"
-              stroke-width="1.2"
-            />
-            <path
-              d="M150 132 C136 138 118 146 106 162 L88 206 L82 246"
-              fill="none"
-              stroke="url(#meridianGold)"
-              stroke-width="2.4"
-              stroke-linecap="round"
-            />
-            <path
-              d="M150 132 L150 168 L150 220 L150 270"
-              fill="none"
-              stroke="#a33a2b"
-              stroke-opacity="0.55"
-              stroke-width="1.5"
-              stroke-dasharray="4 5"
-            />
-            <g class="figure-dots">
-              <circle cx="112" cy="152" r="4.5" />
-              <circle cx="150" cy="160" r="4.5" />
-              <circle cx="150" cy="222" r="4.5" />
-              <circle cx="150" cy="274" r="4.5" />
-              <circle cx="88" cy="224" r="4.5" />
-              <circle cx="82" cy="250" r="3.5" />
-              <circle cx="205" cy="138" r="4.5" />
-            </g>
-            <g class="figure-labels" font-family="var(--serif)" font-size="11" fill="#5b625d">
-              <text x="122" y="146">中府</text>
-              <text x="160" y="158">膻中</text>
-              <text x="160" y="220">中脘</text>
-              <text x="160" y="272">关元</text>
-              <text x="42" y="228">尺泽</text>
-              <text x="216" y="134">风池</text>
-            </g>
-          </svg>
-          <div class="figure-card__foot">
-            <span>3D 针灸铜人 · 离线坐标</span>
-            <span>{{ counts.points }} 穴</span>
-          </div>
-        </div>
-        <div class="float-note float-note--top">
-          <span class="float-note__mark">原</span>
-          <div><strong>太渊</strong><small>原 · 输 · 脉会 · 母</small></div>
-        </div>
-        <div class="float-note float-note--bottom">
-          <span class="float-note__mark">会</span>
-          <div><strong>八会穴</strong><small>脏、腑、气、血、筋、脉、骨、髓</small></div>
-        </div>
       </div>
     </section>
 
@@ -198,8 +120,8 @@ const modules = computed(() => [
         </RouterLink>
         <RouterLink to="/cases" class="extra-card extra-card--cases">
           <div>
-            <span class="eyebrow">CASE / 案列篇</span>
-            <h3>案列篇</h3>
+            <span class="eyebrow">CASE / 医案</span>
+            <h3>医案</h3>
             <p>按病类整理医案：风湿、表证、肠胃、肺篇、心胸、腹篇、积饮、消渴、水病、痢、脓疡、孕妇科、男科。</p>
           </div>
           <span class="extra-card__count">{{ caseTopics.length }} 个栏目 →</span>
@@ -212,6 +134,79 @@ const modules = computed(() => [
           </div>
           <span class="extra-card__count">{{ exercises.length }} 套功法 →</span>
         </RouterLink>
+        <RouterLink to="/classics" class="extra-card extra-card--classics">
+          <div>
+            <span class="eyebrow">CLASSICS / 医家经典古籍</span>
+            <h3>医家经典古籍</h3>
+            <p>《伤寒论》《灵枢》《难经》《神农本草经》《本草纲目》等已引用古籍与条文，原文与条号分开登记。</p>
+          </div>
+          <span class="extra-card__count">按书查阅 →</span>
+        </RouterLink>
+      </div>
+    </section>
+
+    <section class="collections container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">COLLECTIONS / 新栏目</p>
+          <h2>名家讲堂与药材炮制</h2>
+        </div>
+        <p>视频课件与炮制方法都按“来源先于内容”收录；未核来源的条目先标待收录。</p>
+      </div>
+
+      <div class="collection-grid">
+        <RouterLink to="/lectures" class="collection-card collection-card--lectures">
+          <div class="collection-card__top">
+            <span class="collection-card__kicker">LECTURE HALL / 名家讲堂</span>
+            <span class="collection-card__status">视频待收录</span>
+          </div>
+          <h3>名家讲堂</h3>
+          <p>
+            著名医家的视频课件，以医家与典籍为线索，收集后世、当代名家的讲授版本。
+            历史医家没有影像，页面只写“某某讲授版本”，不把讲授者写成原作者。
+          </p>
+          <ul>
+            <li>伤寒论 · 金匮要略</li>
+            <li>傅青主女科</li>
+            <li>本草纲目 · 千金方</li>
+          </ul>
+          <div class="collection-card__foot">
+            <span>进入讲堂</span>
+            <span aria-hidden="true">→</span>
+          </div>
+          <span class="collection-card__seal" aria-hidden="true">讲</span>
+        </RouterLink>
+
+        <RouterLink to="/processing" class="collection-card collection-card--processing">
+          <div class="collection-card__top">
+            <span class="collection-card__kicker">PROCESSING / 药材的炮制</span>
+            <span class="collection-card__status">方法待收录</span>
+          </div>
+          <h3>药材的炮制</h3>
+          <p>
+            收集草木类、蛇虫类、金石类等多味药材的炮制方法。
+            每法回引原书、药典或炮制规范，毒性药材单独标注减毒与使用限制。
+          </p>
+          <ul>
+            <li>草木类 · 根茎叶花果</li>
+            <li>蛇虫类 · 蛇虫甲壳</li>
+            <li>金石类 · 矿物贝壳</li>
+          </ul>
+          <div class="collection-card__foot">
+            <span>进入炮制栏</span>
+            <span aria-hidden="true">→</span>
+          </div>
+          <span class="collection-card__seal" aria-hidden="true">制</span>
+        </RouterLink>
+      </div>
+    </section>
+
+    <section class="source-strip">
+      <div class="container source-strip__inner">
+        <span class="eyebrow">SOURCES</span>
+        <p>
+          伤寒论 · 灵枢 · 难经 · 中华人民共和国药典 · GB/T 12346-2021 · 针灸学 · 方剂学 · 中药学
+        </p>
       </div>
     </section>
 
@@ -223,7 +218,7 @@ const modules = computed(() => [
           原型里的每一条内容都挂在来源上。经典原文、药典/标准、教材归纳分别标注；
           查不到确切出处的字段宁可不写。
         </p>
-        <RouterLink class="text-link" to="/sources">查看全部出处 →</RouterLink>
+        <RouterLink class="text-link" to="/classics">查看医家经典古籍 →</RouterLink>
       </div>
       <div class="principle-list">
         <article>
@@ -243,37 +238,6 @@ const modules = computed(() => [
         </article>
       </div>
     </section>
-
-    <section class="featured container">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">START HERE</p>
-          <h2>先点开一个穴位</h2>
-        </div>
-        <p>从四肢到躯干、头颈，看看不同类型落在哪里。</p>
-      </div>
-      <div class="featured-points">
-        <RouterLink
-          v-for="p in featuredPoints"
-          :key="p!.id"
-          class="featured-point"
-          :to="{ path: '/meridians/all', query: { point: p!.id } }"
-        >
-          <span class="featured-point__id">{{ p!.id }}</span>
-          <strong>{{ p!.name }}</strong>
-          <span>{{ p!.annotation }}</span>
-        </RouterLink>
-      </div>
-    </section>
-
-    <section class="source-strip">
-      <div class="container source-strip__inner">
-        <span class="eyebrow">SOURCES</span>
-        <p>
-          伤寒论 · 灵枢 · 难经 · 中华人民共和国药典 · GB/T 12346-2021 · 针灸学 · 方剂学 · 中药学
-        </p>
-      </div>
-    </section>
   </div>
 </template>
 
@@ -284,8 +248,8 @@ const modules = computed(() => [
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.04fr) minmax(360px, 0.96fr);
-  gap: 56px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
   align-items: center;
   padding-top: 74px;
   padding-bottom: 86px;
@@ -384,143 +348,6 @@ const modules = computed(() => [
   font-size: 0.76rem;
 }
 
-.hero__visual {
-  position: relative;
-  display: grid;
-  place-items: center;
-  min-height: 560px;
-}
-
-.hero__visual::before {
-  content: "";
-  position: absolute;
-  width: 470px;
-  height: 470px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(176, 138, 74, 0.18), transparent 68%);
-  filter: blur(4px);
-}
-
-.figure-card {
-  position: relative;
-  width: min(400px, 100%);
-  border: 1px solid var(--line);
-  border-radius: 26px;
-  background:
-    linear-gradient(160deg, rgba(255, 252, 245, 0.82), rgba(235, 226, 210, 0.54)),
-    repeating-linear-gradient(90deg, transparent 0 39px, rgba(32, 37, 34, 0.03) 39px 40px);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-}
-
-.figure-card__head,
-.figure-card__foot {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 15px 20px;
-  color: var(--ink-soft);
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-}
-
-.figure-card__head {
-  border-bottom: 1px solid var(--line);
-}
-
-.figure-card__foot {
-  border-top: 1px solid var(--line);
-}
-
-.figure-card__dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--cinnabar);
-  box-shadow: 0 0 0 4px rgba(163, 58, 43, 0.12);
-}
-
-.body-figure {
-  display: block;
-  width: 100%;
-  height: auto;
-  padding: 10px 12px 0;
-}
-
-.figure-dots circle {
-  fill: var(--cinnabar);
-  stroke: #f8efe3;
-  stroke-width: 2;
-  animation: dot-pulse 3.6s ease-in-out infinite;
-}
-
-.figure-dots circle:nth-child(2n) {
-  animation-delay: 0.8s;
-}
-
-.figure-dots circle:nth-child(3n) {
-  animation-delay: 1.5s;
-}
-
-@keyframes dot-pulse {
-  0%,
-  100% {
-    filter: drop-shadow(0 0 0 rgba(163, 58, 43, 0));
-  }
-  50% {
-    filter: drop-shadow(0 0 5px rgba(163, 58, 43, 0.55));
-  }
-}
-
-.float-note {
-  position: absolute;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  padding: 10px 14px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: rgba(255, 252, 245, 0.9);
-  box-shadow: var(--shadow-soft);
-  backdrop-filter: blur(8px);
-}
-
-.float-note--top {
-  top: 76px;
-  right: -10px;
-}
-
-.float-note--bottom {
-  bottom: 72px;
-  left: -12px;
-}
-
-.float-note__mark {
-  width: 34px;
-  height: 34px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--cinnabar-pale);
-  color: var(--cinnabar);
-  font-family: var(--serif);
-}
-
-.float-note strong,
-.float-note small {
-  display: block;
-}
-
-.float-note strong {
-  font-family: var(--serif);
-  font-size: 0.9rem;
-}
-
-.float-note small {
-  color: var(--ink-soft);
-  font-size: 0.68rem;
-}
-
 .module-section {
   padding-top: 30px;
   padding-bottom: 84px;
@@ -553,7 +380,7 @@ const modules = computed(() => [
 
 .extra-sections {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
   margin-top: 16px;
 }
@@ -609,6 +436,14 @@ const modules = computed(() => [
 
 .extra-card--exercises .extra-card__count {
   color: var(--gold);
+}
+
+.extra-card--classics:hover {
+  border-color: var(--jade);
+}
+
+.extra-card--classics .extra-card__count {
+  color: var(--jade);
 }
 
 .module-card {
@@ -732,6 +567,7 @@ const modules = computed(() => [
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   gap: 56px;
+  padding-top: 54px;
   padding-bottom: 90px;
 }
 
@@ -781,46 +617,125 @@ const modules = computed(() => [
   font-size: 0.84rem;
 }
 
-.featured {
+.collections {
   padding-bottom: 92px;
 }
 
-.featured-points {
+.collection-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.collection-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px 26px 20px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background:
+    linear-gradient(150deg, rgba(255, 252, 245, 0.72), rgba(235, 226, 210, 0.28)),
+    rgba(255, 252, 245, 0.5);
+  overflow: hidden;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.collection-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: var(--accent);
+}
+
+.collection-card--lectures {
+  --accent: var(--jade);
+}
+
+.collection-card--processing {
+  --accent: var(--gold);
+}
+
+.collection-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-soft);
+}
+
+.collection-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 12px;
 }
 
-.featured-point {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 16px;
+.collection-card__kicker {
+  color: var(--accent);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+}
+
+.collection-card__status {
+  padding: 3px 9px;
   border: 1px solid var(--line);
-  border-radius: 14px;
-  background: rgba(255, 252, 245, 0.5);
-  transition: border-color 0.18s ease, transform 0.18s ease;
-}
-
-.featured-point:hover {
-  border-color: var(--cinnabar);
-  transform: translateY(-2px);
-}
-
-.featured-point__id {
-  color: var(--cinnabar);
-  font-size: 0.68rem;
-  letter-spacing: 0.08em;
-}
-
-.featured-point strong {
-  font-family: var(--serif);
-  font-size: 1.18rem;
-}
-
-.featured-point span:last-child {
+  border-radius: 999px;
   color: var(--ink-soft);
-  font-size: 0.74rem;
+  font-size: 0.64rem;
+}
+
+.collection-card h3 {
+  margin-top: 2px;
+  font-size: 2.1rem;
+  letter-spacing: 0.05em;
+}
+
+.collection-card p {
+  max-width: 36rem;
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+  line-height: 1.9;
+}
+
+.collection-card ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.collection-card li {
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+}
+
+.collection-card__foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  color: var(--accent);
+  font-size: 0.78rem;
+}
+
+.collection-card__seal {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: 5.4rem;
+  line-height: 1;
+  opacity: 0.08;
+  pointer-events: none;
 }
 
 .source-strip {
@@ -846,12 +761,8 @@ const modules = computed(() => [
 @media (max-width: 1040px) {
   .hero {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 0;
     padding-top: 52px;
-  }
-
-  .hero__visual {
-    min-height: 480px;
   }
 
   .module-grid {
@@ -871,8 +782,8 @@ const modules = computed(() => [
     gap: 30px;
   }
 
-  .featured-points {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .collection-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -891,14 +802,6 @@ const modules = computed(() => [
     font-size: 0.76rem;
   }
 
-  .hero__visual {
-    min-height: 420px;
-  }
-
-  .float-note {
-    display: none;
-  }
-
   .section-head {
     flex-direction: column;
     align-items: flex-start;
@@ -906,10 +809,6 @@ const modules = computed(() => [
 
   .section-head > p {
     text-align: left;
-  }
-
-  .featured-points {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 </style>

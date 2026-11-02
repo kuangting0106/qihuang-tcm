@@ -523,7 +523,6 @@ watch(
           方剂原文、组成、加减均回引《伤寒论》原条；君臣佐使、药对与功效归纳标为“后世方解”，
           并注明《方剂学》《中药学》教材依据。点击任意“出处”查看完整引文。
         </p>
-        <RouterLink class="text-link" to="/sources">查看全部出处 →</RouterLink>
       </section>
     </div>
   </div>

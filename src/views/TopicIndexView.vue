@@ -56,7 +56,7 @@ const basePath = computed(() => `/${section.value.key}`)
             收到典籍原文、医案或你的讲义后，按“书名 · 卷/条 · 原文”逐条录入，再补按语。
           </p>
           <p class="topic-principles__links">
-            <RouterLink class="text-link" to="/sources">查看现有出处索引 →</RouterLink>
+            <RouterLink class="text-link" to="/classics">查看医家经典古籍 →</RouterLink>
             <RouterLink class="text-link" to="/">返回首页 →</RouterLink>
           </p>
         </div>
