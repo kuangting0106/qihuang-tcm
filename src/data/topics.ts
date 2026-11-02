@@ -19,16 +19,6 @@ export const methodTopics: Topic[] = [
     subtitle: '治法与方药的组织方式：先辨病机，再谈治法、方药与调护。',
   },
   {
-    id: 'moxibustion',
-    title: '灸',
-    subtitle: '灸法资料栏：艾灸材料、操作、宜忌与相关医案；具体内容待按典籍与规范逐条录入。',
-  },
-  {
-    id: 'acupuncture',
-    title: '针',
-    subtitle: '针法资料栏：针刺器具、手法、宜忌与相关医案；具体内容待按典籍与规范逐条录入。',
-  },
-  {
     id: 'cancer-methods',
     title: '治癌法门',
     subtitle: '专题资料栏。正文待按典籍、医案与当代文献逐条录入。',
@@ -52,6 +42,16 @@ export const methodTopics: Topic[] = [
     id: 'treatment-order',
     title: '治病先后主次',
     subtitle: '标本缓急、先后次序与治疗节奏；条文与医案待补。',
+  },
+  {
+    id: 'moxibustion',
+    title: '灸',
+    subtitle: '灸法资料栏：艾灸材料、操作、宜忌与相关医案；具体内容待按典籍与规范逐条录入。',
+  },
+  {
+    id: 'acupuncture',
+    title: '针',
+    subtitle: '针法资料栏：针刺器具、手法、宜忌与相关医案；具体内容待按典籍与规范逐条录入。',
   },
 ]
 
