@@ -112,14 +112,14 @@ const currentSlotLabel = computed(() => {
           </div>
           <div class="taxonomy-links">
             <span class="taxonomy-links__label">分类</span>
-            <RouterLink v-if="rank" class="chip chip--gold" :to="`/herbs?rank=${rank.id}`">
+            <RouterLink v-if="rank" class="chip chip--gold" :to="`/herbs/rank/${rank.id}`">
               {{ rank.title }} · {{ rank.subtitle }}
             </RouterLink>
             <RouterLink
               v-for="cat in categories"
               :key="cat.id"
               class="chip"
-              :to="`/herbs?category=${cat.id}`"
+              :to="`/herbs/category/${cat.id}`"
             >
               {{ cat.title }}
             </RouterLink>

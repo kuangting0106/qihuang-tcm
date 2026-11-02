@@ -33,6 +33,18 @@ const router = createRouter({
       meta: { title: '本草' },
     },
     {
+      path: '/herbs/rank/:key',
+      name: 'herb-rank',
+      component: () => import('@/views/HerbCollectionView.vue'),
+      meta: { title: '三经药材', collectionKind: 'rank' },
+    },
+    {
+      path: '/herbs/category/:key',
+      name: 'herb-category',
+      component: () => import('@/views/HerbCollectionView.vue'),
+      meta: { title: '功效分类药材', collectionKind: 'category' },
+    },
+    {
       path: '/herbs/:id',
       name: 'herb-detail',
       component: () => import('@/views/HerbDetailView.vue'),

@@ -53,6 +53,78 @@ function splitList(value) {
 const catalog = JSON.parse(fs.readFileSync(catalogFile, 'utf8'))
 const source = JSON.parse(fs.readFileSync(sourceFile, 'utf8'))
 
+const CATEGORY_RULES = [
+  [/解表/, ['exterior']],
+  [/泻下|涌吐/, ['purgative']],
+  [/止血|凉血/, ['stop-bleeding']],
+  [/活血|化瘀/, ['blood-moving']],
+  [/化痰|止咳|泻肺|清肺/, ['cough-phlegm']],
+  [/安神|开窍|平肝/, ['calm-open']],
+  [/收涩|固涩/, ['astringent']],
+  [/理气|行气|消食/, ['qi-digest']],
+  [/补益|补气|补阳|补阴|补血|温里|生津/, ['warm-tonic']],
+  [/清热|清热解毒|清热凉血|清热燥湿/, ['clear-heat']],
+  [/利水|渗湿|祛风湿|化湿|燥湿/, ['wind-damp']],
+  [/杀虫|矿石|动物|外用|种子|谷物|根茎|花类|止痛|通络|软坚散结|排脓/, ['attack-cold']],
+]
+
+function mapCategories(value) {
+  const ids = []
+  for (const rule of CATEGORY_RULES) {
+    if (rule[0].test(value)) {
+      for (const id of rule[1]) if (!ids.includes(id)) ids.push(id)
+    }
+  }
+  return ids
+}
+
+// 公开资料未收的少数条目，按讲义主治与常见功效作保守归类；只用于导航，不写成经典分类。
+const CATEGORY_FALLBACK = {
+  肉松容: ['warm-tonic'],
+  五加皮: ['wind-damp'],
+  慈石: ['calm-open'],
+  玄参: ['clear-heat'],
+  狗脊: ['warm-tonic'],
+  水苏: ['exterior'],
+  乌韭: ['clear-heat'],
+  灶心土: ['stop-bleeding', 'warm-tonic'],
+  灯芯草: ['wind-damp'],
+  密陀僧: ['attack-cold'],
+  土茯苓: ['wind-damp'],
+  海金沙: ['wind-damp'],
+  五倍子: ['astringent'],
+  百草霜: ['stop-bleeding'],
+  石决明: ['calm-open'],
+  藿香: ['wind-damp'],
+  薄荷: ['exterior'],
+  白附子: ['cough-phlegm'],
+  钩藤: ['calm-open'],
+  威灵仙: ['wind-damp'],
+  全蝎: ['calm-open'],
+  夜交藤: ['calm-open'],
+  莱菔子: ['qi-digest'],
+  白芥子: ['cough-phlegm'],
+  黄明胶: ['warm-tonic'],
+  太子参: ['warm-tonic'],
+  锁阳: ['warm-tonic'],
+  香附: ['qi-digest'],
+  益智仁: ['warm-tonic'],
+  白蒿: ['wind-damp'],
+  蒺藜子: ['calm-open'],
+  香蒲: ['stop-bleeding'],
+  蕤核: ['clear-heat'],
+  鲤鱼胆: ['clear-heat'],
+  马先蒿: ['wind-damp'],
+  女菀: ['cough-phlegm'],
+  '古南(石南?)': ['wind-damp'],
+  蔓椒: ['attack-cold'],
+  青盐: ['attack-cold'],
+  '密陀僧 密陀曾': ['attack-cold'],
+  '蝎子 全蝎': ['calm-open'],
+  '（鼯）鼠': ['attack-cold'],
+}
+
+
 const byName = new Map()
 for (const herb of source.herbs) {
   const name = clean(herb.name)
@@ -68,6 +140,20 @@ for (const entry of catalog.items) {
   const herb = candidates.map((name) => byName.get(name)).find(Boolean)
   if (!herb) {
     unresolved.push(entry.name)
+    const fallback = CATEGORY_FALLBACK[entry.name] ?? []
+    if (fallback.length) {
+      items[entry.name] = {
+        matchedName: '',
+        flavor: '',
+        nature: '',
+        meridians: [],
+        action: '',
+        dosage: '',
+        contraindication: '',
+        sourceCategory: '',
+        therapyCategoryIds: fallback,
+      }
+    }
     continue
   }
 
@@ -75,6 +161,8 @@ for (const entry of catalog.items) {
     .flatMap((part) => part.split(''))
     .filter((char) => '辛甘酸苦咸淡涩'.includes(char))
   const nature = clean(herb.nature_category) || clean(herb.nature)
+  const sourceCategory = clean(herb.category)
+  const therapyCategoryIds = mapCategories(sourceCategory)
 
   items[entry.name] = {
     matchedName: clean(herb.name),
@@ -84,6 +172,10 @@ for (const entry of catalog.items) {
     action: clean(herb.action),
     dosage: clean(herb.dosage),
     contraindication: clean(herb.contraindication),
+    sourceCategory,
+    therapyCategoryIds: therapyCategoryIds.length
+      ? therapyCategoryIds
+      : (CATEGORY_FALLBACK[entry.name] ?? []),
   }
   matched.add(entry.name)
 }

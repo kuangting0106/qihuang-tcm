@@ -389,6 +389,8 @@ function buildProfile(entry) {
     contraindications,
     dosage: record?.dosage ?? '',
     meridianPending: meridians.length === 0,
+    therapyCategoryIds: record?.therapyCategoryIds ?? [],
+    sourceCategory: record?.sourceCategory ?? '',
     sources: [...(usedLecture ? ['讲义原文'] : []), ...(usedRecord ? ['中医Buddy 中药数据'] : [])],
   }
 }
@@ -531,6 +533,8 @@ const catalogItems = groups
         hasProcessing: Boolean(processingText),
         aliases: extractAliases(entry),
         meridianPending: profile.meridianPending,
+        therapyCategoryIds: profile.therapyCategoryIds,
+        sourceCategory: profile.sourceCategory,
         profileSources: profile.sources,
       }
       if (processingText) item.processingText = processingText

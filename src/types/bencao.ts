@@ -30,6 +30,8 @@ export interface BencaoProfile {
   contraindications: string
   dosage: string
   meridianPending: boolean
+  therapyCategoryIds: string[]
+  sourceCategory: string
   sources: string[]
 }
 
@@ -111,6 +113,8 @@ export interface BencaoCatalogItem {
   processingText?: string
   aliases: string[]
   meridianPending: boolean
+  therapyCategoryIds: string[]
+  sourceCategory: string
   profileSources: string[]
   curatedId?: string
 }

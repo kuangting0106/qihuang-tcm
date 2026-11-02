@@ -2,9 +2,11 @@
 import { computed, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import { findBencaoEntry, formatCharCount, loadBencaoGroup, loadBencaoIndex } from '@/composables/useBencaoLectures'
+import { useTcmData } from '@/composables/useTcmData'
 import type { BencaoEntry, BencaoGroup, BencaoLectureIndex } from '@/types/bencao'
 
 const route = useRoute()
+const { data } = useTcmData()
 const index = ref<BencaoLectureIndex | null>(null)
 const group = ref<BencaoGroup | null>(null)
 const entry = ref<BencaoEntry | null>(null)
@@ -50,6 +52,28 @@ const next = computed(() =>
 const groupTitle = computed(() => group.value?.title ?? '')
 const kindClass = (kind: string) => `entry-section--${kind}`
 
+const rankId = computed(() => {
+  const map: Record<string, string> = {
+    shangjing: 'upper',
+    zhongjing: 'middle',
+    xiajing: 'lower',
+    nishi: 'nishi',
+    editor: 'editor',
+  }
+  return map[groupId.value] ?? ''
+})
+
+const rankTitle = computed(
+  () => data.value?.herbTaxonomy.ranks.find((rank) => rank.id === rankId.value)?.title ?? groupTitle.value,
+)
+
+const therapyCategories = computed(() => {
+  const taxonomy = data.value?.herbTaxonomy
+  if (!taxonomy) return []
+  const ids = entry.value?.profile?.therapyCategoryIds ?? []
+  return taxonomy.categories.filter((category) => ids.includes(category.id))
+})
+
 function sectionHeading(label: string): string {
   if (label) return label
   return group.value?.id === 'intro' ? '讲义' : '课堂讲授'
@@ -57,6 +81,11 @@ function sectionHeading(label: string): string {
 
 function isProcessingSection(label: string): boolean {
   return /炮制|泡制/.test(label)
+}
+
+function brief(text: string | undefined, limit = 120): string {
+  if (!text) return ''
+  return text.length > limit ? `${text.slice(0, limit)}…` : text
 }
 </script>
 
@@ -98,6 +127,15 @@ function isProcessingSection(label: string): boolean {
           </dl>
         </header>
 
+        <nav v-if="group?.id !== 'intro'" class="entry-index-links" aria-label="三经与功效分类索引">
+          <span class="entry-index-links__label">索引</span>
+          <RouterLink class="chip chip--jade" :to="`/herbs/rank/${rankId}`">{{ rankTitle }}全部药材</RouterLink>
+          <RouterLink v-for="cat in therapyCategories" :key="cat.id" class="chip" :to="`/herbs/category/${cat.id}`">
+            {{ cat.title }}全部药材
+          </RouterLink>
+          <span v-if="!therapyCategories.length" class="entry-index-links__pending">功效分类待考</span>
+        </nav>
+
         <p v-if="entry.note" class="entry-correction">{{ entry.note }}</p>
 
         <p v-if="group?.id === 'editor'" class="entry-correction entry-correction--caution">
@@ -122,15 +160,15 @@ function isProcessingSection(label: string): boolean {
           </div>
           <div class="entry-profile__item">
             <span class="entry-profile__label">功效</span>
-            <p class="entry-profile__value entry-profile__value--text">{{ entry.profile.effects || '待考' }}</p>
+            <p class="entry-profile__value entry-profile__value--text">{{ brief(entry.profile.effects) || '待考' }}</p>
           </div>
           <div class="entry-profile__item">
             <span class="entry-profile__label">主治</span>
-            <p class="entry-profile__value entry-profile__value--text">{{ entry.profile.indications || '待考' }}</p>
+            <p class="entry-profile__value entry-profile__value--text">{{ brief(entry.profile.indications) || '待考' }}</p>
           </div>
           <div class="entry-profile__item">
             <span class="entry-profile__label">禁忌</span>
-            <p class="entry-profile__value entry-profile__value--text">{{ entry.profile.contraindications || '讲义未载，待考' }}</p>
+            <p class="entry-profile__value entry-profile__value--text">{{ brief(entry.profile.contraindications) || '讲义未载，待考' }}</p>
           </div>
         </section>
 
@@ -261,6 +299,29 @@ function isProcessingSection(label: string): boolean {
   border-left-color: var(--cinnabar);
   background: rgba(241, 221, 214, 0.3);
   color: var(--cinnabar);
+}
+
+.entry-index-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.entry-index-links__label {
+  color: var(--ink-faint);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+}
+
+.entry-index-links a {
+  text-decoration: none;
+}
+
+.entry-index-links__pending {
+  color: var(--ink-faint);
+  font-size: 0.68rem;
 }
 
 .entry-profile {
