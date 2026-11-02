@@ -221,7 +221,7 @@ watch(
               {{ activeMeridian.description.text }}
             </template>
             <template v-else>
-              30 个常用重点穴，覆盖头颈、躯干、四肢；按经络、区域、穴位类型筛选。
+              {{ allPoints.length }} 个常用重点穴，覆盖头颈、躯干、四肢；按经络、区域、穴位类型筛选。
               3D 只读离线坐标表，拖动旋转、滚轮缩放、点击穴位看详情。
             </template>
           </p>

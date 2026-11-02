@@ -25,7 +25,7 @@ const modules = computed(() => [
     to: '/meridians/lung',
     kicker: 'MERIDIAN / 经络',
     title: '经络图',
-    desc: '在可旋转的人体上查看 30 个常用重点穴，按经络、区域、穴位类型筛选。',
+    desc: `在可旋转的人体上查看 ${counts.value.points} 个常用重点穴，按经络、区域、穴位类型筛选。`,
     stat: `${counts.value.points} 个穴位 · ${counts.value.meridians} 条经络`,
     tone: 'jade',
     icon: 'meridian',
@@ -133,7 +133,7 @@ const modules = computed(() => [
           </svg>
           <div class="figure-card__foot">
             <span>3D 针灸铜人 · 离线坐标</span>
-            <span>30 穴</span>
+            <span>{{ counts.points }} 穴</span>
           </div>
         </div>
         <div class="float-note float-note--top">
