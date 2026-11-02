@@ -17,7 +17,22 @@
 ├── Caddyfile          # 静态站点 + SPA 回退 + 缓存/安全头
 ├── deploy.sh          # 拉镜像并启动
 └── site/              # 正式构建产物放在这里
+    └── videos/        # 讲堂视频（单独上传，不在 dist/Git 中）
 ```
+
+讲堂视频不放进 `dist/`，避免每次发布重复上传。当前课程：
+
+```text
+site/videos/lectures/renji-zhenjiudacheng/01.mp4 ... 07.mp4, 12.mp4
+```
+
+上传命令：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File deploy/upload-lecture-videos.ps1
+```
+
+脚本会按 4 路并行上传，已存在且大小一致的文件会跳过。若 `%TEMP%\qihuang-faststart\` 下有同名文件，会优先上传该版本；建议先用 `ffmpeg -c copy -movflags +faststart` 把 `moov` 移到文件头，避免浏览器等到文件末尾才能取元数据。
 
 ## 发布正式版本
 

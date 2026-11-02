@@ -1,6 +1,85 @@
 <script setup lang="ts">
+import { computed, ref } from 'vue'
 import { RouterLink } from 'vue-router'
-import { lectureTracks } from '@/data/lectures'
+import {
+  lectureCourses,
+  lectureEpisodeSrc,
+  type LectureCourse,
+  type LectureEpisode,
+} from '@/data/lectures'
+
+const activeEpisodeIds = ref<Record<string, string>>(
+  Object.fromEntries(lectureCourses.map((course) => [course.id, course.episodes[0]?.id ?? ''])),
+)
+
+function activeEpisode(course: LectureCourse): LectureEpisode {
+  return (
+    course.episodes.find((episode) => episode.id === activeEpisodeIds.value[course.id]) ??
+    course.episodes[0]
+  )
+}
+
+function selectEpisode(course: LectureCourse, episode: LectureEpisode) {
+  activeEpisodeIds.value = { ...activeEpisodeIds.value, [course.id]: episode.id }
+}
+
+function durationSeconds(duration: string): number {
+  const parts = duration.split(':').map(Number)
+  if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2]
+  return parts[0] * 60 + parts[1]
+}
+
+const totalEpisodes = computed(() =>
+  lectureCourses.reduce((sum, course) => sum + course.episodes.length, 0),
+)
+
+function formatMinutes(minutes: number): string {
+  return `${Math.floor(minutes / 60)} 小时 ${String(minutes % 60).padStart(2, '0')} 分`
+}
+
+function courseDuration(course: LectureCourse): string {
+  const minutes = Math.round(
+    course.episodes.reduce((sum, episode) => sum + durationSeconds(episode.duration), 0) / 60,
+  )
+  return formatMinutes(minutes)
+}
+
+function compactNumbers(course: LectureCourse): string {
+  const numbers = [...course.episodes.map((episode) => episode.number)].sort((a, b) => a - b)
+  const ranges: string[] = []
+  let start = numbers[0]
+  let previous = numbers[0]
+  for (const number of numbers.slice(1)) {
+    if (number === previous + 1) {
+      previous = number
+      continue
+    }
+    ranges.push(
+      start === previous
+        ? String(start).padStart(2, '0')
+        : `${String(start).padStart(2, '0')}–${String(previous).padStart(2, '0')}`,
+    )
+    start = number
+    previous = number
+  }
+  ranges.push(
+    start === previous
+      ? String(start).padStart(2, '0')
+      : `${String(start).padStart(2, '0')}–${String(previous).padStart(2, '0')}`,
+  )
+  return ranges.join('、')
+}
+
+const totalDuration = computed(() => {
+  const minutes = Math.round(
+    lectureCourses.reduce(
+      (sum, course) =>
+        sum + course.episodes.reduce((episodeSum, episode) => episodeSum + durationSeconds(episode.duration), 0),
+      0,
+    ) / 60,
+  )
+  return formatMinutes(minutes)
+})
 </script>
 
 <template>
@@ -11,45 +90,93 @@ import { lectureTracks } from '@/data/lectures'
           <p class="eyebrow">LECTURE HALL / 名家讲堂</p>
           <h1>名家讲堂</h1>
           <p class="lecture-hero__lead">
-            收藏著名医家的视频课件：以医家与典籍为线索，收集后世、当代名家的讲授版本。
-            历史医家没有留下影像，页面只写“某某讲授版本”，不把讲授者写成原作者。
+            按“医家 + 课程”收录视频课件。视频标题或下方直接注明是哪位医家的什么课程，
+            不再拆成伤寒论、傅青主女科、本草纲目等小类。
           </p>
           <div class="lecture-hero__meta">
-            <span class="chip chip--jade">{{ lectureTracks.length }} 个专题</span>
-            <span class="chip">视频课件待收录</span>
-            <span class="chip chip--gold">授权与版本待核</span>
+            <span class="chip chip--jade">{{ lectureCourses.length }} 门课程</span>
+            <span class="chip">{{ totalEpisodes }} 集已收录</span>
+            <span class="chip chip--gold">{{ totalDuration }}</span>
           </div>
         </div>
         <div class="lecture-hero__seal" aria-hidden="true">讲</div>
       </header>
 
-      <section class="lecture-grid" aria-label="名家讲堂专题">
-        <article v-for="track in lectureTracks" :key="track.id" class="lecture-card">
-          <div class="lecture-card__top">
-            <span>{{ track.era }}</span>
-            <span class="lecture-card__status">{{ track.status }}</span>
+      <section
+        v-for="course in lectureCourses"
+        :key="course.id"
+        class="lecture-course"
+        :aria-label="`${course.lecturer}${course.work}课程`"
+      >
+        <header class="lecture-course__head">
+          <div>
+            <p class="eyebrow">{{ course.collection }} / 课程</p>
+            <h2>{{ course.lecturer }} · {{ course.work }}</h2>
+            <p>{{ course.description }}</p>
           </div>
-          <h2>{{ track.title }}</h2>
-          <p class="lecture-card__author">{{ track.author }} · {{ track.work }}</p>
-          <p class="lecture-card__focus">{{ track.focus }}</p>
-          <p class="lecture-card__note">{{ track.note }}</p>
-          <div class="lecture-card__placeholder">
-            <span aria-hidden="true">▷</span>
-            <span>视频课件待收录 · {{ track.videoCount }} 讲</span>
+          <div class="lecture-course__stats">
+            <span><strong>{{ course.episodes.length }}</strong> 集已收录</span>
+            <span><strong>{{ compactNumbers(course) }}</strong> 集</span>
           </div>
-        </article>
+        </header>
+
+        <div class="lecture-player-layout">
+          <div class="lecture-player">
+            <div class="lecture-player__frame">
+              <video
+                :key="`${course.id}-${activeEpisode(course).id}`"
+                :src="lectureEpisodeSrc(course, activeEpisode(course))"
+                controls
+                controlslist="nodownload"
+                preload="metadata"
+                playsinline
+              ></video>
+            </div>
+            <div class="lecture-now">
+              <div>
+                <span class="eyebrow">NOW PLAYING</span>
+                <h3>{{ activeEpisode(course).title }}</h3>
+              </div>
+              <span class="lecture-now__duration">{{ activeEpisode(course).duration }}</span>
+            </div>
+            <p class="lecture-source">{{ course.sourceNote }}</p>
+          </div>
+
+          <aside class="lecture-playlist paper-panel" aria-label="课程选集">
+            <div class="lecture-playlist__head">
+              <span class="eyebrow">EPISODES</span>
+              <h3>课程选集</h3>
+              <p>{{ course.episodes.length }} 集 · 共 {{ courseDuration(course) }}</p>
+            </div>
+            <ol class="episode-list">
+              <li v-for="episode in course.episodes" :key="episode.id">
+                <button
+                  type="button"
+                  class="episode-button"
+                  :class="{ 'episode-button--active': activeEpisode(course).id === episode.id }"
+                  @click="selectEpisode(course, episode)"
+                >
+                  <span class="episode-button__number">{{ String(episode.number).padStart(2, '0') }}</span>
+                  <span class="episode-button__title">{{ episode.title }}</span>
+                  <span class="episode-button__duration">{{ episode.duration }}</span>
+                </button>
+              </li>
+            </ol>
+            <p class="episode-missing">第 08–11 集未在提供的文件夹中，待补。</p>
+          </aside>
+        </div>
       </section>
 
       <section class="lecture-rules paper-panel">
         <div>
           <span class="eyebrow">COLLECTION RULE</span>
-          <h2>只收能说清来源的课件</h2>
+          <h2>按医家与课程收录</h2>
         </div>
         <div>
           <ul>
-            <li><strong>历史医家</strong>：张仲景、孙思邈、李时珍、傅青主没有影像；本栏收后世名家讲授其典籍的课程。</li>
-            <li><strong>讲授者与版本</strong>：写清“某某讲授版本”、课程名称与录制年份，不把讲授者写成原作者。</li>
-            <li><strong>授权</strong>：只嵌入自有、授权或官方公开视频；来源不明不嵌入，也不提供下载。</li>
+            <li><strong>不再设小类</strong>：伤寒论、金匮要略、傅青主女科、本草纲目、千金方等旧分类已移除。</li>
+            <li><strong>标注方式</strong>：每个视频标题或下方写明“某医家《某书》课程”，不把讲授者写成原作者。</li>
+            <li><strong>来源与授权</strong>：只收自有、授权或官方公开视频；来源不明不嵌入，也不提供下载。</li>
             <li><strong>原文优先</strong>：课程是理解入口，具体方药与条文仍回引原书，不用视频替代原文。</li>
           </ul>
           <RouterLink class="text-link" to="/classics">查看医家经典古籍 →</RouterLink>
@@ -76,7 +203,7 @@ import { lectureTracks } from '@/data/lectures'
 }
 
 .lecture-hero__lead {
-  max-width: 800px;
+  max-width: 940px;
   color: var(--ink-soft);
   font-size: 0.95rem;
   line-height: 1.9;
@@ -104,75 +231,178 @@ import { lectureTracks } from '@/data/lectures'
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.22);
 }
 
-.lecture-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-  padding: 30px 0 36px;
+.lecture-course {
+  padding: 34px 0 8px;
 }
 
-.lecture-card {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 20px 20px 18px;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  background: rgba(255, 252, 245, 0.55);
-}
-
-.lecture-card__top {
+.lecture-course__head {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 8px;
+  align-items: flex-end;
+  gap: 30px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.lecture-course__head h2 {
+  margin: 4px 0 8px;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  letter-spacing: 0.04em;
+}
+
+.lecture-course__head p {
+  max-width: 720px;
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+  line-height: 1.9;
+}
+
+.lecture-course__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  flex-shrink: 0;
+  color: var(--ink-faint);
+  font-size: 0.72rem;
+}
+
+.lecture-course__stats strong {
+  color: var(--jade);
+  font-family: var(--serif);
+  font-size: 1.1rem;
+}
+
+.lecture-player-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.4fr);
+  gap: 18px;
+  align-items: start;
+  padding-top: 20px;
+}
+
+.lecture-player__frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #14110d;
+  overflow: hidden;
+}
+
+.lecture-player__frame video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #14110d;
+}
+
+.lecture-now {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-end;
+  padding: 14px 2px 0;
+}
+
+.lecture-now h3 {
+  margin-top: 3px;
+  font-size: 1.25rem;
+}
+
+.lecture-now__duration {
+  color: var(--ink-faint);
+  font-size: 0.76rem;
+  white-space: nowrap;
+}
+
+.lecture-source {
+  margin-top: 8px;
+  color: var(--ink-faint);
+  font-size: 0.72rem;
+  line-height: 1.8;
+}
+
+.lecture-playlist {
+  padding: 18px;
+}
+
+.lecture-playlist__head {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.lecture-playlist__head h3 {
+  margin: 3px 0 2px;
+  font-size: 1.15rem;
+}
+
+.lecture-playlist__head p {
   color: var(--ink-faint);
   font-size: 0.68rem;
 }
 
-.lecture-card__status {
-  padding: 2px 8px;
-  border-radius: 999px;
-  background: rgba(237, 224, 200, 0.55);
+.episode-list {
+  display: grid;
+  gap: 2px;
+  max-height: 360px;
+  margin: 8px 0 0;
+  padding: 0;
+  overflow: auto;
+  list-style: none;
+}
+
+.episode-button {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 8px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
   color: var(--ink-soft);
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.16s ease, color 0.16s ease;
 }
 
-.lecture-card h2 {
-  margin-top: 2px;
-  font-size: 1.45rem;
+.episode-button:hover {
+  background: var(--jade-pale);
+  color: var(--jade);
 }
 
-.lecture-card__author {
-  color: var(--cinnabar);
+.episode-button--active {
+  background: var(--jade-pale);
+  color: var(--jade);
+}
+
+.episode-button__number {
+  color: var(--ink-faint);
   font-family: var(--serif);
   font-size: 0.82rem;
 }
 
-.lecture-card__focus {
-  color: var(--ink);
-  font-size: 0.82rem;
-  line-height: 1.8;
-}
-
-.lecture-card__note {
-  color: var(--ink-faint);
-  font-size: 0.74rem;
-  line-height: 1.75;
-}
-
-.lecture-card__placeholder {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: auto;
-  padding-top: 14px;
-  border-top: 1px solid var(--line);
-  color: var(--jade);
+.episode-button__title {
+  overflow: hidden;
   font-size: 0.76rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.lecture-card__placeholder span:first-child {
-  font-size: 1.1rem;
+.episode-button__duration {
+  color: var(--ink-faint);
+  font-size: 0.66rem;
+  white-space: nowrap;
+}
+
+.episode-missing {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--line);
+  color: var(--cinnabar);
+  font-size: 0.68rem;
+  line-height: 1.7;
 }
 
 .lecture-rules {
@@ -180,7 +410,7 @@ import { lectureTracks } from '@/data/lectures'
   grid-template-columns: minmax(0, 0.5fr) minmax(0, 1.5fr);
   gap: 30px;
   padding: 22px 24px;
-  margin-bottom: 40px;
+  margin: 30px 0 40px;
 }
 
 .lecture-rules h2 {
@@ -207,8 +437,12 @@ import { lectureTracks } from '@/data/lectures'
 }
 
 @media (max-width: 960px) {
-  .lecture-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .lecture-player-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .episode-list {
+    max-height: 300px;
   }
 }
 
@@ -217,14 +451,20 @@ import { lectureTracks } from '@/data/lectures'
     align-items: flex-start;
   }
 
+  .episode-list {
+    max-height: none;
+  }
+
   .lecture-hero__seal {
     width: 74px;
     height: 74px;
     font-size: 1.6rem;
   }
 
-  .lecture-grid {
-    grid-template-columns: 1fr;
+  .lecture-course__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 
   .lecture-rules {

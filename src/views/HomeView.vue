@@ -151,17 +151,17 @@ const modules = computed(() => [
         <RouterLink to="/lectures" class="collection-card collection-card--lectures">
           <div class="collection-card__top">
             <span class="collection-card__kicker">LECTURE HALL / 名家讲堂</span>
-            <span class="collection-card__status">视频待收录</span>
+            <span class="collection-card__status">8 集已收录</span>
           </div>
           <h3>名家讲堂</h3>
           <p>
-            著名医家的视频课件，以医家与典籍为线索，收集后世、当代名家的讲授版本。
-            历史医家没有影像，页面只写“某某讲授版本”，不把讲授者写成原作者。
+            按“医家 + 课程”收录视频。视频或下方直接注明是哪位医家的什么课程，
+            不再拆成伤寒论、傅青主女科等小类。
           </p>
           <ul>
-            <li>伤寒论 · 金匮要略</li>
-            <li>傅青主女科</li>
-            <li>本草纲目 · 千金方</li>
+            <li>倪海厦 · 针灸大成</li>
+            <li>已收 01–07、12 集</li>
+            <li>第 08–11 集待补</li>
           </ul>
           <div class="collection-card__foot">
             <span>进入讲堂</span>

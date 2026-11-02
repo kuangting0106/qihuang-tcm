@@ -1,69 +1,51 @@
-export interface LectureTrack {
+export interface LectureEpisode {
   id: string
+  number: number
   title: string
-  author: string
-  work: string
-  era: string
-  focus: string
-  status: '待收录' | '已收录'
-  videoCount: number
-  note: string
+  duration: string
+  file: string
 }
 
-export const lectureTracks: LectureTrack[] = [
+export interface LectureCourse {
+  id: string
+  title: string
+  lecturer: string
+  work: string
+  collection: string
+  description: string
+  sourceNote: string
+  episodes: LectureEpisode[]
+}
+
+export const lectureCourses: LectureCourse[] = [
   {
-    id: 'shanghan',
-    title: '伤寒论讲堂',
-    author: '张仲景',
-    work: '《伤寒论》',
-    era: '东汉',
-    focus: '六经辨证、方证与条文',
-    status: '待收录',
-    videoCount: 0,
-    note: '收后世名家讲授《伤寒论》的视频课件；讲授者、授权与版本逐条核对，不把讲授者写成原作者。',
-  },
-  {
-    id: 'jinkui',
-    title: '金匮要略讲堂',
-    author: '张仲景',
-    work: '《金匮要略》',
-    era: '东汉',
-    focus: '杂病脉证、方证与治法',
-    status: '待收录',
-    videoCount: 0,
-    note: '《金匮要略》为《伤寒杂病论》杂病部分；课件来源、讲授者与版本待核。',
-  },
-  {
-    id: 'fuqingzhu',
-    title: '傅青主女科讲堂',
-    author: '傅青主',
-    work: '《傅青主女科》',
-    era: '明末清初',
-    focus: '女科辨证、方药与医案',
-    status: '待收录',
-    videoCount: 0,
-    note: '只收可核授权的讲授视频；书名、版本与讲授者分开标注，不混成傅青主本人影像。',
-  },
-  {
-    id: 'bencao',
-    title: '本草纲目讲堂',
-    author: '李时珍',
-    work: '《本草纲目》',
-    era: '明',
-    focus: '药物分类、释名与炮制',
-    status: '待收录',
-    videoCount: 0,
-    note: '以《本草纲目》为线索收讲授课件；具体药物条目仍回引原书与药典，不用视频替代原文。',
-  },
-  {
-    id: 'qianjin',
-    title: '千金方讲堂',
-    author: '孙思邈',
-    work: '《千金要方》《千金翼方》',
-    era: '唐',
-    focus: '医德、方药与养生',
-    status: '待收录',
-    videoCount: 0,
-    note: '孙思邈医籍与后世讲授分开；视频课件、讲授者与授权待核。',
+    id: 'renji-zhenjiudacheng',
+    title: '针灸大成',
+    lecturer: '倪海厦',
+    work: '《针灸大成》',
+    collection: '人纪',
+    description:
+      '倪海厦讲授《针灸大成》的课程录像，按“人纪”课程整理。页面只标注讲授者与课程名，不把讲授者写成原作者。',
+    sourceNote:
+      '视频由用户提供，版权归原权利人所有；本站仅作学习索引，不提供下载。第 08–11 集未在提供的文件夹中，待补。',
+    episodes: [
+      { id: '01', number: 1, title: '针灸大成 第 01 集', duration: '49:35', file: '01.mp4' },
+      { id: '02', number: 2, title: '针灸大成 第 02 集', duration: '24:18', file: '02.mp4' },
+      { id: '03', number: 3, title: '针灸大成 第 03 集', duration: '51:05', file: '03.mp4' },
+      { id: '04', number: 4, title: '针灸大成 第 04 集', duration: '26:58', file: '04.mp4' },
+      { id: '05', number: 5, title: '针灸大成 第 05 集', duration: '54:18', file: '05.mp4' },
+      { id: '06', number: 6, title: '针灸大成 第 06 集', duration: '52:38', file: '06.mp4' },
+      { id: '07', number: 7, title: '针灸大成 第 07 集', duration: '1:00:59', file: '07.mp4' },
+      { id: '12', number: 12, title: '针灸大成 第 12 集', duration: '48:31', file: '12.mp4' },
+    ],
   },
 ]
+
+const remoteVideoBase = 'http://182.255.94.89:8081'
+
+export function lectureEpisodeSrc(course: LectureCourse, episode: LectureEpisode): string {
+  const base = import.meta.env.DEV
+    ? `${remoteVideoBase}/videos/lectures/${course.id}/`
+    : `${import.meta.env.BASE_URL}videos/lectures/${course.id}/`
+  return `${base}${episode.file}`
+}

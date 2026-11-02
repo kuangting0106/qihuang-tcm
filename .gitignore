@@ -2,3 +2,6 @@ node_modules/
 dist/
 *.local
 .DS_Store
+
+# 讲堂视频体积大，单独上传服务器，不进入仓库
+public/videos/
