@@ -4,6 +4,8 @@ import { RouterLink, useRoute } from 'vue-router'
 import CitationBadge from '@/components/CitationBadge.vue'
 import SourcedText from '@/components/SourcedText.vue'
 import { HERB_IMAGE_SLOT_LABELS } from '@/types/tcm'
+import type { BencaoCatalogItem } from '@/types/bencao'
+import { formatCharCount, loadBencaoCatalog } from '@/composables/useBencaoLectures'
 import { useTcmData } from '@/composables/useTcmData'
 
 const route = useRoute()
@@ -27,6 +29,23 @@ watch(
   () => {
     activeImage.value = 0
   },
+)
+
+const lectureItem = ref<BencaoCatalogItem | null>(null)
+
+watch(
+  () => herb.value?.name,
+  async (name) => {
+    lectureItem.value = null
+    if (!name) return
+    try {
+      const catalog = await loadBencaoCatalog()
+      lectureItem.value = catalog.items.find((item) => item.name === name) ?? null
+    } catch {
+      lectureItem.value = null
+    }
+  },
+  { immediate: true },
 )
 
 const meridianLinks = computed(() =>
@@ -287,6 +306,23 @@ const currentSlotLabel = computed(() => {
           <RouterLink class="text-link" to="/processing">药材的炮制</RouterLink>。
         </p>
       </section>
+
+      <RouterLink
+        v-if="lectureItem"
+        class="lecture-link"
+        :to="`/bencao/${lectureItem.groupId}/${lectureItem.entryId}`"
+      >
+        <span class="lecture-link__seal" aria-hidden="true">讲</span>
+        <span class="lecture-link__body">
+          <span class="eyebrow">LECTURE / 讲义</span>
+          <strong>《神农本草经》讲义：{{ lectureItem.name }}</strong>
+          <span>
+            倪海厦讲授整理 · {{ formatCharCount(lectureItem.charCount) }}；
+            原文、历代注家与课堂讲授分层标注。
+          </span>
+        </span>
+        <span class="lecture-link__arrow" aria-hidden="true">→</span>
+      </RouterLink>
 
       <section class="coverage paper-panel">
         <div>
@@ -795,6 +831,67 @@ const currentSlotLabel = computed(() => {
   color: var(--ink-faint);
   font-size: 0.74rem;
   line-height: 1.75;
+}
+
+.lecture-link {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 28px;
+  padding: 18px 22px;
+  border: 1px solid color-mix(in srgb, var(--jade) 38%, var(--line));
+  border-radius: 14px;
+  background:
+    linear-gradient(90deg, rgba(224, 236, 226, 0.52), transparent 62%),
+    rgba(255, 252, 245, 0.72);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.lecture-link:hover {
+  transform: translateY(-2px);
+  border-color: var(--jade);
+  box-shadow: var(--shadow-soft);
+}
+
+.lecture-link__seal {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--cinnabar);
+  border-radius: 8px;
+  color: var(--cinnabar);
+  font-family: var(--serif);
+  font-size: 1.2rem;
+}
+
+.lecture-link__body {
+  display: grid;
+  flex: 1;
+  gap: 3px;
+  min-width: 0;
+}
+
+.lecture-link__body strong {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.lecture-link__body > span:last-child {
+  color: var(--ink-faint);
+  font-size: 0.74rem;
+  line-height: 1.65;
+}
+
+.lecture-link__arrow {
+  flex-shrink: 0;
+  color: var(--jade);
+  font-size: 1.1rem;
 }
 
 .coverage {

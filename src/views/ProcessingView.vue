@@ -1,11 +1,30 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import CitationBadge from '@/components/CitationBadge.vue'
+import { loadBencaoCatalog } from '@/composables/useBencaoLectures'
 import { useTcmData } from '@/composables/useTcmData'
 import { processingCategories } from '@/data/processing'
+import type { BencaoCatalog } from '@/types/bencao'
 
 const { data } = useTcmData()
+
+const catalog = ref<BencaoCatalog | null>(null)
+onMounted(async () => {
+  try {
+    catalog.value = await loadBencaoCatalog()
+  } catch {
+    catalog.value = null
+  }
+})
+
+const lectureProcessing = computed(() =>
+  (catalog.value?.items ?? []).filter((item) => item.hasProcessing && item.processingText),
+)
+
+function lectureRank(item: { rankId: string }) {
+  return catalog.value?.ranks.find((rank) => rank.id === item.rankId)?.title ?? '讲义'
+}
 
 const herbs = computed(() => data.value?.herbs ?? [])
 const examples = computed(() => data.value?.processingExamples ?? [])
@@ -38,7 +57,8 @@ function categoryTitle(categoryId: string) {
           <div class="processing-hero__meta">
             <span class="chip chip--gold">{{ processingCategories.length }} 个类别</span>
             <span class="chip">{{ totalEntries }} 味已收录</span>
-            <span class="chip chip--jade">{{ examples.length }} 条待核线索</span>
+            <span class="chip chip--jade">{{ lectureProcessing.length }} 味讲义炮制</span>
+            <span class="chip">{{ examples.length }} 条待核线索</span>
           </div>
         </div>
         <div class="processing-hero__seal" aria-hidden="true">制</div>
@@ -126,6 +146,32 @@ function categoryTitle(categoryId: string) {
             <p>该类药材的炮制方法尚未逐条核对，暂不写操作步骤。</p>
           </div>
         </template>
+      </section>
+
+      <section v-if="lectureProcessing.length" class="lecture-processing">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">LECTURE NOTES / 讲义所载炮制</p>
+            <h2>《神农本草经》讲义炮制摘录</h2>
+          </div>
+          <p>
+            以下 36 味据倪海厦讲义「炮制」节摘出，原文未经现行药典与炮制规范逐条核对，
+            因此只作阅读线索，不写成可操作工艺；实际炮制须由执业中药师按规范处理。
+          </p>
+        </div>
+
+        <div class="lecture-processing__grid">
+          <article v-for="item in lectureProcessing" :key="item.key" class="lecture-processing__card paper-panel">
+            <div class="lecture-processing__top">
+              <RouterLink :to="`/bencao/${item.groupId}/${item.entryId}`">{{ item.name }}</RouterLink>
+              <span class="chip chip--gold">{{ lectureRank(item) }}</span>
+            </div>
+            <p class="lecture-processing__text">{{ item.processingText }}</p>
+            <RouterLink class="text-link" :to="`/bencao/${item.groupId}/${item.entryId}`">
+              查看讲义原文 →
+            </RouterLink>
+          </article>
+        </div>
       </section>
 
       <section v-if="examples.length" class="pending-section">
@@ -424,6 +470,54 @@ function categoryTitle(categoryId: string) {
   margin-top: 4px;
   color: var(--ink-soft);
   font-size: 0.78rem;
+}
+
+.lecture-processing {
+  padding: 8px 0 28px;
+  border-top: 1px dashed var(--line);
+  margin-top: 12px;
+}
+
+.lecture-processing__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.lecture-processing__card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 16px;
+}
+
+.lecture-processing__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+}
+
+.lecture-processing__top a {
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  letter-spacing: 0.04em;
+}
+
+.lecture-processing__text {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--ink-soft);
+  font-size: 0.7rem;
+  line-height: 1.7;
+  white-space: pre-line;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.lecture-processing .text-link {
+  margin-top: auto;
+  font-size: 0.7rem;
 }
 
 .pending-section {

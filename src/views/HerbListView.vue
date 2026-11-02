@@ -1,8 +1,14 @@
 <script setup lang="ts">
-import { computed, nextTick, ref, watch } from 'vue'
+import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute, useRouter } from 'vue-router'
 import HerbCard from '@/components/HerbCard.vue'
 import HerbPropertyPrinciples from '@/components/HerbPropertyPrinciples.vue'
+import {
+  formatCharCount,
+  loadBencaoCatalog,
+  loadBencaoIndex,
+} from '@/composables/useBencaoLectures'
+import type { BencaoCatalog, BencaoCatalogItem } from '@/types/bencao'
 import { useTcmData } from '@/composables/useTcmData'
 
 const { data, allFlavorTags, allMeridians, meridianName } = useTcmData()
@@ -25,6 +31,72 @@ watch(
 
 const herbs = computed(() => data.value?.herbs ?? [])
 const taxonomy = computed(() => data.value?.herbTaxonomy ?? null)
+
+const lectureCount = ref(0)
+const lectureChars = ref(0)
+const catalog = ref<BencaoCatalog | null>(null)
+const lectureLimit = ref(60)
+
+onMounted(async () => {
+  try {
+    const [library, book] = await Promise.all([loadBencaoIndex(), loadBencaoCatalog()])
+    lectureCount.value = library.groups.reduce((sum, group) => sum + group.count, 0)
+    lectureChars.value = library.groups.reduce((sum, group) => sum + group.charCount, 0)
+    catalog.value = book
+  } catch {
+    lectureCount.value = 0
+    catalog.value = null
+  }
+})
+
+const lectureItems = computed(() =>
+  (catalog.value?.items ?? []).filter((item) => !item.curatedId),
+)
+
+const lectureFiltered = computed(() => {
+  if (categoryFilter.value || meridian.value) return []
+  const q = query.value.trim().toLowerCase()
+  return lectureItems.value.filter((item) => {
+    if (rankFilter.value && item.rankId !== rankFilter.value) return false
+    if (flavor.value && !item.flavorTags.includes(flavor.value)) return false
+    if (!q) return true
+    return [item.name, item.nature, ...item.flavorTags, ...item.aliases, item.summary]
+      .join(' ')
+      .toLowerCase()
+      .includes(q)
+  })
+})
+
+const visibleLecture = computed(() => lectureFiltered.value.slice(0, lectureLimit.value))
+const totalHerbCount = computed(() => herbs.value.length + lectureItems.value.length)
+
+watch([query, flavor, rankFilter, categoryFilter, meridian], () => {
+  lectureLimit.value = 60
+})
+
+function lectureRankCount(rankId: string) {
+  return (catalog.value?.items ?? []).filter(
+    (item) => item.rankId === rankId && !item.curatedId,
+  ).length
+}
+
+function lectureHref(item: BencaoCatalogItem) {
+  return `/bencao/${item.groupId}/${item.entryId}`
+}
+
+function rankLabel(rankId: string) {
+  return catalog.value?.ranks.find((rank) => rank.id === rankId)?.title ?? '讲义'
+}
+
+const RANK_GROUPS: Record<string, string> = {
+  upper: 'shangjing',
+  middle: 'zhongjing',
+  lower: 'xiajing',
+}
+
+function groupForRank(rankId: string) {
+  return RANK_GROUPS[rankId] ?? ''
+}
 
 const filtered = computed(() => {
   const q = query.value.trim().toLowerCase()
@@ -123,14 +195,31 @@ const meridianOptions = computed(() =>
           </p>
         </div>
         <div class="page-hero__stat">
-          <span>{{ herbs.length }}</span>
-          <small>味样例药材</small>
+          <span>{{ totalHerbCount }}</span>
+          <small>味药材（含讲义）</small>
           <span>{{ data?.formulas.length ?? 0 }}</span>
           <small>首方剂交叉索引</small>
         </div>
       </header>
 
       <HerbPropertyPrinciples />
+
+      <RouterLink class="lecture-entry" to="/bencao">
+        <span class="lecture-entry__seal" aria-hidden="true">本</span>
+        <span class="lecture-entry__body">
+          <span class="eyebrow">LECTURE NOTES / 本草讲记</span>
+          <strong>倪海厦《神农本草经》讲义</strong>
+          <span class="lecture-entry__desc">
+            按上经、中经、下经逐味整理，附《伤寒》《金匮》所用而《本经》未收的药物；
+            原文、注家、讲义归纳与课堂讲授分层标注。
+          </span>
+        </span>
+        <span class="lecture-entry__meta">
+          <span v-if="lectureCount">{{ lectureCount }} 条 · {{ formatCharCount(lectureChars) }}</span>
+          <span v-else>进入讲义</span>
+          <span class="lecture-entry__arrow" aria-hidden="true">→</span>
+        </span>
+      </RouterLink>
 
       <section v-if="taxonomy" class="taxonomy-section" aria-label="本草分类">
         <div class="taxonomy-head">
@@ -154,15 +243,25 @@ const meridianOptions = computed(() =>
             <button class="rank-card__select" type="button" :aria-pressed="rankFilter === rank.id" @click="toggleRank(rank.id)">
               <span class="rank-card__title">{{ rank.title }}</span>
               <span class="rank-card__subtitle">{{ rank.subtitle }}</span>
-              <span class="rank-card__count">{{ rankHerbs(rank.id).length }} 味已收录</span>
+              <span class="rank-card__count">{{ rankHerbs(rank.id).length }} 味药典样例</span>
             </button>
             <p class="rank-card__desc">{{ rank.description }}</p>
             <div class="rank-card__herbs">
-              <RouterLink v-for="h in rankHerbs(rank.id)" :key="h.id" :to="`/herbs/${h.id}`">
+              <RouterLink v-for="h in rankHerbs(rank.id).slice(0, 8)" :key="h.id" :to="`/herbs/${h.id}`">
                 {{ h.name }}
               </RouterLink>
+              <span v-if="rankHerbs(rank.id).length > 8" class="rank-card__more">
+                +{{ rankHerbs(rank.id).length - 8 }}
+              </span>
               <span v-if="!rankHerbs(rank.id).length" class="pending-text">待收录</span>
             </div>
+            <RouterLink
+              v-if="lectureRankCount(rank.id)"
+              class="rank-card__lecture"
+              :to="`/bencao/${groupForRank(rank.id)}`"
+            >
+              讲义 {{ lectureRankCount(rank.id) }} 味 →
+            </RouterLink>
             <span class="rank-card__hint">{{ rankFilter === rank.id ? '正在按本经筛选' : '点击筛选本经' }}</span>
           </article>
         </div>
@@ -225,7 +324,7 @@ const meridianOptions = computed(() =>
 
       <div id="herb-results" class="result-line">
         <p>
-          共 <strong>{{ filtered.length }}</strong> 味
+          共 <strong>{{ filtered.length + lectureFiltered.length }}</strong> 味
           <span v-if="activeFilters">· 已筛选 {{ activeFilters }} 项</span>
         </p>
         <p class="muted tiny">所有内容为学习样例，不构成用药建议。</p>
@@ -235,7 +334,51 @@ const meridianOptions = computed(() =>
         <HerbCard v-for="herb in filtered" :key="herb.id" :herb="herb" />
       </div>
 
-      <div v-else class="empty-state paper-panel">
+      <section v-if="lectureFiltered.length" class="lecture-list" aria-label="讲义药材">
+        <div class="lecture-list__head">
+          <div>
+            <p class="eyebrow">LECTURE MATERIA MEDICA / 讲义药材</p>
+            <h2>《神农本草经》讲义逐味索引</h2>
+          </div>
+          <p>
+            据倪海厦讲义整理，共 {{ lectureFiltered.length }} 味可查
+            <span v-if="lectureFiltered.length > visibleLecture.length">（先显示 {{ visibleLecture.length }} 味）</span>；
+            每味点开可读原文、历代注家与课堂讲授。
+          </p>
+        </div>
+
+        <div class="lecture-grid">
+          <RouterLink
+            v-for="item in visibleLecture"
+            :key="item.key"
+            class="lecture-card"
+            :to="lectureHref(item)"
+          >
+            <span class="lecture-card__top">
+              <span class="lecture-card__rank">{{ rankLabel(item.rankId) }}</span>
+              <span v-if="item.number" class="lecture-card__number">{{ item.number }}</span>
+            </span>
+            <strong>{{ item.name }}</strong>
+            <span class="lecture-card__meta">
+              <span v-for="tag in item.flavorTags.slice(0, 3)" :key="tag">{{ tag }}</span>
+              <span v-if="item.nature">{{ item.nature }}</span>
+              <span v-if="item.hasProcessing" class="lecture-card__processing">炮制</span>
+            </span>
+            <span v-if="item.summary" class="lecture-card__summary">{{ item.summary }}</span>
+          </RouterLink>
+        </div>
+
+        <button
+          v-if="lectureFiltered.length > visibleLecture.length"
+          class="btn btn--ghost lecture-list__more"
+          type="button"
+          @click="lectureLimit += 60"
+        >
+          再看 60 味（剩余 {{ lectureFiltered.length - visibleLecture.length }}）
+        </button>
+      </section>
+
+      <div v-if="!filtered.length && !lectureFiltered.length" class="empty-state paper-panel">
         <h2>没有找到这味药</h2>
         <p>试试只搜一个字，或清除性味、归经、三经与功效分类筛选。</p>
         <button class="btn btn--primary" type="button" @click="reset">清除筛选</button>
@@ -295,6 +438,75 @@ const meridianOptions = computed(() =>
 .page-hero__stat small {
   color: var(--ink-soft);
   font-size: 0.68rem;
+}
+
+.lecture-entry {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin: 18px 0 26px;
+  padding: 16px 18px;
+  border: 1px solid var(--line-strong);
+  border-radius: 16px;
+  background:
+    linear-gradient(100deg, rgba(220, 232, 226, 0.4), transparent 46%),
+    rgba(255, 252, 245, 0.5);
+  transition: border-color 0.18s ease, transform 0.18s ease;
+}
+
+.lecture-entry:hover {
+  border-color: var(--jade-2);
+  transform: translateY(-2px);
+}
+
+.lecture-entry__seal {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--cinnabar);
+  border-radius: 5px;
+  color: var(--cinnabar);
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  transform: rotate(-3deg);
+}
+
+.lecture-entry__body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.lecture-entry__body strong {
+  font-family: var(--serif);
+  font-size: 1.12rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.lecture-entry__desc {
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+  line-height: 1.7;
+}
+
+.lecture-entry__meta {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  align-items: center;
+  margin-left: auto;
+  color: var(--ink-faint);
+  font-size: 0.68rem;
+  white-space: nowrap;
+}
+
+.lecture-entry__arrow {
+  color: var(--jade);
+  font-size: 0.85rem;
 }
 
 .taxonomy-section {
@@ -415,6 +627,19 @@ const meridianOptions = computed(() =>
 .rank-card__hint {
   color: var(--rank-color);
   font-size: 0.64rem;
+}
+
+.rank-card__more {
+  padding: 3px 8px;
+  color: var(--ink-faint);
+  font-size: 0.68rem;
+}
+
+.rank-card__lecture {
+  align-self: flex-start;
+  color: var(--rank-color);
+  font-size: 0.7rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--rank-color) 40%, transparent);
 }
 
 .therapy-grid {
@@ -613,6 +838,111 @@ const meridianOptions = computed(() =>
   line-height: 1.6;
 }
 
+.lecture-list {
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line-strong);
+}
+
+.lecture-list__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.lecture-list__head h2 {
+  margin-top: 4px;
+  font-size: 1.45rem;
+}
+
+.lecture-list__head > p {
+  max-width: 480px;
+  color: var(--ink-soft);
+  font-size: 0.74rem;
+  line-height: 1.75;
+}
+
+.lecture-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.lecture-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+  padding: 11px 12px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 252, 245, 0.5);
+  transition: border-color 0.16s ease, transform 0.16s ease, background 0.16s ease;
+}
+
+.lecture-card:hover {
+  border-color: var(--jade-2);
+  background: rgba(255, 252, 245, 0.9);
+  transform: translateY(-2px);
+}
+
+.lecture-card__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--jade);
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
+}
+
+.lecture-card__number {
+  color: var(--ink-faint);
+  font-family: var(--serif);
+}
+
+.lecture-card strong {
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.lecture-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  color: var(--ink-soft);
+  font-size: 0.62rem;
+}
+
+.lecture-card__meta > span {
+  padding: 1px 5px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.lecture-card__meta .lecture-card__processing {
+  border-color: color-mix(in srgb, var(--cinnabar) 38%, transparent);
+  color: var(--cinnabar);
+}
+
+.lecture-card__summary {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--ink-faint);
+  font-size: 0.66rem;
+  line-height: 1.6;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.lecture-list__more {
+  display: block;
+  margin: 18px auto 0;
+}
+
 .list-note {
   margin-top: 36px;
   padding: 20px 22px;
@@ -646,7 +976,8 @@ const meridianOptions = computed(() =>
 }
 
 @media (max-width: 1240px) {
-  .herb-grid {
+  .herb-grid,
+  .lecture-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
@@ -656,8 +987,15 @@ const meridianOptions = computed(() =>
 }
 
 @media (max-width: 960px) {
-  .herb-grid {
+  .herb-grid,
+  .lecture-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lecture-list__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
 
   .taxonomy-head {
@@ -678,7 +1016,8 @@ const meridianOptions = computed(() =>
 }
 
 @media (max-width: 700px) {
-  .herb-grid {
+  .herb-grid,
+  .lecture-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -697,7 +1036,8 @@ const meridianOptions = computed(() =>
 }
 
 @media (max-width: 520px) {
-  .herb-grid {
+  .herb-grid,
+  .lecture-grid {
     grid-template-columns: 1fr;
   }
 

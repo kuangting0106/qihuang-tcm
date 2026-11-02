@@ -432,6 +432,90 @@ if (classicsIndex) {
   }
 }
 
+// 倪海厦《神农本草经》讲义
+const bencaoDir = path.join(root, 'public', 'data', 'bencao-lectures')
+let bencaoIndex = null
+try {
+  bencaoIndex = JSON.parse(fs.readFileSync(path.join(bencaoDir, 'index.json'), 'utf8'))
+} catch {
+  errors.push('缺少 public/data/bencao-lectures/index.json，请运行 npm run build:lectures')
+}
+const expectedBencaoCounts = {
+  intro: 5,
+  shangjing: 142,
+  zhongjing: 112,
+  xiajing: 103,
+  nishi: 28,
+  editor: 37,
+}
+const allowedBencaoKinds = new Set(['original', 'commentary', 'study', 'nishi', 'lecture', 'lesson'])
+let bencaoEntries = 0
+let bencaoChars = 0
+if (bencaoIndex) {
+  for (const key of ['id', 'title', 'author', 'course', 'commit', 'sourcePath', 'note']) {
+    if (!bencaoIndex.source?.[key]) errors.push(`讲义来源缺少 ${key}`)
+  }
+  if (!Array.isArray(bencaoIndex.groups) || bencaoIndex.groups.length !== 6) {
+    errors.push(`讲义分组应为 6，实际 ${bencaoIndex.groups?.length ?? 0}`)
+  }
+  const seenEntries = new Set()
+  for (const meta of bencaoIndex.groups ?? []) {
+    const groupPath = path.join(bencaoDir, `${meta.id}.json`)
+    if (!fs.existsSync(groupPath)) {
+      errors.push(`讲义分组 ${meta.id}: 缺少 ${meta.id}.json`)
+      continue
+    }
+    const group = JSON.parse(fs.readFileSync(groupPath, 'utf8'))
+    if (group.entries.length !== meta.count) {
+      errors.push(`讲义分组 ${meta.id}: 索引条数 ${meta.count} 与正文 ${group.entries.length} 不一致`)
+    }
+    const expected = expectedBencaoCounts[meta.id]
+    if (expected && group.entries.length !== expected) {
+      errors.push(`讲义分组 ${meta.id}: 条目数应为 ${expected}，实际 ${group.entries.length}`)
+    }
+    let chars = 0
+    for (const entry of group.entries) {
+      if (!entry.id || seenEntries.has(entry.id)) {
+        errors.push(`讲义条目 id 缺失或重复: ${entry.id}`)
+      }
+      seenEntries.add(entry.id)
+      if (entry.groupId !== meta.id) errors.push(`讲义条目 ${entry.id}: groupId 不一致`)
+      if (!entry.title) errors.push(`讲义条目 ${entry.id}: 缺少标题`)
+      if (!Array.isArray(entry.sections) || entry.sections.length === 0) {
+        errors.push(`讲义条目 ${entry.id}: 没有分节`)
+        continue
+      }
+      let entryChars = 0
+      for (const section of entry.sections) {
+        if (!allowedBencaoKinds.has(section.kind)) {
+          errors.push(`讲义条目 ${entry.id}: 非法文本层级 ${section.kind}`)
+        }
+        if (!section.kindLabel) errors.push(`讲义条目 ${entry.id}: 缺少层级标签`)
+        if (!Array.isArray(section.blocks) || section.blocks.length === 0) {
+          errors.push(`讲义条目 ${entry.id} / ${section.label}: 内容为空`)
+          continue
+        }
+        for (const block of section.blocks) {
+          if (!block.text?.trim()) errors.push(`讲义条目 ${entry.id}: 空段落`)
+          if (/<[a-z][^>]*>/i.test(block.text ?? '')) {
+            errors.push(`讲义条目 ${entry.id}: 残留 HTML`)
+          }
+          entryChars += block.text?.length ?? 0
+        }
+      }
+      if (entryChars !== entry.charCount) {
+        errors.push(`讲义条目 ${entry.id}: 字数统计不一致`)
+      }
+      chars += entryChars
+    }
+    if (chars !== meta.charCount) {
+      errors.push(`讲义分组 ${meta.id}: 字数统计不一致`)
+    }
+    bencaoEntries += group.entries.length
+    bencaoChars += chars
+  }
+}
+
 const counts = {
   sources: data.sources.length,
   herbs: data.herbs.length,
@@ -449,6 +533,9 @@ const counts = {
   classicBooks: classicsIndex?.books?.length ?? 0,
   classicChapters,
   classicChars,
+  bencaoGroups: bencaoIndex?.groups?.length ?? 0,
+  bencaoEntries,
+  bencaoChars,
   quoteClaims: 0,
 }
 
@@ -471,4 +558,4 @@ if (errors.length) {
   for (const e of errors) console.error(`  - ${e}`)
   process.exit(1)
 }
-console.log('\n通过：出处、引用、组成、坐标、八类穴、八脉交会与四部医书全文检查均正常。')
+console.log('\n通过：出处、引用、组成、坐标、八类穴、八脉交会、四部医书全文与本草讲义检查均正常。')

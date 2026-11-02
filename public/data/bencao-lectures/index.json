@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-11-02T13:59:12.572Z",
+  "source": {
+    "id": "nihaixia-bencao",
+    "title": "倪海厦《神农本草经》讲义",
+    "author": "倪海厦",
+    "course": "人纪 · 神农本草经",
+    "repository": "9527qingfeng/hantang-nihaixia-follower",
+    "commit": "bb24f93c2d0e6db00643eec4d275aff39ac9bb8d",
+    "sourcePath": "倪海厦/人纪-3-神农本草经",
+    "note": "讲义整理本，非《神农本草经》校勘本。原文、历代注家、讲义归纳与课堂讲授分层标注；条文与注文未经校勘，引用请回原书核对。"
+  },
+  "groups": [
+    {
+      "id": "intro",
+      "title": "讲义导读",
+      "subtitle": "自序 · 前言 · 药性总义",
+      "description": "倪海厦《神农本草经》课程的开篇与药性总纲。此组为讲义正文，不是《本经》原文。",
+      "count": 5,
+      "charCount": 11583
+    },
+    {
+      "id": "shangjing",
+      "title": "上经",
+      "subtitle": "上药养命",
+      "description": "上药共一百二十种，为君主养命以应天，皆无毒，多服久服不伤人；欲轻身益气、不老延年者，本于上经。",
+      "count": 142,
+      "charCount": 113361
+    },
+    {
+      "id": "zhongjing",
+      "title": "中经",
+      "subtitle": "中药遏病",
+      "description": "中药共一百二十种，为臣，主养性以应人，有毒无毒斟酌其宜；欲遏病补虚羸者，本于中经。",
+      "count": 112,
+      "charCount": 51092
+    },
+    {
+      "id": "xiajing",
+      "title": "下经",
+      "subtitle": "下药除邪",
+      "description": "下药共一百二十五种，为佐使，主治病以应地，多毒不可久服；欲除寒热邪气、破积聚、愈疾者，本于下经。",
+      "count": 103,
+      "charCount": 40080
+    },
+    {
+      "id": "nishi",
+      "title": "倪师补充药物",
+      "subtitle": "《伤寒》《金匮》所用而《本经》未收",
+      "description": "倪海厦按：以下药物原不见于《神农本草经》，但张仲景《伤寒论》《金匮要略》中有使用，另列并附使用说明。",
+      "count": 28,
+      "charCount": 11428
+    },
+    {
+      "id": "editor",
+      "title": "小编补充药物",
+      "subtitle": "整理者增补 · 非倪师原讲义",
+      "description": "课程整理者增补的常用药，不属于倪海厦原讲义正文；阅读时与倪师讲授内容分开看待。",
+      "count": 37,
+      "charCount": 41841
+    }
+  ],
+  "intro": [
+    {
+      "id": "intro-001",
+      "title": "自序",
+      "subtitle": "讲义导读",
+      "charCount": 452
+    },
+    {
+      "id": "intro-002",
+      "title": "前言",
+      "subtitle": "讲义导读",
+      "charCount": 1327
+    },
+    {
+      "id": "intro-003",
+      "title": "为什么学神农本草经",
+      "subtitle": "讲义导读",
+      "charCount": 3009
+    },
+    {
+      "id": "intro-004",
+      "title": "药性总义",
+      "subtitle": "讲义导读",
+      "charCount": 6287
+    },
+    {
+      "id": "intro-005",
+      "title": "结尾",
+      "subtitle": "讲义导读",
+      "charCount": 508
+    }
+  ]
+}

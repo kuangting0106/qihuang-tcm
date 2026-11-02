@@ -39,6 +39,24 @@ const router = createRouter({
       meta: { title: '本草详情' },
     },
     {
+      path: '/bencao',
+      name: 'bencao-lectures',
+      component: () => import('@/views/BencaoLecturesView.vue'),
+      meta: { title: '神农本草经讲义' },
+    },
+    {
+      path: '/bencao/:groupId',
+      name: 'bencao-group',
+      component: () => import('@/views/BencaoGroupView.vue'),
+      meta: { title: '讲义目录' },
+    },
+    {
+      path: '/bencao/:groupId/:entryId',
+      name: 'bencao-entry',
+      component: () => import('@/views/BencaoEntryView.vue'),
+      meta: { title: '讲义正文' },
+    },
+    {
       path: '/formulas',
       name: 'formulas',
       component: () => import('@/views/FormulaListView.vue'),
