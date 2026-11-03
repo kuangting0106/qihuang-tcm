@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T02:46:19.032Z",
+  "generatedAt": "2026-11-03T12:46:21.610Z",
   "books": [
     {
       "id": "xuezhenglun",
@@ -89,7 +89,7 @@
         "frontMatterCount": 1,
         "chapterCount": 12,
         "volumeCount": 3,
-        "charCount": 332335
+        "charCount": 331522
       }
     }
   ]

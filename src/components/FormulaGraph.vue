@@ -145,18 +145,18 @@ function summaryText(text: string, limit = 4) {
 }
 
 function nodeRoleText(node: GraphNode) {
+  const detail = summaryText(herbNote(node.herbId) || node.action || '')
   const role = node.role === '未标注' ? (herbNote(node.herbId) ? '本地备注' : '待补') : node.role
-  const detail = summaryText(node.action || herbNote(node.herbId))
   return detail ? `${role} · ${detail}` : role
 }
 
 function nodeActionText(node: GraphNode) {
-  return node.action || herbNote(node.herbId) || '教材未逐味说明，点击节点补充本地备注'
+  return herbNote(node.herbId) || node.action || '教材未逐味说明，点击节点补充本地备注'
 }
 
 function nodeNoteSource(node: GraphNode) {
-  if (node.action) return '后世方解，该药材在方中作用思路'
   if (herbNote(node.herbId)) return '本地备注，仅保存在当前浏览器'
+  if (node.action) return '后世方解，该药材在方中作用思路'
   return '教材未逐味说明，可点节点补充'
 }
 
@@ -310,7 +310,7 @@ function resetEditor() {
     </div>
 
     <p class="graph-source-note">
-      君臣佐使据《方剂学》教材通例归纳，非讲义原文；点药材可修改本地角色与备注。
+      君臣佐使据《方剂学》教材通例归纳，非讲义原文；点击图中药材名，可填写方中作用与角色。
     </p>
 
     <div ref="graphCanvas" class="graph-canvas">
@@ -413,7 +413,7 @@ function resetEditor() {
         </div>
         <p class="graph-tip__action">{{ nodeActionText(hoveredNode) }}</p>
         <p v-if="hoveredNode.action && herbNote(hoveredNode.herbId)" class="graph-tip__local">
-          本地备注：{{ herbNote(hoveredNode.herbId) }}
+          原方解：{{ hoveredNode.action }}
         </p>
         <span class="graph-tip__note">{{ nodeNoteSource(hoveredNode) }}</span>
       </div>
@@ -433,7 +433,7 @@ function resetEditor() {
           </select>
         </label>
         <label class="graph-editor__field graph-editor__field--wide">
-          <span>方中作用（本地备注）</span>
+          <span>方中作用（可自行填写）</span>
           <textarea
             v-model="editorNote"
             rows="2"
@@ -445,7 +445,7 @@ function resetEditor() {
       <div class="graph-editor__actions">
         <button type="button" class="graph-editor__save" @click="saveEditor">保存本地修改</button>
         <button type="button" @click="cancelEditor">取消</button>
-        <span>角色与备注仅保存在当前浏览器，不发布。</span>
+        <span>方中作用与角色仅保存在当前浏览器，不发布。</span>
       </div>
     </div>
 
@@ -455,10 +455,10 @@ function resetEditor() {
         <span v-if="selectedNode.action || herbNote(selectedNode.herbId)" class="graph-foot__action">
           {{ selectedNode.action || herbNote(selectedNode.herbId) }}
         </span>
-        <span v-else class="graph-foot__empty">教材未逐味说明，可在下方编辑本地备注</span>
+        <span v-else class="graph-foot__empty">教材未逐味说明，可点击药材名填写方中作用</span>
         <RouterLink v-if="selectedHerb" class="text-link" :to="`/herbs/${selectedHerb.id}`">查看药材 →</RouterLink>
       </p>
-      <p v-else class="muted">悬停药材看方中作用 · 点击药材编辑本地角色/备注 · 拖动平移 · 滚轮缩放</p>
+      <p v-else class="muted">点击药材名填写方中作用 · 拖动平移 · 滚轮缩放</p>
       <span class="graph-hint">实线 = 组成；虚线 = 后世方解</span>
     </div>
   </div>

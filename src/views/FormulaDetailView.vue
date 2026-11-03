@@ -6,6 +6,11 @@ import FormulaGraph from '@/components/FormulaGraph.vue'
 import AnnotatedOriginalText from '@/components/AnnotatedOriginalText.vue'
 import SourcedText from '@/components/SourcedText.vue'
 import { useTcmData } from '@/composables/useTcmData'
+import {
+  glossaryAnnotationsFor,
+  glossaryTagsFor,
+  primarySymptomText,
+} from '@/data/symptom-glossary'
 import { ROLE_ORDER } from '@/types/tcm'
 import type { FormulaRole } from '@/types/tcm'
 
@@ -25,6 +30,7 @@ const selectedHerbId = ref<string | null>(null)
 const showPairs = ref(true)
 const showGraph = ref(true)
 const prepDoseMode = ref<'ancient' | 'modern'>('ancient')
+const annotationMode = ref(false)
 
 watch(
   () => route.params.id,
@@ -32,6 +38,7 @@ watch(
     selectedHerbId.value = null
     showPairs.value = true
     prepDoseMode.value = 'ancient'
+    annotationMode.value = false
   },
 )
 
@@ -162,6 +169,27 @@ function resetHerb(herbId: string) {
 
 function selectHerb(id: string) {
   selectedHerbId.value = selectedHerbId.value === id ? null : id
+}
+
+function annotationsForSymptom(index: number) {
+  const current = formula.value
+  const symptom = current?.symptoms[index]
+  if (!current || !symptom) return []
+  const original = current.originalAnnotations ?? []
+  const seen = new Set(original.map((item) => item.phrase))
+  return [
+    ...original,
+    ...glossaryAnnotationsFor(symptom.text).filter((item) => !seen.has(item.phrase)),
+  ]
+}
+
+function tagsForSymptom(index: number) {
+  const current = formula.value
+  if (!current) return []
+  if (current.symptomTags?.length) return current.symptomTags
+  const symptom = current.symptoms[index]
+  if (!symptom) return []
+  return glossaryTagsFor(primarySymptomText(symptom.text, current.name))
 }
 
 const NOTE_STORAGE_KEY = 'qihuang.formula.modernNotes'
@@ -345,18 +373,6 @@ watch(
               {{ formula.preparation.decoction.text }}
             </blockquote>
             <CitationBadge :citation-ids="formula.preparation.decoction.citationIds" label="原文" compact />
-            <div class="preparation-modern">
-              <span class="preparation-modern__label">现代煎煮服用法 · 参考</span>
-              <p v-if="formula.preparation.modernDecoction">
-                本方：{{ formula.preparation.modernDecoction }}
-              </p>
-              <p>
-                通用做法：药材冷水浸泡约30分钟，水面高出药面2–3厘米；先大火煮沸，再转小火煎30–40分钟，滤出药汁；再加水煎第二次，合并两次药汁，分2次温服。
-              </p>
-              <p class="preparation-modern__note">
-                汉代一升约合200毫升，一合约20毫升；原文水量、取汁量与服量可按此估算。原方有先煎、后下、包煎、烊化、去上沫或“停后服”等要求时，以原文为准。现代做法只作学习参考，具体请遵医嘱。
-              </p>
-            </div>
           </article>
 
           <article v-if="formula.preparation.administration" class="preparation-card preparation-card--administration">
@@ -371,15 +387,11 @@ watch(
               {{ formula.preparation.administration.text }}
             </blockquote>
             <CitationBadge :citation-ids="formula.preparation.administration.citationIds" label="原文" compact />
-            <div v-if="formula.preparation.modernAdministration" class="preparation-modern">
-              <span class="preparation-modern__label">现代服用 · 参考</span>
-              <p>{{ formula.preparation.modernAdministration }}</p>
-            </div>
           </article>
         </div>
 
         <p class="preparation-note">
-          以上古籍原文与现代用法分列；现代用法不是原书文字，仅作学习参考，不构成临床用药建议。
+          以上为原书煎煮、服法与调护原文；方药剂量与操作以原书影印本为准，不构成临床用药建议。
         </p>
       </section>
 
@@ -466,23 +478,38 @@ watch(
               <span class="eyebrow">SYMPTOMS / 症状描述</span>
               <h2>原文怎么描述这个方证</h2>
             </div>
+            <button
+              v-if="formula.symptoms.length"
+              class="note-btn"
+              :class="{ 'note-btn--primary': annotationMode }"
+              type="button"
+              @click="annotationMode = !annotationMode"
+            >
+              {{ annotationMode ? '退出标注' : '划线标注' }}
+            </button>
           </div>
 
-          <blockquote v-for="(s, i) in formula.symptoms" :key="i" class="symptom-quote">
-            <AnnotatedOriginalText :text="s.text" :annotations="formula.originalAnnotations" />
+          <p v-if="annotationMode" class="symptom-edit-hint">
+            用鼠标或手指选中原文词句，松开后填写现代注解。本地注解只保存在当前浏览器，不会发布。
+          </p>
+
+          <blockquote v-for="(s, i) in formula.symptoms" :key="`${formula.id}-${i}`" class="symptom-quote">
+            <AnnotatedOriginalText
+              :text="s.text"
+              :annotations="annotationsForSymptom(i)"
+              :tags="tagsForSymptom(i)"
+              :editable="annotationMode"
+              :scope-key="`${formula.id}:${i}`"
+            />
           </blockquote>
 
           <p v-if="!formula.symptoms.length" class="symptom-empty">
             {{ formula.symptomNote ?? '原讲义未单列本方证条文，暂未引症状原文。' }}
           </p>
 
-          <div v-if="formula.symptomTags?.length" class="symptom-tags">
-            <span v-for="tag in formula.symptomTags" :key="tag" class="chip chip--cinnabar">{{ tag }}</span>
-          </div>
-
           <div v-if="formula.symptoms.length" class="symptom-panel__foot">
             <CitationBadge :citation-ids="formula.symptoms[0]?.citationIds ?? [formula.sourceCitationId]" label="原文" />
-            <span>症状与方名均回引《伤寒论》相关条文；带下划线的词可悬停看现代注解。</span>
+            <span>症状与方名均回引《伤寒论》相关条文；带下划线的词可悬停看现代注解，点“划线标注”可自行补充本地注解。</span>
           </div>
         </div>
       </section>
@@ -821,36 +848,6 @@ watch(
   border-left-color: var(--jade);
 }
 
-.preparation-modern {
-  padding: 8px 10px;
-  border-left: 2px solid var(--jade);
-  border-radius: 0 8px 8px 0;
-  background: rgba(221, 236, 232, 0.38);
-}
-
-.preparation-modern__label {
-  display: block;
-  color: var(--jade);
-  font-size: 0.62rem;
-  letter-spacing: 0.04em;
-}
-
-.preparation-modern p {
-  margin-top: 3px;
-  color: var(--ink);
-  font-family: var(--serif);
-  font-size: 0.86rem;
-  line-height: 1.8;
-}
-
-.preparation-modern__note {
-  margin-top: 4px;
-  color: var(--ink-faint);
-  font-family: var(--sans, inherit);
-  font-size: 0.7rem;
-  line-height: 1.6;
-}
-
 .preparation-note {
   margin-top: 9px;
   color: var(--ink-faint);
@@ -1098,6 +1095,13 @@ watch(
 .symptom-panel__head h2 {
   margin-top: 3px;
   font-size: clamp(1.4rem, 2.3vw, 1.9rem);
+}
+
+.symptom-edit-hint {
+  margin: 8px 0 0;
+  color: var(--cinnabar);
+  font-size: 0.7rem;
+  line-height: 1.6;
 }
 
 .symptom-quote {
