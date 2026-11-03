@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
+import AcupunctureTopic from '@/components/AcupunctureTopic.vue'
 import { findTopic, getTopicSection } from '@/data/topics'
 
 const route = useRoute()
 const section = computed(() => getTopicSection(String(route.meta.section || 'methods')))
 const topic = computed(() => findTopic(section.value.key, String(route.params.id)))
+const isAcupuncture = computed(() => section.value.key === 'methods' && topic.value?.id === 'acupuncture')
 </script>
 
 <template>
@@ -26,10 +28,14 @@ const topic = computed(() => findTopic(section.value.key, String(route.params.id
             <h1>{{ topic.title }}</h1>
             <p>{{ topic.subtitle }}</p>
           </div>
-          <span class="chip chip--gold">正文待收录</span>
+          <span class="chip" :class="isAcupuncture ? 'chip--cinnabar' : 'chip--gold'">
+            {{ isAcupuncture ? '含针刺操作 · 非专业勿试' : '正文待收录' }}
+          </span>
         </header>
 
-        <div class="topic-detail-layout">
+        <AcupunctureTopic v-if="isAcupuncture" />
+
+        <div v-else class="topic-detail-layout">
           <section class="empty-article paper-panel">
             <span class="empty-article__seal">{{ section.key === 'methods' ? '法' : '案' }}</span>
             <h2>这一篇还没有录入正文</h2>

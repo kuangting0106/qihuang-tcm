@@ -51,7 +51,7 @@ export const methodTopics: Topic[] = [
   {
     id: 'acupuncture',
     title: '针',
-    subtitle: '针法资料栏：针刺器具、手法、宜忌与相关医案；具体内容待按典籍与规范逐条录入。',
+    subtitle: '醒脑开窍针刺法：石学敏院士中风及后遗症针法，按病症分列取穴与操作；非专业人士不要尝试。',
   },
 ]
 

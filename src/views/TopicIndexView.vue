@@ -34,7 +34,9 @@ const basePath = computed(() => `/${section.value.key}`)
         >
           <div class="topic-card__top">
             <span class="topic-card__num">{{ String(index + 1).padStart(2, '0') }}</span>
-            <span class="topic-card__status">待收录</span>
+            <span class="topic-card__status" :class="{ 'topic-card__status--ready': topic.id === 'acupuncture' }">
+              {{ topic.id === 'acupuncture' ? '已收录 · 非专业勿试' : '待收录' }}
+            </span>
           </div>
           <h2>{{ topic.title }}</h2>
           <p>{{ topic.subtitle }}</p>
@@ -162,6 +164,11 @@ const basePath = computed(() => `/${section.value.key}`)
   background: var(--paper-2);
   color: var(--ink-faint);
   font-size: 0.62rem;
+}
+
+.topic-card__status--ready {
+  background: rgba(190, 78, 58, 0.1);
+  color: var(--cinnabar);
 }
 
 .topic-card h2 {
