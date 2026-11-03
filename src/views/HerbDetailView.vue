@@ -225,6 +225,23 @@ const currentSlotLabel = computed(() => {
 
       <p v-if="herb.note" class="herb-note paper-panel">{{ herb.note }}</p>
 
+      <RouterLink
+        v-if="lectureItem"
+        class="lecture-link"
+        :to="`/bencao/${lectureItem.groupId}/${lectureItem.entryId}`"
+      >
+        <span class="lecture-link__seal" aria-hidden="true">讲</span>
+        <span class="lecture-link__body">
+          <span class="eyebrow">LECTURE / 讲义</span>
+          <strong>《神农本草经》讲义：{{ lectureItem.name }}</strong>
+          <span>
+            倪海厦讲授整理 · {{ formatCharCount(lectureItem.charCount) }}；
+            原文、历代注家与课堂讲授分层标注。
+          </span>
+        </span>
+        <span class="lecture-link__arrow" aria-hidden="true">→</span>
+      </RouterLink>
+
       <section class="detail-section">
         <div class="section-head">
           <div>
@@ -306,23 +323,6 @@ const currentSlotLabel = computed(() => {
           <RouterLink class="text-link" to="/processing">药材的炮制</RouterLink>。
         </p>
       </section>
-
-      <RouterLink
-        v-if="lectureItem"
-        class="lecture-link"
-        :to="`/bencao/${lectureItem.groupId}/${lectureItem.entryId}`"
-      >
-        <span class="lecture-link__seal" aria-hidden="true">讲</span>
-        <span class="lecture-link__body">
-          <span class="eyebrow">LECTURE / 讲义</span>
-          <strong>《神农本草经》讲义：{{ lectureItem.name }}</strong>
-          <span>
-            倪海厦讲授整理 · {{ formatCharCount(lectureItem.charCount) }}；
-            原文、历代注家与课堂讲授分层标注。
-          </span>
-        </span>
-        <span class="lecture-link__arrow" aria-hidden="true">→</span>
-      </RouterLink>
 
       <section class="coverage paper-panel">
         <div>
