@@ -2,7 +2,6 @@
 import { computed, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import CitationBadge from '@/components/CitationBadge.vue'
-import EvidenceTrigger from '@/components/EvidenceTrigger.vue'
 import FormulaGraph from '@/components/FormulaGraph.vue'
 import AnnotatedOriginalText from '@/components/AnnotatedOriginalText.vue'
 import SourcedText from '@/components/SourcedText.vue'
@@ -459,20 +458,23 @@ watch(
               <span class="eyebrow">SYMPTOMS / 症状描述</span>
               <h2>原文怎么描述这个方证</h2>
             </div>
-            <EvidenceTrigger :formula="formula" />
           </div>
 
           <blockquote v-for="(s, i) in formula.symptoms" :key="i" class="symptom-quote">
             <AnnotatedOriginalText :text="s.text" :annotations="formula.originalAnnotations" />
           </blockquote>
 
+          <p v-if="!formula.symptoms.length" class="symptom-empty">
+            {{ formula.symptomNote ?? '原讲义未单列本方证条文，暂未引症状原文。' }}
+          </p>
+
           <div v-if="formula.symptomTags?.length" class="symptom-tags">
             <span v-for="tag in formula.symptomTags" :key="tag" class="chip chip--cinnabar">{{ tag }}</span>
           </div>
 
-          <div class="symptom-panel__foot">
+          <div v-if="formula.symptoms.length" class="symptom-panel__foot">
             <CitationBadge :citation-ids="formula.symptoms[0]?.citationIds ?? [formula.sourceCitationId]" label="原文" />
-            <span>症状与方名均回引《伤寒论》原条；带下划线的词可悬停看现代注解，右上“原文证据”可预览全文。</span>
+            <span>症状与方名均回引《伤寒论》相关条文；带下划线的词可悬停看现代注解。</span>
           </div>
         </div>
       </section>
@@ -1139,6 +1141,16 @@ watch(
   font-size: clamp(1.04rem, 1.55vw, 1.24rem);
   line-height: 2.05;
   text-align: justify;
+}
+
+.symptom-empty {
+  margin: 16px 0 0;
+  padding: 12px 14px;
+  border-left: 2px solid var(--gold);
+  background: rgba(235, 226, 210, 0.3);
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  line-height: 1.8;
 }
 
 .symptom-tags {

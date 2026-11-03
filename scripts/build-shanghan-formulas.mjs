@@ -19,11 +19,11 @@ const BODY_FILES = [
   '10.辨厥阴病脉证并治法.md',
 ]
 
-const CLAUSE_RE = /^[0-9一二三四五六七八九十百千]+[、.:：]/
+const CLAUSE_RE = /^[0-9〇零一二三四五六七八九十百千]+[、.:：]/
 const DOSE_RE =
   /((?:[一二三四五六七八九十百千万半0-9]+)(?:两|钱|分|铢|斤|升|合|枚|个|茎|片|把|条|只|张|克|寸|劈))([\s\S]*)$/
 const PREP_RE = /右.*味|以水|水[一二三四五六七八九十百]+升|煮取|煎取|微火煎|去滓|温服|分温|为散|为末|杵|纳谷道|灌谷道|和醋|丸如|如梧子|顿服|日三服|以上.*味/
-const ATTACHED = new Set(['四物汤', '戒烟涤痰方', '健胃整脾汤方', '脏结汤方'])
+const ATTACHED = new Set(['四物汤', '戒烟涤痰', '健胃整脾汤', '脏结汤', '大黄附子细辛汤'])
 const ALIASES = {
   白芍药: '白芍',
   白朮: '白术',
@@ -291,6 +291,43 @@ function cleanFormulaName(title) {
     .trim()
 }
 
+function normalizeSymptomText(value) {
+  return value
+    .replace(/[「」『』“”"'《》〈〉]/g, '')
+    .replace(/[，,。；;：:、\s]/g, '')
+    .replace(/方中/g, '')
+    .replace(/各?[一二三四五六七八九十百千]+(?:两|钱|分|铢|斤|升|合|枚|个|片|茎|把|条|只|张|寸)/g, '')
+    .replace(/朮/g, '术')
+}
+
+const SYMPTOM_ALIASES = {
+  桂枝甘草茯苓大枣汤: ['茯苓桂枝甘草大枣汤'],
+  桂枝附子去桂加白朮汤: ['去桂枝加白朮汤'],
+  麻子仁丸: ['麻仁丸'],
+  土瓜根: ['士瓜根'],
+  蜜煎导法: ['蜜煎导'],
+}
+
+function isClauseTitle(title) {
+  if (!title || isFormulaTitle(title)) return false
+  if (CLAUSE_RE.test(title)) return true
+  return /(?:主之|宜|可与|与)/.test(title) && /[「『][^」』]+[」』]/.test(title)
+}
+
+function findSymptomClause(name, lineIndex, clauses) {
+  const target = normalizeSymptomText(name)
+  const aliases = (SYMPTOM_ALIASES[name] ?? []).map(normalizeSymptomText)
+  let matched = ''
+  for (const clause of clauses) {
+    if (clause.line >= lineIndex) break
+    const text = normalizeSymptomText(clause.title)
+    if (text.includes(target) || aliases.some((alias) => text.includes(alias))) {
+      matched = clause.title
+    }
+  }
+  return matched
+}
+
 function looksLikeIngredients(line, formulaName) {
   if (!line) return false
   if (line === '方缺') return true
@@ -305,23 +342,17 @@ function looksLikeIngredients(line, formulaName) {
   return Boolean(doses && doses.length && line.length < 220)
 }
 
-function firstEffect(commentary) {
-  const text = commentary
-    .split(/\n+/)
-    .map((line) => line.trim())
-    .filter((line) => line && !line.startsWith('小编：') && !/^以上(?:为|是)?汉制/.test(line))
-    .join('')
-  if (!text) return '讲义未附方解，详见原文。'
-  const sentence = text.match(/^[^。！？]+[。！？]?/)?.[0] ?? text
-  return sentence.length > 88 ? `${sentence.slice(0, 86)}…` : sentence
-}
-
 function extractFromFile(file) {
   const text = fs.readFileSync(path.join(dir, file), 'utf8')
   const lines = text.split(/\r?\n/)
   const chapterTitle = (lines.find((line) => /^##\s+/.test(line)) ?? '').replace(/^##\s+/, '').trim()
   const formulas = []
-  let lastClause = ''
+  const clauses = lines
+    .map((line, lineIndex) => ({
+      line: lineIndex,
+      title: /^####\s+/.test(line) ? line.replace(/^####\s+/, '').trim() : '',
+    }))
+    .filter((item) => item.title && isClauseTitle(item.title))
 
   let index = 0
   while (index < lines.length) {
@@ -337,12 +368,12 @@ function extractFromFile(file) {
     const block = lines.slice(index + 1, end)
 
     if (!isFormulaTitle(title)) {
-      if (CLAUSE_RE.test(title)) lastClause = title
       index = end
       continue
     }
 
     const name = cleanFormulaName(title)
+    const symptomClause = findSymptomClause(name, index, clauses)
     const ingredientIndex = block.findIndex((line) => looksLikeIngredients(line.trim(), name))
     if (ingredientIndex === -1) {
       index = end
@@ -428,7 +459,7 @@ function extractFromFile(file) {
         author: '张仲景',
         edition: '倪海厦《人纪·伤寒论》讲义',
         locator,
-        quote: [lastClause, originalText, commentary].filter(Boolean).join('\n\n'),
+        quote: [symptomClause, originalText, commentary].filter(Boolean).join('\n\n'),
         note: attached
           ? '据倪海厦《人纪·伤寒论》讲义整理；此方为讲义附方，非《伤寒论》原文方。'
           : '据倪海厦《人纪·伤寒论》讲义整理；方药剂量与煎服法依讲义原文，未逐字校勘。',
@@ -439,11 +470,16 @@ function extractFromFile(file) {
         pinyin: '',
         sourceCitationId: sourceId,
         originalText: claim(originalText, [sourceId], 'quote', locator),
-        effects: claim(firstEffect(commentary), [sourceId], 'analysis', '方后讲解'),
-        symptoms:
-          lastClause && lastClause.includes(name)
-            ? [claim(lastClause, [sourceId], 'quote', '前条')]
-            : [],
+        effects: claim(
+          '讲义未单列功效概括，详见下方方证与讲解。',
+          [sourceId],
+          'analysis',
+          '方后讲解',
+        ),
+        symptoms: symptomClause ? [claim(symptomClause, [sourceId], 'quote', '相关条文')] : [],
+        symptomNote: symptomClause
+          ? undefined
+          : '讲义附方或未单列方证条文，暂未引症状原文。',
         preparation,
         composition,
         dosageNote: '剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。',

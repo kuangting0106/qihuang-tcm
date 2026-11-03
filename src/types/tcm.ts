@@ -258,6 +258,8 @@ export interface Formula {
   effects: SourcedText
   modernExplanation?: SourcedText
   symptoms: SourcedText[]
+  /** 无独立方证条文时的说明，如讲义附方 */
+  symptomNote?: string
   originalAnnotations?: OriginalAnnotation[]
   preparation?: FormulaPreparation
   meaning?: FormulaMeaning

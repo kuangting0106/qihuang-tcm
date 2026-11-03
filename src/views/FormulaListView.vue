@@ -28,7 +28,7 @@ const filtered = computed(() => {
           <h1>方剂</h1>
           <p class="page-hero__lead">
             原文、症状、组成、君臣佐使与加减放在同一页。
-            图谱和原文证据双轨呈现；桂枝汤没有加减，就写“原文未列”，不硬编。
+            图谱与原文出处双轨呈现；桂枝汤没有加减，就写“原文未列”，不硬编。
           </p>
         </div>
         <div class="page-hero__stat">
@@ -65,7 +65,7 @@ const filtered = computed(() => {
       <aside class="list-note paper-panel">
         <span class="list-note__mark">方</span>
         <div>
-          <strong>为什么强调“原文证据”？</strong>
+          <strong>为什么强调“原文出处”？</strong>
           <p>
             《伤寒论》原文只列症状、药味与用量，不标君臣佐使。页面把“原文”和“后世方解”分开，
             点击出处能看到书名、条号与原文；方剂加减也逐条回到原条。
