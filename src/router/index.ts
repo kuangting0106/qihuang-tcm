@@ -117,6 +117,12 @@ const router = createRouter({
       meta: { title: '药材的炮制' },
     },
     {
+      path: '/first-aid/:id',
+      name: 'first-aid-detail',
+      component: () => import('@/views/FirstAidDetailView.vue'),
+      meta: { title: '中医急救知识' },
+    },
+    {
       path: '/meridians',
       redirect: '/meridians/lung',
     },

@@ -4,6 +4,7 @@ import { RouterLink } from 'vue-router'
 import { useTcmData } from '@/composables/useTcmData'
 import { caseTopics, methodTopics } from '@/data/topics'
 import { exercises } from '@/data/exercises'
+import FirstAidSection from '@/components/FirstAidSection.vue'
 
 const { data } = useTcmData()
 
@@ -193,6 +194,8 @@ const modules = computed(() => [
         </RouterLink>
       </div>
     </section>
+
+    <FirstAidSection />
 
     <section class="source-strip">
       <div class="container source-strip__inner">
