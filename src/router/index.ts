@@ -167,6 +167,12 @@ const router = createRouter({
       meta: { title: '布局演示' },
     },
     {
+      path: '/admin/notes',
+      name: 'notes-admin',
+      component: () => import('@/views/NotesAdminView.vue'),
+      meta: { title: '标注管理' },
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'not-found',
       component: () => import('@/views/NotFoundView.vue'),

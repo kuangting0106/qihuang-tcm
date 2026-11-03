@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T13:48:09.092Z",
+  "generatedAt": "2026-11-03T14:14:41.462Z",
   "sources": [
     {
       "id": "src-jingui-760019",
@@ -1438,7 +1438,7 @@
       "author": "张仲景",
       "edition": "倪海厦《人纪·金匮要略》讲义",
       "locator": "妇人产后病脉证治第二十一·竹皮大丸",
-      "quote": "生竹茹、石膏各二分 | 桂枝、白薇各一分 | 甘草七分\n\n上五味，末之，枣肉和丸弹子大，饮服一丸，日三夜二服。有热倍白，烦喘者加枳实一分。\n\n太太们在生完小孩后，于喂母乳期间喂到一半突然变成「烦乱呕逆」，孕妇自己很想吐，情绪又很烦躁，看到人就想打，这时候做先生的如果懂得竹皮大丸方就会好很多，这种现像是因为肠胃青黄不接造成的。\n当食物吃到肚子里面后在胃里面产生营养，再供给肺就变成白色的乳汁出来。而小孩子喝太快了，奶汁没了，母体又来不及补足乳汁，就变成虚烦，这个烦躁是虚烦，「呕逆」是肠胃虚造成的。\n为了能「安中益气」,所以用生竹茹、石膏，因为虚烦产生的燥热，所以用石膏来降热。\n桂枝、甘草来行阳，竹茹能够通利三焦淋巴系统，所以所有的甲状腺功能亢进,或是大脖子或者是淋巴肿瘤都会用到竹茹，治疗乳房的硬块也会用到竹茹。\n竹茹，我常在口渴，糖尿病的时候会用。竹茹很好用，三焦系统，淋巴系统，腮腺肿了，甲状腺肿了，淋巴腺肿，乳房的硬块都可用。\n竹茹可通利三焦，去她的湿，类似防己。\n白薇这个药性属寒性，专门入阳明，入阳明治狂热，就是情绪很不稳定的情状。\n白薇，专门入阳明经，治阳明经的虚热。\n「右五味，末之，枣肉和丸弹子大。」一天吃四次，六个小时吃一次，「日三夜二服」就是连续的给她吃。\n如果热很盛的话白薇就加倍，喘盛的话加枳实一分。此处喘很盛是表示肠胃里面还有一些食物残渣。\n妈妈体虚时，胃下方的血液会不够，于是有宿食堵在里面，病人就会有喘满，这个时候我们加一点枳实下去就足够了，不要加大黄，因为妈妈是虚的。",
+      "quote": "#### 妇人乳中虚，烦乱呕逆，安中益气，竹皮大丸主之。\n\n生竹茹、石膏各二分 | 桂枝、白薇各一分 | 甘草七分\n\n上五味，末之，枣肉和丸弹子大，饮服一丸，日三夜二服。有热倍白，烦喘者加枳实一分。\n\n太太们在生完小孩后，于喂母乳期间喂到一半突然变成「烦乱呕逆」，孕妇自己很想吐，情绪又很烦躁，看到人就想打，这时候做先生的如果懂得竹皮大丸方就会好很多，这种现像是因为肠胃青黄不接造成的。\n当食物吃到肚子里面后在胃里面产生营养，再供给肺就变成白色的乳汁出来。而小孩子喝太快了，奶汁没了，母体又来不及补足乳汁，就变成虚烦，这个烦躁是虚烦，「呕逆」是肠胃虚造成的。\n为了能「安中益气」,所以用生竹茹、石膏，因为虚烦产生的燥热，所以用石膏来降热。\n桂枝、甘草来行阳，竹茹能够通利三焦淋巴系统，所以所有的甲状腺功能亢进,或是大脖子或者是淋巴肿瘤都会用到竹茹，治疗乳房的硬块也会用到竹茹。\n竹茹，我常在口渴，糖尿病的时候会用。竹茹很好用，三焦系统，淋巴系统，腮腺肿了，甲状腺肿了，淋巴腺肿，乳房的硬块都可用。\n竹茹可通利三焦，去她的湿，类似防己。\n白薇这个药性属寒性，专门入阳明，入阳明治狂热，就是情绪很不稳定的情状。\n白薇，专门入阳明经，治阳明经的虚热。\n「右五味，末之，枣肉和丸弹子大。」一天吃四次，六个小时吃一次，「日三夜二服」就是连续的给她吃。\n如果热很盛的话白薇就加倍，喘盛的话加枳实一分。此处喘很盛是表示肠胃里面还有一些食物残渣。\n妈妈体虚时，胃下方的血液会不够，于是有宿食堵在里面，病人就会有喘满，这个时候我们加一点枳实下去就足够了，不要加大黄，因为妈妈是虚的。",
       "note": "据倪海厦《人纪·金匮要略》讲义整理；方药剂量与煎服法依讲义原文。"
     },
     {
@@ -1487,6 +1487,18 @@
       "edition": "倪海厦《人纪·金匮要略》讲义",
       "locator": "妇人杂病脉证治第二十二·温经汤",
       "quote": "师曰:此病属带下，何以故?曾经半产，瘀血在少腹不去。何以知之?其证唇口干燥，故知之。当温经汤主之。\n\n吴茱萸三两 | 当归、芎藭、芍药、人参、桂枝、阿胶、丹皮、生姜、甘草各二两 | 半夏半升 | 麦门冬一升\n\n上十二味，以水一斗，煮取三升，分温二服，亦主妇人少腹寒，久不受胎;\n「右十二味药」,以水来煮，煮完以后去渣喝汤。「 妇人少腹寒」「久不受胎，兼治崩中去血，或月水来过多，及至期不来」。\n\n兼治崩中去血，或月水来过多，及至期不来。\n月经常常延后或提前，可以用温经汤做加减。\n「问曰:妇人年五十」,就是女子更年期到了，现在专门讲更年期大家要将这个部份学好，免得以后麻烦很多。\n如果女孩子更年期到了出现「下利」时，此处的下利其实是下血。七七四十九癸竭后，月经应该停止，如果到了五十岁以后月经还是不断的来，就是下血「数十日不止」。\n更年期，所病下利，不是拉肚子，是下血不止，应该没有月经了，还是有月经，数十日不止，一直不停。\n「暮即发热」，到了黄昏晚上就发热。\n「少腹里急」，如果肚子里面如抽筋般的痛。\n「腹满」，肚子胀满。\n「手掌烦热」手掌是阴,手背是阳,此处的手掌热是因为阴虚才产生的烦热。\n病人「唇口干燥」。\n为什么月经停经了会变成还这样子呢?张仲景说，这个病就是所谓「带下」，对于妇人杂病，我们有一个统一的名称就叫「带下」。\n其原因是「曾经半产」,妇人年轻时可能流产过，造成「瘀血在少腹不去」。有的人是生完小孩后，子宫没有清除干净，还有血在里面。于是造成现在的唇口干燥，这时候当以「温经汤」主治之。\n因为妇人停经时子宫会萎缩，如果用大剂的药去攻是不正确的。病家子宫在萎缩时我们多用温经汤，因为有瘀血在少腹，温经汤专门针对子宫虚寒时用的，所以除了女子更年期时可用以外，月经来得不顺、或是子宫有瘀血不能够去除、还有一种就是妇人不孕时也都可以用到它。\n温经汤是中医过去用做求子的处方，所以大家可以在温经汤旁边写上「长年血寒」就是经年累月长年的血寒积结在胞门、在子宫里面。「寒」就是冷，就是里面有缺氧，就是静止不动，是血块瘀积在子宫里面造成的，所以温经汤也是求子的处方。\n诸位看吴茱萸，张仲景选用吴茱萸是因为吴茱萸入肝经，能够让肝血很活络，能够让肝血到子宫去。\n吴茱萸，在肝虚的时候用。肝虚时，第一会头痛、呕吐，不管月经来不来，只要头痛的时候呕吐，吐翻了，就是吴茱萸汤证。头部，肝脏直接进入百会，再到眼睛里，所以眼珠子痛，眼珠子后面痛，旁边痛，都可以用吴茱萸。肝经络到子宫，所以用吴茱萸补子宫的虚。\n当归、川芎、芍药本身是补血的，能够让血量增加。\n当归、芎藭、芍药、人参、桂枝、阿胶、丹皮、生姜、甘草。原方这些都是等量的，但是你要会做加减。比如这个太太，人很虚，又有便秘，吴茱萸可以补肝的阴，就是肝脏的血，阿胶可以加重，病人很虚，肚子又痛，里面血结在胞门，芍药就可以加重。又有便秘，人太虚了不能用大黄芒硝，就加重当归，里面的油脂可以通利大便。\n人参桂枝，跟后面的生姜、甘草这些都是行阳的药，能够让阳气旺盛起来阳气盛时血就会跟著走动，这是可以生阳又活血的药物组合。\n阿胶是我们用止血补血的药，因为病人有漏下，丹皮是要攻瘀的药，因为女子寒血集中在胞门中。如果我们硬要去攻它,病人身体会跟著虚脱掉,所以我们必须要确定她有瘀血时，或是女孩子子宫太冷而不会怀孕时才会使用。\n阿胶可以止血，但是血很虚的情况下，阿胶可以补血，同时可以利月经。所以病人三四个月没有月经来，就是温经汤证，开了阿胶，吃了月经就来了。只有实证的时候，你看那女的体格很壮，阿胶一下去月经就不来了，胸部很胀，奶水下不来，情绪也会不好，严重的会发狂奔走，送到精神病院。\n用到半夏，是因为痰，女孩子想的比较多，比较忧郁。\n麦门冬，可以润肺。行阳的药把心脏的力量强大后，再把肺的津液补回去，黄昏的时候发热，就是上焦的肺里没有津液了，心火往上走，把肺补足，再用桂枝把火导入小肠，在一些用活血化瘀，补血就好。\n一股来说西医讲的子宫内膜异位，就是温经汤证。\n只要妇人子宫冷，就无法受胎，有时月经来的太多，有时又到期不来，都可以使用温经汤来治。久年不孕也可以利用温经汤来助孕，所以温经汤是个很好用的方子。",
+      "note": "据倪海厦《人纪·金匮要略》讲义整理；方药剂量与煎服法依讲义原文。"
+    },
+    {
+      "id": "src-jingui-d3e716",
+      "type": "classic",
+      "work": "金匮要略",
+      "parentWork": "伤寒杂病论",
+      "parentNote": "倪海厦《人纪·金匮要略》讲义，按原篇章整理。",
+      "author": "张仲景",
+      "edition": "倪海厦《人纪·金匮要略》讲义",
+      "locator": "妇人杂病脉证治第二十二·土瓜根散",
+      "quote": "带下经水不利，少腹满痛，经一月再见者，土瓜根散主之。\n\n土瓜根 芍药 桂枝 蟅虫各三分\n\n上四味杵为散，酒服方寸匕，日三服。\n\n「带下」只要讲到带下就是月经的病。\n如果病人「经水不利，少腹满痛，经一月再见者，土瓜根散主之。」月经来了一个月，结果第二个月没有了，到第三个月又来，中间会停经一个月，年纪轻轻的女子寒结子宫时，我们要用土瓜根散。\n土瓜根散中有土瓜根、芍药、桂枝、虫等分，如果没有虫，可以改用桃仁、红花。还有时方中用的三菱、莪术之类的活血化瘀药物，这些都是通经的药。\n三棱、莪术、桃仁、丹皮啊，用粉剂就行。当我们攻肿瘤或者炎症的时候，粉剂力量会比较专一，不会像汤剂跑的那么快。\n一般月经如果没有正常来的话我们就要攻经，让月经出来就靠这个土瓜根散。\n吃到每个月月经来就行了。\n诸位如果要用温经汤，最主要的病人症状是脣干口燥，表示里面血虚，如果病人没有血虚，就不需要用温经汤，直接用土瓜根散攻出来就好了。\n温经汤跟土瓜根散都是治疗血结胞门用的，差异是一个是血虚、一个是血足。温经汤是血不足时用的，所以嘴巴才会口干舌燥。",
       "note": "据倪海厦《人纪·金匮要略》讲义整理；方药剂量与煎服法依讲义原文。"
     },
     {
@@ -1808,48 +1820,8 @@
       ],
       "modifications": [
         {
-          "condition": "白天三四次",
-          "change": "晚上再吃一次，如果肚子没有热起来，再增加到三四丸。",
-          "citationIds": [
-            "src-jingui-ce0396"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "吐多者",
-          "change": "去术加生姜三两。",
-          "citationIds": [
-            "src-jingui-ce0396"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "悸者",
-          "change": "加茯苓二两。",
-          "citationIds": [
-            "src-jingui-ce0396"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "腹中痛者",
-          "change": "加人参，足前成四两半。",
-          "citationIds": [
-            "src-jingui-ce0396"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "腹满者",
-          "change": "去术加附子一枚。",
-          "citationIds": [
-            "src-jingui-ce0396"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "寒湿累积很多的时候",
-          "change": "胀满，加炮附子。",
+          "condition": "理中丸能去里寒湿",
+          "change": "同时补足肠胃的津液，是治疗肠胃寒湿之主要处方。",
           "citationIds": [
             "src-jingui-ce0396"
           ],
@@ -1985,16 +1957,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "遇到吐到已经无可吐",
-          "change": "下利到已经无可利的阶段时，病人必虚汗出不止，因为里阴已极虚，无法固阳，因而仅存之阳外出，故可见汗出，此时四肢已经无阴可以滋润，又无阳可以伸屈，所以四肢会拘急不解，脉当是微细欲绝，这是通脉四逆汤加猪胆汁汤证。",
-          "citationIds": [
-            "src-jingui-850f9d"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -2160,48 +2123,8 @@
       ],
       "modifications": [
         {
-          "condition": "桂枝汤下去",
-          "change": "会有一点微汗，是因为用药把病毒赶出去，要把肠胃的津液换一遍，如果没有生姜、红枣、甘草，吃下去虽然也好了，但是肠胃里面还是不干净，因为生病这几天，肠胃的吸收不好，有宿食，没有换掉，生姜可以去掉胃中停水，甘草解宿食的毒，红枣当成胃液。",
-          "citationIds": [
-            "src-jingui-1dfb90"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "表实的话我们要用葛根汤",
-          "change": "病人发痉病，就是现代所谓脑膜炎之类的病，西药麻黄素也有发汗去热的功能，可是西医知道要去热，但他们没有区分无汗跟有汗。",
-          "citationIds": [
-            "src-jingui-1dfb90"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "张仲景把痉病分无汗跟有汗",
           "change": "无汗的话是表实，这要用葛根汤来去除表实，当病人表虚掉时，葛根汤就不行用了，有汗我们必须要用栝蒌桂枝汤。",
-          "citationIds": [
-            "src-jingui-1dfb90"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "栝蒌根桂枝汤",
-          "change": "就是桂枝汤加栝蒌根而已。",
-          "citationIds": [
-            "src-jingui-1dfb90"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "」因为葛根汤是用桂枝汤加麻黄再加葛根而成的",
-          "change": "如果把麻黄拿掉就只是桂枝汤加葛根而已。",
-          "citationIds": [
-            "src-jingui-1dfb90"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "随证调整",
-          "change": "此时就要靠葛根把它升提起来然后发散出去。",
           "citationIds": [
             "src-jingui-1dfb90"
           ],
@@ -2340,14 +2263,6 @@
       ],
       "modifications": [
         {
-          "condition": "纯麻黄汤",
-          "change": "不加白术，会发大汗。",
-          "citationIds": [
-            "src-jingui-e0fbb3"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "如果麻黄变成2",
           "change": "桂枝2，就只用煮一次就行，不用先煮麻黄去上沫。",
           "citationIds": [
@@ -2374,14 +2289,6 @@
         {
           "condition": "「老师",
           "change": "如何查到寒湿在表?」这的确是个问题，仲师就讲了你看「湿家，身烦疼，可与麻黄加术汤,发其汗为宜，」因为本来病人就有湿在里面，平常的湿运动流汗后就好了，湿在身体里面平常是没有什么感觉的，一旦得到麻黄汤证，寒将表束住了，就会产生痛。",
-          "citationIds": [
-            "src-jingui-e0fbb3"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "原因是身体上的湿没有办法从皮肤表面散出来",
-          "change": "这个湿是源自肺再到皮肤表面，当皮肤表面上受到寒时，要让病人的毛孔打开来去寒,一定要靠麻黄汤,而麻黄汤一下去就会发汗。",
           "citationIds": [
             "src-jingui-e0fbb3"
           ],
@@ -2517,56 +2424,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "黄芪行气",
-          "change": "把水液带动，在加防己，把药带到血脉旁边，白术同时可以去湿，搭配不同的药，就到不同的地方。",
-          "citationIds": [
-            "src-jingui-e86f65"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "随证调整",
-          "change": "喘者加麻黄半两。",
-          "citationIds": [
-            "src-jingui-e86f65"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "太胖了",
-          "change": "走路会喘，加点麻黄下去。",
-          "citationIds": [
-            "src-jingui-e86f65"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "胃中不和者",
-          "change": "加芍药三分。",
-          "citationIds": [
-            "src-jingui-e86f65"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "气上冲者",
-          "change": "加桂枝三分。",
-          "citationIds": [
-            "src-jingui-e86f65"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "大肠的沼气",
-          "change": "被惊吓后，顺血管，进入肝，再进入心脏，心就会动悸，要把沼气推回去，就靠桂枝。",
-          "citationIds": [
-            "src-jingui-e86f65"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -2715,48 +2573,8 @@
       ],
       "modifications": [
         {
-          "condition": "当你把湿去掉时",
-          "change": "很容易伤到肠胃的津液，炮附子重了，病人容易便秘，所以加生姜、甘草、红枣。",
-          "citationIds": [
-            "src-jingui-5185c6"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "所以芍药能够止腹痛",
-          "change": "如果病人出现血虚时，我们经方家是绝对不会去用芍药的，因为芍药味酸，而且带苦味，故主泻下。",
-          "citationIds": [
-            "src-jingui-5185c6"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "例如张仲景用芍药甘草汤",
-          "change": "去治疗腿不得伸曲。",
-          "citationIds": [
-            "src-jingui-5185c6"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "如果我们把桂枝汤中的白芍拿掉",
-          "change": "桂枝汤本来是要解除病在肌理时用的，现在用炮附子来代替芍药，是因为我们知道是寒湿停留在肌肉中，才造成病人身体烦疼，不能自转侧，而去寒就要靠附子。",
-          "citationIds": [
-            "src-jingui-5185c6"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "所以将桂枝汤中的白芍拿掉",
-          "change": "改成炮附子、「附子三枚炮去皮」炮用。",
-          "citationIds": [
-            "src-jingui-5185c6"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "白芍攻血",
-          "change": "脉虚而涩，白芍下去会更虚。",
+          "condition": "如果遇到病人有「大便坚",
+          "change": "小便自利」此时就把桂枝拿掉，加白术与附子，就是白术附子汤。",
           "citationIds": [
             "src-jingui-5185c6"
           ],
@@ -2850,32 +2668,7 @@
           ]
         }
       ],
-      "modifications": [
-        {
-          "condition": "这个百合滚了以后",
-          "change": "你如果要煮百合桂圆汤，你最好先煮桂圆，先将桂圆煮熟了，等味道出来汤变浓了以后，再把百合丢下去。",
-          "citationIds": [
-            "src-jingui-ee6745"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "百合这个药的性有一点黏黏腻腻的",
-          "change": "能够停在肠胃里面增加肠胃的津液，也因此能够让大便排出去。",
-          "citationIds": [
-            "src-jingui-ee6745"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "百合入肺",
-          "change": "就是说百合这个药能够增加肺的津液。",
-          "citationIds": [
-            "src-jingui-ee6745"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -3011,7 +2804,7 @@
         "locator": "百合狐惑阴阳毒证治第三·百合滑石代赭汤"
       },
       "effects": {
-        "text": "百合一两，滑石三钱。百合病人被误攻下后，就要用百合滑石代赭汤。",
+        "text": "讲义未单列功效概括，详见下方方证与讲解。",
         "citationIds": [
           "src-jingui-5569a0"
         ],
@@ -3092,16 +2885,7 @@
           ]
         }
       ],
-      "modifications": [
-        {
-          "condition": "当病人被误攻下后产生下利不止时",
-          "change": "如果要止利的话，就要用涩剂，再加入利小便的药，把水从小便排出来，不要让水从大便走。",
-          "citationIds": [
-            "src-jingui-5569a0"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -3309,24 +3093,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "渴的时候病人水喝下去就下利出去",
-          "change": "或是小便流失掉了，反正就是身体不受，渴症本是很简单治的，像是用栝蒌根或是用白虎人参汤之类都可以治渴，如果服用后照样还渴，表示身体已经不受。",
-          "citationIds": [
-            "src-jingui-3ae220"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "牡蛎咸味、性寒",
-          "change": "但是它能够把上焦因渴而造成的虚热导引到下焦来，让虚热从小便走掉，再利用栝蒌根来增加病人的津液，这几个都是百合病的变方。",
-          "citationIds": [
-            "src-jingui-3ae220"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -3358,7 +3125,7 @@
         "locator": "百合狐惑阴阳毒证治第三·百合滑石散"
       },
       "effects": {
-        "text": "当百合病人如果变成发热，一直没有好，这个时候我们就要更换为百合滑石散。要靠滑石，把热从小便利掉。",
+        "text": "讲义未单列功效概括，详见下方方证与讲解。",
         "citationIds": [
           "src-jingui-b79835"
         ],
@@ -3534,38 +3301,6 @@
             "src-jingui-c3c009"
           ],
           "kind": "analysis"
-        },
-        {
-          "condition": "赤小豆去湿",
-          "change": "当归补血外，还能活血。",
-          "citationIds": [
-            "src-jingui-c3c009"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "当归本身就是入血分",
-          "change": "能够把赤小豆带到血里面去，然后赤小豆就可以去它的湿。",
-          "citationIds": [
-            "src-jingui-c3c009"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "大家看",
-          "change": "脓已经成了就会湿湿黏黏，赤小豆能够同时去湿去热，一旦化脓后就必然伤到血，所以要用当归造血，让新的血过来，让它补病家丧失的血，当归赤小豆散是我们中药里面很有名的专门治疗腹膜炎用的处方。",
-          "citationIds": [
-            "src-jingui-c3c009"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "赤小豆我用的很多",
-          "change": "不但能够去热而且能够解毒，腹膜炎产生的毒素它能够把它解掉，是治疗腹膜炎很有名的药，凡是遇到溼热的毒，张仲景通通会使用到赤小豆。",
-          "citationIds": [
-            "src-jingui-c3c009"
-          ],
-          "kind": "analysis"
         }
       ],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
@@ -3663,13 +3398,55 @@
           }
         },
         {
-          "herbId": "jingui-herb-88255e",
-          "herbName": "升麻 当归 甘草各",
+          "herbId": "shanghan-herb-f1as",
+          "herbName": "升麻",
           "dosage": "二两",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-e890ef"
-          ]
+          ],
+          "action": {
+            "text": "体内里面太热了就是阳毒，就是所谓的升麻鳖甲汤证。",
+            "citationIds": [
+              "src-jingui-e890ef"
+            ],
+            "kind": "analysis",
+            "locator": "百合狐惑阴阳毒证治第三·升麻鳖甲汤"
+          }
+        },
+        {
+          "herbId": "shanghan-herb-gqjj",
+          "herbName": "当归",
+          "dosage": "二两",
+          "role": "未标注",
+          "roleCitationIds": [
+            "src-jingui-e890ef"
+          ],
+          "action": {
+            "text": "鳖甲和当归一起用，当归入血分，当归带着鳖甲，一起入肝脏，因为肝藏血。",
+            "citationIds": [
+              "src-jingui-e890ef"
+            ],
+            "kind": "analysis",
+            "locator": "百合狐惑阴阳毒证治第三·升麻鳖甲汤"
+          }
+        },
+        {
+          "herbId": "gancao",
+          "herbName": "甘草",
+          "dosage": "二两",
+          "role": "未标注",
+          "roleCitationIds": [
+            "src-jingui-e890ef"
+          ],
+          "action": {
+            "text": "然后发散病毒出去的就要靠几个解毒药，靠升麻、甘草，甘草本身就解百毒，蜀椒的性很辛、很热，也能解湿毒，蜀椒和雄黄都是阳性的药，蜀椒入肺,我们后面将会介绍的大建中汤就会用到蜀椒,蜀是阳性的药，所以走阳、走气、走气分、走表。",
+            "citationIds": [
+              "src-jingui-e890ef"
+            ],
+            "kind": "analysis",
+            "locator": "百合狐惑阴阳毒证治第三·升麻鳖甲汤"
+          }
         },
         {
           "herbId": "jingui-herb-d2eadc",
@@ -3681,56 +3458,7 @@
           ]
         }
       ],
-      "modifications": [
-        {
-          "condition": "所以处方一定要有润肤",
-          "change": "滋润皮肤，滋阴把津液补回去，还要让病邪能够透邪，透发到身体外面，还有解毒，所以要用能治这四种问题的药物。",
-          "citationIds": [
-            "src-jingui-e890ef"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "雄黄一定要生用",
-          "change": "撒一点下去，过去的药房的师傅，指甲比较长，汤药煮好后，就挑一指甲雄黄放下去，你不能拿慈禧太后的指甲，太长了，我们只要两三分就好了。",
-          "citationIds": [
-            "src-jingui-e890ef"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "这个时候选用鳖甲是因为鳖甲本身并没有毒性",
-          "change": "但是鳖甲的性很刚烈而且坚忍，又由于鳖甲是入肝经，当鳖甲遇到当归时，由于鳖甲本身能直入血的最深处，当归跟鳖甲混在一起的时候，就可以跑到肝里面去了，进入肝后肝脏会变的很刚硬很坚强，而肝脏就不会受到病毒的损害。",
-          "citationIds": [
-            "src-jingui-e890ef"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "然后发散病毒出去的就要靠几个解毒药",
-          "change": "靠升麻、甘草，甘草本身就解百毒，蜀椒的性很辛、很热，也能解湿毒，蜀椒和雄黄都是阳性的药，蜀椒入肺,我们后面将会介绍的大建中汤就会用到蜀椒,蜀是阳性的药，所以走阳、走气、走气分、走表。",
-          "citationIds": [
-            "src-jingui-e890ef"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "斑疹伤寒这些病毒都在表上面",
-          "change": "所以他开的鳖甲当归先去固肝，不要让病人在毒未解除时先死掉，使用这些升麻、甘草、雄黄，都是解毒的药。",
-          "citationIds": [
-            "src-jingui-e890ef"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "实际上当归和鳖甲",
-          "change": "最主要鳖甲的性是刚而且坚，护卫肝脏的，不要让这个病毒进去。",
-          "citationIds": [
-            "src-jingui-e890ef"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -3885,32 +3613,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "前面条辨说的瘅疟",
-          "change": "是发生在胃里面，所以是小柴胡汤加入白虎汤。",
-          "citationIds": [
-            "src-jingui-caf4ab"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "这里说的是治温疟的主方",
-          "change": "石膏、知母、甘草、粳米这是白虎，加了桂枝。",
-          "citationIds": [
-            "src-jingui-caf4ab"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "然而到底该是白虎加重还是桂枝加重",
-          "change": "这个时候就要看他的太阳证有多少，太阳证少，阳明证多，就一定是加重使用白虎。",
-          "citationIds": [
-            "src-jingui-caf4ab"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -3980,57 +3683,75 @@
       },
       "composition": [
         {
-          "herbId": "jingui-herb-dc1d40",
-          "herbName": "防己 甘草各",
+          "herbId": "jingui-herb-43073f",
+          "herbName": "防己",
           "dosage": "一分",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-e58166"
-          ]
+          ],
+          "action": {
+            "text": "真的发狂也是防己地黄汤。",
+            "citationIds": [
+              "src-jingui-e58166"
+            ],
+            "kind": "analysis",
+            "locator": "中风历节病脉并第五·防己地黄汤"
+          }
         },
         {
-          "herbId": "jingui-herb-1a94e6",
-          "herbName": "桂枝 防风各",
+          "herbId": "gancao",
+          "herbName": "甘草",
+          "dosage": "一分",
+          "role": "未标注",
+          "roleCitationIds": [
+            "src-jingui-e58166"
+          ],
+          "action": {
+            "text": "防己、甘草、桂枝、防风这些药的比例，防己、甘草是一，桂枝是三。",
+            "citationIds": [
+              "src-jingui-e58166"
+            ],
+            "kind": "analysis",
+            "locator": "中风历节病脉并第五·防己地黄汤"
+          }
+        },
+        {
+          "herbId": "guizhi",
+          "herbName": "桂枝",
           "dosage": "三分",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-e58166"
-          ]
+          ],
+          "action": {
+            "text": "防己、甘草、桂枝、防风这些药的比例，防己、甘草是一，桂枝是三。",
+            "citationIds": [
+              "src-jingui-e58166"
+            ],
+            "kind": "analysis",
+            "locator": "中风历节病脉并第五·防己地黄汤"
+          }
+        },
+        {
+          "herbId": "jingui-herb-a836c5",
+          "herbName": "防风",
+          "dosage": "三分",
+          "role": "未标注",
+          "roleCitationIds": [
+            "src-jingui-e58166"
+          ],
+          "action": {
+            "text": "防己、甘草、桂枝、防风这些药的比例，防己、甘草是一，桂枝是三。",
+            "citationIds": [
+              "src-jingui-e58166"
+            ],
+            "kind": "analysis",
+            "locator": "中风历节病脉并第五·防己地黄汤"
+          }
         }
       ],
       "modifications": [
-        {
-          "condition": "随证调整",
-          "change": "为什么不用黄芪、党参、人参等很强的补虚的药去补？",
-          "citationIds": [
-            "src-jingui-e58166"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "这种状况之下",
-          "change": "中医的基本观念，就是要把表邪去掉，同时将体内的气血补足，因为里面虚寒才造成这样子，治此病并不是从肝脏入手，所以仲师用防已地黄汤。",
-          "citationIds": [
-            "src-jingui-e58166"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "同时像防已本身能够去湿",
-          "change": "中气不足的时候用甘草。",
-          "citationIds": [
-            "src-jingui-e58166"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "靠桂枝甘草来健中",
-          "change": "来加强病人的肠胃功能，然后开一点防已防风去风。",
-          "citationIds": [
-            "src-jingui-e58166"
-          ],
-          "kind": "analysis"
-        },
         {
           "condition": "如果你说",
           "change": "「老师啊，去风我们可以用很大剂的表药。",
@@ -4119,16 +3840,7 @@
           ]
         }
       ],
-      "modifications": [
-        {
-          "condition": "这种状况之下我们用炮附子做粉跟盐合用",
-          "change": "比如说你拿一茶匙的炮附子粉剂，然后拿一茶匙的盐巴，两个等量将之混合在一起，然后加入水和一和，直接涂在头痛的地方，这就是专门治疗强烈头痛的外敷药，这头风摩散，就比较像张仲景的处方。",
-          "citationIds": [
-            "src-jingui-83ddeb"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -4277,30 +3989,6 @@
       ],
       "modifications": [
         {
-          "condition": "麻黄碰上细辛",
-          "change": "少阴证的麻黄附子细辛汤，在经方中，增加胆气唯一的药就是细辛，吃了最让人大胆的就是大麻，古代作战部队，到西域作战，赶路就要半年，行军的时候，部队之间就会起冲突心情不好，这时候就用大麻，让心情好，同时大麻可以止痛，作战的时候用大麻，胆气大，手砍断了之后都不会有痛觉，也不会上瘾。",
-          "citationIds": [
-            "src-jingui-6b0f62"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "细辛加麻黄",
-          "change": "可以去里寒，手足拘急，怕冷恶寒都可以去掉。",
-          "citationIds": [
-            "src-jingui-6b0f62"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "人会中风",
-          "change": "就是气血两虚了，所以不能大攻发表，不用很多强力去风药，比如独活、羌活、防风。",
-          "citationIds": [
-            "src-jingui-6b0f62"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "遇到这种情形的中风",
           "change": "大家就用千金三黄汤，千金三黄汤是麻黄、黄耆、黄芩，然后再加独活还有细辛。",
           "citationIds": [
@@ -4309,16 +3997,8 @@
           "kind": "analysis"
         },
         {
-          "condition": "黄耆作用在表虚",
-          "change": "麻黄用来发病人的肺阳，可以将病人全身骨节痠痛去掉，独活就是协助麻黄去发表汗，当麻黄遇到细辛时，细辛会把麻黄拉住。",
-          "citationIds": [
-            "src-jingui-6b0f62"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "所以伤寒论少阴证时",
-          "change": "我们使用麻黄附子细辛汤，病人吃了麻黄附子细辛汤反而不会流汗，只会让小便量增加，少阴证就得解了。",
+          "condition": "如果你说",
+          "change": "「老师!我们平常都喜欢加甘草。",
           "citationIds": [
             "src-jingui-6b0f62"
           ],
@@ -4533,14 +4213,6 @@
       ],
       "modifications": [
         {
-          "condition": "一般来说",
-          "change": "麻黄剂量要比桂枝大一点，比如麻黄五钱，桂枝三钱，但是麻黄要先煮过去沫。",
-          "citationIds": [
-            "src-jingui-f7a1dd"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "第二个方子是很有名治疗中风的处方",
           "change": "方名叫做「小续命汤,平常我们看到中风，十之八九都是在小续命汤上面做加减，小续命汤源出于外台秘要。",
           "citationIds": [
@@ -4557,24 +4229,24 @@
           "kind": "analysis"
         },
         {
-          "condition": "这个时候如果我们加入当归川芎",
-          "change": "只遇到病人血虚掉，就用当归来补血，川芎是活血用的，川芎一下去，能够让我们补进去的血运送到全身四肢关节上去，所以用川芎。",
+          "condition": "如果病人有壮热出现的时候",
+          "change": "石膏就要加重。",
           "citationIds": [
             "src-jingui-f7a1dd"
           ],
           "kind": "analysis"
         },
         {
-          "condition": "平常得到中风的病人",
-          "change": "多半兼有痰涎壅塞的现象，积在胸腔里面的痰，会使胸腔里面太热，所以最后再加了石膏，石膏在此是要去里热的。",
+          "condition": "吃小续命汤的时候要注意一点",
+          "change": "这个药吃下去以后，病人要采坐姿，坐在那边，得汗则解。",
           "citationIds": [
             "src-jingui-f7a1dd"
           ],
           "kind": "analysis"
         },
         {
-          "condition": "「老师",
-          "change": "此处为什么不用涤痰的药?」我告诉大家，因为病人已经虚了，所以不加。",
+          "condition": "如果遇到说",
+          "change": "「老师，他没汗啊?」没汗就再吃，因为药没有到位，等到药到位了就会得汗，采坐姿，得汗就会好，可以停药了，这是我们最常用的治疗中风的方子，我常常在这个方子里面做加减，这个处方非常好用。",
           "citationIds": [
             "src-jingui-f7a1dd"
           ],
@@ -4705,32 +4377,7 @@
           ]
         }
       ],
-      "modifications": [
-        {
-          "condition": "川芎能够活血",
-          "change": "让血液循环加速，把血管保护的很好，让破裂的血管恢复。",
-          "citationIds": [
-            "src-jingui-5142de"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "补阳还五汤可以用",
-          "change": "但是发现病人吃下后血虚，比如脸色气色，耳朵都变苍白了，嘴唇唇角没有颜色，比较青，手掌呢不够红，这都是血比较虚了，这时候你就把地龙减量，增加当归川芎。",
-          "citationIds": [
-            "src-jingui-5142de"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "痛经",
-          "change": "每次月经来还有手脚冰冷，月经延后，延后就是寒证嘛，这时候你加热药下去，淤血块就化掉了。",
-          "citationIds": [
-            "src-jingui-5142de"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -4971,24 +4618,24 @@
           "kind": "analysis"
         },
         {
-          "condition": "所以以后寒痛出现了",
-          "change": "就用热药，炮附子下去，比如说临床上癌症的痛，要想办法把痛去掉，比如说叫病人吃大麻啊，比如说病人乳癌转移到骨癌，骨癌长在肋骨，痛的没办法睡觉，西医的止痛药或吗啡本来就会引起肝癌，乳癌也会移转肝癌，那不就没救了？",
+          "condition": "现代人不一样了",
+          "change": "病人来之前都吃了止痛药，正常人吃止痛药伤肝了就会大便便秘，这时候桂枝芍药知母汤里面，就可以加大黄或枳实或厚朴看症状，如果是寒湿的话已经有麻黄附子了，就加大黄，或大黄附子细辛汤都可以用。",
           "citationIds": [
             "src-jingui-55dd24"
           ],
           "kind": "analysis"
         },
         {
-          "condition": "所以用附子、白术",
-          "change": "这两个就是排脓汤，加重之后，把癌症细胞往表面去推，同时去湿去寒。",
+          "condition": "针灸做的同时",
+          "change": "桂枝芍药知母汤可以再加牡蛎、补骨脂等一些增加骨头的药物就可以了，效果非常好。",
           "citationIds": [
             "src-jingui-55dd24"
           ],
           "kind": "analysis"
         },
         {
-          "condition": "桂枝是阳药",
-          "change": "厚味，辛香发散，有点辣味，心脏的火下降到小肠，就要靠桂枝，味厚下沉入血分，所以血就往下导入小肠，妇人的奶水就是月经，奶水无法排下来，最常用的处方就是四物汤加炒麦芽，处方来自《奇方异录》，如果力量不够，就要重用桂枝了，可以把她整个奶水排下来。",
+          "condition": "开立桂枝芍药知母汤处方时要记得",
+          "change": "要重用生姜,平常我们生姜两片就好，但是在这个处方中生姜要加重到五片，因为生姜到了胃里面去以后生姜产生的热是散开的，不像干姜是温中。",
           "citationIds": [
             "src-jingui-55dd24"
           ],
@@ -5133,48 +4780,7 @@
           ]
         }
       ],
-      "modifications": [
-        {
-          "condition": "这个处方的重点就是黄耆、芍药、桂枝是等量",
-          "change": "生姜要加重，如果只加两片，就没有效了，麻还是会照麻。",
-          "citationIds": [
-            "src-jingui-ef0b5a"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "生姜加重到五片、六片",
-          "change": "很辣，桂枝已经很辣了，这是因为要利用辛甘发散为阳，才能够让黄耆的药力从肠胃发散到四肢上去。",
-          "citationIds": [
-            "src-jingui-ef0b5a"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "不需要硬记加重生姜",
-          "change": "要体会，临证的时候看到胃脉弱，直觉就能想到多用生姜。",
-          "citationIds": [
-            "src-jingui-ef0b5a"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "气血两虚的症状会有麻痺的现象",
-          "change": "用黄耆是因为它能够通透皮表，所以能够去麻，桂枝汤之所以要有桂枝白芍就是要增加脾脏的功能。",
-          "citationIds": [
-            "src-jingui-ef0b5a"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "所以黄耆桂枝五物汤吃下去后胃口会开",
-          "change": "胃口一开吃了食物，血就被补足了。",
-          "citationIds": [
-            "src-jingui-ef0b5a"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -5359,14 +4965,6 @@
         {
           "condition": "但已经泄出去的精要靠牡蛎去把它补回来",
           "change": "龙骨只是固涩精不外流用的，桂枝汤用来健脾胃促进营养的吸收，对于失精家我们经方家最常用的处方就是桂枝龙骨牡蛎汤，这也是专门用来治虚劳的处方。",
-          "citationIds": [
-            "src-jingui-80bd9a"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "比如说这个人关节都痛",
-          "change": "然后气候一改变一下雨就痛，我们用桂枝芍药知母汤，这个时候，只要是肿瘤在里面的时候，牡蛎就加重，一两下去，全部都去掉了。",
           "citationIds": [
             "src-jingui-80bd9a"
           ],
@@ -5822,48 +5420,16 @@
       ],
       "modifications": [
         {
-          "condition": "」这种成因就是虚寒相抟",
-          "change": "这时候我们开补虚的药，还有去寒的药加在一起就可以了。",
-          "citationIds": [
-            "src-jingui-4a51fb"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "去寒的药也要开在里面",
-          "change": "像干姜、附子这类去寒的药，这是我们用脉症来做区分。",
-          "citationIds": [
-            "src-jingui-4a51fb"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "天雄的意思就是吃下去天天都雄壮威武",
-          "change": "故名叫天雄，天雄药力比附子强很多，附子是三年收成，而它是五年才收成。",
-          "citationIds": [
-            "src-jingui-4a51fb"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "你到药房去买天雄",
-          "change": "药房会告诉你天雄就是附子，一定会得到这个答案的。",
-          "citationIds": [
-            "src-jingui-4a51fb"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "滋补的药",
-          "change": "一般不会开龙骨，牡蛎在这个更好，因为你在补肾啊，滋阴啊，龙骨是收敛的，他是虚症需要很强的药去补。",
-          "citationIds": [
-            "src-jingui-4a51fb"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "这个药在经方里面",
           "change": "是属于很强的补阳药主治症状还包含阳不举，如果服了天雄散后仍然不举，表示天雄散没有用了，此时我们就需要用到像阳起石，肉蓰蓉等，还可以再加一些鹿茸，这几味都是我们中药里面一般的壮阳的药。",
+          "citationIds": [
+            "src-jingui-4a51fb"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "condition": "这几个药都是等量的比例在用的",
+          "change": "也可以把鹿茸拿去泡酒，然后一边喝鹿茸酒，一边服天雄散也可以，这些都是中药里面比较强的壮阳药，一般是阳虚时才会用到。",
           "citationIds": [
             "src-jingui-4a51fb"
           ],
@@ -6280,14 +5846,6 @@
             "src-jingui-9142a8"
           ],
           "kind": "analysis"
-        },
-        {
-          "condition": "实际上我们不需要去做这个药",
-          "change": "因为平常就在吃六味地黄丸，体内虚劳补足以后就可以了，病家有桂枝汤证出现时，我们就用桂枝汤来发表。",
-          "citationIds": [
-            "src-jingui-9142a8"
-          ],
-          "kind": "analysis"
         }
       ],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
@@ -6440,30 +5998,6 @@
         {
           "condition": "年龄大了",
           "change": "身体衰弱下去，产生的失眠，就是酸枣仁汤。",
-          "citationIds": [
-            "src-jingui-e29810"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "所以在妇科治症里",
-          "change": "常常都会加些川芎在处方里,像四物汤里面也都会有川芎。",
-          "citationIds": [
-            "src-jingui-e29810"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "为什么要用甘草、知母呢?因为虚烦的人",
-          "change": "一定会有热在上焦，因此白虎汤里用到知母，就是专门作为除烦去热用的。",
-          "citationIds": [
-            "src-jingui-e29810"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "知母能入肺",
-          "change": "能除烦，手足躁扰，晚上烦的不能睡觉，都可以加知母，好像抗忧郁药一样。",
           "citationIds": [
             "src-jingui-e29810"
           ],
@@ -6751,56 +6285,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "有淤血在",
-          "change": "吃什么补药都进不去。",
-          "citationIds": [
-            "src-jingui-7bcb05"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "但是如果要用到桂附八味丸",
-          "change": "病人同时又有热症出现时，你就要在桂附八味丸里面加一点黄芩、黄连，就是去热的药跟补虚的药同时使用如此就不会热了。",
-          "citationIds": [
-            "src-jingui-7bcb05"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "过去蛴螬跟蟅虫两种药",
-          "change": "在本草里面扯不清楚，但是都是会咬血的虫。",
-          "citationIds": [
-            "src-jingui-7bcb05"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "在这里大家看看就好",
-          "change": "因为这是汉朝留下来的药方，我们有时候到这个药房去买蟅虫时，药房说就是地鳖虫，有时候我们要买蛴螬药房就会说没有统一使用的蛴螬。",
-          "citationIds": [
-            "src-jingui-7bcb05"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "随证调整",
-          "change": "其他你加川芎、丹皮、红花、牛膝、茜草都是活血化瘀的。",
-          "citationIds": [
-            "src-jingui-7bcb05"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "公孙与内关可以行气来治内伤的部分",
-          "change": "然后使用小柴胡汤加桃仁、红花。",
-          "citationIds": [
-            "src-jingui-7bcb05"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -7017,32 +6502,8 @@
       ],
       "modifications": [
         {
-          "condition": "越重的病出现时",
-          "change": "经方家用的药反而就越少，溢饮是十枣汤证，此药吃下去三个小时之内就可以将积水清除干净。",
-          "citationIds": [
-            "src-jingui-9eab07"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "大家看此方是将小青龙汤里的芍药与甘草取出",
           "change": "留下麻黄、生姜、细辛、大枣、半夏、五味子，加入射干、紫苑、款冬花，款冬花这个药，本身就是专门止咳用的，尤其是水饮的咳嗽，大部分都会用到款冬花。",
-          "citationIds": [
-            "src-jingui-9eab07"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "射干能够排水",
-          "change": "紫苑能够降逆、下气，就是能让肺泡收缩起来，五味子能够把里面的水气整个排下去，这几个药一直都是配在一起用的。",
-          "citationIds": [
-            "src-jingui-9eab07"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "肺里面的寒会盛",
-          "change": "原因很简单，是因为肠胃的功能不好了，才会这样，这时候加入生姜、红枣是因为肺里面有留饮的时候基本上都是来自胸膈，胸膈有湿气下去，就会造成水气上下不交，于是水气就会慢慢累积起来，日久就变成留饮留在中焦一带，因此水气才会停留在肺里面。",
           "citationIds": [
             "src-jingui-9eab07"
           ],
@@ -7057,8 +6518,24 @@
           "kind": "analysis"
         },
         {
-          "condition": "平常生姜二片就够了",
-          "change": "而这里仲师特别加重生姜的量，其目的是除了止呕以外，还要打散中焦水气用的。",
+          "condition": "所以仲师用麻黄下去把将水气发表发出去",
+          "change": "利用最近的路线将病毒发出去，所以这个方子对「咳而上气」类似西医讲的「肋膜炎」或胸腔里有很深的咳嗽，或带有水气的寒性气喘特别有用。",
+          "citationIds": [
+            "src-jingui-9eab07"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "condition": "如果射干麻黄汤服下去",
+          "change": "病人发汗，小便也排出来，结果还是没有好，还有但坐不得卧，就是当你还在熬药的时候，病人的病情已经变成十枣汤证。",
+          "citationIds": [
+            "src-jingui-9eab07"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "condition": "如果你认为药不对了",
+          "change": "需要赶快转用十枣汤，其实诸位也不要心急，病情不会变化得如此之快就是因为预防病情再进一步，造成失治，所以会再加入半夏来去水。",
           "citationIds": [
             "src-jingui-9eab07"
           ],
@@ -7287,38 +6764,6 @@
             "src-jingui-8e99da"
           ],
           "kind": "analysis"
-        },
-        {
-          "condition": "此处因为有水在里面",
-          "change": "而甘草会蓄水，所以我们只用半夏去利水。",
-          "citationIds": [
-            "src-jingui-8e99da"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "治疗痰饮、咳嗽的时候",
-          "change": "甘味会增腻，就是反而会增加痰饮，所以一般来说不用甘味的药。",
-          "citationIds": [
-            "src-jingui-8e99da"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "小麦加两汤匙就行",
-          "change": "不要一大碗下去。",
-          "citationIds": [
-            "src-jingui-8e99da"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "这个时候为什么不用生姜、甘草、大枣",
-          "change": "是因为他的病在肺在里面，我们加发表的药，使用麻黄时就已经有杏仁在里面，这个时候你不需要再加甜腻的药在里面，因为甘的药会增加痰水，所以用一点小麦，把胃里面津液补足就好，淡淡的没有味道下去就可以了。",
-          "citationIds": [
-            "src-jingui-8e99da"
-          ],
-          "kind": "analysis"
         }
       ],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
@@ -7537,48 +6982,16 @@
       ],
       "modifications": [
         {
-          "condition": "这个处方要注意",
-          "change": "就是紫参，是我要去找的药，过去都把紫菀当做紫参，其实紫参是紫参，现在市面上，有紫草、紫根、紫菀，就是没有紫参。",
-          "citationIds": [
-            "src-jingui-ed7121"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "生姜能够去饮",
-          "change": "白前能够宣肺。",
-          "citationIds": [
-            "src-jingui-ed7121"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "麻黄可以从肺一直开到皮表毛孔上去",
-          "change": "而白前是直接停在肺上面，将肺脏打开来，使肺的气不会那么闷。",
-          "citationIds": [
-            "src-jingui-ed7121"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "急救",
-          "change": "咳嗽气喘很厉害的时候，西医在你喘的很厉害，给你类固醇的吸入剂，中医用甘草麻黄汤，麻黄两钱，甘草三钱，三碗水煮一碗，一下去喘就停了，肺就打开了，应急用的。",
-          "citationIds": [
-            "src-jingui-ed7121"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "甘草是安脾脏用",
-          "change": "黄芩能去上热，能够泻热、泻肺热。",
-          "citationIds": [
-            "src-jingui-ed7121"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "这个泽漆汤服下去后",
           "change": "大部分的水会从嘴巴吐出来，还有小便利出来。",
+          "citationIds": [
+            "src-jingui-ed7121"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "condition": "如果病人血不够",
+          "change": "有燥渴，用生地黄生津，苦参也是一个很好的去热药。",
           "citationIds": [
             "src-jingui-ed7121"
           ],
@@ -7758,14 +7171,6 @@
       ],
       "modifications": [
         {
-          "condition": "我们中医认为半夏、生姜能够止呕",
-          "change": "就是半夏一下去，横隔就往下降，能够让你吞东西就不会恶心。",
-          "citationIds": [
-            "src-jingui-118057"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "「咽喉不利」就是吞食物都有困难",
           "change": "喝水都喝不下去，此时「止逆」的同时，也需要把这个肺痿去掉，就是麦门冬汤证了。",
           "citationIds": [
@@ -7774,24 +7179,8 @@
           "kind": "analysis"
         },
         {
-          "condition": "这里加入半夏",
-          "change": "前面有讲过燥不能用半夏,现在这里燥要用半夏原因是避免病人还有浊痰在肺里面，靠半夏把肺里面与横膈膜清除干净以后，使得新生出来肠胃的津液才能去补肺，交给肺的同时加入麦门冬，麦门冬是中药里面非常好的润肺的药物，当肺的津液不够时，我们要靠麦门冬来润肺。",
-          "citationIds": [
-            "src-jingui-118057"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "如果你光是麦门冬汤没有加粳米",
           "change": "病人吃完后，肚子会很饿，而且已经好几天没有吃东西，病人是不懂得病后需要调养。",
-          "citationIds": [
-            "src-jingui-118057"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "仲师就是怕这样子",
-          "change": "所以说干脆用粳米给病人吃下去，吃完药也不很饿，逐渐的吃进一点清淡的食物，让体力慢慢的恢复。",
           "citationIds": [
             "src-jingui-118057"
           ],
@@ -7927,24 +7316,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "所以",
-          "change": "黄痰出现，咳嗽很严重，喘的很严重，但是你问病人，可不可以躺下去睡，可以睡就是千金苇茎汤。",
-          "citationIds": [
-            "src-jingui-a7ae4a"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "不能躺下去睡",
-          "change": "就是里面已经化脓一部分了，赶紧用葶苈大枣泻肺汤。",
-          "citationIds": [
-            "src-jingui-a7ae4a"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -8040,24 +7412,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "临床上",
-          "change": "直接就一起煮了，不用分开，因为你不能相信病人啊，他的想法很天真的，讲完回去就忘掉了，尤其是美国人，吃西药吃的很多，记忆都不好。",
-          "citationIds": [
-            "src-jingui-d3bb4c"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "先把红枣汤熬好以后",
-          "change": "再把葶苈子放在红枣汤里面，再熬一下，就成药了，然后一次喝下去，葶苈子喝下去的时候病人会吐，因为葶苈子是属于催吐药。",
-          "citationIds": [
-            "src-jingui-d3bb4c"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -8161,56 +7516,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "桔梗就可以开一两",
-          "change": "我平常开出去就是一两，因为只有两位药嘛，再加甘草二两，也就一点点。",
-          "citationIds": [
-            "src-jingui-e9dd2c"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "甘草下去",
-          "change": "解毒以外，增加肠胃的津液。",
-          "citationIds": [
-            "src-jingui-e9dd2c"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "一般西医遇到肺有脓时就直接去抽脓",
-          "change": "病人会很难过,中医的排脓汤喝下去以后，脓也会被排出来，之后就转成麦门冬汤证了，当病人转成麦门冬汤证后，就表示快要好了。",
-          "citationIds": [
-            "src-jingui-e9dd2c"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "肺脓被排出去以后",
-          "change": "同时因为肺的组织也腐烂掉很多，使得肺整个萎缩上来，这就是标准的麦门冬汤证了。",
-          "citationIds": [
-            "src-jingui-e9dd2c"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "千万要记得",
-          "change": "如果你的麦门冬汤里面没有加半夏，就不叫麦门冬汤，以前为了加不加半夏而吵翻，像经方家曹颖甫、唐容川等意见都不一样，他们在吵的就是半夏的使用时机。",
-          "citationIds": [
-            "src-jingui-e9dd2c"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "其实甘草用得太轻了甘草应该用到二两",
-          "change": "甘草是解百毒的，又可以和中，但他用的太轻了五剂下去胸痛止，止了以后，二诊，他发现肺里面还有许多尚未被清除的像白米的痰，于是用葶苈大枣泻肺汤来去痰水，如果在一开始时就重用甘草，可能就不需要用到葶萨大枣泻肺汤，「五剂而如米粒之脓尽」。",
-          "citationIds": [
-            "src-jingui-e9dd2c"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -8362,30 +7668,6 @@
         {
           "condition": "肺胀",
           "change": "「其人喘」喘得很厉害,「目如脱状,脉浮大者,越婢加半夏汤主之。",
-          "citationIds": [
-            "src-jingui-bc90d0"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "肺胀气的时候如果病人是「烦躁而喘",
-          "change": "脉浮者，心下有水，小青龙加石膏汤主之。",
-          "citationIds": [
-            "src-jingui-bc90d0"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "这里为什么张仲景要加半夏?越婢汤还特别要加半夏",
-          "change": "就是因为病人肺胀的原因是来自中焦脾胃，中焦脾胃受到痰阻，没有办法把津液完全交给肺，于是肺就胀起来，这个时候我们要将中焦横膈地方的痰去掉，所以要加入半夏。",
-          "citationIds": [
-            "src-jingui-bc90d0"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "现在我们大家应该了解到神农本草经里在讲半夏能降逆的意思了",
-          "change": "越婢汤可以加半夏，小青龙汤呢?也有半夏，都用到半夏。",
           "citationIds": [
             "src-jingui-bc90d0"
           ],
@@ -8566,56 +7848,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "这种除外",
-          "change": "如果他没有咳而上气，就是坏人，不是病，干万不要误以为说:「老师:他是越婢加半夏汤证。",
-          "citationIds": [
-            "src-jingui-4c392f"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "小青龙加石膏",
-          "change": "小青龙汤里面有麻黄、姜、辛、五、草、半，但是就没有石膏在内，因为小青龙汤证是表寒里寒，舌头伸出来，舌苔是白厚的，表示里寒很盛，里寒是不会口渴的，小青龙汤证就无口渴，咳嗽时喉咙很痒。",
-          "citationIds": [
-            "src-jingui-4c392f"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "除了小青龙汤证的表寒里寒以外",
-          "change": "如果病人同时有肺胀的状态，就是有表寒的状态之下持续有肺气胀、肺气肿的现象存在，我们就要用小青龙加石膏。",
-          "citationIds": [
-            "src-jingui-4c392f"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "平常是不会得到肺气肿的",
-          "change": "大都是外来的因素造成，比方说住在排废气的工厂旁边或者做矿工的或是水泥工等，这类居住环境都容易引起肺气肿，还有我们抽烟也会容易肺气肿，这时可以在小青龙汤里面加点石膏就可以治疗肺气肿了。",
-          "citationIds": [
-            "src-jingui-4c392f"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "小青龙汤加石膏",
-          "change": "能够清上焦的热，石膏除了清热以外，最主要是清除肺里面的浊。",
-          "citationIds": [
-            "src-jingui-4c392f"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "大家一定要会区分病人到底是越婢汤加半夏证还是小青龙汤加石膏证",
-          "change": "后面要介绍的奔豚气病又会重新再介绍一遍。",
-          "citationIds": [
-            "src-jingui-4c392f"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -8822,24 +8055,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "所以里面",
-          "change": "甘草、黄芩、半夏、生姜，再加柴胡，有腹痛，一定用芍药，一受惊，小肠绷紧以后产生的腹痛，如果是腹满用厚朴。",
-          "citationIds": [
-            "src-jingui-14f180"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "所以小柴胡汤",
-          "change": "加川芎、当归、芍药就够了。",
-          "citationIds": [
-            "src-jingui-14f180"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -8979,32 +8195,8 @@
       ],
       "modifications": [
         {
-          "condition": "三焦是无所不达",
-          "change": "再加上桂枝，加强心脏搏动的力量，进入小肠，再加甘草大枣补充小肠的津液。",
-          "citationIds": [
-            "src-jingui-c3ca70"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "补津液",
-          "change": "就是甘草大枣，胃的津液没有了，胃口没有了，就加个人参。",
-          "citationIds": [
-            "src-jingui-c3ca70"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "奔豚我们将之分为这三种",
           "change": "奔豚汤就是进入少阳、进入三焦淋巴系统，所以大家看处方中有甘草、黄芩、半夏生姜，这四个药就是小柴胡汤，原方没有加柴胡，应该要加柴胡才对，过去有经方家认为应该要加柴胡，因为有往来寒热的症状，而且病人兼有表症，有表症才会引发奔豚，所以应该有柴胡有桂枝。",
-          "citationIds": [
-            "src-jingui-c3ca70"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "过去我们挖这个草药的时候还要带个罗盘",
-          "change": "站在树前面看看东南角在哪，找到后就从这边挖下去，这个地方的李树根才有作用的。",
           "citationIds": [
             "src-jingui-c3ca70"
           ],
@@ -9019,8 +8211,16 @@
           "kind": "analysis"
         },
         {
-          "condition": "读张仲景的伤寒金匮以后会有一种感觉",
-          "change": "如果病在少阳，我们一剂药下去一定会同时去防止移转太阳，直接让病毒出表，不要让它有机会回头。",
+          "condition": "如果他这样取的话",
+          "change": "小建中汤就不叫小建中汤，他会叫桂枝汤加白芍，对不?张仲景为什么之前不写桂枝汤加白芍?现在这里要写桂枝加桂汤，这就是我们考虑的地方，因为是古书，比较有这类问题。",
+          "citationIds": [
+            "src-jingui-c3ca70"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "condition": "如果都没有",
+          "change": "就是桂枝加桂汤证了，大家可以用这很简单的方法来做出区分。",
           "citationIds": [
             "src-jingui-c3ca70"
           ],
@@ -9147,32 +8347,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "你到药房去买它的时候",
-          "change": "拿出来一看:「咦?老师，这长的好像心脏的心室心房。",
-          "citationIds": [
-            "src-jingui-ad2b16"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "你如果三天不煮它",
-          "change": "剥开来看里面还会有小白虫跑出来，没有关系这表示没有农药,如果药放在药柜里三年都不长虫，这个药就有问题，就好像一杯水拿到北极都不会结冻的，这你敢喝吗?喝下去你不就是变成原子弹了?那种水是不能喝的，药本来就该会长虫才对，这代表是天然的产物。",
-          "citationIds": [
-            "src-jingui-ad2b16"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "光靠药直接下去是无法将这郁气升提上来的",
-          "change": "所以要靠白酒把它往上提，白酒一下去，药就整个冲上来,就会把围积在肺的下方还有心脏部位的浊物全部往上升提走。",
-          "citationIds": [
-            "src-jingui-ad2b16"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -9279,32 +8454,8 @@
       ],
       "modifications": [
         {
-          "condition": "白酒不要一斗",
-          "change": "平常甜酒酿就加两个汤匙，六碗水煮两碗，也就是一碗一汤匙。",
-          "citationIds": [
-            "src-jingui-85a835"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "如果其他的药开的重",
           "change": "九碗水煮三碗，就加三个汤匙。",
-          "citationIds": [
-            "src-jingui-85a835"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "「胸痹",
-          "change": "不得卧」，前面说的症状是还可以平卧的，现在如果已经不得平卧，兼有「心痛彻背者」,处方用栝蒌、薤白还要加半夏，这是已经不能平卧又有心痛彻背，这是病情进入第二个阶段。",
-          "citationIds": [
-            "src-jingui-85a835"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "由于半夏涤痰的力量非常强",
-          "change": "光靠蒌实的力量只能散掉郁结之气，必须要加半夏在里面才能完成最佳治疗。",
           "citationIds": [
             "src-jingui-85a835"
           ],
@@ -9465,40 +8616,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "仲师将枳实、栝蒌实并用",
-          "change": "然后他再加入桂枝，因为桂枝能壮心阳活血路,所以桂枝是我们经方家治疗心脏病主要的药。",
-          "citationIds": [
-            "src-jingui-9653fd"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "我们靠这几味药就足够了",
-          "change": "这时不要加甘草,会使药性减慢下来这简单五味药，就可以一路从心脏通出来到肺脏，然后再下来到肠子里面，肠子里面靠厚朴润肠，把它通通排出去。",
-          "citationIds": [
-            "src-jingui-9653fd"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "这个时候",
-          "change": "一定用桂枝，加强心脏的力量，就可以把冲脉，这个多余的奶水从胸的乳房，顺着冲脉、阳明经，导入小肠。",
-          "citationIds": [
-            "src-jingui-9653fd"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "主力是桂枝",
-          "change": "还可以加一些药清除淤堵。",
-          "citationIds": [
-            "src-jingui-9653fd"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -9644,14 +8762,6 @@
             "src-jingui-3bcd2d"
           ],
           "kind": "analysis"
-        },
-        {
-          "condition": "人参、甘草、干姜、白术诸位都知道它是健脾整胃的要药",
-          "change": "由于肠胃太虚寒，所以中焦的气跟着就衰弱下去，这个时候上焦的气就无法往下走，于是出现短气胸闷的现象，这就是因为虚寒引起的胸痹。",
-          "citationIds": [
-            "src-jingui-3bcd2d"
-          ],
-          "kind": "analysis"
         }
       ],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
@@ -9790,38 +8900,6 @@
             "src-jingui-02d1f1"
           ],
           "kind": "analysis"
-        },
-        {
-          "condition": "杏仁可以将让肺部的通路打开来",
-          "change": "因为杏仁能够润肺，再加上茯苓，茯苓可以利水，将此水从小便排出来，使用甘草，是想让药力停在上焦待久一点，以便将积水全数清除干净。",
-          "citationIds": [
-            "src-jingui-02d1f1"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "临床治病时",
-          "change": "还可以加些其他的药入内，比如病人有心阳不足时，你就可以加入桂枝，但是必须以这三味药为主要的方剂才行。",
-          "citationIds": [
-            "src-jingui-02d1f1"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "为了要让这个水慢慢的出来",
-          "change": "所以我们会加甘草在里面，取它的药缓之性，让心包里的积水慢慢的渗出来，然后顺着三焦油网，慢慢的进入膀胱，这就要靠茯苓，加重茯苓的目的就是因为心包跟三焦是表里，重用茯苓可以让积水从心包膜进到三焦油网，三焦油网里面的油可以将水滑利出来。",
-          "citationIds": [
-            "src-jingui-02d1f1"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "此处如果不用甘草",
-          "change": "茯苓杏仁就会进入肠子里面，跑到下焦去。",
-          "citationIds": [
-            "src-jingui-02d1f1"
-          ],
-          "kind": "analysis"
         }
       ],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
@@ -9946,14 +9024,6 @@
       ],
       "modifications": [
         {
-          "condition": "用橘皮是因为橘皮辛香发散",
-          "change": "能够去寒痰。",
-          "citationIds": [
-            "src-jingui-9be9c6"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "如果在心脏的上方有浊痰",
           "change": "症状是病人感觉到心脏上方有刺痛，此时我们要用蜀漆，所以桂枝汤去芍药加蜀漆龙骨牡蛎救逆汤，蜀漆在此的目的就是要祛痰。",
           "citationIds": [
@@ -10065,24 +9135,7 @@
           ]
         }
       ],
-      "modifications": [
-        {
-          "condition": "同时因为有湿的病在里面",
-          "change": "中医有这么多去湿的药，都很难治疗湿的病，而西医根本没有去湿的西药，当然无法治湿，西药做出来是干燥剂，但是有毒不能吞食。",
-          "citationIds": [
-            "src-jingui-11c7b5"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "附子去寒",
-          "change": "薏苡仁去湿，病人一定是寒湿，所以才有这个处方。",
-          "citationIds": [
-            "src-jingui-11c7b5"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -10203,24 +9256,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "桂枝行胸阳",
-          "change": "枳实入心脏，生姜可以把水排掉，对肠胃非常的好，所以当你用生姜枳实下去的时候，心中痞就去掉了，生姜对胃非常好。",
-          "citationIds": [
-            "src-jingui-fe1264"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "经方治疗心脏的药",
-          "change": "越重的病反而用药就越少，但是每味药的剂量就会加重。",
-          "citationIds": [
-            "src-jingui-fe1264"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -10377,48 +9413,8 @@
       ],
       "modifications": [
         {
-          "condition": "赤石脂是涩剂",
-          "change": "止下利，当病人心痛彻背，背痛彻心，我们知道它是非常浓的浊痰在纵膈腔跑动，那么湿的痰，光靠半夏、天南星不见得去的掉，皂荚也去不掉，只是去肺里的痰，所以张仲景认为这种痰，必须要苦温化湿，整个乌梅丸方就是苦温化湿。",
-          "citationIds": [
-            "src-jingui-b3141e"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "现在大家知道了",
-          "change": "当遇到湿过盛时，湿是很不容易去掉的，张仲景多用苦温化湿的方法才能去湿，专开去湿的药是没用的，所以才有乌梅丸来做为去湿用，这乌梅丸是苦温化湿的标准处方。",
-          "citationIds": [
-            "src-jingui-b3141e"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "过去有人认为",
           "change": "尤其是日本的经方家认为，这个乌头赤石脂丸里面已经有附子，附子跟乌头两个同性的还用在一起?岂非矛盾，很可能是乌梅赤石脂丸，比较合理，张仲景笔误或是小徒弟拿着竹简走路时，被门槛绊倒受到惊，于是就胡乱的将竹简重新编过，造成现代发生这个争议。",
-          "citationIds": [
-            "src-jingui-b3141e"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "为什么要用蜀椒?仲师认为肺太冷了",
-          "change": "必须用蜀椒来去肺寒，所以后面大建中汤也会用到用蜀椒。",
-          "citationIds": [
-            "src-jingui-b3141e"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "为什么要用赤石脂",
-          "change": "因为赤石脂本身是涩剂，我们遇到病人下利不止时，又实在没有办法帮病人止利的时候我们就会用涩性的药去止利。",
-          "citationIds": [
-            "src-jingui-b3141e"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "心痛彻背是从中间胸腔部位开始痛",
-          "change": "一痛就直接痛到背后面去，然后又从后面再痛回来，当湿在胸腔里面走动时，病人会感觉到好像有虫在里面爬，能够很自由的随意走动，我们靠这些热性的药把里寒去掉以后，要靠赤石脂阻止它再回来。",
           "citationIds": [
             "src-jingui-b3141e"
           ],
@@ -10650,48 +9646,8 @@
       ],
       "modifications": [
         {
-          "condition": "川芎活血",
-          "change": "刚好跟西医的想法相反，川芎吃下去很好玩，病人初诊的时候，手上都是淤血，吃了川芎一周后再来，淤血都没有了，血管都恢复了。",
-          "citationIds": [
-            "src-jingui-5e7de1"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "这个药下去煮",
-          "change": "病人正在发病，下针。",
-          "citationIds": [
-            "src-jingui-5e7de1"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "如果你人生乏味",
           "change": "很相信西医，就做BY-PASS，绕道手术，如果血管壁堵到了，过不去，还没做绕道手术，人体自己都会做个绕道手术，血被堵到过不去，自己就会绕到旁边走过，都不劳西医开刀。",
-          "citationIds": [
-            "src-jingui-5e7de1"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "躺在床上",
-          "change": "公孙内关一下去，当场痛就去掉了，二十分钟后起来，他就跟我走到门诊那边，就跟我讲，刚才从停车场走过来，每十步停下要喘口气，短气，现在直接走，没感觉了，药还没有吃。",
-          "citationIds": [
-            "src-jingui-5e7de1"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "还有一种我要提醒你",
-          "change": "这个是要你心态上要突破的，平常呢，四逆，手脚冰冷，越吃越冷，冷到膝盖，四逆汤嘛，生附子，如果开了三钱下去，越吃越冷，很少，偶尔会有一次，就上次帮那个女的大胖子，大概是我的三倍，那么胖，阳明燥热，石膏八两、十两、十二两、十四两，还在热，我就开生附子给她，一吃下去，热极生寒，站在太阳底下都冷。",
-          "citationIds": [
-            "src-jingui-5e7de1"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "遇到四逆汤",
-          "change": "生附子三钱都没用的情况，你用寒药才行，当热药无法去寒，那加重用寒药，寒极生热，人体是太极，是旋转的，这时候用黄芩、黄连、黄柏，一剂下去，手脚就热起来了。",
           "citationIds": [
             "src-jingui-5e7de1"
           ],
@@ -10888,14 +9844,6 @@
       ],
       "modifications": [
         {
-          "condition": "随证调整",
-          "change": "这就是小承气汤加桂枝汤去掉白芍。",
-          "citationIds": [
-            "src-jingui-375916"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "加入小承气汤",
           "change": "就是厚朴七物汤了。",
           "citationIds": [
@@ -11058,40 +10006,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "炮附子去里寒",
-          "change": "肚子的寒，半夏止呕。",
-          "citationIds": [
-            "src-jingui-b82a4d"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "临床上",
-          "change": "胆结石引起的痛，子宫癌，肚子的寒气，寒痛，这个下去痛就去掉了，也没有什么止痛药在里面，完全用去寒的方式。",
-          "citationIds": [
-            "src-jingui-b82a4d"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "用半夏是因为半夏能够去水",
-          "change": "此际水已经渗入肠子里面,半夏吃下去后水会从小便利出来。",
-          "citationIds": [
-            "src-jingui-b82a4d"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "这药吃了以后小便量会增加",
-          "change": "粳米、甘草、大枣都是很好消化的食品，可以把肠胃失去的津液补足。",
-          "citationIds": [
-            "src-jingui-b82a4d"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -11213,14 +10128,6 @@
         }
       ],
       "modifications": [
-        {
-          "condition": "大黄没有寒热",
-          "change": "只是去实。",
-          "citationIds": [
-            "src-jingui-b91f74"
-          ],
-          "kind": "analysis"
-        },
         {
           "condition": "因为只是闭到而无腹痛",
           "change": "直接重用大黄把宿便清出来就好了，但是如果我们把厚朴加重到五钱，因为病人便秘而又有腹痛，所以需要加重到五钱，枳实也加重到四钱，比厚朴少一点，或者跟它等量都没有关系，大黄用的最少，用两钱就足够，这就是有腹痛而便秘所需要用的「厚朴三物汤」了。",
@@ -11368,14 +10275,6 @@
           "kind": "analysis"
         },
         {
-          "condition": "张仲景选用蜀椒",
-          "change": "蜀椒这个药本身就是杀虫的药，而且蜀椒是非常辛辣的药，辛散而且性热，不但能够杀虫，也能够去上焦的寒，加干姜是因为能够温中、温脾脏的寒。",
-          "citationIds": [
-            "src-jingui-55d02c"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "食入则吐",
           "change": "呕吐必伤胃津，经方中用到人参，是因为人参可以将失去的肠胃津液补足，这就是大建中汤的功能所在。",
           "citationIds": [
@@ -11386,14 +10285,6 @@
         {
           "condition": "此方如果把蜀椒拿掉",
           "change": "换成半夏，胃太寒了用干姜来温中，半夏能够去水止呕，人参能够把吐过以后失去的肠胃津液补足，这样处方正好可以帮助妇人因为怀孕害喜，过度吐伤津液时可以用。",
-          "citationIds": [
-            "src-jingui-55d02c"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "张仲景出方时遇到病家只要被吐过",
-          "change": "肠胃津液伤到时就一定会加人参。",
           "citationIds": [
             "src-jingui-55d02c"
           ],
@@ -11547,38 +10438,6 @@
           "kind": "analysis"
         },
         {
-          "condition": "用茯苓和半夏就是要利水的",
-          "change": "加细辛是因为细辛能温下焦之寒，它是温中寒的，细辛本身就是很好的利尿剂，能够把水饮往下降，像小青龙汤证是因为水气上逆，用细辛可以将之降下去，所以细辛也能够利尿，也能够降水逆。",
-          "citationIds": [
-            "src-jingui-2bf812"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "当病人有水又有寒时",
-          "change": "我们开的药里面一定要同时有能去水的药跟去寒的药。",
-          "citationIds": [
-            "src-jingui-2bf812"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "一罐一斤的药丸",
-          "change": "一般小指头的指甲会留长一点点，就是挑药粉的，挑一指甲朱砂，丢进去去，大概一小茶匙，很少的，大概朱砂只有一颗药丸的量，丢下后，上下摇动罐子，全部就变成红色的了。",
-          "citationIds": [
-            "src-jingui-2bf812"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "我们身上就是水跟血了",
-          "change": "当身体里水盛的的候，水太多了，血一定不够，这时候靠殊砂下去把血补起来，靠细辛、半夏、茯苓把多余的水排掉。",
-          "citationIds": [
-            "src-jingui-2bf812"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "加点硃砂进去",
           "change": "硃砂是补充铁质用的，张仲景在伤寒金匮里面，就只有赤丸用了硃砂。",
           "citationIds": [
@@ -11725,22 +10584,6 @@
           "kind": "analysis"
         },
         {
-          "condition": "我们取羊肉是因为它有非常丰富的油脂",
-          "change": "当归本身又是有油脂,当归黏黏的就是天然油脂,加生姜下去可以开胃气又健脾,所以羊肉当归和生姜煮在一起是大补气血的药。",
-          "citationIds": [
-            "src-jingui-2df448"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "随证调整",
-          "change": "一般我们在抓药的时候哪有这么复杂?我们吃补的时候还要加这些?不需要的。",
-          "citationIds": [
-            "src-jingui-2df448"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "当归生姜羊肉汤里面加生附",
           "change": "生附会行走全身经脉，此时羊肉汤一下到肚子里面，生附就会将之带到全身，于是身体马上就热起来。",
           "citationIds": [
@@ -11844,56 +10687,24 @@
           ]
         },
         {
-          "herbId": "jingui-herb-ed076e",
-          "herbName": "新绛(今之茜草)少许",
-          "dosage": "",
+          "herbId": "jingui-herb-54eb5b",
+          "herbName": "新绛",
+          "dosage": "少许",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-bedc30"
-          ]
+          ],
+          "action": {
+            "text": "为什么要用新绛?新绛是我们过去的名词，现在到药房里买的话就是茜草，过去的衣料如果想要染一点红的上去，就是利用茜草来做染料。",
+            "citationIds": [
+              "src-jingui-bedc30"
+            ],
+            "kind": "analysis",
+            "locator": "五藏风寒积聚病脉证并治第十一·旋覆花汤"
+          }
         }
       ],
       "modifications": [
-        {
-          "condition": "旋覆花降逆气",
-          "change": "比如胃酸过多，旋覆花就把酸降下去，酸就是肝，中医的观念，三个津液，酸、甜、苦的味道进入肠胃，成为胃的津液的来源，脾脏的甜，胆的苦，肝的酸，混合。",
-          "citationIds": [
-            "src-jingui-bedc30"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "诸位看这条辨",
-          "change": "就看出散落掉的部份，刚刚讲肺脏时，怎么没有提到「肺着」?而肝就有「肝着」?肺着跑到哪里去了?这是不是少掉一个了?后面还少的更多，我们就会想:「肺着是个什么样子?」当然肺的状况很多，我们有很多汤剂可以治肺，不容易整理出来，我们先谈肝着。",
-          "citationIds": [
-            "src-jingui-bedc30"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "所以只要胸腔胀满的很难过时",
-          "change": "都可以用旋覆花来把胸膈的郁气打开来，其力量很强，是很强的药，也就是能够让胸腔的气整个扩散开来，而且令胸膈逆气下降，所以胸闷的现象会被它去掉。",
-          "citationIds": [
-            "src-jingui-bedc30"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "为什么要用新绛?新绛是我们过去的名词",
-          "change": "现在到药房里买的话就是茜草，过去的衣料如果想要染一点红的上去，就是利用茜草来做染料。",
-          "citationIds": [
-            "src-jingui-bedc30"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "为什么要加葱白?像我们的通脉四逆汤里也有葱白在里面",
-          "change": "因为葱白能够通阳，就是通阳气，所以加葱白在汤药里一起煮，可以帮助药力的发散。",
-          "citationIds": [
-            "src-jingui-bedc30"
-          ],
-          "kind": "analysis"
-        },
         {
           "condition": "此时甘草就不要用了",
           "change": "因为我们要直接入肝,放甘草下去反而减缓药性,此处需要速战速决，如果用甘草就不够快速了，也就不叫做旋覆花汤，旋覆花汤喝下去以后肺就不会那么闷，就不需要去拍打胸膈了。",
@@ -12189,22 +11000,6 @@
           "kind": "analysis"
         },
         {
-          "condition": "这个药开出去",
-          "change": "一剂一剂的开，吃一次，不要给的多了，太过了。",
-          "citationIds": [
-            "src-jingui-1a9017"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "其它的饮还有出路",
-          "change": "饮到了很严重时就没有出路了，连大小便都没了，此时饮停在中间，这就比较严重了，此时我们要开很强的药来去饮。",
-          "citationIds": [
-            "src-jingui-1a9017"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "如果你给病人吃一般的西药利尿剂",
           "change": "吃下去以后水被利掉，但是利完以后过一下子水又回来，西医就遇到这个问题，没有办法把停在人体最深的水饮去掉。",
           "citationIds": [
@@ -12213,16 +11008,16 @@
           "kind": "analysis"
         },
         {
-          "condition": "我们加了半夏",
-          "change": "半夏能利水利尿能够把水导到小便排出来。",
+          "condition": "因为此方利水力量很强",
+          "change": "一定会伤到肠胃的津液，所以就要加甘草，这就是甘遂半夏汤证。",
           "citationIds": [
             "src-jingui-1a9017"
           ],
           "kind": "analysis"
         },
         {
-          "condition": "任何脏的下方",
-          "change": "都是阴，所以用白芍去酸收，脏的下方好像海绵一样，白芍一挤，水就出来了。",
+          "condition": "如果光是用甘遂的话",
+          "change": "就变成外面的水走了，里面的水还没走，而甘遂的药力就已经散去。",
           "citationIds": [
             "src-jingui-1a9017"
           ],
@@ -12375,56 +11170,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "「虚者即愈",
-          "change": "实者三日复发，复与不愈者，宜木防已汤去石膏加茯芩芒硝汤主之。",
-          "citationIds": [
-            "src-jingui-0b3f93"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "「虚者即愈」",
-          "change": "当胃被木防已通利以后，堵在胃下方的湿，还有胃里面的湿，就会被它排出来，加上桂枝能够行胃阳，让胃的蠕动加快，配合木防已后，这个寒湿就会被清利出来。",
-          "citationIds": [
-            "src-jingui-0b3f93"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "当寒湿被清出来后",
-          "change": "此时我们又加入人参，刺激肠胃产生好的津液，如此一来可以把原先丧失的津液同时补回去。",
-          "citationIds": [
-            "src-jingui-0b3f93"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "这个处方还有一个重点",
-          "change": "就是石膏，为什么会要用石膏?因为病人原来有宿在里面时会有伏热在底下，当寒湿被去除后，这个伏热就会发出来，马上变成胃炎。",
-          "citationIds": [
-            "src-jingui-0b3f93"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "本来这个炎是被寒湿包在里面无法查觉到",
-          "change": "你替病人去掉寒湿之后，胃就会热起来，所以加石膏是要把这个伏热去掉。",
-          "citationIds": [
-            "src-jingui-0b3f93"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "复与不愈者此时你再给病人木防已汤他是不会好的",
-          "change": "这个时候就要改处方，把木防已汤里的石膏拿掉，加入茯苓与芒硝。",
-          "citationIds": [
-            "src-jingui-0b3f93"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -12901,40 +11647,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "葶苈子和大黄是用来排除已经既成的肠间积水",
-          "change": "这个部位的停水光靠防已和蜀椒是没有办法把它通利出来的，防已和蜀椒下去只能保护三焦，而停在三焦外面的水，必须靠葶苈子，因为是在肠间，肺和大肠是表里，苈子的性本来就是苦，主泄。",
-          "citationIds": [
-            "src-jingui-82484d"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "大黄加芒硝可以打碎大便",
-          "change": "排出来的时候，像薯片一样，一片一片排出来，还有水排出来。",
-          "citationIds": [
-            "src-jingui-82484d"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "为什么半夏也可以排水却不用",
-          "change": "而非要用葶苈子?原因是只有苦味的药能够进入肠子，葶苈入肠子可以去肠里面的水，为什么要加大大黄目的是要去实，因为病人此时是有实症的腹满。",
-          "citationIds": [
-            "src-jingui-82484d"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "当我们身体正常时",
-          "change": "肠胃里面都有水份，食物残渣才能够顺利的通利出来，现在水跑到肠壁外面，里面的水反而干掉，这个时候大便一定不通，所以我们要靠大黄去实，才能把水再导回肠中。",
-          "citationIds": [
-            "src-jingui-82484d"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -13186,56 +11899,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "这条辨是要提醒我们使用发表药时不能汗发太过",
-          "change": "如果是很强壮的病人,汗发出去即使过量一些都无所谓,但是对瘦一点的人来说这个人本就是虚，发汗太过就会有问题。",
-          "citationIds": [
-            "src-jingui-ea85af"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "所以我叫小孩子们常常没事就去吃小建中汤",
-          "change": "因为我们没有办法控制小孩子，他眼睛张开后就不停的动，每天都在想我要做什么，每天都流汗，津液丧失很多。",
-          "citationIds": [
-            "src-jingui-ea85af"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "而汗是从肠胃津液来的",
-          "change": "中医的观念是汗血同源，血里面的水被蒸发掉许多，这个时候小建中汤吃下去，使得肠胃好起来，津液就很快的被补足。",
-          "citationIds": [
-            "src-jingui-ea85af"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "气从小腹上冲胸",
-          "change": "这个气是人的宗气，在丹田小肠的地方，阴发出去了，津液散掉，阳就没办法固守在小肠，胃和小肠的热就会往上冲。",
-          "citationIds": [
-            "src-jingui-ea85af"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "阳要回头的",
-          "change": "阳去不回头的人就要走掉了，所以阳要往回往下走，就会感觉复下流阴股，热气有往下到了阴股，这时候小便很难，因为阳散了，同时阴津不够了，",
-          "citationIds": [
-            "src-jingui-ea85af"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "加茯苓、桂枝",
-          "change": "桂枝刚刚讲过了，它能够行阳、行胃阳，茯苓能够让三焦油网充满油，所以茯苓能够利水，读本草经的时候还会看到茯苓能够健脾利水，实际上就是因为油很足，所以这两个等于是补药。",
-          "citationIds": [
-            "src-jingui-ea85af"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -13370,30 +12034,6 @@
         {
           "condition": "如果「冲气即低」",
           "change": "就是吃了苓桂五味甘草汤后冲气是被降下去了,结果却又咳得更厉害，加上胸口感觉很胀满，「胸满者，用桂苓五味甘草汤去桂，加干姜细辛以治其欬满。",
-          "citationIds": [
-            "src-jingui-45bed0"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "胸满者",
-          "change": "代表阳气足了，就不用桂枝了，加干姜细辛治他的咳嗽。",
-          "citationIds": [
-            "src-jingui-45bed0"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "病人本来是小青龙汤证",
-          "change": "吃了小青龙汤发表后变成里虚掉了，肾阳，就是下焦的元气因而往上冲，于是又开了苓桂五味甘草汤把它降下去。",
-          "citationIds": [
-            "src-jingui-45bed0"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "可是气是降下去没错",
-          "change": "但是在服用苓桂五味甘草汤之前，这个上冲的气把胸膈里面累积有很多的寒饮通通带出来，这是有本虚之人才会发生的。",
           "citationIds": [
             "src-jingui-45bed0"
           ],
@@ -13547,24 +12187,7 @@
           ]
         }
       ],
-      "modifications": [
-        {
-          "condition": "有恶心就加半夏",
-          "change": "小柴胡汤里有半夏，就是胸胁苦满，胸胁里面有水停着，我们很大的淋巴腺的地方，都会比较容易停水。",
-          "citationIds": [
-            "src-jingui-77ae5a"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "支饮比伏饮停的更深",
-          "change": "所以更不容易去掉，当里面的伏饮被去掉以后，支饮才跑出来，会这样的原因是被干姜细辛拉出来的，干姜细辛是温药，能够去寒饮。",
-          "citationIds": [
-            "src-jingui-77ae5a"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -13729,46 +12352,6 @@
             "src-jingui-4e178c"
           ],
           "kind": "analysis"
-        },
-        {
-          "condition": "这是因为肺的津液又不够了",
-          "change": "病人肺里本虚，结果你加了半夏把肺里的津液再排除掉，肺就会变得很干燥，这种状况就要加杏仁来润肺，杏仁可以把肺的津液补足。",
-          "citationIds": [
-            "src-jingui-4e178c"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "看这个症状「形肿」",
-          "change": "应该是要发表水去肿，所以应该是放麻黄才对，但是「以其人遂痹，故不内之」因为这个病人本来手脚就时常麻木，就是本来就有里虚，因此而不加麻黄。",
-          "citationIds": [
-            "src-jingui-4e178c"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "「若逆而内之」",
-          "change": "如果不用杏仁而加入麻黄去发表，病人肺里面已经虚掉，现在又被强力发汗，其人「必厥」，就是喝下去时会昏倒，或者是昏迷。",
-          "citationIds": [
-            "src-jingui-4e178c"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "现在大家回头想一想",
-          "change": "如果是大青龙汤证或是小青龙汤证我们用这种汤剂治疗咳嗽时，我们一剂将它去掉后病人的冲气就上来，大家就要想到这痰饮咳嗽，这是张仲景替我后学者考量到可能会遇到的问题，如何知道里面有饮?有饮的话又是停在哪里?",
-          "citationIds": [
-            "src-jingui-4e178c"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "刚开始降冲气时",
-          "change": "如果冲气降完了病人还咳，我们就要加干姜细辛半夏。",
-          "citationIds": [
-            "src-jingui-4e178c"
-          ],
-          "kind": "analysis"
         }
       ],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
@@ -13802,7 +12385,7 @@
         "locator": "痰饮欬嗽病脉证并治第十二·苓甘五味加姜辛夏杏大黄汤"
       },
       "effects": {
-        "text": "如果是「面热如醉」，就是脸色看起来红红的,「此为胃热上冲薰其面」，这个时候就是苓甘五味姜辛半夏加杏仁汤，再加一点大黄，因为胃里面有宿食堵到，只要把它清利出来就好了。所以说有时候小青龙汤下去或麻杏甘石汤下去:「老师，他怎么没好?」你不要怀疑小青龙汤，不要怀疑大青龙汤，更不要怀疑麻杏甘石汤不对症，是病家本身就有饮病，结果被你用药导引出来，才会发生这种现象，所以你并没有错。",
+        "text": "讲义未单列功效概括，详见下方方证与讲解。",
         "citationIds": [
           "src-jingui-4c6c52"
         ],
@@ -13932,14 +12515,6 @@
         {
           "condition": "如果是「面热如醉」",
           "change": "就是脸色看起来红红的,「此为胃热上冲薰其面」，这个时候就是苓甘五味姜辛半夏加杏仁汤，再加一点大黄，因为胃里面有宿食堵到，只要把它清利出来就好了。",
-          "citationIds": [
-            "src-jingui-4c6c52"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "所以说有时候小青龙汤下去或麻杏甘石汤下去",
-          "change": "「老师，他怎么没好?」你不要怀疑小青龙汤，不要怀疑大青龙汤，更不要怀疑麻杏甘石汤不对症，是病家本身就有饮病，结果被你用药导引出来，才会发生这种现象，所以你并没有错。",
           "citationIds": [
             "src-jingui-4c6c52"
           ],
@@ -14102,30 +12677,6 @@
           "kind": "analysis"
         },
         {
-          "condition": "病人讲的是大承气汤证",
-          "change": "病例上写的是梅毒，大承气汤一下去，梅毒也好了，中医就是这样的。",
-          "citationIds": [
-            "src-jingui-95bf51"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "栝羹根是为了要解渴用的",
-          "change": "茯苓是为了利尿用，薯蓣是为了要把肾脏的津液补足，因为我们要把石头冲刷下来靠的是肾脏，故此肾脏的津液就要很充足，加强肾脏的津液就要靠淮山了，所以淮山过去是男人的肾药。",
-          "citationIds": [
-            "src-jingui-95bf51"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "所以在研究伤寒论时",
-          "change": "如果病人是桂枝汤证,遇到有渴的时候就加栝蒌根，原因是肠胃的津液不够，因为发炎的比较厉害，栝蒌根能够消炎，这个是一般的生理学的名词。",
-          "citationIds": [
-            "src-jingui-95bf51"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "这个方跟猪苓汤不一样",
           "change": "猪苓汤是专门去石头,如果不是石头堵封，而是血淋、膏淋堵在里面,就必须给他栝蒌瞿麦丸,否则光靠猪苓汤是无法治疗这种小便不利的。",
           "citationIds": [
@@ -14257,22 +12808,6 @@
         {
           "condition": "还有一种状况是发生在男人身体睾丸那边",
           "change": "就像是气球一样，透明的，里面都是水，然后你摸他的鼻子呼出来都是冷气，没有热气的，全身是水肿，我们知道得病的原因，可是攻已经来不及了，只能很快速的把水肿先去掉，这个时候就是用蒲灰散。",
-          "citationIds": [
-            "src-jingui-97b48b"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "光是这个药喝下去",
-          "change": "一晚上会小便十几次，一直跑厕所，越跑就越瘦。",
-          "citationIds": [
-            "src-jingui-97b48b"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "我们知道这种水病是因为心脏力量不够造成的",
-          "change": "所以我们常常在利完水以后再摸病人的脉都变成少阴证，都是麻黄附子细辛汤证，因为静脉已经没有阻塞了，这个时候我们用麻黄附子去加强心肾的力量，让肾阳和心阳都能够壮起来。",
           "citationIds": [
             "src-jingui-97b48b"
           ],
@@ -14529,48 +13064,7 @@
           ]
         }
       ],
-      "modifications": [
-        {
-          "condition": "要让青盐能直达肾脏就要靠茯苓跟白术",
-          "change": "加上这两味药后，喝下去药马上就会到肾脏，进入肾脏的就是青盐了，中间不加甘草，以免药性变慢。",
-          "citationIds": [
-            "src-jingui-911a98"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "茯苓跟白术能够让脾脏中焦健起来",
-          "change": "能够利中焦的水，于是这药一喝下去同时会开利中焦的水，所以一下子就到肾脏去了。",
-          "citationIds": [
-            "src-jingui-911a98"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "中焦一定要经过下焦才会出去",
-          "change": "所以不开利下焦水的药，可以让青盐停留在肾脏，把大石头打碎。",
-          "citationIds": [
-            "src-jingui-911a98"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "有的时候很严重",
-          "change": "我就撒一点叫病人带点，一个小药匙那么多，也不一定要吃一汤匙，吞都吞不下去。",
-          "citationIds": [
-            "src-jingui-911a98"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "我们取吐法的时候",
-          "change": "病在胸膈上，不管是小孩子铜板卡到，或者是痰涎壅塞，很多人痰涎很多，在成癫痫或怎么样，用瓜蒂太麻烦了，就用盐巴加重，无所谓青盐或海盐，用浓盐汤，喝完当场就吐。",
-          "citationIds": [
-            "src-jingui-911a98"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -14727,40 +13221,8 @@
       ],
       "modifications": [
         {
-          "condition": "随证调整",
-          "change": "恶风加附子一枚。",
-          "citationIds": [
-            "src-jingui-34d680"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "吃了越婢汤",
           "change": "有时候表虚掉了，再加附子，把表固主。",
-          "citationIds": [
-            "src-jingui-34d680"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "越婢加术汤",
-          "change": "是一个很有名的，治疗全身发黄的一个处方，后面黄疸病会介绍到。",
-          "citationIds": [
-            "src-jingui-34d680"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "我们临床开就是三钱",
-          "change": "把表打开来，由于肺里热很盛，所以加石膏。",
-          "citationIds": [
-            "src-jingui-34d680"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "石膏能去肺热",
-          "change": "表寒又束到，这是风水的另外一种要发汗的症侯。",
           "citationIds": [
             "src-jingui-34d680"
           ],
@@ -14929,30 +13391,6 @@
             "src-jingui-c3b012"
           ],
           "kind": "analysis"
-        },
-        {
-          "condition": "大家看防已茯苓汤方",
-          "change": "其中有防己、黄耆，白术就不用了，再加上茯苓、桂枝。",
-          "citationIds": [
-            "src-jingui-c3b012"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "防已本身能通利三焦",
-          "change": "三焦内之水所以不能通行，是因为三焦里面的黄油不够，这个时候就要加茯苓来产生黄油。",
-          "citationIds": [
-            "src-jingui-c3b012"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "黄油的热度要靠心脏的火来支援",
-          "change": "所以加桂枝进去，这就是防已茯苓汤用防己、黄耆、桂枝、茯苓的原因了。",
-          "citationIds": [
-            "src-jingui-c3b012"
-          ],
-          "kind": "analysis"
         }
       ],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
@@ -14986,7 +13424,7 @@
         "locator": "水气病脉证并治第十四·麻黄附子汤"
       },
       "effects": {
-        "text": "其脉沉小，里阳不够了，要麻黄附子汤来壮里阳。",
+        "text": "讲义未单列功效概括，详见下方方证与讲解。",
         "citationIds": [
           "src-jingui-fbf9e7"
         ],
@@ -15172,48 +13610,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "张仲景为什么要桂枝白芍两个等量在用?因为这两味药能够让我们身上的血液循环增加速度",
-          "change": "速度加快以后会让我们本来要进入三焦的黄色营养，马上进入血里面去，无法停留在三焦，这是第一个原因。",
-          "citationIds": [
-            "src-jingui-a6059c"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "桂枝白芍两个等量用",
-          "change": "让血液循环加速，加速的时候我们希望表汗去掉，堵塞的汗去掉，又不伤正气，就加一点醋，来收敛。",
-          "citationIds": [
-            "src-jingui-a6059c"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "看起来表虚用黄芪",
-          "change": "黄芪为什么可以固表，就是能把没有透发的汗给清除掉，旧水排掉，再利用桂枝芍药的加速血液循环，新水就上来了。",
-          "citationIds": [
-            "src-jingui-a6059c"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "去除湿热之法",
-          "change": "如果光是开去湿的药，没有开去热的药，或光开去热的药，没有开去湿的药，结果永远都治不好，二种药必须要同时用才行。",
-          "citationIds": [
-            "src-jingui-a6059c"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "所以「右三味",
-          "change": "以苦酒一升」来煮，「服至六七日，乃解 」「若心烦不止者」,这是因为醋喝太多了，你可以减少一点，这是一个收敛的方子。",
-          "citationIds": [
-            "src-jingui-a6059c"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -15353,56 +13750,7 @@
           ]
         }
       ],
-      "modifications": [
-        {
-          "condition": "桂枝芍药各三钱",
-          "change": "黄芪就减量了，如果比桂枝白芍多了，病人就不容易流汗。",
-          "citationIds": [
-            "src-jingui-643dbd"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "桂枝汤一解肌",
-          "change": "汗透发了，黄芪去三焦的黄。",
-          "citationIds": [
-            "src-jingui-643dbd"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "若身重汗出已",
-          "change": "辄轻者，久久必身润，润即胸中痛，又从腰以上汗出，下无汗，腰弛痛，如有物在皮中状，剧者不能食，身疼重，烦躁，小便不利，此为黄汗，桂枝加黄耆汤主之。",
-          "citationIds": [
-            "src-jingui-643dbd"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "腰以上汗出",
-          "change": "是桂枝汤加黄芪。",
-          "citationIds": [
-            "src-jingui-643dbd"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "现在有表实必须要取一点汗",
-          "change": "又不可以太过，所以会用桂枝汤加黄耆。",
-          "citationIds": [
-            "src-jingui-643dbd"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "过去用桂枝汤加黄耆时",
-          "change": "往往都是因为表虚掉，汗水又流太多了的时候用，我们要靠黄耆来收敛。",
-          "citationIds": [
-            "src-jingui-643dbd"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -15575,40 +13923,7 @@
           ]
         }
       ],
-      "modifications": [
-        {
-          "condition": "细辛附子也是阳药",
-          "change": "这是少阴证，专门去下焦的寒实。",
-          "citationIds": [
-            "src-jingui-2fe91f"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "随证调整",
-          "change": "这里的两个汤方过去经方家都没有办法把它解释的很清楚。",
-          "citationIds": [
-            "src-jingui-2fe91f"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "张仲景知道是这样子",
-          "change": "现在大家有这个观念以后，诸位先不要看里面的条辨，诸位先去看汤剂内容。",
-          "citationIds": [
-            "src-jingui-2fe91f"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "张仲景了解到这病因所在",
-          "change": "因此第一个要让内脏的功能恢复，这就要靠麻黄附子细辛汤，内脏寒太盛时就是麻黄附子细辛汤证，可以把里寒去掉。",
-          "citationIds": [
-            "src-jingui-2fe91f"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -15714,22 +14029,6 @@
       ],
       "modifications": [
         {
-          "condition": "食物堵在胃里面时就要靠枳实",
-          "change": "枳实这个药是苦泄，所以大柴胡汤、四逆散、小承气、大承气都有加枳实，枳实专门能够清除胃下方十二指肠间的积。",
-          "citationIds": [
-            "src-jingui-efa838"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "这时我们处方就是用桂枝汤跟麻黄附子细辛汤的加减",
-          "change": "把芍药去掉。",
-          "citationIds": [
-            "src-jingui-efa838"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "随证调整",
           "change": "枳术汤就只是当有水饮停在胃中间的时候我们才会去用的。",
           "citationIds": [
@@ -15833,16 +14132,7 @@
           ]
         }
       ],
-      "modifications": [
-        {
-          "condition": "矾石入血分可以去湿",
-          "change": "二味药放在一起可以消淤去湿。",
-          "citationIds": [
-            "src-jingui-8b3a5b"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -15980,24 +14270,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "大黄去实",
-          "change": "枳实去胃里的湿。",
-          "citationIds": [
-            "src-jingui-f2f24d"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "栀子跟豆豉专门去胃热",
-          "change": "枳实、大黄同时能够去湿热，用大黄把胃下方的宿食通通清出来。",
-          "citationIds": [
-            "src-jingui-f2f24d"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -16198,24 +14471,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "五苓散能够发汗",
-          "change": "能够利水，茵陈蒿能治湿同时治黄，把黄从小便排出去，这是单纯的黄疸病。",
-          "citationIds": [
-            "src-jingui-974b6b"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "胆结石我们一般用四逆散的加减",
-          "change": "柴胡三钱，黄芩三钱消炎，枳实，炙甘草。",
-          "citationIds": [
-            "src-jingui-974b6b"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -16357,46 +14613,6 @@
         {
           "condition": "这个条辨就是如果肝胆有问题",
           "change": "同时又兼有大便堵在里面，加上小便不利造成里实更盛，这个时候就是大黄硝石汤证。",
-          "citationIds": [
-            "src-jingui-97f5b4"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "为什么要加黄柏还有栀子呢?黄柏这个药是专门消除下焦有热用的",
-          "change": "像肝胆很湿热的人，这些湿热就会进膀胱，造成小便不利，而且又灼热，这个时候我们要靠黄柏来去热,然后把水利出来。",
-          "citationIds": [
-            "src-jingui-97f5b4"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "栀子也是去热的药",
-          "change": "但栀子是直接进入肝胆来去热。",
-          "citationIds": [
-            "src-jingui-97f5b4"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "我们所有肝硬化",
-          "change": "肝癌的病人我们一定会用到这几味，就是张仲景要告诉我们的，其它的药是临症时再做加减的。",
-          "citationIds": [
-            "src-jingui-97f5b4"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "第一个原因是因为柏子仁是个仁剂",
-          "change": "里面油脂很多，专门可以通利大便的，当肝病的人身体虚掉后，如果开大黄的话有可能会受不了，使得很营养的食物吃进去却被大黄利掉了，同时因为肝病的人抵抗力比较差，肠胃消化力量也不是很好，所以要让肠胃里面已经有的宿食、浊物等先排出来又不伤到正气。",
-          "citationIds": [
-            "src-jingui-97f5b4"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "怎么做加减呢?如果病人有少阴证",
-          "change": "就加麻黄附子细辛。",
           "citationIds": [
             "src-jingui-97f5b4"
           ],
@@ -16593,38 +14809,6 @@
       ],
       "modifications": [
         {
-          "condition": "「火邪者",
-          "change": "桂枝去芍药加蜀漆牡蛎龙骨救逆汤」,我们人体遇到外面的火，就像把肉丢到火里烤一下，是不是外表烤干了?人可不可以这样被烤?不行的，中医称此为「火邪」。",
-          "citationIds": [
-            "src-jingui-efe61a"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "当一个人遇到火灾时",
-          "change": "由于这个火不是内发，是外来的，除了皮肤烫到起水泡，热的余毒还会停留在身上,这个时候就要用桂枝汤去芍药加蜀漆笼骨牡蛎救逆汤。",
-          "citationIds": [
-            "src-jingui-efe61a"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "由于白芍本身是敛血",
-          "change": "这个时候我们人体遇到火烧，血一定会到处乱跑，因为加热后速度会加快，就会到处跑，此时继续用白芍并不好，只会再加速血流而已。",
-          "citationIds": [
-            "src-jingui-efe61a"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "人的血也是一样",
-          "change": "所以这个时候是不可以再用活血的药物，所以要删去白芍。",
-          "citationIds": [
-            "src-jingui-efe61a"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "有的女孩子从火场里跑出来",
           "change": "本身中了火邪，吃了桂枝去芍药加蜀漆牡蛎龙骨救逆汤后好了，去摸她脉时却是动而悸的脉，这就是炙甘草汤证了。",
           "citationIds": [
@@ -16633,8 +14817,8 @@
           "kind": "analysis"
         },
         {
-          "condition": "也有的女孩子平时大便就是便秘",
-          "change": "于是就容易引发奔豚，这时就变成桂枝加桂汤证。",
+          "condition": "如果一个太太",
+          "change": "本来就有伏热，大便堵在盲肠那边，右下腹，结果失火，一紧张，一惊吓，大便上来梗到肝与大肠连接处，吃了桂枝去芍药加蜀漆牡蛎龙骨救逆汤后好了。",
           "citationIds": [
             "src-jingui-efe61a"
           ],
@@ -16866,32 +15050,7 @@
           ]
         }
       ],
-      "modifications": [
-        {
-          "condition": "柏叶本身是入阴分",
-          "change": "性稍寒凉，所以说它一下去马上就可以把血止住，我们也知道病人吐血不止是因为胃太寒而造成的胃穿孔，用柏叶时能止胃出血，可是怕以后再吐出来，所以还要用干姜，因为干姜能温胃，所以干姜炙甘草是经方中专门用在胃出血、吐血的时候用的。",
-          "citationIds": [
-            "src-jingui-23eabe"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "也就是说马大便能够润肠",
-          "change": "这个药会需要用到马通汁是因为考虑到一点，当血从血脉离开了以后进入胃里面，一部分吐出来，一部分会从十二指肠下去，血到了肠子里面结果干掉了，就会阻隔在肠子里面。",
-          "citationIds": [
-            "src-jingui-23eabe"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "「老师这我绝对不敢吃!」这是第一个要注意的",
-          "change": "你给病人吃时不要讲出来，自已在药房煮好拿出来给他喝下去。",
-          "citationIds": [
-            "src-jingui-23eabe"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -17141,22 +15300,6 @@
             "src-jingui-2f1db1"
           ],
           "kind": "analysis"
-        },
-        {
-          "condition": "茯苓把水自三焦利出来",
-          "change": "利到下焦后，猪苓再把水排出去所以说猪苓能利下焦水。",
-          "citationIds": [
-            "src-jingui-2f1db1"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "白术是要去除中焦的湿气增加脾脏的阳气帮助把水通利出去",
-          "change": "这只是一个健胃整脾的方子，其他药都不要用因为没有那么严重。",
-          "citationIds": [
-            "src-jingui-2f1db1"
-          ],
-          "kind": "analysis"
         }
       ],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
@@ -17271,16 +15414,7 @@
           ]
         }
       ],
-      "modifications": [
-        {
-          "condition": "当我们恶心呕吐的很厉害",
-          "change": "肠胃的津液会伤到，经方都是用人参补津液，党参也可以，半夏利水利尿，怕半夏太强，人参白用了，就用蜂蜜水去煮，蜂蜜加人参一起把好的津液巩固在肠胃里面，都是甘味，可补土。",
-          "citationIds": [
-            "src-jingui-f4f9c2"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -17453,38 +15587,6 @@
         }
       ],
       "modifications": [
-        {
-          "condition": "一般来水",
-          "change": "用生姜来止呕的时候，生姜要加重。",
-          "citationIds": [
-            "src-jingui-dd0813"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "桂枝、甘草、生姜这三味药能够行阳",
-          "change": "使胃的蠕动正常，然后把好的津液再补回去。",
-          "citationIds": [
-            "src-jingui-dd0813"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "随证调整",
-          "change": "为什么要加利水的药在里面?为什么重用茯苓、泽泻?因为要治疗多年的饮积。",
-          "citationIds": [
-            "src-jingui-dd0813"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "病人呕吐",
-          "change": "吐出来，只要有口渴，我们不用半夏，半夏很强啊，一下去不渴也渴了。",
-          "citationIds": [
-            "src-jingui-dd0813"
-          ],
-          "kind": "analysis"
-        },
         {
           "condition": "吃东西下去",
           "change": "食物就吐掉，没法呆在胃里很久，茯苓泽泻汤这个处方，就是寒湿围绕着胃一圈，在中隔的，肚脐以上是阳，靠桂枝，肚脐以下是阴，靠白芍，胃在肚脐以上，要行阳气靠桂枝。",
@@ -17684,32 +15786,8 @@
       ],
       "modifications": [
         {
-          "condition": "杏仁润肺",
-          "change": "石膏去肺家的热能够止渴，脉紧头痛代表有表寒表实，所以用麻黄。",
-          "citationIds": [
-            "src-jingui-fcd7c3"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "随证调整",
           "change": "文蛤汤是麻杏甘石汤加了文蛤、生姜、红枣在里面而成的。",
-          "citationIds": [
-            "src-jingui-fcd7c3"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "但是遇到病家于吐后却喝水不停",
-          "change": "再加上「兼主微风，脉紧头痛」,还有表症在时，就是麻杏甘石汤的加减方。",
-          "citationIds": [
-            "src-jingui-fcd7c3"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "由于有表寒在表面上造成病家有头痛的表症",
-          "change": "所以说是兼主微风，脉紧、头痛这些都代表有表寒在，所以说要加上麻杏石甘汤加生姜大枣这些才行。",
           "citationIds": [
             "src-jingui-fcd7c3"
           ],
@@ -17821,14 +15899,6 @@
       ],
       "modifications": [
         {
-          "condition": "半夏干姜汤是治疗胃寒的名方",
-          "change": "当遇到胃寒又兼有津液不足时，我们要靠大半夏汤去寒同时补足津液。",
-          "citationIds": [
-            "src-jingui-2c5193"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "如果不是水逆而是本身有寒饮的时候",
           "change": "干姜本身就是温中的，所谓温中就是胃寒胃不蠕动了，干姜下去胃就开始蠕动，胃一旦开始蠕动，此时半夏就把停水利掉，就这两味药，呕吐即止。",
           "citationIds": [
@@ -17837,32 +15907,8 @@
           "kind": "analysis"
         },
         {
-          "condition": "大半夏汤是遇到病人本身津液已经不够",
-          "change": "所以要靠人参去补足津液，靠白蜜去和他的胃，然后用半夏止吐。",
-          "citationIds": [
-            "src-jingui-2c5193"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "如果把这个处方改为半夏、干姜、再加人参进去",
           "change": "就是妇人怀孕妊娠中间害喜呕吐时最好的处方，大家要知道，怀孕时害喜，最好吃中药，西药是没有用的。",
-          "citationIds": [
-            "src-jingui-2c5193"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "津液没有了",
-          "change": "加人参。",
-          "citationIds": [
-            "src-jingui-2c5193"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "粉剂",
-          "change": "给了五天，吃药第一天恶心就去了。",
           "citationIds": [
             "src-jingui-2c5193"
           ],
@@ -17972,16 +16018,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "这个处方是采用半夏能够取水的药性",
-          "change": "生姜生用能够加强散水的力量，所以用生姜汁就是有这个功能在。",
-          "citationIds": [
-            "src-jingui-ce24ea"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -18251,24 +16288,8 @@
       ],
       "modifications": [
         {
-          "condition": "热的部分靠竹茹",
-          "change": "这个热因为并不是真正的发炎，如果有破损或者发炎的话是靠黄芩黄连才能去掉，这里只是胃有虚热，是因为病人在吐逆时，胃的蠕动加速而产生的，不是真正的热，所以加竹茹不用芩连。",
-          "citationIds": [
-            "src-jingui-c4ebbc"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "橘皮本来就是止逆的、止咳",
           "change": "此方主要药物是桔皮跟竹茹，所以叫橘皮竹茹汤，这个条辨跟前面的哕症类似，所以前段的「知何部不利，利之愈」，应该加在这个条辨后面比较合理，就是因为小徒弟在抱着竹简时绊到门槛后摔倒，于是把这个「知何部不利，利之愈」误放到后面去了。",
-          "citationIds": [
-            "src-jingui-c4ebbc"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "不用白术了",
-          "change": "因为生附子非常的热，一下去，在心脏周围一直到小肠，中间这一段，全部会热起来，一热，湿就开始动，急救应急的时候，要药简力专，所以茯苓加生附子，就把中焦的水排掉了。",
           "citationIds": [
             "src-jingui-c4ebbc"
           ],
@@ -18378,24 +16399,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "现在没有紫参",
-          "change": "用桔梗甘草汤，一般用桔梗都用一两，用五钱就是缓不济急，桔梗可去痰去水去脓，病情严重的时候都可以用。",
-          "citationIds": [
-            "src-jingui-36606a"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "临床上用这个处方",
-          "change": "病人寿命会延长，燥热的现象慢慢退掉，药吃了大概4、5个月，现在还在手上，病人很好，要卖房子去买游艇，坚持不吃西药。",
-          "citationIds": [
-            "src-jingui-36606a"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -18692,48 +16696,8 @@
       ],
       "modifications": [
         {
-          "condition": "煮药的同时可以下针",
-          "change": "阑尾点，一下去痛就没有了，腿脚就可以伸直了。",
-          "citationIds": [
-            "src-jingui-791ab8"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "加大黄",
-          "change": "芒硝，再加冬瓜仁，为什么要加冬瓜仁?因为肺跟大肠是表里，我们希望同时能够增加肺的津液，加冬瓜仁能够清除肺热增润津液，使病人胸阳的热可以往下走。",
-          "citationIds": [
-            "src-jingui-791ab8"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "张仲景很聪明",
-          "change": "有预先考虑到这个问题，所以在大黄牡丹皮汤的处方中先加了冬瓜仁在里面。",
-          "citationIds": [
-            "src-jingui-791ab8"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "这五味药没有加甘草",
-          "change": "外面的中医师是什么药方都加甘草进去，紧急的时候甘草还开多些，理由是甘草可以解毒。",
-          "citationIds": [
-            "src-jingui-791ab8"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "如果加了枳实和厚朴",
           "change": "就不对症了，我们希望药力进入阑尾，加了之后小肠和大肠会变的宽肠，它自代谢会没有，变成小承气跟大承气了，把肠子清掉，阑尾炎还在这边。",
-          "citationIds": [
-            "src-jingui-791ab8"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "此外肺的力量集中到下焦去",
-          "change": "可以让药力直接进到蚓突里面去，让病人大肠有力量能够从蚓突里面将浊物挤出来，因为冬瓜仁能加强肺气下降的力量，所以要重用，这是治疗急性盲肠炎的唯一处方。",
           "citationIds": [
             "src-jingui-791ab8"
           ],
@@ -18862,48 +16826,8 @@
       ],
       "modifications": [
         {
-          "condition": "大家要了解为什么要加附子?一般认为病人体内已经很热了",
-          "change": "又有宿食堵在里面，居然还给病人吃附子?其实这个处方开的最好的部份就是附子，用的剂量很轻。",
-          "citationIds": [
-            "src-jingui-e8bbb7"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "张仲景认为",
-          "change": "附子如果轻用，是利用它的热性，来刺激大肠的蠕动让它加速，于是能将屯积的腐败掉的宿食排出来。",
-          "citationIds": [
-            "src-jingui-e8bbb7"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "附子入药如果开很重",
-          "change": "一下子就会散到四肢上去。",
-          "citationIds": [
-            "src-jingui-e8bbb7"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "由于轻剂量的附子能刺激肠蠕动",
-          "change": "腐败的宿便我们可以靠附子来清除，附子将这些烂掉的宿食移动以后，败酱草会跟宿便混合，不让它留在里面，然后薏苡仁能够去湿所以能够把它清出来。",
-          "citationIds": [
-            "src-jingui-e8bbb7"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "如果急性盲肠炎没有开刀",
           "change": "或者没有用大黄来攻，结果阑尾因为压力太大而破裂掉，当破掉的那一刹，宿便进入腹膜时痛会马上减轻掉，原来很痛是因为蚓突发炎产生的压力造成的痛，破掉后该处压力顿失，有一段时间不会有痛，但是你用手去按腹部时，会感觉皮肤很烫，这个时候就要改用当归赤小豆散，不要再用大黄牡丹皮汤了。",
-          "citationIds": [
-            "src-jingui-e8bbb7"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "「那老师",
-          "change": "可不可以当归赤小豆散跟大黄牡丹皮汤并用?」的确，过去的医生就是怕转成腹膜炎，常常在大黄牡丹皮汤里面加上当归跟赤小豆，这是对的。",
           "citationIds": [
             "src-jingui-e8bbb7"
           ],
@@ -19134,32 +17058,8 @@
       ],
       "modifications": [
         {
-          "condition": "西药内服的药是内服的",
-          "change": "外敷的是外敷的，不能把外敷的药吞下去，中药就可以。",
-          "citationIds": [
-            "src-jingui-ec6bae"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "这个王不留行散因为是粉剂",
           "change": "涂下去后，第一个，伤口能透气。",
-          "citationIds": [
-            "src-jingui-ec6bae"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "还有规定王不留行要八月八号去采",
-          "change": "另外一个要七月七号去采，一个三月三号去采采完以后这三味药放在暗处阴干百日，不能晒干或者烤干，见到阳光药力就不行了，一定要阴干，然后烧成灰再入药。",
-          "citationIds": [
-            "src-jingui-ec6bae"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "妇女产后有瘀血淤在子宫里面也可以用王不留行散把它清出来",
-          "change": "所以一般来说女人有怀孕的时候绝对不能吃王不留行，因为王不留行是活血化瘀的药，攻血的力量很强，如果孕妇吃下去就会堕胎。",
           "citationIds": [
             "src-jingui-ec6bae"
           ],
@@ -19282,14 +17182,6 @@
         {
           "condition": "同样是排脓散",
           "change": "加上了柴胡，我们有四逆散，柴胡三钱、黄芩三钱、枳实三钱、炙甘草三钱，排脓散+四逆散，六碗水煮成两碗，要用汤剂。",
-          "citationIds": [
-            "src-jingui-101f85"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "处方是苓桂甘枣汤",
-          "change": "茯苓五钱、桂枝三钱、甘草两钱、大枣十枚，加上枳实五钱、芍药三钱、桔梗两钱，排脓汤处方不变，治疗胰脏发炎效果非常好。",
           "citationIds": [
             "src-jingui-101f85"
           ],
@@ -19425,16 +17317,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "舌癌",
-          "change": "我们知道上焦痰就比较多，用桔梗甘草汤，胃口不好，可以加开脾胃的药，然后大便不顺，再开大便的药，就可以了。",
-          "citationIds": [
-            "src-jingui-504e56"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -19534,30 +17417,6 @@
         {
           "condition": "蜘蛛散吃的时候一定先要把疝气塞回去",
           "change": "有的疝气比较轻微，你一塞到腹腔里就回去了，然后再吃蜘蛛散。",
-          "citationIds": [
-            "src-jingui-b432ff"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "因为腹膜本身力量就不够",
-          "change": "腹压太大承受不了腹压，才破裂出来，所以有时开刀只是止一时，没有办法止一世，如果是孩童时期开刀这还可以,因为他们恢复会很快，用桂枝把蜘蛛带到腹腔,不然光吃蜘蛛,结果它的结网性只有到喉咙,就没效了，吃下去的目的是要把腹膜补起来才行。",
-          "citationIds": [
-            "src-jingui-b432ff"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "但是一定要加桂枝",
-          "change": "不加桂枝不行。",
-          "citationIds": [
-            "src-jingui-b432ff"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "桂枝用的时候也是五分",
-          "change": "两个是等量的，再用蜂蜜和在一起吃下去。",
           "citationIds": [
             "src-jingui-b432ff"
           ],
@@ -19686,48 +17545,8 @@
       ],
       "modifications": [
         {
-          "condition": "这个毒药",
-          "change": "过去我们有打虫药，像「锡粉」、「雷丸」这些都是打虫药，吃「使君子」也可以，使君子像落花生般，把它拨开来吃里面的仁，这也是打虫药。",
-          "citationIds": [
-            "src-jingui-a1db3b"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "为什么要用米粉?因为甘味",
           "change": "虫都喜欢吃甜的，所以他们用米粉做的甘草粉蜜汤，有引诱虫来吃的意思，一剂下去当场病人就不痛了。",
-          "citationIds": [
-            "src-jingui-a1db3b"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "这两个药你到药房去买",
-          "change": "保证被赶出来，这两个药是毒药，没有人会用铅粉和轻粉。",
-          "citationIds": [
-            "src-jingui-a1db3b"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "这个时候你用乌梅丸下去都没办法清出来了",
-          "change": "病人吃东西都吐，连药都进不去，此时就要设计药让虫来吃，所以就加了蜂蜜在里面。",
-          "citationIds": [
-            "src-jingui-a1db3b"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "你一定要加蜂蜜",
-          "change": "不要让虫吃到甘草，你吃到轻粉。",
-          "citationIds": [
-            "src-jingui-a1db3b"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "轻粉本来就是毒药",
-          "change": "不是给病人吃的，是给虫吃的，所以我们要用时，一定要确定病人有虫，这是经方里面最强的驱虫剂，虫吃到轻粉，当场就被毒死了，没事当然不要去吃轻粉。",
           "citationIds": [
             "src-jingui-a1db3b"
           ],
@@ -19882,14 +17701,6 @@
       ],
       "modifications": [
         {
-          "condition": "桂枝可以把心火导入到小肠",
-          "change": "子宫里来，去寒。",
-          "citationIds": [
-            "src-jingui-bbad75"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "实就要靠很热的药",
           "change": "所以加一些生附子，硫磺，这两个药等量，同时放到桂枝茯苓丸，硫磺去水又去寒，生附子去寒，可以把寒实去掉，所以我们做的桂枝茯苓丸就很强，很快。",
           "citationIds": [
@@ -19906,24 +17717,8 @@
           "kind": "analysis"
         },
         {
-          "condition": "因为他认为这是个在三焦油网中的问题",
-          "change": "于是加入茯苓。",
-          "citationIds": [
-            "src-jingui-bbad75"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "出来的同时怕肚子会抽痛",
           "change": "这时候加白芍进去止痛，张仲景在经方中说明只要遇到腹痛时，处方里面一定会加白芍，这就是桂枝茯苓丸处方的设计原意。",
-          "citationIds": [
-            "src-jingui-bbad75"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "此处不用甘草的原因是怕药性减缓",
-          "change": "不够迅捷,而南派的中医最喜欢开甘草我每次看南派医生开的药方，看了就丢掉，真是胡说八道，他们什么药里面都加甘草，不信我的话，大家去看就晓得了。",
           "citationIds": [
             "src-jingui-bbad75"
           ],
@@ -20110,56 +17905,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "川芎",
-          "change": "活血，如果腹痛月经痛的很厉害，用川芎下去。",
-          "citationIds": [
-            "src-jingui-8ad7a3"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "川芎只是可以把血管打开来",
-          "change": "让血进去，里面有淤血的时候，你可以加一些茜草、丹皮、桃仁活血化瘀的药在里面。",
-          "citationIds": [
-            "src-jingui-8ad7a3"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "这个药下去",
-          "change": "止血，瞬间就止掉了，很快。",
-          "citationIds": [
-            "src-jingui-8ad7a3"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "比如说病人虚弱时",
-          "change": "我们开出滋补的处方，干地黄可以用到一两，川芎用五钱，阿胶用三钱，甘草用三钱，艾叶、当归等量各三钱，然后芍药四钱，煮的时候可以放六碗水下去，然后放一碗半或两碗的米酒进去然后一起煮，煮成两碗以后再喝。",
-          "citationIds": [
-            "src-jingui-8ad7a3"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "随证调整",
-          "change": "这些药需要放酒进去。",
-          "citationIds": [
-            "src-jingui-8ad7a3"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "煎药的同时我们可以用针灸辅助病人",
-          "change": "针穴能够止血、止漏的穴位，像脾经的隐白、肝经的大敦，治疗肝脾两虚，加针三阴交、血海。",
-          "citationIds": [
-            "src-jingui-8ad7a3"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -20191,7 +17937,7 @@
         "locator": "妇人妊娠病脉证治第二十·当归芍药散"
       },
       "effects": {
-        "text": "当归、川芎各三钱，白芍一两，茯苓、白术五钱，泽泻六钱。当归川芎芍药是入血分，茯苓白术泽泻入气分排水的药。",
+        "text": "讲义未单列功效概括，详见下方方证与讲解。",
         "citationIds": [
           "src-jingui-2cd776"
         ],
@@ -20325,14 +18071,6 @@
       ],
       "modifications": [
         {
-          "condition": "小青龙汤证是表寒里寒",
-          "change": "结果发完汗以后，如果病人会咳不止，就用苓甘五味姜辛汤，然后再成为苓甘五味姜辛半夏汤，然后再变成苓甘五味姜辛半夏加杏仁汤，然后再演变为苓甘五味姜辛半夏加大黄汤，一路变化下去。",
-          "citationIds": [
-            "src-jingui-2cd776"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "当归芍药散里面有当归、川芎、芍药这是活血用的",
           "change": "茯苓、白术、泽泻就是去水用的，把积水去掉，同时把血补足病就好了，这是最好的怀孕期中调理身体的处方。",
           "citationIds": [
@@ -20461,24 +18199,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "平常怀孕时不需要吃人参",
-          "change": "可是因为这时孕妇吐太多了，肠胃的津液会伤到，此时必须加些人参进去来补足它。",
-          "citationIds": [
-            "src-jingui-e8c59a"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "平常用竹茹来让胃热凉下来",
-          "change": "加上橘皮，在竹茹橘皮汤证里是止逆用的，用半夏生姜来散水降逆止呕，呕吐太多可以加人参，茯苓能够健脾整胃，这些药放在一起就可以了，这是橘皮半夏汤的加减，就是因胃热太过而产生的逆气呕吐时用的。",
-          "citationIds": [
-            "src-jingui-e8c59a"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -20591,32 +18312,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "打粉之后",
-          "change": "一次吃一汤匙一平匙，如果还排不出来就加重。",
-          "citationIds": [
-            "src-jingui-a6137b"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "这种郁结、散结就要靠贝母",
-          "change": "三物小白散中也有用贝母，可以把瘀痰去掉。",
-          "citationIds": [
-            "src-jingui-a6137b"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "血虚的部分用当归去补回来",
-          "change": "所以这个处方也可以治疗妇女的情志病，也可以帮助嫌腹部太肥的妇女去脂。",
-          "citationIds": [
-            "src-jingui-a6137b"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -20724,22 +18420,6 @@
         {
           "condition": "葵子茯苓散是治疗水气肿到肌肉上面",
           "change": "肿到皮肤上连血管都看得到，腿变得很粗，手指按下去就是一个洞，张仲景认为此时不要用猪苓汤、五苓散、麻黄汤之类给她利尿或是发汗，也不要用麻黄加术汤，要用葵子茯苓散。",
-          "citationIds": [
-            "src-jingui-a9c14c"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "这两味药比例差不多是一比三",
-          "change": "比如说葵子是九钱，茯苓就是三钱，要重用葵子才能够增加通利水气的性，吃下去以后小便就会通利出来。",
-          "citationIds": [
-            "src-jingui-a9c14c"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "随证调整",
-          "change": "葵子可以增加茯苓的力量而已。",
           "citationIds": [
             "src-jingui-a9c14c"
           ],
@@ -20891,14 +18571,6 @@
             "src-jingui-7dea2f"
           ],
           "kind": "analysis"
-        },
-        {
-          "condition": "黄芩去热",
-          "change": "孕妇在怀孕中间都会有点热，尤其是胃的虚热，胃口开的很大，吃的饭很多。",
-          "citationIds": [
-            "src-jingui-7dea2f"
-          ],
-          "kind": "analysis"
         }
       ],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
@@ -21032,14 +18704,6 @@
       ],
       "modifications": [
         {
-          "condition": "心烦吐痛不能食饮",
-          "change": "加细辛一两，半夏大者二十枚。",
-          "citationIds": [
-            "src-jingui-1e345a"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "钙片吃下去是妳自己补到钙",
           "change": "胎儿不见得补得到，所以吃钙质到后来是妈妈越吃越胖，胎儿还是很小，这时候吃经方的白术散最好。",
           "citationIds": [
@@ -21050,14 +18714,6 @@
         {
           "condition": "张仲景的白术散用牡蛎",
           "change": "而牡蛎本身钙质就很多在里面，吃下去以后如何让钙跑到子宫里面去养胎儿，就要利用川芎，川芎这个药能活血，胎儿太小的原因是下焦太寒，就是子宫里面太寒了，张仲景上焦寒是开蜀椒，像经方中的大建中汤，蜀椒除了能用在治疗胸阳不足上焦有寒时，下焦有寒时也可以使用。",
-          "citationIds": [
-            "src-jingui-1e345a"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "当下焦有寒时",
-          "change": "如果寒是在肾脏里，我们是使用附子汤，此处说的是子宫太寒，所以我们用蜀椒、川芎，加上白术是因为白术能够健脾整胃。",
           "citationIds": [
             "src-jingui-1e345a"
           ],
@@ -21175,16 +18831,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "枳实可以去浊物",
-          "change": "浊水，脏的水，所以不要把枳实设定到大小承气汤里面，能够宽肠，薤白枳实，可以去心痛彻背背痛彻心。",
-          "citationIds": [
-            "src-jingui-aeb261"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -21306,30 +18953,6 @@
         }
       ],
       "modifications": [
-        {
-          "condition": "一般有淤血在里面",
-          "change": "都是有寒在里面，加炮附子三钱，温下焦的阳，治下焦阳虚。",
-          "citationIds": [
-            "src-jingui-197e81"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "你一热",
-          "change": "肝血就会动，淤血也会动，动了之后就用活血化瘀的药清出来，可以加丹皮，川芎啊。",
-          "citationIds": [
-            "src-jingui-197e81"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "但是如果枳实芍药散吃下去后病情没有好转",
-          "change": "代表这个腹痛是因为「腹中有瘀血」造成的。",
-          "citationIds": [
-            "src-jingui-197e81"
-          ],
-          "kind": "analysis"
-        },
         {
           "condition": "如果大家在药房里面买不到蟅虫时",
           "change": "可用红花来替代破瘀，王不留行本来就是活血化瘀的药,也可以加进去,再加牛膝来跟大黄、桃仁并用。",
@@ -21488,14 +19111,6 @@
           "kind": "analysis"
         },
         {
-          "condition": "一碗里加半汤匙",
-          "change": "一平勺的半勺，就行，不要太多会太辣，呛鼻。",
-          "citationIds": [
-            "src-jingui-bdfcfb"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "」阳旦汤就是比桂枝、麻黄、葛根更深一层的汤方",
           "change": "也是属于太阳证，但是是病人在气血两虚时，得到的太阳证大家看看，阳旦汤是不是就是桂枝汤加牡桂?就是肉桂，所以是桂枝加桂汤。",
           "citationIds": [
@@ -21506,14 +19121,6 @@
         {
           "condition": "如果说有两个人同时得到感冒",
           "change": "两个人都是桂枝汤证，结果吃桂枝汤后妹妹好了，姊姊没有好，为什么呢?因为姊姊刚生完小孩子正在坐月子，这个时候光靠桂枝汤是不行的，必须加些肉桂进去才行。",
-          "citationIds": [
-            "src-jingui-bdfcfb"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "如果你看到是葛根汤证",
-          "change": "你就开葛根汤加肉桂，依此类推，千万不可以只会开桂枝汤，葛根汤就不会开，临症上要会活用。",
           "citationIds": [
             "src-jingui-bdfcfb"
           ],
@@ -21769,14 +19376,6 @@
       ],
       "modifications": [
         {
-          "condition": "这几个药中",
-          "change": "因为病人产后血虚但是肚子没有痛，所以不加芍药。",
-          "citationIds": [
-            "src-jingui-7ce7ec"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "竹叶本身是能够去风痉",
           "change": "就是去因风产生的痉病，这里的竹叶汤是治疗所谓太阳中风的风痉，防风主治因为三焦不通利而产生的内痉，葛根是用在治疗刚痉上,病人有抽筋、筋挛的现象，就是脑膜炎。",
           "citationIds": [
@@ -21823,8 +19422,16 @@
         "kind": "analysis",
         "locator": "妇人产后病脉证治第二十一·竹皮大丸"
       },
-      "symptoms": [],
-      "symptomNote": "讲义未单列本方证条文，详见下方讲解。",
+      "symptoms": [
+        {
+          "text": "#### 妇人乳中虚，烦乱呕逆，安中益气，竹皮大丸主之。",
+          "citationIds": [
+            "src-jingui-debaa2"
+          ],
+          "kind": "quote",
+          "locator": "妇人产后病脉证治第二十一·相关条文"
+        }
+      ],
       "preparation": {
         "ingredients": {
           "text": "生竹茹、石膏各二分 | 桂枝、白薇各一分 | 甘草七分",
@@ -21931,16 +19538,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "妈妈体虚时",
-          "change": "胃下方的血液会不够，于是有宿食堵在里面，病人就会有喘满，这个时候我们加一点枳实下去就足够了，不要加大黄，因为妈妈是虚的。",
-          "citationIds": [
-            "src-jingui-debaa2"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -22262,24 +19860,8 @@
       ],
       "modifications": [
         {
-          "condition": "咳逆上气",
-          "change": "因为喉咙梗到痰气，病人就产生逆气的现象，所以会加半夏来降痰气，为什么要用厚朴?因为厚朴能够散结行滞气、润肠，能够宽肠下气。",
-          "citationIds": [
-            "src-jingui-1bb0a2"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "茯苓、生姜",
           "change": "茯苓能够利水，生姜能够把胃中的水散掉，让土能够生金，加强脾胃的功能,这是此方的方义,这个方剂里最重要的是苏叶。",
-          "citationIds": [
-            "src-jingui-1bb0a2"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "厚朴能够开结",
-          "change": "如果痰多我们就加点贝母在里面来祛痰，桔梗也是祛痰，这两个都是祛痰的药。",
           "citationIds": [
             "src-jingui-1bb0a2"
           ],
@@ -22410,22 +19992,6 @@
         {
           "condition": "上堂课听完",
           "change": "有的同学家小孩子的癫痫就用了甘麦大枣汤，吃下去以后，马上开始下利，一直拉肚子，这三味药怎么可能导致拉肚子。",
-          "citationIds": [
-            "src-jingui-f91456"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "经方里面",
-          "change": "就在这个地方说悲伤欲哭，象如神灵所作，数欠喜伸，这个人发癫痫，突然倒下去，好像被鬼附身，然后吐涎沫吐口水，眼睛往上吊啊，象如神灵所作，这是甘味，同时抽搐的很厉害，筋急。",
-          "citationIds": [
-            "src-jingui-f91456"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "可能你这个药是通肾结石的",
-          "change": "开猪苓汤下去，病人居然呕吐啊，就好像我常常讲的空的吸管，上面一开开水就排出来了，所以呕吐一吐的时候，下面石头跟水统统释放出来。",
           "citationIds": [
             "src-jingui-f91456"
           ],
@@ -22723,40 +20289,8 @@
           "kind": "analysis"
         },
         {
-          "condition": "因为妇人停经时子宫会萎缩",
-          "change": "如果用大剂的药去攻是不正确的。",
-          "citationIds": [
-            "src-jingui-5fd48f"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "病家子宫在萎缩时我们多用温经汤",
-          "change": "因为有瘀血在少腹，温经汤专门针对子宫虚寒时用的，所以除了女子更年期时可用以外，月经来得不顺、或是子宫有瘀血不能够去除、还有一种就是妇人不孕时也都可以用到它。",
-          "citationIds": [
-            "src-jingui-5fd48f"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "温经汤是中医过去用做求子的处方",
           "change": "所以大家可以在温经汤旁边写上「长年血寒」就是经年累月长年的血寒积结在胞门、在子宫里面。",
-          "citationIds": [
-            "src-jingui-5fd48f"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "当归、川芎、芍药本身是补血的",
-          "change": "能够让血量增加。",
-          "citationIds": [
-            "src-jingui-5fd48f"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "比如这个太太",
-          "change": "人很虚，又有便秘，吴茱萸可以补肝的阴，就是肝脏的血，阿胶可以加重，病人很虚，肚子又痛，里面血结在胞门，芍药就可以加重。",
           "citationIds": [
             "src-jingui-5fd48f"
           ],
@@ -22778,6 +20312,136 @@
         ],
         "kind": "analysis",
         "locator": "妇人杂病脉证治第二十二·温经汤"
+      }
+    },
+    {
+      "id": "jingui-d3e716",
+      "name": "土瓜根散",
+      "pinyin": "",
+      "sourceCitationId": "src-jingui-d3e716",
+      "originalText": {
+        "text": "土瓜根 芍药 桂枝 蟅虫各三分\n上四味杵为散，酒服方寸匕，日三服。",
+        "citationIds": [
+          "src-jingui-d3e716"
+        ],
+        "kind": "quote",
+        "locator": "妇人杂病脉证治第二十二·土瓜根散"
+      },
+      "effects": {
+        "text": "如果病人「经水不利，少腹满痛，经一月再见者，土瓜根散主之。土瓜根散中有土瓜根、芍药、桂枝、虫等分，如果没有虫，可以改用桃仁、红花。",
+        "citationIds": [
+          "src-jingui-d3e716"
+        ],
+        "kind": "analysis",
+        "locator": "妇人杂病脉证治第二十二·土瓜根散"
+      },
+      "symptoms": [
+        {
+          "text": "带下经水不利，少腹满痛，经一月再见者，土瓜根散主之。",
+          "citationIds": [
+            "src-jingui-d3e716"
+          ],
+          "kind": "quote",
+          "locator": "妇人杂病脉证治第二十二·相关条文"
+        }
+      ],
+      "preparation": {
+        "ingredients": {
+          "text": "土瓜根 芍药 桂枝 蟅虫各三分",
+          "citationIds": [
+            "src-jingui-d3e716"
+          ],
+          "kind": "quote",
+          "locator": "妇人杂病脉证治第二十二·土瓜根散"
+        },
+        "decoction": {
+          "text": "上四味杵为散，酒服方寸匕，日三服。",
+          "citationIds": [
+            "src-jingui-d3e716"
+          ],
+          "kind": "quote",
+          "locator": "妇人杂病脉证治第二十二·土瓜根散"
+        },
+        "modernNote": "煎服法依讲义原文录入，未作剂量换算。"
+      },
+      "composition": [
+        {
+          "herbId": "shanghan-herb-dbu4c",
+          "herbName": "土瓜根",
+          "dosage": "三分",
+          "role": "未标注",
+          "roleCitationIds": [
+            "src-jingui-d3e716"
+          ],
+          "action": {
+            "text": "如果病人「经水不利，少腹满痛，经一月再见者，土瓜根散主之。",
+            "citationIds": [
+              "src-jingui-d3e716"
+            ],
+            "kind": "analysis",
+            "locator": "妇人杂病脉证治第二十二·土瓜根散"
+          }
+        },
+        {
+          "herbId": "shanghan-herb-mxdu",
+          "herbName": "芍药",
+          "dosage": "三分",
+          "role": "未标注",
+          "roleCitationIds": [
+            "src-jingui-d3e716"
+          ],
+          "action": {
+            "text": "土瓜根散中有土瓜根、芍药、桂枝、虫等分，如果没有虫，可以改用桃仁、红花。",
+            "citationIds": [
+              "src-jingui-d3e716"
+            ],
+            "kind": "analysis",
+            "locator": "妇人杂病脉证治第二十二·土瓜根散"
+          }
+        },
+        {
+          "herbId": "guizhi",
+          "herbName": "桂枝",
+          "dosage": "三分",
+          "role": "未标注",
+          "roleCitationIds": [
+            "src-jingui-d3e716"
+          ],
+          "action": {
+            "text": "土瓜根散中有土瓜根、芍药、桂枝、虫等分，如果没有虫，可以改用桃仁、红花。",
+            "citationIds": [
+              "src-jingui-d3e716"
+            ],
+            "kind": "analysis",
+            "locator": "妇人杂病脉证治第二十二·土瓜根散"
+          }
+        },
+        {
+          "herbId": "jingui-herb-3f7c38",
+          "herbName": "蟅虫",
+          "dosage": "三分",
+          "role": "未标注",
+          "roleCitationIds": [
+            "src-jingui-d3e716"
+          ]
+        }
+      ],
+      "modifications": [],
+      "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
+      "corePairs": [],
+      "commentaries": [],
+      "additionalIndications": [],
+      "commentaryNote": "方后讲解为倪海厦《人纪·金匮要略》讲义原文；未补历代注家方解。",
+      "dosageNote": "剂量依讲义原文；汉代度量衡换算见相关原书说明。",
+      "modernGramNote": "本站未折算金匮方今用剂量，请以原书及执业中医师辨证为准。",
+      "verification": "reference",
+      "modernExplanation": {
+        "text": "「带下」只要讲到带下就是月经的病。\n如果病人「经水不利，少腹满痛，经一月再见者，土瓜根散主之。」月经来了一个月，结果第二个月没有了，到第三个月又来，中间会停经一个月，年纪轻轻的女子寒结子宫时，我们要用土瓜根散。\n土瓜根散中有土瓜根、芍药、桂枝、虫等分，如果没有虫，可以改用桃仁、红花。还有时方中用的三菱、莪术之类的活血化瘀药物，这些都是通经的药。\n三棱、莪术、桃仁、丹皮啊，用粉剂就行。当我们攻肿瘤或者炎症的时候，粉剂力量会比较专一，不会像汤剂跑的那么快。\n一般月经如果没有正常来的话我们就要攻经，让月经出来就靠这个土瓜根散。\n吃到每个月月经来就行了。\n诸位如果要用温经汤，最主要的病人症状是脣干口燥，表示里面血虚，如果病人没有血虚，就不需要用温经汤，直接用土瓜根散攻出来就好了。\n温经汤跟土瓜根散都是治疗血结胞门用的，差异是一个是血虚、一个是血足。温经汤是血不足时用的，所以嘴巴才会口干舌燥。",
+        "citationIds": [
+          "src-jingui-d3e716"
+        ],
+        "kind": "analysis",
+        "locator": "妇人杂病脉证治第二十二·土瓜根散"
       }
     },
     {
@@ -22885,14 +20549,6 @@
       ],
       "modifications": [
         {
-          "condition": "用汤剂",
-          "change": "就大黄三钱，甘遂一钱，阿胶一钱，三碗水煮成一碗喝下去。",
-          "citationIds": [
-            "src-jingui-478958"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "如果加上小便也难",
           "change": "代表连水也结到了，所以说是「水与血俱结在血室」里面，这就是大黄甘遂汤证。",
           "citationIds": [
@@ -22901,24 +20557,8 @@
           "kind": "analysis"
         },
         {
-          "condition": "大黄去、去实、去积",
-          "change": "把大便通利出来，甘遂能去水，阿胶能和血，让血的温度增加，将瘀血块化尽，化掉以后因为血积太多，小便又下利，所以张仲景将之从大便排出来。",
-          "citationIds": [
-            "src-jingui-478958"
-          ],
-          "kind": "analysis"
-        },
-        {
           "condition": "大黄甘遂汤吃下去以后",
           "change": "病人下利出来全部都是水跟血。",
-          "citationIds": [
-            "src-jingui-478958"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "由于这是水和血并结不单只是子宫有积水",
-          "change": "如果我们开的处方是桃核承气汤，就是桂枝加桃仁和小承气汤的组合，在桃核承气汤中加猪苓汤在里面，吃下去一样血水并结可以去掉，只是没有像甘遂那么迅捷，病人也一样会下很多水出来。",
           "citationIds": [
             "src-jingui-478958"
           ],
@@ -23028,40 +20668,7 @@
           }
         }
       ],
-      "modifications": [
-        {
-          "condition": "矾石就是白矾",
-          "change": "比例是三比一把白矾打成粉以后放在锅子里烧，水分跑掉就变成黄色的粉末，从锅子里面将之刮下，刮下来以后用三钱比一钱的比例跟杏仁混合在一起，再加一点蜜和成丸，作成像粉笔这样条状，拿取都方便，然后塞在阴部里面去，不可内服。",
-          "citationIds": [
-            "src-jingui-49cade"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "记得作成蜜灸丸以后要先烘干",
-          "change": "不要黏黏的放进去，就会散掉。",
-          "citationIds": [
-            "src-jingui-49cade"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "随证调整",
-          "change": "此丸去湿力量很强。",
-          "citationIds": [
-            "src-jingui-49cade"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "药不能直接放进去",
-          "change": "会烫伤皮肤，要用棉布袋包着，放进去。",
-          "citationIds": [
-            "src-jingui-49cade"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -23267,46 +20874,6 @@
             "src-jingui-dd86ec"
           ],
           "kind": "analysis"
-        },
-        {
-          "condition": "桂枝加强心脏的力量",
-          "change": "同时让心脏移热到小肠，再用炮附子把热固在小肠，所以炮附子是固下焦的阳用的。",
-          "citationIds": [
-            "src-jingui-dd86ec"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "怕阳往外走",
-          "change": "才加的炮附子，好不容易把阳建立起来了，你没有固好，阳又散失掉。",
-          "citationIds": [
-            "src-jingui-dd86ec"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "中医过去认为",
-          "change": "六味地黄丸和桂附八味丸，都是长寿的药。",
-          "citationIds": [
-            "src-jingui-dd86ec"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "心和小肠是表里",
-          "change": "心火进入小肠，像我们抽烟抽很多，为什么会瘦掉，因为我们用药，皂荚丸，或者是苦参，配在汤剂里面，加黄芩黄连，把肺里面清掉，加一些五味子、麦门冬把津液补回去，然后利用心脏到小肠的温度，腹部周围的脂肪都会燃烧掉。",
-          "citationIds": [
-            "src-jingui-dd86ec"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "所以不管中药西药",
-          "change": "任何药能吃下去，让你脚是热的，我都赞成。",
-          "citationIds": [
-            "src-jingui-dd86ec"
-          ],
-          "kind": "analysis"
         }
       ],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
@@ -23422,14 +20989,6 @@
         }
       ],
       "modifications": [
-        {
-          "condition": "枳实可以降上升之浊气",
-          "change": "栀子可以去虚浮之热，豆豉可散虚邪。",
-          "citationIds": [
-            "src-jingui-bb5a51"
-          ],
-          "kind": "analysis"
-        },
         {
           "condition": "如果遇到有宿食停积之人",
           "change": "则可酌加大黄将之排除，这是因为大病初愈，恐胃家不堪重剂故也。",
@@ -23603,16 +21162,7 @@
           ]
         }
       ],
-      "modifications": [
-        {
-          "condition": "海藻咸味攻坚",
-          "change": "含碘能去疮伤活血。",
-          "citationIds": [
-            "src-jingui-cb196c"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],
@@ -23793,24 +21343,7 @@
           ]
         }
       ],
-      "modifications": [
-        {
-          "condition": "方中竹叶石膏可以清除上升之胃热",
-          "change": "人参甘草和胃生津，生半夏可以止吐，粳米滋养胃气，麦冬润肺，全方可以去除胃热补足中气，为病愈后调理方剂中之最。",
-          "citationIds": [
-            "src-jingui-4515c9"
-          ],
-          "kind": "analysis"
-        },
-        {
-          "condition": "半夏去恶心",
-          "change": "代表有停水在里面。",
-          "citationIds": [
-            "src-jingui-4515c9"
-          ],
-          "kind": "analysis"
-        }
-      ],
+      "modifications": [],
       "modificationsNote": "加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。",
       "corePairs": [],
       "commentaries": [],

@@ -1,5 +1,5 @@
 import { createServer } from 'node:http'
-import { mkdir, readFile, rename, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, rename, writeFile, readdir, unlink, stat } from 'node:fs/promises'
 import path from 'node:path'
 
 const PORT = Number(process.env.QIHUANG_API_PORT ?? 8787)
@@ -7,6 +7,8 @@ const DATA_FILE =
   process.env.QIHUANG_DATA_FILE ?? path.join(process.cwd(), 'data', 'notes.json')
 const EDIT_KEY = process.env.QIHUANG_EDIT_KEY ?? 'dev-key'
 const MAX_BODY = 256 * 1024
+const BACKUP_DIR = path.join(path.dirname(DATA_FILE), 'backups')
+const MAX_BACKUPS = 50
 const ROLES = new Set(['君', '臣', '佐', '使', '佐使', '未标注'])
 
 const EMPTY = () => ({
@@ -36,7 +38,25 @@ async function readStore() {
   return cache
 }
 
+async function backupCurrent() {
+  try {
+    const raw = await readFile(DATA_FILE, 'utf8')
+    await mkdir(BACKUP_DIR, { recursive: true })
+    const stamp = new Date().toISOString().replace(/[:.]/g, '-')
+    await writeFile(path.join(BACKUP_DIR, `notes-${stamp}.json`), raw)
+    const names = (await readdir(BACKUP_DIR))
+      .filter((name) => /^notes-.*\.json$/.test(name))
+      .sort()
+    while (names.length > MAX_BACKUPS) {
+      await unlink(path.join(BACKUP_DIR, names.shift())).catch(() => {})
+    }
+  } catch {
+    // 首次写入或备份不可用时，不阻断正常保存。
+  }
+}
+
 async function writeStore(next) {
+  await backupCurrent()
   await mkdir(path.dirname(DATA_FILE), { recursive: true })
   const temp = `${DATA_FILE}.tmp`
   await writeFile(temp, `${JSON.stringify(next, null, 2)}\n`, 'utf8')
@@ -173,6 +193,48 @@ const server = createServer(async (req, res) => {
 
   if (url.pathname === '/api/health') {
     send(res, 200, { ok: true })
+    return
+  }
+
+  if (url.pathname === '/api/notes/backups' && req.method === 'GET') {
+    try {
+      const entries = await readdir(BACKUP_DIR).catch(() => [])
+      const backups = await Promise.all(
+        entries
+          .filter((name) => name.endsWith('.json'))
+          .map(async (name) => {
+            const info = await stat(path.join(BACKUP_DIR, name))
+            return { name, size: info.size, updatedAt: info.mtime.toISOString() }
+          }),
+      )
+      backups.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt))
+      send(res, 200, { backups })
+    } catch {
+      send(res, 500, { error: 'backup-list-failed' })
+    }
+    return
+  }
+
+  if (url.pathname === '/api/notes/restore') {
+    if (req.method !== 'POST') {
+      send(res, 405, { error: 'method-not-allowed' })
+      return
+    }
+    if ((req.headers['x-qihuang-key'] ?? '') !== EDIT_KEY) {
+      send(res, 401, { error: 'invalid-edit-key' })
+      return
+    }
+    try {
+      const body = JSON.parse(await readBody(req))
+      const backup = path.basename(cleanText(body.backup, 120))
+      if (!backup || backup !== body.backup) throw new Error('invalid-backup')
+      const parsed = JSON.parse(await readFile(path.join(BACKUP_DIR, backup), 'utf8'))
+      const next = { ...EMPTY(), ...parsed, updatedAt: new Date().toISOString() }
+      await writeStore(next)
+      send(res, 200, next)
+    } catch {
+      send(res, 400, { error: 'restore-failed' })
+    }
     return
   }
 

@@ -22,7 +22,7 @@ for (const formula of shanghan.formulas) {
 }
 
 const DOSE_RE =
-  /((?:[一二三四五六七八九十百千万半0-9]+)(?:两|钱|分|铢|斤|升|合|枚|个|茎|片|把|条|只|张|克|寸|劈|具|握|撮|尺|斗|斛|束|颗|粒|支|滴|匕))([\s\S]*)$/
+  /((?:[一二三四五六七八九十百千万半0-9]+)(?:两|钱|分|铢|斤|升|合|枚|个|茎|片|把|条|只|张|克|寸|劈|具|握|撮|尺|斗|斛|束|颗|粒|支|滴|匕)|少许)([\s\S]*)$/
 const PREP_RE =
   /^(上|右).{0,6}味|以水|水[一二三四五六七八九十百]+升|煮取|煎取|微火煎|去滓|温服|分温|为散|为末|杵|捣|纳|丸如|如梧子|顿服|日[一二三]服|以上.{0,6}味|炼蜜|和蜜|酒服|米饮/
 const MODEL = /主之|宜|可与|与|属/
@@ -65,7 +65,10 @@ const HERB_NAME_FIXES = new Map([
 ])
 
 function cleanHerbName(name) {
-  let out = name.trim().replace(/(?:大者|小者|等分|熬)$/g, '')
+  let out = name
+    .trim()
+    .replace(/[（(][^）)]*[）)]/g, '')
+    .replace(/(?:大者|小者|等分|熬)$/g, '')
   out = HERB_NAME_FIXES.get(out) ?? out
   for (const [from, to] of HERB_ALIASES) out = out.split(from).join(to)
   return out.trim()
@@ -99,27 +102,48 @@ function parseHerbPart(part) {
   return name ? { name, dose } : null
 }
 
-function expandHerbParts(part) {
-  if (!part.includes('、')) return [parseHerbPart(part)].filter(Boolean)
-  const chunks = part
-    .split('、')
-    .map((chunk) => chunk.trim())
+function sharedDoseHerbs(names, dose) {
+  return names
+    .map((name) => {
+      const cleaned = cleanHerbName(name.replace(/[，,。；;：:].*$/, '').trim())
+      return cleaned ? { name: cleaned, dose } : null
+    })
     .filter(Boolean)
-  if (chunks.length < 2) return [parseHerbPart(part)].filter(Boolean)
+}
 
-  const last = chunks[chunks.length - 1]
-  const each = last.match(/^(.+?)各(.+)$/)
-  if (each) {
-    const dose = each[2].trim()
-    const names = [...chunks.slice(0, -1), each[1].trim()]
-    return names
-      .map((name) => {
-        const cleaned = cleanHerbName(name.replace(/[，,。；;：:].*$/, '').trim())
-        return cleaned ? { name: cleaned, dose } : null
-      })
+function expandHerbParts(part) {
+  const trimmed = part.trim()
+  if (!trimmed) return []
+
+  if (trimmed.includes('、')) {
+    const chunks = trimmed
+      .split('、')
+      .map((chunk) => chunk.trim())
       .filter(Boolean)
+    if (chunks.length < 2) return [parseHerbPart(trimmed)].filter(Boolean)
+
+    const last = chunks[chunks.length - 1]
+    const each = last.match(/^(.+?)各(.+)$/)
+    if (each) {
+      return sharedDoseHerbs([...chunks.slice(0, -1), each[1].trim()], each[2].trim())
+    }
+    return chunks.map(parseHerbPart).filter(Boolean)
   }
-  return chunks.map(parseHerbPart).filter(Boolean)
+
+  const tokens = trimmed.split(/\s+/).filter(Boolean)
+  if (tokens.length >= 2) {
+    const last = tokens[tokens.length - 1]
+    const each = last.match(/^(.+?)各(.+)$/)
+    if (each) {
+      return sharedDoseHerbs([...tokens.slice(0, -1), each[1].trim()], each[2].trim())
+    }
+    const doseOnly = last.match(/^各(.+)$/)
+    if (doseOnly) {
+      return sharedDoseHerbs(tokens.slice(0, -1), doseOnly[1].trim())
+    }
+  }
+
+  return [parseHerbPart(trimmed)].filter(Boolean)
 }
 
 function compositionOf(lines) {
@@ -130,7 +154,7 @@ function compositionOf(lines) {
       parts = line.split('|')
     } else if (
       !PREP_RE.test(line) &&
-      line.includes('、') &&
+      (line.includes('、') || (/\s/.test(line.trim()) && line.includes('各'))) &&
       /(两|钱|分|铢|斤|升|合|枚|个|片|克|各)/.test(line)
     ) {
       parts = [line]
@@ -168,7 +192,7 @@ function effectText(explanation, name) {
   const useful = sentences.filter((sentence) =>
     /治|主|功能|作用|用在|用来|可以|能够|专门|适用/.test(sentence),
   )
-  const picked = (useful.length ? useful : sentences).slice(0, 2).join('')
+  const picked = useful.slice(0, 2).join('')
   return picked.length > 300 ? `${picked.slice(0, 300)}…` : picked
 }
 
@@ -190,7 +214,7 @@ function actionFor(herbName, explanation, citationId, locator) {
   }
 }
 
-function modificationList(explanation, citationId, locator) {
+function modificationList(explanation, name, citationId, locator) {
   const sentences = explanation
     .split(/(?<=[。！？；\n])/)
     .map((sentence) => sentence.trim())
@@ -199,6 +223,12 @@ function modificationList(explanation, citationId, locator) {
   for (const sentence of sentences) {
     if (!/(加|减|去)/.test(sentence)) continue
     if (/小编/.test(sentence)) continue
+    const targeted =
+      sentence.includes(name) ||
+      /(本方|此方|这个方|原方)/.test(sentence) ||
+      /^(若|如果|假如|如|一服|服药后)/.test(sentence)
+    if (!targeted) continue
+    if (/例如|比如|比如说|原则上|一般来说|千万|不可以|不能/.test(sentence)) continue
     if (!/(汤|散|丸|药|味|桂枝|白芍|麻黄|附子|大黄|石膏|生姜|大枣|甘草|半夏|茯苓|人参|当归|川芎|黄芩|黄连)/.test(sentence)) {
       continue
     }
@@ -259,10 +289,16 @@ for (const file of files) {
 
     const compositionText = composition.raw
     const decoctionText = prepLines.join('\n')
+    const escapedName = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+    const clauseFromText = text.match(
+      new RegExp(`[^。\\n]{0,160}${escapedName}(?:主之|宜|可与|亦主之)[^。\\n]*。`),
+    )
     const clauseText =
       lastClause && lastClause.title.includes(name.replace(/方$/, ''))
         ? lastClause.title
-        : ''
+        : clauseFromText
+          ? clauseFromText[0].trim()
+          : ''
 
     const quoteParts = [clauseText, compositionText, decoctionText, explanation].filter(Boolean)
     const quote = quoteParts.join('\n\n')
@@ -318,7 +354,7 @@ for (const file of files) {
       },
       composition: compositionItems,
       modifications: explanation
-        ? modificationList(explanation, sourceId, locator)
+        ? modificationList(explanation, name, sourceId, locator)
         : [],
       modificationsNote: explanation
         ? '加减文字取自方后讲义讲解，属后世临证调整，不是《金匮要略》原文。'
