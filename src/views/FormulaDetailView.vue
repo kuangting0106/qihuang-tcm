@@ -345,9 +345,17 @@ watch(
               {{ formula.preparation.decoction.text }}
             </blockquote>
             <CitationBadge :citation-ids="formula.preparation.decoction.citationIds" label="原文" compact />
-            <div v-if="formula.preparation.modernDecoction" class="preparation-modern">
-              <span class="preparation-modern__label">现代煎煮 · 参考</span>
-              <p>{{ formula.preparation.modernDecoction }}</p>
+            <div class="preparation-modern">
+              <span class="preparation-modern__label">现代煎煮服用法 · 参考</span>
+              <p v-if="formula.preparation.modernDecoction">
+                本方：{{ formula.preparation.modernDecoction }}
+              </p>
+              <p>
+                通用做法：药材冷水浸泡约30分钟，水面高出药面2–3厘米；先大火煮沸，再转小火煎30–40分钟，滤出药汁；再加水煎第二次，合并两次药汁，分2次温服。
+              </p>
+              <p class="preparation-modern__note">
+                汉代一升约合200毫升，一合约20毫升；原文水量、取汁量与服量可按此估算。原方有先煎、后下、包煎、烊化、去上沫或“停后服”等要求时，以原文为准。现代做法只作学习参考，具体请遵医嘱。
+              </p>
             </div>
           </article>
 
@@ -835,6 +843,14 @@ watch(
   line-height: 1.8;
 }
 
+.preparation-modern__note {
+  margin-top: 4px;
+  color: var(--ink-faint);
+  font-family: var(--sans, inherit);
+  font-size: 0.7rem;
+  line-height: 1.6;
+}
+
 .preparation-note {
   margin-top: 9px;
   color: var(--ink-faint);
@@ -844,10 +860,14 @@ watch(
 
 .symptom-layout {
   display: grid;
-  grid-template-columns: minmax(0, 0.48fr) minmax(0, 0.52fr);
+  grid-template-columns: minmax(0, 0.52fr) minmax(0, 0.48fr);
   gap: 22px;
   padding: 26px 0 30px;
   align-items: stretch;
+}
+
+.symptom-panel {
+  order: -1;
 }
 
 .effect-card {
