@@ -261,7 +261,25 @@
 - 原文个别腧穴代码与经名有误（如 `GBl2`、`TEl7`、`HTl`、`Lu5`、委中 `BL54`、肩髃归经），已按现行经穴标准校正，并在页面 `proofNote` 中说明；其余文字照录，未作删节。
 - 页面固定警示「非专业人士不要尝试」，不构成操作指导；针刺须由具备资质的执业中医师在合规场所操作。
 
-## 十一、中医急救知识（首页）
+## 十一、十二经穴位速查与病症常针
+
+- 十二经速查来源：用户提供 `12经穴位速查.jpg`，原件存 `public/images/acupuncture/12-meridians.jpg`；表头引《灵枢·九针十二原》「所出为井，所溜为荥，所注为输，所行为经，所入为合」。
+- 速查表按原图逐格录入 12 经的五行、时辰、井荥输经合、子母原络募郄，并另列五输穴特点、十二经五输配五行、八脉交会、八会穴、子母穴与季节规则；数据在 `scripts/content/acupuncture-meridian-quickref.json`。
+- 病症常针来源：`E:\data\sources\tcm\raw\hantang-nihaixia-follower\倪海厦\人纪-1-针灸\病症针灸速查\215条针灸经验穴位和31条透针透穴.md`，仓库副本 `scripts/content/nihaixia-acupuncture-quickref.md`。
+- 原题作「215 条针灸经验」，正文按 11 个分类逐条清点为 211 条（心·心血管 7、肝胆 6、脾胃 17、肺 9、肾与泌尿生殖 13、妇科儿科 24、神志 16、伤痛外科 43、皮肤 14、头面五官 44、其他 18）；不补写原文没有的条目，页面同时在标题下注明这一差异。
+- 将每条拆成「病症 — 常用穴位 — 备注 — 原文讲解 — 医案」，另抽出卷首 21 则临床随笔、19 则病症医案；31 条透针透穴保留治症、来源、临证心悟与治案，并单列下针医案页。
+- 数据由 `scripts/build-acupuncture-content.mjs` 生成到 `src/data/acupuncture-quickref.json`；不改写穴位、操作与医案，只做分段和页面分组。
+
+## 十二、倪海厦人纪针灸教程
+
+- 来源：`E:\data\sources\tcm\raw\hantang-nihaixia-follower\倪海厦\人纪-1-针灸\倪海厦人纪系列之针灸教程.pdf`（216 页，有完整文本层，无需 OCR）。
+- 先按 PDF 书签导出章节、二级小节与三级小目录，再按标题行切分正文；页眉「人纪系列针灸篇」、页脚版本号与页码已清理，正文保留原顺序，未改写。
+- 最终整理为 6 章、87 节、183 个小目录、189 页正文；第四章「十二经络与奇经八脉简介」按经络分节，右上角可切换经络，页面上方保持固定。
+- 每条经络正文页提供对应 `/meridians/<id>` 链接，并在经络图页反向链接回教程；3D 经络图未补全的经络明确显示「已收录 x / 标准总数 · 360° 经络图待完善」，不把待补状态写成完整。
+- 中间数据：`scripts/content/nihaixia-acupuncture-pages.json`（189 页文本）、`nihaixia-acupuncture-toc.json`（277 条书签）；生成脚本 `scripts/build-acupuncture-content.mjs`，输出 `src/data/acupuncture-tutorial.json`。
+- 教程页与针法页均保留「非专业人士不要尝试」警示，只作学习与文献整理，不构成操作指导。
+
+## 十三、中医急救知识（首页）
 
 - 来源：`E:\data\sources\tcm\raw\hantang-nihaixia-follower\精选书籍\中医急救手册《第一时间》（2025.2.20最新版本）.pdf`（43 页，电子本）。
 - 该 PDF 有完整文本层与内嵌插图：文字直接抽取，插图按页内图像块以 200 dpi 重新裁切，保存为 `public/images/first-aid/*.jpg`（长边不超过 560 px），每图记录原书页码。

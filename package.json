@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run precompute:body && npm run build:data && npm run build:lectures && npm run validate:data && vite build && vue-tsc --noEmit",
+    "build": "npm run precompute:body && npm run build:data && npm run build:lectures && npm run build:acupuncture && npm run validate:data && vite build && vue-tsc --noEmit",
     "build:data": "node scripts/build-sample-data.mjs",
     "build:lectures": "node scripts/build-bencao-lectures.mjs",
+    "build:acupuncture": "node scripts/build-acupuncture-data.mjs && node scripts/build-acupuncture-content.mjs",
     "build:profiles": "node scripts/build-bencao-profiles.mjs",
     "precompute:body": "tsx scripts/precompute-body.mts",
     "preview": "vite preview",

@@ -41,6 +41,12 @@
 - 用户提供图只标“用户提供 · 仅站内学习”，不伪造外部授权链接；
 - CC BY-NC / BY-NC-SA 图片仅用于非商业学习原型，商业使用需替换授权图片。
 
+## 针灸速查图与教程文本
+
+- `public/images/acupuncture/12-meridians.jpg` 为用户提供的《12经穴位速查》图，页面按原图展示并逐格整理为结构化表格，只作学习使用。
+- 病症常针、31 条透针透穴及医案来自用户提供的 `215条针灸经验穴位和31条透针透穴.md`，仓库副本在 `scripts/content/nihaixia-acupuncture-quickref.md`。
+- 倪海厦针灸教程文本据用户提供的《倪海厦人纪系列之针灸教程》PDF 文本层整理，中间数据在 `scripts/content/nihaixia-acupuncture-pages.json` 与 `nihaixia-acupuncture-toc.json`；页面只作学习与文献整理，不构成操作指导。
+
 ## 字体
 
 页面使用系统字体回退：

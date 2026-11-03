@@ -21,6 +21,12 @@ const router = createRouter({
       meta: { title: '治疗法门篇', section: 'methods' },
     },
     {
+      path: '/methods/acupuncture/tutorial/:chapterId?/:sectionId?',
+      name: 'acupuncture-tutorial',
+      component: () => import('@/views/AcupunctureTutorialView.vue'),
+      meta: { title: '倪海厦针灸教程', section: 'methods' },
+    },
+    {
       path: '/methods/:id',
       name: 'method-detail',
       component: () => import('@/views/TopicDetailView.vue'),

@@ -1,107 +1,59 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import acupuncture from '@/data/acupuncture.json'
+import quickref from '@/data/acupuncture-quickref.json'
+import TutorialEntry from '@/components/acupuncture/TutorialEntry.vue'
+import QuickrefSection from '@/components/acupuncture/QuickrefSection.vue'
+import ConditionsSection from '@/components/acupuncture/ConditionsSection.vue'
+import PenetrationsSection from '@/components/acupuncture/PenetrationsSection.vue'
+import CasesSection from '@/components/acupuncture/CasesSection.vue'
+import ShixueminSection from '@/components/acupuncture/ShixueminSection.vue'
 
-const foundation = acupuncture.foundation
-const conditions = acupuncture.conditions
+type TabId = 'quickref' | 'conditions' | 'penetrations' | 'cases' | 'shixuemin'
+
+const tabs: Array<{ id: TabId; label: string; note: string }> = [
+  { id: 'quickref', label: '十二经速查', note: '图与表' },
+  { id: 'conditions', label: '病症常针', note: `${quickref.conditionCount} 条 · 原题 215` },
+  { id: 'penetrations', label: '透针透穴', note: `${quickref.penetrations.length} 条` },
+  { id: 'cases', label: '下针医案', note: `${quickref.conditionCaseCount + quickref.penetrationCaseCount} 则` },
+  { id: 'shixuemin', label: '醒脑开窍', note: `${acupuncture.conditions.length} 项` },
+]
+const activeTab = ref<TabId>('quickref')
 </script>
 
 <template>
   <div class="acu-page">
     <section class="acu-warning" role="note" aria-label="安全警告">
-      <span class="acu-warning__seal" aria-hidden="true">慎</span>
+      <span class="acu-warning__seal" aria-hidden="true">针</span>
       <div>
         <strong>{{ acupuncture.warning }}</strong>
         <p>{{ acupuncture.warningNote }}</p>
       </div>
     </section>
 
-    <p class="acu-source">{{ acupuncture.source }}</p>
-    <p class="acu-source acu-source--note">{{ acupuncture.proofNote }}</p>
+    <TutorialEntry class="acu-tutorial-entry" />
 
-    <div class="acu-layout">
-      <div class="acu-main">
-        <section class="acu-intro paper-panel">
-          <span class="eyebrow">METHOD / 针法</span>
-          <h2>{{ acupuncture.title }}</h2>
-          <p class="acu-intro__sub">{{ acupuncture.subtitle }}</p>
-          <p>{{ acupuncture.intro }}</p>
-        </section>
+    <nav class="acu-tabs paper-panel" aria-label="针法内容分类">
+      <button
+        v-for="tab in tabs"
+        :key="tab.id"
+        type="button"
+        :class="{ active: activeTab === tab.id }"
+        :aria-selected="activeTab === tab.id"
+        role="tab"
+        @click="activeTab = tab.id"
+      >
+        <span>{{ tab.label }}</span>
+        <small>{{ tab.note }}</small>
+      </button>
+    </nav>
 
-        <section class="acu-block" aria-labelledby="acu-foundation-title">
-          <div class="acu-block__head">
-            <div>
-              <p class="eyebrow">BASE PRESCRIPTION / 基础穴方</p>
-              <h2 id="acu-foundation-title">主穴、辅穴与配穴</h2>
-            </div>
-            <span class="chip chip--gold">{{ foundation.length }} 组</span>
-          </div>
-
-          <div class="acu-foundation-grid">
-            <article v-for="item in foundation" :id="item.id" :key="item.id" class="acu-card paper-panel">
-              <header class="acu-card__head">
-                <span class="acu-card__index">{{ item.index }}</span>
-                <h3>{{ item.title }}</h3>
-              </header>
-              <div v-if="item.points" class="acu-points">
-                <span>腧穴组成</span>
-                <p>{{ item.points }}</p>
-              </div>
-              <ol class="acu-steps">
-                <li v-for="(step, index) in item.steps" :key="index">{{ step }}</li>
-              </ol>
-            </article>
-          </div>
-        </section>
-
-        <section class="acu-block" aria-labelledby="acu-conditions-title">
-          <div class="acu-block__head">
-            <div>
-              <p class="eyebrow">CONDITIONS / 病症分项</p>
-              <h2 id="acu-conditions-title">按病症取穴与下针方法</h2>
-            </div>
-            <span class="chip chip--cinnabar">{{ conditions.length }} 项</span>
-          </div>
-
-          <article v-for="item in conditions" :id="item.id" :key="item.id" class="acu-condition paper-panel">
-            <header class="acu-condition__head">
-              <span class="acu-condition__index">{{ item.index }}</span>
-              <h3>{{ item.title }}</h3>
-            </header>
-            <div v-if="item.points" class="acu-points">
-              <span>腧穴组成</span>
-              <p>{{ item.points }}</p>
-            </div>
-            <ol class="acu-steps">
-              <li v-for="(step, index) in item.steps" :key="index">{{ step }}</li>
-            </ol>
-          </article>
-        </section>
-
-        <section v-if="acupuncture.timing || acupuncture.closing" class="acu-foot paper-panel">
-          <div v-if="acupuncture.timing">
-            <span class="eyebrow">COURSE / 疗程</span>
-            <p>{{ acupuncture.timing }}</p>
-          </div>
-          <p v-if="acupuncture.closing" class="acu-foot__closing">{{ acupuncture.closing }}</p>
-        </section>
-      </div>
-
-      <aside class="acu-toc paper-panel" aria-label="本页目录">
-        <span class="eyebrow">CONTENTS</span>
-        <h3>本页目录</h3>
-        <p class="acu-toc__group">基础穴方</p>
-        <ol>
-          <li v-for="item in foundation" :key="item.id">
-            <a :href="`#${item.id}`">{{ item.title }}</a>
-          </li>
-        </ol>
-        <p class="acu-toc__group">病症分项</p>
-        <ol>
-          <li v-for="item in conditions" :key="item.id">
-            <a :href="`#${item.id}`">{{ item.title }}</a>
-          </li>
-        </ol>
-      </aside>
+    <div class="acu-panel">
+      <QuickrefSection v-if="activeTab === 'quickref'" />
+      <ConditionsSection v-else-if="activeTab === 'conditions'" />
+      <PenetrationsSection v-else-if="activeTab === 'penetrations'" />
+      <CasesSection v-else-if="activeTab === 'cases'" />
+      <ShixueminSection v-else />
     </div>
   </div>
 </template>
@@ -152,225 +104,62 @@ const conditions = acupuncture.conditions
   line-height: 1.75;
 }
 
-.acu-source {
-  margin: 10px 0 0;
-  color: var(--ink-faint);
-  font-size: 0.64rem;
-  line-height: 1.7;
-}
-
-.acu-source--note {
-  margin-top: 2px;
-}
-
-.acu-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 250px;
-  gap: 22px;
-  align-items: start;
-  margin-top: 20px;
-}
-
-.acu-main {
-  display: grid;
-  gap: 24px;
-  min-width: 0;
-}
-
-.acu-intro {
-  padding: 24px 26px;
-}
-
-.acu-intro h2 {
-  margin: 6px 0 4px;
-  font-family: var(--serif);
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 0.06em;
-}
-
-.acu-intro__sub {
-  color: var(--cinnabar);
-  font-size: 0.74rem;
-  letter-spacing: 0.08em;
-}
-
-.acu-intro > p:last-child {
-  margin-top: 12px;
-  color: var(--ink-soft);
-  font-size: 0.82rem;
-  line-height: 1.9;
-}
-
-.acu-block__head {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  align-items: flex-end;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--line-strong);
-}
-
-.acu-block__head h2 {
-  margin-top: 3px;
-  font-family: var(--serif);
-  font-size: 1.5rem;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-}
-
-.acu-foundation-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+.acu-tutorial-entry {
   margin-top: 14px;
 }
 
-.acu-card {
-  padding: 16px 18px;
-}
-
-.acu-card__head,
-.acu-condition__head {
-  display: flex;
-  gap: 10px;
-  align-items: baseline;
-}
-
-.acu-card__index,
-.acu-condition__index {
-  flex-shrink: 0;
-  color: var(--cinnabar);
-  font-family: var(--serif);
-  font-size: 0.82rem;
-}
-
-.acu-card h3,
-.acu-condition h3 {
-  font-family: var(--serif);
-  font-size: 1.18rem;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-}
-
-.acu-points {
-  margin-top: 10px;
-  padding: 9px 11px;
-  border-left: 2px solid var(--jade);
-  background: rgba(228, 239, 229, 0.36);
-}
-
-.acu-points span {
-  color: var(--jade);
-  font-size: 0.62rem;
-  letter-spacing: 0.12em;
-}
-
-.acu-points p {
-  margin-top: 3px;
-  color: var(--ink-soft);
-  font-size: 0.76rem;
-  line-height: 1.75;
-}
-
-.acu-steps {
-  margin: 10px 0 0;
-  padding-left: 1.2em;
-  color: var(--ink-soft);
-  font-size: 0.76rem;
-  line-height: 1.85;
-}
-
-.acu-steps li + li {
-  margin-top: 4px;
-}
-
-.acu-condition {
-  margin-top: 12px;
-  padding: 18px 20px;
-  scroll-margin-top: 96px;
-}
-
-.acu-condition__index {
-  color: var(--cinnabar);
-  font-size: 0.9rem;
-}
-
-.acu-condition h3 {
-  font-size: 1.32rem;
-}
-
-.acu-foot {
-  display: grid;
-  gap: 10px;
-  padding: 18px 20px;
-}
-
-.acu-foot p {
-  color: var(--ink-soft);
-  font-size: 0.78rem;
-  line-height: 1.85;
-}
-
-.acu-foot__closing {
-  padding-top: 9px;
-  border-top: 1px dashed var(--line);
-  color: var(--ink-faint);
-  font-size: 0.68rem !important;
-}
-
-.acu-toc {
+.acu-tabs {
   position: sticky;
-  top: 92px;
-  padding: 18px;
+  top: var(--header-h);
+  z-index: 30;
+  display: flex;
+  gap: 4px;
+  margin-top: 16px;
+  padding: 6px;
+  overflow-x: auto;
+  background: rgba(244, 239, 228, 0.94);
+  backdrop-filter: blur(14px);
 }
 
-.acu-toc h3 {
-  margin: 4px 0 10px;
-  font-family: var(--serif);
-  font-size: 1.1rem;
-  font-weight: 400;
-}
-
-.acu-toc__group {
-  margin: 12px 0 5px;
-  color: var(--ink-faint);
-  font-size: 0.62rem;
-  letter-spacing: 0.12em;
-}
-
-.acu-toc ol {
+.acu-tabs button {
+  flex: 1 0 auto;
   display: grid;
-  gap: 3px;
-  margin: 0;
-  padding-left: 1.15em;
+  gap: 1px;
+  justify-items: center;
+  min-width: 106px;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background: transparent;
   color: var(--ink-soft);
-  font-size: 0.68rem;
-  line-height: 1.6;
+  font: inherit;
+  cursor: pointer;
 }
 
-.acu-toc a {
-  color: inherit;
-  text-decoration: none;
+.acu-tabs button span {
+  font-family: var(--serif);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
 }
 
-.acu-toc a:hover {
-  color: var(--cinnabar);
+.acu-tabs button small {
+  color: var(--ink-faint);
+  font-size: 0.56rem;
+  letter-spacing: 0.06em;
 }
 
-@media (max-width: 960px) {
-  .acu-layout {
-    grid-template-columns: 1fr;
-  }
+.acu-tabs button.active {
+  border-color: color-mix(in srgb, var(--jade) 45%, var(--line));
+  background: rgba(40, 92, 69, 0.08);
+  color: var(--jade);
+}
 
-  .acu-toc {
-    position: static;
-    order: -1;
-  }
+.acu-tabs button.active small {
+  color: var(--jade);
+}
 
-  .acu-foundation-grid {
-    grid-template-columns: 1fr;
-  }
+.acu-panel {
+  margin-top: 20px;
 }
 
 @media (max-width: 700px) {
@@ -378,9 +167,14 @@ const conditions = acupuncture.conditions
     padding: 14px;
   }
 
-  .acu-intro,
-  .acu-condition {
-    padding: 16px;
+  .acu-tabs {
+    top: var(--header-h);
+    margin-left: -4px;
+    margin-right: -4px;
+  }
+
+  .acu-tabs button {
+    min-width: 96px;
   }
 }
 </style>

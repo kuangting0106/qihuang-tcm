@@ -116,6 +116,27 @@ const activeDescription = computed(() =>
   activeMeridian.value ? activeMeridian.value.description : null,
 )
 
+const TUTORIAL_MERIDIAN_IDS = new Set([
+  'ren',
+  'du',
+  'lung',
+  'large-intestine',
+  'stomach',
+  'spleen',
+  'heart',
+  'small-intestine',
+  'bladder',
+  'kidney',
+  'pericardium',
+  'triple-burner',
+  'gallbladder',
+  'liver',
+])
+
+const tutorialSectionId = computed(() =>
+  TUTORIAL_MERIDIAN_IDS.has(routeId.value) ? routeId.value : '',
+)
+
 const armRail = computed(() => {
   if (activeMeridian.value?.id !== 'lung') return []
   return visiblePoints.value
@@ -235,6 +256,13 @@ watch(
               收录 {{ activeMeridian.acupointIds.length }} / {{ activeMeridian.totalPoints }} 穴
             </span>
             <span class="chip">{{ visiblePoints.length }} 个穴位在当前视图</span>
+            <RouterLink
+              v-if="tutorialSectionId"
+              class="chip chip--cinnabar"
+              :to="`/methods/acupuncture/tutorial/chapter-4/${tutorialSectionId}`"
+            >
+              倪海厦针灸教程
+            </RouterLink>
             <CitationBadge
               v-if="activeDescription"
               :citation-ids="activeDescription.citationIds"
