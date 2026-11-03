@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "contentVersion": "2026.11.1-prototype",
-  "generatedAt": "2026-11-02T08:46:58.238Z",
+  "generatedAt": "2026-11-03T10:03:40.415Z",
   "title": "岐黄图鉴",
   "disclaimer": "本站为中医知识学习原型，不构成诊疗建议。针刺、艾灸、用药须由执业中医师辨证操作；方剂与药性内容请以原书及现行标准为准。",
   "contentPrinciples": [
@@ -4527,7 +4527,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（去皮）"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -4536,7 +4537,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shengjiang",
@@ -4544,7 +4546,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（切）"
         },
         {
           "herbId": "gancao",
@@ -4552,7 +4555,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "dazao",
@@ -4560,7 +4564,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（劈）"
         },
         {
           "herbId": "shanghan-herb-n326",
@@ -4569,10 +4574,24 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "guizhi": "3 钱（去皮）",
+        "shanghan-herb-mxdu": "3 钱",
+        "shengjiang": "3 钱（切）",
+        "gancao": "2 钱（炙）",
+        "dazao": "12 枚（劈）",
+        "shanghan-herb-n326": "4 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -4645,7 +4664,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -4654,7 +4674,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "gancao",
@@ -4662,7 +4683,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shengjiang",
@@ -4670,7 +4692,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "dazao",
@@ -4678,7 +4701,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚"
         },
         {
           "herbId": "shanghan-herb-q26k",
@@ -4687,10 +4711,24 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 枚（炮，去皮破八片）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "guizhi": "3 钱",
+        "shanghan-herb-mxdu": "3 钱",
+        "gancao": "2 钱（炙）",
+        "shengjiang": "3 钱",
+        "dazao": "12 枚",
+        "shanghan-herb-q26k": "1 枚（炮，去皮破八片）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -4763,7 +4801,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "gancao",
@@ -4771,7 +4810,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "dazao",
@@ -4779,7 +4819,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚"
         },
         {
           "herbId": "shengjiang",
@@ -4787,10 +4828,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "guizhi": "3 钱",
+        "gancao": "2 钱（炙）",
+        "dazao": "12 枚",
+        "shengjiang": "3 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -4854,7 +4907,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shengjiang",
@@ -4862,7 +4916,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "gancao",
@@ -4870,7 +4925,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "dazao",
@@ -4878,7 +4934,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚"
         },
         {
           "herbId": "shanghan-herb-q26k",
@@ -4887,10 +4944,23 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 枚（炮，去皮，破八片）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "guizhi": "3 钱",
+        "shengjiang": "3 钱",
+        "gancao": "2 钱（炙）",
+        "dazao": "12 枚",
+        "shanghan-herb-q26k": "1 枚（炮，去皮，破八片）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -4963,7 +5033,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "约 1.67 钱"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -4972,7 +5043,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "shengjiang",
@@ -4980,7 +5052,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "gancao",
@@ -4988,7 +5061,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "shanghan-herb-rvc9",
@@ -4997,7 +5071,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱（去节）"
         },
         {
           "herbId": "dazao",
@@ -5005,7 +5080,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 枚"
         },
         {
           "herbId": "shanghan-herb-i05u",
@@ -5014,10 +5090,25 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "24 个（汤浸，去皮尖）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "guizhi": "约 1.67 钱",
+        "shanghan-herb-mxdu": "1 钱",
+        "shengjiang": "1 钱",
+        "gancao": "1 钱",
+        "shanghan-herb-rvc9": "1 钱（去节）",
+        "dazao": "4 枚",
+        "shanghan-herb-i05u": "24 个（汤浸，去皮尖）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -5090,7 +5181,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "约 1.71 钱"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -5099,7 +5191,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.25 钱"
         },
         {
           "herbId": "shanghan-herb-rvc9",
@@ -5108,7 +5201,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "约 0.67 钱（去节）"
         },
         {
           "herbId": "shengjiang",
@@ -5116,7 +5210,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.25 钱"
         },
         {
           "herbId": "shanghan-herb-i05u",
@@ -5125,7 +5220,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "26 个（去皮尖及双仁）"
         },
         {
           "herbId": "gancao",
@@ -5133,7 +5229,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "约 1.08 钱"
         },
         {
           "herbId": "dazao",
@@ -5141,10 +5238,25 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "5 枚（劈）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "guizhi": "约 1.71 钱",
+        "shanghan-herb-mxdu": "1.25 钱",
+        "shanghan-herb-rvc9": "约 0.67 钱（去节）",
+        "shengjiang": "1.25 钱",
+        "shanghan-herb-i05u": "26 个（去皮尖及双仁）",
+        "gancao": "约 1.08 钱",
+        "dazao": "5 枚（劈）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -5218,7 +5330,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "6 钱"
         },
         {
           "herbId": "shanghan-herb-l43g",
@@ -5227,7 +5340,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "16 钱（碎绵里）"
         },
         {
           "herbId": "gancao",
@@ -5235,7 +5349,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-lw68",
@@ -5244,7 +5359,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "6 合（原量）"
         },
         {
           "herbId": "renshen",
@@ -5252,10 +5368,23 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-kzgo": "6 钱",
+        "shanghan-herb-l43g": "16 钱（碎绵里）",
+        "gancao": "3 钱（炙）",
+        "shanghan-herb-lw68": "6 合（原量）",
+        "renshen": "2 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -5328,7 +5457,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.75 钱（去皮）"
         },
         {
           "herbId": "dazao",
@@ -5336,7 +5466,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 枚（劈）"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -5345,7 +5476,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.75 钱"
         },
         {
           "herbId": "gancao",
@@ -5353,7 +5485,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.75 钱"
         },
         {
           "herbId": "shengjiang",
@@ -5361,7 +5494,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "约 1.08 钱"
         },
         {
           "herbId": "shanghan-herb-rvc9",
@@ -5370,7 +5504,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.75 钱"
         },
         {
           "herbId": "shanghan-herb-l43g",
@@ -5379,10 +5514,25 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱（碎，绵囊）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "guizhi": "0.75 钱（去皮）",
+        "dazao": "4 枚（劈）",
+        "shanghan-herb-mxdu": "0.75 钱",
+        "gancao": "0.75 钱",
+        "shengjiang": "约 1.08 钱",
+        "shanghan-herb-rvc9": "0.75 钱",
+        "shanghan-herb-l43g": "1 钱（碎，绵囊）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -5456,7 +5606,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "gancao",
@@ -5464,7 +5615,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shengjiang",
@@ -5472,7 +5624,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-n150",
@@ -5481,7 +5634,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-kpxu",
@@ -5490,7 +5644,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "dazao",
@@ -5498,10 +5653,24 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-mxdu": "3 钱",
+        "gancao": "2 钱（炙）",
+        "shengjiang": "3 钱",
+        "shanghan-herb-n150": "3 钱",
+        "shanghan-herb-kpxu": "3 钱",
+        "dazao": "12 枚"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -5565,7 +5734,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-gk2y",
@@ -5574,10 +5744,20 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炮）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "gancao": "4 钱（炙）",
+        "shanghan-herb-gk2y": "2 钱（炮）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -5641,7 +5821,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         },
         {
           "herbId": "gancao",
@@ -5649,10 +5830,20 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱（炙）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "baishao": "4 钱",
+        "gancao": "4 钱（炙）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -5717,7 +5908,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱（去皮，清酒洗）"
         },
         {
           "herbId": "gancao",
@@ -5725,7 +5917,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-mvbf",
@@ -5734,10 +5927,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "8 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-g1a5": "4 钱（去皮，清酒洗）",
+        "gancao": "2 钱（炙）",
+        "shanghan-herb-mvbf": "8 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -5810,7 +6014,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-gk2y",
@@ -5819,7 +6024,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.5 钱"
         },
         {
           "herbId": "shanghan-herb-q26k",
@@ -5828,10 +6034,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 枚（生用去皮，破八片）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "gancao": "2 钱（炙）",
+        "shanghan-herb-gk2y": "1.5 钱",
+        "shanghan-herb-q26k": "1 枚（生用去皮，破八片）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -5905,7 +6122,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         },
         {
           "herbId": "shanghan-herb-rvc9",
@@ -5914,7 +6132,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "guizhi",
@@ -5922,7 +6141,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（去皮）"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -5931,7 +6151,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "gancao",
@@ -5939,7 +6160,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shengjiang",
@@ -5947,7 +6169,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "dazao",
@@ -5955,10 +6178,25 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（劈）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-n326": "4 钱",
+        "shanghan-herb-rvc9": "3 钱",
+        "guizhi": "2 钱（去皮）",
+        "shanghan-herb-mxdu": "2 钱",
+        "gancao": "2 钱（炙）",
+        "shengjiang": "3 钱",
+        "dazao": "12 枚（劈）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -6032,7 +6270,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         },
         {
           "herbId": "shanghan-herb-rvc9",
@@ -6041,7 +6280,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（汤泡去黄汁，焙干秤）"
         },
         {
           "herbId": "guizhi",
@@ -6049,7 +6289,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -6058,7 +6299,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "gancao",
@@ -6066,7 +6308,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shengjiang",
@@ -6074,7 +6317,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "dazao",
@@ -6082,7 +6326,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（劈）"
         },
         {
           "herbId": "shanghan-herb-16mtx4u",
@@ -6091,10 +6336,26 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-n326": "4 钱",
+        "shanghan-herb-rvc9": "3 钱（汤泡去黄汁，焙干秤）",
+        "guizhi": "2 钱",
+        "shanghan-herb-mxdu": "2 钱",
+        "gancao": "2 钱（炙）",
+        "shengjiang": "2 钱",
+        "dazao": "12 枚（劈）",
+        "shanghan-herb-16mtx4u": "见原文"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -6168,7 +6429,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "8 钱"
         },
         {
           "herbId": "gancao",
@@ -6176,7 +6438,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "huangqin",
@@ -6184,7 +6447,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-rsm2",
@@ -6193,10 +6457,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-n326": "8 钱",
+        "gancao": "2 钱（炙）",
+        "huangqin": "3 钱",
+        "shanghan-herb-rsm2": "3 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -6270,7 +6546,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "guizhi",
@@ -6278,7 +6555,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（去皮）"
         },
         {
           "herbId": "gancao",
@@ -6286,7 +6564,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-i05u",
@@ -6295,10 +6574,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "70 个（去皮尖）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-rvc9": "3 钱",
+        "guizhi": "2 钱（去皮）",
+        "gancao": "1 钱（炙）",
+        "shanghan-herb-i05u": "70 个（去皮尖）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -6372,7 +6663,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "6 钱"
         },
         {
           "herbId": "guizhi",
@@ -6380,7 +6672,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（去皮）"
         },
         {
           "herbId": "gancao",
@@ -6388,7 +6681,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-i05u",
@@ -6397,7 +6691,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "50 个（去皮尖）"
         },
         {
           "herbId": "shengjiang",
@@ -6405,7 +6700,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（切）"
         },
         {
           "herbId": "dazao",
@@ -6413,7 +6709,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（劈）"
         },
         {
           "herbId": "shanghan-herb-1xyec4y",
@@ -6422,10 +6719,25 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-rvc9": "6 钱",
+        "guizhi": "2 钱（去皮）",
+        "gancao": "2 钱（炙）",
+        "shanghan-herb-i05u": "50 个（去皮尖）",
+        "shengjiang": "2 钱（切）",
+        "dazao": "12 枚（劈）",
+        "shanghan-herb-1xyec4y": "见原文"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -6499,7 +6811,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（去节）"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -6508,7 +6821,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-mcnp",
@@ -6517,7 +6831,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-gk2y",
@@ -6526,7 +6841,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "gancao",
@@ -6534,7 +6850,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（炙）"
         },
         {
           "herbId": "guizhi",
@@ -6542,7 +6859,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-y5dlbf",
@@ -6551,7 +6869,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-avmuiq",
@@ -6560,10 +6879,26 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-rvc9": "3 钱（去节）",
+        "shanghan-herb-mxdu": "3 钱",
+        "shanghan-herb-mcnp": "3 钱",
+        "shanghan-herb-gk2y": "3 钱",
+        "gancao": "3 钱（炙）",
+        "guizhi": "3 钱",
+        "shanghan-herb-y5dlbf": "见原文",
+        "shanghan-herb-avmuiq": "见原文"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -6636,7 +6971,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -6645,7 +6981,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "gancao",
@@ -6653,7 +6990,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shengjiang",
@@ -6661,7 +6999,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "dazao",
@@ -6669,7 +7008,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（劈）"
         },
         {
           "herbId": "shanghan-herb-esbe",
@@ -6678,7 +7018,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙，去皮）"
         },
         {
           "herbId": "shanghan-herb-i05u",
@@ -6687,10 +7028,25 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "50 枚（去皮尖）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "guizhi": "3 钱",
+        "shanghan-herb-mxdu": "3 钱",
+        "gancao": "3 钱",
+        "shengjiang": "3 钱",
+        "dazao": "12 枚（劈）",
+        "shanghan-herb-esbe": "2 钱（炙，去皮）",
+        "shanghan-herb-i05u": "50 枚（去皮尖）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -6764,7 +7120,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "shanghan-herb-q26k",
@@ -6773,10 +7130,20 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 枚（生用去皮破八片）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-gk2y": "1 钱",
+        "shanghan-herb-q26k": "1 枚（生用去皮破八片）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -6840,7 +7207,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（去皮）"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -6849,7 +7217,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         },
         {
           "herbId": "gancao",
@@ -6857,7 +7226,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "renshen",
@@ -6865,7 +7235,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shengjiang",
@@ -6873,7 +7244,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱（切）"
         },
         {
           "herbId": "dazao",
@@ -6881,10 +7253,24 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（劈）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "guizhi": "3 钱（去皮）",
+        "shanghan-herb-mxdu": "4 钱",
+        "gancao": "2 钱（炙）",
+        "renshen": "3 钱",
+        "shengjiang": "4 钱（切）",
+        "dazao": "12 枚（劈）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -6958,7 +7344,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱（去节）"
         },
         {
           "herbId": "shanghan-herb-i05u",
@@ -6967,7 +7354,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "50 个（去皮尖）"
         },
         {
           "herbId": "gancao",
@@ -6975,7 +7363,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "shanghan-herb-l43g",
@@ -6984,10 +7373,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "8 钱（打碎绵囊）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-rvc9": "4 钱（去节）",
+        "shanghan-herb-i05u": "50 个（去皮尖）",
+        "gancao": "2 钱",
+        "shanghan-herb-l43g": "8 钱（打碎绵囊）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -7051,7 +7452,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱（去皮）"
         },
         {
           "herbId": "gancao",
@@ -7059,10 +7461,20 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "guizhi": "4 钱（去皮）",
+        "gancao": "2 钱（炙）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -7127,7 +7539,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "8 钱"
         },
         {
           "herbId": "gancao",
@@ -7135,7 +7548,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "dazao",
@@ -7143,7 +7557,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "15 枚（劈）"
         },
         {
           "herbId": "guizhi",
@@ -7151,10 +7566,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（去皮）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-n150": "8 钱",
+        "gancao": "2 钱（炙）",
+        "dazao": "15 枚（劈）",
+        "guizhi": "3 钱（去皮）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -7228,7 +7655,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "8 钱（去皮炙）"
         },
         {
           "herbId": "shengjiang",
@@ -7236,7 +7664,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "8 钱（切）"
         },
         {
           "herbId": "shanghan-herb-avmy5b",
@@ -7245,7 +7674,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "renshen",
@@ -7253,7 +7683,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "gancao",
@@ -7261,10 +7692,23 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-esbe": "8 钱（去皮炙）",
+        "shengjiang": "8 钱（切）",
+        "shanghan-herb-avmy5b": "见原文",
+        "renshen": "1 钱",
+        "gancao": "2 钱（炙）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -7338,7 +7782,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         },
         {
           "herbId": "guizhi",
@@ -7346,7 +7791,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（去皮）"
         },
         {
           "herbId": "shanghan-herb-kpxu",
@@ -7355,7 +7801,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "gancao",
@@ -7363,10 +7810,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-n150": "4 钱",
+        "guizhi": "3 钱（去皮）",
+        "shanghan-herb-kpxu": "2 钱",
+        "gancao": "2 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -7440,7 +7899,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "gancao",
@@ -7448,7 +7908,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-q26k",
@@ -7457,10 +7918,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 枚（炮去皮，破八片）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-mxdu": "3 钱",
+        "gancao": "2 钱（炙）",
+        "shanghan-herb-q26k": "2 枚（炮去皮，破八片）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -7534,7 +8006,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "6 钱"
         },
         {
           "herbId": "renshen",
@@ -7542,7 +8015,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "shanghan-herb-q26k",
@@ -7551,7 +8025,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 枚（生用去皮破八片）"
         },
         {
           "herbId": "gancao",
@@ -7559,7 +8034,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-gk2y",
@@ -7568,10 +8044,23 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.5 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-n150": "6 钱",
+        "renshen": "1 钱",
+        "shanghan-herb-q26k": "1 枚（生用去皮破八片）",
+        "gancao": "2 钱（炙）",
+        "shanghan-herb-gk2y": "1.5 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -7645,7 +8134,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.75 钱（去皮）"
         },
         {
           "herbId": "shanghan-herb-j4wu",
@@ -7654,7 +8144,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "约 1.27 钱"
         },
         {
           "herbId": "shanghan-herb-n150",
@@ -7663,7 +8154,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.75 钱"
         },
         {
           "herbId": "guizhi",
@@ -7671,7 +8163,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.5 钱（去皮）"
         },
         {
           "herbId": "shanghan-herb-kpxu",
@@ -7680,10 +8173,23 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.75 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-kb1l": "0.75 钱（去皮）",
+        "shanghan-herb-j4wu": "约 1.27 钱",
+        "shanghan-herb-n150": "0.75 钱",
+        "guizhi": "0.5 钱（去皮）",
+        "shanghan-herb-kpxu": "0.75 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -7757,7 +8263,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "guizhi",
@@ -7765,7 +8272,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（去皮）"
         },
         {
           "herbId": "shengjiang",
@@ -7773,7 +8281,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（切）"
         },
         {
           "herbId": "gancao",
@@ -7781,10 +8290,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱（炙）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-n150": "2 钱",
+        "guizhi": "2 钱（去皮）",
+        "shengjiang": "3 钱（切）",
+        "gancao": "1 钱（炙）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -7850,7 +8371,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "14 枚（劈）"
         },
         {
           "herbId": "shanghan-herb-qw9c",
@@ -7859,10 +8381,20 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 合（绵裹）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-i6vk": "14 枚（劈）",
+        "shanghan-herb-qw9c": "4 合（绵裹）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -7936,7 +8468,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "14 枚"
         },
         {
           "herbId": "gancao",
@@ -7944,7 +8477,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "shanghan-herb-qw9c",
@@ -7953,10 +8487,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 合（原量）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-i6vk": "14 枚",
+        "gancao": "2 钱",
+        "shanghan-herb-qw9c": "4 合（原量）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -8030,7 +8575,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "14 枚（劈）"
         },
         {
           "herbId": "shanghan-herb-esbe",
@@ -8039,7 +8585,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-i53f",
@@ -8048,10 +8595,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 合（原量）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-i6vk": "14 枚（劈）",
+        "shanghan-herb-esbe": "4 钱（炙）",
+        "shanghan-herb-i53f": "4 合（原量）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -8125,7 +8683,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "14 枚（劈）"
         },
         {
           "herbId": "shanghan-herb-gk2y",
@@ -8134,7 +8693,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "shanghan-herb-qw9c",
@@ -8143,10 +8703,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 合（原量）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-i6vk": "14 枚（劈）",
+        "shanghan-herb-gk2y": "2 钱",
+        "shanghan-herb-qw9c": "4 合（原量）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -8220,7 +8791,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -8229,7 +8801,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shengjiang",
@@ -8237,7 +8810,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-kpxu",
@@ -8246,7 +8820,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-q26k",
@@ -8255,10 +8830,23 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 枚（炮）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-n150": "3 钱",
+        "shanghan-herb-mxdu": "3 钱",
+        "shengjiang": "3 钱",
+        "shanghan-herb-kpxu": "2 钱（炙）",
+        "shanghan-herb-q26k": "1 枚（炮）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -8332,7 +8920,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         },
         {
           "herbId": "renshen",
@@ -8340,7 +8929,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-q26k",
@@ -8349,7 +8939,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 枚"
         },
         {
           "herbId": "shanghan-herb-y5clo0",
@@ -8358,7 +8949,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-n150",
@@ -8367,7 +8959,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-gk2y",
@@ -8376,10 +8969,24 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-i80ry": "4 钱",
+        "renshen": "3 钱",
+        "shanghan-herb-q26k": "2 枚",
+        "shanghan-herb-y5clo0": "见原文",
+        "shanghan-herb-n150": "3 钱",
+        "shanghan-herb-gk2y": "3 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -8444,7 +9051,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-gok1",
@@ -8453,7 +9061,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "baishao",
@@ -8461,7 +9070,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-keep",
@@ -8470,10 +9080,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-gqjj": "见原文",
+        "shanghan-herb-gok1": "见原文",
+        "baishao": "见原文",
+        "shanghan-herb-keep": "见原文"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -8546,7 +9168,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（去皮）"
         },
         {
           "herbId": "gancao",
@@ -8554,7 +9177,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "dazao",
@@ -8562,7 +9186,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（劈）"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -8571,7 +9196,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "6 钱"
         },
         {
           "herbId": "shengjiang",
@@ -8579,7 +9205,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（切）"
         },
         {
           "herbId": "shanghan-herb-mrzy",
@@ -8588,10 +9215,24 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 升（原量）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "guizhi": "3 钱（去皮）",
+        "gancao": "2 钱（炙）",
+        "dazao": "12 枚（劈）",
+        "shanghan-herb-mxdu": "6 钱",
+        "shengjiang": "3 钱（切）",
+        "shanghan-herb-mrzy": "1 升（原量）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -8664,7 +9305,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "8 钱"
         },
         {
           "herbId": "huangqin",
@@ -8672,7 +9314,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -8681,7 +9324,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-avmuiq",
@@ -8690,7 +9334,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shengjiang",
@@ -8698,7 +9343,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "5 钱（切）"
         },
         {
           "herbId": "shanghan-herb-i53f",
@@ -8707,7 +9353,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱（炙）"
         },
         {
           "herbId": "dazao",
@@ -8715,7 +9362,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（劈）"
         },
         {
           "herbId": "shanghan-herb-g1a5",
@@ -8724,10 +9372,26 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "chaihu": "8 钱",
+        "huangqin": "3 钱",
+        "shanghan-herb-mxdu": "3 钱",
+        "shanghan-herb-avmuiq": "见原文",
+        "shengjiang": "5 钱（切）",
+        "shanghan-herb-i53f": "4 钱（炙）",
+        "dazao": "12 枚（劈）",
+        "shanghan-herb-g1a5": "2 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -8800,7 +9464,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2.25 钱"
         },
         {
           "herbId": "shanghan-herb-1h3jvag",
@@ -8809,7 +9474,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "huangqin",
@@ -8817,7 +9483,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "gancao",
@@ -8825,7 +9492,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "shengjiang",
@@ -8833,7 +9501,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "renshen",
@@ -8841,7 +9510,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "dazao",
@@ -8849,7 +9519,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚"
         },
         {
           "herbId": "shanghan-herb-mvbf",
@@ -8858,10 +9529,26 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "chaihu": "2.25 钱",
+        "shanghan-herb-1h3jvag": "见原文",
+        "huangqin": "1 钱",
+        "gancao": "1 钱",
+        "shengjiang": "1 钱",
+        "renshen": "1 钱",
+        "dazao": "12 枚",
+        "shanghan-herb-mvbf": "2 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -8935,7 +9622,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "50 个（去皮尖）"
         },
         {
           "herbId": "guizhi",
@@ -8943,7 +9631,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "shanghan-herb-g1a5",
@@ -8952,7 +9641,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         },
         {
           "herbId": "shanghan-herb-mvbf",
@@ -8961,7 +9651,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "gancao",
@@ -8969,10 +9660,23 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-i5zy": "50 个（去皮尖）",
+        "guizhi": "2 钱",
+        "shanghan-herb-g1a5": "4 钱",
+        "shanghan-herb-mvbf": "2 钱",
+        "gancao": "2 钱（炙）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -9046,7 +9750,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "dazao",
@@ -9054,7 +9759,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "6 枚"
         },
         {
           "herbId": "chaihu",
@@ -9062,7 +9768,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         },
         {
           "herbId": "shengjiang",
@@ -9070,7 +9777,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.5 钱"
         },
         {
           "herbId": "renshen",
@@ -9078,7 +9786,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.5 钱"
         },
         {
           "herbId": "shanghan-herb-rzu7",
@@ -9087,7 +9796,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.5 钱"
         },
         {
           "herbId": "shanghan-herb-pqfo",
@@ -9096,7 +9806,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.5 钱"
         },
         {
           "herbId": "guizhi",
@@ -9104,7 +9815,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.5 钱（去皮）"
         },
         {
           "herbId": "shanghan-herb-n150",
@@ -9113,7 +9825,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.5 钱"
         },
         {
           "herbId": "shanghan-herb-g1a5",
@@ -9122,7 +9835,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "shanghan-herb-k70t",
@@ -9131,10 +9845,29 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.5 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-avm1mp": "见原文",
+        "dazao": "6 枚",
+        "chaihu": "4 钱",
+        "shengjiang": "1.5 钱",
+        "renshen": "1.5 钱",
+        "shanghan-herb-rzu7": "1.5 钱",
+        "shanghan-herb-pqfo": "1.5 钱",
+        "guizhi": "1.5 钱（去皮）",
+        "shanghan-herb-n150": "1.5 钱",
+        "shanghan-herb-g1a5": "2 钱",
+        "shanghan-herb-k70t": "1.5 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -9207,7 +9940,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（去皮）"
         },
         {
           "herbId": "gancao",
@@ -9215,7 +9949,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shengjiang",
@@ -9223,7 +9958,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（切）"
         },
         {
           "herbId": "shanghan-herb-k70t",
@@ -9232,7 +9968,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "5 钱"
         },
         {
           "herbId": "shanghan-herb-rzu7",
@@ -9241,7 +9978,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         },
         {
           "herbId": "dazao",
@@ -9249,7 +9987,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（劈）"
         },
         {
           "herbId": "shanghan-herb-nkli",
@@ -9258,10 +9997,25 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（洗，去腥）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "guizhi": "3 钱（去皮）",
+        "gancao": "2 钱（炙）",
+        "shengjiang": "3 钱（切）",
+        "shanghan-herb-k70t": "5 钱",
+        "shanghan-herb-rzu7": "4 钱",
+        "dazao": "12 枚（劈）",
+        "shanghan-herb-nkli": "3 钱（洗，去腥）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -9335,10 +10089,19 @@
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "note": "原文仅载“即桂枝汤加桂枝二两”，未列全方；余药见桂枝汤。"
+          "note": "原文仅载“即桂枝汤加桂枝二两”，未列全方；余药见桂枝汤。",
+          "modernDose": "2 钱（于桂枝汤中加桂枝）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "guizhi": "2 钱（于桂枝汤中加桂枝）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -9411,7 +10174,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "gancao",
@@ -9419,7 +10183,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "shanghan-herb-k70t",
@@ -9428,7 +10193,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "shanghan-herb-rzu7",
@@ -9437,7 +10203,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "shanghan-herb-n150",
@@ -9446,10 +10213,23 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "guizhi": "1 钱",
+        "gancao": "2 钱",
+        "shanghan-herb-k70t": "1 钱",
+        "shanghan-herb-rzu7": "2 钱",
+        "shanghan-herb-n150": "4 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -9523,7 +10303,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "30 个（熬）"
         },
         {
           "herbId": "shanghan-herb-nm1c",
@@ -9532,7 +10313,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "30 个（去翅）"
         },
         {
           "herbId": "shanghan-herb-i5zy",
@@ -9541,7 +10323,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "20 个（去皮尖）"
         },
         {
           "herbId": "shanghan-herb-g1a5",
@@ -9550,10 +10333,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（酒洗(浸）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-j589": "30 个（熬）",
+        "shanghan-herb-nm1c": "30 个（去翅）",
+        "shanghan-herb-i5zy": "20 个（去皮尖）",
+        "shanghan-herb-g1a5": "3 钱（酒洗(浸）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -9627,7 +10422,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "20 个（熬）"
         },
         {
           "herbId": "shanghan-herb-nm1c",
@@ -9636,7 +10432,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "25 个（熬，去翅）"
         },
         {
           "herbId": "shanghan-herb-i5zy",
@@ -9645,7 +10442,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "20 个（去皮尖）"
         },
         {
           "herbId": "shanghan-herb-g1a5",
@@ -9654,10 +10452,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（酒浸）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-j589": "20 个（熬）",
+        "shanghan-herb-nm1c": "25 个（熬，去翅）",
+        "shanghan-herb-i5zy": "20 个（去皮尖）",
+        "shanghan-herb-g1a5": "3 钱（酒浸）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -9731,7 +10541,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "8 钱"
         },
         {
           "herbId": "shanghan-herb-n8ya",
@@ -9740,7 +10551,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.5 升（原量）"
         },
         {
           "herbId": "shanghan-herb-h4g7x",
@@ -9749,7 +10561,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.5 升（原量）"
         },
         {
           "herbId": "shanghan-herb-i05u",
@@ -9758,10 +10571,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.5 升（去皮尖，熬黑）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-g1a5": "8 钱",
+        "shanghan-herb-n8ya": "0.5 升（原量）",
+        "shanghan-herb-h4g7x": "0.5 升（原量）",
+        "shanghan-herb-i05u": "0.5 升（去皮尖，熬黑）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -9835,7 +10660,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "6 钱（去皮）"
         },
         {
           "herbId": "shanghan-herb-mvbf",
@@ -9844,7 +10670,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 升（原量）"
         },
         {
           "herbId": "shanghan-herb-kpii",
@@ -9853,10 +10680,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-g1a5": "6 钱（去皮）",
+        "shanghan-herb-mvbf": "1 升（原量）",
+        "shanghan-herb-kpii": "1 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -9930,7 +10768,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "shanghan-herb-avmuiq",
@@ -9939,7 +10778,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-1x11ilp",
@@ -9948,10 +10788,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 个"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-rsm2": "1 钱",
+        "shanghan-herb-avmuiq": "见原文",
+        "shanghan-herb-1x11ilp": "1 个"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -10025,10 +10876,19 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "5 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-i0cd": "5 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -10102,7 +10962,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.75 钱"
         },
         {
           "herbId": "shanghan-herb-gr0y",
@@ -10111,7 +10972,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.25 钱（去皮心熬黑，研如脂）"
         },
         {
           "herbId": "shanghan-herb-ole8",
@@ -10120,10 +10982,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.75 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-ibib": "0.75 钱",
+        "shanghan-herb-gr0y": "0.25 钱（去皮心熬黑，研如脂）",
+        "shanghan-herb-ole8": "0.75 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -10196,7 +11069,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.5 钱"
         },
         {
           "herbId": "guizhi",
@@ -10204,7 +11078,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.5 钱（去皮）"
         },
         {
           "herbId": "huangqin",
@@ -10212,7 +11087,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.5 钱"
         },
         {
           "herbId": "renshen",
@@ -10220,7 +11096,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.5 钱"
         },
         {
           "herbId": "gancao",
@@ -10228,7 +11105,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-1h3jn3d",
@@ -10237,7 +11115,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -10246,7 +11125,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.5 钱"
         },
         {
           "herbId": "dazao",
@@ -10254,7 +11134,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "6 枚（劈）"
         },
         {
           "herbId": "shengjiang",
@@ -10262,10 +11143,27 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.5 钱（切）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "chaihu": "1.5 钱",
+        "guizhi": "1.5 钱（去皮）",
+        "huangqin": "1.5 钱",
+        "renshen": "1.5 钱",
+        "gancao": "1 钱（炙）",
+        "shanghan-herb-1h3jn3d": "见原文",
+        "shanghan-herb-mxdu": "1.5 钱",
+        "dazao": "6 枚（劈）",
+        "shengjiang": "1.5 钱（切）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -10338,7 +11236,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "8 钱"
         },
         {
           "herbId": "guizhi",
@@ -10346,7 +11245,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-gk2y",
@@ -10355,7 +11255,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "huangqin",
@@ -10363,7 +11264,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-fw3re",
@@ -10372,7 +11274,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         },
         {
           "herbId": "shanghan-herb-k70t",
@@ -10381,7 +11284,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "gancao",
@@ -10389,10 +11293,25 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "chaihu": "8 钱",
+        "guizhi": "3 钱",
+        "shanghan-herb-gk2y": "2 钱",
+        "huangqin": "3 钱",
+        "shanghan-herb-fw3re": "4 钱",
+        "shanghan-herb-k70t": "2 钱",
+        "gancao": "2 钱（炙）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -10466,7 +11385,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "huangqin",
@@ -10474,7 +11394,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-gk2y",
@@ -10483,7 +11404,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "gancao",
@@ -10491,7 +11413,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "renshen",
@@ -10499,7 +11422,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-rsm2",
@@ -10508,7 +11432,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "dazao",
@@ -10516,10 +11441,25 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（劈）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-avmy5b": "见原文",
+        "huangqin": "3 钱",
+        "shanghan-herb-gk2y": "3 钱",
+        "gancao": "3 钱",
+        "renshen": "3 钱",
+        "shanghan-herb-rsm2": "1 钱",
+        "dazao": "12 枚（劈）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -10593,7 +11533,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-kpii",
@@ -10602,7 +11543,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-fpaw",
@@ -10611,7 +11553,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "dazao",
@@ -10619,10 +11562,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "10 枚（劈）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-mxye": "见原文",
+        "shanghan-herb-kpii": "见原文",
+        "shanghan-herb-fpaw": "见原文",
+        "dazao": "10 枚（劈）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -10696,7 +11651,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "shanghan-herb-rsm2",
@@ -10705,10 +11661,20 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-g1a5": "2 钱",
+        "shanghan-herb-rsm2": "1 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -10773,7 +11739,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-gevgge",
@@ -10782,7 +11749,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-lxo26z",
@@ -10791,10 +11759,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-kvmg": "3 钱",
+        "shanghan-herb-gevgge": "见原文",
+        "shanghan-herb-lxo26z": "3 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -10868,7 +11847,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "shanghan-herb-rsm2",
@@ -10877,7 +11857,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "huangqin",
@@ -10885,7 +11866,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "shanghan-herb-q26k",
@@ -10894,10 +11876,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 枚（炮，去皮，破，别煮取汁）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-g1a5": "2 钱",
+        "shanghan-herb-rsm2": "2 钱",
+        "huangqin": "1 钱",
+        "shanghan-herb-q26k": "1 枚（炮，去皮，破，别煮取汁）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -10970,7 +11964,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱（切）"
         },
         {
           "herbId": "gancao",
@@ -10978,7 +11973,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（炙）"
         },
         {
           "herbId": "renshen",
@@ -10986,7 +11982,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-gk2y",
@@ -10995,7 +11992,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "huangqin",
@@ -11003,7 +12001,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-avmy5b",
@@ -11012,7 +12011,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-rsm2",
@@ -11021,7 +12021,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "dazao",
@@ -11029,10 +12030,26 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（劈）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shengjiang": "4 钱（切）",
+        "gancao": "3 钱（炙）",
+        "renshen": "3 钱",
+        "shanghan-herb-gk2y": "1 钱",
+        "huangqin": "3 钱",
+        "shanghan-herb-avmy5b": "见原文",
+        "shanghan-herb-rsm2": "1 钱",
+        "dazao": "12 枚（劈）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -11105,7 +12122,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         },
         {
           "herbId": "huangqin",
@@ -11113,7 +12131,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-gk2y",
@@ -11122,7 +12141,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-avmuiq",
@@ -11131,7 +12151,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "dazao",
@@ -11139,7 +12160,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（劈）"
         },
         {
           "herbId": "shanghan-herb-rsm2",
@@ -11148,10 +12170,24 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "gancao": "4 钱",
+        "huangqin": "3 钱",
+        "shanghan-herb-gk2y": "3 钱",
+        "shanghan-herb-avmuiq": "见原文",
+        "dazao": "12 枚（劈）",
+        "shanghan-herb-rsm2": "1 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -11225,7 +12261,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "16 钱（碎）"
         },
         {
           "herbId": "shanghan-herb-i80ry",
@@ -11234,10 +12271,20 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "16 钱（碎）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-lanrn": "16 钱（碎）",
+        "shanghan-herb-i80ry": "16 钱（碎）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -11311,7 +12358,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "renshen",
@@ -11319,7 +12367,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "shengjiang",
@@ -11327,7 +12376,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "5 钱（切）"
         },
         {
           "herbId": "shanghan-herb-c8ojt",
@@ -11336,7 +12386,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "dazao",
@@ -11344,7 +12395,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（劈）"
         },
         {
           "herbId": "gancao",
@@ -11352,7 +12404,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-avmy5b",
@@ -11361,10 +12414,25 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-fkv06": "3 钱",
+        "renshen": "2 钱",
+        "shengjiang": "5 钱（切）",
+        "shanghan-herb-c8ojt": "1 钱",
+        "dazao": "12 枚（劈）",
+        "gancao": "3 钱（炙）",
+        "shanghan-herb-avmy5b": "见原文"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -11437,7 +12505,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         },
         {
           "herbId": "gancao",
@@ -11445,7 +12514,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-kpxu",
@@ -11454,7 +12524,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "renshen",
@@ -11462,7 +12533,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-gk2y",
@@ -11471,10 +12543,23 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（切）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "guizhi": "4 钱",
+        "gancao": "4 钱（炙）",
+        "shanghan-herb-kpxu": "3 钱",
+        "renshen": "3 钱",
+        "shanghan-herb-gk2y": "3 钱（切）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -11548,7 +12633,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.25 钱（熬黄）"
         },
         {
           "herbId": "shanghan-herb-l5z7f",
@@ -11557,10 +12643,20 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.25 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-klra": "0.25 钱（熬黄）",
+        "shanghan-herb-l5z7f": "0.25 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -11624,7 +12720,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "5 钱"
         },
         {
           "herbId": "shanghan-herb-kpxu",
@@ -11633,7 +12730,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "5 钱"
         },
         {
           "herbId": "shanghan-herb-n150",
@@ -11642,7 +12740,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "5 钱"
         },
         {
           "herbId": "shanghan-herb-jzo6",
@@ -11651,7 +12750,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-kqv9",
@@ -11660,10 +12760,23 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 枚"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "chaihu": "5 钱",
+        "shanghan-herb-kpxu": "5 钱",
+        "shanghan-herb-n150": "5 钱",
+        "shanghan-herb-jzo6": "3 钱",
+        "shanghan-herb-kqv9": "1 枚"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -11736,7 +12849,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "gancao",
@@ -11744,7 +12858,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -11753,7 +12868,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "dazao",
@@ -11761,10 +12877,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（劈）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "huangqin": "3 钱",
+        "gancao": "2 钱（炙）",
+        "shanghan-herb-mxdu": "2 钱",
+        "dazao": "12 枚（劈）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -11837,7 +12965,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -11846,7 +12975,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "gancao",
@@ -11854,7 +12984,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "dazao",
@@ -11862,7 +12993,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（劈）"
         },
         {
           "herbId": "shanghan-herb-avmuiq",
@@ -11871,7 +13003,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shengjiang",
@@ -11879,10 +13012,24 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.5 钱（一本作三两）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "huangqin": "3 钱",
+        "shanghan-herb-mxdu": "2 钱",
+        "gancao": "2 钱（炙）",
+        "dazao": "12 枚（劈）",
+        "shanghan-herb-avmuiq": "见原文",
+        "shengjiang": "1.5 钱（一本作三两）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -11956,7 +13103,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "gancao",
@@ -11964,7 +13112,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-gk2y",
@@ -11973,7 +13122,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "guizhi",
@@ -11981,7 +13131,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "renshen",
@@ -11989,7 +13140,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-avmuiq",
@@ -11998,7 +13150,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "dazao",
@@ -12006,10 +13159,25 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（劈）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-rsm2": "3 钱",
+        "gancao": "3 钱（炙）",
+        "shanghan-herb-gk2y": "2 钱",
+        "guizhi": "3 钱",
+        "renshen": "3 钱",
+        "shanghan-herb-avmuiq": "见原文",
+        "dazao": "12 枚（劈）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -12082,7 +13250,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         },
         {
           "herbId": "shanghan-herb-q26k",
@@ -12091,7 +13260,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 枚（去皮炮，破八片）"
         },
         {
           "herbId": "shengjiang",
@@ -12099,7 +13269,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（切）"
         },
         {
           "herbId": "gancao",
@@ -12107,7 +13278,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "dazao",
@@ -12115,10 +13287,23 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（劈）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "guizhi": "4 钱",
+        "shanghan-herb-q26k": "3 枚（去皮炮，破八片）",
+        "shengjiang": "3 钱（切）",
+        "gancao": "2 钱（炙）",
+        "dazao": "12 枚（劈）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -12183,7 +13368,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         },
         {
           "herbId": "gancao",
@@ -12191,7 +13377,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-q26k",
@@ -12200,7 +13387,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 枚（炮）"
         },
         {
           "herbId": "dazao",
@@ -12208,7 +13396,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（劈）"
         },
         {
           "herbId": "shengjiang",
@@ -12216,10 +13405,23 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-kpxu": "4 钱",
+        "gancao": "2 钱（炙）",
+        "shanghan-herb-q26k": "3 枚（炮）",
+        "dazao": "12 枚（劈）",
+        "shengjiang": "3 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -12292,7 +13494,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-q26k",
@@ -12301,7 +13504,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 枚（炮，去皮，破）"
         },
         {
           "herbId": "shanghan-herb-kpxu",
@@ -12310,7 +13514,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "guizhi",
@@ -12318,10 +13523,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "gancao": "2 钱（炙）",
+        "shanghan-herb-q26k": "2 枚（炮，去皮，破）",
+        "shanghan-herb-kpxu": "2 钱",
+        "guizhi": "4 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -12395,7 +13612,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "6 钱"
         },
         {
           "herbId": "shanghan-herb-l43g",
@@ -12404,7 +13622,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "16 钱（碎）"
         },
         {
           "herbId": "gancao",
@@ -12412,7 +13631,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "shanghan-herb-lw68",
@@ -12421,10 +13641,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "6 合（原量）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-kzgo": "6 钱",
+        "shanghan-herb-l43g": "16 钱（碎）",
+        "gancao": "2 钱",
+        "shanghan-herb-lw68": "6 合（原量）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -12497,7 +13729,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-q9hz",
@@ -12506,7 +13739,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（洗）"
         },
         {
           "herbId": "shengjiang",
@@ -12514,7 +13748,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（切）"
         },
         {
           "herbId": "shanghan-herb-nyhuy",
@@ -12523,7 +13758,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.5 升（原量）"
         },
         {
           "herbId": "guizhi",
@@ -12531,7 +13767,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "renshen",
@@ -12539,7 +13776,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "shanghan-herb-hla0j",
@@ -12548,7 +13786,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "16 钱"
         },
         {
           "herbId": "shanghan-herb-noy24",
@@ -12557,7 +13796,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.5 升（原量）"
         },
         {
           "herbId": "dazao",
@@ -12565,10 +13805,27 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "30 枚（劈）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "gancao": "4 钱（炙）",
+        "shanghan-herb-q9hz": "2 钱（洗）",
+        "shengjiang": "3 钱（切）",
+        "shanghan-herb-nyhuy": "0.5 升（原量）",
+        "guizhi": "3 钱",
+        "renshen": "2 钱",
+        "shanghan-herb-hla0j": "16 钱",
+        "shanghan-herb-noy24": "0.5 升（原量）",
+        "dazao": "30 枚（劈）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -12642,7 +13899,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱（酒洗）"
         },
         {
           "herbId": "shanghan-herb-esbe",
@@ -12651,7 +13909,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "8 钱（炙去皮）"
         },
         {
           "herbId": "shanghan-herb-i53f",
@@ -12660,7 +13919,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "5 枚（炙）"
         },
         {
           "herbId": "shanghan-herb-mvbf",
@@ -12669,10 +13929,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 合（原量）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-g1a5": "4 钱（酒洗）",
+        "shanghan-herb-esbe": "8 钱（炙去皮）",
+        "shanghan-herb-i53f": "5 枚（炙）",
+        "shanghan-herb-mvbf": "3 合（原量）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -12746,7 +14018,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱（酒洗）"
         },
         {
           "herbId": "shanghan-herb-esbe",
@@ -12755,7 +14028,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙去皮）"
         },
         {
           "herbId": "shanghan-herb-i53f",
@@ -12764,10 +14038,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 枚（大者，炙）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-g1a5": "4 钱（酒洗）",
+        "shanghan-herb-esbe": "2 钱（炙去皮）",
+        "shanghan-herb-i53f": "3 枚（大者，炙）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -12841,7 +14126,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱（去皮）"
         },
         {
           "herbId": "shanghan-herb-n150",
@@ -12850,7 +14136,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "shanghan-herb-q9hz",
@@ -12859,7 +14146,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "shanghan-herb-ji9u",
@@ -12868,7 +14156,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱（碎）"
         },
         {
           "herbId": "shanghan-herb-j4wu",
@@ -12877,10 +14166,23 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-kb1l": "1 钱（去皮）",
+        "shanghan-herb-n150": "2 钱",
+        "shanghan-herb-q9hz": "1 钱",
+        "shanghan-herb-ji9u": "1 钱（碎）",
+        "shanghan-herb-j4wu": "1 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -12945,7 +14247,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "huangqin",
@@ -12953,7 +14256,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-gqjj",
@@ -12962,7 +14266,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-kpxu",
@@ -12971,7 +14276,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-n150",
@@ -12980,7 +14286,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-h2d1m",
@@ -12989,10 +14296,24 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-fnce8": "见原文",
+        "huangqin": "见原文",
+        "shanghan-herb-gqjj": "见原文",
+        "shanghan-herb-kpxu": "见原文",
+        "shanghan-herb-n150": "见原文",
+        "shanghan-herb-h2d1m": "见原文"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -13058,10 +14379,19 @@
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "note": "原文并载煎熬、捻挺与纳谷道法，详见煎服法。"
+          "note": "原文并载煎熬、捻挺与纳谷道法，详见煎服法。",
+          "modernDose": "7 合（原量）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-qos": "7 合（原量）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -13127,10 +14457,19 @@
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "note": "讲义于此方仅注“方缺”，未载药味与剂量。"
+          "note": "讲义于此方仅注“方缺”，未载药味与剂量。",
+          "modernDose": "原方缺"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-dbu4c": "原方缺"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -13197,10 +14536,19 @@
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "note": "原文并载和醋灌谷道法，详见煎服法。"
+          "note": "原文并载和醋灌谷道法，详见煎服法。",
+          "modernDose": "1 枚"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-bqasta": "1 枚"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -13274,7 +14622,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "6 钱"
         },
         {
           "herbId": "shanghan-herb-i6vk",
@@ -13283,7 +14632,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "14 枚"
         },
         {
           "herbId": "shanghan-herb-g1a5",
@@ -13292,10 +14642,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（去皮）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-jy54c": "6 钱",
+        "shanghan-herb-i6vk": "14 枚",
+        "shanghan-herb-g1a5": "2 钱（去皮）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -13369,7 +14730,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 升（洗）"
         },
         {
           "herbId": "renshen",
@@ -13377,7 +14739,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shengjiang",
@@ -13385,7 +14748,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "6 钱（切）"
         },
         {
           "herbId": "dazao",
@@ -13393,10 +14757,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（劈）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-cz1i3": "1 升（洗）",
+        "renshen": "3 钱",
+        "shengjiang": "6 钱（切）",
+        "dazao": "12 枚（劈）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -13461,7 +14837,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 升（原量）"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -13470,7 +14847,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "8 钱"
         },
         {
           "herbId": "shanghan-herb-i53f",
@@ -13479,7 +14857,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "8 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-g1a5",
@@ -13488,7 +14867,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "16 钱（去皮）"
         },
         {
           "herbId": "shanghan-herb-esbe",
@@ -13497,7 +14877,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "16 钱（炙去皮）"
         },
         {
           "herbId": "shanghan-herb-i05u",
@@ -13506,10 +14887,24 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "16 钱（去皮尖，研作脂）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-noy24": "2 升（原量）",
+        "shanghan-herb-mxdu": "8 钱",
+        "shanghan-herb-i53f": "8 钱（炙）",
+        "shanghan-herb-g1a5": "16 钱（去皮）",
+        "shanghan-herb-esbe": "16 钱（炙去皮）",
+        "shanghan-herb-i05u": "16 钱（去皮尖，研作脂）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -13583,7 +14978,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "15 个（擘）"
         },
         {
           "herbId": "gancao",
@@ -13591,7 +14987,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-rkp7",
@@ -13600,10 +14997,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-i6vk": "15 个（擘）",
+        "gancao": "1 钱（炙）",
+        "shanghan-herb-rkp7": "2 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -13677,7 +15085,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "shanghan-herb-l5z7f",
@@ -13686,7 +15095,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 升（原量）"
         },
         {
           "herbId": "shanghan-herb-p67u",
@@ -13695,7 +15105,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-i05u",
@@ -13704,7 +15115,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "40 个（去皮尖）"
         },
         {
           "herbId": "shanghan-herb-6ulmld",
@@ -13713,7 +15125,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-f7p3qd",
@@ -13722,7 +15135,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 升（去节）"
         },
         {
           "herbId": "shengjiang",
@@ -13730,7 +15144,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "gancao",
@@ -13738,10 +15153,26 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-rvc9": "2 钱",
+        "shanghan-herb-l5z7f": "1 升（原量）",
+        "shanghan-herb-p67u": "2 钱（炙）",
+        "shanghan-herb-i05u": "40 个（去皮尖）",
+        "shanghan-herb-6ulmld": "见原文",
+        "shanghan-herb-f7p3qd": "1 升（去节）",
+        "shengjiang": "2 钱",
+        "gancao": "2 钱（炙）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -13814,7 +15245,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -13823,7 +15255,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "6 钱"
         },
         {
           "herbId": "gancao",
@@ -13831,7 +15264,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shengjiang",
@@ -13839,7 +15273,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（切）"
         },
         {
           "herbId": "dazao",
@@ -13847,10 +15282,23 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 枚（擘）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "guizhi": "3 钱",
+        "shanghan-herb-mxdu": "6 钱",
+        "gancao": "2 钱（炙）",
+        "shengjiang": "3 钱（切）",
+        "dazao": "2 枚（擘）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -13923,7 +15371,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -13932,7 +15381,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "gancao",
@@ -13940,7 +15390,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shengjiang",
@@ -13948,7 +15399,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱（切）"
         },
         {
           "herbId": "dazao",
@@ -13956,7 +15408,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "12 枚（擘）"
         },
         {
           "herbId": "shanghan-herb-g1a5",
@@ -13965,10 +15418,24 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "guizhi": "3 钱",
+        "shanghan-herb-mxdu": "3 钱",
+        "gancao": "2 钱（炙）",
+        "shengjiang": "3 钱（切）",
+        "dazao": "12 枚（擘）",
+        "shanghan-herb-g1a5": "1 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14042,7 +15509,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（去筛）"
         },
         {
           "herbId": "shanghan-herb-mcnp",
@@ -14051,7 +15519,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "shanghan-herb-q26k",
@@ -14060,10 +15529,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 枚（炮，去皮，破八片）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-rvc9": "2 钱（去筛）",
+        "shanghan-herb-mcnp": "2 钱",
+        "shanghan-herb-q26k": "1 枚（炮，去皮，破八片）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14128,7 +15608,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-mcnp",
@@ -14137,7 +15618,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-q26k",
@@ -14146,10 +15628,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-g1a5": "见原文",
+        "shanghan-herb-mcnp": "见原文",
+        "shanghan-herb-q26k": "见原文"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14223,7 +15716,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（去节）"
         },
         {
           "herbId": "gancao",
@@ -14231,7 +15725,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-q26k",
@@ -14240,10 +15735,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 枚（炮，去皮）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-rvc9": "2 钱（去节）",
+        "gancao": "2 钱（炙）",
+        "shanghan-herb-q26k": "1 枚（炮，去皮）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14317,7 +15823,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         },
         {
           "herbId": "huangqin",
@@ -14325,7 +15832,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -14334,7 +15842,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "shanghan-herb-nm7o5",
@@ -14343,7 +15852,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 枚"
         },
         {
           "herbId": "shanghan-herb-q9hz",
@@ -14352,10 +15862,23 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-rsm2": "4 钱",
+        "huangqin": "1 钱",
+        "shanghan-herb-mxdu": "2 钱",
+        "shanghan-herb-nm7o5": "2 枚",
+        "shanghan-herb-q9hz": "2 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14429,7 +15952,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 枚（炮，破八片）"
         },
         {
           "herbId": "shanghan-herb-n150",
@@ -14438,7 +15962,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "renshen",
@@ -14446,7 +15971,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "shanghan-herb-kpxu",
@@ -14455,7 +15981,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -14464,10 +15991,23 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-q26k": "2 枚（炮，破八片）",
+        "shanghan-herb-n150": "3 钱",
+        "renshen": "2 钱",
+        "shanghan-herb-kpxu": "4 钱",
+        "shanghan-herb-mxdu": "3 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14541,7 +16081,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "16 钱（一半全用，一半筛末）"
         },
         {
           "herbId": "shanghan-herb-gk2y",
@@ -14550,7 +16091,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "shanghan-herb-lw68",
@@ -14559,10 +16101,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 升（原量）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-lanrn": "16 钱（一半全用，一半筛末）",
+        "shanghan-herb-gk2y": "1 钱",
+        "shanghan-herb-lw68": "1 升（原量）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14636,10 +16189,19 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "16 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-kam2": "16 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14712,10 +16274,19 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "gancao": "2 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14789,7 +16360,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-rebz",
@@ -14798,10 +16370,20 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "10 枚（去黄，内上苦酒，着鸡子壳中）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-k36z14": "见原文",
+        "shanghan-herb-rebz": "10 枚（去黄，内上苦酒，着鸡子壳中）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14865,7 +16447,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "guizhi",
@@ -14873,7 +16456,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "gancao",
@@ -14881,10 +16465,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "banxia": "见原文",
+        "guizhi": "见原文",
+        "gancao": "见原文"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14958,7 +16553,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 茎"
         },
         {
           "herbId": "shanghan-herb-gk2y",
@@ -14967,7 +16563,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "shanghan-herb-q26k",
@@ -14976,10 +16573,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 枚（生用，去皮破八片）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-n6ek": "4 茎",
+        "shanghan-herb-gk2y": "1 钱",
+        "shanghan-herb-q26k": "1 枚（生用，去皮破八片）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -15053,7 +16661,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 茎"
         },
         {
           "herbId": "shanghan-herb-gk2y",
@@ -15062,7 +16671,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 钱"
         },
         {
           "herbId": "shanghan-herb-q26k",
@@ -15071,7 +16681,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 枚（生用，去皮破八片）"
         },
         {
           "herbId": "shanghan-herb-dwat",
@@ -15080,7 +16691,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "5 合（原量）"
         },
         {
           "herbId": "shanghan-herb-hhr6t",
@@ -15089,10 +16701,23 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 合（原量）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-n6ek": "4 茎",
+        "shanghan-herb-gk2y": "1 钱",
+        "shanghan-herb-q26k": "1 枚（生用，去皮破八片）",
+        "shanghan-herb-dwat": "5 合（原量）",
+        "shanghan-herb-hhr6t": "1 合（原量）"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -15165,7 +16790,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-jc447e",
@@ -15174,7 +16800,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1 枚（生用，去皮，破八片）"
         },
         {
           "herbId": "shanghan-herb-gk2y",
@@ -15183,10 +16810,21 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "gancao": "2 钱（炙）",
+        "shanghan-herb-jc447e": "1 枚（生用，去皮，破八片）",
+        "shanghan-herb-gk2y": "3 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -15259,7 +16897,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-xjv6rt",
@@ -15268,7 +16907,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "chaihu",
@@ -15276,7 +16916,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -15285,10 +16926,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "见原文"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "gancao": "见原文",
+        "shanghan-herb-xjv6rt": "见原文",
+        "chaihu": "见原文",
+        "shanghan-herb-mxdu": "见原文"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -15362,7 +17015,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "300 个"
         },
         {
           "herbId": "shanghan-herb-mcnp",
@@ -15371,7 +17025,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "6 钱"
         },
         {
           "herbId": "shanghan-herb-gk2y",
@@ -15380,7 +17035,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "10 钱"
         },
         {
           "herbId": "shanghan-herb-rsm2",
@@ -15389,7 +17045,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "16 钱"
         },
         {
           "herbId": "shanghan-herb-gqjj",
@@ -15398,7 +17055,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱"
         },
         {
           "herbId": "shanghan-herb-q26k",
@@ -15407,7 +17065,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "6 钱（炮）"
         },
         {
           "herbId": "shanghan-herb-njf6",
@@ -15416,7 +17075,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "4 钱（炒去汗）"
         },
         {
           "herbId": "guizhi",
@@ -15424,7 +17084,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "6 钱"
         },
         {
           "herbId": "renshen",
@@ -15432,7 +17093,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "6 钱"
         },
         {
           "herbId": "shanghan-herb-rkp7",
@@ -15441,10 +17103,28 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "6 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-dw3d": "300 个",
+        "shanghan-herb-mcnp": "6 钱",
+        "shanghan-herb-gk2y": "10 钱",
+        "shanghan-herb-rsm2": "16 钱",
+        "shanghan-herb-gqjj": "4 钱",
+        "shanghan-herb-q26k": "6 钱（炮）",
+        "shanghan-herb-njf6": "4 钱（炒去汗）",
+        "guizhi": "6 钱",
+        "renshen": "6 钱",
+        "shanghan-herb-rkp7": "6 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -15518,7 +17198,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "guizhi",
@@ -15526,7 +17207,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -15535,7 +17217,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-mcnp",
@@ -15544,7 +17227,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "dazao",
@@ -15552,7 +17236,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "25 个"
         },
         {
           "herbId": "gancao",
@@ -15560,7 +17245,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "shanghan-herb-p8bz",
@@ -15569,10 +17255,25 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-gqjj": "3 钱",
+        "guizhi": "3 钱",
+        "shanghan-herb-mxdu": "3 钱",
+        "shanghan-herb-mcnp": "3 钱",
+        "dazao": "25 个",
+        "gancao": "2 钱（炙）",
+        "shanghan-herb-p8bz": "2 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -15637,7 +17338,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "guizhi",
@@ -15645,7 +17347,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -15654,7 +17357,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-mcnp",
@@ -15663,7 +17367,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-p8bz",
@@ -15672,7 +17377,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "gancao",
@@ -15680,7 +17386,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱（炙）"
         },
         {
           "herbId": "dazao",
@@ -15688,7 +17395,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "25 枚"
         },
         {
           "herbId": "shanghan-herb-cz1i3",
@@ -15697,7 +17405,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 升（原量）"
         },
         {
           "herbId": "shengjiang",
@@ -15705,10 +17414,27 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "8 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-gqjj": "3 钱",
+        "guizhi": "3 钱",
+        "shanghan-herb-mxdu": "3 钱",
+        "shanghan-herb-mcnp": "3 钱",
+        "shanghan-herb-p8bz": "2 钱",
+        "gancao": "2 钱（炙）",
+        "dazao": "25 枚",
+        "shanghan-herb-cz1i3": "2 升（原量）",
+        "shengjiang": "8 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -15782,7 +17508,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2.5 钱（去节）"
         },
         {
           "herbId": "shanghan-herb-f1as",
@@ -15791,7 +17518,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.25 钱"
         },
         {
           "herbId": "shanghan-herb-gqjj",
@@ -15800,7 +17528,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "1.25 钱"
         },
         {
           "herbId": "shanghan-herb-kzgo",
@@ -15809,7 +17538,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.75 钱"
         },
         {
           "herbId": "huangqin",
@@ -15817,7 +17547,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.75 钱"
         },
         {
           "herbId": "shanghan-herb-n9e9",
@@ -15826,7 +17557,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.75 钱"
         },
         {
           "herbId": "shanghan-herb-l43g",
@@ -15835,7 +17567,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.25 钱"
         },
         {
           "herbId": "shanghan-herb-kpxu",
@@ -15844,7 +17577,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.25 钱"
         },
         {
           "herbId": "shanghan-herb-gk2y",
@@ -15853,7 +17587,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.25 钱"
         },
         {
           "herbId": "shanghan-herb-mxdu",
@@ -15862,7 +17597,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.25 钱"
         },
         {
           "herbId": "guizhi",
@@ -15870,7 +17606,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.25 钱"
         },
         {
           "herbId": "shanghan-herb-n150",
@@ -15879,7 +17616,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.25 钱"
         },
         {
           "herbId": "gancao",
@@ -15887,7 +17625,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.25 钱"
         },
         {
           "herbId": "shanghan-herb-ds33h",
@@ -15896,10 +17635,32 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "0.25 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-rvc9": "2.5 钱（去节）",
+        "shanghan-herb-f1as": "1.25 钱",
+        "shanghan-herb-gqjj": "1.25 钱",
+        "shanghan-herb-kzgo": "0.75 钱",
+        "huangqin": "0.75 钱",
+        "shanghan-herb-n9e9": "0.75 钱",
+        "shanghan-herb-l43g": "0.25 钱",
+        "shanghan-herb-kpxu": "0.25 钱",
+        "shanghan-herb-gk2y": "0.25 钱",
+        "shanghan-herb-mxdu": "0.25 钱",
+        "guizhi": "0.25 钱",
+        "shanghan-herb-n150": "0.25 钱",
+        "gancao": "0.25 钱",
+        "shanghan-herb-ds33h": "0.25 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -15973,7 +17734,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-rsm2",
@@ -15982,7 +17744,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "huangqin",
@@ -15990,7 +17753,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "renshen",
@@ -15998,10 +17762,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-gk2y": "3 钱",
+        "shanghan-herb-rsm2": "3 钱",
+        "huangqin": "3 钱",
+        "renshen": "3 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -16075,7 +17851,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "2 钱"
         },
         {
           "herbId": "shanghan-herb-rsm2",
@@ -16084,7 +17861,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-rkp7",
@@ -16093,7 +17871,8 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         },
         {
           "herbId": "shanghan-herb-ldvs",
@@ -16102,10 +17881,22 @@
           "role": "未标注",
           "roleCitationIds": [
             "src-fangjixue"
-          ]
+          ],
+          "modernDose": "3 钱"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
+      "doseConversion": {
+        "text": "一两 = 现今的一钱",
+        "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
+      },
+      "modernGramDoses": {
+        "shanghan-herb-hsnre": "2 钱",
+        "shanghan-herb-rsm2": "3 钱",
+        "shanghan-herb-rkp7": "3 钱",
+        "shanghan-herb-ldvs": "3 钱"
+      },
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],

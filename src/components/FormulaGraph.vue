@@ -10,10 +10,12 @@ const props = withDefaults(
     formula: Formula
     selectedHerbId?: string | null
     showPairs?: boolean
+    herbNotes?: Record<string, string>
   }>(),
   {
     selectedHerbId: null,
     showPairs: true,
+    herbNotes: () => ({}),
   },
 )
 
@@ -124,6 +126,25 @@ function roleColor(role: FormulaRole) {
   return roleColors[role] ?? roleColors['未标注']
 }
 
+function herbNote(herbId: string) {
+  return props.herbNotes?.[herbId]?.trim() ?? ''
+}
+
+function nodeRoleText(node: GraphNode) {
+  if (node.role !== '未标注') return node.role
+  return herbNote(node.herbId) ? '已备注' : '待补'
+}
+
+function nodeActionText(node: GraphNode) {
+  return node.action || herbNote(node.herbId) || '原讲义未按单味药整理，可在上方药材行内备注'
+}
+
+function nodeNoteSource(node: GraphNode) {
+  if (node.action) return '后世方解，该药材在方中作用思路'
+  if (herbNote(node.herbId)) return '本地备注，仅保存在当前浏览器'
+  return '可在上方“药材选取与炮制”中备注'
+}
+
 function isDimmed(node: GraphNode) {
   if (!props.selectedHerbId) return false
   if (node.herbId === props.selectedHerbId) return false
@@ -224,7 +245,7 @@ const selectedHerb = computed(() =>
     <div class="graph-toolbar">
       <div class="graph-legend">
         <span v-for="role in ROLE_ORDER" :key="role" class="graph-legend__item">
-          <i :style="{ background: roleColor(role).strong }"></i>{{ role }}
+          <i :style="{ background: roleColor(role).strong }"></i>{{ role === '未标注' ? '待补 / 本地备注' : role }}
         </span>
         <span class="graph-legend__item graph-legend__item--dash"><i></i>方解药对</span>
       </div>
@@ -291,7 +312,7 @@ const selectedHerb = computed(() =>
             :class="{ 'graph-node--selected': selectedHerbId === node.herbId, 'graph-node--dim': isDimmed(node) }"
             role="button"
             tabindex="0"
-            :aria-label="`${node.name}，${node.role}${node.action ? `，${node.action}` : ''}`"
+            :aria-label="`${node.name}，${nodeRoleText(node)}${nodeActionText(node) ? `，${nodeActionText(node)}` : ''}`"
             @click="onNodeClick(node.herbId)"
             @keydown.enter="onNodeClick(node.herbId)"
             @mouseenter="onNodeEnter(node, $event)"
@@ -317,7 +338,7 @@ const selectedHerb = computed(() =>
               stroke-dasharray="3 4"
             />
             <text :x="node.x" :y="node.y + 5" text-anchor="middle" class="graph-node__name">{{ node.name }}</text>
-            <text :x="node.x" :y="node.y + 46" text-anchor="middle" class="graph-node__role">{{ node.role }}</text>
+            <text :x="node.x" :y="node.y + 46" text-anchor="middle" class="graph-node__role">{{ nodeRoleText(node) }}</text>
           </g>
         </g>
       </svg>
@@ -330,21 +351,27 @@ const selectedHerb = computed(() =>
         <div class="graph-tip__head">
           <strong>{{ hoveredNode.name }}</strong>
           <span class="graph-tip__role" :style="{ background: roleColor(hoveredNode.role).strong }">
-            {{ hoveredNode.role }}
+            {{ hoveredNode.role === '未标注' && herbNote(hoveredNode.herbId) ? '本地备注' : hoveredNode.role }}
           </span>
         </div>
-        <p class="graph-tip__action">{{ hoveredNode.action || '本方中作用待收录' }}</p>
-        <span class="graph-tip__note">后世方解，该药材在方中作用思路</span>
+        <p class="graph-tip__action">{{ nodeActionText(hoveredNode) }}</p>
+        <p v-if="hoveredNode.action && herbNote(hoveredNode.herbId)" class="graph-tip__local">
+          本地备注：{{ herbNote(hoveredNode.herbId) }}
+        </p>
+        <span class="graph-tip__note">{{ nodeNoteSource(hoveredNode) }}</span>
       </div>
     </div>
 
     <div class="graph-foot">
       <p v-if="selectedNode">
         已选 <strong>{{ selectedHerb?.name ?? selectedNode.name }}</strong>
-        <span v-if="selectedNode.action" class="graph-foot__action">{{ selectedNode.action }}</span>
+        <span v-if="selectedNode.action || herbNote(selectedNode.herbId)" class="graph-foot__action">
+          {{ selectedNode.action || herbNote(selectedNode.herbId) }}
+        </span>
+        <span v-else class="graph-foot__empty">原讲义未按单味药整理，可在上方药材行内备注</span>
         <RouterLink v-if="selectedHerb" class="text-link" :to="`/herbs/${selectedHerb.id}`">查看药材 →</RouterLink>
       </p>
-      <p v-else class="muted">悬停药材看本方作用 · 拖动平移 · 滚轮缩放 · 点击药材聚焦</p>
+      <p v-else class="muted">悬停药材看方中作用 · 拖动平移 · 滚轮缩放 · 点击药材聚焦</p>
       <span class="graph-hint">实线 = 组成；虚线 = 后世方解</span>
     </div>
   </div>
@@ -466,6 +493,13 @@ const selectedHerb = computed(() =>
   line-height: 1.65;
 }
 
+.graph-tip__local {
+  margin-top: 4px;
+  color: var(--jade);
+  font-size: 0.7rem;
+  line-height: 1.55;
+}
+
 .graph-tip__note {
   display: block;
   margin-top: 5px;
@@ -557,6 +591,11 @@ const selectedHerb = computed(() =>
   background: rgba(47, 111, 107, 0.1);
   color: var(--jade);
   font-size: 0.68rem;
+}
+
+.graph-foot__empty {
+  color: var(--ink-faint);
+  font-size: 0.66rem;
 }
 
 .graph-hint {

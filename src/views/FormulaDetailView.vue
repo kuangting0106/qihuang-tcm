@@ -3,7 +3,6 @@ import { computed, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import CitationBadge from '@/components/CitationBadge.vue'
 import EvidenceTrigger from '@/components/EvidenceTrigger.vue'
-import FormulaCompositionList from '@/components/FormulaCompositionList.vue'
 import FormulaGraph from '@/components/FormulaGraph.vue'
 import AnnotatedOriginalText from '@/components/AnnotatedOriginalText.vue'
 import SourcedText from '@/components/SourcedText.vue'
@@ -32,6 +31,8 @@ watch(
     selectedHerbId.value = null
     showPairs.value = true
     prepDoseMode.value = 'ancient'
+    editingHerbId.value = null
+    herbNoteDraft.value = ''
   },
 )
 
@@ -45,9 +46,92 @@ watch(
 
 const size = computed(() => formula.value?.composition.length ?? 0)
 const isLarge = computed(() => size.value > 20)
-const isSmall = computed(() => size.value > 0 && size.value <= 8)
+const hasModernDoses = computed(() =>
+  Object.keys(formula.value?.modernGramDoses ?? {}).length > 0,
+)
 
-const compositionVariant = computed(() => (isSmall.value ? 'table' : 'grouped'))
+const herbMeaningById = computed(() => {
+  const map = new Map<string, string>()
+  for (const item of formula.value?.meaning?.herbMeanings ?? []) {
+    const text = item.text?.trim()
+    if (text) map.set(item.herbId, text)
+  }
+  return map
+})
+
+const HERB_NOTE_STORAGE_KEY = 'qihuang.formula.herbRoleNotes'
+
+function readHerbNotes(): Record<string, Record<string, string>> {
+  try {
+    const raw = localStorage.getItem(HERB_NOTE_STORAGE_KEY)
+    if (!raw) return {}
+    const parsed = JSON.parse(raw) as Record<string, unknown>
+    if (!parsed || typeof parsed !== 'object') return {}
+    const out: Record<string, Record<string, string>> = {}
+    for (const [formulaId, value] of Object.entries(parsed)) {
+      if (!value || typeof value !== 'object') continue
+      const notes: Record<string, string> = {}
+      for (const [herbId, note] of Object.entries(value as Record<string, unknown>)) {
+        if (typeof note === 'string' && note.trim()) notes[herbId] = note.trim()
+      }
+      if (Object.keys(notes).length) out[formulaId] = notes
+    }
+    return out
+  } catch {
+    return {}
+  }
+}
+
+const herbNotes = ref<Record<string, Record<string, string>>>(readHerbNotes())
+const editingHerbId = ref<string | null>(null)
+const herbNoteDraft = ref('')
+
+const currentHerbNotes = computed(() =>
+  formula.value ? herbNotes.value[formula.value.id] ?? {} : {},
+)
+
+function herbNoteFor(herbId: string) {
+  return currentHerbNotes.value[herbId] ?? ''
+}
+
+function persistHerbNotes(next: Record<string, Record<string, string>>) {
+  herbNotes.value = next
+  try {
+    localStorage.setItem(HERB_NOTE_STORAGE_KEY, JSON.stringify(next))
+  } catch {
+    // 浏览器禁用 localStorage 时，只保留本次会话内的内容。
+  }
+}
+
+function startHerbNote(herbId: string) {
+  editingHerbId.value = herbId
+  herbNoteDraft.value = herbNoteFor(herbId)
+}
+
+function cancelHerbNote() {
+  editingHerbId.value = null
+  herbNoteDraft.value = ''
+}
+
+function saveHerbNote(herbId: string) {
+  const current = formula.value
+  if (!current) return
+  const text = herbNoteDraft.value.trim()
+  const book = { ...(herbNotes.value[current.id] ?? {}) }
+  if (text) book[herbId] = text
+  else delete book[herbId]
+  const next = { ...herbNotes.value }
+  if (Object.keys(book).length) next[current.id] = book
+  else delete next[current.id]
+  persistHerbNotes(next)
+  editingHerbId.value = null
+  herbNoteDraft.value = ''
+}
+
+function clearHerbNote(herbId: string) {
+  herbNoteDraft.value = ''
+  saveHerbNote(herbId)
+}
 
 function selectHerb(id: string) {
   selectedHerbId.value = selectedHerbId.value === id ? null : id
@@ -184,31 +268,90 @@ watch(
                 </p>
               </div>
               <button
-                v-if="formula.modernGramDoses"
+                v-if="hasModernDoses"
                 class="prep-dose-toggle"
                 type="button"
                 :aria-pressed="prepDoseMode === 'modern'"
                 @click="prepDoseMode = prepDoseMode === 'modern' ? 'ancient' : 'modern'"
               >
                 <span aria-hidden="true">⇄</span>
-                {{ prepDoseMode === 'modern' ? '切换原文用量' : '现代剂量仅供参考' }}
+                {{ prepDoseMode === 'modern' ? '切换原文用量' : '切换现代用量' }}
               </button>
             </div>
             <ul class="preparation-herbs">
-              <li v-for="item in formula.composition" :key="item.herbId">
-                <RouterLink v-if="herbsById.has(item.herbId)" :to="`/herbs/${item.herbId}`">
-                  {{ item.herbName ?? herbName(item.herbId) }}
-                </RouterLink>
-                <span v-else>{{ item.herbName ?? herbName(item.herbId) }}</span>
-                <span>
-                  {{
-                    prepDoseMode === 'modern'
-                      ? formula.modernGramDoses?.[item.herbId] ?? item.dosage
-                      : item.dosage
-                  }}
-                </span>
+              <li v-for="item in formula.composition" :key="item.herbId" class="preparation-herb">
+                <div class="preparation-herb__main">
+                  <RouterLink
+                    v-if="herbsById.has(item.herbId)"
+                    class="preparation-herb__name"
+                    :to="`/herbs/${item.herbId}`"
+                  >
+                    {{ item.herbName ?? herbName(item.herbId) }}
+                  </RouterLink>
+                  <span v-else class="preparation-herb__name">{{ item.herbName ?? herbName(item.herbId) }}</span>
+                  <span class="preparation-herb__dose">
+                    {{
+                      prepDoseMode === 'modern'
+                        ? formula.modernGramDoses?.[item.herbId] ?? item.dosage
+                        : item.dosage
+                    }}
+                  </span>
+                </div>
+
+                <div class="preparation-herb__role">
+                  <template v-if="editingHerbId === item.herbId">
+                    <textarea
+                      v-model="herbNoteDraft"
+                      class="preparation-herb__input"
+                      rows="2"
+                      maxlength="240"
+                      :placeholder="`写下${item.herbName ?? herbName(item.herbId)}在本方中的作用；只保存在当前浏览器`"
+                    ></textarea>
+                    <div class="preparation-herb__actions">
+                      <button class="herb-note-btn herb-note-btn--primary" type="button" @click="saveHerbNote(item.herbId)">
+                        保存
+                      </button>
+                      <button class="herb-note-btn" type="button" @click="cancelHerbNote">取消</button>
+                      <button
+                        v-if="herbNoteFor(item.herbId)"
+                        class="herb-note-btn herb-note-btn--danger"
+                        type="button"
+                        @click="clearHerbNote(item.herbId)"
+                      >
+                        清除
+                      </button>
+                    </div>
+                  </template>
+                  <template v-else>
+                    <span v-if="herbNoteFor(item.herbId)" class="preparation-herb__note">
+                      {{ herbNoteFor(item.herbId) }}
+                      <em class="preparation-herb__badge">本地备注</em>
+                    </span>
+                    <span v-else-if="herbMeaningById.get(item.herbId)" class="preparation-herb__note">
+                      {{ herbMeaningById.get(item.herbId) }}
+                      <em class="preparation-herb__badge">方解</em>
+                    </span>
+                    <span v-else-if="item.role !== '未标注'" class="preparation-herb__note">
+                      方中角色：{{ item.role }}
+                      <em class="preparation-herb__badge">方解</em>
+                    </span>
+                    <span v-else class="preparation-herb__note preparation-herb__note--empty">
+                      原讲义未按单味药整理（非遗漏），可自行备注
+                    </span>
+                    <button
+                      class="preparation-herb__edit"
+                      type="button"
+                      @click="startHerbNote(item.herbId)"
+                    >
+                      {{ herbNoteFor(item.herbId) ? '修改备注' : '备注作用' }}
+                    </button>
+                  </template>
+                </div>
               </li>
             </ul>
+            <p class="preparation-herb-hint">
+              单味作用：有方解的直接显示；原讲义未按单味药整理的，可点“备注作用”自行填写。备注只保存在本机浏览器，不会发布。
+            </p>
             <p v-if="formula.modernGramNote" class="preparation-dose-note">{{ formula.modernGramNote }}</p>
             <CitationBadge :citation-ids="formula.preparation.ingredients.citationIds" label="原文" compact />
           </article>
@@ -358,8 +501,8 @@ watch(
 
       <div v-if="isLarge" class="large-hint paper-panel">
         <div>
-          <strong>大方默认用分组列表，不折叠。</strong>
-          <p>这首先秦/后世大方超过 20 味，页面默认按君、臣、佐、使完整展开；关系图作为可选视图。</p>
+          <strong>大方超过 20 味，关系图默认收起。</strong>
+          <p>组成与用量见上方“药材选取与炮制”；展开关系图可查看药材之间的连接。</p>
         </div>
         <button class="btn btn--ghost btn--small" type="button" @click="showGraph = !showGraph">
           {{ showGraph ? '收起关系图' : '查看关系图' }}
@@ -391,16 +534,17 @@ watch(
               :formula="formula"
               :selected-herb-id="selectedHerbId"
               :show-pairs="showPairs"
+              :herb-notes="currentHerbNotes"
               @select="selectHerb"
             />
             <p class="graph-caption">
-              实线为“方剂 → 药材”的组成关系；虚线为教材归纳的核心药对。悬停任一药材，可看它在方中起什么作用；
-              这些作用归纳标为后世方解，不是《伤寒论》原文。
+              实线为“方剂 → 药材”的组成关系；虚线为教材归纳的核心药对。悬停药材可看方中作用；
+              原讲义未按单味药整理的，会在上方“药材选取与炮制”中显示“备注作用”，可自行补充本地备注。
             </p>
           </div>
           <div v-else class="graph-collapsed paper-panel">
             <strong>关系图谱已收起</strong>
-            <p>展开后查看君臣佐使与核心药对；组成表与用量比例仍在下方。</p>
+            <p>展开后查看药材之间的连接与核心药对；组成与用量见上方“药材选取与炮制”。</p>
             <button class="btn btn--ghost btn--small" type="button" @click="showGraph = true">查看关系图谱 →</button>
           </div>
         </div>
@@ -458,17 +602,6 @@ watch(
             <SourcedText v-for="(s, i) in formula.additionalIndications" :key="i" :claim="s" block />
           </div>
         </aside>
-      </section>
-
-      <section class="composition-section">
-        <p class="eyebrow">COMPOSITION / 组成</p>
-
-        <FormulaCompositionList
-          :formula="formula"
-          :variant="compositionVariant"
-          :selected-herb-id="selectedHerbId"
-          @select="selectHerb"
-        />
       </section>
 
       <section class="modification-section">
@@ -680,37 +813,149 @@ watch(
 
 .preparation-herbs {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2px 14px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.preparation-herbs li {
+.preparation-herb {
+  padding: 6px 0;
+  border-bottom: 1px dotted var(--line);
+}
+
+.preparation-herb__main {
   display: flex;
   justify-content: space-between;
   gap: 8px;
-  padding: 3px 0;
-  border-bottom: 1px dotted var(--line);
-  font-size: 0.78rem;
+  align-items: baseline;
 }
 
-.preparation-herbs a {
+.preparation-herb__name {
+  color: var(--ink);
   font-family: var(--serif);
+  font-size: 0.8rem;
+}
+
+.preparation-herbs a.preparation-herb__name {
   text-decoration: underline;
   text-decoration-color: rgba(163, 58, 43, 0.28);
   text-underline-offset: 3px;
 }
 
-.preparation-herbs a:hover {
+.preparation-herbs a.preparation-herb__name:hover {
   color: var(--cinnabar);
 }
 
-.preparation-herbs span {
+.preparation-herb__dose {
   color: var(--ink-soft);
   font-size: 0.72rem;
   white-space: nowrap;
+}
+
+.preparation-herb__role {
+  margin-top: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 8px;
+}
+
+.preparation-herb__note {
+  flex: 1;
+  min-width: 0;
+  color: var(--ink-soft);
+  font-size: 0.68rem;
+  line-height: 1.6;
+  white-space: normal;
+}
+
+.preparation-herb__note--empty {
+  color: var(--ink-faint);
+}
+
+.preparation-herb__badge {
+  margin-left: 3px;
+  color: var(--jade);
+  font-size: 0.58rem;
+  font-style: normal;
+  white-space: nowrap;
+}
+
+.preparation-herb__edit {
+  flex: none;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px dashed rgba(163, 58, 43, 0.45);
+  background: transparent;
+  color: var(--cinnabar);
+  cursor: pointer;
+  font-size: 0.64rem;
+  line-height: 1.5;
+}
+
+.preparation-herb__edit:hover {
+  border-bottom-style: solid;
+}
+
+.preparation-herb__input {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  padding: 5px 7px;
+  border: 1px solid rgba(176, 138, 74, 0.45);
+  border-radius: 6px;
+  background: rgba(255, 252, 245, 0.9);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 0.72rem;
+  line-height: 1.55;
+  resize: vertical;
+}
+
+.preparation-herb__input:focus {
+  border-color: var(--jade);
+  outline: none;
+}
+
+.preparation-herb__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.herb-note-btn {
+  padding: 2px 7px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.45);
+  color: var(--ink-soft);
+  cursor: pointer;
+  font-size: 0.62rem;
+}
+
+.herb-note-btn--primary {
+  border-color: var(--jade);
+  background: rgba(221, 236, 232, 0.7);
+  color: var(--jade);
+}
+
+.herb-note-btn--danger {
+  border-color: rgba(163, 58, 43, 0.4);
+  color: var(--cinnabar);
+}
+
+.herb-note-btn:hover {
+  border-color: var(--cinnabar);
+  color: var(--cinnabar);
+}
+
+.preparation-herb-hint {
+  margin-top: 2px;
+  color: var(--ink-faint);
+  font-size: 0.64rem;
+  line-height: 1.55;
 }
 
 .preparation-quote {
@@ -1053,15 +1298,10 @@ watch(
   font-size: 0.8rem;
 }
 
-.composition-section,
 .modification-section,
 .pair-section,
 .graph-commentary-section {
   padding-top: 44px;
-}
-
-.composition-section > .eyebrow {
-  margin-bottom: 14px;
 }
 
 .graph-commentary-section {

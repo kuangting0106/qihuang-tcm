@@ -34,6 +34,90 @@ const ALIASES = {
 
 const herbIdByName = new Map(herbs.map((herb) => [herb.name, herb.id]))
 
+const CN_DIGITS = { 零: 0, 一: 1, 二: 2, 两: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9 }
+const WEIGHT_TO_QIAN = { 斤: 16, 两: 1, 钱: 1, 分: 0.25, 铢: 1 / 24 }
+const COUNT_UNITS = '枚个片茎把条只张寸'
+const VOLUME_UNITS = '升合'
+
+function parseCnNumber(value) {
+  if (!value) return 0
+  if (value === '半') return 0.5
+  if (/^\d+$/.test(value)) return Number(value)
+  let total = 0
+  let section = 0
+  let digit = 0
+  for (const char of value) {
+    if (char === '十') {
+      section += (digit || 1) * 10
+      digit = 0
+    } else if (char === '百') {
+      section += (digit || 1) * 100
+      digit = 0
+    } else if (char === '半') {
+      digit += 0.5
+    } else if (char in CN_DIGITS) {
+      digit = CN_DIGITS[char]
+    }
+  }
+  return total + section + digit
+}
+
+function formatQian(value) {
+  const rounded = Math.round(value * 100) / 100
+  if (Number.isInteger(rounded)) return String(rounded)
+  const text = rounded.toFixed(2).replace(/0+$/, '').replace(/\.$/, '')
+  const quarterExact = Math.abs(rounded * 4 - Math.round(rounded * 4)) < 1e-9
+  return `${quarterExact ? '' : '约 '}${text}`
+}
+
+function splitDoseSuffix(rest) {
+  const cleaned = (rest ?? '')
+    .replace(/^[,，、;；\s]+/, '')
+    .replace(/^[（(]/, '')
+    .replace(/[）)]\s*$/, '')
+    .replace(/。$/, '')
+    .replace(/[,，、]/g, '，')
+    .trim()
+  return cleaned
+}
+
+function modernDoseFor(dosage) {
+  const raw = (dosage ?? '').trim()
+  if (!raw || raw === '原方缺' || raw === '见原文') return raw
+
+  const weight = raw.match(
+    /^(半|[一二三四五六七八九十百]+|\d+)\s*(斤|两|钱|分|铢)(?:([一二三四五六七八九十百]+|半)\s*(斤|两|钱|分|铢)?)?(.*)$/,
+  )
+  if (weight) {
+    const [, firstValue, firstUnit, secondValue, secondUnit, rest] = weight
+    let qian = parseCnNumber(firstValue) * WEIGHT_TO_QIAN[firstUnit]
+    if (secondValue && secondUnit) {
+      qian += parseCnNumber(secondValue) * WEIGHT_TO_QIAN[secondUnit]
+    } else if (secondValue === '半') {
+      qian += 0.5 * WEIGHT_TO_QIAN[firstUnit]
+    }
+    let suffix = splitDoseSuffix(rest)
+    if (suffix === '半' && secondUnit) {
+      qian += 0.5 * WEIGHT_TO_QIAN[secondUnit]
+      suffix = ''
+    }
+    return `${formatQian(qian)} 钱${suffix ? `（${suffix}）` : ''}`
+  }
+
+  const count = raw.match(
+    new RegExp(`^(半|[一二三四五六七八九十百]+|\\d+)\\s*([${COUNT_UNITS}${VOLUME_UNITS}克])(.*)$`),
+  )
+  if (count) {
+    const [, value, unit, rest] = count
+    const suffix = splitDoseSuffix(rest)
+    const isVolume = VOLUME_UNITS.includes(unit)
+    const note = isVolume && !suffix ? '（原量）' : ''
+    return `${formatQian(parseCnNumber(value))} ${unit}${suffix ? `（${suffix}）` : note}`
+  }
+
+  return raw
+}
+
 function hash(value) {
   let h = 0
   for (let i = 0; i < value.length; i += 1) {
@@ -303,6 +387,10 @@ function extractFromFile(file) {
     const attached = ATTACHED.has(name)
 
     const composition = parseIngredients(ingredientLine, name)
+    for (const item of composition) item.modernDose = modernDoseFor(item.dosage)
+    const modernGramDoses = Object.fromEntries(
+      composition.map((item) => [item.herbId, item.modernDose]),
+    )
     const preparation = {
       ingredients: claim(ingredientLine, [sourceId], 'quote', locator),
       decoction: claim(
@@ -343,6 +431,13 @@ function extractFromFile(file) {
         preparation,
         composition,
         dosageNote: '剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。',
+        doseConversion: {
+          text: '一两 = 现今的一钱',
+          note: '本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。',
+        },
+        modernGramDoses,
+        modernGramNote:
+          '今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。',
         modifications: [],
         corePairs: [],
         commentaries: [],
