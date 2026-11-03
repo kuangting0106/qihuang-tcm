@@ -443,6 +443,18 @@ const TITLE_FIXES = {
   },
 }
 
+// 原稿中冷僻、基原待考或与他条内容交叉的条目，保留全文，并在条目页说明。
+const ENTRY_NOTES = {
+  'shangjing-29': '原题“女萎”。讲义原文明确：女萎又称玉竹，现以玉竹为正名；到药房抓药写玉竹。',
+  'shangjing-54': '蘼芜为川芎之苗，川芎用根；经方少用，原书条文保留备考。',
+  'shangjing-87': '青蘘为胡麻（脂麻）之叶，种子名胡麻子；现代多以黑芝麻入药。',
+  'zhongjing-156': '仅存《本经》条文，基原与今日商品名待考。',
+  'zhongjing-222': '仅存《本经》条文，现代临床少用，保留备考。',
+  'zhongjing-224': '本条兼录牛黄、牛角鳃、牛髓、牛胆；牛黄另见上经，内容有重复。',
+  'xiajing-338': '仅存《本经》条文，基原待考。',
+  'nishi-7': '大苏为大苏叶、大苏梗、大苏子的简称，均指紫苏。',
+}
+
 function readGroup(def) {
   const dir = path.join(sourceDir, def.dir)
   const entries = []
@@ -475,7 +487,8 @@ function readGroup(def) {
       charCount: countChars(parsed.sections),
       sections: parsed.sections,
     }
-    if (fix?.note) entry.note = fix.note
+    const note = fix?.note ?? (number !== null ? ENTRY_NOTES[`${def.id}-${number}`] : '')
+    if (note) entry.note = note
     if (def.id !== 'intro') {
       entry.pinyin = pinyinFor(title)
       entry.profile = buildProfile(entry)
@@ -498,15 +511,12 @@ function readGroup(def) {
 const RANK_PRIORITY = { shangjing: 0, zhongjing: 1, xiajing: 2, nishi: 3, editor: 4 }
 const entryRedirects = {}
 
-// 基本不用、已难考实或公开资料反复错配的条目，整条删除，不并入其他药。
-const DROPPED_NAMES = new Set(['蘼芜', '青蘘', '肤青', '白马茎', '牛角鳃', '翳螉', '女萎'])
-
+// 源稿中的冷僻条目不再整条删除；保留全文，由 ENTRY_NOTES 说明基原与使用情况。
 function mergeAliasEntries(groups) {
   const buckets = new Map()
   for (const group of groups) {
     if (group.id === 'intro') continue
     for (const entry of group.entries) {
-      if (DROPPED_NAMES.has(entry.title)) continue
       const canonical = canonicalName(entry.title)
       if (!buckets.has(canonical)) buckets.set(canonical, [])
       buckets.get(canonical).push(entry)
