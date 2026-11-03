@@ -5,7 +5,24 @@ import CitationBadge from './CitationBadge.vue'
 
 interface LocalAnnotation extends OriginalAnnotation {
   local?: boolean
+  public?: boolean
   start?: number
+}
+
+interface PublishResult {
+  ok: boolean
+  message: string
+}
+
+interface PublishPayload {
+  phrase: string
+  note: string
+  start: number
+}
+
+interface UnpublishPayload {
+  phrase: string
+  start: number
 }
 
 interface Segment {
@@ -35,15 +52,21 @@ const props = withDefaults(
   defineProps<{
     text: string
     annotations?: OriginalAnnotation[]
+    publishedAnnotations?: OriginalAnnotation[]
     tags?: string[]
     editable?: boolean
     scopeKey?: string
+    publishAnnotation?: (payload: PublishPayload) => Promise<PublishResult>
+    unpublishAnnotation?: (payload: UnpublishPayload) => Promise<PublishResult>
   }>(),
   {
     annotations: undefined,
+    publishedAnnotations: () => [],
     tags: () => [],
     editable: false,
     scopeKey: '',
+    publishAnnotation: undefined,
+    unpublishAnnotation: undefined,
   },
 )
 
@@ -55,6 +78,8 @@ const tip = ref({ x: 0, y: 0, width: 280 })
 const editor = ref<EditorState | null>(null)
 const noteDraft = ref('')
 const selectionHint = ref('')
+const publishMessage = ref('')
+const publishing = ref(false)
 const manual = ref<Record<string, LocalAnnotation[]>>(readManual())
 
 function readManual(): Record<string, LocalAnnotation[]> {
@@ -101,10 +126,18 @@ const currentManual = computed(() =>
 const mergedAnnotations = computed<LocalAnnotation[]>(() => {
   const manualList = currentManual.value
   const manualPhrases = new Set(manualList.map((item) => item.phrase))
+  const publishedList = props.publishedAnnotations
+    .filter((item) => !!item.phrase && !!item.note && !manualPhrases.has(item.phrase))
+    .map((item) => ({ ...item, public: true }))
+  const publishedPhrases = new Set(publishedList.map((item) => item.phrase))
   const sourceAnnotations = (props.annotations ?? []).filter(
-    (item) => !!item.phrase && !!item.note && !manualPhrases.has(item.phrase),
+    (item) =>
+      !!item.phrase &&
+      !!item.note &&
+      !manualPhrases.has(item.phrase) &&
+      !publishedPhrases.has(item.phrase),
   )
-  return [...manualList, ...sourceAnnotations]
+  return [...manualList, ...publishedList, ...sourceAnnotations]
 })
 
 const visibleTags = computed(() => props.tags.filter(Boolean).slice(0, 10))
@@ -121,6 +154,7 @@ const segments = computed<Segment[]>(() => {
 
   const ordered = [...annotations].sort((a, b) => {
     if (!!b.local !== !!a.local) return b.local ? 1 : -1
+    if (!!b.public !== !!a.public) return b.public ? 1 : -1
     return b.phrase.length - a.phrase.length
   })
 
@@ -235,7 +269,18 @@ function onTouchEnd() {
   window.setTimeout(onSelectionEnd, 0)
 }
 
-function saveAnnotation() {
+function removeManual(phrase: string, start?: number) {
+  const list = (manual.value[props.scopeKey] ?? []).filter(
+    (item) => !(item.phrase === phrase && item.start === start),
+  )
+  const next = { ...manual.value }
+  if (list.length) next[props.scopeKey] = list
+  else delete next[props.scopeKey]
+  manual.value = next
+  persistManual()
+}
+
+async function saveAnnotation() {
   const state = editor.value
   const note = noteDraft.value.trim()
   if (!state) return
@@ -263,6 +308,25 @@ function saveAnnotation() {
   editor.value = null
   noteDraft.value = ''
   selectionHint.value = ''
+
+  if (!props.publishAnnotation) {
+    publishMessage.value = '已保存到本机浏览器。'
+    return
+  }
+
+  publishing.value = true
+  publishMessage.value = '正在发布……'
+  try {
+    const result = await props.publishAnnotation({
+      phrase: state.phrase,
+      note,
+      start: state.start,
+    })
+    publishMessage.value = result.message
+    if (result.ok) removeManual(state.phrase, state.start)
+  } finally {
+    publishing.value = false
+  }
 }
 
 function cancelEditor() {
@@ -271,9 +335,13 @@ function cancelEditor() {
   selectionHint.value = ''
 }
 
+function canManageActive() {
+  return !!active.value?.annotation.local || !!active.value?.annotation.public
+}
+
 function editActive() {
   const current = active.value
-  if (!current?.annotation.local) return
+  if (!current || !canManageActive()) return
   const start =
     current.annotation.start ?? props.text.indexOf(current.annotation.phrase)
   editor.value = {
@@ -289,22 +357,32 @@ function editActive() {
   nextTick(() => editorInput.value?.focus())
 }
 
-function deleteActive() {
+async function deleteActive() {
   const current = active.value
-  if (!current?.annotation.local) return
-  const list = (manual.value[props.scopeKey] ?? []).filter(
-    (item) =>
-      !(
-        item.phrase === current.annotation.phrase &&
-        item.start === current.annotation.start
-      ),
-  )
-  const next = { ...manual.value }
-  if (list.length) next[props.scopeKey] = list
-  else delete next[props.scopeKey]
-  manual.value = next
-  persistManual()
+  if (!current || !canManageActive()) return
+  const { phrase, start } = current.annotation
+  const isPublic = current.annotation.public
   active.value = null
+
+  if (!isPublic) {
+    removeManual(phrase, start)
+    publishMessage.value = '已删除本机注解。'
+    return
+  }
+  if (!props.unpublishAnnotation) {
+    publishMessage.value = '公开注解需要通过发布服务删除。'
+    return
+  }
+
+  publishing.value = true
+  publishMessage.value = '正在删除公开注解……'
+  try {
+    const result = await props.unpublishAnnotation({ phrase, start: start ?? 0 })
+    publishMessage.value = result.message
+    if (result.ok) removeManual(phrase, start)
+  } finally {
+    publishing.value = false
+  }
 }
 
 watch(
@@ -345,6 +423,7 @@ watch(
           :class="{
             'annotated-text__term--active': active?.annotation.id === segment.annotation.id,
             'annotated-text__term--local': segment.annotation.local,
+            'annotated-text__term--public': segment.annotation.public,
           }"
           tabindex="0"
           :aria-label="`${segment.text}：${segment.annotation.note}`"
@@ -364,8 +443,9 @@ watch(
     </div>
 
     <p v-if="editable && !editor" class="annotated-hint">
-      用鼠标或手指选中原文词句，松开后即可添加本地注解。
+      用鼠标或手指选中原文词句，松开后即可添加注解；保存后会发布给所有访客。
     </p>
+    <p v-if="publishMessage" class="annotated-hint">{{ publishMessage }}</p>
     <p v-if="selectionHint" class="annotated-hint annotated-hint--warn">{{ selectionHint }}</p>
 
     <div
@@ -377,7 +457,7 @@ watch(
     >
       <div class="annotated-editor__head">
         <strong>{{ editor.phrase }}</strong>
-        <span>{{ editor.editing ? '编辑本地注解' : '添加本地注解' }}</span>
+        <span>{{ editor.editing ? '编辑注解' : '添加注解' }}</span>
       </div>
       <textarea
         ref="editorInput"
@@ -387,9 +467,11 @@ watch(
         placeholder="用现代汉语解释这个症状或词句……"
       ></textarea>
       <div class="annotated-editor__actions">
-        <button type="button" class="annotated-editor__save" @click="saveAnnotation">保存</button>
+        <button type="button" class="annotated-editor__save" :disabled="publishing" @click="saveAnnotation">
+          {{ publishing ? '发布中…' : '保存并发布' }}
+        </button>
         <button type="button" @click="cancelEditor">取消</button>
-        <span>仅存本机</span>
+        <span>无口令时仅存本机</span>
       </div>
     </div>
 
@@ -400,7 +482,9 @@ watch(
     >
       <div class="annotated-tip__head">
         <strong>{{ active.text }}</strong>
-        <span>{{ active.annotation.local ? '本地注解' : '现代注解' }}</span>
+        <span>{{
+          active.annotation.local ? '本地注解' : active.annotation.public ? '公开注解' : '现代注解'
+        }}</span>
       </div>
       <p>{{ active.annotation.note }}</p>
       <div class="annotated-tip__foot">
@@ -411,11 +495,17 @@ watch(
           tone="muted"
           compact
         />
-        <span>{{ active.annotation.local ? '仅存当前浏览器' : '非原文' }}</span>
+        <span>{{
+          active.annotation.local
+            ? '仅存当前浏览器'
+            : active.annotation.public
+              ? '所有访客可见'
+              : '非原文'
+        }}</span>
       </div>
-      <div v-if="active.annotation.local" class="annotated-tip__actions">
+      <div v-if="canManageActive()" class="annotated-tip__actions">
         <button type="button" @click.stop="editActive">编辑</button>
-        <button type="button" @click.stop="deleteActive">删除</button>
+        <button type="button" :disabled="publishing" @click.stop="deleteActive">删除</button>
       </div>
     </div>
   </div>
@@ -449,6 +539,12 @@ watch(
   border-bottom-style: solid;
   border-bottom-color: var(--gold);
   background: rgba(237, 224, 200, 0.45);
+}
+
+.annotated-text__term--public {
+  border-bottom-style: solid;
+  border-bottom-color: var(--cinnabar);
+  background: rgba(163, 58, 43, 0.08);
 }
 
 .annotated-text__term:hover,

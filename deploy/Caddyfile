@@ -1,16 +1,22 @@
 :80 {
 	encode zstd gzip
 
-	root * /srv
+	handle /api/* {
+		reverse_proxy api:8787
+	}
 
-	@html path / /index.html
-	header @html Cache-Control "no-cache"
+	handle {
+		root * /srv
 
-	@assets path /assets/*
-	header @assets Cache-Control "public, max-age=31536000, immutable"
+		@html path / /index.html
+		header @html Cache-Control "no-cache"
 
-	try_files {path} /index.html
-	file_server
+		@assets path /assets/*
+		header @assets Cache-Control "public, max-age=31536000, immutable"
+
+		try_files {path} /index.html
+		file_server
+	}
 
 	header {
 		X-Content-Type-Options "nosniff"

@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import CitationBadge from '@/components/CitationBadge.vue'
 import FormulaGraph from '@/components/FormulaGraph.vue'
 import AnnotatedOriginalText from '@/components/AnnotatedOriginalText.vue'
 import SourcedText from '@/components/SourcedText.vue'
 import { useTcmData } from '@/composables/useTcmData'
+import { usePublicNotes } from '@/composables/usePublicNotes'
 import {
   glossaryAnnotationsFor,
   glossaryTagsFor,
@@ -16,6 +17,17 @@ import type { FormulaRole } from '@/types/tcm'
 
 const route = useRoute()
 const { formulasById, herbsById, citationsById, herbName } = useTcmData()
+const {
+  loadPublicNotes,
+  savePublicNote,
+  publicAnnotationsFor,
+  publicHerbNotes,
+  publicHerbRoles,
+} = usePublicNotes()
+
+onMounted(() => {
+  void loadPublicNotes()
+})
 
 const formula = computed(() => formulasById.value.get(String(route.params.id)) ?? null)
 const sourceCitation = computed(() =>
@@ -106,12 +118,16 @@ function readHerbRoles(): Record<string, Record<string, FormulaRole>> {
 const herbNotes = ref<Record<string, Record<string, string>>>(readHerbNotes())
 const herbRoles = ref<Record<string, Record<string, FormulaRole>>>(readHerbRoles())
 
-const currentHerbNotes = computed(() =>
-  formula.value ? herbNotes.value[formula.value.id] ?? {} : {},
-)
-const currentHerbRoles = computed(() =>
-  formula.value ? herbRoles.value[formula.value.id] ?? {} : {},
-)
+const currentHerbNotes = computed(() => {
+  const id = formula.value?.id
+  if (!id) return {}
+  return { ...publicHerbNotes(id), ...(herbNotes.value[id] ?? {}) }
+})
+const currentHerbRoles = computed(() => {
+  const id = formula.value?.id
+  if (!id) return {}
+  return { ...publicHerbRoles(id), ...(herbRoles.value[id] ?? {}) }
+})
 
 function persistHerbNotes(next: Record<string, Record<string, string>>) {
   herbNotes.value = next
@@ -135,7 +151,27 @@ function baseRoleFor(herbId: string): FormulaRole {
   return formula.value?.composition.find((item) => item.herbId === herbId)?.role ?? '未标注'
 }
 
-function setHerbNote(herbId: string, text: string) {
+const publicHint = ref('')
+
+function clearLocalHerbNote(formulaId: string, herbId: string) {
+  const book = { ...(herbNotes.value[formulaId] ?? {}) }
+  delete book[herbId]
+  const next = { ...herbNotes.value }
+  if (Object.keys(book).length) next[formulaId] = book
+  else delete next[formulaId]
+  persistHerbNotes(next)
+}
+
+function clearLocalHerbRole(formulaId: string, herbId: string) {
+  const book = { ...(herbRoles.value[formulaId] ?? {}) }
+  delete book[herbId]
+  const next = { ...herbRoles.value }
+  if (Object.keys(book).length) next[formulaId] = book
+  else delete next[formulaId]
+  persistHerbRoles(next)
+}
+
+async function setHerbNote(herbId: string, text: string) {
   const current = formula.value
   if (!current) return
   const note = text.trim()
@@ -146,9 +182,18 @@ function setHerbNote(herbId: string, text: string) {
   if (Object.keys(book).length) next[current.id] = book
   else delete next[current.id]
   persistHerbNotes(next)
+
+  const result = await savePublicNote({
+    op: 'herb-note',
+    formulaId: current.id,
+    herbId,
+    note,
+  })
+  publicHint.value = result.message
+  if (result.ok) clearLocalHerbNote(current.id, herbId)
 }
 
-function setHerbRole(herbId: string, role: FormulaRole) {
+async function setHerbRole(herbId: string, role: FormulaRole) {
   const current = formula.value
   if (!current) return
   const book = { ...(herbRoles.value[current.id] ?? {}) }
@@ -158,13 +203,28 @@ function setHerbRole(herbId: string, role: FormulaRole) {
   if (Object.keys(book).length) next[current.id] = book
   else delete next[current.id]
   persistHerbRoles(next)
+
+  const result = await savePublicNote({
+    op: 'herb-role',
+    formulaId: current.id,
+    herbId,
+    role: role === baseRoleFor(herbId) ? '未标注' : role,
+  })
+  publicHint.value = result.message
+  if (result.ok) clearLocalHerbRole(current.id, herbId)
 }
 
-function resetHerb(herbId: string) {
+async function resetHerb(herbId: string) {
   const current = formula.value
   if (!current) return
-  setHerbRole(herbId, baseRoleFor(herbId))
-  setHerbNote(herbId, '')
+  clearLocalHerbRole(current.id, herbId)
+  clearLocalHerbNote(current.id, herbId)
+  const result = await savePublicNote({
+    op: 'herb-reset',
+    formulaId: current.id,
+    herbId,
+  })
+  publicHint.value = result.message
 }
 
 function selectHerb(id: string) {
@@ -190,6 +250,44 @@ function tagsForSymptom(index: number) {
   const symptom = current.symptoms[index]
   if (!symptom) return []
   return glossaryTagsFor(primarySymptomText(symptom.text, current.name))
+}
+
+function publishedAnnotationsForSymptom(index: number) {
+  const current = formula.value
+  if (!current) return []
+  return publicAnnotationsFor(`${current.id}:${index}`).map((item) => ({
+    id: item.id,
+    phrase: item.phrase,
+    note: item.note,
+    start: item.start,
+  }))
+}
+
+function publishSymptomAnnotation(
+  index: number,
+  payload: { phrase: string; note: string; start: number },
+) {
+  const current = formula.value
+  if (!current) return Promise.resolve({ ok: false, message: '未找到方剂。' })
+  return savePublicNote({
+    op: 'symptom-upsert',
+    scopeKey: `${current.id}:${index}`,
+    annotation: payload,
+  })
+}
+
+function unpublishSymptomAnnotation(
+  index: number,
+  payload: { phrase: string; start: number },
+) {
+  const current = formula.value
+  if (!current) return Promise.resolve({ ok: false, message: '未找到方剂。' })
+  return savePublicNote({
+    op: 'symptom-delete',
+    scopeKey: `${current.id}:${index}`,
+    phrase: payload.phrase,
+    start: payload.start,
+  })
 }
 
 const NOTE_STORAGE_KEY = 'qihuang.formula.modernNotes'
@@ -490,16 +588,19 @@ watch(
           </div>
 
           <p v-if="annotationMode" class="symptom-edit-hint">
-            用鼠标或手指选中原文词句，松开后填写现代注解。本地注解只保存在当前浏览器，不会发布。
+            用鼠标或手指选中原文词句，松开后填写注解。保存时输入编辑口令，即可发布给所有访客；没有口令时只保存在本机。
           </p>
 
           <blockquote v-for="(s, i) in formula.symptoms" :key="`${formula.id}-${i}`" class="symptom-quote">
             <AnnotatedOriginalText
               :text="s.text"
               :annotations="annotationsForSymptom(i)"
+              :published-annotations="publishedAnnotationsForSymptom(i)"
               :tags="tagsForSymptom(i)"
               :editable="annotationMode"
               :scope-key="`${formula.id}:${i}`"
+              :publish-annotation="(payload) => publishSymptomAnnotation(i, payload)"
+              :unpublish-annotation="(payload) => unpublishSymptomAnnotation(i, payload)"
             />
           </blockquote>
 
@@ -509,7 +610,7 @@ watch(
 
           <div v-if="formula.symptoms.length" class="symptom-panel__foot">
             <CitationBadge :citation-ids="formula.symptoms[0]?.citationIds ?? [formula.sourceCitationId]" label="原文" />
-            <span>症状与方名均回引《伤寒论》相关条文；带下划线的词可悬停看现代注解，点“划线标注”可自行补充本地注解。</span>
+            <span>症状与方名均回引《伤寒论》相关条文；带下划线的词可悬停看注解，点“划线标注”可补充并发布注解。</span>
           </div>
         </div>
       </section>
@@ -558,9 +659,11 @@ watch(
             />
             <p class="graph-caption">
               实线为“方剂 → 药材”的组成关系；虚线为教材归纳的核心药对。节点显示君臣佐使与作用摘要，
-              悬停看完整说明；点药材可修改角色或补充本地备注（仅保存在当前浏览器）。
+              悬停看完整说明；点药材可修改角色或补充方中作用。保存时输入编辑口令即可发布给所有访客，
+              没有口令时只保存在本机。
               君臣佐使据《方剂学》教材通例归纳，不是讲义原文。
             </p>
+            <p v-if="publicHint" class="graph-publish-hint">{{ publicHint }}</p>
           </div>
           <div v-else class="graph-collapsed paper-panel">
             <strong>关系图谱已收起</strong>
@@ -1229,6 +1332,13 @@ watch(
   padding: 8px 4px 0;
   color: var(--ink-faint);
   font-size: 0.7rem;
+  line-height: 1.6;
+}
+
+.graph-publish-hint {
+  padding: 2px 4px 0;
+  color: var(--cinnabar);
+  font-size: 0.68rem;
   line-height: 1.6;
 }
 

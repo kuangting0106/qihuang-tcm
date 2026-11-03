@@ -50,7 +50,36 @@ ssh xf "cd /opt/qihuang-tcm && ./deploy.sh"
 powershell -ExecutionPolicy Bypass -File deploy/publish.ps1
 ```
 
-`publish.ps1` 会先构建，再上传 `dist/` 的全部内容，最后在服务器上重启容器。
+`publish.ps1` 会先构建，再上传 `dist/`、`server/`、`compose.yaml`、`Caddyfile`，最后在服务器上重启容器。
+
+## 公开标注 API
+
+方剂页的“方中作用”和原文划线注解可以通过 API 发布给所有访客。服务是零依赖 Node 程序 `server/notes-server.mjs`，由 Caddy 反代 `/api/*`，数据写在服务器 `/opt/qihuang-tcm/data/notes.json`。
+
+首次部署时在服务器创建编辑口令：
+
+```bash
+ssh xf
+cd /opt/qihuang-tcm
+printf 'QIHUANG_EDIT_KEY=%s\n' "$(openssl rand -base64 24)" > .env
+chmod 600 .env
+cd /opt/qihuang-tcm && ./deploy.sh
+```
+
+查看或修改口令：
+
+```bash
+ssh xf "cat /opt/qihuang-tcm/.env"
+```
+
+页面保存时会要求输入编辑口令，口令只存在访客浏览器的 `localStorage.qihuang.editKey`，不写入前端代码。没有口令或 API 不可用时，内容只保存在本机浏览器。
+
+检查 API：
+
+```bash
+curl.exe http://182.255.94.89:8081/api/health
+curl.exe http://182.255.94.89:8081/api/notes
+```
 
 ## 常用检查
 
@@ -75,7 +104,8 @@ curl.exe -I http://182.255.94.89:8081/
 
 ## 注意
 
-- 本项目是纯静态站点，服务器不需要 Node.js。
+- 静态站点由 Caddy 提供；公开标注 API 是独立的 `node:22-alpine` 容器。
 - `site/` 只放构建产物，不放源码。
+- `data/` 只存运行时公开标注，不提交 Git；备份时复制 `/opt/qihuang-tcm/data/notes.json`。
 - 不要把 root 密码写进部署文件；现有 `deploy` 用户已可用 SSH key 登录。
 - 8081 是临时预览端口；正式域名确定后应改为 80/443 的域名访问，并关闭不必要的公网端口。

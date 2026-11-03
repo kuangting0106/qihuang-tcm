@@ -146,22 +146,22 @@ function summaryText(text: string, limit = 4) {
 
 function nodeRoleText(node: GraphNode) {
   const detail = summaryText(herbNote(node.herbId) || node.action || '')
-  const role = node.role === '未标注' ? (herbNote(node.herbId) ? '本地备注' : '待补') : node.role
+  const role = node.role === '未标注' ? (herbNote(node.herbId) ? '补充' : '待补') : node.role
   return detail ? `${role} · ${detail}` : role
 }
 
 function nodeActionText(node: GraphNode) {
-  return herbNote(node.herbId) || node.action || '教材未逐味说明，点击节点补充本地备注'
+  return herbNote(node.herbId) || node.action || '教材未逐味说明，点击节点补充方中作用'
 }
 
 function nodeNoteSource(node: GraphNode) {
-  if (herbNote(node.herbId)) return '本地备注，仅保存在当前浏览器'
+  if (herbNote(node.herbId)) return '访客补充的方中作用'
   if (node.action) return '后世方解，该药材在方中作用思路'
   return '教材未逐味说明，可点节点补充'
 }
 
 function nodeRoleBadge(node: GraphNode) {
-  if (props.herbRoles?.[node.herbId]) return `${node.role}（本地）`
+  if (props.herbRoles?.[node.herbId]) return `${node.role}（补充）`
   return node.role
 }
 
@@ -216,6 +216,8 @@ function onWheel(event: WheelEvent) {
 
 function onPointerDown(event: PointerEvent) {
   if (event.button !== 0) return
+  // 节点自身负责点击选择；不要在这里捕获指针，否则真实点击会被拖拽逻辑吞掉。
+  if ((event.target as Element | null)?.closest?.('.graph-node')) return
   dragging.value = true
   dragMoved.value = false
   dragStart.value = { x: event.clientX, y: event.clientY, tx: tx.value, ty: ty.value }
@@ -298,7 +300,7 @@ function resetEditor() {
     <div class="graph-toolbar">
       <div class="graph-legend">
         <span v-for="role in ROLE_ORDER" :key="role" class="graph-legend__item">
-          <i :style="{ background: roleColor(role).strong }"></i>{{ role === '未标注' ? '待补 / 本地备注' : role }}
+          <i :style="{ background: roleColor(role).strong }"></i>{{ role === '未标注' ? '待补 / 补充' : role }}
         </span>
         <span class="graph-legend__item graph-legend__item--dash"><i></i>方解药对</span>
       </div>
@@ -423,7 +425,7 @@ function resetEditor() {
       <div class="graph-editor__head">
         <strong>{{ selectedHerb?.name ?? selectedNode.name }}</strong>
         <span class="graph-editor__badge">{{ nodeRoleBadge(selectedNode) }}</span>
-        <button type="button" class="graph-editor__reset" @click="resetEditor">重置本地修改</button>
+        <button type="button" class="graph-editor__reset" @click="resetEditor">清除已发布修改</button>
       </div>
       <div class="graph-editor__grid">
         <label class="graph-editor__field">
@@ -443,9 +445,9 @@ function resetEditor() {
         </label>
       </div>
       <div class="graph-editor__actions">
-        <button type="button" class="graph-editor__save" @click="saveEditor">保存本地修改</button>
+        <button type="button" class="graph-editor__save" @click="saveEditor">保存并发布</button>
         <button type="button" @click="cancelEditor">取消</button>
-        <span>方中作用与角色仅保存在当前浏览器，不发布。</span>
+        <span>输入编辑口令后发布给所有访客；无口令仅存本机。</span>
       </div>
     </div>
 
