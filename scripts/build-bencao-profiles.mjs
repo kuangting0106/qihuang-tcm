@@ -87,6 +87,10 @@ const CATEGORY_OVERRIDES = {
 // 公开资料中个别条目与讲义药名相近但并非同一药，或同一植物不同药用部位；
 // 这些字段回退到讲义原文，避免把另一味药的功效写成这一味。
 const PROFILE_FIXES = {
+  甘草: {
+    therapyCategoryIds: ['warm-tonic', 'cough-phlegm'],
+    sourceCategory: '本站据讲义主治纠正',
+  },
   常山: {
     action:
       '常山为驱痰截疟要药，主祛老痰积饮，治新久诸疟；能引痰上行使吐，下行使下，逐水消肿。',

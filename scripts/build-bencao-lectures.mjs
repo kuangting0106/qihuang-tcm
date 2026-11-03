@@ -234,6 +234,25 @@ const profiles = fs.existsSync(profilesFile)
   ? JSON.parse(fs.readFileSync(profilesFile, 'utf8'))
   : { items: {} }
 
+const creditsFile = path.join(root, 'scripts', 'content', 'herb-image-credits.json')
+const imageCredits = fs.existsSync(creditsFile)
+  ? JSON.parse(fs.readFileSync(creditsFile, 'utf8')).items ?? []
+  : []
+const imageByName = new Map(imageCredits.map((item) => [item.name, item]))
+
+function buildImage(name) {
+  const credit = imageByName.get(name) ?? imageByName.get(canonicalName(name))
+  if (!credit) return null
+  return {
+    url: credit.file,
+    alt: `${canonicalName(name)}（${credit.latin}）`,
+    credit: credit.credit,
+    license: credit.license,
+    sourceUrl: credit.sourceUrl,
+    latin: credit.latin,
+  }
+}
+
 const MERIDIAN_MAP = {
   心包: { id: 'pericardium', name: '手厥阴心包经' },
   心: { id: 'heart', name: '手少阴心经' },
@@ -460,6 +479,8 @@ function readGroup(def) {
     if (def.id !== 'intro') {
       entry.pinyin = pinyinFor(title)
       entry.profile = buildProfile(entry)
+      const image = buildImage(title)
+      if (image) entry.image = image
     }
     entries.push(entry)
   }
@@ -608,6 +629,7 @@ const catalogItems = groups
         meridianPending: profile.meridianPending,
         therapyCategoryIds: profile.therapyCategoryIds,
         sourceCategory: profile.sourceCategory,
+        image: entry.image,
         profileSources: profile.sources,
       }
       if (processingText) item.processingText = processingText

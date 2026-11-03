@@ -110,6 +110,8 @@ const items = computed<HerbIndexItem[]>(() => {
       meridians: item.meridianNames,
       effects: item.summary,
       href: `/bencao/${item.groupId}/${item.entryId}`,
+      cover: item.image?.url,
+      coverAlt: item.image?.alt,
       seal: item.name.slice(0, 1),
       badge: item.rankId === 'nishi' ? '经方补列' : item.rankId === 'editor' ? '整理者增补' : '讲义整理',
       source: '倪海厦《神农本草经》讲义',

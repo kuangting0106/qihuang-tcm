@@ -1,0 +1,86 @@
+{
+  "generatedAt": "2026-11-03T02:11:16.018Z",
+  "items": [
+    {
+      "name": "当归",
+      "latin": "Angelica sinensis",
+      "taxonId": 785992,
+      "file": "/images/herbs/lecture/785992.jpeg",
+      "credit": "© Ming_Ni / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/785992"
+    },
+    {
+      "name": "黄芪",
+      "latin": "Astragalus mongholicus",
+      "taxonId": 138362,
+      "file": "/images/herbs/lecture/138362.jpg",
+      "credit": "© onidiras-iNaturalist / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/138362"
+    },
+    {
+      "name": "白术",
+      "latin": "Atractylodes macrocephala",
+      "taxonId": 786049,
+      "file": "/images/herbs/lecture/786049.jpeg",
+      "credit": "© 江国彬 / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/786049"
+    },
+    {
+      "name": "茯苓",
+      "latin": "Wolfiporia cocos",
+      "taxonId": 1169836,
+      "file": "/images/herbs/lecture/1169836.jpeg",
+      "credit": "© Alan Rockefeller / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/1169836"
+    },
+    {
+      "name": "陈皮",
+      "latin": "Citrus reticulata",
+      "taxonId": 1611056,
+      "file": "/images/herbs/lecture/1611056.jpg",
+      "credit": "© patanat / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/1611056"
+    },
+    {
+      "name": "枸杞",
+      "latin": "Lycium chinense",
+      "taxonId": 164955,
+      "file": "/images/herbs/lecture/164955.jpeg",
+      "credit": "© 葉子 / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/164955"
+    },
+    {
+      "name": "丹参",
+      "latin": "Salvia miltiorrhiza",
+      "taxonId": 715830,
+      "file": "/images/herbs/lecture/715830.jpg",
+      "credit": "© fhvc / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/715830"
+    },
+    {
+      "name": "大黄",
+      "latin": "Rheum palmatum",
+      "taxonId": 371577,
+      "file": "/images/herbs/lecture/371577.jpg",
+      "credit": "© London Permaculture / iNaturalist",
+      "license": "CC BY-NC-SA",
+      "sourceUrl": "https://www.inaturalist.org/taxa/371577"
+    },
+    {
+      "name": "黄连",
+      "latin": "Coptis chinensis",
+      "taxonId": 497721,
+      "file": "/images/herbs/lecture/497721.jpg",
+      "credit": "© misakinokukuru / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/497721"
+    }
+  ]
+}

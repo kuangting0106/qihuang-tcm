@@ -35,6 +35,15 @@ export interface BencaoProfile {
   sources: string[]
 }
 
+export interface BencaoImage {
+  url: string
+  alt: string
+  credit: string
+  license: string
+  sourceUrl: string
+  latin: string
+}
+
 export interface BencaoEntry {
   id: string
   groupId: string
@@ -49,6 +58,7 @@ export interface BencaoEntry {
   ancientName?: string
   alsoKnownAs?: string[]
   profile?: BencaoProfile
+  image?: BencaoImage
 }
 
 export interface BencaoGroupMeta {
@@ -122,6 +132,7 @@ export interface BencaoCatalogItem {
   therapyCategoryIds: string[]
   sourceCategory: string
   profileSources: string[]
+  image?: BencaoImage
   curatedId?: string
 }
 

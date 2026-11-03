@@ -40,7 +40,7 @@ export const herbAliasGroups = [
   { canonical: '侧柏叶', aliases: ['柏叶（侧柏叶）', '柏叶'] },
   { canonical: '黑芝麻', aliases: ['胡麻'] },
   { canonical: '冬瓜子', aliases: ['白瓜子'] },
-  { canonical: '橘皮', aliases: ['橘柚'] },
+  { canonical: '陈皮', aliases: ['橘皮', '橘柚'] },
   { canonical: '荆芥', aliases: ['假苏'] },
   { canonical: '凌霄花', aliases: ['紫葳'] },
   { canonical: '榧子', aliases: ['彼子'] },

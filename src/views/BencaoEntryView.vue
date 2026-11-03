@@ -3,11 +3,12 @@ import { computed, ref, watch } from 'vue'
 import { RouterLink, useRoute, useRouter } from 'vue-router'
 import { findBencaoEntry, formatCharCount, loadBencaoGroup, loadBencaoIndex } from '@/composables/useBencaoLectures'
 import { useTcmData } from '@/composables/useTcmData'
-import type { BencaoEntry, BencaoGroup, BencaoLectureIndex } from '@/types/bencao'
+import type { BencaoEntry, BencaoGroup, BencaoLectureIndex, BencaoSection } from '@/types/bencao'
 
 const route = useRoute()
 const router = useRouter()
 const { data } = useTcmData()
+
 const index = ref<BencaoLectureIndex | null>(null)
 const group = ref<BencaoGroup | null>(null)
 const entry = ref<BencaoEntry | null>(null)
@@ -46,7 +47,9 @@ async function load(gid: string, eid: string) {
 
 watch(
   () => [groupId.value, entryId.value],
-  ([gid, eid]) => { if (gid && eid) load(gid, eid) },
+  ([gid, eid]) => {
+    if (gid && eid) load(gid, eid)
+  },
   { immediate: true },
 )
 
@@ -58,7 +61,6 @@ const next = computed(() =>
 )
 
 const groupTitle = computed(() => group.value?.title ?? '')
-const kindClass = (kind: string) => `entry-section--${kind}`
 
 const rankId = computed(() => {
   const map: Record<string, string> = {
@@ -82,170 +84,302 @@ const therapyCategories = computed(() => {
   return taxonomy.categories.filter((category) => ids.includes(category.id))
 })
 
-const otherNames = computed(() =>
-  (entry.value?.alsoKnownAs ?? []).filter(
-    (name) => name && name !== entry.value?.ancientName && name !== entry.value?.title,
+const otherNames = computed(() => {
+  const name = entry.value?.title
+  const ancient = entry.value?.ancientName
+  return (entry.value?.alsoKnownAs ?? []).filter((item) => item && item !== name && item !== ancient)
+})
+
+function isProcessingSection(section: BencaoSection) {
+  return /炮制|泡制/.test(section.label)
+}
+
+const processingSection = computed(() => entry.value?.sections.find(isProcessingSection) ?? null)
+
+function isCovered(label: string) {
+  const profile = entry.value?.profile
+  if (!profile) return false
+  if (label === '性味') return profile.flavorTags.length > 0 || Boolean(profile.nature)
+  if (label === '归经') return profile.meridianNames.length > 0
+  if (label === '主治' || label === '主冶') return Boolean(profile.indications)
+  if (label === '禁忌') return Boolean(profile.contraindications)
+  if (label === '效用') return Boolean(profile.effects)
+  return false
+}
+
+const bodySections = computed(() =>
+  (entry.value?.sections ?? []).filter(
+    (section) => !isProcessingSection(section) && !isCovered(section.label),
   ),
 )
+
+// 功效与主治常来自同一句讲义归纳；完全包含时不重复排版。
+const indicationsDuplicate = computed(() => {
+  const effects = entry.value?.profile?.effects?.trim()
+  const indications = entry.value?.profile?.indications?.trim()
+  if (!effects || !indications) return false
+  return effects === indications || effects.includes(indications) || indications.includes(effects)
+})
 
 function sectionHeading(label: string): string {
   if (label) return label
   return group.value?.id === 'intro' ? '讲义' : '课堂讲授'
 }
 
-function isProcessingSection(label: string): boolean {
-  return /炮制|泡制/.test(label)
+const kindClass = (kind: string) => `entry-section--${kind}`
+
+function isLectureSection(section: BencaoSection) {
+  return section.kind === 'lecture' || section.kind === 'nishi'
 }
 
-function brief(text: string | undefined, limit = 120): string {
-  if (!text) return ''
-  return text.length > limit ? `${text.slice(0, limit)}…` : text
-}
+const originalSections = computed(() =>
+  bodySections.value.filter((section) => section.kind === 'original' || section.kind === 'commentary'),
+)
+const lectureSections = computed(() => bodySections.value.filter(isLectureSection))
+const studySections = computed(() =>
+  bodySections.value.filter(
+    (section) => section.kind === 'study' || section.kind === 'lesson',
+  ),
+)
 </script>
 
 <template>
-  <div class="page bencao-entry">
+  <div class="page herb-detail bencao-entry">
     <div class="container">
       <nav class="breadcrumbs" aria-label="面包屑">
         <RouterLink to="/">首页</RouterLink>
         <span>/</span>
         <RouterLink to="/herbs">本草</RouterLink>
         <span>/</span>
-        <RouterLink to="/bencao">神农本草经讲义</RouterLink>
-        <span>/</span>
         <RouterLink :to="`/bencao/${groupId}`">{{ groupTitle }}</RouterLink>
         <span>/</span>
         <span>{{ entry?.title ?? '正文' }}</span>
       </nav>
 
-      <p v-if="loading" class="entry-state paper-panel">正在展开药条…</p>
+      <p v-if="loading" class="entry-state paper-panel">正在展开药材页…</p>
       <div v-else-if="error" class="entry-state paper-panel">
-        <h1>药条没有打开</h1>
+        <h1>药材没有找到</h1>
         <p>{{ error }}</p>
         <RouterLink class="btn btn--primary" :to="`/bencao/${groupId}`">返回本组目录</RouterLink>
       </div>
 
       <template v-else-if="entry">
-        <header class="entry-head">
+        <header class="detail-head">
           <div>
-            <p class="eyebrow">{{ groupTitle }} / 讲义</p>
+            <p class="eyebrow">HERB / 本草 · {{ groupTitle }}</p>
             <h1>{{ entry.title }}</h1>
-            <p class="entry-head__sub">
-              {{ entry.subtitle }}
-              <span v-if="entry.number !== null"> · 第 {{ entry.number }} 条</span>
+            <p v-if="entry.pinyin" class="detail-pinyin">{{ entry.pinyin }}</p>
+            <p class="name-notes">
+              <span v-if="entry.ancientName" class="name-note name-note--ancient">
+                古籍名：{{ entry.ancientName }}
+              </span>
+              <span v-if="otherNames.length" class="name-note">又名：{{ otherNames.join('、') }}</span>
+              <span v-if="entry.number !== null" class="name-note name-note--muted">第 {{ entry.number }} 条</span>
             </p>
-            <p v-if="entry.ancientName" class="entry-head__alias entry-head__alias--ancient">
-              古籍名：{{ entry.ancientName }}
-            </p>
-            <p v-if="otherNames.length" class="entry-head__alias">
-              又名：{{ otherNames.join('、') }}
-            </p>
+
+            <div class="detail-tags">
+              <span v-for="t in entry.profile?.flavorTags ?? []" :key="t" class="chip chip--cinnabar">{{ t }}</span>
+              <span v-if="entry.profile?.nature" class="chip chip--cinnabar">{{ entry.profile.nature }}</span>
+              <span class="chip chip--gold">讲义整理</span>
+            </div>
+
+            <nav class="taxonomy-links" aria-label="三经与功效分类索引">
+              <span class="taxonomy-links__label">索引</span>
+              <RouterLink v-if="rankId" class="chip chip--gold" :to="`/herbs/rank/${rankId}`">
+                {{ rankTitle }}全部药材
+              </RouterLink>
+              <RouterLink
+                v-for="cat in therapyCategories"
+                :key="cat.id"
+                class="chip"
+                :to="`/herbs/category/${cat.id}`"
+              >
+                {{ cat.title }}全部药材
+              </RouterLink>
+              <span v-if="!therapyCategories.length" class="taxonomy-links__pending">功效分类待考</span>
+            </nav>
           </div>
-          <dl class="entry-head__stats">
-            <div><dt>{{ entry.sections.length }}</dt><dd>节</dd></div>
-            <div><dt>{{ formatCharCount(entry.charCount) }}</dt><dd>正文</dd></div>
-          </dl>
+
+          <div class="detail-head__stats">
+            <span>{{ entry.sections.length }} 节</span>
+            <span>{{ formatCharCount(entry.charCount) }}</span>
+            <small>{{ entry.profile?.sources.join(' · ') }}</small>
+          </div>
         </header>
 
-        <nav v-if="group?.id !== 'intro'" class="entry-index-links" aria-label="三经与功效分类索引">
-          <span class="entry-index-links__label">索引</span>
-          <RouterLink class="chip chip--jade" :to="`/herbs/rank/${rankId}`">{{ rankTitle }}全部药材</RouterLink>
-          <RouterLink v-for="cat in therapyCategories" :key="cat.id" class="chip" :to="`/herbs/category/${cat.id}`">
-            {{ cat.title }}全部药材
-          </RouterLink>
-          <span v-if="!therapyCategories.length" class="entry-index-links__pending">功效分类待考</span>
-        </nav>
-
         <p v-if="entry.note" class="entry-correction">{{ entry.note }}</p>
-
         <p v-if="group?.id === 'editor'" class="entry-correction entry-correction--caution">
           本条属整理者增补，不是倪海厦原讲义正文。
         </p>
 
-        <section v-if="entry.profile" class="entry-profile" aria-label="药性概览">
-          <div class="entry-profile__item">
-            <span class="entry-profile__label">性味</span>
-            <p class="entry-profile__value">
-              <span v-for="t in entry.profile.flavorTags" :key="t" class="chip chip--cinnabar">{{ t }}</span>
-              <span v-if="entry.profile.nature" class="chip chip--cinnabar">{{ entry.profile.nature }}</span>
-              <span v-if="!entry.profile.flavorTags.length && !entry.profile.nature" class="is-pending">待考</span>
-            </p>
-          </div>
-          <div class="entry-profile__item">
-            <span class="entry-profile__label">归经</span>
-            <p class="entry-profile__value">
-              <span v-for="m in entry.profile.meridianNames" :key="m" class="chip chip--jade">{{ m }}</span>
-              <span v-if="entry.profile.meridianPending" class="is-pending">归经待考</span>
-            </p>
-          </div>
-          <div class="entry-profile__item">
-            <span class="entry-profile__label">功效</span>
-            <p class="entry-profile__value entry-profile__value--text">{{ brief(entry.profile.effects) || '待考' }}</p>
-          </div>
-          <div class="entry-profile__item">
-            <span class="entry-profile__label">主治</span>
-            <p class="entry-profile__value entry-profile__value--text">{{ brief(entry.profile.indications) || '待考' }}</p>
-          </div>
-          <div class="entry-profile__item">
-            <span class="entry-profile__label">禁忌</span>
-            <p class="entry-profile__value entry-profile__value--text">{{ brief(entry.profile.contraindications) || '讲义未载，待考' }}</p>
-          </div>
-        </section>
+        <div class="detail-grid">
+          <section class="gallery paper-panel" aria-label="药材图片">
+            <div v-if="entry.image" class="gallery__main">
+              <img :src="entry.image.url" :alt="entry.image.alt" loading="lazy" />
+            </div>
+            <div v-else class="gallery__empty">
+              <span class="gallery__seal" aria-hidden="true">{{ entry.title.slice(0, 1) }}</span>
+              <strong>图片待补</strong>
+              <p>尚未找到可核实的基原照片，暂以印章占位，不拿相似药材替代。</p>
+            </div>
 
-        <p v-if="entry.profile?.sources.length" class="entry-profile__note">
-          药性概览来源：{{ entry.profile.sources.join(' · ') }}。
-          讲义未载的性味、归经与功效，仅用公开中药资料补足，不作校勘依据；用药请以原书与现行药典为准。
+            <div v-if="entry.image" class="gallery__credit">
+              <p>{{ entry.image.alt }}</p>
+              <small>
+                {{ entry.image.credit }} · {{ entry.image.license }} ·
+                <a :href="entry.image.sourceUrl" target="_blank" rel="noopener noreferrer">iNaturalist</a>
+              </small>
+              <small v-if="entry.image.latin">学名：{{ entry.image.latin }}</small>
+            </div>
+          </section>
+
+          <div class="property-stack">
+            <section class="property-card paper-panel">
+              <div class="property-card__head">
+                <span class="property-card__index">01</span>
+                <h2>性味</h2>
+              </div>
+              <div class="property-card__chips">
+                <span v-for="t in entry.profile?.flavorTags ?? []" :key="t" class="chip chip--cinnabar">{{ t }}</span>
+                <span v-if="entry.profile?.nature" class="chip chip--cinnabar">{{ entry.profile.nature }}</span>
+                <span v-if="!entry.profile?.flavorTags.length && !entry.profile?.nature" class="is-pending">待考</span>
+              </div>
+              <p v-if="entry.profile?.sourceCategory" class="property-card__hint">
+                {{ entry.profile.sourceCategory.startsWith('本站') ? '分类：' : '公开资料分类：' }}{{ entry.profile.sourceCategory }}
+              </p>
+            </section>
+
+            <section class="property-card paper-panel">
+              <div class="property-card__head">
+                <span class="property-card__index">02</span>
+                <h2>归经</h2>
+              </div>
+              <div class="property-card__chips">
+                <span v-for="m in entry.profile?.meridianNames ?? []" :key="m" class="chip chip--jade">{{ m }}</span>
+                <span v-if="entry.profile?.meridianPending" class="is-pending">归经待考</span>
+              </div>
+            </section>
+
+            <section class="property-card paper-panel">
+              <div class="property-card__head">
+                <span class="property-card__index">03</span>
+                <h2>功效</h2>
+              </div>
+              <p class="property-card__text">{{ entry.profile?.effects || '讲义未载，待考。' }}</p>
+            </section>
+
+            <section class="property-card paper-panel">
+              <div class="property-card__head">
+                <span class="property-card__index">04</span>
+                <h2>主治</h2>
+              </div>
+              <p v-if="indicationsDuplicate" class="property-card__text property-card__text--muted">
+                同「功效」条，不重复。
+              </p>
+              <p v-else class="property-card__text">{{ entry.profile?.indications || '讲义未载，待考。' }}</p>
+            </section>
+
+            <section class="property-card paper-panel">
+              <div class="property-card__head">
+                <span class="property-card__index">05</span>
+                <h2>禁忌</h2>
+              </div>
+              <p class="property-card__text">{{ entry.profile?.contraindications || '讲义未载，待考。' }}</p>
+            </section>
+          </div>
+        </div>
+
+        <p v-if="entry.profile?.sources.length" class="profile-note">
+          药性概览来源：{{ entry.profile.sources.join(' · ') }}。讲义未载的性味、归经与功效，用公开中药资料补足，
+          只作阅读参考，不作校勘依据；用药以原书与现行药典为准。
         </p>
 
-        <article class="entry-body">
-          <section
-            v-for="(section, sectionIndex) in entry.sections"
-            :key="`${section.label}-${sectionIndex}`"
+        <section v-if="originalSections.length" class="lecture-block">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">TEXT &amp; COMMENTARY / 原文与注家</p>
+              <h2>本经原文与诸家注解</h2>
+            </div>
+            <p>保留讲义所引《本经》条文与历代注家文字；原文、注家分层标注，不改字。</p>
+          </div>
+          <article
+            v-for="section in originalSections"
+            :key="`${section.label}-${section.kind}`"
             class="entry-section"
             :class="kindClass(section.kind)"
           >
             <header class="entry-section__head">
-              <h2>{{ sectionHeading(section.label) }}</h2>
-              <span v-if="sectionHeading(section.label) !== section.kindLabel" class="entry-section__kind">{{ section.kindLabel }}</span>
+              <h3>{{ sectionHeading(section.label) }}</h3>
+              <span v-if="sectionHeading(section.label) !== section.kindLabel" class="entry-section__kind">
+                {{ section.kindLabel }}
+              </span>
             </header>
+            <template v-for="(block, blockIndex) in section.blocks" :key="blockIndex">
+              <blockquote v-if="block.type === 'quote'" class="entry-quote">
+                <span class="entry-quote__mark" aria-hidden="true">讲</span>
+                <p>{{ block.text }}</p>
+              </blockquote>
+              <p v-else class="entry-paragraph">{{ block.text }}</p>
+            </template>
+          </article>
+        </section>
 
-            <p v-if="isProcessingSection(section.label)" class="entry-processing-note">
-              以下为讲义所载炮制方法，未经现行炮制规范逐条核对，仅供阅读。
-              <RouterLink to="/processing">到药材炮制板块查看已核条目 →</RouterLink>
-            </p>
-
-            <div class="entry-section__blocks">
-              <template v-for="(block, blockIndex) in section.blocks" :key="blockIndex">
-                <blockquote v-if="block.type === 'quote'" class="entry-quote">
-                  <span class="entry-quote__mark" aria-hidden="true">讲</span>
-                  <p>{{ block.text }}</p>
-                </blockquote>
-                <p v-else class="entry-paragraph">{{ block.text }}</p>
-              </template>
+        <section v-if="lectureSections.length || studySections.length" class="lecture-block">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">LECTURE / 讲义与讲授</p>
+              <h2>讲义归纳与课堂讲授</h2>
             </div>
-          </section>
-        </article>
-
-        <div class="entry-source">
-          <p v-if="index">
-            {{ index.source.note }}
-          </p>
-          <p class="entry-source__meta">
-            底本：{{ index?.source.repository }} @ {{ index?.source.commit.slice(0, 7) }} ·
-            {{ index?.source.sourcePath }}
-          </p>
-        </div>
-
-        <nav class="entry-nav" aria-label="上下条">
-          <RouterLink
-            v-if="previous"
-            class="entry-nav__link"
-            :to="`/bencao/${groupId}/${previous.id}`"
+            <p>倪海厦按语、课堂讲解与用量、产地、炮制等归纳文字，按原节保留。</p>
+          </div>
+          <article
+            v-for="section in [...lectureSections, ...studySections]"
+            :key="`${section.label}-${section.kind}`"
+            class="entry-section"
+            :class="kindClass(section.kind)"
           >
+            <header class="entry-section__head">
+              <h3>{{ sectionHeading(section.label) }}</h3>
+              <span v-if="sectionHeading(section.label) !== section.kindLabel" class="entry-section__kind">
+                {{ section.kindLabel }}
+              </span>
+            </header>
+            <template v-for="(block, blockIndex) in section.blocks" :key="blockIndex">
+              <blockquote v-if="block.type === 'quote'" class="entry-quote">
+                <span class="entry-quote__mark" aria-hidden="true">讲</span>
+                <p>{{ block.text }}</p>
+              </blockquote>
+              <p v-else class="entry-paragraph">{{ block.text }}</p>
+            </template>
+          </article>
+        </section>
+
+        <section v-if="processingSection" class="processing-detail paper-panel">
+          <div class="processing-detail__head">
+            <div>
+              <p class="eyebrow">PROCESSING / 炮制</p>
+              <h2>讲义所载炮制</h2>
+            </div>
+            <RouterLink class="text-link" to="/processing">到炮制板块查看已核条目 →</RouterLink>
+          </div>
+          <template v-for="(block, blockIndex) in processingSection.blocks" :key="blockIndex">
+            <p v-if="block.type === 'p'" class="processing-detail__text">{{ block.text }}</p>
+            <blockquote v-else class="entry-quote">
+              <span class="entry-quote__mark" aria-hidden="true">讲</span>
+              <p>{{ block.text }}</p>
+            </blockquote>
+          </template>
+          <p class="processing-detail__note">
+            以上为讲义摘录，未经现行炮制规范逐条核对，仅供阅读；具体工艺、辅料与成品性状以现行药典及当地规范为准。
+          </p>
+        </section>
+
+        <nav class="entry-nav" aria-label="讲义翻页">
+          <RouterLink v-if="previous" class="entry-nav__link" :to="`/bencao/${groupId}/${previous.id}`">
             <small>上一条</small>
             <strong>{{ previous.title }}</strong>
           </RouterLink>
-          <span v-else class="entry-nav__empty">已是本组第一条</span>
+          <span v-else class="entry-nav__empty">已经是本组第一条</span>
 
           <RouterLink class="entry-nav__back" :to="`/bencao/${groupId}`">返回目录</RouterLink>
 
@@ -257,7 +391,7 @@ function brief(text: string | undefined, limit = 120): string {
             <small>下一条</small>
             <strong>{{ next.title }}</strong>
           </RouterLink>
-          <span v-else class="entry-nav__empty">已是本组最后一条</span>
+          <span v-else class="entry-nav__empty">已经是本组最后一条</span>
         </nav>
       </template>
     </div>
@@ -265,167 +399,363 @@ function brief(text: string | undefined, limit = 120): string {
 </template>
 
 <style scoped>
-.entry-head {
+.bencao-entry {
+  padding-bottom: 72px;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: baseline;
+  padding: 22px 0 0;
+  color: var(--ink-faint);
+  font-size: 0.72rem;
+}
+
+.breadcrumbs a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  color: var(--cinnabar);
+}
+
+.entry-state {
+  margin-top: 24px;
+  padding: 40px;
+  text-align: center;
+}
+
+.detail-head {
   display: flex;
   justify-content: space-between;
-  gap: 36px;
+  gap: 40px;
   align-items: flex-end;
-  padding: 24px 0 22px;
+  padding: 34px 0 28px;
   border-bottom: 1px solid var(--line-strong);
 }
 
-.entry-head h1 {
+.detail-head h1 {
   margin: 6px 0 6px;
-  font-size: clamp(2.3rem, 5vw, 3.4rem);
-  letter-spacing: 0.08em;
-}
-
-.entry-head__sub {
-  color: var(--ink-faint);
-  font-size: 0.74rem;
-}
-
-.entry-head__alias {
-  max-width: 760px;
-  margin-top: 6px;
-  color: var(--ink-soft);
-  font-size: 0.68rem;
-  line-height: 1.7;
-}
-
-.entry-head__alias--ancient {
-  color: var(--cinnabar);
-}
-
-.entry-head__stats {
-  display: flex;
-  gap: 20px;
-  flex: 0 0 auto;
-  padding-left: 20px;
-  border-left: 1px solid var(--line-strong);
-}
-
-.entry-head__stats dt {
   font-family: var(--serif);
-  font-size: 1.35rem;
-  line-height: 1.2;
+  font-size: clamp(3rem, 7vw, 5.4rem);
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  line-height: 1.08;
 }
 
-.entry-head__stats dd {
-  margin: 0;
-  color: var(--ink-soft);
-  font-size: 0.64rem;
+.detail-pinyin {
+  color: var(--ink-faint);
+  font-size: 0.86rem;
+  letter-spacing: 0.18em;
 }
 
-.entry-correction {
-  margin-top: 12px;
-  padding: 9px 13px;
-  border-left: 2px solid var(--gold);
-  background: rgba(237, 224, 200, 0.3);
-  color: var(--ink-soft);
+.name-notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin-top: 10px;
   font-size: 0.72rem;
-  line-height: 1.8;
 }
 
-.entry-correction--caution {
-  border-left-color: var(--cinnabar);
-  background: rgba(241, 221, 214, 0.3);
+.name-note {
+  color: var(--ink-soft);
+}
+
+.name-note--ancient {
   color: var(--cinnabar);
 }
 
-.entry-index-links {
+.name-note--muted {
+  color: var(--ink-faint);
+}
+
+.detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.taxonomy-links {
   display: flex;
   flex-wrap: wrap;
   gap: 6px 8px;
   align-items: center;
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
-.entry-index-links__label {
+.taxonomy-links__label {
   color: var(--ink-faint);
   font-size: 0.62rem;
   letter-spacing: 0.14em;
 }
 
-.entry-index-links a {
+.taxonomy-links a {
   text-decoration: none;
 }
 
-.entry-index-links__pending {
+.taxonomy-links__pending {
   color: var(--ink-faint);
   font-size: 0.68rem;
 }
 
-.entry-profile {
+.detail-head__stats {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-end;
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+  text-align: right;
+}
+
+.detail-head__stats small {
+  max-width: 210px;
+  color: var(--ink-faint);
+  font-size: 0.62rem;
+  line-height: 1.6;
+}
+
+.entry-correction {
+  margin-top: 12px;
+  padding: 8px 12px;
+  border-left: 2px solid var(--gold);
+  background: rgba(190, 160, 90, 0.08);
+  color: var(--ink-soft);
+  font-size: 0.7rem;
+  line-height: 1.7;
+}
+
+.entry-correction--caution {
+  border-left-color: var(--cinnabar);
+  background: rgba(190, 92, 72, 0.07);
+}
+
+.detail-grid {
   display: grid;
-  grid-template-columns: 0.7fr 0.8fr 1fr 1.2fr 1fr;
-  gap: 1px;
-  margin-top: 18px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: var(--line);
+  grid-template-columns: minmax(300px, 0.82fr) minmax(0, 1.18fr);
+  gap: 26px;
+  margin-top: 26px;
+  align-items: start;
+}
+
+.gallery {
   overflow: hidden;
 }
 
-.entry-profile__item {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 12px 14px;
-  background: rgba(255, 252, 245, 0.72);
+.gallery__main {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #ece7da;
 }
 
-.entry-profile__label {
+.gallery__main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery__empty {
+  display: grid;
+  aspect-ratio: 4 / 3;
+  place-content: center;
+  justify-items: center;
+  gap: 10px;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 26% 18%, rgba(255, 255, 255, 0.8), transparent 46%),
+    repeating-linear-gradient(135deg, rgba(122, 145, 123, 0.08) 0 1px, transparent 1px 12px),
+    linear-gradient(150deg, #e9f0e8, #f5efe2 60%, #ecdfcd);
+  text-align: center;
+}
+
+.gallery__seal {
+  display: grid;
+  place-content: center;
+  width: 72px;
+  height: 72px;
+  border: 1px solid var(--cinnabar);
+  color: var(--cinnabar);
+  font-family: var(--serif);
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+.gallery__empty strong {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+
+.gallery__empty p {
+  max-width: 230px;
+  color: var(--ink-faint);
+  font-size: 0.68rem;
+  line-height: 1.7;
+}
+
+.gallery__credit {
+  padding: 12px 16px 14px;
+  border-top: 1px solid var(--line);
+}
+
+.gallery__credit p {
+  font-size: 0.72rem;
+  line-height: 1.6;
+}
+
+.gallery__credit small {
+  display: block;
+  margin-top: 4px;
   color: var(--ink-faint);
   font-size: 0.62rem;
-  letter-spacing: 0.12em;
+  line-height: 1.6;
 }
 
-.entry-profile__value {
+.gallery__credit a {
+  color: inherit;
+}
+
+.property-stack {
+  display: grid;
+  gap: 10px;
+}
+
+.property-card {
+  padding: 15px 18px 16px;
+}
+
+.property-card__head {
+  display: flex;
+  gap: 9px;
+  align-items: baseline;
+}
+
+.property-card__index {
+  color: var(--cinnabar);
+  font-family: var(--serif);
+  font-size: 0.72rem;
+}
+
+.property-card__head h2 {
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+
+.property-card__chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.property-card__text {
+  margin-top: 7px;
   color: var(--ink-soft);
-  font-size: 0.74rem;
-  line-height: 1.65;
+  font-size: 0.8rem;
+  line-height: 1.85;
 }
 
-.entry-profile__value--text {
-  display: block;
+.property-card__text--muted {
+  color: var(--ink-faint);
+  font-size: 0.76rem;
 }
 
-.entry-profile__value .is-pending {
+.property-card__hint {
+  margin-top: 6px;
+  color: var(--ink-faint);
+  font-size: 0.62rem;
+}
+
+.is-pending {
   color: var(--ink-faint);
   font-size: 0.7rem;
 }
 
-.entry-profile__note {
-  margin-top: 8px;
+.profile-note {
+  margin-top: 10px;
   color: var(--ink-faint);
   font-size: 0.64rem;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
-.entry-body {
-  max-width: 880px;
-  margin: 8px auto 0;
+.lecture-block {
+  margin-top: 38px;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  align-items: flex-end;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.section-head h2 {
+  margin-top: 4px;
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.section-head > p {
+  max-width: 420px;
+  color: var(--ink-faint);
+  font-size: 0.7rem;
+  line-height: 1.8;
 }
 
 .entry-section {
-  padding: 18px 0 6px;
-  border-bottom: 1px dashed var(--line);
+  margin-top: 18px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 252, 245, 0.56);
+}
+
+.entry-section--original {
+  border-left: 3px solid var(--cinnabar);
+}
+
+.entry-section--commentary {
+  border-left: 3px solid var(--line-strong);
+}
+
+.entry-section--nishi {
+  border-left: 3px solid var(--jade);
+}
+
+.entry-section--study {
+  border-left: 3px solid var(--gold);
+}
+
+.entry-section--lecture,
+.entry-section--lesson {
+  border-left: 3px solid color-mix(in srgb, var(--jade) 55%, var(--line));
 }
 
 .entry-section__head {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
   align-items: baseline;
   margin-bottom: 8px;
 }
 
-.entry-section__head h2 {
-  font-size: 1.05rem;
-  letter-spacing: 0.05em;
+.entry-section__head h3 {
+  font-family: var(--serif);
+  font-size: 1.06rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
 }
 
 .entry-section__kind {
@@ -434,118 +764,96 @@ function brief(text: string | undefined, limit = 120): string {
   border-radius: 999px;
   color: var(--ink-faint);
   font-size: 0.56rem;
-  white-space: nowrap;
-}
-
-.entry-section--original .entry-section__head h2 {
-  color: var(--cinnabar);
-}
-
-.entry-section--original .entry-section__kind {
-  border-color: rgba(163, 58, 43, 0.36);
-  color: var(--cinnabar);
-}
-
-.entry-section--nishi .entry-section__head h2 {
-  color: var(--jade);
-}
-
-.entry-section--nishi .entry-section__kind {
-  border-color: rgba(47, 93, 87, 0.36);
-  color: var(--jade);
-}
-
-.entry-section--study .entry-section__head h2 {
-  color: var(--gold);
-}
-
-.entry-section--study .entry-section__kind {
-  border-color: rgba(176, 138, 74, 0.4);
-  color: var(--gold);
-}
-
-.entry-processing-note {
-  margin: 0 0 8px;
-  color: var(--ink-faint);
-  font-size: 0.68rem;
-  line-height: 1.7;
-}
-
-.entry-processing-note a {
-  color: var(--cinnabar);
-  border-bottom: 1px solid rgba(163, 58, 43, 0.3);
-}
-
-.entry-section__blocks {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 }
 
 .entry-paragraph {
+  margin-top: 7px;
   color: var(--ink-soft);
-  font-family: var(--serif);
-  font-size: 0.94rem;
-  line-height: 2;
-  text-align: justify;
+  font-size: 0.84rem;
+  line-height: 1.95;
 }
 
 .entry-quote {
-  position: relative;
   display: flex;
   gap: 10px;
-  padding: 8px 12px 8px 10px;
-  border-left: 2px solid rgba(47, 93, 87, 0.32);
-  background: rgba(220, 232, 226, 0.24);
+  margin-top: 9px;
+  padding: 10px 14px;
+  border-left: 2px solid color-mix(in srgb, var(--jade) 50%, var(--line));
+  background: rgba(228, 239, 229, 0.45);
 }
 
 .entry-quote__mark {
-  flex: 0 0 auto;
-  color: var(--jade-2);
-  font-family: var(--serif);
-  font-size: 0.66rem;
+  flex-shrink: 0;
+  color: var(--jade);
+  font-size: 0.62rem;
   line-height: 1.9;
 }
 
 .entry-quote p {
   color: var(--ink-soft);
-  font-size: 0.86rem;
+  font-size: 0.84rem;
   line-height: 1.95;
 }
 
-.entry-source {
-  max-width: 880px;
-  margin: 18px auto 0;
-  padding-top: 12px;
-  border-top: 1px solid var(--line);
+.processing-detail {
+  margin-top: 38px;
+  padding: 20px 22px;
 }
 
-.entry-source p {
+.processing-detail__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.processing-detail__head h2 {
+  margin-top: 3px;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+.processing-detail__text {
+  margin-top: 10px;
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+  line-height: 1.95;
+  white-space: pre-line;
+}
+
+.processing-detail__note {
+  margin-top: 12px;
   color: var(--ink-faint);
-  font-size: 0.66rem;
-  line-height: 1.8;
-}
-
-.entry-source__meta {
-  margin-top: 4px;
+  font-size: 0.64rem;
+  line-height: 1.75;
 }
 
 .entry-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   gap: 12px;
   align-items: center;
-  margin: 24px 0 10px;
-  padding-top: 16px;
-  border-top: 1px solid var(--line-strong);
+  margin-top: 40px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
 }
 
 .entry-nav__link {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 2px;
-  max-width: 40%;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.entry-nav__link--next {
+  justify-items: end;
+  text-align: right;
 }
 
 .entry-nav__link small {
@@ -555,69 +863,58 @@ function brief(text: string | undefined, limit = 120): string {
 
 .entry-nav__link strong {
   font-family: var(--serif);
-  font-size: 0.95rem;
-  font-weight: 500;
-}
-
-.entry-nav__link--next {
-  text-align: right;
+  font-size: 0.94rem;
+  font-weight: 400;
 }
 
 .entry-nav__back {
-  color: var(--jade);
-  font-size: 0.74rem;
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .entry-nav__empty {
   color: var(--ink-faint);
-  font-size: 0.66rem;
-}
-
-.entry-state {
-  padding: 26px;
-  color: var(--ink-soft);
-}
-
-.entry-state h1 {
-  margin-bottom: 8px;
+  font-size: 0.68rem;
 }
 
 @media (max-width: 900px) {
-  .entry-profile {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .detail-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
   }
 
-  .entry-profile__item:last-child {
-    grid-column: 1 / -1;
+  .detail-head__stats {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
   }
 }
 
 @media (max-width: 700px) {
-  .entry-profile {
+  .entry-nav {
     grid-template-columns: 1fr;
   }
 
-  .entry-profile__item:last-child {
-    grid-column: auto;
+  .entry-nav__link--next {
+    justify-items: start;
+    text-align: left;
   }
 
-  .entry-head {
-    flex-direction: column;
+  .processing-detail__head {
     align-items: flex-start;
-    gap: 12px;
-  }
-
-  .entry-head__stats {
-    padding-left: 0;
-    border-left: 0;
-  }
-
-  .entry-paragraph {
-    font-size: 0.88rem;
-  }
-
-  .entry-nav__link {
-    max-width: 44%;
+    flex-direction: column;
   }
 }
 </style>

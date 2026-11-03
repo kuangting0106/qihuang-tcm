@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T15:55:06.937Z",
+  "generatedAt": "2026-11-03T02:20:26.345Z",
   "source": {
     "id": "zhongyi-buddy-herbs",
     "name": "中医Buddy 中药数据",
@@ -337,9 +337,10 @@
       "action": "甘草为调合周身气血要药，功能解百毒，补脏腑，泻诸火，在上去痰止咳，在中调和脾胃，在下清热利溲，入和剂则补益，入汗剂则解肌，入凉剂则泻热，入润剂则生津，入峻剂则缓正气，制药之暴性，效益甚多，为诸药之君。",
       "dosage": "普通生者五分至钱半，炙者三分至一钱，大剂一两左右。",
       "contraindication": "凡中满人呕家酒家，诸湿肿满及胀满均忌，反大戟甘遂芫花海藻，恶远志忌猪肉。",
-      "sourceCategory": "清热药",
+      "sourceCategory": "本站据讲义主治纠正",
       "therapyCategoryIds": [
-        "clear-heat"
+        "warm-tonic",
+        "cough-phlegm"
       ]
     },
     "干地黄": {
@@ -1526,19 +1527,20 @@
       "sourceCategory": "明目药",
       "therapyCategoryIds": []
     },
-    "橘皮": {
-      "matchedName": "橘柚",
-      "flavor": "辛苦",
+    "陈皮": {
+      "matchedName": "陈皮",
+      "flavor": "苦辛",
       "nature": "温",
       "meridians": [
-        "胃"
+        "脾",
+        "肺"
       ],
-      "action": "陈皮为宣通疏利要药，主行气健胃，去湿化痰，能发散清热，消积水气。",
+      "action": "陈皮为理气健脾要药，燥湿化痰。",
       "dosage": "普通一钱至三钱。",
-      "contraindication": "凡中气虚，气不归元者，忌与耗气药同用，胃虚有火呕吐，忌与温热香燥药同用，阴虚咳嗽生痰，忌与半夏南星等同用，疟非寒甚者忌。 成无己曰陈皮和百药，脾为气母，肺为气籥，凡补药涩药必用陈皮以利气，凡用陈皮取 其发散皮肤也，故陈皮之用在于行气，气行则领导百药，有痰者因气行而化，有湿者亦因气行而消，其它因食积及",
-      "sourceCategory": "清热药",
+      "contraindication": "中气虚气不归元者忌与耗气药同用，胃虚有火呕吐者忌与温热香燥药同用。",
+      "sourceCategory": "理气药",
       "therapyCategoryIds": [
-        "clear-heat"
+        "qi-digest"
       ]
     },
     "发髲": {

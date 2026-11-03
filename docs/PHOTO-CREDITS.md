@@ -76,3 +76,20 @@
 
 
 > 图片用于识别学习，不替代植物学/药材学鉴定。CC BY-NC 图片仅用于非商业学习原型；如用于商业用途，请替换为相应授权图片。
+
+
+## 讲义药材补图（批次一）
+
+| 药材 | 学名 | 许可 | 作者/署名 | 原图 |
+|---|---|---|---|---|
+| 当归 | Angelica sinensis | CC BY-NC | © Ming_Ni / iNaturalist | [查看](https://www.inaturalist.org/taxa/785992) |
+| 黄芪 | Astragalus mongholicus | CC BY-NC | © onidiras-iNaturalist / iNaturalist | [查看](https://www.inaturalist.org/taxa/138362) |
+| 白术 | Atractylodes macrocephala | CC BY-NC | © 江国彬 / iNaturalist | [查看](https://www.inaturalist.org/taxa/786049) |
+| 茯苓 | Wolfiporia cocos | CC BY | © Alan Rockefeller / iNaturalist | [查看](https://www.inaturalist.org/taxa/1169836) |
+| 陈皮 | Citrus reticulata | CC BY-NC | © patanat / iNaturalist | [查看](https://www.inaturalist.org/taxa/1611056) |
+| 枸杞 | Lycium chinense | CC0 | © 葉子 / iNaturalist | [查看](https://www.inaturalist.org/taxa/164955) |
+| 丹参 | Salvia miltiorrhiza | CC BY-NC | © fhvc / iNaturalist | [查看](https://www.inaturalist.org/taxa/715830) |
+| 大黄 | Rheum palmatum | CC BY-NC-SA | © London Permaculture / iNaturalist | [查看](https://www.inaturalist.org/taxa/371577) |
+| 黄连 | Coptis chinensis | CC BY-NC | © misakinokukuru / iNaturalist | [查看](https://www.inaturalist.org/taxa/497721) |
+
+> 以上图片均按拉丁学名在 iNaturalist 核对后下载；仅用于非商业学习原型，CC BY-NC / BY-NC-SA 图片不得用于商业用途。
