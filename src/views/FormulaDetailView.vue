@@ -615,6 +615,25 @@ watch(
         </div>
       </section>
 
+      <section v-if="formula.modernExplanation?.text" class="explanation-section paper-panel">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">LECTURE / 讲义讲解</p>
+            <h2>病症解说与用药思路</h2>
+          </div>
+          <CitationBadge
+            :citation-ids="formula.modernExplanation.citationIds"
+            label="讲义原文"
+            tone="muted"
+            compact
+          />
+        </div>
+        <SourcedText :claim="formula.modernExplanation" block />
+        <p class="explanation-note">
+          以上为讲义讲解整理，用来说明当时的辨证与用药思路，不是诊断标准，也不构成自行用药建议。
+        </p>
+      </section>
+
       <div v-if="isLarge" class="large-hint paper-panel">
         <div>
           <strong>大方超过 20 味，关系图默认收起。</strong>
@@ -1267,6 +1286,27 @@ watch(
   margin-top: 3px;
   color: var(--ink-soft);
   font-size: 0.8rem;
+}
+
+.explanation-section {
+  margin-top: 18px;
+  padding: 18px 20px;
+}
+
+.explanation-section :deep(.sourced-text__content) {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  line-height: 1.95;
+}
+
+.explanation-note {
+  margin-top: 10px;
+  padding-top: 9px;
+  border-top: 1px dashed var(--line);
+  color: var(--ink-faint);
+  font-size: 0.68rem;
+  line-height: 1.6;
 }
 
 .modification-section,

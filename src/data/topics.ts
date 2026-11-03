@@ -1,3 +1,5 @@
+import { cases } from './cases'
+
 export type TopicSection = 'methods' | 'cases'
 
 export interface Topic {
@@ -50,22 +52,11 @@ export const methodTopics: Topic[] = [
   },
 ]
 
-export const caseTopics: Topic[] = [
-  { id: 'rheumatism', title: '风湿', subtitle: '痹证、风湿类医案与按语。' },
-  { id: 'exterior', title: '表证', subtitle: '外感表证的辨证、治法与医案。' },
-  { id: 'stomach-intestine', title: '肠胃', subtitle: '脾胃、肠胃类医案与按语。' },
-  { id: 'lung', title: '肺篇', subtitle: '肺系病证的医案与按语。' },
-  { id: 'heart-chest', title: '心胸', subtitle: '心胸闷痛、心悸类医案。' },
-  { id: 'abdomen', title: '腹篇', subtitle: '腹痛、腹满、痞块类医案。' },
-  { id: 'retained-fluid', title: '积饮病', subtitle: '痰饮、积饮类医案与按语。' },
-  { id: 'wasting-thirst', title: '消渴', subtitle: '消渴类医案与按语。' },
-  { id: 'water-disease', title: '水病', subtitle: '水肿、水气病类医案。' },
-  { id: 'dysentery', title: '痢篇', subtitle: '痢疾类医案与按语。' },
-  { id: 'abscess', title: '脓疡', subtitle: '痈疽、脓疡类医案。' },
-  { id: 'gynecology', title: '孕妇科', subtitle: '妇科、妊娠相关医案。' },
-  { id: 'andrology', title: '男科', subtitle: '男科相关医案与按语。' },
-  { id: 'mental', title: '精神', subtitle: '精神情志类医案与按语；具体内容待按原文录入。' },
-]
+export const caseTopics: Topic[] = cases.map((item) => ({
+  id: item.id,
+  title: item.title,
+  subtitle: `${item.category} · ${item.summary}`,
+}))
 
 export const topicSections = {
   methods: {
@@ -79,7 +70,7 @@ export const topicSections = {
     key: 'cases' as const,
     eyebrow: 'CASE / 医案',
     title: '医案',
-    lead: '按病类整理医案：先看症状与病机，再看治法、方药与转归。每则医案都必须回到原文出处。',
+    lead: '讲义临床案例原文照录：先看病人叙述与辨证，再看处方、复诊与转归。每则案例都注明讲义出处，不补写原文之外的诊断与用药。',
     topics: caseTopics,
   },
 }

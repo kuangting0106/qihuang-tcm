@@ -24,8 +24,18 @@ const shanghanFormulas = shanghanData.formulas.filter(
 )
 const shanghanSourceIds = new Set(shanghanFormulas.map((formula) => formula.sourceCitationId))
 const shanghanSources = shanghanData.sources.filter((source) => shanghanSourceIds.has(source.id))
-const allSources = [...sources, ...shanghanSources]
-const allFormulas = [...formulas, ...shanghanFormulas]
+const jinguiFile = path.join(root, 'scripts', 'content', 'jingui-formulas.json')
+const jinguiData = fs.existsSync(jinguiFile)
+  ? JSON.parse(fs.readFileSync(jinguiFile, 'utf8'))
+  : { sources: [], formulas: [] }
+const usedFormulaNames = new Set([...formulas, ...shanghanFormulas].map((formula) => formula.name))
+const jinguiFormulas = jinguiData.formulas.filter(
+  (formula) => !usedFormulaNames.has(formula.name),
+)
+const jinguiSourceIds = new Set(jinguiFormulas.map((formula) => formula.sourceCitationId))
+const jinguiSources = jinguiData.sources.filter((source) => jinguiSourceIds.has(source.id))
+const allSources = [...sources, ...shanghanSources, ...jinguiSources]
+const allFormulas = [...formulas, ...shanghanFormulas, ...jinguiFormulas]
 
 fs.mkdirSync(dataDir, { recursive: true })
 

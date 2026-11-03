@@ -2,10 +2,12 @@
 import { computed } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import AcupunctureTopic from '@/components/AcupunctureTopic.vue'
+import CaseArticle from '@/components/CaseArticle.vue'
 import InspectionTopic from '@/components/InspectionTopic.vue'
 import MoxibustionTopic from '@/components/MoxibustionTopic.vue'
 import TenQuestionsTopic from '@/components/TenQuestionsTopic.vue'
 import TreatmentPrinciplesTopic from '@/components/TreatmentPrinciplesTopic.vue'
+import { casesById } from '@/data/cases'
 import { findTopic, getTopicSection } from '@/data/topics'
 
 const route = useRoute()
@@ -21,6 +23,16 @@ const isInspection = computed(() => section.value.key === 'methods' && topic.val
 const isClinicalTopic = computed(
   () => isTenQuestions.value || isTreatmentMethods.value || isInspection.value,
 )
+
+const isCase = computed(() => section.value.key === 'cases' && !!topic.value)
+const caseData = computed(() => (topic.value ? casesById.get(topic.value.id) ?? null : null))
+const statusLabel = computed(() => {
+  if (isCase.value) return '讲义医案 · 原文照录'
+  if (isAcupuncture.value) return '含针刺操作 · 非专业勿试'
+  if (isMoxibustion.value) return '含艾灸操作 · 非专业勿试'
+  if (isClinicalTopic.value) return '经验总结 · 非诊断标准'
+  return '正文待收录'
+})
 </script>
 
 <template>
@@ -42,15 +54,7 @@ const isClinicalTopic = computed(
             <p>{{ topic.subtitle }}</p>
           </div>
           <span class="chip" :class="isAcupuncture || isMoxibustion ? 'chip--cinnabar' : 'chip--gold'">
-            {{
-              isAcupuncture
-                ? '含针刺操作 · 非专业勿试'
-                : isMoxibustion
-                  ? '含艾灸操作 · 非专业勿试'
-                  : isClinicalTopic
-                    ? '经验总结 · 非诊断标准'
-                    : '正文待收录'
-            }}
+            {{ statusLabel }}
           </span>
         </header>
 
@@ -59,6 +63,8 @@ const isClinicalTopic = computed(
         <InspectionTopic v-else-if="isInspection" />
         <AcupunctureTopic v-else-if="isAcupuncture" />
         <MoxibustionTopic v-else-if="isMoxibustion" />
+
+        <CaseArticle v-else-if="isCase && caseData" :case-data="caseData" />
 
         <div v-else class="topic-detail-layout">
           <section class="empty-article paper-panel">

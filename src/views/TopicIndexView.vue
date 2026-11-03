@@ -12,7 +12,7 @@ const readyTopicIds = new Set(['acupuncture', 'moxibustion', 'ten-questions', 't
 const clinicalTopicIds = new Set(['ten-questions', 'treatment-methods', 'inspection'])
 
 function isReady(id: string) {
-  return readyTopicIds.has(id)
+  return section.value.key === 'cases' || readyTopicIds.has(id)
 }
 
 function isClinical(id: string) {
@@ -20,6 +20,7 @@ function isClinical(id: string) {
 }
 
 function topicStatus(id: string) {
+  if (section.value.key === 'cases') return '已收录 · 医案原文'
   if (id === 'acupuncture' || id === 'moxibustion') return '已收录 · 非专业勿试'
   if (isClinical(id)) return '已收录 · 经验总结'
   return '待收录'
@@ -43,8 +44,14 @@ function topicStatus(id: string) {
           <h1>{{ section.title }}</h1>
           <p class="topic-hero__lead">{{ section.lead }}</p>
           <div class="topic-hero__meta">
-            <span class="chip chip--cinnabar">{{ section.topics.length }} 个栏目</span>
-            <span class="chip">经验总结 · 非诊断标准</span>
+            <template v-if="section.key === 'cases'">
+              <span class="chip chip--cinnabar">{{ section.topics.length }} 则医案</span>
+              <span class="chip">讲义原文 · 非诊断标准</span>
+            </template>
+            <template v-else>
+              <span class="chip chip--cinnabar">{{ section.topics.length }} 个栏目</span>
+              <span class="chip">经验总结 · 非诊断标准</span>
+            </template>
             <span class="chip chip--gold">先出处，后内容</span>
           </div>
         </div>
