@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T02:11:16.018Z",
+  "generatedAt": "2026-11-03T06:37:34.863Z",
   "items": [
     {
       "name": "当归",
@@ -81,6 +81,1050 @@
       "credit": "© misakinokukuru / iNaturalist",
       "license": "CC BY-NC",
       "sourceUrl": "https://www.inaturalist.org/taxa/497721"
+    },
+    {
+      "name": "巴豆",
+      "latin": "Croton tiglium",
+      "taxonId": 427400,
+      "file": "/images/herbs/lecture/427400.jpeg",
+      "credit": "© 葉子 / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/427400"
+    },
+    {
+      "name": "巴戟天",
+      "latin": "Morinda officinalis",
+      "taxonId": 790618,
+      "file": "/images/herbs/lecture/790618.jpeg",
+      "credit": "© 小铖/Smalltown / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/790618"
+    },
+    {
+      "name": "白及",
+      "latin": "Bletilla striata",
+      "taxonId": 131245,
+      "file": "/images/herbs/lecture/131245.jpg",
+      "credit": "© Heidi Hellstern / iNaturalist",
+      "license": "CC BY-SA",
+      "sourceUrl": "https://www.inaturalist.org/taxa/131245"
+    },
+    {
+      "name": "白蔹",
+      "latin": "Ampelopsis japonica",
+      "taxonId": 868939,
+      "file": "/images/herbs/lecture/868939.jpeg",
+      "credit": "© Meng-Ying Tsai / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/868939"
+    },
+    {
+      "name": "白头翁",
+      "latin": "Pulsatilla chinensis",
+      "taxonId": 491582,
+      "file": "/images/herbs/lecture/491582.jpeg",
+      "credit": "© mintren / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/491582"
+    },
+    {
+      "name": "白薇",
+      "latin": "Vincetoxicum atratum",
+      "taxonId": 772874,
+      "file": "/images/herbs/lecture/772874.jpeg",
+      "credit": "© 羅元甫 / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/772874"
+    },
+    {
+      "name": "白英",
+      "latin": "Solanum lyratum",
+      "taxonId": 367802,
+      "file": "/images/herbs/lecture/367802.jpg",
+      "credit": "© Timur Kalininsky / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/367802"
+    },
+    {
+      "name": "白芷",
+      "latin": "Angelica dahurica",
+      "taxonId": 501057,
+      "file": "/images/herbs/lecture/501057.jpg",
+      "credit": "© Lee, seong-won / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/501057"
+    },
+    {
+      "name": "半夏",
+      "latin": "Pinellia ternata",
+      "taxonId": 166883,
+      "file": "/images/herbs/lecture/166883.jpg",
+      "credit": "© 葉子 / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/166883"
+    },
+    {
+      "name": "薄荷",
+      "latin": "Mentha canadensis",
+      "taxonId": 77991,
+      "file": "/images/herbs/lecture/77991.jpeg",
+      "credit": "© elik03 / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/77991"
+    },
+    {
+      "name": "补骨脂",
+      "latin": "Cullen corylifolium",
+      "taxonId": 736663,
+      "file": "/images/herbs/lecture/736663.jpeg",
+      "credit": "© S.MORE / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/736663"
+    },
+    {
+      "name": "苍术",
+      "latin": "Atractylodes lancea",
+      "taxonId": 786048,
+      "file": "/images/herbs/lecture/786048.jpeg",
+      "credit": "© Kim, Hyun-tae / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/786048"
+    },
+    {
+      "name": "柴胡",
+      "latin": "Bupleurum chinense",
+      "taxonId": 601649,
+      "file": "/images/herbs/lecture/601649.jpeg",
+      "credit": "© 红梅 / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/601649"
+    },
+    {
+      "name": "菖蒲",
+      "latin": "Acorus calamus",
+      "taxonId": 82306,
+      "file": "/images/herbs/lecture/82306.jpg",
+      "credit": "© Eduard Garin / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/82306"
+    },
+    {
+      "name": "常山",
+      "latin": "Hydrangea febrifuga",
+      "taxonId": 903041,
+      "file": "/images/herbs/lecture/903041.jpeg",
+      "credit": "© Aaron Liston / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/903041"
+    },
+    {
+      "name": "赤小豆",
+      "latin": "Vigna umbellata",
+      "taxonId": 291751,
+      "file": "/images/herbs/lecture/291751.jpeg",
+      "credit": "© Aravinth / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/291751"
+    },
+    {
+      "name": "大戟",
+      "latin": "Euphorbia pekinensis",
+      "taxonId": 493603,
+      "file": "/images/herbs/lecture/493603.jpeg",
+      "credit": "© harum.koh / iNaturalist",
+      "license": "CC BY-SA",
+      "sourceUrl": "https://www.inaturalist.org/taxa/493603"
+    },
+    {
+      "name": "大枣",
+      "latin": "Ziziphus jujuba",
+      "taxonId": 428365,
+      "file": "/images/herbs/lecture/428365.jpg",
+      "credit": "© oreste83 / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/428365"
+    },
+    {
+      "name": "党参",
+      "latin": "Codonopsis pilosula",
+      "taxonId": 706415,
+      "file": "/images/herbs/lecture/706415.jpeg",
+      "credit": "© Yao Li / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/706415"
+    },
+    {
+      "name": "地榆",
+      "latin": "Sanguisorba officinalis",
+      "taxonId": 64549,
+      "file": "/images/herbs/lecture/64549.jpg",
+      "credit": "© Кирилл Зенин / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/64549"
+    },
+    {
+      "name": "独活",
+      "latin": "Angelica pubescens",
+      "taxonId": 482445,
+      "file": "/images/herbs/lecture/482445.jpg",
+      "credit": "© leehsueh / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/482445"
+    },
+    {
+      "name": "杜若",
+      "latin": "Pollia japonica",
+      "taxonId": 452114,
+      "file": "/images/herbs/lecture/452114.jpeg",
+      "credit": "© Kōsuke Onoda / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/452114"
+    },
+    {
+      "name": "杜仲",
+      "latin": "Eucommia ulmoides",
+      "taxonId": 127868,
+      "file": "/images/herbs/lecture/127868.jpg",
+      "credit": "© Kristine Paulus / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/127868"
+    },
+    {
+      "name": "浮萍",
+      "latin": "Lemna minor",
+      "taxonId": 54518,
+      "file": "/images/herbs/lecture/54518.jpeg",
+      "credit": "© Philipp / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/54518"
+    },
+    {
+      "name": "甘草",
+      "latin": "Glycyrrhiza uralensis",
+      "taxonId": 775858,
+      "file": "/images/herbs/lecture/775858.jpg",
+      "credit": "© Tomáš Vrána / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/775858"
+    },
+    {
+      "name": "甘遂",
+      "latin": "Euphorbia kansui",
+      "taxonId": 1150347,
+      "file": "/images/herbs/lecture/1150347.jpeg",
+      "credit": "© zhangyuhong / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/1150347"
+    },
+    {
+      "name": "钩藤",
+      "latin": "Uncaria rhynchophylla",
+      "taxonId": 809168,
+      "file": "/images/herbs/lecture/809168.jpeg",
+      "credit": "© Nuraishah Bazilah Affandi / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/809168"
+    },
+    {
+      "name": "钩吻",
+      "latin": "Gelsemium elegans",
+      "taxonId": 707282,
+      "file": "/images/herbs/lecture/707282.jpg",
+      "credit": "© Bryan To / iNaturalist",
+      "license": "CC BY-NC-SA",
+      "sourceUrl": "https://www.inaturalist.org/taxa/707282"
+    },
+    {
+      "name": "狗脊",
+      "latin": "Woodwardia japonica",
+      "taxonId": 501651,
+      "file": "/images/herbs/lecture/501651.jpeg",
+      "credit": "© Rafael Medina / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/501651"
+    },
+    {
+      "name": "贯众",
+      "latin": "Cyrtomium fortunei",
+      "taxonId": 161570,
+      "file": "/images/herbs/lecture/161570.jpeg",
+      "credit": "© Yoshihiro Tokue / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/161570"
+    },
+    {
+      "name": "海金沙",
+      "latin": "Lygodium japonicum",
+      "taxonId": 164985,
+      "file": "/images/herbs/lecture/164985.jpeg",
+      "credit": "© 葉子 / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/164985"
+    },
+    {
+      "name": "诃子",
+      "latin": "Terminalia chebula",
+      "taxonId": 68671,
+      "file": "/images/herbs/lecture/68671.jpg",
+      "credit": "© Satish Nikam / iNaturalist",
+      "license": "CC BY-NC-SA",
+      "sourceUrl": "https://www.inaturalist.org/taxa/68671"
+    },
+    {
+      "name": "红花",
+      "latin": "Carthamus tinctorius",
+      "taxonId": 76135,
+      "file": "/images/herbs/lecture/76135.jpeg",
+      "credit": "© 葉子 / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/76135"
+    },
+    {
+      "name": "厚朴",
+      "latin": "Magnolia officinalis",
+      "taxonId": 431254,
+      "file": "/images/herbs/lecture/431254.jpg",
+      "credit": "© Wendy Cutler / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/431254"
+    },
+    {
+      "name": "花椒",
+      "latin": "Zanthoxylum bungeanum",
+      "taxonId": 506467,
+      "file": "/images/herbs/lecture/506467.jpg",
+      "credit": "© Marco Mussita / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/506467"
+    },
+    {
+      "name": "黄精",
+      "latin": "Polygonatum sibiricum",
+      "taxonId": 862611,
+      "file": "/images/herbs/lecture/862611.jpeg",
+      "credit": "© Daba / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/862611"
+    },
+    {
+      "name": "黄芩",
+      "latin": "Scutellaria baicalensis",
+      "taxonId": 565882,
+      "file": "/images/herbs/lecture/565882.jpeg",
+      "credit": "© Yao Li / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/565882"
+    },
+    {
+      "name": "藿香",
+      "latin": "Agastache rugosa",
+      "taxonId": 506801,
+      "file": "/images/herbs/lecture/506801.jpg",
+      "credit": "© Kim, Hyun-tae / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/506801"
+    },
+    {
+      "name": "积雪草",
+      "latin": "Centella asiatica",
+      "taxonId": 160294,
+      "file": "/images/herbs/lecture/160294.jpeg",
+      "credit": "© 葉子 / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/160294"
+    },
+    {
+      "name": "蒺藜",
+      "latin": "Tribulus terrestris",
+      "taxonId": 64238,
+      "file": "/images/herbs/lecture/64238.jpg",
+      "credit": "© lanechaffin / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/64238"
+    },
+    {
+      "name": "接骨草",
+      "latin": "Sambucus javanica",
+      "taxonId": 474166,
+      "file": "/images/herbs/lecture/474166.jpeg",
+      "credit": "© 方伊琳(阿鈣) / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/474166"
+    },
+    {
+      "name": "桔梗",
+      "latin": "Platycodon grandiflorus",
+      "taxonId": 141623,
+      "file": "/images/herbs/lecture/141623.jpg",
+      "credit": "© Yi CHEN / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/141623"
+    },
+    {
+      "name": "卷柏",
+      "latin": "Selaginella tamariscina",
+      "taxonId": 366348,
+      "file": "/images/herbs/lecture/366348.jpg",
+      "credit": "© Gularjanz Grigoryi Mihajlovich / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/366348"
+    },
+    {
+      "name": "爵床",
+      "latin": "Justicia procumbens",
+      "taxonId": 354064,
+      "file": "/images/herbs/lecture/354064.jpg",
+      "credit": "© Himanshu Pandav / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/354064"
+    },
+    {
+      "name": "苦参",
+      "latin": "Sophora flavescens",
+      "taxonId": 138582,
+      "file": "/images/herbs/lecture/138582.jpg",
+      "credit": "© 登坂久雄 / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/138582"
+    },
+    {
+      "name": "狼毒",
+      "latin": "Stellera chamaejasme",
+      "taxonId": 820729,
+      "file": "/images/herbs/lecture/820729.jpg",
+      "credit": "© Святослав Власенко / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/820729"
+    },
+    {
+      "name": "雷丸",
+      "latin": "Laccocephalum mylittae",
+      "taxonId": 382846,
+      "file": "/images/herbs/lecture/382846.jpeg",
+      "credit": "© sicilelleth / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/382846"
+    },
+    {
+      "name": "藜芦",
+      "latin": "Veratrum nigrum",
+      "taxonId": 344733,
+      "file": "/images/herbs/lecture/344733.jpg",
+      "credit": "© HermannFalkner/sokol / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/344733"
+    },
+    {
+      "name": "连翘",
+      "latin": "Forsythia suspensa",
+      "taxonId": 163058,
+      "file": "/images/herbs/lecture/163058.jpg",
+      "credit": "© Douglas Goldman / iNaturalist",
+      "license": "CC BY-SA",
+      "sourceUrl": "https://www.inaturalist.org/taxa/163058"
+    },
+    {
+      "name": "灵芝",
+      "latin": "Ganoderma lucidum",
+      "taxonId": 125932,
+      "file": "/images/herbs/lecture/125932.jpeg",
+      "credit": "© Ilya Filippov / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/125932"
+    },
+    {
+      "name": "龙胆",
+      "latin": "Gentiana scabra",
+      "taxonId": 508514,
+      "file": "/images/herbs/lecture/508514.jpg",
+      "credit": "© ~~ / iNaturalist",
+      "license": "CC BY-SA",
+      "sourceUrl": "https://www.inaturalist.org/taxa/508514"
+    },
+    {
+      "name": "漏芦",
+      "latin": "Rhaponticum uniflorum",
+      "taxonId": 1498021,
+      "file": "/images/herbs/lecture/1498021.jpg",
+      "credit": "© Ryzhkov Oleg / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/1498021"
+    },
+    {
+      "name": "鹿藿",
+      "latin": "Rhynchosia volubilis",
+      "taxonId": 474975,
+      "file": "/images/herbs/lecture/474975.jpg",
+      "credit": "© 岸本年郎 / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/474975"
+    },
+    {
+      "name": "麻黄",
+      "latin": "Ephedra sinica",
+      "taxonId": 135489,
+      "file": "/images/herbs/lecture/135489.jpg",
+      "credit": "© Daba / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/135489"
+    },
+    {
+      "name": "麦冬",
+      "latin": "Ophiopogon japonicus",
+      "taxonId": 200061,
+      "file": "/images/herbs/lecture/200061.jpeg",
+      "credit": "© 卢江离 / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/200061"
+    },
+    {
+      "name": "木通",
+      "latin": "Akebia quinata",
+      "taxonId": 126249,
+      "file": "/images/herbs/lecture/126249.jpg",
+      "credit": "© ashley CHILE baz / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/126249"
+    },
+    {
+      "name": "木香",
+      "latin": "Dolomiaea costus",
+      "taxonId": 1420140,
+      "file": "/images/herbs/lecture/1420140.jpg",
+      "credit": "© Cyril Gros / iNaturalist",
+      "license": "CC BY-NC-SA",
+      "sourceUrl": "https://www.inaturalist.org/taxa/1420140"
+    },
+    {
+      "name": "牛膝",
+      "latin": "Achyranthes bidentata",
+      "taxonId": 474181,
+      "file": "/images/herbs/lecture/474181.jpeg",
+      "credit": "© WATANABE Hitoshi 渡辺仁 / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/474181"
+    },
+    {
+      "name": "女菀",
+      "latin": "Turczaninovia fastigiata",
+      "taxonId": 930106,
+      "file": "/images/herbs/lecture/930106.jpeg",
+      "credit": "© V.S. Volkotrub / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/930106"
+    },
+    {
+      "name": "佩兰",
+      "latin": "Eupatorium fortunei",
+      "taxonId": 447266,
+      "file": "/images/herbs/lecture/447266.png",
+      "credit": "© Agnes Trekker / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/447266"
+    },
+    {
+      "name": "葡萄",
+      "latin": "Vitis vinifera",
+      "taxonId": 79519,
+      "file": "/images/herbs/lecture/79519.jpeg",
+      "credit": "© Francesco Cecere / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/79519"
+    },
+    {
+      "name": "茜草",
+      "latin": "Rubia cordifolia",
+      "taxonId": 500587,
+      "file": "/images/herbs/lecture/500587.jpeg",
+      "credit": "© Repina Tatyana / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/500587"
+    },
+    {
+      "name": "秦艽",
+      "latin": "Gentiana macrophylla",
+      "taxonId": 706828,
+      "file": "/images/herbs/lecture/706828.jpeg",
+      "credit": "© Yao Li / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/706828"
+    },
+    {
+      "name": "瞿麦",
+      "latin": "Dianthus superbus",
+      "taxonId": 447244,
+      "file": "/images/herbs/lecture/447244.jpeg",
+      "credit": "© Federico Biguzzi / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/447244"
+    },
+    {
+      "name": "荛花",
+      "latin": "Wikstroemia canescens",
+      "taxonId": 824454,
+      "file": "/images/herbs/lecture/824454.jpeg",
+      "credit": "© Siddarth Machado / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/824454"
+    },
+    {
+      "name": "人参",
+      "latin": "Panax ginseng",
+      "taxonId": 366498,
+      "file": "/images/herbs/lecture/366498.jpg",
+      "credit": "© Elena_Sherehora / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/366498"
+    },
+    {
+      "name": "肉桂",
+      "latin": "Cinnamomum cassia",
+      "taxonId": 774822,
+      "file": "/images/herbs/lecture/774822.jpeg",
+      "credit": "© Yercaud-elango / iNaturalist",
+      "license": "CC BY-SA",
+      "sourceUrl": "https://www.inaturalist.org/taxa/774822"
+    },
+    {
+      "name": "桑寄生",
+      "latin": "Taxillus sutchuenensis",
+      "taxonId": 849502,
+      "file": "/images/herbs/lecture/849502.jpg",
+      "credit": "© lchcd / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/849502"
+    },
+    {
+      "name": "沙参",
+      "latin": "Adenophora stricta",
+      "taxonId": 916581,
+      "file": "/images/herbs/lecture/916581.png",
+      "credit": "© onidiras-iNaturalist / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/916581"
+    },
+    {
+      "name": "砂仁",
+      "latin": "Wurfbainia villosa",
+      "taxonId": 1114503,
+      "file": "/images/herbs/lecture/1114503.jpeg",
+      "credit": "© 刘光裕 Liu Guangyu / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/1114503"
+    },
+    {
+      "name": "山茱萸",
+      "latin": "Cornus officinalis",
+      "taxonId": 450254,
+      "file": "/images/herbs/lecture/450254.jpeg",
+      "credit": "© Takashi KOIKE / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/450254"
+    },
+    {
+      "name": "商陆",
+      "latin": "Phytolacca acinosa",
+      "taxonId": 155484,
+      "file": "/images/herbs/lecture/155484.jpg",
+      "credit": "© Kim, Hyun-tae / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/155484"
+    },
+    {
+      "name": "芍药",
+      "latin": "Paeonia lactiflora",
+      "taxonId": 127857,
+      "file": "/images/herbs/lecture/127857.jpeg",
+      "credit": "© Анна Васильченко / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/127857"
+    },
+    {
+      "name": "射干",
+      "latin": "Iris domestica",
+      "taxonId": 204330,
+      "file": "/images/herbs/lecture/204330.jpeg",
+      "credit": "© 葉子 / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/204330"
+    },
+    {
+      "name": "升麻",
+      "latin": "Actaea cimicifuga",
+      "taxonId": 742165,
+      "file": "/images/herbs/lecture/742165.jpeg",
+      "credit": "© Сергей Голубев / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/742165"
+    },
+    {
+      "name": "石斛",
+      "latin": "Dendrobium nobile",
+      "taxonId": 67756,
+      "file": "/images/herbs/lecture/67756.jpg",
+      "credit": "© Motohiro Sunouchi / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/67756"
+    },
+    {
+      "name": "石龙芮",
+      "latin": "Ranunculus sceleratus",
+      "taxonId": 59301,
+      "file": "/images/herbs/lecture/59301.jpeg",
+      "credit": "© Brian Finzel / iNaturalist",
+      "license": "CC BY-SA",
+      "sourceUrl": "https://www.inaturalist.org/taxa/59301"
+    },
+    {
+      "name": "石韦",
+      "latin": "Pyrrosia lingua",
+      "taxonId": 428723,
+      "file": "/images/herbs/lecture/428723.jpg",
+      "credit": "© Nova Patch / iNaturalist",
+      "license": "CC BY-SA",
+      "sourceUrl": "https://www.inaturalist.org/taxa/428723"
+    },
+    {
+      "name": "鼠李",
+      "latin": "Rhamnus davurica",
+      "taxonId": 167788,
+      "file": "/images/herbs/lecture/167788.jpg",
+      "credit": "© Alan Weakley / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/167788"
+    },
+    {
+      "name": "水芹",
+      "latin": "Oenanthe javanica",
+      "taxonId": 359175,
+      "file": "/images/herbs/lecture/359175.jpeg",
+      "credit": "© 葉子 / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/359175"
+    },
+    {
+      "name": "溲疏",
+      "latin": "Deutzia scabra",
+      "taxonId": 161761,
+      "file": "/images/herbs/lecture/161761.jpeg",
+      "credit": "© Mason Brock / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/161761"
+    },
+    {
+      "name": "酸浆",
+      "latin": "Alkekengi officinarum",
+      "taxonId": 575102,
+      "file": "/images/herbs/lecture/575102.jpg",
+      "credit": "© Gordon Johnston / iNaturalist",
+      "license": "CC BY-SA",
+      "sourceUrl": "https://www.inaturalist.org/taxa/575102"
+    },
+    {
+      "name": "锁阳",
+      "latin": "Cynomorium songaricum",
+      "taxonId": 50906,
+      "file": "/images/herbs/lecture/50906.jpeg",
+      "credit": "© Vojtech Tlaskal / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/50906"
+    },
+    {
+      "name": "天麻",
+      "latin": "Gastrodia elata",
+      "taxonId": 429605,
+      "file": "/images/herbs/lecture/429605.jpg",
+      "credit": "© VanLap Hoàng / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/429605"
+    },
+    {
+      "name": "天名精",
+      "latin": "Carpesium abrotanoides",
+      "taxonId": 416397,
+      "file": "/images/herbs/lecture/416397.jpeg",
+      "credit": "© Takashi KOIKE / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/416397"
+    },
+    {
+      "name": "天仙子",
+      "latin": "Hyoscyamus niger",
+      "taxonId": 163951,
+      "file": "/images/herbs/lecture/163951.jpeg",
+      "credit": "© Antoine Guilbaud / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/163951"
+    },
+    {
+      "name": "土茯苓",
+      "latin": "Smilax glabra",
+      "taxonId": 556188,
+      "file": "/images/herbs/lecture/556188.jpg",
+      "credit": "© 黃美滿 / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/556188"
+    },
+    {
+      "name": "菟丝子",
+      "latin": "Cuscuta chinensis",
+      "taxonId": 601626,
+      "file": "/images/herbs/lecture/601626.jpg",
+      "credit": "© S.MORE / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/601626"
+    },
+    {
+      "name": "王瓜",
+      "latin": "Trichosanthes cucumeroides",
+      "taxonId": 452203,
+      "file": "/images/herbs/lecture/452203.jpeg",
+      "credit": "© Jacy Chen / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/452203"
+    },
+    {
+      "name": "威灵仙",
+      "latin": "Clematis chinensis",
+      "taxonId": 774403,
+      "file": "/images/herbs/lecture/774403.jpeg",
+      "credit": "© 羅元甫 / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/774403"
+    },
+    {
+      "name": "乌头",
+      "latin": "Aconitum carmichaelii",
+      "taxonId": 483214,
+      "file": "/images/herbs/lecture/483214.jpg",
+      "credit": "© Charles / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/483214"
+    },
+    {
+      "name": "乌药",
+      "latin": "Lindera aggregata",
+      "taxonId": 604749,
+      "file": "/images/herbs/lecture/604749.jpg",
+      "credit": "© Toby Y / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/604749"
+    },
+    {
+      "name": "吴茱萸",
+      "latin": "Tetradium ruticarpum",
+      "taxonId": 796058,
+      "file": "/images/herbs/lecture/796058.jpeg",
+      "credit": "© 呂一起(Lyu yi-chi) / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/796058"
+    },
+    {
+      "name": "五味子",
+      "latin": "Schisandra chinensis",
+      "taxonId": 431608,
+      "file": "/images/herbs/lecture/431608.jpg",
+      "credit": "© Tatters ❀ / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/431608"
+    },
+    {
+      "name": "夏枯草",
+      "latin": "Prunella vulgaris",
+      "taxonId": 52764,
+      "file": "/images/herbs/lecture/52764.jpeg",
+      "credit": "© Brady Reed / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/52764"
+    },
+    {
+      "name": "香蒲",
+      "latin": "Typha orientalis",
+      "taxonId": 341639,
+      "file": "/images/herbs/lecture/341639.jpg",
+      "credit": "© nick_goldwater / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/341639"
+    },
+    {
+      "name": "小麦",
+      "latin": "Triticum aestivum",
+      "taxonId": 64161,
+      "file": "/images/herbs/lecture/64161.jpeg",
+      "credit": "© Cole Shoemaker / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/64161"
+    },
+    {
+      "name": "薤白",
+      "latin": "Allium macrostemon",
+      "taxonId": 627160,
+      "file": "/images/herbs/lecture/627160.jpg",
+      "credit": "© 岸本年郎 / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/627160"
+    },
+    {
+      "name": "徐长卿",
+      "latin": "Vincetoxicum bungei",
+      "taxonId": 1638659,
+      "file": "/images/herbs/lecture/1638659.jpg",
+      "credit": "© onidiras-iNaturalist / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/1638659"
+    },
+    {
+      "name": "玄参",
+      "latin": "Scrophularia ningpoensis",
+      "taxonId": 425843,
+      "file": "/images/herbs/lecture/425843.jpeg",
+      "credit": "© 小铖/Smalltown / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/425843"
+    },
+    {
+      "name": "旋覆花",
+      "latin": "Inula japonica",
+      "taxonId": 538217,
+      "file": "/images/herbs/lecture/538217.jpg",
+      "credit": "© Chuangzao / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/538217"
+    },
+    {
+      "name": "芫花",
+      "latin": "Daphne genkwa",
+      "taxonId": 703850,
+      "file": "/images/herbs/lecture/703850.jpg",
+      "credit": "© 葉子 / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/703850"
+    },
+    {
+      "name": "羊蹄",
+      "latin": "Rumex japonicus",
+      "taxonId": 556238,
+      "file": "/images/herbs/lecture/556238.jpeg",
+      "credit": "© 葉子 / iNaturalist",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/556238"
+    },
+    {
+      "name": "衣鱼",
+      "latin": "Lepisma saccharinum",
+      "taxonId": 1445691,
+      "file": "/images/herbs/lecture/1445691.jpg",
+      "credit": "© Christian Fischer / iNaturalist",
+      "license": "CC BY-SA",
+      "sourceUrl": "https://www.inaturalist.org/taxa/1445691"
+    },
+    {
+      "name": "淫羊藿",
+      "latin": "Epimedium brevicornu",
+      "taxonId": 881454,
+      "file": "/images/herbs/lecture/881454.jpg",
+      "credit": "© taiyi / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/881454"
+    },
+    {
+      "name": "玉竹",
+      "latin": "Polygonatum odoratum",
+      "taxonId": 61454,
+      "file": "/images/herbs/lecture/61454.jpeg",
+      "credit": "© 空猫 / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/61454"
+    },
+    {
+      "name": "郁金",
+      "latin": "Curcuma aromatica",
+      "taxonId": 347672,
+      "file": "/images/herbs/lecture/347672.jpg",
+      "credit": "© Purnendu Roy / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/347672"
+    },
+    {
+      "name": "鸢尾",
+      "latin": "Iris tectorum",
+      "taxonId": 57732,
+      "file": "/images/herbs/lecture/57732.jpeg",
+      "credit": "© Michael J. Papay / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/57732"
+    },
+    {
+      "name": "远志",
+      "latin": "Polygala tenuifolia",
+      "taxonId": 520121,
+      "file": "/images/herbs/lecture/520121.jpg",
+      "credit": "© Chuangzao / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/520121"
+    },
+    {
+      "name": "云实",
+      "latin": "Biancaea decapetala",
+      "taxonId": 1065370,
+      "file": "/images/herbs/lecture/1065370.jpeg",
+      "credit": "© Siddarth Machado / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/1065370"
+    },
+    {
+      "name": "皂荚",
+      "latin": "Gleditsia sinensis",
+      "taxonId": 586497,
+      "file": "/images/herbs/lecture/586497.jpg",
+      "credit": "© Charles / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/586497"
+    },
+    {
+      "name": "泽漆",
+      "latin": "Euphorbia helioscopia",
+      "taxonId": 56292,
+      "file": "/images/herbs/lecture/56292.jpg",
+      "credit": "© portioid / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/56292"
+    },
+    {
+      "name": "知母",
+      "latin": "Anemarrhena asphodeloides",
+      "taxonId": 785991,
+      "file": "/images/herbs/lecture/785991.jpg",
+      "credit": "© darkflamew / iNaturalist",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/785991"
+    },
+    {
+      "name": "紫草",
+      "latin": "Lithospermum erythrorhizon",
+      "taxonId": 715299,
+      "file": "/images/herbs/lecture/715299.jpeg",
+      "credit": "© Repina Tatyana / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/715299"
+    },
+    {
+      "name": "紫苏",
+      "latin": "Perilla frutescens",
+      "taxonId": 119136,
+      "file": "/images/herbs/lecture/119136.jpg",
+      "credit": "© Katja Schulz / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/119136"
+    },
+    {
+      "name": "紫菀",
+      "latin": "Aster tataricus",
+      "taxonId": 158806,
+      "file": "/images/herbs/lecture/158806.jpg",
+      "credit": "© Douglas Goldman / iNaturalist",
+      "license": "CC BY-SA",
+      "sourceUrl": "https://www.inaturalist.org/taxa/158806"
     }
   ]
 }

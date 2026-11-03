@@ -29,6 +29,16 @@
 
 如果替换图片，必须同步更新 `scripts/content/herb-photos.json` 与 `docs/PHOTO-CREDITS.md`。
 
+## 讲义药材配图
+
+`public/images/herbs/lecture/` 收录讲义条目的单张配图，来自 iNaturalist 开放数据：
+
+- 每味药只配 1 张可核实的授权图，不强行凑齐“原型 / 入药部位 / 切片”三格；
+- 如果只有炮制后的饮片图，也只放这一张；
+- 找不到可核实、许可允许再利用的图片时，页面保留“图片待补”，不拿相似药材替代；
+- 图片文件、作者、许可证与 iNaturalist 分类页链接见 `scripts/content/herb-image-credits.json` 与 `docs/PHOTO-CREDITS.md`；
+- CC BY-NC / BY-NC-SA 图片仅用于非商业学习原型，商业使用需替换授权图片。
+
 ## 字体
 
 页面使用系统字体回退：
