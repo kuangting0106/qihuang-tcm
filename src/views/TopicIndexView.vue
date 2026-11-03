@@ -1,16 +1,42 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
+import { clinicalDisclaimer } from '@/data/clinical-methods'
 import { getTopicSection } from '@/data/topics'
 
 const route = useRoute()
 const section = computed(() => getTopicSection(String(route.meta.section || 'methods')))
 const basePath = computed(() => `/${section.value.key}`)
+
+const readyTopicIds = new Set(['acupuncture', 'moxibustion', 'ten-questions', 'treatment-methods', 'inspection'])
+const clinicalTopicIds = new Set(['ten-questions', 'treatment-methods', 'inspection'])
+
+function isReady(id: string) {
+  return readyTopicIds.has(id)
+}
+
+function isClinical(id: string) {
+  return clinicalTopicIds.has(id)
+}
+
+function topicStatus(id: string) {
+  if (id === 'acupuncture' || id === 'moxibustion') return '已收录 · 非专业勿试'
+  if (isClinical(id)) return '已收录 · 经验总结'
+  return '待收录'
+}
 </script>
 
 <template>
   <div class="page topic-index-page" :class="`topic-index-page--${section.key}`">
     <div class="container">
+      <section class="clinical-banner" role="note">
+        <span class="clinical-banner__mark">慎</span>
+        <div>
+          <strong>{{ clinicalDisclaimer.title }}</strong>
+          <p>{{ clinicalDisclaimer.body }}</p>
+        </div>
+      </section>
+
       <header class="topic-hero">
         <div>
           <p class="eyebrow">{{ section.eyebrow }}</p>
@@ -18,7 +44,7 @@ const basePath = computed(() => `/${section.value.key}`)
           <p class="topic-hero__lead">{{ section.lead }}</p>
           <div class="topic-hero__meta">
             <span class="chip chip--cinnabar">{{ section.topics.length }} 个栏目</span>
-            <span class="chip">正文待收录</span>
+            <span class="chip">经验总结 · 非诊断标准</span>
             <span class="chip chip--gold">先出处，后内容</span>
           </div>
         </div>
@@ -34,8 +60,14 @@ const basePath = computed(() => `/${section.value.key}`)
         >
           <div class="topic-card__top">
             <span class="topic-card__num">{{ String(index + 1).padStart(2, '0') }}</span>
-            <span class="topic-card__status" :class="{ 'topic-card__status--ready': topic.id === 'acupuncture' }">
-              {{ topic.id === 'acupuncture' ? '已收录 · 非专业勿试' : '待收录' }}
+            <span
+              class="topic-card__status"
+              :class="{
+                'topic-card__status--ready': isReady(topic.id),
+                'topic-card__status--clinical': isClinical(topic.id),
+              }"
+            >
+              {{ topicStatus(topic.id) }}
             </span>
           </div>
           <h2>{{ topic.title }}</h2>
@@ -50,12 +82,12 @@ const basePath = computed(() => `/${section.value.key}`)
       <section class="topic-principles paper-panel">
         <div>
           <span class="eyebrow">EDITORIAL RULE</span>
-          <h2>篇目先立，正文后录</h2>
+          <h2>经验与原文分开</h2>
         </div>
         <div>
           <p>
-            这些页面目前是栏目框架，不展示没有出处的具体方药、剂量或操作。
-            收到典籍原文、医案或你的讲义后，按“书名 · 卷/条 · 原文”逐条录入，再补按语。
+            看诊十问、治疗法门与望诊经验，都是传统中医的经验整理，不是绝对诊断标准。
+            页面把“经验条目”和“经典/讲义出处”分开标注；具体方药、剂量与操作，仍以原书和执业医师判断为准。
           </p>
           <p class="topic-principles__links">
             <RouterLink class="text-link" to="/classics">查看医家经典书籍 →</RouterLink>
@@ -68,6 +100,46 @@ const basePath = computed(() => `/${section.value.key}`)
 </template>
 
 <style scoped>
+.clinical-banner {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-top: 22px;
+  padding: 16px 18px;
+  border: 1px solid rgba(163, 58, 43, 0.32);
+  border-left: 4px solid var(--cinnabar);
+  border-radius: 4px;
+  background: rgba(163, 58, 43, 0.055);
+}
+
+.clinical-banner__mark {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 auto;
+  border: 1px solid var(--cinnabar);
+  border-radius: 50%;
+  color: var(--cinnabar);
+  font-family: var(--serif);
+  font-size: 0.95rem;
+}
+
+.clinical-banner strong {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--cinnabar);
+  font-family: var(--serif);
+  font-size: 0.98rem;
+}
+
+.clinical-banner p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+  line-height: 1.75;
+}
+
 .topic-hero {
   display: flex;
   justify-content: space-between;
@@ -169,6 +241,11 @@ const basePath = computed(() => `/${section.value.key}`)
 .topic-card__status--ready {
   background: rgba(190, 78, 58, 0.1);
   color: var(--cinnabar);
+}
+
+.topic-card__status--clinical {
+  background: rgba(176, 138, 74, 0.12);
+  color: #8a6a35;
 }
 
 .topic-card h2 {

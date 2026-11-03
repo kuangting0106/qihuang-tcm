@@ -2,7 +2,10 @@
 import { computed } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import AcupunctureTopic from '@/components/AcupunctureTopic.vue'
+import InspectionTopic from '@/components/InspectionTopic.vue'
 import MoxibustionTopic from '@/components/MoxibustionTopic.vue'
+import TenQuestionsTopic from '@/components/TenQuestionsTopic.vue'
+import TreatmentPrinciplesTopic from '@/components/TreatmentPrinciplesTopic.vue'
 import { findTopic, getTopicSection } from '@/data/topics'
 
 const route = useRoute()
@@ -10,6 +13,14 @@ const section = computed(() => getTopicSection(String(route.meta.section || 'met
 const topic = computed(() => findTopic(section.value.key, String(route.params.id)))
 const isAcupuncture = computed(() => section.value.key === 'methods' && topic.value?.id === 'acupuncture')
 const isMoxibustion = computed(() => section.value.key === 'methods' && topic.value?.id === 'moxibustion')
+const isTenQuestions = computed(() => section.value.key === 'methods' && topic.value?.id === 'ten-questions')
+const isTreatmentMethods = computed(
+  () => section.value.key === 'methods' && topic.value?.id === 'treatment-methods',
+)
+const isInspection = computed(() => section.value.key === 'methods' && topic.value?.id === 'inspection')
+const isClinicalTopic = computed(
+  () => isTenQuestions.value || isTreatmentMethods.value || isInspection.value,
+)
 </script>
 
 <template>
@@ -31,11 +42,22 @@ const isMoxibustion = computed(() => section.value.key === 'methods' && topic.va
             <p>{{ topic.subtitle }}</p>
           </div>
           <span class="chip" :class="isAcupuncture || isMoxibustion ? 'chip--cinnabar' : 'chip--gold'">
-            {{ isAcupuncture ? '含针刺操作 · 非专业勿试' : isMoxibustion ? '含艾灸操作 · 非专业勿试' : '正文待收录' }}
+            {{
+              isAcupuncture
+                ? '含针刺操作 · 非专业勿试'
+                : isMoxibustion
+                  ? '含艾灸操作 · 非专业勿试'
+                  : isClinicalTopic
+                    ? '经验总结 · 非诊断标准'
+                    : '正文待收录'
+            }}
           </span>
         </header>
 
-        <AcupunctureTopic v-if="isAcupuncture" />
+        <TenQuestionsTopic v-if="isTenQuestions" />
+        <TreatmentPrinciplesTopic v-else-if="isTreatmentMethods" />
+        <InspectionTopic v-else-if="isInspection" />
+        <AcupunctureTopic v-else-if="isAcupuncture" />
         <MoxibustionTopic v-else-if="isMoxibustion" />
 
         <div v-else class="topic-detail-layout">

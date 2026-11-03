@@ -11,12 +11,12 @@ export const methodTopics: Topic[] = [
   {
     id: 'ten-questions',
     title: '看诊十问',
-    subtitle: '问诊框架与记录模板：从寒热、汗、头身、饮食、二便等入口建立信息表。',
+    subtitle: '十问提纲、女性与儿童附问、病因诱因与记录模板；经验总结，非诊断标准。',
   },
   {
     id: 'treatment-methods',
     title: '治疗法门',
-    subtitle: '治法与方药的组织方式：先辨病机，再谈治法、方药与调护。',
+    subtitle: '虚实总纲、表里先后、寒湿水饮、实邪与阴实的处理顺序；经验总结，非处方。',
   },
   {
     id: 'cancer-methods',
@@ -31,12 +31,7 @@ export const methodTopics: Topic[] = [
   {
     id: 'inspection',
     title: '望诊',
-    subtitle: '望神、色、形、态与舌象的观察记录；图谱与条文待补。',
-  },
-  {
-    id: 'listening',
-    title: '听诊',
-    subtitle: '闻诊/听诊资料栏：声音、气息与咳嗽等信息如何记录。',
+    subtitle: '山根、手掌、眼目、触诊与语言姿态的望诊经验；单看一处不能定病。',
   },
   {
     id: 'treatment-order',
@@ -77,7 +72,7 @@ export const topicSections = {
     key: 'methods' as const,
     eyebrow: 'METHOD / 治疗法门篇',
     title: '治疗法门篇',
-    lead: '把看诊、辨证、治法与记录方法拆成可检索的篇目。第一版先立栏目与出处字段，正文逐条录入。',
+    lead: '把看诊、辨证、治法与记录方法拆成可检索的篇目。以下内容为经验总结，不代表绝对正确，仅供学习参考，不能替代专业诊断。',
     topics: methodTopics,
   },
   cases: {

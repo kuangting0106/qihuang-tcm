@@ -108,7 +108,7 @@ const modules = computed(() => [
           <div>
             <span class="eyebrow">METHOD / 治疗法门篇</span>
             <h3>治疗法门篇</h3>
-            <p>看诊十问、脉诊、望诊、听诊、治疗法门、治癌法门、治病先后主次、灸、针。</p>
+            <p>看诊十问、脉诊、望诊、治疗法门、治癌法门、治病先后主次、灸、针。</p>
           </div>
           <span class="extra-card__count">{{ methodTopics.length }} 个栏目 →</span>
         </RouterLink>
