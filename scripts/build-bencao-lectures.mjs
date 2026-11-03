@@ -71,6 +71,59 @@ const GROUP_DEFS = [
   },
 ]
 
+// 现代罕用、基原待考或已不再使用的条目，按整理要求从讲义目录中隐藏；
+// 源 Markdown 保留备查，不删除原始资料。
+const HIDDEN_ENTRY_IDS = new Set([
+  'shangjing-089', // 别羁
+  'shangjing-090', // 屈草
+  'shangjing-091', // 淮木
+  'zhongjing-151', // 孔公孽
+  'zhongjing-152', // 殷孽
+  'zhongjing-154', // 理石
+  'zhongjing-155', // 长石
+  'zhongjing-156', // 肤青
+  'zhongjing-158', // 枲耳实（今名苍耳子）
+  'zhongjing-217', // 白棘
+  'zhongjing-222', // 白马茎
+  'zhongjing-226', // 牡狗阴茎（今名狗鞭）
+  'zhongjing-229', // 燕屎
+  'zhongjing-230', // 天鼠屎
+  'zhongjing-235', // 蚱蝉
+  'zhongjing-236', // 蛴螬
+  'zhongjing-241', // 蛞蝓
+  'zhongjing-243', // 木虻（今名虻虫）
+  'zhongjing-244', // 虻虫（木虻今名）
+  'zhongjing-251', // 黍米（今名黄米）
+  'zhongjing-252', // 蓼实
+  'zhongjing-253', // 葱实（今名葱子）
+  'xiajing-262', // 冬灰
+  'xiajing-280', // 恒山（今名常山）
+  'xiajing-285', // 雚菌
+  'xiajing-289', // 茵芋
+  'xiajing-299', // 鬼臼
+  'xiajing-301', // 女青
+  'xiajing-303', // 蔺茹
+  'xiajing-304', // 乌韭
+  'xiajing-305', // 鹿藿
+  'xiajing-308', // 陆英（今名接骨草）
+  'xiajing-310', // 牛扁
+  'xiajing-323', // 古南（石南）
+  'xiajing-324', // 黄环
+  'xiajing-325', // 溲疏
+  'xiajing-328', // 栾花
+  'xiajing-329', // 蔓椒
+  'xiajing-330', // 豚卵
+  'xiajing-331', // 麋脂
+  'xiajing-332', // （鼯）鼠
+  'xiajing-333', // 六畜毛蹄甲
+  'xiajing-334', // 虾蟆
+  'xiajing-335', // 马刀
+  'xiajing-347', // 马陆
+  'xiajing-348', // 地胆
+  'xiajing-349', // 鼠妇
+  'xiajing-350', // 萤火（今名萤火虫）
+])
+
 const ORIGINAL_LABELS = new Set(['本经原文', '本经', '本草原文', '本绖原文', '原经文'])
 const NISHI_LABELS = new Set(['倪注', '倪师用法'])
 const STUDY_LABELS = new Set([
@@ -478,14 +531,17 @@ function readGroup(def) {
 
   for (const name of fs.readdirSync(dir)) {
     if (!name.endsWith('.md')) continue
-    const text = fs.readFileSync(path.join(dir, name), 'utf8')
     const base = name.replace(/\.md$/, '')
 
     if (/^0\./.test(base)) continue
 
-    const parsed = parseMarkdown(text, { intro: def.id === 'intro' })
     const numberMatch = base.match(/^(\d+)\./)
     const number = numberMatch ? Number(numberMatch[1]) : null
+    const entryId = `${def.id}-${number !== null ? String(number).padStart(3, '0') : ''}`
+    if (number !== null && HIDDEN_ENTRY_IDS.has(entryId)) continue
+
+    const text = fs.readFileSync(path.join(dir, name), 'utf8')
+    const parsed = parseMarkdown(text, { intro: def.id === 'intro' })
     const fix = number !== null ? TITLE_FIXES[`${def.id}-${number}`] : null
     const fileTitle = base.replace(/^\d+\./, '')
     const title = fix?.title ?? (def.id === 'intro' ? fileTitle : parsed.title)
@@ -613,7 +669,7 @@ for (const group of groups) {
   }
 }
 
-const EXPECTED_MIN = { intro: 5, shangjing: 130, zhongjing: 100, xiajing: 95, nishi: 25, editor: 30 }
+const EXPECTED_MIN = { intro: 5, shangjing: 130, zhongjing: 90, xiajing: 70, nishi: 25, editor: 30 }
 for (const [id, count] of Object.entries(EXPECTED_MIN)) {
   const actual = groups.find((g) => g.id === id)?.entries.length ?? 0
   if (actual < count) errors.push(`${id}: 条目数少于 ${count}，实际 ${actual}`)
@@ -687,7 +743,7 @@ const catalog = {
   items: catalogItems,
 }
 
-if (catalog.total < 390 || catalog.threeRanks < 340) {
+if (catalog.total < 360 || catalog.threeRanks < 300) {
   console.error(
     `本草讲义目录条数异常：total=${catalog.total}，threeRanks=${catalog.threeRanks}`,
   )

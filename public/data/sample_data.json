@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "contentVersion": "2026.11.1-prototype",
-  "generatedAt": "2026-11-03T11:41:39.126Z",
+  "generatedAt": "2026-11-03T12:03:51.739Z",
   "title": "岐黄图鉴",
   "disclaimer": "本站为中医知识学习原型，不构成诊疗建议。针刺、艾灸、用药须由执业中医师辨证操作；方剂与药性内容请以原书及现行标准为准。",
   "contentPrinciples": [
@@ -3930,7 +3930,7 @@
         "dazao": "12 个（劈）",
         "gancao": "6 g（炙）"
       },
-      "modernGramNote": "本站中使用方剂用量不等于实际处方的用量。",
+      "modernGramNote": "本站中使用方剂用量不等于实际处方的用量。一钱≈3.75克。",
       "modernDoseNote": "按“一两 = 现今的一钱”直接折算：原方三两即今用三钱，二两即二钱；大枣仍按枚单独计量。折算值只作经方用量参考，不是临床处方。",
       "symptomTags": [
         "发热",
@@ -4344,7 +4344,7 @@
         "dazao": "12 个（劈）",
         "gancao": "12 g（炙）"
       },
-      "modernGramNote": "本站中使用方剂用量不等于实际处方的用量。",
+      "modernGramNote": "本站中使用方剂用量不等于实际处方的用量。一钱≈3.75克。",
       "modernDoseNote": "今用剂量按常见今用配比录入：柴胡、半夏各 5 钱，黄芩、人参、甘草、生姜各 3 钱，大枣 12 个（劈）。5:3:3:5:3:3 为柴、芩、参、半、草、姜的今用比例，大枣按个单独计量。今用配比与原文按“一两 = 一钱”直接折算不完全等同，也不是《伤寒论》原文。",
       "symptomTags": [
         "往来寒热",
@@ -4591,7 +4591,7 @@
         "dazao": "12 枚（劈）",
         "shanghan-herb-n326": "4 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -4728,7 +4728,7 @@
         "dazao": "12 枚",
         "shanghan-herb-q26k": "1 枚（炮，去皮破八片）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -4843,7 +4843,7 @@
         "dazao": "12 枚",
         "shengjiang": "3 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -4969,7 +4969,7 @@
         "dazao": "12 枚",
         "shanghan-herb-q26k": "1 枚（炮，去皮，破八片）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -5117,7 +5117,7 @@
         "dazao": "4 枚",
         "shanghan-herb-i05u": "24 个（汤浸，去皮尖）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -5265,7 +5265,7 @@
         "gancao": "约 1.08 钱",
         "dazao": "5 枚（劈）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -5393,7 +5393,7 @@
         "shanghan-herb-lw68": "6 合（原量）",
         "renshen": "2 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -5541,7 +5541,7 @@
         "shanghan-herb-rvc9": "0.75 钱",
         "shanghan-herb-l43g": "1 钱（碎，绵囊）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -5679,7 +5679,7 @@
         "shanghan-herb-kpxu": "3 钱",
         "dazao": "12 枚"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -5775,7 +5775,7 @@
         "gancao": "4 钱（炙）",
         "shanghan-herb-gk2y": "2 钱（炮）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -5870,7 +5870,7 @@
         "baishao": "4 钱",
         "gancao": "4 钱（炙）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -5977,7 +5977,7 @@
         "gancao": "2 钱（炙）",
         "shanghan-herb-mvbf": "8 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -6084,7 +6084,7 @@
         "shanghan-herb-gk2y": "1.5 钱",
         "shanghan-herb-q26k": "1 枚（生用去皮，破八片）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -6232,7 +6232,7 @@
         "shengjiang": "3 钱",
         "dazao": "12 枚（劈）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -6391,7 +6391,7 @@
         "dazao": "12 枚（劈）",
         "shanghan-herb-hk8dg": "8 钱（洗）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -6508,7 +6508,7 @@
         "huangqin": "3 钱",
         "shanghan-herb-rsm2": "3 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -6625,7 +6625,7 @@
         "gancao": "1 钱（炙）",
         "shanghan-herb-i05u": "70 个（去皮尖）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -6773,7 +6773,7 @@
         "dazao": "12 枚（劈）",
         "shanghan-herb-1xyec4y": "见原文"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -6933,7 +6933,7 @@
         "shanghan-herb-bx7f5": "8 钱",
         "banxia": "0.5 升（洗）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -7081,7 +7081,7 @@
         "shanghan-herb-esbe": "2 钱（炙，去皮）",
         "shanghan-herb-i05u": "50 枚（去皮尖）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -7178,7 +7178,7 @@
         "shanghan-herb-gk2y": "1 钱",
         "shanghan-herb-q26k": "1 枚（生用去皮破八片）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -7314,7 +7314,7 @@
         "shengjiang": "4 钱（切）",
         "dazao": "12 枚（劈）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -7432,7 +7432,7 @@
         "gancao": "2 钱",
         "shanghan-herb-l43g": "8 钱（打碎绵囊）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -7527,7 +7527,7 @@
         "guizhi": "4 钱（去皮）",
         "gancao": "2 钱（炙）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -7643,7 +7643,7 @@
         "dazao": "15 枚（劈）",
         "guizhi": "3 钱（去皮）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -7769,7 +7769,7 @@
         "renshen": "1 钱",
         "gancao": "2 钱（炙）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -7886,7 +7886,7 @@
         "shanghan-herb-kpxu": "2 钱",
         "gancao": "2 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -7993,7 +7993,7 @@
         "gancao": "2 钱（炙）",
         "shanghan-herb-q26k": "2 枚（炮去皮，破八片）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -8121,7 +8121,7 @@
         "gancao": "2 钱（炙）",
         "shanghan-herb-gk2y": "1.5 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -8250,7 +8250,7 @@
         "guizhi": "0.5 钱（去皮）",
         "shanghan-herb-kpxu": "0.75 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -8366,7 +8366,7 @@
         "shengjiang": "3 钱（切）",
         "gancao": "1 钱（炙）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -8455,7 +8455,7 @@
         "shanghan-herb-i6vk": "14 枚（劈）",
         "shanghan-herb-qw9c": "4 合（绵裹）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -8562,7 +8562,7 @@
         "gancao": "2 钱",
         "shanghan-herb-qw9c": "4 合（原量）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -8670,7 +8670,7 @@
         "shanghan-herb-esbe": "4 钱（炙）",
         "shanghan-herb-i53f": "4 合（原量）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -8778,7 +8778,7 @@
         "shanghan-herb-gk2y": "2 钱",
         "shanghan-herb-qw9c": "4 合（原量）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -8907,7 +8907,7 @@
         "shanghan-herb-kpxu": "2 钱（炙）",
         "shanghan-herb-q26k": "1 枚（炮）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -9047,7 +9047,7 @@
         "shanghan-herb-n150": "3 钱",
         "shanghan-herb-gk2y": "3 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -9157,7 +9157,7 @@
         "baishao": "见原文",
         "shanghan-herb-keep": "见原文"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -9294,7 +9294,7 @@
         "shengjiang": "3 钱（切）",
         "shanghan-herb-mrzy": "1 升（原量）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -9452,7 +9452,7 @@
         "dazao": "12 枚（劈）",
         "shanghan-herb-g1a5": "2 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -9608,7 +9608,7 @@
         "dazao": "12 枚",
         "shanghan-herb-mvbf": "2 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -9736,7 +9736,7 @@
         "shanghan-herb-mvbf": "2 钱",
         "gancao": "2 钱（炙）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -9926,7 +9926,7 @@
         "shanghan-herb-g1a5": "2 钱",
         "shanghan-herb-k70t": "1.5 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -10074,7 +10074,7 @@
         "dazao": "12 枚（劈）",
         "shanghan-herb-nkli": "3 钱（洗，去腥）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -10160,7 +10160,7 @@
       "modernGramDoses": {
         "guizhi": "2 钱（于桂枝汤中加桂枝）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -10288,7 +10288,7 @@
         "shanghan-herb-rzu7": "2 钱",
         "shanghan-herb-n150": "4 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -10407,7 +10407,7 @@
         "shanghan-herb-i5zy": "20 个（去皮尖）",
         "shanghan-herb-g1a5": "3 钱（酒洗(浸）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -10526,7 +10526,7 @@
         "shanghan-herb-i5zy": "20 个（去皮尖）",
         "shanghan-herb-g1a5": "3 钱（酒浸）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -10645,7 +10645,7 @@
         "shanghan-herb-h4g7x": "0.5 升（原量）",
         "shanghan-herb-i05u": "0.5 升（去皮尖，熬黑）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -10753,7 +10753,7 @@
         "shanghan-herb-mvbf": "1 升（原量）",
         "shanghan-herb-kpii": "1 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -10860,7 +10860,7 @@
         "banxia": "0.5 升（洗）",
         "shanghan-herb-1x11ilp": "1 个"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -10946,7 +10946,7 @@
       "modernGramDoses": {
         "shanghan-herb-i0cd": "5 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -11054,7 +11054,7 @@
         "shanghan-herb-gr0y": "0.25 钱（去皮心熬黑，研如脂）",
         "shanghan-herb-ole8": "0.75 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -11220,7 +11220,7 @@
         "dazao": "6 枚（劈）",
         "shengjiang": "1.5 钱（切）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -11368,7 +11368,7 @@
         "shanghan-herb-k70t": "2 钱",
         "gancao": "2 钱（炙）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -11515,7 +11515,7 @@
         "shanghan-herb-rsm2": "1 钱",
         "dazao": "12 枚（劈）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -11633,7 +11633,7 @@
         "shanghan-herb-fpaw": "见原文",
         "dazao": "10 枚（劈）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -11730,7 +11730,7 @@
         "shanghan-herb-g1a5": "2 钱",
         "shanghan-herb-rsm2": "1 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -11830,7 +11830,7 @@
         "shanghan-herb-gevgge": "见原文",
         "shanghan-herb-lxo26z": "3 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -11948,7 +11948,7 @@
         "huangqin": "1 钱",
         "shanghan-herb-q26k": "1 枚（炮，去皮，破，别煮取汁）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -12105,7 +12105,7 @@
         "shanghan-herb-rsm2": "1 钱",
         "dazao": "12 枚（劈）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -12242,7 +12242,7 @@
         "dazao": "12 枚（劈）",
         "shanghan-herb-rsm2": "1 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -12339,7 +12339,7 @@
         "shanghan-herb-lanrn": "16 钱（碎）",
         "shanghan-herb-i80ry": "16 钱（碎）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -12486,7 +12486,7 @@
         "gancao": "3 钱（炙）",
         "banxia": "8 钱（洗）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -12613,7 +12613,7 @@
         "renshen": "3 钱",
         "shanghan-herb-gk2y": "3 钱（切）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -12710,7 +12710,7 @@
         "shanghan-herb-klra": "0.25 钱（熬黄）",
         "shanghan-herb-l5z7f": "0.25 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -12831,7 +12831,7 @@
         "shanghan-herb-jzo6": "3 钱",
         "shanghan-herb-kqv9": "1 枚"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -12947,7 +12947,7 @@
         "shanghan-herb-mxdu": "2 钱",
         "dazao": "12 枚（劈）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -13083,7 +13083,7 @@
         "banxia": "0.5 升（原量）",
         "shengjiang": "1.5 钱（一本作三两）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -13230,7 +13230,7 @@
         "banxia": "0.5 升（洗）",
         "dazao": "12 枚（劈）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -13356,7 +13356,7 @@
         "gancao": "2 钱（炙）",
         "dazao": "12 枚（劈）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -13483,7 +13483,7 @@
         "dazao": "12 枚（劈）",
         "shengjiang": "3 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -13600,7 +13600,7 @@
         "shanghan-herb-kpxu": "2 钱",
         "guizhi": "4 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -13718,7 +13718,7 @@
         "gancao": "2 钱",
         "shanghan-herb-lw68": "6 合（原量）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -13887,7 +13887,7 @@
         "shanghan-herb-noy24": "0.5 升（原量）",
         "dazao": "30 枚（劈）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14006,7 +14006,7 @@
         "shanghan-herb-i53f": "5 枚（炙）",
         "shanghan-herb-mvbf": "3 合（原量）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14114,7 +14114,7 @@
         "shanghan-herb-esbe": "2 钱（炙去皮）",
         "shanghan-herb-i53f": "3 枚（大者，炙）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14244,7 +14244,7 @@
         "shanghan-herb-ji9u": "1 钱（碎）",
         "shanghan-herb-j4wu": "1 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14376,7 +14376,7 @@
         "shanghan-herb-n150": "见原文",
         "shanghan-herb-h2d1m": "见原文"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14463,7 +14463,7 @@
       "modernGramDoses": {
         "shanghan-herb-qos": "7 合（原量）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14550,7 +14550,7 @@
       "modernGramDoses": {
         "shanghan-herb-dbu4c": "原方缺"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14629,7 +14629,7 @@
       "modernGramDoses": {
         "shanghan-herb-bqasta": "1 枚"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14737,7 +14737,7 @@
         "shanghan-herb-i6vk": "14 枚",
         "shanghan-herb-g1a5": "2 钱（去皮）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14853,7 +14853,7 @@
         "shengjiang": "6 钱（切）",
         "dazao": "12 枚（劈）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -14994,7 +14994,7 @@
         "shanghan-herb-esbe": "16 钱（炙去皮）",
         "shanghan-herb-i05u": "16 钱（去皮尖，研作脂）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -15101,7 +15101,7 @@
         "gancao": "1 钱（炙）",
         "shanghan-herb-rkp7": "2 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -15261,7 +15261,7 @@
         "shengjiang": "2 钱",
         "gancao": "2 钱（炙）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -15387,7 +15387,7 @@
         "shengjiang": "3 钱（切）",
         "dazao": "2 枚（擘）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -15524,7 +15524,7 @@
         "dazao": "12 枚（擘）",
         "shanghan-herb-g1a5": "1 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -15632,7 +15632,7 @@
         "shanghan-herb-mcnp": "2 钱",
         "shanghan-herb-q26k": "1 枚（炮，去皮，破八片）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -15732,7 +15732,7 @@
         "shanghan-herb-mcnp": "见原文",
         "shanghan-herb-q26k": "见原文"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -15839,7 +15839,7 @@
         "gancao": "2 钱（炙）",
         "shanghan-herb-q26k": "1 枚（炮，去皮）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -15968,7 +15968,7 @@
         "shanghan-herb-nm7o5": "2 枚",
         "shanghan-herb-q9hz": "2 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -16097,7 +16097,7 @@
         "shanghan-herb-kpxu": "4 钱",
         "shanghan-herb-mxdu": "3 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -16205,7 +16205,7 @@
         "shanghan-herb-gk2y": "1 钱",
         "shanghan-herb-lw68": "1 升（原量）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -16291,7 +16291,7 @@
       "modernGramDoses": {
         "shanghan-herb-kam2": "16 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -16376,7 +16376,7 @@
       "modernGramDoses": {
         "gancao": "2 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -16472,7 +16472,7 @@
         "banxia": "14 枚",
         "shanghan-herb-rebz": "10 枚（去黄，内上苦酒，着鸡子壳中）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -16577,7 +16577,7 @@
         "guizhi": "见原文",
         "gancao": "见原文"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -16685,7 +16685,7 @@
         "shanghan-herb-gk2y": "1 钱",
         "shanghan-herb-q26k": "1 枚（生用，去皮破八片）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -16815,7 +16815,7 @@
         "shanghan-herb-dwat": "5 合（原量）",
         "shanghan-herb-hhr6t": "1 合（原量）"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -16922,7 +16922,7 @@
         "shanghan-herb-jc447e": "1 枚（生用，去皮，破八片）",
         "shanghan-herb-gk2y": "3 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -17039,7 +17039,7 @@
         "chaihu": "见原文",
         "shanghan-herb-mxdu": "见原文"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -17222,7 +17222,7 @@
         "renshen": "6 钱",
         "shanghan-herb-rkp7": "6 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -17371,7 +17371,7 @@
         "gancao": "2 钱（炙）",
         "shanghan-herb-p8bz": "2 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -17541,7 +17541,7 @@
         "shanghan-herb-cz1i3": "2 升（原量）",
         "shengjiang": "8 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -17767,7 +17767,7 @@
         "gancao": "0.25 钱",
         "shanghan-herb-ds33h": "0.25 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -17884,7 +17884,7 @@
         "huangqin": "3 钱",
         "renshen": "3 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],
@@ -18003,7 +18003,7 @@
         "shanghan-herb-rkp7": "3 钱",
         "shanghan-herb-ldvs": "3 钱"
       },
-      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
+      "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
       "corePairs": [],
       "commentaries": [],

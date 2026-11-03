@@ -447,9 +447,9 @@ try {
 }
 const expectedBencaoCounts = {
   intro: 5,
-  shangjing: 140,
-  zhongjing: 111,
-  xiajing: 101,
+  shangjing: 137,
+  zhongjing: 93,
+  xiajing: 75,
   nishi: 27,
   editor: 34,
 }
@@ -542,12 +542,12 @@ try {
   errors.push('缺少 public/data/bencao-lectures/catalog.json')
 }
 if (bencaoCatalog) {
-  if (bencaoCatalog.total !== 413) errors.push(`讲义目录总数应为 413，实际 ${bencaoCatalog.total}`)
-  if (bencaoCatalog.threeRanks !== 352) {
-    errors.push(`三经目录条数应为 352，实际 ${bencaoCatalog.threeRanks}`)
+  if (bencaoCatalog.total !== 366) errors.push(`讲义目录总数应为 366，实际 ${bencaoCatalog.total}`)
+  if (bencaoCatalog.threeRanks !== 305) {
+    errors.push(`三经目录条数应为 305，实际 ${bencaoCatalog.threeRanks}`)
   }
-  if (bencaoChars !== 269385) {
-    errors.push(`讲义总字数应为 269385，实际 ${bencaoChars}`)
+  if (bencaoChars !== 266233) {
+    errors.push(`讲义总字数应为 266233，实际 ${bencaoChars}`)
   }
   if (bencaoCatalog.items?.length !== bencaoCatalog.total) {
     errors.push('讲义目录 items 与 total 不一致')
@@ -555,9 +555,9 @@ if (bencaoCatalog) {
   const withFlavor = bencaoCatalog.items.filter((item) => item.flavorTags?.length).length
   const withNature = bencaoCatalog.items.filter((item) => item.nature).length
   const withMeridian = bencaoCatalog.items.filter((item) => item.meridianIds?.length).length
-  if (withFlavor < 390) errors.push(`带性味的讲义药材过少：${withFlavor}/413`)
-  if (withNature < 390) errors.push(`带气（寒热温凉平）的讲义药材过少：${withNature}/413`)
-  if (withMeridian < 120) errors.push(`带归经的讲义药材过少：${withMeridian}/413`)
+  if (withFlavor < 355) errors.push(`带性味的讲义药材过少：${withFlavor}/366`)
+  if (withNature < 355) errors.push(`带气（寒热温凉平）的讲义药材过少：${withNature}/366`)
+  if (withMeridian < 120) errors.push(`带归经的讲义药材过少：${withMeridian}/366`)
   const seenNames = new Set()
   for (const item of bencaoCatalog.items) {
     if (!item.pinyin) errors.push(`讲义目录 ${item.name}: 缺少拼音`)

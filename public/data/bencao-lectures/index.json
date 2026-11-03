@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T05:06:27.777Z",
+  "generatedAt": "2026-11-03T12:03:52.496Z",
   "source": {
     "id": "nihaixia-bencao",
     "title": "倪海厦《神农本草经》讲义",
@@ -24,24 +24,24 @@
       "title": "上经",
       "subtitle": "上药养命",
       "description": "上药共一百二十种，为君主养命以应天，皆无毒，多服久服不伤人；欲轻身益气、不老延年者，本于上经。",
-      "count": 140,
-      "charCount": 114006
+      "count": 137,
+      "charCount": 113893
     },
     {
       "id": "zhongjing",
       "title": "中经",
       "subtitle": "中药遏病",
       "description": "中药共一百二十种，为臣，主养性以应人，有毒无毒斟酌其宜；欲遏病补虚羸者，本于中经。",
-      "count": 111,
-      "charCount": 55319
+      "count": 93,
+      "charCount": 53516
     },
     {
       "id": "xiajing",
       "title": "下经",
       "subtitle": "下药除邪",
       "description": "下药共一百二十五种，为佐使，主治病以应地，多毒不可久服；欲除寒热邪气、破积聚、愈疾者，本于下经。",
-      "count": 101,
-      "charCount": 38970
+      "count": 75,
+      "charCount": 37734
     },
     {
       "id": "nishi",
@@ -132,11 +132,6 @@
       "groupId": "zhongjing",
       "entryId": "zhongjing-233",
       "name": "鳖甲"
-    },
-    "zhongjing:zhongjing-244": {
-      "groupId": "zhongjing",
-      "entryId": "zhongjing-243",
-      "name": "虻虫"
     }
   }
 }

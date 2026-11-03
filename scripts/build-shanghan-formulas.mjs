@@ -489,7 +489,7 @@ function extractFromFile(file) {
         },
         modernGramDoses,
         modernGramNote:
-          '今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。',
+          '今用剂量按“一两 = 现今的一钱”折算，一钱≈3.75克；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。',
         modifications: [],
         corePairs: [],
         commentaries: [],
