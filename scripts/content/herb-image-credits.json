@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T06:37:34.863Z",
+  "generatedAt": "2026-11-03T07:29:26.374Z",
   "items": [
     {
       "name": "当归",
@@ -27,15 +27,6 @@
       "credit": "© 江国彬 / iNaturalist",
       "license": "CC BY-NC",
       "sourceUrl": "https://www.inaturalist.org/taxa/786049"
-    },
-    {
-      "name": "茯苓",
-      "latin": "Wolfiporia cocos",
-      "taxonId": 1169836,
-      "file": "/images/herbs/lecture/1169836.jpeg",
-      "credit": "© Alan Rockefeller / iNaturalist",
-      "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/1169836"
     },
     {
       "name": "陈皮",
@@ -1125,6 +1116,126 @@
       "credit": "© Douglas Goldman / iNaturalist",
       "license": "CC BY-SA",
       "sourceUrl": "https://www.inaturalist.org/taxa/158806"
+    },
+    {
+      "name": "三七",
+      "latin": "Panax notoginseng",
+      "file": "/images/herbs/lecture/user-sanqi-plant.jpg",
+      "credit": "用户提供",
+      "license": "仅站内学习",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/user-sanqi-plant.jpg",
+          "kind": "植株",
+          "alt": "三七（植株）",
+          "credit": "用户提供",
+          "license": "仅站内学习"
+        },
+        {
+          "file": "/images/herbs/lecture/user-sanqi-slice.jpg",
+          "kind": "饮片",
+          "alt": "三七（切片）",
+          "credit": "用户提供",
+          "license": "仅站内学习"
+        }
+      ]
+    },
+    {
+      "name": "川芎",
+      "latin": "Conioselinum anthriscoides",
+      "file": "/images/herbs/lecture/user-chuanxiong-plant.jpg",
+      "credit": "用户提供",
+      "license": "仅站内学习",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/user-chuanxiong-plant.jpg",
+          "kind": "植株",
+          "alt": "川芎（植株）",
+          "credit": "用户提供",
+          "license": "仅站内学习"
+        },
+        {
+          "file": "/images/herbs/lecture/user-chuanxiong-slice.jpg",
+          "kind": "饮片",
+          "alt": "川芎（切片）",
+          "credit": "用户提供",
+          "license": "仅站内学习"
+        }
+      ]
+    },
+    {
+      "name": "肉苁蓉",
+      "latin": "Cistanche deserticola",
+      "file": "/images/herbs/lecture/user-roucongrong-whole.jpg",
+      "credit": "用户提供",
+      "license": "仅站内学习",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/user-roucongrong-whole.jpg",
+          "kind": "药材",
+          "alt": "肉苁蓉（整条与切片）",
+          "credit": "用户提供",
+          "license": "仅站内学习"
+        },
+        {
+          "file": "/images/herbs/lecture/user-roucongrong-cut.jpg",
+          "kind": "横切",
+          "alt": "肉苁蓉（横切面）",
+          "credit": "用户提供",
+          "license": "仅站内学习"
+        }
+      ]
+    },
+    {
+      "name": "防风",
+      "latin": "Saposhnikovia divaricata",
+      "file": "/images/herbs/lecture/user-fangfeng-plant.jpg",
+      "credit": "用户提供",
+      "license": "仅站内学习",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/user-fangfeng-plant.jpg",
+          "kind": "植株",
+          "alt": "防风（植株）",
+          "credit": "用户提供",
+          "license": "仅站内学习"
+        },
+        {
+          "file": "/images/herbs/lecture/user-fangfeng-root.jpg",
+          "kind": "根片",
+          "alt": "防风（根切片）",
+          "credit": "用户提供",
+          "license": "仅站内学习"
+        }
+      ]
+    },
+    {
+      "name": "茯苓",
+      "latin": "Wolfiporia cocos",
+      "file": "/images/herbs/lecture/user-fuling-whole.jpg",
+      "credit": "用户提供",
+      "license": "仅站内学习",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/user-fuling-whole.jpg",
+          "kind": "整块",
+          "alt": "茯苓（整块）",
+          "credit": "用户提供",
+          "license": "仅站内学习"
+        },
+        {
+          "file": "/images/herbs/lecture/user-fuling-cube.jpg",
+          "kind": "方块",
+          "alt": "茯苓（方块）",
+          "credit": "用户提供",
+          "license": "仅站内学习"
+        }
+      ]
     }
   ]
 }

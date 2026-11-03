@@ -40,8 +40,9 @@ export interface BencaoImage {
   alt: string
   credit: string
   license: string
-  sourceUrl: string
-  latin: string
+  sourceUrl?: string
+  latin?: string
+  kind?: string
 }
 
 export interface BencaoEntry {
@@ -59,6 +60,7 @@ export interface BencaoEntry {
   alsoKnownAs?: string[]
   profile?: BencaoProfile
   image?: BencaoImage
+  images?: BencaoImage[]
 }
 
 export interface BencaoGroupMeta {
@@ -133,6 +135,7 @@ export interface BencaoCatalogItem {
   sourceCategory: string
   profileSources: string[]
   image?: BencaoImage
+  images?: BencaoImage[]
   curatedId?: string
 }
 

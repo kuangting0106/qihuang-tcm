@@ -11,6 +11,30 @@ fs.mkdirSync(outDir, { recursive: true })
 
 const credits = []
 for (const species of herbSpecies) {
+  if (species.images?.length) {
+    const images = species.images.map((image) => ({
+      file: image.file,
+      kind: image.kind,
+      alt: image.alt,
+      credit: image.credit,
+      license: image.license,
+      ...(image.sourceUrl ? { sourceUrl: image.sourceUrl } : {}),
+    }))
+    const first = images[0]
+    credits.push({
+      name: species.name,
+      latin: species.latin,
+      ...(species.taxonId ? { taxonId: species.taxonId } : {}),
+      file: first.file,
+      credit: first.credit,
+      license: first.license,
+      sourceUrl: '',
+      images,
+    })
+    console.log(`${species.name}: ${images.length} images`)
+    continue
+  }
+
   const ext = path.extname(new URL(species.photoUrl).pathname) || '.jpg'
   const filename = `${species.taxonId}${ext}`
   const target = path.join(outDir, filename)

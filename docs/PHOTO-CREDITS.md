@@ -218,3 +218,17 @@
 > 仅收录 iNaturalist 中文名精确对应、拉丁学名明确且照片许可允许再利用的条目；每味一张，优先原植物或药材整体图。找不到可核实图片的条目继续显示“图片待补”，不以相似药材替代。
 
 本轮新增 116 味，连同原 9 味，`public/images/herbs/lecture/` 现有 125 味各一张；413 条目录中其余条目保留“图片待补”。白蒿、飞廉、石蚕、马先蒿、泽泻、青蒿、茵芋、水苏等存在同名异物或基原存疑，暂不配图。
+
+## 讲义药材补图（用户提供双图）
+
+三七、川芎、肉苁蓉、防风、茯苓 5 味原无可用授权照片，由用户提供植株/药材与饮片/切面对照图，每味 2 张；图片经 Lanczos 放大与轻度锐化后存入 `public/images/herbs/lecture/`。
+
+| 药材 | 图片 | 类型 | 来源 / 许可 |
+|---|---|---|---|
+| 三七 | `user-sanqi-plant.jpg`、`user-sanqi-slice.jpg` | 植株、饮片 | 用户提供 · 仅站内学习 |
+| 川芎 | `user-chuanxiong-plant.jpg`、`user-chuanxiong-slice.jpg` | 植株、饮片 | 用户提供 · 仅站内学习 |
+| 肉苁蓉 | `user-roucongrong-whole.jpg`、`user-roucongrong-cut.jpg` | 药材、横切 | 用户提供 · 仅站内学习 |
+| 防风 | `user-fangfeng-plant.jpg`、`user-fangfeng-root.jpg` | 植株、根片 | 用户提供 · 仅站内学习 |
+| 茯苓 | `user-fuling-whole.jpg`、`user-fuling-cube.jpg` | 整块、方块 | 用户提供 · 仅站内学习 |
+
+> 用户图未附外部许可声明，页面只标“用户提供 · 仅站内学习”，不伪造 iNaturalist 链接。其余药材仍按每味一张授权图处理，找不到则保留“图片待补”。

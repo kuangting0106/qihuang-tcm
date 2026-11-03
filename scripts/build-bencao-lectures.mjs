@@ -240,17 +240,34 @@ const imageCredits = fs.existsSync(creditsFile)
   : []
 const imageByName = new Map(imageCredits.map((item) => [item.name, item]))
 
-function buildImage(name) {
+function buildImages(name) {
   const credit = imageByName.get(name) ?? imageByName.get(canonicalName(name))
-  if (!credit) return null
-  return {
-    url: credit.file,
-    alt: `${canonicalName(name)}（${credit.latin}）`,
-    credit: credit.credit,
-    license: credit.license,
-    sourceUrl: credit.sourceUrl,
+  if (!credit) return []
+  const list = credit.images?.length
+    ? credit.images
+    : [
+        {
+          file: credit.file,
+          alt: `${canonicalName(name)}（${credit.latin}）`,
+          credit: credit.credit,
+          license: credit.license,
+          sourceUrl: credit.sourceUrl,
+        },
+      ]
+  return list.map((item) => ({
+    url: item.file,
+    alt: item.alt ?? `${canonicalName(name)}（${credit.latin}）`,
+    credit: item.credit ?? credit.credit,
+    license: item.license ?? credit.license,
+    sourceUrl: item.sourceUrl ?? credit.sourceUrl ?? '',
     latin: credit.latin,
-  }
+    ...(item.kind ? { kind: item.kind } : {}),
+  }))
+}
+
+const imageForEntry = (name) => {
+  const images = buildImages(name)
+  return { image: images[0] ?? null, images }
 }
 
 const MERIDIAN_MAP = {
@@ -492,8 +509,11 @@ function readGroup(def) {
     if (def.id !== 'intro') {
       entry.pinyin = pinyinFor(title)
       entry.profile = buildProfile(entry)
-      const image = buildImage(title)
-      if (image) entry.image = image
+      const gallery = imageForEntry(title)
+      if (gallery.image) {
+        entry.image = gallery.image
+        if (gallery.images.length > 1) entry.images = gallery.images
+      }
     }
     entries.push(entry)
   }
@@ -640,6 +660,7 @@ const catalogItems = groups
         therapyCategoryIds: profile.therapyCategoryIds,
         sourceCategory: profile.sourceCategory,
         image: entry.image,
+        images: entry.images,
         profileSources: profile.sources,
       }
       if (processingText) item.processingText = processingText

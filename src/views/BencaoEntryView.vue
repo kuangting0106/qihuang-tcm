@@ -19,6 +19,11 @@ const error = ref('')
 const groupId = computed(() => String(route.params.groupId ?? ''))
 const entryId = computed(() => String(route.params.entryId ?? ''))
 
+const galleryImages = computed(() => {
+  if (entry.value?.images?.length) return entry.value.images
+  return entry.value?.image ? [entry.value.image] : []
+})
+
 async function load(gid: string, eid: string) {
   loading.value = true
   error.value = ''
@@ -214,22 +219,31 @@ const studySections = computed(() =>
 
         <div class="detail-grid">
           <section class="gallery paper-panel" aria-label="药材图片">
-            <div v-if="entry.image" class="gallery__main">
-              <img :src="entry.image.url" :alt="entry.image.alt" loading="lazy" />
+            <div v-if="galleryImages.length" class="gallery__grid" :class="{ 'gallery__grid--pair': galleryImages.length > 1 }">
+              <figure v-for="(image, index) in galleryImages" :key="image.url" class="gallery__item">
+                <div class="gallery__main">
+                  <img :src="image.url" :alt="image.alt" />
+                </div>
+                <figcaption class="gallery__credit">
+                  <p>
+                    <span v-if="image.kind" class="gallery__kind">{{ image.kind }}</span>
+                    {{ image.alt }}
+                  </p>
+                  <small>
+                    {{ image.credit }} · {{ image.license }}
+                    <template v-if="image.sourceUrl">
+                      ·
+                      <a :href="image.sourceUrl" target="_blank" rel="noopener noreferrer">iNaturalist</a>
+                    </template>
+                  </small>
+                  <small v-if="image.latin">学名：{{ image.latin }}</small>
+                </figcaption>
+              </figure>
             </div>
             <div v-else class="gallery__empty">
               <span class="gallery__seal" aria-hidden="true">{{ entry.title.slice(0, 1) }}</span>
               <strong>图片待补</strong>
               <p>尚未找到可核实的基原照片，暂以印章占位，不拿相似药材替代。</p>
-            </div>
-
-            <div v-if="entry.image" class="gallery__credit">
-              <p>{{ entry.image.alt }}</p>
-              <small>
-                {{ entry.image.credit }} · {{ entry.image.license }} ·
-                <a :href="entry.image.sourceUrl" target="_blank" rel="noopener noreferrer">iNaturalist</a>
-              </small>
-              <small v-if="entry.image.latin">学名：{{ entry.image.latin }}</small>
             </div>
           </section>
 
@@ -557,6 +571,35 @@ const studySections = computed(() =>
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.gallery__grid {
+  display: grid;
+  gap: 1px;
+  background: var(--line);
+}
+
+.gallery__grid--pair {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.gallery__item {
+  min-width: 0;
+  background: var(--paper);
+}
+
+.gallery__grid--pair .gallery__main {
+  aspect-ratio: 1 / 1;
+}
+
+.gallery__kind {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 1px 6px;
+  border: 1px solid var(--line-strong);
+  color: var(--jade);
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
 }
 
 .gallery__empty {
@@ -903,6 +946,10 @@ const studySections = computed(() =>
 }
 
 @media (max-width: 700px) {
+  .gallery__grid--pair {
+    grid-template-columns: 1fr;
+  }
+
   .entry-nav {
     grid-template-columns: 1fr;
   }

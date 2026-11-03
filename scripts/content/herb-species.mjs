@@ -26,14 +26,6 @@ export const herbSpecies = [
     credit: '© 江国彬 / iNaturalist',
   },
   {
-    name: '茯苓',
-    latin: 'Wolfiporia cocos',
-    taxonId: 1169836,
-    photoUrl: 'https://inaturalist-open-data.s3.amazonaws.com/photos/54758845/medium.jpeg',
-    license: 'CC BY',
-    credit: '© Alan Rockefeller / iNaturalist',
-  },
-  {
     name: '陈皮',
     latin: 'Citrus reticulata',
     taxonId: 1611056,
@@ -1000,5 +992,105 @@ export const herbSpecies = [
     photoUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/241015444/medium.jpg",
     license: "CC BY-SA",
     credit: "© Douglas Goldman / iNaturalist",
+  },
+  {
+    name: "三七",
+    latin: "Panax notoginseng",
+    images: [
+      {
+        file: "/images/herbs/lecture/user-sanqi-plant.jpg",
+        kind: "植株",
+        alt: "三七（植株）",
+        credit: "用户提供",
+        license: "仅站内学习",
+      },
+      {
+        file: "/images/herbs/lecture/user-sanqi-slice.jpg",
+        kind: "饮片",
+        alt: "三七（切片）",
+        credit: "用户提供",
+        license: "仅站内学习",
+      },
+    ],
+  },
+  {
+    name: "川芎",
+    latin: "Conioselinum anthriscoides",
+    images: [
+      {
+        file: "/images/herbs/lecture/user-chuanxiong-plant.jpg",
+        kind: "植株",
+        alt: "川芎（植株）",
+        credit: "用户提供",
+        license: "仅站内学习",
+      },
+      {
+        file: "/images/herbs/lecture/user-chuanxiong-slice.jpg",
+        kind: "饮片",
+        alt: "川芎（切片）",
+        credit: "用户提供",
+        license: "仅站内学习",
+      },
+    ],
+  },
+  {
+    name: "肉苁蓉",
+    latin: "Cistanche deserticola",
+    images: [
+      {
+        file: "/images/herbs/lecture/user-roucongrong-whole.jpg",
+        kind: "药材",
+        alt: "肉苁蓉（整条与切片）",
+        credit: "用户提供",
+        license: "仅站内学习",
+      },
+      {
+        file: "/images/herbs/lecture/user-roucongrong-cut.jpg",
+        kind: "横切",
+        alt: "肉苁蓉（横切面）",
+        credit: "用户提供",
+        license: "仅站内学习",
+      },
+    ],
+  },
+  {
+    name: "防风",
+    latin: "Saposhnikovia divaricata",
+    images: [
+      {
+        file: "/images/herbs/lecture/user-fangfeng-plant.jpg",
+        kind: "植株",
+        alt: "防风（植株）",
+        credit: "用户提供",
+        license: "仅站内学习",
+      },
+      {
+        file: "/images/herbs/lecture/user-fangfeng-root.jpg",
+        kind: "根片",
+        alt: "防风（根切片）",
+        credit: "用户提供",
+        license: "仅站内学习",
+      },
+    ],
+  },
+  {
+    name: "茯苓",
+    latin: "Wolfiporia cocos",
+    images: [
+      {
+        file: "/images/herbs/lecture/user-fuling-whole.jpg",
+        kind: "整块",
+        alt: "茯苓（整块）",
+        credit: "用户提供",
+        license: "仅站内学习",
+      },
+      {
+        file: "/images/herbs/lecture/user-fuling-cube.jpg",
+        kind: "方块",
+        alt: "茯苓（方块）",
+        credit: "用户提供",
+        license: "仅站内学习",
+      },
+    ],
   },
 ]
