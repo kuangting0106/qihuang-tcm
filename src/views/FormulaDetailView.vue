@@ -533,60 +533,6 @@ watch(
             <button class="btn btn--ghost btn--small" type="button" @click="showGraph = true">查看关系图谱 →</button>
           </div>
         </div>
-
-        <aside class="commentary-column paper-panel">
-          <div class="section-head">
-            <div>
-              <p class="eyebrow">COMMENTARY / 历代解说</p>
-              <h2>历代医家解说</h2>
-            </div>
-          </div>
-
-          <p class="commentary-intro">
-            这一栏只收历代医家与古籍条文的原文解说，按“书名 · 卷/条 · 原文”逐条录入；
-            当代教材的归纳不放进这里。
-          </p>
-
-          <div v-if="formula.commentaries.length" class="commentary-grid">
-            <article v-for="c in formula.commentaries" :key="c.id" class="commentary-card">
-              <div class="commentary-card__meta">
-                <span>{{ c.era }}</span>
-                <span>{{ c.author }}</span>
-              </div>
-              <h3>{{ c.title }}</h3>
-              <p>{{ c.text }}</p>
-              <CitationBadge :citation-ids="c.citationIds" label="出处" compact />
-            </article>
-          </div>
-
-          <div v-else-if="formula.commentarySlots?.length" class="commentary-slots">
-            <article
-              v-for="(slot, index) in formula.commentarySlots"
-              :key="slot.id"
-              class="commentary-slot"
-              :class="`commentary-slot--${slot.kind}`"
-            >
-              <div class="commentary-slot__meta">
-                <span>{{ String(index + 1).padStart(2, '0') }} · {{ slot.label }}</span>
-                <span class="commentary-slot__status">{{ slot.status }}</span>
-              </div>
-              <h3>{{ slot.work }}</h3>
-              <p class="commentary-slot__locator">{{ slot.locator }}</p>
-              <blockquote class="commentary-slot__quote">{{ slot.quote }}</blockquote>
-              <p class="commentary-slot__hint">收到原文后替换占位文字，并补全书名与卷/条。</p>
-            </article>
-          </div>
-
-          <div v-else class="commentary-empty paper-panel">
-            <strong>历代医家解说待收录</strong>
-            <p>{{ formula.commentaryNote }}</p>
-          </div>
-
-          <div v-if="formula.additionalIndications.length" class="additional-indications">
-            <h3>可解其他病症</h3>
-            <SourcedText v-for="(s, i) in formula.additionalIndications" :key="i" :claim="s" block />
-          </div>
-        </aside>
       </section>
 
       <section class="modification-section">
@@ -1203,10 +1149,7 @@ watch(
 }
 
 .graph-commentary-section {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.62fr);
-  gap: 20px;
-  align-items: start;
+  display: block;
 }
 
 .graph-column {
@@ -1243,33 +1186,6 @@ watch(
   margin: 4px 0 12px;
   color: var(--ink-soft);
   font-size: 0.78rem;
-}
-
-.commentary-column {
-  padding: 18px 20px;
-  align-self: stretch;
-}
-
-.commentary-column .section-head {
-  margin-bottom: 10px;
-}
-
-.commentary-column .section-head h2 {
-  font-size: 1.3rem;
-}
-
-.commentary-column .commentary-grid {
-  grid-template-columns: 1fr;
-}
-
-.commentary-column .commentary-card {
-  padding: 14px 15px;
-}
-
-.commentary-column .commentary-empty {
-  padding: 14px 0 0;
-  border: 0;
-  background: transparent;
 }
 
 .switch {
@@ -1395,148 +1311,6 @@ watch(
   font-size: 0.74rem;
 }
 
-.commentary-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-}
-
-.commentary-card {
-  padding: 17px 18px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: rgba(255, 252, 245, 0.52);
-}
-
-.commentary-card__meta {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  color: var(--ink-faint);
-  font-size: 0.66rem;
-}
-
-.commentary-card__meta span:first-child {
-  color: var(--cinnabar);
-}
-
-.commentary-card h3 {
-  margin: 7px 0 5px;
-  font-size: 1rem;
-}
-
-.commentary-card p {
-  color: var(--ink-soft);
-  font-family: var(--serif);
-  font-size: 0.88rem;
-  line-height: 1.85;
-}
-
-.commentary-intro {
-  margin: -4px 0 14px;
-  padding: 8px 10px;
-  border-left: 2px solid var(--gold);
-  background: rgba(237, 224, 200, 0.28);
-  color: var(--ink-soft);
-  font-size: 0.74rem;
-  line-height: 1.7;
-}
-
-.commentary-slots {
-  display: grid;
-  gap: 10px;
-}
-
-.commentary-slot {
-  padding: 15px 17px;
-  border: 1px dashed var(--line-strong);
-  border-radius: 12px;
-  background: rgba(255, 252, 245, 0.42);
-}
-
-.commentary-slot--classic {
-  border-left: 3px solid var(--cinnabar);
-}
-
-.commentary-slot--physician {
-  border-left: 3px solid var(--gold);
-}
-
-.commentary-slot__meta {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  align-items: center;
-  color: var(--ink-faint);
-  font-size: 0.66rem;
-}
-
-.commentary-slot__status {
-  padding: 1px 6px;
-  border-radius: 999px;
-  background: var(--gold-pale);
-  color: #7b5a26;
-  font-size: 0.6rem;
-  white-space: nowrap;
-}
-
-.commentary-slot h3 {
-  margin: 6px 0 2px;
-  font-size: 1rem;
-}
-
-.commentary-slot__locator {
-  color: var(--ink-faint);
-  font-size: 0.68rem;
-}
-
-.commentary-slot__quote {
-  margin: 8px 0 6px;
-  padding: 8px 10px;
-  border-radius: 8px;
-  background: rgba(235, 226, 210, 0.36);
-  color: var(--ink);
-  font-family: var(--serif);
-  font-size: 0.92rem;
-  line-height: 1.85;
-}
-
-.commentary-slot__hint {
-  color: var(--ink-faint);
-  font-size: 0.66rem;
-  line-height: 1.6;
-}
-
-.commentary-empty {
-  padding: 18px 20px;
-  border-style: dashed;
-}
-
-.commentary-empty strong {
-  font-family: var(--serif);
-  font-size: 0.92rem;
-}
-
-.commentary-empty p {
-  margin-top: 4px;
-  color: var(--ink-soft);
-  font-size: 0.76rem;
-  line-height: 1.8;
-}
-
-.additional-indications {
-  margin-top: 14px;
-  padding: 16px 18px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: rgba(255, 252, 245, 0.45);
-}
-
-.additional-indications h3 {
-  margin-bottom: 6px;
-  font-size: 0.96rem;
-}
-
 .empty-inline {
   padding: 20px;
   color: var(--ink-soft);
@@ -1622,8 +1396,7 @@ watch(
   }
 
   .modification-list,
-  .pair-grid,
-  .commentary-grid {
+  .pair-grid {
     grid-template-columns: 1fr;
   }
 
