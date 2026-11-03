@@ -2,6 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { herbs } from './content/herbs.mjs'
+import { formulaRoles } from './content/shanghan-formula-roles.mjs'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const dir = path.join(root, 'scripts', 'content', 'classics', 'shanghan-nihaixia')
@@ -19,7 +20,8 @@ const BODY_FILES = [
 ]
 
 const CLAUSE_RE = /^[0-9一二三四五六七八九十百千]+[、.:：]/
-const DOSE_RE = /^([^\d一二三四五六七八九十百千万半]+?)((?:[一二三四五六七八九十百千万半0-9]+)(?:两|钱|分|铢|斤|升|合|枚|个|茎|片|把|条|只|张|克|寸).*)$/
+const DOSE_RE =
+  /((?:[一二三四五六七八九十百千万半0-9]+)(?:两|钱|分|铢|斤|升|合|枚|个|茎|片|把|条|只|张|克|寸|劈))([\s\S]*)$/
 const PREP_RE = /右.*味|以水|水[一二三四五六七八九十百]+升|煮取|煎取|微火煎|去滓|温服|分温|为散|为末|杵|纳谷道|灌谷道|和醋|丸如|如梧子|顿服|日三服|以上.*味/
 const ATTACHED = new Set(['四物汤', '戒烟涤痰方', '健胃整脾汤方', '脏结汤方'])
 const ALIASES = {
@@ -147,9 +149,13 @@ function parseToken(token) {
     .trim()
   if (!cleaned) return null
   const match = cleaned.match(DOSE_RE)
-  const rawName = (match ? match[1] : cleaned).trim().replace(/各$/, '')
+  const rawName = (match ? cleaned.slice(0, match.index) : cleaned)
+    .replace(/各$/, '')
+    .replace(/(?:洗|破|碎|切|炙|炮|去皮|去心|去节|去黄|去芦|去核|汤洗|酒洗|酒浸|绵裹|打碎|生用|研如脂)[,，、].*$/, '')
+    .replace(/大$/, '')
+    .trim()
   const name = stripProcessing(rawName).replace(/各$/, '')
-  const dosage = match ? match[2].trim() : '见原文'
+  const dosage = match ? `${match[1]}${match[2]}`.trim() : '见原文'
   return { name: name || rawName, dosage }
 }
 
@@ -387,7 +393,17 @@ function extractFromFile(file) {
     const attached = ATTACHED.has(name)
 
     const composition = parseIngredients(ingredientLine, name)
-    for (const item of composition) item.modernDose = modernDoseFor(item.dosage)
+    const roleKey = formulaRoles[name] ? name : name.replace(/朮/g, '术')
+    const roles = formulaRoles[roleKey]
+    if (!roles || roles.length !== composition.length) {
+      throw new Error(
+        `方剂角色表不匹配：${name}（组成 ${composition.length} 味，角色 ${roles?.length ?? 0} 味）`,
+      )
+    }
+    for (let i = 0; i < composition.length; i += 1) {
+      composition[i].role = roles[i]
+      composition[i].modernDose = modernDoseFor(composition[i].dosage)
+    }
     const modernGramDoses = Object.fromEntries(
       composition.map((item) => [item.herbId, item.modernDose]),
     )

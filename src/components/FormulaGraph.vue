@@ -11,16 +11,21 @@ const props = withDefaults(
     selectedHerbId?: string | null
     showPairs?: boolean
     herbNotes?: Record<string, string>
+    herbRoles?: Record<string, FormulaRole>
   }>(),
   {
     selectedHerbId: null,
     showPairs: true,
     herbNotes: () => ({}),
+    herbRoles: () => ({}),
   },
 )
 
 const emit = defineEmits<{
   select: [herbId: string]
+  'update-role': [herbId: string, role: FormulaRole]
+  'update-note': [herbId: string, note: string]
+  reset: [herbId: string]
 }>()
 
 const { herbsById } = useTcmData()
@@ -58,10 +63,14 @@ interface GraphNode {
   action?: string
 }
 
+function roleFor(item: Formula['composition'][number]): FormulaRole {
+  return props.herbRoles?.[item.herbId] ?? item.role
+}
+
 const groups = computed(() =>
   ROLE_ORDER.map((role) => ({
     role,
-    items: props.formula.composition.filter((c) => c.role === role),
+    items: props.formula.composition.filter((c) => roleFor(c) === role),
   })).filter((g) => g.items.length > 0),
 )
 
@@ -77,7 +86,7 @@ const nodes = computed<GraphNode[]>(() => {
       out.push({
         herbId: item.herbId,
         name: item.herbName ?? herb?.name ?? item.herbId,
-        role: item.role,
+        role: roleFor(item),
         x: CX + Math.cos(angle) * radius,
         y: CY + Math.sin(angle) * radius,
         action: item.action?.text,
@@ -130,19 +139,30 @@ function herbNote(herbId: string) {
   return props.herbNotes?.[herbId]?.trim() ?? ''
 }
 
+function summaryText(text: string, limit = 4) {
+  const first = text.split(/[，。；、,;]/)[0]?.trim() ?? ''
+  return first.length > limit ? first.slice(0, limit) : first
+}
+
 function nodeRoleText(node: GraphNode) {
-  if (node.role !== '未标注') return node.role
-  return herbNote(node.herbId) ? '已备注' : '待补'
+  const role = node.role === '未标注' ? (herbNote(node.herbId) ? '本地备注' : '待补') : node.role
+  const detail = summaryText(node.action || herbNote(node.herbId))
+  return detail ? `${role} · ${detail}` : role
 }
 
 function nodeActionText(node: GraphNode) {
-  return node.action || herbNote(node.herbId) || '原讲义未按单味药整理，可在上方药材行内备注'
+  return node.action || herbNote(node.herbId) || '教材未逐味说明，点击节点补充本地备注'
 }
 
 function nodeNoteSource(node: GraphNode) {
   if (node.action) return '后世方解，该药材在方中作用思路'
   if (herbNote(node.herbId)) return '本地备注，仅保存在当前浏览器'
-  return '可在上方“药材选取与炮制”中备注'
+  return '教材未逐味说明，可点节点补充'
+}
+
+function nodeRoleBadge(node: GraphNode) {
+  if (props.herbRoles?.[node.herbId]) return `${node.role}（本地）`
+  return node.role
 }
 
 function isDimmed(node: GraphNode) {
@@ -238,6 +258,39 @@ watch(
 const selectedHerb = computed(() =>
   props.selectedHerbId ? herbsById.value.get(props.selectedHerbId) ?? null : null,
 )
+
+const editorRole = ref<FormulaRole>('未标注')
+const editorNote = ref('')
+
+watch(
+  selectedNode,
+  (node) => {
+    if (!node) return
+    editorRole.value = node.role
+    editorNote.value = herbNote(node.herbId)
+  },
+  { immediate: true },
+)
+
+function saveEditor() {
+  const node = selectedNode.value
+  if (!node) return
+  emit('update-role', node.herbId, editorRole.value)
+  emit('update-note', node.herbId, editorNote.value)
+}
+
+function cancelEditor() {
+  const node = selectedNode.value
+  if (!node) return
+  editorRole.value = node.role
+  editorNote.value = herbNote(node.herbId)
+}
+
+function resetEditor() {
+  const node = selectedNode.value
+  if (!node) return
+  emit('reset', node.herbId)
+}
 </script>
 
 <template>
@@ -255,6 +308,10 @@ const selectedHerb = computed(() =>
         <button type="button" aria-label="放大" @click="zoomBy(1.1)">＋</button>
       </div>
     </div>
+
+    <p class="graph-source-note">
+      君臣佐使据《方剂学》教材通例归纳，非讲义原文；点药材可修改本地角色与备注。
+    </p>
 
     <div ref="graphCanvas" class="graph-canvas">
       <svg
@@ -351,7 +408,7 @@ const selectedHerb = computed(() =>
         <div class="graph-tip__head">
           <strong>{{ hoveredNode.name }}</strong>
           <span class="graph-tip__role" :style="{ background: roleColor(hoveredNode.role).strong }">
-            {{ hoveredNode.role === '未标注' && herbNote(hoveredNode.herbId) ? '本地备注' : hoveredNode.role }}
+            {{ nodeRoleBadge(hoveredNode) }}
           </span>
         </div>
         <p class="graph-tip__action">{{ nodeActionText(hoveredNode) }}</p>
@@ -362,16 +419,46 @@ const selectedHerb = computed(() =>
       </div>
     </div>
 
+    <div v-if="selectedNode" class="graph-editor">
+      <div class="graph-editor__head">
+        <strong>{{ selectedHerb?.name ?? selectedNode.name }}</strong>
+        <span class="graph-editor__badge">{{ nodeRoleBadge(selectedNode) }}</span>
+        <button type="button" class="graph-editor__reset" @click="resetEditor">重置本地修改</button>
+      </div>
+      <div class="graph-editor__grid">
+        <label class="graph-editor__field">
+          <span>方中角色</span>
+          <select v-model="editorRole">
+            <option v-for="role in ROLE_ORDER" :key="role" :value="role">{{ role }}</option>
+          </select>
+        </label>
+        <label class="graph-editor__field graph-editor__field--wide">
+          <span>方中作用（本地备注）</span>
+          <textarea
+            v-model="editorNote"
+            rows="2"
+            maxlength="240"
+            placeholder="例如：解肌发表，温通卫阳"
+          ></textarea>
+        </label>
+      </div>
+      <div class="graph-editor__actions">
+        <button type="button" class="graph-editor__save" @click="saveEditor">保存本地修改</button>
+        <button type="button" @click="cancelEditor">取消</button>
+        <span>角色与备注仅保存在当前浏览器，不发布。</span>
+      </div>
+    </div>
+
     <div class="graph-foot">
       <p v-if="selectedNode">
         已选 <strong>{{ selectedHerb?.name ?? selectedNode.name }}</strong>
         <span v-if="selectedNode.action || herbNote(selectedNode.herbId)" class="graph-foot__action">
           {{ selectedNode.action || herbNote(selectedNode.herbId) }}
         </span>
-        <span v-else class="graph-foot__empty">原讲义未按单味药整理，可在上方药材行内备注</span>
+        <span v-else class="graph-foot__empty">教材未逐味说明，可在下方编辑本地备注</span>
         <RouterLink v-if="selectedHerb" class="text-link" :to="`/herbs/${selectedHerb.id}`">查看药材 →</RouterLink>
       </p>
-      <p v-else class="muted">悬停药材看方中作用 · 拖动平移 · 滚轮缩放 · 点击药材聚焦</p>
+      <p v-else class="muted">悬停药材看方中作用 · 点击药材编辑本地角色/备注 · 拖动平移 · 滚轮缩放</p>
       <span class="graph-hint">实线 = 组成；虚线 = 后世方解</span>
     </div>
   </div>
@@ -442,6 +529,15 @@ const selectedHerb = computed(() =>
 .graph-zoom button:hover {
   border-color: var(--cinnabar);
   color: var(--cinnabar);
+}
+
+.graph-source-note {
+  margin: 0;
+  padding: 7px 14px;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink-faint);
+  font-size: 0.66rem;
+  line-height: 1.6;
 }
 
 .graph-canvas {
@@ -598,6 +694,109 @@ const selectedHerb = computed(() =>
   font-size: 0.66rem;
 }
 
+.graph-editor {
+  padding: 12px 14px;
+  border-top: 1px solid var(--line);
+  background: rgba(247, 241, 230, 0.72);
+}
+
+.graph-editor__head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.graph-editor__head strong {
+  font-family: var(--serif);
+  font-size: 0.92rem;
+}
+
+.graph-editor__badge {
+  padding: 1px 7px;
+  border-radius: 4px;
+  background: rgba(47, 111, 107, 0.12);
+  color: var(--jade);
+  font-size: 0.62rem;
+}
+
+.graph-editor__reset {
+  margin-left: auto;
+}
+
+.graph-editor__reset,
+.graph-editor__actions button {
+  padding: 3px 9px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--ink-soft);
+  cursor: pointer;
+  font-size: 0.66rem;
+}
+
+.graph-editor__reset:hover,
+.graph-editor__actions button:hover {
+  border-color: var(--cinnabar);
+  color: var(--cinnabar);
+}
+
+.graph-editor__grid {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 10px;
+  margin-top: 9px;
+}
+
+.graph-editor__field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--ink-soft);
+  font-size: 0.64rem;
+}
+
+.graph-editor__field select,
+.graph-editor__field textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: rgba(255, 252, 245, 0.86);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 0.76rem;
+}
+
+.graph-editor__field select {
+  height: 32px;
+  padding: 0 8px;
+}
+
+.graph-editor__field textarea {
+  padding: 7px 9px;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.graph-editor__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 9px;
+}
+
+.graph-editor__actions button.graph-editor__save {
+  border-color: var(--cinnabar);
+  background: var(--cinnabar);
+  color: #fff;
+}
+
+.graph-editor__actions span {
+  color: var(--ink-faint);
+  font-size: 0.62rem;
+}
+
 .graph-hint {
   color: var(--ink-faint);
   white-space: nowrap;
@@ -622,6 +821,14 @@ const selectedHerb = computed(() =>
     max-width: 100%;
     min-width: 0;
     min-height: 300px;
+  }
+
+  .graph-editor__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .graph-editor__reset {
+    margin-left: 0;
   }
 }
 </style>

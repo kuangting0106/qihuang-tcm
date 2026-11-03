@@ -7,6 +7,8 @@ import FormulaGraph from '@/components/FormulaGraph.vue'
 import AnnotatedOriginalText from '@/components/AnnotatedOriginalText.vue'
 import SourcedText from '@/components/SourcedText.vue'
 import { useTcmData } from '@/composables/useTcmData'
+import { ROLE_ORDER } from '@/types/tcm'
+import type { FormulaRole } from '@/types/tcm'
 
 const route = useRoute()
 const { formulasById, herbsById, citationsById, herbName } = useTcmData()
@@ -31,8 +33,6 @@ watch(
     selectedHerbId.value = null
     showPairs.value = true
     prepDoseMode.value = 'ancient'
-    editingHerbId.value = null
-    herbNoteDraft.value = ''
   },
 )
 
@@ -50,16 +50,8 @@ const hasModernDoses = computed(() =>
   Object.keys(formula.value?.modernGramDoses ?? {}).length > 0,
 )
 
-const herbMeaningById = computed(() => {
-  const map = new Map<string, string>()
-  for (const item of formula.value?.meaning?.herbMeanings ?? []) {
-    const text = item.text?.trim()
-    if (text) map.set(item.herbId, text)
-  }
-  return map
-})
-
 const HERB_NOTE_STORAGE_KEY = 'qihuang.formula.herbRoleNotes'
+const HERB_ROLE_STORAGE_KEY = 'qihuang.formula.herbRoleOverrides'
 
 function readHerbNotes(): Record<string, Record<string, string>> {
   try {
@@ -82,17 +74,38 @@ function readHerbNotes(): Record<string, Record<string, string>> {
   }
 }
 
+function readHerbRoles(): Record<string, Record<string, FormulaRole>> {
+  try {
+    const raw = localStorage.getItem(HERB_ROLE_STORAGE_KEY)
+    if (!raw) return {}
+    const parsed = JSON.parse(raw) as Record<string, unknown>
+    if (!parsed || typeof parsed !== 'object') return {}
+    const out: Record<string, Record<string, FormulaRole>> = {}
+    for (const [formulaId, value] of Object.entries(parsed)) {
+      if (!value || typeof value !== 'object') continue
+      const roles: Record<string, FormulaRole> = {}
+      for (const [herbId, role] of Object.entries(value as Record<string, unknown>)) {
+        if (typeof role === 'string' && ROLE_ORDER.includes(role as FormulaRole)) {
+          roles[herbId] = role as FormulaRole
+        }
+      }
+      if (Object.keys(roles).length) out[formulaId] = roles
+    }
+    return out
+  } catch {
+    return {}
+  }
+}
+
 const herbNotes = ref<Record<string, Record<string, string>>>(readHerbNotes())
-const editingHerbId = ref<string | null>(null)
-const herbNoteDraft = ref('')
+const herbRoles = ref<Record<string, Record<string, FormulaRole>>>(readHerbRoles())
 
 const currentHerbNotes = computed(() =>
   formula.value ? herbNotes.value[formula.value.id] ?? {} : {},
 )
-
-function herbNoteFor(herbId: string) {
-  return currentHerbNotes.value[herbId] ?? ''
-}
+const currentHerbRoles = computed(() =>
+  formula.value ? herbRoles.value[formula.value.id] ?? {} : {},
+)
 
 function persistHerbNotes(next: Record<string, Record<string, string>>) {
   herbNotes.value = next
@@ -103,34 +116,49 @@ function persistHerbNotes(next: Record<string, Record<string, string>>) {
   }
 }
 
-function startHerbNote(herbId: string) {
-  editingHerbId.value = herbId
-  herbNoteDraft.value = herbNoteFor(herbId)
+function persistHerbRoles(next: Record<string, Record<string, FormulaRole>>) {
+  herbRoles.value = next
+  try {
+    localStorage.setItem(HERB_ROLE_STORAGE_KEY, JSON.stringify(next))
+  } catch {
+    // 浏览器禁用 localStorage 时，只保留本次会话内的内容。
+  }
 }
 
-function cancelHerbNote() {
-  editingHerbId.value = null
-  herbNoteDraft.value = ''
+function baseRoleFor(herbId: string): FormulaRole {
+  return formula.value?.composition.find((item) => item.herbId === herbId)?.role ?? '未标注'
 }
 
-function saveHerbNote(herbId: string) {
+function setHerbNote(herbId: string, text: string) {
   const current = formula.value
   if (!current) return
-  const text = herbNoteDraft.value.trim()
+  const note = text.trim()
   const book = { ...(herbNotes.value[current.id] ?? {}) }
-  if (text) book[herbId] = text
+  if (note) book[herbId] = note
   else delete book[herbId]
   const next = { ...herbNotes.value }
   if (Object.keys(book).length) next[current.id] = book
   else delete next[current.id]
   persistHerbNotes(next)
-  editingHerbId.value = null
-  herbNoteDraft.value = ''
 }
 
-function clearHerbNote(herbId: string) {
-  herbNoteDraft.value = ''
-  saveHerbNote(herbId)
+function setHerbRole(herbId: string, role: FormulaRole) {
+  const current = formula.value
+  if (!current) return
+  const book = { ...(herbRoles.value[current.id] ?? {}) }
+  if (role === baseRoleFor(herbId)) delete book[herbId]
+  else book[herbId] = role
+  const next = { ...herbRoles.value }
+  if (Object.keys(book).length) next[current.id] = book
+  else delete next[current.id]
+  persistHerbRoles(next)
+}
+
+function resetHerb(herbId: string) {
+  const current = formula.value
+  if (!current) return
+  setHerbRole(herbId, baseRoleFor(herbId))
+  setHerbNote(herbId, '')
 }
 
 function selectHerb(id: string) {
@@ -297,60 +325,10 @@ watch(
                     }}
                   </span>
                 </div>
-
-                <div class="preparation-herb__role">
-                  <template v-if="editingHerbId === item.herbId">
-                    <textarea
-                      v-model="herbNoteDraft"
-                      class="preparation-herb__input"
-                      rows="2"
-                      maxlength="240"
-                      :placeholder="`写下${item.herbName ?? herbName(item.herbId)}在本方中的作用；只保存在当前浏览器`"
-                    ></textarea>
-                    <div class="preparation-herb__actions">
-                      <button class="herb-note-btn herb-note-btn--primary" type="button" @click="saveHerbNote(item.herbId)">
-                        保存
-                      </button>
-                      <button class="herb-note-btn" type="button" @click="cancelHerbNote">取消</button>
-                      <button
-                        v-if="herbNoteFor(item.herbId)"
-                        class="herb-note-btn herb-note-btn--danger"
-                        type="button"
-                        @click="clearHerbNote(item.herbId)"
-                      >
-                        清除
-                      </button>
-                    </div>
-                  </template>
-                  <template v-else>
-                    <span v-if="herbNoteFor(item.herbId)" class="preparation-herb__note">
-                      {{ herbNoteFor(item.herbId) }}
-                      <em class="preparation-herb__badge">本地备注</em>
-                    </span>
-                    <span v-else-if="herbMeaningById.get(item.herbId)" class="preparation-herb__note">
-                      {{ herbMeaningById.get(item.herbId) }}
-                      <em class="preparation-herb__badge">方解</em>
-                    </span>
-                    <span v-else-if="item.role !== '未标注'" class="preparation-herb__note">
-                      方中角色：{{ item.role }}
-                      <em class="preparation-herb__badge">方解</em>
-                    </span>
-                    <span v-else class="preparation-herb__note preparation-herb__note--empty">
-                      原讲义未按单味药整理（非遗漏），可自行备注
-                    </span>
-                    <button
-                      class="preparation-herb__edit"
-                      type="button"
-                      @click="startHerbNote(item.herbId)"
-                    >
-                      {{ herbNoteFor(item.herbId) ? '修改备注' : '备注作用' }}
-                    </button>
-                  </template>
-                </div>
               </li>
             </ul>
             <p class="preparation-herb-hint">
-              单味作用：有方解的直接显示；原讲义未按单味药整理的，可点“备注作用”自行填写。备注只保存在本机浏览器，不会发布。
+              君臣佐使与单味作用见下方“关系与图谱”；点图谱中的药材，可修改角色或补充本地备注。备注只保存在本机浏览器，不会发布。
             </p>
             <p v-if="formula.modernGramNote" class="preparation-dose-note">{{ formula.modernGramNote }}</p>
             <CitationBadge :citation-ids="formula.preparation.ingredients.citationIds" label="原文" compact />
@@ -535,11 +513,16 @@ watch(
               :selected-herb-id="selectedHerbId"
               :show-pairs="showPairs"
               :herb-notes="currentHerbNotes"
+              :herb-roles="currentHerbRoles"
               @select="selectHerb"
+              @update-role="setHerbRole"
+              @update-note="setHerbNote"
+              @reset="resetHerb"
             />
             <p class="graph-caption">
-              实线为“方剂 → 药材”的组成关系；虚线为教材归纳的核心药对。悬停药材可看方中作用；
-              原讲义未按单味药整理的，会在上方“药材选取与炮制”中显示“备注作用”，可自行补充本地备注。
+              实线为“方剂 → 药材”的组成关系；虚线为教材归纳的核心药对。节点显示君臣佐使与作用摘要，
+              悬停看完整说明；点药材可修改角色或补充本地备注（仅保存在当前浏览器）。
+              君臣佐使据《方剂学》教材通例归纳，不是讲义原文。
             </p>
           </div>
           <div v-else class="graph-collapsed paper-panel">
@@ -852,103 +835,6 @@ watch(
   color: var(--ink-soft);
   font-size: 0.72rem;
   white-space: nowrap;
-}
-
-.preparation-herb__role {
-  margin-top: 3px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 4px 8px;
-}
-
-.preparation-herb__note {
-  flex: 1;
-  min-width: 0;
-  color: var(--ink-soft);
-  font-size: 0.68rem;
-  line-height: 1.6;
-  white-space: normal;
-}
-
-.preparation-herb__note--empty {
-  color: var(--ink-faint);
-}
-
-.preparation-herb__badge {
-  margin-left: 3px;
-  color: var(--jade);
-  font-size: 0.58rem;
-  font-style: normal;
-  white-space: nowrap;
-}
-
-.preparation-herb__edit {
-  flex: none;
-  padding: 0;
-  border: 0;
-  border-bottom: 1px dashed rgba(163, 58, 43, 0.45);
-  background: transparent;
-  color: var(--cinnabar);
-  cursor: pointer;
-  font-size: 0.64rem;
-  line-height: 1.5;
-}
-
-.preparation-herb__edit:hover {
-  border-bottom-style: solid;
-}
-
-.preparation-herb__input {
-  flex: 1;
-  min-width: 0;
-  width: 100%;
-  padding: 5px 7px;
-  border: 1px solid rgba(176, 138, 74, 0.45);
-  border-radius: 6px;
-  background: rgba(255, 252, 245, 0.9);
-  color: var(--ink);
-  font-family: var(--serif);
-  font-size: 0.72rem;
-  line-height: 1.55;
-  resize: vertical;
-}
-
-.preparation-herb__input:focus {
-  border-color: var(--jade);
-  outline: none;
-}
-
-.preparation-herb__actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.herb-note-btn {
-  padding: 2px 7px;
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.45);
-  color: var(--ink-soft);
-  cursor: pointer;
-  font-size: 0.62rem;
-}
-
-.herb-note-btn--primary {
-  border-color: var(--jade);
-  background: rgba(221, 236, 232, 0.7);
-  color: var(--jade);
-}
-
-.herb-note-btn--danger {
-  border-color: rgba(163, 58, 43, 0.4);
-  color: var(--cinnabar);
-}
-
-.herb-note-btn:hover {
-  border-color: var(--cinnabar);
-  color: var(--cinnabar);
 }
 
 .preparation-herb-hint {

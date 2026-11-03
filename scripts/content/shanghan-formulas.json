@@ -1388,7 +1388,7 @@
         {
           "herbId": "guizhi",
           "dosage": "三两去皮",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1398,7 +1398,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1407,7 +1407,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1416,7 +1416,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "二两切",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1425,7 +1425,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1514,7 +1514,7 @@
         {
           "herbId": "guizhi",
           "dosage": "三两去皮",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1524,7 +1524,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1533,7 +1533,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "三两切",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1542,7 +1542,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1551,7 +1551,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1561,7 +1561,7 @@
           "herbId": "shanghan-herb-n326",
           "herbName": "葛根",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1651,7 +1651,7 @@
         {
           "herbId": "guizhi",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1661,7 +1661,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1670,7 +1670,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1679,7 +1679,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1688,7 +1688,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1698,7 +1698,7 @@
           "herbId": "shanghan-herb-q26k",
           "herbName": "附子",
           "dosage": "一枚,炮,去皮破八片",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1788,7 +1788,7 @@
         {
           "herbId": "guizhi",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1797,7 +1797,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1806,7 +1806,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1815,7 +1815,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1894,7 +1894,7 @@
         {
           "herbId": "guizhi",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1903,7 +1903,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1912,7 +1912,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1921,7 +1921,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -1931,7 +1931,7 @@
           "herbId": "shanghan-herb-q26k",
           "herbName": "附子",
           "dosage": "一枚,炮,去皮,破八片",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2020,7 +2020,7 @@
         {
           "herbId": "guizhi",
           "dosage": "一两十六铢",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2030,7 +2030,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2039,7 +2039,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2048,7 +2048,7 @@
         {
           "herbId": "gancao",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2058,7 +2058,7 @@
           "herbId": "shanghan-herb-rvc9",
           "herbName": "麻黄",
           "dosage": "一两去节",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2067,7 +2067,7 @@
         {
           "herbId": "dazao",
           "dosage": "四枚",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2077,7 +2077,7 @@
           "herbId": "shanghan-herb-i05u",
           "herbName": "杏仁",
           "dosage": "二十四个汤浸,去皮尖",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2168,7 +2168,7 @@
         {
           "herbId": "guizhi",
           "dosage": "一两十七铢",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2178,7 +2178,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "一两六铢",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2188,7 +2188,7 @@
           "herbId": "shanghan-herb-rvc9",
           "herbName": "麻黄",
           "dosage": "十六铢去节",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2197,7 +2197,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "一两六铢",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2207,7 +2207,7 @@
           "herbId": "shanghan-herb-i05u",
           "herbName": "杏仁",
           "dosage": "二十六个去皮尖及双仁",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2216,7 +2216,7 @@
         {
           "herbId": "gancao",
           "dosage": "一两二铢",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2225,7 +2225,7 @@
         {
           "herbId": "dazao",
           "dosage": "五枚劈。",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2317,7 +2317,7 @@
           "herbId": "shanghan-herb-kzgo",
           "herbName": "知母",
           "dosage": "六两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2327,7 +2327,7 @@
           "herbId": "shanghan-herb-l43g",
           "herbName": "石膏",
           "dosage": "一斤碎绵里",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2336,7 +2336,7 @@
         {
           "herbId": "gancao",
           "dosage": "三两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2346,7 +2346,7 @@
           "herbId": "shanghan-herb-lw68",
           "herbName": "粳米",
           "dosage": "六合",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2355,7 +2355,7 @@
         {
           "herbId": "renshen",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2444,7 +2444,7 @@
         {
           "herbId": "guizhi",
           "dosage": "十八铢去皮",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2453,7 +2453,7 @@
         {
           "herbId": "dazao",
           "dosage": "四枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2463,7 +2463,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "十八铢",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2472,7 +2472,7 @@
         {
           "herbId": "gancao",
           "dosage": "十八铢",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2481,7 +2481,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "一两二铢",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2491,7 +2491,7 @@
           "herbId": "shanghan-herb-rvc9",
           "herbName": "麻黄",
           "dosage": "十八铢",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2501,7 +2501,7 @@
           "herbId": "shanghan-herb-l43g",
           "herbName": "石膏",
           "dosage": "二十四铢碎,绵囊",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2593,7 +2593,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2602,7 +2602,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2611,7 +2611,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2621,7 +2621,7 @@
           "herbId": "shanghan-herb-n150",
           "herbName": "茯苓",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2631,7 +2631,7 @@
           "herbId": "shanghan-herb-kpxu",
           "herbName": "白术",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2640,7 +2640,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2721,7 +2721,7 @@
         {
           "herbId": "gancao",
           "dosage": "四两炙",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2731,7 +2731,7 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "二两炮",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2808,7 +2808,7 @@
         {
           "herbId": "baishao",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2817,7 +2817,7 @@
         {
           "herbId": "gancao",
           "dosage": "四两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2895,7 +2895,7 @@
           "herbId": "shanghan-herb-g1a5",
           "herbName": "大黄",
           "dosage": "四两去皮,清酒洗",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2904,7 +2904,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -2914,7 +2914,7 @@
           "herbId": "shanghan-herb-mvbf",
           "herbName": "芒硝",
           "dosage": "半斤",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3001,7 +3001,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3011,7 +3011,7 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "一两半",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3021,7 +3021,7 @@
           "herbId": "shanghan-herb-q26k",
           "herbName": "附子",
           "dosage": "一枚,生用去皮,破八片",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3109,7 +3109,7 @@
           "herbId": "shanghan-herb-n326",
           "herbName": "葛根",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3119,7 +3119,7 @@
           "herbId": "shanghan-herb-rvc9",
           "herbName": "麻黄",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3128,7 +3128,7 @@
         {
           "herbId": "guizhi",
           "dosage": "二两去皮",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3138,7 +3138,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3147,7 +3147,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3156,7 +3156,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3165,7 +3165,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3257,7 +3257,7 @@
           "herbId": "shanghan-herb-n326",
           "herbName": "葛根",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3267,7 +3267,7 @@
           "herbId": "shanghan-herb-rvc9",
           "herbName": "麻黄",
           "dosage": "三两,汤泡去黄汁,焙干秤",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3276,7 +3276,7 @@
         {
           "herbId": "guizhi",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3286,7 +3286,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3295,7 +3295,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3304,7 +3304,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3313,21 +3313,21 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
           "modernDose": "12 枚（劈）"
         },
         {
-          "herbId": "shanghan-herb-16mtx4u",
-          "herbName": "生半夏半斤",
-          "dosage": "见原文",
-          "role": "未标注",
+          "herbId": "shanghan-herb-hk8dg",
+          "herbName": "生半夏",
+          "dosage": "半斤洗",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "modernDose": "见原文"
+          "modernDose": "8 钱（洗）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
@@ -3343,7 +3343,7 @@
         "gancao": "2 钱（炙）",
         "shengjiang": "2 钱",
         "dazao": "12 枚（劈）",
-        "shanghan-herb-16mtx4u": "见原文"
+        "shanghan-herb-hk8dg": "8 钱（洗）"
       },
       "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
@@ -3416,7 +3416,7 @@
           "herbId": "shanghan-herb-n326",
           "herbName": "葛根",
           "dosage": "半斤",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3425,7 +3425,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3434,7 +3434,7 @@
         {
           "herbId": "huangqin",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3444,7 +3444,7 @@
           "herbId": "shanghan-herb-rsm2",
           "herbName": "黄连",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3533,7 +3533,7 @@
           "herbId": "shanghan-herb-rvc9",
           "herbName": "麻黄",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3542,7 +3542,7 @@
         {
           "herbId": "guizhi",
           "dosage": "二两去皮",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3551,7 +3551,7 @@
         {
           "herbId": "gancao",
           "dosage": "一两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3561,7 +3561,7 @@
           "herbId": "shanghan-herb-i05u",
           "herbName": "杏仁",
           "dosage": "七十个去皮尖",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3650,7 +3650,7 @@
           "herbId": "shanghan-herb-rvc9",
           "herbName": "麻黄",
           "dosage": "六两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3659,7 +3659,7 @@
         {
           "herbId": "guizhi",
           "dosage": "二两去皮",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3668,7 +3668,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3678,7 +3678,7 @@
           "herbId": "shanghan-herb-i05u",
           "herbName": "杏仁",
           "dosage": "五十个去皮尖",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3687,7 +3687,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "二两切",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3696,7 +3696,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3706,7 +3706,7 @@
           "herbId": "shanghan-herb-1xyec4y",
           "herbName": "石膏如鸡子大",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3798,7 +3798,7 @@
           "herbId": "shanghan-herb-rvc9",
           "herbName": "麻黄",
           "dosage": "三两去节",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3808,7 +3808,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3818,7 +3818,7 @@
           "herbId": "shanghan-herb-mcnp",
           "herbName": "细辛",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3828,7 +3828,7 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3837,7 +3837,7 @@
         {
           "herbId": "gancao",
           "dosage": "三两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3846,31 +3846,30 @@
         {
           "herbId": "guizhi",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
           "modernDose": "3 钱"
         },
         {
-          "herbId": "shanghan-herb-y5dlbf",
-          "herbName": "五味子半斤",
-          "dosage": "见原文",
-          "role": "未标注",
+          "herbId": "shanghan-herb-bx7f5",
+          "herbName": "五味子",
+          "dosage": "半斤",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "modernDose": "见原文"
+          "modernDose": "8 钱"
         },
         {
-          "herbId": "shanghan-herb-avmuiq",
-          "herbName": "半夏半升",
-          "dosage": "见原文",
-          "role": "未标注",
+          "herbId": "banxia",
+          "dosage": "半升洗",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "modernDose": "见原文"
+          "modernDose": "0.5 升（洗）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
@@ -3885,8 +3884,8 @@
         "shanghan-herb-gk2y": "3 钱",
         "gancao": "3 钱（炙）",
         "guizhi": "3 钱",
-        "shanghan-herb-y5dlbf": "见原文",
-        "shanghan-herb-avmuiq": "见原文"
+        "shanghan-herb-bx7f5": "8 钱",
+        "banxia": "0.5 升（洗）"
       },
       "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
@@ -3958,7 +3957,7 @@
         {
           "herbId": "guizhi",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3968,7 +3967,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3977,7 +3976,7 @@
         {
           "herbId": "gancao",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3986,7 +3985,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -3995,7 +3994,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4005,7 +4004,7 @@
           "herbId": "shanghan-herb-esbe",
           "herbName": "厚朴",
           "dosage": "二两炙,去皮",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4015,7 +4014,7 @@
           "herbId": "shanghan-herb-i05u",
           "herbName": "杏仁",
           "dosage": "五十枚去皮尖",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4107,7 +4106,7 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4117,7 +4116,7 @@
           "herbId": "shanghan-herb-q26k",
           "herbName": "附子",
           "dosage": "一枚,生用去皮破八片",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4194,7 +4193,7 @@
         {
           "herbId": "guizhi",
           "dosage": "三两去皮",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4204,7 +4203,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4213,7 +4212,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4222,7 +4221,7 @@
         {
           "herbId": "renshen",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4231,7 +4230,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "四两切",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4240,7 +4239,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4331,7 +4330,7 @@
           "herbId": "shanghan-herb-rvc9",
           "herbName": "麻黄",
           "dosage": "四两去节",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4341,7 +4340,7 @@
           "herbId": "shanghan-herb-i05u",
           "herbName": "杏仁",
           "dosage": "五十个去皮尖",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4350,7 +4349,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4360,7 +4359,7 @@
           "herbId": "shanghan-herb-l43g",
           "herbName": "石膏",
           "dosage": "半斤打碎绵囊",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4439,7 +4438,7 @@
         {
           "herbId": "guizhi",
           "dosage": "四两去皮",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4448,7 +4447,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4526,7 +4525,7 @@
           "herbId": "shanghan-herb-n150",
           "herbName": "茯苓",
           "dosage": "半斤",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4535,7 +4534,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4544,7 +4543,7 @@
         {
           "herbId": "dazao",
           "dosage": "十五枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4553,7 +4552,7 @@
         {
           "herbId": "guizhi",
           "dosage": "三两去皮",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4642,7 +4641,7 @@
           "herbId": "shanghan-herb-esbe",
           "herbName": "厚朴",
           "dosage": "半斤去皮炙",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4651,26 +4650,25 @@
         {
           "herbId": "shengjiang",
           "dosage": "半斤切",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
           "modernDose": "8 钱（切）"
         },
         {
-          "herbId": "shanghan-herb-avmy5b",
-          "herbName": "半夏半斤",
-          "dosage": "见原文",
-          "role": "未标注",
+          "herbId": "banxia",
+          "dosage": "半斤洗",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "modernDose": "见原文"
+          "modernDose": "8 钱（洗）"
         },
         {
           "herbId": "renshen",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4679,7 +4677,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4694,7 +4692,7 @@
       "modernGramDoses": {
         "shanghan-herb-esbe": "8 钱（去皮炙）",
         "shengjiang": "8 钱（切）",
-        "shanghan-herb-avmy5b": "见原文",
+        "banxia": "8 钱（洗）",
         "renshen": "1 钱",
         "gancao": "2 钱（炙）"
       },
@@ -4769,7 +4767,7 @@
           "herbId": "shanghan-herb-n150",
           "herbName": "茯苓",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4778,7 +4776,7 @@
         {
           "herbId": "guizhi",
           "dosage": "三两去皮",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4788,7 +4786,7 @@
           "herbId": "shanghan-herb-kpxu",
           "herbName": "白术",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4797,7 +4795,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4886,7 +4884,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4895,7 +4893,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4905,7 +4903,7 @@
           "herbId": "shanghan-herb-q26k",
           "herbName": "附子",
           "dosage": "二枚,炮去皮,破八片",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -4993,7 +4991,7 @@
           "herbId": "shanghan-herb-n150",
           "herbName": "茯苓",
           "dosage": "六两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5002,7 +5000,7 @@
         {
           "herbId": "renshen",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5012,7 +5010,7 @@
           "herbId": "shanghan-herb-q26k",
           "herbName": "附子",
           "dosage": "一枚,生用去皮破八片",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5021,7 +5019,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5031,7 +5029,7 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "一两半",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5121,7 +5119,7 @@
           "herbId": "shanghan-herb-kb1l",
           "herbName": "猪苓",
           "dosage": "十八铢去皮",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5131,7 +5129,7 @@
           "herbId": "shanghan-herb-j4wu",
           "herbName": "泽泻",
           "dosage": "一两六铢半",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5141,7 +5139,7 @@
           "herbId": "shanghan-herb-n150",
           "herbName": "茯苓",
           "dosage": "十八铢",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5150,7 +5148,7 @@
         {
           "herbId": "guizhi",
           "dosage": "半两去皮",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5160,7 +5158,7 @@
           "herbId": "shanghan-herb-kpxu",
           "herbName": "白术",
           "dosage": "十八铢",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5250,7 +5248,7 @@
           "herbId": "shanghan-herb-n150",
           "herbName": "茯苓",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5259,7 +5257,7 @@
         {
           "herbId": "guizhi",
           "dosage": "二两去皮",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5268,7 +5266,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "三两切",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5277,7 +5275,7 @@
         {
           "herbId": "gancao",
           "dosage": "一两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5358,7 +5356,7 @@
           "herbId": "shanghan-herb-i6vk",
           "herbName": "栀子",
           "dosage": "十四枚劈",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5368,7 +5366,7 @@
           "herbId": "shanghan-herb-qw9c",
           "herbName": "香豉",
           "dosage": "四合绵裹",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5455,7 +5453,7 @@
           "herbId": "shanghan-herb-i6vk",
           "herbName": "栀子",
           "dosage": "十四枚",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5464,7 +5462,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5474,7 +5472,7 @@
           "herbId": "shanghan-herb-qw9c",
           "herbName": "香豉",
           "dosage": "四合",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5562,7 +5560,7 @@
           "herbId": "shanghan-herb-i6vk",
           "herbName": "栀子",
           "dosage": "十四枚劈",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5572,7 +5570,7 @@
           "herbId": "shanghan-herb-esbe",
           "herbName": "厚朴",
           "dosage": "四两炙",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5582,7 +5580,7 @@
           "herbId": "shanghan-herb-i53f",
           "herbName": "枳实",
           "dosage": "四合",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5670,7 +5668,7 @@
           "herbId": "shanghan-herb-i6vk",
           "herbName": "栀子",
           "dosage": "十四枚劈",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5680,7 +5678,7 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5690,7 +5688,7 @@
           "herbId": "shanghan-herb-qw9c",
           "herbName": "香豉",
           "dosage": "四合",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5778,7 +5776,7 @@
           "herbId": "shanghan-herb-n150",
           "herbName": "茯苓",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5788,7 +5786,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5797,7 +5795,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5807,7 +5805,7 @@
           "herbId": "shanghan-herb-kpxu",
           "herbName": "白术",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5817,7 +5815,7 @@
           "herbId": "shanghan-herb-q26k",
           "herbName": "附子",
           "dosage": "一枚炮",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5907,7 +5905,7 @@
           "herbId": "shanghan-herb-i80ry",
           "herbName": "禹余粮",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5916,7 +5914,7 @@
         {
           "herbId": "renshen",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5926,27 +5924,27 @@
           "herbId": "shanghan-herb-q26k",
           "herbName": "附子",
           "dosage": "二枚",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
           "modernDose": "2 枚"
         },
         {
-          "herbId": "shanghan-herb-y5clo0",
-          "herbName": "五味子三合",
-          "dosage": "见原文",
-          "role": "未标注",
+          "herbId": "shanghan-herb-bx7f5",
+          "herbName": "五味子",
+          "dosage": "三合",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "modernDose": "见原文"
+          "modernDose": "3 合（原量）"
         },
         {
           "herbId": "shanghan-herb-n150",
           "herbName": "茯苓",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5956,7 +5954,7 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -5972,7 +5970,7 @@
         "shanghan-herb-i80ry": "4 钱",
         "renshen": "3 钱",
         "shanghan-herb-q26k": "2 枚",
-        "shanghan-herb-y5clo0": "见原文",
+        "shanghan-herb-bx7f5": "3 合（原量）",
         "shanghan-herb-n150": "3 钱",
         "shanghan-herb-gk2y": "3 钱"
       },
@@ -6037,7 +6035,7 @@
         {
           "herbId": "chaihu",
           "dosage": "半斤",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6046,7 +6044,7 @@
         {
           "herbId": "huangqin",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6055,7 +6053,7 @@
         {
           "herbId": "renshen",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6064,26 +6062,25 @@
         {
           "herbId": "gancao",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
           "modernDose": "3 钱"
         },
         {
-          "herbId": "shanghan-herb-avmuiq",
-          "herbName": "半夏半升",
-          "dosage": "见原文",
-          "role": "未标注",
+          "herbId": "banxia",
+          "dosage": "半升洗",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "modernDose": "见原文"
+          "modernDose": "0.5 升（洗）"
         },
         {
           "herbId": "shengjiang",
           "dosage": "三两切",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6092,7 +6089,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "佐使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6109,7 +6106,7 @@
         "huangqin": "3 钱",
         "renshen": "3 钱",
         "gancao": "3 钱",
-        "shanghan-herb-avmuiq": "见原文",
+        "banxia": "0.5 升（洗）",
         "shengjiang": "3 钱（切）",
         "dazao": "12 枚（劈）"
       },
@@ -6175,7 +6172,7 @@
           "herbId": "shanghan-herb-gqjj",
           "herbName": "当归",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6185,7 +6182,7 @@
           "herbId": "shanghan-herb-gok1",
           "herbName": "川芎",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6194,7 +6191,7 @@
         {
           "herbId": "baishao",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6204,7 +6201,7 @@
           "herbId": "shanghan-herb-keep",
           "herbName": "生地",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6292,7 +6289,7 @@
         {
           "herbId": "guizhi",
           "dosage": "三两去皮",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6301,7 +6298,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6310,7 +6307,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6320,7 +6317,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "六两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6329,7 +6326,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "三两切",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6339,7 +6336,7 @@
           "herbId": "shanghan-herb-mrzy",
           "herbName": "胶饴",
           "dosage": "一升",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6429,7 +6426,7 @@
         {
           "herbId": "chaihu",
           "dosage": "半斤",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6438,7 +6435,7 @@
         {
           "herbId": "huangqin",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6448,26 +6445,25 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
           "modernDose": "3 钱"
         },
         {
-          "herbId": "shanghan-herb-avmuiq",
-          "herbName": "半夏半升",
-          "dosage": "见原文",
-          "role": "未标注",
+          "herbId": "banxia",
+          "dosage": "半升洗",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "modernDose": "见原文"
+          "modernDose": "0.5 升（洗）"
         },
         {
           "herbId": "shengjiang",
           "dosage": "五两切",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6477,7 +6473,7 @@
           "herbId": "shanghan-herb-i53f",
           "herbName": "枳实",
           "dosage": "四两炙",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6486,7 +6482,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6496,7 +6492,7 @@
           "herbId": "shanghan-herb-g1a5",
           "herbName": "大黄",
           "dosage": "二钱",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6512,7 +6508,7 @@
         "chaihu": "8 钱",
         "huangqin": "3 钱",
         "shanghan-herb-mxdu": "3 钱",
-        "shanghan-herb-avmuiq": "见原文",
+        "banxia": "0.5 升（洗）",
         "shengjiang": "5 钱（切）",
         "shanghan-herb-i53f": "4 钱（炙）",
         "dazao": "12 枚（劈）",
@@ -6588,26 +6584,25 @@
         {
           "herbId": "chaihu",
           "dosage": "二两六铢",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
           "modernDose": "2.25 钱"
         },
         {
-          "herbId": "shanghan-herb-1h3jvag",
-          "herbName": "半夏二十铢",
-          "dosage": "见原文",
-          "role": "未标注",
+          "herbId": "banxia",
+          "dosage": "二十铢",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "modernDose": "见原文"
+          "modernDose": "约 0.83 钱"
         },
         {
           "herbId": "huangqin",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6616,7 +6611,7 @@
         {
           "herbId": "gancao",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6625,7 +6620,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6634,7 +6629,7 @@
         {
           "herbId": "renshen",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6643,7 +6638,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6653,7 +6648,7 @@
           "herbId": "shanghan-herb-mvbf",
           "herbName": "芒硝",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6667,7 +6662,7 @@
       },
       "modernGramDoses": {
         "chaihu": "2.25 钱",
-        "shanghan-herb-1h3jvag": "见原文",
+        "banxia": "约 0.83 钱",
         "huangqin": "1 钱",
         "gancao": "1 钱",
         "shengjiang": "1 钱",
@@ -6746,7 +6741,7 @@
           "herbId": "shanghan-herb-i5zy",
           "herbName": "桃仁",
           "dosage": "五十个去皮尖",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6755,7 +6750,7 @@
         {
           "herbId": "guizhi",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6765,7 +6760,7 @@
           "herbId": "shanghan-herb-g1a5",
           "herbName": "大黄",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6775,7 +6770,7 @@
           "herbId": "shanghan-herb-mvbf",
           "herbName": "芒硝",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6784,7 +6779,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6871,19 +6866,18 @@
       },
       "composition": [
         {
-          "herbId": "shanghan-herb-avm1mp",
-          "herbName": "半夏二合",
-          "dosage": "见原文",
-          "role": "未标注",
+          "herbId": "banxia",
+          "dosage": "二合洗",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "modernDose": "见原文"
+          "modernDose": "2 合（洗）"
         },
         {
           "herbId": "dazao",
           "dosage": "六枚",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6892,7 +6886,7 @@
         {
           "herbId": "chaihu",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6901,7 +6895,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "一两半",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6910,7 +6904,7 @@
         {
           "herbId": "renshen",
           "dosage": "一两半",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6920,7 +6914,7 @@
           "herbId": "shanghan-herb-rzu7",
           "herbName": "龙骨",
           "dosage": "一两半",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6930,7 +6924,7 @@
           "herbId": "shanghan-herb-pqfo",
           "herbName": "铅丹",
           "dosage": "一两半",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6939,7 +6933,7 @@
         {
           "herbId": "guizhi",
           "dosage": "一两半去皮",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6949,7 +6943,7 @@
           "herbId": "shanghan-herb-n150",
           "herbName": "茯苓",
           "dosage": "一两半",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6959,7 +6953,7 @@
           "herbId": "shanghan-herb-g1a5",
           "herbName": "大黄",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6969,7 +6963,7 @@
           "herbId": "shanghan-herb-k70t",
           "herbName": "牡蛎",
           "dosage": "一两半",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -6982,7 +6976,7 @@
         "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
       },
       "modernGramDoses": {
-        "shanghan-herb-avm1mp": "见原文",
+        "banxia": "2 合（洗）",
         "dazao": "6 枚",
         "chaihu": "4 钱",
         "shengjiang": "1.5 钱",
@@ -7064,7 +7058,7 @@
         {
           "herbId": "guizhi",
           "dosage": "三两去皮",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7073,7 +7067,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7082,7 +7076,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "三两切",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7092,7 +7086,7 @@
           "herbId": "shanghan-herb-k70t",
           "herbName": "牡蛎",
           "dosage": "五两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7102,7 +7096,7 @@
           "herbId": "shanghan-herb-rzu7",
           "herbName": "龙骨",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7111,7 +7105,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7121,7 +7115,7 @@
           "herbId": "shanghan-herb-nkli",
           "herbName": "蜀漆",
           "dosage": "三两洗,去腥",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7212,7 +7206,7 @@
         {
           "herbId": "guizhi",
           "dosage": "二两（于桂枝汤中加桂枝）",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7298,7 +7292,7 @@
         {
           "herbId": "guizhi",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7307,7 +7301,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7317,7 +7311,7 @@
           "herbId": "shanghan-herb-k70t",
           "herbName": "牡蛎",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7327,7 +7321,7 @@
           "herbId": "shanghan-herb-rzu7",
           "herbName": "龙骨",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7337,7 +7331,7 @@
           "herbId": "shanghan-herb-n150",
           "herbName": "茯苓",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7427,7 +7421,7 @@
           "herbId": "shanghan-herb-j589",
           "herbName": "水蛭",
           "dosage": "三十个熬",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7437,7 +7431,7 @@
           "herbId": "shanghan-herb-nm1c",
           "herbName": "虻虫",
           "dosage": "三十个去翅",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7447,7 +7441,7 @@
           "herbId": "shanghan-herb-i5zy",
           "herbName": "桃仁",
           "dosage": "二十个去皮尖",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7457,7 +7451,7 @@
           "herbId": "shanghan-herb-g1a5",
           "herbName": "大黄",
           "dosage": "三两酒洗(浸)",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7546,7 +7540,7 @@
           "herbId": "shanghan-herb-j589",
           "herbName": "水蛭",
           "dosage": "二十个熬",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7556,7 +7550,7 @@
           "herbId": "shanghan-herb-nm1c",
           "herbName": "虻虫",
           "dosage": "二十五个熬,去翅",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7566,7 +7560,7 @@
           "herbId": "shanghan-herb-i5zy",
           "herbName": "桃仁",
           "dosage": "二十个去皮尖",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7576,7 +7570,7 @@
           "herbId": "shanghan-herb-g1a5",
           "herbName": "大黄",
           "dosage": "三两酒浸",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7665,7 +7659,7 @@
           "herbId": "shanghan-herb-g1a5",
           "herbName": "大黄",
           "dosage": "半斤",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7675,7 +7669,7 @@
           "herbId": "shanghan-herb-n8ya",
           "herbName": "葶苈",
           "dosage": "半升",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7685,7 +7679,7 @@
           "herbId": "shanghan-herb-h4g7x",
           "herbName": "炒芒硝",
           "dosage": "半升",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7695,7 +7689,7 @@
           "herbId": "shanghan-herb-i05u",
           "herbName": "杏仁",
           "dosage": "半升去皮尖，熬黑",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7784,7 +7778,7 @@
           "herbId": "shanghan-herb-g1a5",
           "herbName": "大黄",
           "dosage": "六两去皮",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7794,7 +7788,7 @@
           "herbId": "shanghan-herb-mvbf",
           "herbName": "芒硝",
           "dosage": "一升",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7804,7 +7798,7 @@
           "herbId": "shanghan-herb-kpii",
           "herbName": "甘遂",
           "dosage": "一钱",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7892,27 +7886,26 @@
           "herbId": "shanghan-herb-rsm2",
           "herbName": "黄连",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
           "modernDose": "1 钱"
         },
         {
-          "herbId": "shanghan-herb-avmuiq",
-          "herbName": "半夏半升",
-          "dosage": "见原文",
-          "role": "未标注",
+          "herbId": "banxia",
+          "dosage": "半升洗",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "modernDose": "见原文"
+          "modernDose": "0.5 升（洗）"
         },
         {
           "herbId": "shanghan-herb-1x11ilp",
           "herbName": "栝蒌实大者",
           "dosage": "一个",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -7926,7 +7919,7 @@
       },
       "modernGramDoses": {
         "shanghan-herb-rsm2": "1 钱",
-        "shanghan-herb-avmuiq": "见原文",
+        "banxia": "0.5 升（洗）",
         "shanghan-herb-1x11ilp": "1 个"
       },
       "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
@@ -8000,7 +7993,7 @@
           "herbId": "shanghan-herb-i0cd",
           "herbName": "文蛤",
           "dosage": "五两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8086,7 +8079,7 @@
           "herbId": "shanghan-herb-ibib",
           "herbName": "桔梗",
           "dosage": "三分",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8096,7 +8089,7 @@
           "herbId": "shanghan-herb-gr0y",
           "herbName": "巴豆",
           "dosage": "一分,去皮心熬黑,研如脂",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8106,7 +8099,7 @@
           "herbId": "shanghan-herb-ole8",
           "herbName": "贝母",
           "dosage": "三分",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8193,7 +8186,7 @@
         {
           "herbId": "chaihu",
           "dosage": "一两半",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8202,7 +8195,7 @@
         {
           "herbId": "guizhi",
           "dosage": "一两半去皮",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8211,7 +8204,7 @@
         {
           "herbId": "huangqin",
           "dosage": "一两半",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8220,7 +8213,7 @@
         {
           "herbId": "renshen",
           "dosage": "一两半",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8229,27 +8222,26 @@
         {
           "herbId": "gancao",
           "dosage": "一两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
           "modernDose": "1 钱（炙）"
         },
         {
-          "herbId": "shanghan-herb-1h3jn3d",
-          "herbName": "半夏二合半",
-          "dosage": "见原文",
-          "role": "未标注",
+          "herbId": "banxia",
+          "dosage": "二合半洗",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "modernDose": "见原文"
+          "modernDose": "2 合（半洗）"
         },
         {
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "一两半",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8258,7 +8250,7 @@
         {
           "herbId": "dazao",
           "dosage": "六枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8267,7 +8259,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "一两半切",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8285,7 +8277,7 @@
         "huangqin": "1.5 钱",
         "renshen": "1.5 钱",
         "gancao": "1 钱（炙）",
-        "shanghan-herb-1h3jn3d": "见原文",
+        "banxia": "2 合（半洗）",
         "shanghan-herb-mxdu": "1.5 钱",
         "dazao": "6 枚（劈）",
         "shengjiang": "1.5 钱（切）"
@@ -8360,7 +8352,7 @@
         {
           "herbId": "chaihu",
           "dosage": "半斤",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8369,7 +8361,7 @@
         {
           "herbId": "guizhi",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8379,7 +8371,7 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8388,7 +8380,7 @@
         {
           "herbId": "huangqin",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8398,7 +8390,7 @@
           "herbId": "shanghan-herb-fw3re",
           "herbName": "栝蒌根",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8408,7 +8400,7 @@
           "herbId": "shanghan-herb-k70t",
           "herbName": "牡蛎",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8417,7 +8409,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8506,19 +8498,18 @@
       },
       "composition": [
         {
-          "herbId": "shanghan-herb-avmy5b",
-          "herbName": "半夏半斤",
-          "dosage": "见原文",
-          "role": "未标注",
+          "herbId": "banxia",
+          "dosage": "半斤洗",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "modernDose": "见原文"
+          "modernDose": "8 钱（洗）"
         },
         {
           "herbId": "huangqin",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8528,7 +8519,7 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8537,7 +8528,7 @@
         {
           "herbId": "gancao",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8546,7 +8537,7 @@
         {
           "herbId": "renshen",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8556,7 +8547,7 @@
           "herbId": "shanghan-herb-rsm2",
           "herbName": "黄连",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8565,7 +8556,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8578,7 +8569,7 @@
         "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
       },
       "modernGramDoses": {
-        "shanghan-herb-avmy5b": "见原文",
+        "banxia": "8 钱（洗）",
         "huangqin": "3 钱",
         "shanghan-herb-gk2y": "3 钱",
         "gancao": "3 钱",
@@ -8657,7 +8648,7 @@
           "herbId": "shanghan-herb-mxye",
           "herbName": "芫花",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8667,7 +8658,7 @@
           "herbId": "shanghan-herb-kpii",
           "herbName": "甘遂",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8677,7 +8668,7 @@
           "herbId": "shanghan-herb-fpaw",
           "herbName": "大戟",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8686,7 +8677,7 @@
         {
           "herbId": "dazao",
           "dosage": "十枚劈",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8775,7 +8766,7 @@
           "herbId": "shanghan-herb-g1a5",
           "herbName": "大黄",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8785,7 +8776,7 @@
           "herbId": "shanghan-herb-rsm2",
           "herbName": "黄连",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8863,7 +8854,7 @@
           "herbId": "shanghan-herb-kvmg",
           "herbName": "皂荚",
           "dosage": "三钱",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8873,7 +8864,7 @@
           "herbId": "shanghan-herb-gevgge",
           "herbName": "红枣适量",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8883,7 +8874,7 @@
           "herbId": "shanghan-herb-lxo26z",
           "herbName": "痰多加天南星",
           "dosage": "三钱",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8971,7 +8962,7 @@
           "herbId": "shanghan-herb-g1a5",
           "herbName": "大黄",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8981,7 +8972,7 @@
           "herbId": "shanghan-herb-rsm2",
           "herbName": "黄连",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -8990,7 +8981,7 @@
         {
           "herbId": "huangqin",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9000,7 +8991,7 @@
           "herbId": "shanghan-herb-q26k",
           "herbName": "附子",
           "dosage": "一枚,炮,去皮,破,别煮取汁",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9088,7 +9079,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "四两切",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9097,7 +9088,7 @@
         {
           "herbId": "gancao",
           "dosage": "三两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9106,7 +9097,7 @@
         {
           "herbId": "renshen",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9116,7 +9107,7 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9125,27 +9116,26 @@
         {
           "herbId": "huangqin",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
           "modernDose": "3 钱"
         },
         {
-          "herbId": "shanghan-herb-avmy5b",
-          "herbName": "半夏半斤",
-          "dosage": "见原文",
-          "role": "未标注",
+          "herbId": "banxia",
+          "dosage": "半斤洗",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "modernDose": "见原文"
+          "modernDose": "8 钱（洗）"
         },
         {
           "herbId": "shanghan-herb-rsm2",
           "herbName": "黄连",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9154,7 +9144,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9172,7 +9162,7 @@
         "renshen": "3 钱",
         "shanghan-herb-gk2y": "1 钱",
         "huangqin": "3 钱",
-        "shanghan-herb-avmy5b": "见原文",
+        "banxia": "8 钱（洗）",
         "shanghan-herb-rsm2": "1 钱",
         "dazao": "12 枚（劈）"
       },
@@ -9246,7 +9236,7 @@
         {
           "herbId": "gancao",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9255,7 +9245,7 @@
         {
           "herbId": "huangqin",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9265,26 +9255,25 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
           "modernDose": "3 钱"
         },
         {
-          "herbId": "shanghan-herb-avmuiq",
-          "herbName": "半夏半升",
-          "dosage": "见原文",
-          "role": "未标注",
+          "herbId": "banxia",
+          "dosage": "半升洗",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "modernDose": "见原文"
+          "modernDose": "0.5 升（洗）"
         },
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9294,7 +9283,7 @@
           "herbId": "shanghan-herb-rsm2",
           "herbName": "黄连",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9310,7 +9299,7 @@
         "gancao": "4 钱",
         "huangqin": "3 钱",
         "shanghan-herb-gk2y": "3 钱",
-        "shanghan-herb-avmuiq": "见原文",
+        "banxia": "0.5 升（洗）",
         "dazao": "12 枚（劈）",
         "shanghan-herb-rsm2": "1 钱"
       },
@@ -9385,7 +9374,7 @@
           "herbId": "shanghan-herb-lanrn",
           "herbName": "赤石脂",
           "dosage": "一斤碎",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9395,7 +9384,7 @@
           "herbId": "shanghan-herb-i80ry",
           "herbName": "禹余粮",
           "dosage": "一斤碎",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9482,7 +9471,7 @@
           "herbId": "shanghan-herb-fkv06",
           "herbName": "旋覆花",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9491,7 +9480,7 @@
         {
           "herbId": "renshen",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9500,7 +9489,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "五两切",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9510,7 +9499,7 @@
           "herbId": "shanghan-herb-c8ojt",
           "herbName": "代赭石",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9519,7 +9508,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9528,21 +9517,20 @@
         {
           "herbId": "gancao",
           "dosage": "三两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
           "modernDose": "3 钱（炙）"
         },
         {
-          "herbId": "shanghan-herb-avmy5b",
-          "herbName": "半夏半斤",
-          "dosage": "见原文",
-          "role": "未标注",
+          "herbId": "banxia",
+          "dosage": "半斤洗",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "modernDose": "见原文"
+          "modernDose": "8 钱（洗）"
         }
       ],
       "dosageNote": "剂量依讲义原文；汉代度量衡换算见《伤寒论》附录。",
@@ -9557,7 +9545,7 @@
         "shanghan-herb-c8ojt": "1 钱",
         "dazao": "12 枚（劈）",
         "gancao": "3 钱（炙）",
-        "shanghan-herb-avmy5b": "见原文"
+        "banxia": "8 钱（洗）"
       },
       "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
       "modifications": [],
@@ -9629,7 +9617,7 @@
         {
           "herbId": "guizhi",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9638,7 +9626,7 @@
         {
           "herbId": "gancao",
           "dosage": "四两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9648,7 +9636,7 @@
           "herbId": "shanghan-herb-kpxu",
           "herbName": "白术",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9657,7 +9645,7 @@
         {
           "herbId": "renshen",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9667,7 +9655,7 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "三两切",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9757,7 +9745,7 @@
           "herbId": "shanghan-herb-klra",
           "herbName": "瓜蒂",
           "dosage": "一分熬黄",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9767,7 +9755,7 @@
           "herbId": "shanghan-herb-l5z7f",
           "herbName": "赤小豆",
           "dosage": "一分",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9844,7 +9832,7 @@
         {
           "herbId": "chaihu",
           "dosage": "五钱",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9854,7 +9842,7 @@
           "herbId": "shanghan-herb-kpxu",
           "herbName": "白术",
           "dosage": "五钱",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9864,7 +9852,7 @@
           "herbId": "shanghan-herb-n150",
           "herbName": "茯苓",
           "dosage": "五钱",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9874,7 +9862,7 @@
           "herbId": "shanghan-herb-jzo6",
           "herbName": "炮附",
           "dosage": "三钱",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9884,7 +9872,7 @@
           "herbId": "shanghan-herb-kqv9",
           "herbName": "生附",
           "dosage": "一枚",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9973,7 +9961,7 @@
         {
           "herbId": "huangqin",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9982,7 +9970,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -9992,7 +9980,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10001,7 +9989,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10089,7 +10077,7 @@
         {
           "herbId": "huangqin",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10099,7 +10087,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10108,7 +10096,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10117,26 +10105,25 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
           "modernDose": "12 枚（劈）"
         },
         {
-          "herbId": "shanghan-herb-avmuiq",
-          "herbName": "半夏半升",
-          "dosage": "见原文",
-          "role": "未标注",
+          "herbId": "banxia",
+          "dosage": "半升",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "modernDose": "见原文"
+          "modernDose": "0.5 升（原量）"
         },
         {
           "herbId": "shengjiang",
           "dosage": "一两半(一本作三两)",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10153,7 +10140,7 @@
         "shanghan-herb-mxdu": "2 钱",
         "gancao": "2 钱（炙）",
         "dazao": "12 枚（劈）",
-        "shanghan-herb-avmuiq": "见原文",
+        "banxia": "0.5 升（原量）",
         "shengjiang": "1.5 钱（一本作三两）"
       },
       "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
@@ -10227,7 +10214,7 @@
           "herbId": "shanghan-herb-rsm2",
           "herbName": "黄连",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10236,7 +10223,7 @@
         {
           "herbId": "gancao",
           "dosage": "三两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10246,7 +10233,7 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10255,7 +10242,7 @@
         {
           "herbId": "guizhi",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10264,26 +10251,25 @@
         {
           "herbId": "renshen",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
           "modernDose": "3 钱"
         },
         {
-          "herbId": "shanghan-herb-avmuiq",
-          "herbName": "半夏半升",
-          "dosage": "见原文",
-          "role": "未标注",
+          "herbId": "banxia",
+          "dosage": "半升洗",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "modernDose": "见原文"
+          "modernDose": "0.5 升（洗）"
         },
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10301,7 +10287,7 @@
         "shanghan-herb-gk2y": "2 钱",
         "guizhi": "3 钱",
         "renshen": "3 钱",
-        "shanghan-herb-avmuiq": "见原文",
+        "banxia": "0.5 升（洗）",
         "dazao": "12 枚（劈）"
       },
       "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
@@ -10374,7 +10360,7 @@
         {
           "herbId": "guizhi",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10384,7 +10370,7 @@
           "herbId": "shanghan-herb-q26k",
           "herbName": "附子",
           "dosage": "三枚,去皮炮,破八片",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10393,7 +10379,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "三两切",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10402,7 +10388,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10411,7 +10397,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10492,7 +10478,7 @@
           "herbId": "shanghan-herb-kpxu",
           "herbName": "白术",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10501,7 +10487,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10511,7 +10497,7 @@
           "herbId": "shanghan-herb-q26k",
           "herbName": "附子",
           "dosage": "三枚炮",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10520,7 +10506,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10529,7 +10515,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10618,7 +10604,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10628,7 +10614,7 @@
           "herbId": "shanghan-herb-q26k",
           "herbName": "附子",
           "dosage": "二枚,炮,去皮,破",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10638,7 +10624,7 @@
           "herbId": "shanghan-herb-kpxu",
           "herbName": "白术",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10647,7 +10633,7 @@
         {
           "herbId": "guizhi",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10736,7 +10722,7 @@
           "herbId": "shanghan-herb-kzgo",
           "herbName": "知母",
           "dosage": "六两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10746,7 +10732,7 @@
           "herbId": "shanghan-herb-l43g",
           "herbName": "石膏",
           "dosage": "一斤碎",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10755,7 +10741,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10765,7 +10751,7 @@
           "herbId": "shanghan-herb-lw68",
           "herbName": "粳米",
           "dosage": "六合",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10853,7 +10839,7 @@
         {
           "herbId": "gancao",
           "dosage": "四两炙",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10863,7 +10849,7 @@
           "herbId": "shanghan-herb-q9hz",
           "herbName": "阿胶",
           "dosage": "二两洗",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10872,7 +10858,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "三两切",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10882,7 +10868,7 @@
           "herbId": "shanghan-herb-nyhuy",
           "herbName": "麦门冬",
           "dosage": "半升",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10891,7 +10877,7 @@
         {
           "herbId": "guizhi",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10900,7 +10886,7 @@
         {
           "herbId": "renshen",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10910,7 +10896,7 @@
           "herbId": "shanghan-herb-hla0j",
           "herbName": "生地黄",
           "dosage": "一斤",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10920,7 +10906,7 @@
           "herbId": "shanghan-herb-noy24",
           "herbName": "麻子仁",
           "dosage": "半升",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -10929,7 +10915,7 @@
         {
           "herbId": "dazao",
           "dosage": "三十枚劈",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11023,7 +11009,7 @@
           "herbId": "shanghan-herb-g1a5",
           "herbName": "大黄",
           "dosage": "四两酒洗",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11033,7 +11019,7 @@
           "herbId": "shanghan-herb-esbe",
           "herbName": "厚朴",
           "dosage": "半斤炙去皮",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11043,7 +11029,7 @@
           "herbId": "shanghan-herb-i53f",
           "herbName": "枳实",
           "dosage": "五枚炙",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11053,7 +11039,7 @@
           "herbId": "shanghan-herb-mvbf",
           "herbName": "芒硝",
           "dosage": "三合",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11142,7 +11128,7 @@
           "herbId": "shanghan-herb-g1a5",
           "herbName": "大黄",
           "dosage": "四两酒洗",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11152,7 +11138,7 @@
           "herbId": "shanghan-herb-esbe",
           "herbName": "厚朴",
           "dosage": "二两炙去皮",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11162,7 +11148,7 @@
           "herbId": "shanghan-herb-i53f",
           "herbName": "枳实",
           "dosage": "三枚大者，炙",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11250,7 +11236,7 @@
           "herbId": "shanghan-herb-kb1l",
           "herbName": "猪苓",
           "dosage": "一两去皮",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11260,7 +11246,7 @@
           "herbId": "shanghan-herb-n150",
           "herbName": "茯苓",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11270,7 +11256,7 @@
           "herbId": "shanghan-herb-q9hz",
           "herbName": "阿胶",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11280,7 +11266,7 @@
           "herbId": "shanghan-herb-ji9u",
           "herbName": "滑石",
           "dosage": "一两碎",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11290,7 +11276,7 @@
           "herbId": "shanghan-herb-j4wu",
           "herbName": "泽泻",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11371,7 +11357,7 @@
           "herbId": "shanghan-herb-fnce8",
           "herbName": "柏子仁",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11380,7 +11366,7 @@
         {
           "herbId": "huangqin",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11390,7 +11376,7 @@
           "herbId": "shanghan-herb-gqjj",
           "herbName": "当归",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11400,7 +11386,7 @@
           "herbId": "shanghan-herb-kpxu",
           "herbName": "白术",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11410,7 +11396,7 @@
           "herbId": "shanghan-herb-n150",
           "herbName": "茯苓",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11420,7 +11406,7 @@
           "herbId": "shanghan-herb-h2d1m",
           "herbName": "炙甘草",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11502,7 +11488,7 @@
           "herbId": "shanghan-herb-qos",
           "herbName": "蜜",
           "dosage": "七合",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11580,7 +11566,7 @@
           "herbId": "shanghan-herb-dbu4c",
           "herbName": "土瓜根",
           "dosage": "原方缺",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11659,7 +11645,7 @@
           "herbId": "shanghan-herb-bqasta",
           "herbName": "大猪胆汁",
           "dosage": "一枚",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11746,7 +11732,7 @@
           "herbId": "shanghan-herb-jy54c",
           "herbName": "茵陈蒿",
           "dosage": "六两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11756,7 +11742,7 @@
           "herbId": "shanghan-herb-i6vk",
           "herbName": "栀子",
           "dosage": "十四枚",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11766,7 +11752,7 @@
           "herbId": "shanghan-herb-g1a5",
           "herbName": "大黄",
           "dosage": "二两去皮",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11854,7 +11840,7 @@
           "herbId": "shanghan-herb-cz1i3",
           "herbName": "吴茱萸",
           "dosage": "一升洗",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11863,7 +11849,7 @@
         {
           "herbId": "renshen",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11872,7 +11858,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "六两切",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11881,7 +11867,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚劈",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11961,7 +11947,7 @@
           "herbId": "shanghan-herb-noy24",
           "herbName": "麻子仁",
           "dosage": "二升",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11971,7 +11957,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "半斤",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11981,7 +11967,7 @@
           "herbId": "shanghan-herb-i53f",
           "herbName": "枳实",
           "dosage": "半斤炙",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -11991,7 +11977,7 @@
           "herbId": "shanghan-herb-g1a5",
           "herbName": "大黄",
           "dosage": "一斤去皮",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12001,7 +11987,7 @@
           "herbId": "shanghan-herb-esbe",
           "herbName": "厚朴",
           "dosage": "一斤炙去皮",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12011,7 +11997,7 @@
           "herbId": "shanghan-herb-i05u",
           "herbName": "杏仁",
           "dosage": "一斤去皮尖，研作脂",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12102,7 +12088,7 @@
           "herbId": "shanghan-herb-i6vk",
           "herbName": "栀子",
           "dosage": "十五个擘",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12111,7 +12097,7 @@
         {
           "herbId": "gancao",
           "dosage": "一两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12121,7 +12107,7 @@
           "herbId": "shanghan-herb-rkp7",
           "herbName": "黄柏",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12209,7 +12195,7 @@
           "herbId": "shanghan-herb-rvc9",
           "herbName": "麻黄",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12219,7 +12205,7 @@
           "herbId": "shanghan-herb-l5z7f",
           "herbName": "赤小豆",
           "dosage": "一升",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12229,7 +12215,7 @@
           "herbId": "shanghan-herb-p67u",
           "herbName": "连翘",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12239,27 +12225,26 @@
           "herbId": "shanghan-herb-i05u",
           "herbName": "杏仁",
           "dosage": "四十个去皮尖",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
           "modernDose": "40 个（去皮尖）"
         },
         {
-          "herbId": "shanghan-herb-6ulmld",
-          "herbName": "大枣十二劈",
-          "dosage": "见原文",
-          "role": "未标注",
+          "herbId": "dazao",
+          "dosage": "十二劈",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "modernDose": "见原文"
+          "modernDose": "十二劈"
         },
         {
           "herbId": "shanghan-herb-f7p3qd",
           "herbName": "生梓白皮",
           "dosage": "一升去节",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12268,7 +12253,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12277,7 +12262,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12294,7 +12279,7 @@
         "shanghan-herb-l5z7f": "1 升（原量）",
         "shanghan-herb-p67u": "2 钱（炙）",
         "shanghan-herb-i05u": "40 个（去皮尖）",
-        "shanghan-herb-6ulmld": "见原文",
+        "dazao": "十二劈",
         "shanghan-herb-f7p3qd": "1 升（去节）",
         "shengjiang": "2 钱",
         "gancao": "2 钱（炙）"
@@ -12369,7 +12354,7 @@
         {
           "herbId": "guizhi",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12379,7 +12364,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "六两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12388,7 +12373,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12397,7 +12382,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "三两切",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12406,7 +12391,7 @@
         {
           "herbId": "dazao",
           "dosage": "二枚擘",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12495,7 +12480,7 @@
         {
           "herbId": "guizhi",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12505,7 +12490,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12514,7 +12499,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12523,7 +12508,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "三两切",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12532,7 +12517,7 @@
         {
           "herbId": "dazao",
           "dosage": "十二枚擘",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12542,7 +12527,7 @@
           "herbId": "shanghan-herb-g1a5",
           "herbName": "大黄",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12633,7 +12618,7 @@
           "herbId": "shanghan-herb-rvc9",
           "herbName": "麻黄",
           "dosage": "二两去筛",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12643,7 +12628,7 @@
           "herbId": "shanghan-herb-mcnp",
           "herbName": "细辛",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12653,7 +12638,7 @@
           "herbId": "shanghan-herb-q26k",
           "herbName": "附子",
           "dosage": "一枚,炮,去皮,破八片",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12732,7 +12717,7 @@
           "herbId": "shanghan-herb-g1a5",
           "herbName": "大黄",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12742,7 +12727,7 @@
           "herbId": "shanghan-herb-mcnp",
           "herbName": "细辛",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12752,7 +12737,7 @@
           "herbId": "shanghan-herb-q26k",
           "herbName": "附子",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12840,7 +12825,7 @@
           "herbId": "shanghan-herb-rvc9",
           "herbName": "麻黄",
           "dosage": "二两,去节",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12849,7 +12834,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两，炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12859,7 +12844,7 @@
           "herbId": "shanghan-herb-q26k",
           "herbName": "附子",
           "dosage": "一枚,炮,去皮",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12947,7 +12932,7 @@
           "herbId": "shanghan-herb-rsm2",
           "herbName": "黄连",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12956,7 +12941,7 @@
         {
           "herbId": "huangqin",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12966,7 +12951,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12976,7 +12961,7 @@
           "herbId": "shanghan-herb-nm7o5",
           "herbName": "鸡子黄",
           "dosage": "二枚",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -12986,7 +12971,7 @@
           "herbId": "shanghan-herb-q9hz",
           "herbName": "阿胶",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13076,7 +13061,7 @@
           "herbId": "shanghan-herb-q26k",
           "herbName": "附子",
           "dosage": "二枚,炮,破八片",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13086,7 +13071,7 @@
           "herbId": "shanghan-herb-n150",
           "herbName": "茯苓",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13095,7 +13080,7 @@
         {
           "herbId": "renshen",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13105,7 +13090,7 @@
           "herbId": "shanghan-herb-kpxu",
           "herbName": "白术",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13115,7 +13100,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13205,7 +13190,7 @@
           "herbId": "shanghan-herb-lanrn",
           "herbName": "赤石脂",
           "dosage": "一斤,一半全用,一半筛末",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13215,7 +13200,7 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13225,7 +13210,7 @@
           "herbId": "shanghan-herb-lw68",
           "herbName": "粳米",
           "dosage": "一升",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13313,7 +13298,7 @@
           "herbId": "shanghan-herb-kam2",
           "herbName": "猪肤",
           "dosage": "一斤",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13398,7 +13383,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13481,20 +13466,19 @@
       },
       "composition": [
         {
-          "herbId": "shanghan-herb-k36z14",
-          "herbName": "半夏洗破,如枣核,大十四枚",
-          "dosage": "见原文",
-          "role": "未标注",
+          "herbId": "banxia",
+          "dosage": "十四枚",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
-          "modernDose": "见原文"
+          "modernDose": "14 枚"
         },
         {
           "herbId": "shanghan-herb-rebz",
           "herbName": "鸡子",
           "dosage": "十枚,去黄,内上苦酒,着鸡子壳中",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13507,7 +13491,7 @@
         "note": "本站统一折算约定，便于对照今用剂量；枚、个、片、升、合等非重量单位仍按原文计量。折算值不是《伤寒论》原文，也不等于临床处方量。"
       },
       "modernGramDoses": {
-        "shanghan-herb-k36z14": "见原文",
+        "banxia": "14 枚",
         "shanghan-herb-rebz": "10 枚（去黄，内上苦酒，着鸡子壳中）"
       },
       "modernGramNote": "今用剂量按“一两 = 现今的一钱”折算；枚、个、片、升、合等仍按原文计量。折算值只作学习参考，不是临床处方。",
@@ -13571,7 +13555,7 @@
         {
           "herbId": "banxia",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13580,7 +13564,7 @@
         {
           "herbId": "guizhi",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13589,7 +13573,7 @@
         {
           "herbId": "gancao",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13677,7 +13661,7 @@
           "herbId": "shanghan-herb-n6ek",
           "herbName": "葱白",
           "dosage": "四茎",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13687,7 +13671,7 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13697,7 +13681,7 @@
           "herbId": "shanghan-herb-q26k",
           "herbName": "附子",
           "dosage": "一枚,生用,去皮破八片",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13785,7 +13769,7 @@
           "herbId": "shanghan-herb-n6ek",
           "herbName": "葱白",
           "dosage": "四茎",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13795,7 +13779,7 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "一两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13805,7 +13789,7 @@
           "herbId": "shanghan-herb-q26k",
           "herbName": "附子",
           "dosage": "一枚,生用,去皮破八片",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13815,7 +13799,7 @@
           "herbId": "shanghan-herb-dwat",
           "herbName": "人尿",
           "dosage": "五合",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13825,7 +13809,7 @@
           "herbId": "shanghan-herb-hhr6t",
           "herbName": "猪胆汁",
           "dosage": "一合",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13914,7 +13898,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两，炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13924,7 +13908,7 @@
           "herbId": "shanghan-herb-jc447e",
           "herbName": "附子大者",
           "dosage": "一枚,生用,去皮,破八片",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -13934,7 +13918,7 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14021,17 +14005,17 @@
         {
           "herbId": "gancao",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
           "modernDose": "见原文"
         },
         {
-          "herbId": "shanghan-herb-xjv6rt",
-          "herbName": "枳实破,水渍,炙干",
+          "herbId": "shanghan-herb-i53f",
+          "herbName": "枳实",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14040,7 +14024,7 @@
         {
           "herbId": "chaihu",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14050,7 +14034,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "见原文",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14064,7 +14048,7 @@
       },
       "modernGramDoses": {
         "gancao": "见原文",
-        "shanghan-herb-xjv6rt": "见原文",
+        "shanghan-herb-i53f": "见原文",
         "chaihu": "见原文",
         "shanghan-herb-mxdu": "见原文"
       },
@@ -14139,7 +14123,7 @@
           "herbId": "shanghan-herb-dw3d",
           "herbName": "乌梅",
           "dosage": "三百个",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14149,7 +14133,7 @@
           "herbId": "shanghan-herb-mcnp",
           "herbName": "细辛",
           "dosage": "六两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14159,7 +14143,7 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "十两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14169,7 +14153,7 @@
           "herbId": "shanghan-herb-rsm2",
           "herbName": "黄连",
           "dosage": "一斤",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14179,7 +14163,7 @@
           "herbId": "shanghan-herb-gqjj",
           "herbName": "当归",
           "dosage": "四两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14189,7 +14173,7 @@
           "herbId": "shanghan-herb-q26k",
           "herbName": "附子",
           "dosage": "六两炮",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14199,7 +14183,7 @@
           "herbId": "shanghan-herb-njf6",
           "herbName": "蜀椒",
           "dosage": "四两炒去汗",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14208,7 +14192,7 @@
         {
           "herbId": "guizhi",
           "dosage": "六两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14217,7 +14201,7 @@
         {
           "herbId": "renshen",
           "dosage": "六两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14227,7 +14211,7 @@
           "herbId": "shanghan-herb-rkp7",
           "herbName": "黄柏",
           "dosage": "六两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14322,7 +14306,7 @@
           "herbId": "shanghan-herb-gqjj",
           "herbName": "当归",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14331,7 +14315,7 @@
         {
           "herbId": "guizhi",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14341,7 +14325,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14351,7 +14335,7 @@
           "herbId": "shanghan-herb-mcnp",
           "herbName": "细辛",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14360,7 +14344,7 @@
         {
           "herbId": "dazao",
           "dosage": "二十五个",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14369,7 +14353,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14379,7 +14363,7 @@
           "herbId": "shanghan-herb-p8bz",
           "herbName": "通草",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14462,7 +14446,7 @@
           "herbId": "shanghan-herb-gqjj",
           "herbName": "当归",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14471,7 +14455,7 @@
         {
           "herbId": "guizhi",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14481,7 +14465,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14491,7 +14475,7 @@
           "herbId": "shanghan-herb-mcnp",
           "herbName": "细辛",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14501,7 +14485,7 @@
           "herbId": "shanghan-herb-p8bz",
           "herbName": "通草",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14510,7 +14494,7 @@
         {
           "herbId": "gancao",
           "dosage": "二两炙",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14519,7 +14503,7 @@
         {
           "herbId": "dazao",
           "dosage": "二十五枚",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14529,7 +14513,7 @@
           "herbId": "shanghan-herb-cz1i3",
           "herbName": "吴茱萸",
           "dosage": "二升",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14538,7 +14522,7 @@
         {
           "herbId": "shengjiang",
           "dosage": "半斤",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14632,7 +14616,7 @@
           "herbId": "shanghan-herb-rvc9",
           "herbName": "麻黄",
           "dosage": "二两半去节",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14642,7 +14626,7 @@
           "herbId": "shanghan-herb-f1as",
           "herbName": "升麻",
           "dosage": "一两一分",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14652,7 +14636,7 @@
           "herbId": "shanghan-herb-gqjj",
           "herbName": "当归",
           "dosage": "一两一分",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14662,7 +14646,7 @@
           "herbId": "shanghan-herb-kzgo",
           "herbName": "知母",
           "dosage": "十八铢",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14671,7 +14655,7 @@
         {
           "herbId": "huangqin",
           "dosage": "十八铢",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14681,7 +14665,7 @@
           "herbId": "shanghan-herb-n9e9",
           "herbName": "葳蕤",
           "dosage": "十八铢",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14691,7 +14675,7 @@
           "herbId": "shanghan-herb-l43g",
           "herbName": "石膏",
           "dosage": "六铢",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14701,7 +14685,7 @@
           "herbId": "shanghan-herb-kpxu",
           "herbName": "白术",
           "dosage": "六铢",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14711,7 +14695,7 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "六铢",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14721,7 +14705,7 @@
           "herbId": "shanghan-herb-mxdu",
           "herbName": "芍药",
           "dosage": "六铢",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14730,7 +14714,7 @@
         {
           "herbId": "guizhi",
           "dosage": "六铢",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14740,7 +14724,7 @@
           "herbId": "shanghan-herb-n150",
           "herbName": "茯苓",
           "dosage": "六铢",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14749,7 +14733,7 @@
         {
           "herbId": "gancao",
           "dosage": "六铢",
-          "role": "未标注",
+          "role": "使",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14759,7 +14743,7 @@
           "herbId": "shanghan-herb-ds33h",
           "herbName": "天门冬",
           "dosage": "六铢",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14858,7 +14842,7 @@
           "herbId": "shanghan-herb-gk2y",
           "herbName": "干姜",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14868,7 +14852,7 @@
           "herbId": "shanghan-herb-rsm2",
           "herbName": "黄连",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14877,7 +14861,7 @@
         {
           "herbId": "huangqin",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14886,7 +14870,7 @@
         {
           "herbId": "renshen",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14975,7 +14959,7 @@
           "herbId": "shanghan-herb-hsnre",
           "herbName": "白头翁",
           "dosage": "二两",
-          "role": "未标注",
+          "role": "君",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14985,7 +14969,7 @@
           "herbId": "shanghan-herb-rsm2",
           "herbName": "黄连",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -14995,7 +14979,7 @@
           "herbId": "shanghan-herb-rkp7",
           "herbName": "黄柏",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
           ],
@@ -15005,7 +14989,7 @@
           "herbId": "shanghan-herb-ldvs",
           "herbName": "秦皮",
           "dosage": "三两",
-          "role": "未标注",
+          "role": "佐",
           "roleCitationIds": [
             "src-fangjixue"
           ],
