@@ -83,7 +83,7 @@ const stats = computed(() => ({
         <p class="eyebrow">CLASSICS / 医家经典古籍</p>
         <h1>医家经典古籍</h1>
         <p>
-          四部医书可逐卷读全文：先看序跋，再按篇名进入正文。
+          全本医书可逐卷读全文：先看序跋，再按篇名进入正文。
           下方另列本项目已经引用的古籍条文，出处、篇卷与原文摘录分开登记。
         </p>
         <div class="classic-stats">
@@ -98,9 +98,9 @@ const stats = computed(() => ({
         <div class="section-head">
           <div>
             <p class="eyebrow">FULL TEXT / 原书全文</p>
-            <h2 id="fulltext-title">四部医书</h2>
+            <h2 id="fulltext-title">全本医书</h2>
           </div>
-          <p>四本书各自独立。详情页只列作者、序跋与篇名；点开篇名进入该篇原文。</p>
+          <p>每本书各自独立。详情页只列作者、序跋与篇名；点开篇名进入该篇原文。</p>
         </div>
 
         <p v-if="libraryError" class="library-state">{{ libraryError }}</p>
@@ -132,7 +132,7 @@ const stats = computed(() => ({
           <h2>先看原书，再看归纳</h2>
         </div>
         <ul>
-          <li><strong>四部全文据用户提供文本整理</strong>：只转编码、分篇与分段，不改字；未做校勘，个别字仍以原书为准。</li>
+          <li><strong>全文据公开整理本或用户提供文本转码</strong>：只转编码、分篇与分段，不改字；未做校勘，个别字仍以原书为准。</li>
           <li><strong>原文与归纳分开</strong>：全文页只呈原书文字；本草、方剂页中的后世方解不混入正文。</li>
           <li><strong>不替代逐条出处</strong>：下方引文索引才是本草、方剂、经络页面的具体引用入口。</li>
         </ul>
@@ -273,7 +273,7 @@ const stats = computed(() => ({
 
 .book-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   gap: 14px;
 }
 

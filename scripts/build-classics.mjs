@@ -20,7 +20,7 @@ function isPreface(title) {
 }
 
 function isPostscript(title) {
-  return /跋/.test(title)
+  return /跋|书后/.test(title)
 }
 
 function isFrontMatter(title) {
@@ -214,7 +214,9 @@ function parseBook(book) {
     author: book.author,
     source: {
       file: book.file,
-      note: '据用户提供的文本整理；原文件为 GBK 编码，已转为 UTF-8。仅作阅读，未做校勘。',
+      note:
+        book.note ??
+        '据用户提供的文本整理；原文件为 GBK 编码，已转为 UTF-8。仅作阅读，未做校勘。',
     },
     prefaces,
     postscripts,

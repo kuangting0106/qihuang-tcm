@@ -27,4 +27,12 @@ export const classicBooks = [
     file: '587-石室秘录.txt',
     order: 4,
   },
+  {
+    id: 'fuqingzhu-nvke',
+    title: '傅青主女科',
+    author: '傅山（傅青主）',
+    file: '124-傅青主女科.txt',
+    order: 5,
+    note: '据公开整理本《傅青主女科歌括》转码整理，保留原书序、女科上下卷、产后编与补编；原文、眉批、歌括均按原顺序保留，未做校勘。方药剂量以原书影印本为准。',
+  },
 ]

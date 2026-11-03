@@ -104,7 +104,7 @@ function displayTitle(section: ClassicSection, siblings: ClassicSection[]): stri
         </header>
 
         <p class="book-source">
-          据用户提供文本整理：仅转编码、分篇与分段，不改字；未做校勘，个别字仍以原书为准。
+          {{ book.source.note }}
         </p>
 
         <div class="book-layout">

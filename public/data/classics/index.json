@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T08:46:58.277Z",
+  "generatedAt": "2026-11-03T02:46:19.032Z",
   "books": [
     {
       "id": "xuezhenglun",
@@ -51,6 +51,19 @@
         "chapterCount": 179,
         "volumeCount": 7,
         "charCount": 180811
+      }
+    },
+    {
+      "id": "fuqingzhu-nvke",
+      "title": "傅青主女科",
+      "author": "傅山（傅青主）",
+      "stats": {
+        "prefaceCount": 3,
+        "postscriptCount": 1,
+        "frontMatterCount": 0,
+        "chapterCount": 134,
+        "volumeCount": 14,
+        "charCount": 70709
       }
     }
   ]

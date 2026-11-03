@@ -117,7 +117,7 @@ const displayTitle = computed(() => {
         </article>
 
         <p class="reading-note">
-          以上文字据用户提供文本整理，仅转编码、分篇与分段，不改字；未做校勘，个别字仍以原书为准。
+          {{ book.source.note }}
         </p>
 
         <nav class="chapter-pager" aria-label="篇目翻页">

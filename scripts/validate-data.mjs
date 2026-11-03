@@ -376,7 +376,7 @@ if (data.bodyModel?.coordinateFrame === 'bronze-body-v1') {
   warnings.push('当前仍是旧版 bronze-body-v1 坐标表，请运行 npm run precompute:body')
 }
 
-// 四部医书全文
+// 全本医书全文
 const classicsDir = path.join(root, 'public', 'data', 'classics')
 let classicsIndex = null
 try {
@@ -389,12 +389,13 @@ const expectedClassicAuthors = {
   伤寒捷诀: '严则庵纂辑、裘庆元辑',
   伤寒论辑义: '丹波元简',
   石室秘录: '陈士铎',
+  傅青主女科: '傅山（傅青主）',
 }
 let classicChapters = 0
 let classicChars = 0
 if (classicsIndex) {
-  if (classicsIndex.books.length !== 4) {
-    errors.push(`医书全文数量应为 4，实际 ${classicsIndex.books.length}`)
+  if (classicsIndex.books.length !== 5) {
+    errors.push(`医书全文数量应为 5，实际 ${classicsIndex.books.length}`)
   }
   for (const summary of classicsIndex.books) {
     const bookPath = path.join(classicsDir, `${summary.id}.json`)
@@ -622,4 +623,4 @@ if (errors.length) {
   for (const e of errors) console.error(`  - ${e}`)
   process.exit(1)
 }
-console.log('\n通过：出处、引用、组成、坐标、八类穴、八脉交会、四部医书全文与本草讲义检查均正常。')
+console.log('\n通过：出处、引用、组成、坐标、八类穴、八脉交会、全本医书与本草讲义检查均正常。')
