@@ -2,6 +2,7 @@
 import { computed, onMounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import HerbPropertyPrinciples from '@/components/HerbPropertyPrinciples.vue'
+import HerbSearch from '@/components/HerbSearch.vue'
 import { formatCharCount, loadBencaoCatalog, loadBencaoIndex } from '@/composables/useBencaoLectures'
 import { useTcmData } from '@/composables/useTcmData'
 import type { BencaoCatalog } from '@/types/bencao'
@@ -163,6 +164,14 @@ const supplementRanks = computed(() =>
           讲义药材的功效分类据公开中药资料映射，只用于导航，不作辨证依据。
         </p>
       </section>
+
+      <HerbSearch
+        :herbs="herbs"
+        :lectures="lectureItems"
+        :ranks="taxonomy?.ranks ?? []"
+        :catalog-ranks="catalog?.ranks ?? []"
+        :categories="taxonomy?.categories ?? []"
+      />
 
       <section class="course-section" aria-label="讲义与课程">
         <div class="section-head">
