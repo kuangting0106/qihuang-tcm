@@ -90,7 +90,7 @@ function buildParagraphs(bodyLines) {
   return paragraphs
 }
 
-function parseBook(book) {
+function parseTaggedBook(book) {
   const text = fs.readFileSync(path.join(sourceDir, book.file), 'utf8')
   const lines = text.split('\n')
 
@@ -233,12 +233,212 @@ function parseBook(book) {
   }
 }
 
+function parseMarkdownBook(book) {
+  const dir = path.join(sourceDir, book.dir)
+  const files = fs
+    .readdirSync(dir)
+    .filter((file) => file.endsWith('.md'))
+    .sort((a, b) => parseInt(a, 10) - parseInt(b, 10))
+
+  const volume = '素问'
+  const chapters = []
+
+  for (const file of files) {
+    const text = fs.readFileSync(path.join(dir, file), 'utf8')
+    const lines = text.split('\n')
+    const headingIndex = lines.findIndex((line) => /^##\s+/.test(line.trim()))
+    if (headingIndex === -1) throw new Error(`${book.title} / ${file}: 缺少篇名标题`)
+    const title = lines[headingIndex].trim().replace(/^##\s+/, '')
+
+    const paragraphs = []
+    let buffer = []
+
+    const flush = () => {
+      if (!buffer.length) return
+      const value = buffer.join('').trim()
+      if (value) paragraphs.push(...splitLongParagraph(value))
+      buffer = []
+    }
+
+    for (const rawLine of lines.slice(headingIndex + 1)) {
+      const line = rawLine.trim()
+      if (!line) {
+        flush()
+        continue
+      }
+      if (/^####\s+/.test(line)) {
+        flush()
+        paragraphs.push(`原文：${line.replace(/^####\s+/, '')}`)
+        continue
+      }
+      buffer.push(line)
+    }
+    flush()
+
+    chapters.push({
+      id: `c-${String(chapters.length + 1).padStart(3, '0')}`,
+      title,
+      volume,
+      kind: 'chapter',
+      charCount: paragraphs.join('').length,
+      paragraphs,
+    })
+  }
+
+  const charCount = chapters.reduce((sum, chapter) => sum + chapter.charCount, 0)
+
+  return {
+    id: book.id,
+    title: book.title,
+    author: book.author,
+    source: {
+      file: book.dir,
+      note: book.note,
+    },
+    prefaces: [],
+    postscripts: [],
+    frontMatter: [],
+    volumes: [{ title: volume, chapters }],
+    stats: {
+      prefaceCount: 0,
+      postscriptCount: 0,
+      frontMatterCount: 0,
+      chapterCount: chapters.length,
+      volumeCount: 1,
+      charCount,
+    },
+  }
+}
+
+function parseShanghanParagraphs(lines) {
+  const paragraphs = []
+  let buffer = []
+  const flush = () => {
+    if (!buffer.length) return
+    const value = buffer.join('').trim()
+    if (value) paragraphs.push(...splitLongParagraph(value))
+    buffer = []
+  }
+
+  for (const rawLine of lines) {
+    const line = rawLine.trim()
+    if (!line) {
+      flush()
+      continue
+    }
+    if (line.startsWith('## ')) continue
+    if (line.startsWith('#### ')) {
+      flush()
+      const heading = line.replace(/^####\s+/, '').trim()
+      const numbered = /^[0-9一二三四五六七八九十百]+[、.:：]/.test(heading)
+      const cleanHeading = heading.replace(/[（(][^）)]*[）)]\s*$/, '').trim()
+      const isFormula = cleanHeading.endsWith('方') || heading.startsWith('蜜煎导法')
+      paragraphs.push(`${numbered ? '原文' : isFormula ? '方' : '原文'}：${heading}`)
+      continue
+    }
+    if (line.startsWith('>')) {
+      flush()
+      const value = line.replace(/^>\s*/, '').trim()
+      if (value) paragraphs.push(`讲解：${value}`)
+      continue
+    }
+    buffer.push(line)
+  }
+  flush()
+  return paragraphs
+}
+
+function parseShanghanBook(book) {
+  const dir = path.join(sourceDir, book.dir)
+  const files = fs.readdirSync(dir).filter((file) => file.endsWith('.md'))
+  const findFile = (prefix) => files.find((file) => file.startsWith(prefix))
+
+  const readSection = (file, kind, volume) => {
+    const text = fs.readFileSync(path.join(dir, file), 'utf8')
+    const lines = text.split('\n')
+    const headingIndex = lines.findIndex((line) => /^##\s+/.test(line.trim()))
+    const title =
+      headingIndex === -1 ? file.replace(/\.md$/, '') : lines[headingIndex].trim().replace(/^##\s+/, '')
+    const paragraphs = parseShanghanParagraphs(lines.slice(headingIndex + 1))
+    return {
+      title,
+      volume,
+      kind,
+      charCount: paragraphs.join('').length,
+      paragraphs,
+    }
+  }
+
+  const prefaces = []
+  const frontMatter = []
+  const volumes = [
+    { title: '伤寒论', chapters: [] },
+    { title: '附篇', chapters: [] },
+    { title: '附录·度量衡', chapters: [] },
+  ]
+
+  const prefaceFile = findFile('1.')
+  if (prefaceFile) prefaces.push(readSection(prefaceFile, 'preface', ''))
+  const frontFile = findFile('2.')
+  if (frontFile) frontMatter.push(readSection(frontFile, 'frontMatter', ''))
+
+  const mainPrefixes = ['3.', '4.', '5.', '6.', '7.', '8.', '9.', '10.']
+  const mainFiles = files
+    .filter((file) => mainPrefixes.some((prefix) => file.startsWith(prefix)) && !file.startsWith('6.1'))
+    .sort((a, b) => parseInt(a, 10) - parseInt(b, 10))
+  for (const file of mainFiles) volumes[0].chapters.push(readSection(file, 'chapter', '伤寒论'))
+
+  const lingxuFile = findFile('6.1')
+  if (lingxuFile) volumes[1].chapters.push(readSection(lingxuFile, 'chapter', '附篇'))
+
+  const appendixFiles = files.filter(
+    (file) => !/^\d/.test(file) && file !== '6.1灵枢经-与阳明有关章节.md',
+  )
+  for (const file of appendixFiles) {
+    volumes[2].chapters.push(readSection(file, 'chapter', '附录·度量衡'))
+  }
+
+  let chapterIndex = 0
+  const allSections = [...prefaces, ...frontMatter, ...volumes.flatMap((volume) => volume.chapters)]
+  for (const section of allSections) {
+    chapterIndex += 1
+    section.id = `c-${String(chapterIndex).padStart(3, '0')}`
+  }
+
+  const activeVolumes = volumes.filter((volume) => volume.chapters.length)
+  const chapterCount = activeVolumes.reduce((sum, volume) => sum + volume.chapters.length, 0)
+  const charCount = allSections.reduce((sum, section) => sum + section.charCount, 0)
+
+  return {
+    id: book.id,
+    title: book.title,
+    author: book.author,
+    source: { file: book.dir, note: book.note },
+    prefaces,
+    postscripts: [],
+    frontMatter,
+    volumes: activeVolumes,
+    stats: {
+      prefaceCount: prefaces.length,
+      postscriptCount: 0,
+      frontMatterCount: frontMatter.length,
+      chapterCount,
+      volumeCount: activeVolumes.length,
+      charCount,
+    },
+  }
+}
+
 export function buildClassics() {
   fs.mkdirSync(outDir, { recursive: true })
   const books = classicBooks
     .slice()
     .sort((a, b) => a.order - b.order)
-    .map((book) => parseBook(book))
+    .map((book) => {
+      if (book.format === 'markdown') return parseMarkdownBook(book)
+      if (book.format === 'shanghan') return parseShanghanBook(book)
+      return parseTaggedBook(book)
+    })
 
   for (const book of books) {
     fs.writeFileSync(path.join(outDir, `${book.id}.json`), JSON.stringify(book, null, 2), 'utf8')

@@ -35,4 +35,22 @@ export const classicBooks = [
     order: 5,
     note: '据公开整理本《傅青主女科歌括》转码整理，保留原书序、女科上下卷、产后编与补编；原文、眉批、歌括均按原顺序保留，未做校勘。方药剂量以原书影印本为准。',
   },
+  {
+    id: 'nihaixia-huangdi',
+    title: '黄帝内经',
+    author: '倪海厦',
+    format: 'markdown',
+    dir: 'nihaixia-huangdi',
+    order: 6,
+    note: '据倪海厦《人纪·黄帝内经》讲义 Markdown 整理，共 73 篇，按《素问》篇次编排。每篇先列原文句，后附讲解；源文件缺第 66—71、73—74 篇，篇名与文字依源文件，未逐字校勘。',
+  },
+  {
+    id: 'shanghan-nihaixia',
+    title: '伤寒论',
+    author: '倪海厦',
+    format: 'shanghan',
+    dir: 'shanghan-nihaixia',
+    order: 7,
+    note: '据倪海厦《人纪·伤寒论》讲义 Markdown 整理，保留序言、前言、辨六经正文、附灵枢章节与度量衡附录；条文、方药、讲解按原顺序录入，未逐字校勘。方药剂量以原书影印本为准。',
+  },
 ]

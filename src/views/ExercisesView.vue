@@ -63,7 +63,7 @@ import { exercises } from '@/data/exercises'
             <li><strong>五禽戏</strong>：传统上多记于华佗；孙思邈的导引养生单列，不混成同一作者。</li>
             <li><strong>安全</strong>：只做练习参考，不替代医生、康复师或专业老师。</li>
           </ul>
-          <RouterLink class="text-link" to="/classics">查看医家经典古籍 →</RouterLink>
+          <RouterLink class="text-link" to="/classics">查看医家经典书籍 →</RouterLink>
         </div>
       </section>
     </div>

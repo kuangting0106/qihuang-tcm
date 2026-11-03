@@ -74,7 +74,7 @@ const nodes = computed<GraphNode[]>(() => {
       const herb = herbsById.value.get(item.herbId)
       out.push({
         herbId: item.herbId,
-        name: herb?.name ?? item.herbId,
+        name: item.herbName ?? herb?.name ?? item.herbId,
         role: item.role,
         x: CX + Math.cos(angle) * radius,
         y: CY + Math.sin(angle) * radius,
@@ -579,6 +579,9 @@ const selectedHerb = computed(() =>
   }
 
   .graph-canvas {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
     min-height: 300px;
   }
 }

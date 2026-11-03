@@ -67,7 +67,7 @@ const modules = computed(() => [
           <RouterLink to="/herbs">本草</RouterLink>
           <RouterLink to="/formulas">方剂</RouterLink>
           <RouterLink to="/exercises">古法锻炼</RouterLink>
-          <RouterLink to="/classics">医家经典古籍</RouterLink>
+          <RouterLink to="/classics">医家经典书籍</RouterLink>
           <RouterLink to="/cases">医案</RouterLink>
         </nav>
 
@@ -130,8 +130,8 @@ const modules = computed(() => [
         </RouterLink>
         <RouterLink to="/classics" class="extra-card extra-card--classics">
           <div>
-            <span class="eyebrow">CLASSICS / 医家经典古籍</span>
-            <h3>医家经典古籍</h3>
+            <span class="eyebrow">CLASSICS / 医家经典书籍</span>
+            <h3>医家经典书籍</h3>
             <p>《伤寒论》《灵枢》《难经》《神农本草经》《本草纲目》等已引用古籍与条文，原文与条号分开登记。</p>
           </div>
           <span class="extra-card__count">按书查阅 →</span>

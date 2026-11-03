@@ -9,7 +9,9 @@ const props = defineProps<{ formula: Formula }>()
 const { citationsById, herbName } = useTcmData()
 
 const citation = computed(() => citationsById.value.get(props.formula.sourceCitationId))
-const herbNames = computed(() => props.formula.composition.map((c) => herbName(c.herbId)))
+const herbNames = computed(() =>
+  props.formula.composition.map((c) => c.herbName ?? herbName(c.herbId)),
+)
 const visibleNames = computed(() => herbNames.value.slice(0, 6))
 const rest = computed(() => herbNames.value.length - visibleNames.value.length)
 

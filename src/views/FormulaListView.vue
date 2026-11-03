@@ -12,7 +12,7 @@ const filtered = computed(() => {
   const q = query.value.trim().toLowerCase()
   if (!q) return formulas.value
   return formulas.value.filter((f) => {
-    const herbNames = f.composition.map((c) => herbName(c.herbId))
+    const herbNames = f.composition.map((c) => c.herbName ?? herbName(c.herbId))
     const haystack = [f.name, f.pinyin, f.effects.text, ...herbNames].join(' ').toLowerCase()
     return haystack.includes(q)
   })
@@ -33,7 +33,7 @@ const filtered = computed(() => {
         </div>
         <div class="page-hero__stat">
           <span>{{ formulas.length }}</span>
-          <small>首样例方剂</small>
+          <small>首方剂</small>
           <span>{{ formulas.reduce((n, f) => n + f.composition.length, 0) }}</span>
           <small>条组成记录</small>
         </div>
@@ -44,7 +44,7 @@ const filtered = computed(() => {
           <span class="search-field__icon" aria-hidden="true">⌕</span>
           <input v-model="query" type="search" placeholder="搜索方名、药材…" />
         </label>
-        <p class="filter-hint">当前样例：桂枝汤 5 味、小柴胡汤 7 味</p>
+        <p class="filter-hint">伤寒论方与后世方解分栏呈现；未收录药材只显示方中名称，不跳转药材页。</p>
       </section>
 
       <div class="result-line">

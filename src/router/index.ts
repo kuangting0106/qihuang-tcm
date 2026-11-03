@@ -142,7 +142,7 @@ const router = createRouter({
       path: '/classics',
       name: 'classics',
       component: () => import('@/views/ClassicsView.vue'),
-      meta: { title: '医家经典古籍' },
+      meta: { title: '医家经典书籍' },
     },
     {
       path: '/classics/:bookId',

@@ -140,7 +140,9 @@ const commonRatioSummary = computed(
 )
 
 const ancientDoseSummary = computed(() =>
-  rows.value.map((row) => `${row.herb?.name ?? row.herbId}${row.dosage}`).join('，'),
+  rows.value
+    .map((row) => `${row.herbName ?? row.herb?.name ?? row.herbId}${row.dosage}`)
+    .join('，'),
 )
 
 const activeDoseSummary = computed(() =>
@@ -156,11 +158,25 @@ const activeDoseNote = computed(() =>
 )
 
 function herbName(item: FormulaCompositionItem) {
-  return props.herbNames?.[item.herbId] ?? herbsById.value.get(item.herbId)?.name ?? item.herbId
+  return (
+    item.herbName ??
+    props.herbNames?.[item.herbId] ??
+    herbsById.value.get(item.herbId)?.name ??
+    item.herbId
+  )
 }
 
 function herbNameById(herbId: string) {
-  return props.herbNames?.[herbId] ?? herbsById.value.get(herbId)?.name ?? herbId
+  return (
+    compositionRow(herbId)?.herbName ??
+    props.herbNames?.[herbId] ??
+    herbsById.value.get(herbId)?.name ??
+    herbId
+  )
+}
+
+function hasHerbPage(herbId: string) {
+  return herbsById.value.has(herbId)
 }
 
 function compositionRow(herbId: string) {
@@ -256,7 +272,10 @@ function anchor(role: FormulaRole) {
           class="meaning-item"
         >
           <div class="meaning-item__head">
-            <RouterLink :to="`/herbs/${item.herbId}`">{{ herbNameById(item.herbId) }}</RouterLink>
+            <RouterLink v-if="hasHerbPage(item.herbId)" :to="`/herbs/${item.herbId}`">
+              {{ herbNameById(item.herbId) }}
+            </RouterLink>
+            <span v-else>{{ herbNameById(item.herbId) }}</span>
             <span class="role-pill" :class="`role-pill--${meaningRole(item.herbId)}`">
               {{ meaningRole(item.herbId) }}
             </span>
@@ -294,7 +313,10 @@ function anchor(role: FormulaRole) {
         role="row"
       >
         <span class="composition-row__herb" role="cell">
-          <RouterLink :to="`/herbs/${item.herbId}`">{{ herbName(item) }}</RouterLink>
+          <RouterLink v-if="hasHerbPage(item.herbId)" :to="`/herbs/${item.herbId}`">
+            {{ herbName(item) }}
+          </RouterLink>
+          <span v-else>{{ herbName(item) }}</span>
           <button class="locate-btn" type="button" @click="emit('select', item.herbId)">定位原文</button>
         </span>
         <span role="cell" :class="{ 'modern-cell': dosageMode === 'modern' }">{{ activeDose(item) }}</span>
@@ -345,7 +367,14 @@ function anchor(role: FormulaRole) {
             :class="{ 'role-item--selected': selectedHerbId === item.herbId }"
           >
             <div class="role-item__main">
-              <RouterLink class="role-item__name" :to="`/herbs/${item.herbId}`">{{ herbName(item) }}</RouterLink>
+              <RouterLink
+                v-if="hasHerbPage(item.herbId)"
+                class="role-item__name"
+                :to="`/herbs/${item.herbId}`"
+              >
+                {{ herbName(item) }}
+              </RouterLink>
+              <span v-else class="role-item__name">{{ herbName(item) }}</span>
               <span class="role-item__dosages">
                 <span
                   class="role-item__dosage"

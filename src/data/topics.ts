@@ -46,7 +46,7 @@ export const methodTopics: Topic[] = [
   {
     id: 'moxibustion',
     title: '灸',
-    subtitle: '灸法资料栏：艾灸材料、操作、宜忌与相关医案；具体内容待按典籍与规范逐条录入。',
+    subtitle: '节录倪海厦《人纪·针灸教程》第一章：隔姜灸、隔盐灸、隔蒜灸、米粒灸与灸的宜忌；原文照录，非专业勿试。',
   },
   {
     id: 'acupuncture',

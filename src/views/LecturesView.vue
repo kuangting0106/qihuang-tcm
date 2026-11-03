@@ -179,7 +179,7 @@ const totalDuration = computed(() => {
             <li><strong>来源与授权</strong>：只收自有、授权或官方公开视频；来源不明不嵌入，也不提供下载。</li>
             <li><strong>原文优先</strong>：课程是理解入口，具体方药与条文仍回引原书，不用视频替代原文。</li>
           </ul>
-          <RouterLink class="text-link" to="/classics">查看医家经典古籍 →</RouterLink>
+          <RouterLink class="text-link" to="/classics">查看医家经典书籍 →</RouterLink>
         </div>
       </section>
     </div>

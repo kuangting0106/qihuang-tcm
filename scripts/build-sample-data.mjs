@@ -14,6 +14,19 @@ import { buildClassics } from './build-classics.mjs'
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const dataDir = path.join(root, 'public', 'data')
 
+const shanghanFile = path.join(root, 'scripts', 'content', 'shanghan-formulas.json')
+const shanghanData = fs.existsSync(shanghanFile)
+  ? JSON.parse(fs.readFileSync(shanghanFile, 'utf8'))
+  : { sources: [], formulas: [] }
+const existingFormulaNames = new Set(formulas.map((formula) => formula.name))
+const shanghanFormulas = shanghanData.formulas.filter(
+  (formula) => !existingFormulaNames.has(formula.name),
+)
+const shanghanSourceIds = new Set(shanghanFormulas.map((formula) => formula.sourceCitationId))
+const shanghanSources = shanghanData.sources.filter((source) => shanghanSourceIds.has(source.id))
+const allSources = [...sources, ...shanghanSources]
+const allFormulas = [...formulas, ...shanghanFormulas]
+
 fs.mkdirSync(dataDir, { recursive: true })
 
 const photoFile = path.join(root, 'scripts', 'content', 'herb-photos.json')
@@ -71,12 +84,12 @@ const data = {
     notes:
       'MakeHuman CC0 基础网格改造的针灸铜人风格模型；青色腰布与头巾，无性器官细节，仅用于经络穴位学习。换模型必须同步更换坐标表版本。',
   },
-  sources,
+  sources: allSources,
   herbs: enrichedHerbs,
   herbTaxonomy,
   herbPrinciples,
   processingExamples,
-  formulas,
+  formulas: allFormulas,
   meridians: enrichedMeridians,
   acupoints: enrichedAcupoints,
 }
@@ -86,7 +99,7 @@ buildClassics()
 
 console.log(
   `Wrote ${path.relative(root, path.join(dataDir, 'sample_data.json'))}: ` +
-    `${sources.length} sources, ${enrichedHerbs.length} herbs, ${formulas.length} formulas, ` +
+    `${allSources.length} sources, ${enrichedHerbs.length} herbs, ${allFormulas.length} formulas, ` +
     `${enrichedMeridians.length} meridians, ${enrichedAcupoints.length} acupoints, ` +
     `${enrichedHerbs.reduce((n, h) => n + h.images.length, 0)} herb images.`,
 )

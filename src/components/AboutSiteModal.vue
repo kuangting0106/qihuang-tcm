@@ -77,7 +77,7 @@ onUnmounted(() => {
 
           <div class="about-modal__foot">
             <RouterLink class="text-link" to="/classics" @click="emit('close')">
-              查看医家经典古籍 →
+              查看医家经典书籍 →
             </RouterLink>
             <span>鼠标悬停或点击页脚“关于本站”可再次打开。</span>
           </div>

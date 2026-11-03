@@ -80,8 +80,8 @@ const stats = computed(() => ({
   <div class="page classics-page">
     <div class="container">
       <header class="classics-head">
-        <p class="eyebrow">CLASSICS / 医家经典古籍</p>
-        <h1>医家经典古籍</h1>
+        <p class="eyebrow">CLASSICS / 医家经典书籍</p>
+        <h1>医家经典书籍</h1>
         <p>
           全本医书可逐卷读全文：先看序跋，再按篇名进入正文。
           下方另列本项目已经引用的古籍条文，出处、篇卷与原文摘录分开登记。

@@ -84,7 +84,7 @@ const displayTitle = computed(() => {
       <nav class="breadcrumbs" aria-label="面包屑">
         <RouterLink to="/">首页</RouterLink>
         <span>/</span>
-        <RouterLink to="/classics">医家经典古籍</RouterLink>
+        <RouterLink to="/classics">医家经典书籍</RouterLink>
         <span>/</span>
         <RouterLink v-if="book" :to="`/classics/${book.id}`">{{ book.title }}</RouterLink>
         <span>/</span>

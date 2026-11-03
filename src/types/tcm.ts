@@ -174,6 +174,8 @@ export interface DosageConversion {
 
 export interface FormulaCompositionItem {
   herbId: string
+  /** 未收录药材的显示名；有值时可不链接到药材详情页 */
+  herbName?: string
   dosage: string
   role: FormulaRole
   roleCitationIds: string[]

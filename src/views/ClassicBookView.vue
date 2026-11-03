@@ -76,7 +76,7 @@ function displayTitle(section: ClassicSection, siblings: ClassicSection[]): stri
       <nav class="breadcrumbs" aria-label="面包屑">
         <RouterLink to="/">首页</RouterLink>
         <span>/</span>
-        <RouterLink to="/classics">医家经典古籍</RouterLink>
+        <RouterLink to="/classics">医家经典书籍</RouterLink>
         <span>/</span>
         <span>{{ book?.title ?? '全书' }}</span>
       </nav>

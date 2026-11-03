@@ -65,6 +65,32 @@
         "volumeCount": 14,
         "charCount": 70709
       }
+    },
+    {
+      "id": "nihaixia-huangdi",
+      "title": "黄帝内经",
+      "author": "倪海厦",
+      "stats": {
+        "prefaceCount": 0,
+        "postscriptCount": 0,
+        "frontMatterCount": 0,
+        "chapterCount": 73,
+        "volumeCount": 1,
+        "charCount": 198579
+      }
+    },
+    {
+      "id": "shanghan-nihaixia",
+      "title": "伤寒论",
+      "author": "倪海厦",
+      "stats": {
+        "prefaceCount": 1,
+        "postscriptCount": 0,
+        "frontMatterCount": 1,
+        "chapterCount": 12,
+        "volumeCount": 3,
+        "charCount": 332335
+      }
     }
   ]
 }

@@ -196,7 +196,10 @@ watch(
             </div>
             <ul class="preparation-herbs">
               <li v-for="item in formula.composition" :key="item.herbId">
-                <RouterLink :to="`/herbs/${item.herbId}`">{{ herbName(item.herbId) }}</RouterLink>
+                <RouterLink v-if="herbsById.has(item.herbId)" :to="`/herbs/${item.herbId}`">
+                  {{ item.herbName ?? herbName(item.herbId) }}
+                </RouterLink>
+                <span v-else>{{ item.herbName ?? herbName(item.herbId) }}</span>
                 <span>
                   {{
                     prepDoseMode === 'modern'
@@ -1428,7 +1431,7 @@ watch(
 
 @media (max-width: 1080px) {
   .symptom-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 18px;
   }
 
@@ -1437,7 +1440,18 @@ watch(
   }
 
   .graph-commentary-section {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .effect-card,
+  .symptom-panel,
+  .graph-column,
+  .graph-section__body {
+    min-width: 0;
+  }
+
+  .effect-card :deep(.citation-badge__text) {
+    white-space: normal;
   }
 
   .graph-section__body {

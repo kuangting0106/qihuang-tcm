@@ -285,7 +285,9 @@ for (const f of data.formulas ?? []) {
   }
   const seen = new Set()
   for (const c of f.composition ?? []) {
-    if (!herbIds.has(c.herbId)) errors.push(`方剂 ${f.id}: 组成引用了不存在的药材 ${c.herbId}`)
+    if (!herbIds.has(c.herbId) && !c.herbName?.trim()) {
+      errors.push(`方剂 ${f.id}: 组成引用了不存在的药材 ${c.herbId}`)
+    }
     if (seen.has(c.herbId)) errors.push(`方剂 ${f.id}: 药材重复 ${c.herbId}`)
     seen.add(c.herbId)
     if (!['君', '臣', '佐', '使', '佐使', '未标注'].includes(c.role)) {
@@ -390,12 +392,14 @@ const expectedClassicAuthors = {
   伤寒论辑义: '丹波元简',
   石室秘录: '陈士铎',
   傅青主女科: '傅山（傅青主）',
+  黄帝内经: '倪海厦',
+  伤寒论: '倪海厦',
 }
 let classicChapters = 0
 let classicChars = 0
 if (classicsIndex) {
-  if (classicsIndex.books.length !== 5) {
-    errors.push(`医书全文数量应为 5，实际 ${classicsIndex.books.length}`)
+  if (classicsIndex.books.length !== 7) {
+    errors.push(`医书全文数量应为 7，实际 ${classicsIndex.books.length}`)
   }
   for (const summary of classicsIndex.books) {
     const bookPath = path.join(classicsDir, `${summary.id}.json`)

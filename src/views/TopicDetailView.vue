@@ -2,12 +2,14 @@
 import { computed } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import AcupunctureTopic from '@/components/AcupunctureTopic.vue'
+import MoxibustionTopic from '@/components/MoxibustionTopic.vue'
 import { findTopic, getTopicSection } from '@/data/topics'
 
 const route = useRoute()
 const section = computed(() => getTopicSection(String(route.meta.section || 'methods')))
 const topic = computed(() => findTopic(section.value.key, String(route.params.id)))
 const isAcupuncture = computed(() => section.value.key === 'methods' && topic.value?.id === 'acupuncture')
+const isMoxibustion = computed(() => section.value.key === 'methods' && topic.value?.id === 'moxibustion')
 </script>
 
 <template>
@@ -28,12 +30,13 @@ const isAcupuncture = computed(() => section.value.key === 'methods' && topic.va
             <h1>{{ topic.title }}</h1>
             <p>{{ topic.subtitle }}</p>
           </div>
-          <span class="chip" :class="isAcupuncture ? 'chip--cinnabar' : 'chip--gold'">
-            {{ isAcupuncture ? '含针刺操作 · 非专业勿试' : '正文待收录' }}
+          <span class="chip" :class="isAcupuncture || isMoxibustion ? 'chip--cinnabar' : 'chip--gold'">
+            {{ isAcupuncture ? '含针刺操作 · 非专业勿试' : isMoxibustion ? '含艾灸操作 · 非专业勿试' : '正文待收录' }}
           </span>
         </header>
 
         <AcupunctureTopic v-if="isAcupuncture" />
+        <MoxibustionTopic v-else-if="isMoxibustion" />
 
         <div v-else class="topic-detail-layout">
           <section class="empty-article paper-panel">
