@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
+import { computed, nextTick, onMounted, ref } from 'vue'
 import FormulaCard from '@/components/FormulaCard.vue'
 import { useFormulaApi } from '@/composables/useFormulaApi'
 import type { FormulaSummary } from '@/composables/useFormulaApi'
@@ -207,14 +207,23 @@ function selectBook(book: 'shanghan' | 'jingui' | 'mijingzi') {
   query.value = ''
 }
 
+async function scrollToResults() {
+  await nextTick()
+  document.getElementById('formula-results')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
+
 function selectChapter(key: string) {
-  activeChapter.value = activeChapter.value === key ? '' : key
+  const next = activeChapter.value === key ? '' : key
+  activeChapter.value = next
   activeClass.value = ''
+  if (next) void scrollToResults()
 }
 
 function selectClass(key: string) {
-  activeClass.value = activeClass.value === key ? '' : key
+  const next = activeClass.value === key ? '' : key
+  activeClass.value = next
   activeChapter.value = ''
+  if (next) void scrollToResults()
 }
 
 function clearFilters() {
@@ -310,7 +319,7 @@ function clearFilters() {
               >
                 <span class="chapter-card__head">
                   <strong>{{ chapter.key }}</strong>
-                  <span>{{ chapter.count }} 首</span>
+                  <span>{{ chapter.count }} 首 · 查看 →</span>
                 </span>
                 <span class="chapter-card__preview">{{ chapter.preview.join(' · ') }}</span>
               </button>
@@ -341,7 +350,7 @@ function clearFilters() {
           </section>
         </template>
 
-        <div v-if="hasBrowsing" class="result-line">
+        <div v-if="hasBrowsing" id="formula-results" class="result-line">
           <p><strong>{{ activeLabel }}</strong><span>共 {{ filtered.length }} 首</span></p>
           <button class="text-link tiny" type="button" @click="clearFilters">清除筛选</button>
         </div>
@@ -643,6 +652,10 @@ function clearFilters() {
   padding: 16px 18px;
   color: var(--ink-faint);
   font-size: 0.82rem;
+}
+
+#formula-results {
+  scroll-margin-top: 90px;
 }
 
 .result-line {

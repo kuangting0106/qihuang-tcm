@@ -25,7 +25,6 @@ const {
 } = useFormulaApi()
 const {
   loadPublicNotes,
-  savePublicNote,
   publicAnnotationsFor,
   publicHerbNotes,
   publicHerbRoles,
@@ -184,7 +183,7 @@ function baseRoleFor(herbId: string): FormulaRole {
   return formula.value?.composition.find((item) => item.herbId === herbId)?.role ?? '未标注'
 }
 
-const publicHint = ref('')
+const saveHint = ref('')
 
 function clearLocalHerbNote(formulaId: string, herbId: string) {
   const book = { ...(herbNotes.value[formulaId] ?? {}) }
@@ -204,7 +203,7 @@ function clearLocalHerbRole(formulaId: string, herbId: string) {
   persistHerbRoles(next)
 }
 
-async function setHerbNote(herbId: string, text: string) {
+function setHerbNote(herbId: string, text: string) {
   const current = formula.value
   if (!current) return
   const note = text.trim()
@@ -215,18 +214,10 @@ async function setHerbNote(herbId: string, text: string) {
   if (Object.keys(book).length) next[current.id] = book
   else delete next[current.id]
   persistHerbNotes(next)
-
-  const result = await savePublicNote({
-    op: 'herb-note',
-    formulaId: current.id,
-    herbId,
-    note,
-  })
-  publicHint.value = result.message
-  if (result.ok) clearLocalHerbNote(current.id, herbId)
+  saveHint.value = '已保存到本机浏览器，再次点击药材可继续修改。'
 }
 
-async function setHerbRole(herbId: string, role: FormulaRole) {
+function setHerbRole(herbId: string, role: FormulaRole) {
   const current = formula.value
   if (!current) return
   const book = { ...(herbRoles.value[current.id] ?? {}) }
@@ -236,28 +227,15 @@ async function setHerbRole(herbId: string, role: FormulaRole) {
   if (Object.keys(book).length) next[current.id] = book
   else delete next[current.id]
   persistHerbRoles(next)
-
-  const result = await savePublicNote({
-    op: 'herb-role',
-    formulaId: current.id,
-    herbId,
-    role: role === baseRoleFor(herbId) ? '未标注' : role,
-  })
-  publicHint.value = result.message
-  if (result.ok) clearLocalHerbRole(current.id, herbId)
+  saveHint.value = '已保存到本机浏览器，再次点击药材可继续修改。'
 }
 
-async function resetHerb(herbId: string) {
+function resetHerb(herbId: string) {
   const current = formula.value
   if (!current) return
   clearLocalHerbRole(current.id, herbId)
   clearLocalHerbNote(current.id, herbId)
-  const result = await savePublicNote({
-    op: 'herb-reset',
-    formulaId: current.id,
-    herbId,
-  })
-  publicHint.value = result.message
+  saveHint.value = '已清除本机修改。'
 }
 
 function selectHerb(id: string) {
@@ -294,33 +272,6 @@ function publishedAnnotationsForSymptom(index: number) {
     note: item.note,
     start: item.start,
   }))
-}
-
-function publishSymptomAnnotation(
-  index: number,
-  payload: { phrase: string; note: string; start: number },
-) {
-  const current = formula.value
-  if (!current) return Promise.resolve({ ok: false, message: '未找到方剂。' })
-  return savePublicNote({
-    op: 'symptom-upsert',
-    scopeKey: `${current.id}:${index}`,
-    annotation: payload,
-  })
-}
-
-function unpublishSymptomAnnotation(
-  index: number,
-  payload: { phrase: string; start: number },
-) {
-  const current = formula.value
-  if (!current) return Promise.resolve({ ok: false, message: '未找到方剂。' })
-  return savePublicNote({
-    op: 'symptom-delete',
-    scopeKey: `${current.id}:${index}`,
-    phrase: payload.phrase,
-    start: payload.start,
-  })
 }
 
 const NOTE_STORAGE_KEY = 'qihuang.formula.modernNotes'
@@ -658,7 +609,7 @@ watch(
           </div>
 
           <p v-if="annotationMode" class="symptom-edit-hint">
-            用鼠标或手指选中原文词句，松开后填写注解。保存时输入编辑口令，即可发布给所有访客；没有口令时只保存在本机。
+            用鼠标或手指选中原文词句，松开后填写注解。保存后只存在本机浏览器，之后可以再次点开修改。
           </p>
 
           <blockquote v-for="(s, i) in formula.symptoms" :key="`${formula.id}-${i}`" class="symptom-quote">
@@ -669,8 +620,6 @@ watch(
               :tags="tagsForSymptom(i)"
               :editable="annotationMode"
               :scope-key="`${formula.id}:${i}`"
-              :publish-annotation="(payload) => publishSymptomAnnotation(i, payload)"
-              :unpublish-annotation="(payload) => unpublishSymptomAnnotation(i, payload)"
             />
           </blockquote>
 
@@ -680,8 +629,8 @@ watch(
 
           <div v-if="formula.symptoms.length" class="symptom-panel__foot">
             <CitationBadge :citation-ids="formula.symptoms[0]?.citationIds ?? [formula.sourceCitationId]" label="原文" />
-            <span v-if="isMijingzi">症状与方名据《米晶子济世良方》原文摘录；带下划线的词可悬停看注解，点“划线标注”可补充并发布注解。</span>
-            <span v-else>症状与方名均回引《伤寒论》相关条文；带下划线的词可悬停看注解，点“划线标注”可补充并发布注解。</span>
+            <span v-if="isMijingzi">症状与方名据《米晶子济世良方》原文摘录；带下划线的词可悬停看注解，点“划线标注”可补充本机注解。</span>
+            <span v-else>症状与方名均回引《伤寒论》相关条文；带下划线的词可悬停看注解，点“划线标注”可补充本机注解。</span>
           </div>
         </div>
       </section>
@@ -749,11 +698,11 @@ watch(
             />
             <p class="graph-caption">
               实线为“方剂 → 药材”的组成关系；虚线为教材归纳的核心药对。节点显示君臣佐使与作用摘要，
-              悬停看完整说明；点药材可修改角色或补充方中作用。保存时输入编辑口令即可发布给所有访客，
-              没有口令时只保存在本机。
+              悬停看完整说明；点药材可修改角色或补充方中作用。保存后只存在本机浏览器，
+              可以随时回来继续修改，暂不公开。
               君臣佐使据《方剂学》教材通例归纳，不是讲义原文。
             </p>
-            <p v-if="publicHint" class="graph-publish-hint">{{ publicHint }}</p>
+            <p v-if="saveHint" class="graph-publish-hint">{{ saveHint }}</p>
           </div>
           <div v-else class="graph-collapsed paper-panel">
             <strong>关系图谱已收起</strong>

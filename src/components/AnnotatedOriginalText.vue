@@ -81,6 +81,7 @@ const selectionHint = ref('')
 const publishMessage = ref('')
 const publishing = ref(false)
 const manual = ref<Record<string, LocalAnnotation[]>>(readManual())
+const publishesRemotely = computed(() => Boolean(props.publishAnnotation))
 
 function readManual(): Record<string, LocalAnnotation[]> {
   try {
@@ -443,7 +444,9 @@ watch(
     </div>
 
     <p v-if="editable && !editor" class="annotated-hint">
-      用鼠标或手指选中原文词句，松开后即可添加注解；保存后会发布给所有访客。
+      用鼠标或手指选中原文词句，松开后即可添加注解；{{
+        publishesRemotely ? '保存后会发布给所有访客。' : '注解只保存在本机浏览器，可再次点开修改。'
+      }}
     </p>
     <p v-if="publishMessage" class="annotated-hint">{{ publishMessage }}</p>
     <p v-if="selectionHint" class="annotated-hint annotated-hint--warn">{{ selectionHint }}</p>
@@ -468,10 +471,10 @@ watch(
       ></textarea>
       <div class="annotated-editor__actions">
         <button type="button" class="annotated-editor__save" :disabled="publishing" @click="saveAnnotation">
-          {{ publishing ? '发布中…' : '保存并发布' }}
+          {{ publishing ? '发布中…' : publishesRemotely ? '保存并发布' : '保存到本机' }}
         </button>
         <button type="button" @click="cancelEditor">取消</button>
-        <span>无口令时仅存本机</span>
+        <span>{{ publishesRemotely ? '无口令时仅存本机' : '仅保存在本机，暂不公开' }}</span>
       </div>
     </div>
 

@@ -425,7 +425,7 @@ function resetEditor() {
       <div class="graph-editor__head">
         <strong>{{ selectedHerb?.name ?? selectedNode.name }}</strong>
         <span class="graph-editor__badge">{{ nodeRoleBadge(selectedNode) }}</span>
-        <button type="button" class="graph-editor__reset" @click="resetEditor">清除已发布修改</button>
+        <button type="button" class="graph-editor__reset" @click="resetEditor">清除本机修改</button>
       </div>
       <div class="graph-editor__grid">
         <label class="graph-editor__field">
@@ -445,9 +445,9 @@ function resetEditor() {
         </label>
       </div>
       <div class="graph-editor__actions">
-        <button type="button" class="graph-editor__save" @click="saveEditor">保存并发布</button>
+        <button type="button" class="graph-editor__save" @click="saveEditor">保存到本机</button>
         <button type="button" @click="cancelEditor">取消</button>
-        <span>输入编辑口令后发布给所有访客；无口令仅存本机。</span>
+        <span>保存后立即记住，可再次修改；目前不公开。</span>
       </div>
     </div>
 
