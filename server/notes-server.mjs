@@ -22,6 +22,7 @@ const EMPTY = () => ({
   symptomAnnotations: {},
   herbNotes: {},
   herbRoles: {},
+  herbDoses: {},
   modernNotes: {},
   updatedAt: null,
 })
@@ -77,6 +78,7 @@ async function readStore() {
       symptomAnnotations: parsed.symptomAnnotations ?? {},
       herbNotes: parsed.herbNotes ?? {},
       herbRoles: parsed.herbRoles ?? {},
+      herbDoses: parsed.herbDoses ?? {},
       modernNotes: parsed.modernNotes ?? {},
     }
   } catch {
@@ -407,6 +409,18 @@ function setHerbRole(store, body) {
   else book[herbId] = role
   if (Object.keys(book).length) store.herbRoles[formulaId] = book
   else delete store.herbRoles[formulaId]
+}
+
+function setHerbDose(store, body) {
+  const formulaId = cleanId(body.formulaId)
+  const herbId = cleanId(body.herbId)
+  if (!formulaId || !herbId) throw new Error('invalid-herb')
+  const dose = cleanText(body.dose, 80)
+  const book = { ...(store.herbDoses[formulaId] ?? {}) }
+  if (dose) book[herbId] = dose
+  else delete book[herbId]
+  if (Object.keys(book).length) store.herbDoses[formulaId] = book
+  else delete store.herbDoses[formulaId]
 }
 
 function setModernNote(store, body) {
@@ -1431,6 +1445,9 @@ const server = createServer(async (req, res) => {
         break
       case 'herb-role':
         setHerbRole(store, body)
+        break
+      case 'herb-dose':
+        setHerbDose(store, body)
         break
       case 'modern-note':
         setModernNote(store, body)

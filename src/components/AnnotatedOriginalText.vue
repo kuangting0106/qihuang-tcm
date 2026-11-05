@@ -379,7 +379,7 @@ async function deleteActive() {
   publishMessage.value = '正在删除公开注解……'
   try {
     const result = await props.unpublishAnnotation({ phrase, start: start ?? 0 })
-    publishMessage.value = result.message
+    publishMessage.value = result.ok ? '已删除公开注解，所有访客不再可见。' : result.message
     if (result.ok) removeManual(phrase, start)
   } finally {
     publishing.value = false

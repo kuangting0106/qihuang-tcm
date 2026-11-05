@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import type { Formula } from '@/types/tcm'
+import { usePublicNotes } from '@/composables/usePublicNotes'
 
 const props = defineProps<{
   formulaId: string
@@ -39,9 +40,18 @@ const doses = ref<DoseMap>(readDoses())
 const editing = ref(false)
 const draft = ref('')
 const hint = ref('')
+const publishing = ref(false)
+
+const { savePublicNote, publicHerbDoses } = usePublicNotes()
 
 const herbKey = computed(() => props.item.herbId || props.item.herbName || '')
-const override = computed(() => doses.value[props.formulaId]?.[herbKey.value] ?? '')
+const publicOverride = computed(
+  () => publicHerbDoses(props.formulaId)[herbKey.value] ?? '',
+)
+const localOverride = computed(
+  () => doses.value[props.formulaId]?.[herbKey.value] ?? '',
+)
+const override = computed(() => publicOverride.value || localOverride.value)
 const isPending = computed(() => !override.value && props.item.dosage === PENDING_TEXT)
 const displayText = computed(() => {
   if (props.modern) return props.modernText ?? props.item.dosage
@@ -68,22 +78,15 @@ function cancelEdit() {
   draft.value = ''
 }
 
-function saveDose() {
-  const text = draft.value.trim()
-  if (!text) {
-    hint.value = '用量不能为空。'
-    return
-  }
+function setLocalDose(text: string) {
   const current = doses.value[props.formulaId] ?? {}
   persist({
     ...doses.value,
     [props.formulaId]: { ...current, [herbKey.value]: text },
   })
-  editing.value = false
-  hint.value = '已保存到本机，可再次修改。'
 }
 
-function resetDose() {
+function clearLocalDose() {
   const current = doses.value[props.formulaId]
   if (!current) return
   const nextItems = { ...current }
@@ -92,7 +95,50 @@ function resetDose() {
   if (Object.keys(nextItems).length) next[props.formulaId] = nextItems
   else delete next[props.formulaId]
   persist(next)
+}
+
+async function saveDose() {
+  const text = draft.value.trim()
+  if (!text) {
+    hint.value = '用量不能为空。'
+    return
+  }
+  publishing.value = true
+  const result = await savePublicNote({
+    op: 'herb-dose',
+    formulaId: props.formulaId,
+    herbId: herbKey.value,
+    dose: text,
+  })
+  if (result.ok) {
+    clearLocalDose()
+    hint.value = '已发布到网页，所有访客可见。'
+  } else {
+    setLocalDose(text)
+    hint.value = '公开保存未成功，已保存到本机浏览器。'
+  }
+  publishing.value = false
   editing.value = false
+}
+
+async function resetDose() {
+  publishing.value = true
+  if (publicOverride.value) {
+    const result = await savePublicNote({
+      op: 'herb-dose',
+      formulaId: props.formulaId,
+      herbId: herbKey.value,
+      dose: '',
+    })
+    if (!result.ok) {
+      hint.value = '公开清除未成功，请稍后再试。'
+      publishing.value = false
+      return
+    }
+  }
+  clearLocalDose()
+  editing.value = false
+  publishing.value = false
   hint.value = '已恢复原文用量。'
 }
 
@@ -116,17 +162,19 @@ watch(
         @keyup.enter="saveDose"
         @keyup.esc="cancelEdit"
       />
-      <button class="dose-editor__btn dose-editor__btn--primary" type="button" @click="saveDose">保存</button>
-      <button class="dose-editor__btn" type="button" @click="cancelEdit">取消</button>
-      <button v-if="override" class="dose-editor__btn" type="button" @click="resetDose">恢复原文</button>
+      <button class="dose-editor__btn dose-editor__btn--primary" type="button" :disabled="publishing" @click="saveDose">
+        {{ publishing ? '保存中…' : '保存并发布' }}
+      </button>
+      <button class="dose-editor__btn" type="button" :disabled="publishing" @click="cancelEdit">取消</button>
+      <button v-if="override" class="dose-editor__btn" type="button" :disabled="publishing" @click="resetDose">恢复原文</button>
     </template>
     <template v-else>
       <span class="dose-editor__value" :class="{ 'is-pending': isPending }">{{ displayText }}</span>
       <template v-if="!modern">
-        <button class="dose-editor__btn" type="button" @click="beginEdit">
+        <button class="dose-editor__btn" type="button" :disabled="publishing" @click="beginEdit">
           {{ override ? '改用量' : '补用量' }}
         </button>
-        <button v-if="override" class="dose-editor__btn" type="button" @click="resetDose">恢复</button>
+        <button v-if="override" class="dose-editor__btn" type="button" :disabled="publishing" @click="resetDose">恢复</button>
       </template>
     </template>
     <span v-if="hint" class="dose-editor__hint">{{ hint }}</span>

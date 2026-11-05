@@ -13,6 +13,7 @@ export interface PublicNotes {
   symptomAnnotations: Record<string, PublicSymptomAnnotation[]>
   herbNotes: Record<string, Record<string, string>>
   herbRoles: Record<string, Record<string, FormulaRole>>
+  herbDoses: Record<string, Record<string, string>>
   modernNotes: Record<string, string>
   updatedAt?: string | null
 }
@@ -27,6 +28,7 @@ export type PublicNoteOp =
   | { op: 'herb-note'; formulaId: string; herbId: string; note: string }
   | { op: 'herb-role'; formulaId: string; herbId: string; role: FormulaRole }
   | { op: 'herb-reset'; formulaId: string; herbId: string }
+  | { op: 'herb-dose'; formulaId: string; herbId: string; dose: string }
   | { op: 'modern-note'; formulaId: string; text: string }
 
 const API_URL = '/api/notes'
@@ -36,6 +38,7 @@ const empty = (): PublicNotes => ({
   symptomAnnotations: {},
   herbNotes: {},
   herbRoles: {},
+  herbDoses: {},
   modernNotes: {},
   updatedAt: null,
 })
@@ -61,6 +64,10 @@ function normalize(raw: unknown): PublicNotes {
     herbRoles:
       data.herbRoles && typeof data.herbRoles === 'object'
         ? (data.herbRoles as PublicNotes['herbRoles'])
+        : {},
+    herbDoses:
+      data.herbDoses && typeof data.herbDoses === 'object'
+        ? (data.herbDoses as PublicNotes['herbDoses'])
         : {},
     modernNotes:
       data.modernNotes && typeof data.modernNotes === 'object'
@@ -108,15 +115,28 @@ function writeKey(key: string) {
   }
 }
 
+let keyPrompt: Promise<string> | null = null
+
 function askKey() {
   const entered = window.prompt(
-    '请输入公开编辑口令。口令只保存在本机浏览器，用于把标注发布给所有访客。',
+    '请输入公开编辑口令。口令只保存在本机浏览器，用于把内容发布给所有访客。',
     '',
   )
   if (!entered) return ''
   const key = entered.trim()
   if (key) writeKey(key)
   return key
+}
+
+function askKeyOnce() {
+  if (!keyPrompt) {
+    keyPrompt = Promise.resolve()
+      .then(() => askKey())
+      .finally(() => {
+        keyPrompt = null
+      })
+  }
+  return keyPrompt
 }
 
 async function post(op: PublicNoteOp, key: string) {
@@ -130,27 +150,29 @@ async function post(op: PublicNoteOp, key: string) {
   })
 }
 
-export async function savePublicNote(op: PublicNoteOp) {
+let saveQueue: Promise<unknown> = Promise.resolve()
+
+async function performSave(op: PublicNoteOp) {
   if (!available.value) {
     return { ok: false, message: '发布服务不可用，内容只保存在本机浏览器。' }
   }
   let key = readKey()
-  if (!key) key = askKey()
-  if (!key) return { ok: false, message: '未输入编辑口令，标注只保存在本机。' }
+  if (!key) key = await askKeyOnce()
+  if (!key) return { ok: false, message: '未输入编辑口令，内容只保存在本机。' }
 
   try {
     let response = await post(op, key)
     if (response.status === 401) {
       writeKey('')
-      key = askKey()
-      if (!key) return { ok: false, message: '编辑口令不正确，标注只保存在本机。' }
+      key = await askKeyOnce()
+      if (!key) return { ok: false, message: '编辑口令不正确，内容只保存在本机。' }
       response = await post(op, key)
     }
     if (!response.ok) {
       return {
         ok: false,
         message:
-          response.status === 401 ? '编辑口令不正确，标注只保存在本机。' : '发布服务暂不可用，标注只保存在本机。',
+          response.status === 401 ? '编辑口令不正确，内容只保存在本机。' : '发布服务暂不可用，内容只保存在本机。',
       }
     }
     notes.value = normalize(await response.json())
@@ -159,8 +181,17 @@ export async function savePublicNote(op: PublicNoteOp) {
     return { ok: true, message: status.value }
   } catch {
     available.value = false
-    return { ok: false, message: '无法连接发布服务，标注只保存在本机。' }
+    return { ok: false, message: '无法连接发布服务，内容只保存在本机。' }
   }
+}
+
+export function savePublicNote(op: PublicNoteOp) {
+  const task = saveQueue.then(() => performSave(op))
+  saveQueue = task.then(
+    () => undefined,
+    () => undefined,
+  )
+  return task
 }
 
 export function publicAnnotationsFor(scopeKey: string) {
@@ -173,6 +204,10 @@ export function publicHerbNotes(formulaId: string) {
 
 export function publicHerbRoles(formulaId: string) {
   return notes.value.herbRoles[formulaId] ?? {}
+}
+
+export function publicHerbDoses(formulaId: string) {
+  return notes.value.herbDoses[formulaId] ?? {}
 }
 
 export function publicModernNotes(formulaId: string) {
@@ -190,6 +225,7 @@ export function usePublicNotes() {
     publicAnnotationsFor,
     publicHerbNotes,
     publicHerbRoles,
+    publicHerbDoses,
     publicModernNotes,
   }
 }
