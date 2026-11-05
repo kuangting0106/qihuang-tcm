@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T10:46:37.605Z",
+  "generatedAt": "2026-11-05T10:51:53.777Z",
   "source": {
     "title": "米晶子济世良方",
     "file": "米晶子济世良方.pdf",
@@ -27963,30 +27963,19 @@
         "locator": "经典效方·通窍活血汤·方一 · PDF 第 173 页"
       },
       "effects": {
-        "text": "主治：通窍活血汤。",
+        "text": "主治：原书未单列，见原文。",
         "kind": "paraphrase",
         "citationIds": [
           "src-mijingzi-559"
         ],
         "locator": "经典效方·通窍活血汤·方一"
       },
-      "symptoms": [
-        {
-          "text": "通窍活血汤",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-559"
-          ],
-          "locator": "经典效方·通窍活血汤·方一"
-        }
-      ],
+      "symptoms": [],
       "originalAnnotations": [],
       "composition": [],
       "modifications": [],
       "modificationsNote": "",
-      "symptomTags": [
-        "通窍活血汤"
-      ],
+      "symptomTags": [],
       "sourceSection": "经典效方",
       "sourcePage": 173
     },
@@ -28004,30 +27993,19 @@
         "locator": "经典效方·冷水金丹·方一 · PDF 第 173 页"
       },
       "effects": {
-        "text": "主治：冷水金丹。",
+        "text": "主治：原书未单列，见原文。",
         "kind": "paraphrase",
         "citationIds": [
           "src-mijingzi-560"
         ],
         "locator": "经典效方·冷水金丹·方一"
       },
-      "symptoms": [
-        {
-          "text": "冷水金丹",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-560"
-          ],
-          "locator": "经典效方·冷水金丹·方一"
-        }
-      ],
+      "symptoms": [],
       "originalAnnotations": [],
       "composition": [],
       "modifications": [],
       "modificationsNote": "",
-      "symptomTags": [
-        "冷水金丹"
-      ],
+      "symptomTags": [],
       "sourceSection": "经典效方",
       "sourcePage": 173
     },
@@ -28045,30 +28023,19 @@
         "locator": "经典效方·凉血止痛散·方一 · PDF 第 174 页"
       },
       "effects": {
-        "text": "主治：凉血止痛散。",
+        "text": "主治：原书未单列，见原文。",
         "kind": "paraphrase",
         "citationIds": [
           "src-mijingzi-561"
         ],
         "locator": "经典效方·凉血止痛散·方一"
       },
-      "symptoms": [
-        {
-          "text": "凉血止痛散",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-561"
-          ],
-          "locator": "经典效方·凉血止痛散·方一"
-        }
-      ],
+      "symptoms": [],
       "originalAnnotations": [],
       "composition": [],
       "modifications": [],
       "modificationsNote": "",
-      "symptomTags": [
-        "凉血止痛散"
-      ],
+      "symptomTags": [],
       "sourceSection": "经典效方",
       "sourcePage": 174
     },
@@ -28086,30 +28053,19 @@
         "locator": "经典效方·羊肝丸·方一 · PDF 第 174 页"
       },
       "effects": {
-        "text": "主治：羊肝丸。",
+        "text": "主治：原书未单列，见原文。",
         "kind": "paraphrase",
         "citationIds": [
           "src-mijingzi-562"
         ],
         "locator": "经典效方·羊肝丸·方一"
       },
-      "symptoms": [
-        {
-          "text": "羊肝丸",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-562"
-          ],
-          "locator": "经典效方·羊肝丸·方一"
-        }
-      ],
+      "symptoms": [],
       "originalAnnotations": [],
       "composition": [],
       "modifications": [],
       "modificationsNote": "",
-      "symptomTags": [
-        "羊肝丸"
-      ],
+      "symptomTags": [],
       "sourceSection": "经典效方",
       "sourcePage": 174
     }

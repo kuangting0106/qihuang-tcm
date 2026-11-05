@@ -119,6 +119,8 @@ function finish() {
   const pageText = record.page ? ` · PDF 第 ${record.page} 页` : ''
   const nameBase = record.condition || condition || '未列病名'
   const name = n === 1 ? `${nameBase}方` : `${nameBase}方${cnNum(n)}`
+  const sectionName = record.section || section || ''
+  const isClassicSection = sectionName === '经典效方'
 
   sources.push({
     id: sourceId,
@@ -142,18 +144,20 @@ function finish() {
       locator: `${locator}${pageText}`,
     },
     effects: {
-      text: `主治：${nameBase}。`,
+      text: isClassicSection ? '主治：原书未单列，见原文。' : `主治：${nameBase}。`,
       kind: 'paraphrase',
       citationIds: [sourceId],
       locator,
     },
-    symptoms: [{ text: nameBase, kind: 'paraphrase', citationIds: [sourceId], locator }],
+    symptoms: isClassicSection
+      ? []
+      : [{ text: nameBase, kind: 'paraphrase', citationIds: [sourceId], locator }],
     originalAnnotations: [],
     composition: [],
     modifications: [],
     modificationsNote: '',
-    symptomTags: [nameBase],
-    sourceSection: record.section || section || '',
+    symptomTags: isClassicSection ? [] : [nameBase],
+    sourceSection: sectionName,
     sourcePage: record.page ?? null,
   })
 }
