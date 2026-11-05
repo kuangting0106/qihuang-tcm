@@ -57,6 +57,12 @@ function retry() {
 const sourceCitation = computed(() =>
   formula.value ? citationsById.value.get(formula.value.sourceCitationId) ?? null : null,
 )
+const isMijingzi = computed(() => (sourceCitation.value?.work ?? '').includes('米晶子'))
+const modificationsNote = computed(() => {
+  const note = formula.value?.modificationsNote?.trim()
+  if (note) return note
+  return isMijingzi.value ? '原书未列加减。' : '原文未列加减。'
+})
 const sourceFullLabel = computed(() => {
   const c = sourceCitation.value
   if (!c) return ''
@@ -83,7 +89,8 @@ watch(
 watch(
   formula,
   (f) => {
-    showGraph.value = (f?.composition.length ?? 0) <= 20
+    const count = f?.composition?.length ?? 0
+    showGraph.value = count > 0 && count <= 20
   },
   { immediate: true },
 )
@@ -443,6 +450,27 @@ watch(
         </div>
       </header>
 
+      <section
+        v-if="!formula.preparation && formula.originalText"
+        class="preparation-section original-text-section"
+      >
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">ORIGINAL TEXT / 原文</p>
+            <h2>原书条文</h2>
+          </div>
+          <p>据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。</p>
+        </div>
+        <blockquote class="preparation-quote preparation-quote--large">
+          {{ formula.originalText.text }}
+        </blockquote>
+        <CitationBadge
+          :citation-ids="formula.originalText.citationIds"
+          label="原文"
+          compact
+        />
+      </section>
+
       <section v-if="formula.preparation" class="preparation-section">
         <div class="section-head">
           <div>
@@ -540,7 +568,7 @@ watch(
           <span class="eyebrow">EFFECT / 功效</span>
           <SourcedText :claim="formula.effects" block />
           <dl class="effect-meta">
-            <div><dt>药味</dt><dd>{{ formula.composition.length }} 味</dd></div>
+            <div><dt>药味</dt><dd>{{ formula.composition.length ? `${formula.composition.length} 味` : '原方见原文' }}</dd></div>
             <div><dt>出处</dt><dd>{{ sourceFullLabel }}</dd></div>
           </dl>
 
@@ -652,7 +680,8 @@ watch(
 
           <div v-if="formula.symptoms.length" class="symptom-panel__foot">
             <CitationBadge :citation-ids="formula.symptoms[0]?.citationIds ?? [formula.sourceCitationId]" label="原文" />
-            <span>症状与方名均回引《伤寒论》相关条文；带下划线的词可悬停看注解，点“划线标注”可补充并发布注解。</span>
+            <span v-if="isMijingzi">症状与方名据《米晶子济世良方》原文摘录；带下划线的词可悬停看注解，点“划线标注”可补充并发布注解。</span>
+            <span v-else>症状与方名均回引《伤寒论》相关条文；带下划线的词可悬停看注解，点“划线标注”可补充并发布注解。</span>
           </div>
         </div>
       </section>
@@ -686,7 +715,7 @@ watch(
         </button>
       </div>
 
-      <section class="graph-commentary-section">
+      <section v-if="size > 0" class="graph-commentary-section">
         <div class="graph-column">
           <div class="section-head">
             <div>
@@ -740,7 +769,7 @@ watch(
             <p class="eyebrow">MODIFICATIONS / 加减</p>
             <h2>加减法</h2>
           </div>
-          <p>{{ formula.modificationsNote }}</p>
+          <p v-if="formula.modifications.length">{{ modificationsNote }}</p>
         </div>
 
         <div v-if="formula.modifications.length" class="modification-list">
@@ -754,11 +783,11 @@ watch(
           </article>
         </div>
         <div v-else class="empty-inline paper-panel">
-          {{ formula.modificationsNote }}
+          {{ modificationsNote }}
         </div>
       </section>
 
-      <section v-if="formula.corePairs.length" class="pair-section">
+      <section v-if="formula.corePairs?.length" class="pair-section">
         <div class="section-head">
           <div>
             <p class="eyebrow">CORE PAIRS / 核心药对</p>
@@ -785,7 +814,11 @@ watch(
           <span class="eyebrow">SOURCE COVERAGE</span>
           <h3>原文与方解分开标注</h3>
         </div>
-        <p>
+        <p v-if="isMijingzi">
+          方剂原文与主治据《米晶子济世良方》扫描本 OCR 整理，未逐字校勘；原书未标君臣佐使，
+          页面不补写方解。用药、剂量与炮制以原书为准，点击“出处”查看版本信息。
+        </p>
+        <p v-else>
           方剂原文、组成、加减均回引《伤寒论》原条；君臣佐使、药对与功效归纳标为“后世方解”，
           并注明《方剂学》《中药学》教材依据。点击任意“出处”查看完整引文。
         </p>

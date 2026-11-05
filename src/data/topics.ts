@@ -19,11 +19,6 @@ export const methodTopics: Topic[] = [
     subtitle: '虚实总纲、表里先后、寒湿水饮、实邪与阴实的处理顺序；经验总结，非处方。',
   },
   {
-    id: 'cancer-methods',
-    title: '治癌法门',
-    subtitle: '专题资料栏。正文待按典籍、医案与当代文献逐条录入。',
-  },
-  {
     id: 'pulse',
     title: '脉诊',
     subtitle: '脉象记录、部位与对比方法；具体脉案待补。',
@@ -32,11 +27,6 @@ export const methodTopics: Topic[] = [
     id: 'inspection',
     title: '望诊',
     subtitle: '山根、手掌、眼目、触诊与语言姿态的望诊经验；单看一处不能定病。',
-  },
-  {
-    id: 'treatment-order',
-    title: '治病先后主次',
-    subtitle: '标本缓急、先后次序与治疗节奏；条文与医案待补。',
   },
   {
     id: 'moxibustion',

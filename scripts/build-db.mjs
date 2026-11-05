@@ -56,6 +56,11 @@ const bencaoGroups = bencaoGroupIds
   })
   .filter(Boolean)
 
+const mijingziPath = path.join(root, 'scripts', 'content', 'mijingzi-formulas.json')
+const mijingzi = fs.existsSync(mijingziPath)
+  ? readJson(mijingziPath)
+  : { sources: [], formulas: [] }
+
 fs.mkdirSync(path.dirname(dbPath), { recursive: true })
 if (fs.existsSync(dbPath)) {
   try {
@@ -147,6 +152,7 @@ const counts = {
   classicBooks: 0,
   classicSections: 0,
   cases: 0,
+  mijingziFormulas: 0,
 }
 
 db.exec('BEGIN')
@@ -241,6 +247,32 @@ try {
         JSON.stringify(claim),
       )
     }
+  }
+
+  for (const source of mijingzi.sources ?? []) {
+    insertSource.run(
+      source.id,
+      source.type ?? '',
+      source.work ?? '',
+      source.locator ?? '',
+      JSON.stringify(source),
+    )
+    counts.sources += 1
+  }
+
+  for (const formula of mijingzi.formulas ?? []) {
+    insertFormula.run(
+      formula.id,
+      formula.name,
+      formula.pinyin ?? '',
+      flatPinyin(formula.pinyin),
+      formula.sourceCitationId ?? '',
+      formula.effects?.text ?? '',
+      JSON.stringify(formula.symptomTags ?? []),
+      JSON.stringify(formula),
+    )
+    counts.formulas += 1
+    counts.mijingziFormulas += 1
   }
 
   bencaoGroups.forEach((group, groupIndex) => {
@@ -416,5 +448,6 @@ console.log(
     `classicBooks=${counts.classicBooks}`,
     `classicSections=${counts.classicSections}`,
     `cases=${counts.cases}`,
+    `mijingzi=${counts.mijingziFormulas}`,
   ].join('  '),
 )

@@ -104,7 +104,7 @@ const selectedNode = computed(() =>
 
 const pairEdges = computed(() => {
   if (!props.showPairs) return []
-  return props.formula.corePairs
+  return (props.formula.corePairs ?? [])
     .map((pair) => {
       const a = nodeMap.value.get(pair.from)
       const b = nodeMap.value.get(pair.to)
@@ -168,7 +168,7 @@ function nodeRoleBadge(node: GraphNode) {
 function isDimmed(node: GraphNode) {
   if (!props.selectedHerbId) return false
   if (node.herbId === props.selectedHerbId) return false
-  return !props.formula.corePairs.some(
+  return !(props.formula.corePairs ?? []).some(
     (p) =>
       (p.from === props.selectedHerbId && p.to === node.herbId) ||
       (p.to === props.selectedHerbId && p.from === node.herbId),

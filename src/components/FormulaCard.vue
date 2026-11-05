@@ -9,11 +9,22 @@ const props = defineProps<{ formula: FormulaSummary }>()
 const { citationsById } = useTcmData()
 
 const citation = computed(() => citationsById.value.get(props.formula.sourceCitationId))
+const sourceLabel = computed(() => {
+  const item = citation.value
+  if (!item) return ''
+  const locator = item.locator ?? ''
+  const shortLocator = item.work?.includes('米晶子')
+    ? locator.split('·').slice(0, 2).join('·')
+    : locator
+  return `${item.work} · ${shortLocator}`
+})
 const herbNames = computed(() =>
   props.formula.composition.map((c) => c.herbName ?? c.herbId),
 )
 const visibleNames = computed(() => herbNames.value.slice(0, 6))
 const rest = computed(() => herbNames.value.length - visibleNames.value.length)
+
+const hasComposition = computed(() => props.formula.composition.length > 0)
 
 const roleCounts = computed(() => {
   const map = new Map<string, number>()
@@ -29,21 +40,21 @@ const roleCounts = computed(() => {
   <RouterLink :to="`/formulas/${formula.id}`" class="formula-card">
     <div class="formula-card__top">
       <div>
-        <p class="eyebrow">{{ citation?.work }} · {{ citation?.locator }}</p>
+        <p class="eyebrow">{{ sourceLabel }}</p>
         <h3>{{ formula.name }}</h3>
         <p class="formula-card__pinyin">{{ formula.pinyin }}</p>
       </div>
-      <span class="formula-card__count">{{ formula.composition.length }} 味</span>
+      <span class="formula-card__count">{{ hasComposition ? `${formula.composition.length} 味` : '原方见原文' }}</span>
     </div>
 
     <p class="formula-card__effect">{{ formula.effectsText }}</p>
 
-    <div class="formula-card__herbs">
+    <div v-if="hasComposition" class="formula-card__herbs">
       <span v-for="name in visibleNames" :key="name" class="chip chip--jade">{{ name }}</span>
       <span v-if="rest > 0" class="chip">+{{ rest }}</span>
     </div>
 
-    <div class="formula-card__roles">
+    <div v-if="hasComposition" class="formula-card__roles">
       <span v-for="[role, count] in roleCounts" :key="role" class="role-pill" :class="`role-pill--${role}`">
         {{ role }} {{ count }}
       </span>
