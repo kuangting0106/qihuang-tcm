@@ -277,7 +277,6 @@ const meridianOptions = computed(() =>
             <button class="rank-card__select" type="button" :aria-pressed="rankFilter === rank.id" @click="toggleRank(rank.id)">
               <span class="rank-card__title">{{ rank.title }}</span>
               <span class="rank-card__subtitle">{{ rank.subtitle }}</span>
-              <span class="rank-card__count">{{ rankHerbs(rank.id).length }} 味药典样例</span>
             </button>
             <p class="rank-card__desc">{{ rank.description }}</p>
             <div class="rank-card__herbs">
@@ -287,7 +286,6 @@ const meridianOptions = computed(() =>
               <span v-if="rankHerbs(rank.id).length > 8" class="rank-card__more">
                 +{{ rankHerbs(rank.id).length - 8 }}
               </span>
-              <span v-if="!rankHerbs(rank.id).length" class="pending-text">待收录</span>
             </div>
             <RouterLink
               v-if="lectureRankCount(rank.id)"
@@ -319,7 +317,6 @@ const meridianOptions = computed(() =>
               <span v-for="name in cat.pending" :key="name" class="pending-herb">
                 {{ name }}<em>待收</em>
               </span>
-              <span v-if="!categoryHerbs(cat.id).length && !cat.pending.length" class="pending-text">待收录</span>
             </div>
           </article>
         </div>
@@ -637,11 +634,6 @@ const meridianOptions = computed(() =>
   font-size: 0.84rem;
 }
 
-.rank-card__count {
-  color: var(--ink-faint);
-  font-size: 0.68rem;
-}
-
 .rank-card__desc {
   color: var(--ink-soft);
   font-size: 0.72rem;
@@ -766,11 +758,6 @@ const meridianOptions = computed(() =>
   background: var(--paper-2);
   font-size: 0.56rem;
   font-style: normal;
-}
-
-.pending-text {
-  color: var(--ink-faint);
-  font-size: 0.7rem;
 }
 
 .taxonomy-foot {
