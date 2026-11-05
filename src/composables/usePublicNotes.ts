@@ -13,6 +13,7 @@ export interface PublicNotes {
   symptomAnnotations: Record<string, PublicSymptomAnnotation[]>
   herbNotes: Record<string, Record<string, string>>
   herbRoles: Record<string, Record<string, FormulaRole>>
+  modernNotes: Record<string, string>
   updatedAt?: string | null
 }
 
@@ -26,6 +27,7 @@ export type PublicNoteOp =
   | { op: 'herb-note'; formulaId: string; herbId: string; note: string }
   | { op: 'herb-role'; formulaId: string; herbId: string; role: FormulaRole }
   | { op: 'herb-reset'; formulaId: string; herbId: string }
+  | { op: 'modern-note'; formulaId: string; text: string }
 
 const API_URL = '/api/notes'
 const KEY_STORAGE = 'qihuang.editKey'
@@ -34,6 +36,7 @@ const empty = (): PublicNotes => ({
   symptomAnnotations: {},
   herbNotes: {},
   herbRoles: {},
+  modernNotes: {},
   updatedAt: null,
 })
 
@@ -58,6 +61,10 @@ function normalize(raw: unknown): PublicNotes {
     herbRoles:
       data.herbRoles && typeof data.herbRoles === 'object'
         ? (data.herbRoles as PublicNotes['herbRoles'])
+        : {},
+    modernNotes:
+      data.modernNotes && typeof data.modernNotes === 'object'
+        ? (data.modernNotes as PublicNotes['modernNotes'])
         : {},
     updatedAt: typeof data.updatedAt === 'string' ? data.updatedAt : null,
   }
@@ -168,6 +175,10 @@ export function publicHerbRoles(formulaId: string) {
   return notes.value.herbRoles[formulaId] ?? {}
 }
 
+export function publicModernNotes(formulaId: string) {
+  return notes.value.modernNotes[formulaId] ?? ''
+}
+
 export function usePublicNotes() {
   return {
     notes,
@@ -179,5 +190,6 @@ export function usePublicNotes() {
     publicAnnotationsFor,
     publicHerbNotes,
     publicHerbRoles,
+    publicModernNotes,
   }
 }

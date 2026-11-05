@@ -32,6 +32,8 @@ const {
   publicAnnotationsFor,
   publicHerbNotes,
   publicHerbRoles,
+  savePublicNote,
+  publicModernNotes,
 } = usePublicNotes()
 
 const formulaList = ref<FormulaSummary[]>([])
@@ -337,6 +339,8 @@ const localNotes = ref<Record<string, string>>(readLocalNotes())
 const editingNote = ref(false)
 const noteDraft = ref('')
 const showNoteCode = ref(false)
+const noteSaving = ref(false)
+const noteMessage = ref('')
 
 const localNote = computed(() =>
   formula.value ? localNotes.value[formula.value.id] ?? '' : '',
@@ -344,6 +348,10 @@ const localNote = computed(() =>
 const effectiveNote = computed(() => {
   if (localNote.value.trim()) {
     return { text: localNote.value.trim(), local: true, citationIds: [] as string[] }
+  }
+  const published = formula.value ? publicModernNotes(formula.value.id).trim() : ''
+  if (published) {
+    return { text: published, local: false, citationIds: [] as string[] }
   }
   if (formula.value?.modernExplanation) {
     return {
@@ -367,19 +375,35 @@ function startEditNote() {
   showNoteCode.value = false
 }
 
-function saveNote() {
+async function saveNote() {
   const current = formula.value
   if (!current) return
   const text = noteDraft.value.trim()
+  noteSaving.value = true
+  noteMessage.value = ''
+  const result = await savePublicNote({
+    op: 'modern-note',
+    formulaId: current.id,
+    text,
+  })
   const next = { ...localNotes.value }
-  if (text) next[current.id] = text
-  else delete next[current.id]
+  if (result.ok) {
+    delete next[current.id]
+    noteMessage.value = '已发布到网页，关闭页面后仍会保留。'
+  } else if (text) {
+    next[current.id] = text
+    noteMessage.value = '公开保存未成功，已保存到本机浏览器。'
+  } else {
+    delete next[current.id]
+    noteMessage.value = '公开保存未成功，已清除本机草稿。'
+  }
   localNotes.value = next
   try {
     localStorage.setItem(NOTE_STORAGE_KEY, JSON.stringify(next))
   } catch {
     // 浏览器禁用 localStorage 时，只保留本次会话内的内容。
   }
+  noteSaving.value = false
   editingNote.value = false
 }
 
@@ -589,7 +613,10 @@ watch(
                 <span v-if="effectiveNote?.local" class="effect-modern__status effect-modern__status--local">
                   本地草稿
                 </span>
-                <span v-else-if="!effectiveNote" class="effect-modern__status">待补充</span>
+                <span v-else-if="effectiveNote" class="effect-modern__status effect-modern__status--published">
+                  已发布
+                </span>
+                <span v-else class="effect-modern__status">待补充</span>
                 <button v-if="!editingNote" class="note-btn" type="button" @click="startEditNote">
                   {{ effectiveNote ? '编辑' : '添加解说' }}
                 </button>
@@ -607,7 +634,8 @@ watch(
                     tone="muted"
                     compact
                   />
-                  <span v-else class="effect-modern__draft">本地草稿 · 仅本浏览器可见，未写入公开数据</span>
+                  <span v-if="effectiveNote.local" class="effect-modern__draft">本地草稿 · 仅本浏览器可见，未写入公开数据</span>
+                  <span v-else class="effect-modern__draft">已发布 · 所有访客可见</span>
                   <button
                     v-if="effectiveNote.local"
                     class="note-link"
@@ -620,7 +648,7 @@ watch(
                 <pre v-if="showNoteCode" class="effect-modern__code">{{ noteCode }}</pre>
               </template>
               <p v-else class="effect-modern__empty">
-                还没有现代解说。点右上“添加解说”可在网页里填写；保存后只存在当前浏览器，可复制数据代码交给开发者发布。
+                还没有现代解说。点右上“添加解说”填写，保存后会发布到网页，所有访客可见。
               </p>
             </template>
 
@@ -631,7 +659,9 @@ watch(
                 placeholder="在这里输入现代对本方证候的解说……"
               ></textarea>
               <div class="note-editor__actions">
-                <button class="note-btn note-btn--primary" type="submit">保存到本浏览器</button>
+                <button class="note-btn note-btn--primary" type="submit" :disabled="noteSaving">
+                  {{ noteSaving ? '保存中…' : '保存并发布' }}
+                </button>
                 <button class="note-btn" type="button" @click="editingNote = false">取消</button>
                 <button
                   v-if="effectiveNote?.local"
@@ -643,9 +673,9 @@ watch(
                 </button>
               </div>
               <p class="note-editor__hint">
-                网页没有后台，保存只存在当前浏览器；要永久发布，复制生成的数据代码，粘贴到
-                <code>scripts/content/formulas.mjs</code> 的对应方剂。
+                保存后写入网页，所有访客可见；公开保存失败时会自动保存到本机浏览器。
               </p>
+              <p v-if="noteMessage" class="note-editor__message">{{ noteMessage }}</p>
             </form>
           </div>
         </div>
@@ -1230,6 +1260,11 @@ watch(
 .effect-modern__status--local {
   background: rgba(47, 111, 107, 0.14);
   color: var(--jade);
+}
+
+.effect-modern__status--published {
+  background: rgba(192, 57, 43, 0.12);
+  color: var(--cinnabar);
 }
 
 .note-btn {
