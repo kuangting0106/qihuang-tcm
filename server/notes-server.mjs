@@ -275,10 +275,12 @@ function buildHerbMeta(db) {
     )
     .get()
   const formulaRow = db.prepare('SELECT COUNT(*) AS n FROM formulas').get()
+  const meridianNames = readMeta(db, 'meridian_names', {})
 
   return {
     taxonomy: { ...baseTaxonomy, ranks, categories },
     principles,
+    meridians: Object.entries(meridianNames).map(([id, name]) => ({ id, name })),
     counts: {
       herbs: herbs.length,
       lectureItems: lectures.length,
@@ -645,13 +647,13 @@ const server = createServer(async (req, res) => {
     }
     try {
       const herbs = db
-        .prepare('SELECT id, name, pinyin, classic_rank_id, effects_text, data_json FROM herbs ORDER BY rowid')
+        .prepare('SELECT data_json FROM herbs ORDER BY rowid')
         .all()
-        .map(mapHerbSummary)
+        .map((row) => jsonParse(row.data_json))
       const lectures = db
         .prepare('SELECT data_json FROM herb_lecture_index ORDER BY rowid')
         .all()
-        .map(mapLectureSearch)
+        .map((row) => jsonParse(row.data_json))
       sendCached(req, res, 200, { herbs, lectures })
     } catch {
       send(res, 500, { error: 'db-query-failed' })

@@ -57,6 +57,7 @@ const filtered = computed(() => {
             原文、症状、组成、君臣佐使与加减放在同一页。
             图谱与原文出处双轨呈现；桂枝汤没有加减，就写“原文未列”，不硬编。
           </p>
+          <p class="page-hero__note">药方重在：治症思路、药材选取、用量</p>
         </div>
         <div class="page-hero__stat">
           <span>{{ formulas.length }}</span>
@@ -133,6 +134,17 @@ const filtered = computed(() => {
   color: var(--ink-soft);
   font-size: 0.98rem;
   line-height: 1.9;
+}
+
+.page-hero__note {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 7px 13px;
+  border-left: 2px solid var(--cinnabar);
+  background: rgba(255, 255, 255, 0.42);
+  color: var(--ink);
+  font-size: 0.84rem;
+  letter-spacing: 0.02em;
 }
 
 .page-hero__stat {

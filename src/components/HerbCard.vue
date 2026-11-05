@@ -5,11 +5,13 @@ import type { Herb } from '@/types/tcm'
 import { useTcmData } from '@/composables/useTcmData'
 import CitationBadge from './CitationBadge.vue'
 
-const props = defineProps<{ herb: Herb }>()
+const props = defineProps<{ herb: Herb; meridianNames?: Record<string, string> }>()
 const { meridianName } = useTcmData()
 
 const image = computed(() => props.herb.images[0])
-const meridianLabels = computed(() => props.herb.meridianIds.map((id) => meridianName(id)))
+const meridianLabels = computed(() =>
+  props.herb.meridianIds.map((id) => props.meridianNames?.[id] ?? meridianName(id)),
+)
 </script>
 
 <template>

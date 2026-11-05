@@ -72,9 +72,12 @@ const entries = computed<SearchEntry[]>(() => {
     key: `herb-${herb.id}`,
     name: herb.name,
     pinyin: herb.pinyin,
-    aliases: uniqueAliases([...herb.aliases, ...splitAliases(herb.ancientName)]),
+    aliases: uniqueAliases([
+      ...herb.aliases,
+      ...splitAliases(herb.names.ancient.text),
+    ]),
     href: `/herbs/${herb.id}`,
-    rankTitle: rankTitles.value.get(herb.classicRankId ?? '') ?? '三经待考',
+    rankTitle: rankTitles.value.get(herb.classicRankId) ?? '三经待考',
     categoryTitles: herb.therapyCategoryIds
       .map((id) => categoryTitles.value.get(id))
       .filter((title): title is string => Boolean(title)),

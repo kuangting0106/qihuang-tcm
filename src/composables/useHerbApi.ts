@@ -28,23 +28,9 @@ export interface HerbSummary {
   coverAlt?: string
 }
 
-export interface HerbLectureSearchItem {
-  key: string
-  name: string
-  pinyin: string
-  aliases: string[]
-  ancientName: string
-  alsoKnownAs: string[]
-  groupId: string
-  entryId: string
-  rankId: string
-  therapyCategoryIds: string[]
-  curatedId?: string
-}
-
 export interface HerbSearchIndexPayload {
-  herbs: HerbSummary[]
-  lectures: HerbLectureSearchItem[]
+  herbs: Herb[]
+  lectures: BencaoCatalogItem[]
 }
 
 export interface HerbRankMeta extends HerbClassicRank {
@@ -66,6 +52,7 @@ export interface HerbMetaTaxonomy
 export interface HerbMetaPayload {
   taxonomy: HerbMetaTaxonomy
   principles: HerbPrinciples | null
+  meridians: Array<{ id: string; name: string }>
   counts: {
     herbs: number
     lectureItems: number
