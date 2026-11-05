@@ -81,6 +81,24 @@ const router = createRouter({
       meta: { title: '方剂' },
     },
     {
+      path: '/formulas/search',
+      name: 'formula-search',
+      component: () => import('@/views/FormulaCategoryView.vue'),
+      meta: { title: '方剂检索' },
+    },
+    {
+      path: '/formulas/source/:book/:chapter',
+      name: 'formula-source',
+      component: () => import('@/views/FormulaCategoryView.vue'),
+      meta: { title: '方剂分类' },
+    },
+    {
+      path: '/formulas/class/:key',
+      name: 'formula-class',
+      component: () => import('@/views/FormulaCategoryView.vue'),
+      meta: { title: '方剂分类' },
+    },
+    {
       path: '/formulas/:id',
       name: 'formula-detail',
       component: () => import('@/views/FormulaDetailView.vue'),
