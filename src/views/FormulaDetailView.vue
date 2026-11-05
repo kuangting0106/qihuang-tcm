@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
-import { RouterLink, useRoute } from 'vue-router'
+import { RouterLink, useRoute, useRouter } from 'vue-router'
 import CitationBadge from '@/components/CitationBadge.vue'
 import FormulaGraph from '@/components/FormulaGraph.vue'
 import AnnotatedOriginalText from '@/components/AnnotatedOriginalText.vue'
 import SourcedText from '@/components/SourcedText.vue'
 import { useTcmData } from '@/composables/useTcmData'
 import { useFormulaApi } from '@/composables/useFormulaApi'
+import type { FormulaSummary } from '@/composables/useFormulaApi'
 import { usePublicNotes } from '@/composables/usePublicNotes'
 import {
   glossaryAnnotationsFor,
@@ -17,11 +18,13 @@ import { ROLE_ORDER } from '@/types/tcm'
 import type { Formula, FormulaRole } from '@/types/tcm'
 
 const route = useRoute()
+const router = useRouter()
 const { herbsById, citationsById, herbName } = useTcmData()
 const {
   loading: detailLoading,
   error: detailError,
   fetchFormulaDetail,
+  fetchFormulaList,
 } = useFormulaApi()
 const {
   loadPublicNotes,
@@ -30,8 +33,19 @@ const {
   publicHerbRoles,
 } = usePublicNotes()
 
+const formulaList = ref<FormulaSummary[]>([])
+
+async function loadFormulaList() {
+  try {
+    formulaList.value = await fetchFormulaList()
+  } catch {
+    formulaList.value = []
+  }
+}
+
 onMounted(() => {
   void loadPublicNotes()
+  void loadFormulaList()
 })
 
 const formula = ref<Formula | null>(null)
@@ -93,6 +107,25 @@ watch(
   },
   { immediate: true },
 )
+
+const currentFormulaId = computed(() => String(route.params.id ?? ''))
+const currentFormulaIndex = computed(() =>
+  formulaList.value.findIndex((item) => item.id === currentFormulaId.value),
+)
+const previousFormula = computed(() =>
+  currentFormulaIndex.value > 0 ? formulaList.value[currentFormulaIndex.value - 1] : null,
+)
+const nextFormula = computed(() => {
+  const index = currentFormulaIndex.value
+  return index >= 0 && index < formulaList.value.length - 1
+    ? formulaList.value[index + 1]
+    : null
+})
+
+function goBack() {
+  if (window.history.state?.back) router.back()
+  else void router.push('/formulas')
+}
 
 const size = computed(() => formula.value?.composition.length ?? 0)
 const isLarge = computed(() => size.value > 20)
@@ -772,6 +805,32 @@ watch(
           并注明《方剂学》《中药学》教材依据。点击任意“出处”查看完整引文。
         </p>
       </section>
+
+      <nav class="formula-nav" aria-label="方剂翻页">
+        <RouterLink
+          v-if="previousFormula"
+          class="formula-nav__link formula-nav__link--prev"
+          :to="`/formulas/${previousFormula.id}`"
+        >
+          <span>← 上一个药方</span>
+          <strong>{{ previousFormula.name }}</strong>
+        </RouterLink>
+
+        <button class="formula-nav__back" type="button" @click="goBack">← 返回上页</button>
+
+        <RouterLink
+          v-if="nextFormula"
+          class="formula-nav__link formula-nav__link--next"
+          :to="`/formulas/${nextFormula.id}`"
+        >
+          <span>下一个药方</span>
+          <strong>{{ nextFormula.name }} →</strong>
+        </RouterLink>
+      </nav>
+
+      <p class="formula-nav__all">
+        <RouterLink to="/formulas">返回方剂分类</RouterLink>
+      </p>
     </div>
   </div>
 
@@ -1613,6 +1672,114 @@ watch(
 
   .coverage {
     grid-template-columns: 1fr;
+  }
+}
+.formula-nav {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 14px;
+  align-items: stretch;
+  margin-top: 34px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.formula-nav__link {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.42);
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.formula-nav__link--prev {
+  grid-column: 1;
+}
+
+.formula-nav__link--next {
+  grid-column: 3;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.formula-nav__link:hover {
+  border-color: var(--cinnabar);
+  transform: translateY(-1px);
+}
+
+.formula-nav__link span {
+  color: var(--ink-faint);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+}
+
+.formula-nav__link strong {
+  max-width: 100%;
+  overflow: hidden;
+  color: var(--cinnabar);
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.formula-nav__back {
+  grid-column: 2;
+  align-self: center;
+  padding: 9px 18px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-soft);
+  font: inherit;
+  font-size: 0.78rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.formula-nav__back:hover {
+  border-color: var(--cinnabar);
+  color: var(--cinnabar);
+}
+
+.formula-nav__all {
+  margin: 14px 0 0;
+  text-align: center;
+  font-size: 0.76rem;
+}
+
+.formula-nav__all a {
+  color: var(--ink-faint);
+}
+
+.formula-nav__all a:hover {
+  color: var(--cinnabar);
+}
+
+@media (max-width: 760px) {
+  .formula-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .formula-nav__link--prev,
+  .formula-nav__link--next,
+  .formula-nav__back {
+    grid-column: auto;
+  }
+
+  .formula-nav__link--next {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .formula-nav__back {
+    justify-self: start;
   }
 }
 </style>
