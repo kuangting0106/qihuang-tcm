@@ -595,7 +595,7 @@ watch(
             <p v-else class="preparation-empty">原书未列药材及用量。</p>
 
             <p v-if="hasComposition" class="preparation-herb-hint">
-              君臣佐使与单味作用见下方“关系与图谱”；点图谱中的药材，可修改角色或补充本地备注。药材行的“补用量 / 改用量”也可直接填写，保存后再次修改。备注与用量只保存在本机浏览器，不会发布。
+              君臣佐使与单味作用见下方“关系与图谱”；点图谱中的药材，可修改角色或补充备注。药材行的“补用量 / 改用量”也可直接填写，保存后再次修改。备注、角色与用量保存后会发布到网页，所有访客可见；公开保存失败时自动存本机。
             </p>
             <p v-if="formula.modernGramNote" class="preparation-dose-note">{{ formula.modernGramNote }}</p>
             <CitationBadge
