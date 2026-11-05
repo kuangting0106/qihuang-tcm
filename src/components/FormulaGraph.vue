@@ -65,10 +65,118 @@ interface GraphNode {
   x: number
   y: number
   action?: string
+  inferred?: boolean
 }
 
+const DOSE_DIGITS: Record<string, number> = {
+  零: 0,
+  〇: 0,
+  一: 1,
+  二: 2,
+  两: 2,
+  三: 3,
+  四: 4,
+  五: 5,
+  六: 6,
+  七: 7,
+  八: 8,
+  九: 9,
+}
+
+function cnNumber(value: string) {
+  if (/^\d/.test(value)) return Number.parseFloat(value)
+  let total = 0
+  let current = 0
+  for (const char of value) {
+    if (char in DOSE_DIGITS) {
+      current = DOSE_DIGITS[char]
+    } else if (char === '十') {
+      total += (current || 1) * 10
+      current = 0
+    } else if (char === '百') {
+      total += (current || 1) * 100
+      current = 0
+    } else if (char === '千') {
+      total += (current || 1) * 1000
+      current = 0
+    }
+  }
+  return total + current
+}
+
+/**
+ * 用量只用于未标君臣佐使时的视觉分层：
+ * 重量单位换算成相对值，计数单位单独比较；不参与任何方义判断。
+ */
+function parseDose(text: string | undefined) {
+  const value = String(text ?? '').replace(/\s/g, '')
+  if (!value || /实际病症|适量|少许|若干|不拘/.test(value)) return null
+  if (/等分/.test(value)) return { score: 1, kind: 'weight' as const }
+  const normalized = value.replace(/^两/, '二').replace(/^半/, '零点五')
+  const match = normalized.match(
+    /([零〇一二两三四五六七八九十百千0-9.]+)(斤|两|钱|分|克|枚|个|片|只|条|根|把|粒|颗|盏|杯|碗|块|团|双|张|具|头|节|壮|文|锭|丸|撮|握|茶匙|汤匙|酒盅|匙|盅)/,
+  )
+  if (!match) return null
+  const amount = cnNumber(match[1])
+  if (!Number.isFinite(amount) || amount <= 0) return null
+  const unit = match[2]
+  const factors: Record<string, number> = {
+    斤: 160,
+    两: 10,
+    钱: 1,
+    分: 0.1,
+    克: 1 / 3,
+  }
+  const isWeight = unit in factors
+  let score = amount * (factors[unit] ?? 1)
+  if (normalized.slice(match.index! + match[0].length).startsWith('半')) score += (factors[unit] ?? 1) * 0.5
+  return { score, kind: isWeight ? ('weight' as const) : ('count' as const) }
+}
+
+function inferDosageRoles(composition: Formula['composition']) {
+  const parsed = composition.map((item) => ({ item, dose: parseDose(item.dosage) }))
+  const hasWeight = parsed.some((entry) => entry.dose?.kind === 'weight')
+  const scored = parsed
+    .map((entry) => {
+      if (!entry.dose) return { item: entry.item, score: null as number | null }
+      if (hasWeight && entry.dose.kind === 'count') return { item: entry.item, score: null as number | null }
+      return { item: entry.item, score: entry.dose.score }
+    })
+    .filter((entry): entry is { item: Formula['composition'][number]; score: number } => entry.score !== null)
+
+  const result = new Map<string, FormulaRole>()
+  if (!scored.length) return result
+  const tiers = [...new Set(scored.map((entry) => entry.score))].sort((a, b) => b - a)
+  if (tiers.length === 1) {
+    for (const entry of scored) result.set(entry.item.herbId, '臣')
+  } else {
+    const roleByScore = new Map<number, FormulaRole>()
+    tiers.forEach((score, index) => {
+      if (index === 0) roleByScore.set(score, '君')
+      else if (index === tiers.length - 1) roleByScore.set(score, '佐使')
+      else roleByScore.set(score, '臣')
+    })
+    for (const entry of scored) result.set(entry.item.herbId, roleByScore.get(entry.score) ?? '臣')
+  }
+  for (const item of composition) {
+    if (!result.has(item.herbId)) result.set(item.herbId, '佐使')
+  }
+  return result
+}
+
+const inferredRoles = computed(() => inferDosageRoles(props.formula.composition))
+
+const hasInferredRoles = computed(() =>
+  props.formula.composition.some(
+    (item) => item.role === '未标注' && !props.herbRoles?.[item.herbId] && inferredRoles.value.has(item.herbId),
+  ),
+)
+
 function roleFor(item: Formula['composition'][number]): FormulaRole {
-  return props.herbRoles?.[item.herbId] ?? item.role
+  const override = props.herbRoles?.[item.herbId]
+  if (override) return override
+  if (item.role !== '未标注') return item.role
+  return inferredRoles.value.get(item.herbId) ?? item.role
 }
 
 const groups = computed(() =>
@@ -148,7 +256,18 @@ function summaryText(text: string, limit = 4) {
   return first.length > limit ? first.slice(0, limit) : first
 }
 
+function isInferredRole(node: GraphNode) {
+  const item = props.formula.composition.find((entry) => entry.herbId === node.herbId)
+  return (
+    !!item &&
+    item.role === '未标注' &&
+    !props.herbRoles?.[node.herbId] &&
+    inferredRoles.value.has(node.herbId)
+  )
+}
+
 function nodeRoleText(node: GraphNode) {
+  if (isInferredRole(node)) return `${node.role} · 按用量`
   const detail = summaryText(herbNote(node.herbId) || node.action || '')
   const role =
     node.role === '未标注'
@@ -174,6 +293,7 @@ function nodeNoteSource(node: GraphNode) {
 
 function nodeRoleBadge(node: GraphNode) {
   if (props.herbRoles?.[node.herbId]) return `${node.role}（补充）`
+  if (isInferredRole(node)) return `${node.role}（按用量）`
   return node.role === '未标注' ? props.unlabeledLabel : node.role
 }
 
@@ -328,7 +448,12 @@ function resetEditor() {
       </div>
     </div>
 
-    <p class="graph-source-note">{{ props.sourceNote }}</p>
+    <p class="graph-source-note">
+      {{ props.sourceNote }}
+      <span v-if="hasInferredRoles" class="graph-inferred-note">
+        未标君臣佐使者，按用量大小暂分层；仅辅助阅读，不是原著定论。
+      </span>
+    </p>
 
     <div ref="graphCanvas" class="graph-canvas">
       <svg

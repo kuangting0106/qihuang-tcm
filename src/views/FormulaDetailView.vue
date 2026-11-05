@@ -3,6 +3,7 @@ import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute, useRouter } from 'vue-router'
 import CitationBadge from '@/components/CitationBadge.vue'
 import FormulaGraph from '@/components/FormulaGraph.vue'
+import HerbDoseEditor from '@/components/HerbDoseEditor.vue'
 import AnnotatedOriginalText from '@/components/AnnotatedOriginalText.vue'
 import SourcedText from '@/components/SourcedText.vue'
 import { useTcmData } from '@/composables/useTcmData'
@@ -493,14 +494,14 @@ watch(
                     {{ item.herbName ?? herbName(item.herbId) }}
                   </RouterLink>
                   <span v-else class="preparation-herb__name">{{ item.herbName ?? herbName(item.herbId) }}</span>
-                  <span class="preparation-herb__dose">
-                    {{
-                      prepDoseMode === 'modern'
-                        ? formula.modernGramDoses?.[item.herbId] ?? item.dosage
-                        : item.dosage
-                    }}
-                  </span>
+                  <HerbDoseEditor
+                    :formula-id="formula.id"
+                    :item="item"
+                    :modern="prepDoseMode === 'modern'"
+                    :modern-text="formula.modernGramDoses?.[item.herbId]"
+                  />
                 </div>
+                <p v-if="item.note" class="preparation-herb__note">{{ item.note }}</p>
               </li>
             </ul>
             <blockquote v-else-if="ingredientText" class="preparation-quote">
@@ -509,7 +510,7 @@ watch(
             <p v-else class="preparation-empty">原书未列药材及用量。</p>
 
             <p v-if="hasComposition" class="preparation-herb-hint">
-              君臣佐使与单味作用见下方“关系与图谱”；点图谱中的药材，可修改角色或补充本地备注。备注只保存在本机浏览器，不会发布。
+              君臣佐使与单味作用见下方“关系与图谱”；点图谱中的药材，可修改角色或补充本地备注。药材行的“补用量 / 改用量”也可直接填写，保存后再次修改。备注与用量只保存在本机浏览器，不会发布。
             </p>
             <p v-if="formula.modernGramNote" class="preparation-dose-note">{{ formula.modernGramNote }}</p>
             <CitationBadge
@@ -1102,6 +1103,12 @@ watch(
   color: var(--ink-soft);
   font-size: 0.72rem;
   white-space: nowrap;
+}
+.preparation-herb__note {
+  margin: 3px 0 0;
+  color: var(--ink-faint);
+  font-size: 0.64rem;
+  line-height: 1.55;
 }
 
 .preparation-herb-hint {
