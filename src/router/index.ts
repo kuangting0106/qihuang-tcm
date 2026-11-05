@@ -181,6 +181,12 @@ const router = createRouter({
       meta: { title: '医藏原文' },
     },
     {
+      path: '/classics/citations/:workKey',
+      name: 'classic-citations',
+      component: () => import('@/views/ClassicCitationView.vue'),
+      meta: { title: '引文索引' },
+    },
+    {
       path: '/classics/:bookId',
       name: 'classic-book',
       component: () => import('@/views/ClassicBookView.vue'),
