@@ -44,6 +44,7 @@ function open() {
 
 <template>
   <button
+    v-if="first"
     class="citation-badge"
     :class="[typeClass, { 'citation-badge--compact': compact, 'citation-badge--muted': tone === 'muted' }]"
     type="button"

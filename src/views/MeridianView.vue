@@ -257,6 +257,15 @@ watch(
       <p v-if="loading" class="paper-panel">正在加载经络数据…</p>
       <p v-else-if="loadError" class="paper-panel" role="alert">{{ loadError }}</p>
 
+      <RouterLink
+        v-if="tutorialSectionId"
+        class="meridian-tutorial"
+        :to="`/methods/acupuncture/tutorial/chapter-4/${tutorialSectionId}`"
+      >
+        <span class="meridian-tutorial__kicker">VIDEO COURSE / 针灸教程</span>
+        <span class="meridian-tutorial__title">倪海厦针灸教程 <span aria-hidden="true">→</span></span>
+      </RouterLink>
+
       <header class="meridian-head">
         <div>
           <p class="eyebrow">ACUPOINT ATLAS / 经络图</p>
@@ -280,13 +289,6 @@ watch(
               收录 {{ activeMeridian.acupointIds.length }} / {{ activeMeridian.totalPoints }} 穴
             </span>
             <span class="chip">{{ visiblePoints.length }} 个穴位在当前视图</span>
-            <RouterLink
-              v-if="tutorialSectionId"
-              class="chip chip--cinnabar"
-              :to="`/methods/acupuncture/tutorial/chapter-4/${tutorialSectionId}`"
-            >
-              倪海厦针灸教程
-            </RouterLink>
             <CitationBadge
               v-if="activeDescription"
               :citation-ids="activeDescription.citationIds"
@@ -601,6 +603,45 @@ watch(
   color: var(--cinnabar);
 }
 
+.meridian-tutorial {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0 0 18px;
+  padding: 9px 16px 10px;
+  border: 1px solid rgba(154, 46, 30, 0.28);
+  border-left: 3px solid var(--cinnabar);
+  background:
+    linear-gradient(90deg, rgba(154, 46, 30, 0.08), rgba(255, 252, 245, 0.52));
+  text-decoration: none;
+  transition:
+    border-color 0.18s ease,
+    background 0.18s ease,
+    transform 0.18s ease;
+}
+
+.meridian-tutorial:hover {
+  border-color: rgba(154, 46, 30, 0.5);
+  background:
+    linear-gradient(90deg, rgba(154, 46, 30, 0.13), rgba(255, 252, 245, 0.72));
+  transform: translateX(2px);
+}
+
+.meridian-tutorial__kicker {
+  color: var(--ink-faint);
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.meridian-tutorial__title {
+  color: var(--cinnabar);
+  font-size: clamp(1.05rem, 1.7vw, 1.28rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+}
+
 .meridian-head {
   display: flex;
   justify-content: space-between;
@@ -611,7 +652,7 @@ watch(
 
 .meridian-head h1 {
   margin: 4px 0 8px;
-  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
   letter-spacing: 0.06em;
 }
 

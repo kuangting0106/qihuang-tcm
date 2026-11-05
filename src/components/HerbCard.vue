@@ -3,7 +3,6 @@ import { computed } from 'vue'
 import { RouterLink } from 'vue-router'
 import type { Herb } from '@/types/tcm'
 import { useTcmData } from '@/composables/useTcmData'
-import CitationBadge from './CitationBadge.vue'
 
 const props = defineProps<{ herb: Herb; meridianNames?: Record<string, string> }>()
 const { meridianName } = useTcmData()
@@ -33,9 +32,6 @@ const meridianLabels = computed(() =>
         <span v-for="m in meridianLabels.slice(0, 2)" :key="m" class="chip chip--jade">{{ m }}</span>
       </div>
       <p class="herb-card__effect">{{ herb.properties.effects.text }}</p>
-      <div class="herb-card__foot">
-        <CitationBadge :citation-ids="herb.properties.effects.citationIds" compact />
-      </div>
     </div>
   </RouterLink>
 </template>
@@ -137,11 +133,5 @@ const meridianLabels = computed(() =>
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-.herb-card__foot {
-  margin-top: auto;
-  padding-top: 4px;
-  border-top: 1px solid var(--line);
 }
 </style>
