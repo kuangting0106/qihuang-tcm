@@ -111,7 +111,14 @@ function finish() {
   const body = record.text.join('').trim()
   if (!body || body.length < 4) return
 
+  // 编号按原始条目递增，删除条目后保留空号，避免已有链接和本机注释错位。
   serial += 1
+
+  // 只保留有实际方药/治法的条目；纯辨症、辨证和“见某条”索引不单独成方。
+  const descriptionOnly =
+    /^(辨症|辨证)/.test(body) && !/单方|偏方|处方|治法/.test(body)
+  const referenceOnly = /^(见|参见|方名)/.test(body)
+  if (descriptionOnly || referenceOnly) return
   const n = record.variant
   const label = `方${cnNum(n)}`
   const locator = `${record.section || section || '未分部'}·${record.condition || condition || '未列病名'}·${label}`

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T10:51:53.777Z",
+  "generatedAt": "2026-11-05T12:14:11.725Z",
   "source": {
     "title": "米晶子济世良方",
     "file": "米晶子济世良方.pdf",
@@ -7,8 +7,8 @@
   },
   "stats": {
     "pages": 206,
-    "formulas": 562,
-    "sources": 562
+    "formulas": 501,
+    "sources": 501
   },
   "sources": [
     {
@@ -16,15 +16,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "头部·肾水不足，邪火上冲，头似痛非痛·方一 · PDF 第 13 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-2",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "头部·偏正头风顶上痛·方一 · PDF 第 13 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -61,15 +52,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "头部·偏正头风·方一 · PDF 第 13 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-7",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "头部·偏头痛或左右皆痛·方一 · PDF 第 14 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -237,15 +219,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-26",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "面部·紫印脸，青记脸黑如墨，白癜风，紫癜风·方一 · PDF 第 18 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-27",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -295,15 +268,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "眼眉部·眼伤，眼流水·方一 · PDF 第 19 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-33",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "眼眉部·前额连眉棱骨疼痛·方一 · PDF 第 20 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -453,15 +417,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-50",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "头面部·糟鼻子·方一 · PDF 第 24 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-51",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -561,28 +516,10 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-62",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "口舌部·舌肿硬·方一 · PDF 第 27 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-63",
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "口舌部·舌肿硬·方二 · PDF 第 27 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-64",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "口舌部·唇肿·方一 · PDF 第 27 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -633,15 +570,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-70",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "头面部·出臭气·方一 · PDF 第 29 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-71",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -673,15 +601,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "牙部·老人牙痛·方一 · PDF 第 30 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-75",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "牙部·牙痛·方一 · PDF 第 30 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -723,37 +642,10 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-80",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "头面部·牙痛·方六 · PDF 第 31 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-81",
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "头面部·牙痛·方七 · PDF 第 31 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-82",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "头面部·牙痛·方八 · PDF 第 31 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-83",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "头面部·牙痛·方九 · PDF 第 32 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -840,15 +732,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-93",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "头面部·前上牙痛·方一 · PDF 第 34 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-94",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -880,15 +763,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "头面部·风虫牙痛上连头脑·方一 · PDF 第 34 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-98",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "头面部·齿·方一 · PDF 第 35 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -943,15 +817,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "喉部·喉痒滴水不入·方一 · PDF 第 40 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-105",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "喉部·食道癌·方一 · PDF 第 40 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -1096,15 +961,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "胸腹颈项部·胎前咳嗽·方一 · PDF 第 44 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-122",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "胸腹颈项部·各种咳嗽·方一 · PDF 第 44 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -1263,15 +1119,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-140",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "胸腹颈项部·肺痨结咳·方一 · PDF 第 49 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-141",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -1375,15 +1222,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "胸腹颈项部·喘不得卧，让人扶起，扶坐症·方一 · PDF 第 53 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-153",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "胁部·两胁疼痛·方一 · PDF 第 53 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -1533,15 +1371,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-170",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "胸腹颈项部·心胃痛·方一 · PDF 第 57 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-171",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -1582,15 +1411,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "胸腹颈项部·壹食症?·方一 · PDF 第 57 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-176",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "胸腹颈项部·嘻膈症·方一 · PDF 第 58 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -1695,28 +1515,10 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-188",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "胸腹颈项部·胃大寒，胸口痛·方一 · PDF 第 62 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-189",
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "胸腹颈项部·胃大寒，胸口痛·方二 · PDF 第 62 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-190",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "胸腹颈项部·消化不良·方一 · PDF 第 62 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -1731,28 +1533,10 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-192",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "少腹部·少腹寒痛·方一 · PDF 第 62 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-193",
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "少腹部·少腹寒痛·方二 · PDF 第 62 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-194",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "少腹部·少腹火痛·方一 · PDF 第 62 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -1938,15 +1722,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-215",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "胸腹颈项部·遗尿症·方一 · PDF 第 67 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-216",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -2064,15 +1839,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-229",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "胸腹颈项部·肾漏·方一 · PDF 第 71 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-230",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -2100,28 +1866,10 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-233",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "胸腹颈项部·小便血·方一 · PDF 第 71 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-234",
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "胸腹颈项部·小便血·方二 · PDF 第 71 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-235",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "胸腹颈项部·尿血，鼻子出血·方一 · PDF 第 72 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -2217,15 +1965,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-246",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "胸腹颈项部·肛门内奇痒、生虫、痔疮等症·方二 · PDF 第 74 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-247",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -2284,15 +2023,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "胸腹颈项部·老年人大便干燥症·方一 · PDF 第 76 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-254",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "胸腹颈项部·大便出血·方一 · PDF 第 76 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -2514,28 +2244,10 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-279",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "手足部·左手麻木·方一 · PDF 第 84 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-280",
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "手足部·左手麻木·方二 · PDF 第 84 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-281",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "手足部·右手麻木·方一 · PDF 第 84 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -2820,28 +2532,10 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-313",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "全身部·全身痹症·方一 · PDF 第 91 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-314",
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "全身部·全身痹症·方二 · PDF 第 91 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-315",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "全身部·一切痛症·方一 · PDF 第 91 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -2919,15 +2613,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-324",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "全身部·半身不遂，口眼歪斜，言语涩塞，口角流涎，大便干燥，小便遗尿·方二 · PDF 第 93 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-325",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -2941,15 +2626,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "全身部·半身不遂，口歪眼斜症·方一 · PDF 第 94 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-327",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "全身部·半身不遂，口歪眼斜症·方二 · PDF 第 94 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -3009,15 +2685,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-334",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "全身部·全身黄肿·方二 · PDF 第 95 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-335",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -3040,15 +2707,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "全身部·全身劳症·方二 · PDF 第 96 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-338",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "全身部·全身劳症·方三 · PDF 第 96 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -3162,15 +2820,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-351",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内科·膨症·方二 · PDF 第 105 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-352",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -3220,15 +2869,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "内科·膨症·方八 · PDF 第 106 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-358",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内科·水膨症·方一 · PDF 第 107 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -3387,15 +3027,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-376",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内外妇儿·男女内科百病·方二 · PDF 第 111 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-377",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -3513,15 +3144,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-390",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内外妇儿·一切胃肠病良方·方一 · PDF 第 117 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-391",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -3558,15 +3180,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-395",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内外妇儿·肾经病·方一 · PDF 第 118 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-396",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -3580,15 +3193,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "内外妇儿·鼻出血·方一 · PDF 第 118 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-398",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内外妇儿·风出怪病·方一 · PDF 第 118 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -3616,15 +3220,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "内外妇儿·口臭·方二 · PDF 第 119 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-402",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内外妇儿·多年咳嗽·方一 · PDF 第 119 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -3864,15 +3459,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-429",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内外妇儿·初发疮·方一 · PDF 第 126 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-430",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -3931,15 +3517,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "内外妇儿·跌打损伤痛肿症·方二 · PDF 第 128 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-437",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内外妇儿·跌打损伤痛肿症·方三 · PDF 第 128 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -4224,15 +3801,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-469",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内外妇儿·干血劳症·方一 · PDF 第 139 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-470",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -4264,15 +3832,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "内外妇儿·妇女阴户痒症·方一 · PDF 第 140 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-474",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内外妇儿·妇女产后抽风·方一 · PDF 第 140 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -4318,15 +3877,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "妇科·妇女子宫出血，血崩，肚痛腰酸·方一 · PDF 第 141 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-480",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "妇科·妇女子宫出血，血崩，肚痛腰酸·方二 · PDF 第 142 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -4413,15 +3963,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-490",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内外妇儿·妇女干劳，男子劳病，交节病作·方一 · PDF 第 146 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-491",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -4449,15 +3990,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-494",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内外妇儿·年轻妇女闭经不来·方一 · PDF 第 147 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-495",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -4467,28 +3999,10 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-496",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内外妇儿·妇女断经·方一 · PDF 第 147 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-497",
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "内外妇儿·妇女断经·方二 · PDF 第 147 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-498",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内外妇儿·妇女心慌乱，头痛头晕，全身无力·方一 · PDF 第 148 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -4674,15 +4188,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-519",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "儿科·婴儿螳螂子·方一 · PDF 第 154 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-520",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -4696,15 +4201,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "内外妇儿·大人、小儿五积六聚痞块·方一 · PDF 第 155 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-522",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内外妇儿·小儿夜啼不安·方一 · PDF 第 155 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -4755,15 +4251,6 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-528",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内外妇儿·专治小儿夜啼·方一 · PDF 第 156 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-529",
       "type": "textbook",
       "work": "米晶子济世良方",
@@ -4782,28 +4269,10 @@
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
     },
     {
-      "id": "src-mijingzi-531",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内外妇儿·小儿症·方一 · PDF 第 157 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
       "id": "src-mijingzi-532",
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "内外妇儿·小儿症·方二 · PDF 第 157 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-533",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内外妇儿·小儿抽风，慢惊风·方一 · PDF 第 157 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -4831,15 +4300,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "内外妇儿·小儿白喉·方二 · PDF 第 157 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-537",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "内外妇儿·小儿胎毒·方一 · PDF 第 158 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -4903,15 +4363,6 @@
       "type": "textbook",
       "work": "米晶子济世良方",
       "locator": "癫疯部·羊癫风症·方二 · PDF 第 163 页",
-      "edition": "深圳报业集团出版社，2013年11月第1版",
-      "isbn": "978-7-80709-545-3",
-      "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
-    },
-    {
-      "id": "src-mijingzi-545",
-      "type": "textbook",
-      "work": "米晶子济世良方",
-      "locator": "癫疯部·癫狂症·方一 · PDF 第 163 页",
       "edition": "深圳报业集团出版社，2013年11月第1版",
       "isbn": "978-7-80709-545-3",
       "note": "据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。"
@@ -5113,47 +4564,6 @@
       "sourcePage": 13
     },
     {
-      "id": "mijingzi-0002",
-      "name": "偏正头风顶上痛方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-2",
-      "originalText": {
-        "text": "辨症：属厥阴经头痛",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-2"
-        ],
-        "locator": "头部·偏正头风顶上痛·方一 · PDF 第 13 页"
-      },
-      "effects": {
-        "text": "主治：偏正头风顶上痛。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-2"
-        ],
-        "locator": "头部·偏正头风顶上痛·方一"
-      },
-      "symptoms": [
-        {
-          "text": "偏正头风顶上痛",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-2"
-          ],
-          "locator": "头部·偏正头风顶上痛·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "偏正头风顶上痛"
-      ],
-      "sourceSection": "头部",
-      "sourcePage": 13
-    },
-    {
       "id": "mijingzi-0003",
       "name": "偏正头风顶上痛方二",
       "pinyin": "",
@@ -5316,47 +4726,6 @@
       ],
       "sourceSection": "头部",
       "sourcePage": 13
-    },
-    {
-      "id": "mijingzi-0007",
-      "name": "偏头痛或左右皆痛方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-7",
-      "originalText": {
-        "text": "辨症：少阳症头痛",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-7"
-        ],
-        "locator": "头部·偏头痛或左右皆痛·方一 · PDF 第 14 页"
-      },
-      "effects": {
-        "text": "主治：偏头痛或左右皆痛。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-7"
-        ],
-        "locator": "头部·偏头痛或左右皆痛·方一"
-      },
-      "symptoms": [
-        {
-          "text": "偏头痛或左右皆痛",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-7"
-          ],
-          "locator": "头部·偏头痛或左右皆痛·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "偏头痛或左右皆痛"
-      ],
-      "sourceSection": "头部",
-      "sourcePage": 14
     },
     {
       "id": "mijingzi-0008",
@@ -6097,47 +5466,6 @@
       "sourcePage": 18
     },
     {
-      "id": "mijingzi-0026",
-      "name": "紫印脸，青记脸黑如墨，白癜风，紫癜风方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-26",
-      "originalText": {
-        "text": "见头部【头发脱落】条“通窍活血汤”",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-26"
-        ],
-        "locator": "面部·紫印脸，青记脸黑如墨，白癜风，紫癜风·方一 · PDF 第 18 页"
-      },
-      "effects": {
-        "text": "主治：紫印脸，青记脸黑如墨，白癜风，紫癜风。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-26"
-        ],
-        "locator": "面部·紫印脸，青记脸黑如墨，白癜风，紫癜风·方一"
-      },
-      "symptoms": [
-        {
-          "text": "紫印脸，青记脸黑如墨，白癜风，紫癜风",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-26"
-          ],
-          "locator": "面部·紫印脸，青记脸黑如墨，白癜风，紫癜风·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "紫印脸，青记脸黑如墨，白癜风，紫癜风"
-      ],
-      "sourceSection": "面部",
-      "sourcePage": 18
-    },
-    {
       "id": "mijingzi-0027",
       "name": "紫白癜斑方",
       "pinyin": "",
@@ -6382,47 +5710,6 @@
       ],
       "sourceSection": "眼眉部",
       "sourcePage": 19
-    },
-    {
-      "id": "mijingzi-0033",
-      "name": "前额连眉棱骨疼痛方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-33",
-      "originalText": {
-        "text": "辨症：阳明症头痛",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-33"
-        ],
-        "locator": "眼眉部·前额连眉棱骨疼痛·方一 · PDF 第 20 页"
-      },
-      "effects": {
-        "text": "主治：前额连眉棱骨疼痛。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-33"
-        ],
-        "locator": "眼眉部·前额连眉棱骨疼痛·方一"
-      },
-      "symptoms": [
-        {
-          "text": "前额连眉棱骨疼痛",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-33"
-          ],
-          "locator": "眼眉部·前额连眉棱骨疼痛·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "前额连眉棱骨疼痛"
-      ],
-      "sourceSection": "眼眉部",
-      "sourcePage": 20
     },
     {
       "id": "mijingzi-0034",
@@ -7081,47 +6368,6 @@
       "sourcePage": 24
     },
     {
-      "id": "mijingzi-0050",
-      "name": "糟鼻子方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-50",
-      "originalText": {
-        "text": "见头部【头发脱落】条“通窍活血汤”。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-50"
-        ],
-        "locator": "头面部·糟鼻子·方一 · PDF 第 24 页"
-      },
-      "effects": {
-        "text": "主治：糟鼻子。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-50"
-        ],
-        "locator": "头面部·糟鼻子·方一"
-      },
-      "symptoms": [
-        {
-          "text": "糟鼻子",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-50"
-          ],
-          "locator": "头面部·糟鼻子·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "糟鼻子"
-      ],
-      "sourceSection": "头面部",
-      "sourcePage": 24
-    },
-    {
       "id": "mijingzi-0051",
       "name": "耳初肿痛方",
       "pinyin": "",
@@ -7573,47 +6819,6 @@
       "sourcePage": 26
     },
     {
-      "id": "mijingzi-0062",
-      "name": "舌肿硬方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-62",
-      "originalText": {
-        "text": "辨症：舌下肿，生一二小舌，用针刺小舌出血，左右俱肝火、肺火、心火、脾火也。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-62"
-        ],
-        "locator": "口舌部·舌肿硬·方一 · PDF 第 27 页"
-      },
-      "effects": {
-        "text": "主治：舌肿硬。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-62"
-        ],
-        "locator": "口舌部·舌肿硬·方一"
-      },
-      "symptoms": [
-        {
-          "text": "舌肿硬",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-62"
-          ],
-          "locator": "口舌部·舌肿硬·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "舌肿硬"
-      ],
-      "sourceSection": "口舌部",
-      "sourcePage": 27
-    },
-    {
       "id": "mijingzi-0063",
       "name": "舌肿硬方二",
       "pinyin": "",
@@ -7650,47 +6855,6 @@
       "modificationsNote": "",
       "symptomTags": [
         "舌肿硬"
-      ],
-      "sourceSection": "口舌部",
-      "sourcePage": 27
-    },
-    {
-      "id": "mijingzi-0064",
-      "name": "唇肿方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-64",
-      "originalText": {
-        "text": "辨症：唇，脾也。脾气通达，则唇荣也。唇燥则干，热则裂，风则暇，①寸冬：为麦冬别名。寒则揭，肝怒则火旺，风热传脾也，脾有热，则唇肿裂。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-64"
-        ],
-        "locator": "口舌部·唇肿·方一 · PDF 第 27 页"
-      },
-      "effects": {
-        "text": "主治：唇肿。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-64"
-        ],
-        "locator": "口舌部·唇肿·方一"
-      },
-      "symptoms": [
-        {
-          "text": "唇肿",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-64"
-          ],
-          "locator": "口舌部·唇肿·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "唇肿"
       ],
       "sourceSection": "口舌部",
       "sourcePage": 27
@@ -7901,47 +7065,6 @@
       "sourcePage": 28
     },
     {
-      "id": "mijingzi-0070",
-      "name": "出臭气方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-70",
-      "originalText": {
-        "text": "见头部【头痛】条“血府逐瘀汤”，头部【头发脱落】条“通部窍活血汤”。先服血府逐瘀汤，后服通窍活血汤。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-70"
-        ],
-        "locator": "头面部·出臭气·方一 · PDF 第 29 页"
-      },
-      "effects": {
-        "text": "主治：出臭气。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-70"
-        ],
-        "locator": "头面部·出臭气·方一"
-      },
-      "symptoms": [
-        {
-          "text": "出臭气",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-70"
-          ],
-          "locator": "头面部·出臭气·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "出臭气"
-      ],
-      "sourceSection": "头面部",
-      "sourcePage": 29
-    },
-    {
       "id": "mijingzi-0071",
       "name": "口臭方",
       "pinyin": "",
@@ -8101,47 +7224,6 @@
       "modificationsNote": "",
       "symptomTags": [
         "老人牙痛"
-      ],
-      "sourceSection": "牙部",
-      "sourcePage": 30
-    },
-    {
-      "id": "mijingzi-0075",
-      "name": "牙痛方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-75",
-      "originalText": {
-        "text": "辨证：右寸关脉洪、数、弦，肠胃有火也，久嗽尺脉洪，真火虚，肾虚，相火炎也。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-75"
-        ],
-        "locator": "牙部·牙痛·方一 · PDF 第 30 页"
-      },
-      "effects": {
-        "text": "主治：牙痛。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-75"
-        ],
-        "locator": "牙部·牙痛·方一"
-      },
-      "symptoms": [
-        {
-          "text": "牙痛",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-75"
-          ],
-          "locator": "牙部·牙痛·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "牙痛"
       ],
       "sourceSection": "牙部",
       "sourcePage": 30
@@ -8311,47 +7393,6 @@
       "sourcePage": 31
     },
     {
-      "id": "mijingzi-0080",
-      "name": "牙痛方六",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-80",
-      "originalText": {
-        "text": "辨证：上门牙痛，是心火，加黄连；下门牙痛，是肾火，加知母、黄柏;左侧上牙痛，胆火，加龙胆草、羌活；左侧下牙痛，肝火，加柴胡、山栀子;右侧上牙痛，大肠火，加积壳、大黄；右侧下牙痛，肺火，加桔梗，再用好松萝茶一撮、姜一片、水二碗，煎一碗，服一剂见功。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-80"
-        ],
-        "locator": "头面部·牙痛·方六 · PDF 第 31 页"
-      },
-      "effects": {
-        "text": "主治：牙痛。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-80"
-        ],
-        "locator": "头面部·牙痛·方六"
-      },
-      "symptoms": [
-        {
-          "text": "牙痛",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-80"
-          ],
-          "locator": "头面部·牙痛·方六"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "牙痛"
-      ],
-      "sourceSection": "头面部",
-      "sourcePage": 31
-    },
-    {
       "id": "mijingzi-0081",
       "name": "牙痛方七",
       "pinyin": "",
@@ -8391,88 +7432,6 @@
       ],
       "sourceSection": "头面部",
       "sourcePage": 31
-    },
-    {
-      "id": "mijingzi-0082",
-      "name": "牙痛方八",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-82",
-      "originalText": {
-        "text": "辨证：前上牙痛，是心火，加条芩、木通、灯心；前下牙痛，是肾火，加元参、知母、黄柏；左侧上牙痛，胆火，加青黛、苏叶；左侧下牙痛，肝火，加胆草、白芍、柴胡；右侧上牙痛，脾火，加石膏、竹叶、元明粉；右侧下牙痛，肺火，加桔梗、条芩、桑皮。注：凡所加之药各为一钱，若痛甚者，加倍用之，亦可。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-82"
-        ],
-        "locator": "头面部·牙痛·方八 · PDF 第 31 页"
-      },
-      "effects": {
-        "text": "主治：牙痛。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-82"
-        ],
-        "locator": "头面部·牙痛·方八"
-      },
-      "symptoms": [
-        {
-          "text": "牙痛",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-82"
-          ],
-          "locator": "头面部·牙痛·方八"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "牙痛"
-      ],
-      "sourceSection": "头面部",
-      "sourcePage": 31
-    },
-    {
-      "id": "mijingzi-0083",
-      "name": "牙痛方九",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-83",
-      "originalText": {
-        "text": "辨证：牙痛有三种，其症状分析与治方如下：（1）其痛势缓，日轻夜重者，是阴虚牙痛，其骤腮肿甚；（2）牙痛时，头面皆肿，喝风时赤痛，是风火牙痛；（3）牙痛时，其痛在一处，牙缝有脓或无脓，其痛为虫牙痛。（1）阴虚牙痛方",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-83"
-        ],
-        "locator": "头面部·牙痛·方九 · PDF 第 32 页"
-      },
-      "effects": {
-        "text": "主治：牙痛。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-83"
-        ],
-        "locator": "头面部·牙痛·方九"
-      },
-      "symptoms": [
-        {
-          "text": "牙痛",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-83"
-          ],
-          "locator": "头面部·牙痛·方九"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "牙痛"
-      ],
-      "sourceSection": "头面部",
-      "sourcePage": 32
     },
     {
       "id": "mijingzi-0084",
@@ -8844,47 +7803,6 @@
       "sourcePage": 34
     },
     {
-      "id": "mijingzi-0093",
-      "name": "前上牙痛方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-93",
-      "originalText": {
-        "text": "辨症：肾火，劳心过度，感冒，咳嗽。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-93"
-        ],
-        "locator": "头面部·前上牙痛·方一 · PDF 第 34 页"
-      },
-      "effects": {
-        "text": "主治：前上牙痛。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-93"
-        ],
-        "locator": "头面部·前上牙痛·方一"
-      },
-      "symptoms": [
-        {
-          "text": "前上牙痛",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-93"
-          ],
-          "locator": "头面部·前上牙痛·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "前上牙痛"
-      ],
-      "sourceSection": "头面部",
-      "sourcePage": 34
-    },
-    {
       "id": "mijingzi-0094",
       "name": "前上牙痛方二",
       "pinyin": "",
@@ -9047,47 +7965,6 @@
       ],
       "sourceSection": "头面部",
       "sourcePage": 34
-    },
-    {
-      "id": "mijingzi-0098",
-      "name": "齿方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-98",
-      "originalText": {
-        "text": "辨证：有阳明风热、湿热、肾虚。（1）除热",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-98"
-        ],
-        "locator": "头面部·齿·方一 · PDF 第 35 页"
-      },
-      "effects": {
-        "text": "主治：齿。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-98"
-        ],
-        "locator": "头面部·齿·方一"
-      },
-      "symptoms": [
-        {
-          "text": "齿",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-98"
-          ],
-          "locator": "头面部·齿·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "齿"
-      ],
-      "sourceSection": "头面部",
-      "sourcePage": 35
     },
     {
       "id": "mijingzi-0099",
@@ -9331,47 +8208,6 @@
       "modificationsNote": "",
       "symptomTags": [
         "喉痒滴水不入"
-      ],
-      "sourceSection": "喉部",
-      "sourcePage": 40
-    },
-    {
-      "id": "mijingzi-0105",
-      "name": "食道癌方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-105",
-      "originalText": {
-        "text": "辨症：水不人、粒米不进、咽喉疼痛等症",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-105"
-        ],
-        "locator": "喉部·食道癌·方一 · PDF 第 40 页"
-      },
-      "effects": {
-        "text": "主治：食道癌。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-105"
-        ],
-        "locator": "喉部·食道癌·方一"
-      },
-      "symptoms": [
-        {
-          "text": "食道癌",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-105"
-          ],
-          "locator": "喉部·食道癌·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "食道癌"
       ],
       "sourceSection": "喉部",
       "sourcePage": 40
@@ -10028,47 +8864,6 @@
       "modificationsNote": "",
       "symptomTags": [
         "胎前咳嗽"
-      ],
-      "sourceSection": "胸腹颈项部",
-      "sourcePage": 44
-    },
-    {
-      "id": "mijingzi-0122",
-      "name": "各种咳嗽方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-122",
-      "originalText": {
-        "text": "辨症：妇女产前产后咳嗽皆可用。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-122"
-        ],
-        "locator": "胸腹颈项部·各种咳嗽·方一 · PDF 第 44 页"
-      },
-      "effects": {
-        "text": "主治：各种咳嗽。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-122"
-        ],
-        "locator": "胸腹颈项部·各种咳嗽·方一"
-      },
-      "symptoms": [
-        {
-          "text": "各种咳嗽",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-122"
-          ],
-          "locator": "胸腹颈项部·各种咳嗽·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "各种咳嗽"
       ],
       "sourceSection": "胸腹颈项部",
       "sourcePage": 44
@@ -10771,47 +9566,6 @@
       "sourcePage": 49
     },
     {
-      "id": "mijingzi-0140",
-      "name": "肺痨结咳方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-140",
-      "originalText": {
-        "text": "辨症：痰中带血或黑色痰，出汗不止，四肢发烧，夜间更甚，气急发闷，卧床不治。方名：壮水金丹·胸",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-140"
-        ],
-        "locator": "胸腹颈项部·肺痨结咳·方一 · PDF 第 49 页"
-      },
-      "effects": {
-        "text": "主治：肺痨结咳。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-140"
-        ],
-        "locator": "胸腹颈项部·肺痨结咳·方一"
-      },
-      "symptoms": [
-        {
-          "text": "肺痨结咳",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-140"
-          ],
-          "locator": "胸腹颈项部·肺痨结咳·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "肺痨结咳"
-      ],
-      "sourceSection": "胸腹颈项部",
-      "sourcePage": 49
-    },
-    {
       "id": "mijingzi-0141",
       "name": "肺痨结咳方二",
       "pinyin": "",
@@ -11301,47 +10055,6 @@
         "喘不得卧，让人扶起，扶坐症"
       ],
       "sourceSection": "胸腹颈项部",
-      "sourcePage": 53
-    },
-    {
-      "id": "mijingzi-0153",
-      "name": "两胁疼痛方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-153",
-      "originalText": {
-        "text": "辨症：病在肝",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-153"
-        ],
-        "locator": "胁部·两胁疼痛·方一 · PDF 第 53 页"
-      },
-      "effects": {
-        "text": "主治：两胁疼痛。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-153"
-        ],
-        "locator": "胁部·两胁疼痛·方一"
-      },
-      "symptoms": [
-        {
-          "text": "两胁疼痛",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-153"
-          ],
-          "locator": "胁部·两胁疼痛·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "两胁疼痛"
-      ],
-      "sourceSection": "胁部",
       "sourcePage": 53
     },
     {
@@ -12001,47 +10714,6 @@
       "sourcePage": 57
     },
     {
-      "id": "mijingzi-0170",
-      "name": "心胃痛方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-170",
-      "originalText": {
-        "text": "辨症：服百药不效，得寒也痛，得热也痛，非真心痛，真胃痛也。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-170"
-        ],
-        "locator": "胸腹颈项部·心胃痛·方一 · PDF 第 57 页"
-      },
-      "effects": {
-        "text": "主治：心胃痛。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-170"
-        ],
-        "locator": "胸腹颈项部·心胃痛·方一"
-      },
-      "symptoms": [
-        {
-          "text": "心胃痛",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-170"
-          ],
-          "locator": "胸腹颈项部·心胃痛·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "心胃痛"
-      ],
-      "sourceSection": "胸腹颈项部",
-      "sourcePage": 57
-    },
-    {
       "id": "mijingzi-0171",
       "name": "心胃痛方二",
       "pinyin": "",
@@ -12245,47 +10917,6 @@
       ],
       "sourceSection": "胸腹颈项部",
       "sourcePage": 57
-    },
-    {
-      "id": "mijingzi-0176",
-      "name": "嘻膈症方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-176",
-      "originalText": {
-        "text": "辨症：朝食暮吐",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-176"
-        ],
-        "locator": "胸腹颈项部·嘻膈症·方一 · PDF 第 58 页"
-      },
-      "effects": {
-        "text": "主治：嘻膈症。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-176"
-        ],
-        "locator": "胸腹颈项部·嘻膈症·方一"
-      },
-      "symptoms": [
-        {
-          "text": "嘻膈症",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-176"
-          ],
-          "locator": "胸腹颈项部·嘻膈症·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "嘻膈症"
-      ],
-      "sourceSection": "胸腹颈项部",
-      "sourcePage": 58
     },
     {
       "id": "mijingzi-0177",
@@ -12739,47 +11370,6 @@
       "sourcePage": 61
     },
     {
-      "id": "mijingzi-0188",
-      "name": "胃大寒，胸口痛方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-188",
-      "originalText": {
-        "text": "辨症：舌有白苔，不渴，鼻子不干燥，有时腹部胀满。有的症状，外表发烧，而内不烧，鼻子不干燥，不想喝水，真大寒也。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-188"
-        ],
-        "locator": "胸腹颈项部·胃大寒，胸口痛·方一 · PDF 第 62 页"
-      },
-      "effects": {
-        "text": "主治：胃大寒，胸口痛。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-188"
-        ],
-        "locator": "胸腹颈项部·胃大寒，胸口痛·方一"
-      },
-      "symptoms": [
-        {
-          "text": "胃大寒，胸口痛",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-188"
-          ],
-          "locator": "胸腹颈项部·胃大寒，胸口痛·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "胃大寒，胸口痛"
-      ],
-      "sourceSection": "胸腹颈项部",
-      "sourcePage": 62
-    },
-    {
       "id": "mijingzi-0189",
       "name": "胃大寒，胸口痛方二",
       "pinyin": "",
@@ -12816,47 +11406,6 @@
       "modificationsNote": "",
       "symptomTags": [
         "胃大寒，胸口痛"
-      ],
-      "sourceSection": "胸腹颈项部",
-      "sourcePage": 62
-    },
-    {
-      "id": "mijingzi-0190",
-      "name": "消化不良方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-190",
-      "originalText": {
-        "text": "辨症：呕吐泄泻",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-190"
-        ],
-        "locator": "胸腹颈项部·消化不良·方一 · PDF 第 62 页"
-      },
-      "effects": {
-        "text": "主治：消化不良。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-190"
-        ],
-        "locator": "胸腹颈项部·消化不良·方一"
-      },
-      "symptoms": [
-        {
-          "text": "消化不良",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-190"
-          ],
-          "locator": "胸腹颈项部·消化不良·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "消化不良"
       ],
       "sourceSection": "胸腹颈项部",
       "sourcePage": 62
@@ -12903,47 +11452,6 @@
       "sourcePage": 62
     },
     {
-      "id": "mijingzi-0192",
-      "name": "少腹寒痛方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-192",
-      "originalText": {
-        "text": "辨症：喜暖喜按，遇寒更痛，是寒痛也。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-192"
-        ],
-        "locator": "少腹部·少腹寒痛·方一 · PDF 第 62 页"
-      },
-      "effects": {
-        "text": "主治：少腹寒痛。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-192"
-        ],
-        "locator": "少腹部·少腹寒痛·方一"
-      },
-      "symptoms": [
-        {
-          "text": "少腹寒痛",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-192"
-          ],
-          "locator": "少腹部·少腹寒痛·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "少腹寒痛"
-      ],
-      "sourceSection": "少腹部",
-      "sourcePage": 62
-    },
-    {
       "id": "mijingzi-0193",
       "name": "少腹寒痛方二",
       "pinyin": "",
@@ -12980,47 +11488,6 @@
       "modificationsNote": "",
       "symptomTags": [
         "少腹寒痛"
-      ],
-      "sourceSection": "少腹部",
-      "sourcePage": 62
-    },
-    {
-      "id": "mijingzi-0194",
-      "name": "少腹火痛方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-194",
-      "originalText": {
-        "text": "辨症：拒按，实痛。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-194"
-        ],
-        "locator": "少腹部·少腹火痛·方一 · PDF 第 62 页"
-      },
-      "effects": {
-        "text": "主治：少腹火痛。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-194"
-        ],
-        "locator": "少腹部·少腹火痛·方一"
-      },
-      "symptoms": [
-        {
-          "text": "少腹火痛",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-194"
-          ],
-          "locator": "少腹部·少腹火痛·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "少腹火痛"
       ],
       "sourceSection": "少腹部",
       "sourcePage": 62
@@ -13846,47 +12313,6 @@
       "sourcePage": 67
     },
     {
-      "id": "mijingzi-0215",
-      "name": "遗尿症方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-215",
-      "originalText": {
-        "text": "辨症：小便过多，白夜遗尿，喜热不喜寒，面黄肌瘦，即此症也。五七",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-215"
-        ],
-        "locator": "胸腹颈项部·遗尿症·方一 · PDF 第 67 页"
-      },
-      "effects": {
-        "text": "主治：遗尿症。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-215"
-        ],
-        "locator": "胸腹颈项部·遗尿症·方一"
-      },
-      "symptoms": [
-        {
-          "text": "遗尿症",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-215"
-          ],
-          "locator": "胸腹颈项部·遗尿症·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "遗尿症"
-      ],
-      "sourceSection": "胸腹颈项部",
-      "sourcePage": 67
-    },
-    {
       "id": "mijingzi-0216",
       "name": "遗尿症方二",
       "pinyin": "",
@@ -14420,47 +12846,6 @@
       "sourcePage": 70
     },
     {
-      "id": "mijingzi-0229",
-      "name": "肾漏方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-229",
-      "originalText": {
-        "text": "辨症：玉茎不痿，精滑无歇，时时如针刺，捏之则脆。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-229"
-        ],
-        "locator": "胸腹颈项部·肾漏·方一 · PDF 第 71 页"
-      },
-      "effects": {
-        "text": "主治：肾漏。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-229"
-        ],
-        "locator": "胸腹颈项部·肾漏·方一"
-      },
-      "symptoms": [
-        {
-          "text": "肾漏",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-229"
-          ],
-          "locator": "胸腹颈项部·肾漏·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "肾漏"
-      ],
-      "sourceSection": "胸腹颈项部",
-      "sourcePage": 71
-    },
-    {
       "id": "mijingzi-0230",
       "name": "肾漏方二",
       "pinyin": "",
@@ -14584,47 +12969,6 @@
       "sourcePage": 71
     },
     {
-      "id": "mijingzi-0233",
-      "name": "小便血方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-233",
-      "originalText": {
-        "text": "辨症：不痛者尿血，主虚；痛者，为血淋，主热。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-233"
-        ],
-        "locator": "胸腹颈项部·小便血·方一 · PDF 第 71 页"
-      },
-      "effects": {
-        "text": "主治：小便血。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-233"
-        ],
-        "locator": "胸腹颈项部·小便血·方一"
-      },
-      "symptoms": [
-        {
-          "text": "小便血",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-233"
-          ],
-          "locator": "胸腹颈项部·小便血·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "小便血"
-      ],
-      "sourceSection": "胸腹颈项部",
-      "sourcePage": 71
-    },
-    {
       "id": "mijingzi-0234",
       "name": "小便血方二",
       "pinyin": "",
@@ -14664,47 +13008,6 @@
       ],
       "sourceSection": "胸腹颈项部",
       "sourcePage": 71
-    },
-    {
-      "id": "mijingzi-0235",
-      "name": "尿血，鼻子出血方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-235",
-      "originalText": {
-        "text": "辨证：血热，凉血，滋阴补肾水。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-235"
-        ],
-        "locator": "胸腹颈项部·尿血，鼻子出血·方一 · PDF 第 72 页"
-      },
-      "effects": {
-        "text": "主治：尿血，鼻子出血。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-235"
-        ],
-        "locator": "胸腹颈项部·尿血，鼻子出血·方一"
-      },
-      "symptoms": [
-        {
-          "text": "尿血，鼻子出血",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-235"
-          ],
-          "locator": "胸腹颈项部·尿血，鼻子出血·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "尿血，鼻子出血"
-      ],
-      "sourceSection": "胸腹颈项部",
-      "sourcePage": 72
     },
     {
       "id": "mijingzi-0236",
@@ -15117,47 +13420,6 @@
       "sourcePage": 74
     },
     {
-      "id": "mijingzi-0246",
-      "name": "肛门内奇痒、生虫、痔疮等症方二",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-246",
-      "originalText": {
-        "text": "辨证：如有肿有脓，加葵花五朵去心、青皮五分、木香五分。如大便干结，加大黄一钱。如肿甚，加黄柏、泽泻各五分。如痛甚，加羌活、郁李仁各五分。如痒甚，加防风、黄芪、羌活、麻黄、蒿本、甘草各五分。若下血，加地榆黄柏各六分。若小便不通，加茯苓、车前子、灯心、扁蓄各五分。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-246"
-        ],
-        "locator": "胸腹颈项部·肛门内奇痒、生虫、痔疮等症·方二 · PDF 第 74 页"
-      },
-      "effects": {
-        "text": "主治：肛门内奇痒、生虫、痔疮等症。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-246"
-        ],
-        "locator": "胸腹颈项部·肛门内奇痒、生虫、痔疮等症·方二"
-      },
-      "symptoms": [
-        {
-          "text": "肛门内奇痒、生虫、痔疮等症",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-246"
-          ],
-          "locator": "胸腹颈项部·肛门内奇痒、生虫、痔疮等症·方二"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "肛门内奇痒、生虫、痔疮等症"
-      ],
-      "sourceSection": "胸腹颈项部",
-      "sourcePage": 74
-    },
-    {
       "id": "mijingzi-0247",
       "name": "痔疮、虫食肛门、破伤痛痒症方",
       "pinyin": "",
@@ -15440,47 +13702,6 @@
       "modificationsNote": "",
       "symptomTags": [
         "老年人大便干燥症"
-      ],
-      "sourceSection": "胸腹颈项部",
-      "sourcePage": 76
-    },
-    {
-      "id": "mijingzi-0254",
-      "name": "大便出血方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-254",
-      "originalText": {
-        "text": "辨证：便前流血或便后流血，此乃是肾水泄于大肠，故火旺而至便血。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-254"
-        ],
-        "locator": "胸腹颈项部·大便出血·方一 · PDF 第 76 页"
-      },
-      "effects": {
-        "text": "主治：大便出血。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-254"
-        ],
-        "locator": "胸腹颈项部·大便出血·方一"
-      },
-      "symptoms": [
-        {
-          "text": "大便出血",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-254"
-          ],
-          "locator": "胸腹颈项部·大便出血·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "大便出血"
       ],
       "sourceSection": "胸腹颈项部",
       "sourcePage": 76
@@ -16470,47 +14691,6 @@
       "sourcePage": 83
     },
     {
-      "id": "mijingzi-0279",
-      "name": "左手麻木方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-279",
-      "originalText": {
-        "text": "辨症：肾水不足，肝失养。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-279"
-        ],
-        "locator": "手足部·左手麻木·方一 · PDF 第 84 页"
-      },
-      "effects": {
-        "text": "主治：左手麻木。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-279"
-        ],
-        "locator": "手足部·左手麻木·方一"
-      },
-      "symptoms": [
-        {
-          "text": "左手麻木",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-279"
-          ],
-          "locator": "手足部·左手麻木·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "左手麻木"
-      ],
-      "sourceSection": "手足部",
-      "sourcePage": 84
-    },
-    {
       "id": "mijingzi-0280",
       "name": "左手麻木方二",
       "pinyin": "",
@@ -16547,47 +14727,6 @@
       "modificationsNote": "",
       "symptomTags": [
         "左手麻木"
-      ],
-      "sourceSection": "手足部",
-      "sourcePage": 84
-    },
-    {
-      "id": "mijingzi-0281",
-      "name": "右手麻木方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-281",
-      "originalText": {
-        "text": "辨症：气虚症，寒凉引起。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-281"
-        ],
-        "locator": "手足部·右手麻木·方一 · PDF 第 84 页"
-      },
-      "effects": {
-        "text": "主治：右手麻木。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-281"
-        ],
-        "locator": "手足部·右手麻木·方一"
-      },
-      "symptoms": [
-        {
-          "text": "右手麻木",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-281"
-          ],
-          "locator": "手足部·右手麻木·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "右手麻木"
       ],
       "sourceSection": "手足部",
       "sourcePage": 84
@@ -17864,47 +16003,6 @@
       "sourcePage": 91
     },
     {
-      "id": "mijingzi-0313",
-      "name": "全身痹症方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-313",
-      "originalText": {
-        "text": "辨症：有瘀血，肩臂、腰腿、周身皆疼痛，日久肌肉消瘦，手指发肿，百药不效。方名：身痛逐汤",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-313"
-        ],
-        "locator": "全身部·全身痹症·方一 · PDF 第 91 页"
-      },
-      "effects": {
-        "text": "主治：全身痹症。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-313"
-        ],
-        "locator": "全身部·全身痹症·方一"
-      },
-      "symptoms": [
-        {
-          "text": "全身痹症",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-313"
-          ],
-          "locator": "全身部·全身痹症·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "全身痹症"
-      ],
-      "sourceSection": "全身部",
-      "sourcePage": 91
-    },
-    {
       "id": "mijingzi-0314",
       "name": "全身痹症方二",
       "pinyin": "",
@@ -17941,47 +16039,6 @@
       "modificationsNote": "",
       "symptomTags": [
         "全身痹症"
-      ],
-      "sourceSection": "全身部",
-      "sourcePage": 91
-    },
-    {
-      "id": "mijingzi-0315",
-      "name": "一切痛症方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-315",
-      "originalText": {
-        "text": "辨症：遍身骨节疼痛，或在一处作痛不可忍。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-315"
-        ],
-        "locator": "全身部·一切痛症·方一 · PDF 第 91 页"
-      },
-      "effects": {
-        "text": "主治：一切痛症。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-315"
-        ],
-        "locator": "全身部·一切痛症·方一"
-      },
-      "symptoms": [
-        {
-          "text": "一切痛症",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-315"
-          ],
-          "locator": "全身部·一切痛症·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "一切痛症"
       ],
       "sourceSection": "全身部",
       "sourcePage": 91
@@ -18315,47 +16372,6 @@
       "sourcePage": 93
     },
     {
-      "id": "mijingzi-0324",
-      "name": "半身不遂，口眼歪斜，言语涩塞，口角流涎，大便干燥，小便遗尿方二",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-324",
-      "originalText": {
-        "text": "辨证：如服凉药过多，加附子四五钱；如服散风药过多，加党参四五钱；大便干燥加大黄。出处：王清任《医林改错》八三",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-324"
-        ],
-        "locator": "全身部·半身不遂，口眼歪斜，言语涩塞，口角流涎，大便干燥，小便遗尿·方二 · PDF 第 93 页"
-      },
-      "effects": {
-        "text": "主治：半身不遂，口眼歪斜，言语涩塞，口角流涎，大便干燥，小便遗尿。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-324"
-        ],
-        "locator": "全身部·半身不遂，口眼歪斜，言语涩塞，口角流涎，大便干燥，小便遗尿·方二"
-      },
-      "symptoms": [
-        {
-          "text": "半身不遂，口眼歪斜，言语涩塞，口角流涎，大便干燥，小便遗尿",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-324"
-          ],
-          "locator": "全身部·半身不遂，口眼歪斜，言语涩塞，口角流涎，大便干燥，小便遗尿·方二"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "半身不遂，口眼歪斜，言语涩塞，口角流涎，大便干燥，小便遗尿"
-      ],
-      "sourceSection": "全身部",
-      "sourcePage": 93
-    },
-    {
       "id": "mijingzi-0325",
       "name": "瘫痪，身腿不能动，诸疮诸病方",
       "pinyin": "",
@@ -18425,47 +16441,6 @@
             "src-mijingzi-326"
           ],
           "locator": "全身部·半身不遂，口歪眼斜症·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "半身不遂，口歪眼斜症"
-      ],
-      "sourceSection": "全身部",
-      "sourcePage": 94
-    },
-    {
-      "id": "mijingzi-0327",
-      "name": "半身不遂，口歪眼斜症方二",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-327",
-      "originalText": {
-        "text": "辨证：身体左半身不遂加当归，右半身不遂倍加黄芪，手软加桂枝，足软加牛膝。兼用针法，针百会、肩井、肩禺、曲池、寿穴、合谷、环跳、三里俱补。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-327"
-        ],
-        "locator": "全身部·半身不遂，口歪眼斜症·方二 · PDF 第 94 页"
-      },
-      "effects": {
-        "text": "主治：半身不遂，口歪眼斜症。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-327"
-        ],
-        "locator": "全身部·半身不遂，口歪眼斜症·方二"
-      },
-      "symptoms": [
-        {
-          "text": "半身不遂，口歪眼斜症",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-327"
-          ],
-          "locator": "全身部·半身不遂，口歪眼斜症·方二"
         }
       ],
       "originalAnnotations": [],
@@ -18725,47 +16700,6 @@
       "sourcePage": 95
     },
     {
-      "id": "mijingzi-0334",
-      "name": "全身黄肿方二",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-334",
-      "originalText": {
-        "text": "辨症：若咳嗽杏仁引；若红痢甘草引；呕吐酸水乳香引；上吐下泄姜水引；小儿抽筋风薄荷引；妇女血崩槐花引；干血劳症红花引；头腹痛无根水引；红痢内伤、肚胀，姜水引；皆可治之。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-334"
-        ],
-        "locator": "全身部·全身黄肿·方二 · PDF 第 95 页"
-      },
-      "effects": {
-        "text": "主治：全身黄肿。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-334"
-        ],
-        "locator": "全身部·全身黄肿·方二"
-      },
-      "symptoms": [
-        {
-          "text": "全身黄肿",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-334"
-          ],
-          "locator": "全身部·全身黄肿·方二"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "全身黄肿"
-      ],
-      "sourceSection": "全身部",
-      "sourcePage": 95
-    },
-    {
       "id": "mijingzi-0335",
       "name": "全身黄肿方三",
       "pinyin": "",
@@ -18876,47 +16810,6 @@
             "src-mijingzi-337"
           ],
           "locator": "全身部·全身劳症·方二"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "全身劳症"
-      ],
-      "sourceSection": "全身部",
-      "sourcePage": 96
-    },
-    {
-      "id": "mijingzi-0338",
-      "name": "全身劳症方三",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-338",
-      "originalText": {
-        "text": "辨证：五劳七伤大黄引；遍身痛羌活引；大便不通大黄引；小便不通木通引；经血不和川芎引；腹痛茯苓引；中风不语全蝎引；肠风下血茅根引；泄泻葱白引；项痛蒿本引；霍乱五加皮引。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-338"
-        ],
-        "locator": "全身部·全身劳症·方三 · PDF 第 96 页"
-      },
-      "effects": {
-        "text": "主治：全身劳症。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-338"
-        ],
-        "locator": "全身部·全身劳症·方三"
-      },
-      "symptoms": [
-        {
-          "text": "全身劳症",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-338"
-          ],
-          "locator": "全身部·全身劳症·方三"
         }
       ],
       "originalAnnotations": [],
@@ -19422,47 +17315,6 @@
       "sourcePage": 104
     },
     {
-      "id": "mijingzi-0351",
-      "name": "膨症方二",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-351",
-      "originalText": {
-        "text": "辨症：本方加沉香、积壳、大黄，去藿香、石菖蒲，名二十四味流科气饮。肿加白豆蔻；肿满加黑牵牛；头面肿加葱白；肚腹肿加积实、倍青陈皮；脐至脚肿加桑白皮。方名：金不换木香丸",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-351"
-        ],
-        "locator": "内科·膨症·方二 · PDF 第 105 页"
-      },
-      "effects": {
-        "text": "主治：膨症。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-351"
-        ],
-        "locator": "内科·膨症·方二"
-      },
-      "symptoms": [
-        {
-          "text": "膨症",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-351"
-          ],
-          "locator": "内科·膨症·方二"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "膨症"
-      ],
-      "sourceSection": "内科",
-      "sourcePage": 105
-    },
-    {
       "id": "mijingzi-0352",
       "name": "膨症方三",
       "pinyin": "",
@@ -19707,47 +17559,6 @@
       ],
       "sourceSection": "内科",
       "sourcePage": 106
-    },
-    {
-      "id": "mijingzi-0358",
-      "name": "水膨症方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-358",
-      "originalText": {
-        "text": "辨证：有水气之分别。气肚脐往外凸出，水肚脐往里凹。二有不治之症，肚脐内或黑或紫或烂，皆不治之症，色如皮肤，还可以服药，服药后忌盐、醋、辣子、猪内脏等百日。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-358"
-        ],
-        "locator": "内科·水膨症·方一 · PDF 第 107 页"
-      },
-      "effects": {
-        "text": "主治：水膨症。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-358"
-        ],
-        "locator": "内科·水膨症·方一"
-      },
-      "symptoms": [
-        {
-          "text": "水膨症",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-358"
-          ],
-          "locator": "内科·水膨症·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "水膨症"
-      ],
-      "sourceSection": "内科",
-      "sourcePage": 107
     },
     {
       "id": "mijingzi-0359",
@@ -20447,47 +18258,6 @@
       "sourcePage": 111
     },
     {
-      "id": "mijingzi-0376",
-      "name": "男女内科百病方二",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-376",
-      "originalText": {
-        "text": "辨症：（一）心痛、肚胀、阴症、伤寒、感冒时痛、咳嗽痰喘气急吐痰、白痢、噎食、反胃，俱用姜汤引；（二）鬼崇邪气、误吞毒物、岚瘴、不服水土，俱用开水送服；O（三）烟瘾用红糖送下；（四）瘟疫、热病、中暑、霍乱、痧症，用阴阳水送下；（五）酒伤，用白糖水送下；（六）治二十四样气、带，并气痛，用木香陈皮汤送下；（七）治呕吐，用乳香汤送下；（八）治三十六种风并疯狗咬伤，用荆芥防风汤送下；（九）治咽喉痛，用雄黄汤送下；（十）治七十二般痰症并迷心窍，用菖蒲、枣仁、灯心汤送下；（十一）治腿痛，用牛膝汤送下；（十二）治诸疮、腮肿、瘤痈疽疗毒?无名肿毒、大小疮，用黄酒引；（十三）治红痢用甘草引;（十四）治左瘫右瘫、口眼歪斜，用当归、苍术汤送下；（十五）心烦、内热，用砂仁、山楂、黄芩汤送下;（十六）治鼻痈、干硬痛痒，破后流黄水，黄连汤送下；（十七）失心、疯癫狂，玉金、白矾、薄荷送下；（十八）小便赤烂，用车前子、甘草、滑石汤送下；（十九）六痢滑肛，柯子肉、豆蔻汤送下；（二十）眼疾肿痛，用菊花、羌活汤送下；（二十一）黄肿用茵陈汤送下；（二十二）治咽干口苦，用楂、芽、乌梅汤送下；O①瘤痛疽疗毒：为一种毒疮，常表现为大片块状化脓，为炎症。（二十三）治淋症，灯心引；（二十四）治水肿、气，用麦冬、茯苓汤送下；（二十五）吐泄，用干姜汤送下；内外妇（二十六）治牙痛，用防风、升麻汤送下；（二十七）治肚痛，用艾叶、醋微热送下；（二十八）治痔瘘，明矾汤送下；·内（二十九）治膨闷，用积实、厚朴汤送下；科（三十）治胸结，用青皮、桔梗汤送下；（三十一）大便团涩，用牙皂汤送下；（三十二）头痛，清茶引；（三十三）治肠风藏毒，苍术米汤送服；（三十四）背痛，用盐汤送下；（三十五）治咳嗽，炙杏仁引；（三十六）治痢，乌梅、柴胡汤送下；（三十七）妇女干血痨症，黑豆、红花汤送下；（三十八）妇女经闭，桃仁、红花汤送下；（三十九）治经后腹痛，槟榔、木香汤送下；（四十）妇女血崩，用槐花汤送下；（四十一）治妇女赤带胶，红花汤送下；（四十二）妇女左右胁下块俱痛，用香附、地骨皮送服；（四十三）妇女经前腹痛，用川楝子、小茴香、延胡汤送服；O（四十四）妇女经水涩（滴水不尽），用大葵花、红花、苏木汤送下；（四十五）妇女经来腰痛、血昏，桃仁、红花汤送下；（四十六）小儿食积、痞块、腹大青筋，红糖引；（四十七）小儿急惊风，薄荷引；（四十八）婴儿胎毒，头面生疮，金银花引；（四十九）以上所加药引各一钱，空心服，片时腹动，先下粪后下水末，白为寒，黄延为热，长条为积，卵为惊气，裹食大虫为痞，小虫为蛊，多下病愈。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-376"
-        ],
-        "locator": "内外妇儿·男女内科百病·方二 · PDF 第 111 页"
-      },
-      "effects": {
-        "text": "主治：男女内科百病。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-376"
-        ],
-        "locator": "内外妇儿·男女内科百病·方二"
-      },
-      "symptoms": [
-        {
-          "text": "男女内科百病",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-376"
-          ],
-          "locator": "内外妇儿·男女内科百病·方二"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "男女内科百病"
-      ],
-      "sourceSection": "内外妇儿",
-      "sourcePage": 111
-    },
-    {
       "id": "mijingzi-0377",
       "name": "头痛，正顶、偏头痛，高血压，半身不遂，腰痛，全身浮肿症方",
       "pinyin": "",
@@ -21021,47 +18791,6 @@
       "sourcePage": 117
     },
     {
-      "id": "mijingzi-0390",
-      "name": "一切胃肠病良方方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-390",
-      "originalText": {
-        "text": "辨症：胃酸过多、胃下垂、胃生痈疽、日夜疼痛不停、胃神经痛、·内消化不良、闷胀不适等胃肠病均有效。科",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-390"
-        ],
-        "locator": "内外妇儿·一切胃肠病良方·方一 · PDF 第 117 页"
-      },
-      "effects": {
-        "text": "主治：一切胃肠病良方。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-390"
-        ],
-        "locator": "内外妇儿·一切胃肠病良方·方一"
-      },
-      "symptoms": [
-        {
-          "text": "一切胃肠病良方",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-390"
-          ],
-          "locator": "内外妇儿·一切胃肠病良方·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "一切胃肠病良方"
-      ],
-      "sourceSection": "内外妇儿",
-      "sourcePage": 117
-    },
-    {
       "id": "mijingzi-0391",
       "name": "一切胃肠病良方方二",
       "pinyin": "",
@@ -21226,47 +18955,6 @@
       "sourcePage": 117
     },
     {
-      "id": "mijingzi-0395",
-      "name": "肾经病方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-395",
-      "originalText": {
-        "text": "辨症：肠胃不好，大便不调，头痛，手、胳、膀发麻，腰背疼痛。因生育之后得病。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-395"
-        ],
-        "locator": "内外妇儿·肾经病·方一 · PDF 第 118 页"
-      },
-      "effects": {
-        "text": "主治：肾经病。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-395"
-        ],
-        "locator": "内外妇儿·肾经病·方一"
-      },
-      "symptoms": [
-        {
-          "text": "肾经病",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-395"
-          ],
-          "locator": "内外妇儿·肾经病·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "肾经病"
-      ],
-      "sourceSection": "内外妇儿",
-      "sourcePage": 118
-    },
-    {
       "id": "mijingzi-0396",
       "name": "肾经病方二",
       "pinyin": "",
@@ -21344,47 +19032,6 @@
       "modificationsNote": "",
       "symptomTags": [
         "鼻出血"
-      ],
-      "sourceSection": "内外妇儿",
-      "sourcePage": 118
-    },
-    {
-      "id": "mijingzi-0398",
-      "name": "风出怪病方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-398",
-      "originalText": {
-        "text": "辨症：临卧浑身风出，只能喝点水，在床上昼夜号哭不停，舌尖出血不止，身体牙齿发黑，唇动鼻开。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-398"
-        ],
-        "locator": "内外妇儿·风出怪病·方一 · PDF 第 118 页"
-      },
-      "effects": {
-        "text": "主治：风出怪病。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-398"
-        ],
-        "locator": "内外妇儿·风出怪病·方一"
-      },
-      "symptoms": [
-        {
-          "text": "风出怪病",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-398"
-          ],
-          "locator": "内外妇儿·风出怪病·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "风出怪病"
       ],
       "sourceSection": "内外妇儿",
       "sourcePage": 118
@@ -21508,47 +19155,6 @@
       "modificationsNote": "",
       "symptomTags": [
         "口臭"
-      ],
-      "sourceSection": "内外妇儿",
-      "sourcePage": 119
-    },
-    {
-      "id": "mijingzi-0402",
-      "name": "多年咳嗽方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-402",
-      "originalText": {
-        "text": "辨症：治各种方法医治无效的陈年咳嗽",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-402"
-        ],
-        "locator": "内外妇儿·多年咳嗽·方一 · PDF 第 119 页"
-      },
-      "effects": {
-        "text": "主治：多年咳嗽。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-402"
-        ],
-        "locator": "内外妇儿·多年咳嗽·方一"
-      },
-      "symptoms": [
-        {
-          "text": "多年咳嗽",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-402"
-          ],
-          "locator": "内外妇儿·多年咳嗽·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "多年咳嗽"
       ],
       "sourceSection": "内外妇儿",
       "sourcePage": 119
@@ -22620,47 +20226,6 @@
       "sourcePage": 126
     },
     {
-      "id": "mijingzi-0429",
-      "name": "初发疮方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-429",
-      "originalText": {
-        "text": "辨症：指疮只是个脓包，未溃烂。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-429"
-        ],
-        "locator": "内外妇儿·初发疮·方一 · PDF 第 126 页"
-      },
-      "effects": {
-        "text": "主治：初发疮。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-429"
-        ],
-        "locator": "内外妇儿·初发疮·方一"
-      },
-      "symptoms": [
-        {
-          "text": "初发疮",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-429"
-          ],
-          "locator": "内外妇儿·初发疮·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "初发疮"
-      ],
-      "sourceSection": "内外妇儿",
-      "sourcePage": 126
-    },
-    {
       "id": "mijingzi-0430",
       "name": "初发疮方二",
       "pinyin": "",
@@ -22935,47 +20500,6 @@
             "src-mijingzi-436"
           ],
           "locator": "内外妇儿·跌打损伤痛肿症·方二"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "跌打损伤痛肿症"
-      ],
-      "sourceSection": "内外妇儿",
-      "sourcePage": 128
-    },
-    {
-      "id": "mijingzi-0437",
-      "name": "跌打损伤痛肿症方三",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-437",
-      "originalText": {
-        "text": "辨症：伤腹部加杜仲；伤手足加桂枝；伤头部加蒿本、川芎；大小便不利，加泽泻、车前子。每加之药各一钱，用开水煎服，另用滚酒引，大小便有瘀血而出，一付即愈。出处：庄新田传",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-437"
-        ],
-        "locator": "内外妇儿·跌打损伤痛肿症·方三 · PDF 第 128 页"
-      },
-      "effects": {
-        "text": "主治：跌打损伤痛肿症。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-437"
-        ],
-        "locator": "内外妇儿·跌打损伤痛肿症·方三"
-      },
-      "symptoms": [
-        {
-          "text": "跌打损伤痛肿症",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-437"
-          ],
-          "locator": "内外妇儿·跌打损伤痛肿症·方三"
         }
       ],
       "originalAnnotations": [],
@@ -24260,47 +21784,6 @@
       "sourcePage": 138
     },
     {
-      "id": "mijingzi-0469",
-      "name": "干血劳症方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-469",
-      "originalText": {
-        "text": "辨症：妇女月不见经血，不思食，日久消瘦，微带咳嗽，早晚发烧，至夜更甚，黎明盗汗。方名：通窍活血汤",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-469"
-        ],
-        "locator": "内外妇儿·干血劳症·方一 · PDF 第 139 页"
-      },
-      "effects": {
-        "text": "主治：干血劳症。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-469"
-        ],
-        "locator": "内外妇儿·干血劳症·方一"
-      },
-      "symptoms": [
-        {
-          "text": "干血劳症",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-469"
-          ],
-          "locator": "内外妇儿·干血劳症·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "干血劳症"
-      ],
-      "sourceSection": "内外妇儿",
-      "sourcePage": 139
-    },
-    {
       "id": "mijingzi-0470",
       "name": "干血劳症方二",
       "pinyin": "",
@@ -24460,47 +21943,6 @@
       "modificationsNote": "",
       "symptomTags": [
         "妇女阴户痒症"
-      ],
-      "sourceSection": "内外妇儿",
-      "sourcePage": 140
-    },
-    {
-      "id": "mijingzi-0474",
-      "name": "妇女产后抽风方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-474",
-      "originalText": {
-        "text": "辨症：两目天吊，口角流涎沫，项背反张，昏沉不省人事。方名：黄芪桃红汤",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-474"
-        ],
-        "locator": "内外妇儿·妇女产后抽风·方一 · PDF 第 140 页"
-      },
-      "effects": {
-        "text": "主治：妇女产后抽风。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-474"
-        ],
-        "locator": "内外妇儿·妇女产后抽风·方一"
-      },
-      "symptoms": [
-        {
-          "text": "妇女产后抽风",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-474"
-          ],
-          "locator": "内外妇儿·妇女产后抽风·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "妇女产后抽风"
       ],
       "sourceSection": "内外妇儿",
       "sourcePage": 140
@@ -24709,47 +22151,6 @@
       ],
       "sourceSection": "妇科",
       "sourcePage": 141
-    },
-    {
-      "id": "mijingzi-0480",
-      "name": "妇女子宫出血，血崩，肚痛腰酸方二",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-480",
-      "originalText": {
-        "text": "辨症：内热加生地，气弱加黄芪、田三七末冲水煎服，甚效。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-480"
-        ],
-        "locator": "妇科·妇女子宫出血，血崩，肚痛腰酸·方二 · PDF 第 142 页"
-      },
-      "effects": {
-        "text": "主治：妇女子宫出血，血崩，肚痛腰酸。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-480"
-        ],
-        "locator": "妇科·妇女子宫出血，血崩，肚痛腰酸·方二"
-      },
-      "symptoms": [
-        {
-          "text": "妇女子宫出血，血崩，肚痛腰酸",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-480"
-          ],
-          "locator": "妇科·妇女子宫出血，血崩，肚痛腰酸·方二"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "妇女子宫出血，血崩，肚痛腰酸"
-      ],
-      "sourceSection": "妇科",
-      "sourcePage": 142
     },
     {
       "id": "mijingzi-0481",
@@ -25121,47 +22522,6 @@
       "sourcePage": 146
     },
     {
-      "id": "mijingzi-0490",
-      "name": "妇女干劳，男子劳病，交节病作方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-490",
-      "originalText": {
-        "text": "见头部【头发脱落】条“通窍活血汤”。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-490"
-        ],
-        "locator": "内外妇儿·妇女干劳，男子劳病，交节病作·方一 · PDF 第 146 页"
-      },
-      "effects": {
-        "text": "主治：妇女干劳，男子劳病，交节病作。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-490"
-        ],
-        "locator": "内外妇儿·妇女干劳，男子劳病，交节病作·方一"
-      },
-      "symptoms": [
-        {
-          "text": "妇女干劳，男子劳病，交节病作",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-490"
-          ],
-          "locator": "内外妇儿·妇女干劳，男子劳病，交节病作·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "妇女干劳，男子劳病，交节病作"
-      ],
-      "sourceSection": "内外妇儿",
-      "sourcePage": 146
-    },
-    {
       "id": "mijingzi-0491",
       "name": "产后大量出血晕倒方",
       "pinyin": "",
@@ -25285,47 +22645,6 @@
       "sourcePage": 147
     },
     {
-      "id": "mijingzi-0494",
-      "name": "年轻妇女闭经不来方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-494",
-      "originalText": {
-        "text": "辨症：夏天吃冷物，肤内长块，身有温烧。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-494"
-        ],
-        "locator": "内外妇儿·年轻妇女闭经不来·方一 · PDF 第 147 页"
-      },
-      "effects": {
-        "text": "主治：年轻妇女闭经不来。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-494"
-        ],
-        "locator": "内外妇儿·年轻妇女闭经不来·方一"
-      },
-      "symptoms": [
-        {
-          "text": "年轻妇女闭经不来",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-494"
-          ],
-          "locator": "内外妇儿·年轻妇女闭经不来·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "年轻妇女闭经不来"
-      ],
-      "sourceSection": "内外妇儿",
-      "sourcePage": 147
-    },
-    {
       "id": "mijingzi-0495",
       "name": "年轻妇女闭经不来方二",
       "pinyin": "",
@@ -25362,47 +22681,6 @@
       "modificationsNote": "",
       "symptomTags": [
         "年轻妇女闭经不来"
-      ],
-      "sourceSection": "内外妇儿",
-      "sourcePage": 147
-    },
-    {
-      "id": "mijingzi-0496",
-      "name": "妇女断经方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-496",
-      "originalText": {
-        "text": "辨症：来经时吃冷食",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-496"
-        ],
-        "locator": "内外妇儿·妇女断经·方一 · PDF 第 147 页"
-      },
-      "effects": {
-        "text": "主治：妇女断经。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-496"
-        ],
-        "locator": "内外妇儿·妇女断经·方一"
-      },
-      "symptoms": [
-        {
-          "text": "妇女断经",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-496"
-          ],
-          "locator": "内外妇儿·妇女断经·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "妇女断经"
       ],
       "sourceSection": "内外妇儿",
       "sourcePage": 147
@@ -25447,47 +22725,6 @@
       ],
       "sourceSection": "内外妇儿",
       "sourcePage": 147
-    },
-    {
-      "id": "mijingzi-0498",
-      "name": "妇女心慌乱，头痛头晕，全身无力方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-498",
-      "originalText": {
-        "text": "辨症：生产时腹痛，生后饥饿，生气，胃下、肝上血结，气留。胃气与肝气相顶。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-498"
-        ],
-        "locator": "内外妇儿·妇女心慌乱，头痛头晕，全身无力·方一 · PDF 第 148 页"
-      },
-      "effects": {
-        "text": "主治：妇女心慌乱，头痛头晕，全身无力。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-498"
-        ],
-        "locator": "内外妇儿·妇女心慌乱，头痛头晕，全身无力·方一"
-      },
-      "symptoms": [
-        {
-          "text": "妇女心慌乱，头痛头晕，全身无力",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-498"
-          ],
-          "locator": "内外妇儿·妇女心慌乱，头痛头晕，全身无力·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "妇女心慌乱，头痛头晕，全身无力"
-      ],
-      "sourceSection": "内外妇儿",
-      "sourcePage": 148
     },
     {
       "id": "mijingzi-0499",
@@ -26310,47 +23547,6 @@
       "sourcePage": 154
     },
     {
-      "id": "mijingzi-0519",
-      "name": "婴儿螳螂子方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-519",
-      "originalText": {
-        "text": "辨症：婴儿有痰火者，吃乳数日，腮间必肿，总名石乳，俗名螳螂子。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-519"
-        ],
-        "locator": "儿科·婴儿螳螂子·方一 · PDF 第 154 页"
-      },
-      "effects": {
-        "text": "主治：婴儿螳螂子。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-519"
-        ],
-        "locator": "儿科·婴儿螳螂子·方一"
-      },
-      "symptoms": [
-        {
-          "text": "婴儿螳螂子",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-519"
-          ],
-          "locator": "儿科·婴儿螳螂子·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "婴儿螳螂子"
-      ],
-      "sourceSection": "儿科",
-      "sourcePage": 154
-    },
-    {
       "id": "mijingzi-0520",
       "name": "婴儿螳螂子方二",
       "pinyin": "",
@@ -26428,47 +23624,6 @@
       "modificationsNote": "",
       "symptomTags": [
         "大人、小儿五积六聚痞块"
-      ],
-      "sourceSection": "内外妇儿",
-      "sourcePage": 155
-    },
-    {
-      "id": "mijingzi-0522",
-      "name": "小儿夜啼不安方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-522",
-      "originalText": {
-        "text": "辨证：寒、热、惊、滞四种病因。（1）寒啼者：脾气寒冷，阴盛于夜，面青，手冷，腰曲而啼。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-522"
-        ],
-        "locator": "内外妇儿·小儿夜啼不安·方一 · PDF 第 155 页"
-      },
-      "effects": {
-        "text": "主治：小儿夜啼不安。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-522"
-        ],
-        "locator": "内外妇儿·小儿夜啼不安·方一"
-      },
-      "symptoms": [
-        {
-          "text": "小儿夜啼不安",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-522"
-          ],
-          "locator": "内外妇儿·小儿夜啼不安·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "小儿夜啼不安"
       ],
       "sourceSection": "内外妇儿",
       "sourcePage": 155
@@ -26679,47 +23834,6 @@
       "sourcePage": 156
     },
     {
-      "id": "mijingzi-0528",
-      "name": "专治小儿夜啼方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-528",
-      "originalText": {
-        "text": "辨症：夜不安，夜睡梦多，天亮出汗，心里热，闷，急躁，失眠等。方名：血府逐汤",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-528"
-        ],
-        "locator": "内外妇儿·专治小儿夜啼·方一 · PDF 第 156 页"
-      },
-      "effects": {
-        "text": "主治：专治小儿夜啼。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-528"
-        ],
-        "locator": "内外妇儿·专治小儿夜啼·方一"
-      },
-      "symptoms": [
-        {
-          "text": "专治小儿夜啼",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-528"
-          ],
-          "locator": "内外妇儿·专治小儿夜啼·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "专治小儿夜啼"
-      ],
-      "sourceSection": "内外妇儿",
-      "sourcePage": 156
-    },
-    {
       "id": "mijingzi-0529",
       "name": "专治小儿夜啼方二",
       "pinyin": "",
@@ -26802,47 +23916,6 @@
       "sourcePage": 156
     },
     {
-      "id": "mijingzi-0531",
-      "name": "小儿症方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-531",
-      "originalText": {
-        "text": "辨症：脸耳皮发黄，身瘦。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-531"
-        ],
-        "locator": "内外妇儿·小儿症·方一 · PDF 第 157 页"
-      },
-      "effects": {
-        "text": "主治：小儿症。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-531"
-        ],
-        "locator": "内外妇儿·小儿症·方一"
-      },
-      "symptoms": [
-        {
-          "text": "小儿症",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-531"
-          ],
-          "locator": "内外妇儿·小儿症·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "小儿症"
-      ],
-      "sourceSection": "内外妇儿",
-      "sourcePage": 157
-    },
-    {
       "id": "mijingzi-0532",
       "name": "小儿症方二",
       "pinyin": "",
@@ -26879,47 +23952,6 @@
       "modificationsNote": "",
       "symptomTags": [
         "小儿症"
-      ],
-      "sourceSection": "内外妇儿",
-      "sourcePage": 157
-    },
-    {
-      "id": "mijingzi-0533",
-      "name": "小儿抽风，慢惊风方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-533",
-      "originalText": {
-        "text": "辨症：手往回抽，鼻不干，真寒假热。方名：可保立苏汤",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-533"
-        ],
-        "locator": "内外妇儿·小儿抽风，慢惊风·方一 · PDF 第 157 页"
-      },
-      "effects": {
-        "text": "主治：小儿抽风，慢惊风。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-533"
-        ],
-        "locator": "内外妇儿·小儿抽风，慢惊风·方一"
-      },
-      "symptoms": [
-        {
-          "text": "小儿抽风，慢惊风",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-533"
-          ],
-          "locator": "内外妇儿·小儿抽风，慢惊风·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "小儿抽风，慢惊风"
       ],
       "sourceSection": "内外妇儿",
       "sourcePage": 157
@@ -27046,47 +24078,6 @@
       ],
       "sourceSection": "内外妇儿",
       "sourcePage": 157
-    },
-    {
-      "id": "mijingzi-0537",
-      "name": "小儿胎毒方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-537",
-      "originalText": {
-        "text": "辨症：半岁至二岁，忽身上、手足上、肚腹两臂上、面上、头部长成天疮，久变为毒。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-537"
-        ],
-        "locator": "内外妇儿·小儿胎毒·方一 · PDF 第 158 页"
-      },
-      "effects": {
-        "text": "主治：小儿胎毒。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-537"
-        ],
-        "locator": "内外妇儿·小儿胎毒·方一"
-      },
-      "symptoms": [
-        {
-          "text": "小儿胎毒",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-537"
-          ],
-          "locator": "内外妇儿·小儿胎毒·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "小儿胎毒"
-      ],
-      "sourceSection": "内外妇儿",
-      "sourcePage": 158
     },
     {
       "id": "mijingzi-0538",
@@ -27371,47 +24362,6 @@
       "modificationsNote": "",
       "symptomTags": [
         "羊癫风症"
-      ],
-      "sourceSection": "癫疯部",
-      "sourcePage": 163
-    },
-    {
-      "id": "mijingzi-0545",
-      "name": "癫狂症方",
-      "pinyin": "",
-      "sourceCitationId": "src-mijingzi-545",
-      "originalText": {
-        "text": "辨症：哭笑不休，骂罢歌唱，不认来属，如做梦一般。方名：癫狂梦醒汤",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-545"
-        ],
-        "locator": "癫疯部·癫狂症·方一 · PDF 第 163 页"
-      },
-      "effects": {
-        "text": "主治：癫狂症。",
-        "kind": "paraphrase",
-        "citationIds": [
-          "src-mijingzi-545"
-        ],
-        "locator": "癫疯部·癫狂症·方一"
-      },
-      "symptoms": [
-        {
-          "text": "癫狂症",
-          "kind": "paraphrase",
-          "citationIds": [
-            "src-mijingzi-545"
-          ],
-          "locator": "癫疯部·癫狂症·方一"
-        }
-      ],
-      "originalAnnotations": [],
-      "composition": [],
-      "modifications": [],
-      "modificationsNote": "",
-      "symptomTags": [
-        "癫狂症"
       ],
       "sourceSection": "癫疯部",
       "sourcePage": 163
