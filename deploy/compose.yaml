@@ -35,6 +35,7 @@ services:
       QIHUANG_API_PORT: "8787"
       QIHUANG_DATA_FILE: "/data/notes.json"
       QIHUANG_DB_FILE: "/data/qihuang.db"
+      QIHUANG_LIBRARY_DB_FILE: "/data/classic-library.db"
       QIHUANG_EDIT_KEY: "${QIHUANG_EDIT_KEY:-change-me}"
     volumes:
       - ./server:/app:ro

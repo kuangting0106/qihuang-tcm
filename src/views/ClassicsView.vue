@@ -123,6 +123,19 @@ const stats = computed(() => ({
         </div>
       </section>
 
+      <section class="library-entry paper-panel">
+        <span class="library-entry__seal" aria-hidden="true">藏</span>
+        <div class="library-entry__copy">
+          <p class="eyebrow">MEDICAL LIBRARY / 医藏古籍</p>
+          <h2>医藏古籍 597 部</h2>
+          <p>
+            按医经、伤寒金匮、本草、方书、诊法、针灸经络、临证各科等分类；
+            一级分类悬浮可看二级分类，进入书库后按需读取书目与正文。
+          </p>
+        </div>
+        <RouterLink class="btn btn--primary" to="/classics/library">进入医藏书库 →</RouterLink>
+      </section>
+
       <section class="classics-principle paper-panel">
         <div>
           <span class="eyebrow">READING RULE</span>
@@ -496,10 +509,60 @@ const stats = computed(() => ({
   font-size: 0.8rem;
 }
 
+.library-entry {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 28px;
+  padding: 22px 24px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.58), rgba(239, 230, 213, 0.55));
+}
+
+.library-entry__seal {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  flex: 0 0 auto;
+  border: 1px solid var(--cinnabar);
+  border-radius: 4px;
+  color: var(--cinnabar);
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+}
+
+.library-entry__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.library-entry h2 {
+  margin: 2px 0 6px;
+  font-family: var(--font-serif);
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+  letter-spacing: 0.04em;
+}
+
+.library-entry p {
+  max-width: 780px;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  line-height: 1.85;
+}
+
+.library-entry .btn {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
 @media (max-width: 900px) {
   .classics-principle,
   .classics-footer {
     grid-template-columns: 1fr;
+  }
+
+  .library-entry {
+    flex-wrap: wrap;
   }
 
   .work-card__head {
@@ -528,6 +591,11 @@ const stats = computed(() => ({
 
   .book-card {
     min-height: 0;
+  }
+
+  .library-entry {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 </style>

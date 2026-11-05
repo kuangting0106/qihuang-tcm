@@ -163,6 +163,24 @@ const router = createRouter({
       meta: { title: '医家经典书籍' },
     },
     {
+      path: '/classics/library',
+      name: 'library',
+      component: () => import('@/views/LibraryView.vue'),
+      meta: { title: '医藏古籍' },
+    },
+    {
+      path: '/classics/library/:bookId',
+      name: 'library-book',
+      component: () => import('@/views/LibraryBookView.vue'),
+      meta: { title: '医藏书目' },
+    },
+    {
+      path: '/classics/library/:bookId/:sectionId',
+      name: 'library-section',
+      component: () => import('@/views/LibrarySectionView.vue'),
+      meta: { title: '医藏原文' },
+    },
+    {
       path: '/classics/:bookId',
       name: 'classic-book',
       component: () => import('@/views/ClassicBookView.vue'),

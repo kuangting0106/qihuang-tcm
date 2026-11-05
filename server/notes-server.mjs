@@ -9,6 +9,9 @@ const DATA_FILE =
   process.env.QIHUANG_DATA_FILE ?? path.join(process.cwd(), 'data', 'notes.json')
 const DB_FILE =
   process.env.QIHUANG_DB_FILE ?? path.join(process.cwd(), 'data', 'qihuang.db')
+const LIBRARY_DB_FILE =
+  process.env.QIHUANG_LIBRARY_DB_FILE ??
+  path.join(process.cwd(), 'data', 'classic-library.db')
 const EDIT_KEY = process.env.QIHUANG_EDIT_KEY ?? 'dev-key'
 const MAX_BODY = 256 * 1024
 const BACKUP_DIR = path.join(path.dirname(DATA_FILE), 'backups')
@@ -26,6 +29,7 @@ let cache = null
 
 let sqliteModule = null
 let dbHandle = null
+let libraryDbHandle = null
 
 /**
  * 按需打开只读 SQLite。打开失败时只让数据接口返回 503，不影响 notes 写接口。
@@ -39,6 +43,23 @@ function getDb() {
     }
     dbHandle = new sqliteModule.DatabaseSync(DB_FILE, { readOnly: true })
     return dbHandle
+  } catch {
+    return null
+  }
+}
+
+/**
+ * 医藏古籍独立库。体积较大，与主库分开打开、按需读取。
+ */
+function getLibraryDb() {
+  if (libraryDbHandle) return libraryDbHandle
+  try {
+    if (!sqliteModule) {
+      const require = createRequire(import.meta.url)
+      sqliteModule = require('node:sqlite')
+    }
+    libraryDbHandle = new sqliteModule.DatabaseSync(LIBRARY_DB_FILE, { readOnly: true })
+    return libraryDbHandle
   } catch {
     return null
   }
@@ -947,6 +968,203 @@ const server = createServer(async (req, res) => {
         return
       }
       sendCached(req, res, 200, jsonParse(row.data_json))
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  if (url.pathname === '/api/library' && req.method === 'GET') {
+    const db = getLibraryDb()
+    if (!db) {
+      send(res, 503, { error: 'library-unavailable' })
+      return
+    }
+    try {
+      const meta = readMeta(db, 'library_index', { categories: [], source: {} })
+      const total = db.prepare('SELECT COUNT(*) AS n FROM library_books').get().n
+      sendCached(req, res, 200, { ...meta, total })
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  if (url.pathname === '/api/library/books' && req.method === 'GET') {
+    const db = getLibraryDb()
+    if (!db) {
+      send(res, 503, { error: 'library-unavailable' })
+      return
+    }
+    try {
+      const category = (url.searchParams.get('category') ?? '').trim()
+      const subcategory = (url.searchParams.get('subcategory') ?? '').trim()
+      const q = (url.searchParams.get('q') ?? '').trim()
+      const page = Math.max(1, Number(url.searchParams.get('page') ?? 1) || 1)
+      const limit = Math.min(120, Math.max(1, Number(url.searchParams.get('limit') ?? 48) || 48))
+      const conditions = ['1 = 1']
+      const params = []
+      if (category) {
+        conditions.push('category = ?')
+        params.push(category)
+      }
+      if (subcategory) {
+        conditions.push('subcategory = ?')
+        params.push(subcategory)
+      }
+      if (q) {
+        conditions.push('(title LIKE ? OR author LIKE ? OR dynasty LIKE ?)')
+        params.push(`%${q}%`, `%${q}%`, `%${q}%`)
+      }
+      const where = conditions.join(' AND ')
+      const total = db
+        .prepare(`SELECT COUNT(*) AS n FROM library_books WHERE ${where}`)
+        .get(...params).n
+      const rows = db
+        .prepare(
+          `SELECT id, title, author, dynasty, category, subcategory, char_count,
+                  section_count, duplicate_of, version_note
+           FROM library_books WHERE ${where}
+           ORDER BY title LIMIT ? OFFSET ?`,
+        )
+        .all(...params, limit, (page - 1) * limit)
+      sendCached(req, res, 200, {
+        total,
+        page,
+        limit,
+        pages: Math.ceil(total / limit),
+        books: rows.map((row) => ({
+          id: row.id,
+          title: row.title,
+          author: row.author,
+          dynasty: row.dynasty,
+          category: row.category,
+          subcategory: row.subcategory,
+          charCount: row.char_count,
+          sectionCount: row.section_count,
+          duplicateOf: row.duplicate_of,
+          versionNote: row.version_note,
+        })),
+      })
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  const librarySectionMatch = url.pathname.match(
+    /^\/api\/library\/books\/([^/]+)\/sections\/([^/]+)$/,
+  )
+  if (librarySectionMatch && req.method === 'GET') {
+    const db = getLibraryDb()
+    if (!db) {
+      send(res, 503, { error: 'library-unavailable' })
+      return
+    }
+    try {
+      const bookId = decodeParam(librarySectionMatch[1])
+      const sectionId = decodeParam(librarySectionMatch[2])
+      const bookRow = db
+        .prepare('SELECT id, title, author, data_json FROM library_books WHERE id = ?')
+        .get(bookId)
+      if (!bookRow) {
+        send(res, 404, { error: 'not-found' })
+        return
+      }
+      const row = db
+        .prepare(
+          `SELECT id, title, kind, char_count, sort_order, paragraphs_json
+           FROM library_sections WHERE book_id = ? AND id = ?`,
+        )
+        .get(bookId, sectionId)
+      if (!row) {
+        send(res, 404, { error: 'not-found' })
+        return
+      }
+      const prev = db
+        .prepare(
+          `SELECT id, title, sort_order FROM library_sections
+           WHERE book_id = ? AND sort_order < ? ORDER BY sort_order DESC LIMIT 1`,
+        )
+        .get(bookId, row.sort_order)
+      const next = db
+        .prepare(
+          `SELECT id, title, sort_order FROM library_sections
+           WHERE book_id = ? AND sort_order > ? ORDER BY sort_order ASC LIMIT 1`,
+        )
+        .get(bookId, row.sort_order)
+      const meta = jsonParse(bookRow.data_json, {})
+      sendCached(req, res, 200, {
+        book: {
+          id: bookRow.id,
+          title: bookRow.title,
+          author: bookRow.author,
+          source: meta.source,
+          duplicateOf: meta.duplicateOf,
+          versionNote: meta.versionNote,
+        },
+        section: {
+          id: row.id,
+          title: row.title,
+          kind: row.kind,
+          charCount: row.char_count,
+          paragraphs: jsonParse(row.paragraphs_json, []),
+        },
+        prev: prev ?? null,
+        next: next ?? null,
+      })
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  const libraryBookMatch = url.pathname.match(/^\/api\/library\/books\/([^/]+)$/)
+  if (libraryBookMatch && req.method === 'GET') {
+    const db = getLibraryDb()
+    if (!db) {
+      send(res, 503, { error: 'library-unavailable' })
+      return
+    }
+    try {
+      const bookId = decodeParam(libraryBookMatch[1])
+      const row = db
+        .prepare(
+          `SELECT id, title, author, dynasty, category, subcategory, char_count,
+                  section_count, duplicate_of, version_note, data_json
+           FROM library_books WHERE id = ?`,
+        )
+        .get(bookId)
+      if (!row) {
+        send(res, 404, { error: 'not-found' })
+        return
+      }
+      const meta = jsonParse(row.data_json, {})
+      const sections = db
+        .prepare(
+          `SELECT id, title, kind, char_count FROM library_sections
+           WHERE book_id = ? ORDER BY sort_order`,
+        )
+        .all(bookId)
+      sendCached(req, res, 200, {
+        ...meta,
+        id: row.id,
+        title: row.title,
+        author: row.author,
+        dynasty: row.dynasty,
+        category: row.category,
+        subcategory: row.subcategory,
+        charCount: row.char_count,
+        sectionCount: row.section_count,
+        duplicateOf: row.duplicate_of,
+        versionNote: row.version_note,
+        sections: sections.map((section) => ({
+          id: section.id,
+          title: section.title,
+          kind: section.kind,
+          charCount: section.char_count,
+        })),
+      })
     } catch {
       send(res, 500, { error: 'db-query-failed' })
     }

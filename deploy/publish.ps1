@@ -11,6 +11,9 @@ if (-not (Test-Path 'dist/index.html')) {
 if (-not (Test-Path 'data/qihuang.db')) {
   throw '构建失败：没有找到 data/qihuang.db'
 }
+if (-not (Test-Path 'data/classic-library.db')) {
+  throw '构建失败：没有找到 data/classic-library.db'
+}
 
 Write-Host '==> 上传站点到 /opt/qihuang-tcm/site/' -ForegroundColor Cyan
 scp -r dist/. xf:/opt/qihuang-tcm/site/
@@ -21,6 +24,7 @@ scp -r server xf:/opt/qihuang-tcm/
 ssh xf 'mkdir -p /opt/qihuang-tcm/data'
 Write-Host '==> 上传只读 SQLite 数据库' -ForegroundColor Cyan
 scp data/qihuang.db xf:/opt/qihuang-tcm/data/qihuang.db
+scp data/classic-library.db xf:/opt/qihuang-tcm/data/classic-library.db
 
 Write-Host '==> 启动/更新容器' -ForegroundColor Cyan
 ssh xf 'cd /opt/qihuang-tcm && ./deploy.sh'
