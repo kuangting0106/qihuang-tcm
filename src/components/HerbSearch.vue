@@ -1,15 +1,20 @@
 <script setup lang="ts">
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRouter } from 'vue-router'
-import type { BencaoCatalogItem, BencaoCatalogRank } from '@/types/bencao'
-import type { Herb, HerbClassicRank, HerbTherapyCategory } from '@/types/tcm'
+import type {
+  HerbCategoryMeta,
+  HerbRankMeta,
+  HerbSearchIndexPayload,
+} from '@/composables/useHerbApi'
+
+type SearchHerb = HerbSearchIndexPayload['herbs'][number]
+type SearchLecture = HerbSearchIndexPayload['lectures'][number]
 
 const props = defineProps<{
-  herbs: Herb[]
-  lectures: BencaoCatalogItem[]
-  ranks: HerbClassicRank[]
-  catalogRanks: BencaoCatalogRank[]
-  categories: HerbTherapyCategory[]
+  herbs: SearchHerb[]
+  lectures: SearchLecture[]
+  ranks: HerbRankMeta[]
+  categories: HerbCategoryMeta[]
 }>()
 
 const router = useRouter()
@@ -28,7 +33,6 @@ interface SearchEntry {
 const rankTitles = computed(() => {
   const map = new Map<string, string>()
   for (const rank of props.ranks) map.set(rank.id, rank.title)
-  for (const rank of props.catalogRanks) map.set(rank.id, rank.title)
   map.set('nishi', '倪师补充')
   map.set('editor', '小编补充')
   return map
@@ -68,9 +72,9 @@ const entries = computed<SearchEntry[]>(() => {
     key: `herb-${herb.id}`,
     name: herb.name,
     pinyin: herb.pinyin,
-    aliases: uniqueAliases([...herb.aliases, ...splitAliases(herb.names.ancient.text)]),
+    aliases: uniqueAliases([...herb.aliases, ...splitAliases(herb.ancientName)]),
     href: `/herbs/${herb.id}`,
-    rankTitle: rankTitles.value.get(herb.classicRankId) ?? '三经待考',
+    rankTitle: rankTitles.value.get(herb.classicRankId ?? '') ?? '三经待考',
     categoryTitles: herb.therapyCategoryIds
       .map((id) => categoryTitles.value.get(id))
       .filter((title): title is string => Boolean(title)),

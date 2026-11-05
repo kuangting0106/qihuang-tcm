@@ -4,17 +4,17 @@ import { RouterLink, useRoute } from 'vue-router'
 import CitationBadge from '@/components/CitationBadge.vue'
 import SourcedText from '@/components/SourcedText.vue'
 import { HERB_IMAGE_SLOT_LABELS } from '@/types/tcm'
-import type { BencaoCatalogItem } from '@/types/bencao'
-import { formatCharCount, loadBencaoCatalog } from '@/composables/useBencaoLectures'
-import { useTcmData } from '@/composables/useTcmData'
+import { formatCharCount } from '@/composables/useBencaoLectures'
+import { useHerbApi, type HerbDetailPayload } from '@/composables/useHerbApi'
 
 const route = useRoute()
-const { data, herbsById, meridianName } = useTcmData()
+const { loading, error, fetchHerbDetail } = useHerbApi()
 
-const herb = computed(() => herbsById.value.get(String(route.params.id)) ?? null)
+const payload = ref<HerbDetailPayload | null>(null)
 const activeImage = ref(0)
 
-const taxonomy = computed(() => data.value?.herbTaxonomy ?? null)
+const herb = computed(() => payload.value)
+const taxonomy = computed(() => payload.value?.taxonomy ?? null)
 const rank = computed(() =>
   taxonomy.value?.ranks.find((r) => r.id === herb.value?.classicRankId) ?? null,
 )
@@ -24,42 +24,13 @@ const categories = computed(() =>
     .filter((c) => !!c),
 )
 
-watch(
-  () => route.params.id,
-  () => {
-    activeImage.value = 0
-  },
-)
-
-const lectureItem = ref<BencaoCatalogItem | null>(null)
-
-watch(
-  () => herb.value?.name,
-  async (name) => {
-    lectureItem.value = null
-    if (!name) return
-    try {
-      const catalog = await loadBencaoCatalog()
-      lectureItem.value = catalog.items.find((item) => item.name === name) ?? null
-    } catch {
-      lectureItem.value = null
-    }
-  },
-  { immediate: true },
-)
-
-const meridianLinks = computed(() =>
-  (herb.value?.meridianIds ?? []).map((id) => ({
-    id,
-    name: meridianName(id),
-  })),
-)
-
+const lectureItem = computed(() => payload.value?.lecture ?? null)
+const meridianLinks = computed(() => payload.value?.meridians ?? [])
 const pairings = computed(() =>
   (herb.value?.pairings ?? [])
     .map((p) => ({
       ...p,
-      herb: herbsById.value.get(p.herbId),
+      herb: payload.value?.pairingHerbs[p.herbId],
     }))
     .filter((p) => !!p.herb),
 )
@@ -71,6 +42,18 @@ const currentSlotLabel = computed(() => {
   const slot = currentImage.value?.slot
   return slot ? slotLabels[slot] : '全图'
 })
+
+async function load() {
+  activeImage.value = 0
+  payload.value = null
+  try {
+    payload.value = await fetchHerbDetail(String(route.params.id ?? ''))
+  } catch {
+    payload.value = null
+  }
+}
+
+watch(() => route.params.id, load, { immediate: true })
 </script>
 
 <template>
@@ -338,7 +321,13 @@ const currentSlotLabel = computed(() => {
   </div>
 
   <div v-else class="page container">
-    <div class="empty-state paper-panel">
+    <p v-if="loading" class="data-loading">正在加载药材详情…</p>
+    <div v-else-if="error" class="empty-state paper-panel">
+      <h2>加载失败</h2>
+      <p>{{ error }}</p>
+      <button class="btn btn--primary" type="button" @click="load">重新加载</button>
+    </div>
+    <div v-else class="empty-state paper-panel">
       <h2>没有这味药</h2>
       <p>可能是链接里的药材 id 不正确。</p>
       <RouterLink class="btn btn--primary" to="/herbs">返回本草列表</RouterLink>
@@ -347,6 +336,12 @@ const currentSlotLabel = computed(() => {
 </template>
 
 <style scoped>
+.data-loading {
+  padding: 48px 0;
+  color: var(--ink-faint);
+  font-size: 0.82rem;
+}
+
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;

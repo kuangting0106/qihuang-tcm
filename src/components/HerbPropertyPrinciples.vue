@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import CitationBadge from './CitationBadge.vue'
-import { useTcmData } from '@/composables/useTcmData'
+import type { HerbPrinciples } from '@/types/tcm'
 
-const { data } = useTcmData()
-const principles = computed(() => data.value?.herbPrinciples ?? null)
+const props = defineProps<{ principles: HerbPrinciples | null }>()
+const principles = computed(() => props.principles)
 
 const canHover =
   typeof window !== 'undefined' && window.matchMedia('(hover: hover)').matches

@@ -3,80 +3,52 @@ import { computed, onMounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import HerbPropertyPrinciples from '@/components/HerbPropertyPrinciples.vue'
 import HerbSearch from '@/components/HerbSearch.vue'
-import { formatCharCount, loadBencaoCatalog, loadBencaoIndex } from '@/composables/useBencaoLectures'
-import { useTcmData } from '@/composables/useTcmData'
-import type { BencaoCatalog } from '@/types/bencao'
+import { formatCharCount } from '@/composables/useBencaoLectures'
+import {
+  useHerbApi,
+  type HerbMetaPayload,
+  type HerbSearchIndexPayload,
+} from '@/composables/useHerbApi'
 
-const { data } = useTcmData()
+const { loading, error, fetchHerbMeta, fetchHerbSearchIndex } = useHerbApi()
+const meta = ref<HerbMetaPayload | null>(null)
+const searchIndex = ref<HerbSearchIndexPayload>({ herbs: [], lectures: [] })
 
-const herbs = computed(() => data.value?.herbs ?? [])
-const taxonomy = computed(() => data.value?.herbTaxonomy ?? null)
-
-const catalog = ref<BencaoCatalog | null>(null)
-const lectureCount = ref(0)
-const lectureChars = ref(0)
-
-onMounted(async () => {
+async function load() {
   try {
-    const [library, index] = await Promise.all([loadBencaoCatalog(), loadBencaoIndex()])
-    catalog.value = library
-    lectureCount.value = index.groups.reduce((sum, group) => sum + group.count, 0)
-    lectureChars.value = index.groups.reduce((sum, group) => sum + group.charCount, 0)
+    const [nextMeta, nextIndex] = await Promise.all([
+      fetchHerbMeta(),
+      fetchHerbSearchIndex(),
+    ])
+    meta.value = nextMeta
+    searchIndex.value = nextIndex
   } catch {
-    catalog.value = null
-    lectureCount.value = 0
+    // 错误信息由 composable 的 error 展示。
   }
-})
-
-const lectureItems = computed(() => (catalog.value?.items ?? []).filter((item) => !item.curatedId))
-const totalHerbCount = computed(() => herbs.value.length + lectureItems.value.length)
-
-function rankHerbs(rankId: string) {
-  return herbs.value.filter((herb) => herb.classicRankId === rankId)
 }
 
-function rankLecture(rankId: string) {
-  return lectureItems.value.filter((item) => item.rankId === rankId)
-}
+onMounted(load)
 
-function rankTotal(rankId: string) {
-  return rankHerbs(rankId).length + rankLecture(rankId).length
-}
-
-function rankPreview(rankId: string) {
-  return [
-    ...rankHerbs(rankId).map((herb) => herb.name),
-    ...rankLecture(rankId).map((item) => item.name),
-  ].slice(0, 6)
-}
-
-function categoryHerbs(categoryId: string) {
-  return herbs.value.filter((herb) => herb.therapyCategoryIds.includes(categoryId))
-}
-
-function categoryLecture(categoryId: string) {
-  return lectureItems.value.filter((item) => item.therapyCategoryIds.includes(categoryId))
-}
-
-function categoryTotal(categoryId: string) {
-  return categoryHerbs(categoryId).length + categoryLecture(categoryId).length
-}
-
-function categoryPreview(categoryId: string) {
-  return [
-    ...categoryHerbs(categoryId).map((herb) => herb.name),
-    ...categoryLecture(categoryId).map((item) => item.name),
-  ].slice(0, 6)
-}
-
-const supplementRanks = computed(() =>
-  (catalog.value?.ranks ?? []).filter((rank) => rank.id === 'nishi' || rank.id === 'editor'),
+const taxonomy = computed(() => meta.value?.taxonomy ?? null)
+const counts = computed(() => meta.value?.counts ?? null)
+const mainRanks = computed(() =>
+  (taxonomy.value?.ranks ?? []).filter((rank) => ['upper', 'middle', 'lower'].includes(rank.id)),
 )
+const supplementRanks = computed(() =>
+  (taxonomy.value?.ranks ?? []).filter((rank) => rank.id === 'nishi' || rank.id === 'editor'),
+)
+const totalHerbCount = computed(() => (counts.value?.herbs ?? 0) + (counts.value?.lectureItems ?? 0))
 </script>
 
 <template>
   <div class="page herb-list-page">
     <div class="container">
+      <div v-if="error" class="data-error paper-panel">
+        <p>{{ error }}</p>
+        <button class="btn btn--primary" type="button" @click="load">重新加载</button>
+      </div>
+      <p v-else-if="loading && !meta" class="data-loading">正在加载本草索引…</p>
+
       <header class="page-hero">
         <div>
           <p class="eyebrow">MATERIA MEDICA / 本草</p>
@@ -89,12 +61,12 @@ const supplementRanks = computed(() =>
         <div class="page-hero__stat">
           <span>{{ totalHerbCount }}</span>
           <small>味药材（含讲义）</small>
-          <span>{{ data?.formulas.length ?? 0 }}</span>
+          <span>{{ counts?.formulas ?? 0 }}</span>
           <small>首方剂交叉索引</small>
         </div>
       </header>
 
-      <HerbPropertyPrinciples />
+      <HerbPropertyPrinciples :principles="meta?.principles ?? null" />
 
       <section v-if="taxonomy" class="taxonomy-section" aria-label="本草分类">
         <div class="taxonomy-head">
@@ -110,7 +82,7 @@ const supplementRanks = computed(() =>
 
         <div class="rank-grid">
           <RouterLink
-            v-for="rank in taxonomy.ranks"
+            v-for="rank in mainRanks"
             :key="rank.id"
             class="rank-card"
             :class="`rank-card--${rank.id}`"
@@ -118,13 +90,13 @@ const supplementRanks = computed(() =>
           >
             <span class="rank-card__top">
               <span class="rank-card__title">{{ rank.title }}</span>
-              <span class="rank-card__count">{{ rankTotal(rank.id) }} 味</span>
+              <span class="rank-card__count">{{ rank.count }} 味</span>
             </span>
             <span class="rank-card__subtitle">{{ rank.subtitle }}</span>
             <span class="rank-card__desc">{{ rank.description }}</span>
             <span class="rank-card__herbs">
-              <span v-for="name in rankPreview(rank.id)" :key="name">{{ name }}</span>
-              <span v-if="rankTotal(rank.id) > 6" class="rank-card__more">等 {{ rankTotal(rank.id) }} 味</span>
+              <span v-for="name in rank.preview" :key="name">{{ name }}</span>
+              <span v-if="rank.count > 6" class="rank-card__more">等 {{ rank.count }} 味</span>
             </span>
             <span class="rank-card__go">查看全部 →</span>
           </RouterLink>
@@ -147,13 +119,13 @@ const supplementRanks = computed(() =>
           >
             <span class="therapy-card__head">
               <h3>{{ cat.title }}</h3>
-              <span>{{ categoryTotal(cat.id) }} 味</span>
+              <span>{{ cat.count }} 味</span>
             </span>
             <span class="therapy-card__desc">{{ cat.description }}</span>
             <span class="therapy-card__herbs">
-              <span v-for="name in categoryPreview(cat.id)" :key="name">{{ name }}</span>
-              <span v-if="categoryTotal(cat.id) > 6" class="therapy-card__more">…</span>
-              <span v-if="!categoryTotal(cat.id) && !cat.pending.length" class="pending-text">待收录</span>
+              <span v-for="name in cat.preview" :key="name">{{ name }}</span>
+              <span v-if="cat.count > 6" class="therapy-card__more">…</span>
+              <span v-if="!cat.count && !cat.pending.length" class="pending-text">待收录</span>
             </span>
             <span class="therapy-card__go">查看全部 →</span>
           </RouterLink>
@@ -166,10 +138,9 @@ const supplementRanks = computed(() =>
       </section>
 
       <HerbSearch
-        :herbs="herbs"
-        :lectures="lectureItems"
+        :herbs="searchIndex.herbs"
+        :lectures="searchIndex.lectures"
         :ranks="taxonomy?.ranks ?? []"
-        :catalog-ranks="catalog?.ranks ?? []"
         :categories="taxonomy?.categories ?? []"
       />
 
@@ -194,7 +165,7 @@ const supplementRanks = computed(() =>
               </span>
             </span>
             <span class="lecture-entry__meta">
-              <span v-if="lectureCount">{{ lectureCount }} 条 · {{ formatCharCount(lectureChars) }}</span>
+              <span v-if="counts?.lectureEntries">{{ counts.lectureEntries }} 条 · {{ formatCharCount(counts.lectureChars) }}</span>
               <span v-else>进入讲义</span>
               <span class="lecture-entry__arrow" aria-hidden="true">→</span>
             </span>
@@ -210,6 +181,24 @@ const supplementRanks = computed(() =>
 </template>
 
 <style scoped>
+.data-error {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 18px 0 0;
+  padding: 14px 16px;
+  color: var(--cinnabar);
+  font-size: 0.82rem;
+}
+
+.data-loading {
+  margin: 18px 0 0;
+  color: var(--ink-faint);
+  font-size: 0.78rem;
+}
+
 .page-hero {
   display: flex;
   justify-content: space-between;

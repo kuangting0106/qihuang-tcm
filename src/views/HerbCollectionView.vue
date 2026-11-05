@@ -1,131 +1,58 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import HerbIndexCard, { type HerbIndexItem } from '@/components/HerbIndexCard.vue'
-import { loadBencaoCatalog } from '@/composables/useBencaoLectures'
-import { useTcmData } from '@/composables/useTcmData'
-import type { BencaoCatalog } from '@/types/bencao'
+import { useHerbApi, type HerbCollectionPayload } from '@/composables/useHerbApi'
 
 const route = useRoute()
-const { data, meridianName } = useTcmData()
+const { loading, error, fetchHerbCollection } = useHerbApi()
 
 const kind = computed(() => (route.meta.collectionKind === 'category' ? 'category' : 'rank'))
 const key = computed(() => String(route.params.key ?? ''))
 const query = ref('')
-const catalog = ref<BencaoCatalog | null>(null)
+const payload = ref<HerbCollectionPayload | null>(null)
 
-onMounted(async () => {
+async function load() {
+  payload.value = null
+  query.value = ''
   try {
-    catalog.value = await loadBencaoCatalog()
+    payload.value = await fetchHerbCollection(kind.value, key.value)
   } catch {
-    catalog.value = null
+    // 错误信息由 composable 的 error 展示。
   }
-})
+}
 
-const herbs = computed(() => data.value?.herbs ?? [])
-const taxonomy = computed(() => data.value?.herbTaxonomy ?? null)
+watch([kind, key], load, { immediate: true })
 
-const rankMeta = computed(() => {
-  if (kind.value !== 'rank') return null
-  const classic = taxonomy.value?.ranks.find((rank) => rank.id === key.value)
-  if (classic) return { title: classic.title, subtitle: classic.subtitle, description: classic.description }
-  const extra = catalog.value?.ranks.find((rank) => rank.id === key.value)
-  if (!extra) return null
-  return {
-    title: extra.title,
-    subtitle: extra.subtitle,
-    description:
-      extra.id === 'nishi'
-        ? '《伤寒论》《金匮要略》所用而《神农本草经》未收的药物，倪海厦另列并附使用说明。'
-        : '课程整理者增补的常用药，不属于倪海厦原讲义正文；只作阅读索引。',
-  }
-})
-
-const categoryMeta = computed(() => {
-  if (kind.value !== 'category') return null
-  return taxonomy.value?.categories.find((category) => category.id === key.value) ?? null
-})
-
-const title = computed(() => rankMeta.value?.title ?? categoryMeta.value?.title ?? '药材索引')
-const subtitle = computed(() => rankMeta.value?.subtitle ?? '按功效分类阅读')
+const title = computed(() => payload.value?.title ?? '药材索引')
+const subtitle = computed(() => payload.value?.subtitle ?? '按功效分类阅读')
 const description = computed(
   () =>
-    rankMeta.value?.description ??
-    categoryMeta.value?.description ??
+    payload.value?.description ??
     '功效分类是本站导航标签，不是经典原文；同一味药可以同时出现在多个分类中。',
 )
 
-const curatedMatched = computed(() => {
-  const list = herbs.value
-  if (kind.value === 'rank') return list.filter((herb) => herb.classicRankId === key.value)
-  return list.filter((herb) => herb.therapyCategoryIds.includes(key.value))
-})
-
-const lectureMatched = computed(() => {
-  const items = catalog.value?.items ?? []
-  return items.filter((item) => {
-    if (item.curatedId) return false
-    if (kind.value === 'rank') return item.rankId === key.value
-    return item.therapyCategoryIds.includes(key.value)
-  })
-})
-
-function matches(text: string) {
+function matches(item: HerbIndexItem) {
   const q = query.value.trim().toLowerCase()
   if (!q) return true
-  return text.toLowerCase().includes(q)
+  return [item.name, item.pinyin, item.effects, ...item.flavors, ...item.meridians]
+    .join(' ')
+    .toLowerCase()
+    .includes(q)
 }
 
-const items = computed<HerbIndexItem[]>(() => {
-  const curated = curatedMatched.value
-    .filter((herb) =>
-      matches(
-        [herb.name, herb.pinyin, ...herb.aliases, herb.properties.effects.text, herb.properties.indications.text].join(
-          ' ',
-        ),
-      ),
-    )
-    .map((herb) => ({
-      id: `herb-${herb.id}`,
-      name: herb.name,
-      pinyin: herb.pinyin,
-      flavors: herb.flavorTags,
-      meridians: herb.meridianIds.map((id) => meridianName(id)),
-      effects: herb.properties.effects.text,
-      href: `/herbs/${herb.id}`,
-      cover: herb.images[0]?.url,
-      coverAlt: herb.images[0]?.alt,
-      seal: herb.name.slice(0, 1),
-      badge: '药典依据',
-      source: `中华人民共和国药典 · ${herb.name}`,
-    }))
-
-  const lecture = lectureMatched.value
-    .filter((item) => matches([item.name, item.pinyin, ...item.aliases, item.effects, item.indications].join(' ')))
-    .map((item) => ({
-      id: item.key,
-      name: item.name,
-      pinyin: item.pinyin,
-      flavors: [...item.flavorTags, item.nature].filter(Boolean),
-      meridians: item.meridianNames,
-      effects: item.summary,
-      href: `/bencao/${item.groupId}/${item.entryId}`,
-      cover: item.image?.url,
-      coverAlt: item.image?.alt,
-      seal: item.name.slice(0, 1),
-      badge: item.rankId === 'nishi' ? '经方补列' : item.rankId === 'editor' ? '整理者增补' : '讲义整理',
-      source: '倪海厦《神农本草经》讲义',
-    }))
-
-  return [...curated, ...lecture]
-})
-
-const totalWithoutQuery = computed(() => curatedMatched.value.length + lectureMatched.value.length)
+const items = computed<HerbIndexItem[]>(() => (payload.value?.items ?? []).filter(matches))
 </script>
 
 <template>
   <div class="page collection-page">
     <div class="container">
+      <div v-if="error" class="data-error paper-panel">
+        <p>{{ error }}</p>
+        <button class="btn btn--primary" type="button" @click="load">重新加载</button>
+      </div>
+      <p v-else-if="loading && !payload" class="data-loading">正在加载分类药材…</p>
+
       <nav class="crumbs" aria-label="面包屑">
         <RouterLink to="/">首页</RouterLink>
         <span>/</span>
@@ -142,7 +69,7 @@ const totalWithoutQuery = computed(() => curatedMatched.value.length + lectureMa
           <p class="collection-head__desc">{{ description }}</p>
         </div>
         <div class="collection-head__count">
-          <strong>{{ totalWithoutQuery }}</strong>
+          <strong>{{ payload?.count ?? 0 }}</strong>
           <span>味可查</span>
         </div>
       </header>
@@ -180,6 +107,24 @@ const totalWithoutQuery = computed(() => curatedMatched.value.length + lectureMa
 </template>
 
 <style scoped>
+.data-error {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18px;
+  padding: 14px 16px;
+  color: var(--cinnabar);
+  font-size: 0.82rem;
+}
+
+.data-loading {
+  margin-top: 18px;
+  color: var(--ink-faint);
+  font-size: 0.78rem;
+}
+
 .collection-page {
   padding-bottom: 64px;
 }

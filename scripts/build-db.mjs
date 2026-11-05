@@ -41,6 +41,7 @@ function summaryOf(entry) {
 
 const data = readJson(samplePath)
 const bencaoIndex = readJson(path.join(bencaoDir, 'index.json'))
+const bencaoCatalog = readJson(path.join(bencaoDir, 'catalog.json'))
 const bencaoGroupIds = ['intro', 'shangjing', 'zhongjing', 'xiajing', 'nishi', 'editor']
 const bencaoGroups = bencaoGroupIds
   .map((id) => {
@@ -102,6 +103,11 @@ const insertBencaoEntry = db.prepare(
    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
 )
 const insertMeta = db.prepare('INSERT INTO app_meta (key, value_json) VALUES (?, ?)')
+const insertHerbLecture = db.prepare(
+  `INSERT INTO herb_lecture_index
+     (key, name, pinyin, group_id, entry_id, rank_id, number, therapy_category_ids_json, data_json)
+   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+)
 
 const counts = {
   sources: 0,
@@ -110,6 +116,7 @@ const counts = {
   composition: 0,
   bencaoGroups: 0,
   bencaoEntries: 0,
+  herbLectures: 0,
 }
 
 db.exec('BEGIN')
@@ -250,6 +257,21 @@ try {
 
   insertMeta.run('bencao_index', JSON.stringify(bencaoIndex))
   insertMeta.run(
+    'bencao_catalog_meta',
+    JSON.stringify({
+      generatedAt: bencaoCatalog.generatedAt,
+      source: bencaoCatalog.source,
+      total: bencaoCatalog.total,
+      threeRanks: bencaoCatalog.threeRanks,
+      ranks: bencaoCatalog.ranks ?? [],
+    }),
+  )
+  insertMeta.run('herb_principles', JSON.stringify(data.herbPrinciples ?? null))
+  insertMeta.run(
+    'meridian_names',
+    JSON.stringify(Object.fromEntries((data.meridians ?? []).map((m) => [m.id, m.name]))),
+  )
+  insertMeta.run(
     'content_meta',
     JSON.stringify({
       schemaVersion: data.schemaVersion,
@@ -260,6 +282,21 @@ try {
     }),
   )
   insertMeta.run('herb_taxonomy', JSON.stringify(data.herbTaxonomy ?? null))
+
+  for (const item of bencaoCatalog.items ?? []) {
+    insertHerbLecture.run(
+      item.key,
+      item.name,
+      item.pinyin ?? '',
+      item.groupId ?? '',
+      item.entryId ?? '',
+      item.rankId ?? '',
+      Number.isInteger(item.number) ? item.number : null,
+      JSON.stringify(item.therapyCategoryIds ?? []),
+      JSON.stringify(item),
+    )
+    counts.herbLectures += 1
+  }
 
   db.exec('COMMIT')
 } catch (error) {
@@ -282,5 +319,6 @@ console.log(
     `composition=${counts.composition}`,
     `bencaoGroups=${counts.bencaoGroups}`,
     `bencaoEntries=${counts.bencaoEntries}`,
+    `herbLectures=${counts.herbLectures}`,
   ].join('  '),
 )

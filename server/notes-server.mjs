@@ -186,6 +186,109 @@ function collectCitationIds(formula) {
   return [...ids]
 }
 
+function readMeta(db, key, fallback = null) {
+  const row = db.prepare('SELECT value_json FROM app_meta WHERE key = ?').get(key)
+  return row ? jsonParse(row.value_json, fallback) : fallback
+}
+
+function mapHerbSummary(row) {
+  const herb = jsonParse(row.data_json, {})
+  return {
+    id: row.id,
+    name: row.name,
+    pinyin: row.pinyin,
+    aliases: herb.aliases ?? [],
+    ancientName: herb.names?.ancient?.text ?? '',
+    flavorTags: herb.flavorTags ?? [],
+    meridianIds: herb.meridianIds ?? [],
+    classicRankId: row.classic_rank_id ?? herb.classicRankId ?? null,
+    therapyCategoryIds: herb.therapyCategoryIds ?? [],
+    effectsText: row.effects_text ?? '',
+    indicationsText: herb.properties?.indications?.text ?? '',
+    cover: herb.images?.[0]?.url,
+    coverAlt: herb.images?.[0]?.alt,
+  }
+}
+
+function mapLectureSearch(row) {
+  const item = jsonParse(row.data_json, {})
+  return {
+    key: item.key,
+    name: item.name,
+    pinyin: item.pinyin ?? '',
+    aliases: item.aliases ?? [],
+    ancientName: item.ancientName ?? '',
+    alsoKnownAs: item.alsoKnownAs ?? [],
+    groupId: item.groupId,
+    entryId: item.entryId,
+    rankId: item.rankId,
+    therapyCategoryIds: item.therapyCategoryIds ?? [],
+    curatedId: item.curatedId,
+  }
+}
+
+function buildHerbMeta(db) {
+  const baseTaxonomy = readMeta(db, 'herb_taxonomy', {
+    ranks: [],
+    categories: [],
+    assignments: {},
+    note: '',
+  })
+  const catalogMeta = readMeta(db, 'bencao_catalog_meta', { ranks: [] })
+  const principles = readMeta(db, 'herb_principles', null)
+  const herbs = db
+    .prepare('SELECT id, name, pinyin, classic_rank_id, effects_text, data_json FROM herbs ORDER BY rowid')
+    .all()
+    .map(mapHerbSummary)
+  const lectures = db
+    .prepare('SELECT data_json FROM herb_lecture_index ORDER BY rowid')
+    .all()
+    .map((row) => jsonParse(row.data_json, {}))
+    .filter((item) => !item.curatedId)
+
+  const rankDefs = [...(baseTaxonomy.ranks ?? [])]
+  for (const rank of catalogMeta.ranks ?? []) {
+    if (!rankDefs.some((item) => item.id === rank.id)) rankDefs.push(rank)
+  }
+  const ranks = rankDefs.map((rank) => {
+    const names = [
+      ...herbs.filter((herb) => herb.classicRankId === rank.id).map((herb) => herb.name),
+      ...lectures.filter((item) => item.rankId === rank.id).map((item) => item.name),
+    ]
+    return { ...rank, count: names.length, preview: names.slice(0, 6) }
+  })
+  const categories = (baseTaxonomy.categories ?? []).map((category) => {
+    const names = [
+      ...herbs
+        .filter((herb) => herb.therapyCategoryIds.includes(category.id))
+        .map((herb) => herb.name),
+      ...lectures
+        .filter((item) => (item.therapyCategoryIds ?? []).includes(category.id))
+        .map((item) => item.name),
+    ]
+    return { ...category, count: names.length, preview: names.slice(0, 6) }
+  })
+
+  const groupTotals = db
+    .prepare(
+      'SELECT COALESCE(SUM(entry_count), 0) AS entries, COALESCE(SUM(char_count), 0) AS chars FROM bencao_groups',
+    )
+    .get()
+  const formulaRow = db.prepare('SELECT COUNT(*) AS n FROM formulas').get()
+
+  return {
+    taxonomy: { ...baseTaxonomy, ranks, categories },
+    principles,
+    counts: {
+      herbs: herbs.length,
+      lectureItems: lectures.length,
+      lectureEntries: groupTotals.entries,
+      lectureChars: groupTotals.chars,
+      formulas: formulaRow.n,
+    },
+  }
+}
+
 function readBody(req) {
   return new Promise((resolve, reject) => {
     let size = 0
@@ -497,21 +600,7 @@ const server = createServer(async (req, res) => {
         )
         .all()
       const herbs = rows
-        .map((row) => {
-          const herb = jsonParse(row.data_json)
-          return {
-            id: row.id,
-            name: row.name,
-            pinyin: row.pinyin,
-            aliases: herb.aliases ?? [],
-            flavorTags: herb.flavorTags ?? [],
-            meridianIds: herb.meridianIds ?? [],
-            classicRankId: row.classic_rank_id,
-            therapyCategoryIds: herb.therapyCategoryIds ?? [],
-            effectsText: row.effects_text,
-            image: herb.images?.[0] ?? null,
-          }
-        })
+        .map(mapHerbSummary)
         .filter((herb) => {
           if (!q) return true
           const haystack = [
@@ -519,6 +608,8 @@ const server = createServer(async (req, res) => {
             herb.pinyin,
             herb.id,
             herb.effectsText,
+            herb.indicationsText,
+            herb.ancientName,
             ...herb.aliases,
           ]
             .join(' ')
@@ -526,6 +617,142 @@ const server = createServer(async (req, res) => {
           return haystack.includes(q) || flatPinyin(herb.pinyin).includes(flatPinyin(q))
         })
       sendCached(req, res, 200, herbs)
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  if (url.pathname === '/api/herbs/meta' && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      sendCached(req, res, 200, buildHerbMeta(db))
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  if (url.pathname === '/api/herbs/search-index' && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      const herbs = db
+        .prepare('SELECT id, name, pinyin, classic_rank_id, effects_text, data_json FROM herbs ORDER BY rowid')
+        .all()
+        .map(mapHerbSummary)
+      const lectures = db
+        .prepare('SELECT data_json FROM herb_lecture_index ORDER BY rowid')
+        .all()
+        .map(mapLectureSearch)
+      sendCached(req, res, 200, { herbs, lectures })
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  const herbCollectionMatch = url.pathname.match(
+    /^\/api\/herbs\/collection\/(rank|category)\/([^/]+)$/,
+  )
+  if (herbCollectionMatch && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      const kind = herbCollectionMatch[1]
+      const key = decodeParam(herbCollectionMatch[2])
+      const meta = buildHerbMeta(db)
+      const definition =
+        kind === 'rank'
+          ? meta.taxonomy.ranks.find((rank) => rank.id === key)
+          : meta.taxonomy.categories.find((category) => category.id === key)
+      if (!definition) {
+        send(res, 404, { error: 'not-found' })
+        return
+      }
+
+      const meridianNames = readMeta(db, 'meridian_names', {})
+      const items = []
+
+      for (const row of db
+        .prepare('SELECT id, name, pinyin, classic_rank_id, effects_text, data_json FROM herbs ORDER BY rowid')
+        .all()) {
+        const herb = jsonParse(row.data_json, {})
+        const matched =
+          kind === 'rank'
+            ? herb.classicRankId === key
+            : (herb.therapyCategoryIds ?? []).includes(key)
+        if (!matched) continue
+        items.push({
+          id: `herb-${herb.id}`,
+          name: herb.name,
+          pinyin: herb.pinyin ?? '',
+          flavors: herb.flavorTags ?? [],
+          meridians: (herb.meridianIds ?? []).map((id) => meridianNames[id] ?? id),
+          effects: herb.properties?.effects?.text ?? row.effects_text ?? '',
+          href: `/herbs/${herb.id}`,
+          cover: herb.images?.[0]?.url,
+          coverAlt: herb.images?.[0]?.alt,
+          seal: herb.name.slice(0, 1),
+          badge: '药典依据',
+          source: `中华人民共和国药典 · ${herb.name}`,
+        })
+      }
+
+      for (const row of db
+        .prepare('SELECT data_json FROM herb_lecture_index ORDER BY rowid')
+        .all()) {
+        const item = jsonParse(row.data_json, {})
+        if (item.curatedId) continue
+        const matched =
+          kind === 'rank'
+            ? item.rankId === key
+            : (item.therapyCategoryIds ?? []).includes(key)
+        if (!matched) continue
+        items.push({
+          id: item.key,
+          name: item.name,
+          pinyin: item.pinyin ?? '',
+          flavors: [...(item.flavorTags ?? []), item.nature].filter(Boolean),
+          meridians: item.meridianNames ?? [],
+          effects: item.summary ?? '',
+          href: `/bencao/${item.groupId}/${item.entryId}`,
+          cover: item.image?.url,
+          coverAlt: item.image?.alt,
+          seal: item.name.slice(0, 1),
+          badge:
+            item.rankId === 'nishi'
+              ? '经方补列'
+              : item.rankId === 'editor'
+                ? '整理者增补'
+                : '讲义整理',
+          source: '倪海厦《神农本草经》讲义',
+        })
+      }
+
+      sendCached(req, res, 200, {
+        kind,
+        key,
+        title: definition.title,
+        subtitle: definition.subtitle ?? '',
+        description:
+          definition.description ??
+          (kind === 'category'
+            ? '功效分类是本站导航标签，不是经典原文；同一味药可以同时出现在多个分类中。'
+            : ''),
+        count: items.length,
+        items,
+      })
     } catch {
       send(res, 500, { error: 'db-query-failed' })
     }
@@ -547,12 +774,43 @@ const server = createServer(async (req, res) => {
         return
       }
       const herb = jsonParse(row.data_json)
-      const taxonomyRow = db
-        .prepare("SELECT value_json FROM app_meta WHERE key = 'herb_taxonomy'")
-        .get()
+      const taxonomy = readMeta(db, 'herb_taxonomy', null)
+      const meridianNames = readMeta(db, 'meridian_names', {})
+      const lectureRow = db
+        .prepare('SELECT data_json FROM herb_lecture_index WHERE name = ? LIMIT 1')
+        .get(herb.name)
+      const lecture = lectureRow ? jsonParse(lectureRow.data_json) : null
+
+      const pairingHerbs = {}
+      for (const pairing of herb.pairings ?? []) {
+        if (!pairing?.herbId || pairingHerbs[pairing.herbId]) continue
+        const related = db
+          .prepare('SELECT id, name FROM herbs WHERE id = ?')
+          .get(pairing.herbId)
+        if (related) pairingHerbs[related.id] = { id: related.id, name: related.name }
+      }
+
+      const citationIds = collectCitationIds(herb)
+      const citations = []
+      if (citationIds.length) {
+        const placeholders = citationIds.map(() => '?').join(',')
+        for (const sourceRow of db
+          .prepare(`SELECT id, data_json FROM sources WHERE id IN (${placeholders})`)
+          .all(...citationIds)) {
+          citations.push(jsonParse(sourceRow.data_json))
+        }
+      }
+
       sendCached(req, res, 200, {
         ...herb,
-        taxonomy: taxonomyRow ? jsonParse(taxonomyRow.value_json) : null,
+        taxonomy,
+        meridians: (herb.meridianIds ?? []).map((id) => ({
+          id,
+          name: meridianNames[id] ?? id,
+        })),
+        lecture,
+        pairingHerbs,
+        citations,
       })
     } catch {
       send(res, 500, { error: 'db-query-failed' })

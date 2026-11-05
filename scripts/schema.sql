@@ -108,6 +108,19 @@ CREATE TABLE bencao_entries (
   data_json TEXT NOT NULL
 );
 
+-- 本草讲义药目索引（由 catalog.json 生成），供 /herbs 检索与分类页使用。
+CREATE TABLE herb_lecture_index (
+  key TEXT PRIMARY KEY,
+  name TEXT NOT NULL,
+  pinyin TEXT NOT NULL DEFAULT '',
+  group_id TEXT NOT NULL,
+  entry_id TEXT NOT NULL,
+  rank_id TEXT NOT NULL,
+  number INTEGER,
+  therapy_category_ids_json TEXT NOT NULL DEFAULT '[]',
+  data_json TEXT NOT NULL
+);
+
 CREATE TABLE app_meta (
   key TEXT PRIMARY KEY,
   value_json TEXT NOT NULL
@@ -117,4 +130,6 @@ CREATE INDEX idx_formulas_name ON formulas(name);
 CREATE INDEX idx_formulas_pinyin ON formulas(pinyin);
 CREATE INDEX idx_formula_composition_formula ON formula_composition(formula_id);
 CREATE INDEX idx_bencao_entries_group ON bencao_entries(group_id);
+CREATE INDEX idx_herb_lecture_name ON herb_lecture_index(name);
+CREATE INDEX idx_herb_lecture_rank ON herb_lecture_index(rank_id);
 CREATE INDEX idx_sources_id ON sources(id);
