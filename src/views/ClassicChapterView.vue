@@ -1,17 +1,15 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
-import {
-  allClassicSections,
-  findClassicSection,
-  formatCharCount,
-  loadClassicBook,
-} from '@/composables/useClassicLibrary'
+import { formatCharCount, loadClassicSection } from '@/composables/useClassicLibrary'
 import type { ClassicBook, ClassicSection } from '@/types/classics'
 
+type ClassicBookHeader = Pick<ClassicBook, 'id' | 'title' | 'author' | 'source' | 'stats'>
+
 const route = useRoute()
-const book = ref<ClassicBook | null>(null)
+const book = ref<ClassicBookHeader | null>(null)
 const section = ref<ClassicSection | null>(null)
+const sections = ref<Array<Pick<ClassicSection, 'id' | 'title'>>>([])
 const loading = ref(true)
 const error = ref('')
 
@@ -20,15 +18,12 @@ async function load(bookId: string, chapterId: string) {
   error.value = ''
   book.value = null
   section.value = null
+  sections.value = []
   try {
-    const loaded = await loadClassicBook(bookId)
-    book.value = loaded
-    const found = findClassicSection(loaded, chapterId)
-    if (!found) {
-      error.value = '这本书里没有这一篇，链接里的篇名可能不正确。'
-    } else {
-      section.value = found
-    }
+    const payload = await loadClassicSection(bookId, chapterId)
+    book.value = payload.book
+    section.value = payload.section
+    sections.value = payload.sections
   } catch (err: unknown) {
     error.value = err instanceof Error ? err.message : '古籍原文加载失败'
   } finally {
@@ -43,8 +38,6 @@ watch(
   },
   { immediate: true },
 )
-
-const sections = computed(() => (book.value ? allClassicSections(book.value) : []))
 
 const currentIndex = computed(() =>
   section.value ? sections.value.findIndex((item) => item.id === section.value?.id) : -1,

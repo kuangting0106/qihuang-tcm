@@ -1,7 +1,7 @@
 export const clinicalDisclaimer = {
   title: '先读：经验总结，不代表绝对正确',
   short: '经验总结 · 非诊断标准',
-  body: '以下内容为传统中医看诊与治法的经验整理，仅供学习参考，不能替代专业诊断与治疗。出现急症、持续加重、意识改变、剧烈疼痛、呼吸困难、大出血、孕期异常等情况，请立即就医。',
+  body: '以下内容为传统中医看诊与治法的经验整理，仅供学习参考。',
 }
 
 export interface ClinicalQuestion {
@@ -270,14 +270,20 @@ export const treatmentPrinciples: TreatmentPrinciple[] = [
       '虚：气、血、津液、阳气不足。',
       '处理：实则攻之，虚则补之；虚实夹杂，攻补兼施，顾护胃气。',
     ],
-    source: '经验条目（用户提供）',
+    source: '',
   },
   {
     id: 'exterior-first',
     group: '先后',
     title: '有表证，先解表',
     body: '表证未解时，先以解表为主，避免过早攻里，把表邪引入里。',
-    source: '经验条目（用户提供）',
+  },
+  {
+    id: 'sores-no-sweat',
+    group: '先后',
+    title: '体表脓疡、痘疮、伤口，虽身痛不宜发汗',
+    body:
+      '体表有严重的脓疡、痘疮、伤口时，即使见身痛，也不要贸然发汗；应先辨疮疡与表证的关系，以免耗伤正气、助邪生变。',
   },
   {
     id: 'exterior-yangming',
@@ -285,7 +291,7 @@ export const treatmentPrinciples: TreatmentPrinciple[] = [
     title: '表证兼阳明，先解表；里实急重可表里同用',
     body:
       '一般先解表；若便秘已经五六七八天，里实已成、且急重，可在解表的同时兼顾通下。是否同用，要看里实程度与正气，不可机械。',
-    source: '经验条目（用户提供）',
+    source: '',
   },
   {
     id: 'urgent-first',
@@ -296,21 +302,21 @@ export const treatmentPrinciples: TreatmentPrinciple[] = [
       '急：呼吸困难、剧烈疼痛、大出血、意识改变、厥脱等。',
       '缓：慢性调理、体质、旧病。',
     ],
-    source: '经验条目（用户提供）；可与《伤寒论》“急当救里 / 急当救表”互参。',
+    source: '可与《伤寒论》“急当救里 / 急当救表”互参。',
   },
   {
     id: 'cold-damp',
     group: '湿与饮',
     title: '寒湿交加，去寒去湿',
     body: '寒与湿并见，单去湿则寒不去，单温寒则湿不化；需温阳与祛湿同用。',
-    source: '经验条目（用户提供）',
+    source: '',
   },
   {
     id: 'wind-cold-damp',
     group: '湿与饮',
     title: '风寒湿交加，去风去寒去湿',
     body: '三邪并见，按风、寒、湿的偏重配伍，不可只抓一端。',
-    source: '经验条目（用户提供）',
+    source: '',
   },
   {
     id: 'edema',
@@ -322,7 +328,7 @@ export const treatmentPrinciples: TreatmentPrinciple[] = [
       '不是所有水肿都适用温药；心衰、肾病、肝病、药物引起的水肿需先查明原因。',
       '治水肿时，甘草有蓄水之弊，常需慎用；见《伤寒论》真武汤讲解。',
     ],
-    source: '经验条目（用户提供）；《伤寒论》真武汤讲解。',
+    source: '《伤寒论》真武汤讲解。',
     href: '/classics/shanghan-nihaixia',
   },
   {
@@ -336,7 +342,7 @@ export const treatmentPrinciples: TreatmentPrinciple[] = [
       '寒利：大便不臭、不渴、舌苔白、脉微细。',
       '以上辨法见《伤寒论》桂枝人参汤讲解；具体治疗需辨证。',
     ],
-    source: '经验条目（用户提供）；《伤寒论》桂枝人参汤讲解。',
+    source: '《伤寒论》桂枝人参汤讲解。',
     href: '/classics/shanghan-nihaixia',
   },
   {
@@ -345,7 +351,7 @@ export const treatmentPrinciples: TreatmentPrinciple[] = [
     title: '实症：去实通利',
     body:
       '实症以祛邪为要，给邪以出路：汗、吐、下、和、清、消、利，按病位与病性选择，不可一味补。',
-    source: '经验条目（用户提供）',
+    source: '',
   },
   {
     id: 'yin-excess',
@@ -357,7 +363,7 @@ export const treatmentPrinciples: TreatmentPrinciple[] = [
       '“阴实”是传统概念，不能替代肿瘤的病理诊断。',
       '发现肿块、结节、异常出血、体重下降，应先做规范检查。',
     ],
-    source: '经验条目（用户提供）',
+    source: '',
   },
   {
     id: 'yang-first',
@@ -437,7 +443,7 @@ export const inspectionSections: InspectionSection[] = [
         finding: '色青',
         association: '腹中痛',
         note: '传统经验：青主寒、主痛。小儿山根青筋常见于里寒、腹痛；需结合哭闹、饮食、大便与腹部触诊。',
-        source: '经验条目；《伤寒论》讲义亦有“山根青，里寒而痛”的讲法。',
+        source: '《伤寒论》讲义亦有“山根青，里寒而痛”的讲法。',
         href: '/classics/shanghan-nihaixia',
       },
       {
@@ -532,13 +538,13 @@ export const inspectionSections: InspectionSection[] = [
         id: 'speech-soft-talkative',
         finding: '说话声音小，却喜欢一直说话',
         association: '头有痛',
-        note: '经验条目：声音小多属虚，喜言可能是代偿或心烦。需问头痛部位、性质、血压、睡眠与情绪。',
+        note: '声音小多属虚，喜言可能是代偿或心烦。需问头痛部位、性质、血压、睡眠与情绪。',
       },
       {
         id: 'speech-quiet-dark',
         finding: '不爱说话，喜欢静、暗处',
         association: '多为阳气不足',
-        note: '经验条目：阳虚、气虚可见少言、畏光、喜静；也需考虑情绪低落、贫血、甲状腺功能低下与慢性疲劳。',
+        note: '阳虚、气虚可见少言、畏光、喜静；也需考虑情绪低落、贫血、甲状腺功能低下与慢性疲劳。',
       },
     ],
     note: '语言与姿态的变化，既可能是功能状态，也可能是神经系统急症；起病突然时先按急症处理。',
@@ -546,7 +552,7 @@ export const inspectionSections: InspectionSection[] = [
   {
     id: 'complexion',
     title: '站内可互证的面色条目',
-    subtitle: '从现有经典与讲义中补几条，便于和上面经验条目对照。',
+    subtitle: '从现有经典与讲义中补几条，便于和上面条目对照。',
     entries: [
       {
         id: 'complexion-green',

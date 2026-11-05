@@ -126,6 +126,53 @@ CREATE TABLE app_meta (
   value_json TEXT NOT NULL
 );
 
+-- 经络与穴位：数据量小，完整 JSON 存一份，列表接口一次返回。
+CREATE TABLE meridians (
+  id TEXT PRIMARY KEY,
+  name TEXT NOT NULL,
+  category TEXT NOT NULL DEFAULT '',
+  data_json TEXT NOT NULL
+);
+
+CREATE TABLE acupoints (
+  id TEXT PRIMARY KEY,
+  meridian_id TEXT NOT NULL DEFAULT '',
+  name TEXT NOT NULL,
+  data_json TEXT NOT NULL
+);
+
+-- 医家经典：书存完整 JSON，章节另表扁平化，章节页只取当前篇。
+CREATE TABLE classic_books (
+  id TEXT PRIMARY KEY,
+  title TEXT NOT NULL,
+  author TEXT NOT NULL DEFAULT '',
+  data_json TEXT NOT NULL
+);
+
+CREATE TABLE classic_sections (
+  book_id TEXT NOT NULL,
+  id TEXT NOT NULL,
+  kind TEXT NOT NULL DEFAULT '',
+  volume_title TEXT NOT NULL DEFAULT '',
+  title TEXT NOT NULL,
+  char_count INTEGER NOT NULL DEFAULT 0,
+  paragraphs_json TEXT NOT NULL DEFAULT '[]',
+  sort_order INTEGER NOT NULL DEFAULT 0,
+  PRIMARY KEY (book_id, id)
+);
+
+-- 医案：列表摘要与详情 JSON。
+CREATE TABLE cases (
+  id TEXT PRIMARY KEY,
+  title TEXT NOT NULL,
+  category TEXT NOT NULL DEFAULT '',
+  summary TEXT NOT NULL DEFAULT '',
+  source_work TEXT NOT NULL DEFAULT '',
+  source_locator TEXT NOT NULL DEFAULT '',
+  sort_order INTEGER NOT NULL DEFAULT 0,
+  data_json TEXT NOT NULL
+);
+
 CREATE INDEX idx_formulas_name ON formulas(name);
 CREATE INDEX idx_formulas_pinyin ON formulas(pinyin);
 CREATE INDEX idx_formula_composition_formula ON formula_composition(formula_id);
@@ -133,3 +180,6 @@ CREATE INDEX idx_bencao_entries_group ON bencao_entries(group_id);
 CREATE INDEX idx_herb_lecture_name ON herb_lecture_index(name);
 CREATE INDEX idx_herb_lecture_rank ON herb_lecture_index(rank_id);
 CREATE INDEX idx_sources_id ON sources(id);
+CREATE INDEX idx_meridians_category ON meridians(category);
+CREATE INDEX idx_acupoints_meridian ON acupoints(meridian_id);
+CREATE INDEX idx_classic_sections_book ON classic_sections(book_id);

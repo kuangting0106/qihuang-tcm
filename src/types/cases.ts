@@ -1,5 +1,3 @@
-import raw from './jingui-cases.json'
-
 export interface CaseHerb {
   name: string
   dose: string
@@ -23,10 +21,15 @@ export interface CaseItem {
   content: CaseContent[]
 }
 
-export const cases = (raw as { cases: CaseItem[] }).cases
+export interface CaseSummary {
+  id: string
+  title: string
+  category: string
+  summary: string
+  source: CaseSource
+  prescriptionCount: number
+}
 
-export const casesById = new Map(cases.map((item) => [item.id, item]))
-
-export function casePrescriptionCount(item: CaseItem) {
+export function casePrescriptionCount(item: CaseItem): number {
   return item.content.filter((block) => block.type === 'prescription').length
 }

@@ -4,30 +4,86 @@ import type {
   ClassicSection,
   ClassicVolume,
 } from '@/types/classics'
+import type { Citation } from '@/types/tcm'
 
-const base = import.meta.env.BASE_URL
-let indexPromise: Promise<ClassicLibraryIndex> | null = null
+const API_BASE = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/api`
+
+export interface ClassicCatalogPayload {
+  index: ClassicLibraryIndex
+  works: Citation[]
+}
+
+export interface ClassicSectionPayload {
+  book: Pick<ClassicBook, 'id' | 'title' | 'author' | 'source' | 'stats'>
+  section: ClassicSection
+  sections: Array<Pick<ClassicSection, 'id' | 'title'>>
+}
+
+let catalogPromise: Promise<ClassicCatalogPayload> | null = null
 const bookPromises = new Map<string, Promise<ClassicBook>>()
+const sectionPromises = new Map<string, Promise<ClassicSectionPayload>>()
 
-export function loadClassicIndex(): Promise<ClassicLibraryIndex> {
-  if (!indexPromise) {
-    indexPromise = fetch(`${base}data/classics/index.json`).then(async (res) => {
-      if (!res.ok) throw new Error(`古籍目录加载失败：HTTP ${res.status}`)
-      return (await res.json()) as ClassicLibraryIndex
+function request<T>(path: string, label: string): Promise<T> {
+  return fetch(`${API_BASE}${path}`, { headers: { Accept: 'application/json' } }).then(
+    async (response) => {
+      if (!response.ok) {
+        const hint =
+          response.status === 404
+            ? '没有找到这条记录'
+            : response.status === 503
+              ? '数据服务未就绪'
+              : `HTTP ${response.status}`
+        throw new Error(`${label}加载失败：${hint}`)
+      }
+      return (await response.json()) as T
+    },
+  )
+}
+
+export function loadClassicCatalog(): Promise<ClassicCatalogPayload> {
+  if (!catalogPromise) {
+    catalogPromise = request<ClassicCatalogPayload>('/classics', '古籍目录').catch((error) => {
+      catalogPromise = null
+      throw error
     })
   }
-  return indexPromise
+  return catalogPromise
+}
+
+export function loadClassicIndex(): Promise<ClassicLibraryIndex> {
+  return loadClassicCatalog().then((payload) => payload.index)
 }
 
 export function loadClassicBook(id: string): Promise<ClassicBook> {
   const cached = bookPromises.get(id)
   if (cached) return cached
 
-  const promise = fetch(`${base}data/classics/${id}.json`).then(async (res) => {
-    if (!res.ok) throw new Error(`古籍原文加载失败：HTTP ${res.status}`)
-    return (await res.json()) as ClassicBook
-  })
+  const promise = request<ClassicBook>(`/classics/${encodeURIComponent(id)}`, '古籍原文').catch(
+    (error) => {
+      bookPromises.delete(id)
+      throw error
+    },
+  )
   bookPromises.set(id, promise)
+  return promise
+}
+
+export function loadClassicSection(
+  bookId: string,
+  sectionId: string,
+): Promise<ClassicSectionPayload> {
+  const cacheKey = `${bookId}:${sectionId}`
+  const cached = sectionPromises.get(cacheKey)
+  if (cached) return cached
+
+  const promise = request<ClassicSectionPayload>(
+    `/classics/${encodeURIComponent(bookId)}/sections/${encodeURIComponent(sectionId)}`,
+    '古籍篇章',
+  ).catch((error) => {
+    sectionPromises.delete(cacheKey)
+    throw error
+  })
+  sectionPromises.set(cacheKey, promise)
   return promise
 }
 

@@ -15,6 +15,7 @@ import { fileURLToPath } from 'node:url'
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const samplePath = path.join(root, 'public', 'data', 'sample_data.json')
 const bencaoDir = path.join(root, 'public', 'data', 'bencao-lectures')
+const classicsDir = path.join(root, 'public', 'data', 'classics')
 const schemaPath = path.join(root, 'scripts', 'schema.sql')
 const dbPath = process.env.QIHUANG_DB_FILE ?? path.join(root, 'data', 'qihuang.db')
 
@@ -42,6 +43,11 @@ function summaryOf(entry) {
 const data = readJson(samplePath)
 const bencaoIndex = readJson(path.join(bencaoDir, 'index.json'))
 const bencaoCatalog = readJson(path.join(bencaoDir, 'catalog.json'))
+const classicIndex = readJson(path.join(classicsDir, 'index.json'))
+const classicBooks = (classicIndex.books ?? []).map((book) =>
+  readJson(path.join(classicsDir, `${book.id}.json`)),
+)
+const caseData = readJson(path.join(root, 'src', 'data', 'jingui-cases.json'))
 const bencaoGroupIds = ['intro', 'shangjing', 'zhongjing', 'xiajing', 'nishi', 'editor']
 const bencaoGroups = bencaoGroupIds
   .map((id) => {
@@ -108,6 +114,25 @@ const insertHerbLecture = db.prepare(
      (key, name, pinyin, group_id, entry_id, rank_id, number, therapy_category_ids_json, data_json)
    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
 )
+const insertMeridian = db.prepare(
+  'INSERT INTO meridians (id, name, category, data_json) VALUES (?, ?, ?, ?)',
+)
+const insertAcupoint = db.prepare(
+  'INSERT INTO acupoints (id, meridian_id, name, data_json) VALUES (?, ?, ?, ?)',
+)
+const insertClassicBook = db.prepare(
+  'INSERT INTO classic_books (id, title, author, data_json) VALUES (?, ?, ?, ?)',
+)
+const insertClassicSection = db.prepare(
+  `INSERT INTO classic_sections
+     (book_id, id, kind, volume_title, title, char_count, paragraphs_json, sort_order)
+   VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+)
+const insertCase = db.prepare(
+  `INSERT INTO cases
+     (id, title, category, summary, source_work, source_locator, sort_order, data_json)
+   VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+)
 
 const counts = {
   sources: 0,
@@ -117,6 +142,11 @@ const counts = {
   bencaoGroups: 0,
   bencaoEntries: 0,
   herbLectures: 0,
+  meridians: 0,
+  acupoints: 0,
+  classicBooks: 0,
+  classicSections: 0,
+  cases: 0,
 }
 
 db.exec('BEGIN')
@@ -298,6 +328,67 @@ try {
     counts.herbLectures += 1
   }
 
+  for (const meridian of data.meridians ?? []) {
+    insertMeridian.run(
+      meridian.id,
+      meridian.name ?? meridian.id,
+      meridian.category ?? '',
+      JSON.stringify(meridian),
+    )
+    counts.meridians += 1
+  }
+
+  for (const acupoint of data.acupoints ?? []) {
+    insertAcupoint.run(
+      acupoint.id,
+      acupoint.meridianId ?? '',
+      acupoint.name ?? acupoint.id,
+      JSON.stringify(acupoint),
+    )
+    counts.acupoints += 1
+  }
+
+  for (const book of classicBooks) {
+    insertClassicBook.run(book.id, book.title ?? book.id, book.author ?? '', JSON.stringify(book))
+    counts.classicBooks += 1
+
+    const sections = [
+      ...(book.prefaces ?? []),
+      ...(book.frontMatter ?? []),
+      ...(book.volumes ?? []).flatMap((volume) => volume.chapters ?? []),
+      ...(book.postscripts ?? []),
+    ]
+    sections.forEach((section, index) => {
+      insertClassicSection.run(
+        book.id,
+        section.id ?? `${book.id}-section-${index}`,
+        section.kind ?? '',
+        section.volume ?? '',
+        section.title ?? '',
+        section.charCount ?? 0,
+        JSON.stringify(section.paragraphs ?? []),
+        index,
+      )
+      counts.classicSections += 1
+    })
+  }
+
+  ;(caseData.cases ?? []).forEach((item, index) => {
+    insertCase.run(
+      item.id,
+      item.title ?? item.id,
+      item.category ?? '',
+      item.summary ?? '',
+      item.source?.work ?? '',
+      item.source?.locator ?? '',
+      index,
+      JSON.stringify(item),
+    )
+    counts.cases += 1
+  })
+
+  insertMeta.run('classic_index', JSON.stringify(classicIndex))
+
   db.exec('COMMIT')
 } catch (error) {
   db.exec('ROLLBACK')
@@ -320,5 +411,10 @@ console.log(
     `bencaoGroups=${counts.bencaoGroups}`,
     `bencaoEntries=${counts.bencaoEntries}`,
     `herbLectures=${counts.herbLectures}`,
+    `meridians=${counts.meridians}`,
+    `acupoints=${counts.acupoints}`,
+    `classicBooks=${counts.classicBooks}`,
+    `classicSections=${counts.classicSections}`,
+    `cases=${counts.cases}`,
   ].join('  '),
 )

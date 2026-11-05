@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { CaseContent, CaseItem } from '@/data/cases'
+import type { CaseContent, CaseItem } from '@/types/cases'
 
 defineProps<{
   caseData: CaseItem

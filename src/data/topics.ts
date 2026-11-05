@@ -1,5 +1,3 @@
-import { cases } from './cases'
-
 export type TopicSection = 'methods' | 'cases'
 
 export interface Topic {
@@ -52,11 +50,8 @@ export const methodTopics: Topic[] = [
   },
 ]
 
-export const caseTopics: Topic[] = cases.map((item) => ({
-  id: item.id,
-  title: item.title,
-  subtitle: `${item.category} · ${item.summary}`,
-}))
+// 医案由 /api/cases 按需加载；这里保留空数组以维持栏目结构。
+export const caseTopics: Topic[] = []
 
 export const topicSections = {
   methods: {

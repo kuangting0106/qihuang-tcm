@@ -1,12 +1,43 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import { clinicalDisclaimer } from '@/data/clinical-methods'
-import { getTopicSection } from '@/data/topics'
+import { getTopicSection, type Topic } from '@/data/topics'
+import { useCaseApi } from '@/composables/useCaseApi'
 
 const route = useRoute()
 const section = computed(() => getTopicSection(String(route.meta.section || 'methods')))
 const basePath = computed(() => `/${section.value.key}`)
+
+const { loading, error, fetchCases } = useCaseApi()
+const caseList = ref<Topic[]>([])
+const topics = computed<Topic[]>(() =>
+  section.value.key === 'cases' ? caseList.value : section.value.topics,
+)
+
+async function loadCases() {
+  try {
+    const list = await fetchCases()
+    caseList.value = list.map((item) => ({
+      id: item.id,
+      title: item.title,
+      subtitle: `${item.category} · ${item.summary}`,
+    }))
+  } catch {
+    // 错误由 useCaseApi 的 error 展示。
+  }
+}
+
+onMounted(() => {
+  if (section.value.key === 'cases') loadCases()
+})
+
+watch(
+  () => section.value.key,
+  (key) => {
+    if (key === 'cases' && !caseList.value.length) loadCases()
+  },
+)
 
 const readyTopicIds = new Set(['acupuncture', 'moxibustion', 'ten-questions', 'treatment-methods', 'inspection'])
 const clinicalTopicIds = new Set(['ten-questions', 'treatment-methods', 'inspection'])
@@ -45,11 +76,11 @@ function topicStatus(id: string) {
           <p class="topic-hero__lead">{{ section.lead }}</p>
           <div class="topic-hero__meta">
             <template v-if="section.key === 'cases'">
-              <span class="chip chip--cinnabar">{{ section.topics.length }} 则医案</span>
+              <span class="chip chip--cinnabar">{{ topics.length }} 则医案</span>
               <span class="chip">讲义原文 · 非诊断标准</span>
             </template>
             <template v-else>
-              <span class="chip chip--cinnabar">{{ section.topics.length }} 个栏目</span>
+              <span class="chip chip--cinnabar">{{ topics.length }} 个栏目</span>
               <span class="chip">经验总结 · 非诊断标准</span>
             </template>
             <span class="chip chip--gold">先出处，后内容</span>
@@ -58,9 +89,15 @@ function topicStatus(id: string) {
         <div class="topic-hero__seal" aria-hidden="true">{{ section.key === 'methods' ? '法' : '案' }}</div>
       </header>
 
+      <p v-if="section.key === 'cases' && loading" class="topic-state paper-panel">正在加载医案…</p>
+      <p v-else-if="section.key === 'cases' && error" class="topic-state paper-panel" role="alert">
+        {{ error }}
+        <button class="btn btn--primary" type="button" @click="loadCases">重新加载</button>
+      </p>
+
       <section class="topic-grid" aria-label="栏目列表">
         <RouterLink
-          v-for="(topic, index) in section.topics"
+          v-for="(topic, index) in topics"
           :key="topic.id"
           :to="`${basePath}/${topic.id}`"
           class="topic-card"
@@ -94,7 +131,7 @@ function topicStatus(id: string) {
         <div>
           <p>
             看诊十问、治疗法门与望诊经验，都是传统中医的经验整理，不是绝对诊断标准。
-            页面把“经验条目”和“经典/讲义出处”分开标注；具体方药、剂量与操作，仍以原书和执业医师判断为准。
+            页面把“条目”和“经典/讲义出处”分开标注；具体方药、剂量与操作，仍以原书和执业医师判断为准。
           </p>
           <p class="topic-principles__links">
             <RouterLink class="text-link" to="/classics">查看医家经典书籍 →</RouterLink>
@@ -107,6 +144,18 @@ function topicStatus(id: string) {
 </template>
 
 <style scoped>
+.topic-state {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 18px 0;
+  padding: 14px 16px;
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+}
+
 .clinical-banner {
   display: flex;
   gap: 14px;

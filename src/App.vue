@@ -12,7 +12,7 @@ const aboutOpen = ref(false)
 const isHome = computed(() => router.currentRoute.value.path === '/')
 // 方剂、本草讲义改为按需 API；其他页面仍沿用整份 sample_data。
 const needsFullData = computed(
-  () => !/^\/(formulas|bencao|herbs)(\/|$)/.test(router.currentRoute.value.path),
+  () => !/^\/(formulas|bencao|herbs|meridians|classics|cases)(\/|$)/.test(router.currentRoute.value.path),
 )
 
 function ensureData() {

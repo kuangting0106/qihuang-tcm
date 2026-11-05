@@ -820,6 +820,193 @@ const server = createServer(async (req, res) => {
     return
   }
 
+  if (url.pathname === '/api/meridians' && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      const meridians = db
+        .prepare('SELECT data_json FROM meridians ORDER BY rowid')
+        .all()
+        .map((row) => jsonParse(row.data_json))
+      const acupoints = db
+        .prepare('SELECT data_json FROM acupoints ORDER BY rowid')
+        .all()
+        .map((row) => jsonParse(row.data_json))
+      const citationIds = [
+        ...new Set([...meridians, ...acupoints].flatMap((item) => collectCitationIds(item))),
+      ]
+      const citations = []
+      if (citationIds.length) {
+        const placeholders = citationIds.map(() => '?').join(',')
+        for (const row of db
+          .prepare(`SELECT id, data_json FROM sources WHERE id IN (${placeholders})`)
+          .all(...citationIds)) {
+          citations.push(jsonParse(row.data_json))
+        }
+      }
+      sendCached(req, res, 200, { meridians, acupoints, citations })
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  if (url.pathname === '/api/classics' && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      const index = readMeta(db, 'classic_index', { books: [] })
+      const works = db
+        .prepare("SELECT data_json FROM sources WHERE type = 'classic' ORDER BY rowid")
+        .all()
+        .map((row) => jsonParse(row.data_json))
+      sendCached(req, res, 200, { index, works })
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  const classicSectionMatch = url.pathname.match(
+    /^\/api\/classics\/([^/]+)\/sections\/([^/]+)$/,
+  )
+  if (classicSectionMatch && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      const bookId = decodeParam(classicSectionMatch[1])
+      const sectionId = decodeParam(classicSectionMatch[2])
+      const bookRow = db
+        .prepare('SELECT id, title, author, data_json FROM classic_books WHERE id = ?')
+        .get(bookId)
+      if (!bookRow) {
+        send(res, 404, { error: 'not-found' })
+        return
+      }
+      const sectionRow = db
+        .prepare(
+          `SELECT id, title, kind, volume_title, char_count, paragraphs_json
+           FROM classic_sections WHERE book_id = ? AND id = ?`,
+        )
+        .get(bookId, sectionId)
+      if (!sectionRow) {
+        send(res, 404, { error: 'not-found' })
+        return
+      }
+      const book = jsonParse(bookRow.data_json, {})
+      const sections = db
+        .prepare(
+          'SELECT id, title FROM classic_sections WHERE book_id = ? ORDER BY sort_order',
+        )
+        .all(bookId)
+      sendCached(req, res, 200, {
+        book: {
+          id: bookRow.id,
+          title: bookRow.title,
+          author: bookRow.author,
+          source: book.source,
+          stats: book.stats,
+        },
+        section: {
+          id: sectionRow.id,
+          title: sectionRow.title,
+          kind: sectionRow.kind,
+          volume: sectionRow.volume_title,
+          charCount: sectionRow.char_count,
+          paragraphs: jsonParse(sectionRow.paragraphs_json, []),
+        },
+        sections,
+      })
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  const classicBookMatch = url.pathname.match(/^\/api\/classics\/([^/]+)$/)
+  if (classicBookMatch && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      const bookId = decodeParam(classicBookMatch[1])
+      const row = db.prepare('SELECT data_json FROM classic_books WHERE id = ?').get(bookId)
+      if (!row) {
+        send(res, 404, { error: 'not-found' })
+        return
+      }
+      sendCached(req, res, 200, jsonParse(row.data_json))
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  if (url.pathname === '/api/cases' && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      const cases = db
+        .prepare(
+          `SELECT id, title, category, summary, source_work, source_locator, data_json
+           FROM cases ORDER BY sort_order`,
+        )
+        .all()
+        .map((row) => {
+          const item = jsonParse(row.data_json, {})
+          return {
+            id: row.id,
+            title: row.title,
+            category: row.category,
+            summary: row.summary,
+            source: { work: row.source_work, locator: row.source_locator },
+            prescriptionCount: (item.content ?? []).filter(
+              (block) => block.type === 'prescription',
+            ).length,
+          }
+        })
+      sendCached(req, res, 200, cases)
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  const caseMatch = url.pathname.match(/^\/api\/cases\/([^/]+)$/)
+  if (caseMatch && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      const caseId = decodeParam(caseMatch[1])
+      const row = db.prepare('SELECT data_json FROM cases WHERE id = ?').get(caseId)
+      if (!row) {
+        send(res, 404, { error: 'not-found' })
+        return
+      }
+      sendCached(req, res, 200, jsonParse(row.data_json))
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
   if (url.pathname === '/api/bencao' && req.method === 'GET') {
     const db = getDb()
     if (!db) {

@@ -4,13 +4,25 @@ import { RouterLink, useRoute, useRouter } from 'vue-router'
 import HumanBody from '@/components/HumanBody.vue'
 import CitationBadge from '@/components/CitationBadge.vue'
 import SourcedText from '@/components/SourcedText.vue'
-import { useTcmData } from '@/composables/useTcmData'
+import { fetchMeridianData } from '@/composables/useMeridianApi'
 import type { Acupoint, Meridian, Region } from '@/types/tcm'
 import { REGION_LABELS } from '@/types/tcm'
 
 const route = useRoute()
 const router = useRouter()
-const { data, meridiansById, acupointsById, meridianName } = useTcmData()
+const meridianList = ref<Meridian[]>([])
+const acupointList = ref<Acupoint[]>([])
+const loading = ref(true)
+const loadError = ref('')
+const meridiansById = computed(
+  () => new Map(meridianList.value.map((meridian) => [meridian.id, meridian])),
+)
+const acupointsById = computed(
+  () => new Map(acupointList.value.map((acupoint) => [acupoint.id, acupoint])),
+)
+function meridianName(id: string) {
+  return meridiansById.value.get(id)?.name ?? id
+}
 
 const bodyRef = ref<{
   setView: (view: 'front' | 'back' | 'left' | 'right' | 'threeQuarter') => void
@@ -20,7 +32,7 @@ const bodyRef = ref<{
 } | null>(null)
 
 const routeId = computed(() => String(route.params.id || 'all'))
-const allPoints = computed(() => data.value?.acupoints ?? [])
+const allPoints = computed(() => acupointList.value)
 const activeMeridian = computed<Meridian | null>(() =>
   routeId.value === 'all' ? null : meridiansById.value.get(routeId.value) ?? null,
 )
@@ -145,8 +157,8 @@ const armRail = computed(() => {
 })
 
 const meridianOptions = computed(() => {
-  const regular = (data.value?.meridians ?? []).filter((m) => m.category === 'regular')
-  const extra = (data.value?.meridians ?? []).filter((m) => m.category === 'extraordinary')
+  const regular = meridianList.value.filter((m) => m.category === 'regular')
+  const extra = meridianList.value.filter((m) => m.category === 'extraordinary')
   return { regular, extra }
 })
 
@@ -209,6 +221,15 @@ watch(
 )
 
 onMounted(async () => {
+  try {
+    const payload = await fetchMeridianData()
+    meridianList.value = payload.meridians
+    acupointList.value = payload.acupoints
+  } catch (err: unknown) {
+    loadError.value = err instanceof Error ? err.message : '经络数据加载失败'
+  } finally {
+    loading.value = false
+  }
   await nextTick()
   setDefaultViewForMeridian(activeMeridian.value?.id)
   if (selectedPointId.value) bodyRef.value?.focusPoint(selectedPointId.value)
@@ -232,6 +253,9 @@ watch(
         <span>/</span>
         <span>{{ activeMeridian?.name ?? '全身重点穴' }}</span>
       </nav>
+
+      <p v-if="loading" class="paper-panel">正在加载经络数据…</p>
+      <p v-else-if="loadError" class="paper-panel" role="alert">{{ loadError }}</p>
 
       <header class="meridian-head">
         <div>
@@ -270,7 +294,7 @@ watch(
               label="经络出处"
               compact
             />
-            <span v-else class="chip chip--gold">离线坐标 · {{ data?.bodyModel.coordinateFrame }}</span>
+            <span v-else class="chip chip--gold">离线坐标 · 只读数据</span>
           </div>
         </div>
         <label class="meridian-select">
@@ -555,8 +579,7 @@ watch(
         </div>
 
         <p class="model-disclaimer">
-          3D 模型为针灸铜人风格人体：青色腰布与头巾、裸露上身、无性器官细节，仅用于经络穴位学习；穴位坐标来自离线表
-          {{ data?.bodyModel.coordinateFrame }}，运行时不做人体表面映射。
+          3D 模型为针灸铜人风格人体：青色腰布与头巾、裸露上身、无性器官细节，仅用于经络穴位学习；穴位坐标来自离线坐标表，运行时不做人体表面映射。
         </p>
       </template>
     </div>

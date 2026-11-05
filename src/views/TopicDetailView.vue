@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import AcupunctureTopic from '@/components/AcupunctureTopic.vue'
 import CaseArticle from '@/components/CaseArticle.vue'
@@ -7,12 +7,49 @@ import InspectionTopic from '@/components/InspectionTopic.vue'
 import MoxibustionTopic from '@/components/MoxibustionTopic.vue'
 import TenQuestionsTopic from '@/components/TenQuestionsTopic.vue'
 import TreatmentPrinciplesTopic from '@/components/TreatmentPrinciplesTopic.vue'
-import { casesById } from '@/data/cases'
+import { useCaseApi } from '@/composables/useCaseApi'
+import type { CaseItem } from '@/types/cases'
+import type { Topic } from '@/data/topics'
 import { findTopic, getTopicSection } from '@/data/topics'
 
 const route = useRoute()
 const section = computed(() => getTopicSection(String(route.meta.section || 'methods')))
-const topic = computed(() => findTopic(section.value.key, String(route.params.id)))
+const isCaseRoute = computed(() => section.value.key === 'cases')
+
+const { loading: caseLoading, error: caseError, fetchCase } = useCaseApi()
+const caseDetail = ref<CaseItem | null>(null)
+const caseTopic = computed<Topic | null>(() =>
+  caseDetail.value
+    ? {
+        id: caseDetail.value.id,
+        title: caseDetail.value.title,
+        subtitle: `${caseDetail.value.category} · ${caseDetail.value.summary}`,
+      }
+    : null,
+)
+const topic = computed<Topic | null>(() =>
+  isCaseRoute.value
+    ? caseTopic.value
+    : findTopic(section.value.key, String(route.params.id)),
+)
+
+async function loadCase(id: string) {
+  try {
+    caseDetail.value = await fetchCase(id)
+  } catch {
+    // 错误由 useCaseApi 的 error 展示。
+  }
+}
+
+watch(
+  [() => section.value.key, () => String(route.params.id ?? '')] as const,
+  ([key, id]) => {
+    if (key === 'cases' && id) loadCase(id)
+    else caseDetail.value = null
+  },
+  { immediate: true },
+)
+
 const isAcupuncture = computed(() => section.value.key === 'methods' && topic.value?.id === 'acupuncture')
 const isMoxibustion = computed(() => section.value.key === 'methods' && topic.value?.id === 'moxibustion')
 const isTenQuestions = computed(() => section.value.key === 'methods' && topic.value?.id === 'ten-questions')
@@ -24,8 +61,8 @@ const isClinicalTopic = computed(
   () => isTenQuestions.value || isTreatmentMethods.value || isInspection.value,
 )
 
-const isCase = computed(() => section.value.key === 'cases' && !!topic.value)
-const caseData = computed(() => (topic.value ? casesById.get(topic.value.id) ?? null : null))
+const isCase = computed(() => isCaseRoute.value && !!caseDetail.value)
+const caseData = computed(() => caseDetail.value)
 const statusLabel = computed(() => {
   if (isCase.value) return '讲义医案 · 原文照录'
   if (isAcupuncture.value) return '含针刺操作 · 非专业勿试'
@@ -46,7 +83,19 @@ const statusLabel = computed(() => {
         <span>{{ topic?.title ?? '未找到' }}</span>
       </nav>
 
-      <template v-if="topic">
+      <p v-if="isCaseRoute && caseLoading" class="topic-detail-state paper-panel">正在加载医案…</p>
+      <p
+        v-else-if="isCaseRoute && caseError"
+        class="topic-detail-state paper-panel"
+        role="alert"
+      >
+        {{ caseError }}
+        <button class="btn btn--primary" type="button" @click="loadCase(String(route.params.id))">
+          重新加载
+        </button>
+      </p>
+
+      <template v-else-if="topic">
         <header class="topic-detail-head">
           <div>
             <p class="eyebrow">{{ section.eyebrow }}</p>
@@ -103,6 +152,18 @@ const statusLabel = computed(() => {
 </template>
 
 <style scoped>
+.topic-detail-state {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 18px 0;
+  padding: 14px 16px;
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+}
+
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;

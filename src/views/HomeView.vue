@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 import { RouterLink } from 'vue-router'
 import { useTcmData } from '@/composables/useTcmData'
-import { caseTopics, methodTopics } from '@/data/topics'
+import { methodTopics } from '@/data/topics'
 import { exercises } from '@/data/exercises'
 import FirstAidSection from '@/components/FirstAidSection.vue'
 
@@ -118,7 +118,7 @@ const modules = computed(() => [
             <h3>医案</h3>
             <p>按病类整理医案：风湿、表证、肠胃、肺篇、心胸、腹篇、积饮、消渴、水病、痢、脓疡、孕妇科、男科、精神。</p>
           </div>
-          <span class="extra-card__count">{{ caseTopics.length }} 个栏目 →</span>
+          <span class="extra-card__count">13 个栏目 →</span>
         </RouterLink>
         <RouterLink to="/exercises" class="extra-card extra-card--exercises">
           <div>

@@ -1,20 +1,19 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
-import { useTcmData } from '@/composables/useTcmData'
-import { formatCharCount, loadClassicIndex } from '@/composables/useClassicLibrary'
+import { formatCharCount, loadClassicCatalog } from '@/composables/useClassicLibrary'
 import type { Citation } from '@/types/tcm'
 import type { ClassicLibraryIndex } from '@/types/classics'
 
-const { data } = useTcmData()
-
 const library = ref<ClassicLibraryIndex | null>(null)
+const classicSources = ref<Citation[]>([])
 const libraryError = ref('')
 
 onMounted(() => {
-  loadClassicIndex()
-    .then((index) => {
-      library.value = index
+  loadClassicCatalog()
+    .then((payload) => {
+      library.value = payload.index
+      classicSources.value = payload.works
     })
     .catch((err: unknown) => {
       libraryError.value = err instanceof Error ? err.message : '古籍目录加载失败'
@@ -31,9 +30,7 @@ const libraryStats = computed(() => {
   }
 })
 
-const classics = computed(
-  () => (data.value?.sources ?? []).filter((source) => source.type === 'classic'),
-)
+const classics = computed(() => classicSources.value)
 
 interface ClassicWork {
   key: string
