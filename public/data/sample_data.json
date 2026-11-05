@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "contentVersion": "2026.11.1-prototype",
-  "generatedAt": "2026-11-03T14:19:40.407Z",
+  "generatedAt": "2026-11-05T14:20:34.511Z",
   "title": "岐黄图鉴",
   "disclaimer": "本站为中医知识学习原型，不构成诊疗建议。针刺、艾灸、用药须由执业中医师辨证操作；方剂与药性内容请以原书及现行标准为准。",
   "contentPrinciples": [
@@ -8322,8 +8322,8 @@
         },
         {
           "herbId": "shanghan-herb-1xyec4y",
-          "herbName": "石膏如鸡子大",
-          "dosage": "见原文",
+          "herbName": "石膏",
+          "dosage": "如鸡子大",
           "role": "臣",
           "roleCitationIds": [
             "src-fangjixue"
@@ -20893,8 +20893,8 @@
         },
         {
           "herbId": "jingui-herb-34d5ad",
-          "herbName": "代赭石如弹丸大",
-          "dosage": "一枚，碎，绵裹",
+          "herbName": "代赭石",
+          "dosage": "如弹丸大，一枚，碎，绵裹",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-5569a0"
@@ -21077,7 +21077,7 @@
         {
           "herbId": "shanghan-herb-fw3re",
           "herbName": "栝蒌根",
-          "dosage": "",
+          "dosage": "等分",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-3ae220"
@@ -21094,7 +21094,7 @@
         {
           "herbId": "shanghan-herb-k70t",
           "herbName": "牡蛎",
-          "dosage": "",
+          "dosage": "等分",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-3ae220"
@@ -21849,7 +21849,7 @@
         {
           "herbId": "jingui-herb-162921",
           "herbName": "盐",
-          "dosage": "",
+          "dosage": "等分",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-83ddeb"
@@ -21920,7 +21920,7 @@
         {
           "herbId": "shanghan-herb-rvc9",
           "herbName": "麻黄",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-6b0f62"
@@ -21932,12 +21932,13 @@
             ],
             "kind": "analysis",
             "locator": "中风历节病脉并第五·千金三黄汤"
-          }
+          },
+          "note": "原讲义未标明确用量"
         },
         {
           "herbId": "jingui-herb-8b2c66",
           "herbName": "黄芪",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-6b0f62"
@@ -21949,12 +21950,13 @@
             ],
             "kind": "analysis",
             "locator": "中风历节病脉并第五·千金三黄汤"
-          }
+          },
+          "note": "原讲义未标明确用量"
         },
         {
           "herbId": "huangqin",
           "herbName": "黄芩",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-6b0f62"
@@ -21966,12 +21968,13 @@
             ],
             "kind": "analysis",
             "locator": "中风历节病脉并第五·千金三黄汤"
-          }
+          },
+          "note": "原讲义未标明确用量"
         },
         {
           "herbId": "shanghan-herb-mcnp",
           "herbName": "细辛",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-6b0f62"
@@ -21983,12 +21986,13 @@
             ],
             "kind": "analysis",
             "locator": "中风历节病脉并第五·千金三黄汤"
-          }
+          },
+          "note": "原讲义未标明确用量"
         },
         {
           "herbId": "jingui-herb-820ff1",
           "herbName": "独活",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-6b0f62"
@@ -22000,7 +22004,8 @@
             ],
             "kind": "analysis",
             "locator": "中风历节病脉并第五·千金三黄汤"
-          }
+          },
+          "note": "原讲义未标明确用量"
         }
       ],
       "modifications": [
@@ -22202,12 +22207,13 @@
         },
         {
           "herbId": "jingui-herb-dab7db",
-          "herbName": "干姜两钱或",
+          "herbName": "干姜",
           "dosage": "三钱",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-f7a1dd"
-          ]
+          ],
+          "note": "原文作“干姜两钱或”"
         },
         {
           "herbId": "renshen",
@@ -22331,66 +22337,73 @@
       "composition": [
         {
           "herbId": "jingui-herb-ff0c8a",
-          "herbName": "黄芪5",
-          "dosage": "",
+          "herbName": "黄芪",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-5142de"
-          ]
+          ],
+          "note": "原文作“黄芪5”，未标明确用量"
         },
         {
           "herbId": "jingui-herb-fcc128",
-          "herbName": "当归3",
-          "dosage": "",
+          "herbName": "当归",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-5142de"
-          ]
+          ],
+          "note": "原文作“当归3”，未标明确用量"
         },
         {
           "herbId": "jingui-herb-540926",
-          "herbName": "白芍3",
-          "dosage": "",
+          "herbName": "白芍",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-5142de"
-          ]
+          ],
+          "note": "原文作“白芍3”，未标明确用量"
         },
         {
           "herbId": "jingui-herb-1195c2",
-          "herbName": "川芎2",
-          "dosage": "",
+          "herbName": "川芎",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-5142de"
-          ]
+          ],
+          "note": "原文作“川芎2”，未标明确用量"
         },
         {
           "herbId": "jingui-herb-ddf08c",
-          "herbName": "桃仁2",
-          "dosage": "",
+          "herbName": "桃仁",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-5142de"
-          ]
+          ],
+          "note": "原文作“桃仁2”，未标明确用量"
         },
         {
           "herbId": "jingui-herb-a547dd",
-          "herbName": "红花2",
-          "dosage": "",
+          "herbName": "红花",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-5142de"
-          ]
+          ],
+          "note": "原文作“红花2”，未标明确用量"
         },
         {
           "herbId": "jingui-herb-c291ec",
-          "herbName": "地龙2",
-          "dosage": "",
+          "herbName": "地龙",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-5142de"
-          ]
+          ],
+          "note": "原文作“地龙2”，未标明确用量"
         }
       ],
       "modifications": [],
@@ -23074,7 +23087,7 @@
         {
           "herbId": "jingui-herb-00053f",
           "herbName": "昆布",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-dcec4d"
@@ -23086,12 +23099,13 @@
             ],
             "kind": "analysis",
             "locator": "血痹虚劳病脉并治第六·消肿溃坚汤"
-          }
+          },
+          "note": "原讲义未标明确用量"
         },
         {
           "herbId": "jingui-herb-0459b2",
           "herbName": "海藻",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-dcec4d"
@@ -23103,12 +23117,13 @@
             ],
             "kind": "analysis",
             "locator": "血痹虚劳病脉并治第六·消肿溃坚汤"
-          }
+          },
+          "note": "原讲义未标明确用量"
         },
         {
           "herbId": "shanghan-herb-rkp7",
           "herbName": "黄柏",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-dcec4d"
@@ -23120,12 +23135,13 @@
             ],
             "kind": "analysis",
             "locator": "血痹虚劳病脉并治第六·消肿溃坚汤"
-          }
+          },
+          "note": "原讲义未标明确用量"
         },
         {
           "herbId": "shanghan-herb-kzgo",
           "herbName": "知母",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-dcec4d"
@@ -23137,21 +23153,23 @@
             ],
             "kind": "analysis",
             "locator": "血痹虚劳病脉并治第六·消肿溃坚汤"
-          }
+          },
+          "note": "原讲义未标明确用量"
         },
         {
           "herbId": "shanghan-herb-fw3re",
           "herbName": "栝蒌根",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-dcec4d"
-          ]
+          ],
+          "note": "原讲义未标明确用量"
         },
         {
           "herbId": "shanghan-herb-ibib",
           "herbName": "桔梗",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-dcec4d"
@@ -23163,12 +23181,13 @@
             ],
             "kind": "analysis",
             "locator": "血痹虚劳病脉并治第六·消肿溃坚汤"
-          }
+          },
+          "note": "原讲义未标明确用量"
         },
         {
           "herbId": "jingui-herb-ddcc9d",
           "herbName": "三棱",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-dcec4d"
@@ -23180,12 +23199,13 @@
             ],
             "kind": "analysis",
             "locator": "血痹虚劳病脉并治第六·消肿溃坚汤"
-          }
+          },
+          "note": "原讲义未标明确用量"
         },
         {
           "herbId": "jingui-herb-3a8347",
           "herbName": "莪术",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-dcec4d"
@@ -23197,21 +23217,23 @@
             ],
             "kind": "analysis",
             "locator": "血痹虚劳病脉并治第六·消肿溃坚汤"
-          }
+          },
+          "note": "原讲义未标明确用量"
         },
         {
           "herbId": "shanghan-herb-p67u",
           "herbName": "连翘",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-dcec4d"
-          ]
+          ],
+          "note": "原讲义未标明确用量"
         },
         {
           "herbId": "huangqin",
           "herbName": "黄芩",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-dcec4d"
@@ -23223,12 +23245,13 @@
             ],
             "kind": "analysis",
             "locator": "血痹虚劳病脉并治第六·消肿溃坚汤"
-          }
+          },
+          "note": "原讲义未标明确用量"
         },
         {
           "herbId": "shanghan-herb-rsm2",
           "herbName": "黄连",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-dcec4d"
@@ -23240,21 +23263,23 @@
             ],
             "kind": "analysis",
             "locator": "血痹虚劳病脉并治第六·消肿溃坚汤"
-          }
+          },
+          "note": "原讲义未标明确用量"
         },
         {
           "herbId": "shanghan-herb-n326",
           "herbName": "葛根",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-dcec4d"
-          ]
+          ],
+          "note": "原讲义未标明确用量"
         },
         {
           "herbId": "chaihu",
           "herbName": "柴胡",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-dcec4d"
@@ -23266,30 +23291,33 @@
             ],
             "kind": "analysis",
             "locator": "血痹虚劳病脉并治第六·消肿溃坚汤"
-          }
+          },
+          "note": "原讲义未标明确用量"
         },
         {
           "herbId": "shanghan-herb-gqjj",
           "herbName": "当归",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-dcec4d"
-          ]
+          ],
+          "note": "原讲义未标明确用量"
         },
         {
           "herbId": "jingui-herb-86a291",
           "herbName": "龙胆草",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-dcec4d"
-          ]
+          ],
+          "note": "原讲义未标明确用量"
         },
         {
           "herbId": "gancao",
           "herbName": "甘草",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-dcec4d"
@@ -23301,7 +23329,8 @@
             ],
             "kind": "analysis",
             "locator": "血痹虚劳病脉并治第六·消肿溃坚汤"
-          }
+          },
+          "note": "原讲义未标明确用量"
         }
       ],
       "modifications": [],
@@ -24662,8 +24691,8 @@
         },
         {
           "herbId": "shanghan-herb-1xyec4y",
-          "herbName": "石膏如鸡子大",
-          "dosage": "",
+          "herbName": "石膏",
+          "dosage": "如鸡子大",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-8e99da"
@@ -25403,12 +25432,13 @@
       "composition": [
         {
           "herbId": "jingui-herb-ed69bb",
-          "herbName": "葶苈熬令黄色",
-          "dosage": "",
+          "herbName": "葶苈",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-d3bb4c"
-          ]
+          ],
+          "note": "原文作“葶苈熬令黄色”，未标明确用量"
         },
         {
           "herbId": "dazao",
@@ -27499,8 +27529,8 @@
       "composition": [
         {
           "herbId": "jingui-herb-1fc44c",
-          "herbName": "黄连两钱",
-          "dosage": "",
+          "herbName": "黄连",
+          "dosage": "两钱",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-5e7de1"
@@ -27645,7 +27675,7 @@
         {
           "herbId": "shanghan-herb-i53f",
           "herbName": "枳实",
-          "dosage": "",
+          "dosage": "用量需根据实际病症情况而定",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-5e7de1"
@@ -27657,7 +27687,8 @@
             ],
             "kind": "analysis",
             "locator": "胸痹心痛短气病脉证并治第九·心脏动脉血管问题处方"
-          }
+          },
+          "note": "原讲义未标明确用量"
         }
       ],
       "modifications": [
@@ -28998,8 +29029,8 @@
         },
         {
           "herbId": "jingui-herb-958ad2",
-          "herbName": "甘草如指大",
-          "dosage": "一枚",
+          "herbName": "甘草",
+          "dosage": "如指大，一枚",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-1a9017"
@@ -30925,12 +30956,13 @@
         },
         {
           "herbId": "jingui-herb-b9387a",
-          "herbName": "乱髪烧",
+          "herbName": "乱髪",
           "dosage": "二分",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-8f8f81"
-          ]
+          ],
+          "note": "原文作“乱髪烧”"
         },
         {
           "herbId": "jingui-herb-d49172",
@@ -32131,21 +32163,23 @@
       "composition": [
         {
           "herbId": "jingui-herb-5ba580",
-          "herbName": "硝石熬黄",
-          "dosage": "",
+          "herbName": "硝石",
+          "dosage": "等分",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-8b3a5b"
-          ]
+          ],
+          "note": "原文作“硝石熬黄”"
         },
         {
           "herbId": "jingui-herb-5a832b",
-          "herbName": "矾石烧",
-          "dosage": "",
+          "herbName": "矾石",
+          "dosage": "等分",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-8b3a5b"
-          ]
+          ],
+          "note": "原文作“矾石烧”"
         }
       ],
       "modifications": [],
@@ -32366,8 +32400,8 @@
         },
         {
           "herbId": "jingui-herb-e4195a",
-          "herbName": "乱髪如鸡子大",
-          "dosage": "三枚",
+          "herbName": "乱髪",
+          "dosage": "如鸡子大，三枚",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-fd66d6"
@@ -36822,8 +36856,8 @@
       "composition": [
         {
           "herbId": "jingui-herb-6059fe",
-          "herbName": "枳实烧令黑",
-          "dosage": "",
+          "herbName": "枳实",
+          "dosage": "等分",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-aeb261"
@@ -36831,8 +36865,8 @@
         },
         {
           "herbId": "jingui-herb-93e244",
-          "herbName": "芍药各",
-          "dosage": "",
+          "herbName": "芍药",
+          "dosage": "等分",
           "role": "未标注",
           "roleCitationIds": [
             "src-jingui-aeb261"

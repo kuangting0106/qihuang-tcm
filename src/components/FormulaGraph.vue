@@ -12,12 +12,16 @@ const props = withDefaults(
     showPairs?: boolean
     herbNotes?: Record<string, string>
     herbRoles?: Record<string, FormulaRole>
+    sourceNote?: string
+    unlabeledLabel?: string
   }>(),
   {
     selectedHerbId: null,
     showPairs: true,
     herbNotes: () => ({}),
     herbRoles: () => ({}),
+    sourceNote: '君臣佐使据《方剂学》教材通例归纳，非讲义原文；点击图中药材名，可填写方中作用与角色。',
+    unlabeledLabel: '待补',
   },
 )
 
@@ -146,23 +150,31 @@ function summaryText(text: string, limit = 4) {
 
 function nodeRoleText(node: GraphNode) {
   const detail = summaryText(herbNote(node.herbId) || node.action || '')
-  const role = node.role === '未标注' ? (herbNote(node.herbId) ? '补充' : '待补') : node.role
+  const role =
+    node.role === '未标注'
+      ? herbNote(node.herbId)
+        ? '补充'
+        : props.unlabeledLabel
+      : node.role
   return detail ? `${role} · ${detail}` : role
 }
 
 function nodeActionText(node: GraphNode) {
-  return herbNote(node.herbId) || node.action || '教材未逐味说明，点击节点补充方中作用'
+  if (herbNote(node.herbId) || node.action) return herbNote(node.herbId) || node.action || ''
+  return props.unlabeledLabel === '原书未标'
+    ? '原书未逐味说明，点击节点可补充'
+    : '教材未逐味说明，点击节点补充方中作用'
 }
 
 function nodeNoteSource(node: GraphNode) {
   if (herbNote(node.herbId)) return '访客补充的方中作用'
   if (node.action) return '后世方解，该药材在方中作用思路'
-  return '教材未逐味说明，可点节点补充'
+  return props.unlabeledLabel === '原书未标' ? '原书未逐味说明，可点节点补充' : '教材未逐味说明，可点节点补充'
 }
 
 function nodeRoleBadge(node: GraphNode) {
   if (props.herbRoles?.[node.herbId]) return `${node.role}（补充）`
-  return node.role
+  return node.role === '未标注' ? props.unlabeledLabel : node.role
 }
 
 function isDimmed(node: GraphNode) {
@@ -300,9 +312,14 @@ function resetEditor() {
     <div class="graph-toolbar">
       <div class="graph-legend">
         <span v-for="role in ROLE_ORDER" :key="role" class="graph-legend__item">
-          <i :style="{ background: roleColor(role).strong }"></i>{{ role === '未标注' ? '待补 / 补充' : role }}
+          <i :style="{ background: roleColor(role).strong }"></i>{{ role === '未标注' ? props.unlabeledLabel : role }}
         </span>
-        <span class="graph-legend__item graph-legend__item--dash"><i></i>方解药对</span>
+        <span
+          v-if="(formula.corePairs?.length ?? 0) > 0"
+          class="graph-legend__item graph-legend__item--dash"
+        >
+          <i></i>方解药对
+        </span>
       </div>
       <div class="graph-zoom">
         <button type="button" aria-label="缩小" @click="zoomBy(0.9)">−</button>
@@ -311,9 +328,7 @@ function resetEditor() {
       </div>
     </div>
 
-    <p class="graph-source-note">
-      君臣佐使据《方剂学》教材通例归纳，非讲义原文；点击图中药材名，可填写方中作用与角色。
-    </p>
+    <p class="graph-source-note">{{ props.sourceNote }}</p>
 
     <div ref="graphCanvas" class="graph-canvas">
       <svg
@@ -461,7 +476,9 @@ function resetEditor() {
         <RouterLink v-if="selectedHerb" class="text-link" :to="`/herbs/${selectedHerb.id}`">查看药材 →</RouterLink>
       </p>
       <p v-else class="muted">点击药材名填写方中作用 · 拖动平移 · 滚轮缩放</p>
-      <span class="graph-hint">实线 = 组成；虚线 = 后世方解</span>
+      <span class="graph-hint">
+        {{ (formula.corePairs?.length ?? 0) > 0 ? '实线 = 组成；虚线 = 后世方解' : '实线 = 组成' }}
+      </span>
     </div>
   </div>
 </template>

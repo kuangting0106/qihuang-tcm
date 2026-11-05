@@ -71,6 +71,20 @@ const sourceCitation = computed(() =>
   formula.value ? citationsById.value.get(formula.value.sourceCitationId) ?? null : null,
 )
 const isMijingzi = computed(() => (sourceCitation.value?.work ?? '').includes('米晶子'))
+const preparation = computed(() => formula.value?.preparation ?? null)
+const ingredientText = computed(() => preparation.value?.ingredients?.text?.trim() ?? '')
+const decoctionText = computed(() => preparation.value?.decoction?.text?.trim() ?? '')
+const administrationText = computed(() => preparation.value?.administration?.text?.trim() ?? '')
+const preparationCitationIds = computed(() => {
+  const ids = preparation.value?.ingredients?.citationIds ?? []
+  return ids.length ? ids : (formula.value?.originalText?.citationIds ?? [])
+})
+const hasComposition = computed(() => (formula.value?.composition?.length ?? 0) > 0)
+const graphNote = computed(() =>
+  isMijingzi.value
+    ? '图谱仅展示组成关系，原书未标君臣佐使/药对；不补写后世方解，也不把同方药材两两强行连线。'
+    : '实线为“方剂 → 药材”的组成关系；虚线为教材明确归纳的核心药对，没有依据时不连线。',
+)
 const modificationsNote = computed(() => {
   const note = formula.value?.modificationsNote?.trim()
   if (note) return note
@@ -434,34 +448,16 @@ watch(
         </div>
       </header>
 
-      <section
-        v-if="!formula.preparation && formula.originalText"
-        class="preparation-section original-text-section"
-      >
+      <section class="preparation-section">
         <div class="section-head">
           <div>
-            <p class="eyebrow">ORIGINAL TEXT / 原文</p>
-            <h2>原书条文</h2>
+            <p class="eyebrow">ORIGINAL PREPARATION / 原书方药</p>
+            <h2>药材及用量与煎煮服用</h2>
           </div>
-          <p>据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。</p>
-        </div>
-        <blockquote class="preparation-quote preparation-quote--large">
-          {{ formula.originalText.text }}
-        </blockquote>
-        <CitationBadge
-          :citation-ids="formula.originalText.citationIds"
-          label="原文"
-          compact
-        />
-      </section>
-
-      <section v-if="formula.preparation" class="preparation-section">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">ORIGINAL PREPARATION / 原文煎服</p>
-            <h2>药材选取与煎服方法</h2>
-          </div>
-          <p>药味、用量、炮制与原文煎服法录自原条方后注；现代用法另标，仅作参考。</p>
+          <p v-if="isMijingzi">
+            据原书 OCR 拆分药味、用量与煎服法；未逐字校勘，剂量与炮制以原书影印本为准。
+          </p>
+          <p v-else>药味、用量、炮制与原文煎服法录自原条方后注；现代用法另标，仅作参考。</p>
         </div>
 
         <div class="preparation-grid">
@@ -469,9 +465,9 @@ watch(
             <div class="preparation-card__head">
               <span class="preparation-card__index">01</span>
               <div class="preparation-card__title">
-                <h3>药材选取与炮制</h3>
+                <h3>药材及用量</h3>
                 <p>
-                  {{ prepDoseMode === 'modern' ? '现代剂量参考，不等同实际处方' : '原文药味、用量与炮制标注' }}
+                  {{ prepDoseMode === 'modern' ? '现代剂量参考，不等同实际处方' : '原文药味与用量' }}
                 </p>
               </div>
               <button
@@ -485,7 +481,8 @@ watch(
                 {{ prepDoseMode === 'modern' ? '切换原文用量' : '切换现代用量' }}
               </button>
             </div>
-            <ul class="preparation-herbs">
+
+            <ul v-if="hasComposition" class="preparation-herbs">
               <li v-for="item in formula.composition" :key="item.herbId" class="preparation-herb">
                 <div class="preparation-herb__main">
                   <RouterLink
@@ -506,44 +503,72 @@ watch(
                 </div>
               </li>
             </ul>
-            <p class="preparation-herb-hint">
+            <blockquote v-else-if="ingredientText" class="preparation-quote">
+              {{ ingredientText }}
+            </blockquote>
+            <p v-else class="preparation-empty">原书未列药材及用量。</p>
+
+            <p v-if="hasComposition" class="preparation-herb-hint">
               君臣佐使与单味作用见下方“关系与图谱”；点图谱中的药材，可修改角色或补充本地备注。备注只保存在本机浏览器，不会发布。
             </p>
             <p v-if="formula.modernGramNote" class="preparation-dose-note">{{ formula.modernGramNote }}</p>
-            <CitationBadge :citation-ids="formula.preparation.ingredients.citationIds" label="原文" compact />
+            <CitationBadge
+              v-if="preparationCitationIds.length"
+              :citation-ids="preparationCitationIds"
+              label="原文"
+              compact
+            />
           </article>
 
           <article class="preparation-card preparation-card--decoction">
             <div class="preparation-card__head">
               <span class="preparation-card__index">02</span>
               <div>
-                <h3>煎煮方法</h3>
-                <p>原文水量、火候与取汁</p>
+                <h3>煎煮及服用</h3>
+                <p>原文煎煮、炮制、服法与禁忌</p>
               </div>
             </div>
-            <blockquote class="preparation-quote preparation-quote--large">
-              {{ formula.preparation.decoction.text }}
-            </blockquote>
-            <CitationBadge :citation-ids="formula.preparation.decoction.citationIds" label="原文" compact />
-          </article>
 
-          <article v-if="formula.preparation.administration" class="preparation-card preparation-card--administration">
-            <div class="preparation-card__head">
-              <span class="preparation-card__index">03</span>
-              <div>
-                <h3>服法与调护</h3>
-                <p>原文服法、药后护理与禁忌</p>
-              </div>
+            <div class="preparation-sub">
+              <h4>煎煮 / 炮制</h4>
+              <blockquote v-if="decoctionText" class="preparation-quote preparation-quote--large">
+                {{ decoctionText }}
+              </blockquote>
+              <p v-else class="preparation-empty">原书未列煎煮法。</p>
             </div>
-            <blockquote class="preparation-quote preparation-quote--large">
-              {{ formula.preparation.administration.text }}
-            </blockquote>
-            <CitationBadge :citation-ids="formula.preparation.administration.citationIds" label="原文" compact />
+
+            <div class="preparation-sub">
+              <h4>服用 / 调护</h4>
+              <blockquote v-if="administrationText" class="preparation-quote preparation-quote--large">
+                {{ administrationText }}
+              </blockquote>
+              <p v-else class="preparation-empty">原书未列服法。</p>
+            </div>
+
+            <CitationBadge
+              v-if="preparationCitationIds.length"
+              :citation-ids="preparationCitationIds"
+              label="原文"
+              compact
+            />
           </article>
         </div>
 
+        <details class="preparation-original">
+          <summary>查看原书条文</summary>
+          <blockquote class="preparation-quote preparation-quote--large">
+            {{ formula.originalText.text }}
+          </blockquote>
+          <CitationBadge :citation-ids="formula.originalText.citationIds" label="原文" compact />
+        </details>
+
         <p class="preparation-note">
-          以上为原书煎煮、服法与调护原文；方药剂量与操作以原书影印本为准，不构成临床用药建议。
+          <template v-if="isMijingzi">
+            以上为据原书 OCR 拆分的药材与煎服法；未逐字校勘，方药、剂量与操作以原书影印本为准，不构成临床用药建议。
+          </template>
+          <template v-else>
+            以上为原书煎煮、服法与调护原文；方药剂量与操作以原书影印本为准，不构成临床用药建议。
+          </template>
         </p>
       </section>
 
@@ -705,7 +730,7 @@ watch(
               <h2>关系与图谱</h2>
             </div>
             <div class="graph-section__tools">
-              <label class="switch">
+              <label v-if="(formula.corePairs?.length ?? 0) > 0" class="switch">
                 <input v-model="showPairs" type="checkbox" />
                 <span>显示方解药对</span>
               </label>
@@ -724,16 +749,23 @@ watch(
               :show-pairs="showPairs"
               :herb-notes="currentHerbNotes"
               :herb-roles="currentHerbRoles"
+              :source-note="graphNote"
+              :unlabeled-label="isMijingzi ? '原书未标' : '待补'"
               @select="selectHerb"
               @update-role="setHerbRole"
               @update-note="setHerbNote"
               @reset="resetHerb"
             />
             <p class="graph-caption">
-              实线为“方剂 → 药材”的组成关系；虚线为教材归纳的核心药对。节点显示君臣佐使与作用摘要，
-              悬停看完整说明；点药材可修改角色或补充方中作用。保存后只存在本机浏览器，
-              可以随时回来继续修改，暂不公开。
-              君臣佐使据《方剂学》教材通例归纳，不是讲义原文。
+              {{ graphNote }}
+              <template v-if="isMijingzi">
+                点药材可查看原文药名与用量；备注只保存在本机浏览器。
+              </template>
+              <template v-else>
+                节点显示君臣佐使与作用摘要，悬停看完整说明；点药材可修改角色或补充方中作用。
+                保存后只存在本机浏览器，可以随时回来继续修改，暂不公开。
+                君臣佐使据《方剂学》教材通例归纳，不是讲义原文。
+              </template>
             </p>
             <p v-if="saveHint" class="graph-publish-hint">{{ saveHint }}</p>
           </div>
@@ -900,7 +932,7 @@ watch(
 
 .preparation-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr) minmax(0, 0.95fr);
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
   gap: 12px;
   align-items: start;
 }
@@ -925,6 +957,53 @@ watch(
 
 .preparation-card--administration {
   border-top: 3px solid var(--jade);
+}
+
+.preparation-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.preparation-sub + .preparation-sub {
+  padding-top: 8px;
+  border-top: 1px dashed var(--line);
+}
+
+.preparation-sub h4 {
+  color: var(--ink-soft);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.preparation-empty {
+  margin: 0;
+  padding: 9px 11px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 8px;
+  background: rgba(235, 226, 210, 0.24);
+  color: var(--ink-faint);
+  font-size: 0.72rem;
+  line-height: 1.7;
+}
+
+.preparation-original {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  background: rgba(255, 252, 245, 0.4);
+}
+
+.preparation-original summary {
+  color: var(--ink-faint);
+  cursor: pointer;
+  font-size: 0.72rem;
+}
+
+.preparation-original[open] summary {
+  margin-bottom: 8px;
 }
 
 .preparation-card__head {

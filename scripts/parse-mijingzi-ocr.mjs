@@ -10,6 +10,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { parseMijingziFormula } from './mijingzi-formula-parser.mjs'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const input = process.argv[2] ?? 'C:/Users/16922/AppData/Local/Temp/mijingzi-ocr.jsonl'
@@ -94,6 +95,7 @@ let current = null
 let variant = 0
 const conditionCounts = new Map()
 let serial = 0
+let dropped = 0
 
 const CN_NUM = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九']
 
@@ -128,18 +130,7 @@ function finish() {
   const name = n === 1 ? `${nameBase}方` : `${nameBase}方${cnNum(n)}`
   const sectionName = record.section || section || ''
   const isClassicSection = sectionName === '经典效方'
-
-  sources.push({
-    id: sourceId,
-    type: 'textbook',
-    work: '米晶子济世良方',
-    locator: `${locator}${pageText}`,
-    edition: '深圳报业集团出版社，2013年11月第1版',
-    isbn: '978-7-80709-545-3',
-    note: '据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。',
-  })
-
-  formulas.push({
+  const formula = {
     id: `mijingzi-${String(serial).padStart(4, '0')}`,
     name,
     pinyin: '',
@@ -161,12 +152,34 @@ function finish() {
       : [{ text: nameBase, kind: 'paraphrase', citationIds: [sourceId], locator }],
     originalAnnotations: [],
     composition: [],
+    preparation: null,
     modifications: [],
     modificationsNote: '',
     symptomTags: isClassicSection ? [] : [nameBase],
     sourceSection: sectionName,
     sourcePage: record.page ?? null,
+  }
+
+  // 从 OCR 原文拆出药材、用量与煎服法；无可识别药材的条目不进入最终数据。
+  const parsed = parseMijingziFormula(formula)
+  if (parsed.dropped) {
+    dropped += 1
+    return
+  }
+  formula.composition = parsed.composition
+  formula.preparation = parsed.preparation
+
+  sources.push({
+    id: sourceId,
+    type: 'textbook',
+    work: '米晶子济世良方',
+    locator: `${locator}${pageText}`,
+    edition: '深圳报业集团出版社，2013年11月第1版',
+    isbn: '978-7-80709-545-3',
+    note: '据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。',
   })
+
+  formulas.push(formula)
 }
 
 function startFormula(marker, rest, page) {
@@ -267,8 +280,10 @@ const result = {
   },
   stats: {
     pages: raw.length,
+    originalFormulas: formulas.length + dropped,
     formulas: formulas.length,
     sources: sources.length,
+    dropped,
   },
   sources,
   formulas,
@@ -277,5 +292,5 @@ const result = {
 fs.mkdirSync(path.dirname(output), { recursive: true })
 fs.writeFileSync(output, JSON.stringify(result, null, 2))
 console.log(
-  `已生成 ${path.relative(root, output)}：${formulas.length} 首方，${sources.length} 条出处，读取 ${raw.length} 页`,
+  `已生成 ${path.relative(root, output)}：${formulas.length} 首方（另删除 ${dropped} 条无药材/仅方名条目），${sources.length} 条出处，读取 ${raw.length} 页`,
 )

@@ -273,6 +273,33 @@ try {
     )
     counts.formulas += 1
     counts.mijingziFormulas += 1
+
+    ;(formula.composition ?? []).forEach((item, index) => {
+      insertComposition.run(
+        formula.id,
+        index,
+        item.herbId ?? '',
+        item.herbName ?? null,
+        item.dosage ?? '',
+        item.role ?? '',
+        JSON.stringify(item),
+      )
+      counts.composition += 1
+    })
+
+    const preparation = formula.preparation ?? {}
+    for (const field of ['ingredients', 'decoction', 'administration']) {
+      const claim = preparation[field]
+      if (!claim || typeof claim !== 'object') continue
+      insertPreparation.run(
+        formula.id,
+        field,
+        claim.text ?? '',
+        claim.locator ?? '',
+        JSON.stringify(claim.citationIds ?? []),
+        JSON.stringify(claim),
+      )
+    }
   }
 
   bencaoGroups.forEach((group, groupIndex) => {
