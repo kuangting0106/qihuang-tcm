@@ -26,7 +26,7 @@ services:
         max-file: "3"
 
   api:
-    image: node:22-alpine
+    image: node:24-alpine
     container_name: qihuang-tcm-api
     restart: unless-stopped
     working_dir: /app
@@ -34,6 +34,7 @@ services:
     environment:
       QIHUANG_API_PORT: "8787"
       QIHUANG_DATA_FILE: "/data/notes.json"
+      QIHUANG_DB_FILE: "/data/qihuang.db"
       QIHUANG_EDIT_KEY: "${QIHUANG_EDIT_KEY:-change-me}"
     volumes:
       - ./server:/app:ro

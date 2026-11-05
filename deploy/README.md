@@ -50,11 +50,14 @@ ssh xf "cd /opt/qihuang-tcm && ./deploy.sh"
 powershell -ExecutionPolicy Bypass -File deploy/publish.ps1
 ```
 
-`publish.ps1` 会先构建，再上传 `dist/`、`server/`、`compose.yaml`、`Caddyfile`，最后在服务器上重启容器。
+`publish.ps1` 会先构建，再上传 `dist/`、`server/`、`compose.yaml`、`Caddyfile` 和只读数据库 `data/qihuang.db`，最后在服务器上重启容器。
 
-## 公开标注 API
+## 公开标注与只读数据 API
 
-方剂页的“方中作用”和原文划线注解可以通过 API 发布给所有访客。服务是零依赖 Node 程序 `server/notes-server.mjs`，由 Caddy 反代 `/api/*`，数据写在服务器 `/opt/qihuang-tcm/data/notes.json`。
+方剂页的“方中作用”和原文划线注解可以通过 API 发布给所有访客；方剂列表、方剂详情、药材与本草讲义通过只读 SQLite 按需读取，不再在首屏下载整份 `sample_data.json`。服务是零依赖 Node 程序 `server/notes-server.mjs`，由 Caddy 反代 `/api/*`：
+
+- 公开标注写在服务器 `/opt/qihuang-tcm/data/notes.json`。
+- 只读内容来自 `/opt/qihuang-tcm/data/qihuang.db`，由 `npm run build:db` 在本地生成后随发布上传，容器内只读打开。
 
 首次部署时在服务器创建编辑口令：
 
@@ -104,8 +107,8 @@ curl.exe -I http://182.255.94.89:8081/
 
 ## 注意
 
-- 静态站点由 Caddy 提供；公开标注 API 是独立的 `node:22-alpine` 容器。
+- 静态站点由 Caddy 提供；公开标注与只读数据 API 是独立的 `node:24-alpine` 容器（使用内置 `node:sqlite`，无额外依赖）。
 - `site/` 只放构建产物，不放源码。
-- `data/` 只存运行时公开标注，不提交 Git；备份时复制 `/opt/qihuang-tcm/data/notes.json`。
+- `data/` 只存运行时公开标注与只读数据库，不提交 Git；备份时复制 `/opt/qihuang-tcm/data/notes.json`。
 - 不要把 root 密码写进部署文件；现有 `deploy` 用户已可用 SSH key 登录。
 - 8081 是临时预览端口；正式域名确定后应改为 80/443 的域名访问，并关闭不必要的公网端口。

@@ -1,22 +1,22 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
-import { formatCharCount, loadBencaoIndex } from '@/composables/useBencaoLectures'
-import type { BencaoLectureIndex } from '@/types/bencao'
+import { formatCharCount } from '@/composables/useBencaoLectures'
+import { useBencaoApi } from '@/composables/useBencaoApi'
+import type { BencaoIndexPayload } from '@/composables/useBencaoApi'
 
-const index = ref<BencaoLectureIndex | null>(null)
-const loading = ref(true)
-const error = ref('')
+const { loading, error, fetchBencaoIndex } = useBencaoApi()
+const index = ref<BencaoIndexPayload | null>(null)
 
-onMounted(async () => {
+async function load() {
   try {
-    index.value = await loadBencaoIndex()
-  } catch (err: unknown) {
-    error.value = err instanceof Error ? err.message : '讲义目录加载失败'
-  } finally {
-    loading.value = false
+    index.value = await fetchBencaoIndex()
+  } catch {
+    index.value = null
   }
-})
+}
+
+onMounted(load)
 
 const mainGroups = computed(() =>
   (index.value?.groups ?? []).filter((item) => ['shangjing', 'zhongjing', 'xiajing'].includes(item.id)),
@@ -65,7 +65,8 @@ const totalChars = computed(() =>
       <div v-else-if="error" class="library-state paper-panel">
         <h2>讲义没有打开</h2>
         <p>{{ error }}</p>
-        <RouterLink class="btn btn--primary" to="/herbs">返回本草</RouterLink>
+        <button class="btn btn--primary" type="button" @click="load">重试</button>
+        <RouterLink class="btn btn--ghost btn--small" to="/herbs">返回本草</RouterLink>
       </div>
 
       <template v-else-if="index">

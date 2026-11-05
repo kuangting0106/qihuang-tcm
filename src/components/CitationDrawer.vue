@@ -2,6 +2,7 @@
 import { computed, nextTick, onBeforeUnmount, ref, watch } from 'vue'
 import { useCitationDrawer, closeCitations } from '@/composables/useCitationDrawer'
 import { useTcmData } from '@/composables/useTcmData'
+import { fetchSources } from '@/composables/useSourceApi'
 import type { Citation } from '@/types/tcm'
 
 const state = useCitationDrawer()
@@ -28,6 +29,8 @@ watch(
   async (open) => {
     document.body.style.overflow = open ? 'hidden' : ''
     if (open) {
+      const missing = state.ids.filter((id) => !citationsById.value.get(id)?.quote)
+      if (missing.length) void fetchSources(missing).catch(() => {})
       window.addEventListener('keydown', onKeydown)
       await nextTick()
       closeButton.value?.focus()

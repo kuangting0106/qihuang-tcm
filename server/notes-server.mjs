@@ -1,10 +1,14 @@
 import { createServer } from 'node:http'
+import { createHash } from 'node:crypto'
+import { createRequire } from 'node:module'
 import { mkdir, readFile, rename, writeFile, readdir, unlink, stat } from 'node:fs/promises'
 import path from 'node:path'
 
 const PORT = Number(process.env.QIHUANG_API_PORT ?? 8787)
 const DATA_FILE =
   process.env.QIHUANG_DATA_FILE ?? path.join(process.cwd(), 'data', 'notes.json')
+const DB_FILE =
+  process.env.QIHUANG_DB_FILE ?? path.join(process.cwd(), 'data', 'qihuang.db')
 const EDIT_KEY = process.env.QIHUANG_EDIT_KEY ?? 'dev-key'
 const MAX_BODY = 256 * 1024
 const BACKUP_DIR = path.join(path.dirname(DATA_FILE), 'backups')
@@ -19,6 +23,26 @@ const EMPTY = () => ({
 })
 
 let cache = null
+
+let sqliteModule = null
+let dbHandle = null
+
+/**
+ * 按需打开只读 SQLite。打开失败时只让数据接口返回 503，不影响 notes 写接口。
+ */
+function getDb() {
+  if (dbHandle) return dbHandle
+  try {
+    if (!sqliteModule) {
+      const require = createRequire(import.meta.url)
+      sqliteModule = require('node:sqlite')
+    }
+    dbHandle = new sqliteModule.DatabaseSync(DB_FILE, { readOnly: true })
+    return dbHandle
+  } catch {
+    return null
+  }
+}
 
 async function readStore() {
   if (cache) return cache
@@ -64,16 +88,102 @@ async function writeStore(next) {
   cache = next
 }
 
+const JSON_HEADERS = {
+  'Content-Type': 'application/json; charset=utf-8',
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': 'content-type, x-qihuang-key',
+  'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+}
+
 function send(res, status, body) {
+  res.writeHead(status, { ...JSON_HEADERS, 'Cache-Control': 'no-store' })
+  res.end(JSON.stringify(body))
+}
+
+/**
+ * 只读数据接口：短缓存 + ETag。命中 If-None-Match 时返回 304。
+ */
+function sendCached(req, res, status, body) {
   const payload = JSON.stringify(body)
+  const etag = `"${createHash('sha1').update(payload).digest('base64url')}"`
+  if (req.headers['if-none-match'] === etag) {
+    res.writeHead(304, {
+      ...JSON_HEADERS,
+      ETag: etag,
+      'Cache-Control': 'public, max-age=60',
+    })
+    res.end()
+    return
+  }
   res.writeHead(status, {
-    'Content-Type': 'application/json; charset=utf-8',
-    'Cache-Control': 'no-store',
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Headers': 'content-type, x-qihuang-key',
-    'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+    ...JSON_HEADERS,
+    'Cache-Control': 'public, max-age=60',
+    ETag: etag,
   })
   res.end(payload)
+}
+
+function sendDbUnavailable(res) {
+  send(res, 503, { error: 'db-unavailable' })
+}
+
+function jsonParse(value, fallback = null) {
+  try {
+    return JSON.parse(value)
+  } catch {
+    return fallback
+  }
+}
+
+function decodeParam(value) {
+  try {
+    return decodeURIComponent(value)
+  } catch {
+    return value
+  }
+}
+
+function flatPinyin(value) {
+  return String(value ?? '')
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .toLowerCase()
+    .replace(/\s+/g, '')
+}
+
+function compactCitation(source) {
+  if (!source) return null
+  return {
+    id: source.id,
+    type: source.type,
+    work: source.work,
+    ...(source.parentWork ? { parentWork: source.parentWork } : {}),
+    ...(source.author ? { author: source.author } : {}),
+    locator: source.locator,
+  }
+}
+
+function collectCitationIds(formula) {
+  const ids = new Set()
+  if (formula?.sourceCitationId) ids.add(formula.sourceCitationId)
+  const walk = (node) => {
+    if (!node || typeof node !== 'object') return
+    if (Array.isArray(node)) {
+      node.forEach(walk)
+      return
+    }
+    for (const [key, value] of Object.entries(node)) {
+      if (key.endsWith('citationIds') && Array.isArray(value)) {
+        value.forEach((id) => {
+          if (typeof id === 'string' && id) ids.add(id)
+        })
+      } else {
+        walk(value)
+      }
+    }
+  }
+  walk(formula)
+  return [...ids]
 }
 
 function readBody(req) {
@@ -196,6 +306,372 @@ const server = createServer(async (req, res) => {
     return
   }
 
+  // ---- 只读数据接口（SQLite） ----
+  if (url.pathname === '/api/sources' && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      const ids = [
+        ...new Set(
+          (url.searchParams.get('ids') ?? '')
+            .split(',')
+            .map((id) => id.trim())
+            .filter(Boolean)
+            .slice(0, 100),
+        ),
+      ]
+      if (!ids.length) {
+        sendCached(req, res, 200, [])
+        return
+      }
+      const placeholders = ids.map(() => '?').join(',')
+      const rows = db
+        .prepare(`SELECT id, data_json FROM sources WHERE id IN (${placeholders})`)
+        .all(...ids)
+      const byId = new Map(rows.map((row) => [row.id, jsonParse(row.data_json)]))
+      sendCached(
+        req,
+        res,
+        200,
+        ids.map((id) => byId.get(id)).filter(Boolean),
+      )
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  if (url.pathname === '/api/formulas' && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      const q = (url.searchParams.get('q') ?? '').trim()
+      const like = `%${q}%`
+      const pinyinLike = `%${flatPinyin(q)}%`
+      const formulaRows = q
+        ? db
+            .prepare(
+              `SELECT id, name, pinyin, source_id, effects_text, symptom_tags_json
+               FROM formulas
+               WHERE name LIKE ?
+                  OR pinyin LIKE ?
+                  OR pinyin_flat LIKE ?
+                  OR effects_text LIKE ?
+                  OR EXISTS (
+                    SELECT 1 FROM formula_composition c
+                    WHERE c.formula_id = formulas.id
+                      AND (c.herb_name LIKE ? OR c.herb_id LIKE ?)
+                  )
+               ORDER BY rowid`,
+            )
+            .all(like, like, pinyinLike, like, like, like)
+        : db
+            .prepare(
+              `SELECT id, name, pinyin, source_id, effects_text, symptom_tags_json
+               FROM formulas ORDER BY rowid`,
+            )
+            .all()
+
+      const compositionByFormula = new Map()
+      if (formulaRows.length) {
+        const placeholders = formulaRows.map(() => '?').join(',')
+        const compositionRows = db
+          .prepare(
+            `SELECT c.formula_id, c.herb_id,
+                    COALESCE(c.herb_name, h.name, c.herb_id) AS herb_name,
+                    c.role
+             FROM formula_composition c
+             LEFT JOIN herbs h ON h.id = c.herb_id
+             WHERE c.formula_id IN (${placeholders})
+             ORDER BY c.formula_id, c.sort_order`,
+          )
+          .all(...formulaRows.map((row) => row.id))
+        for (const item of compositionRows) {
+          const list = compositionByFormula.get(item.formula_id) ?? []
+          list.push({
+            herbId: item.herb_id,
+            herbName: item.herb_name,
+            role: item.role ?? '未标注',
+          })
+          compositionByFormula.set(item.formula_id, list)
+        }
+      }
+
+      const sourceIds = [...new Set(formulaRows.map((row) => row.source_id).filter(Boolean))]
+      const sourceById = new Map()
+      if (sourceIds.length) {
+        const placeholders = sourceIds.map(() => '?').join(',')
+        const sourceRows = db
+          .prepare(`SELECT id, data_json FROM sources WHERE id IN (${placeholders})`)
+          .all(...sourceIds)
+        for (const row of sourceRows) sourceById.set(row.id, compactCitation(jsonParse(row.data_json)))
+      }
+
+      const formulas = formulaRows.map((row) => {
+        const composition = compositionByFormula.get(row.id) ?? []
+        return {
+          id: row.id,
+          name: row.name,
+          pinyin: row.pinyin,
+          sourceCitationId: row.source_id,
+          effectsText: row.effects_text,
+          composition,
+          herbCount: composition.length,
+          symptomTags: jsonParse(row.symptom_tags_json, []),
+          sourceCitation: sourceById.get(row.source_id) ?? null,
+        }
+      })
+      sendCached(req, res, 200, formulas)
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  const formulaMatch = url.pathname.match(/^\/api\/formulas\/([^/]+)$/)
+  if (formulaMatch && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      const id = decodeParam(formulaMatch[1])
+      const row = db.prepare('SELECT data_json FROM formulas WHERE id = ?').get(id)
+      if (!row) {
+        send(res, 404, { error: 'not-found' })
+        return
+      }
+      const formula = jsonParse(row.data_json)
+      const citationIds = collectCitationIds(formula)
+      const citations = []
+      if (citationIds.length) {
+        const placeholders = citationIds.map(() => '?').join(',')
+        const sourceRows = db
+          .prepare(`SELECT id, data_json FROM sources WHERE id IN (${placeholders})`)
+          .all(...citationIds)
+        const byId = new Map(sourceRows.map((item) => [item.id, jsonParse(item.data_json)]))
+        for (const citationId of citationIds) {
+          const citation = byId.get(citationId)
+          if (citation) citations.push(citation)
+        }
+      }
+
+      const herbIds = [
+        ...new Set((formula.composition ?? []).map((item) => item.herbId).filter(Boolean)),
+      ]
+      const herbs = {}
+      if (herbIds.length) {
+        const placeholders = herbIds.map(() => '?').join(',')
+        const herbRows = db
+          .prepare(`SELECT id, data_json FROM herbs WHERE id IN (${placeholders})`)
+          .all(...herbIds)
+        for (const item of herbRows) herbs[item.id] = jsonParse(item.data_json)
+      }
+
+      sendCached(req, res, 200, { ...formula, citations, herbs })
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  if (url.pathname === '/api/herbs' && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      const q = (url.searchParams.get('q') ?? '').trim().toLowerCase()
+      const rows = db
+        .prepare(
+          `SELECT id, name, pinyin, classic_rank_id, effects_text, data_json
+           FROM herbs ORDER BY rowid`,
+        )
+        .all()
+      const herbs = rows
+        .map((row) => {
+          const herb = jsonParse(row.data_json)
+          return {
+            id: row.id,
+            name: row.name,
+            pinyin: row.pinyin,
+            aliases: herb.aliases ?? [],
+            flavorTags: herb.flavorTags ?? [],
+            meridianIds: herb.meridianIds ?? [],
+            classicRankId: row.classic_rank_id,
+            therapyCategoryIds: herb.therapyCategoryIds ?? [],
+            effectsText: row.effects_text,
+            image: herb.images?.[0] ?? null,
+          }
+        })
+        .filter((herb) => {
+          if (!q) return true
+          const haystack = [
+            herb.name,
+            herb.pinyin,
+            herb.id,
+            herb.effectsText,
+            ...herb.aliases,
+          ]
+            .join(' ')
+            .toLowerCase()
+          return haystack.includes(q) || flatPinyin(herb.pinyin).includes(flatPinyin(q))
+        })
+      sendCached(req, res, 200, herbs)
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  const herbMatch = url.pathname.match(/^\/api\/herbs\/([^/]+)$/)
+  if (herbMatch && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      const id = decodeParam(herbMatch[1])
+      const row = db.prepare('SELECT data_json FROM herbs WHERE id = ?').get(id)
+      if (!row) {
+        send(res, 404, { error: 'not-found' })
+        return
+      }
+      const herb = jsonParse(row.data_json)
+      const taxonomyRow = db
+        .prepare("SELECT value_json FROM app_meta WHERE key = 'herb_taxonomy'")
+        .get()
+      sendCached(req, res, 200, {
+        ...herb,
+        taxonomy: taxonomyRow ? jsonParse(taxonomyRow.value_json) : null,
+      })
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  if (url.pathname === '/api/bencao' && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      const indexRow = db
+        .prepare("SELECT value_json FROM app_meta WHERE key = 'bencao_index'")
+        .get()
+      const taxonomyRow = db
+        .prepare("SELECT value_json FROM app_meta WHERE key = 'herb_taxonomy'")
+        .get()
+      const index = indexRow ? jsonParse(indexRow.value_json, {}) : {}
+      const groups = db
+        .prepare(
+          `SELECT id, title, subtitle, description, entry_count, char_count, data_json
+           FROM bencao_groups ORDER BY sort_order`,
+        )
+        .all()
+        .map((row) => ({
+          id: row.id,
+          title: row.title,
+          subtitle: row.subtitle,
+          description: row.description,
+          count: row.entry_count,
+          charCount: row.char_count,
+        }))
+      sendCached(req, res, 200, {
+        ...index,
+        groups,
+        taxonomy: taxonomyRow ? jsonParse(taxonomyRow.value_json) : null,
+      })
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  const bencaoEntryMatch = url.pathname.match(/^\/api\/bencao\/entry\/([^/]+)$/)
+  if (bencaoEntryMatch && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      const id = decodeParam(bencaoEntryMatch[1])
+      const row = db.prepare('SELECT data_json FROM bencao_entries WHERE id = ?').get(id)
+      if (!row) {
+        send(res, 404, { error: 'not-found' })
+        return
+      }
+      sendCached(req, res, 200, jsonParse(row.data_json))
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  const bencaoGroupMatch = url.pathname.match(/^\/api\/bencao\/([^/]+)$/)
+  if (bencaoGroupMatch && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      const id = decodeParam(bencaoGroupMatch[1])
+      const group = db
+        .prepare(
+          `SELECT id, title, subtitle, description, entry_count, char_count
+           FROM bencao_groups WHERE id = ?`,
+        )
+        .get(id)
+      if (!group) {
+        send(res, 404, { error: 'not-found' })
+        return
+      }
+      const entries = db
+        .prepare(
+          `SELECT id, group_id, number, title, subtitle, pinyin, summary, note,
+                  aliases_json, char_count, section_count
+           FROM bencao_entries WHERE group_id = ? ORDER BY sort_order`,
+        )
+        .all(id)
+        .map((row) => ({
+          id: row.id,
+          groupId: row.group_id,
+          number: row.number,
+          title: row.title,
+          subtitle: row.subtitle,
+          pinyin: row.pinyin,
+          summary: row.summary,
+          note: row.note,
+          alsoKnownAs: jsonParse(row.aliases_json, []),
+          charCount: row.char_count,
+          sectionCount: row.section_count,
+        }))
+      sendCached(req, res, 200, {
+        id: group.id,
+        title: group.title,
+        subtitle: group.subtitle,
+        description: group.description,
+        entries,
+      })
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
   if (url.pathname === '/api/notes/backups' && req.method === 'GET') {
     try {
       const entries = await readdir(BACKUP_DIR).catch(() => [])
@@ -299,4 +775,5 @@ const server = createServer(async (req, res) => {
 server.listen(PORT, '0.0.0.0', () => {
   console.log(`notes api listening on http://0.0.0.0:${PORT}`)
   console.log(`data file: ${DATA_FILE}`)
+  console.log(`db file: ${DB_FILE}`)
 })

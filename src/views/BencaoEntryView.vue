@@ -1,16 +1,17 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import { RouterLink, useRoute, useRouter } from 'vue-router'
-import { findBencaoEntry, formatCharCount, loadBencaoGroup, loadBencaoIndex } from '@/composables/useBencaoLectures'
-import { useTcmData } from '@/composables/useTcmData'
-import type { BencaoEntry, BencaoGroup, BencaoLectureIndex, BencaoSection } from '@/types/bencao'
+import { formatCharCount } from '@/composables/useBencaoLectures'
+import { useBencaoApi } from '@/composables/useBencaoApi'
+import type { BencaoGroupPayload, BencaoIndexPayload } from '@/composables/useBencaoApi'
+import type { BencaoEntry, BencaoSection } from '@/types/bencao'
 
 const route = useRoute()
 const router = useRouter()
-const { data } = useTcmData()
+const { fetchBencaoIndex, fetchBencaoGroup, fetchBencaoEntry } = useBencaoApi()
 
-const index = ref<BencaoLectureIndex | null>(null)
-const group = ref<BencaoGroup | null>(null)
+const index = ref<BencaoIndexPayload | null>(null)
+const group = ref<BencaoGroupPayload | null>(null)
 const entry = ref<BencaoEntry | null>(null)
 const position = ref(-1)
 const loading = ref(true)
@@ -28,12 +29,16 @@ async function load(gid: string, eid: string) {
   loading.value = true
   error.value = ''
   entry.value = null
+  position.value = -1
   try {
-    const [library, payload] = await Promise.all([loadBencaoIndex(), loadBencaoGroup(gid)])
+    const [library, payload] = await Promise.all([
+      fetchBencaoIndex(),
+      fetchBencaoGroup(gid),
+    ])
     index.value = library
     group.value = payload
-    const found = findBencaoEntry(payload, eid)
-    if (!found) {
+    const foundIndex = payload.entries.findIndex((item) => item.id === eid)
+    if (foundIndex < 0) {
       const redirect = library.entryRedirects?.[`${gid}:${eid}`]
       if (redirect) {
         await router.replace(`/bencao/${redirect.groupId}/${redirect.entryId}`)
@@ -41,8 +46,8 @@ async function load(gid: string, eid: string) {
       }
       throw new Error('没有找到这条讲义')
     }
-    entry.value = found.entry
-    position.value = found.index
+    entry.value = await fetchBencaoEntry(eid)
+    position.value = foundIndex
   } catch (err: unknown) {
     error.value = err instanceof Error ? err.message : '讲义加载失败'
   } finally {
@@ -79,11 +84,13 @@ const rankId = computed(() => {
 })
 
 const rankTitle = computed(
-  () => data.value?.herbTaxonomy.ranks.find((rank) => rank.id === rankId.value)?.title ?? groupTitle.value,
+  () =>
+    index.value?.taxonomy?.ranks.find((rank) => rank.id === rankId.value)?.title ??
+    groupTitle.value,
 )
 
 const therapyCategories = computed(() => {
-  const taxonomy = data.value?.herbTaxonomy
+  const taxonomy = index.value?.taxonomy
   if (!taxonomy) return []
   const ids = entry.value?.profile?.therapyCategoryIds ?? []
   return taxonomy.categories.filter((category) => ids.includes(category.id))
@@ -165,7 +172,8 @@ const studySections = computed(() =>
       <div v-else-if="error" class="entry-state paper-panel">
         <h1>药材没有找到</h1>
         <p>{{ error }}</p>
-        <RouterLink class="btn btn--primary" :to="`/bencao/${groupId}`">返回本组目录</RouterLink>
+        <button class="btn btn--primary" type="button" @click="load(groupId, entryId)">重试</button>
+        <RouterLink class="btn btn--ghost btn--small" :to="`/bencao/${groupId}`">返回本组目录</RouterLink>
       </div>
 
       <template v-else-if="entry">

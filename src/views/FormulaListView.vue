@@ -1,19 +1,46 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import FormulaCard from '@/components/FormulaCard.vue'
-import { useTcmData } from '@/composables/useTcmData'
+import { useFormulaApi } from '@/composables/useFormulaApi'
+import type { FormulaSummary } from '@/composables/useFormulaApi'
 
-const { data, herbName } = useTcmData()
+const { loading, error, fetchFormulaList } = useFormulaApi()
+const formulas = ref<FormulaSummary[]>([])
 const query = ref('')
 
-const formulas = computed(() => data.value?.formulas ?? [])
+function normalize(value: string) {
+  return value
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .toLowerCase()
+}
+
+async function load() {
+  try {
+    formulas.value = await fetchFormulaList()
+  } catch {
+    formulas.value = []
+  }
+}
+
+onMounted(load)
+
+const totalComposition = computed(() =>
+  formulas.value.reduce((n, f) => n + f.composition.length, 0),
+)
 
 const filtered = computed(() => {
-  const q = query.value.trim().toLowerCase()
+  const q = normalize(query.value.trim())
   if (!q) return formulas.value
   return formulas.value.filter((f) => {
-    const herbNames = f.composition.map((c) => c.herbName ?? herbName(c.herbId))
-    const haystack = [f.name, f.pinyin, f.effects.text, ...herbNames].join(' ').toLowerCase()
+    const haystack = normalize(
+      [
+        f.name,
+        f.pinyin,
+        f.effectsText,
+        ...f.composition.map((c) => c.herbName ?? c.herbId),
+      ].join(' '),
+    )
     return haystack.includes(q)
   })
 })
@@ -34,33 +61,42 @@ const filtered = computed(() => {
         <div class="page-hero__stat">
           <span>{{ formulas.length }}</span>
           <small>首方剂</small>
-          <span>{{ formulas.reduce((n, f) => n + f.composition.length, 0) }}</span>
+          <span>{{ totalComposition }}</span>
           <small>条组成记录</small>
         </div>
       </header>
 
-      <section class="filter-bar paper-panel" aria-label="方剂搜索">
-        <label class="search-field">
-          <span class="search-field__icon" aria-hidden="true">⌕</span>
-          <input v-model="query" type="search" placeholder="搜索方名、药材…" />
-        </label>
-        <p class="filter-hint">伤寒论方与后世方解分栏呈现；未收录药材只显示方中名称，不跳转药材页。</p>
-      </section>
-
-      <div class="result-line">
-        <p>共 <strong>{{ filtered.length }}</strong> 首</p>
-        <RouterLink class="text-link tiny" to="/lab/formula-scale">查看 21 味以上布局演示 →</RouterLink>
+      <p v-if="loading && !formulas.length" class="empty-state paper-panel">正在加载方剂目录…</p>
+      <div v-else-if="error && !formulas.length" class="empty-state paper-panel">
+        <h2>方剂目录没有打开</h2>
+        <p>{{ error }}</p>
+        <button class="btn btn--primary" type="button" @click="load">重试</button>
       </div>
 
-      <div v-if="filtered.length" class="formula-grid">
-        <FormulaCard v-for="f in filtered" :key="f.id" :formula="f" />
-      </div>
+      <template v-else>
+        <section class="filter-bar paper-panel" aria-label="方剂搜索">
+          <label class="search-field">
+            <span class="search-field__icon" aria-hidden="true">⌕</span>
+            <input v-model="query" type="search" placeholder="搜索方名、药材…" />
+          </label>
+          <p class="filter-hint">伤寒论方与后世方解分栏呈现；未收录药材只显示方中名称，不跳转药材页。</p>
+        </section>
 
-      <div v-else class="empty-state paper-panel">
-        <h2>没有找到这首方</h2>
-        <p>试试方名或其中一味药。</p>
-        <button class="btn btn--primary" type="button" @click="query = ''">清除搜索</button>
-      </div>
+        <div class="result-line">
+          <p>共 <strong>{{ filtered.length }}</strong> 首</p>
+          <RouterLink class="text-link tiny" to="/lab/formula-scale">查看 21 味以上布局演示 →</RouterLink>
+        </div>
+
+        <div v-if="filtered.length" class="formula-grid">
+          <FormulaCard v-for="f in filtered" :key="f.id" :formula="f" />
+        </div>
+
+        <div v-else class="empty-state paper-panel">
+          <h2>没有找到这首方</h2>
+          <p>试试方名或其中一味药。</p>
+          <button class="btn btn--primary" type="button" @click="query = ''">清除搜索</button>
+        </div>
+      </template>
 
       <aside class="list-note paper-panel">
         <span class="list-note__mark">方</span>

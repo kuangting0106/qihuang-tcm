@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
-import { formatCharCount, loadBencaoGroup, loadBencaoIndex } from '@/composables/useBencaoLectures'
-import type { BencaoGroup, BencaoLectureIndex } from '@/types/bencao'
+import { formatCharCount } from '@/composables/useBencaoLectures'
+import { useBencaoApi } from '@/composables/useBencaoApi'
+import type { BencaoGroupPayload, BencaoIndexPayload } from '@/composables/useBencaoApi'
 
 const route = useRoute()
-const index = ref<BencaoLectureIndex | null>(null)
-const group = ref<BencaoGroup | null>(null)
+const { fetchBencaoIndex, fetchBencaoGroup } = useBencaoApi()
+const index = ref<BencaoIndexPayload | null>(null)
+const group = ref<BencaoGroupPayload | null>(null)
 const loading = ref(true)
 const error = ref('')
 const query = ref('')
@@ -19,7 +21,7 @@ async function load(id: string) {
   group.value = null
   query.value = ''
   try {
-    const [library, payload] = await Promise.all([loadBencaoIndex(), loadBencaoGroup(id)])
+    const [library, payload] = await Promise.all([fetchBencaoIndex(), fetchBencaoGroup(id)])
     index.value = library
     group.value = payload
   } catch (err: unknown) {
@@ -40,6 +42,7 @@ const filtered = computed(() => {
       entry.title.includes(q) ||
       entry.subtitle.includes(q) ||
       entry.note?.includes(q) ||
+      entry.summary?.includes(q) ||
       entry.alsoKnownAs?.some((name) => name.includes(q)),
   )
 })
@@ -66,7 +69,8 @@ const totalChars = computed(() =>
       <div v-else-if="error" class="group-state paper-panel">
         <h1>目录没有打开</h1>
         <p>{{ error }}</p>
-        <RouterLink class="btn btn--primary" to="/bencao">返回讲义首页</RouterLink>
+        <button class="btn btn--primary" type="button" @click="load(groupId)">重试</button>
+        <RouterLink class="btn btn--ghost btn--small" to="/bencao">返回讲义首页</RouterLink>
       </div>
 
       <template v-else-if="group">
@@ -121,7 +125,7 @@ const totalChars = computed(() =>
             <span class="entry-card__body">
               <span class="entry-card__title">{{ entry.title }}</span>
               <span class="entry-card__meta">
-                {{ entry.sections.length }} 节 · {{ formatCharCount(entry.charCount) }}
+                {{ entry.sectionCount }} 节 · {{ formatCharCount(entry.charCount) }}
               </span>
             </span>
             <span class="entry-card__arrow" aria-hidden="true">→</span>

@@ -6,6 +6,7 @@ import FormulaGraph from '@/components/FormulaGraph.vue'
 import AnnotatedOriginalText from '@/components/AnnotatedOriginalText.vue'
 import SourcedText from '@/components/SourcedText.vue'
 import { useTcmData } from '@/composables/useTcmData'
+import { useFormulaApi } from '@/composables/useFormulaApi'
 import { usePublicNotes } from '@/composables/usePublicNotes'
 import {
   glossaryAnnotationsFor,
@@ -13,10 +14,15 @@ import {
   primarySymptomText,
 } from '@/data/symptom-glossary'
 import { ROLE_ORDER } from '@/types/tcm'
-import type { FormulaRole } from '@/types/tcm'
+import type { Formula, FormulaRole } from '@/types/tcm'
 
 const route = useRoute()
-const { formulasById, herbsById, citationsById, herbName } = useTcmData()
+const { herbsById, citationsById, herbName } = useTcmData()
+const {
+  loading: detailLoading,
+  error: detailError,
+  fetchFormulaDetail,
+} = useFormulaApi()
 const {
   loadPublicNotes,
   savePublicNote,
@@ -29,7 +35,25 @@ onMounted(() => {
   void loadPublicNotes()
 })
 
-const formula = computed(() => formulasById.value.get(String(route.params.id)) ?? null)
+const formula = ref<Formula | null>(null)
+let requestSeq = 0
+
+async function loadFormula(id: string) {
+  const seq = ++requestSeq
+  formula.value = null
+  try {
+    const detail = await fetchFormulaDetail(id)
+    if (seq === requestSeq) formula.value = detail
+  } catch {
+    if (seq === requestSeq) formula.value = null
+  }
+}
+
+function retry() {
+  const id = String(route.params.id ?? '')
+  if (id) void loadFormula(id)
+}
+
 const sourceCitation = computed(() =>
   formula.value ? citationsById.value.get(formula.value.sourceCitationId) ?? null : null,
 )
@@ -46,12 +70,14 @@ const annotationMode = ref(false)
 
 watch(
   () => route.params.id,
-  () => {
+  (id) => {
     selectedHerbId.value = null
     showPairs.value = true
     prepDoseMode.value = 'ancient'
     annotationMode.value = false
+    if (id) void loadFormula(String(id))
   },
+  { immediate: true },
 )
 
 watch(
@@ -377,7 +403,23 @@ watch(
 </script>
 
 <template>
-  <div v-if="formula" class="page formula-detail-page">
+  <div v-if="detailLoading && !formula" class="page container">
+    <div class="empty-state paper-panel">
+      <h2>正在加载方剂…</h2>
+      <p>按需读取方剂详情，不再下载整份数据。</p>
+    </div>
+  </div>
+
+  <div v-else-if="detailError && !formula" class="page container">
+    <div class="empty-state paper-panel">
+      <h2>方剂没有打开</h2>
+      <p>{{ detailError }}</p>
+      <button class="btn btn--primary" type="button" @click="retry">重试</button>
+      <RouterLink class="btn btn--ghost btn--small" to="/formulas">返回方剂列表</RouterLink>
+    </div>
+  </div>
+
+  <div v-else-if="formula" class="page formula-detail-page">
     <div class="container">
       <nav class="breadcrumbs" aria-label="面包屑">
         <RouterLink to="/">首页</RouterLink>

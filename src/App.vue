@@ -10,9 +10,17 @@ const router = useRouter()
 const menuOpen = ref(false)
 const aboutOpen = ref(false)
 const isHome = computed(() => router.currentRoute.value.path === '/')
+// 方剂、本草讲义改为按需 API；其他页面仍沿用整份 sample_data。
+const needsFullData = computed(
+  () => !/^\/(formulas|bencao)(\/|$)/.test(router.currentRoute.value.path),
+)
+
+function ensureData() {
+  if (needsFullData.value) loadTcmData().catch(() => {})
+}
 
 onMounted(() => {
-  loadTcmData().catch(() => {})
+  router.isReady().then(ensureData)
 })
 
 watch(
@@ -20,6 +28,7 @@ watch(
   () => {
     menuOpen.value = false
     aboutOpen.value = false
+    ensureData()
   },
 )
 
@@ -31,12 +40,12 @@ function retry() {
 <template>
   <a class="skip-link" href="#main">跳到正文</a>
 
-  <div v-if="loading" class="app-state">
+  <div v-if="needsFullData && loading" class="app-state">
     <div class="seal-loader" aria-hidden="true">岐</div>
     <p>正在展开图卷…</p>
   </div>
 
-  <div v-else-if="error" class="app-state app-state--error">
+  <div v-else-if="needsFullData && error" class="app-state app-state--error">
     <div class="seal-loader" aria-hidden="true">!</div>
     <h1>数据没有加载出来</h1>
     <p>{{ error }}</p>

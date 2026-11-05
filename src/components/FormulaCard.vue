@@ -1,23 +1,26 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { RouterLink } from 'vue-router'
-import type { Formula } from '@/types/tcm'
+import type { FormulaSummary } from '@/composables/useFormulaApi'
 import { useTcmData } from '@/composables/useTcmData'
 import CitationBadge from './CitationBadge.vue'
 
-const props = defineProps<{ formula: Formula }>()
-const { citationsById, herbName } = useTcmData()
+const props = defineProps<{ formula: FormulaSummary }>()
+const { citationsById } = useTcmData()
 
 const citation = computed(() => citationsById.value.get(props.formula.sourceCitationId))
 const herbNames = computed(() =>
-  props.formula.composition.map((c) => c.herbName ?? herbName(c.herbId)),
+  props.formula.composition.map((c) => c.herbName ?? c.herbId),
 )
 const visibleNames = computed(() => herbNames.value.slice(0, 6))
 const rest = computed(() => herbNames.value.length - visibleNames.value.length)
 
 const roleCounts = computed(() => {
   const map = new Map<string, number>()
-  for (const c of props.formula.composition) map.set(c.role, (map.get(c.role) ?? 0) + 1)
+  for (const c of props.formula.composition) {
+    const role = c.role ?? '未标注'
+    map.set(role, (map.get(role) ?? 0) + 1)
+  }
   return [...map.entries()]
 })
 </script>
@@ -33,7 +36,7 @@ const roleCounts = computed(() => {
       <span class="formula-card__count">{{ formula.composition.length }} 味</span>
     </div>
 
-    <p class="formula-card__effect">{{ formula.effects.text }}</p>
+    <p class="formula-card__effect">{{ formula.effectsText }}</p>
 
     <div class="formula-card__herbs">
       <span v-for="name in visibleNames" :key="name" class="chip chip--jade">{{ name }}</span>
