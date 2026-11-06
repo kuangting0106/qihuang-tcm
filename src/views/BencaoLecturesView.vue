@@ -82,6 +82,15 @@ const totalChars = computed(() =>
           </div>
         </aside>
 
+        <RouterLink class="dacheng-crosslink paper-panel" to="/bencao/dacheng">
+          <span class="dacheng-crosslink__mark" aria-hidden="true">全</span>
+          <span>
+            <strong>本草大全 · 中草药大全</strong>
+            <small>另收 616 味药材，按功效分类，保留原书引文、炮制、鉴别与附方。</small>
+          </span>
+          <span aria-hidden="true">→</span>
+        </RouterLink>
+
         <section class="library-section" aria-labelledby="intro-title">
           <div class="library-section__head">
             <div>
@@ -253,6 +262,51 @@ const totalChars = computed(() =>
 .source-note__meta {
   color: var(--ink-faint) !important;
   font-size: 0.68rem !important;
+}
+
+.dacheng-crosslink {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 14px;
+  padding: 14px 16px;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.18s ease, transform 0.18s ease;
+}
+
+.dacheng-crosslink:hover {
+  border-color: var(--cinnabar);
+  transform: translateY(-2px);
+}
+
+.dacheng-crosslink__mark {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--cinnabar);
+  color: var(--cinnabar);
+  font-family: var(--serif);
+  font-size: 1.15rem;
+}
+
+.dacheng-crosslink > span:nth-child(2) {
+  display: grid;
+  gap: 3px;
+  flex: 1;
+}
+
+.dacheng-crosslink strong {
+  font-family: var(--serif);
+  font-size: 0.98rem;
+}
+
+.dacheng-crosslink small {
+  color: var(--ink-soft);
+  font-size: 0.7rem;
+  line-height: 1.7;
 }
 
 .library-section {

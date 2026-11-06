@@ -1,0 +1,95 @@
+{
+  "number": 403,
+  "name": "木贼",
+  "pinyin": "muzei",
+  "aliases": [
+    "节节草",
+    "无心草",
+    "笔管草"
+  ],
+  "categoryId": "jiebiao",
+  "categoryTitle": "解表药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "甘",
+      "苦"
+    ],
+    "nature": "平",
+    "meridianNames": [
+      "肺经",
+      "肝经"
+    ],
+    "effects": "疏散风热，明目退翳",
+    "indications": "风热目赤，迎风流泪，目生云翳。",
+    "dosage": "内服：煎汤，3～10g；或入丸、散。外用：适量、研末撒敷。",
+    "contraindications": "气血虚者慎服。"
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "木贼科植物木贼 Equisetum hiemale L.的干燥地上部分。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "morphology",
+      "label": "植物形态",
+      "text": "多年生常绿草本，茎高40～100cm。根茎粗、黑褐色；地上茎直立，单一，中空，直径5～10mm，表面有纵棱脊20～30条。叶退化成鳞片状，基部合成筒状的鞘，鞘长6～10mm，叶鞘基部和鞘齿各有一黑色环圈；鞘齿线状钻形，顶部尾状早落而成钝头，背面有2行棱脊，形成浅沟。孢子囊穗生于茎顶，长圆锥形，长7～15mm，先端具暗褐色的小尖头，由许多轮状排列的六角形盾状孢子叶构成，中央具柄，周围轮列椭圆形的孢子囊；孢子多数，球形。孢子期6～8月。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "habitat",
+      "label": "生境分布",
+      "text": "喜生于山坡林下阴湿处、河岸湿地、溪边。分布于东北、华北、西北、华中、西南。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "collection",
+      "label": "采制",
+      "text": "夏、秋二季采割，除去杂质，晒干或阴干。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "chemistry",
+      "label": "化学成分",
+      "text": "本品含山柰素、棉花皮异苷、琥珀酸、延胡索酸等成分。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "pharmacology",
+      "label": "药理",
+      "text": "具有持久性的降压作用；有明显增强戊巴比妥钠的中枢抑制作用。可提高电击惊厥的阈值，制止癫痫样发作；能显著降低血清总胆固醇、甘油三酯含量，对实验性高脂血症有防治作用；抑制血小板聚集，缩短血凝及出血时间；在体外有广泛的抑菌作用，并有抗病毒活性。抗疟。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "formula",
+      "label": "附方",
+      "text": "①治目昏多泪：木贼（去节）、苍术（泔浸）各30g。为末，每服6g，茶调下。或蜜丸亦可。（《圣惠方》）\n ②治风寒湿邪，欲发汗者：木贼（去节）30g，生姜、葱白各15g。水煎热饮，即汗。（《圣惠方》）\n ③治咽喉红痛：鲜木贼捣绞汁调蜜服。（《泉州本草》）\n ④治肠痔多年不瘥，下血不止：木贼、枳壳各60g，干姜30g，大黄0.3g。四味锉，炒黑色存三分性，捣罗，温粟米饮调，食前服6g，甚效。（《本草图经》）",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "木贼科植物木贼 Equisetum hiemale L.的干燥地上部分。",
+  "charCount": 780,
+  "documents": [
+    {
+      "file": "403.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-335",
+  "summary": "疏散风热，明目退翳",
+  "images": [
+    {
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/90404402/medium.jpg",
+      "alt": "rough horsetail（Equisetum hyemale）",
+      "credit": "(c) Tom Kaye, some rights reserved (CC BY-NC), uploaded by Tom Kaye",
+      "license": "CC-BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/52673",
+      "latin": "Equisetum hyemale",
+      "kind": "原植物"
+    }
+  ],
+  "docCount": 1
+}

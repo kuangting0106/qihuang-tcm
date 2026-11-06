@@ -1,0 +1,96 @@
+{
+  "number": 410,
+  "name": "白英",
+  "pinyin": "baiying",
+  "aliases": [
+    "白毛藤",
+    "望冬红",
+    "毛葫芦"
+  ],
+  "categoryId": "qingre",
+  "categoryTitle": "清热药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "甘",
+      "苦",
+      "有小毒"
+    ],
+    "nature": "寒",
+    "meridianNames": [
+      "肝经",
+      "胆经",
+      "肾经"
+    ],
+    "effects": "清热利湿，解毒消肿",
+    "indications": "湿热黄疸、胆囊炎，胆石症，肾炎水肿，风湿关节痛，妇女湿热带下，小儿高热惊搐，痈肿瘰疬，湿疹瘙痒，带状疱疹。",
+    "dosage": "内服：煎汤，15～30g，鲜者30～60g；或浸酒。外用：适量，煎水洗、捣敷或捣汁涂。",
+    "contraindications": "有小毒，不宜过量服用，否则会出现咽喉灼热感及恶心、呕吐、眩晕。瞳孔散大等中毒反应。"
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "茄科植物白英 Solanum lyratum Thunb.的干燥全草。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "morphology",
+      "label": "植物形态",
+      "text": "多年生蔓生草本，高达5m。基部木质化，上部草质，茎、叶和叶柄密被具节的长柔毛。叶互生；叶柄长1～3cm；叶片多戟形或琴形，长3～8cm，宽1.5～4cm，先端渐尖，基部心形，上部全缘或波状，下部常有1～2对耳状或戟状裂片，少数为全缘，中脉明显。聚伞花序顶生或腋外侧生；花萼5浅裂，宿存；花冠蓝紫色或白色，5深裂，裂片自基部向下反折；雄蕊5，花丝极短，花药顶孔开裂；雌蕊1，花柱细长，柱头小，头状，子房卵形，2室。浆果球形，直径约1cm，熟时红色。种子近盘状，扁平。花期7～9月，果期10～11月。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "habitat",
+      "label": "生境分布",
+      "text": "生于海拔200～2800m阴湿的路边、山坡、竹林下及灌木丛中。分布于华东、中南、西南及山西、陕西、甘肃、台湾等地。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "collection",
+      "label": "采制",
+      "text": "夏、秋季采收全草，鲜用或晒干。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "chemistry",
+      "label": "化学成分",
+      "text": "本品主要含龙葵碱、花色苷及其苷元等成分。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "pharmacology",
+      "label": "药理",
+      "text": "有抗肿瘤及抗真菌作用。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "formula",
+      "label": "附方",
+      "text": "①治肺癌：白英、垂盆草各30g。水煎服，每日1剂。（《全国中草药汇编》）\n ②治风火赤眼：白英鲜叶捣烂，调人乳外敷眼睑。（《福建中草药》）\n ③治中耳化脓：白英绞汁，滴耳中。（《湖南药物志》）\n ④治疥疮：白英全草30～40g（干品24～36g），和肥猪肉180g，酌加水煎，分两次吃下。（《福建民间草药》）\n ⑤治咽喉肿痛，痈肿疮毒，淋巴结结核：白英、萝藦各30g。水煎服。（《陕甘宁青中草药选》）\n ⑥治皮肤瘙痒症：白英、苦楝树叶，各适量，水煎汤洗患处。（《青岛中草药手册》）\n ⑦治风湿关节痛：白英30g，忍冬30g，五加皮30g，好酒500g泡服。（《贵阳民间药草》）",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "茄科植物白英 Solanum lyratum Thunb.的干燥全草。",
+  "charCount": 885,
+  "documents": [
+    {
+      "file": "410.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-342",
+  "summary": "清热利湿，解毒消肿",
+  "images": [
+    {
+      "url": "/images/herbs/lecture/367802.jpg",
+      "alt": "白英（Solanum lyratum）",
+      "credit": "© Timur Kalininsky / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/367802",
+      "latin": "Solanum lyratum"
+    }
+  ],
+  "docCount": 1
+}

@@ -1,0 +1,59 @@
+{
+  "number": 698,
+  "name": "制川乌",
+  "pinyin": "zhichuanwu",
+  "aliases": [],
+  "categoryId": "qufengshi",
+  "categoryTitle": "祛风湿药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "辛",
+      "苦"
+    ],
+    "nature": "热；有毒",
+    "meridianNames": [
+      "心经",
+      "肝经",
+      "肾经",
+      "脾经"
+    ],
+    "effects": "祛风除湿，温经止痛",
+    "indications": "风寒湿痹，关节疼痛，心腹冷痛，寒疝作痛及麻醉止痛。",
+    "dosage": "1.5～3g，先煎、久煎。",
+    "contraindications": "孕妇慎用；不宜与半夏、瓜蒌、瓜蒌子、瓜蒌皮、天花粉、川贝母、浙贝母、平贝母、伊贝母、湖北贝母、白蔹、白及同用。"
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "川乌的炮制加工品。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "processing",
+      "label": "炮制",
+      "text": "取川乌，大小个分开，用水浸泡至内无干心，取出，加水煮沸4～6小时（或蒸6～8小时）至取大个及实心者切开内无白心，口尝微有麻舌感时，取出，晾至六成干，切片，干燥。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "本品为不规则或长三角形的片。表面黑褐色或黄褐色，有灰棕色形成层环纹。体轻，质脆，断面有光泽。气微，微有麻舌感。",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "川乌的炮制加工品。",
+  "charCount": 282,
+  "documents": [
+    {
+      "file": "698.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-601",
+  "summary": "祛风除湿，温经止痛",
+  "images": [],
+  "docCount": 1
+}

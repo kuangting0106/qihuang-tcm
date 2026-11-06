@@ -1,0 +1,84 @@
+{
+  "number": 634,
+  "name": "虫白蜡",
+  "pinyin": "chongbaila",
+  "aliases": [
+    "白蜡",
+    "虫蜡",
+    "木蜡",
+    "树蜡",
+    "蜡膏"
+  ],
+  "categoryId": "zhixue",
+  "categoryTitle": "止血药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "甘",
+      "淡"
+    ],
+    "nature": "温",
+    "meridianNames": [
+      "肝经"
+    ],
+    "effects": "止血，生肌，定痛",
+    "indications": "金疮出血，尿血，便血，疮疡久溃不敛。",
+    "dosage": "内服：入丸、散，3～6g。外用：适量，熔化调制药膏。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "介壳虫科昆虫白蜡虫 Ericerus pela （Chavannes）Guerin的雄虫群栖于木犀科植物白蜡树 Fraxinus chinensis Roxb.、女贞 Ligustrum luci dum Ait.或女贞属其他种植物枝干上分泌的蜡，经精制而成。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "collection",
+      "label": "采制",
+      "text": "雄白蜡虫定干后即开始泌蜡，到处暑、白露节前后，蜡花表面开始出现白色蜡丝，应采收蜡花。采收时间最好在晨露未干、雨后初晴或微雨时，蜡花湿润，易于剥下采尽。晴天应先喷水湿润后再采。采收下的蜡花最好当日加工，否则发热、发臭、变色。影响蜡品质。当日来不及加工应摊成薄层晾冷处理。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "本品呈不规则块状，白色或类白色。表面平滑或稍有皱纹，具蜡样光泽。体轻，质硬而稍脆，搓捻则粉碎。断面呈条状，或颗粒状。气微，味淡。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "chemistry",
+      "label": "化学成分",
+      "text": "本品主要含大分子量的酯类。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "formula",
+      "label": "附方",
+      "text": "①治打伤：白蜡30g，藤黄9g。入麻油溶化，涂伤处。此方止痛止血，治烫伤亦愈。（《回生集》）\n ②治杖疮：白蜡30g，猪骨髓5个，潮脑9g。共入铫内熬成膏，用甘草煮油纸摊贴。（《洞天奥旨》白蜡膏）\n ③治渊疽（凡肋、胸、胁、腰、腹空软之处发痈疽者），当在将溃未溃之际，服之可免透膜之患：白蜡、白及各等分。共研细末。轻剂3g，中剂6g，大剂9g，黄酒调服，米汤亦可。（《医宗金鉴》护膜散）　\n ④治外臁：白蜡3g，轻粉3g，猪油90g。捶烂以油纸摊膏贴之。（《万氏秘传外科心法》三白膏）",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "介壳虫科昆虫白蜡虫 Ericerus pela （Chavannes）Guerin的雄虫群栖于木犀科植物白蜡树 Fraxinus chinensis Roxb.、女贞 Ligustrum luci dum Ait.或女贞属其他种植物枝干上分泌的蜡，经精制而成。",
+  "charCount": 785,
+  "documents": [
+    {
+      "file": "634.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-543",
+  "summary": "止血，生肌，定痛",
+  "images": [
+    {
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/179083894/medium.png",
+      "alt": "China Wax Scale Insect（Ericerus pela）",
+      "credit": "(c) onidiras-iNaturalist, some rights reserved (CC BY-NC), uploaded by onidiras-iNaturalist",
+      "license": "CC-BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/1188597",
+      "latin": "Ericerus pela",
+      "kind": "原植物"
+    }
+  ],
+  "docCount": 1
+}

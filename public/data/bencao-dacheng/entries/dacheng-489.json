@@ -1,0 +1,95 @@
+{
+  "number": 572,
+  "name": "木通",
+  "pinyin": "mutong",
+  "aliases": [
+    "通草",
+    "附支",
+    "丁父",
+    "活血藤"
+  ],
+  "categoryId": "qingre",
+  "categoryTitle": "清热药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "苦"
+    ],
+    "nature": "寒",
+    "meridianNames": [
+      "心经",
+      "小肠经",
+      "膀胱经"
+    ],
+    "effects": "清热利尿，活血通脉",
+    "indications": "小便短赤，淋浊，水肿，胸中烦热，咽喉疼痛，口舌生疮，风湿痹痛，乳汁不通，经闭，痛经。",
+    "dosage": "内服：煎汤，3～6g；或入丸、散。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "为木通科植物白木通 Akebia trifoliata （Thunb.） Koidz.var. australis （Diels）Rehd.、三叶木通 Akebia trifoliata （Thunb.）Koidz . 或木通 Akebia quinta （Thunb）Decne的藤茎。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "morphology",
+      "label": "植物形态",
+      "text": "见“预知子”项下。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "collection",
+      "label": "采制",
+      "text": "秋季采收，截取茎部，除去细枝，阴干。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "藤茎直径5～8mm。表面黄棕色或暗棕色，有不规则纵沟纹；有枝痕。质坚韧，难折断，断面木部淡黄色，导管细密，排列不规则，射线约13条，浅黄色放射状，髓类圆形。气微，味微苦。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "chemistry",
+      "label": "化学成分",
+      "text": "含木通皂苷Sta、木通皂苷Stb、木通皂苷Stc、木通皂苷Std、木通苯乙醇苷B、常春藤皂苷元、齐墩果酸等成分。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "pharmacology",
+      "label": "药理",
+      "text": "具有利尿及抗菌作用。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "formula",
+      "label": "附方",
+      "text": "①治心经有热，唇焦面赤，小便不通：木通、连翘各9g。水盅半，灯心草十茎，煎八分服。（《医宗必读》通心散）\n ②治小儿瘫痪，发作疼痛：木通（锉）、胆矾（研）各0.3g。上研为散，每服1.5g，米饮调下。（《普济方》木通散）\n ③治睾丸炎：木通茎藤30～60g，葱适量。水煎熏洗。（《福建药物志》）\n ④治喉咙痛：木通煎汤服之，或将木通含之，咽津亦得。（《普济方》）",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "为木通科植物白木通 Akebia trifoliata （Thunb.） Koidz.var. australis （Diels）Rehd.、三叶木通 Akebia trifoliata （Thunb.）Koidz . 或木通 Akebia quinta （Thunb）Decne的藤茎。",
+  "charCount": 741,
+  "documents": [
+    {
+      "file": "572.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-489",
+  "summary": "清热利尿，活血通脉",
+  "images": [
+    {
+      "url": "/images/herbs/lecture/126249.jpg",
+      "alt": "木通（Akebia quinata）",
+      "credit": "© ashley CHILE baz / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/126249",
+      "latin": "Akebia quinata"
+    }
+  ],
+  "docCount": 1
+}

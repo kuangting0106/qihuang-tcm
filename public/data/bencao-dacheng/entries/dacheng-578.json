@@ -1,0 +1,90 @@
+{
+  "number": 675,
+  "name": "麝香",
+  "pinyin": "shexiang",
+  "aliases": [
+    "遗香",
+    "脐香",
+    "当门子",
+    "生香",
+    "麝脐香"
+  ],
+  "categoryId": "huoxue",
+  "categoryTitle": "活血化瘀药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "辛"
+    ],
+    "nature": "温",
+    "meridianNames": [
+      "心经",
+      "脾经"
+    ],
+    "effects": "开窍醒神，活血通经，消肿止痛",
+    "indications": "热病神昏，中风痰厥，气郁暴厥，中恶昏迷，经闭，癥瘕，难产死胎，胸痹心痛，心腹暴痛，跌扑伤痛，痹痛麻木，痈肿瘰疬，咽喉肿痛。",
+    "dosage": "内服：入丸、散，0.03～0.1g，一般不入汤剂。外用：适量，研末掺、调敷或入膏药中敷贴。",
+    "contraindications": "虚脱证禁用；本品无论内服或外用均能堕胎，故孕妇禁用。"
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "鹿科动物林麝 Moschus berezovskii Flerov、马麝 Moschus sifanicus Przewalski或原麝 M oschus moschiferus Linnaeus成熟雄体香囊中的干燥分泌物。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "collection",
+      "label": "采制",
+      "text": "野麝多在冬季至次春猎取，猎获后，割取香囊，阴干，习称“毛壳麝香”；剖开香囊，除去囊壳，习称“麝香仁”。家麝直接从其香囊中取出麝香仁，阴干或用干燥器密闭干燥。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "1. 毛壳麝香：为扁圆形或类椭圆形的囊状体，直径3～7cm，厚2～4cm。开口面皮革质，棕褐色，略平，密生白色或灰棕色短毛，从两侧围绕中心排列，中间有1小囊孔。另一面为棕褐色略带紫色的皮膜，微皱缩，偶显肌肉纤维。略有弹性，剖开后可见中层皮膜呈棕褐色或灰褐色，半透明，内层皮膜呈棕色，内含颗粒状、粉末状的麝香仁和少量细毛及脱落的内层皮膜（习称“银皮”）。\n2. 麝香仁：野生者质软，油润，疏松；其中不规则圆球形或颗粒状者习称“当门子”，表面多呈紫黑色，油润光亮，微有麻纹，断面深棕色或黄棕色；粉末状者多呈棕褐色或黄棕色，并有少量脱落的内层皮膜和细毛。饲养者呈颗粒状、短条形或不规则的团块；表面不平，紫黑色或深棕色，显油性，微有光泽，并有少量毛和脱落的内层皮膜。气香浓烈而特异，味微辣、微苦带咸。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "chemistry",
+      "label": "化学成分",
+      "text": "本品含麝香酮、降麝香酮、麝香醇、麝香吡喃、麝香吡啶、羟基麝香吡啶-A、羟基麝香吡啶-B等。亦含胆甾-4-烯-3-酮、胆固醇和它的酯类、睾酮、雌乙醇、5 α -雄烷-3，17-二酮等11种雄烷衍生物。尚含蛋白质与氨基酸。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "pharmacology",
+      "label": "药理",
+      "text": "具有很强的抗炎作用，与牛黄合用在抗炎方面，具有协同作用；对中枢神经表现为兴奋与抑制双重作用，小剂量兴奋，大剂量抑制，有增强缺氧的耐受力、增强肝药酶活性作用，对心血管系统，可增加心肌收缩力，加快心率，降低血压，降低心肌耗氧，保护缺血性心肌；具有抗凝血作用；兴奋子宫并具有雄激素样作用；能抗肿瘤，增强机体免疫功能；具有抗菌、抗溃疡等作用。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "formula",
+      "label": "附方",
+      "text": "①治中风不醒：麝香6g，研末，入清油60g，和匀灌之。（《济生方》）\n ②治痰迷心窍：麝香0.3g，月石、牙皂、明矾、雄精各3g。上共研匀，密贮，每服1.5g。（《疡科遗编》）\n ③治胸痹：麝香（研）30g，牛黄（研）15g，犀角（镑）0.3g。上三味，捣研为散。每服6g，温酒调下，空心，日午临卧各一。（《圣济总录》麝香散）\n ④治跌打气闭：牙皂、北细辛、冰片、麝香等分。为末，吹鼻。（《医钞类编》吹药方）\n ⑤治闪气伤胁肋疼痛：麝香6g，雄黄1.5g。共为细末，入药瓶内。每遇闪气者，将药点在眼潭内。（《伤科补要》闪气散）\n ⑥治牙痛：麝香大豆许，巴豆1粒，细辛末15g。上药同研令细，以枣瓤和丸，如粟米大。以新绵裹一丸，于痛处咬之，有涎即吐出，有蛀孔即纳一丸。（《圣惠方》麝香丸）",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "鹿科动物林麝 Moschus berezovskii Flerov、马麝 Moschus sifanicus Przewalski或原麝 M oschus moschiferus Linnaeus成熟雄体香囊中的干燥分泌物。",
+  "charCount": 1434,
+  "documents": [
+    {
+      "file": "675.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-578",
+  "summary": "开窍醒神，活血通经，消肿止痛",
+  "images": [
+    {
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/155080061/medium.jpeg",
+      "alt": "Chinese Forest Musk Deer（Moschus berezovskii）",
+      "credit": "(c) Phil Benstead, some rights reserved (CC BY-NC), uploaded by Phil Benstead",
+      "license": "CC-BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/42142",
+      "latin": "Moschus berezovskii",
+      "kind": "原植物"
+    }
+  ],
+  "docCount": 1
+}

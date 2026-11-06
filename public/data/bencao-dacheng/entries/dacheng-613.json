@@ -1,0 +1,57 @@
+{
+  "number": 710,
+  "name": "荆芥炭",
+  "pinyin": "jingjietan",
+  "aliases": [],
+  "categoryId": "zhixue",
+  "categoryTitle": "止血药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "辛",
+      "涩"
+    ],
+    "nature": "微温",
+    "meridianNames": [
+      "肺经",
+      "肝经"
+    ],
+    "effects": "收敛止血",
+    "indications": "便血，崩漏，产后血晕。",
+    "dosage": "5～10g。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "荆芥的炮制加工品。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "processing",
+      "label": "炮制",
+      "text": "取荆芥段，照炒炭法（参见“大蓟炭”项下）炒至表面焦黑色，内部焦黄色，喷淋清水少许，熄灭火星，取出，晾干。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "本品呈不规则段，长5mm。全体黑褐色。茎方柱形，体轻，质脆。断面焦褐色。叶对生，多已脱落。花冠多脱落，宿萼钟状。略具焦香气，味苦而辛。",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "荆芥的炮制加工品。",
+  "charCount": 179,
+  "documents": [
+    {
+      "file": "710.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-613",
+  "summary": "收敛止血",
+  "images": [],
+  "docCount": 1
+}

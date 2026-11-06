@@ -1,0 +1,57 @@
+{
+  "number": 713,
+  "name": "焦槟榔",
+  "pinyin": "jiaobinlang",
+  "aliases": [],
+  "categoryId": "xiaoshi",
+  "categoryTitle": "消食药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "苦",
+      "辛"
+    ],
+    "nature": "温",
+    "meridianNames": [
+      "胃经",
+      "大肠经"
+    ],
+    "effects": "消食导滞",
+    "indications": "食积不消，泻痢后重。",
+    "dosage": "3～10g。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "槟榔的炮制加工品。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "processing",
+      "label": "炮制",
+      "text": "取槟榔片，照清炒法（参见“炒瓜蒌子”项下），炒至焦黄色。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "本品呈类圆形薄片，直径1.5～3cm，厚1～2mm。表面焦黄色，可见大理石样花纹。质脆，易碎。气微，味涩，微苦。",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "槟榔的炮制加工品。",
+  "charCount": 143,
+  "documents": [
+    {
+      "file": "713.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-616",
+  "summary": "消食导滞",
+  "images": [],
+  "docCount": 1
+}

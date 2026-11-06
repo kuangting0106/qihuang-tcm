@@ -1,0 +1,86 @@
+{
+  "number": 571,
+  "name": "天仙藤",
+  "pinyin": "tianxianteng",
+  "aliases": [
+    "都淋藤",
+    "青木香藤",
+    "长痧藤",
+    "香藤"
+  ],
+  "categoryId": "huoxue",
+  "categoryTitle": "活血化瘀药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "苦"
+    ],
+    "nature": "温",
+    "meridianNames": [
+      "肝经",
+      "脾经",
+      "肾经"
+    ],
+    "effects": "行气活血，通络止痛",
+    "indications": "脘腹刺痛，风湿痹痛。",
+    "dosage": "内服：煎汤，6～10g。外用：适量，煎水洗或捣烂敷。",
+    "contraindications": "本品含马兜铃酸，可引起肾脏损害等不良反应；儿童及老年人慎用；孕妇、婴幼儿及肾功能不全者禁用。"
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "马兜铃科植物马兜铃 Aristolochia debilis Sieb.et Zucc.或北马兜铃 Aristolochia contorta Bge.的干燥地上部分。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "morphology",
+      "label": "植物形态",
+      "text": "（1）马兜铃：见“青木香”项下。\n（2）北马兜铃：见“马兜铃”项下。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "collection",
+      "label": "采制",
+      "text": "秋季采割，除去杂质，晒干。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "本品茎呈细长圆柱形，略扭曲。直径1～3mm；表面黄绿色或淡黄褐色，有纵棱及节，节间不等长；质脆，易折断，断面有数个大小不等的维管束。叶互生，多皱缩、破碎，完整叶片展平后呈三角状狭卵形或三角状宽卵形，基部心形，暗绿色或淡黄褐色，基生叶脉明显，叶柄细长。气清香，味淡。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "chemistry",
+      "label": "化学成分",
+      "text": "含马兜酸D、木兰花碱和 β -谷固醇。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "pharmacology",
+      "label": "药理",
+      "text": "有降血压作用。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "formula",
+      "label": "附方",
+      "text": "①治疝气作痛：天仙藤30g，好酒一碗，煮至半碗服之。（《孙天仁集效方》）\n ②治风湿性关节炎：天仙藤、威灵仙、海桐皮各9g。水煎服。（《秦岭巴山天然药物志》）\n ③治毒蛇咬伤，痔疮肿痛：天仙藤鲜品捣烂，敷患处。（《东北常用中药手册》）\n ④治乳腺炎：鲜天仙藤适量，揉软外敷，每日换药1次。（《江西草药》）\n ⑤治赤流丹肿：天仙藤30g，焙干为末，乳香（研）3g。上每3g，温酒下。（《证治准绳》乳香散）",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "马兜铃科植物马兜铃 Aristolochia debilis Sieb.et Zucc.或北马兜铃 Aristolochia contorta Bge.的干燥地上部分。",
+  "charCount": 689,
+  "documents": [
+    {
+      "file": "571.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-488",
+  "summary": "行气活血，通络止痛",
+  "images": [],
+  "docCount": 1
+}

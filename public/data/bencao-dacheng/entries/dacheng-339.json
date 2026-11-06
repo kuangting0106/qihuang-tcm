@@ -1,0 +1,84 @@
+{
+  "number": 407,
+  "name": "叶象花",
+  "pinyin": "yexianghua",
+  "aliases": [
+    "细叶叶上花",
+    "一品红",
+    "叶上花"
+  ],
+  "categoryId": "qingre",
+  "categoryTitle": "清热药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "苦",
+      "涩"
+    ],
+    "nature": "寒",
+    "meridianNames": [
+      "肝经"
+    ],
+    "effects": "凉血调经，散瘀消肿",
+    "indications": "月经过多，外伤肿痛，出血，骨折。",
+    "dosage": "内服：煎汤，3～9g，外用：适量，鲜品捣敷。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "大戟科植物猩猩草 Euphorbia heterophylla L.的干燥全草。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "morphology",
+      "label": "植物形态",
+      "text": "一年生草本，高约1m。茎单生。有斜升开展的粗壮分枝，被稀疏的短柔毛或无毛。茎下部及中部的叶互生，花序下部的叶对生；叶柄长2～3cm；托叶腺点状；叶形多变化，卵形，椭圆形，披针形或线形，长4～10cm；宽2.5～5cm，呈琴状分裂或不裂，边缘有波状浅齿或尖齿或全缘，两面被稀疏的短柔毛；花序下部的叶通常基部或全部红色。杯状聚伞花序多数在茎及分枝顶端排成密集的伞房状；总苞钟状，绿色，宽3～4mm，先端5裂；腺体1～2，杯状，无花瓣状附属物。雄花20或更多，苞片膜质，先端撕裂；子房卵形，3室；花柱3，离生，先端2浅裂。蒴果卵圆状三棱形，直径约5mm，无毛；种子卵形，灰褐色，表面有疣状突起，无种阜。花果期8月。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "habitat",
+      "label": "生境分布",
+      "text": "我国各地及各大植物园都有栽培；在贵州兼有逸为野生者。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "collection",
+      "label": "采制",
+      "text": "四季均可采收。洗净，鲜用或晒干。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "chemistry",
+      "label": "化学成分",
+      "text": "本品含 N -乙酰氨基半乳糖。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "pharmacology",
+      "label": "药理",
+      "text": "无杀灭血吸虫的作用，但对血吸虫病有腹水者，利尿效果显著；其导泻作用强。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "formula",
+      "label": "附方",
+      "text": "①治月经过多，跌打损伤：叶象花6～9g。水煎服，日服2次。（《文山中草药》）\n ②治外伤出血，骨折：叶象花鲜叶适量，捣烂敷患处，2～3天 换药1次。（《文山中草药》）",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "大戟科植物猩猩草 Euphorbia heterophylla L.的干燥全草。",
+  "charCount": 631,
+  "documents": [
+    {
+      "file": "407.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-339",
+  "summary": "凉血调经，散瘀消肿",
+  "images": [],
+  "docCount": 1
+}

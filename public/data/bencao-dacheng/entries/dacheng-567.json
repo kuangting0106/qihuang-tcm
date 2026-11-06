@@ -1,0 +1,73 @@
+{
+  "number": 662,
+  "name": "珍珠母",
+  "pinyin": "zhenzhumu",
+  "aliases": [
+    "珠牡",
+    "珠母",
+    "真珠母",
+    "明珠母"
+  ],
+  "categoryId": "pinggan",
+  "categoryTitle": "平肝息风药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "咸"
+    ],
+    "nature": "寒",
+    "meridianNames": [
+      "肝经",
+      "心经"
+    ],
+    "effects": "平肝潜阳，安神定惊，明目退翳",
+    "indications": "头痛眩晕，惊悸失眠，目赤翳障，视物昏花。",
+    "dosage": "内服：煎汤，10～30g，打碎先煎；或研末，每次1.5～3g；或入丸、散。",
+    "contraindications": "气血虚弱、痈疽己溃者及孕妇禁服。"
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "蚌科动物三角帆蚌 Hyriopsis cumingii （Lea），褶纹冠蚌 Cristaria plicata （Leach）或珍珠贝科动物马氏珍珠贝 Pteria martensii （Dunker）的贝壳。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "collection",
+      "label": "采制",
+      "text": "去肉，洗净，干燥。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "chemistry",
+      "label": "化学成分",
+      "text": "含碳酸钙、有机物（其中以角壳蛋白为主）及多种氨基酸、无机元素。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "pharmacology",
+      "label": "药理",
+      "text": "具有延迟白内障的形成、抗溃疡、抗氧化的作用。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "formula",
+      "label": "附方",
+      "text": "①治肝阳上升，头晕头痛，眼花耳鸣，面颊燥热：珍珠母15～30g，制女贞、旱莲草各9g。水煎服。（《常用中草药图谱》）\n ②治心悸失眠：珍珠母15g，酸枣仁9g，远志3g，炙甘草4.5g。水煎服。（《常用中草药图谱》）\n ③治身无他苦，饮食如常，惟彻夜不寐，间日轻重，如发疟然，起伏而又延久不愈，左关独弦数，余部平平音：真珠母24g，龙齿6g，柴胡（醋炒）3g，薄荷3g，生地黄18g，归身6g，白芍4.5g（酒炒），丹参、柏子仁、夜合花各6g，沉香1.5g，红枣十枚，夜交藤12g（切）。煎服。（《医醇腾义》甲乙归藏汤）\n ④治羊痫风：珍珠母6g，生代赭石9g，研细末，每日2次，每次3g，开水送服。（《广西药用动物》）\n ⑤治内眼疾患（晶体浑浊，视神经萎缩）：珍珠母60g，苍术24g，人参3g。水煎，日服2次。（《吉林中草药》）",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "蚌科动物三角帆蚌 Hyriopsis cumingii （Lea），褶纹冠蚌 Cristaria plicata （Leach）或珍珠贝科动物马氏珍珠贝 Pteria martensii （Dunker）的贝壳。",
+  "charCount": 747,
+  "documents": [
+    {
+      "file": "662.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-567",
+  "summary": "平肝潜阳，安神定惊，明目退翳",
+  "images": [],
+  "docCount": 1
+}

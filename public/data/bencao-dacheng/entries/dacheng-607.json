@@ -1,0 +1,57 @@
+{
+  "number": 704,
+  "name": "炒瓜蒌子",
+  "pinyin": "chaogualouzi",
+  "aliases": [],
+  "categoryId": "huatan",
+  "categoryTitle": "化痰止咳平喘药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "甘"
+    ],
+    "nature": "寒",
+    "meridianNames": [
+      "肺经",
+      "胃经",
+      "大肠经"
+    ],
+    "effects": "润肺化痰，滑肠通便",
+    "indications": "燥咳痰黏，肠燥便秘。",
+    "dosage": "9～15g。",
+    "contraindications": "不宜与川乌、制川乌、草乌、制草乌、附子同用。"
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "瓜蒌子的炮制加工品。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "processing",
+      "label": "炮制",
+      "text": "取瓜蒌子，照炒法，用文火炒至微鼓起，取出，放凉。需炒制者应为干燥品，且大小分档；炒时火力均匀，不断翻动，应掌握加热温度，炒制时间及程度要求。（清炒法：取待炮炙品，置炒制容器内，用文火加热至规定程度时，取出，　放凉。）",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "本品呈扁平椭圆形，长12～15mm，宽6～10mm，厚度约3.5mm。表面浅褐色至棕褐色，平滑，偶有焦斑，沿边缘有1圈沟纹，顶端较尖，有种脐，基部钝圆或较狭。种皮坚硬；内种皮膜质，灰绿色，子叶2，黄白色，富油性。气略焦香，味淡。",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "瓜蒌子的炮制加工品。",
+  "charCount": 310,
+  "documents": [
+    {
+      "file": "704.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-607",
+  "summary": "润肺化痰，滑肠通便",
+  "images": [],
+  "docCount": 1
+}

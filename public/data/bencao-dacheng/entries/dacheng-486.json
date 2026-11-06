@@ -1,0 +1,63 @@
+{
+  "number": 569,
+  "name": "小木通",
+  "pinyin": "chuanmutong",
+  "aliases": [],
+  "categoryId": "lishui",
+  "categoryTitle": "利水渗湿药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "苦"
+    ],
+    "nature": "寒",
+    "meridianNames": [
+      "心经",
+      "小肠经",
+      "膀胱经"
+    ],
+    "effects": "利尿通淋，清心除烦，通经下乳",
+    "indications": "水肿、淋证，心烦尿赤，口舌生疮，经闭乳少，湿热痹痛。",
+    "dosage": "内服：煎汤，3～6g。",
+    "contraindications": "气弱津伤，精滑遗尿，小便过多及孕妇禁服。"
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "本品为毛茛科植物小木通 Clematis armandii Franch. 的干燥藤茎。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "morphology",
+      "label": "植物形态",
+      "text": "木质藤本，高达6m。茎圆柱形，有纵条纹，小枝有棱。三出复叶；小叶片革质，卵状披针形、长椭圆状卵形至卵形，长4～12cm，宽2～5cm，顶端渐尖，基部圆形、心形或宽楔形，全缘，两面无毛。聚伞花序或圆锥状聚伞花序，腋生或顶生，通常比叶长或近等长；花序下部苞片近长圆形，常3浅裂，上部苞片渐小，披针形至钻形；萼片4～5，开展，白色，长圆形或长椭圆形，大小变异极大，外面边缘密生短绒毛，雄蕊无毛。瘦果扁，卵形至椭圆形，长4～7mm，疏生柔毛，宿存花柱长达5cm，有白色长柔毛。花期3～4月，果期4～7月。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "habitat",
+      "label": "生境分布",
+      "text": "生于山坡、山谷、路边灌丛中、林边或水沟旁。分布于西藏东部、云南、贵州、四川、甘肃和陕西南部、湖北、湖南、广东、广西 、福建西南部等地。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "collection",
+      "label": "采制",
+      "text": "春、秋二季采收，除去粗皮，晒干，或趁鲜切薄片，晒干。",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "本品为毛茛科植物小木通 Clematis armandii Franch. 的干燥藤茎。",
+  "charCount": 523,
+  "documents": [
+    {
+      "file": "569.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-486",
+  "summary": "利尿通淋，清心除烦，通经下乳",
+  "images": [],
+  "docCount": 1
+}

@@ -1,0 +1,81 @@
+{
+  "number": 635,
+  "name": "五倍子",
+  "pinyin": "wubeizi",
+  "aliases": [
+    "漆倍子",
+    "红叶桃",
+    "旱倍子",
+    "乌盐泡"
+  ],
+  "categoryId": "souse",
+  "categoryTitle": "收涩药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "酸",
+      "涩"
+    ],
+    "nature": "寒",
+    "meridianNames": [
+      "肺经",
+      "大肠经",
+      "肾经"
+    ],
+    "effects": "敛肺降火，涩肠止泻，敛汗，止血，收湿敛疮",
+    "indications": "肺虚久咳，肺热痰嗽，久泻久痢，自汗盗汗，消渴，便血痔血，外伤出血，痈肿疮毒，皮肤湿烂。",
+    "dosage": "内服：煎汤，3～10g；研末，1.5～6g：或入丸、散。外用：适量，煎汤熏洗；研末撒或调敷。",
+    "contraindications": "外感风寒或肺有实热之咳嗽，以及积滞未尽之泻痢禁服。"
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "漆树科植物盐肤木 Rhus chinensis Mill.、青麸杨 Rhus.pataninii Maxim.和红麸杨 Rhus.punjabensis Steward var. sinica （Diels）Rehd.et Wils.叶上的虫瘿，主要由五倍子蚜 Melaphis chinensis （Bell）Baker寄生而形成。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "collection",
+      "label": "采制",
+      "text": "秋季采摘，置沸水中略煮或蒸至表面呈灰色，杀死蚜虫，取出，干燥。按外形不同，分为“肚倍”和“角倍”。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "1. 肚倍：呈长圆形或纺锤形囊状，长2.5～9cm，直径1.5～4cm，表面灰褐色或灰棕色，微有柔毛。质硬而脆，易破碎，断面角质样，有光泽，壁厚0.2～0.3cm，内壁平滑，有黑褐色死蚜虫及灰色粉状排泄物。气特异，味涩。\n2. 角倍：呈菱形，具不规则的钝角状分枝，柔毛较明显。壁较薄。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "chemistry",
+      "label": "化学成分",
+      "text": "本品主要含五倍子鞣质。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "pharmacology",
+      "label": "药理",
+      "text": "具有收敛、抗菌、杀精子、抗肿瘤等作用。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "formula",
+      "label": "附方",
+      "text": "①治痔疮：艾叶、五倍子、白胶、苦楝根等分，锉碎，如烧香法，置长桶内，坐熏疮处。（《直指方》）\n ②治手足皲裂：五倍子末，同牛骨髓填纳缝中。（《医方大成论》）\n ③治滴虫性阴道炎：五倍子15g，水煎冲洗患部。（《四川中药志》1979）\n ④治肺虚久咳：五倍子6g，五味子6g，罂粟壳6g。水煎服。（《四川中药志》1979年）\n ⑤治泻痢不止：五倍子30g，半生半烧，为末，糊丸梧桐子大，每服三十丸，红痢烧酒下，白痢水酒下，水泄米汤下。（《纲目》）\n ⑥治鼻出血：五倍子末吹之，仍以末同新绵灰等分，米饮服9g。（《纲目》）\n ⑦牙缝出血不止：五倍子，烧存性，研末敷之。（《卫生易简方》）\n ⑧治小便尿血：五倍子末，盐梅捣和丸，梧桐子大，每空心酒服五十丸。（《濒湖集简方》）",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "漆树科植物盐肤木 Rhus chinensis Mill.、青麸杨 Rhus.pataninii Maxim.和红麸杨 Rhus.punjabensis Steward var. sinica （Diels）Rehd.et Wils.叶上的虫瘿，主要由五倍子蚜 Melaphis chinensis （Bell）Baker寄生而形成。",
+  "charCount": 1049,
+  "documents": [
+    {
+      "file": "635.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-544",
+  "summary": "敛肺降火，涩肠止泻，敛汗，止血，收湿敛疮",
+  "images": [],
+  "docCount": 1
+}

@@ -1,0 +1,72 @@
+{
+  "number": 651,
+  "name": "石决明",
+  "pinyin": "shijueming",
+  "aliases": [
+    "鲍鱼壳",
+    "九孔石决明",
+    "鲍鱼皮",
+    "金蛤蜊皮"
+  ],
+  "categoryId": "pinggan",
+  "categoryTitle": "平肝息风药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "咸"
+    ],
+    "nature": "寒",
+    "meridianNames": [
+      "肝经"
+    ],
+    "effects": "平肝潜阳，清肝明目",
+    "indications": "头痛眩晕，目赤翳障，视物昏花，青盲 雀目。",
+    "dosage": "内服：煎汤，10～30g，打碎先煎；或入丸、散。外用：适量，研末水飞点眼。平肝内服宜生用，眼疾外点宜煅用。",
+    "contraindications": "脾胃虚寒者慎服，消化不良、胃酸缺乏者禁服。"
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "鲍科动物杂色鲍 Haliotis diversicolor Reeve、皱纹盘鲍 Haliotis discus hannai Ino、羊鲍 Haliotis ovina Gmelin、澳洲鲍 Haliotis ruber （Leach）、耳鲍 Haliotis asinina Linnaeus或白鲍 Haliotis laevigata （Donovan）的贝壳。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "collection",
+      "label": "采制",
+      "text": "夏、秋二季捕捞，去肉，洗净，干燥。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "chemistry",
+      "label": "化学成分",
+      "text": "主要含碳酸钙。亦含有机质和少量的镁、铁、硅酸盐、硫酸盐、磷酸盐、氯化物和极微量的碘。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "pharmacology",
+      "label": "药理",
+      "text": "具有保护肝组织、改善循环的作用，能提高小鼠耐缺氧能力。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "formula",
+      "label": "附方",
+      "text": "①治高血压：a.生石决明30g，生牡蛎30g，生地黄15g，菊花9g。水煎服。日3次。b.石决明30g，草决明30～60g，杜仲12～15g，夏枯草30～60g。水煎服。c.石决明30g，钩藤24g，僵蚕9g，菊花9g，夏枯草15g。水煎服（适合老年高血压头痛）。（《青岛中草药手册》）\n ②治风毒气攻入头，眼目昏及头目不利：石决明、羌活（去芦头）、草决明、菊花各30g，甘草（炙，锉）15g。上五味，捣罗为散。每服6g，水一盏，煎至六分，和滓，食后临卧温服。（《圣济总录》石决明散）\n ③治眩晕：石决明24g，菊花12g，枸杞子12g，桑叶12g。水煎服。（《青岛中草药手册》）\n ④治目暴肿疼痛：石决明15g，车前子、黄连（去须）各60g。上三味，捣罗为末，炼蜜丸如梧桐子大。每服15丸。米饮下，食后，日二服。（《圣济总录》决明丸）\n ⑤治锁喉风：石决明火烧醋炙三次，研细末，用米醋调，鹅羽蘸擦喉内，吐痰效。（《本草汇言》）",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "鲍科动物杂色鲍 Haliotis diversicolor Reeve、皱纹盘鲍 Haliotis discus hannai Ino、羊鲍 Haliotis ovina Gmelin、澳洲鲍 Haliotis ruber （Leach）、耳鲍 Haliotis asinina Linnaeus或白鲍 Haliotis laevigata （Donovan）的贝壳。",
+  "charCount": 990,
+  "documents": [
+    {
+      "file": "651.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-559",
+  "summary": "平肝潜阳，清肝明目",
+  "images": [],
+  "docCount": 1
+}

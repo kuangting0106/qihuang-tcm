@@ -1,0 +1,56 @@
+{
+  "number": 712,
+  "name": "炙黄芪",
+  "pinyin": "zhihuangqi",
+  "aliases": [],
+  "categoryId": "buxu",
+  "categoryTitle": "补虚药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "甘"
+    ],
+    "nature": "温",
+    "meridianNames": [
+      "肺经",
+      "脾经"
+    ],
+    "effects": "益气补中",
+    "indications": "气虚乏力，食少便溏。",
+    "dosage": "9～30g。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "黄芪的炮制加工品。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "processing",
+      "label": "炮制",
+      "text": "取黄芪片，照蜜炙法（参见“炙甘草”项下）炒至不粘手。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "本品呈圆形或椭圆形的厚片，直径0.8～3.5cm，厚0.1～0.4cm。外表皮淡棕黄色或淡棕褐色，略有光泽，可见纵皱纹或纵沟。切面皮部黄白色，木部淡黄色，有放射状纹理和裂隙。具蜜香气，味甜，略带黏性，嚼之微有豆腥味。",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "黄芪的炮制加工品。",
+  "charCount": 190,
+  "documents": [
+    {
+      "file": "712.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-615",
+  "summary": "益气补中",
+  "images": [],
+  "docCount": 1
+}

@@ -1,0 +1,58 @@
+{
+  "number": 703,
+  "name": "煅石膏",
+  "pinyin": "duanshigao",
+  "aliases": [],
+  "categoryId": "zhixue",
+  "categoryTitle": "止血药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "甘",
+      "辛",
+      "涩"
+    ],
+    "nature": "寒",
+    "meridianNames": [
+      "脾经",
+      "胃经"
+    ],
+    "effects": "收湿，生肌，敛疮，止血。外",
+    "indications": "溃疡不敛，湿疹瘙痒，水火烫伤，外伤出血。",
+    "dosage": "外用适量，研末撒敷患处。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "石膏的炮制品。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "processing",
+      "label": "炮制",
+      "text": "取石膏，照明煅法煅至酥松。（明煅法：取待炮炙品，砸成小块，置适宜的容器内，煅至酥脆或红透时，取出，放凉，碾碎。含有结晶水的盐类药材，不要求煅红，但需使结晶水蒸发至尽，或全部形成蜂窝状的块状固体。）",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "本品为白色的粉末或酥松块状物，表面透出微红色的光泽，不透明。体较轻，质软，易碎，捏之成粉。气微，味淡。",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "石膏的炮制品。",
+  "charCount": 230,
+  "documents": [
+    {
+      "file": "703.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-606",
+  "summary": "收湿，生肌，敛疮，止血。外",
+  "images": [],
+  "docCount": 1
+}

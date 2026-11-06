@@ -1,0 +1,58 @@
+{
+  "number": 702,
+  "name": "炙甘草",
+  "pinyin": "zhigancao",
+  "aliases": [],
+  "categoryId": "buxu",
+  "categoryTitle": "补虚药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "甘"
+    ],
+    "nature": "平",
+    "meridianNames": [
+      "心经",
+      "肺经",
+      "脾经",
+      "胃经"
+    ],
+    "effects": "补脾和胃，益气复脉",
+    "indications": "脾胃虚弱，倦怠乏力，心悸动，脉结代。",
+    "dosage": "2～10g。",
+    "contraindications": "不宜与海藻、京大戟、红大戟、甘遂、芫花同用。"
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "甘草的炮制加工品。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "processing",
+      "label": "炮制",
+      "text": "取甘草片，照蜜炙法炒至黄色至深黄色，不粘手时取出，晾凉。（蜜炙法：蜜炙时，应先将炼蜜加适量沸水稀释后，加入待炮炙品中拌匀，闷透，置炒制容器内，用文火炒至规定程度时，取出，放凉。蜜炙时，用炼蜜。除另有规定外，每100kg待炮炙品用炼蜜25kg。）",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "本品呈类圆形或椭圆形切片。外表皮红棕色或灰棕色，微有光泽。切面黄色至深黄色，形成层环明显，射线放射状。略有黏性。具焦香气，味甜。",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "甘草的炮制加工品。",
+  "charCount": 281,
+  "documents": [
+    {
+      "file": "702.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-605",
+  "summary": "补脾和胃，益气复脉",
+  "images": [],
+  "docCount": 1
+}

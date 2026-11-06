@@ -1,0 +1,96 @@
+{
+  "number": 274,
+  "name": "无患子",
+  "pinyin": "wuhuanzi",
+  "aliases": [
+    "木患子",
+    "油珠子",
+    "菩提子",
+    "圆肥皂"
+  ],
+  "categoryId": "qingre",
+  "categoryTitle": "清热药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "苦",
+      "辛"
+    ],
+    "nature": "寒；有小毒",
+    "meridianNames": [
+      "肺经",
+      "大肠经"
+    ],
+    "effects": "清热，祛痰，消积，杀虫",
+    "indications": "喉痹肿痛，肺热咳喘，音哑，食滞，疳积，蛔虫腹痛，滴虫性阴道炎，癣疾，肿毒。",
+    "dosage": "内服：煎汤，3～6g；或研末。外用：适量，烧灰或研末吹喉、擦牙，或煎汤洗；或熬膏涂。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "无患子科植物无患子 Sapindus mukorossi Gaertn.的干燥成熟种子。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "morphology",
+      "label": "植物形态",
+      "text": "落叶大乔木，高可达20多米。嫩枝绿色，无毛。偶数羽状复叶，互生；叶连柄长25～45cm或更长，叶轴上面两侧有直槽；小叶5～8对，通常近对生，小叶柄长约0.5cm；叶片薄纸质，长椭圆状披针形或稍呈镰形，长7～15cm或更长，宽2～5cm，先端短尖，基部楔形，腹面有光泽，两面无毛或背面被微柔毛。花序顶生，圆锥形；花小，辐射对称；萼片卵形或长圆状卵形，大的长约0.2cm，外面基部被疏柔毛；花瓣5，披针形，有长爪，长约0.25cm，外面基部被长柔毛或近无毛，鳞片2个，小耳状；花盘碟状，无毛；雄蕊8，伸出，花丝中部以下密被长柔毛；子房无毛。核果肉质，果的发育分果爿近球形，直径2～2.5cm，橙黄色，干时变黑。种子球形，黑色，坚硬。花期春季，果期夏秋。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "habitat",
+      "label": "生境分布",
+      "text": "分布于华东、中南至西南地区。各地寺庙、庭园和村边常见栽培。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "collection",
+      "label": "采制",
+      "text": "秋季采摘成熟果实，除去果肉和果皮，取种子晒干。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "本品呈球形或椭圆形，直径约1.5cm。表面黑色，光滑，种脐线形，附白色绒毛。质坚硬。剖开后，子叶2枚，黄色，肥厚，叠生，背面的1枚较大，半抱腹面的1枚；胚粗短，稍弯曲。气微，味苦。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "chemistry",
+      "label": "化学成分",
+      "text": "本品主要含蛋白质、脂肪油、萜类、甾体皂苷、倍半萜苷等化学　成分。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "formula",
+      "label": "附方",
+      "text": "①治喉痹：无患子，研，内喉中立开。（《普济方》）\n ②治百日咳，感冒发热：无患子果仁3枚。水煎服。（《青岛中草药手册》）\n ③治哮喘：无患子种子研粉。每次6g，开水冲服。（《浙江药用植物志》）\n ④治小儿腹中气胀：无患子仁3～4枚。煨熟食之，令放出矢气即消。（《岭南草药志》）\n ⑤治牙齿肿痛：无患子30g，大黄、香附各30g，青盐15g，泥固煅研，日用擦牙。（《普济方》）",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "无患子科植物无患子 Sapindus mukorossi Gaertn.的干燥成熟种子。",
+  "charCount": 892,
+  "documents": [
+    {
+      "file": "274.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-236",
+  "summary": "清热，祛痰，消积，杀虫",
+  "images": [
+    {
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/107712768/medium.jpeg",
+      "alt": "Reetha（Sapindus mukorossi）",
+      "credit": "no rights reserved, uploaded by 葉子",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/475356",
+      "latin": "Sapindus mukorossi",
+      "kind": "原植物"
+    }
+  ],
+  "docCount": 1
+}

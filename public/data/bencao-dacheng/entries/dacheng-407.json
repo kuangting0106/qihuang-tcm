@@ -1,0 +1,86 @@
+{
+  "number": 482,
+  "name": "丁香",
+  "pinyin": "dingxiang",
+  "aliases": [
+    "丁子香",
+    "公丁香",
+    "支解香"
+  ],
+  "categoryId": "wenli",
+  "categoryTitle": "温里药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "辛"
+    ],
+    "nature": "温",
+    "meridianNames": [
+      "脾经",
+      "胃经",
+      "肺经",
+      "肾经"
+    ],
+    "effects": "温中降逆，补肾助阳",
+    "indications": "脾胃虚寒，呃逆呕吐，食少吐泻，心腹冷痛，肾虚阳痿。",
+    "dosage": "内服：煎汤，2～5g；或入丸、散。外用：适量，研末敷贴。",
+    "contraindications": "热病及阴虚内热者禁服。"
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "桃金娘科植物丁香 Eugenia caryophyllata Thunb.的干燥花蕾。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "morphology",
+      "label": "植物形态",
+      "text": "参见“母丁香”项下。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "collection",
+      "label": "采制",
+      "text": "当花蕾由绿色转红时采摘，晒干。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "本品略呈研棒状，长1～2cm。花冠圆球形，直径0.3～0.5cm，花瓣4，复瓦状抱合，棕褐色或褐黄色，花瓣内为雄蕊和花柱，搓碎后可见众多黄色细粒状的花药。萼筒圆柱状，略扁，有的稍弯曲，长0.7～1.4cm，直径0.3～0.6cm，红棕色或棕褐色，上部有4枚三角状的萼片，十字状分开。质坚实，富油性。气芳香浓烈，味辛辣、有麻舌感。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "chemistry",
+      "label": "化学成分",
+      "text": "本品含丁香酚、乙酰丁香酚、异槲皮素、山柰酚、槲皮素、石竹烯氧化物、齐墩果酸、 α -衣兰油烯等成分。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "pharmacology",
+      "label": "药理",
+      "text": "抗胃溃疡，止泻，利胆，镇痛，抗缺氧，抗凝血，抗突变，抑菌杀虫。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "formula",
+      "label": "附方",
+      "text": "①治朝食暮吐：丁香十五个。研末。甘蔗汁、姜汁和丸莲子大。噙咽之。（《摘玄方》）\n ②治久心痛不止：丁香15g，桂心30g。捣细，罗为散，每于食前，以热酒调下3g。（《圣惠方》）\n ③治冷心疼，面青唇黑，手足厥冷：丁香、良姜、官桂各4.5g。水一碗煎七分，用胡椒二十粒炒黄色为末，调入汤药内热服。（《心医集》）\n ④治妇人崩中，昼夜不止：丁香60g，酒二升，煎一升，分服。（《梅师方》）\n ⑤治乳头裂破：捣丁香末敷之。（《梅师方》）",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "桃金娘科植物丁香 Eugenia caryophyllata Thunb.的干燥花蕾。",
+  "charCount": 670,
+  "documents": [
+    {
+      "file": "482.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-407",
+  "summary": "温中降逆，补肾助阳",
+  "images": [],
+  "docCount": 1
+}

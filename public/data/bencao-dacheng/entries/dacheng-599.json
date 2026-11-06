@@ -1,0 +1,57 @@
+{
+  "number": 696,
+  "name": "千金子霜",
+  "pinyin": "qianjinzishuang",
+  "aliases": [],
+  "categoryId": "xiexia",
+  "categoryTitle": "泻下药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "辛"
+    ],
+    "nature": "温；有毒",
+    "meridianNames": [
+      "肝经",
+      "肾经",
+      "大肠经"
+    ],
+    "effects": "泻下逐水，破血消癥；外用疗癣蚀疣",
+    "indications": "二便不通，水肿，痰饮，积滞胀痛，血瘀经闭；外治顽癣，赘疣。",
+    "dosage": "0.5～1g，多入丸、散服。外用适量。",
+    "contraindications": "孕妇禁用。"
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "千金子的炮制加工品。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "processing",
+      "label": "炮制",
+      "text": "取千金子，去皮取净仁，照制霜法制霜即得。（制霜：除另有规定外，取待炮制品碾碎如泥，经微热，压榨除去大部分油脂，含油量符合要求后，取残渣研制成符合规定的松散粉末。）",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "本品为均匀、疏松的淡黄色粉末，微显油性。味辛辣。",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "千金子的炮制加工品。",
+  "charCount": 218,
+  "documents": [
+    {
+      "file": "696.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-599",
+  "summary": "泻下逐水，破血消癥；外用疗癣蚀疣",
+  "images": [],
+  "docCount": 1
+}

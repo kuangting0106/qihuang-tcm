@@ -1,0 +1,89 @@
+{
+  "number": 599,
+  "name": "天然冰片",
+  "pinyin": "tianranbingpian",
+  "aliases": [
+    "龙脑",
+    "冰片"
+  ],
+  "categoryId": "qingre",
+  "categoryTitle": "清热药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "辛",
+      "苦"
+    ],
+    "nature": "凉",
+    "meridianNames": [
+      "心经",
+      "脾经",
+      "肺经"
+    ],
+    "effects": "开窍醒神，清热止痛",
+    "indications": "热病神昏、惊厥，中风痰厥，气郁暴厥，中恶昏迷；胸痹心痛，目赤，口疮，咽喉肿痛；耳道流脓。",
+    "dosage": "内服：入丸、散：0.15～0.3g，不入煎剂。外用：适量，研末撒，或吹、搽，或点，或调敷。",
+    "contraindications": "孕妇及气血虚者均应慎服。"
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "樟科植物樟 Cinnamomum camphora （L.）Presl的新鲜枝、叶经提取加工制成。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "morphology",
+      "label": "植物形态",
+      "text": "见“樟木”项下。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "本品为白色结晶性粉末或片状结晶。气清香，味辛、凉。具挥发性，点燃时有浓烟。火焰呈黄色。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "chemistry",
+      "label": "化学成分",
+      "text": "本品主要含右旋龙脑。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "pharmacology",
+      "label": "药理",
+      "text": "可抑制中枢神经系统，表现为明显的镇静镇痛作用，促进神经胶质细胞的生长和分裂；有抗炎、抗菌、抗生育作用，能与其他药物如四甲基吡嗪、水杨酸发生相互作用。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "formula",
+      "label": "附方",
+      "text": "①治头脑疼痛：龙脑3g，纸卷作拈，烧烟熏鼻，吐出痰涎，即愈。（《寿域神方》）\n ②治眼生花翳：龙脑3g，川朴硝15g。上件药同研如粉。每以铜箸取如大豆大，点之。（《圣惠方》）\n ③治风热喉痹：灯心草3g，黄柏（并烧存性）1.5g，白矾（煅）2.1g，冰片脑0.9g。为末。每以0.3～0.6g吹患处。（《濒湖集简方》）\n ④治口疮咽燥：龙脑9g，黄柏90g。为蜜丸梧子大，每麦门冬汤下十丸。（《摘玄方》）\n ⑤治痢疾，肛门肿胀如痔状：冰片研乳调搽。（《慎斋遗书》）\n ⑥治痱疮：龙脑（研）0.3g，黄柏（末）15g，白面60g，腊茶（末）30g。上拌匀，每以新绵揾药扑上，破者敷之。（《小儿卫生总微论方》）\n ⑦治内外痔疮：龙脑0.3～0.6g。葱汁化搽之。（《简便单方》）",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "樟科植物樟 Cinnamomum camphora （L.）Presl的新鲜枝、叶经提取加工制成。",
+  "charCount": 705,
+  "documents": [
+    {
+      "file": "599.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-513",
+  "summary": "开窍醒神，清热止痛",
+  "images": [
+    {
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/245245724/medium.jpeg",
+      "alt": "Camphor（Camphora officinarum）",
+      "credit": "(c) Greg Tasney, some rights reserved (CC BY-SA), uploaded by Greg Tasney",
+      "license": "CC-BY-SA",
+      "sourceUrl": "https://www.inaturalist.org/taxa/1591063",
+      "latin": "Camphora officinarum",
+      "kind": "原植物"
+    }
+  ],
+  "docCount": 1
+}

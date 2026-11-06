@@ -1,0 +1,74 @@
+{
+  "number": 664,
+  "name": "海马",
+  "pinyin": "haima",
+  "aliases": [
+    "水马",
+    "鰕姑",
+    "马头鱼",
+    "龙落子鱼"
+  ],
+  "categoryId": "gongdu",
+  "categoryTitle": "攻毒杀虫止痒药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "甘",
+      "咸"
+    ],
+    "nature": "温",
+    "meridianNames": [
+      "肝经",
+      "肾经"
+    ],
+    "effects": "温肾壮阳，散结消肿",
+    "indications": "阳痿，遗尿，肾虚作喘，癥瘕积聚，跌扑损伤；外治痈肿疔疮。",
+    "dosage": "内服：煎汤，3～9g；研末，1～1.5g。外用：适量，研末掺或调敷。",
+    "contraindications": "孕妇及阴虚阳亢者禁服。"
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "海龙科动物线纹海马 Hippocampus kellogg i Jordan et Snyder、刺海马 Hippocampus histrix Kaup、大海马 Hippocampus kuda Bleeker、三斑海马 Hippocampus trimaculatus Leach或小海马（海蛆） Hippocampus japonicus Kaup的干燥体。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "collection",
+      "label": "采制",
+      "text": "夏、秋二季捕捞，洗净，晒干；或除去皮膜和内脏，晒干。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "chemistry",
+      "label": "化学成分",
+      "text": "含牛磺酸及多种氨基酸、无机元素。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "pharmacology",
+      "label": "药理",
+      "text": "具有性激素样作用，延缓衰老，抗血栓形成。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "formula",
+      "label": "附方",
+      "text": "①治男子阳痿，妇女宫冷不孕：海马1对。炙燥研细粉，每服1g，每日3次，温酒送服。（《现代实用中药》）\n ②治肾阳虚弱，夜尿频繁或妇女因体虚而白带多：海马12g，枸杞子12g，鱼鳔胶（溶化）12g，红枣30g。水煎服。（《中药临床应用》海马汤）\n ③治气喘：海马3g，当归6g。炖鸡食或单用海马焙黄研末，水冲服。（《青岛中草药手册》）",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "海龙科动物线纹海马 Hippocampus kellogg i Jordan et Snyder、刺海马 Hippocampus histrix Kaup、大海马 Hippocampus kuda Bleeker、三斑海马 Hippocampus trimaculatus Leach或小海马（海蛆） Hippocampus japonicus Kaup的干燥体。",
+  "charCount": 696,
+  "documents": [
+    {
+      "file": "664.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-569",
+  "summary": "温肾壮阳，散结消肿",
+  "images": [],
+  "docCount": 1
+}

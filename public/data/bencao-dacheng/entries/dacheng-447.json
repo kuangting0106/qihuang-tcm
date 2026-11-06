@@ -1,0 +1,95 @@
+{
+  "number": 526,
+  "name": "龙脷叶",
+  "pinyin": "longliye",
+  "aliases": [
+    "龙舌叶",
+    "牛耳叶",
+    "龙利叶"
+  ],
+  "categoryId": "huatan",
+  "categoryTitle": "化痰止咳平喘药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "甘",
+      "淡"
+    ],
+    "nature": "平",
+    "meridianNames": [
+      "肺经",
+      "胃经"
+    ],
+    "effects": "润肺止咳，通便",
+    "indications": "肺燥咳嗽，咽痛失音，便秘。",
+    "dosage": "内服：煎汤，6～15g。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "大戟科植物龙脷叶 Sauropus spatulifolius Beille的干燥叶。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "morphology",
+      "label": "植物形态",
+      "text": "常绿小灌木，高达40cm。小枝稍有“之”字状折曲，有不明显的小柔毛。单叶互生；常聚生于小枝顶端；具短柄；托叶三角形，老时草黄色；叶片卵状披针形至倒卵状披针形，全缘，上面暗绿色，下面浅绿，中脉基部初微被柔毛，后无毛。花丛生于叶腋内或排成一极短的总状花序；花单性，雌雄同序，暗紫色；花梗短；雄花花萼较小而稍厚，与雌花花萼同形，花药椭圆形，稍厚，略凸出；雌花花柱细，2叉。蒴果具短柄，状如豌豆。外围宿萼与果近等长。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "habitat",
+      "label": "生境分布",
+      "text": "多为栽培或生于山谷、山坡湿润肥沃的丛林中。分布于广东、广西　等地。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "collection",
+      "label": "采制",
+      "text": "夏、秋二季采收，晒干。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "本品呈团状或长条状皱缩，展平后呈长卵形、卵状披针形或倒卵状披针形，表面黄褐色、黄绿色或绿褐色，长5～9cm，宽2.5～3.5cm。先端圆钝稍内凹而有小尖刺，基部楔形或稍圆，全缘或稍皱缩成波状。下表面中脉腹背突出，基部偶见柔毛，侧脉羽状，5～6对，于近外缘处合成边脉；叶柄短。气微，味淡、微甘。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "chemistry",
+      "label": "化学成分",
+      "text": "本品主要含氨基酸、多肽及蛋白质等成分。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "formula",
+      "label": "附方",
+      "text": "①治痰火咳嗽：以龙脷叶和猪肉煎汤服之。（《岭南采药录》）\n ②治急性支气管炎、上呼吸道炎、支气管哮喘：龙脷叶6～12g（鲜者9～30g）。水煎服。（广州部队《常用中草药手册》）",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "大戟科植物龙脷叶 Sauropus spatulifolius Beille的干燥叶。",
+  "charCount": 643,
+  "documents": [
+    {
+      "file": "526.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-447",
+  "summary": "润肺止咳，通便",
+  "images": [
+    {
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/703898/medium.jpg",
+      "alt": "Breynia spatulifolia（Breynia spatulifolia）",
+      "credit": "(c) 106611639464075912591, some rights reserved (CC BY-NC-SA), uploaded by 106611639464075912591",
+      "license": "CC-BY-NC-SA",
+      "sourceUrl": "https://www.inaturalist.org/taxa/1365412",
+      "latin": "Breynia spatulifolia",
+      "kind": "原植物"
+    }
+  ],
+  "docCount": 1
+}

@@ -1,0 +1,81 @@
+{
+  "number": 521,
+  "name": "山楂叶",
+  "pinyin": "shanzhaye",
+  "aliases": [
+    "赤枣子叶"
+  ],
+  "categoryId": "huoxue",
+  "categoryTitle": "活血化瘀药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "酸"
+    ],
+    "nature": "平",
+    "meridianNames": [
+      "肝经"
+    ],
+    "effects": "活血化瘀，理气通脉，化浊降脂",
+    "indications": "气滞血瘀，胸痹心痛，胸闷憋气，心悸健忘，眩晕耳鸣，高脂血症。",
+    "dosage": "内服：煎汤，3～10g；或泡茶饮。外用：适量，煎汤洗。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "蔷薇科植物山里红 Crataegus pinnatifida var.Var. major N.E.Br.或山楂 Crataegus pinnatifida Bge.的干燥叶。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "morphology",
+      "label": "植物形态",
+      "text": "见“山楂”项下。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "collection",
+      "label": "采制",
+      "text": "夏、秋二季采收，晾干。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "本品多已破碎，完整者展开后呈宽卵形，长6～12cm，宽5～8cm，绿色至棕黄色，先端渐尖，基部宽楔形，具2～6羽状裂片，边缘具尖锐重锯齿；叶柄长2～6cm，托叶卵圆形至卵状披针形。气微，味涩、微苦。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "chemistry",
+      "label": "化学成分",
+      "text": "本品含槲皮素、金丝桃苷、牡荆素鼠李糖苷、2 α ，3 β ，19 α -三羟基熊果酸、熊果酸、山楂定A、山楂定B、山楂定C、山楂定D等成分。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "pharmacology",
+      "label": "药理",
+      "text": "具有抗凝血、降血脂作用。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "formula",
+      "label": "附方",
+      "text": "治高血压：山楂叶，水煎代茶饮。（《陕西中草药》）",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "蔷薇科植物山里红 Crataegus pinnatifida var.Var. major N.E.Br.或山楂 Crataegus pinnatifida Bge.的干燥叶。",
+  "charCount": 491,
+  "documents": [
+    {
+      "file": "521.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-442",
+  "summary": "活血化瘀，理气通脉，化浊降脂",
+  "images": [],
+  "docCount": 1
+}

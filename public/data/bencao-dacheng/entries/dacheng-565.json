@@ -1,0 +1,80 @@
+{
+  "number": 660,
+  "name": "刺猬皮",
+  "pinyin": "ciweipi",
+  "aliases": [
+    "猬皮",
+    "刺鼠皮",
+    "刺球子皮"
+  ],
+  "categoryId": "zhixue",
+  "categoryTitle": "止血药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "苦",
+      "涩"
+    ],
+    "nature": "平",
+    "meridianNames": [
+      "肾经",
+      "胃经",
+      "大肠经"
+    ],
+    "effects": "固精缩尿，收敛止血，化瘀止痛",
+    "indications": "遗精滑精，遗尿尿频，便血痔血，胃脘刺痛，反胃吐食。",
+    "dosage": "6～12g，炮制后用，煎服或研末服。",
+    "contraindications": "孕妇慎用。"
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "刺猬科动物刺猬 Erinaceus europaeus Linnaeus 的干燥外皮。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "collection",
+      "label": "采制",
+      "text": "全年均可捕捉，捕后将皮剥下。内面撒上一层石灰，置通风处阴干。以肉脂刮净、刺毛整洁者为佳。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "干燥的皮呈多角形板刷状或直条状，有的边缘卷曲呈筒状或盘状。外表面密生错综交插的棘刺，棘长1.5～2cm，坚硬如针，灰白色、黄色、灰褐色不一。腹部的皮上有灰褐色软毛。皮内面灰白色或棕褐色。具特殊腥臭气。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "chemistry",
+      "label": "化学成分",
+      "text": "主要含角蛋白、胶原蛋白等。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "pharmacology",
+      "label": "药理",
+      "text": "本品有止血和促进平滑肌蠕动作用。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "formula",
+      "label": "附方",
+      "text": "①治反胃吐食：猬皮烧灰，酒服或煮汁，或五味淹炙食。（《普济方》）\n ②治遗精：炒刺猬皮研末。每次7g，日服二次。（《吉林中草药》）\n ③治鼻中息肉：猬皮炙末，绵裹塞之三日。（《千金方》）",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "刺猬科动物刺猬 Erinaceus europaeus Linnaeus 的干燥外皮。",
+  "charCount": 440,
+  "documents": [
+    {
+      "file": "660.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-565",
+  "summary": "固精缩尿，收敛止血，化瘀止痛",
+  "images": [],
+  "docCount": 1
+}

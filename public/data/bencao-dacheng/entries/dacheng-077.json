@@ -1,0 +1,102 @@
+{
+  "number": 77,
+  "name": "熟地黄",
+  "pinyin": "shudihuang",
+  "aliases": [
+    "熟地"
+  ],
+  "categoryId": "buxu",
+  "categoryTitle": "补虚药",
+  "quote": {
+    "text": "填骨髓，长肌肉，生精血，补五脏内伤不足，通血脉，利耳目，黑须发，男子五劳七伤，女子伤中胞漏，经候不调，胎产百病。",
+    "source": "《本草纲目》"
+  },
+  "profile": {
+    "flavorTags": [
+      "甘"
+    ],
+    "nature": "微温",
+    "meridianNames": [
+      "肝经",
+      "肾经"
+    ],
+    "effects": "补血滋阴，益精填髓",
+    "indications": "血虚萎黄，心悸怔忡，月经不调，崩漏下血，肝肾阴虚，腰膝酸软，骨蒸潮热，盗汗遗精，内热消渴，眩晕，耳鸣，须发早白。",
+    "dosage": "水煎服，9～15克。",
+    "contraindications": "熟地黄适用于贫血、腰肌劳损属精血亏虚者。气滞痰多、脘腹胀痛、食少便溏者忌服；糖尿病患者、单纯性肥胖患者忌单味大量长期服用。忌用铜器煎煮。"
+  },
+  "sections": [
+    {
+      "kind": "processing",
+      "label": "炮制方法",
+      "text": "取整生地黄，除去杂质，洗净，稍晾干，加黄酒拌匀，闷润24～48小时，装入蒸罐内，加水适量，密封，蒸12～24小时，中间倒罐一次，至黄酒被吸尽，色泽黑润时，取出，晒至约八成干时，切厚片，干燥。"
+    },
+    {
+      "kind": "selection",
+      "label": "选购秘笈",
+      "text": "熟地黄呈块状，表面皱缩不平，内外皆黑色，质地柔软黏稠，有时带光泽，油润有黏性，气微香，味甜。以块大而整、色漆黑、质润有光泽、味道甜的为优质品。\n优质熟地黄\n一般熟地黄"
+    },
+    {
+      "kind": "recipe",
+      "label": "家用妙方",
+      "text": "经验方：益气滋阴，降压\n熟地黄20克，生地黄20克，沙参15克，大枣20克，蜂蜜适量。以上四种药，洗净，同放碗中，加入蜂蜜，隔水蒸3小时即可。每日1剂，分3次服用。用于气阴两虚及高血压而出现的口渴多汗、气虚脉弱以及头晕头痛、心悸耳鸣。"
+    },
+    {
+      "kind": "diet",
+      "label": "食疗养生",
+      "text": "熟地牛脊汤\n滋阴补血，强筋壮骨\n熟地黄30克，牛脊骨500克，盐、味精适量。\n将熟地黄洗净，装入纱布袋中封口待用。牛脊骨斩成小块。把熟地黄和牛脊骨放入锅内，加清水1000毫升，用旺火烧沸后，再用小火煎煮1小时。去熟地黄，加盐、味精调味即可。适用于无病体虚、贫血、四肢乏力。食少、痰多不易咯出、腹泻者忌用。忌与萝卜、葱白、韭白、薤白同食。"
+    },
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "玄参科植物地黄 Rehmannia glutinosa Libosch.的新鲜块根，经加工蒸晒而成。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "morphology",
+      "label": "植物形态",
+      "text": "见“生地黄”项下。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "processing",
+      "label": "炮制",
+      "text": "1.取生地黄，照酒炖法炖至酒吸尽，取出，晾晒至外皮黏液稍干时，切厚片或块，干燥，即得。每100kg生地黄，用黄酒20～30kg。（酒炖法：取待炮炙品按各品种炮制项下的规定，加入酒，置适宜的容器中，密闭，隔水或蒸汽加热炖透，或炖至酒完全被吸尽时，放凉，取出，晾至六成干，切片，干燥。一般每100kg待炮炙品，用酒20～30kg。）\n2.取生地黄，照蒸法蒸至黑润，取出，晒至约八成干时，切厚片或块，干燥，即得。（蒸法参见“制何首乌”项）",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "本品呈不规则的块片、碎块，大小、厚薄不一。表面乌黑色，有光泽，黏性大。质柔软而带韧性，不易折断，断面乌黑色，有光泽。气微，味甜。",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "玄参科植物地黄 Rehmannia glutinosa Libosch.的新鲜块根，经加工蒸晒而成。",
+  "charCount": 1199,
+  "documents": [
+    {
+      "file": "77.txt",
+      "kind": "outline",
+      "title": "本草大全 · 本草纲目引文"
+    },
+    {
+      "file": "714.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-077",
+  "summary": "补血滋阴，益精填髓",
+  "images": [
+    {
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/197449921/medium.jpg",
+      "alt": "Rehmannia（Rehmannia glutinosa）",
+      "credit": "(c) Chuangzao, some rights reserved (CC BY-NC), uploaded by Chuangzao",
+      "license": "CC-BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/544445",
+      "latin": "Rehmannia glutinosa",
+      "kind": "原植物"
+    }
+  ],
+  "docCount": 2
+}

@@ -1,0 +1,56 @@
+{
+  "number": 701,
+  "name": "巴豆霜",
+  "pinyin": "badoushuang",
+  "aliases": [],
+  "categoryId": "xiexia",
+  "categoryTitle": "泻下药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "辛"
+    ],
+    "nature": "热；有大毒",
+    "meridianNames": [
+      "胃经",
+      "大肠经"
+    ],
+    "effects": "峻下冷积，逐水退肿，豁痰利咽；外用蚀疮",
+    "indications": "寒积便秘，乳食停滞，腹水臌胀，二便不通，喉风，喉痹；外治痈肿脓成不溃，疥癣恶疮，疣痣。",
+    "dosage": "0.1～0.3g，多入丸散用。外用适量。",
+    "contraindications": "孕妇禁用；不宜与牵牛子同用。"
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "巴豆的炮制加工品。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "processing",
+      "label": "炮制",
+      "text": "取巴豆仁，照制霜法（参见“千金子霜”项下）制霜，或取仁碾细后，照“含量测定”项下的方法，测定脂肪油含量，加适量的淀粉，使脂肪油含量符合规定，混匀，即得。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "本品为粒度均匀、疏松的淡黄色粉末，显油性。",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "巴豆的炮制加工品。",
+  "charCount": 234,
+  "documents": [
+    {
+      "file": "701.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-604",
+  "summary": "峻下冷积，逐水退肿，豁痰利咽；外用蚀疮",
+  "images": [],
+  "docCount": 1
+}

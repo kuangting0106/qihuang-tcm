@@ -1,0 +1,93 @@
+{
+  "number": 230,
+  "name": "狼毒",
+  "pinyin": "langdu",
+  "aliases": [
+    "白狼毒",
+    "黄皮狼毒",
+    "猫眼睛"
+  ],
+  "categoryId": "quchong",
+  "categoryTitle": "驱虫药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "辛"
+    ],
+    "nature": "平；有毒",
+    "meridianNames": [
+      "肝经",
+      "脾经"
+    ],
+    "effects": "散结，杀虫。外",
+    "indications": "淋巴结结核、皮癣；灭蛆。",
+    "dosage": "",
+    "contraindications": "本品有毒，宜慎服，孕妇禁服。不宜与密陀僧同用。"
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "大戟科植物狼毒大戟 Euphorbia fischeriana Steud.的干燥根。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "morphology",
+      "label": "植物形态",
+      "text": "多年生草本，高30～60cm。植物体具白色乳汁。根肉质，长圆锥形，外皮红褐色或褐色。茎直立，单一，疏生白色柔毛，尤以节间较多。叶互生；近无柄；茎中部以上的叶3～5枚轮生；叶片长圆形。总花序多歧聚伞花序，顶生，通常具5伞梗，每伞梗又生出3小梗或再3、4小伞梗；杯状总苞外面有柔毛，内面近无毛，边缘有睫毛，腺体4个，肾形。总苞内有多数雄花，每花仅有1雄蕊；雌花1朵生于总苞中央，仅具1雌蕊，常伸出总苞而下垂，子房3室，花柱3，柱头2裂。蒴果密生短柔毛或无毛。花期5～6月，果期6～7月。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "habitat",
+      "label": "生境分布",
+      "text": "生于草甸、向阳丘陵地。分布于黑龙江、吉林、辽宁、内蒙古、河北、河南、山西等地。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "collection",
+      "label": "采制",
+      "text": "春、秋二季采挖，洗净，切片，晒干。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "chemistry",
+      "label": "化学成分",
+      "text": "本品含羽扇豆醇、狼毒大戟素A、狼毒大戟素B等成分。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "pharmacology",
+      "label": "药理",
+      "text": "具有抗肿瘤、杀蛆、灭孑孓等作用。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "formula",
+      "label": "附方",
+      "text": "①治干湿疥疮：鲜狼毒捣烂，加生猪油和匀，布包搽患处。（《安徽中草药》）\n ②治顽癣：狼毒研细末，棉籽油或醋调搽患处。（《安徽中草药》）\n ③治牛皮癣、神经性皮炎：将狼毒熬膏，每隔日外搽1次。（《全国中草药汇编》）",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "大戟科植物狼毒大戟 Euphorbia fischeriana Steud.的干燥根。",
+  "charCount": 597,
+  "documents": [
+    {
+      "file": "230.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-201",
+  "summary": "散结，杀虫。外",
+  "images": [
+    {
+      "url": "/images/herbs/lecture/820729.jpg",
+      "alt": "狼毒（Stellera chamaejasme）",
+      "credit": "© Святослав Власенко / iNaturalist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/taxa/820729",
+      "latin": "Stellera chamaejasme"
+    }
+  ],
+  "docCount": 1
+}

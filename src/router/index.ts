@@ -63,6 +63,18 @@ const router = createRouter({
       meta: { title: '神农本草经讲义' },
     },
     {
+      path: '/bencao/dacheng',
+      name: 'bencao-dacheng',
+      component: () => import('@/views/BencaoDachengView.vue'),
+      meta: { title: '本草大全' },
+    },
+    {
+      path: '/bencao/dacheng/:id',
+      name: 'bencao-dacheng-entry',
+      component: () => import('@/views/BencaoDachengEntryView.vue'),
+      meta: { title: '本草大全 · 药材' },
+    },
+    {
       path: '/bencao/:groupId',
       name: 'bencao-group',
       component: () => import('@/views/BencaoGroupView.vue'),

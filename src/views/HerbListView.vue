@@ -4,6 +4,7 @@ import { RouterLink, useRoute, useRouter } from 'vue-router'
 import HerbCard from '@/components/HerbCard.vue'
 import HerbPropertyPrinciples from '@/components/HerbPropertyPrinciples.vue'
 import { formatCharCount } from '@/composables/useBencaoLectures'
+import { loadBencaoDachengIndex } from '@/composables/useBencaoDacheng'
 import {
   useHerbApi,
   type HerbMetaPayload,
@@ -31,6 +32,18 @@ const taxonomy = computed(() => meta.value?.taxonomy ?? null)
 const counts = computed(() => meta.value?.counts ?? null)
 const lectureCount = computed(() => counts.value?.lectureEntries ?? 0)
 const lectureChars = computed(() => counts.value?.lectureChars ?? 0)
+const dachengCount = ref(0)
+const dachengChars = ref(0)
+
+onMounted(async () => {
+  try {
+    const index = await loadBencaoDachengIndex()
+    dachengCount.value = index.total
+    dachengChars.value = index.items.reduce((sum, item) => sum + item.charCount, 0)
+  } catch {
+    // 本草大全未加载时不影响本草主页。
+  }
+})
 
 async function load() {
   try {
@@ -250,6 +263,23 @@ const meridianOptions = computed(() =>
         </span>
       </RouterLink>
 
+      <RouterLink class="lecture-entry lecture-entry--dacheng" to="/bencao/dacheng">
+        <span class="lecture-entry__seal" aria-hidden="true">全</span>
+        <span class="lecture-entry__body">
+          <span class="eyebrow">MATERIA MEDICA / 本草大全</span>
+          <strong>本草大全 · 中草药大全</strong>
+          <span class="lecture-entry__desc">
+            据《本草纲目》引文与《中草药大全》整理 616 味药材；保留原书引文、性味归经、
+            功能主治、用法用量、炮制、鉴别与附方，未核实的图片不替代。
+          </span>
+        </span>
+        <span class="lecture-entry__meta">
+          <span v-if="dachengCount">{{ dachengCount }} 味 · {{ formatCharCount(dachengChars) }}</span>
+          <span v-else>进入本草大全</span>
+          <span class="lecture-entry__arrow" aria-hidden="true">→</span>
+        </span>
+      </RouterLink>
+
       <section v-if="taxonomy" class="taxonomy-section" aria-label="本草分类">
         <div class="taxonomy-head">
           <div>
@@ -462,6 +492,21 @@ const meridianOptions = computed(() =>
 .lecture-entry:hover {
   border-color: var(--jade-2);
   transform: translateY(-2px);
+}
+
+.lecture-entry--dacheng {
+  margin-top: 0;
+  background:
+    linear-gradient(100deg, rgba(240, 226, 199, 0.48), transparent 46%),
+    rgba(255, 252, 245, 0.5);
+}
+
+.lecture-entry--dacheng:hover {
+  border-color: var(--cinnabar);
+}
+
+.lecture-entry--dacheng .lecture-entry__arrow {
+  color: var(--cinnabar);
 }
 
 .lecture-entry__seal {

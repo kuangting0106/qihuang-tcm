@@ -1,0 +1,57 @@
+{
+  "number": 695,
+  "name": "大蓟炭",
+  "pinyin": "dajitan",
+  "aliases": [],
+  "categoryId": "qingre",
+  "categoryTitle": "清热药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "苦",
+      "涩"
+    ],
+    "nature": "凉",
+    "meridianNames": [
+      "心经",
+      "肝经"
+    ],
+    "effects": "凉血止血",
+    "indications": "衄血，吐血，尿血，便血，崩漏，外伤出血。",
+    "dosage": "5～10g，多入丸、散服。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "大蓟的炮制加工品。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "processing",
+      "label": "炮制",
+      "text": "取干燥的大蓟段，照炒炭法，炒至表面焦黑色。（炒炭法：取待炮炙品，置热锅内，用武火炒至表面焦黑色、内部焦褐色或至规定程度时，喷淋清水少许，熄灭火星，取出，晾干。）",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "本品呈不规则的段。表面黑褐色。质地疏脆，断面棕黑色。气焦香。",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "大蓟的炮制加工品。",
+  "charCount": 185,
+  "documents": [
+    {
+      "file": "695.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-598",
+  "summary": "凉血止血",
+  "images": [],
+  "docCount": 1
+}

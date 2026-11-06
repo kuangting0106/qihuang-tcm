@@ -1,0 +1,94 @@
+{
+  "number": 177,
+  "name": "防己",
+  "pinyin": "fangji",
+  "aliases": [
+    "汉防己",
+    "山乌龟",
+    "石蟾蛤"
+  ],
+  "categoryId": "lishui",
+  "categoryTitle": "利水渗湿药",
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "苦"
+    ],
+    "nature": "寒",
+    "meridianNames": [
+      "膀胱经",
+      "肺经"
+    ],
+    "effects": "利水消肿，祛风止痛",
+    "indications": "风湿痹痛，水肿脚气，小便不利，湿疹疮毒 。",
+    "dosage": "内服：煎汤，6～10g；或入丸、散。",
+    "contraindications": "食欲不振及阴虚无湿者禁服。"
+  },
+  "sections": [
+    {
+      "kind": "source",
+      "label": "来源",
+      "text": "防己科植物粉防己 Stephania tetrandra S.Moore的干燥根。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "morphology",
+      "label": "植物形态",
+      "text": "多年生落叶藤本。块根通常圆柱状，肉质，深入地下，外皮淡棕色或棕褐色；具横纹。茎枝纤细，有直条纹，叶互生；叶柄盾状着生；叶片三角状宽卵形或阔三角形，先端钝，具小突尖，基部平截或略呈心形，全缘，上面绿色，下面灰绿色或粉白色，两面均被短柔毛，下面较密，掌状脉5条。花小，单性，雌雄异株；雄株为头状聚伞花序，总状排列；雄花：萼片子，排成1轮，绿色，匙形，基部楔形；花瓣4，绿色，倒卵形，肉质，边缘略内弯，有时具短爪；雄蕊4，花丝合生成柱状，上部盘状，花药着生其上；雌株为缩短的聚伞花序，呈假头状，总状排列；雌花：萼片4，排成1轮；花瓣4；子房椭圆形，花柱3，乳头状。核果球形，红色，内果皮长、宽均为4～5mm，背部有4行雕纹，中间2行呈鸡冠状隆起。花期5～6月，果期7～9月。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "habitat",
+      "label": "生境分布",
+      "text": "生于山坡、旷野草丛和灌木林中。分布于安徽、浙江、江西、福建、台湾、湖北、湖南、广东、广西等地。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "collection",
+      "label": "采制",
+      "text": "秋季采挖，洗净，刮去粗皮，切成长段，粗根剖为2～4瓣，晒干。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "character",
+      "label": "药材性状",
+      "text": "本品呈不规则圆柱形、半圆柱形或块状，多弯曲，长5～10cm，直径1～5cm。表面淡灰黄色，在弯曲处常有深陷横沟而成结节状的瘤块样。体重，质坚实，断面平坦，灰白色，富粉性，有排列较稀疏的放射状纹理。气微，味苦。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "chemistry",
+      "label": "化学成分",
+      "text": "本品主要含生物碱成分如去甲基粉防己碱、粉防己碱、防己诺林碱等。",
+      "source": "《中草药大全》"
+    },
+    {
+      "kind": "formula",
+      "label": "附方",
+      "text": "①治遗尿，小便涩：防己、葵子、防风各30g。上三味。以水五升，煮取二升半，分三服，散服亦佳。（《千金要方》）\n ②治膀胱水蓄胀满，几成水肿：防己6g，车前子、韭菜子、泽泻各9g。水煎服。（《本草切要》）\n ③治脚气肿痛：防己、木瓜、牛膝各9g，桂枝1.5g，枳壳3g。水煎服。（《本草切要》）\n ④治水膨胀：防己30g、生姜15g。同炒，随入水煎服。半饥时饮之。（《本草汇言》）\n ⑤治鼻衄：防己（生用）90g，捣罗为细散。每服6g，新汲水调下。老人小儿酒调3g服。更用热汤调少许、鼻中喘气，佳。（《圣济总录》）",
+      "source": "《中草药大全》"
+    }
+  ],
+  "sourceText": "防己科植物粉防己 Stephania tetrandra S.Moore的干燥根。",
+  "charCount": 968,
+  "documents": [
+    {
+      "file": "177.txt",
+      "kind": "herb",
+      "title": "本草大全 · 中草药大全"
+    }
+  ],
+  "id": "dacheng-157",
+  "summary": "利水消肿，祛风止痛",
+  "images": [
+    {
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/327353322/medium.jpeg",
+      "alt": "Stephania tetrandra（Stephania tetrandra）",
+      "credit": "no rights reserved, uploaded by 葉子",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/taxa/737284",
+      "latin": "Stephania tetrandra",
+      "kind": "原植物"
+    }
+  ],
+  "docCount": 1
+}
