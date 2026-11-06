@@ -111,6 +111,24 @@ const router = createRouter({
       meta: { title: '医案', section: 'cases' },
     },
     {
+      path: '/cases/all',
+      name: 'cases-all',
+      component: () => import('@/views/CaseCollectionView.vue'),
+      meta: { title: '全部医案', section: 'cases' },
+    },
+    {
+      path: '/cases/doctor/:doctor',
+      name: 'cases-doctor',
+      component: () => import('@/views/CaseCollectionView.vue'),
+      meta: { title: '医家医案', section: 'cases' },
+    },
+    {
+      path: '/cases/category/:category',
+      name: 'cases-category',
+      component: () => import('@/views/CaseCollectionView.vue'),
+      meta: { title: '分类医案', section: 'cases' },
+    },
+    {
       path: '/cases/:id',
       name: 'case-detail',
       component: () => import('@/views/TopicDetailView.vue'),

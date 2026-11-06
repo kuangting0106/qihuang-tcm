@@ -15,9 +15,6 @@ const basePath = computed(() => `/${section.value.key}`)
 
 const { loading, error, fetchCases } = useCaseApi()
 const caseList = ref<CaseSummary[]>([])
-const activeCategory = ref('全部')
-const activeDoctor = ref('全部')
-const showAllCases = ref(false)
 
 const categories = computed(() => {
   const counts = new Map<string, number>()
@@ -40,31 +37,9 @@ const doctors = computed(() => {
     .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'zh-CN'))
 })
 
-const filteredCases = computed(() =>
-  caseList.value.filter(
-    (item) =>
-      (activeCategory.value === '全部' || item.category === activeCategory.value) &&
-      (activeDoctor.value === '全部' || item.doctor === activeDoctor.value),
-  ),
-)
-
-const hasFilter = computed(
-  () => activeCategory.value !== '全部' || activeDoctor.value !== '全部',
-)
-
-const visibleCases = computed(() =>
-  !hasFilter.value && !showAllCases.value
-    ? filteredCases.value.slice(0, CASE_PREVIEW)
-    : filteredCases.value,
-)
-
-const hiddenCaseCount = computed(
-  () => filteredCases.value.length - visibleCases.value.length,
-)
-
 const topics = computed<Topic[]>(() =>
   section.value.key === 'cases'
-    ? visibleCases.value.map((item) => ({
+    ? caseList.value.slice(0, CASE_PREVIEW).map((item) => ({
         id: item.id,
         title: item.title,
         subtitle: `${item.category} · ${item.summary}`,
@@ -75,15 +50,9 @@ const topics = computed<Topic[]>(() =>
     : section.value.topics,
 )
 
-function selectCategory(name: string) {
-  activeCategory.value = name
-  showAllCases.value = false
-}
-
-function selectDoctor(name: string) {
-  activeDoctor.value = name
-  showAllCases.value = false
-}
+const hiddenCaseCount = computed(() =>
+  Math.max(0, caseList.value.length - topics.value.length),
+)
 
 async function loadCases() {
   try {
@@ -168,27 +137,20 @@ function topicStatus(id: string) {
           <span>悬停医生名可看简介</span>
         </div>
         <div class="case-filter__list" role="group" aria-label="按医家筛选">
-          <button
-            class="case-filter__btn"
-            :class="{ 'case-filter__btn--active': activeDoctor === '全部' }"
-            type="button"
-            @click="selectDoctor('全部')"
-          >
+          <RouterLink class="case-filter__btn" to="/cases/all">
             全部医家
             <span class="case-filter__count">{{ caseList.length }}</span>
-          </button>
-          <button
+          </RouterLink>
+          <RouterLink
             v-for="item in doctors"
             :key="item.name"
             class="case-filter__btn"
-            :class="{ 'case-filter__btn--active': activeDoctor === item.name }"
-            type="button"
+            :to="`/cases/doctor/${encodeURIComponent(item.name)}`"
             :title="item.bio"
-            @click="selectDoctor(item.name)"
           >
             {{ item.name }}
             <span class="case-filter__count">{{ item.count }}</span>
-          </button>
+          </RouterLink>
         </div>
       </div>
 
@@ -198,26 +160,19 @@ function topicStatus(id: string) {
           <span>点分类查看该类全部医案</span>
         </div>
         <div class="case-filter__list" role="group" aria-label="按医案分类筛选">
-          <button
-            class="case-filter__btn"
-            :class="{ 'case-filter__btn--active': activeCategory === '全部' }"
-            type="button"
-            @click="selectCategory('全部')"
-          >
+          <RouterLink class="case-filter__btn" to="/cases/all">
             全部
             <span class="case-filter__count">{{ caseList.length }}</span>
-          </button>
-          <button
+          </RouterLink>
+          <RouterLink
             v-for="item in categories"
             :key="item.name"
             class="case-filter__btn"
-            :class="{ 'case-filter__btn--active': activeCategory === item.name }"
-            type="button"
-            @click="selectCategory(item.name)"
+            :to="`/cases/category/${encodeURIComponent(item.name)}`"
           >
             {{ item.name }}
             <span class="case-filter__count">{{ item.count }}</span>
-          </button>
+          </RouterLink>
         </div>
       </div>
 
@@ -254,19 +209,10 @@ function topicStatus(id: string) {
       </section>
 
       <div v-if="section.key === 'cases' && hiddenCaseCount > 0" class="case-more">
-        <span>当前显示前 {{ CASE_PREVIEW }} 则，共 {{ filteredCases.length }} 则</span>
-        <button class="btn btn--primary" type="button" @click="showAllCases = true">
-          查看全部 {{ filteredCases.length }} 则医案
-        </button>
-      </div>
-      <div
-        v-else-if="section.key === 'cases' && showAllCases && filteredCases.length > CASE_PREVIEW"
-        class="case-more"
-      >
-        <span>已显示全部 {{ filteredCases.length }} 则</span>
-        <button class="btn" type="button" @click="showAllCases = false">
-          收起，只看前 {{ CASE_PREVIEW }} 则
-        </button>
+        <span>当前显示前 {{ CASE_PREVIEW }} 则，共 {{ caseList.length }} 则</span>
+        <RouterLink class="btn btn--primary" to="/cases/all">
+          查看全部 {{ caseList.length }} 则医案
+        </RouterLink>
       </div>
 
       <section class="topic-principles paper-panel">
