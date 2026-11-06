@@ -1214,8 +1214,15 @@ const server = createServer(async (req, res) => {
             id: row.id,
             title: row.title,
             category: row.category,
+            subcategory: item.subcategory ?? '',
+            doctor: item.doctor ?? '',
+            mode: item.mode ?? 'case',
             summary: row.summary,
-            source: { work: row.source_work, locator: row.source_locator },
+            source: {
+              work: row.source_work,
+              locator: row.source_locator,
+              note: item.source?.note ?? '',
+            },
             prescriptionCount: (item.content ?? []).filter(
               (block) => block.type === 'prescription',
             ).length,

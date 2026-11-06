@@ -64,6 +64,10 @@ const bodyPointsFile = path.join(root, 'scripts', 'content', 'body_points.json')
 const bodyPoints = fs.existsSync(bodyPointsFile)
   ? JSON.parse(fs.readFileSync(bodyPointsFile, 'utf8'))
   : null
+const processingClassicsFile = path.join(root, 'src', 'data', 'processing-classics.json')
+const processingClassics = fs.existsSync(processingClassicsFile)
+  ? JSON.parse(fs.readFileSync(processingClassicsFile, 'utf8'))
+  : { books: [], entries: [] }
 const enrichedAcupoints = acupoints.map((p) => ({
   ...p,
   ...(bodyPoints?.points?.[p.id] ? { coordinates: bodyPoints.points[p.id] } : {}),
@@ -99,6 +103,7 @@ const data = {
   herbTaxonomy,
   herbPrinciples,
   processingExamples,
+  processingClassics,
   formulas: allFormulas,
   meridians: enrichedMeridians,
   acupoints: enrichedAcupoints,

@@ -5,6 +5,7 @@ import { clinicalDisclaimer } from '@/data/clinical-methods'
 import { getTopicSection, type Topic } from '@/data/topics'
 import { useCaseApi } from '@/composables/useCaseApi'
 import type { CaseSummary } from '@/types/cases'
+import { doctorProfiles } from '@/data/doctor-profiles'
 
 const CASE_PREVIEW = 20
 
@@ -15,6 +16,7 @@ const basePath = computed(() => `/${section.value.key}`)
 const { loading, error, fetchCases } = useCaseApi()
 const caseList = ref<CaseSummary[]>([])
 const activeCategory = ref('全部')
+const activeDoctor = ref('全部')
 const showAllCases = ref(false)
 
 const categories = computed(() => {
@@ -27,14 +29,31 @@ const categories = computed(() => {
     .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'zh-CN'))
 })
 
+const doctors = computed(() => {
+  const counts = new Map<string, number>()
+  for (const item of caseList.value) {
+    if (!item.doctor) continue
+    counts.set(item.doctor, (counts.get(item.doctor) ?? 0) + 1)
+  }
+  return [...counts.entries()]
+    .map(([name, count]) => ({ name, count, bio: doctorProfiles[name]?.bio ?? '' }))
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'zh-CN'))
+})
+
 const filteredCases = computed(() =>
-  activeCategory.value === '全部'
-    ? caseList.value
-    : caseList.value.filter((item) => item.category === activeCategory.value),
+  caseList.value.filter(
+    (item) =>
+      (activeCategory.value === '全部' || item.category === activeCategory.value) &&
+      (activeDoctor.value === '全部' || item.doctor === activeDoctor.value),
+  ),
+)
+
+const hasFilter = computed(
+  () => activeCategory.value !== '全部' || activeDoctor.value !== '全部',
 )
 
 const visibleCases = computed(() =>
-  activeCategory.value === '全部' && !showAllCases.value
+  !hasFilter.value && !showAllCases.value
     ? filteredCases.value.slice(0, CASE_PREVIEW)
     : filteredCases.value,
 )
@@ -49,12 +68,20 @@ const topics = computed<Topic[]>(() =>
         id: item.id,
         title: item.title,
         subtitle: `${item.category} · ${item.summary}`,
+        doctor: item.doctor,
+        mode: item.mode,
+        doctorBio: item.doctor ? doctorProfiles[item.doctor]?.bio : '',
       }))
     : section.value.topics,
 )
 
 function selectCategory(name: string) {
   activeCategory.value = name
+  showAllCases.value = false
+}
+
+function selectDoctor(name: string) {
+  activeDoctor.value = name
   showAllCases.value = false
 }
 
@@ -116,6 +143,7 @@ function topicStatus(id: string) {
             <template v-if="section.key === 'cases'">
               <span class="chip chip--cinnabar">{{ caseList.length }} 则医案</span>
               <span v-if="categories.length" class="chip">{{ categories.length }} 类</span>
+              <span v-if="doctors.length" class="chip">{{ doctors.length }} 位医家</span>
               <span class="chip">讲义原文 · 非诊断标准</span>
             </template>
             <template v-else>
@@ -133,6 +161,36 @@ function topicStatus(id: string) {
         {{ error }}
         <button class="btn btn--primary" type="button" @click="loadCases">重新加载</button>
       </p>
+
+      <div v-if="section.key === 'cases' && doctors.length" class="case-filter case-filter--doctor">
+        <div class="case-filter__head">
+          <span class="eyebrow">CASE DOCTOR / 医家</span>
+          <span>悬停医生名可看简介</span>
+        </div>
+        <div class="case-filter__list" role="group" aria-label="按医家筛选">
+          <button
+            class="case-filter__btn"
+            :class="{ 'case-filter__btn--active': activeDoctor === '全部' }"
+            type="button"
+            @click="selectDoctor('全部')"
+          >
+            全部医家
+            <span class="case-filter__count">{{ caseList.length }}</span>
+          </button>
+          <button
+            v-for="item in doctors"
+            :key="item.name"
+            class="case-filter__btn"
+            :class="{ 'case-filter__btn--active': activeDoctor === item.name }"
+            type="button"
+            :title="item.bio"
+            @click="selectDoctor(item.name)"
+          >
+            {{ item.name }}
+            <span class="case-filter__count">{{ item.count }}</span>
+          </button>
+        </div>
+      </div>
 
       <div v-if="section.key === 'cases' && caseList.length" class="case-filter">
         <div class="case-filter__head">
@@ -183,6 +241,10 @@ function topicStatus(id: string) {
             </span>
           </div>
           <h2>{{ topic.title }}</h2>
+          <div v-if="topic.doctor" class="topic-card__doctor">
+            <span class="topic-card__doctor-name" :title="topic.doctorBio">{{ topic.doctor }}</span>
+            <span class="topic-card__doctor-mode">{{ topic.mode === 'thought' ? '经验集' : '医案' }}</span>
+          </div>
           <p>{{ topic.subtitle }}</p>
           <div class="topic-card__foot">
             <span>进入栏目</span>
@@ -294,6 +356,33 @@ function topicStatus(id: string) {
 
 .case-filter__btn--active .case-filter__count {
   color: rgba(255, 252, 245, 0.72);
+}
+
+.case-filter--doctor {
+  padding-top: 10px;
+}
+
+.topic-card__doctor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  margin: 2px 0 6px;
+  font-size: 0.7rem;
+}
+
+.topic-card__doctor-name {
+  color: var(--cinnabar);
+  border-bottom: 1px dotted rgba(163, 58, 43, 0.45);
+  cursor: help;
+}
+
+.topic-card__doctor-mode {
+  padding: 1px 7px;
+  border: 1px solid rgba(176, 138, 74, 0.38);
+  border-radius: 999px;
+  color: var(--ink-faint);
+  font-size: 0.62rem;
 }
 
 .case-more {

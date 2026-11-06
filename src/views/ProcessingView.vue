@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink } from 'vue-router'
 import CitationBadge from '@/components/CitationBadge.vue'
 import { loadBencaoCatalog } from '@/composables/useBencaoLectures'
@@ -28,6 +28,39 @@ function lectureRank(item: { rankId: string }) {
 
 const herbs = computed(() => data.value?.herbs ?? [])
 const examples = computed(() => data.value?.processingExamples ?? [])
+
+const classicBooks = computed(() => data.value?.processingClassics?.books ?? [])
+const classicEntries = computed(() => data.value?.processingClassics?.entries ?? [])
+const activeClassicBook = ref('all')
+const classicQuery = ref('')
+const classicLimit = ref(40)
+
+const filteredClassicEntries = computed(() => {
+  const query = classicQuery.value.trim()
+  return classicEntries.value.filter((entry) => {
+    if (activeClassicBook.value !== 'all' && entry.bookId !== activeClassicBook.value) return false
+    if (!query) return true
+    return [entry.name, entry.section, entry.nature, entry.processing].some((value) =>
+      value.includes(query),
+    )
+  })
+})
+
+const visibleClassicEntries = computed(() =>
+  filteredClassicEntries.value.slice(0, classicLimit.value),
+)
+
+const hiddenClassicCount = computed(
+  () => filteredClassicEntries.value.length - visibleClassicEntries.value.length,
+)
+
+watch([activeClassicBook, classicQuery], () => {
+  classicLimit.value = 40
+})
+
+function selectClassicBook(id: string) {
+  activeClassicBook.value = id
+}
 
 const groups = computed(() =>
   processingCategories.map((category) => ({
@@ -146,6 +179,87 @@ function categoryTitle(categoryId: string) {
             <p>该类药材的炮制方法尚未逐条核对，暂不写操作步骤。</p>
           </div>
         </template>
+      </section>
+
+      <section v-if="classicEntries.length" class="classic-processing">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">CLASSICS / 古籍炮制</p>
+            <h2>《雷公炮制药性解》《炮炙大法》</h2>
+          </div>
+          <p>
+            两书按原书卷部与药名逐条拆出，原文照录。雷公条目保留“药性解说”与“雷公云”炮制两部分；
+            炮炙大法以修事、炮制为主。古籍工艺未逐字校勘，实际炮制须以现行规范复核。
+          </p>
+        </div>
+
+        <div class="classic-processing__books">
+          <button
+            class="classic-book"
+            :class="{ 'classic-book--active': activeClassicBook === 'all' }"
+            type="button"
+            @click="selectClassicBook('all')"
+          >
+            <strong>全部</strong>
+            <span>{{ classicEntries.length }} 条</span>
+          </button>
+          <button
+            v-for="book in classicBooks"
+            :key="book.id"
+            class="classic-book"
+            :class="{ 'classic-book--active': activeClassicBook === book.id }"
+            type="button"
+            @click="selectClassicBook(book.id)"
+          >
+            <strong>{{ book.title }}</strong>
+            <span>{{ book.dynasty }} · {{ book.author }} · {{ book.count }} 条</span>
+          </button>
+        </div>
+
+        <div class="classic-processing__tools">
+          <input
+            v-model="classicQuery"
+            type="search"
+            placeholder="搜药名、卷部、药性或炮制方法…"
+            aria-label="搜索古籍炮制条目"
+          />
+          <span>当前 {{ filteredClassicEntries.length }} 条，显示 {{ visibleClassicEntries.length }} 条</span>
+        </div>
+
+        <div class="classic-processing__grid">
+          <article
+            v-for="entry in visibleClassicEntries"
+            :key="entry.id"
+            class="classic-card paper-panel"
+          >
+            <div class="classic-card__top">
+              <div>
+                <h3>{{ entry.name }}</h3>
+                <p>{{ entry.book }} · {{ entry.section || '卷部待考' }}</p>
+              </div>
+              <span class="chip chip--gold">{{ entry.dynasty }}</span>
+            </div>
+            <div v-if="entry.nature" class="classic-card__block">
+              <span class="classic-card__label">药性解说</span>
+              <p>{{ entry.nature }}</p>
+            </div>
+            <div class="classic-card__block">
+              <span class="classic-card__label">收集 / 炮制</span>
+              <p v-if="entry.processing">{{ entry.processing }}</p>
+              <p v-else class="classic-card__empty">原书此条未另列炮制。</p>
+            </div>
+            <div class="classic-card__foot">
+              <span class="kind-badge kind-badge--quote">原文</span>
+              <CitationBadge :citation-ids="[entry.sourceId]" label="古籍出处" tone="muted" compact />
+            </div>
+          </article>
+        </div>
+
+        <div v-if="hiddenClassicCount > 0" class="classic-processing__more">
+          <button class="btn" type="button" @click="classicLimit += 40">
+            再显示 40 条（还有 {{ hiddenClassicCount }} 条）
+          </button>
+        </div>
       </section>
 
       <section v-if="lectureProcessing.length" class="lecture-processing">
@@ -472,6 +586,144 @@ function categoryTitle(categoryId: string) {
   font-size: 0.78rem;
 }
 
+.classic-processing {
+  padding: 28px 0 34px;
+  border-top: 1px solid var(--line);
+}
+
+.classic-processing__books {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.classic-book {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 13px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 252, 245, 0.5);
+  text-align: left;
+}
+
+.classic-book strong {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 0.9rem;
+}
+
+.classic-book span {
+  color: var(--ink-faint);
+  font-size: 0.64rem;
+}
+
+.classic-book--active {
+  border-color: rgba(163, 58, 43, 0.4);
+  background: rgba(241, 221, 214, 0.36);
+}
+
+.classic-book--active strong {
+  color: var(--cinnabar);
+}
+
+.classic-processing__tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.classic-processing__tools input {
+  width: min(420px, 100%);
+  padding: 9px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--ink);
+  font-size: 0.8rem;
+}
+
+.classic-processing__tools span {
+  color: var(--ink-faint);
+  font-size: 0.7rem;
+}
+
+.classic-processing__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.classic-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 18px;
+}
+
+.classic-card__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.classic-card__top h3 {
+  font-size: 1.18rem;
+}
+
+.classic-card__top p {
+  margin-top: 2px;
+  color: var(--ink-faint);
+  font-size: 0.66rem;
+}
+
+.classic-card__block {
+  display: grid;
+  gap: 3px;
+}
+
+.classic-card__label {
+  color: var(--gold);
+  font-size: 0.64rem;
+  letter-spacing: 0.08em;
+}
+
+.classic-card__block p {
+  color: var(--ink-soft);
+  font-family: var(--serif);
+  font-size: 0.82rem;
+  line-height: 1.9;
+  white-space: pre-line;
+}
+
+.classic-card__empty {
+  color: var(--ink-faint);
+  font-family: var(--sans);
+  font-size: 0.74rem;
+}
+
+.classic-card__foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 9px;
+  border-top: 1px dashed var(--line);
+}
+
+.classic-processing__more {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
 .lecture-processing {
   padding: 8px 0 28px;
   border-top: 1px dashed var(--line);
@@ -623,7 +875,8 @@ function categoryTitle(categoryId: string) {
   }
 
   .entry-list,
-  .pending-grid {
+  .pending-grid,
+  .classic-processing__grid {
     grid-template-columns: 1fr;
   }
 }

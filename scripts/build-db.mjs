@@ -48,6 +48,8 @@ const classicBooks = (classicIndex.books ?? []).map((book) =>
   readJson(path.join(classicsDir, `${book.id}.json`)),
 )
 const caseData = readJson(path.join(root, 'src', 'data', 'jingui-cases.json'))
+const classicCaseData = readJson(path.join(root, 'src', 'data', 'classic-cases.json'))
+const caseItems = [...(caseData.cases ?? []), ...(classicCaseData.cases ?? [])]
 const bencaoGroupIds = ['intro', 'shangjing', 'zhongjing', 'xiajing', 'nishi', 'editor']
 const bencaoGroups = bencaoGroupIds
   .map((id) => {
@@ -432,7 +434,7 @@ try {
     })
   }
 
-  ;(caseData.cases ?? []).forEach((item, index) => {
+  caseItems.forEach((item, index) => {
     insertCase.run(
       item.id,
       item.title ?? item.id,

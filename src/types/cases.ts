@@ -10,12 +10,18 @@ export type CaseContent =
 export interface CaseSource {
   work: string
   locator: string
+  note?: string
 }
+
+export type CaseMode = 'case' | 'thought'
 
 export interface CaseItem {
   id: string
   title: string
   category: string
+  doctor?: string
+  mode?: CaseMode
+  subcategory?: string
   summary: string
   source: CaseSource
   content: CaseContent[]
@@ -25,6 +31,9 @@ export interface CaseSummary {
   id: string
   title: string
   category: string
+  doctor?: string
+  mode?: CaseMode
+  subcategory?: string
   summary: string
   source: CaseSource
   prescriptionCount: number

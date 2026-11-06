@@ -72,6 +72,28 @@ export interface ProcessingExample {
   note: string
 }
 
+export interface ProcessingClassicEntry {
+  id: string
+  book: string
+  bookId: string
+  author: string
+  dynasty: string
+  section: string
+  name: string
+  nature: string
+  processing: string
+  sourceId: string
+}
+
+export interface ProcessingClassicBook {
+  id: string
+  title: string
+  author: string
+  dynasty: string
+  sourceId: string
+  count: number
+}
+
 export interface HerbPairing {
   herbId: string
   label: string
@@ -350,6 +372,10 @@ export interface TcmData {
   herbTaxonomy: HerbTaxonomy
   herbPrinciples: HerbPrinciples
   processingExamples: ProcessingExample[]
+  processingClassics: {
+    books: ProcessingClassicBook[]
+    entries: ProcessingClassicEntry[]
+  }
   formulas: Formula[]
   meridians: Meridian[]
   acupoints: Acupoint[]

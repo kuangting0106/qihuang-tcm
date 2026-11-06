@@ -5,6 +5,9 @@ export interface Topic {
   title: string
   subtitle: string
   note?: string
+  doctor?: string
+  mode?: 'case' | 'thought'
+  doctorBio?: string
 }
 
 export const methodTopics: Topic[] = [
