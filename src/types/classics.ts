@@ -42,7 +42,12 @@ export interface ClassicBookSummary {
   id: string
   title: string
   author: string
-  stats: ClassicBookStats
+  dynasty?: string
+  category?: string
+  subcategory?: string
+  sectionCount?: number
+  charCount?: number
+  stats?: ClassicBookStats
 }
 
 export interface ClassicLibraryIndex {

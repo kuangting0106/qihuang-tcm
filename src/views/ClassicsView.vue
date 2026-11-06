@@ -2,14 +2,26 @@
 import { computed, onMounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import { formatCharCount, loadClassicCatalog } from '@/composables/useClassicLibrary'
+import { fetchLibraryIndex } from '@/composables/useLibraryApi'
 import type { Citation } from '@/types/tcm'
 import type { ClassicLibraryIndex } from '@/types/classics'
 
 const library = ref<ClassicLibraryIndex | null>(null)
+const libraryTotal = ref(0)
 const classicSources = ref<Citation[]>([])
 const libraryError = ref('')
 
 onMounted(() => {
+  fetchLibraryIndex()
+    .then((payload) => {
+      libraryTotal.value =
+        payload.total ??
+        payload.source?.totalBooks ??
+        payload.categories.reduce((sum, category) => sum + category.count, 0)
+    })
+    .catch(() => {
+      libraryTotal.value = 0
+    })
   loadClassicCatalog()
     .then((payload) => {
       library.value = payload.index
@@ -24,9 +36,12 @@ const libraryStats = computed(() => {
   const books = library.value?.books ?? []
   return {
     books: books.length,
-    chapters: books.reduce((sum, book) => sum + book.stats.chapterCount, 0),
-    prefaces: books.reduce((sum, book) => sum + book.stats.prefaceCount, 0),
-    chars: books.reduce((sum, book) => sum + book.stats.charCount, 0),
+    chapters: books.reduce(
+      (sum, book) => sum + (book.stats?.chapterCount ?? book.sectionCount ?? 0),
+      0,
+    ),
+    prefaces: books.reduce((sum, book) => sum + (book.stats?.prefaceCount ?? 0), 0),
+    chars: books.reduce((sum, book) => sum + (book.stats?.charCount ?? book.charCount ?? 0), 0),
   }
 })
 
@@ -114,10 +129,10 @@ const stats = computed(() => ({
             <h3>{{ book.title }}</h3>
             <p class="book-card__author">作者：{{ book.author }}</p>
             <p class="book-card__meta">
-              {{ book.stats.chapterCount }} 篇 · {{ book.stats.prefaceCount }} 篇序跋 ·
-              {{ book.stats.volumeCount }} 卷
+              {{ book.stats?.chapterCount ?? 0 }} 篇 · {{ book.stats?.prefaceCount ?? 0 }} 篇序跋 ·
+              {{ book.stats?.volumeCount ?? 0 }} 卷
             </p>
-            <p class="book-card__size">{{ formatCharCount(book.stats.charCount) }}</p>
+            <p class="book-card__size">{{ formatCharCount(book.stats?.charCount ?? 0) }}</p>
             <span class="book-card__link">进入全书 →</span>
           </RouterLink>
         </div>
@@ -127,7 +142,7 @@ const stats = computed(() => ({
         <span class="library-entry__seal" aria-hidden="true">藏</span>
         <div class="library-entry__copy">
           <p class="eyebrow">MEDICAL LIBRARY / 医藏古籍</p>
-          <h2>医藏古籍 597 部</h2>
+          <h2>医藏古籍 {{ libraryTotal }} 部</h2>
           <p>
             按医经、伤寒金匮、本草、方书、诊法、针灸经络、临证各科等分类；
             一级分类悬浮可看二级分类，进入书库后按需读取书目与正文。

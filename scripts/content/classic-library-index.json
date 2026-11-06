@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-11-05T13:11:33.073Z",
+  "generatedAt": "2026-11-06T06:32:11.718Z",
   "source": {
     "dir": "F:\\中医\\8CE88F\\%E5%8C%BB%E8%97%8F",
-    "totalFiles": 598,
-    "totalBooks": 597,
+    "totalFiles": 607,
+    "totalBooks": 606,
     "excluded": [
       "本草纲目"
     ],
-    "chars": 70555704
+    "chars": 71276117
   },
   "categories": [
     {
       "key": "yijing",
       "label": "医经",
       "description": "内经、难经、太素等中医理论根柢。",
-      "count": 35,
+      "count": 37,
       "subs": [
         {
           "key": "suwen",
           "label": "素问",
-          "count": 15
+          "count": 16
         },
         {
           "key": "lingshu",
@@ -29,7 +29,7 @@
         {
           "key": "nanjing",
           "label": "难经",
-          "count": 6
+          "count": 7
         },
         {
           "key": "taisu",
@@ -52,12 +52,12 @@
       "key": "shanghan",
       "label": "伤寒金匮",
       "description": "《伤寒论》《金匮要略》及历代注本、方论。",
-      "count": 20,
+      "count": 21,
       "subs": [
         {
           "key": "shanghan",
           "label": "伤寒",
-          "count": 7
+          "count": 8
         },
         {
           "key": "jingui",
@@ -154,12 +154,12 @@
       "key": "zhenjiu",
       "label": "针灸经络",
       "description": "针灸通论、经络腧穴、灸法与针灸歌赋。",
-      "count": 44,
+      "count": 46,
       "subs": [
         {
           "key": "tonglun",
           "label": "针灸通论",
-          "count": 5
+          "count": 6
         },
         {
           "key": "jingluo",
@@ -175,6 +175,11 @@
           "key": "tuina",
           "label": "推拿",
           "count": 4
+        },
+        {
+          "key": "gefue",
+          "label": "针灸歌赋",
+          "count": 1
         }
       ]
     },
@@ -182,17 +187,17 @@
       "key": "linzheng",
       "label": "临证各科",
       "description": "内科杂病、妇科、儿科、外科伤科、喉科口齿、眼科与温病疫病。",
-      "count": 161,
+      "count": 164,
       "subs": [
         {
           "key": "neike",
           "label": "内科杂病",
-          "count": 42
+          "count": 43
         },
         {
           "key": "fuke",
           "label": "妇科",
-          "count": 31
+          "count": 32
         },
         {
           "key": "erke",
@@ -202,7 +207,7 @@
         {
           "key": "waike",
           "label": "外科伤科",
-          "count": 23
+          "count": 24
         },
         {
           "key": "houke",
@@ -243,12 +248,12 @@
       "key": "yangsheng",
       "label": "养生食疗",
       "description": "养生、食疗、导引与服食。",
-      "count": 20,
+      "count": 21,
       "subs": [
         {
           "key": "yangsheng",
           "label": "养生",
-          "count": 11
+          "count": 12
         },
         {
           "key": "shiliao",
@@ -11082,6 +11087,159 @@
         "github": "https://github.com/daizhige-org/daizhigev20/blob/data/%E5%8C%BB%E8%97%8F/%E9%81%B5%E7%94%9F%E5%85%AB%E7%AC%BA.md",
         "lastmod": "2018-11-26T22:44:40Z",
         "note": "据殆知阁医藏 Markdown 转换本整理；未逐字校勘，原文以通行本为准。"
+      }
+    },
+    {
+      "id": "lib-b7c1ca0a6e",
+      "file": "G-026-傅青主女科.txt",
+      "title": "傅青主女科",
+      "author": "傅山",
+      "dynasty": "清",
+      "category": "linzheng",
+      "subcategory": "fuke",
+      "charCount": 43131,
+      "sectionCount": 77,
+      "duplicateOf": "",
+      "versionNote": "",
+      "source": {
+        "note": "据《傅青主女科》txt 整理；原文照录，未逐字校勘。",
+        "path": "F:/中医/G-026-傅青主女科.txt"
+      }
+    },
+    {
+      "id": "lib-07836920ed",
+      "file": "O-234-傅青主男科重编考释.txt",
+      "title": "傅青主男科重编考释",
+      "author": "傅山",
+      "dynasty": "清",
+      "category": "linzheng",
+      "subcategory": "neike",
+      "charCount": 55389,
+      "sectionCount": 266,
+      "duplicateOf": "",
+      "versionNote": "",
+      "source": {
+        "note": "据《傅青主男科重编考释》txt 整理；原文照录，未逐字校勘。",
+        "path": "F:/中医/O-234-傅青主男科重编考释.txt"
+      }
+    },
+    {
+      "id": "lib-e93d78dbe5",
+      "file": "O-273-青囊秘诀.txt",
+      "title": "青囊秘诀",
+      "author": "傅山",
+      "dynasty": "清",
+      "category": "linzheng",
+      "subcategory": "waike",
+      "charCount": 32287,
+      "sectionCount": 22,
+      "duplicateOf": "",
+      "versionNote": "",
+      "source": {
+        "note": "据《青囊秘诀》txt 整理；原文照录，未逐字校勘。",
+        "path": "F:/中医/O-273-青囊秘诀.txt"
+      }
+    },
+    {
+      "id": "lib-a170fedde0",
+      "file": "S-055-伤寒论辑义丹波元珍.txt",
+      "title": "伤寒论辑义",
+      "author": "丹波元珍",
+      "dynasty": "日·江户",
+      "category": "shanghan",
+      "subcategory": "shanghan",
+      "charCount": 261540,
+      "sectionCount": 42,
+      "duplicateOf": "",
+      "versionNote": "",
+      "source": {
+        "note": "据《伤寒论辑义》txt 整理；原文照录，未逐字校勘。",
+        "path": "F:/中医/S-055-伤寒论辑义丹波元珍.txt"
+      }
+    },
+    {
+      "id": "lib-d09bbc9471",
+      "file": "T-002-孙思邈房中补益.txt",
+      "title": "孙思邈房中补益",
+      "author": "孙思邈",
+      "dynasty": "唐",
+      "category": "yangsheng",
+      "subcategory": "yangsheng",
+      "charCount": 3166,
+      "sectionCount": 18,
+      "duplicateOf": "",
+      "versionNote": "",
+      "source": {
+        "note": "据《孙思邈房中补益》txt 整理；原文照录，未逐字校勘。",
+        "path": "F:/中医/T-002-孙思邈房中补益.txt"
+      }
+    },
+    {
+      "id": "lib-3ba9489cc2",
+      "file": "Y-031-徐灵胎难经经释.txt",
+      "title": "徐灵胎难经经释",
+      "author": "徐灵胎",
+      "dynasty": "清",
+      "category": "yijing",
+      "subcategory": "nanjing",
+      "charCount": 39107,
+      "sectionCount": 79,
+      "duplicateOf": "",
+      "versionNote": "",
+      "source": {
+        "note": "据《徐灵胎难经经释》txt 整理；原文照录，未逐字校勘。",
+        "path": "F:/中医/Y-031-徐灵胎难经经释.txt"
+      }
+    },
+    {
+      "id": "lib-c69c81841f",
+      "file": "Y-044-素问识.txt 丹波元珍.txt",
+      "title": "素问识",
+      "author": "丹波元珍",
+      "dynasty": "日·江户",
+      "category": "yijing",
+      "subcategory": "suwen",
+      "charCount": 256962,
+      "sectionCount": 73,
+      "duplicateOf": "",
+      "versionNote": "",
+      "source": {
+        "note": "据《素问识》txt 整理；原文照录，未逐字校勘。",
+        "path": "F:/中医/Y-044-素问识.txt 丹波元珍.txt"
+      }
+    },
+    {
+      "id": "lib-caaca999fc",
+      "file": "Z-003-鬼门十三针.txt",
+      "title": "鬼门十三针",
+      "author": "孙思邈(传)",
+      "dynasty": "唐",
+      "category": "zhenjiu",
+      "subcategory": "tonglun",
+      "charCount": 688,
+      "sectionCount": 1,
+      "duplicateOf": "",
+      "versionNote": "",
+      "source": {
+        "note": "据《鬼门十三针》txt 整理；原文照录，未逐字校勘。",
+        "path": "F:/中医/Z-003-鬼门十三针.txt"
+      }
+    },
+    {
+      "id": "lib-47b843b08a",
+      "file": "Z-006-扁鹊神应针灸玉龙经.txt",
+      "title": "扁鹊神应针灸玉龙经",
+      "author": "王国瑞",
+      "dynasty": "元",
+      "category": "zhenjiu",
+      "subcategory": "gefue",
+      "charCount": 28143,
+      "sectionCount": 129,
+      "duplicateOf": "",
+      "versionNote": "",
+      "source": {
+        "note": "据《扁鹊神应针灸玉龙经》txt 整理；原文照录，未逐字校勘。",
+        "path": "F:/中医/Z-006-扁鹊神应针灸玉龙经.txt"
       }
     }
   ]

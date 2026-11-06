@@ -15,6 +15,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import crypto from 'node:crypto'
 import { DatabaseSync } from 'node:sqlite'
+import { loadExtraTxtBooks } from './extra-txt-classics.mjs'
 
 const ROOT = process.cwd()
 const SOURCE_DIR =
@@ -643,6 +644,9 @@ function main() {
     })
   }
 
+  const extra = loadExtraTxtBooks()
+  books.push(...extra.books)
+
   const categoryCounts = new Map()
   for (const book of books) {
     categoryCounts.set(book.category, (categoryCounts.get(book.category) ?? 0) + 1)
@@ -665,7 +669,7 @@ function main() {
     generatedAt: new Date().toISOString(),
     source: {
       dir: SOURCE_DIR,
-      totalFiles: files.length,
+      totalFiles: files.length + extra.books.length,
       totalBooks: books.length,
       excluded,
       chars: books.reduce((sum, book) => sum + book.charCount, 0),
@@ -739,8 +743,10 @@ function main() {
   try {
     let totalSections = 0
     for (const book of books) {
-      const parsed = parseBook(path.join(SOURCE_DIR, book.file))
-      const sections = splitIntoSections(parsed)
+      const parsed = book.file.endsWith('.md')
+        ? parseBook(path.join(SOURCE_DIR, book.file))
+        : { title: book.title, body: '' }
+      const sections = extra.sectionMap.get(book.id) ?? splitIntoSections(parsed)
       insertBook.run(
         book.id,
         book.title,
