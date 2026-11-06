@@ -1,9 +1,28 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import type { CaseContent, CaseItem } from '@/types/cases'
 
-defineProps<{
+const props = defineProps<{
   caseData: CaseItem
 }>()
+
+const isJinguiLecture = computed(() => props.caseData.source.work.includes('金匮'))
+
+const disclaimerTitle = computed(() =>
+  isJinguiLecture.value ? '讲义原文照录' : '医案原文照录',
+)
+
+const disclaimerBody = computed(() =>
+  isJinguiLecture.value
+    ? '以下内容为倪海厦《人纪·金匮要略》临床案例部分的原文整理，保留讲述者的辨证与用药思路；不是诊断标准，也不构成用药建议。'
+    : `以下内容为《${props.caseData.source.work}》所载医案的原文整理，保留原案的症状、辨证与用药记录；不是诊断标准，也不构成用药建议。`,
+)
+
+const sourceNote = computed(() =>
+  isJinguiLecture.value
+    ? '本页只整理讲义所述案例，不补充讲义之外的诊断、剂量或转归。涉及具体治疗，请由执业中医师辨证处理。'
+    : '本页只整理原书所载医案，不补充原书之外的诊断、剂量或转归。涉及具体治疗，请由执业中医师辨证处理。',
+)
 
 function prescriptionOf(block: CaseContent) {
   return block.type === 'prescription' ? block : null
@@ -22,15 +41,15 @@ function paragraphOf(block: CaseContent) {
     </div>
 
     <p class="case-disclaimer">
-      <strong>讲义原文照录</strong>
-      以下内容为倪海厦《人纪·金匮要略》临床案例部分的原文整理，保留讲述者的辨证与用药思路；不是诊断标准，也不构成用药建议。
+      <strong>{{ disclaimerTitle }}</strong>
+      {{ disclaimerBody }}
     </p>
 
     <div class="case-body">
       <template v-for="(block, index) in caseData.content" :key="index">
         <div v-if="prescriptionOf(block)" class="case-prescription">
           <div class="case-prescription__head">
-            <span>讲义所录处方</span>
+            <span>{{ isJinguiLecture ? '讲义所录处方' : '原案所录处方' }}</span>
             <span>{{ prescriptionOf(block)?.herbs.length }} 味</span>
           </div>
           <ul class="case-prescription__herbs">
@@ -40,7 +59,7 @@ function paragraphOf(block: CaseContent) {
             </li>
           </ul>
           <p class="case-prescription__note">
-            剂量单位依讲义原文，未作现代折算；请勿自行照方用药。
+            剂量单位依原文，未作现代折算；请勿自行照方用药。
           </p>
         </div>
         <p v-else class="case-paragraph">{{ paragraphOf(block) }}</p>
@@ -51,7 +70,7 @@ function paragraphOf(block: CaseContent) {
       <span class="eyebrow">SOURCE / 出处</span>
       <p>{{ caseData.source.work }} · {{ caseData.source.locator }}</p>
       <p class="case-source__note">
-        本页只整理讲义所述案例，不补充讲义之外的诊断、剂量或转归。涉及具体治疗，请由执业中医师辨证处理。
+        {{ sourceNote }}
       </p>
     </footer>
   </article>

@@ -4,25 +4,63 @@ import { RouterLink, useRoute } from 'vue-router'
 import { clinicalDisclaimer } from '@/data/clinical-methods'
 import { getTopicSection, type Topic } from '@/data/topics'
 import { useCaseApi } from '@/composables/useCaseApi'
+import type { CaseSummary } from '@/types/cases'
+
+const CASE_PREVIEW = 20
 
 const route = useRoute()
 const section = computed(() => getTopicSection(String(route.meta.section || 'methods')))
 const basePath = computed(() => `/${section.value.key}`)
 
 const { loading, error, fetchCases } = useCaseApi()
-const caseList = ref<Topic[]>([])
-const topics = computed<Topic[]>(() =>
-  section.value.key === 'cases' ? caseList.value : section.value.topics,
+const caseList = ref<CaseSummary[]>([])
+const activeCategory = ref('全部')
+const showAllCases = ref(false)
+
+const categories = computed(() => {
+  const counts = new Map<string, number>()
+  for (const item of caseList.value) {
+    counts.set(item.category, (counts.get(item.category) ?? 0) + 1)
+  }
+  return [...counts.entries()]
+    .map(([name, count]) => ({ name, count }))
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'zh-CN'))
+})
+
+const filteredCases = computed(() =>
+  activeCategory.value === '全部'
+    ? caseList.value
+    : caseList.value.filter((item) => item.category === activeCategory.value),
 )
+
+const visibleCases = computed(() =>
+  activeCategory.value === '全部' && !showAllCases.value
+    ? filteredCases.value.slice(0, CASE_PREVIEW)
+    : filteredCases.value,
+)
+
+const hiddenCaseCount = computed(
+  () => filteredCases.value.length - visibleCases.value.length,
+)
+
+const topics = computed<Topic[]>(() =>
+  section.value.key === 'cases'
+    ? visibleCases.value.map((item) => ({
+        id: item.id,
+        title: item.title,
+        subtitle: `${item.category} · ${item.summary}`,
+      }))
+    : section.value.topics,
+)
+
+function selectCategory(name: string) {
+  activeCategory.value = name
+  showAllCases.value = false
+}
 
 async function loadCases() {
   try {
-    const list = await fetchCases()
-    caseList.value = list.map((item) => ({
-      id: item.id,
-      title: item.title,
-      subtitle: `${item.category} · ${item.summary}`,
-    }))
+    caseList.value = await fetchCases()
   } catch {
     // 错误由 useCaseApi 的 error 展示。
   }
@@ -76,7 +114,8 @@ function topicStatus(id: string) {
           <p class="topic-hero__lead">{{ section.lead }}</p>
           <div class="topic-hero__meta">
             <template v-if="section.key === 'cases'">
-              <span class="chip chip--cinnabar">{{ topics.length }} 则医案</span>
+              <span class="chip chip--cinnabar">{{ caseList.length }} 则医案</span>
+              <span v-if="categories.length" class="chip">{{ categories.length }} 类</span>
               <span class="chip">讲义原文 · 非诊断标准</span>
             </template>
             <template v-else>
@@ -94,6 +133,35 @@ function topicStatus(id: string) {
         {{ error }}
         <button class="btn btn--primary" type="button" @click="loadCases">重新加载</button>
       </p>
+
+      <div v-if="section.key === 'cases' && caseList.length" class="case-filter">
+        <div class="case-filter__head">
+          <span class="eyebrow">CASE CATEGORY / 医案分类</span>
+          <span>点分类查看该类全部医案</span>
+        </div>
+        <div class="case-filter__list" role="group" aria-label="按医案分类筛选">
+          <button
+            class="case-filter__btn"
+            :class="{ 'case-filter__btn--active': activeCategory === '全部' }"
+            type="button"
+            @click="selectCategory('全部')"
+          >
+            全部
+            <span class="case-filter__count">{{ caseList.length }}</span>
+          </button>
+          <button
+            v-for="item in categories"
+            :key="item.name"
+            class="case-filter__btn"
+            :class="{ 'case-filter__btn--active': activeCategory === item.name }"
+            type="button"
+            @click="selectCategory(item.name)"
+          >
+            {{ item.name }}
+            <span class="case-filter__count">{{ item.count }}</span>
+          </button>
+        </div>
+      </div>
 
       <section class="topic-grid" aria-label="栏目列表">
         <RouterLink
@@ -122,6 +190,22 @@ function topicStatus(id: string) {
           </div>
         </RouterLink>
       </section>
+
+      <div v-if="section.key === 'cases' && hiddenCaseCount > 0" class="case-more">
+        <span>当前显示前 {{ CASE_PREVIEW }} 则，共 {{ filteredCases.length }} 则</span>
+        <button class="btn btn--primary" type="button" @click="showAllCases = true">
+          查看全部 {{ filteredCases.length }} 则医案
+        </button>
+      </div>
+      <div
+        v-else-if="section.key === 'cases' && showAllCases && filteredCases.length > CASE_PREVIEW"
+        class="case-more"
+      >
+        <span>已显示全部 {{ filteredCases.length }} 则</span>
+        <button class="btn" type="button" @click="showAllCases = false">
+          收起，只看前 {{ CASE_PREVIEW }} 则
+        </button>
+      </div>
 
       <section class="topic-principles paper-panel">
         <div>
@@ -154,6 +238,72 @@ function topicStatus(id: string) {
   padding: 14px 16px;
   color: var(--ink-soft);
   font-size: 0.84rem;
+}
+
+.case-filter {
+  padding-top: 20px;
+}
+
+.case-filter__head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: var(--ink-faint);
+  font-size: 0.72rem;
+}
+
+.case-filter__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.case-filter__btn {
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 252, 245, 0.5);
+  color: var(--ink-soft);
+  font-family: var(--sans);
+  font-size: 0.76rem;
+  cursor: pointer;
+  transition: border-color 0.18s ease, background 0.18s ease, color 0.18s ease;
+}
+
+.case-filter__btn:hover {
+  border-color: var(--cinnabar);
+  color: var(--cinnabar);
+}
+
+.case-filter__btn--active {
+  border-color: var(--cinnabar);
+  background: var(--cinnabar);
+  color: var(--paper);
+}
+
+.case-filter__count {
+  color: var(--ink-faint);
+  font-size: 0.66rem;
+}
+
+.case-filter__btn--active .case-filter__count {
+  color: rgba(255, 252, 245, 0.72);
+}
+
+.case-more {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin: -6px 0 34px;
+  color: var(--ink-faint);
+  font-size: 0.76rem;
 }
 
 .clinical-banner {
