@@ -16,6 +16,7 @@ import path from 'node:path'
 import crypto from 'node:crypto'
 import { DatabaseSync } from 'node:sqlite'
 import { loadExtraTxtBooks } from './extra-txt-classics.mjs'
+import { applyVersionPlan } from './library-version-merge.mjs'
 
 const ROOT = process.cwd()
 const SOURCE_DIR =
@@ -647,6 +648,14 @@ function main() {
   const extra = loadExtraTxtBooks()
   books.push(...extra.books)
 
+  const mergedSections = applyVersionPlan({
+    books,
+    sectionMap: extra.sectionMap,
+    parseBook,
+    splitIntoSections,
+    sourceDir: SOURCE_DIR,
+  })
+
   const categoryCounts = new Map()
   for (const book of books) {
     categoryCounts.set(book.category, (categoryCounts.get(book.category) ?? 0) + 1)
@@ -746,7 +755,8 @@ function main() {
       const parsed = book.file.endsWith('.md')
         ? parseBook(path.join(SOURCE_DIR, book.file))
         : { title: book.title, body: '' }
-      const sections = extra.sectionMap.get(book.id) ?? splitIntoSections(parsed)
+      const sections =
+        mergedSections.get(book.id) ?? extra.sectionMap.get(book.id) ?? splitIntoSections(parsed)
       insertBook.run(
         book.id,
         book.title,

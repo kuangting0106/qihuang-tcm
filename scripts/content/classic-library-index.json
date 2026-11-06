@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-06T06:32:11.718Z",
+  "generatedAt": "2026-11-06T07:40:14.998Z",
   "source": {
     "dir": "F:\\中医\\8CE88F\\%E5%8C%BB%E8%97%8F",
     "totalFiles": 607,
-    "totalBooks": 606,
+    "totalBooks": 599,
     "excluded": [
       "本草纲目"
     ],
-    "chars": 71276117
+    "chars": 71082049
   },
   "categories": [
     {
       "key": "yijing",
       "label": "医经",
       "description": "内经、难经、太素等中医理论根柢。",
-      "count": 37,
+      "count": 36,
       "subs": [
         {
           "key": "suwen",
@@ -29,7 +29,7 @@
         {
           "key": "nanjing",
           "label": "难经",
-          "count": 7
+          "count": 6
         },
         {
           "key": "taisu",
@@ -154,7 +154,7 @@
       "key": "zhenjiu",
       "label": "针灸经络",
       "description": "针灸通论、经络腧穴、灸法与针灸歌赋。",
-      "count": 46,
+      "count": 44,
       "subs": [
         {
           "key": "tonglun",
@@ -169,7 +169,7 @@
         {
           "key": "jiufa",
           "label": "灸法",
-          "count": 26
+          "count": 24
         },
         {
           "key": "tuina",
@@ -187,7 +187,7 @@
       "key": "linzheng",
       "label": "临证各科",
       "description": "内科杂病、妇科、儿科、外科伤科、喉科口齿、眼科与温病疫病。",
-      "count": 164,
+      "count": 163,
       "subs": [
         {
           "key": "neike",
@@ -197,7 +197,7 @@
         {
           "key": "fuke",
           "label": "妇科",
-          "count": 32
+          "count": 31
         },
         {
           "key": "erke",
@@ -289,7 +289,7 @@
       "key": "yilun",
       "label": "医论医史",
       "description": "医论、医话、医史、温病疫病与内科杂病源流。",
-      "count": 61,
+      "count": 59,
       "subs": [
         {
           "key": "wenbing",
@@ -309,7 +309,7 @@
         {
           "key": "yilun",
           "label": "医论医话",
-          "count": 50
+          "count": 48
         }
       ]
     },
@@ -317,12 +317,12 @@
       "key": "duanpian",
       "label": "短篇",
       "description": "不足五千字的歌诀、秘方、针法与其他短篇。",
-      "count": 17,
+      "count": 16,
       "subs": [
         {
           "key": "zhenjiu",
           "label": "针灸歌诀",
-          "count": 4
+          "count": 3
         },
         {
           "key": "maixue",
@@ -934,42 +934,6 @@
         "daizhige": "https://daizhige.org/%E5%8C%BB%E8%97%8F/%E7%AC%94%E8%8A%B1%E5%8C%BB%E9%95%9C.html",
         "github": "https://github.com/daizhige-org/daizhigev20/blob/data/%E5%8C%BB%E8%97%8F/%E7%AC%94%E8%8A%B1%E5%8C%BB%E9%95%9C.md",
         "lastmod": "2023-11-18T02:41:58Z",
-        "note": "据殆知阁医藏 Markdown 转换本整理；未逐字校勘，原文以通行本为准。"
-      }
-    },
-    {
-      "id": "lib-5941e9b929",
-      "file": "扁鹊神应针灸玉龙经.md",
-      "title": "扁鹊神应针灸玉龙经",
-      "author": "王国瑞",
-      "dynasty": "元",
-      "category": "zhenjiu",
-      "subcategory": "jiufa",
-      "charCount": 27407,
-      "duplicateOf": "",
-      "versionNote": "",
-      "source": {
-        "daizhige": "https://daizhige.org/%E5%8C%BB%E8%97%8F/%E6%89%81%E9%B9%8A%E7%A5%9E%E5%BA%94%E9%92%88%E7%81%B8%E7%8E%89%E9%BE%99%E7%BB%8F.html",
-        "github": "https://github.com/daizhige-org/daizhigev20/blob/data/%E5%8C%BB%E8%97%8F/%E6%89%81%E9%B9%8A%E7%A5%9E%E5%BA%94%E9%92%88%E7%81%B8%E7%8E%89%E9%BE%99%E7%BB%8F.md",
-        "lastmod": "2023-11-18T02:41:58Z",
-        "note": "据殆知阁医藏 Markdown 转换本整理；未逐字校勘，原文以通行本为准。"
-      }
-    },
-    {
-      "id": "lib-3facc171d7",
-      "file": "扁鹊神应鍼灸玉龙经.md",
-      "title": "扁鹊神应针灸玉龙经",
-      "author": "佚名",
-      "dynasty": "",
-      "category": "zhenjiu",
-      "subcategory": "jiufa",
-      "charCount": 25051,
-      "duplicateOf": "",
-      "versionNote": "",
-      "source": {
-        "daizhige": "https://daizhige.org/%E5%8C%BB%E8%97%8F/%E6%89%81%E9%B9%8A%E7%A5%9E%E5%BA%94%E9%8D%BC%E7%81%B8%E7%8E%89%E9%BE%99%E7%BB%8F.html",
-        "github": "https://github.com/daizhige-org/daizhigev20/blob/data/%E5%8C%BB%E8%97%8F/%E6%89%81%E9%B9%8A%E7%A5%9E%E5%BA%94%E9%8D%BC%E7%81%B8%E7%8E%89%E9%BE%99%E7%BB%8F.md",
-        "lastmod": "2018-11-26T22:44:40Z",
         "note": "据殆知阁医藏 Markdown 转换本整理；未逐字校勘，原文以通行本为准。"
       }
     },
@@ -1964,42 +1928,6 @@
       }
     },
     {
-      "id": "lib-52d3517498",
-      "file": "傅青主男科重编考释.md",
-      "title": "傅青主男科重编考释",
-      "author": "傅山",
-      "dynasty": "明",
-      "category": "yilun",
-      "subcategory": "yilun",
-      "charCount": 83839,
-      "duplicateOf": "",
-      "versionNote": "",
-      "source": {
-        "daizhige": "https://daizhige.org/%E5%8C%BB%E8%97%8F/%E5%82%85%E9%9D%92%E4%B8%BB%E7%94%B7%E7%A7%91%E9%87%8D%E7%BC%96%E8%80%83%E9%87%8A.html",
-        "github": "https://github.com/daizhige-org/daizhigev20/blob/data/%E5%8C%BB%E8%97%8F/%E5%82%85%E9%9D%92%E4%B8%BB%E7%94%B7%E7%A7%91%E9%87%8D%E7%BC%96%E8%80%83%E9%87%8A.md",
-        "lastmod": "2023-11-18T02:41:58Z",
-        "note": "据殆知阁医藏 Markdown 转换本整理；未逐字校勘，原文以通行本为准。"
-      }
-    },
-    {
-      "id": "lib-861e400eed",
-      "file": "傅青主女科.md",
-      "title": "傅青主女科",
-      "author": "傅山",
-      "dynasty": "明",
-      "category": "linzheng",
-      "subcategory": "fuke",
-      "charCount": 43083,
-      "duplicateOf": "fuqingzhu-nvke",
-      "versionNote": "与站内同名版本正文相似度约 40%，标为另一版本。",
-      "source": {
-        "daizhige": "https://daizhige.org/%E5%8C%BB%E8%97%8F/%E5%82%85%E9%9D%92%E4%B8%BB%E5%A5%B3%E7%A7%91.html",
-        "github": "https://github.com/daizhige-org/daizhigev20/blob/data/%E5%8C%BB%E8%97%8F/%E5%82%85%E9%9D%92%E4%B8%BB%E5%A5%B3%E7%A7%91.md",
-        "lastmod": "2018-11-26T22:44:40Z",
-        "note": "据殆知阁医藏 Markdown 转换本整理；未逐字校勘，原文以通行本为准。"
-      }
-    },
-    {
       "id": "lib-977651fd1c",
       "file": "高注金匮要略.md",
       "title": "高注金匮要略",
@@ -2194,24 +2122,6 @@
         "daizhige": "https://daizhige.org/%E5%8C%BB%E8%97%8F/%E5%BD%92%E7%A0%9A%E5%BD%95.html",
         "github": "https://github.com/daizhige-org/daizhigev20/blob/data/%E5%8C%BB%E8%97%8F/%E5%BD%92%E7%A0%9A%E5%BD%95.md",
         "lastmod": "2025-09-04T04:50:09Z",
-        "note": "据殆知阁医藏 Markdown 转换本整理；未逐字校勘，原文以通行本为准。"
-      }
-    },
-    {
-      "id": "lib-9140183bca",
-      "file": "鬼门十三针.md",
-      "title": "鬼门十三针",
-      "author": "佚名",
-      "dynasty": "",
-      "category": "duanpian",
-      "subcategory": "zhenjiu",
-      "charCount": 642,
-      "duplicateOf": "",
-      "versionNote": "",
-      "source": {
-        "daizhige": "https://daizhige.org/%E5%8C%BB%E8%97%8F/%E9%AC%BC%E9%97%A8%E5%8D%81%E4%B8%89%E9%92%88.html",
-        "github": "https://github.com/daizhige-org/daizhigev20/blob/data/%E5%8C%BB%E8%97%8F/%E9%AC%BC%E9%97%A8%E5%8D%81%E4%B8%89%E9%92%88.md",
-        "lastmod": "2018-11-26T22:44:40Z",
         "note": "据殆知阁医藏 Markdown 转换本整理；未逐字校勘，原文以通行本为准。"
       }
     },
@@ -4754,24 +4664,6 @@
       }
     },
     {
-      "id": "lib-103af38ffc",
-      "file": "难经经释.md",
-      "title": "难经经释",
-      "author": "徐灵胎",
-      "dynasty": "清",
-      "category": "yijing",
-      "subcategory": "nanjing",
-      "charCount": 38269,
-      "duplicateOf": "",
-      "versionNote": "",
-      "source": {
-        "daizhige": "https://daizhige.org/%E5%8C%BB%E8%97%8F/%E9%9A%BE%E7%BB%8F%E7%BB%8F%E9%87%8A.html",
-        "github": "https://github.com/daizhige-org/daizhigev20/blob/data/%E5%8C%BB%E8%97%8F/%E9%9A%BE%E7%BB%8F%E7%BB%8F%E9%87%8A.md",
-        "lastmod": "2018-11-26T22:44:40Z",
-        "note": "据殆知阁医藏 Markdown 转换本整理；未逐字校勘，原文以通行本为准。"
-      }
-    },
-    {
       "id": "lib-bea5568880",
       "file": "难经正义.md",
       "title": "难经正义",
@@ -5434,24 +5326,6 @@
         "daizhige": "https://daizhige.org/%E5%8C%BB%E8%97%8F/%E9%92%B1%E6%B0%8F%E7%A7%98%E4%BC%A0%E4%BA%A7%E7%A7%91%E6%96%B9%E4%B9%A6%E5%90%8D%E8%AF%95%E9%AA%8C%E5%BD%95.html",
         "github": "https://github.com/daizhige-org/daizhigev20/blob/data/%E5%8C%BB%E8%97%8F/%E9%92%B1%E6%B0%8F%E7%A7%98%E4%BC%A0%E4%BA%A7%E7%A7%91%E6%96%B9%E4%B9%A6%E5%90%8D%E8%AF%95%E9%AA%8C%E5%BD%95.md",
         "lastmod": "2018-11-26T22:44:40Z",
-        "note": "据殆知阁医藏 Markdown 转换本整理；未逐字校勘，原文以通行本为准。"
-      }
-    },
-    {
-      "id": "lib-afacfb011b",
-      "file": "青囊秘诀.md",
-      "title": "青囊秘诀",
-      "author": "傅山",
-      "dynasty": "清",
-      "category": "yilun",
-      "subcategory": "yilun",
-      "charCount": 36200,
-      "duplicateOf": "",
-      "versionNote": "",
-      "source": {
-        "daizhige": "https://daizhige.org/%E5%8C%BB%E8%97%8F/%E9%9D%92%E5%9B%8A%E7%A7%98%E8%AF%80.html",
-        "github": "https://github.com/daizhige-org/daizhigev20/blob/data/%E5%8C%BB%E8%97%8F/%E9%9D%92%E5%9B%8A%E7%A7%98%E8%AF%80.md",
-        "lastmod": "2025-09-04T04:50:09Z",
         "note": "据殆知阁医藏 Markdown 转换本整理；未逐字校勘，原文以通行本为准。"
       }
     },
@@ -11114,10 +10988,10 @@
       "dynasty": "清",
       "category": "linzheng",
       "subcategory": "neike",
-      "charCount": 55389,
-      "sectionCount": 266,
+      "charCount": 87301,
+      "sectionCount": 277,
       "duplicateOf": "",
-      "versionNote": "",
+      "versionNote": "已与旧版《傅青主男科》比对：两版内容不同，已合并旧版独有段落并去除重复。",
       "source": {
         "note": "据《傅青主男科重编考释》txt 整理；原文照录，未逐字校勘。",
         "path": "F:/中医/O-234-傅青主男科重编考释.txt"
@@ -11131,10 +11005,10 @@
       "dynasty": "清",
       "category": "linzheng",
       "subcategory": "waike",
-      "charCount": 32287,
-      "sectionCount": 22,
+      "charCount": 40584,
+      "sectionCount": 27,
       "duplicateOf": "",
-      "versionNote": "",
+      "versionNote": "已与旧版《青囊秘诀》比对：两版内容不同，已合并旧版独有段落并去除重复。",
       "source": {
         "note": "据《青囊秘诀》txt 整理；原文照录，未逐字校勘。",
         "path": "F:/中医/O-273-青囊秘诀.txt"
@@ -11233,10 +11107,10 @@
       "dynasty": "元",
       "category": "zhenjiu",
       "subcategory": "gefue",
-      "charCount": 28143,
-      "sectionCount": 129,
+      "charCount": 48357,
+      "sectionCount": 136,
       "duplicateOf": "",
-      "versionNote": "",
+      "versionNote": "已与两个旧版《扁鹊神应针灸玉龙经》比对：三版内容不同，已合并旧版独有段落并去除重复。",
       "source": {
         "note": "据《扁鹊神应针灸玉龙经》txt 整理；原文照录，未逐字校勘。",
         "path": "F:/中医/Z-006-扁鹊神应针灸玉龙经.txt"
