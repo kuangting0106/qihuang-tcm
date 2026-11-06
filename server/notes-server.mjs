@@ -1217,6 +1217,7 @@ const server = createServer(async (req, res) => {
             subcategory: item.subcategory ?? '',
             doctor: item.doctor ?? '',
             mode: item.mode ?? 'case',
+            era: item.era ?? '',
             summary: row.summary,
             source: {
               work: row.source_work,

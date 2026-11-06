@@ -49,7 +49,10 @@ const classicBooks = (classicIndex.books ?? []).map((book) =>
 )
 const caseData = readJson(path.join(root, 'src', 'data', 'jingui-cases.json'))
 const classicCaseData = readJson(path.join(root, 'src', 'data', 'classic-cases.json'))
-const caseItems = [...(caseData.cases ?? []), ...(classicCaseData.cases ?? [])]
+const caseEraOrder = { modern: 0, ancient: 1 }
+const caseItems = [...(caseData.cases ?? []), ...(classicCaseData.cases ?? [])].sort(
+  (a, b) => (caseEraOrder[a.era] ?? 0) - (caseEraOrder[b.era] ?? 0),
+)
 const bencaoGroupIds = ['intro', 'shangjing', 'zhongjing', 'xiajing', 'nishi', 'editor']
 const bencaoGroups = bencaoGroupIds
   .map((id) => {

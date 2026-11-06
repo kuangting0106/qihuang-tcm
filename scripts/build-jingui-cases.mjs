@@ -76,6 +76,9 @@ function parseFile(file, id, category) {
     id,
     title,
     category,
+    doctor: '倪海厦',
+    era: 'modern',
+    subcategory: '金匮要略',
     summary,
     source: {
       work: '倪海厦《人纪·金匮要略》讲义',

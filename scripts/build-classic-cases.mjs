@@ -85,6 +85,7 @@ function makeEntry({
   const content = paragraphs(text).map((line) => ({ type: 'paragraph', text: line }))
   if (!content.length) return null
   const summary = summarize(content.map((item) => item.text).join(' '))
+  const era = doctor === '叶天士' || doctor === '陈秉钧' ? 'ancient' : 'modern'
   return {
     id,
     title: title.replace(/\s+/g, ' ').trim(),
@@ -92,6 +93,7 @@ function makeEntry({
     subcategory: subcategory ?? '',
     doctor,
     mode,
+    era,
     summary,
     source: source(work, locator, note),
     content,

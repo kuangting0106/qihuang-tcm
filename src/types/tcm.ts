@@ -43,7 +43,7 @@ export const HERB_IMAGE_SLOT_LABELS = {
   medicinal: '药材高清切片图',
 } as const
 
-export type ProcessingCategoryId = 'plants' | 'animals' | 'minerals'
+export type ProcessingCategoryId = 'plants' | 'animals' | 'minerals' | 'other'
 
 export interface HerbProcessingStep {
   label: string
@@ -82,6 +82,8 @@ export interface ProcessingClassicEntry {
   name: string
   nature: string
   processing: string
+  category: ProcessingCategoryId
+  categoryTitle: string
   sourceId: string
 }
 

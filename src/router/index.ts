@@ -141,6 +141,18 @@ const router = createRouter({
       meta: { title: '药材的炮制' },
     },
     {
+      path: '/processing/book/:bookId',
+      name: 'processing-book',
+      component: () => import('@/views/ProcessingBookView.vue'),
+      meta: { title: '古籍炮制目录' },
+    },
+    {
+      path: '/processing/herb/:id',
+      name: 'processing-herb',
+      component: () => import('@/views/ProcessingHerbView.vue'),
+      meta: { title: '古籍炮制药材' },
+    },
+    {
       path: '/first-aid/:id',
       name: 'first-aid-detail',
       component: () => import('@/views/FirstAidDetailView.vue'),

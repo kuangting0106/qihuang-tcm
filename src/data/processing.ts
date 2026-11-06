@@ -36,4 +36,13 @@ export const processingCategories: ProcessingCategory[] = [
     count: 0,
     note: '收录煅、淬、水飞、醋制等方法；明确炮制目的、成品性状与安全边界。',
   },
+  {
+    id: 'other',
+    title: '其他类',
+    kicker: 'OTHERS / 其他',
+    scope: '水、火、土、人部及其他暂难归入三类的药材',
+    status: '待收录',
+    count: 0,
+    note: '无法稳定归入草木、蛇虫、金石者暂列此处，待核对原书部类后再细分。',
+  },
 ]

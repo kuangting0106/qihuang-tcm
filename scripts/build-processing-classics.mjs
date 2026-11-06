@@ -80,6 +80,45 @@ function parsePaozhi(entry) {
   return { nature: '', processing: body.trim() }
 }
 
+const CLASSIC_CATEGORY_TITLES = {
+  plants: '草木类',
+  animals: '蛇虫类',
+  minerals: '金石类',
+  other: '其他类',
+}
+
+const NAME_CATEGORY_OVERRIDES = new Map([
+  ['硫黄', 'minerals'],
+  ['石硫黄', 'minerals'],
+  ['雄黄', 'minerals'],
+  ['朱砂', 'minerals'],
+  ['丹砂', 'minerals'],
+  ['水银', 'minerals'],
+  ['轻粉', 'minerals'],
+  ['石膏', 'minerals'],
+  ['滑石', 'minerals'],
+  ['寒水石', 'minerals'],
+  ['自然铜', 'minerals'],
+  ['磁石', 'minerals'],
+  ['代赭石', 'minerals'],
+  ['赤石脂', 'minerals'],
+  ['炉甘石', 'minerals'],
+  ['硼砂', 'minerals'],
+  ['硝石', 'minerals'],
+  ['芒硝', 'minerals'],
+  ['矾石', 'minerals'],
+])
+
+function classicCategory(section, name = '') {
+  const overridden = NAME_CATEGORY_OVERRIDES.get(name)
+  if (overridden) return overridden
+  const text = section ?? ''
+  if (/虫鱼|兽|禽/.test(text)) return 'animals'
+  if (/金石|金部|石部|石|土/.test(text)) return 'minerals'
+  if (/草|木|果|米谷|谷|菜/.test(text)) return 'plants'
+  return 'other'
+}
+
 const books = []
 const entries = []
 
@@ -91,7 +130,8 @@ for (const book of BOOKS) {
   )
   parsed.forEach((entry, index) => {
     const parts = book.id === 'leigong' ? parseLeigong(entry) : parsePaozhi(entry)
-    if (!parts.nature && !parts.processing) return
+    if (!parts.processing) return
+    const category = classicCategory(entry.section, entry.name)
     entries.push({
       id: `${book.id}-${String(index + 1).padStart(3, '0')}`,
       book: book.title,
@@ -102,6 +142,8 @@ for (const book of BOOKS) {
       name: entry.name,
       nature: parts.nature,
       processing: parts.processing,
+      category,
+      categoryTitle: CLASSIC_CATEGORY_TITLES[category],
       sourceId: book.sourceId,
     })
   })

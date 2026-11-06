@@ -14,6 +14,7 @@ export interface CaseSource {
 }
 
 export type CaseMode = 'case' | 'thought'
+export type CaseEra = 'ancient' | 'modern'
 
 export interface CaseItem {
   id: string
@@ -21,6 +22,7 @@ export interface CaseItem {
   category: string
   doctor?: string
   mode?: CaseMode
+  era?: CaseEra
   subcategory?: string
   summary: string
   source: CaseSource
@@ -33,6 +35,7 @@ export interface CaseSummary {
   category: string
   doctor?: string
   mode?: CaseMode
+  era?: CaseEra
   subcategory?: string
   summary: string
   source: CaseSource

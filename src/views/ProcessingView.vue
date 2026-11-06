@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import CitationBadge from '@/components/CitationBadge.vue'
+import ProcessingClassics from '@/components/ProcessingClassics.vue'
 import { loadBencaoCatalog } from '@/composables/useBencaoLectures'
 import { useTcmData } from '@/composables/useTcmData'
 import { processingCategories } from '@/data/processing'
@@ -29,47 +30,17 @@ function lectureRank(item: { rankId: string }) {
 const herbs = computed(() => data.value?.herbs ?? [])
 const examples = computed(() => data.value?.processingExamples ?? [])
 
-const classicBooks = computed(() => data.value?.processingClassics?.books ?? [])
 const classicEntries = computed(() => data.value?.processingClassics?.entries ?? [])
-const activeClassicBook = ref('all')
-const classicQuery = ref('')
-const classicLimit = ref(40)
-
-const filteredClassicEntries = computed(() => {
-  const query = classicQuery.value.trim()
-  return classicEntries.value.filter((entry) => {
-    if (activeClassicBook.value !== 'all' && entry.bookId !== activeClassicBook.value) return false
-    if (!query) return true
-    return [entry.name, entry.section, entry.nature, entry.processing].some((value) =>
-      value.includes(query),
-    )
-  })
-})
-
-const visibleClassicEntries = computed(() =>
-  filteredClassicEntries.value.slice(0, classicLimit.value),
-)
-
-const hiddenClassicCount = computed(
-  () => filteredClassicEntries.value.length - visibleClassicEntries.value.length,
-)
-
-watch([activeClassicBook, classicQuery], () => {
-  classicLimit.value = 40
-})
-
-function selectClassicBook(id: string) {
-  activeClassicBook.value = id
-}
 
 const groups = computed(() =>
-  processingCategories.map((category) => ({
-    ...category,
-    entries: herbs.value.filter((h) => h.processing?.categoryId === category.id),
-  })),
+  processingCategories.map((category) => {
+    const entries = herbs.value.filter((h) => h.processing?.categoryId === category.id)
+    const classicCount = classicEntries.value.filter((e) => e.category === category.id).length
+    return { ...category, entries, classicCount, totalCount: entries.length + classicCount }
+  }),
 )
 
-const totalEntries = computed(() => groups.value.reduce((sum, group) => sum + group.entries.length, 0))
+const totalEntries = computed(() => groups.value.reduce((sum, group) => sum + group.totalCount, 0))
 
 function categoryTitle(categoryId: string) {
   return processingCategories.find((category) => category.id === categoryId)?.title ?? categoryId
@@ -101,14 +72,16 @@ function categoryTitle(categoryId: string) {
         <article v-for="group in groups" :key="group.id" class="processing-card">
           <div class="processing-card__top">
             <span class="processing-card__kicker">{{ group.kicker }}</span>
-            <span class="processing-card__status">{{ group.entries.length ? '已收录' : '待收录' }}</span>
+            <span class="processing-card__status">{{ group.totalCount ? '已收录' : '待收录' }}</span>
           </div>
           <h2>{{ group.title }}</h2>
           <p class="processing-card__scope">{{ group.scope }}</p>
-          <div class="processing-card__count">{{ group.entries.length }} 味已收录</div>
+          <div class="processing-card__count">{{ group.totalCount }} 味已收录</div>
           <p class="processing-card__note">{{ group.note }}</p>
         </article>
       </section>
+
+      <ProcessingClassics />
 
       <section class="processing-entries">
         <div class="section-head">
@@ -179,87 +152,6 @@ function categoryTitle(categoryId: string) {
             <p>该类药材的炮制方法尚未逐条核对，暂不写操作步骤。</p>
           </div>
         </template>
-      </section>
-
-      <section v-if="classicEntries.length" class="classic-processing">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">CLASSICS / 古籍炮制</p>
-            <h2>《雷公炮制药性解》《炮炙大法》</h2>
-          </div>
-          <p>
-            两书按原书卷部与药名逐条拆出，原文照录。雷公条目保留“药性解说”与“雷公云”炮制两部分；
-            炮炙大法以修事、炮制为主。古籍工艺未逐字校勘，实际炮制须以现行规范复核。
-          </p>
-        </div>
-
-        <div class="classic-processing__books">
-          <button
-            class="classic-book"
-            :class="{ 'classic-book--active': activeClassicBook === 'all' }"
-            type="button"
-            @click="selectClassicBook('all')"
-          >
-            <strong>全部</strong>
-            <span>{{ classicEntries.length }} 条</span>
-          </button>
-          <button
-            v-for="book in classicBooks"
-            :key="book.id"
-            class="classic-book"
-            :class="{ 'classic-book--active': activeClassicBook === book.id }"
-            type="button"
-            @click="selectClassicBook(book.id)"
-          >
-            <strong>{{ book.title }}</strong>
-            <span>{{ book.dynasty }} · {{ book.author }} · {{ book.count }} 条</span>
-          </button>
-        </div>
-
-        <div class="classic-processing__tools">
-          <input
-            v-model="classicQuery"
-            type="search"
-            placeholder="搜药名、卷部、药性或炮制方法…"
-            aria-label="搜索古籍炮制条目"
-          />
-          <span>当前 {{ filteredClassicEntries.length }} 条，显示 {{ visibleClassicEntries.length }} 条</span>
-        </div>
-
-        <div class="classic-processing__grid">
-          <article
-            v-for="entry in visibleClassicEntries"
-            :key="entry.id"
-            class="classic-card paper-panel"
-          >
-            <div class="classic-card__top">
-              <div>
-                <h3>{{ entry.name }}</h3>
-                <p>{{ entry.book }} · {{ entry.section || '卷部待考' }}</p>
-              </div>
-              <span class="chip chip--gold">{{ entry.dynasty }}</span>
-            </div>
-            <div v-if="entry.nature" class="classic-card__block">
-              <span class="classic-card__label">药性解说</span>
-              <p>{{ entry.nature }}</p>
-            </div>
-            <div class="classic-card__block">
-              <span class="classic-card__label">收集 / 炮制</span>
-              <p v-if="entry.processing">{{ entry.processing }}</p>
-              <p v-else class="classic-card__empty">原书此条未另列炮制。</p>
-            </div>
-            <div class="classic-card__foot">
-              <span class="kind-badge kind-badge--quote">原文</span>
-              <CitationBadge :citation-ids="[entry.sourceId]" label="古籍出处" tone="muted" compact />
-            </div>
-          </article>
-        </div>
-
-        <div v-if="hiddenClassicCount > 0" class="classic-processing__more">
-          <button class="btn" type="button" @click="classicLimit += 40">
-            再显示 40 条（还有 {{ hiddenClassicCount }} 条）
-          </button>
-        </div>
       </section>
 
       <section v-if="lectureProcessing.length" class="lecture-processing">
