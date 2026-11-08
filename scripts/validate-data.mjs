@@ -140,13 +140,32 @@ if (!taxonomy) {
   if (!Array.isArray(taxonomy.ranks) || taxonomy.ranks.length !== 3) {
     errors.push('herbTaxonomy: 三经必须正好 3 项')
   }
-  if (!Array.isArray(taxonomy.categories) || taxonomy.categories.length !== 12) {
-    errors.push('herbTaxonomy: 功效分类必须正好 12 项')
+  if (!Array.isArray(taxonomy.categories) || taxonomy.categories.length < 12) {
+    errors.push('herbTaxonomy: 功效分类少于 12 项')
   }
   const rankIds = new Set((taxonomy.ranks ?? []).map((r) => r.id))
   const categoryIds = new Set((taxonomy.categories ?? []).map((c) => c.id))
+  const coreCategoryIds = [
+    'exterior',
+    'clear-heat',
+    'purgative',
+    'wind-damp',
+    'qi-digest',
+    'stop-bleeding',
+    'blood-moving',
+    'cough-phlegm',
+    'warm-tonic',
+    'astringent',
+    'calm-open',
+    'attack-cold',
+  ]
   if (rankIds.size !== 3) errors.push('herbTaxonomy: 三经 id 缺失或重复')
-  if (categoryIds.size !== 12) errors.push('herbTaxonomy: 功效分类 id 缺失或重复')
+  for (const id of coreCategoryIds) {
+    if (!categoryIds.has(id)) errors.push(`herbTaxonomy: 缺少功效分类 ${id}`)
+  }
+  if (categoryIds.size !== (taxonomy.categories ?? []).length) {
+    errors.push('herbTaxonomy: 功效分类 id 缺失或重复')
+  }
   for (const h of data.herbs ?? []) {
     if (!rankIds.has(h.classicRankId)) {
       errors.push(`药材 ${h.id}: 三经分类无效 ${h.classicRankId}`)

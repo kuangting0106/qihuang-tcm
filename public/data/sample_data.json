@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "contentVersion": "2026.11.1-prototype",
-  "generatedAt": "2026-11-08T07:33:20.856Z",
+  "generatedAt": "2026-11-08T08:19:23.542Z",
   "title": "岐黄图鉴",
   "disclaimer": "本站为中医知识学习原型，不构成诊疗建议。针刺、艾灸、用药须由执业中医师辨证操作；方剂与药性内容请以原书及现行标准为准。",
   "contentPrinciples": [
@@ -3686,6 +3686,7 @@
       "note": "《伤寒论》桂枝汤原文作“芍药”；本方样例按现代药材名“白芍”建条目。",
       "classicRankId": "middle",
       "therapyCategoryIds": [
+        "warm-tonic",
         "astringent"
       ],
       "processing": {
@@ -4050,8 +4051,7 @@
       "verification": "reference",
       "classicRankId": "upper",
       "therapyCategoryIds": [
-        "warm-tonic",
-        "calm-open"
+        "warm-tonic"
       ],
       "processing": {
         "categoryId": "plants",
@@ -4399,8 +4399,7 @@
       "verification": "reference",
       "classicRankId": "middle",
       "therapyCategoryIds": [
-        "clear-heat",
-        "stop-bleeding"
+        "clear-heat"
       ],
       "processing": {
         "categoryId": "plants",
@@ -4569,9 +4568,7 @@
       "note": "半夏有毒，须经炮制并在专业医师指导下使用；本原型不提供自行用药建议。",
       "classicRankId": "lower",
       "therapyCategoryIds": [
-        "qi-digest",
-        "cough-phlegm",
-        "attack-cold"
+        "cough-phlegm"
       ],
       "processing": {
         "categoryId": "plants",
@@ -4759,8 +4756,7 @@
       "verification": "reference",
       "classicRankId": "upper",
       "therapyCategoryIds": [
-        "warm-tonic",
-        "calm-open"
+        "warm-tonic"
       ],
       "processing": {
         "categoryId": "plants",
@@ -4901,6 +4897,12 @@
         "pending": [
           "细辛"
         ]
+      },
+      {
+        "id": "other",
+        "title": "其他药",
+        "description": "暂未归入上述功效分类，按讲义原文保留，待逐条核对。",
+        "pending": []
       }
     ],
     "assignments": {
@@ -4920,6 +4922,7 @@
       "baishao": {
         "rankId": "middle",
         "categoryIds": [
+          "warm-tonic",
           "astringent"
         ]
       },
@@ -4934,8 +4937,7 @@
       "dazao": {
         "rankId": "upper",
         "categoryIds": [
-          "warm-tonic",
-          "calm-open"
+          "warm-tonic"
         ]
       },
       "chaihu": {
@@ -4948,27 +4950,23 @@
       "huangqin": {
         "rankId": "middle",
         "categoryIds": [
-          "clear-heat",
-          "stop-bleeding"
+          "clear-heat"
         ]
       },
       "banxia": {
         "rankId": "lower",
         "categoryIds": [
-          "qi-digest",
-          "cough-phlegm",
-          "attack-cold"
+          "cough-phlegm"
         ]
       },
       "renshen": {
         "rankId": "upper",
         "categoryIds": [
-          "warm-tonic",
-          "calm-open"
+          "warm-tonic"
         ]
       }
     },
-    "note": "三经名目见《神农本草经》序录；十二个功效分类是本站导航标签，不是《神农本草经》原文，具体药物归入需逐条核对。"
+    "note": "三经名目见《神农本草经》序录；功效分类是本站导航标签，不是《神农本草经》原文，具体药物归入需逐条核对。"
   },
   "herbPrinciples": {
     "title": "药性基础法则",

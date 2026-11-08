@@ -11,6 +11,7 @@ import {
   type HerbSearchIndexPayload,
 } from '@/composables/useHerbApi'
 import type { BencaoCatalogItem } from '@/types/bencao'
+import type { BencaoDachengIndex } from '@/types/bencao-dacheng'
 import type { Herb } from '@/types/tcm'
 
 const { loading, error, fetchHerbMeta, fetchHerbSearchIndex } = useHerbApi()
@@ -34,10 +35,12 @@ const lectureCount = computed(() => counts.value?.lectureEntries ?? 0)
 const lectureChars = computed(() => counts.value?.lectureChars ?? 0)
 const dachengCount = ref(0)
 const dachengChars = ref(0)
+const dachengIndex = ref<BencaoDachengIndex | null>(null)
 
 onMounted(async () => {
   try {
     const index = await loadBencaoDachengIndex()
+    dachengIndex.value = index
     dachengCount.value = index.total
     dachengChars.value = index.items.reduce((sum, item) => sum + item.charCount, 0)
   } catch {
@@ -73,10 +76,10 @@ watch(
 )
 
 const lectureFiltered = computed(() => {
-  if (categoryFilter.value) return []
   const q = query.value.trim().toLowerCase()
   return lectureItems.value.filter((item) => {
     if (rankFilter.value && item.rankId !== rankFilter.value) return false
+    if (categoryFilter.value && !lectureCategoryIds(item).includes(categoryFilter.value)) return false
     if (flavor.value && !item.flavorTags.includes(flavor.value)) return false
     if (meridian.value && !item.meridianIds.includes(meridian.value)) return false
     if (!q) return true
@@ -97,7 +100,169 @@ const lectureFiltered = computed(() => {
   })
 })
 
-const totalHerbCount = computed(() => (counts.value?.herbs ?? 0) + (counts.value?.lectureItems ?? 0))
+const lectureLimit = ref(30)
+const lectureVisible = computed(() => lectureFiltered.value.slice(0, lectureLimit.value))
+
+watch(
+  () => [query.value, flavor.value, meridian.value, rankFilter.value, categoryFilter.value],
+  () => {
+    lectureLimit.value = 30
+  },
+)
+
+const DACHENG_CATEGORY_MAP: Record<string, string[]> = {
+  jiebiao: ['exterior'],
+  qingre: ['clear-heat'],
+  xiexia: ['purgative'],
+  qufengshi: ['wind-damp'],
+  huashi: ['wind-damp'],
+  lishui: ['wind-damp'],
+  wenli: ['warm-tonic'],
+  liqi: ['qi-digest'],
+  xiaoshi: ['qi-digest'],
+  quchong: ['attack-cold'],
+  zhixue: ['stop-bleeding'],
+  huoxue: ['blood-moving'],
+  huatan: ['cough-phlegm'],
+  anshen: ['calm-open'],
+  pinggan: ['calm-open'],
+  buxu: ['warm-tonic'],
+  souse: ['astringent'],
+  yongtu: ['attack-cold'],
+  gongdu: ['attack-cold'],
+  qita: ['other'],
+}
+
+// 公开资料分类与讲义主治不一致时，以讲义所述功效与《中药学》常用分类校正。
+const LECTURE_CATEGORY_OVERRIDES: Record<string, string[]> = {
+  黄连: ['clear-heat'],
+  石膏: ['clear-heat'],
+  猪苓: ['wind-damp'],
+  泽泻: ['wind-damp'],
+  半夏: ['cough-phlegm'],
+  防风: ['exterior', 'wind-damp'],
+  巴豆: ['purgative'],
+  芫花: ['purgative'],
+  大戟: ['purgative'],
+  京大戟: ['purgative'],
+  陈皮: ['qi-digest'],
+  厚朴: ['qi-digest', 'wind-damp'],
+  木通: ['wind-damp'],
+  薤白: ['qi-digest'],
+  麻黄: ['exterior'],
+  葛根: ['exterior'],
+  大黄: ['purgative'],
+  芒硝: ['purgative'],
+  朴硝: ['purgative'],
+  硝石: ['purgative'],
+  白术: ['warm-tonic', 'wind-damp'],
+  茯苓: ['wind-damp', 'calm-open'],
+  人参: ['warm-tonic'],
+  甘草: ['warm-tonic', 'cough-phlegm'],
+  大枣: ['warm-tonic'],
+  生姜: ['exterior', 'warm-tonic', 'cough-phlegm'],
+  桂枝: ['exterior'],
+  柴胡: ['exterior', 'qi-digest'],
+  黄芩: ['clear-heat'],
+  细辛: ['exterior', 'warm-tonic'],
+  远志: ['calm-open'],
+  石菖蒲: ['calm-open'],
+  丹参: ['blood-moving'],
+  川芎: ['blood-moving'],
+  赤石脂: ['astringent'],
+  禹余粮: ['astringent'],
+  乌梅: ['astringent'],
+  五味子: ['astringent'],
+  白芍: ['warm-tonic', 'astringent'],
+  芍药: ['warm-tonic', 'astringent'],
+  丹砂: ['calm-open'],
+  云母: ['warm-tonic'],
+  雄黄: ['attack-cold'],
+  硫黄: ['warm-tonic', 'attack-cold'],
+  水银: ['attack-cold'],
+  矾石: ['attack-cold'],
+  酸枣仁: ['calm-open'],
+  柏子仁: ['calm-open'],
+  龙骨: ['calm-open'],
+  牡蛎: ['calm-open'],
+  珍珠: ['calm-open'],
+  石决明: ['calm-open'],
+  羚羊角: ['calm-open'],
+  全蝎: ['calm-open'],
+  蜈蚣: ['calm-open'],
+  僵蚕: ['calm-open'],
+  钩藤: ['calm-open'],
+  天麻: ['calm-open'],
+  地龙: ['calm-open'],
+  天冬: ['warm-tonic'],
+  玉竹: ['warm-tonic'],
+  旋覆花: ['cough-phlegm'],
+  空青: ['clear-heat'],
+  曾青: ['clear-heat'],
+  白青: ['clear-heat'],
+  扁青: ['clear-heat'],
+  紫石英: ['warm-tonic', 'calm-open'],
+  白石英: ['warm-tonic', 'calm-open'],
+  太一余粮: ['astringent'],
+  五色石脂: ['astringent'],
+  麦冬: ['warm-tonic'],
+  百合: ['warm-tonic', 'calm-open'],
+  沙参: ['warm-tonic'],
+  石斛: ['warm-tonic'],
+  钟乳石: ['warm-tonic', 'cough-phlegm'],
+  菖蒲: ['calm-open'],
+  贝母: ['cough-phlegm'],
+  茵陈: ['wind-damp'],
+  辛夷: ['exterior'],
+  蕤仁: ['clear-heat'],
+  阳起石: ['warm-tonic'],
+  梅实: ['astringent'],
+  云实: ['attack-cold'],
+  熊脂: ['warm-tonic'],
+  丹雄鸡: ['warm-tonic'],
+  牛角腮: ['stop-bleeding'],
+  涅石: ['attack-cold'],
+  析蓂子: ['clear-heat'],
+  饴糖: ['warm-tonic'],
+  伏龙肝: ['stop-bleeding', 'warm-tonic'],
+  灯心草: ['wind-damp'],
+  大青盐: ['clear-heat'],
+  蜂蜜: ['warm-tonic'],
+  蜂子: ['warm-tonic'],
+  蜂蜡: ['warm-tonic'],
+  蛤壳: ['cough-phlegm'],
+  冬葵子: ['wind-damp'],
+  冬瓜子: ['wind-damp', 'cough-phlegm'],
+  茜草: ['stop-bleeding', 'blood-moving'],
+  槐角: ['stop-bleeding'],
+  地肤子: ['wind-damp'],
+}
+
+const dachengByName = computed(() => {
+  const map = new Map<string, BencaoDachengIndex['items'][number]>()
+  for (const item of dachengIndex.value?.items ?? []) {
+    map.set(item.name, item)
+    for (const alias of item.aliases ?? []) map.set(alias, item)
+  }
+  return map
+})
+
+function lectureCategoryIds(item: BencaoCatalogItem) {
+  const override = LECTURE_CATEGORY_OVERRIDES[item.name]
+  if (override) return override
+  const matched = dachengByName.value.get(item.name)
+  if (matched) {
+    const mapped = DACHENG_CATEGORY_MAP[matched.categoryId]
+    if (mapped) return mapped
+  }
+  return item.therapyCategoryIds.length ? item.therapyCategoryIds : ['other']
+}
+
+const totalHerbCount = computed(
+  () =>
+    herbs.value.length + lectureItems.value.length ||
+    (counts.value?.herbs ?? 0) + (counts.value?.lectureItems ?? 0),
+)
 
 function lectureRankCount(rankId: string) {
   return lectureItems.value.filter((item) => item.rankId === rankId).length
@@ -175,12 +340,44 @@ function syncTaxonomyQuery() {
   router.replace({ query: next })
 }
 
-function rankHerbs(rankId: string) {
-  return herbs.value.filter((h) => h.classicRankId === rankId)
+function rankLinks(rankId: string) {
+  const list: { key: string; name: string; to: string }[] = []
+  const seen = new Set<string>()
+  for (const herb of herbs.value.filter((h) => h.classicRankId === rankId)) {
+    seen.add(herb.name)
+    list.push({ key: `herb:${herb.id}`, name: herb.name, to: `/herbs/${herb.id}` })
+  }
+  for (const item of lectureItems.value.filter((entry) => entry.rankId === rankId)) {
+    if (seen.has(item.name)) continue
+    seen.add(item.name)
+    list.push({
+      key: `lecture:${item.key}`,
+      name: item.name,
+      to: `/bencao/${item.groupId}/${item.entryId}`,
+    })
+  }
+  return list
 }
 
-function categoryHerbs(categoryId: string) {
-  return herbs.value.filter((h) => h.therapyCategoryIds.includes(categoryId))
+function categoryLinks(categoryId: string) {
+  const list: { key: string; name: string; to: string }[] = []
+  const seen = new Set<string>()
+  for (const herb of herbs.value.filter((h) => h.therapyCategoryIds.includes(categoryId))) {
+    seen.add(herb.name)
+    list.push({ key: `herb:${herb.id}`, name: herb.name, to: `/herbs/${herb.id}` })
+  }
+  for (const item of lectureItems.value.filter((entry) =>
+    lectureCategoryIds(entry).includes(categoryId),
+  )) {
+    if (seen.has(item.name)) continue
+    seen.add(item.name)
+    list.push({
+      key: `lecture:${item.key}`,
+      name: item.name,
+      to: `/bencao/${item.groupId}/${item.entryId}`,
+    })
+  }
+  return list
 }
 
 function toggleRank(rankId: string) {
@@ -287,7 +484,7 @@ const meridianOptions = computed(() =>
             <h2>三经为纲，功效分类为目</h2>
           </div>
           <p class="taxonomy-head__note">
-            三经名目见《神农本草经》序录；十二个功效分类是本站导航标签，不是经典原文。
+            三经名目见《神农本草经》序录；功效分类是本站导航标签，不是经典原文。
             同一味药可以同时出现在三经与多个功效分类中。
           </p>
         </div>
@@ -305,11 +502,15 @@ const meridianOptions = computed(() =>
             </button>
             <p class="rank-card__desc">{{ rank.description }}</p>
             <div class="rank-card__herbs">
-              <RouterLink v-for="h in rankHerbs(rank.id).slice(0, 8)" :key="h.id" :to="`/herbs/${h.id}`">
+              <RouterLink
+                v-for="h in rankLinks(rank.id).slice(0, 8)"
+                :key="h.key"
+                :to="h.to"
+              >
                 {{ h.name }}
               </RouterLink>
-              <span v-if="rankHerbs(rank.id).length > 8" class="rank-card__more">
-                +{{ rankHerbs(rank.id).length - 8 }}
+              <span v-if="rankLinks(rank.id).length > 8" class="rank-card__more">
+                +{{ rankLinks(rank.id).length - 8 }}
               </span>
             </div>
             <RouterLink
@@ -332,15 +533,19 @@ const meridianOptions = computed(() =>
           >
             <button class="therapy-card__head" type="button" :aria-pressed="categoryFilter === cat.id" @click="toggleCategory(cat.id)">
               <h3>{{ cat.title }}</h3>
-              <span>{{ categoryHerbs(cat.id).length }} 味</span>
+              <span>{{ categoryLinks(cat.id).length }} 味</span>
             </button>
             <p class="therapy-card__desc">{{ cat.description }}</p>
             <div class="therapy-card__herbs">
-              <RouterLink v-for="h in categoryHerbs(cat.id)" :key="h.id" :to="`/herbs/${h.id}`">
+              <RouterLink
+                v-for="h in categoryLinks(cat.id).slice(0, 10)"
+                :key="h.key"
+                :to="h.to"
+              >
                 {{ h.name }}
               </RouterLink>
-              <span v-for="name in cat.pending" :key="name" class="pending-herb">
-                {{ name }}<em>待收</em>
+              <span v-if="categoryLinks(cat.id).length > 10" class="rank-card__more">
+                +{{ categoryLinks(cat.id).length - 10 }}
               </span>
             </div>
           </article>
@@ -394,6 +599,40 @@ const meridianOptions = computed(() =>
           :meridian-names="meridianLookup"
         />
       </div>
+
+      <section v-if="lectureFiltered.length" class="lecture-results paper-panel">
+        <div class="lecture-results__head">
+          <div>
+            <p class="eyebrow">LECTURE ENTRIES / 讲义条目</p>
+            <h2>倪海厦《神农本草经》讲义</h2>
+          </div>
+          <p>
+            共 {{ lectureFiltered.length }} 味，当前显示 {{ lectureVisible.length }} 味。
+            功效分类为阅读标签，不替代原书分类。
+          </p>
+        </div>
+        <div class="lecture-results__grid">
+          <RouterLink
+            v-for="item in lectureVisible"
+            :key="item.key"
+            :to="`/bencao/${item.groupId}/${item.entryId}`"
+            class="lecture-card"
+          >
+            <span class="lecture-card__rank">{{ rankLabel(item.rankId) }}</span>
+            <strong>{{ item.name }}</strong>
+            <span class="lecture-card__pinyin">{{ item.pinyin }}</span>
+            <p>{{ item.summary || item.effects || item.indications }}</p>
+          </RouterLink>
+        </div>
+        <button
+          v-if="lectureFiltered.length > lectureVisible.length"
+          class="btn btn--ghost btn--small"
+          type="button"
+          @click="lectureLimit += 30"
+        >
+          再显示 30 味
+        </button>
+      </section>
 
       <div v-if="!filtered.length && !lectureFiltered.length" class="empty-state paper-panel">
         <h2>没有找到这味药</h2>
@@ -878,6 +1117,85 @@ const meridianOptions = computed(() =>
   line-height: 1.6;
 }
 
+.lecture-results {
+  margin-top: 20px;
+  padding: 18px 20px;
+}
+
+.lecture-results__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-end;
+  margin-bottom: 12px;
+}
+
+.lecture-results__head h2 {
+  margin: 4px 0 0;
+  font-size: 1.35rem;
+}
+
+.lecture-results__head > p {
+  max-width: 360px;
+  margin: 0;
+  color: var(--ink-faint);
+  font-size: 0.72rem;
+  line-height: 1.7;
+  text-align: right;
+}
+
+.lecture-results__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.lecture-card {
+  display: grid;
+  gap: 2px;
+  padding: 10px 12px;
+  border: 1px solid rgba(176, 138, 74, 0.28);
+  background: rgba(255, 255, 255, 0.42);
+  transition: border-color 0.18s ease, transform 0.18s ease;
+}
+
+.lecture-card:hover {
+  border-color: var(--cinnabar);
+  transform: translateY(-1px);
+}
+
+.lecture-card__rank {
+  color: var(--cinnabar);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+}
+
+.lecture-card strong {
+  font-family: var(--serif);
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.lecture-card__pinyin {
+  color: var(--ink-faint);
+  font-size: 0.64rem;
+}
+
+.lecture-card p {
+  margin: 4px 0 0;
+  color: var(--ink-soft);
+  font-size: 0.7rem;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.lecture-results > .btn {
+  margin-top: 12px;
+}
+
 .list-note {
   margin-top: 36px;
   padding: 20px 22px;
@@ -925,6 +1243,10 @@ const meridianOptions = computed(() =>
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lecture-results__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .taxonomy-head {
     flex-direction: column;
     align-items: flex-start;
@@ -959,10 +1281,24 @@ const meridianOptions = computed(() =>
     flex-direction: column;
     gap: 4px;
   }
+
+  .lecture-results__head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lecture-results__head > p {
+    max-width: none;
+    text-align: left;
+  }
 }
 
 @media (max-width: 520px) {
   .herb-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lecture-results__grid {
     grid-template-columns: 1fr;
   }
 
