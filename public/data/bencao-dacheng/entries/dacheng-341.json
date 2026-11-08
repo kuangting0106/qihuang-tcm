@@ -80,6 +80,16 @@
   ],
   "id": "dacheng-341",
   "summary": "收敛止血，截疟，止痢，解毒，补虚",
-  "images": [],
+  "images": [
+    {
+      "url": "/images/herbs/dacheng/plant-024.jpg",
+      "alt": "龙芽草（Agrimonia pilosa）",
+      "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+      "license": "用户提供，来源网络，版权归原作者所有",
+      "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+      "latin": "Agrimonia pilosa",
+      "kind": "原植物"
+    }
+  ],
   "docCount": 1
 }

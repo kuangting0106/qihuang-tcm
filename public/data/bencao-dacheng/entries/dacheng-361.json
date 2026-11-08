@@ -71,6 +71,16 @@
   ],
   "id": "dacheng-361",
   "summary": "祛风除湿，消食化积，解毒消肿，活血止痛",
-  "images": [],
+  "images": [
+    {
+      "url": "/images/herbs/dacheng/plant-078.jpg",
+      "alt": "鸡矢藤（Paederia scandens）",
+      "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+      "license": "用户提供，来源网络，版权归原作者所有",
+      "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+      "latin": "Paederia scandens",
+      "kind": "原植物"
+    }
+  ],
   "docCount": 1
 }

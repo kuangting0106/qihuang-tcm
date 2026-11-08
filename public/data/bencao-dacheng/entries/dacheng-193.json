@@ -88,6 +88,16 @@
   ],
   "id": "dacheng-193",
   "summary": "祛风除湿，舒筋通络，活血止痛，止咳平喘",
-  "images": [],
+  "images": [
+    {
+      "url": "/images/herbs/dacheng/plant-076.jpg",
+      "alt": "穿龙薯蓣（Dioscorea nipponica）",
+      "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+      "license": "用户提供，来源网络，版权归原作者所有",
+      "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+      "latin": "Dioscorea nipponica",
+      "kind": "原植物"
+    }
+  ],
   "docCount": 1
 }

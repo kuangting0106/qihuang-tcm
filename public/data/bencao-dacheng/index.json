@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-06T12:57:54.291Z",
+  "generatedAt": "2026-11-08T07:00:08.712Z",
   "total": 616,
-  "withImages": 200,
+  "withImages": 232,
   "categories": [
     {
       "id": "jiebiao",
@@ -232,7 +232,15 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "散风清热，平肝明目，清热解毒",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-028.jpg",
+        "alt": "菊花（Dendranthema morifolium）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Dendranthema morifolium",
+        "kind": "原植物"
+      },
       "docCount": 2,
       "charCount": 2047
     },
@@ -249,7 +257,15 @@
       "categoryId": "huoxue",
       "categoryTitle": "活血化瘀药",
       "summary": "解肌退热，生津止渴，透疹，升阳止泻，通经活络，解酒毒",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-084.jpg",
+        "alt": "葛（Pueraria lobata）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Pueraria lobata",
+        "kind": "原植物"
+      },
       "docCount": 2,
       "charCount": 1625
     },
@@ -342,7 +358,15 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热明目，润肠通便",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-002.jpg",
+        "alt": "决明（Cassia tora）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Cassia tora",
+        "kind": "原植物"
+      },
       "docCount": 2,
       "charCount": 1792
     },
@@ -359,7 +383,15 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热解毒，疏散风热",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-075.jpg",
+        "alt": "忍冬（Lonicera japonica）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Lonicera japonica",
+        "kind": "原植物"
+      },
       "docCount": 2,
       "charCount": 1722
     },
@@ -465,7 +497,15 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "鲜地黄： 清热生津，凉血，止血",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-045.jpg",
+        "alt": "地黄（Rehmannia glutinosa）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Rehmannia glutinosa",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 1114
     },
@@ -3341,7 +3381,15 @@
       "categoryId": "huatan",
       "categoryTitle": "化痰止咳平喘药",
       "summary": "降气，消痰，止咳",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-054.jpg",
+        "alt": "柳叶白前（Cynanchum stauntonii）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Cynanchum stauntonii",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 896
     },
@@ -4025,7 +4073,15 @@
       "categoryId": "lishui",
       "categoryTitle": "利水渗湿药",
       "summary": "利湿退黄，清热解毒，散瘀止痛，止咳化痰",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-069.jpg",
+        "alt": "虎杖（Reynoutria japonica）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Reynoutria japonica",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 1001
     },
@@ -4104,7 +4160,15 @@
       "categoryId": "gongdu",
       "categoryTitle": "攻毒杀虫止痒药",
       "summary": "泻水逐饮，消肿散结",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-033.jpg",
+        "alt": "大戟（Euphorbia pekinensis）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Euphorbia pekinensis",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 1044
     },
@@ -4122,7 +4186,15 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热解毒，排脓祛瘀",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-036.jpg",
+        "alt": "金荞麦（Fagopyrum dibotrys）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Fagopyrum dibotrys",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 862
     },
@@ -4209,7 +4281,15 @@
       "categoryId": "huatan",
       "categoryTitle": "化痰止咳平喘药",
       "summary": "养阴清肺，益胃生津，化痰，益气",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-060.jpg",
+        "alt": "轮叶沙参（Adenophora tetraphylla）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Adenophora tetraphylla",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 1060
     },
@@ -4412,7 +4492,15 @@
       "categoryId": "huatan",
       "categoryTitle": "化痰止咳平喘药",
       "summary": "降气化痰，散风清热",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-049.jpg",
+        "alt": "白花前胡（Peucedanum praeruptorum）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Peucedanum praeruptorum",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 1452
     },
@@ -4446,7 +4534,15 @@
       "categoryId": "qufengshi",
       "categoryTitle": "祛风湿药",
       "summary": "祛风除湿，舒筋通络，活血止痛，止咳平喘",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-076.jpg",
+        "alt": "穿龙薯蓣（Dioscorea nipponica）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Dioscorea nipponica",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 1261
     },
@@ -5241,7 +5337,15 @@
       "categoryId": "huoxue",
       "categoryTitle": "活血化瘀药",
       "summary": "活血通经，下乳消肿，利尿通淋",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-020.jpg",
+        "alt": "麦蓝菜（Vaccaria segetalis）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Vaccaria segetalis",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 932
     },
@@ -5364,7 +5468,15 @@
       "categoryId": "jiebiao",
       "categoryTitle": "解表药",
       "summary": "疏散风热，宣肺透疹，解毒利咽",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-012.jpg",
+        "alt": "牛蒡（Arctium lappa）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Arctium lappa",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 1042
     },
@@ -5488,7 +5600,15 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热涤痰，宽胸散结，润燥滑肠",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-080.jpg",
+        "alt": "栝楼（Trichosanthes kirilowii）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Trichosanthes kirilowii",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 750
     },
@@ -6485,7 +6605,15 @@
       "categoryId": "huashi",
       "categoryTitle": "化湿药",
       "summary": "燥湿祛风，杀虫止痒，温肾壮阳",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-019.jpg",
+        "alt": "蛇床（Cnidium monnieri）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Cnidium monnieri",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 1147
     },
@@ -6649,7 +6777,15 @@
       "categoryId": "gongdu",
       "categoryTitle": "攻毒杀虫止痒药",
       "summary": "消肿拔毒，泻下通滞",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-010.jpg",
+        "alt": "蓖麻（Ricinus communis）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Ricinus communis",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 955
     },
@@ -6711,7 +6847,15 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热解毒，利咽化痰，利尿通淋",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-017.jpg",
+        "alt": "酸浆（Physalis alkekengi L.）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Physalis alkekengi L.",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 1055
     },
@@ -6800,7 +6944,15 @@
       "categoryId": "jiebiao",
       "categoryTitle": "解表药",
       "summary": "疏散风热，清利头目",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-038.jpg",
+        "alt": "单叶蔓荆（Vitex trifolia var. simplicifolia）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Vitex trifolia var. simplicifolia",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 1082
     },
@@ -6964,7 +7116,15 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "凉血止血，散瘀解毒消痈",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-061.jpg",
+        "alt": "大蓟（Cirsium japonicum）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Cirsium japonicum",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 995
     },
@@ -7252,7 +7412,15 @@
       "categoryId": "zhixue",
       "categoryTitle": "止血药",
       "summary": "收敛止血，截疟，止痢，解毒，补虚",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-024.jpg",
+        "alt": "龙芽草（Agrimonia pilosa）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Agrimonia pilosa",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 852
     },
@@ -7352,7 +7520,15 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热解毒，化瘀利尿",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-009.jpg",
+        "alt": "半枝莲（Scutellaria barbata）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Scutellaria barbata",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 971
     },
@@ -7370,7 +7546,15 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热解毒，活血止痛",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-050.jpg",
+        "alt": "碎米桠（Rabdosia rubescens）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Rabdosia rubescens",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 867
     },
@@ -7626,7 +7810,15 @@
       "categoryId": "qufengshi",
       "categoryTitle": "祛风湿药",
       "summary": "祛风除湿，消食化积，解毒消肿，活血止痛",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-078.jpg",
+        "alt": "鸡矢藤（Paederia scandens）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Paederia scandens",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 843
     },
@@ -7831,7 +8023,15 @@
       "categoryId": "lishui",
       "categoryTitle": "利水渗湿药",
       "summary": "利湿退黄，清热解毒",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-068.jpg",
+        "alt": "垂盆草（Sedum sarmentosum）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Sedum sarmentosum",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 1034
     },
@@ -7864,7 +8064,15 @@
       "categoryId": "jiebiao",
       "categoryTitle": "解表药",
       "summary": "解表散风，透疹，消疮",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-021.jpg",
+        "alt": "荆芥（Schizonepeta tenuifolia）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Schizonepeta tenuifolia",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 1137
     },
@@ -8937,7 +9145,15 @@
       "categoryId": "huoxue",
       "categoryTitle": "活血化瘀药",
       "summary": "活血通经，凉血祛风",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-083.jpg",
+        "alt": "厚萼凌霄（Campsis radicans）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Campsis radicans",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 1019
     },
@@ -8974,7 +9190,15 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热解毒，泻火平肝",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-056.jpg",
+        "alt": "野菊（Dendranthema indicum）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Dendranthema indicum",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 1169
     },
@@ -9117,7 +9341,15 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热解毒，凉血消斑",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-001.jpg",
+        "alt": "菘蓝（Isatis indigotica）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Isatis indigotica",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 631
     },
@@ -9165,7 +9397,15 @@
       "categoryId": "zhixue",
       "categoryTitle": "止血药",
       "summary": "温经止血，散寒止痛；外用祛湿止痒",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-039.jpg",
+        "alt": "艾（Artemisia argyi）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Artemisia argyi",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 989
     },
@@ -9283,7 +9523,15 @@
       "categoryId": "anshen",
       "categoryTitle": "安神药",
       "summary": "平肝安神，清热利水",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-051.jpg",
+        "alt": "罗布麻（Apocynum venetum）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Apocynum venetum",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 867
     },
@@ -9735,7 +9983,15 @@
       "categoryId": "lishui",
       "categoryTitle": "利水渗湿药",
       "summary": "利水消肿，祛风湿，强筋骨",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/dacheng/plant-079.jpg",
+        "alt": "杠柳（Periploca sepium）",
+        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+        "license": "用户提供，来源网络，版权归原作者所有",
+        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+        "latin": "Periploca sepium",
+        "kind": "原植物"
+      },
       "docCount": 1,
       "charCount": 965
     },

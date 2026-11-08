@@ -79,6 +79,16 @@
   ],
   "id": "dacheng-451",
   "summary": "平肝安神，清热利水",
-  "images": [],
+  "images": [
+    {
+      "url": "/images/herbs/dacheng/plant-051.jpg",
+      "alt": "罗布麻（Apocynum venetum）",
+      "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+      "license": "用户提供，来源网络，版权归原作者所有",
+      "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+      "latin": "Apocynum venetum",
+      "kind": "原植物"
+    }
+  ],
   "docCount": 1
 }

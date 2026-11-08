@@ -88,6 +88,16 @@
   ],
   "id": "dacheng-316",
   "summary": "疏散风热，清利头目",
-  "images": [],
+  "images": [
+    {
+      "url": "/images/herbs/dacheng/plant-038.jpg",
+      "alt": "单叶蔓荆（Vitex trifolia var. simplicifolia）",
+      "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+      "license": "用户提供，来源网络，版权归原作者所有",
+      "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+      "latin": "Vitex trifolia var. simplicifolia",
+      "kind": "原植物"
+    }
+  ],
   "docCount": 1
 }

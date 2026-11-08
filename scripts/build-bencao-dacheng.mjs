@@ -7,6 +7,7 @@ const SOURCE_DIR = 'F:/中医/本草大纲/%E4%B8%AD%E8%8D%89%E8%8D%AF%E5%A4%A7%
 const OUT_DIR = path.join(ROOT, 'public', 'data', 'bencao-dacheng')
 const CATALOG_FILE = path.join(ROOT, 'public', 'data', 'bencao-lectures', 'catalog.json')
 const IMAGE_CACHE_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-images.json')
+const PROVIDED_IMAGE_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-provided-images.json')
 
 const TYPE_A_NAMES = [
   '紫苏叶', '生姜', '香薷', '白芷', '薄荷', '菊花', '葛根', '淡豆豉', '知母', '天花粉',
@@ -360,6 +361,16 @@ function loadRemoteImageMap() {
   }
 }
 
+function loadProvidedImageMap() {
+  if (!fs.existsSync(PROVIDED_IMAGE_FILE)) return new Map()
+  try {
+    const data = JSON.parse(fs.readFileSync(PROVIDED_IMAGE_FILE, 'utf8'))
+    return new Map(Object.entries(data).map(([name, image]) => [normalizeName(name), image]))
+  } catch {
+    return new Map()
+  }
+}
+
 function mergeEntry(base, extra) {
   if (!base) return extra
   if (!extra) return base
@@ -414,11 +425,15 @@ function main() {
 
   const imageMap = loadCatalogImageMap()
   const remoteImageMap = loadRemoteImageMap()
+  const providedImageMap = loadProvidedImageMap()
   const list = [...entries.values()]
     .sort((a, b) => a.number - b.number)
     .map((entry, index) => {
       const id = `dacheng-${String(index + 1).padStart(3, '0')}`
-      const image = imageMap.get(normalizeName(entry.name)) ?? remoteImageMap.get(normalizeName(entry.name))
+      const image =
+        providedImageMap.get(normalizeName(entry.name)) ??
+        imageMap.get(normalizeName(entry.name)) ??
+        remoteImageMap.get(normalizeName(entry.name))
       const summarySource = entry.profile.effects || entry.profile.indications || entry.quote?.text || entry.sourceText
       return {
         ...entry,
@@ -463,6 +478,7 @@ function main() {
   }
 
   console.log(`Wrote ${list.length} entries, ${list.filter((entry) => entry.images.length).length} with images`)
+  console.log('Image sources:', `catalog=${imageMap.size}`, `provided=${providedImageMap.size}`, `remote=${remoteImageMap.size}`)
   console.log('Categories:', categories.map((item) => `${item.title} ${item.count}`).join(' / '))
   const missing = sourceNames.filter((item) => !list.some((entry) => normalizeName(entry.name) === normalizeName(item.name)))
   console.log('Merged source files:', sourceNames.length - missing.length, 'unique names:', list.length)
