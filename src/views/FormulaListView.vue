@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import { RouterLink, useRouter } from 'vue-router'
+import CitationBadge from '@/components/CitationBadge.vue'
 import { useFormulaApi } from '@/composables/useFormulaApi'
+import { loadTcmData } from '@/composables/useTcmData'
 import type { FormulaSummary } from '@/composables/useFormulaApi'
 import type { FormulaBook } from '@/data/formula-categories'
 import {
@@ -18,6 +20,44 @@ const formulas = ref<FormulaSummary[]>([])
 const query = ref('')
 const activeBook = ref<FormulaBook>('shanghan')
 
+const junchenOpen = ref(false)
+const junchenRoles = [
+  {
+    name: '君药',
+    text: '针对主病或主证起主要治疗作用，是方中不可或缺、药力居首的药物。',
+  },
+  {
+    name: '臣药',
+    text: '一是辅助君药加强治疗主病或主证；二是针对兼病或兼证起治疗作用。其在方中之药力小于君药。',
+  },
+  {
+    name: '佐药',
+    text: '一是佐助药，协助君、臣药以加强治疗作用，或直接治疗次要兼证；二是佐制药，制约君、臣药的峻烈之性，或减轻、消除君、臣药毒性；三是反佐药，根据病证需要，配伍少量与君药性味或作用相反而又能在治疗中起相成作用的药物。药力小于臣药，一般用量较轻。',
+  },
+  {
+    name: '使药',
+    text: '一是引经药，引方中诸药以达病所；二是调和药，调和诸药。其在方中之药力较小，用量亦轻。',
+  },
+]
+
+const junchenQuotes = [
+  {
+    title: '《脾胃论》引《素问·至真要大论》',
+    text: '有毒无毒，所治为主。主病者为君，佐君者为臣，应臣者为使。一法，力大者为君。',
+    citationIds: ['src-piweilun-zhizhen'],
+  },
+  {
+    title: '《脾胃论》论气味阴阳',
+    text: '凡药之所用，皆以气味为主，补泻在味，随时换气。气薄者，为阳中之阴，气厚者，为阳中之阳；味薄者，为阴中之阳，味厚者，为阴中之阴。辛、甘、淡中热者，为阳中之阳，辛、甘、淡中寒者，为阳中之阴；酸、苦、咸之寒者，为阴中之阴，酸、苦、咸之热者，为阴中之阳。夫辛、甘、淡、酸、苦、咸，乃味之阴阳，又为地之阴阳也；温、凉、寒、热，乃气之阴阳，又为天之阴阳也。气味生成，而阴阳造化之机存焉。一物之内，气味兼有，一药之中，理性具焉，主对治疗，由是而出。',
+    citationIds: ['src-piweilun-qixiang'],
+  },
+  {
+    title: '《脾胃论》随证用药举例',
+    text: '假令治表实，麻黄、葛根；表虚，桂枝、黄芪。里实，枳实、大黄；里虚，人参、芍药。热者，黄芩、黄连；寒者，干姜、附子之类为君。',
+    citationIds: ['src-piweilun-yongyao'],
+  },
+]
+
 async function load() {
   try {
     formulas.value = await fetchFormulaList()
@@ -26,7 +66,10 @@ async function load() {
   }
 }
 
-onMounted(load)
+onMounted(() => {
+  void load()
+  void loadTcmData()
+})
 
 const totalComposition = computed(() =>
   formulas.value.reduce((n, f) => n + f.composition.length, 0),
@@ -85,11 +128,80 @@ function submitSearch() {
           </p>
           <p class="page-hero__note">药方重在：治症思路、药材选取、用量</p>
         </div>
-        <div class="page-hero__stat">
-          <span>{{ formulas.length }}</span>
-          <small>首方剂</small>
-          <span>{{ totalComposition }}</span>
-          <small>条组成记录</small>
+        <div class="page-hero__aside">
+          <div class="page-hero__stat">
+            <span>{{ formulas.length }}</span>
+            <small>首方剂</small>
+            <span>{{ totalComposition }}</span>
+            <small>条组成记录</small>
+          </div>
+
+          <div
+            class="junchen-guide"
+            @mouseenter="junchenOpen = true"
+            @mouseleave="junchenOpen = false"
+            @keydown.esc="junchenOpen = false"
+          >
+            <button
+              class="junchen-guide__trigger"
+              type="button"
+              :aria-expanded="junchenOpen"
+              aria-controls="junchen-guide-panel"
+              @click="junchenOpen = !junchenOpen"
+            >
+              <span class="junchen-guide__seal" aria-hidden="true">方</span>
+              <span class="junchen-guide__copy">
+                <span class="junchen-guide__eyebrow">君臣佐使 · 读方提示</span>
+                <strong>此处可查看药物的君臣佐使说明</strong>
+                <small>悬停或点击展开</small>
+              </span>
+              <span class="junchen-guide__arrow" aria-hidden="true">{{ junchenOpen ? '−' : '+' }}</span>
+            </button>
+
+            <div
+              v-if="junchenOpen"
+              id="junchen-guide-panel"
+              class="junchen-guide__panel"
+              role="dialog"
+              aria-label="君臣佐使说明"
+            >
+              <div class="junchen-guide__head">
+                <p class="eyebrow">JUN CHEN ZUO SHI / 君臣佐使</p>
+                <h2>读方先看配伍地位</h2>
+                <p>
+                  药方重在：治症思路、药材选取、用量。君臣佐使说明的是药物在方中的主次与配伍关系，
+                  不是单味药效的排行榜；同一味药在不同方中，地位可以不同。
+                </p>
+              </div>
+
+              <div class="junchen-roles">
+                <article v-for="role in junchenRoles" :key="role.name" class="junchen-role">
+                  <h3>{{ role.name }}</h3>
+                  <p>{{ role.text }}</p>
+                </article>
+              </div>
+              <p class="junchen-guide__cite">
+                <CitationBadge
+                  :citation-ids="['src-zhongyaoxue-yaoxing']"
+                  label="教材归纳"
+                  compact
+                />
+              </p>
+
+              <div class="junchen-quotes">
+                <blockquote v-for="quote in junchenQuotes" :key="quote.title">
+                  <header>{{ quote.title }}</header>
+                  <p>{{ quote.text }}</p>
+                  <CitationBadge :citation-ids="quote.citationIds" label="原文" compact />
+                </blockquote>
+              </div>
+
+              <p class="junchen-guide__note">
+                上引《脾胃论》文字据用户提供资料录入，未逐字校勘；君臣佐使的定义按《中药学》教材归纳，
+                不冒充古籍原文。读方时仍以原方主治、药量与煎服法为准。
+              </p>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -258,6 +370,181 @@ function submitSearch() {
 .page-hero__stat small {
   color: var(--ink-soft);
   font-size: 0.76rem;
+}
+
+.page-hero__aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  min-width: 300px;
+}
+
+.junchen-guide {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+}
+
+.junchen-guide__trigger {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid rgba(126, 35, 26, 0.5);
+  border-radius: 2px;
+  background: linear-gradient(135deg, #a63a2b 0%, #7d271e 100%);
+  color: #fff9ec;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(95, 30, 22, 0.18);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.junchen-guide__trigger:hover,
+.junchen-guide__trigger:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(95, 30, 22, 0.26);
+  outline: none;
+}
+
+.junchen-guide__seal {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  place-items: center;
+  border: 1px solid rgba(255, 249, 236, 0.62);
+  border-radius: 50%;
+  font-family: var(--serif);
+  font-size: 1.05rem;
+}
+
+.junchen-guide__copy {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.junchen-guide__eyebrow {
+  color: rgba(255, 249, 236, 0.72);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+}
+
+.junchen-guide__copy strong {
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.junchen-guide__copy small {
+  color: rgba(255, 249, 236, 0.72);
+  font-size: 0.64rem;
+}
+
+.junchen-guide__arrow {
+  margin-left: auto;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.junchen-guide__panel {
+  position: absolute;
+  z-index: 40;
+  top: calc(100% + 8px);
+  right: 0;
+  width: min(580px, calc(100vw - 48px));
+  max-height: 72vh;
+  overflow: auto;
+  padding: 20px 22px;
+  border: 1px solid var(--line-strong);
+  background: #fffdf7;
+  box-shadow: 0 24px 60px rgba(44, 30, 20, 0.24);
+  text-align: left;
+}
+
+.junchen-guide__head h2 {
+  margin: 4px 0 8px;
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+}
+
+.junchen-guide__head > p:last-child {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  line-height: 1.8;
+}
+
+.junchen-roles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.junchen-role {
+  padding: 10px 12px;
+  border-left: 2px solid var(--cinnabar);
+  background: rgba(238, 231, 218, 0.34);
+}
+
+.junchen-role h3 {
+  margin: 0 0 4px;
+  font-family: var(--serif);
+  font-size: 1rem;
+  color: var(--cinnabar);
+}
+
+.junchen-role p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.74rem;
+  line-height: 1.75;
+}
+
+.junchen-guide__cite {
+  margin: 8px 0 0;
+}
+
+.junchen-quotes {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.junchen-quotes blockquote {
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid rgba(176, 138, 74, 0.25);
+  background: rgba(255, 255, 255, 0.52);
+}
+
+.junchen-quotes header {
+  margin-bottom: 5px;
+  color: var(--cinnabar);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.junchen-quotes p {
+  margin: 0 0 6px;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 0.82rem;
+  line-height: 1.9;
+}
+
+.junchen-guide__note {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  border-top: 1px dashed var(--line-strong);
+  color: var(--ink-faint);
+  font-size: 0.68rem;
+  line-height: 1.7;
 }
 
 .filter-bar {
@@ -541,6 +828,27 @@ function submitSearch() {
   .page-hero__stat {
     border-left: 0;
     padding-left: 0;
+  }
+
+  .page-hero__aside {
+    align-items: stretch;
+    width: 100%;
+    max-width: 560px;
+  }
+
+  .junchen-guide {
+    max-width: none;
+  }
+
+  .junchen-guide__panel {
+    position: static;
+    width: 100%;
+    max-height: none;
+    margin-top: 8px;
+  }
+
+  .junchen-roles {
+    grid-template-columns: 1fr;
   }
 
   .formula-grid {

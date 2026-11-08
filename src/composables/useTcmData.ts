@@ -42,7 +42,9 @@ export function loadTcmData(): Promise<TcmData> {
   if (loadPromise) return loadPromise
   loading.value = true
   error.value = ''
-  loadPromise = fetch(`${import.meta.env.BASE_URL}data/sample_data.json`)
+  loadPromise = fetch(`${import.meta.env.BASE_URL}data/sample_data.json`, {
+    cache: 'no-cache',
+  })
     .then(async (res) => {
       if (!res.ok) throw new Error(`数据加载失败：HTTP ${res.status}`)
       return (await res.json()) as TcmData
