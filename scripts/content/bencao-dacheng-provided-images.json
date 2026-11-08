@@ -286,5 +286,29 @@
     "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
     "latin": "Pueraria lobata",
     "kind": "原植物"
+  },
+  "芒硝": {
+    "url": "/images/herbs/lecture/xlsx/xlsx-009.jpg",
+    "alt": "芒硝（用户提供图片）",
+    "credit": "用户提供 / 中草药图片自搜表格",
+    "license": "用户提供，版权归原作者所有",
+    "sourceUrl": "",
+    "kind": "药材"
+  },
+  "熟地黄": {
+    "url": "/images/herbs/lecture/xlsx/xlsx-026.jpg",
+    "alt": "熟地黄（用户提供图片）",
+    "credit": "用户提供 / 中草药图片自搜表格",
+    "license": "用户提供，版权归原作者所有",
+    "sourceUrl": "",
+    "kind": "药材"
+  },
+  "蜂蜡": {
+    "url": "/images/herbs/lecture/xlsx/xlsx-147.jpg",
+    "alt": "蜂蜡（用户提供图片）",
+    "credit": "用户提供 / 中草药图片自搜表格",
+    "license": "用户提供，版权归原作者所有",
+    "sourceUrl": "",
+    "kind": "药材"
   }
 }

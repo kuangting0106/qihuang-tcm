@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T07:29:26.374Z",
+  "generatedAt": "2026-11-08T14:21:15.373Z",
   "items": [
     {
       "name": "当归",
@@ -17,7 +17,32 @@
       "file": "/images/herbs/lecture/138362.jpg",
       "credit": "© onidiras-iNaturalist / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/138362"
+      "sourceUrl": "https://www.inaturalist.org/taxa/138362",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/138362.jpg",
+          "alt": "黄芪（已有图片）",
+          "credit": "© onidiras-iNaturalist / iNaturalist",
+          "license": "CC BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/taxa/138362"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-078.jpg",
+          "alt": "黄芪（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-079.jpg",
+          "alt": "黄芪（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "白术",
@@ -26,7 +51,24 @@
       "file": "/images/herbs/lecture/786049.jpeg",
       "credit": "© 江国彬 / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/786049"
+      "sourceUrl": "https://www.inaturalist.org/taxa/786049",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/786049.jpeg",
+          "alt": "白术（已有图片）",
+          "credit": "© 江国彬 / iNaturalist",
+          "license": "CC BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/taxa/786049"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-030.jpg",
+          "alt": "白术（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "陈皮",
@@ -44,7 +86,32 @@
       "file": "/images/herbs/lecture/164955.jpeg",
       "credit": "© 葉子 / iNaturalist",
       "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/164955"
+      "sourceUrl": "https://www.inaturalist.org/taxa/164955",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/164955.jpeg",
+          "alt": "枸杞（已有图片）",
+          "credit": "© 葉子 / iNaturalist",
+          "license": "CC0",
+          "sourceUrl": "https://www.inaturalist.org/taxa/164955"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-108.jpg",
+          "alt": "枸杞（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-109.jpg",
+          "alt": "枸杞（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "丹参",
@@ -71,7 +138,24 @@
       "file": "/images/herbs/lecture/497721.jpg",
       "credit": "© misakinokukuru / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/497721"
+      "sourceUrl": "https://www.inaturalist.org/taxa/497721",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/497721.jpg",
+          "alt": "黄连（已有图片）",
+          "credit": "© misakinokukuru / iNaturalist",
+          "license": "CC BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/taxa/497721"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-074.jpg",
+          "alt": "黄连（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "巴豆",
@@ -89,7 +173,40 @@
       "file": "/images/herbs/lecture/790618.jpeg",
       "credit": "© 小铖/Smalltown / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/790618"
+      "sourceUrl": "https://www.inaturalist.org/taxa/790618",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/790618.jpeg",
+          "alt": "巴戟天（已有图片）",
+          "credit": "© 小铖/Smalltown / iNaturalist",
+          "license": "CC BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/taxa/790618"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-058.jpg",
+          "alt": "巴戟天（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-059.jpg",
+          "alt": "巴戟天（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-060.jpg",
+          "alt": "巴戟天（用户提供图片 3）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "白及",
@@ -188,7 +305,24 @@
       "file": "/images/herbs/lecture/601649.jpeg",
       "credit": "© 红梅 / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/601649"
+      "sourceUrl": "https://www.inaturalist.org/taxa/601649",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/601649.jpeg",
+          "alt": "柴胡（已有图片）",
+          "credit": "© 红梅 / iNaturalist",
+          "license": "CC BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/taxa/601649"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-035.jpg",
+          "alt": "柴胡（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "菖蒲",
@@ -233,7 +367,24 @@
       "file": "/images/herbs/lecture/428365.jpg",
       "credit": "© oreste83 / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/428365"
+      "sourceUrl": "https://www.inaturalist.org/taxa/428365",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/428365.jpg",
+          "alt": "大枣（已有图片）",
+          "credit": "© oreste83 / iNaturalist",
+          "license": "CC BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/taxa/428365"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-156.jpg",
+          "alt": "大枣（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "党参",
@@ -260,7 +411,24 @@
       "file": "/images/herbs/lecture/482445.jpg",
       "credit": "© leehsueh / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/482445"
+      "sourceUrl": "https://www.inaturalist.org/taxa/482445",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/482445.jpg",
+          "alt": "独活（已有图片）",
+          "credit": "© leehsueh / iNaturalist",
+          "license": "CC BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/taxa/482445"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-037.jpg",
+          "alt": "独活（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "杜若",
@@ -269,7 +437,24 @@
       "file": "/images/herbs/lecture/452114.jpeg",
       "credit": "© Kōsuke Onoda / iNaturalist",
       "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/452114"
+      "sourceUrl": "https://www.inaturalist.org/taxa/452114",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/452114.jpeg",
+          "alt": "杜若（已有图片）",
+          "credit": "© Kōsuke Onoda / iNaturalist",
+          "license": "CC0",
+          "sourceUrl": "https://www.inaturalist.org/taxa/452114"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-093.jpg",
+          "alt": "杜若（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "杜仲",
@@ -278,7 +463,32 @@
       "file": "/images/herbs/lecture/127868.jpg",
       "credit": "© Kristine Paulus / iNaturalist",
       "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/127868"
+      "sourceUrl": "https://www.inaturalist.org/taxa/127868",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/127868.jpg",
+          "alt": "杜仲（已有图片）",
+          "credit": "© Kristine Paulus / iNaturalist",
+          "license": "CC BY",
+          "sourceUrl": "https://www.inaturalist.org/taxa/127868"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-129.jpg",
+          "alt": "杜仲（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-130.jpg",
+          "alt": "杜仲（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "浮萍",
@@ -296,7 +506,24 @@
       "file": "/images/herbs/lecture/775858.jpg",
       "credit": "© Tomáš Vrána / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/775858"
+      "sourceUrl": "https://www.inaturalist.org/taxa/775858",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/775858.jpg",
+          "alt": "甘草（已有图片）",
+          "credit": "© Tomáš Vrána / iNaturalist",
+          "license": "CC BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/taxa/775858"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-023.jpg",
+          "alt": "甘草（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "甘遂",
@@ -431,7 +658,32 @@
       "file": "/images/herbs/lecture/64238.jpg",
       "credit": "© lanechaffin / iNaturalist",
       "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/64238"
+      "sourceUrl": "https://www.inaturalist.org/taxa/64238",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/64238.jpg",
+          "alt": "蒺藜（已有图片）",
+          "credit": "© lanechaffin / iNaturalist",
+          "license": "CC0",
+          "sourceUrl": "https://www.inaturalist.org/taxa/64238"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-070.jpg",
+          "alt": "蒺藜（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-071.jpg",
+          "alt": "蒺藜（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "接骨草",
@@ -530,7 +782,32 @@
       "file": "/images/herbs/lecture/508514.jpg",
       "credit": "© ~~ / iNaturalist",
       "license": "CC BY-SA",
-      "sourceUrl": "https://www.inaturalist.org/taxa/508514"
+      "sourceUrl": "https://www.inaturalist.org/taxa/508514",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/508514.jpg",
+          "alt": "龙胆（已有图片）",
+          "credit": "© ~~ / iNaturalist",
+          "license": "CC BY-SA",
+          "sourceUrl": "https://www.inaturalist.org/taxa/508514"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-052.jpg",
+          "alt": "龙胆（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-053.jpg",
+          "alt": "龙胆（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "漏芦",
@@ -539,7 +816,24 @@
       "file": "/images/herbs/lecture/1498021.jpg",
       "credit": "© Ryzhkov Oleg / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/1498021"
+      "sourceUrl": "https://www.inaturalist.org/taxa/1498021",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/1498021.jpg",
+          "alt": "漏芦（已有图片）",
+          "credit": "© Ryzhkov Oleg / iNaturalist",
+          "license": "CC BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/taxa/1498021"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-075.jpg",
+          "alt": "漏芦（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "鹿藿",
@@ -566,7 +860,32 @@
       "file": "/images/herbs/lecture/200061.jpeg",
       "credit": "© 卢江离 / iNaturalist",
       "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/200061"
+      "sourceUrl": "https://www.inaturalist.org/taxa/200061",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/200061.jpeg",
+          "alt": "麦冬（已有图片）",
+          "credit": "© 卢江离 / iNaturalist",
+          "license": "CC0",
+          "sourceUrl": "https://www.inaturalist.org/taxa/200061"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-038.jpg",
+          "alt": "麦冬（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-039.jpg",
+          "alt": "麦冬（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "木通",
@@ -584,7 +903,32 @@
       "file": "/images/herbs/lecture/1420140.jpg",
       "credit": "© Cyril Gros / iNaturalist",
       "license": "CC BY-NC-SA",
-      "sourceUrl": "https://www.inaturalist.org/taxa/1420140"
+      "sourceUrl": "https://www.inaturalist.org/taxa/1420140",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/1420140.jpg",
+          "alt": "木香（已有图片）",
+          "credit": "© Cyril Gros / iNaturalist",
+          "license": "CC BY-NC-SA",
+          "sourceUrl": "https://www.inaturalist.org/taxa/1420140"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-042.jpg",
+          "alt": "木香（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-043.jpg",
+          "alt": "木香（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "牛膝",
@@ -593,7 +937,32 @@
       "file": "/images/herbs/lecture/474181.jpeg",
       "credit": "© WATANABE Hitoshi 渡辺仁 / iNaturalist",
       "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/474181"
+      "sourceUrl": "https://www.inaturalist.org/taxa/474181",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/474181.jpeg",
+          "alt": "牛膝（已有图片）",
+          "credit": "© WATANABE Hitoshi 渡辺仁 / iNaturalist",
+          "license": "CC BY",
+          "sourceUrl": "https://www.inaturalist.org/taxa/474181"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-031.jpg",
+          "alt": "牛膝（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-032.jpg",
+          "alt": "牛膝（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "女菀",
@@ -620,7 +989,24 @@
       "file": "/images/herbs/lecture/79519.jpeg",
       "credit": "© Francesco Cecere / iNaturalist",
       "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/79519"
+      "sourceUrl": "https://www.inaturalist.org/taxa/79519",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/79519.jpeg",
+          "alt": "葡萄（已有图片）",
+          "credit": "© Francesco Cecere / iNaturalist",
+          "license": "CC0",
+          "sourceUrl": "https://www.inaturalist.org/taxa/79519"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-157.jpg",
+          "alt": "葡萄（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "茜草",
@@ -629,7 +1015,24 @@
       "file": "/images/herbs/lecture/500587.jpeg",
       "credit": "© Repina Tatyana / iNaturalist",
       "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/500587"
+      "sourceUrl": "https://www.inaturalist.org/taxa/500587",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/500587.jpeg",
+          "alt": "茜草（已有图片）",
+          "credit": "© Repina Tatyana / iNaturalist",
+          "license": "CC BY",
+          "sourceUrl": "https://www.inaturalist.org/taxa/500587"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-087.jpg",
+          "alt": "茜草（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "秦艽",
@@ -674,7 +1077,32 @@
       "file": "/images/herbs/lecture/774822.jpeg",
       "credit": "© Yercaud-elango / iNaturalist",
       "license": "CC BY-SA",
-      "sourceUrl": "https://www.inaturalist.org/taxa/774822"
+      "sourceUrl": "https://www.inaturalist.org/taxa/774822",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/774822.jpeg",
+          "alt": "肉桂（已有图片）",
+          "credit": "© Yercaud-elango / iNaturalist",
+          "license": "CC BY-SA",
+          "sourceUrl": "https://www.inaturalist.org/taxa/774822"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-103.jpg",
+          "alt": "肉桂（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-104.jpg",
+          "alt": "肉桂（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "桑寄生",
@@ -683,7 +1111,32 @@
       "file": "/images/herbs/lecture/849502.jpg",
       "credit": "© lchcd / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/849502"
+      "sourceUrl": "https://www.inaturalist.org/taxa/849502",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/849502.jpg",
+          "alt": "桑寄生（已有图片）",
+          "credit": "© lchcd / iNaturalist",
+          "license": "CC BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/taxa/849502"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-131.jpg",
+          "alt": "桑寄生（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-132.jpg",
+          "alt": "桑寄生（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "沙参",
@@ -746,7 +1199,24 @@
       "file": "/images/herbs/lecture/742165.jpeg",
       "credit": "© Сергей Голубев / iNaturalist",
       "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/742165"
+      "sourceUrl": "https://www.inaturalist.org/taxa/742165",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/742165.jpeg",
+          "alt": "升麻（已有图片）",
+          "credit": "© Сергей Голубев / iNaturalist",
+          "license": "CC BY",
+          "sourceUrl": "https://www.inaturalist.org/taxa/742165"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-100.jpg",
+          "alt": "升麻（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "石斛",
@@ -755,7 +1225,24 @@
       "file": "/images/herbs/lecture/67756.jpg",
       "credit": "© Motohiro Sunouchi / iNaturalist",
       "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/67756"
+      "sourceUrl": "https://www.inaturalist.org/taxa/67756",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/67756.jpg",
+          "alt": "石斛（已有图片）",
+          "credit": "© Motohiro Sunouchi / iNaturalist",
+          "license": "CC BY",
+          "sourceUrl": "https://www.inaturalist.org/taxa/67756"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-057.jpg",
+          "alt": "石斛（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "石龙芮",
@@ -836,7 +1323,24 @@
       "file": "/images/herbs/lecture/416397.jpeg",
       "credit": "© Takashi KOIKE / iNaturalist",
       "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/416397"
+      "sourceUrl": "https://www.inaturalist.org/taxa/416397",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/416397.jpeg",
+          "alt": "天名精（已有图片）",
+          "credit": "© Takashi KOIKE / iNaturalist",
+          "license": "CC0",
+          "sourceUrl": "https://www.inaturalist.org/taxa/416397"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-082.jpg",
+          "alt": "天名精（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "天仙子",
@@ -863,7 +1367,32 @@
       "file": "/images/herbs/lecture/601626.jpg",
       "credit": "© S.MORE / iNaturalist",
       "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/601626"
+      "sourceUrl": "https://www.inaturalist.org/taxa/601626",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/601626.jpg",
+          "alt": "菟丝子（已有图片）",
+          "credit": "© S.MORE / iNaturalist",
+          "license": "CC0",
+          "sourceUrl": "https://www.inaturalist.org/taxa/601626"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-028.jpg",
+          "alt": "菟丝子（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-029.jpg",
+          "alt": "菟丝子（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "王瓜",
@@ -962,7 +1491,24 @@
       "file": "/images/herbs/lecture/1638659.jpg",
       "credit": "© onidiras-iNaturalist / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/1638659"
+      "sourceUrl": "https://www.inaturalist.org/taxa/1638659",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/1638659.jpg",
+          "alt": "徐长卿（已有图片）",
+          "credit": "© onidiras-iNaturalist / iNaturalist",
+          "license": "CC BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/taxa/1638659"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-094.jpg",
+          "alt": "徐长卿（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "玄参",
@@ -1025,7 +1571,24 @@
       "file": "/images/herbs/lecture/61454.jpeg",
       "credit": "© 空猫 / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/61454"
+      "sourceUrl": "https://www.inaturalist.org/taxa/61454",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/61454.jpeg",
+          "alt": "玉竹（已有图片）",
+          "credit": "© 空猫 / iNaturalist",
+          "license": "CC BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/taxa/61454"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-036.jpg",
+          "alt": "玉竹（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "郁金",
@@ -1052,7 +1615,32 @@
       "file": "/images/herbs/lecture/520121.jpg",
       "credit": "© Chuangzao / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/520121"
+      "sourceUrl": "https://www.inaturalist.org/taxa/520121",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/520121.jpg",
+          "alt": "远志（已有图片）",
+          "credit": "© Chuangzao / iNaturalist",
+          "license": "CC BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/taxa/520121"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-048.jpg",
+          "alt": "远志（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-049.jpg",
+          "alt": "远志（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "云实",
@@ -1061,7 +1649,24 @@
       "file": "/images/herbs/lecture/1065370.jpeg",
       "credit": "© Siddarth Machado / iNaturalist",
       "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/1065370"
+      "sourceUrl": "https://www.inaturalist.org/taxa/1065370",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/1065370.jpeg",
+          "alt": "云实（已有图片）",
+          "credit": "© Siddarth Machado / iNaturalist",
+          "license": "CC BY",
+          "sourceUrl": "https://www.inaturalist.org/taxa/1065370"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-097.jpg",
+          "alt": "云实（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "name": "皂荚",
@@ -1234,6 +1839,1786 @@
           "alt": "茯苓（方块）",
           "credit": "用户提供",
           "license": "仅站内学习"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-110.jpg",
+          "alt": "茯苓（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-111.jpg",
+          "alt": "茯苓（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "决明子",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-001.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-001.jpg",
+          "alt": "决明子（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-002.jpg",
+          "alt": "决明子（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "丹砂",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-003.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-003.jpg",
+          "alt": "丹砂（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "云母",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-004.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-004.jpg",
+          "alt": "云母（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "玉泉",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-005.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-005.jpg",
+          "alt": "玉泉（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "钟乳石",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-006.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-006.jpg",
+          "alt": "钟乳石（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "硝石",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-007.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-007.jpg",
+          "alt": "硝石（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "涅石",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-008.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-008.jpg",
+          "alt": "涅石（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "滑石",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-010.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-010.jpg",
+          "alt": "滑石（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "朴硝",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-011.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-011.jpg",
+          "alt": "朴硝（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "胆矾",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-012.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-012.jpg",
+          "alt": "胆矾（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "太一余粮",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-013.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-013.jpg",
+          "alt": "太一余粮（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "曾青",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-014.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-014.jpg",
+          "alt": "曾青（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "禹余粮",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-015.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-015.jpg",
+          "alt": "禹余粮（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "空青",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-016.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-016.jpg",
+          "alt": "空青（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "菊花",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-017.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-017.jpg",
+          "alt": "菊花（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "白石英",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-018.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-018.jpg",
+          "alt": "白石英（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "五色石脂",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-019.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-019.jpg",
+          "alt": "赤石脂（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "紫石英",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-020.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-020.jpg",
+          "alt": "紫石英（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "干地黄",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-021.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-021.jpg",
+          "alt": "干地黄（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-022.jpg",
+          "alt": "干地黄（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "天冬",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-024.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-024.jpg",
+          "alt": "天门冬（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-025.jpg",
+          "alt": "天门冬（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "茺蔚子",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-033.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-033.jpg",
+          "alt": "茺蔚子（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-034.jpg",
+          "alt": "茺蔚子（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "车前子",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-040.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-040.jpg",
+          "alt": "车前子（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-041.jpg",
+          "alt": "车前子（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "山药",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-044.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-044.jpg",
+          "alt": "山药（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-045.jpg",
+          "alt": "山药（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "薏苡仁",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-046.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-046.jpg",
+          "alt": "薏仁（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-047.jpg",
+          "alt": "薏仁（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "泽泻",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-050.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-050.jpg",
+          "alt": "泽泻（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-051.jpg",
+          "alt": "泽泻（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "细辛",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-054.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-054.jpg",
+          "alt": "细辛（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-055.jpg",
+          "alt": "细辛（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-056.jpg",
+          "alt": "细辛（用户提供图片 3）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "茵陈",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-061.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-061.jpg",
+          "alt": "茵陈（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "白蒿",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-062.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-062.jpg",
+          "alt": "白蒿（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "奄闾子",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-063.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-063.jpg",
+          "alt": "奄闾子（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-064.jpg",
+          "alt": "奄闾子（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "蓍实",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-065.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-065.jpg",
+          "alt": "蓍实（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-066.jpg",
+          "alt": "蓍实（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "青黛",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-067.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-067.jpg",
+          "alt": "青黛（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-068.jpg",
+          "alt": "青黛（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "蘼芜",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-069.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-069.jpg",
+          "alt": "蘼芜（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "络石藤",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-072.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-072.jpg",
+          "alt": "络石藤（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-073.jpg",
+          "alt": "络石藤（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "蒲黄",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-076.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-076.jpg",
+          "alt": "蒲黄（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-077.jpg",
+          "alt": "蒲黄（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "营实",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-080.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-080.jpg",
+          "alt": "营实（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-081.jpg",
+          "alt": "营实（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "续断",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-083.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-083.jpg",
+          "alt": "续断（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-084.jpg",
+          "alt": "续断（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "飞廉",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-085.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-085.jpg",
+          "alt": "飞廉（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-086.jpg",
+          "alt": "飞廉（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "蛇床子",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-088.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-088.jpg",
+          "alt": "蛇床子（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "地肤子",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-089.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-089.jpg",
+          "alt": "地肤子（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-090.jpg",
+          "alt": "地肤子（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "白兔藿",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-091.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-091.jpg",
+          "alt": "白兔藿（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "景天",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-092.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-092.jpg",
+          "alt": "景天（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "龙须草",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-095.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-095.jpg",
+          "alt": "龙须草（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "薇衔",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-096.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-096.jpg",
+          "alt": "薇衔（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "王不留行",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-098.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-098.jpg",
+          "alt": "王不留行（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-099.jpg",
+          "alt": "王不留行（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "黑芝麻",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-101.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-101.jpg",
+          "alt": "胡麻仁（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-102.jpg",
+          "alt": "黑芝麻（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "松香",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-105.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-105.jpg",
+          "alt": "松香（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-106.jpg",
+          "alt": "松香（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "姑活",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-107.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-107.jpg",
+          "alt": "姑活（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "槐角",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-112.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-112.jpg",
+          "alt": "槐实（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "榆白皮",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-113.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-113.jpg",
+          "alt": "榆白皮（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-114.jpg",
+          "alt": "榆白皮（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "柏子仁",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-115.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-115.jpg",
+          "alt": "柏子仁（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-116.jpg",
+          "alt": "柏子仁（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "酸枣",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-117.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-117.jpg",
+          "alt": "酸枣（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-118.jpg",
+          "alt": "酸枣（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "干漆",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-119.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-119.jpg",
+          "alt": "干漆（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-120.jpg",
+          "alt": "干漆（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "黄柏",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-121.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-121.jpg",
+          "alt": "黄柏（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-122.jpg",
+          "alt": "黄柏（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "五加皮",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-123.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-123.jpg",
+          "alt": "五加皮（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-124.jpg",
+          "alt": "五加皮（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "蔓荆子",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-125.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-125.jpg",
+          "alt": "蔓荆子（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-126.jpg",
+          "alt": "蔓荆子（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-127.jpg",
+          "alt": "蔓荆子（用户提供图片 3）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "辛夷",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-128.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-128.jpg",
+          "alt": "辛夷（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "女贞子",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-133.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-133.jpg",
+          "alt": "女贞子（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-134.jpg",
+          "alt": "女贞子（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "木兰",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-135.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-135.jpg",
+          "alt": "木兰（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-136.jpg",
+          "alt": "木兰（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "蕤仁",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-137.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-137.jpg",
+          "alt": "蕤仁（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-138.jpg",
+          "alt": "蕤仁（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "发髲",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-139.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-139.jpg",
+          "alt": "发髻（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "龙骨",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-140.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-140.jpg",
+          "alt": "龙骨（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "牛黄",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-141.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-141.jpg",
+          "alt": "牛黄（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "麝香",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-142.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-142.jpg",
+          "alt": "麝香（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "阿胶",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-143.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-143.jpg",
+          "alt": "阿胶（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "鹿角胶",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-144.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-144.jpg",
+          "alt": "鹿角胶（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "雁肪",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-145.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-145.jpg",
+          "alt": "雁肪（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "蜂蜜",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-146.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-146.jpg",
+          "alt": "蜂蜜（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "蜜蜡",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-147.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-147.jpg",
+          "alt": "蜂蜡（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "丹雄鸡",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-148.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-148.jpg",
+          "alt": "丹雄鸡（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "龟甲",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-149.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-149.jpg",
+          "alt": "龟甲（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "桑螵蛸",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-150.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-150.jpg",
+          "alt": "桑螵蛸（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "牡蛎",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-151.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-151.jpg",
+          "alt": "牡蛎（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "蛤壳",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-152.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-152.jpg",
+          "alt": "蛤壳（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "鳢鱼",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-153.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-153.jpg",
+          "alt": "鳢鱼（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "莲子",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-154.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-154.jpg",
+          "alt": "莲子（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "蓬蘽",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-155.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-155.jpg",
+          "alt": "蓬櫐（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "芡实",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-158.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-158.jpg",
+          "alt": "芡实（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-159.jpg",
+          "alt": "芡实（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "麻蕡",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-160.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-160.jpg",
+          "alt": "麻蕡（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "苋实",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-161.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-161.jpg",
+          "alt": "苋实（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-162.jpg",
+          "alt": "苋实（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "冬瓜子",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-163.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-163.jpg",
+          "alt": "冬瓜子（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-164.jpg",
+          "alt": "冬瓜子（用户提供图片 2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "甜瓜蒂",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-165.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-165.jpg",
+          "alt": "甜瓜地（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "苦菜",
+      "latin": "",
+      "file": "/images/herbs/lecture/xlsx/xlsx-166.jpg",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-166.jpg",
+          "alt": "苦菜（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
         }
       ]
     }

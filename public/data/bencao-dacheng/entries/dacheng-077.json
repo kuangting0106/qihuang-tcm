@@ -89,14 +89,12 @@
   "summary": "补血滋阴，益精填髓",
   "images": [
     {
-      "url": "/images/herbs/dacheng/inat-b76a508400.jpg",
-      "alt": "Rehmannia（Rehmannia glutinosa）",
-      "credit": "(c) Chuangzao, some rights reserved (CC BY-NC), uploaded by Chuangzao",
-      "license": "CC-BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/544445",
-      "latin": "Rehmannia glutinosa",
-      "kind": "原植物",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b76a508400.jpg"
+      "url": "/images/herbs/lecture/xlsx/xlsx-026.jpg",
+      "alt": "熟地黄（用户提供图片）",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材"
     }
   ],
   "docCount": 2

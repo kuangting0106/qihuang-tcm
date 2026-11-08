@@ -293,6 +293,11 @@ const imageCredits = fs.existsSync(creditsFile)
   : []
 const imageByName = new Map(imageCredits.map((item) => [item.name, item]))
 
+const extraAliasesFile = path.join(root, 'scripts', 'content', 'bencao-extra-aliases.json')
+const extraAliases = fs.existsSync(extraAliasesFile)
+  ? JSON.parse(fs.readFileSync(extraAliasesFile, 'utf8'))
+  : {}
+
 function buildImages(name) {
   const credit = imageByName.get(name) ?? imageByName.get(canonicalName(name))
   if (!credit) return []
@@ -710,7 +715,13 @@ const catalogItems = groups
         summary: (profile.effects || mainText).replace(/^主治[:：]?/, '').slice(0, 120),
         charCount: entry.charCount,
         hasProcessing: Boolean(processingText),
-        aliases: [...new Set([...(entry.alsoKnownAs ?? []), ...extractAliases(entry)])],
+        aliases: [
+          ...new Set([
+            ...(entry.alsoKnownAs ?? []),
+            ...extractAliases(entry),
+            ...(extraAliases[entry.title] ?? []),
+          ]),
+        ],
         alsoKnownAs: entry.alsoKnownAs ?? [],
         meridianPending: profile.meridianPending,
         therapyCategoryIds: profile.therapyCategoryIds,
