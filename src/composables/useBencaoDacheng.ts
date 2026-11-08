@@ -1,10 +1,17 @@
-import type { BencaoDachengEntry, BencaoDachengIndex } from '@/types/bencao-dacheng'
+import type {
+  BencaoDachengEntry,
+  BencaoDachengIndex,
+  BencaoDachengTaxonomy,
+} from '@/types/bencao-dacheng'
 
 const INDEX_URL = '/data/bencao-dacheng/index.json'
+const TAXONOMY_URL = '/data/bencao-dacheng/taxonomy.json'
 const ENTRY_URL = (id: string) => `/data/bencao-dacheng/entries/${id}.json`
 
 let indexCache: BencaoDachengIndex | null = null
 let indexPromise: Promise<BencaoDachengIndex> | null = null
+let taxonomyCache: BencaoDachengTaxonomy | null = null
+let taxonomyPromise: Promise<BencaoDachengTaxonomy> | null = null
 const entryCache = new Map<string, BencaoDachengEntry>()
 
 async function fetchJson<T>(url: string): Promise<T> {
@@ -33,8 +40,27 @@ export function loadBencaoDachengIndex(force = false): Promise<BencaoDachengInde
   return indexPromise
 }
 
-export async function loadBencaoDachengEntry(id: string): Promise<BencaoDachengEntry> {
-  const cached = entryCache.get(id)
+export function loadBencaoDachengTaxonomy(force = false): Promise<BencaoDachengTaxonomy> {
+  if (force) {
+    taxonomyCache = null
+    taxonomyPromise = null
+  }
+  if (taxonomyCache) return Promise.resolve(taxonomyCache)
+  if (!taxonomyPromise) {
+    taxonomyPromise = fetchJson<BencaoDachengTaxonomy>(TAXONOMY_URL)
+      .then((data) => {
+        taxonomyCache = data
+        return data
+      })
+      .catch((error) => {
+        taxonomyPromise = null
+        throw error
+      })
+  }
+  return taxonomyPromise
+}
+
+export async function loadBencaoDachengEntry(id: string): Promise<BencaoDachengEntry> {  const cached = entryCache.get(id)
   if (cached) return cached
   const entry = await fetchJson<BencaoDachengEntry>(ENTRY_URL(id))
   entryCache.set(id, entry)
@@ -44,6 +70,7 @@ export async function loadBencaoDachengEntry(id: string): Promise<BencaoDachengE
 export function useBencaoDacheng() {
   return {
     loadBencaoDachengIndex,
+    loadBencaoDachengTaxonomy,
     loadBencaoDachengEntry,
   }
 }

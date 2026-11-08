@@ -74,3 +74,16 @@ export interface BencaoDachengIndex {
   categories: BencaoDachengCategory[]
   items: BencaoDachengIndexItem[]
 }
+
+export interface BencaoDachengTaxonomyItem {
+  name: string
+  aliases: string[]
+  categoryId: string
+}
+
+export interface BencaoDachengTaxonomy {
+  generatedAt: string
+  total: number
+  chars: number
+  items: BencaoDachengTaxonomyItem[]
+}

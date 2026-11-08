@@ -473,6 +473,17 @@ function main() {
     items: indexItems,
   }, null, 2)}\n`)
 
+  fs.writeFileSync(path.join(OUT_DIR, 'taxonomy.json'), `${JSON.stringify({
+    generatedAt: new Date().toISOString(),
+    total: list.length,
+    chars: list.reduce((sum, entry) => sum + entry.charCount, 0),
+    items: list.map((entry) => ({
+      name: entry.name,
+      aliases: entry.aliases,
+      categoryId: entry.categoryId,
+    })),
+  })}\n`)
+
   for (const entry of list) {
     fs.writeFileSync(path.join(OUT_DIR, 'entries', `${entry.id}.json`), `${JSON.stringify(entry, null, 2)}\n`)
   }

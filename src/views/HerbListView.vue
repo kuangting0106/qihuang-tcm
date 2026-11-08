@@ -4,14 +4,14 @@ import { RouterLink, useRoute, useRouter } from 'vue-router'
 import HerbCard from '@/components/HerbCard.vue'
 import HerbPropertyPrinciples from '@/components/HerbPropertyPrinciples.vue'
 import { formatCharCount } from '@/composables/useBencaoLectures'
-import { loadBencaoDachengIndex } from '@/composables/useBencaoDacheng'
+import { loadBencaoDachengTaxonomy } from '@/composables/useBencaoDacheng'
 import {
   useHerbApi,
   type HerbMetaPayload,
   type HerbSearchIndexPayload,
 } from '@/composables/useHerbApi'
 import type { BencaoCatalogItem } from '@/types/bencao'
-import type { BencaoDachengIndex } from '@/types/bencao-dacheng'
+import type { BencaoDachengTaxonomy } from '@/types/bencao-dacheng'
 import type { Herb } from '@/types/tcm'
 
 const { loading, error, fetchHerbMeta, fetchHerbSearchIndex } = useHerbApi()
@@ -35,14 +35,14 @@ const lectureCount = computed(() => counts.value?.lectureEntries ?? 0)
 const lectureChars = computed(() => counts.value?.lectureChars ?? 0)
 const dachengCount = ref(0)
 const dachengChars = ref(0)
-const dachengIndex = ref<BencaoDachengIndex | null>(null)
+const dachengIndex = ref<BencaoDachengTaxonomy | null>(null)
 
 onMounted(async () => {
   try {
-    const index = await loadBencaoDachengIndex()
+    const index = await loadBencaoDachengTaxonomy()
     dachengIndex.value = index
     dachengCount.value = index.total
-    dachengChars.value = index.items.reduce((sum, item) => sum + item.charCount, 0)
+    dachengChars.value = index.chars
   } catch {
     // 本草大全未加载时不影响本草主页。
   }
@@ -239,7 +239,7 @@ const LECTURE_CATEGORY_OVERRIDES: Record<string, string[]> = {
 }
 
 const dachengByName = computed(() => {
-  const map = new Map<string, BencaoDachengIndex['items'][number]>()
+  const map = new Map<string, BencaoDachengTaxonomy['items'][number]>()
   for (const item of dachengIndex.value?.items ?? []) {
     map.set(item.name, item)
     for (const alias of item.aliases ?? []) map.set(alias, item)

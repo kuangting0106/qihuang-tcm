@@ -133,12 +133,20 @@ function fetchMeta(): Promise<HerbMetaPayload> {
 
 function fetchSearchIndex(): Promise<HerbSearchIndexPayload> {
   if (!searchIndexPromise) {
-    searchIndexPromise = requestJson<HerbSearchIndexPayload>('/herbs/search-index').catch(
-      (error) => {
+    searchIndexPromise = fetch(`${import.meta.env.BASE_URL}data/herb-search-index.json`, {
+      cache: 'no-cache',
+    })
+      .then(async (response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`)
+        return (await response.json()) as HerbSearchIndexPayload
+      })
+      .catch(() =>
+        requestJson<HerbSearchIndexPayload>('/herbs/search-index'),
+      )
+      .catch((error) => {
         searchIndexPromise = null
         throw error
-      },
-    )
+      })
   }
   return searchIndexPromise
 }

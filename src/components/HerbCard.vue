@@ -8,6 +8,13 @@ const props = defineProps<{ herb: Herb; meridianNames?: Record<string, string> }
 const { meridianName } = useTcmData()
 
 const image = computed(() => props.herb.images[0])
+
+function thumbUrl(url: string) {
+  if (!/\/images\/herbs\/real\/[^/]+\.(jpe?g|png)$/i.test(url)) return url
+  return url
+    .replace('/images/herbs/real/', '/images/herbs/real/thumbs/')
+    .replace(/\.(jpe?g|png)$/i, '.jpg')
+}
 const meridianLabels = computed(() =>
   props.herb.meridianIds.map((id) => props.meridianNames?.[id] ?? meridianName(id)),
 )
@@ -16,7 +23,7 @@ const meridianLabels = computed(() =>
 <template>
   <RouterLink :to="`/herbs/${herb.id}`" class="herb-card">
     <div class="herb-card__image">
-      <img :src="image.url" :alt="image.alt" loading="lazy" />
+      <img :src="thumbUrl(image.url)" :alt="image.alt" loading="lazy" />
       <span class="herb-card__badge">{{ herb.verification === 'reference' ? '药典依据' : '待核验' }}</span>
     </div>
     <div class="herb-card__body">
