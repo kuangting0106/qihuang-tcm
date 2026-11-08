@@ -90,13 +90,14 @@
   "summary": "滋阴补血，生津润燥",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/56582166/medium.jpeg",
+      "url": "/images/herbs/dacheng/inat-b7b4638d72.jpg",
       "alt": "white mulberry（Morus alba）",
       "credit": "no rights reserved, uploaded by 葉子",
       "license": "CC0",
       "sourceUrl": "https://www.inaturalist.org/taxa/56090",
       "latin": "Morus alba",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b7b4638d72.jpg"
     }
   ],
   "docCount": 1

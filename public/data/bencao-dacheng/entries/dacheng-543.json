@@ -71,13 +71,14 @@
   "summary": "止血，生肌，定痛",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/179083894/medium.png",
+      "url": "/images/herbs/dacheng/inat-bf58c4f1a8.jpg",
       "alt": "China Wax Scale Insect（Ericerus pela）",
       "credit": "(c) onidiras-iNaturalist, some rights reserved (CC BY-NC), uploaded by onidiras-iNaturalist",
       "license": "CC-BY-NC",
       "sourceUrl": "https://www.inaturalist.org/taxa/1188597",
       "latin": "Ericerus pela",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-bf58c4f1a8.jpg"
     }
   ],
   "docCount": 1

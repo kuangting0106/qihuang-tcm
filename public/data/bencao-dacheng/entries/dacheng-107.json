@@ -88,13 +88,14 @@
   "summary": "健脾和胃，行气止痛，安胎",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/542852762/medium.jpg",
+      "url": "/images/herbs/dacheng/inat-1ea3dbe617.jpg",
       "alt": "Elecampane（Inula helenium）",
       "credit": "(c) lauridsen81, some rights reserved (CC BY-NC)",
       "license": "CC-BY-NC",
       "sourceUrl": "https://www.inaturalist.org/taxa/133951",
       "latin": "Inula helenium",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-1ea3dbe617.jpg"
     }
   ],
   "docCount": 1

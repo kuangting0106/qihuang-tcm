@@ -118,13 +118,14 @@
   "summary": "敛肺定喘，止带缩尿",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/397250612/medium.jpeg",
+      "url": "/images/herbs/dacheng/inat-7f25a4ca85.jpg",
       "alt": "ginkgo（Ginkgo biloba）",
       "credit": "(c) 鐦鍆錒/锎钔锕（Man Hoimoon）, some rights reserved (CC BY-NC), uploaded by 鐦鍆錒/锎钔锕（Man Hoimoon）",
       "license": "CC-BY-NC",
       "sourceUrl": "https://www.inaturalist.org/taxa/64350",
       "latin": "Ginkgo biloba",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-7f25a4ca85.jpg"
     }
   ],
   "docCount": 2

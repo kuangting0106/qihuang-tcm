@@ -111,13 +111,14 @@
   "summary": "滋补肝肾，益精明目",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/41719574/medium.jpeg",
+      "url": "/images/herbs/dacheng/inat-3d2d69d787.jpg",
       "alt": "matrimony vine（Lycium barbarum）",
       "credit": "(c) gizzy, some rights reserved (CC BY-NC), uploaded by gizzy",
       "license": "CC-BY-NC",
       "sourceUrl": "https://www.inaturalist.org/taxa/77902",
       "latin": "Lycium barbarum",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-3d2d69d787.jpg"
     }
   ],
   "docCount": 2

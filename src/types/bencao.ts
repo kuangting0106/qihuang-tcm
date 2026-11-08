@@ -37,6 +37,7 @@ export interface BencaoProfile {
 
 export interface BencaoImage {
   url: string
+  thumbUrl?: string
   alt: string
   credit: string
   license: string

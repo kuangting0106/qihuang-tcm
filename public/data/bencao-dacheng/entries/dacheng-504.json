@@ -89,13 +89,14 @@
   "summary": "清热利尿，通气下乳",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/128813917/medium.jpeg",
+      "url": "/images/herbs/dacheng/inat-38b1cc7a17.jpg",
       "alt": "Rice paper plant（Tetrapanax papyrifer）",
       "credit": "(c) 戴勝, some rights reserved (CC BY-NC), uploaded by 戴勝",
       "license": "CC-BY-NC",
       "sourceUrl": "https://www.inaturalist.org/taxa/372170",
       "latin": "Tetrapanax papyrifer",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-38b1cc7a17.jpg"
     }
   ],
   "docCount": 1

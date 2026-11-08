@@ -82,13 +82,14 @@
   "summary": "清热解毒，消肿散结",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/630933194/medium.jpg",
+      "url": "/images/herbs/dacheng/inat-bc0207aec8.jpg",
       "alt": "Muskroot semiaquilegia（Semiaquilegia adoxoides）",
       "credit": "(c) 藜梓柠, some rights reserved (CC BY-NC), uploaded by 藜梓柠",
       "license": "CC-BY-NC",
       "sourceUrl": "https://www.inaturalist.org/taxa/418692",
       "latin": "Semiaquilegia adoxoides",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-bc0207aec8.jpg"
     }
   ],
   "docCount": 1

@@ -117,13 +117,14 @@
   "summary": "补脾养胃，生津益肺，补肾涩精",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/94412150/medium.jpeg",
+      "url": "/images/herbs/dacheng/inat-cb6ce7050b.jpg",
       "alt": "Indian Yam（Dioscorea oppositifolia）",
       "credit": "(c) Aniruddha Singhamahapatra, alguns direitos reservados (CC BY-NC), carregado por Aniruddha Singhamahapatra",
       "license": "CC-BY-NC",
       "sourceUrl": "https://www.inaturalist.org/taxa/161932",
       "latin": "Dioscorea oppositifolia",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-cb6ce7050b.jpg"
     }
   ],
   "docCount": 2

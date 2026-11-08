@@ -102,13 +102,14 @@
   "summary": "凉血止血，清肝泻火",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/21952068/medium.jpg",
+      "url": "/images/herbs/dacheng/inat-872c316330.jpg",
       "alt": "Japanese pagoda tree（Styphnolobium japonicum）",
       "credit": "(c) Michael Ellis, some rights reserved (CC BY), uploaded by Michael Ellis",
       "license": "CC-BY",
       "sourceUrl": "https://www.inaturalist.org/taxa/53945",
       "latin": "Styphnolobium japonicum",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-872c316330.jpg"
     }
   ],
   "docCount": 2

@@ -114,13 +114,14 @@
   "summary": "利尿消肿",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/105785708/medium.jpeg",
+      "url": "/images/herbs/dacheng/inat-a67a82d59b.jpg",
       "alt": "Winter Melon（Benincasa hispida）",
       "credit": "(c) Swarochi Tathagath, some rights reserved (CC BY), uploaded by Swarochi Tathagath",
       "license": "CC-BY",
       "sourceUrl": "https://www.inaturalist.org/taxa/283076",
       "latin": "Benincasa hispida",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-a67a82d59b.jpg"
     }
   ],
   "docCount": 2

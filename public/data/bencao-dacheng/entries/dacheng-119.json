@@ -88,13 +88,14 @@
   "summary": "逐瘀通经，通利关节，利尿通淋",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/166388583/medium.jpeg",
+      "url": "/images/herbs/dacheng/inat-b67e23a433.jpg",
       "alt": "Cyathula officinalis（Cyathula officinalis）",
       "credit": "(c) 刘光裕 Liu Guangyu, some rights reserved (CC BY-NC), uploaded by 刘光裕 Liu Guangyu",
       "license": "CC-BY-NC",
       "sourceUrl": "https://www.inaturalist.org/taxa/789300",
       "latin": "Cyathula officinalis",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b67e23a433.jpg"
     }
   ],
   "docCount": 1

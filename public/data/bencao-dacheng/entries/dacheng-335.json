@@ -82,13 +82,14 @@
   "summary": "疏散风热，明目退翳",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/90404402/medium.jpg",
+      "url": "/images/herbs/dacheng/inat-c66b1124c6.jpg",
       "alt": "rough horsetail（Equisetum hyemale）",
       "credit": "(c) Tom Kaye, some rights reserved (CC BY-NC), uploaded by Tom Kaye",
       "license": "CC-BY-NC",
       "sourceUrl": "https://www.inaturalist.org/taxa/52673",
       "latin": "Equisetum hyemale",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-c66b1124c6.jpg"
     }
   ],
   "docCount": 1

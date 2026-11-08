@@ -79,13 +79,14 @@
   "summary": "祛风，利湿，舒筋，活血",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/12256480/medium.jpeg",
+      "url": "/images/herbs/dacheng/inat-edf54eb723.jpg",
       "alt": "Chinese elder（Sambucus javanica）",
       "credit": "(c) 方伊琳(阿鈣), some rights reserved (CC BY-NC), uploaded by 方伊琳(阿鈣)",
       "license": "CC-BY-NC",
       "sourceUrl": "https://www.inaturalist.org/taxa/474166",
       "latin": "Sambucus javanica",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-edf54eb723.jpg"
     }
   ],
   "docCount": 1

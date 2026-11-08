@@ -77,13 +77,14 @@
   "summary": "燥湿化痰，解毒消肿，止血",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/1476317/medium.jpg",
+      "url": "/images/herbs/dacheng/inat-82a5ec353c.jpg",
       "alt": "Typhonium flagelliforme（Typhonium flagelliforme）",
       "credit": "(c) VanLap Hoàng, some rights reserved (CC BY)",
       "license": "CC-BY",
       "sourceUrl": "https://www.inaturalist.org/taxa/347760",
       "latin": "Typhonium flagelliforme",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-82a5ec353c.jpg"
     }
   ],
   "docCount": 1

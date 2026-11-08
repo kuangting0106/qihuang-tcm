@@ -63,13 +63,14 @@
   "summary": "散瘀定痛，消肿生肌",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/175138761/medium.jpg",
+      "url": "/images/herbs/dacheng/inat-c890f4c25d.jpg",
       "alt": "Common Myrrh（Commiphora myrrha）",
       "credit": "\nBrandt, Wilhelm; Gürke, M.; Köhler, F. E.; Pabst, G.; Schellenberg, G.; Vogtherr, Max., no known copyright restrictions (public domain)",
       "license": "PD",
       "sourceUrl": "https://www.inaturalist.org/taxa/789240",
       "latin": "Commiphora myrrha",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-c890f4c25d.jpg"
     }
   ],
   "docCount": 1

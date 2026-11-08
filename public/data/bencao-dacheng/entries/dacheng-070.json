@@ -102,13 +102,14 @@
   "summary": "壮肾阳，益精血，强筋骨，调冲任，托疮毒",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/186070135/medium.jpg",
+      "url": "/images/herbs/dacheng/inat-425f399139.jpg",
       "alt": "Sika Deer（Cervus nippon）",
       "credit": "(c) stproc, some rights reserved (CC BY-NC)",
       "license": "CC-BY-NC",
       "sourceUrl": "https://www.inaturalist.org/taxa/42210",
       "latin": "Cervus nippon",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-425f399139.jpg"
     }
   ],
   "docCount": 2

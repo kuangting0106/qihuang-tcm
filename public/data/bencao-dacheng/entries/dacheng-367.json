@@ -82,13 +82,14 @@
   "summary": "凉血止痢，清热解毒",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/306876123/medium.jpg",
+      "url": "/images/herbs/dacheng/inat-efd20cf45d.jpg",
       "alt": "Chinese Cinquefoil（Potentilla chinensis）",
       "credit": "(c) Alexey P. Seregin, some rights reserved (CC BY-NC), uploaded by Alexey P. Seregin",
       "license": "CC-BY-NC",
       "sourceUrl": "https://www.inaturalist.org/taxa/538160",
       "latin": "Potentilla chinensis",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-efd20cf45d.jpg"
     }
   ],
   "docCount": 1

@@ -88,13 +88,14 @@
   "summary": "涩肠止泻，止血，驱虫",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/4956594/medium.jpeg",
+      "url": "/images/herbs/dacheng/inat-e0573bc8fa.jpg",
       "alt": "pomegranate（Punica granatum）",
       "credit": "(c) H. Zell, some rights reserved (CC BY-SA)",
       "license": "CC-BY-SA",
       "sourceUrl": "https://www.inaturalist.org/taxa/58300",
       "latin": "Punica granatum",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-e0573bc8fa.jpg"
     }
   ],
   "docCount": 1

@@ -116,13 +116,14 @@
   "summary": "舒筋活络，和胃化湿",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/1089240/medium.jpg",
+      "url": "/images/herbs/dacheng/inat-758b9839d4.jpg",
       "alt": "Chinese quince（Chaenomeles speciosa）",
       "credit": "(c) rachelgreenbelt, some rights reserved (CC BY-NC-SA)",
       "license": "CC-BY-NC-SA",
       "sourceUrl": "https://www.inaturalist.org/taxa/160369",
       "latin": "Chaenomeles speciosa",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-758b9839d4.jpg"
     }
   ],
   "docCount": 2

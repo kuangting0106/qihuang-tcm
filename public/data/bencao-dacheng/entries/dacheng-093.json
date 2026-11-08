@@ -105,13 +105,14 @@
   "summary": "滋阴潜阳，退热除蒸，软坚散结",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/374737417/medium.jpeg",
+      "url": "/images/herbs/dacheng/inat-41fe4dd758.jpg",
       "alt": "Chinese Softshell Turtle（Pelodiscus sinensis）",
       "credit": "(c) 大俠, some rights reserved (CC BY-NC-SA), uploaded by 大俠",
       "license": "CC-BY-NC-SA",
       "sourceUrl": "https://www.inaturalist.org/taxa/68334",
       "latin": "Pelodiscus sinensis",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-41fe4dd758.jpg"
     }
   ],
   "docCount": 2

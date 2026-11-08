@@ -111,13 +111,14 @@
   "summary": "益肾固精，补脾止泻，除湿止带",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/8060731/medium.jpg",
+      "url": "/images/herbs/dacheng/inat-04c06b93be.jpg",
       "alt": "Prickly Waterlily（Euryale ferox）",
       "credit": "(c) koizumi, some rights reserved (CC BY-NC-ND)",
       "license": "CC-BY-NC-ND",
       "sourceUrl": "https://www.inaturalist.org/taxa/183481",
       "latin": "Euryale ferox",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-04c06b93be.jpg"
     }
   ],
   "docCount": 2

@@ -139,7 +139,7 @@ onMounted(async () => {
             :to="`/bencao/dacheng/${item.id}`"
           >
             <div class="dacheng-card__image">
-              <img v-if="item.image" :src="item.image.url" :alt="item.image.alt" loading="lazy" />
+              <img v-if="item.image" :src="item.image.thumbUrl ?? item.image.url" :alt="item.image.alt" loading="lazy" />
               <span v-else class="dacheng-card__placeholder" aria-hidden="true">药</span>
               <span class="dacheng-card__category">{{ item.categoryTitle }}</span>
             </div>

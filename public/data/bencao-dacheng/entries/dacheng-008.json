@@ -104,13 +104,14 @@
   "summary": "解表，除烦，宣发郁热",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/28348393/medium.jpeg",
+      "url": "/images/herbs/dacheng/inat-cb709e97f5.jpg",
       "alt": "Soybean（Glycine max）",
       "credit": "no rights reserved, uploaded by 葉子",
       "license": "CC0",
       "sourceUrl": "https://www.inaturalist.org/taxa/122902",
       "latin": "Glycine max",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-cb709e97f5.jpg"
     }
   ],
   "docCount": 2

@@ -116,13 +116,14 @@
   "summary": "疗伤之痛，补肾强骨；外用消风祛斑",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/277377850/medium.jpeg",
+      "url": "/images/herbs/dacheng/inat-009013276f.jpg",
       "alt": "Drynaria roosii（Drynaria roosii）",
       "credit": "no rights reserved, uploaded by 葉子",
       "license": "CC0",
       "sourceUrl": "https://www.inaturalist.org/taxa/810549",
       "latin": "Drynaria roosii",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-009013276f.jpg"
     }
   ],
   "docCount": 2

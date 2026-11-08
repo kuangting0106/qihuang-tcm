@@ -89,13 +89,14 @@
   "summary": "泻下通便，清肝泻火，杀虫疗疳",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/759770213/medium.jpg",
+      "url": "/images/herbs/dacheng/inat-ae14be480f.jpg",
       "alt": "aloe vera（Aloe vera）",
       "credit": "(c) Forest and Kim Starr, some rights reserved (CC BY)",
       "license": "CC-BY",
       "sourceUrl": "https://www.inaturalist.org/taxa/126882",
       "latin": "Aloe vera",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-ae14be480f.jpg"
     }
   ],
   "docCount": 1

@@ -120,13 +120,14 @@
   "summary": "疏肝理气，和胃止痛，燥湿化痰",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/356738692/medium.jpg",
+      "url": "/images/herbs/dacheng/inat-019de1bc88.jpg",
       "alt": "Citron（Citrus medica）",
       "credit": "(c) \nJohann Werfring, some rights reserved (CC BY-SA)",
       "license": "CC-BY-SA",
       "sourceUrl": "https://www.inaturalist.org/taxa/123356",
       "latin": "Citrus medica",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-019de1bc88.jpg"
     }
   ],
   "docCount": 2

@@ -88,13 +88,14 @@
   "summary": "杀虫消积",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/912077/medium.JPG",
+      "url": "/images/herbs/dacheng/inat-1ba261687b.jpg",
       "alt": "Rangoon Creeper（Combretum indicum）",
       "credit": "(c) Sunnetchan, some rights reserved (CC BY-NC-ND), uploaded by Sunnetchan",
       "license": "CC-BY-NC-ND",
       "sourceUrl": "https://www.inaturalist.org/taxa/284831",
       "latin": "Combretum indicum",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-1ba261687b.jpg"
     }
   ],
   "docCount": 1

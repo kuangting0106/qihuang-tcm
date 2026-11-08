@@ -117,13 +117,14 @@
   "summary": "养心安神，润肠通便，止汗",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/114662945/medium.jpeg",
+      "url": "/images/herbs/dacheng/inat-e7e6213b38.jpg",
       "alt": "Chinese arborvitae（Platycladus orientalis）",
       "credit": "(c) Patrick Hacker, some rights reserved (CC BY), uploaded by Patrick Hacker",
       "license": "CC-BY",
       "sourceUrl": "https://www.inaturalist.org/taxa/135659",
       "latin": "Platycladus orientalis",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-e7e6213b38.jpg"
     }
   ],
   "docCount": 2

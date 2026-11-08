@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T07:00:08.712Z",
+  "generatedAt": "2026-11-08T13:53:28.000Z",
   "total": 616,
   "withImages": 232,
   "categories": [
@@ -119,13 +119,14 @@
       "categoryTitle": "解表药",
       "summary": "解表散寒，行气和胃",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/227679054/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-5827f7f365.jpg",
         "alt": "beefsteak plant（Perilla frutescens）",
         "credit": "(c) H. Wilson Montgomery, Jr., some rights reserved (CC BY-NC), uploaded by H. Wilson Montgomery, Jr.",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/119136",
         "latin": "Perilla frutescens",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-5827f7f365.jpg"
       },
       "docCount": 3,
       "charCount": 1964
@@ -160,13 +161,14 @@
       "categoryTitle": "解表药",
       "summary": "发汗解表，化湿和中",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/559341911/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-c906013e4c.jpg",
         "alt": "Mosla chinensis（Mosla chinensis）",
         "credit": "(c) zxchang, some rights reserved (CC BY-NC), uploaded by zxchang",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/736751",
         "latin": "Mosla chinensis",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-c906013e4c.jpg"
       },
       "docCount": 2,
       "charCount": 1561
@@ -190,7 +192,8 @@
         "credit": "© Lee, seong-won / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/501057",
-        "latin": "Angelica dahurica"
+        "latin": "Angelica dahurica",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-501057.jpg"
       },
       "docCount": 2,
       "charCount": 2073
@@ -214,7 +217,8 @@
         "credit": "© elik03 / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/77991",
-        "latin": "Mentha canadensis"
+        "latin": "Mentha canadensis",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-77991.jpg"
       },
       "docCount": 2,
       "charCount": 1996
@@ -239,7 +243,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Dendranthema morifolium",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-028.jpg"
       },
       "docCount": 2,
       "charCount": 2047
@@ -264,7 +269,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Pueraria lobata",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-084.jpg"
       },
       "docCount": 2,
       "charCount": 1625
@@ -283,13 +289,14 @@
       "categoryTitle": "解表药",
       "summary": "解表，除烦，宣发郁热",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/28348393/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-cb709e97f5.jpg",
         "alt": "Soybean（Glycine max）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/122902",
         "latin": "Glycine max",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-cb709e97f5.jpg"
       },
       "docCount": 2,
       "charCount": 1260
@@ -314,7 +321,8 @@
         "credit": "© darkflamew / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/785991",
-        "latin": "Anemarrhena asphodeloides"
+        "latin": "Anemarrhena asphodeloides",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-785991.jpg"
       },
       "docCount": 2,
       "charCount": 1912
@@ -333,13 +341,14 @@
       "categoryTitle": "清热药",
       "summary": "清热泻火，生津止渴，消肿排脓",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/50210874/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-27ed1d0b79.jpg",
         "alt": "Chinese cucumber（Trichosanthes kirilowii）",
         "credit": "(c) tretyakovmiy, some rights reserved (CC BY-NC), uploaded by tretyakovmiy",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/62634",
         "latin": "Trichosanthes kirilowii",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-27ed1d0b79.jpg"
       },
       "docCount": 2,
       "charCount": 1912
@@ -365,7 +374,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Cassia tora",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-002.jpg"
       },
       "docCount": 2,
       "charCount": 1792
@@ -390,7 +400,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Lonicera japonica",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-075.jpg"
       },
       "docCount": 2,
       "charCount": 1722
@@ -426,13 +437,14 @@
       "categoryTitle": "清热药",
       "summary": "清热解毒，消痈排脓，利尿通淋",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/48161522/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-0302974b8f.jpg",
         "alt": "Chameleon Plant（Houttuynia cordata）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/157642",
         "latin": "Houttuynia cordata",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-0302974b8f.jpg"
       },
       "docCount": 2,
       "charCount": 1765
@@ -451,13 +463,14 @@
       "categoryTitle": "清热药",
       "summary": "清热解毒，凉血止血，止痢",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/157729445/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-d1902131bb.jpg",
         "alt": "Common Purslane（Portulaca oleracea）",
         "credit": "(c) Pierre Corbrion, some rights reserved (CC BY-NC-SA), uploaded by Pierre Corbrion",
         "license": "CC-BY-NC-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/58991",
         "latin": "Portulaca oleracea",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-d1902131bb.jpg"
       },
       "docCount": 2,
       "charCount": 1750
@@ -477,13 +490,14 @@
       "categoryTitle": "清热药",
       "summary": "清热解毒，利咽，生津",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/481055649/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-a9f8cb3d03.jpg",
         "alt": "Chinese Olive（Canarium album）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/1530079",
         "latin": "Canarium album",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-a9f8cb3d03.jpg"
       },
       "docCount": 2,
       "charCount": 1421
@@ -504,7 +518,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Rehmannia glutinosa",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-045.jpg"
       },
       "docCount": 1,
       "charCount": 1114
@@ -528,7 +543,8 @@
         "credit": "© 小铖/Smalltown / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/425843",
-        "latin": "Scrophularia ningpoensis"
+        "latin": "Scrophularia ningpoensis",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-425843.jpg"
       },
       "docCount": 2,
       "charCount": 1966
@@ -547,13 +563,14 @@
       "categoryTitle": "清热药",
       "summary": "清热凉血，活血化瘀",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/189594141/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-cebb69617b.jpg",
         "alt": "Paeonia ostii（Paeonia ostii）",
         "credit": "(c) novnic, some rights reserved (CC BY-NC)",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/923636",
         "latin": "Paeonia ostii",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-cebb69617b.jpg"
       },
       "docCount": 2,
       "charCount": 2091
@@ -572,13 +589,14 @@
       "categoryTitle": "清热药",
       "summary": "清热凉血，散瘀止痛",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/113190686/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-80fd6ee684.jpg",
         "alt": "Chinese peony（Paeonia lactiflora）",
         "credit": "(c) Светлана Нестерова, some rights reserved (CC BY-NC), uploaded by Светлана Нестерова",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/127857",
         "latin": "Paeonia lactiflora",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-80fd6ee684.jpg"
       },
       "docCount": 2,
       "charCount": 1488
@@ -598,13 +616,14 @@
       "categoryTitle": "祛风湿药",
       "summary": "舒筋活络，和胃化湿",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/1089240/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-758b9839d4.jpg",
         "alt": "Chinese quince（Chaenomeles speciosa）",
         "credit": "(c) rachelgreenbelt, some rights reserved (CC BY-NC-SA)",
         "license": "CC-BY-NC-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/160369",
         "latin": "Chaenomeles speciosa",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-758b9839d4.jpg"
       },
       "docCount": 2,
       "charCount": 1611
@@ -624,13 +643,14 @@
       "categoryTitle": "活血化瘀药",
       "summary": "祛风，通络，活血，下乳",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/109026133/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-7754796e03.jpg",
         "alt": "Sponge Gourd（Luffa aegyptiaca）",
         "credit": "(c) Alexis López Hernández, some rights reserved (CC BY), uploaded by Alexis López Hernández",
         "license": "CC-BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/1004655",
         "latin": "Luffa aegyptiaca",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-7754796e03.jpg"
       },
       "docCount": 2,
       "charCount": 1664
@@ -650,7 +670,8 @@
         "credit": "© Kim, Hyun-tae / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/506801",
-        "latin": "Agastache rugosa"
+        "latin": "Agastache rugosa",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-506801.jpg"
       },
       "docCount": 1,
       "charCount": 719
@@ -674,7 +695,8 @@
         "credit": "© Agnes Trekker / iNaturalist",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/447266",
-        "latin": "Eupatorium fortunei"
+        "latin": "Eupatorium fortunei",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-447266.jpg"
       },
       "docCount": 2,
       "charCount": 1716
@@ -698,7 +720,8 @@
         "credit": "© Kim, Hyun-tae / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/786048",
-        "latin": "Atractylodes lancea"
+        "latin": "Atractylodes lancea",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-786048.jpg"
       },
       "docCount": 2,
       "charCount": 2248
@@ -721,7 +744,8 @@
         "credit": "© 刘光裕 Liu Guangyu / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/1114503",
-        "latin": "Wurfbainia villosa"
+        "latin": "Wurfbainia villosa",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-1114503.jpg"
       },
       "docCount": 2,
       "charCount": 2046
@@ -747,7 +771,8 @@
         "license": "仅站内学习",
         "sourceUrl": "",
         "latin": "Wolfiporia cocos",
-        "kind": "整块"
+        "kind": "整块",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-user-fuling-whole.jpg"
       },
       "docCount": 2,
       "charCount": 1820
@@ -767,13 +792,14 @@
       "categoryTitle": "利水渗湿药",
       "summary": "利水渗湿，健脾止泻，除痹，排脓，解毒散结",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/56026659/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-beb4da3216.jpg",
         "alt": "Job's Tears（Coix lacryma-jobi）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/145588",
         "latin": "Coix lacryma-jobi",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-beb4da3216.jpg"
       },
       "docCount": 2,
       "charCount": 2307
@@ -798,7 +824,8 @@
         "credit": "© Aravinth / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/291751",
-        "latin": "Vigna umbellata"
+        "latin": "Vigna umbellata",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-291751.jpg"
       },
       "docCount": 2,
       "charCount": 1417
@@ -816,13 +843,14 @@
       "categoryTitle": "利水渗湿药",
       "summary": "利尿消肿",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/105785708/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-a67a82d59b.jpg",
         "alt": "Winter Melon（Benincasa hispida）",
         "credit": "(c) Swarochi Tathagath, some rights reserved (CC BY), uploaded by Swarochi Tathagath",
         "license": "CC-BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/283076",
         "latin": "Benincasa hispida",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-a67a82d59b.jpg"
       },
       "docCount": 2,
       "charCount": 1501
@@ -842,13 +870,14 @@
       "categoryTitle": "利水渗湿药",
       "summary": "清热利尿通淋，渗湿止泻，明目，祛痰",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/59895393/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-341e2761cb.jpg",
         "alt": "Asian plantain（Plantago asiatica）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/501675",
         "latin": "Plantago asiatica",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-341e2761cb.jpg"
       },
       "docCount": 2,
       "charCount": 2360
@@ -873,7 +902,8 @@
         "credit": "© Yercaud-elango / iNaturalist",
         "license": "CC BY-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/774822",
-        "latin": "Cinnamomum cassia"
+        "latin": "Cinnamomum cassia",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-774822.jpg"
       },
       "docCount": 2,
       "charCount": 2275
@@ -898,7 +928,8 @@
         "credit": "© 呂一起(Lyu yi-chi) / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/796058",
-        "latin": "Tetradium ruticarpum"
+        "latin": "Tetradium ruticarpum",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-796058.jpg"
       },
       "docCount": 2,
       "charCount": 2263
@@ -923,7 +954,8 @@
         "credit": "© Marco Mussita / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/506467",
-        "latin": "Zanthoxylum bungeanum"
+        "latin": "Zanthoxylum bungeanum",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-506467.jpg"
       },
       "docCount": 2,
       "charCount": 2201
@@ -966,7 +998,8 @@
         "credit": "© patanat / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/1611056",
-        "latin": "Citrus reticulata"
+        "latin": "Citrus reticulata",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-1611056.jpg"
       },
       "docCount": 2,
       "charCount": 1680
@@ -991,7 +1024,8 @@
         "credit": "© 岸本年郎 / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/627160",
-        "latin": "Allium macrostemon"
+        "latin": "Allium macrostemon",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-627160.jpg"
       },
       "docCount": 2,
       "charCount": 1825
@@ -1011,13 +1045,14 @@
       "categoryTitle": "理气药",
       "summary": "疏肝理气，和胃止痛，燥湿化痰",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/356738692/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-019de1bc88.jpg",
         "alt": "Citron（Citrus medica）",
         "credit": "(c) \nJohann Werfring, some rights reserved (CC BY-SA)",
         "license": "CC-BY-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/123356",
         "latin": "Citrus medica",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-019de1bc88.jpg"
       },
       "docCount": 2,
       "charCount": 1800
@@ -1072,13 +1107,14 @@
       "categoryTitle": "理气药",
       "summary": "行气消食，健脾开胃，回乳消胀",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/76716288/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-59dec05371.jpg",
         "alt": "Common Barley（Hordeum vulgare）",
         "credit": "(c) sebastianv, some rights reserved (CC BY-NC)",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/57182",
         "latin": "Hordeum vulgare",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-59dec05371.jpg"
       },
       "docCount": 2,
       "charCount": 2079
@@ -1115,13 +1151,14 @@
       "categoryTitle": "消食药",
       "summary": "健胃消食，涩精止遗，通淋化石",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/3784873/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-a12e1aa2da.jpg",
         "alt": "Red Junglefowl（Gallus gallus）",
         "credit": "(c) Julien Renoult, some rights reserved (CC BY), uploaded by Julien Renoult",
         "license": "CC-BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/882",
         "latin": "Gallus gallus",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-a12e1aa2da.jpg"
       },
       "docCount": 2,
       "charCount": 1556
@@ -1138,13 +1175,14 @@
       "categoryTitle": "清热药",
       "summary": "凉血止血，清肝泻火",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/21952068/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-872c316330.jpg",
         "alt": "Japanese pagoda tree（Styphnolobium japonicum）",
         "credit": "(c) Michael Ellis, some rights reserved (CC BY), uploaded by Michael Ellis",
         "license": "CC-BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/53945",
         "latin": "Styphnolobium japonicum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-872c316330.jpg"
       },
       "docCount": 2,
       "charCount": 1779
@@ -1170,7 +1208,8 @@
         "license": "仅站内学习",
         "sourceUrl": "",
         "latin": "Panax notoginseng",
-        "kind": "植株"
+        "kind": "植株",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-user-sanqi-plant.jpg"
       },
       "docCount": 2,
       "charCount": 2308
@@ -1194,7 +1233,8 @@
         "credit": "© Heidi Hellstern / iNaturalist",
         "license": "CC BY-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/131245",
-        "latin": "Bletilla striata"
+        "latin": "Bletilla striata",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-131245.jpg"
       },
       "docCount": 2,
       "charCount": 1788
@@ -1219,7 +1259,8 @@
         "license": "仅站内学习",
         "sourceUrl": "",
         "latin": "Conioselinum anthriscoides",
-        "kind": "植株"
+        "kind": "植株",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-user-chuanxiong-plant.jpg"
       },
       "docCount": 2,
       "charCount": 2174
@@ -1243,7 +1284,8 @@
         "credit": "© fhvc / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/715830",
-        "latin": "Salvia miltiorrhiza"
+        "latin": "Salvia miltiorrhiza",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-715830.jpg"
       },
       "docCount": 2,
       "charCount": 2209
@@ -1266,13 +1308,14 @@
       "categoryTitle": "活血化瘀药",
       "summary": "活血调经，利尿消肿，清热解毒",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/117344653/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-db9323c181.jpg",
         "alt": "Chinese motherwort（Leonurus japonicus）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/61479",
         "latin": "Leonurus japonicus",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-db9323c181.jpg"
       },
       "docCount": 3,
       "charCount": 2630
@@ -1292,13 +1335,14 @@
       "categoryTitle": "补虚药",
       "summary": "疗伤之痛，补肾强骨；外用消风祛斑",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/277377850/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-009013276f.jpg",
         "alt": "Drynaria roosii（Drynaria roosii）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/810549",
         "latin": "Drynaria roosii",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-009013276f.jpg"
       },
       "docCount": 2,
       "charCount": 2047
@@ -1341,7 +1385,8 @@
         "credit": "© Yi CHEN / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/141623",
-        "latin": "Platycodon grandiflorus"
+        "latin": "Platycodon grandiflorus",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-141623.jpg"
       },
       "docCount": 2,
       "charCount": 1795
@@ -1361,13 +1406,14 @@
       "categoryTitle": "清热药",
       "summary": "清热润肺，利咽开音，润肠通便",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/3064754/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-cdc123517b.jpg",
         "alt": "Scaphium lychnophorum（Scaphium lychnophorum）",
         "credit": "(c) Thomas Calame, some rights reserved (CC BY-NC), uploaded by Thomas Calame",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/489026",
         "latin": "Scaphium lychnophorum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-cdc123517b.jpg"
       },
       "docCount": 2,
       "charCount": 1850
@@ -1387,13 +1433,14 @@
       "categoryTitle": "其他药",
       "summary": "敛肺定喘，止带缩尿",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/397250612/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-7f25a4ca85.jpg",
         "alt": "ginkgo（Ginkgo biloba）",
         "credit": "(c) 鐦鍆錒/锎钔锕（Man Hoimoon）, some rights reserved (CC BY-NC), uploaded by 鐦鍆錒/锎钔锕（Man Hoimoon）",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/64350",
         "latin": "Ginkgo biloba",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-7f25a4ca85.jpg"
       },
       "docCount": 2,
       "charCount": 1799
@@ -1411,13 +1458,14 @@
       "categoryTitle": "安神药",
       "summary": "养心补肝，宁心安神，敛汗，生津",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/50110627/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-19f2931c27.jpg",
         "alt": "Jujube（Ziziphus jujuba）",
         "credit": "(c) oreste83, some rights reserved (CC BY-NC)",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/428365",
         "latin": "Ziziphus jujuba",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-19f2931c27.jpg"
       },
       "docCount": 2,
       "charCount": 1951
@@ -1437,13 +1485,14 @@
       "categoryTitle": "安神药",
       "summary": "养心安神，润肠通便，止汗",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/114662945/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-e7e6213b38.jpg",
         "alt": "Chinese arborvitae（Platycladus orientalis）",
         "credit": "(c) Patrick Hacker, some rights reserved (CC BY), uploaded by Patrick Hacker",
         "license": "CC-BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/135659",
         "latin": "Platycladus orientalis",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-e7e6213b38.jpg"
       },
       "docCount": 2,
       "charCount": 1567
@@ -1467,7 +1516,8 @@
         "credit": "© Ilya Filippov / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/125932",
-        "latin": "Ganoderma lucidum"
+        "latin": "Ganoderma lucidum",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-125932.jpg"
       },
       "docCount": 2,
       "charCount": 1882
@@ -1487,13 +1537,14 @@
       "categoryTitle": "安神药",
       "summary": "养血安神，祛风通络",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/56027393/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-c5506eea51.jpg",
         "alt": "tuber fleeceflower（Reynoutria multiflora）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/914501",
         "latin": "Reynoutria multiflora",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-c5506eea51.jpg"
       },
       "docCount": 2,
       "charCount": 1154
@@ -1520,7 +1571,8 @@
         "credit": "© Elena_Sherehora / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/366498",
-        "latin": "Panax ginseng"
+        "latin": "Panax ginseng",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-366498.jpg"
       },
       "docCount": 2,
       "charCount": 2011
@@ -1562,7 +1614,8 @@
         "credit": "© Yao Li / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/706415",
-        "latin": "Codonopsis pilosula"
+        "latin": "Codonopsis pilosula",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-706415.jpg"
       },
       "docCount": 2,
       "charCount": 1832
@@ -1581,13 +1634,14 @@
       "categoryTitle": "补虚药",
       "summary": "益气健脾，生津润肺",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/526891456/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-2f01e53a88.jpg",
         "alt": "Heterophylly false-starwort（Pseudostellaria heterophylla）",
         "credit": "(c) 李博恒, some rights reserved (CC BY-NC), uploaded by 李博恒",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/565423",
         "latin": "Pseudostellaria heterophylla",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-2f01e53a88.jpg"
       },
       "docCount": 2,
       "charCount": 1674
@@ -1612,7 +1666,8 @@
         "credit": "© onidiras-iNaturalist / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/138362",
-        "latin": "Astragalus mongholicus"
+        "latin": "Astragalus mongholicus",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-138362.jpg"
       },
       "docCount": 2,
       "charCount": 2352
@@ -1636,7 +1691,8 @@
         "credit": "© 江国彬 / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/786049",
-        "latin": "Atractylodes macrocephala"
+        "latin": "Atractylodes macrocephala",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-786049.jpg"
       },
       "docCount": 2,
       "charCount": 2003
@@ -1656,13 +1712,14 @@
       "categoryTitle": "补虚药",
       "summary": "补脾养胃，生津益肺，补肾涩精",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/94412150/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-cb6ce7050b.jpg",
         "alt": "Indian Yam（Dioscorea oppositifolia）",
         "credit": "(c) Aniruddha Singhamahapatra, alguns direitos reservados (CC BY-NC), carregado por Aniruddha Singhamahapatra",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/161932",
         "latin": "Dioscorea oppositifolia",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-cb6ce7050b.jpg"
       },
       "docCount": 2,
       "charCount": 1938
@@ -1682,13 +1739,14 @@
       "categoryTitle": "化湿药",
       "summary": "健脾化湿，和中消暑",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/56321074/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-8c27ecb4be.jpg",
         "alt": "Hyacinth bean（Lablab purpureus）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/146816",
         "latin": "Lablab purpureus",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-8c27ecb4be.jpg"
       },
       "docCount": 2,
       "charCount": 1996
@@ -1712,7 +1770,8 @@
         "credit": "© Tomáš Vrána / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/775858",
-        "latin": "Glycyrrhiza uralensis"
+        "latin": "Glycyrrhiza uralensis",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-775858.jpg"
       },
       "docCount": 2,
       "charCount": 2278
@@ -1737,7 +1796,8 @@
         "credit": "© oreste83 / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/428365",
-        "latin": "Ziziphus jujuba"
+        "latin": "Ziziphus jujuba",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-428365.jpg"
       },
       "docCount": 2,
       "charCount": 1944
@@ -1772,13 +1832,14 @@
       "categoryTitle": "补虚药",
       "summary": "壮肾阳，益精血，强筋骨，调冲任，托疮毒",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/186070135/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-425f399139.jpg",
         "alt": "Sika Deer（Cervus nippon）",
         "credit": "(c) stproc, some rights reserved (CC BY-NC)",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/42210",
         "latin": "Cervus nippon",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-425f399139.jpg"
       },
       "docCount": 2,
       "charCount": 2226
@@ -1802,7 +1863,8 @@
         "credit": "© 小铖/Smalltown / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/790618",
-        "latin": "Morinda officinalis"
+        "latin": "Morinda officinalis",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-790618.jpg"
       },
       "docCount": 2,
       "charCount": 2018
@@ -1827,7 +1889,8 @@
         "credit": "© Kristine Paulus / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/127868",
-        "latin": "Eucommia ulmoides"
+        "latin": "Eucommia ulmoides",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-127868.jpg"
       },
       "docCount": 2,
       "charCount": 2008
@@ -1852,7 +1915,8 @@
         "license": "仅站内学习",
         "sourceUrl": "",
         "latin": "Cistanche deserticola",
-        "kind": "药材"
+        "kind": "药材",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-user-roucongrong-whole.jpg"
       },
       "docCount": 2,
       "charCount": 2168
@@ -1872,7 +1936,8 @@
         "credit": "© S.MORE / iNaturalist",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/601626",
-        "latin": "Cuscuta chinensis"
+        "latin": "Cuscuta chinensis",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-601626.jpg"
       },
       "docCount": 2,
       "charCount": 1932
@@ -1913,7 +1978,8 @@
         "credit": "© Ming_Ni / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/785992",
-        "latin": "Angelica sinensis"
+        "latin": "Angelica sinensis",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-785992.jpg"
       },
       "docCount": 2,
       "charCount": 2155
@@ -1930,13 +1996,14 @@
       "categoryTitle": "补虚药",
       "summary": "补血滋阴，益精填髓",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/197449921/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-b76a508400.jpg",
         "alt": "Rehmannia（Rehmannia glutinosa）",
         "credit": "(c) Chuangzao, some rights reserved (CC BY-NC), uploaded by Chuangzao",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/544445",
         "latin": "Rehmannia glutinosa",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b76a508400.jpg"
       },
       "docCount": 2,
       "charCount": 1199
@@ -1955,13 +2022,14 @@
       "categoryTitle": "清热药",
       "summary": "解毒，消痈，截疟，润肠通便",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/56027393/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-c5506eea51.jpg",
         "alt": "tuber fleeceflower（Reynoutria multiflora）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/914501",
         "latin": "Reynoutria multiflora",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-c5506eea51.jpg"
       },
       "docCount": 2,
       "charCount": 2163
@@ -1979,13 +2047,14 @@
       "categoryTitle": "补虚药",
       "summary": "养血调经，敛阴止汗，柔肝止痛，平抑肝阳",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/113190686/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-80fd6ee684.jpg",
         "alt": "Chinese peony（Paeonia lactiflora）",
         "credit": "(c) Светлана Нестерова, some rights reserved (CC BY-NC), uploaded by Светлана Нестерова",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/127857",
         "latin": "Paeonia lactiflora",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-80fd6ee684.jpg"
       },
       "docCount": 2,
       "charCount": 2242
@@ -2003,13 +2072,14 @@
       "categoryTitle": "补虚药",
       "summary": "补血滋阴，润燥，止血",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/140505310/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-27c56d76ec.jpg",
         "alt": "Donkey（Equus asinus）",
         "credit": "(c) Justyn Stahl, some rights reserved (CC BY-NC), uploaded by Justyn Stahl",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/148030",
         "latin": "Equus asinus",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-27c56d76ec.jpg"
       },
       "docCount": 2,
       "charCount": 1953
@@ -2047,13 +2117,14 @@
       "categoryTitle": "其他药",
       "summary": "养阴清肺，益胃生津",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/199878458/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-fc175fb892.jpg",
         "alt": "Beach Glehnia（Glehnia littoralis）",
         "credit": "(c) jareddodson, some rights reserved (CC BY-NC)",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/77282",
         "latin": "Glehnia littoralis",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-fc175fb892.jpg"
       },
       "docCount": 2,
       "charCount": 2135
@@ -2072,13 +2143,14 @@
       "categoryTitle": "化痰止咳平喘药",
       "summary": "养阴润肺，清心安神",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/138040437/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-1e331445e5.jpg",
         "alt": "Chinese lily（Lilium brownii）",
         "credit": "(c) Chen Shu, some rights reserved (CC BY-NC), uploaded by Chen Shu",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/556187",
         "latin": "Lilium brownii",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-1e331445e5.jpg"
       },
       "docCount": 2,
       "charCount": 1847
@@ -2102,7 +2174,8 @@
         "credit": "© 卢江离 / iNaturalist",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/200061",
-        "latin": "Ophiopogon japonicus"
+        "latin": "Ophiopogon japonicus",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-200061.jpg"
       },
       "docCount": 2,
       "charCount": 1719
@@ -2126,7 +2199,8 @@
         "credit": "© Motohiro Sunouchi / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/67756",
-        "latin": "Dendrobium nobile"
+        "latin": "Dendrobium nobile",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-67756.jpg"
       },
       "docCount": 2,
       "charCount": 2652
@@ -2150,7 +2224,8 @@
         "credit": "© 空猫 / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/61454",
-        "latin": "Polygonatum odoratum"
+        "latin": "Polygonatum odoratum",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-61454.jpg"
       },
       "docCount": 2,
       "charCount": 1641
@@ -2175,7 +2250,8 @@
         "credit": "© Daba / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/862611",
-        "latin": "Polygonatum sibiricum"
+        "latin": "Polygonatum sibiricum",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-862611.jpg"
       },
       "docCount": 2,
       "charCount": 2166
@@ -2195,13 +2271,14 @@
       "categoryTitle": "补虚药",
       "summary": "滋补肝肾，益精明目",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/41719574/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-3d2d69d787.jpg",
         "alt": "matrimony vine（Lycium barbarum）",
         "credit": "(c) gizzy, some rights reserved (CC BY-NC), uploaded by gizzy",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/77902",
         "latin": "Lycium barbarum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-3d2d69d787.jpg"
       },
       "docCount": 2,
       "charCount": 1754
@@ -2252,13 +2329,14 @@
       "categoryTitle": "补虚药",
       "summary": "补肝肾，益精血，润肠燥",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/29332099/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-4bddc31086.jpg",
         "alt": "Sesame（Sesamum indicum）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/285850",
         "latin": "Sesamum indicum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-4bddc31086.jpg"
       },
       "docCount": 2,
       "charCount": 2005
@@ -2279,13 +2357,14 @@
       "categoryTitle": "补虚药",
       "summary": "滋阴潜阳，益肾强骨，养血补心，固经止崩",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/208919672/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-6774696d76.jpg",
         "alt": "Chinese Pond Turtle（Mauremys reevesii）",
         "credit": "(c) Kim, Hyun-tae, some rights reserved (CC BY-NC-SA), uploaded by Kim, Hyun-tae",
         "license": "CC-BY-NC-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/39913",
         "latin": "Mauremys reevesii",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-6774696d76.jpg"
       },
       "docCount": 2,
       "charCount": 1970
@@ -2306,13 +2385,14 @@
       "categoryTitle": "平肝息风药",
       "summary": "滋阴潜阳，退热除蒸，软坚散结",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/374737417/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-41fe4dd758.jpg",
         "alt": "Chinese Softshell Turtle（Pelodiscus sinensis）",
         "credit": "(c) 大俠, some rights reserved (CC BY-NC-SA), uploaded by 大俠",
         "license": "CC-BY-NC-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/68334",
         "latin": "Pelodiscus sinensis",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-41fe4dd758.jpg"
       },
       "docCount": 2,
       "charCount": 1572
@@ -2337,7 +2417,8 @@
         "credit": "© Tatters ❀ / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/431608",
-        "latin": "Schisandra chinensis"
+        "latin": "Schisandra chinensis",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-431608.jpg"
       },
       "docCount": 2,
       "charCount": 2057
@@ -2393,7 +2474,8 @@
         "credit": "© Takashi KOIKE / iNaturalist",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/450254",
-        "latin": "Cornus officinalis"
+        "latin": "Cornus officinalis",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-450254.jpg"
       },
       "docCount": 2,
       "charCount": 1790
@@ -2431,13 +2513,14 @@
       "categoryTitle": "收涩药",
       "summary": "固精缩尿，固崩止带，涩肠止泻",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/116269729/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-1863329661.jpg",
         "alt": "Three-leaved Rose（Rosa laevigata）",
         "credit": "(c) Toby Y, some rights reserved (CC BY), uploaded by Toby Y",
         "license": "CC-BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/83066",
         "latin": "Rosa laevigata",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-1863329661.jpg"
       },
       "docCount": 2,
       "charCount": 1623
@@ -2457,13 +2540,14 @@
       "categoryTitle": "补虚药",
       "summary": "益肾固精，补脾止泻，除湿止带",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/8060731/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-04c06b93be.jpg",
         "alt": "Prickly Waterlily（Euryale ferox）",
         "credit": "(c) koizumi, some rights reserved (CC BY-NC-ND)",
         "license": "CC-BY-NC-ND",
         "sourceUrl": "https://www.inaturalist.org/taxa/183481",
         "latin": "Euryale ferox",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-04c06b93be.jpg"
       },
       "docCount": 2,
       "charCount": 2012
@@ -2518,13 +2602,14 @@
       "categoryTitle": "活血化瘀药",
       "summary": "破血行气，消积止痛",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/99767301/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-d9dd398d3c.jpg",
         "alt": "Simple-stem Bur-reed（Sparganium stoloniferum）",
         "credit": "(c) onidiras-iNaturalist, some rights reserved (CC BY-NC), uploaded by onidiras-iNaturalist",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/842661",
         "latin": "Sparganium stoloniferum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-d9dd398d3c.jpg"
       },
       "docCount": 1,
       "charCount": 1081
@@ -2575,13 +2660,14 @@
       "categoryTitle": "清热药",
       "summary": "清热解毒，凉血止血，祛瘀消肿，通便，杀虫",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/5084024/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-ba92d2d90d.jpg",
         "alt": "broad-leaved dock（Rumex obtusifolius）",
         "credit": "(c) Andreas Rockstein, some rights reserved (CC BY-SA)",
         "license": "CC-BY-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/63371",
         "latin": "Rumex obtusifolius",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-ba92d2d90d.jpg"
       },
       "docCount": 1,
       "charCount": 1009
@@ -2600,13 +2686,14 @@
       "categoryTitle": "理气药",
       "summary": "健脾和胃，行气止痛，安胎",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/542852762/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-1ea3dbe617.jpg",
         "alt": "Elecampane（Inula helenium）",
         "credit": "(c) lauridsen81, some rights reserved (CC BY-NC)",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/133951",
         "latin": "Inula helenium",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-1ea3dbe617.jpg"
       },
       "docCount": 1,
       "charCount": 1053
@@ -2626,13 +2713,14 @@
       "categoryTitle": "清热药",
       "summary": "解毒，散结，消肿",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/467151083/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-51d4b26df3.jpg",
         "alt": "Bolbostemma paniculatum（Bolbostemma paniculatum）",
         "credit": "(c) zdk0812, some rights reserved (CC BY-NC)",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/849647",
         "latin": "Bolbostemma paniculatum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-51d4b26df3.jpg"
       },
       "docCount": 1,
       "charCount": 1076
@@ -2657,7 +2745,8 @@
         "credit": "© 黃美滿 / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/556188",
-        "latin": "Smilax glabra"
+        "latin": "Smilax glabra",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-556188.jpg"
       },
       "docCount": 1,
       "charCount": 1182
@@ -2698,7 +2787,8 @@
         "credit": "© London Permaculture / iNaturalist",
         "license": "CC BY-NC-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/371577",
-        "latin": "Rheum palmatum"
+        "latin": "Rheum palmatum",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-371577.jpg"
       },
       "docCount": 1,
       "charCount": 1573
@@ -2769,13 +2859,14 @@
       "categoryTitle": "清热药",
       "summary": "清热解毒，化痰散结",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/508141571/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-0e0c669571.jpg",
         "alt": "Pleione bulbocodioides（Pleione bulbocodioides）",
         "credit": "(c) Steve Garvie, some rights reserved (CC BY-NC-SA)",
         "license": "CC-BY-NC-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/904993",
         "latin": "Pleione bulbocodioides",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-0e0c669571.jpg"
       },
       "docCount": 1,
       "charCount": 1066
@@ -2794,13 +2885,14 @@
       "categoryTitle": "祛风湿药",
       "summary": "祛风除湿，强筋壮骨，活血解毒",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/268953748/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-476634cccc.jpg",
         "alt": "Flemingia prostrata（Flemingia prostrata）",
         "credit": "(c) 羅元甫, some rights reserved (CC BY-NC), uploaded by 羅元甫",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/1466332",
         "latin": "Flemingia prostrata",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-476634cccc.jpg"
       },
       "docCount": 1,
       "charCount": 895
@@ -2853,13 +2945,14 @@
       "categoryTitle": "活血化瘀药",
       "summary": "逐瘀通经，通利关节，利尿通淋",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/166388583/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-b67e23a433.jpg",
         "alt": "Cyathula officinalis（Cyathula officinalis）",
         "credit": "(c) 刘光裕 Liu Guangyu, some rights reserved (CC BY-NC), uploaded by 刘光裕 Liu Guangyu",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/789300",
         "latin": "Cyathula officinalis",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b67e23a433.jpg"
       },
       "docCount": 1,
       "charCount": 1089
@@ -2895,13 +2988,14 @@
       "categoryTitle": "清热药",
       "summary": "清热解毒，祛痰，利咽",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/86247215/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-a141ff9e89.jpg",
         "alt": "wall iris（Iris tectorum）",
         "credit": "(c) 非常豹, some rights reserved (CC BY-NC), uploaded by 非常豹",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/57732",
         "latin": "Iris tectorum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-a141ff9e89.jpg"
       },
       "docCount": 1,
       "charCount": 1098
@@ -2920,13 +3014,14 @@
       "categoryTitle": "活血化瘀药",
       "summary": "祛风止痛，散瘀止血，解毒消肿",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/60949531/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-b7a10dcd24.jpg",
         "alt": "orange climber（Zanthoxylum asiaticum）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/1363338",
         "latin": "Zanthoxylum asiaticum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b7a10dcd24.jpg"
       },
       "docCount": 1,
       "charCount": 1158
@@ -2944,13 +3039,14 @@
       "categoryTitle": "其他药",
       "summary": "养阴润燥，清肺生津",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/33351452/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-5c110f1018.jpg",
         "alt": "Wild Asparagus（Asparagus cochinchinensis）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/462199",
         "latin": "Asparagus cochinchinensis",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-5c110f1018.jpg"
       },
       "docCount": 1,
       "charCount": 910
@@ -2975,7 +3071,8 @@
         "credit": "© VanLap Hoàng / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/429605",
-        "latin": "Gastrodia elata"
+        "latin": "Gastrodia elata",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-429605.jpg"
       },
       "docCount": 1,
       "charCount": 1227
@@ -2994,13 +3091,14 @@
       "categoryTitle": "清热药",
       "summary": "清热解毒，消肿散结",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/630933194/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-bc0207aec8.jpg",
         "alt": "Muskroot semiaquilegia（Semiaquilegia adoxoides）",
         "credit": "(c) 藜梓柠, some rights reserved (CC BY-NC), uploaded by 藜梓柠",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/418692",
         "latin": "Semiaquilegia adoxoides",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-bc0207aec8.jpg"
       },
       "docCount": 1,
       "charCount": 1009
@@ -3019,13 +3117,14 @@
       "categoryTitle": "攻毒杀虫止痒药",
       "summary": "散结消肿。外用",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/65832478/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-46876a6482.jpg",
         "alt": "Arisaema erubescens（Arisaema erubescens）",
         "credit": "(c) desertnaturalist, some rights reserved (CC BY), uploaded by desertnaturalist",
         "license": "CC-BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/556029",
         "latin": "Arisaema erubescens",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-46876a6482.jpg"
       },
       "docCount": 1,
       "charCount": 992
@@ -3045,13 +3144,14 @@
       "categoryTitle": "祛风湿药",
       "summary": "祛风除湿，通经活络，解毒消肿",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/28457226/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-279d118ea9.jpg",
         "alt": "queen coralbead（Nephroia orbiculata）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/1555997",
         "latin": "Nephroia orbiculata",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-279d118ea9.jpg"
       },
       "docCount": 1,
       "charCount": 1307
@@ -3075,7 +3175,8 @@
         "credit": "© Cyril Gros / iNaturalist",
         "license": "CC BY-NC-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/1420140",
-        "latin": "Dolomiaea costus"
+        "latin": "Dolomiaea costus",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-1420140.jpg"
       },
       "docCount": 1,
       "charCount": 1088
@@ -3100,7 +3201,8 @@
         "credit": "© WATANABE Hitoshi 渡辺仁 / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/474181",
-        "latin": "Achyranthes bidentata"
+        "latin": "Achyranthes bidentata",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-474181.jpg"
       },
       "docCount": 1,
       "charCount": 1250
@@ -3124,7 +3226,8 @@
         "credit": "© Сергей Голубев / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/742165",
-        "latin": "Actaea cimicifuga"
+        "latin": "Actaea cimicifuga",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-742165.jpg"
       },
       "docCount": 1,
       "charCount": 1242
@@ -3148,7 +3251,8 @@
         "credit": "© Toby Y / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/604749",
-        "latin": "Lindera aggregata"
+        "latin": "Lindera aggregata",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-604749.jpg"
       },
       "docCount": 1,
       "charCount": 1072
@@ -3166,13 +3270,14 @@
       "categoryTitle": "化湿药",
       "summary": "燥湿化痰，解毒消肿，止血",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/1476317/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-82a5ec353c.jpg",
         "alt": "Typhonium flagelliforme（Typhonium flagelliforme）",
         "credit": "(c) VanLap Hoàng, some rights reserved (CC BY)",
         "license": "CC-BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/347760",
         "latin": "Typhonium flagelliforme",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-82a5ec353c.jpg"
       },
       "docCount": 1,
       "charCount": 880
@@ -3191,13 +3296,14 @@
       "categoryTitle": "化痰止咳平喘药",
       "summary": "化痰开窍，除湿健胃，杀虫止痒",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/31058762/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-0915548c2a.jpg",
         "alt": "Eurasian Sweet-Flag（Acorus calamus）",
         "credit": "(c) Eduard Garin, some rights reserved (CC BY-NC), uploaded by Eduard Garin",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/82306",
         "latin": "Acorus calamus",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-0915548c2a.jpg"
       },
       "docCount": 1,
       "charCount": 1074
@@ -3221,7 +3327,8 @@
         "credit": "© zhangyuhong / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/1150347",
-        "latin": "Euphorbia kansui"
+        "latin": "Euphorbia kansui",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-1150347.jpg"
       },
       "docCount": 1,
       "charCount": 1136
@@ -3245,7 +3352,8 @@
         "credit": "© ~~ / iNaturalist",
         "license": "CC BY-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/508514",
-        "latin": "Gentiana scabra"
+        "latin": "Gentiana scabra",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-508514.jpg"
       },
       "docCount": 1,
       "charCount": 1093
@@ -3264,13 +3372,14 @@
       "categoryTitle": "化痰止咳平喘药",
       "summary": "清热润肺，化痰止咳",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/31479853/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-b6d9c9c553.jpg",
         "alt": "Fritillaria usuriensis（Fritillaria usuriensis）",
         "credit": "(c) V.S. Volkotrub, some rights reserved (CC BY-NC), uploaded by V.S. Volkotrub",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/565538",
         "latin": "Fritillaria usuriensis",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b6d9c9c553.jpg"
       },
       "docCount": 1,
       "charCount": 896
@@ -3290,13 +3399,14 @@
       "categoryTitle": "清热药",
       "summary": "清热解毒，祛风止痛",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/203164101/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-2ac83571e8.jpg",
         "alt": "asian moonseed（Menispermum dauricum）",
         "credit": "(c) Chuangzao, some rights reserved (CC BY-NC), uploaded by Chuangzao",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/707407",
         "latin": "Menispermum dauricum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-2ac83571e8.jpg"
       },
       "docCount": 1,
       "charCount": 1159
@@ -3315,13 +3425,14 @@
       "categoryTitle": "补虚药",
       "summary": "益气养阴，解毒消肿，排脓，通乳",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/93283627/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-cad08f5da3.jpg",
         "alt": "Bonnet Bellflower（Codonopsis lanceolata）",
         "credit": "(c) 空猫, some rights reserved (CC BY-NC), uploaded by 空猫",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/366814",
         "latin": "Codonopsis lanceolata",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-cad08f5da3.jpg"
       },
       "docCount": 1,
       "charCount": 1155
@@ -3357,13 +3468,14 @@
       "categoryTitle": "补虚药",
       "summary": "补肾阳，强筋骨，祛寒湿",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/43791781/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-cb76abaea7.jpg",
         "alt": "Golden-eyed Grass（Curculigo orchioides）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/182480",
         "latin": "Curculigo orchioides",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-cb76abaea7.jpg"
       },
       "docCount": 1,
       "charCount": 1115
@@ -3388,7 +3500,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Cynanchum stauntonii",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-054.jpg"
       },
       "docCount": 1,
       "charCount": 896
@@ -3412,7 +3525,8 @@
         "credit": "© Meng-Ying Tsai / iNaturalist",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/868939",
-        "latin": "Ampelopsis japonica"
+        "latin": "Ampelopsis japonica",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-868939.jpg"
       },
       "docCount": 1,
       "charCount": 992
@@ -3437,7 +3551,8 @@
         "credit": "© 羅元甫 / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/772874",
-        "latin": "Vincetoxicum atratum"
+        "latin": "Vincetoxicum atratum",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-772874.jpg"
       },
       "docCount": 1,
       "charCount": 977
@@ -3458,13 +3573,14 @@
       "categoryTitle": "清热药",
       "summary": "祛风痰，定惊搐，解毒散结，止痛",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/452419208/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-b7c1ee0d68.jpg",
         "alt": "Sauromatum giganteum（Sauromatum giganteum）",
         "credit": "(c) zhangqianyi, some rights reserved (CC BY-NC)",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/606203",
         "latin": "Sauromatum giganteum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b7c1ee0d68.jpg"
       },
       "docCount": 1,
       "charCount": 1036
@@ -3485,13 +3601,14 @@
       "categoryTitle": "清热药",
       "summary": "凉血止血，清热利尿",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/47625648/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-bf9ef7fe07.jpg",
         "alt": "Cogon Grass（Imperata cylindrica）",
         "credit": "(c) wangleeping, some rights reserved (CC BY-NC), uploaded by wangleeping",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/164056",
         "latin": "Imperata cylindrica",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-bf9ef7fe07.jpg"
       },
       "docCount": 1,
       "charCount": 1030
@@ -3515,7 +3632,8 @@
         "credit": "© mintren / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/491582",
-        "latin": "Pulsatilla chinensis"
+        "latin": "Pulsatilla chinensis",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-491582.jpg"
       },
       "docCount": 1,
       "charCount": 1070
@@ -3552,13 +3670,14 @@
       "categoryTitle": "补虚药",
       "summary": "补肝肾，强筋骨，益精血，健脾消食，解毒疗疮",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/544800241/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-e9646b748b.jpg",
         "alt": "Heart-Leaf Swallow-Wort（Vincetoxicum auriculatum）",
         "credit": "(c) Phuntsho Wangdi, some rights reserved (CC BY-NC), uploaded by Phuntsho Wangdi",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/994013",
         "latin": "Vincetoxicum auriculatum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-e9646b748b.jpg"
       },
       "docCount": 1,
       "charCount": 1403
@@ -3582,7 +3701,8 @@
         "credit": "© 葉子 / iNaturalist",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/166883",
-        "latin": "Pinellia ternata"
+        "latin": "Pinellia ternata",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-166883.jpg"
       },
       "docCount": 1,
       "charCount": 1012
@@ -3601,13 +3721,14 @@
       "categoryTitle": "清热药",
       "summary": "①生地黄：清热凉血，养阴生津",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/197449921/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-b76a508400.jpg",
         "alt": "Rehmannia（Rehmannia glutinosa）",
         "credit": "(c) Chuangzao, some rights reserved (CC BY-NC), uploaded by Chuangzao",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/544445",
         "latin": "Rehmannia glutinosa",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b76a508400.jpg"
       },
       "docCount": 1,
       "charCount": 1245
@@ -3631,7 +3752,8 @@
         "credit": "© Кирилл Зенин / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/64549",
-        "latin": "Sanguisorba officinalis"
+        "latin": "Sanguisorba officinalis",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-64549.jpg"
       },
       "docCount": 1,
       "charCount": 1214
@@ -3650,13 +3772,14 @@
       "categoryTitle": "化痰止咳平喘药",
       "summary": "润肺下气止咳，杀虫灭虱",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/65717430/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-fcfd005275.jpg",
         "alt": "Stemona tuberosa（Stemona tuberosa）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/431642",
         "latin": "Stemona tuberosa",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-fcfd005275.jpg"
       },
       "docCount": 1,
       "charCount": 800
@@ -3681,7 +3804,8 @@
         "credit": "© 葉子 / iNaturalist",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/556238",
-        "latin": "Rumex japonicus"
+        "latin": "Rumex japonicus",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-556238.jpg"
       },
       "docCount": 1,
       "charCount": 1015
@@ -3703,13 +3827,14 @@
       "categoryTitle": "清热药",
       "summary": "解毒消肿，活血止痛，祛风除湿",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/73013471/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-966054edb4.jpg",
         "alt": "Coralberry（Ardisia crenata）",
         "credit": "(c) Toshihiro Gamo, some rights reserved (CC BY-NC-ND)",
         "license": "CC-BY-NC-ND",
         "sourceUrl": "https://www.inaturalist.org/taxa/158586",
         "latin": "Ardisia crenata",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-966054edb4.jpg"
       },
       "docCount": 1,
       "charCount": 1030
@@ -3728,13 +3853,14 @@
       "categoryTitle": "化痰止咳平喘药",
       "summary": "清热润肺，化痰止咳",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/56625890/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-5863d14a78.jpg",
         "alt": "Fritillaria walujewii（Fritillaria walujewii）",
         "credit": "(c) Roger Newman, some rights reserved (CC BY-NC), uploaded by Roger Newman",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/565541",
         "latin": "Fritillaria walujewii",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-5863d14a78.jpg"
       },
       "docCount": 1,
       "charCount": 876
@@ -3759,7 +3885,8 @@
         "license": "仅站内学习",
         "sourceUrl": "",
         "latin": "Saposhnikovia divaricata",
-        "kind": "植株"
+        "kind": "植株",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-user-fangfeng-plant.jpg"
       },
       "docCount": 1,
       "charCount": 1249
@@ -3778,13 +3905,14 @@
       "categoryTitle": "利水渗湿药",
       "summary": "利水消肿，祛风止痛",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/327353322/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-5e83619067.jpg",
         "alt": "Stephania tetrandra（Stephania tetrandra）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/737284",
         "latin": "Stephania tetrandra",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-5e83619067.jpg"
       },
       "docCount": 1,
       "charCount": 968
@@ -3838,7 +3966,8 @@
         "credit": "© Chuangzao / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/520121",
-        "latin": "Polygala tenuifolia"
+        "latin": "Polygala tenuifolia",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-520121.jpg"
       },
       "docCount": 1,
       "charCount": 1006
@@ -3909,13 +4038,14 @@
       "categoryTitle": "清热药",
       "summary": "凉血止血，清热安胎，利尿，解毒",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/63994529/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-cc08f375ab.jpg",
         "alt": "Ramie（Boehmeria nivea）",
         "credit": "(c) JODY HSIEH, some rights reserved (CC BY-NC), uploaded by JODY HSIEH",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/159288",
         "latin": "Boehmeria nivea",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-cc08f375ab.jpg"
       },
       "docCount": 1,
       "charCount": 987
@@ -3980,13 +4110,14 @@
       "categoryTitle": "清热药",
       "summary": "清热解毒，凉血利咽",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/7456120/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-3931f1a2c3.jpg",
         "alt": "woad（Isatis tinctoria）",
         "credit": "(c) reddad, some rights reserved (CC BY-NC), uploaded by reddad",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/77509",
         "latin": "Isatis tinctoria",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-3931f1a2c3.jpg"
       },
       "docCount": 1,
       "charCount": 1012
@@ -4030,7 +4161,8 @@
         "credit": "© 登坂久雄 / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/138582",
-        "latin": "Sophora flavescens"
+        "latin": "Sophora flavescens",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-138582.jpg"
       },
       "docCount": 1,
       "charCount": 1062
@@ -4054,7 +4186,8 @@
         "credit": "© Purnendu Roy / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/347672",
-        "latin": "Curcuma aromatica"
+        "latin": "Curcuma aromatica",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-347672.jpg"
       },
       "docCount": 1,
       "charCount": 1006
@@ -4080,7 +4213,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Reynoutria japonica",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-069.jpg"
       },
       "docCount": 1,
       "charCount": 1001
@@ -4141,7 +4275,8 @@
         "credit": "© Rafael Medina / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/501651",
-        "latin": "Woodwardia japonica"
+        "latin": "Woodwardia japonica",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-501651.jpg"
       },
       "docCount": 1,
       "charCount": 1157
@@ -4167,7 +4302,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Euphorbia pekinensis",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-033.jpg"
       },
       "docCount": 1,
       "charCount": 1044
@@ -4193,7 +4329,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Fagopyrum dibotrys",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-036.jpg"
       },
       "docCount": 1,
       "charCount": 862
@@ -4230,13 +4367,14 @@
       "categoryTitle": "解表药",
       "summary": "解表散寒，祛风止痛，通窍，温肺化饮",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/185816053/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-20431fcca7.jpg",
         "alt": "variable-leaf heartleaf（Asarum heterophyllum）",
         "credit": "(c) George Lee, some rights reserved (CC BY-NC), uploaded by George Lee",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/1455130",
         "latin": "Asarum heterophyllum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-20431fcca7.jpg"
       },
       "docCount": 1,
       "charCount": 1464
@@ -4261,7 +4399,8 @@
         "credit": "© Yoshihiro Tokue / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/161570",
-        "latin": "Cyrtomium fortunei"
+        "latin": "Cyrtomium fortunei",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-161570.jpg"
       },
       "docCount": 1,
       "charCount": 1009
@@ -4288,7 +4427,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Adenophora tetraphylla",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-060.jpg"
       },
       "docCount": 1,
       "charCount": 1060
@@ -4330,7 +4470,8 @@
         "credit": "© Repina Tatyana / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/500587",
-        "latin": "Rubia cordifolia"
+        "latin": "Rubia cordifolia",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-500587.jpg"
       },
       "docCount": 1,
       "charCount": 1289
@@ -4391,7 +4532,8 @@
         "credit": "© 羅元甫 / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/774403",
-        "latin": "Clematis chinensis"
+        "latin": "Clematis chinensis",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-774403.jpg"
       },
       "docCount": 1,
       "charCount": 1073
@@ -4428,13 +4570,14 @@
       "categoryTitle": "理气药",
       "summary": "理气解郁，调经止痛，安胎",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/60471960/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-72b83c4f10.jpg",
         "alt": "Purple nutsedge（Cyperus rotundus）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/76593",
         "latin": "Cyperus rotundus",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-72b83c4f10.jpg"
       },
       "docCount": 1,
       "charCount": 1029
@@ -4478,7 +4621,8 @@
         "credit": "© leehsueh / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/482445",
-        "latin": "Angelica pubescens"
+        "latin": "Angelica pubescens",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-482445.jpg"
       },
       "docCount": 1,
       "charCount": 1391
@@ -4499,7 +4643,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Peucedanum praeruptorum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-049.jpg"
       },
       "docCount": 1,
       "charCount": 1452
@@ -4541,7 +4686,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Dioscorea nipponica",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-076.jpg"
       },
       "docCount": 1,
       "charCount": 1261
@@ -4620,7 +4766,8 @@
         "credit": "© 红梅 / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/601649",
-        "latin": "Bupleurum chinense"
+        "latin": "Bupleurum chinense",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-601649.jpg"
       },
       "docCount": 1,
       "charCount": 1218
@@ -4663,7 +4810,8 @@
         "credit": "© 葉子 / iNaturalist",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/204330",
-        "latin": "Iris domestica"
+        "latin": "Iris domestica",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-204330.jpg"
       },
       "docCount": 1,
       "charCount": 1006
@@ -4687,7 +4835,8 @@
         "credit": "© onidiras-iNaturalist / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/1638659",
-        "latin": "Vincetoxicum bungei"
+        "latin": "Vincetoxicum bungei",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-1638659.jpg"
       },
       "docCount": 1,
       "charCount": 1220
@@ -4711,7 +4860,8 @@
         "credit": "© Святослав Власенко / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/820729",
-        "latin": "Stellera chamaejasme"
+        "latin": "Stellera chamaejasme",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-820729.jpg"
       },
       "docCount": 1,
       "charCount": 597
@@ -4790,7 +4940,8 @@
         "credit": "© Yao Li / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/565882",
-        "latin": "Scutellaria baicalensis"
+        "latin": "Scutellaria baicalensis",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-565882.jpg"
       },
       "docCount": 1,
       "charCount": 1245
@@ -4813,7 +4964,8 @@
         "credit": "© misakinokukuru / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/497721",
-        "latin": "Coptis chinensis"
+        "latin": "Coptis chinensis",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-497721.jpg"
       },
       "docCount": 1,
       "charCount": 1784
@@ -4874,7 +5026,8 @@
         "credit": "© Kim, Hyun-tae / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/155484",
-        "latin": "Phytolacca acinosa"
+        "latin": "Phytolacca acinosa",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-155484.jpg"
       },
       "docCount": 1,
       "charCount": 1417
@@ -4933,7 +5086,8 @@
         "credit": "© Repina Tatyana / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/715299",
-        "latin": "Lithospermum erythrorhizon"
+        "latin": "Lithospermum erythrorhizon",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-715299.jpg"
       },
       "docCount": 1,
       "charCount": 1004
@@ -4958,7 +5112,8 @@
         "credit": "© Douglas Goldman / iNaturalist",
         "license": "CC BY-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/158806",
-        "latin": "Aster tataricus"
+        "latin": "Aster tataricus",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-158806.jpg"
       },
       "docCount": 1,
       "charCount": 1019
@@ -5039,7 +5194,8 @@
         "credit": "© Ryzhkov Oleg / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/1498021",
-        "latin": "Rhaponticum uniflorum"
+        "latin": "Rhaponticum uniflorum",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-1498021.jpg"
       },
       "docCount": 1,
       "charCount": 1093
@@ -5082,7 +5238,8 @@
         "credit": "© HermannFalkner/sokol / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/344733",
-        "latin": "Veratrum nigrum"
+        "latin": "Veratrum nigrum",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-344733.jpg"
       },
       "docCount": 1,
       "charCount": 1022
@@ -5118,13 +5275,14 @@
       "categoryTitle": "清热药",
       "summary": "祛风利湿，解毒消痈",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/62490444/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-f0ffe08cfc.jpg",
         "alt": "East Asian greenbrier（Smilax china）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/357433",
         "latin": "Smilax china",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-f0ffe08cfc.jpg"
       },
       "docCount": 1,
       "charCount": 934
@@ -5344,7 +5502,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Vaccaria segetalis",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-020.jpg"
       },
       "docCount": 1,
       "charCount": 932
@@ -5369,7 +5528,8 @@
         "credit": "© Antoine Guilbaud / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/163951",
-        "latin": "Hyoscyamus niger"
+        "latin": "Hyoscyamus niger",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-163951.jpg"
       },
       "docCount": 1,
       "charCount": 1163
@@ -5407,13 +5567,14 @@
       "categoryTitle": "清热药",
       "summary": "清热，祛痰，消积，杀虫",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/107712768/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-da467ad0ca.jpg",
         "alt": "Reetha（Sapindus mukorossi）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/475356",
         "latin": "Sapindus mukorossi",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-da467ad0ca.jpg"
       },
       "docCount": 1,
       "charCount": 892
@@ -5475,7 +5636,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Arctium lappa",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-012.jpg"
       },
       "docCount": 1,
       "charCount": 1042
@@ -5537,7 +5699,8 @@
         "credit": "© 葉子 / iNaturalist",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/427400",
-        "latin": "Croton tiglium"
+        "latin": "Croton tiglium",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-427400.jpg"
       },
       "docCount": 1,
       "charCount": 1472
@@ -5575,13 +5738,14 @@
       "categoryTitle": "收涩药",
       "summary": "涩肠止泻，止血，驱虫",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/4956594/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-e0573bc8fa.jpg",
         "alt": "pomegranate（Punica granatum）",
         "credit": "(c) H. Zell, some rights reserved (CC BY-SA)",
         "license": "CC-BY-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/58300",
         "latin": "Punica granatum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-e0573bc8fa.jpg"
       },
       "docCount": 1,
       "charCount": 931
@@ -5607,7 +5771,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Trichosanthes kirilowii",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-080.jpg"
       },
       "docCount": 1,
       "charCount": 750
@@ -5716,13 +5881,14 @@
       "categoryTitle": "温里药",
       "summary": "温中降逆，补肾助阳",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/209515366/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-3c8d3fdecf.jpg",
         "alt": "Clove（Syzygium aromaticum）",
         "credit": "(c) Frédéric LEVIEZ, some rights reserved (CC BY-NC), uploaded by Frédéric LEVIEZ",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/122770",
         "latin": "Syzygium aromaticum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-3c8d3fdecf.jpg"
       },
       "docCount": 1,
       "charCount": 852
@@ -5834,7 +6000,8 @@
         "credit": "© Douglas Goldman / iNaturalist",
         "license": "CC BY-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/163058",
-        "latin": "Forsythia suspensa"
+        "latin": "Forsythia suspensa",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-163058.jpg"
       },
       "docCount": 1,
       "charCount": 1131
@@ -5913,7 +6080,8 @@
         "credit": "© Satish Nikam / iNaturalist",
         "license": "CC BY-NC-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/68671",
-        "latin": "Terminalia chebula"
+        "latin": "Terminalia chebula",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-68671.jpg"
       },
       "docCount": 1,
       "charCount": 1151
@@ -5938,7 +6106,8 @@
         "credit": "© S.MORE / iNaturalist",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/736663",
-        "latin": "Cullen corylifolium"
+        "latin": "Cullen corylifolium",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-736663.jpg"
       },
       "docCount": 1,
       "charCount": 1127
@@ -6066,13 +6235,14 @@
       "categoryTitle": "消食药",
       "summary": "杀虫消积",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/912077/medium.JPG",
+        "url": "/images/herbs/dacheng/inat-1ba261687b.jpg",
         "alt": "Rangoon Creeper（Combretum indicum）",
         "credit": "(c) Sunnetchan, some rights reserved (CC BY-NC-ND), uploaded by Sunnetchan",
         "license": "CC-BY-NC-ND",
         "sourceUrl": "https://www.inaturalist.org/taxa/284831",
         "latin": "Combretum indicum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-1ba261687b.jpg"
       },
       "docCount": 1,
       "charCount": 1079
@@ -6437,13 +6607,14 @@
       "categoryTitle": "活血化瘀药",
       "summary": "活血祛瘀，润肠通便，止咳平喘",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/318368255/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-4ac014f162.jpg",
         "alt": "Peach（Prunus persica）",
         "credit": "(c) Yair Haklai, some rights reserved (CC BY-SA)",
         "license": "CC-BY-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/78755",
         "latin": "Prunus persica",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-4ac014f162.jpg"
       },
       "docCount": 1,
       "charCount": 1311
@@ -6546,13 +6717,14 @@
       "categoryTitle": "补虚药",
       "summary": "滋阴补血，生津润燥",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/56582166/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-b7b4638d72.jpg",
         "alt": "white mulberry（Morus alba）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/56090",
         "latin": "Morus alba",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b7b4638d72.jpg"
       },
       "docCount": 1,
       "charCount": 894
@@ -6612,7 +6784,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Cnidium monnieri",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-019.jpg"
       },
       "docCount": 1,
       "charCount": 1147
@@ -6702,13 +6875,14 @@
       "categoryTitle": "化痰止咳平喘药",
       "summary": "降气化痰，止咳平喘，润肠通便",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/227679054/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-5827f7f365.jpg",
         "alt": "beefsteak plant（Perilla frutescens）",
         "credit": "(c) H. Wilson Montgomery, Jr., some rights reserved (CC BY-NC), uploaded by H. Wilson Montgomery, Jr.",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/119136",
         "latin": "Perilla frutescens",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-5827f7f365.jpg"
       },
       "docCount": 1,
       "charCount": 1197
@@ -6784,7 +6958,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Ricinus communis",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-010.jpg"
       },
       "docCount": 1,
       "charCount": 955
@@ -6809,7 +6984,8 @@
         "credit": "© lanechaffin / iNaturalist",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/64238",
-        "latin": "Tribulus terrestris"
+        "latin": "Tribulus terrestris",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-64238.jpg"
       },
       "docCount": 1,
       "charCount": 1057
@@ -6854,7 +7030,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Physalis alkekengi L.",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-017.jpg"
       },
       "docCount": 1,
       "charCount": 1055
@@ -6951,7 +7128,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Vitex trifolia var. simplicifolia",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-038.jpg"
       },
       "docCount": 1,
       "charCount": 1082
@@ -7004,13 +7182,14 @@
       "categoryTitle": "其他药",
       "summary": "疏风散热，养肝明目",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/92921452/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-3358833aff.jpg",
         "alt": "Prinsepia uniflora（Prinsepia uniflora）",
         "credit": "(c) sunwenhao90, some rights reserved (CC BY-NC), uploaded by sunwenhao90",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/789367",
         "latin": "Prinsepia uniflora",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-3358833aff.jpg"
       },
       "docCount": 1,
       "charCount": 790
@@ -7123,7 +7302,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Cirsium japonicum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-061.jpg"
       },
       "docCount": 1,
       "charCount": 995
@@ -7295,13 +7475,14 @@
       "categoryTitle": "解表药",
       "summary": "疏散风热，明目退翳",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/90404402/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-c66b1124c6.jpg",
         "alt": "rough horsetail（Equisetum hyemale）",
         "credit": "(c) Tom Kaye, some rights reserved (CC BY-NC), uploaded by Tom Kaye",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/52673",
         "latin": "Equisetum hyemale",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-c66b1124c6.jpg"
       },
       "docCount": 1,
       "charCount": 780
@@ -7359,7 +7540,8 @@
         "credit": "© Nova Patch / iNaturalist",
         "license": "CC BY-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/428723",
-        "latin": "Pyrrosia lingua"
+        "latin": "Pyrrosia lingua",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-428723.jpg"
       },
       "docCount": 1,
       "charCount": 953
@@ -7419,7 +7601,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Agrimonia pilosa",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-024.jpg"
       },
       "docCount": 1,
       "charCount": 852
@@ -7443,7 +7626,8 @@
         "credit": "© Timur Kalininsky / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/367802",
-        "latin": "Solanum lyratum"
+        "latin": "Solanum lyratum",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-367802.jpg"
       },
       "docCount": 1,
       "charCount": 885
@@ -7496,13 +7680,14 @@
       "categoryTitle": "清热药",
       "summary": "清热解毒，利尿消肿",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/28356230/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-ddec11c73f.jpg",
         "alt": "Chinese Lobelia（Lobelia chinensis）",
         "credit": "no rights reserved, uploaded by 葉子",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/224052",
         "latin": "Lobelia chinensis",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-ddec11c73f.jpg"
       },
       "docCount": 1,
       "charCount": 955
@@ -7527,7 +7712,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Scutellaria barbata",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-009.jpg"
       },
       "docCount": 1,
       "charCount": 971
@@ -7553,7 +7739,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Rabdosia rubescens",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-050.jpg"
       },
       "docCount": 1,
       "charCount": 867
@@ -7641,13 +7828,14 @@
       "categoryTitle": "清热药",
       "summary": "清热解毒，凉血止血，利湿退黄",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/110375727/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-4a48b90f74.jpg",
         "alt": "Euphorbia humifusa（Euphorbia humifusa）",
         "credit": "(c) 小铖/Smalltown, some rights reserved (CC BY-NC), uploaded by 小铖/Smalltown",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/502155",
         "latin": "Euphorbia humifusa",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-4a48b90f74.jpg"
       },
       "docCount": 1,
       "charCount": 934
@@ -7768,13 +7956,14 @@
       "categoryTitle": "祛风湿药",
       "summary": "祛风，利湿，舒筋，活血",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/12256480/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-edf54eb723.jpg",
         "alt": "Chinese elder（Sambucus javanica）",
         "credit": "(c) 方伊琳(阿鈣), some rights reserved (CC BY-NC), uploaded by 方伊琳(阿鈣)",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/474166",
         "latin": "Sambucus javanica",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-edf54eb723.jpg"
       },
       "docCount": 1,
       "charCount": 808
@@ -7817,7 +8006,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Paederia scandens",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-078.jpg"
       },
       "docCount": 1,
       "charCount": 843
@@ -7922,13 +8112,14 @@
       "categoryTitle": "清热药",
       "summary": "凉血止痢，清热解毒",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/306876123/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-efd20cf45d.jpg",
         "alt": "Chinese Cinquefoil（Potentilla chinensis）",
         "credit": "(c) Alexey P. Seregin, some rights reserved (CC BY-NC), uploaded by Alexey P. Seregin",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/538160",
         "latin": "Potentilla chinensis",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-efd20cf45d.jpg"
       },
       "docCount": 1,
       "charCount": 1118
@@ -8005,7 +8196,8 @@
         "credit": "© portioid / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/56292",
-        "latin": "Euphorbia helioscopia"
+        "latin": "Euphorbia helioscopia",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-56292.jpg"
       },
       "docCount": 1,
       "charCount": 1107
@@ -8030,7 +8222,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Sedum sarmentosum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-068.jpg"
       },
       "docCount": 1,
       "charCount": 1034
@@ -8071,7 +8264,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Schizonepeta tenuifolia",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-021.jpg"
       },
       "docCount": 1,
       "charCount": 1137
@@ -8193,13 +8387,14 @@
       "categoryTitle": "清热药",
       "summary": "清热泻火，解毒，利水消肿",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/30222082/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-c435dda5db.jpg",
         "alt": "Asiatic dayflower（Commelina communis）",
         "credit": "(c) NotAnonymous, some rights reserved (CC BY-SA)",
         "license": "CC-BY-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/52927",
         "latin": "Commelina communis",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-c435dda5db.jpg"
       },
       "docCount": 1,
       "charCount": 903
@@ -8240,7 +8435,8 @@
         "credit": "© 葉子 / iNaturalist",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/160294",
-        "latin": "Centella asiatica"
+        "latin": "Centella asiatica",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-160294.jpg"
       },
       "docCount": 1,
       "charCount": 904
@@ -8283,7 +8479,8 @@
         "credit": "© Philipp / iNaturalist",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/54518",
-        "latin": "Lemna minor"
+        "latin": "Lemna minor",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-54518.jpg"
       },
       "docCount": 1,
       "charCount": 916
@@ -8343,7 +8540,8 @@
         "credit": "© taiyi / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/881454",
-        "latin": "Epimedium brevicornu"
+        "latin": "Epimedium brevicornu",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-881454.jpg"
       },
       "docCount": 1,
       "charCount": 1281
@@ -8485,13 +8683,14 @@
       "categoryTitle": "清热药",
       "summary": "清热解毒，凉血消肿",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/58575062/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-045466d3e2.jpg",
         "alt": "tokyo violet（Viola philippica）",
         "credit": "(c) onidiras-iNaturalist, some rights reserved (CC BY-NC), uploaded by onidiras-iNaturalist",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/491262",
         "latin": "Viola philippica",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-045466d3e2.jpg"
       },
       "docCount": 1,
       "charCount": 1062
@@ -8599,7 +8798,8 @@
         "credit": "© Federico Biguzzi / iNaturalist",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/447244",
-        "latin": "Dianthus superbus"
+        "latin": "Dianthus superbus",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-447244.jpg"
       },
       "docCount": 1,
       "charCount": 942
@@ -8656,13 +8856,14 @@
       "categoryTitle": "补虚药",
       "summary": "益气养阴，清热解毒",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/659037893/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-686bc207c2.jpg",
         "alt": "Chinese Spiranthes（Spiranthes sinensis）",
         "credit": "(c) 李博恒, some rights reserved (CC BY-NC), uploaded by 李博恒",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/323932",
         "latin": "Spiranthes sinensis",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-686bc207c2.jpg"
       },
       "docCount": 1,
       "charCount": 983
@@ -8745,13 +8946,14 @@
       "categoryTitle": "清热药",
       "summary": "清热利湿，凉血解毒",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/94974/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-9ca97b673c.jpg",
         "alt": "common hibiscus（Hibiscus syriacus）",
         "credit": "(c) Kai Yan,  Joseph Wong, some rights reserved (CC BY-NC-SA)",
         "license": "CC-BY-NC-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/126585",
         "latin": "Hibiscus syriacus",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-9ca97b673c.jpg"
       },
       "docCount": 1,
       "charCount": 1122
@@ -8837,13 +9039,14 @@
       "categoryTitle": "活血化瘀药",
       "summary": "活血化瘀，凉血解毒，解郁安神",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/28500579/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-ddc84bc71f.jpg",
         "alt": "Saffron Crocus（Crocus sativus）",
         "credit": "(c) Юрий Данилевский (Yuriy Danilevsky), some rights reserved (CC BY), uploaded by Юрий Данилевский (Yuriy Danilevsky)",
         "license": "CC-BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/118933",
         "latin": "Crocus sativus",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-ddc84bc71f.jpg"
       },
       "docCount": 1,
       "charCount": 1086
@@ -8867,7 +9070,8 @@
         "credit": "© 葉子 / iNaturalist",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/76135",
-        "latin": "Carthamus tinctorius"
+        "latin": "Carthamus tinctorius",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-76135.jpg"
       },
       "docCount": 1,
       "charCount": 1340
@@ -8891,7 +9095,8 @@
         "credit": "© 葉子 / iNaturalist",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/703850",
-        "latin": "Daphne genkwa"
+        "latin": "Daphne genkwa",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-703850.jpg"
       },
       "docCount": 1,
       "charCount": 1155
@@ -9032,13 +9237,14 @@
       "categoryTitle": "清热药",
       "summary": "清热解毒，消肿，明目。清热解毒，消肿，明目",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/4242933/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-ce3d3cb90e.jpg",
         "alt": "Chinese globeflower（Trollius chinensis）",
         "credit": "(c) mustardlypig, some rights reserved (CC BY-NC), uploaded by mustardlypig",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/84407",
         "latin": "Trollius chinensis",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-ce3d3cb90e.jpg"
       },
       "docCount": 1,
       "charCount": 1094
@@ -9127,7 +9333,8 @@
         "credit": "© Brady Reed / iNaturalist",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/52764",
-        "latin": "Prunella vulgaris"
+        "latin": "Prunella vulgaris",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-52764.jpg"
       },
       "docCount": 1,
       "charCount": 1042
@@ -9152,7 +9359,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Campsis radicans",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-083.jpg"
       },
       "docCount": 1,
       "charCount": 1019
@@ -9197,7 +9405,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Dendranthema indicum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-056.jpg"
       },
       "docCount": 1,
       "charCount": 1169
@@ -9237,7 +9446,8 @@
         "credit": "© Chuangzao / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/538217",
-        "latin": "Inula japonica"
+        "latin": "Inula japonica",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-538217.jpg"
       },
       "docCount": 1,
       "charCount": 1222
@@ -9348,7 +9558,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Isatis indigotica",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-001.jpg"
       },
       "docCount": 1,
       "charCount": 631
@@ -9404,7 +9615,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Artemisia argyi",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-039.jpg"
       },
       "docCount": 1,
       "charCount": 989
@@ -9455,13 +9667,14 @@
       "categoryTitle": "化痰止咳平喘药",
       "summary": "润肺止咳，通便",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/703898/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-779134bf07.jpg",
         "alt": "Breynia spatulifolia（Breynia spatulifolia）",
         "credit": "(c) 106611639464075912591, some rights reserved (CC BY-NC-SA), uploaded by 106611639464075912591",
         "license": "CC-BY-NC-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/1365412",
         "latin": "Breynia spatulifolia",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-779134bf07.jpg"
       },
       "docCount": 1,
       "charCount": 643
@@ -9530,7 +9743,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Apocynum venetum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-051.jpg"
       },
       "docCount": 1,
       "charCount": 867
@@ -9598,13 +9812,14 @@
       "categoryTitle": "祛风湿药",
       "summary": "祛风除湿，平肝降压，解毒杀虫",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/630944384/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-fafd2c6e38.jpg",
         "alt": "Harlequin glorybower（Clerodendrum trichotomum）",
         "credit": "(c) 藜梓柠, some rights reserved (CC BY-NC), uploaded by 藜梓柠",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/67539",
         "latin": "Clerodendrum trichotomum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-fafd2c6e38.jpg"
       },
       "docCount": 1,
       "charCount": 1404
@@ -9964,7 +10179,8 @@
         "credit": "© Wendy Cutler / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/431254",
-        "latin": "Magnolia officinalis"
+        "latin": "Magnolia officinalis",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-431254.jpg"
       },
       "docCount": 1,
       "charCount": 1257
@@ -9990,7 +10206,8 @@
         "license": "用户提供，来源网络，版权归原作者所有",
         "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
         "latin": "Periploca sepium",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-079.jpg"
       },
       "docCount": 1,
       "charCount": 965
@@ -10205,7 +10422,8 @@
         "credit": "© ashley CHILE baz / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/126249",
-        "latin": "Akebia quinata"
+        "latin": "Akebia quinata",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-126249.jpg"
       },
       "docCount": 1,
       "charCount": 741
@@ -10264,13 +10482,14 @@
       "categoryTitle": "清热药",
       "summary": "清热化痰，除烦，止呕",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/145480877/medium.png",
+        "url": "/images/herbs/dacheng/inat-444d94bfd2.jpg",
         "alt": "Black Bamboo（Phyllostachys nigra）",
         "credit": "(c) onidiras-iNaturalist, some rights reserved (CC BY-NC), uploaded by onidiras-iNaturalist",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/166766",
         "latin": "Phyllostachys nigra",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-444d94bfd2.jpg"
       },
       "docCount": 1,
       "charCount": 1046
@@ -10418,7 +10637,8 @@
         "credit": "© Nuraishah Bazilah Affandi / iNaturalist",
         "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/809168",
-        "latin": "Uncaria rhynchophylla"
+        "latin": "Uncaria rhynchophylla",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-809168.jpg"
       },
       "docCount": 1,
       "charCount": 1100
@@ -10489,13 +10709,14 @@
       "categoryTitle": "清热药",
       "summary": "清热利尿，通气下乳",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/128813917/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-38b1cc7a17.jpg",
         "alt": "Rice paper plant（Tetrapanax papyrifer）",
         "credit": "(c) 戴勝, some rights reserved (CC BY-NC), uploaded by 戴勝",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/372170",
         "latin": "Tetrapanax papyrifer",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-38b1cc7a17.jpg"
       },
       "docCount": 1,
       "charCount": 1207
@@ -10518,7 +10739,8 @@
         "credit": "© Daba / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/135489",
-        "latin": "Ephedra sinica"
+        "latin": "Ephedra sinica",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-135489.jpg"
       },
       "docCount": 1,
       "charCount": 1900
@@ -10543,7 +10765,8 @@
         "credit": "© lchcd / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/849502",
-        "latin": "Taxillus sutchuenensis"
+        "latin": "Taxillus sutchuenensis",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-849502.jpg"
       },
       "docCount": 1,
       "charCount": 1161
@@ -10568,7 +10791,8 @@
         "credit": "© Vojtech Tlaskal / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/50906",
-        "latin": "Cynomorium songaricum"
+        "latin": "Cynomorium songaricum",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-50906.jpg"
       },
       "docCount": 1,
       "charCount": 1045
@@ -10674,13 +10898,14 @@
       "categoryTitle": "清热药",
       "summary": "开窍醒神，清热止痛",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/245245724/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-fb71af1be7.jpg",
         "alt": "Camphor（Camphora officinarum）",
         "credit": "(c) Greg Tasney, some rights reserved (CC BY-SA), uploaded by Greg Tasney",
         "license": "CC-BY-SA",
         "sourceUrl": "https://www.inaturalist.org/taxa/1591063",
         "latin": "Camphora officinarum",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-fb71af1be7.jpg"
       },
       "docCount": 1,
       "charCount": 705
@@ -10780,13 +11005,14 @@
       "categoryTitle": "攻毒杀虫止痒药",
       "summary": "散瘀定痛，消肿生肌",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/175138761/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-c890f4c25d.jpg",
         "alt": "Common Myrrh（Commiphora myrrha）",
         "credit": "\nBrandt, Wilhelm; Gürke, M.; Köhler, F. E.; Pabst, G.; Schellenberg, G.; Vogtherr, Max., no known copyright restrictions (public domain)",
         "license": "PD",
         "sourceUrl": "https://www.inaturalist.org/taxa/789240",
         "latin": "Commiphora myrrha",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-c890f4c25d.jpg"
       },
       "docCount": 1,
       "charCount": 930
@@ -10876,13 +11102,14 @@
       "categoryTitle": "补虚药",
       "summary": "补气养血，润肺止咳，止血，降压，抗癌",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/400790965/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-6577f492dd.jpg",
         "alt": "European Earwig（Forficula auricularia）",
         "credit": "(c) Craig Biegler, some rights reserved (CC BY-NC), uploaded by Craig Biegler",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/1470430",
         "latin": "Forficula auricularia",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-6577f492dd.jpg"
       },
       "docCount": 1,
       "charCount": 989
@@ -10975,7 +11202,8 @@
         "credit": "© sicilelleth / iNaturalist",
         "license": "CC BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/382846",
-        "latin": "Laccocephalum mylittae"
+        "latin": "Laccocephalum mylittae",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-382846.jpg"
       },
       "docCount": 1,
       "charCount": 971
@@ -11067,13 +11295,14 @@
       "categoryTitle": "泻下药",
       "summary": "泻下通便，清肝泻火，杀虫疗疳",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/759770213/medium.jpg",
+        "url": "/images/herbs/dacheng/inat-ae14be480f.jpg",
         "alt": "aloe vera（Aloe vera）",
         "credit": "(c) Forest and Kim Starr, some rights reserved (CC BY)",
         "license": "CC-BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/126882",
         "latin": "Aloe vera",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-ae14be480f.jpg"
       },
       "docCount": 1,
       "charCount": 983
@@ -11096,7 +11325,8 @@
         "credit": "© 葉子 / iNaturalist",
         "license": "CC0",
         "sourceUrl": "https://www.inaturalist.org/taxa/164985",
-        "latin": "Lygodium japonicum"
+        "latin": "Lygodium japonicum",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-164985.jpg"
       },
       "docCount": 1,
       "charCount": 890
@@ -11238,13 +11468,14 @@
       "categoryTitle": "止血药",
       "summary": "止血，生肌，定痛",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/179083894/medium.png",
+        "url": "/images/herbs/dacheng/inat-bf58c4f1a8.jpg",
         "alt": "China Wax Scale Insect（Ericerus pela）",
         "credit": "(c) onidiras-iNaturalist, some rights reserved (CC BY-NC), uploaded by onidiras-iNaturalist",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/1188597",
         "latin": "Ericerus pela",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-bf58c4f1a8.jpg"
       },
       "docCount": 1,
       "charCount": 785
@@ -11860,13 +12091,14 @@
       "categoryTitle": "活血化瘀药",
       "summary": "开窍醒神，活血通经，消肿止痛",
       "image": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/155080061/medium.jpeg",
+        "url": "/images/herbs/dacheng/inat-ef15b970e8.jpg",
         "alt": "Chinese Forest Musk Deer（Moschus berezovskii）",
         "credit": "(c) Phil Benstead, some rights reserved (CC BY-NC), uploaded by Phil Benstead",
         "license": "CC-BY-NC",
         "sourceUrl": "https://www.inaturalist.org/taxa/42142",
         "latin": "Moschus berezovskii",
-        "kind": "原植物"
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-ef15b970e8.jpg"
       },
       "docCount": 1,
       "charCount": 1434

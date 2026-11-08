@@ -88,13 +88,14 @@
   "summary": "解毒，散结，消肿",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/467151083/medium.jpeg",
+      "url": "/images/herbs/dacheng/inat-51d4b26df3.jpg",
       "alt": "Bolbostemma paniculatum（Bolbostemma paniculatum）",
       "credit": "(c) zdk0812, some rights reserved (CC BY-NC)",
       "license": "CC-BY-NC",
       "sourceUrl": "https://www.inaturalist.org/taxa/849647",
       "latin": "Bolbostemma paniculatum",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-51d4b26df3.jpg"
     }
   ],
   "docCount": 1

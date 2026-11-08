@@ -335,6 +335,17 @@ function normalizeName(name) {
   return String(name ?? '').replace(/[《》\s·（）()]/g, '').trim()
 }
 
+function thumbUrlFor(url) {
+  if (!url) return ''
+  let name = ''
+  if (url.startsWith('/images/herbs/dacheng/')) name = path.basename(url)
+  else if (url.startsWith('/images/herbs/lecture/')) name = `lecture-${path.basename(url)}`
+  else return ''
+  name = name.replace(/\.(jpe?g|png)$/i, '.jpg')
+  const rel = `/images/herbs/dacheng/thumbs/${name}`
+  return fs.existsSync(path.join(ROOT, 'public', rel)) ? rel : ''
+}
+
 function loadCatalogImageMap() {
   const map = new Map()
   if (!fs.existsSync(CATALOG_FILE)) return map
@@ -434,12 +445,15 @@ function main() {
         providedImageMap.get(normalizeName(entry.name)) ??
         imageMap.get(normalizeName(entry.name)) ??
         remoteImageMap.get(normalizeName(entry.name))
+      const imageWithThumb = image
+        ? { ...image, ...(thumbUrlFor(image.url) ? { thumbUrl: thumbUrlFor(image.url) } : {}) }
+        : null
       const summarySource = entry.profile.effects || entry.profile.indications || entry.quote?.text || entry.sourceText
       return {
         ...entry,
         id,
         summary: oneLine(summarySource).slice(0, 90),
-        images: image ? [image] : [],
+        images: imageWithThumb ? [imageWithThumb] : [],
         docCount: entry.documents.length,
       }
     })

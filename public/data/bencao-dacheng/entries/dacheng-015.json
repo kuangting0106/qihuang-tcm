@@ -109,13 +109,14 @@
   "summary": "清热解毒，凉血止血，止痢",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/157729445/medium.jpeg",
+      "url": "/images/herbs/dacheng/inat-d1902131bb.jpg",
       "alt": "Common Purslane（Portulaca oleracea）",
       "credit": "(c) Pierre Corbrion, some rights reserved (CC BY-NC-SA), uploaded by Pierre Corbrion",
       "license": "CC-BY-NC-SA",
       "sourceUrl": "https://www.inaturalist.org/taxa/58991",
       "latin": "Portulaca oleracea",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-d1902131bb.jpg"
     }
   ],
   "docCount": 2

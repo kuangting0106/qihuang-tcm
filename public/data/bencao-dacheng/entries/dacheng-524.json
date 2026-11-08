@@ -90,13 +90,14 @@
   "summary": "补气养血，润肺止咳，止血，降压，抗癌",
   "images": [
     {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/400790965/medium.jpeg",
+      "url": "/images/herbs/dacheng/inat-6577f492dd.jpg",
       "alt": "European Earwig（Forficula auricularia）",
       "credit": "(c) Craig Biegler, some rights reserved (CC BY-NC), uploaded by Craig Biegler",
       "license": "CC-BY-NC",
       "sourceUrl": "https://www.inaturalist.org/taxa/1470430",
       "latin": "Forficula auricularia",
-      "kind": "原植物"
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-6577f492dd.jpg"
     }
   ],
   "docCount": 1
