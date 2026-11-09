@@ -24,7 +24,7 @@ export const methodTopics: Topic[] = [
   {
     id: 'pulse',
     title: '脉诊',
-    subtitle: '脉象记录、部位与对比方法；具体脉案待补。',
+    subtitle: '李可脉诊经验整理：常见脉象、危重脉象、方证对应、动态观察与三则短案；经验总结，非诊断标准。',
   },
   {
     id: 'inspection',

@@ -5,6 +5,7 @@ import AcupunctureTopic from '@/components/AcupunctureTopic.vue'
 import CaseArticle from '@/components/CaseArticle.vue'
 import InspectionTopic from '@/components/InspectionTopic.vue'
 import MoxibustionTopic from '@/components/MoxibustionTopic.vue'
+import PulseTopic from '@/components/PulseTopic.vue'
 import TenQuestionsTopic from '@/components/TenQuestionsTopic.vue'
 import TreatmentPrinciplesTopic from '@/components/TreatmentPrinciplesTopic.vue'
 import { useCaseApi } from '@/composables/useCaseApi'
@@ -57,8 +58,9 @@ const isTreatmentMethods = computed(
   () => section.value.key === 'methods' && topic.value?.id === 'treatment-methods',
 )
 const isInspection = computed(() => section.value.key === 'methods' && topic.value?.id === 'inspection')
+const isPulse = computed(() => section.value.key === 'methods' && topic.value?.id === 'pulse')
 const isClinicalTopic = computed(
-  () => isTenQuestions.value || isTreatmentMethods.value || isInspection.value,
+  () => isTenQuestions.value || isTreatmentMethods.value || isInspection.value || isPulse.value,
 )
 
 const isCase = computed(() => isCaseRoute.value && !!caseDetail.value)
@@ -110,6 +112,7 @@ const statusLabel = computed(() => {
         <TenQuestionsTopic v-if="isTenQuestions" />
         <TreatmentPrinciplesTopic v-else-if="isTreatmentMethods" />
         <InspectionTopic v-else-if="isInspection" />
+        <PulseTopic v-else-if="isPulse" />
         <AcupunctureTopic v-else-if="isAcupuncture" />
         <MoxibustionTopic v-else-if="isMoxibustion" />
 

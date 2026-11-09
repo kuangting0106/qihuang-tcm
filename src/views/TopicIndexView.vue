@@ -73,8 +73,15 @@ watch(
   },
 )
 
-const readyTopicIds = new Set(['acupuncture', 'moxibustion', 'ten-questions', 'treatment-methods', 'inspection'])
-const clinicalTopicIds = new Set(['ten-questions', 'treatment-methods', 'inspection'])
+const readyTopicIds = new Set([
+  'acupuncture',
+  'moxibustion',
+  'ten-questions',
+  'treatment-methods',
+  'inspection',
+  'pulse',
+])
+const clinicalTopicIds = new Set(['ten-questions', 'treatment-methods', 'inspection', 'pulse'])
 
 function isReady(id: string) {
   return section.value.key === 'cases' || readyTopicIds.has(id)
