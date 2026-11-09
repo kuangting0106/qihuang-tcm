@@ -11,6 +11,7 @@ import {
   pulseIntro,
   pulseOverview,
 } from '@/data/pulse-diagnosis'
+import { pulseMedia, pulseMediaHref } from '@/data/pulse-media'
 </script>
 
 <template>
@@ -31,6 +32,7 @@ import {
 
     <nav class="pulse-nav" aria-label="脉诊页内目录">
       <a href="#overview">总论</a>
+      <a href="#media">图示资料</a>
       <a href="#common">常见脉象</a>
       <a href="#danger">危重脉象</a>
       <a href="#formulas">方证对应</a>
@@ -38,6 +40,31 @@ import {
       <a href="#cases">医案</a>
       <a href="#boundary">边界</a>
     </nav>
+
+    <section id="media" class="pulse-media" aria-labelledby="pulse-media-title">
+      <div v-for="item in pulseMedia" :key="item.id" class="pulse-media__item">
+        <span class="pulse-media__mark" aria-hidden="true">图</span>
+        <div class="pulse-media__body">
+          <p class="eyebrow">MEDIA / 图示资料</p>
+          <h3 id="pulse-media-title">{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+          <div class="pulse-media__meta">
+            <span>{{ item.subtitle }}</span>
+            <span>{{ item.format }}</span>
+            <span>{{ item.credit }}</span>
+          </div>
+          <p class="pulse-media__note">{{ item.note }}</p>
+        </div>
+        <a
+          class="pulse-media__link"
+          :href="pulseMediaHref(item.file)"
+          target="_blank"
+          rel="noopener"
+        >
+          打开视频 ↗
+        </a>
+      </div>
+    </section>
 
     <section id="overview" class="pulse-section">
       <header class="pulse-section__head">
@@ -372,6 +399,81 @@ import {
 .pulse-nav a:hover {
   border-color: var(--jade);
   color: var(--jade);
+}
+
+.pulse-media {
+  display: grid;
+  gap: 10px;
+}
+
+.pulse-media__item {
+  display: grid;
+  grid-template-columns: 46px minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  padding: 16px 18px;
+  border: 1px solid rgba(47, 93, 87, 0.24);
+  border-radius: 6px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(216, 188, 135, 0.16), transparent 18rem),
+    linear-gradient(135deg, rgba(220, 232, 226, 0.78), rgba(255, 252, 245, 0.62));
+}
+
+.pulse-media__mark {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--jade);
+  border-radius: 48% 52% 46% 54%;
+  color: var(--jade);
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  transform: rotate(-4deg);
+}
+
+.pulse-media__body h3 {
+  margin: 3px 0 5px;
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.pulse-media__body > p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  line-height: 1.75;
+}
+
+.pulse-media__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin-top: 6px;
+  color: var(--jade);
+  font-size: 0.68rem;
+}
+
+.pulse-media__note {
+  margin-top: 5px;
+  color: var(--ink-faint) !important;
+  font-size: 0.7rem !important;
+}
+
+.pulse-media__link {
+  flex-shrink: 0;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--jade);
+  color: var(--paper);
+  font-size: 0.76rem;
+  text-decoration: none;
+  transition: background 0.16s ease;
+}
+
+.pulse-media__link:hover {
+  background: var(--cinnabar);
 }
 
 .pulse-section {
@@ -950,6 +1052,17 @@ import {
 @media (max-width: 640px) {
   .pulse {
     gap: 18px;
+  }
+
+  .pulse-media__item {
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 10px;
+    padding: 14px;
+  }
+
+  .pulse-media__link {
+    grid-column: 1 / -1;
+    justify-self: start;
   }
 
   .pulse-hero {

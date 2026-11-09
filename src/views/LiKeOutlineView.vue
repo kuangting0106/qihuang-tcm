@@ -7,6 +7,7 @@ import {
   liKeStages,
   liKeStudyGates,
 } from '@/data/li-ke-outline'
+import { pulseMediaHref } from '@/data/pulse-media'
 </script>
 
 <template>
@@ -80,9 +81,20 @@ import {
               <div class="module-card__tags">
                 <span v-for="tag in module.tags" :key="tag">{{ tag }}</span>
               </div>
-              <RouterLink v-if="module.href" class="module-card__link" :to="module.href">
-                {{ module.hrefLabel }} →
-              </RouterLink>
+              <div class="module-card__links">
+                <RouterLink v-if="module.href" class="module-card__link" :to="module.href">
+                  {{ module.hrefLabel }} →
+                </RouterLink>
+                <a
+                  v-if="module.attachment"
+                  class="module-card__link module-card__link--media"
+                  :href="pulseMediaHref(module.attachment.file)"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  {{ module.attachment.label }} ↗
+                </a>
+              </div>
             </footer>
           </article>
         </div>
@@ -451,12 +463,24 @@ import {
   font-size: 0.64rem;
 }
 
+.module-card__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
 .module-card__link {
   flex-shrink: 0;
   color: var(--cinnabar);
   font-size: 0.76rem;
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.module-card__link--media {
+  color: var(--jade);
 }
 
 .module-card__link:hover {
@@ -765,6 +789,10 @@ import {
 
   .module-card__foot {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .module-card__links {
     align-items: flex-start;
   }
 

@@ -9,6 +9,10 @@ export interface LiKeModule {
   tags: string[]
   href?: string
   hrefLabel?: string
+  attachment?: {
+    label: string
+    file: string
+  }
   caution?: string
 }
 
@@ -28,7 +32,7 @@ export const liKeOutlineIntro = {
     '把 12 份读书整理稿压成一条学习路径：先立阳气与六经，再学辨证与脉诊，最后进入剂量、类方与医论。它是一张读书地图，不是方书，也不能代替原书与师承。',
   meta: ['12 篇研读纲要', '4 个学习阶段', '1 条主线：六经统百病', '经验整理 · 非诊疗指南'],
   note:
-    '据《李可医书经验提纲》压缩包整理。原稿含 OCR 与后人蒸馏痕迹，不等同于李可原书原文；具体条文、剂量与医案须回原书核对。',
+    '据《李可医书经验提纲》压缩包整理。原稿含 OCR 与后人蒸馏痕迹，不等同于李可原书原文；每篇只保留 3–4 个阅读抓手，不复制完整原稿与处方，具体条文、剂量与医案须回原书核对。',
 }
 
 export const liKeStages: LiKeStage[] = [
@@ -105,6 +109,10 @@ export const liKeStages: LiKeStage[] = [
         tags: ['已展开', '四诊'],
         href: '/methods/pulse',
         hrefLabel: '进入脉诊篇',
+        attachment: {
+          label: '观看脉诊图视频',
+          file: '/videos/pulse/maizhentu.mp4',
+        },
       },
     ],
   },
