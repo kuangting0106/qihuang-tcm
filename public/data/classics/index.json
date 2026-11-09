@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T05:45:42.785Z",
+  "generatedAt": "2026-11-09T09:28:05.027Z",
   "books": [
     {
       "id": "xuezhenglun",
@@ -90,6 +90,32 @@
         "chapterCount": 12,
         "volumeCount": 3,
         "charCount": 331522
+      }
+    },
+    {
+      "id": "yuanyundong",
+      "title": "圆运动的古中医学",
+      "author": "彭子益",
+      "stats": {
+        "prefaceCount": 1,
+        "postscriptCount": 0,
+        "frontMatterCount": 0,
+        "chapterCount": 52,
+        "volumeCount": 4,
+        "charCount": 47310
+      }
+    },
+    {
+      "id": "yuanyundong-xu",
+      "title": "圆运动的古中医学（续）",
+      "author": "彭子益 著，李可 主校",
+      "stats": {
+        "prefaceCount": 3,
+        "postscriptCount": 0,
+        "frontMatterCount": 1,
+        "chapterCount": 86,
+        "volumeCount": 8,
+        "charCount": 138508
       }
     }
   ]

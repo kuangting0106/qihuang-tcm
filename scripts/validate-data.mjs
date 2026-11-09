@@ -413,12 +413,14 @@ const expectedClassicAuthors = {
   傅青主女科: '傅山（傅青主）',
   黄帝内经: '倪海厦',
   伤寒论: '倪海厦',
+  圆运动的古中医学: '彭子益',
+  '圆运动的古中医学（续）': '彭子益 著，李可 主校',
 }
 let classicChapters = 0
 let classicChars = 0
 if (classicsIndex) {
-  if (classicsIndex.books.length !== 7) {
-    errors.push(`医书全文数量应为 7，实际 ${classicsIndex.books.length}`)
+  if (classicsIndex.books.length !== 9) {
+    errors.push(`医书全文数量应为 9，实际 ${classicsIndex.books.length}`)
   }
   for (const summary of classicsIndex.books) {
     const bookPath = path.join(classicsDir, `${summary.id}.json`)
