@@ -165,6 +165,12 @@ const router = createRouter({
       meta: { title: '名家讲堂' },
     },
     {
+      path: '/lectures/li-ke',
+      name: 'li-ke-outline',
+      component: () => import('@/views/LiKeOutlineView.vue'),
+      meta: { title: '李可医书经验提纲' },
+    },
+    {
       path: '/processing',
       name: 'processing',
       component: () => import('@/views/ProcessingView.vue'),

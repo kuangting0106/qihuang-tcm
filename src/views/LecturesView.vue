@@ -7,6 +7,9 @@ import {
   type LectureCourse,
   type LectureEpisode,
 } from '@/data/lectures'
+import { liKeStages } from '@/data/li-ke-outline'
+
+const liKeModuleCount = liKeStages.reduce((sum, stage) => sum + stage.modules.length, 0)
 
 const activeEpisodeIds = ref<Record<string, string>>(
   Object.fromEntries(lectureCourses.map((course) => [course.id, course.episodes[0]?.id ?? ''])),
@@ -90,17 +93,47 @@ const totalDuration = computed(() => {
           <p class="eyebrow">LECTURE HALL / 名家讲堂</p>
           <h1>名家讲堂</h1>
           <p class="lecture-hero__lead">
-            按“医家 + 课程”收录视频课件。视频标题或下方直接注明是哪位医家的什么课程，
-            不再拆成伤寒论、傅青主女科、本草纲目等小类。
+            按“医家 + 课程”收录视频课件与文本研读纲要。视频标题或下方直接注明是哪位医家的什么课程，
+            文本课只做学习地图，不替代原书。
           </p>
           <div class="lecture-hero__meta">
-            <span class="chip chip--jade">{{ lectureCourses.length }} 门课程</span>
+            <span class="chip chip--jade">{{ lectureCourses.length }} 门视频课程</span>
             <span class="chip">{{ totalEpisodes }} 集已收录</span>
             <span class="chip chip--gold">{{ totalDuration }}</span>
+            <span class="chip">{{ liKeModuleCount }} 篇研读纲要</span>
           </div>
         </div>
         <div class="lecture-hero__seal" aria-hidden="true">讲</div>
       </header>
+
+      <section class="lecture-library" aria-labelledby="li-ke-outline-title">
+        <div class="lecture-library__copy">
+          <p class="eyebrow">TEXT COURSE / 文本研读</p>
+          <h2 id="li-ke-outline-title">李可医书经验提纲</h2>
+          <p>
+            把 12 份李可读书整理稿压成一条学习路径：先立阳气与六经，再学辨证与脉诊，
+            最后进入剂量、类方与医论。它是读书地图，不是方书。
+          </p>
+          <div class="lecture-library__meta">
+            <span>{{ liKeModuleCount }} 篇纲要</span>
+            <span>{{ liKeStages.length }} 个阶段</span>
+            <span>经验整理 · 非诊疗指南</span>
+          </div>
+          <RouterLink class="btn btn--primary btn--small" to="/lectures/li-ke">
+            进入学习纲要 →
+          </RouterLink>
+        </div>
+
+        <ol class="lecture-library__stages">
+          <li v-for="stage in liKeStages" :key="stage.id">
+            <span class="lecture-library__order">{{ stage.order }}</span>
+            <span class="lecture-library__stage">
+              <strong>{{ stage.title }} · {{ stage.subtitle }}</strong>
+              <small>{{ stage.modules.length }} 篇</small>
+            </span>
+          </li>
+        </ol>
+      </section>
 
       <section
         v-for="course in lectureCourses"
@@ -174,7 +207,7 @@ const totalDuration = computed(() => {
         </div>
         <div>
           <ul>
-            <li><strong>不再设小类</strong>：伤寒论、金匮要略、傅青主女科、本草纲目、千金方等旧分类已移除。</li>
+            <li><strong>两类内容</strong>：视频课程按“医家 + 课程”收录；文本研读只做学习纲要，不替代原书。</li>
             <li><strong>标注方式</strong>：每个视频标题或下方写明“某医家《某书》课程”，不把讲授者写成原作者。</li>
             <li><strong>来源与授权</strong>：只收自有、授权或官方公开视频；来源不明不嵌入，也不提供下载。</li>
             <li><strong>原文优先</strong>：课程是理解入口，具体方药与条文仍回引原书，不用视频替代原文。</li>
@@ -229,6 +262,126 @@ const totalDuration = computed(() => {
   font-size: 2.8rem;
   transform: rotate(-4deg);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.22);
+}
+
+.lecture-library {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+  gap: 30px;
+  align-items: center;
+  overflow: hidden;
+  margin: 26px 0 4px;
+  padding: 24px 26px;
+  border: 1px solid rgba(47, 93, 87, 0.22);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(47, 93, 87, 0.12), transparent 18rem),
+    linear-gradient(135deg, rgba(220, 232, 226, 0.7), rgba(255, 252, 245, 0.62));
+}
+
+.lecture-library::after {
+  content: "读";
+  position: absolute;
+  right: 20px;
+  bottom: -26px;
+  color: var(--jade);
+  font-family: var(--serif);
+  font-size: 8rem;
+  line-height: 1;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.lecture-library__copy {
+  position: relative;
+  z-index: 1;
+}
+
+.lecture-library__copy h2 {
+  margin: 4px 0 8px;
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+}
+
+.lecture-library__copy > p {
+  max-width: 680px;
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+  line-height: 1.9;
+}
+
+.lecture-library__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin: 12px 0 14px;
+  color: var(--jade);
+  font-size: 0.72rem;
+}
+
+.lecture-library__meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lecture-library__meta span::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.lecture-library__stages {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lecture-library__stages li {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 7px 10px;
+  border: 1px solid rgba(47, 93, 87, 0.16);
+  border-radius: 9px;
+  background: rgba(255, 252, 245, 0.52);
+}
+
+.lecture-library__order {
+  color: var(--cinnabar);
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.lecture-library__stage {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+  min-width: 0;
+}
+
+.lecture-library__stage strong {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lecture-library__stage small {
+  flex-shrink: 0;
+  color: var(--ink-faint);
+  font-size: 0.66rem;
 }
 
 .lecture-course {
@@ -437,6 +590,11 @@ const totalDuration = computed(() => {
 }
 
 @media (max-width: 960px) {
+  .lecture-library {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
   .lecture-player-layout {
     grid-template-columns: 1fr;
   }
