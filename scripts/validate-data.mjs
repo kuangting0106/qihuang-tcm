@@ -415,12 +415,13 @@ const expectedClassicAuthors = {
   伤寒论: '倪海厦',
   圆运动的古中医学: '彭子益',
   '圆运动的古中医学（续）': '彭子益 著，李可 主校',
+  脾胃论: '李杲（东垣）',
 }
 let classicChapters = 0
 let classicChars = 0
 if (classicsIndex) {
-  if (classicsIndex.books.length !== 9) {
-    errors.push(`医书全文数量应为 9，实际 ${classicsIndex.books.length}`)
+  if (classicsIndex.books.length !== 10) {
+    errors.push(`医书全文数量应为 10，实际 ${classicsIndex.books.length}`)
   }
   for (const summary of classicsIndex.books) {
     const bookPath = path.join(classicsDir, `${summary.id}.json`)

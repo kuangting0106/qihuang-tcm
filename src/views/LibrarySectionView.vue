@@ -33,10 +33,6 @@ const section = computed(() => payload.value?.section ?? null)
 const prev = computed(() => payload.value?.prev ?? null)
 const next = computed(() => payload.value?.next ?? null)
 
-function formatCount(count: number) {
-  if (count >= 10000) return `${(count / 10000).toFixed(1)} 万字`
-  return `${count} 字`
-}
 </script>
 
 <template>
@@ -82,7 +78,6 @@ function formatCount(count: number) {
             <h1>{{ section.title }}</h1>
             <div class="section-head__meta">
               <span class="chip">{{ isPart ? '自动分段' : '原书篇目' }}</span>
-              <span class="chip">{{ formatCount(section.charCount) }}</span>
               <span v-if="book.duplicateOf" class="chip chip--cinnabar">另一版本</span>
               <span v-if="book.versionNote" class="section-head__note">{{ book.versionNote }}</span>
             </div>

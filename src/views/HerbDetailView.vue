@@ -4,7 +4,6 @@ import { RouterLink, useRoute } from 'vue-router'
 import CitationBadge from '@/components/CitationBadge.vue'
 import SourcedText from '@/components/SourcedText.vue'
 import { HERB_IMAGE_SLOT_LABELS } from '@/types/tcm'
-import { formatCharCount } from '@/composables/useBencaoLectures'
 import { useHerbApi, type HerbDetailPayload } from '@/composables/useHerbApi'
 
 const route = useRoute()
@@ -218,8 +217,7 @@ watch(() => route.params.id, load, { immediate: true })
           <span class="eyebrow">LECTURE / 讲义</span>
           <strong>《神农本草经》讲义：{{ lectureItem.name }}</strong>
           <span>
-            倪海厦讲授整理 · {{ formatCharCount(lectureItem.charCount) }}；
-            原文、历代注家与课堂讲授分层标注。
+            倪海厦讲授整理；原文、历代注家与课堂讲授分层标注。
           </span>
         </span>
         <span class="lecture-link__arrow" aria-hidden="true">→</span>

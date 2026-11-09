@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink } from 'vue-router'
-import { formatCharCount } from '@/composables/useBencaoLectures'
 import { loadBencaoDachengIndex } from '@/composables/useBencaoDacheng'
 import type { BencaoDachengIndex } from '@/types/bencao-dacheng'
 
@@ -153,7 +152,7 @@ onMounted(async () => {
               </p>
               <p class="dacheng-card__summary">{{ item.summary }}</p>
               <div class="dacheng-card__foot">
-                <span>{{ item.docCount }} 种来源 · {{ formatCharCount(item.charCount) }}</span>
+                <span>{{ item.docCount }} 种来源</span>
                 <span aria-hidden="true">→</span>
               </div>
             </div>

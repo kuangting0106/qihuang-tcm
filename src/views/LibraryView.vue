@@ -52,15 +52,7 @@ const heading = computed(() => {
   return activeSubLabel.value ? `${category.value.label} · ${activeSubLabel.value}` : category.value.label
 })
 const hasMore = computed(() => page.value < pages.value)
-const totalChars = computed(() =>
-  categories.value.reduce((sum, item) => sum + item.count, 0),
-)
-
-function formatChars(value: number) {
-  if (value >= 100_000_000) return `${(value / 100_000_000).toFixed(1)} 亿字`
-  if (value >= 10_000) return `${Math.round(value / 10_000)} 万字`
-  return `${value} 字`
-}
+const totalBooks = computed(() => categories.value.reduce((sum, item) => sum + item.count, 0))
 
 async function loadIndex() {
   loadingIndex.value = true
@@ -166,7 +158,7 @@ onMounted(loadIndex)
           </p>
         </div>
         <div class="library-hero__stat">
-          <span>{{ source?.totalBooks ?? totalChars }}</span>
+          <span>{{ source?.totalBooks ?? totalBooks }}</span>
           <small>部古籍</small>
           <span>{{ categories.length }}</span>
           <small>个一级分类</small>
@@ -273,7 +265,7 @@ onMounted(loadIndex)
               <h3>{{ book.title }}</h3>
               <p class="library-card__author">{{ book.author }}<span v-if="book.dynasty"> · {{ book.dynasty }}</span></p>
               <p class="library-card__meta">
-                {{ formatChars(book.charCount) }} · {{ book.sectionCount }} 篇
+                {{ book.sectionCount }} 篇
               </p>
               <p v-if="book.versionNote" class="library-card__note">{{ book.versionNote }}</p>
               <span class="library-card__arrow" aria-hidden="true">→</span>

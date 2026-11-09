@@ -8,7 +8,7 @@ const sourceDir = path.join(root, 'scripts', 'content', 'classics')
 const outDir = path.join(root, 'public', 'data', 'classics')
 
 const PREFACE_RE = /序|跋/
-const FRONT_MATTER_RE = /凡例|例言|校勘|目录/
+const FRONT_MATTER_RE = /凡例|例言|校勘|目录|提要/
 const VOLUME_ONLY_RE = /^卷[一二三四五六七八九十百]+(?:[（(][^）)]*[）)])?$/
 
 function normalizeVolume(value) {
@@ -20,7 +20,7 @@ function isPreface(title) {
 }
 
 function isPostscript(title) {
-  return /跋|书后/.test(title)
+  return /跋|书后|后序/.test(title)
 }
 
 function isFrontMatter(title) {

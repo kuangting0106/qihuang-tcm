@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
-import { formatCharCount } from '@/composables/useClassicLibrary'
 import { useLibraryApi } from '@/composables/useLibraryApi'
 import type { LibraryBookDetail, LibraryIndexPayload } from '@/composables/useLibraryApi'
 
@@ -85,7 +84,6 @@ const firstSection = computed(() => book.value?.sections[0] ?? null)
             <p v-if="book.versionNote" class="book-head__version">{{ book.versionNote }}</p>
           </div>
           <div class="book-head__stats">
-            <div><strong>{{ formatCharCount(book.charCount) }}</strong><small>正文规模</small></div>
             <div><strong>{{ book.sectionCount }}</strong><small>篇目</small></div>
           </div>
         </header>
@@ -117,7 +115,7 @@ const firstSection = computed(() => book.value?.sections[0] ?? null)
                 <span class="toc-list__index">{{ String(index + 1).padStart(2, '0') }}</span>
                 <span class="toc-list__title">{{ section.title }}</span>
                 <span class="toc-list__meta">
-                  {{ section.kind === 'chapter' ? '篇' : '段' }} · {{ formatCharCount(section.charCount) }}
+                  {{ section.kind === 'chapter' ? '篇' : '段' }}
                 </span>
                 <span class="toc-list__arrow" aria-hidden="true">→</span>
               </RouterLink>

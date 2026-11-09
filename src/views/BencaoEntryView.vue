@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import { RouterLink, useRoute, useRouter } from 'vue-router'
-import { formatCharCount } from '@/composables/useBencaoLectures'
 import { useBencaoApi } from '@/composables/useBencaoApi'
 import type { BencaoGroupPayload, BencaoIndexPayload } from '@/composables/useBencaoApi'
 import type { BencaoEntry, BencaoSection } from '@/types/bencao'
@@ -215,7 +214,6 @@ const studySections = computed(() =>
 
           <div class="detail-head__stats">
             <span>{{ entry.sections.length }} 节</span>
-            <span>{{ formatCharCount(entry.charCount) }}</span>
             <small>{{ entry.profile?.sources.join(' · ') }}</small>
           </div>
         </header>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
-import { formatCharCount, loadClassicSection } from '@/composables/useClassicLibrary'
+import { loadClassicSection } from '@/composables/useClassicLibrary'
 import type { ClassicBook, ClassicSection } from '@/types/classics'
 
 type ClassicBookHeader = Pick<ClassicBook, 'id' | 'title' | 'author' | 'source' | 'stats'>
@@ -97,8 +97,6 @@ const displayTitle = computed(() => {
           <h1>{{ displayTitle }}</h1>
           <p class="chapter-head__meta">
             作者：{{ book.author }}
-            <span>·</span>
-            {{ formatCharCount(section.charCount) }}
             <span v-if="section.kind === 'preface'">· 序</span>
             <span v-if="section.kind === 'postscript'">· 跋</span>
             <span v-if="section.kind === 'frontMatter'">· 卷前</span>

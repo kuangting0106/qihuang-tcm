@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
-import { formatCharCount } from '@/composables/useBencaoLectures'
 import { loadBencaoDachengEntry, loadBencaoDachengIndex } from '@/composables/useBencaoDacheng'
 import type { BencaoDachengEntry, BencaoDachengIndex } from '@/types/bencao-dacheng'
 
@@ -97,7 +96,6 @@ watch(entryId, (id) => load(id), { immediate: true })
           </div>
           <div class="detail-head__stats">
             <span>{{ entry.sections.length }} 节</span>
-            <span>{{ formatCharCount(entry.charCount) }}</span>
             <small>原文照录</small>
           </div>
         </header>

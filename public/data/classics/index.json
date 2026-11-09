@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T09:28:05.027Z",
+  "generatedAt": "2026-11-09T10:19:49.667Z",
   "books": [
     {
       "id": "xuezhenglun",
@@ -116,6 +116,19 @@
         "chapterCount": 86,
         "volumeCount": 8,
         "charCount": 138508
+      }
+    },
+    {
+      "id": "piweilun",
+      "title": "脾胃论",
+      "author": "李杲（东垣）",
+      "stats": {
+        "prefaceCount": 2,
+        "postscriptCount": 1,
+        "frontMatterCount": 1,
+        "chapterCount": 35,
+        "volumeCount": 3,
+        "charCount": 42556
       }
     }
   ]

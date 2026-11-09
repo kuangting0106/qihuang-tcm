@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
-import { formatCharCount, loadClassicCatalog } from '@/composables/useClassicLibrary'
+import { loadClassicCatalog } from '@/composables/useClassicLibrary'
 import { fetchLibraryIndex } from '@/composables/useLibraryApi'
 import type { Citation } from '@/types/tcm'
 import type { ClassicLibraryIndex } from '@/types/classics'
@@ -41,7 +41,6 @@ const libraryStats = computed(() => {
       0,
     ),
     prefaces: books.reduce((sum, book) => sum + (book.stats?.prefaceCount ?? 0), 0),
-    chars: books.reduce((sum, book) => sum + (book.stats?.charCount ?? book.charCount ?? 0), 0),
   }
 })
 
@@ -101,7 +100,6 @@ const stats = computed(() => ({
         <div class="classic-stats">
           <div><strong>{{ libraryStats.books }}</strong><span>部全文</span></div>
           <div><strong>{{ libraryStats.chapters }}</strong><span>篇正文</span></div>
-          <div><strong>{{ libraryStats.chars ? formatCharCount(libraryStats.chars) : '—' }}</strong><span>原文规模</span></div>
           <div><strong>{{ stats.entries }}</strong><span>条引文</span></div>
         </div>
       </header>
@@ -132,7 +130,6 @@ const stats = computed(() => ({
               {{ book.stats?.chapterCount ?? 0 }} 篇 · {{ book.stats?.prefaceCount ?? 0 }} 篇序跋 ·
               {{ book.stats?.volumeCount ?? 0 }} 卷
             </p>
-            <p class="book-card__size">{{ formatCharCount(book.stats?.charCount ?? 0) }}</p>
             <span class="book-card__link">进入全书 →</span>
           </RouterLink>
         </div>

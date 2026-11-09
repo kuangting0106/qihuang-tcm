@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
-import { formatCharCount } from '@/composables/useBencaoLectures'
 import { useBencaoApi } from '@/composables/useBencaoApi'
 import type { BencaoIndexPayload } from '@/composables/useBencaoApi'
 
@@ -28,9 +27,6 @@ const supplementGroups = computed(() =>
 const totalEntries = computed(() =>
   (index.value?.groups ?? []).reduce((sum, item) => sum + item.count, 0),
 )
-const totalChars = computed(() =>
-  (index.value?.groups ?? []).reduce((sum, item) => sum + item.charCount, 0),
-)
 </script>
 
 <template>
@@ -55,7 +51,6 @@ const totalChars = computed(() =>
           <div class="library-hero__meta">
             <span class="chip chip--jade">{{ totalEntries }} 条</span>
             <span class="chip">6 组</span>
-            <span class="chip chip--gold">{{ formatCharCount(totalChars) }}</span>
           </div>
         </div>
         <div class="library-hero__seal" aria-hidden="true">本</div>
@@ -108,7 +103,7 @@ const totalChars = computed(() =>
               :to="`/bencao/intro/${item.id}`"
             >
               <span class="intro-card__title">{{ item.title }}</span>
-              <span class="intro-card__meta">{{ item.subtitle }} · {{ formatCharCount(item.charCount) }}</span>
+              <span class="intro-card__meta">{{ item.subtitle }}</span>
               <span class="intro-card__arrow" aria-hidden="true">→</span>
             </RouterLink>
           </div>
@@ -136,7 +131,7 @@ const totalChars = computed(() =>
               </span>
               <span class="group-card__subtitle">{{ item.subtitle }}</span>
               <span class="group-card__desc">{{ item.description }}</span>
-              <span class="group-card__meta">{{ formatCharCount(item.charCount) }} · 查看目录 →</span>
+              <span class="group-card__meta">查看目录 →</span>
             </RouterLink>
           </div>
         </section>
@@ -164,7 +159,7 @@ const totalChars = computed(() =>
               </span>
               <span class="group-card__subtitle">{{ item.subtitle }}</span>
               <span class="group-card__desc">{{ item.description }}</span>
-              <span class="group-card__meta">{{ formatCharCount(item.charCount) }} · 查看目录 →</span>
+              <span class="group-card__meta">查看目录 →</span>
             </RouterLink>
           </div>
         </section>

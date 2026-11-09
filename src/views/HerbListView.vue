@@ -3,7 +3,6 @@ import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute, useRouter } from 'vue-router'
 import HerbCard from '@/components/HerbCard.vue'
 import HerbPropertyPrinciples from '@/components/HerbPropertyPrinciples.vue'
-import { formatCharCount } from '@/composables/useBencaoLectures'
 import { loadBencaoDachengTaxonomy } from '@/composables/useBencaoDacheng'
 import {
   useHerbApi,
@@ -32,9 +31,7 @@ const categoryFilter = ref(typeof route.query.category === 'string' ? route.quer
 const taxonomy = computed(() => meta.value?.taxonomy ?? null)
 const counts = computed(() => meta.value?.counts ?? null)
 const lectureCount = computed(() => counts.value?.lectureEntries ?? 0)
-const lectureChars = computed(() => counts.value?.lectureChars ?? 0)
 const dachengCount = ref(0)
-const dachengChars = ref(0)
 const dachengIndex = ref<BencaoDachengTaxonomy | null>(null)
 
 onMounted(async () => {
@@ -42,7 +39,6 @@ onMounted(async () => {
     const index = await loadBencaoDachengTaxonomy()
     dachengIndex.value = index
     dachengCount.value = index.total
-    dachengChars.value = index.chars
   } catch {
     // 本草大全未加载时不影响本草主页。
   }
@@ -454,7 +450,7 @@ const meridianOptions = computed(() =>
           </span>
         </span>
         <span class="lecture-entry__meta">
-          <span v-if="lectureCount">{{ lectureCount }} 条 · {{ formatCharCount(lectureChars) }}</span>
+          <span v-if="lectureCount">{{ lectureCount }} 条</span>
           <span v-else>进入讲义</span>
           <span class="lecture-entry__arrow" aria-hidden="true">→</span>
         </span>
@@ -471,7 +467,7 @@ const meridianOptions = computed(() =>
           </span>
         </span>
         <span class="lecture-entry__meta">
-          <span v-if="dachengCount">{{ dachengCount }} 味 · {{ formatCharCount(dachengChars) }}</span>
+          <span v-if="dachengCount">{{ dachengCount }} 味</span>
           <span v-else>进入本草大全</span>
           <span class="lecture-entry__arrow" aria-hidden="true">→</span>
         </span>

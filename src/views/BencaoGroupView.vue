@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
-import { formatCharCount } from '@/composables/useBencaoLectures'
 import { useBencaoApi } from '@/composables/useBencaoApi'
 import type { BencaoGroupPayload, BencaoIndexPayload } from '@/composables/useBencaoApi'
 
@@ -47,9 +46,6 @@ const filtered = computed(() => {
   )
 })
 
-const totalChars = computed(() =>
-  (group.value?.entries ?? []).reduce((sum, entry) => sum + entry.charCount, 0),
-)
 </script>
 
 <template>
@@ -83,7 +79,6 @@ const totalChars = computed(() =>
           </div>
           <dl class="group-head__stats">
             <div><dt>{{ group.entries.length }}</dt><dd>条</dd></div>
-            <div><dt>{{ formatCharCount(totalChars) }}</dt><dd>讲义</dd></div>
           </dl>
         </header>
 
@@ -125,7 +120,7 @@ const totalChars = computed(() =>
             <span class="entry-card__body">
               <span class="entry-card__title">{{ entry.title }}</span>
               <span class="entry-card__meta">
-                {{ entry.sectionCount }} 节 · {{ formatCharCount(entry.charCount) }}
+                {{ entry.sectionCount }} 节
               </span>
             </span>
             <span class="entry-card__arrow" aria-hidden="true">→</span>

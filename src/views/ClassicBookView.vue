@@ -2,7 +2,6 @@
 import { computed, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import {
-  formatCharCount,
   loadClassicBook,
 } from '@/composables/useClassicLibrary'
 import type { ClassicBook, ClassicSection } from '@/types/classics'
@@ -99,7 +98,6 @@ function displayTitle(section: ClassicSection, siblings: ClassicSection[]): stri
             <div><dt>{{ book.stats.chapterCount }}</dt><dd>篇正文</dd></div>
             <div><dt>{{ book.stats.prefaceCount }}</dt><dd>篇序跋</dd></div>
             <div><dt>{{ book.stats.volumeCount }}</dt><dd>卷</dd></div>
-            <div><dt>{{ formatCharCount(book.stats.charCount) }}</dt><dd>原文</dd></div>
           </dl>
         </header>
 
@@ -129,7 +127,6 @@ function displayTitle(section: ClassicSection, siblings: ClassicSection[]): stri
                 <article v-for="section in book.prefaces" :key="section.id" class="section-card paper-panel">
                   <div class="section-card__top">
                     <h3>{{ displayTitle(section, book.prefaces) }}</h3>
-                    <span>{{ section.charCount }} 字</span>
                   </div>
                   <p>{{ excerpt(section) }}</p>
                   <RouterLink class="text-link" :to="`/classics/${book.id}/${section.id}`">
@@ -148,7 +145,6 @@ function displayTitle(section: ClassicSection, siblings: ClassicSection[]): stri
                 <article v-for="section in book.frontMatter" :key="section.id" class="section-card paper-panel">
                   <div class="section-card__top">
                     <h3>{{ displayTitle(section, book.frontMatter) }}</h3>
-                    <span>{{ section.charCount }} 字</span>
                   </div>
                   <p>{{ excerpt(section) }}</p>
                   <RouterLink class="text-link" :to="`/classics/${book.id}/${section.id}`">
@@ -177,7 +173,7 @@ function displayTitle(section: ClassicSection, siblings: ClassicSection[]): stri
                   class="chapter-link"
                 >
                   <span class="chapter-link__title">{{ displayTitle(chapter, volume.chapters) }}</span>
-                  <span class="chapter-link__meta">{{ chapter.charCount }} 字 →</span>
+                  <span class="chapter-link__meta">读全文 →</span>
                 </RouterLink>
               </div>
             </section>
@@ -191,7 +187,6 @@ function displayTitle(section: ClassicSection, siblings: ClassicSection[]): stri
                 <article v-for="section in book.postscripts" :key="section.id" class="section-card paper-panel">
                   <div class="section-card__top">
                     <h3>{{ displayTitle(section, book.postscripts) }}</h3>
-                    <span>{{ section.charCount }} 字</span>
                   </div>
                   <p>{{ excerpt(section) }}</p>
                   <RouterLink class="text-link" :to="`/classics/${book.id}/${section.id}`">
