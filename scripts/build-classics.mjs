@@ -212,6 +212,7 @@ function parseTaggedBook(book) {
     id: book.id,
     title: book.title,
     author: book.author,
+    tier: book.tier,
     source: {
       file: book.file,
       note:
@@ -291,6 +292,7 @@ function parseMarkdownBook(book) {
     id: book.id,
     title: book.title,
     author: book.author,
+    tier: book.tier,
     source: {
       file: book.dir,
       note: book.note,
@@ -413,6 +415,7 @@ function parseShanghanBook(book) {
     id: book.id,
     title: book.title,
     author: book.author,
+    tier: book.tier,
     source: { file: book.dir, note: book.note },
     prefaces,
     postscripts: [],
@@ -450,6 +453,7 @@ export function buildClassics() {
       id: book.id,
       title: book.title,
       author: book.author,
+      tier: book.tier,
       stats: book.stats,
     })),
   }

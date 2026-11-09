@@ -45,6 +45,12 @@ const libraryStats = computed(() => {
 })
 
 const classics = computed(() => classicSources.value)
+const primaryBooks = computed(() =>
+  (library.value?.books ?? []).filter((book) => book.tier !== 'secondary'),
+)
+const secondaryBooks = computed(() =>
+  (library.value?.books ?? []).filter((book) => book.tier === 'secondary'),
+)
 
 interface ClassicWork {
   key: string
@@ -118,7 +124,7 @@ const stats = computed(() => ({
 
         <div v-else class="book-grid">
           <RouterLink
-            v-for="book in library.books"
+            v-for="book in primaryBooks"
             :key="book.id"
             :to="`/classics/${book.id}`"
             class="book-card paper-panel"
@@ -132,6 +138,33 @@ const stats = computed(() => ({
             </p>
             <span class="book-card__link">进入全书 →</span>
           </RouterLink>
+        </div>
+
+        <div v-if="secondaryBooks.length" class="secondary-library">
+          <div class="secondary-library__head">
+            <div>
+              <p class="eyebrow">MORE FULL TEXTS / 其他全本</p>
+              <h3>下一层级</h3>
+            </div>
+            <p>仍可逐篇阅读；从主书架移入此处，不删除原书。</p>
+          </div>
+          <div class="book-grid book-grid--secondary">
+            <RouterLink
+              v-for="book in secondaryBooks"
+              :key="book.id"
+              :to="`/classics/${book.id}`"
+              class="book-card paper-panel"
+            >
+              <span class="book-card__kicker">FULL TEXT</span>
+              <h3>{{ book.title }}</h3>
+              <p class="book-card__author">作者：{{ book.author }}</p>
+              <p class="book-card__meta">
+                {{ book.stats?.chapterCount ?? 0 }} 篇 · {{ book.stats?.prefaceCount ?? 0 }} 篇序跋 ·
+                {{ book.stats?.volumeCount ?? 0 }} 卷
+              </p>
+              <span class="book-card__link">进入全书 →</span>
+            </RouterLink>
+          </div>
         </div>
       </section>
 
@@ -297,6 +330,45 @@ const stats = computed(() => ({
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   gap: 14px;
+}
+
+.secondary-library {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px dashed var(--line-strong);
+}
+
+.secondary-library__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-end;
+  margin-bottom: 14px;
+}
+
+.secondary-library__head h3 {
+  margin-top: 2px;
+  font-size: 1.25rem;
+}
+
+.secondary-library__head > p {
+  max-width: 340px;
+  color: var(--ink-faint);
+  font-size: 0.76rem;
+  line-height: 1.7;
+}
+
+.book-grid--secondary {
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+}
+
+.book-grid--secondary .book-card {
+  min-height: 200px;
+  background: rgba(255, 252, 245, 0.42);
+}
+
+.book-grid--secondary .book-card__kicker {
+  color: var(--ink-faint);
 }
 
 .book-card {

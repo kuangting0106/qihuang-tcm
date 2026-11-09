@@ -407,6 +407,7 @@ try {
 }
 const expectedClassicAuthors = {
   血证论: '唐容川',
+  李可老中医急危重症疑难病经验专辑: '李可',
   伤寒捷诀: '严则庵纂辑、裘庆元辑',
   伤寒论辑义: '丹波元简',
   石室秘录: '陈士铎',
@@ -420,8 +421,8 @@ const expectedClassicAuthors = {
 let classicChapters = 0
 let classicChars = 0
 if (classicsIndex) {
-  if (classicsIndex.books.length !== 10) {
-    errors.push(`医书全文数量应为 10，实际 ${classicsIndex.books.length}`)
+  if (classicsIndex.books.length !== 11) {
+    errors.push(`医书全文数量应为 11，实际 ${classicsIndex.books.length}`)
   }
   for (const summary of classicsIndex.books) {
     const bookPath = path.join(classicsDir, `${summary.id}.json`)

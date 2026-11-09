@@ -42,6 +42,7 @@ export interface ClassicBookSummary {
   id: string
   title: string
   author: string
+  tier?: 'primary' | 'secondary'
   dynasty?: string
   category?: string
   subcategory?: string

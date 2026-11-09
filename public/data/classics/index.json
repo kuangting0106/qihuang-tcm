@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T10:19:49.667Z",
+  "generatedAt": "2026-11-09T11:26:58.600Z",
   "books": [
     {
       "id": "xuezhenglun",
@@ -15,9 +15,23 @@
       }
     },
     {
+      "id": "like-jizhen",
+      "title": "李可老中医急危重症疑难病经验专辑",
+      "author": "李可",
+      "stats": {
+        "prefaceCount": 1,
+        "postscriptCount": 0,
+        "frontMatterCount": 0,
+        "chapterCount": 56,
+        "volumeCount": 8,
+        "charCount": 222607
+      }
+    },
+    {
       "id": "shanghan-jiejue",
       "title": "伤寒捷诀",
       "author": "严则庵纂辑、裘庆元辑",
+      "tier": "secondary",
       "stats": {
         "prefaceCount": 1,
         "postscriptCount": 0,
