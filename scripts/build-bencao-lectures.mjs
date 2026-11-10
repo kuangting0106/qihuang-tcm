@@ -637,6 +637,7 @@ function mergeAliasEntries(groups) {
     if (primary.title !== canonical) primary.ancientName = primary.title
     primary.title = canonical
     primary.canonicalName = canonical
+    for (const alias of extraAliases[canonical] ?? []) aliasSet.add(alias)
     primary.alsoKnownAs = [...aliasSet].filter((name) => name && name !== canonical)
     primary.pinyin = pinyinFor(canonical)
     if (!mergedByGroup.has(primary.groupId)) mergedByGroup.set(primary.groupId, [])
