@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T11:26:58.600Z",
+  "generatedAt": "2026-11-10T09:54:10.651Z",
   "books": [
     {
       "id": "xuezhenglun",
@@ -107,16 +107,16 @@
       }
     },
     {
-      "id": "yuanyundong",
-      "title": "圆运动的古中医学",
-      "author": "彭子益",
+      "id": "jingfang-shiyanlu",
+      "title": "经方实验录",
+      "author": "曹颖甫",
       "stats": {
         "prefaceCount": 1,
         "postscriptCount": 0,
         "frontMatterCount": 0,
-        "chapterCount": 52,
-        "volumeCount": 4,
-        "charCount": 47310
+        "chapterCount": 92,
+        "volumeCount": 3,
+        "charCount": 94142
       }
     },
     {
@@ -143,6 +143,20 @@
         "chapterCount": 35,
         "volumeCount": 3,
         "charCount": 42556
+      }
+    },
+    {
+      "id": "yuanyundong",
+      "title": "圆运动的古中医学",
+      "author": "彭子益",
+      "tier": "secondary",
+      "stats": {
+        "prefaceCount": 1,
+        "postscriptCount": 0,
+        "frontMatterCount": 0,
+        "chapterCount": 52,
+        "volumeCount": 4,
+        "charCount": 47310
       }
     }
   ]

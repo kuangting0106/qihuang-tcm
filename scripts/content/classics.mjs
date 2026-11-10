@@ -63,11 +63,20 @@ export const classicBooks = [
     note: '据倪海厦《人纪·伤寒论》讲义 Markdown 整理，保留序言、前言、辨六经正文、附灵枢章节与度量衡附录；条文、方药、讲解按原顺序录入，未逐字校勘。方药剂量以原书影印本为准。',
   },
   {
+    id: 'jingfang-shiyanlu',
+    title: '经方实验录',
+    author: '曹颖甫',
+    file: 'jingfang-shiyanlu.txt',
+    order: 9,
+    note: '据殆知阁整理本《经方实验录》转码整理，民国曹颖甫撰。保留原序、上中下三卷、92 篇医案及全部按语；条文、处方与剂量按原顺序录入，未删节、未校勘。方药剂量仅供文献学习，请勿自行照方用药。',
+  },
+  {
     id: 'yuanyundong',
     title: '圆运动的古中医学',
     author: '彭子益',
     file: 'yuanyundong.txt',
-    order: 9,
+    order: 12,
+    tier: 'secondary',
     note: '据用户提供 PDF《圓運動的古中醫學1.pdf》整理，源文件 70 页，含原理上篇、古方上篇、温病本气篇，并非全书完整本。已清理页眉页码，保留原顺序与文字；PDF 提取有少量缺字，以原书为准。',
   },
   {

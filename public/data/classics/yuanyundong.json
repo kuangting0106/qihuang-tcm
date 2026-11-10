@@ -2,6 +2,7 @@
   "id": "yuanyundong",
   "title": "圆运动的古中医学",
   "author": "彭子益",
+  "tier": "secondary",
   "source": {
     "file": "yuanyundong.txt",
     "note": "据用户提供 PDF《圓運動的古中醫學1.pdf》整理，源文件 70 页，含原理上篇、古方上篇、温病本气篇，并非全书完整本。已清理页眉页码，保留原顺序与文字；PDF 提取有少量缺字，以原书为准。"
