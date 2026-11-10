@@ -1,0 +1,56 @@
+{
+  "id": "maifa",
+  "number": "06",
+  "stage": "立根",
+  "title": "脉诊经验",
+  "summary": "常见脉象、危重脉象、方证对应、动态观察与三则医案。",
+  "sourceFile": "06_maifa.md",
+  "charCount": 1563,
+  "sectionCount": 7,
+  "introHtml": "",
+  "sections": [
+    {
+      "id": "section-1",
+      "number": "01",
+      "title": "一、李可脉诊总论",
+      "html": "<h3>脉诊的重要性</h3>\n<ul>\n<li>脉诊是四诊之一，不可偏废</li>\n<li>但不可单纯依赖脉象，需四诊合参</li>\n<li>脉象与证候不符时，以病人的正气强弱为转归</li>\n</ul>\n<h3>李可的脉诊特色</h3>\n<ul>\n<li>强调脉象与整体辨证相结合</li>\n<li>不拘泥于脉象的固定含义</li>\n<li>注重脉象的动态变化</li>\n</ul>\n"
+    },
+    {
+      "id": "section-2",
+      "number": "02",
+      "title": "二、常见脉象辨析",
+      "html": "<h3>沉脉</h3>\n<ul>\n<li><strong>传统观点</strong>：沉脉主里证</li>\n<li><strong>李可经验</strong>：沉细脉未必是虚证</li>\n<li><strong>临床意义</strong>：寒邪直中少阴时，脉象反沉细</li>\n<li><strong>鉴别</strong>：需结合体质、症状综合判断</li>\n</ul>\n<h3>细脉</h3>\n<ul>\n<li><strong>传统观点</strong>：细脉主虚证</li>\n<li><strong>李可经验</strong>：细脉可见于阳虚、寒凝</li>\n<li><strong>临床意义</strong>：少阴病脉微细，但欲寐</li>\n<li><strong>治疗</strong>：四逆汤回阳</li>\n</ul>\n<h3>浮脉</h3>\n<ul>\n<li><strong>传统观点</strong>：浮脉主表证</li>\n<li><strong>李可经验</strong>：虚阳外越时，脉象可能浮大</li>\n<li><strong>鉴别</strong>：浮大有力vs浮大无根</li>\n<li><strong>临床意义</strong>：浮大无根为亡阳之兆</li>\n</ul>\n<h3>弦脉</h3>\n<ul>\n<li><strong>传统观点</strong>：弦脉主肝胆病、痛证</li>\n<li><strong>李可经验</strong>：弦脉可见于少阳病、寒邪凝滞</li>\n<li><strong>临床意义</strong>：少阳病脉弦，柴胡证</li>\n</ul>\n<h3>滑脉</h3>\n<ul>\n<li><strong>传统观点</strong>：滑脉主痰饮、食积、妊娠</li>\n<li><strong>李可经验</strong>：滑脉可见于实热、痰热</li>\n<li><strong>鉴别</strong>：需结合舌象、症状</li>\n</ul>\n<h3>涩脉</h3>\n<ul>\n<li><strong>传统观点</strong>：涩脉主血瘀、精伤</li>\n<li><strong>李可经验</strong>：涩脉可见于气滞血瘀</li>\n<li><strong>临床意义</strong>：需活血化瘀</li>\n</ul>\n"
+    },
+    {
+      "id": "section-3",
+      "number": "03",
+      "title": "三、危重脉象",
+      "html": "<h3>亡阳脉象</h3>\n<ul>\n<li><strong>脉微细欲绝</strong>：阳气将脱，最危重</li>\n<li><strong>脉浮大无根</strong>：虚阳外越，危在旦夕</li>\n<li><strong>治法</strong>：破格救心汤回阳固脱</li>\n</ul>\n<h3>真脏脉象</h3>\n<ul>\n<li><strong>脉象特征</strong>：无胃气、无神、无根</li>\n<li><strong>临床意义</strong>：预后不良</li>\n<li><strong>处理</strong>：尽力救治，坦诚告知</li>\n</ul>\n<h3>阴盛格阳脉象</h3>\n<ul>\n<li><strong>脉象特征</strong>：沉微欲绝，但面赤身热</li>\n<li><strong>临床意义</strong>：阴寒内盛，逼阳外浮</li>\n<li><strong>治法</strong>：通脉四逆汤</li>\n</ul>\n"
+    },
+    {
+      "id": "section-4",
+      "number": "04",
+      "title": "四、脉象与方证对应",
+      "html": "<h3>少阴病脉象</h3>\n<ul>\n<li><strong>脉微细</strong>：四逆汤</li>\n<li><strong>脉微欲绝</strong>：通脉四逆汤</li>\n<li><strong>脉沉</strong>：麻黄附子细辛汤</li>\n</ul>\n<h3>太阴病脉象</h3>\n<ul>\n<li><strong>脉缓弱</strong>：理中汤</li>\n<li><strong>脉沉迟</strong>：附子理中汤</li>\n</ul>\n<h3>太阳病脉象</h3>\n<ul>\n<li><strong>脉浮缓</strong>：桂枝汤</li>\n<li><strong>脉浮紧</strong>：麻黄汤</li>\n</ul>\n<h3>少阳病脉象</h3>\n<ul>\n<li><strong>脉弦</strong>：小柴胡汤</li>\n<li><strong>脉弦细</strong>：柴胡桂枝干姜汤</li>\n</ul>\n<h3>阳明病脉象</h3>\n<ul>\n<li><strong>脉洪大</strong>：白虎汤</li>\n<li><strong>脉沉实</strong>：承气汤</li>\n</ul>\n"
+    },
+    {
+      "id": "section-5",
+      "number": "05",
+      "title": "五、脉诊的动态观察",
+      "html": "<h3>服药后的脉象变化</h3>\n<ul>\n<li><strong>阳回脉象</strong>：由沉微转为沉缓，由细弱转为有力</li>\n<li><strong>邪退脉象</strong>：由紧弦转为缓和</li>\n<li><strong>恶化脉象</strong>：由有力转为无力，由缓转为微</li>\n</ul>\n<h3>脉象与预后</h3>\n<ul>\n<li><strong>有胃气</strong>：脉象从容和缓，预后良好</li>\n<li><strong>无胃气</strong>：脉象弦硬紧急，预后不良</li>\n<li><strong>有根</strong>：尺脉有力，肾气未绝</li>\n<li><strong>无根</strong>：尺脉微弱，肾气将绝</li>\n</ul>\n"
+    },
+    {
+      "id": "section-6",
+      "number": "06",
+      "title": "六、李可脉诊医案",
+      "html": "<h3>医案1：假阳证的脉象</h3>\n<ul>\n<li><strong>患者</strong>：杨某，30岁</li>\n<li><strong>症状</strong>：头痛项强，恶寒发热，无汗咽痛</li>\n<li><strong>脉象</strong>：沉细</li>\n<li><strong>辨证</strong>：寒邪直中少阴</li>\n<li><strong>治法</strong>：麻黄附子细辛汤</li>\n<li><strong>疗效</strong>：服后得汗，次日痊愈</li>\n</ul>\n<h3>医案2：亡阳脉象</h3>\n<ul>\n<li><strong>患者</strong>：60岁垂死老妇</li>\n<li><strong>症状</strong>：四肢冰冷测不到血压</li>\n<li><strong>脉象</strong>：微细欲绝</li>\n<li><strong>辨证</strong>：少阴病，阳气将脱</li>\n<li><strong>治法</strong>：破格重用附子150g于四逆加人参汤中</li>\n<li><strong>疗效</strong>：1小时后起死回生</li>\n</ul>\n<h3>医案3：虚阳外越脉象</h3>\n<ul>\n<li><strong>患者</strong>：脚放冰上才能入睡</li>\n<li><strong>症状</strong>：每到晚上睡觉时，脚必须放在冰上才能入睡</li>\n<li><strong>脉象</strong>：浮大，重按无力</li>\n<li><strong>辨证</strong>：虚阳外越</li>\n<li><strong>治法</strong>：四逆汤</li>\n<li><strong>疗效</strong>：两三付药就好</li>\n</ul>\n<hr>\n"
+    },
+    {
+      "id": "section-7",
+      "number": "07",
+      "title": "诚实边界",
+      "html": "<p><strong>信息来源</strong>：《李可老中医急危重症疑难病经验专辑》《李可医论专辑》</p>\n<p><strong>局限性</strong>：</p>\n<ul>\n<li>脉诊需要长期临床实践才能掌握</li>\n<li>李可的脉诊经验基于其个人临床，可能有主观性</li>\n<li>初学者需在有经验的中医师指导下学习脉诊</li>\n<li>脉象的判读需结合四诊，不可孤立看待</li>\n</ul>\n"
+    }
+  ],
+  "sourceNote": "本页按原稿 H2 分节，正文未删减，仅做 Markdown 排版。原稿含 OCR/蒸馏痕迹与具体处方剂量，仅供文献学习，不能照方用药。"
+}

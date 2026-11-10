@@ -1,0 +1,68 @@
+{
+  "id": "zhenghou",
+  "number": "05",
+  "stage": "立根",
+  "title": "辨证要点与假证识别",
+  "summary": "阴阳总纲、假阳证十大场景、假阴证、各经假证与五步辨证。",
+  "sourceFile": "05_zhenghou.md",
+  "charCount": 2974,
+  "sectionCount": 9,
+  "introHtml": "<blockquote>\n<p><strong>核心原则</strong>：阴阳一错，动手便错。假证识别是李可临床最核心的能力之一。</p>\n</blockquote>\n<hr>\n",
+  "sections": [
+    {
+      "id": "section-1",
+      "number": "01",
+      "title": "一、阴阳判别总纲",
+      "html": "<h3>核心原则</h3>\n<ul>\n<li>以病人的正气强弱为转归</li>\n<li>正气强者，受邪即病，从阳化热</li>\n<li>正气虚者，卫外不固，从阴化寒</li>\n<li>阴阳为纲，寒热虚实分型</li>\n</ul>\n<h3>辨阴阳的重要性</h3>\n<ul>\n<li>阴阳一错，动手便错</li>\n<li>真热假寒、大实有羸状，需仔细辨明真假</li>\n<li>不可被假象迷惑</li>\n</ul>\n<hr>\n"
+    },
+    {
+      "id": "section-2",
+      "number": "02",
+      "title": "二、假阳证识别（重点！）",
+      "html": "<h3>什么是假阳证</h3>\n<ul>\n<li>阴寒内盛，逼阳外浮</li>\n<li>表现为热象，本质是寒证</li>\n<li>临床上极易误诊</li>\n</ul>\n<h3>假阳证十大场景</h3>\n<h4>场景1：目赤（眼睛发红）</h4>\n<ul>\n<li><strong>看似</strong>：肝火上炎</li>\n<li><strong>实为</strong>：虚阳上浮·阴寒内盛</li>\n<li><strong>鉴别</strong>：目赤+四肢冷+脉沉细=假阳；目赤+口苦+脉弦数=真肝火</li>\n<li><strong>治法</strong>：四逆汤回阳，不可清肝泻火</li>\n<li><strong>李可原话</strong>：「目赤、咽痛、高热俱属假象」</li>\n</ul>\n<h4>场景2：咽痛（咽喉肿痛）</h4>\n<ul>\n<li><strong>看似</strong>：风热咽痛</li>\n<li><strong>实为</strong>：少阴咽痛·阴寒逼火上浮</li>\n<li><strong>鉴别</strong>：咽痛+脉沉细+但欲寐=少阴咽痛；咽痛+脉浮数+发热=风热咽痛</li>\n<li><strong>治法</strong>：桔甘四逆汤，热药冷服</li>\n<li><strong>误治后果</strong>：用银翘散则加重</li>\n</ul>\n<h4>场景3：高热（体温很高）</h4>\n<ul>\n<li><strong>看似</strong>：实热证</li>\n<li><strong>实为</strong>：阴盛格阳·真寒假热</li>\n<li><strong>鉴别</strong>：高热+面赤如妆+四肢冰冷+脉微细=真寒假热；高热+大汗+脉洪大=真热</li>\n<li><strong>治法</strong>：四逆汤回阳，不可清热</li>\n<li><strong>关键线索</strong>：高热但欲寐、高热但蜷卧、高热但不想喝水</li>\n</ul>\n<h4>场景4：面红如妆</h4>\n<ul>\n<li><strong>看似</strong>：实火/肝阳上亢</li>\n<li><strong>实为</strong>：虚阳外越·戴阳证</li>\n<li><strong>鉴别</strong>：面红如妆+四肢冷+脉微细=虚阳外越；面红满目+脉弦有力=肝阳上亢</li>\n<li><strong>治法</strong>：四逆汤回阳</li>\n<li><strong>特征</strong>：面色嫩红，如化妆般浮于表面，非深红满面</li>\n</ul>\n<h4>场景5：无苔舌</h4>\n<ul>\n<li><strong>看似</strong>：阴虚</li>\n<li><strong>实为</strong>：气虚阳虚甚至亡阳（李可独特见解）</li>\n<li><strong>鉴别</strong>：无苔舌+脉微细+但欲寐=阳虚；无苔舌+脉细数+口干=阴虚</li>\n<li><strong>治法</strong>：四逆加人参汤</li>\n<li><strong>原理</strong>：阳虚气化不及，津液不能蒸腾上达</li>\n<li><strong>李可经验</strong>：少则4小时，多则一昼夜，干红无苔舌全数生苔生津</li>\n</ul>\n<h4>场景6：糖尿病口渴</h4>\n<ul>\n<li><strong>看似</strong>：阴虚燥热（消渴）</li>\n<li><strong>实为</strong>：火不生土·脾肾阳虚</li>\n<li><strong>鉴别</strong>：口渴+膝冷+夜尿多=阳虚；口渴+大汗+脉洪大=阳明热盛</li>\n<li><strong>治法</strong>：附子理中汤合四逆汤</li>\n<li><strong>李可原话</strong>：「千万别用六味地黄丸，要用金匮肾气丸」</li>\n</ul>\n<h4>场景7：高血压面红头晕</h4>\n<ul>\n<li><strong>看似</strong>：肝阳上亢</li>\n<li><strong>实为</strong>：浊阴窃踞阳位</li>\n<li><strong>鉴别</strong>：面红+四肢冷+脉沉细=浊阴窃踞阳位；面红+急躁+脉弦有力=肝阳上亢</li>\n<li><strong>治法</strong>：温氏奔豚汤/金匮肾气丸</li>\n<li><strong>李可原话</strong>：「越打压肝阳越顽固」</li>\n</ul>\n<h4>场景8：口腔溃疡反复发作</h4>\n<ul>\n<li><strong>看似</strong>：心脾积热</li>\n<li><strong>实为</strong>：龙火不藏·虚火上浮</li>\n<li><strong>鉴别</strong>：溃疡反复+清热药无效+畏寒=虚火；溃疡+口臭+便秘=实火</li>\n<li><strong>治法</strong>：引火汤+油桂引火归原</li>\n<li><strong>李可原话</strong>：「很多人就是喝凉茶喝出病的」</li>\n</ul>\n<h4>场景9：上火/牙龈肿痛</h4>\n<ul>\n<li><strong>看似</strong>：实火</li>\n<li><strong>实为</strong>：相火不在其位</li>\n<li><strong>鉴别</strong>：上火+清热药越吃越重=虚火；上火+便秘+口臭=实火</li>\n<li><strong>治法</strong>：从治，用热药引回</li>\n<li><strong>原理</strong>：上火是自我修复机制，喝凉茶压回去成终生疾病</li>\n</ul>\n<h4>场景10：四肢厥冷+脉沉实有力+舌红苔黄</h4>\n<ul>\n<li><strong>看似</strong>：阳虚寒证</li>\n<li><strong>实为</strong>：热邪内郁·真热假寒（假阴证）</li>\n<li><strong>鉴别</strong>：肢冷+脉沉实有力+舌红苔黄=真热假寒；肢冷+脉微细+舌淡=真寒</li>\n<li><strong>治法</strong>：白虎汤或承气汤，不可温阳</li>\n<li><strong>原理</strong>：热深厥深，阳气被郁不能外达</li>\n</ul>\n<hr>\n"
+    },
+    {
+      "id": "section-3",
+      "number": "03",
+      "title": "三、假阴证识别",
+      "html": "<h3>什么是假阴证</h3>\n<ul>\n<li>热邪内郁，阳气不能外达</li>\n<li>表现为寒象，本质是热证</li>\n<li>相对少见但同样致命</li>\n</ul>\n<h3>假阴证的表现</h3>\n<ul>\n<li><strong>四肢厥冷</strong>：看似阳虚，实为热郁</li>\n<li><strong>恶寒</strong>：看似表寒，实为里热</li>\n<li><strong>脉沉</strong>：看似里寒，实为热伏</li>\n</ul>\n<h3>假阴证的鉴别要点</h3>\n<ol>\n<li><strong>脉象</strong>：沉实有力（非沉细无力）</li>\n<li><strong>舌象</strong>：舌红苔黄（非舌淡苔白）</li>\n<li><strong>二便</strong>：小便黄赤、大便秘结（非清长溏薄）</li>\n<li><strong>腹部</strong>：拒按（非喜按）</li>\n<li><strong>口渴</strong>：喜冷饮（非喜热饮）</li>\n</ol>\n<h3>假阴证的治法</h3>\n<ul>\n<li><strong>治法</strong>：白虎汤清热或承气汤通腑</li>\n<li><strong>误治后果</strong>：用温阳药则火上浇油</li>\n</ul>\n<hr>\n"
+    },
+    {
+      "id": "section-4",
+      "number": "04",
+      "title": "四、各经假证速查表",
+      "html": "<div class=\"table-scroll\"><table>\n<thead>\n<tr>\n<th>六经</th>\n<th>常见假证</th>\n<th>看似</th>\n<th>实为</th>\n<th>鉴别要点</th>\n<th>正确治法</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>太阳</td>\n<td>太阳病误用寒凉</td>\n<td>表热</td>\n<td>表寒</td>\n<td>脉浮紧+无汗+恶寒</td>\n<td>麻黄汤/桂枝汤</td>\n</tr>\n<tr>\n<td>阳明</td>\n<td>阳明经证似腑证</td>\n<td>经热</td>\n<td>腑实</td>\n<td>有无腹满拒按</td>\n<td>白虎汤vs承气汤</td>\n</tr>\n<tr>\n<td>少阳</td>\n<td>少阳病似太阳</td>\n<td>半表半里</td>\n<td>表证</td>\n<td>有无往来寒热</td>\n<td>小柴胡汤</td>\n</tr>\n<tr>\n<td>太阴</td>\n<td>太阴腹满似实证</td>\n<td>虚满</td>\n<td>实满</td>\n<td>脉虚无力vs脉实有力</td>\n<td>理中汤vs承气汤</td>\n</tr>\n<tr>\n<td>少阴</td>\n<td>少阴咽痛似风热</td>\n<td>虚火</td>\n<td>实火</td>\n<td>脉沉细+但欲寐</td>\n<td>桔甘四逆汤</td>\n</tr>\n<tr>\n<td>厥阴</td>\n<td>厥阴寒热错杂似纯热</td>\n<td>寒热错杂</td>\n<td>纯热</td>\n<td>有无厥热交替</td>\n<td>乌梅丸</td>\n</tr>\n</tbody></table></div>\n<hr>\n"
+    },
+    {
+      "id": "section-5",
+      "number": "05",
+      "title": "五、假证识别口诀",
+      "html": "<pre><code>面红如妆非实火，四肢冰冷是真寒。\n高热但欲寐蜷卧，阴盛格阳莫清热。\n无苔舌头非阴虚，阳虚气化不及故。\n口渴未必是阴虚，火不生土脾肾虚。\n高血压非肝阳亢，浊阴窃踞阳位方。\n口腔溃疡反复作，龙火不藏引火汤。\n上火喝凉茶越重，相火不在其位中。\n肢冷苔黄脉沉实，真热假寒莫温阳。\n</code></pre>\n<hr>\n"
+    },
+    {
+      "id": "section-6",
+      "number": "06",
+      "title": "六、脉诊辨证要点",
+      "html": "<h3>沉细脉</h3>\n<ul>\n<li>未必是虚证</li>\n<li>寒邪直中少阴时，脉象反沉细</li>\n<li>需结合整体辨证</li>\n</ul>\n<h3>脉象与证候不符时</h3>\n<ul>\n<li>以病人的正气强弱为转归</li>\n<li>不单纯依赖脉象</li>\n<li>四诊合参</li>\n</ul>\n<h3>虚阳外越的脉象</h3>\n<ul>\n<li>脉象可能浮大</li>\n<li>但重按无力</li>\n<li>与实火之洪大有力相鉴别</li>\n</ul>\n<h3>亡阳危证的脉象</h3>\n<ul>\n<li>脉象微细欲绝</li>\n<li>或脉浮大无根</li>\n<li>为最危重之象</li>\n</ul>\n<hr>\n"
+    },
+    {
+      "id": "section-7",
+      "number": "07",
+      "title": "七、真假寒热辨证",
+      "html": "<h3>真寒假热</h3>\n<ul>\n<li><strong>表现</strong>：面赤、身热、口渴、烦躁</li>\n<li><strong>真相</strong>：阴寒内盛，逼阳外浮</li>\n<li><strong>鉴别</strong>：脉沉细、舌淡、小便清长</li>\n<li><strong>治法</strong>：四逆汤回阳</li>\n</ul>\n<h3>真热假寒</h3>\n<ul>\n<li><strong>表现</strong>：四肢厥冷、恶寒</li>\n<li><strong>真相</strong>：热邪内郁，阳气不能外达</li>\n<li><strong>鉴别</strong>：脉沉实有力、舌红苔黄、小便黄赤</li>\n<li><strong>治法</strong>：白虎汤或承气汤</li>\n</ul>\n<h3>大实有羸状</h3>\n<ul>\n<li><strong>表现</strong>：虚弱、消瘦、乏力</li>\n<li><strong>真相</strong>：实邪阻滞，气血不能充养</li>\n<li><strong>鉴别</strong>：脉实有力、舌有厚苔</li>\n<li><strong>治法</strong>：先攻实邪，后补虚</li>\n</ul>\n<h3>至虚有盛候</h3>\n<ul>\n<li><strong>表现</strong>：腹满、胀痛</li>\n<li><strong>真相</strong>：虚气作胀，非实邪</li>\n<li><strong>鉴别</strong>：脉虚无力、舌淡</li>\n<li><strong>治法</strong>：补中益气，不可攻伐</li>\n</ul>\n<hr>\n"
+    },
+    {
+      "id": "section-8",
+      "number": "08",
+      "title": "八、辨证步骤总结",
+      "html": "<h3>第一步：辨阴阳</h3>\n<ul>\n<li>阴证还是阳证？</li>\n<li>有无假象？</li>\n</ul>\n<h3>第二步：辨表里</h3>\n<ul>\n<li>表证还是里证？</li>\n<li>有无表里同病？</li>\n</ul>\n<h3>第三步：辨寒热</h3>\n<ul>\n<li>寒证还是热证？</li>\n<li>有无真假寒热？</li>\n</ul>\n<h3>第四步：辨虚实</h3>\n<ul>\n<li>虚证还是实证？</li>\n<li>有无虚实夹杂？</li>\n</ul>\n<h3>第五步：定六经</h3>\n<ul>\n<li>病在何经？</li>\n<li>用何方治？</li>\n</ul>\n<hr>\n"
+    },
+    {
+      "id": "section-9",
+      "number": "09",
+      "title": "诚实边界",
+      "html": "<p><strong>信息来源</strong>：《李可老中医急危重症疑难病经验专辑》《李可医论专辑》《李可六经辨证学》</p>\n<p><strong>局限性</strong>：</p>\n<ul>\n<li>假证的识别需要丰富的临床经验</li>\n<li>初学者容易被假象迷惑，需在有经验的中医师指导下学习</li>\n<li>脉诊需要长期实践才能掌握</li>\n<li>本模块中的假证场景基于李可临床经验，不代表所有可能的假证类型</li>\n</ul>\n"
+    }
+  ],
+  "sourceNote": "本页按原稿 H2 分节，正文未删减，仅做 Markdown 排版。原稿含 OCR/蒸馏痕迹与具体处方剂量，仅供文献学习，不能照方用药。"
+}

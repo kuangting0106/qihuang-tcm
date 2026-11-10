@@ -171,6 +171,12 @@ const router = createRouter({
       meta: { title: '李可医书经验提纲' },
     },
     {
+      path: '/lectures/li-ke/:detailId',
+      name: 'li-ke-detail',
+      component: () => import('@/views/LiKeDetailView.vue'),
+      meta: { title: '李可医书经验提纲 · 全文详解' },
+    },
+    {
       path: '/processing',
       name: 'processing',
       component: () => import('@/views/ProcessingView.vue'),

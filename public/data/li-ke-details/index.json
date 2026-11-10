@@ -1,0 +1,766 @@
+{
+  "generatedAt": "2026-11-10T09:47:57.452Z",
+  "sourceDir": "scripts/content/li-ke-details",
+  "note": "李可医书经验提纲详解全文。每篇按 H2 分节，正文未删减。",
+  "items": [
+    {
+      "id": "yangqi",
+      "number": "01",
+      "stage": "立根",
+      "title": "阳气理论详解",
+      "summary": "阳气定义、生命根基、现代伤阳、护阳方法与李可相关医论。",
+      "sourceFile": "01_yangqi.md",
+      "charCount": 7773,
+      "sectionCount": 13,
+      "sections": [
+        {
+          "id": "section-1",
+          "number": "01",
+          "title": "一、阳气的定义与本质"
+        },
+        {
+          "id": "section-2",
+          "number": "02",
+          "title": "二、阳气与生命"
+        },
+        {
+          "id": "section-3",
+          "number": "03",
+          "title": "三、现代人阳气状态"
+        },
+        {
+          "id": "section-4",
+          "number": "04",
+          "title": "四、阳气损伤的辨证"
+        },
+        {
+          "id": "section-5",
+          "number": "05",
+          "title": "五、保护阳气的方法"
+        },
+        {
+          "id": "section-6",
+          "number": "06",
+          "title": "六、李可论阳气原话"
+        },
+        {
+          "id": "section-7",
+          "number": "07",
+          "title": "七、临床要点总结"
+        },
+        {
+          "id": "section-8",
+          "number": "08",
+          "title": "七、春夏养阳与四季护阳"
+        },
+        {
+          "id": "section-9",
+          "number": "09",
+          "title": "八、县医院急症实践（1979-1983）"
+        },
+        {
+          "id": "section-10",
+          "number": "10",
+          "title": "九、李可论高血压"
+        },
+        {
+          "id": "section-11",
+          "number": "11",
+          "title": "十、李可论凉茶与从治"
+        },
+        {
+          "id": "section-12",
+          "number": "12",
+          "title": "诚实边界"
+        },
+        {
+          "id": "section-13",
+          "number": "13",
+          "title": "十一、李可论肥胖与肿瘤"
+        }
+      ]
+    },
+    {
+      "id": "shanghan",
+      "number": "02",
+      "stage": "立根",
+      "title": "六经辨证要点",
+      "summary": "六经总论、六经各论、自学路径与彭子益圆运动理论。",
+      "sourceFile": "02_shanghan.md",
+      "charCount": 18105,
+      "sectionCount": 15,
+      "sections": [
+        {
+          "id": "section-1",
+          "number": "01",
+          "title": "一、六经辨证总论"
+        },
+        {
+          "id": "section-2",
+          "number": "02",
+          "title": "二、太阳病"
+        },
+        {
+          "id": "section-3",
+          "number": "03",
+          "title": "三、阳明病"
+        },
+        {
+          "id": "section-4",
+          "number": "04",
+          "title": "四、少阳病"
+        },
+        {
+          "id": "section-5",
+          "number": "05",
+          "title": "五、太阴病"
+        },
+        {
+          "id": "section-6",
+          "number": "06",
+          "title": "六、少阴病"
+        },
+        {
+          "id": "section-7",
+          "number": "07",
+          "title": "七、厥阴病"
+        },
+        {
+          "id": "section-8",
+          "number": "08",
+          "title": "八、六经辨证的临床应用"
+        },
+        {
+          "id": "section-9",
+          "number": "09",
+          "title": "诚实边界"
+        },
+        {
+          "id": "section-10",
+          "number": "10",
+          "title": "李可六经辨证统百病——自学中医路径"
+        },
+        {
+          "id": "section-11",
+          "number": "11",
+          "title": "补充：六经辨证的前提与思路"
+        },
+        {
+          "id": "section-12",
+          "number": "12",
+          "title": "彭子益圆运动理论（李可转述）"
+        },
+        {
+          "id": "section-13",
+          "number": "13",
+          "title": "彭子益圆运动理论详解"
+        },
+        {
+          "id": "section-14",
+          "number": "14",
+          "title": "8. 彭子益原理下篇·圆运动深层理论"
+        },
+        {
+          "id": "section-15",
+          "number": "15",
+          "title": "9. 彭子益伤寒论六经读法"
+        }
+      ]
+    },
+    {
+      "id": "jingfang",
+      "number": "03",
+      "stage": "入方",
+      "title": "李可经方基础有效量详解",
+      "summary": "古今剂量折算、核心药物有效量、经方剂量表、煎服法与六经验方。",
+      "sourceFile": "03_jingfang.md",
+      "charCount": 48195,
+      "sectionCount": 16,
+      "sections": [
+        {
+          "id": "section-1",
+          "number": "01",
+          "title": "一、古今剂量折算"
+        },
+        {
+          "id": "section-2",
+          "number": "02",
+          "title": "二、核心药物有效量"
+        },
+        {
+          "id": "section-3",
+          "number": "03",
+          "title": "三、经方剂量表（按方剂分类）"
+        },
+        {
+          "id": "section-4",
+          "number": "04",
+          "title": "四、李可对剂量的独特见解"
+        },
+        {
+          "id": "section-5",
+          "number": "05",
+          "title": "五、煎服法要点"
+        },
+        {
+          "id": "section-6",
+          "number": "06",
+          "title": "六、特殊药物配伍禁忌破解"
+        },
+        {
+          "id": "section-7",
+          "number": "07",
+          "title": "八、扶阳论坛演讲方剂（李可口述）"
+        },
+        {
+          "id": "section-8",
+          "number": "08",
+          "title": "七、附子煎服法详解（孙其新教授整理）"
+        },
+        {
+          "id": "section-9",
+          "number": "09",
+          "title": "八、太阳验方"
+        },
+        {
+          "id": "section-10",
+          "number": "10",
+          "title": "九、阳明验方"
+        },
+        {
+          "id": "section-11",
+          "number": "11",
+          "title": "十、少阳验方"
+        },
+        {
+          "id": "section-12",
+          "number": "12",
+          "title": "十一、李可方剂速查表"
+        },
+        {
+          "id": "section-13",
+          "number": "13",
+          "title": "9 太阴验方（《李可六经辨证学》）"
+        },
+        {
+          "id": "section-14",
+          "number": "14",
+          "title": "10 少阴验方（《李可六经辨证学》）"
+        },
+        {
+          "id": "section-15",
+          "number": "15",
+          "title": "十、厥阴验方"
+        },
+        {
+          "id": "section-16",
+          "number": "16",
+          "title": "十一、彭子益圆运动古方（《圆运动的古中医学》）"
+        }
+      ]
+    },
+    {
+      "id": "peiyuan",
+      "number": "04",
+      "stage": "入方",
+      "title": "培元固本散详解",
+      "summary": "慢性病善后、方剂组成、药分三层、临床应用与配伍思路。",
+      "sourceFile": "04_peiyuan.md",
+      "charCount": 829,
+      "sectionCount": 7,
+      "sections": [
+        {
+          "id": "section-1",
+          "number": "01",
+          "title": "一、培元固本散概述"
+        },
+        {
+          "id": "section-2",
+          "number": "02",
+          "title": "二、方剂组成"
+        },
+        {
+          "id": "section-3",
+          "number": "03",
+          "title": "三、药分三个层次"
+        },
+        {
+          "id": "section-4",
+          "number": "04",
+          "title": "四、临床应用"
+        },
+        {
+          "id": "section-5",
+          "number": "05",
+          "title": "五、李可经验"
+        },
+        {
+          "id": "section-6",
+          "number": "06",
+          "title": "六、与其他方剂的配合"
+        },
+        {
+          "id": "section-7",
+          "number": "07",
+          "title": "诚实边界"
+        }
+      ]
+    },
+    {
+      "id": "zhenghou",
+      "number": "05",
+      "stage": "立根",
+      "title": "辨证要点与假证识别",
+      "summary": "阴阳总纲、假阳证十大场景、假阴证、各经假证与五步辨证。",
+      "sourceFile": "05_zhenghou.md",
+      "charCount": 2974,
+      "sectionCount": 9,
+      "sections": [
+        {
+          "id": "section-1",
+          "number": "01",
+          "title": "一、阴阳判别总纲"
+        },
+        {
+          "id": "section-2",
+          "number": "02",
+          "title": "二、假阳证识别（重点！）"
+        },
+        {
+          "id": "section-3",
+          "number": "03",
+          "title": "三、假阴证识别"
+        },
+        {
+          "id": "section-4",
+          "number": "04",
+          "title": "四、各经假证速查表"
+        },
+        {
+          "id": "section-5",
+          "number": "05",
+          "title": "五、假证识别口诀"
+        },
+        {
+          "id": "section-6",
+          "number": "06",
+          "title": "六、脉诊辨证要点"
+        },
+        {
+          "id": "section-7",
+          "number": "07",
+          "title": "七、真假寒热辨证"
+        },
+        {
+          "id": "section-8",
+          "number": "08",
+          "title": "八、辨证步骤总结"
+        },
+        {
+          "id": "section-9",
+          "number": "09",
+          "title": "诚实边界"
+        }
+      ]
+    },
+    {
+      "id": "maifa",
+      "number": "06",
+      "stage": "立根",
+      "title": "脉诊经验",
+      "summary": "常见脉象、危重脉象、方证对应、动态观察与三则医案。",
+      "sourceFile": "06_maifa.md",
+      "charCount": 1563,
+      "sectionCount": 7,
+      "sections": [
+        {
+          "id": "section-1",
+          "number": "01",
+          "title": "一、李可脉诊总论"
+        },
+        {
+          "id": "section-2",
+          "number": "02",
+          "title": "二、常见脉象辨析"
+        },
+        {
+          "id": "section-3",
+          "number": "03",
+          "title": "三、危重脉象"
+        },
+        {
+          "id": "section-4",
+          "number": "04",
+          "title": "四、脉象与方证对应"
+        },
+        {
+          "id": "section-5",
+          "number": "05",
+          "title": "五、脉诊的动态观察"
+        },
+        {
+          "id": "section-6",
+          "number": "06",
+          "title": "六、李可脉诊医案"
+        },
+        {
+          "id": "section-7",
+          "number": "07",
+          "title": "诚实边界"
+        }
+      ]
+    },
+    {
+      "id": "yilun",
+      "number": "07",
+      "stage": "读人",
+      "title": "李可《医论专辑》补遗（6 章节）",
+      "summary": "川崎病、甲流、免疫病、学经方两关、三关与李可年谱。",
+      "sourceFile": "07-yilun-buyi.md",
+      "charCount": 7393,
+      "sectionCount": 6,
+      "sections": [
+        {
+          "id": "section-1",
+          "number": "01",
+          "title": "1. 小儿川崎病"
+        },
+        {
+          "id": "section-2",
+          "number": "02",
+          "title": "2. 论甲型流感"
+        },
+        {
+          "id": "section-3",
+          "number": "03",
+          "title": "3. 免疫病的治疗思路"
+        },
+        {
+          "id": "section-4",
+          "number": "04",
+          "title": "4. 学用经方两大关"
+        },
+        {
+          "id": "section-5",
+          "number": "05",
+          "title": "5. 要闯三关 浴火重生——《气一元论与中医临床》序"
+        },
+        {
+          "id": "section-6",
+          "number": "06",
+          "title": "6. 李可年谱（1930—2013）"
+        }
+      ]
+    },
+    {
+      "id": "suoyin",
+      "number": "08",
+      "stage": "备用",
+      "title": "李可方剂总索引（《医案处方集》+《临证要旨1》方剂索引蒸馏）",
+      "summary": "按病证快速定位的方剂索引、李可命名方与笔者拟名方。",
+      "sourceFile": "08-fangji-suoyin.md",
+      "charCount": 10366,
+      "sectionCount": 7,
+      "sections": [
+        {
+          "id": "section-1",
+          "number": "01",
+          "title": "〇、快速定位（按病证 → 方）"
+        },
+        {
+          "id": "section-2",
+          "number": "02",
+          "title": "一、李可命名方（22 首）"
+        },
+        {
+          "id": "section-3",
+          "number": "03",
+          "title": "二、笔者拟名方（78 首）"
+        },
+        {
+          "id": "section-4",
+          "number": "04",
+          "title": "三、《李可医案处方集》方剂索引（22 条目）"
+        },
+        {
+          "id": "section-5",
+          "number": "05",
+          "title": "四、攻承大柴胡汤（skill 新增·详案）"
+        },
+        {
+          "id": "section-6",
+          "number": "06",
+          "title": "五、OCR 噪声与存疑注记汇总"
+        },
+        {
+          "id": "section-7",
+          "number": "07",
+          "title": "附：本索引与 skill 库的衔接"
+        }
+      ]
+    },
+    {
+      "id": "liujingxue",
+      "number": "09",
+      "stage": "读人",
+      "title": "六经辨证学（孙其新整理框架）——六经各论辨证要点",
+      "summary": "以方类证的编排、六经各论、会通六合与整理框架。",
+      "sourceFile": "09-liujing-bianzhengxue.md",
+      "charCount": 6774,
+      "sectionCount": 8,
+      "sections": [
+        {
+          "id": "section-1",
+          "number": "01",
+          "title": "一、孙其新整理框架"
+        },
+        {
+          "id": "section-2",
+          "number": "02",
+          "title": "二、太阳（源 L570-）"
+        },
+        {
+          "id": "section-3",
+          "number": "03",
+          "title": "三、阳明（源 L1204-）"
+        },
+        {
+          "id": "section-4",
+          "number": "04",
+          "title": "四、少阳（源 L1744-）"
+        },
+        {
+          "id": "section-5",
+          "number": "05",
+          "title": "五、太阴（源 L2173-）"
+        },
+        {
+          "id": "section-6",
+          "number": "06",
+          "title": "六、少阴（源 L3255-）"
+        },
+        {
+          "id": "section-7",
+          "number": "07",
+          "title": "七、厥阴（源 L4822-）"
+        },
+        {
+          "id": "section-8",
+          "number": "08",
+          "title": "八、与 skill 已有覆盖的差异补充清单"
+        }
+      ]
+    },
+    {
+      "id": "duihua",
+      "number": "10",
+      "stage": "读人",
+      "title": "人体阳气与疾病 · 对话大医李可（采访实录补遗）",
+      "summary": "田原采访实录：阳气、空调病、剂量、肿瘤、脉法与传承。",
+      "sourceFile": "10-renti-yangqi-duihua.md",
+      "charCount": 55978,
+      "sectionCount": 26,
+      "sections": [
+        {
+          "id": "section-1",
+          "number": "01",
+          "title": "一、人体阳气论：阳气是将军，阳主阴从"
+        },
+        {
+          "id": "section-2",
+          "number": "02",
+          "title": "对话场景索引：本书《人体阳气与疾病》相关章节——\"人体内阳气是将军 十胖人九个是虚证\"（45页）／\"诸病皆是元气受损 生死关头救阳为急\"（76页）／\"点破天机再谈阳气 美眉骤减四十四斤\"（156页）。"
+        },
+        {
+          "id": "section-3",
+          "number": "03",
+          "title": "二、现代生活伤阳：空调病与亚健康"
+        },
+        {
+          "id": "section-4",
+          "number": "04",
+          "title": "对话场景索引：本书\"现代化家家吹空调 伤阳气人人亚健康\"（24页）整章。"
+        },
+        {
+          "id": "section-5",
+          "number": "05",
+          "title": "三、中医里没有高血压：三阴病、浊阴窃踞阳位"
+        },
+        {
+          "id": "section-6",
+          "number": "06",
+          "title": "对话场景索引：本书\"中医里没有高血压 老中医点醒迷糊人\"（37页）／\"补肾虚金匮肾气丸 养长寿就喝四逆汤\"（152页）。"
+        },
+        {
+          "id": "section-7",
+          "number": "07",
+          "title": "四、肥胖虚证论：十胖人九个是虚证"
+        },
+        {
+          "id": "section-8",
+          "number": "08",
+          "title": "对话场景索引：本书\"人体内阳气是将军 十胖人九个是虚证\"（45页）／\"点破天机再谈阳气 美眉骤减四十四斤\"（156页）。"
+        },
+        {
+          "id": "section-9",
+          "number": "09",
+          "title": "五、中医西化批判：先做CT、动物实验无用、中西医不能结合"
+        },
+        {
+          "id": "section-10",
+          "number": "10",
+          "title": "对话场景索引：本书\"中医西化先做CT 大毒之药反救性命\"（61页）／\"建国初中医现代化 受委屈狱里学中医\"（133页）／\"道不同中西怎结合 叹中医何时有传人\"（144页）。"
+        },
+        {
+          "id": "section-11",
+          "number": "11",
+          "title": "六、剂量论：大毒之药反救性命，中药奇效全在剂量"
+        },
+        {
+          "id": "section-12",
+          "number": "12",
+          "title": "对话场景索引：本书\"偶下重药起死回生 中药奇效全在剂量\"（84页）／\"打电话隔空治重症 救心汤挽回老太命\"（108页）。"
+        },
+        {
+          "id": "section-13",
+          "number": "13",
+          "title": "七、尝毒药经历：刘力红率众尝附子，抓方子公安先签字"
+        },
+        {
+          "id": "section-14",
+          "number": "14",
+          "title": "对话场景索引：本书\"刘力红率众尝毒药 抓方子公安先签字\"（90页）整章。"
+        },
+        {
+          "id": "section-15",
+          "number": "15",
+          "title": "八、乌头汤巧治风心病：本气先虚，风寒深伏三阴"
+        },
+        {
+          "id": "section-16",
+          "number": "16",
+          "title": "对话场景索引：本书\"乌头汤巧治风心病 小青龙妙解肺心病\"（116页）整章。"
+        },
+        {
+          "id": "section-17",
+          "number": "17",
+          "title": "九、小青龙妙解肺心病：小青龙汤证虚化、生半夏治肺"
+        },
+        {
+          "id": "section-18",
+          "number": "18",
+          "title": "对话场景索引：本书\"乌头汤巧治风心病 小青龙妙解肺心病\"（116页）后半章。"
+        },
+        {
+          "id": "section-19",
+          "number": "19",
+          "title": "十、狱中学医经历：蒙冤二十八载，狱中两年零七个月学成"
+        },
+        {
+          "id": "section-20",
+          "number": "20",
+          "title": "对话场景索引：本书\"建国初中医现代化 受委屈狱里学中医\"（133页）／\"学医切忌死记硬背 滋阴降火性命不保\"（68页）／\"入医门先读彭子益 急重症中医是强项\"（162页）。"
+        },
+        {
+          "id": "section-21",
+          "number": "21",
+          "title": "附一、细辛论：致命已成往事（对话余论）"
+        },
+        {
+          "id": "section-22",
+          "number": "22",
+          "title": "附二、续命煮散自治中风：孙思邈久经考验之方（对话余论）"
+        },
+        {
+          "id": "section-23",
+          "number": "23",
+          "title": "附三、打电话隔空治重症：破格救心汤挽回老太命（对话余论）"
+        },
+        {
+          "id": "section-24",
+          "number": "24",
+          "title": "附四、传承之忧：道不同中西怎结合，叹中医何时有传人（对话余论）"
+        },
+        {
+          "id": "section-25",
+          "number": "25",
+          "title": "附五、肿瘤阳虚论：阳气虚结块成肿瘤，急化疗病人丢性命（对话余论）"
+        },
+        {
+          "id": "section-26",
+          "number": "26",
+          "title": "附六、把脉先学浮沉迟数，生死关头要辨阴阳（对话余论）"
+        }
+      ]
+    },
+    {
+      "id": "suxiao",
+      "number": "11",
+      "stage": "入方",
+      "title": "经方基础有效量（速查）",
+      "summary": "方剂级基础有效量、铜权换算、原方折半、小青龙汤与伤寒金匮速查。",
+      "sourceFile": "11-jichu-youxiaoliang.md",
+      "charCount": 11873,
+      "sectionCount": 5,
+      "sections": [
+        {
+          "id": "section-1",
+          "number": "01",
+          "title": "一、基础有效量核心概念"
+        },
+        {
+          "id": "section-2",
+          "number": "02",
+          "title": "二、小青龙汤详解（《小青龙汤治重危急症举要》）"
+        },
+        {
+          "id": "section-3",
+          "number": "03",
+          "title": "三、伤寒篇基础有效量速查表"
+        },
+        {
+          "id": "section-4",
+          "number": "04",
+          "title": "四、金匮篇基础有效量速查表"
+        },
+        {
+          "id": "section-5",
+          "number": "05",
+          "title": "五、应用须知"
+        }
+      ]
+    },
+    {
+      "id": "leifang",
+      "number": "12",
+      "stage": "入方",
+      "title": "类方批注：左季云《伤寒论类方汇参》·李可批注精华",
+      "summary": "李可唯一批注医书的五大特点、十二类方批注与书末增补笔记。",
+      "sourceFile": "12-leifang-huican-pizhu.md",
+      "charCount": 10342,
+      "sectionCount": 4,
+      "sections": [
+        {
+          "id": "section-1",
+          "number": "01",
+          "title": "一、李可老批注本书的特点"
+        },
+        {
+          "id": "section-2",
+          "number": "02",
+          "title": "二、李可老的学术观点和用药特点"
+        },
+        {
+          "id": "section-3",
+          "number": "03",
+          "title": "三、各经类方·李可批注核心内容"
+        },
+        {
+          "id": "section-4",
+          "number": "04",
+          "title": "使用注意"
+        }
+      ]
+    }
+  ]
+}

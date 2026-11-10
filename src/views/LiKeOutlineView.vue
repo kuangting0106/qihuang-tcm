@@ -41,12 +41,50 @@ import { pulseMediaHref } from '@/data/pulse-media'
           怎么读
           <small>顺序与三关</small>
         </a>
+        <a href="#details">
+          <span>文</span>
+          全文详解
+          <small>12 篇原文</small>
+        </a>
         <a href="#boundary">
           <span>界</span>
           边界
           <small>先读再信</small>
         </a>
       </nav>
+
+      <section id="details" class="detail-index">
+        <header class="detail-index__head">
+          <div>
+            <p class="eyebrow">FULL TEXT / 全文详解</p>
+            <h2>12 篇原文，按节进入</h2>
+          </div>
+          <p>
+            下方每个模块都可点击“查看全文”。详情页按原稿 H2 分节，正文未删减；原稿中的编号重复与 OCR 痕迹也原样保留。
+          </p>
+        </header>
+
+        <div class="detail-index__groups">
+          <div v-for="stage in liKeStages" :key="stage.id" class="detail-index__group">
+            <p class="detail-index__stage">
+              <span>{{ stage.order }}</span>
+              {{ stage.title }}
+              <small>{{ stage.subtitle }}</small>
+            </p>
+            <div class="detail-index__links">
+              <RouterLink
+                v-for="module in stage.modules"
+                :key="module.id"
+                :to="`/lectures/li-ke/${module.id}`"
+                :title="`查看《${module.title}》全文`"
+              >
+                <span>{{ module.number }}</span>
+                <strong>{{ module.title }}</strong>
+              </RouterLink>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section v-for="stage in liKeStages" :id="stage.id" :key="stage.id" class="like-stage">
         <header class="like-stage__head">
@@ -63,7 +101,11 @@ import { pulseMediaHref } from '@/data/pulse-media'
             <header class="module-card__head">
               <span class="module-card__number">{{ module.number }}</span>
               <div>
-                <h3>{{ module.title }}</h3>
+                <h3>
+                  <RouterLink :to="`/lectures/li-ke/${module.id}`" :title="`查看《${module.title}》全文`">
+                    {{ module.title }}
+                  </RouterLink>
+                </h3>
                 <p>{{ module.kind }}</p>
               </div>
             </header>
@@ -82,6 +124,12 @@ import { pulseMediaHref } from '@/data/pulse-media'
                 <span v-for="tag in module.tags" :key="tag">{{ tag }}</span>
               </div>
               <div class="module-card__links">
+                <RouterLink
+                  class="module-card__link module-card__link--detail"
+                  :to="`/lectures/li-ke/${module.id}`"
+                >
+                  查看全文 →
+                </RouterLink>
                 <RouterLink v-if="module.href" class="module-card__link" :to="module.href">
                   {{ module.hrefLabel }} →
                 </RouterLink>
@@ -299,6 +347,101 @@ import { pulseMediaHref } from '@/data/pulse-media'
   letter-spacing: 0;
 }
 
+.detail-index {
+  margin: 22px 0 8px;
+  padding: 22px 24px;
+  border: 1px solid rgba(176, 138, 74, 0.28);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(176, 138, 74, 0.1), transparent 16rem),
+    rgba(255, 252, 245, 0.52);
+}
+
+.detail-index__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.detail-index__head h2 {
+  margin-top: 3px;
+  font-size: clamp(1.35rem, 2.6vw, 1.8rem);
+}
+
+.detail-index__head > p {
+  max-width: 480px;
+  color: var(--ink-soft);
+  font-size: 0.76rem;
+  line-height: 1.8;
+}
+
+.detail-index__groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 24px;
+}
+
+.detail-index__stage {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed var(--line);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 0.92rem;
+}
+
+.detail-index__stage span {
+  color: var(--cinnabar);
+  font-size: 1.15rem;
+}
+
+.detail-index__stage small {
+  margin-left: auto;
+  color: var(--ink-faint);
+  font-family: var(--sans);
+  font-size: 0.64rem;
+}
+
+.detail-index__links {
+  display: grid;
+  gap: 2px;
+  margin-top: 5px;
+}
+
+.detail-index__links a {
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr);
+  gap: 6px;
+  align-items: baseline;
+  padding: 4px 5px;
+  border-radius: 5px;
+  color: var(--ink-soft);
+  font-size: 0.76rem;
+  transition: background 0.16s ease, color 0.16s ease;
+}
+
+.detail-index__links a:hover {
+  background: var(--cinnabar-pale);
+  color: var(--cinnabar);
+}
+
+.detail-index__links a span {
+  color: var(--gold);
+  font-family: var(--serif);
+  font-size: 0.72rem;
+}
+
+.detail-index__links a strong {
+  overflow: hidden;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .like-stage {
   padding: 42px 0 12px;
 }
@@ -380,6 +523,10 @@ import { pulseMediaHref } from '@/data/pulse-media'
 .module-card__head h3 {
   margin: 0;
   font-size: 1.18rem;
+}
+
+.module-card__head h3 a:hover {
+  color: var(--cinnabar);
 }
 
 .module-card__head p {
@@ -477,6 +624,10 @@ import { pulseMediaHref } from '@/data/pulse-media'
   font-size: 0.76rem;
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.module-card__link--detail {
+  font-weight: 600;
 }
 
 .module-card__link--media {
@@ -813,6 +964,20 @@ import { pulseMediaHref } from '@/data/pulse-media'
     width: 44px;
     height: 44px;
     font-size: 1.15rem;
+  }
+
+  .detail-index {
+    padding: 18px 16px;
+  }
+
+  .detail-index__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .detail-index__groups {
+    grid-template-columns: 1fr;
   }
 }
 </style>
