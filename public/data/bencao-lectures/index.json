@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T14:23:15.721Z",
+  "generatedAt": "2026-11-13T10:04:39.971Z",
   "source": {
     "id": "nihaixia-bencao",
     "title": "倪海厦《神农本草经》讲义",
@@ -58,6 +58,14 @@
       "description": "课程整理者增补的常用药，不属于倪海厦原讲义正文；阅读时与倪师讲授内容分开看待。",
       "count": 34,
       "charCount": 38562
+    },
+    {
+      "id": "yaoxing",
+      "title": "药性总论",
+      "subtitle": "增广和剂局方药性总论",
+      "description": "元·佚名辑，按玉石、草、木、人、兽、禽、虫鱼、果、米谷、菜等部类汇录药性主治；原文照录，供文献学习。",
+      "count": 23,
+      "charCount": 61453
     }
   ],
   "intro": [

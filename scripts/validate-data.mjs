@@ -480,6 +480,7 @@ const expectedBencaoCounts = {
   xiajing: 75,
   nishi: 27,
   editor: 34,
+  yaoxing: 23,
 }
 const allowedBencaoKinds = new Set(['original', 'commentary', 'study', 'nishi', 'lecture', 'lesson'])
 let bencaoEntries = 0
@@ -488,7 +489,7 @@ if (bencaoIndex) {
   for (const key of ['id', 'title', 'author', 'course', 'commit', 'sourcePath', 'note']) {
     if (!bencaoIndex.source?.[key]) errors.push(`讲义来源缺少 ${key}`)
   }
-  if (!Array.isArray(bencaoIndex.groups) || bencaoIndex.groups.length !== 6) {
+  if (!Array.isArray(bencaoIndex.groups) || bencaoIndex.groups.length !== 7) {
     errors.push(`讲义分组应为 6，实际 ${bencaoIndex.groups?.length ?? 0}`)
   }
   const seenEntries = new Set()
@@ -518,7 +519,7 @@ if (bencaoIndex) {
         errors.push(`讲义条目 ${entry.id}: 没有分节`)
         continue
       }
-      if (meta.id !== 'intro') {
+      if (meta.id !== 'intro' && meta.id !== 'yaoxing') {
         if (!entry.pinyin) errors.push(`讲义条目 ${entry.id}: 缺少拼音`)
         if (!entry.profile) {
           errors.push(`讲义条目 ${entry.id}: 缺少药性概览`)
@@ -557,8 +558,10 @@ if (bencaoIndex) {
     if (chars !== meta.charCount) {
       errors.push(`讲义分组 ${meta.id}: 字数统计不一致`)
     }
-    bencaoEntries += group.entries.length
-    bencaoChars += chars
+    if (meta.id !== 'yaoxing') {
+      bencaoEntries += group.entries.length
+      bencaoChars += chars
+    }
   }
 }
 

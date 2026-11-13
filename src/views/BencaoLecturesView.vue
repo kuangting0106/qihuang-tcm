@@ -21,7 +21,7 @@ const mainGroups = computed(() =>
   (index.value?.groups ?? []).filter((item) => ['shangjing', 'zhongjing', 'xiajing'].includes(item.id)),
 )
 const supplementGroups = computed(() =>
-  (index.value?.groups ?? []).filter((item) => ['nishi', 'editor'].includes(item.id)),
+  (index.value?.groups ?? []).filter((item) => ['nishi', 'editor', 'yaoxing'].includes(item.id)),
 )
 
 const totalEntries = computed(() =>
@@ -50,7 +50,7 @@ const totalEntries = computed(() =>
           </p>
           <div class="library-hero__meta">
             <span class="chip chip--jade">{{ totalEntries }} 条</span>
-            <span class="chip">6 组</span>
+            <span class="chip">7 组</span>
           </div>
         </div>
         <div class="library-hero__seal" aria-hidden="true">本</div>
@@ -127,7 +127,7 @@ const totalEntries = computed(() =>
             >
               <span class="group-card__top">
                 <span class="group-card__title">{{ item.title }}</span>
-                <span class="group-card__count">{{ item.count }} 味</span>
+                <span class="group-card__count">{{ item.count }} {{ item.id === 'yaoxing' ? '部' : '味' }}</span>
               </span>
               <span class="group-card__subtitle">{{ item.subtitle }}</span>
               <span class="group-card__desc">{{ item.description }}</span>
@@ -139,10 +139,10 @@ const totalEntries = computed(() =>
         <section class="library-section" aria-labelledby="supplements">
           <div class="library-section__head">
             <div>
-              <p class="eyebrow">SUPPLEMENTS / 补列</p>
-              <h2 id="supplements">经方所用与整理者增补</h2>
+              <p class="eyebrow">SUPPLEMENTS / 补列与总论</p>
+              <h2 id="supplements">经方所用、整理者增补与药性总论</h2>
             </div>
-            <p>「倪师补充」与「小编补充」来源不同，阅读时分开看待。</p>
+            <p>「倪师补充」「小编补充」与《增广和剂局方药性总论》来源不同，阅读时分开看待。</p>
           </div>
 
           <div class="group-grid group-grid--two">
@@ -155,7 +155,7 @@ const totalEntries = computed(() =>
             >
               <span class="group-card__top">
                 <span class="group-card__title">{{ item.title }}</span>
-                <span class="group-card__count">{{ item.count }} 味</span>
+                <span class="group-card__count">{{ item.count }} {{ item.id === 'yaoxing' ? '部' : '味' }}</span>
               </span>
               <span class="group-card__subtitle">{{ item.subtitle }}</span>
               <span class="group-card__desc">{{ item.description }}</span>

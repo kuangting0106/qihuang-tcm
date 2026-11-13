@@ -69,6 +69,14 @@ const GROUP_DEFS = [
     description:
       '课程整理者增补的常用药，不属于倪海厦原讲义正文；阅读时与倪师讲授内容分开看待。',
   },
+  {
+    id: 'yaoxing',
+    dir: '药性总论',
+    title: '药性总论',
+    subtitle: '增广和剂局方药性总论',
+    description:
+      '元·佚名辑，按玉石、草、木、人、兽、禽、虫鱼、果、米谷、菜等部类汇录药性主治；原文照录，供文献学习。',
+  },
 ]
 
 // 现代罕用、基原待考或已不再使用的条目，按整理要求从讲义目录中隐藏；
@@ -589,7 +597,7 @@ function readGroup(def) {
   return { ...def, entries }
 }
 
-const RANK_PRIORITY = { shangjing: 0, zhongjing: 1, xiajing: 2, nishi: 3, editor: 4 }
+const RANK_PRIORITY = { shangjing: 0, zhongjing: 1, xiajing: 2, nishi: 3, editor: 4, yaoxing: 5 }
 const entryRedirects = {}
 
 // 源稿中的冷僻条目不再整条删除；保留全文，由 ENTRY_NOTES 说明基原与使用情况。
@@ -690,7 +698,7 @@ if (errors.length) {
 fs.mkdirSync(outDir, { recursive: true })
 
 const catalogItems = groups
-  .filter((group) => group.id !== 'intro')
+  .filter((group) => group.id !== 'intro' && group.id !== 'yaoxing')
   .flatMap((group) =>
     group.entries.map((entry) => {
       const flavorText = sectionText(entry, '性味')

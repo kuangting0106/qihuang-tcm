@@ -67,7 +67,7 @@ const caseItems = [
 ].sort(
   (a, b) => (caseEraOrder[a.era] ?? 0) - (caseEraOrder[b.era] ?? 0),
 )
-const bencaoGroupIds = ['intro', 'shangjing', 'zhongjing', 'xiajing', 'nishi', 'editor']
+const bencaoGroupIds = ['intro', 'shangjing', 'zhongjing', 'xiajing', 'nishi', 'editor', 'yaoxing']
 const bencaoGroups = bencaoGroupIds
   .map((id) => {
     const file = path.join(bencaoDir, `${id}.json`)
