@@ -6,7 +6,7 @@ export interface Topic {
   subtitle: string
   note?: string
   doctor?: string
-  mode?: 'case' | 'thought'
+  mode?: 'case' | 'thought' | 'formula'
   doctorBio?: string
 }
 

@@ -13,7 +13,7 @@ export interface CaseSource {
   note?: string
 }
 
-export type CaseMode = 'case' | 'thought'
+export type CaseMode = 'case' | 'thought' | 'formula'
 export type CaseEra = 'ancient' | 'modern'
 
 export interface CaseItem {

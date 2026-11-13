@@ -47,6 +47,14 @@ const classicIndex = readJson(path.join(classicsDir, 'index.json'))
 const classicBooks = (classicIndex.books ?? []).map((book) =>
   readJson(path.join(classicsDir, `${book.id}.json`)),
 )
+const bookCaseDir = path.join(root, 'src', 'data', 'cases')
+const bookCaseData = fs.existsSync(bookCaseDir)
+  ? fs
+      .readdirSync(bookCaseDir)
+      .filter((name) => name.endsWith('.json'))
+      .sort()
+      .map((name) => readJson(path.join(bookCaseDir, name)))
+  : []
 const caseData = readJson(path.join(root, 'src', 'data', 'jingui-cases.json'))
 const classicCaseData = readJson(path.join(root, 'src', 'data', 'classic-cases.json'))
 const liKeCaseData = readJson(path.join(root, 'src', 'data', 'li-ke-cases.json'))
@@ -55,6 +63,7 @@ const caseItems = [
   ...(caseData.cases ?? []),
   ...(classicCaseData.cases ?? []),
   ...(liKeCaseData.cases ?? []),
+  ...bookCaseData.flatMap((data) => data.cases ?? []),
 ].sort(
   (a, b) => (caseEraOrder[a.era] ?? 0) - (caseEraOrder[b.era] ?? 0),
 )

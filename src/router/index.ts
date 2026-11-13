@@ -141,6 +141,12 @@ const router = createRouter({
       meta: { title: '分类医案', section: 'cases' },
     },
     {
+      path: '/cases/book/:bookId',
+      name: 'cases-book',
+      component: () => import('@/views/CaseBookView.vue'),
+      meta: { title: '按医书浏览医案', section: 'cases' },
+    },
+    {
       path: '/cases/:id',
       name: 'case-detail',
       component: () => import('@/views/TopicDetailView.vue'),

@@ -106,7 +106,7 @@ watch([kind, key], loadCases)
           <div class="collection-card__meta">
             <span class="collection-card__category">{{ item.category }}</span>
             <span v-if="item.doctor" class="collection-card__doctor">{{ item.doctor }}</span>
-            <span class="collection-card__mode">{{ item.mode === 'thought' ? '经验集' : '医案' }}</span>
+            <span class="collection-card__mode">{{ item.mode === 'thought' ? '经验集' : item.mode === 'formula' ? '方书' : '医案' }}</span>
           </div>
           <h2>{{ item.title }}</h2>
           <p>{{ item.summary }}</p>

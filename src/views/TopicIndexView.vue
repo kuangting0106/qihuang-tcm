@@ -37,6 +37,20 @@ const doctors = computed(() => {
     .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'zh-CN'))
 })
 
+const caseBooks = computed(() => {
+  const counts = new Map<string, { work: string; count: number; doctor?: string }>()
+  for (const item of caseList.value) {
+    const work = item.source?.work?.trim()
+    if (!work) continue
+    const entry = counts.get(work) ?? { work, count: 0, doctor: item.doctor }
+    entry.count += 1
+    counts.set(work, entry)
+  }
+  return [...counts.values()].sort(
+    (a, b) => b.count - a.count || a.work.localeCompare(b.work, 'zh-CN'),
+  )
+})
+
 const topics = computed<Topic[]>(() =>
   section.value.key === 'cases'
     ? caseList.value.slice(0, CASE_PREVIEW).map((item) => ({
@@ -205,7 +219,7 @@ function topicStatus(id: string) {
           <h2>{{ topic.title }}</h2>
           <div v-if="topic.doctor" class="topic-card__doctor">
             <span class="topic-card__doctor-name" :title="topic.doctorBio">{{ topic.doctor }}</span>
-            <span class="topic-card__doctor-mode">{{ topic.mode === 'thought' ? '经验集' : '医案' }}</span>
+            <span class="topic-card__doctor-mode">{{ topic.mode === 'thought' ? '经验集' : topic.mode === 'formula' ? '方书' : '医案' }}</span>
           </div>
           <p>{{ topic.subtitle }}</p>
           <div class="topic-card__foot">
@@ -221,6 +235,36 @@ function topicStatus(id: string) {
           查看全部 {{ caseList.length }} 则医案
         </RouterLink>
       </div>
+
+      <section
+        v-if="section.key === 'cases' && caseBooks.length"
+        class="case-books"
+        aria-label="按医书浏览"
+      >
+        <div class="case-books__head">
+          <div>
+            <p class="eyebrow">BY BOOK / 按医书浏览</p>
+            <h2>按医书浏览医案</h2>
+          </div>
+          <p>
+            共 {{ caseBooks.length }} 部医书。上方仍按医家与病症分科，便于先看人、再看病；
+            这里按原书汇集，便于顺着一部书通读。
+          </p>
+        </div>
+        <div class="case-books__grid">
+          <RouterLink
+            v-for="book in caseBooks"
+            :key="book.work"
+            :to="`/cases/book/${encodeURIComponent(book.work)}`"
+            class="case-book-card"
+          >
+            <span class="case-book-card__count">{{ book.count }} 则</span>
+            <h3>{{ book.work }}</h3>
+            <p v-if="book.doctor">{{ book.doctor }}</p>
+            <span class="case-book-card__link">按书浏览 →</span>
+          </RouterLink>
+        </div>
+      </section>
 
       <section class="topic-principles paper-panel">
         <div>
@@ -567,6 +611,84 @@ function topicStatus(id: string) {
 
   .topic-principles {
     grid-template-columns: 1fr;
+  }
+}
+.case-books {
+  margin-top: 42px;
+  padding-top: 28px;
+  border-top: 1px dashed var(--line-strong);
+}
+
+.case-books__head {
+  display: flex;
+  gap: 24px;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.case-books__head h2 {
+  margin-top: 4px;
+  font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+}
+
+.case-books__head > p {
+  max-width: 380px;
+  color: var(--ink-faint);
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+
+.case-books__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 14px;
+}
+
+.case-book-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 150px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 252, 245, 0.55);
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.case-book-card:hover {
+  border-color: var(--cinnabar);
+  box-shadow: 0 14px 30px rgba(84, 61, 38, 0.08);
+  transform: translateY(-2px);
+}
+
+.case-book-card__count {
+  color: var(--ink-faint);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+}
+
+.case-book-card h3 {
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.case-book-card p {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+.case-book-card__link {
+  margin-top: auto;
+  color: var(--jade);
+  font-size: 0.78rem;
+}
+
+@media (max-width: 700px) {
+  .case-books__head {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 </style>
