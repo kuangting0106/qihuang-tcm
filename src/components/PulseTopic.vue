@@ -30,6 +30,10 @@ import { pulseMedia, pulseMediaHref } from '@/data/pulse-media'
       <span class="pulse-hero__seal" aria-hidden="true">脉</span>
     </header>
 
+    <p class="pulse-classic-link">
+      <RouterLink to="/classics/sanzhichan">读《三指禅》脉学全文 →</RouterLink>
+    </p>
+
     <nav class="pulse-nav" aria-label="脉诊页内目录">
       <a href="#overview">总论</a>
       <a href="#media">图示资料</a>
@@ -377,6 +381,27 @@ import { pulseMedia, pulseMediaHref } from '@/data/pulse-media'
   font-family: var(--serif);
   font-size: 2.8rem;
   transform: rotate(-4deg);
+}
+
+.pulse-classic-link {
+  margin: 4px 0 2px;
+  font-size: 0.82rem;
+}
+
+.pulse-classic-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  color: var(--jade-deep);
+  text-decoration: none;
+  transition: border-color 0.18s ease, color 0.18s ease;
+}
+
+.pulse-classic-link a:hover {
+  border-color: var(--jade);
 }
 
 .pulse-nav {

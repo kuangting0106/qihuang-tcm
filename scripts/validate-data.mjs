@@ -420,11 +420,12 @@ const expectedClassicAuthors = {
   脾胃论: '李杲（东垣）',
   中藏经: '华佗',
   陆士谔医话: '陆士谔',
+  三指禅: '周学霆',
 }
 let classicChapters = 0
 let classicChars = 0
 if (classicsIndex) {
-  if (classicsIndex.books.length !== 14) {
+  if (classicsIndex.books.length !== 15) {
     errors.push(`医书全文数量应为 12，实际 ${classicsIndex.books.length}`)
   }
   for (const summary of classicsIndex.books) {

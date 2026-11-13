@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T09:45:00.439Z",
+  "generatedAt": "2026-11-13T09:49:25.846Z",
   "books": [
     {
       "id": "xuezhenglun",
@@ -183,6 +183,19 @@
         "chapterCount": 28,
         "volumeCount": 1,
         "charCount": 102458
+      }
+    },
+    {
+      "id": "sanzhichan",
+      "title": "三指禅",
+      "author": "周学霆",
+      "stats": {
+        "prefaceCount": 0,
+        "postscriptCount": 0,
+        "frontMatterCount": 0,
+        "chapterCount": 3,
+        "volumeCount": 3,
+        "charCount": 55534
       }
     }
   ]
