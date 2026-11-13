@@ -197,6 +197,36 @@ function topicStatus(id: string) {
         </div>
       </div>
 
+<section
+        v-if="section.key === 'cases' && caseBooks.length"
+        class="case-books"
+        aria-label="按医书浏览"
+      >
+        <div class="case-books__head">
+          <div>
+            <p class="eyebrow">BY BOOK / 按医书浏览</p>
+            <h2>按医书浏览医案</h2>
+          </div>
+          <p>
+            共 {{ caseBooks.length }} 部医书。上方仍按医家与病症分科，便于先看人、再看病；
+            这里按原书汇集，便于顺着一部书通读。
+          </p>
+        </div>
+        <div class="case-books__grid">
+          <RouterLink
+            v-for="book in caseBooks"
+            :key="book.work"
+            :to="`/cases/book/${encodeURIComponent(book.work)}`"
+            class="case-book-card"
+          >
+            <span class="case-book-card__count">{{ book.count }} 则</span>
+            <h3>{{ book.work }}</h3>
+            <p v-if="book.doctor">{{ book.doctor }}</p>
+            <span class="case-book-card__link">按书浏览 →</span>
+          </RouterLink>
+        </div>
+      </section>
+
       <section class="topic-grid" aria-label="栏目列表">
         <RouterLink
           v-for="(topic, index) in topics"
@@ -236,35 +266,7 @@ function topicStatus(id: string) {
         </RouterLink>
       </div>
 
-      <section
-        v-if="section.key === 'cases' && caseBooks.length"
-        class="case-books"
-        aria-label="按医书浏览"
-      >
-        <div class="case-books__head">
-          <div>
-            <p class="eyebrow">BY BOOK / 按医书浏览</p>
-            <h2>按医书浏览医案</h2>
-          </div>
-          <p>
-            共 {{ caseBooks.length }} 部医书。上方仍按医家与病症分科，便于先看人、再看病；
-            这里按原书汇集，便于顺着一部书通读。
-          </p>
-        </div>
-        <div class="case-books__grid">
-          <RouterLink
-            v-for="book in caseBooks"
-            :key="book.work"
-            :to="`/cases/book/${encodeURIComponent(book.work)}`"
-            class="case-book-card"
-          >
-            <span class="case-book-card__count">{{ book.count }} 则</span>
-            <h3>{{ book.work }}</h3>
-            <p v-if="book.doctor">{{ book.doctor }}</p>
-            <span class="case-book-card__link">按书浏览 →</span>
-          </RouterLink>
-        </div>
-      </section>
+      
 
       <section class="topic-principles paper-panel">
         <div>
