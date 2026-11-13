@@ -418,11 +418,13 @@ const expectedClassicAuthors = {
   圆运动的古中医学: '彭子益',
   '圆运动的古中医学（续）': '彭子益 著，李可 主校',
   脾胃论: '李杲（东垣）',
+  中藏经: '华佗',
+  陆士谔医话: '陆士谔',
 }
 let classicChapters = 0
 let classicChars = 0
 if (classicsIndex) {
-  if (classicsIndex.books.length !== 12) {
+  if (classicsIndex.books.length !== 14) {
     errors.push(`医书全文数量应为 12，实际 ${classicsIndex.books.length}`)
   }
   for (const summary of classicsIndex.books) {

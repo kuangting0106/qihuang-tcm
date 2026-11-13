@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T09:54:10.651Z",
+  "generatedAt": "2026-11-13T09:45:00.439Z",
   "books": [
     {
       "id": "xuezhenglun",
@@ -157,6 +157,32 @@
         "chapterCount": 52,
         "volumeCount": 4,
         "charCount": 47310
+      }
+    },
+    {
+      "id": "zhongzangjing",
+      "title": "中藏经",
+      "author": "华佗",
+      "stats": {
+        "prefaceCount": 3,
+        "postscriptCount": 1,
+        "frontMatterCount": 0,
+        "chapterCount": 50,
+        "volumeCount": 3,
+        "charCount": 30562
+      }
+    },
+    {
+      "id": "lushie-yihua",
+      "title": "陆士谔医话",
+      "author": "陆士谔",
+      "stats": {
+        "prefaceCount": 0,
+        "postscriptCount": 0,
+        "frontMatterCount": 0,
+        "chapterCount": 28,
+        "volumeCount": 1,
+        "charCount": 102458
       }
     }
   ]
