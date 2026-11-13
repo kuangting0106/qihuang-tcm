@@ -66,7 +66,12 @@ const isClinicalTopic = computed(
 const isCase = computed(() => isCaseRoute.value && !!caseDetail.value)
 const caseData = computed(() => caseDetail.value)
 const statusLabel = computed(() => {
-  if (isCase.value) return '讲义医案 · 原文照录'
+  if (isCase.value) {
+    const mode = caseData.value?.mode
+    if (mode === 'formula') return '方书病证 · 原文照录'
+    if (mode === 'thought') return '经验论述 · 原文照录'
+    return '讲义医案 · 原文照录'
+  }
   if (isAcupuncture.value) return '含针刺操作 · 非专业勿试'
   if (isMoxibustion.value) return '含艾灸操作 · 非专业勿试'
   if (isClinicalTopic.value) return '经验总结 · 非诊断标准'

@@ -8,6 +8,7 @@ const props = defineProps<{
 
 const isJinguiLecture = computed(() => props.caseData.source.work.includes('金匮'))
 const isThought = computed(() => props.caseData.mode === 'thought')
+const isFormula = computed(() => props.caseData.mode === 'formula')
 const workLabel = computed(() =>
   props.caseData.source.work.startsWith('《')
     ? props.caseData.source.work
@@ -15,13 +16,22 @@ const workLabel = computed(() =>
 )
 
 const disclaimerTitle = computed(() =>
-  isThought.value ? '经验论述照录' : isJinguiLecture.value ? '讲义原文照录' : '医案原文照录',
+  isThought.value
+    ? '经验论述照录'
+    : isFormula.value
+      ? '方书原文照录'
+      : isJinguiLecture.value
+        ? '讲义原文照录'
+        : '医案原文照录',
 )
 
 const disclaimerBody = computed(() => {
   if (isThought.value) {
     const author = props.caseData.doctor ? `${props.caseData.doctor} ` : ''
     return `以下内容为${author}${workLabel.value}所载经验论述的原文整理，保留原书的辨证思路与用药经验；部分条目未列具体剂量，不能据此自行处方。`
+  }
+  if (isFormula.value) {
+    return `以下内容为${workLabel.value}所载病证方论的原文整理，保留原书的辨证、方药与剂量；不是诊断标准，也不构成用药建议。`
   }
   return isJinguiLecture.value
     ? '以下内容为倪海厦《人纪·金匮要略》临床案例部分的原文整理，保留讲述者的辨证与用药思路；不是诊断标准，也不构成用药建议。'
@@ -31,9 +41,11 @@ const disclaimerBody = computed(() => {
 const sourceNote = computed(() =>
   isThought.value
     ? '本页只整理原书所载经验论述，不补充原书之外的诊断、剂量或转归。涉及具体治疗，请由执业中医师辨证处理。'
-    : isJinguiLecture.value
-      ? '本页只整理讲义所述案例，不补充讲义之外的诊断、剂量或转归。涉及具体治疗，请由执业中医师辨证处理。'
-      : '本页只整理原书所载医案，不补充原书之外的诊断、剂量或转归。涉及具体治疗，请由执业中医师辨证处理。',
+    : isFormula.value
+      ? '本页只整理原书所载病证方论与方药，不补充原书之外的诊断、剂量或转归。涉及具体治疗，请由执业中医师辨证处理。'
+      : isJinguiLecture.value
+        ? '本页只整理讲义所述案例，不补充讲义之外的诊断、剂量或转归。涉及具体治疗，请由执业中医师辨证处理。'
+        : '本页只整理原书所载医案，不补充原书之外的诊断、剂量或转归。涉及具体治疗，请由执业中医师辨证处理。',
 )
 
 function prescriptionOf(block: CaseContent) {
@@ -50,7 +62,7 @@ function paragraphOf(block: CaseContent) {
     <div class="case-meta">
       <span class="case-meta__category">{{ caseData.category }}</span>
       <span v-if="caseData.doctor" class="case-meta__doctor">{{ caseData.doctor }}</span>
-      <span class="case-meta__mode">{{ isThought ? '经验集' : '医案' }}</span>
+      <span class="case-meta__mode">{{ isThought ? '经验集' : isFormula ? '方书' : '医案' }}</span>
       <span>{{ caseData.source.work }}</span>
     </div>
 
