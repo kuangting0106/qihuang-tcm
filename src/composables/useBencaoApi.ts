@@ -6,7 +6,7 @@ import type {
 } from '@/types/bencao'
 import type { HerbTaxonomy } from '@/types/tcm'
 
-const API_BASE = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/api`
+const DATA_BASE = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/data/bencao-lectures`
 
 export interface BencaoIndexPayload extends BencaoLectureIndex {
   groups: BencaoGroupMeta[]
@@ -35,8 +35,8 @@ export interface BencaoGroupPayload {
   entries: BencaoEntrySummary[]
 }
 
-async function requestJson<T>(path: string): Promise<T> {
-  const response = await fetch(`${API_BASE}${path}`, {
+async function requestStatic<T>(path: string): Promise<T> {
+  const response = await fetch(`${DATA_BASE}${path}`, {
     headers: { Accept: 'application/json' },
   })
   if (!response.ok) {
@@ -52,7 +52,7 @@ const entryPromises = new Map<string, Promise<BencaoEntry>>()
 
 function fetchIndex(): Promise<BencaoIndexPayload> {
   if (!indexPromise) {
-    indexPromise = requestJson<BencaoIndexPayload>('/bencao').catch((error) => {
+    indexPromise = requestStatic<BencaoIndexPayload>('/index.json').catch((error) => {
       indexPromise = null
       throw error
     })
@@ -63,8 +63,8 @@ function fetchIndex(): Promise<BencaoIndexPayload> {
 function fetchGroup(groupId: string): Promise<BencaoGroupPayload> {
   const cached = groupPromises.get(groupId)
   if (cached) return cached
-  const promise = requestJson<BencaoGroupPayload>(
-    `/bencao/${encodeURIComponent(groupId)}`,
+  const promise = requestStatic<BencaoGroupPayload>(
+    `/${encodeURIComponent(groupId)}.json`,
   ).catch((error) => {
     groupPromises.delete(groupId)
     throw error
@@ -76,12 +76,17 @@ function fetchGroup(groupId: string): Promise<BencaoGroupPayload> {
 function fetchEntry(entryId: string): Promise<BencaoEntry> {
   const cached = entryPromises.get(entryId)
   if (cached) return cached
-  const promise = requestJson<BencaoEntry>(
-    `/bencao/entry/${encodeURIComponent(entryId)}`,
-  ).catch((error) => {
-    entryPromises.delete(entryId)
-    throw error
-  })
+  const groupId = entryId.replace(/-\d+$/, '')
+  const promise = fetchGroup(groupId)
+    .then((group) => {
+      const entry = group.entries.find((item) => item.id === entryId)
+      if (!entry) throw new Error('没有找到这条记录')
+      return entry as unknown as BencaoEntry
+    })
+    .catch((error) => {
+      entryPromises.delete(entryId)
+      throw error
+    })
   entryPromises.set(entryId, promise)
   return promise
 }

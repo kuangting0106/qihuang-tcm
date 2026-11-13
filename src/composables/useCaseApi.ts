@@ -2,6 +2,7 @@ import { ref } from 'vue'
 import type { CaseItem, CaseSummary } from '@/types/cases'
 
 const API_BASE = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/api`
+const DATA_BASE = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/data`
 
 let listPromise: Promise<CaseSummary[]> | null = null
 const detailPromises = new Map<string, Promise<CaseItem>>()
@@ -24,10 +25,17 @@ async function requestJson<T>(path: string, label: string): Promise<T> {
 
 export function fetchCaseList(): Promise<CaseSummary[]> {
   if (!listPromise) {
-    listPromise = requestJson<CaseSummary[]>('/cases', '医案目录').catch((error) => {
-      listPromise = null
-      throw error
+    listPromise = fetch(`${DATA_BASE}/cases-index.json`, {
+      headers: { Accept: 'application/json' },
     })
+      .then((response) => {
+        if (!response.ok) throw new Error(`医案目录加载失败：HTTP ${response.status}`)
+        return response.json() as Promise<CaseSummary[]>
+      })
+      .catch((error) => {
+        listPromise = null
+        throw error
+      })
   }
   return listPromise
 }
