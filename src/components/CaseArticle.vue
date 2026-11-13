@@ -8,6 +8,11 @@ const props = defineProps<{
 
 const isJinguiLecture = computed(() => props.caseData.source.work.includes('金匮'))
 const isThought = computed(() => props.caseData.mode === 'thought')
+const workLabel = computed(() =>
+  props.caseData.source.work.startsWith('《')
+    ? props.caseData.source.work
+    : `《${props.caseData.source.work}》`,
+)
 
 const disclaimerTitle = computed(() =>
   isThought.value ? '经验论述照录' : isJinguiLecture.value ? '讲义原文照录' : '医案原文照录',
@@ -16,11 +21,11 @@ const disclaimerTitle = computed(() =>
 const disclaimerBody = computed(() => {
   if (isThought.value) {
     const author = props.caseData.doctor ? `${props.caseData.doctor} ` : ''
-    return `以下内容为${author}《${props.caseData.source.work}》所载经验论述的原文整理，保留原书的辨证思路与用药经验；部分条目未列具体剂量，不能据此自行处方。`
+    return `以下内容为${author}${workLabel.value}所载经验论述的原文整理，保留原书的辨证思路与用药经验；部分条目未列具体剂量，不能据此自行处方。`
   }
   return isJinguiLecture.value
     ? '以下内容为倪海厦《人纪·金匮要略》临床案例部分的原文整理，保留讲述者的辨证与用药思路；不是诊断标准，也不构成用药建议。'
-    : `以下内容为《${props.caseData.source.work}》所载医案的原文整理，保留原案的症状、辨证与用药记录；不是诊断标准，也不构成用药建议。`
+    : `以下内容为${workLabel.value}所载医案的原文整理，保留原案的症状、辨证与用药记录；不是诊断标准，也不构成用药建议。`
 })
 
 const sourceNote = computed(() =>
