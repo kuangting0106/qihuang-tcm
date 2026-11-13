@@ -422,11 +422,12 @@ const expectedClassicAuthors = {
   陆士谔医话: '陆士谔',
   三指禅: '周学霆',
   厘正按摩要术: '张振鉴（张筱衫）',
+  '普济方（总论）': '朱橚',
 }
 let classicChapters = 0
 let classicChars = 0
 if (classicsIndex) {
-  if (classicsIndex.books.length !== 16) {
+  if (classicsIndex.books.length !== 17) {
     errors.push(`医书全文数量应为 12，实际 ${classicsIndex.books.length}`)
   }
   for (const summary of classicsIndex.books) {
