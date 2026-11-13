@@ -94,6 +94,7 @@ const readyTopicIds = new Set([
   'treatment-methods',
   'inspection',
   'pulse',
+  'tuina',
 ])
 const clinicalTopicIds = new Set(['ten-questions', 'treatment-methods', 'inspection', 'pulse'])
 
@@ -107,7 +108,7 @@ function isClinical(id: string) {
 
 function topicStatus(id: string) {
   if (section.value.key === 'cases') return '已收录 · 医案原文'
-  if (id === 'acupuncture' || id === 'moxibustion') return '已收录 · 非专业勿试'
+  if (id === 'acupuncture' || id === 'moxibustion' || id === 'tuina') return '已收录 · 非专业勿试'
   if (isClinical(id)) return '已收录 · 经验总结'
   return '待收录'
 }

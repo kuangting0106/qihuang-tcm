@@ -8,6 +8,7 @@ import MoxibustionTopic from '@/components/MoxibustionTopic.vue'
 import PulseTopic from '@/components/PulseTopic.vue'
 import TenQuestionsTopic from '@/components/TenQuestionsTopic.vue'
 import TreatmentPrinciplesTopic from '@/components/TreatmentPrinciplesTopic.vue'
+import TuinaTopic from '@/components/TuinaTopic.vue'
 import { useCaseApi } from '@/composables/useCaseApi'
 import type { CaseItem } from '@/types/cases'
 import type { Topic } from '@/data/topics'
@@ -59,8 +60,14 @@ const isTreatmentMethods = computed(
 )
 const isInspection = computed(() => section.value.key === 'methods' && topic.value?.id === 'inspection')
 const isPulse = computed(() => section.value.key === 'methods' && topic.value?.id === 'pulse')
+const isTuina = computed(() => section.value.key === 'methods' && topic.value?.id === 'tuina')
 const isClinicalTopic = computed(
-  () => isTenQuestions.value || isTreatmentMethods.value || isInspection.value || isPulse.value,
+  () =>
+    isTenQuestions.value ||
+    isTreatmentMethods.value ||
+    isInspection.value ||
+    isPulse.value ||
+    isTuina.value,
 )
 
 const isCase = computed(() => isCaseRoute.value && !!caseDetail.value)
@@ -74,6 +81,7 @@ const statusLabel = computed(() => {
   }
   if (isAcupuncture.value) return '含针刺操作 · 非专业勿试'
   if (isMoxibustion.value) return '含艾灸操作 · 非专业勿试'
+  if (isTuina.value) return '推拿原文 · 非专业勿试'
   if (isClinicalTopic.value) return '经验总结 · 非诊断标准'
   return '正文待收录'
 })
@@ -120,6 +128,7 @@ const statusLabel = computed(() => {
         <PulseTopic v-else-if="isPulse" />
         <AcupunctureTopic v-else-if="isAcupuncture" />
         <MoxibustionTopic v-else-if="isMoxibustion" />
+        <TuinaTopic v-else-if="isTuina" />
 
         <CaseArticle v-else-if="isCase && caseData" :case-data="caseData" />
 

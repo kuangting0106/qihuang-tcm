@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T09:49:25.846Z",
+  "generatedAt": "2026-11-13T09:52:40.007Z",
   "books": [
     {
       "id": "xuezhenglun",
@@ -196,6 +196,19 @@
         "chapterCount": 3,
         "volumeCount": 3,
         "charCount": 55534
+      }
+    },
+    {
+      "id": "liming-tuina",
+      "title": "厘正按摩要术",
+      "author": "张振鉴（张筱衫）",
+      "stats": {
+        "prefaceCount": 1,
+        "postscriptCount": 1,
+        "frontMatterCount": 0,
+        "chapterCount": 4,
+        "volumeCount": 4,
+        "charCount": 60475
       }
     }
   ]
