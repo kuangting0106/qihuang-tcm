@@ -134,7 +134,7 @@ watch(entryId, (id) => load(id), { immediate: true })
             </dl>
             <p v-else class="dacheng-profile__empty">原书未单列药性概览。</p>
             <p class="dacheng-profile__source">
-              据《本草纲目》引文与《中草药大全》整理；剂量与用法依原文，未作现代换算。
+              {{ entry.sourceNote || '据《本草纲目》引文与《中草药大全》整理；剂量与用法依原文，未作现代换算。' }}
             </p>
           </aside>
         </div>

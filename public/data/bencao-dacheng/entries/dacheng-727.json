@@ -1,0 +1,81 @@
+{
+  "number": 1110,
+  "name": "蓼大青叶",
+  "pinyin": "liaodaqingye",
+  "aliases": [],
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "苦"
+    ],
+    "nature": "寒",
+    "meridianNames": [
+      "心",
+      "胃"
+    ],
+    "effects": "清热解毒，凉血消斑",
+    "indications": "温病发热，发斑发疹，肺热咳喘，喉痹，痄腮，丹毒，痈肿",
+    "dosage": "9～15g。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "pharmacopoeia",
+      "label": "来源",
+      "text": "本品为蓼科植物蓼蓝Polygonum tinctorium Ait.的干燥叶。夏、秋二季枝叶茂盛时采收两次，除去茎枝和杂质，干燥。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性状",
+      "text": "本品多皱缩、破碎，完整者展平后呈椭圆形，长3～8cm，宽2～5cm。蓝绿色或黑蓝色，先端钝，基部渐狭，全缘。叶脉浅黄棕色，于下表面略突起。叶柄扁平，偶带膜质托叶鞘。质脆。气微，味微涩而稍苦。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "鉴别",
+      "text": "（1）本品叶表面观：表皮细胞多角形，垂周壁平直或微波状弯曲；气孔平轴式，少数不等式。腺毛头部4～8细胞；柄2个细胞并列，亦有多细胞构成多列的。非腺毛多列性，壁木化增厚，常见于叶片边缘和主脉处。叶肉组织含多量蓝色至蓝黑色色素颗粒。草酸钙簇晶多见，直径12～80μm。\n（2）取〔含量测定〕项下供试品溶液10ml，浓缩至1ml，作为供试品溶液。另取靛蓝对照品，加三氯甲烷制成每1ml含1mg的溶液，作为对照品溶液。照薄层色谱法（通则0502）试验，吸取上述两种溶液各5μl，分别点于同一硅胶G薄层板上，以苯-三氯甲烷-丙酮（5:4:1）为展开剂，展开，取出，晾干。供试品色谱中，在与对照品色谱相应的位置上，显相同的蓝色斑点。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性味与归经",
+      "text": "苦，寒。归心、胃经。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "功能与主治",
+      "text": "清热解毒，凉血消斑。用于温病发热，发斑发疹，肺热咳喘，喉痹，痄腮，丹毒，痈肿。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "用法与用量",
+      "text": "9～15g。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "贮藏",
+      "text": "置通风干燥处。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    }
+  ],
+  "sourceText": "本品为蓼科植物蓼蓝Polygonum tinctorium Ait.的干燥叶。夏、秋二季枝叶茂盛时采收两次，除去茎枝和杂质，干燥。",
+  "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+  "charCount": 532,
+  "documents": [
+    {
+      "file": "chp-578.json",
+      "kind": "pharmacopoeia",
+      "title": "中华人民共和国药典 2020年版 一部"
+    }
+  ],
+  "categoryId": "qingre",
+  "categoryTitle": "清热药",
+  "id": "dacheng-727",
+  "summary": "清热解毒，凉血消斑",
+  "images": [],
+  "docCount": 1
+}

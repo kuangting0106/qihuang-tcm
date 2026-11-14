@@ -1,0 +1,83 @@
+{
+  "number": 1105,
+  "name": "滑石粉",
+  "pinyin": "huashifen",
+  "aliases": [],
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "甘",
+      "淡"
+    ],
+    "nature": "寒",
+    "meridianNames": [
+      "膀胱",
+      "肺",
+      "胃"
+    ],
+    "effects": "利尿通淋，清热解暑；外用祛湿敛疮",
+    "indications": "热淋，石淋，尿热涩痛，暑湿烦渴，湿热水泻；外治湿疹，湿疮，痱子",
+    "dosage": "10～20g，包煎。外用适量。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "pharmacopoeia",
+      "label": "来源",
+      "text": "本品系滑石经精选净制、粉碎、干燥制成。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性状",
+      "text": "本品为白色或类白色、微细、无砂性的粉末，手摸有滑腻感。气微，味淡。\n本品在水、稀盐酸或稀氢氧化钠溶液中均不溶解。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "鉴别",
+      "text": "取本品，照滑石项下的〔鉴别〕（1）、（2）项试验，显相同的反应。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性味与归经",
+      "text": "甘、淡，寒。归膀胱、肺、胃经。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "功能与主治",
+      "text": "利尿通淋，清热解暑；外用祛湿敛疮。用于热淋，石淋，尿热涩痛，暑湿烦渴，湿热水泻；外治湿疹，湿疮，痱子。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "用法与用量",
+      "text": "10～20g，包煎。外用适量。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "贮藏",
+      "text": "密闭。\n注：[1]1%明胶溶液　取明胶1g，加水100ml，加热使溶解（临用时配制），混匀，即得。\n[2]酒石酸钾钠-三乙醇胺混合溶液　取酒石酸钾钠80g，加水300ml使溶解，加入三乙醇胺100ml，混匀，即得。\n[3]氨-氯化铵缓冲溶液pH＝10　取氯化铵67.5g，加水300ml使溶解，加入氢氧化铵570ml，用水稀释至1000ml，混匀，即得。\n[4]酸性铬蓝K-萘酚绿B混合指示剂　取酸性铬蓝K0.2g和萘酚绿B 0.34g，溶解于水中，稀释至100ml，混匀，即得。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    }
+  ],
+  "sourceText": "本品系滑石经精选净制、粉碎、干燥制成。",
+  "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+  "charCount": 428,
+  "documents": [
+    {
+      "file": "chp-555.json",
+      "kind": "pharmacopoeia",
+      "title": "中华人民共和国药典 2020年版 一部"
+    }
+  ],
+  "categoryId": "lishui",
+  "categoryTitle": "利水渗湿药",
+  "id": "dacheng-722",
+  "summary": "利尿通淋，清热解暑；外用祛湿敛疮",
+  "images": [],
+  "docCount": 1
+}

@@ -41,6 +41,7 @@ export interface BencaoDachengEntry {
   profile: BencaoDachengProfile
   sections: BencaoDachengSection[]
   sourceText: string
+  sourceNote?: string
   images: BencaoImage[]
   charCount: number
   docCount: number

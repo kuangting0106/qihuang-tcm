@@ -1,0 +1,83 @@
+{
+  "number": 1091,
+  "name": "猪胆粉",
+  "pinyin": "zhudanfen",
+  "aliases": [],
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "苦"
+    ],
+    "nature": "寒",
+    "meridianNames": [
+      "肝",
+      "胆",
+      "肺",
+      "大肠"
+    ],
+    "effects": "清热润燥，止咳平喘，解毒",
+    "indications": "顿咳，哮喘，热病燥渴，目赤，喉痹，黄疸，泄泻，痢疾，便秘，痈疮肿毒",
+    "dosage": "0.3～0.6g，冲服或入丸散。外用适量，研末或水调涂敷患处。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "pharmacopoeia",
+      "label": "来源",
+      "text": "本品为猪科动物猪Sus scrofa domestica Brisson.胆汁的干燥品。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性状",
+      "text": "本品为黄色或灰黄色粉末。气微腥，味苦，易吸潮。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "鉴别",
+      "text": "取本品细粉0.1g，加10%氢氧化钠溶液5ml，120℃加热4小时，放冷，滴加盐酸调节pH值至2～3，摇匀。用乙酸乙酯振摇提取4次，每次10ml，合并提取液，蒸干，残渣加乙醇10ml使溶解，作为供试品溶液。另取猪去氧胆酸对照品适量，加乙醇制成每1ml含1mg的溶液，作为对照品溶液。照薄层色谱法（通则0502）试验，吸取上述两种溶液各2μl，分别点于同一硅胶G薄层板上，以新配制的异辛烷-乙醚-冰醋酸-正丁醇-水（10:5:5:3:1）的上层溶液为展开剂，展开，取出，晾干，喷以10%硫酸乙醇溶液，在105℃加热至斑点显色清晰，分别置日光和紫外光灯（365nm）下检视。供试品色谱中，在与对照品色谱相应的位置上，显相同颜色的斑点或荧光斑点。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性味与归经",
+      "text": "苦，寒。归肝、胆、肺、大肠经。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "功能与主治",
+      "text": "清热润燥，止咳平喘，解毒。用于顿咳，哮喘，热病燥渴，目赤，喉痹，黄疸，泄泻，痢疾，便秘，痈疮肿毒。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "用法与用量",
+      "text": "0.3～0.6g，冲服或入丸散。外用适量，研末或水调涂敷患处。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "贮藏",
+      "text": "密封，避光，置阴凉干燥处。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    }
+  ],
+  "sourceText": "本品为猪科动物猪Sus scrofa domestica Brisson.胆汁的干燥品。",
+  "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+  "charCount": 495,
+  "documents": [
+    {
+      "file": "chp-504.json",
+      "kind": "pharmacopoeia",
+      "title": "中华人民共和国药典 2020年版 一部"
+    }
+  ],
+  "categoryId": "qingre",
+  "categoryTitle": "清热药",
+  "id": "dacheng-708",
+  "summary": "清热润燥，止咳平喘，解毒",
+  "images": [],
+  "docCount": 1
+}

@@ -1,0 +1,83 @@
+{
+  "number": 1068,
+  "name": "胆南星",
+  "pinyin": "dannanxing",
+  "aliases": [],
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "苦",
+      "微辛"
+    ],
+    "nature": "凉",
+    "meridianNames": [
+      "肺",
+      "肝",
+      "脾"
+    ],
+    "effects": "清热化痰，息风定惊",
+    "indications": "痰热咳嗽，咯痰黄稠，中风痰迷，癫狂惊痫",
+    "dosage": "3～6g。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "pharmacopoeia",
+      "label": "来源",
+      "text": "本品为制天南星的细粉与牛、羊或猪胆汁经加工而成，或为生天南星细粉与牛、羊或猪胆汁经发酵加工而成。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性状",
+      "text": "本品呈方块状或圆柱状。棕黄色、灰棕色或棕黑色。质硬。气微腥，味苦。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "鉴别",
+      "text": "（1）本品粉末淡黄棕色。薄壁细胞类圆形，充满糊化淀粉粒。草酸钙针晶束长20～90μm。螺纹导管和环纹导管直径8～60μm。\n（2）取本品粉末0.2g，加水5ml，振摇，滤过，取滤液2ml置试管中，加新制的糠醛溶液（1→100）0.5ml，沿管壁加硫酸2ml，两液接界处即显棕红色环。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性味与归经",
+      "text": "苦、微辛，凉。归肺、肝、脾经。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "功能与主治",
+      "text": "清热化痰，息风定惊。用于痰热咳嗽，咯痰黄稠，中风痰迷，癫狂惊痫。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "用法与用量",
+      "text": "3～6g。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "贮藏",
+      "text": "置通风干燥处，防蛀。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    }
+  ],
+  "sourceText": "本品为制天南星的细粉与牛、羊或猪胆汁经加工而成，或为生天南星细粉与牛、羊或猪胆汁经发酵加工而成。",
+  "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+  "charCount": 284,
+  "documents": [
+    {
+      "file": "chp-412.json",
+      "kind": "pharmacopoeia",
+      "title": "中华人民共和国药典 2020年版 一部"
+    }
+  ],
+  "categoryId": "qingre",
+  "categoryTitle": "清热药",
+  "id": "dacheng-685",
+  "summary": "清热化痰，息风定惊",
+  "images": [],
+  "docCount": 1
+}

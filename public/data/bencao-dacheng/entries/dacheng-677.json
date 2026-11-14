@@ -1,0 +1,88 @@
+{
+  "number": 1060,
+  "name": "荆芥穗炭",
+  "pinyin": "jingjiesuitan",
+  "aliases": [],
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "辛",
+      "涩"
+    ],
+    "nature": "微温",
+    "meridianNames": [
+      "肺",
+      "肝"
+    ],
+    "effects": "收涩止血",
+    "indications": "便血，崩漏，产后血晕",
+    "dosage": "5～10g。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "pharmacopoeia",
+      "label": "来源",
+      "text": "本品为荆芥穗的炮制加工品。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性状",
+      "text": "本品为不规则的段，长约15mm。表面黑褐色。花冠多脱落，宿萼钟状，先端5齿裂，黑褐色。小坚果棕黑色。具焦香气，味苦而辛。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "鉴别",
+      "text": "外果皮细胞表面观多角形，壁黏液化，胞腔含棕色物。内果皮石细胞淡棕色，垂周壁深波状弯曲，密具纹孔。纤维成束。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "炮制",
+      "text": "取荆芥穗段，照炒炭法（通则0213）炒至表面黑褐色，内部焦黄色，喷淋清水少许，熄灭火星，取出，晾干。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性味与归经",
+      "text": "辛、涩，微温。归肺、肝经。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "功能与主治",
+      "text": "收涩止血。用于便血，崩漏，产后血晕。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "用法与用量",
+      "text": "5～10g。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "贮藏",
+      "text": "置阴凉干燥处。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    }
+  ],
+  "sourceText": "本品为荆芥穗的炮制加工品。",
+  "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+  "charCount": 220,
+  "documents": [
+    {
+      "file": "chp-364.json",
+      "kind": "pharmacopoeia",
+      "title": "中华人民共和国药典 2020年版 一部"
+    }
+  ],
+  "categoryId": "zhixue",
+  "categoryTitle": "止血药",
+  "id": "dacheng-677",
+  "summary": "收涩止血",
+  "images": [],
+  "docCount": 1
+}

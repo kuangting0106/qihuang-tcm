@@ -1,0 +1,87 @@
+{
+  "number": 1035,
+  "name": "红粉",
+  "pinyin": "hongfen",
+  "aliases": [],
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "辛"
+    ],
+    "nature": "热",
+    "meridianNames": [
+      "肺",
+      "脾"
+    ],
+    "effects": "拔毒，除脓，去腐，生肌",
+    "indications": "痈疽疔疮，梅毒下疳，一切恶疮，肉暗紫黑，腐肉不去，窦道瘘管，脓水淋漓，久不收口",
+    "dosage": "外用适量，研极细粉单用或与其他药味配成散剂或制成药捻。",
+    "contraindications": "本品有毒，只可外用，不可内服；外用亦不宜久用；孕妇禁用。"
+  },
+  "sections": [
+    {
+      "kind": "pharmacopoeia",
+      "label": "来源",
+      "text": "本品为红氧化汞（HgO）。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性状",
+      "text": "本品为橙红色片状或粉状结晶，片状的一面光滑略具光泽，另一面较粗糙。粉末橙色。质硬，性脆；遇光颜色逐渐变深。气微。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "鉴别",
+      "text": "取本品0.5g，加水10ml，搅匀，缓缓滴加适量的盐酸溶解，溶液显汞盐（通则0301）的鉴别反应。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性味与归经",
+      "text": "辛，热；有大毒。归肺、脾经。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "功能与主治",
+      "text": "拔毒，除脓，去腐，生肌。用于痈疽疔疮，梅毒下疳，一切恶疮，肉暗紫黑，腐肉不去，窦道瘘管，脓水淋漓，久不收口。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "用法与用量",
+      "text": "外用适量，研极细粉单用或与其他药味配成散剂或制成药捻。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "注意",
+      "text": "本品有毒，只可外用，不可内服；外用亦不宜久用；孕妇禁用。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "贮藏",
+      "text": "置干燥处，遮光，密闭。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    }
+  ],
+  "sourceText": "本品为红氧化汞（HgO）。",
+  "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+  "charCount": 252,
+  "documents": [
+    {
+      "file": "chp-238.json",
+      "kind": "pharmacopoeia",
+      "title": "中华人民共和国药典 2020年版 一部"
+    }
+  ],
+  "categoryId": "gongdu",
+  "categoryTitle": "攻毒杀虫止痒药",
+  "id": "dacheng-652",
+  "summary": "拔毒，除脓，去腐，生肌",
+  "images": [],
+  "docCount": 1
+}

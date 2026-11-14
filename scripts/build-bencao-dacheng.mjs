@@ -8,6 +8,7 @@ const OUT_DIR = path.join(ROOT, 'public', 'data', 'bencao-dacheng')
 const CATALOG_FILE = path.join(ROOT, 'public', 'data', 'bencao-lectures', 'catalog.json')
 const IMAGE_CACHE_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-images.json')
 const PROVIDED_IMAGE_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-provided-images.json')
+const EXTRA_ENTRY_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-extra.json')
 
 const TYPE_A_NAMES = [
   '紫苏叶', '生姜', '香薷', '白芷', '薄荷', '菊花', '葛根', '淡豆豉', '知母', '天花粉',
@@ -432,6 +433,22 @@ function main() {
     sourceNames.push({ number, name: entry.name })
     const key = normalizeName(entry.name)
     entries.set(key, mergeEntry(entries.get(key), entry))
+  }
+
+  if (fs.existsSync(EXTRA_ENTRY_FILE)) {
+    const extraData = JSON.parse(fs.readFileSync(EXTRA_ENTRY_FILE, 'utf8'))
+    for (const item of extraData.items ?? []) {
+      const category = categoryOf(`${item.profile.effects} ${item.profile.indications} ${item.name}`)
+      const entry = {
+        ...item,
+        number: item.number ?? 1000,
+        categoryId: category.id,
+        categoryTitle: category.title,
+        quote: item.quote ?? null,
+      }
+      const key = normalizeName(entry.name)
+      entries.set(key, mergeEntry(entries.get(key), entry))
+    }
   }
 
   const imageMap = loadCatalogImageMap()

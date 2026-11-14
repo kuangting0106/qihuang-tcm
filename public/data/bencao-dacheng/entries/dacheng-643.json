@@ -1,0 +1,88 @@
+{
+  "number": 1026,
+  "name": "当药",
+  "pinyin": "dangyao",
+  "aliases": [],
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "苦"
+    ],
+    "nature": "寒",
+    "meridianNames": [
+      "肝",
+      "胃",
+      "大肠"
+    ],
+    "effects": "清湿热，健胃",
+    "indications": "湿热黄疸，胁痛，痢疾腹痛，食欲不振",
+    "dosage": "6～12g，儿童酌减。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "pharmacopoeia",
+      "label": "来源",
+      "text": "本品为龙胆科植物瘤毛獐牙菜Swertia pseudochinensis Hara的干燥全草。夏、秋二季采挖，除去杂质，晒干。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性状",
+      "text": "本品长10～40cm。根呈长圆锥形，长2～7cm，表面黄色或黄褐色，断面类白色。茎方柱形，常具狭翅，多分枝，直径1～2.5mm；表面黄绿色或黄棕色带紫色，节处略膨大；质脆，易折断，断面中空。叶对生，无柄；叶片多皱缩或破碎，完整者展平后呈条状披针形，长2～4cm，宽0.3～0.9cm，先端渐尖，基部狭，全缘。圆锥状聚伞花序顶生或腋生。花萼5深裂，裂片线形。花冠淡蓝紫色或暗黄色，5深裂，裂片内侧基部有2腺体，腺体周围有长毛。蒴果椭圆形。气微，味苦。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "鉴别",
+      "text": "（1）取本品花冠内侧基部腺体周围的细毛，置显微镜下观察，表面可见瘤状突起。\n（2）在〔含量测定〕项的色谱图中，供试品色谱中应分别呈现与獐牙菜苦苷、当药苷对照品色谱峰保留时间相应的色谱峰。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "炮制",
+      "text": "除去杂质，喷淋清水，稍润，切段，干燥。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性味与归经",
+      "text": "苦，寒。归肝、胃、大肠经。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "功能与主治",
+      "text": "清湿热，健胃。用于湿热黄疸，胁痛，痢疾腹痛，食欲不振。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "用法与用量",
+      "text": "6～12g，儿童酌减。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "贮藏",
+      "text": "置干燥处。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    }
+  ],
+  "sourceText": "本品为龙胆科植物瘤毛獐牙菜Swertia pseudochinensis Hara的干燥全草。夏、秋二季采挖，除去杂质，晒干。",
+  "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+  "charCount": 455,
+  "documents": [
+    {
+      "file": "chp-205.json",
+      "kind": "pharmacopoeia",
+      "title": "中华人民共和国药典 2020年版 一部"
+    }
+  ],
+  "categoryId": "xiaoshi",
+  "categoryTitle": "消食药",
+  "id": "dacheng-643",
+  "summary": "清湿热，健胃",
+  "images": [],
+  "docCount": 1
+}

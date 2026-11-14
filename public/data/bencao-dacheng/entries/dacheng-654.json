@@ -1,0 +1,81 @@
+{
+  "number": 1037,
+  "name": "苏合香",
+  "pinyin": "suhexiang",
+  "aliases": [],
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "辛"
+    ],
+    "nature": "温",
+    "meridianNames": [
+      "心",
+      "脾"
+    ],
+    "effects": "开窍，辟秽，止痛",
+    "indications": "中风痰厥，猝然昏倒，胸痹心痛，胸腹冷痛，惊痫",
+    "dosage": "0.3～1g，宜入丸散服。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "pharmacopoeia",
+      "label": "来源",
+      "text": "本品为金缕梅科植物苏合香树Liquidambar orientalis Mill.的树干渗出的香树脂经加工精制而成。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性状",
+      "text": "本品为半流动性的浓稠液体。棕黄色或暗棕色，半透明。质黏稠。气芳香。\n本品在90%乙醇、二硫化碳、三氯甲烷或冰醋酸中溶解，在乙醚中微溶。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "鉴别",
+      "text": "（1）取本品1g与细沙3g混合后，置试管中，加高锰酸钾试液5ml，微热，即产生显著的苯甲醛香气。\n（2）取本品1g，加乙醚10ml溶解，上清液作为供试品溶液。另取桂皮醛、肉桂酸对照品，加乙醚制成每1ml各含1mg的溶液，作为对照品溶液。照薄层色谱法（通则0502）试验，吸取上述供试品溶液2μl、对照品溶液各1μl，分别点于同一硅胶GF254薄层板上，以石油醚（30～60℃）-正己烷-甲酸乙酯-甲酸（10:30:15:1）为展开剂，在10～15℃展开，取出，晾干，置紫外光灯（254nm）下检视。供试品色谱中，在与对照品色谱相应的位置上，显相同颜色的斑点。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性味与归经",
+      "text": "辛，温。归心、脾经。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "功能与主治",
+      "text": "开窍，辟秽，止痛。用于中风痰厥，猝然昏倒，胸痹心痛，胸腹冷痛，惊痫。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "用法与用量",
+      "text": "0.3～1g，宜入丸散服。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "贮藏",
+      "text": "密闭，置阴凉干燥处。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    }
+  ],
+  "sourceText": "本品为金缕梅科植物苏合香树Liquidambar orientalis Mill.的树干渗出的香树脂经加工精制而成。",
+  "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+  "charCount": 471,
+  "documents": [
+    {
+      "file": "chp-256.json",
+      "kind": "pharmacopoeia",
+      "title": "中华人民共和国药典 2020年版 一部"
+    }
+  ],
+  "categoryId": "huashi",
+  "categoryTitle": "化湿药",
+  "id": "dacheng-654",
+  "summary": "开窍，辟秽，止痛",
+  "images": [],
+  "docCount": 1
+}

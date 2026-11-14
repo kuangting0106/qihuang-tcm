@@ -1,0 +1,81 @@
+{
+  "number": 1072,
+  "name": "莲子心",
+  "pinyin": "lianzixin",
+  "aliases": [],
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "苦"
+    ],
+    "nature": "寒",
+    "meridianNames": [
+      "心",
+      "肾"
+    ],
+    "effects": "清心安神，交通心肾，涩精止血",
+    "indications": "热入心包，神昏谵语，心肾不交，失眠遗精，血热吐血",
+    "dosage": "2～5g。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "pharmacopoeia",
+      "label": "来源",
+      "text": "本品为睡莲科植物莲Nelumbo nucifera Gaertn.的成熟种子中的干燥幼叶及胚根。取出，晒干。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性状",
+      "text": "本品略呈细圆柱形，长1～1.4cm，直径约0.2cm。幼叶绿色，一长一短，卷成箭形，先端向下反折，两幼叶间可见细小胚芽。胚根圆柱形，长约3mm，黄白色。质脆，易折断，断面有数个小孔。气微，味苦。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "鉴别",
+      "text": "（1）本品粉末灰绿色。表皮细胞略呈长方形，壁薄。叶肉细胞壁薄，类圆形，细胞内含众多淀粉粒与绿色色素。胚根细胞呈长方形，排列整齐，壁菲薄，有的含脂肪油滴。幼叶组织中细胞间隙较大。\n（2）取本品粉末2g，加甲醇30ml，超声处理30分钟，滤过，滤液蒸干，残渣加甲醇1ml使溶解，作为供试品溶液。另取莲心碱高氯酸盐对照品，加甲醇制成每1ml含1mg的溶液，作为对照品溶液。照薄层色谱法（通则0502）试验，吸取供试品溶液4～6μl、对照品溶液4μl，分别点于同一硅胶G薄层板上，以三氯甲烷-乙酸乙酯-二乙胺（5:4:1）为展开剂，展开，取出，晾干，喷以稀碘化铋钾试液。供试品色谱中，在与对照品色谱相应的位置上，显相同颜色的斑点。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性味与归经",
+      "text": "苦，寒。归心、肾经。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "功能与主治",
+      "text": "清心安神，交通心肾，涩精止血。用于热入心包，神昏谵语，心肾不交，失眠遗精，血热吐血。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "用法与用量",
+      "text": "2～5g。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "贮藏",
+      "text": "置通风干燥处，防潮，防蛀。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    }
+  ],
+  "sourceText": "本品为睡莲科植物莲Nelumbo nucifera Gaertn.的成熟种子中的干燥幼叶及胚根。取出，晒干。",
+  "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+  "charCount": 532,
+  "documents": [
+    {
+      "file": "chp-430.json",
+      "kind": "pharmacopoeia",
+      "title": "中华人民共和国药典 2020年版 一部"
+    }
+  ],
+  "categoryId": "anshen",
+  "categoryTitle": "安神药",
+  "id": "dacheng-689",
+  "summary": "清心安神，交通心肾，涩精止血",
+  "images": [],
+  "docCount": 1
+}

@@ -1,0 +1,82 @@
+{
+  "number": 1094,
+  "name": "鹿角霜",
+  "pinyin": "lujiaoshuang",
+  "aliases": [],
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "咸",
+      "涩"
+    ],
+    "nature": "温",
+    "meridianNames": [
+      "肝",
+      "肾"
+    ],
+    "effects": "温肾助阳，收敛止血",
+    "indications": "脾肾阳虚，白带过多，遗尿尿频，崩漏下血，疮疡不敛",
+    "dosage": "9～15g，先煎。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "pharmacopoeia",
+      "label": "来源",
+      "text": "本品为鹿角去胶质的角块。春、秋二季生产，将骨化角熬去胶质，取出角块，干燥。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性状",
+      "text": "本品呈长圆柱形或不规则的块状，大小不一。表面灰白色，显粉性，常具纵棱，偶见灰色或灰棕色斑点。体轻，质酥，断面外层较致密，白色或灰白色，内层有蜂窝状小孔，灰褐色或灰黄色。有吸湿性。气微，味淡，嚼之有粘牙感。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "炮制",
+      "text": "用时捣碎。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性味与归经",
+      "text": "咸、涩，温。归肝、肾经。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "功能与主治",
+      "text": "温肾助阳，收敛止血。用于脾肾阳虚，白带过多，遗尿尿频，崩漏下血，疮疡不敛。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "用法与用量",
+      "text": "9～15g，先煎。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "贮藏",
+      "text": "置干燥处。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    }
+  ],
+  "sourceText": "本品为鹿角去胶质的角块。春、秋二季生产，将骨化角熬去胶质，取出角块，干燥。",
+  "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+  "charCount": 207,
+  "documents": [
+    {
+      "file": "chp-510.json",
+      "kind": "pharmacopoeia",
+      "title": "中华人民共和国药典 2020年版 一部"
+    }
+  ],
+  "categoryId": "zhixue",
+  "categoryTitle": "止血药",
+  "id": "dacheng-711",
+  "summary": "温肾助阳，收敛止血",
+  "images": [],
+  "docCount": 1
+}

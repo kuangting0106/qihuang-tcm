@@ -1,0 +1,96 @@
+{
+  "number": 1042,
+  "name": "皂矾（绿矾）",
+  "pinyin": "zaofan",
+  "aliases": [
+    "皂矾",
+    "绿矾"
+  ],
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "酸"
+    ],
+    "nature": "凉",
+    "meridianNames": [
+      "肝",
+      "脾"
+    ],
+    "effects": "解毒燥湿，杀虫补血",
+    "indications": "黄肿胀满，疳积久痢，肠风便血，血虚萎黄，湿疮疥癣，喉痹口疮",
+    "dosage": "0.8～1.6g。外用适量。",
+    "contraindications": "孕妇慎用。"
+  },
+  "sections": [
+    {
+      "kind": "pharmacopoeia",
+      "label": "来源",
+      "text": "本品为硫酸盐类矿物水绿矾族水绿矾的矿石。主含含水硫酸亚铁（FeSO4·7H2O）。采挖后，除去杂石。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性状",
+      "text": "本品为不规则碎块。浅绿色或黄绿色，半透明，具光泽，表面不平坦。质硬脆，断面具玻璃样光泽。有铁锈气，味先涩后微甜。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "鉴别",
+      "text": "取本品0.5g，加水适量使溶解（必要时滤过），溶液显亚铁盐（通则0301）与硫酸盐（通则0301）的鉴别反应。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "炮制",
+      "text": "皂矾　取原药材，除去杂质，打碎。\n煅皂矾　取净皂矾，照明煅法（通则0213）煅至红透。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性味与归经",
+      "text": "酸，凉。归肝、脾经。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "功能与主治",
+      "text": "解毒燥湿，杀虫补血。用于黄肿胀满，疳积久痢，肠风便血，血虚萎黄，湿疮疥癣，喉痹口疮。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "用法与用量",
+      "text": "0.8～1.6g。外用适量。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "注意",
+      "text": "孕妇慎用。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "贮藏",
+      "text": "置阴凉干燥处，防潮，防尘。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    }
+  ],
+  "sourceText": "本品为硫酸盐类矿物水绿矾族水绿矾的矿石。主含含水硫酸亚铁（FeSO4·7H2O）。采挖后，除去杂石。",
+  "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+  "charCount": 288,
+  "documents": [
+    {
+      "file": "chp-275.json",
+      "kind": "pharmacopoeia",
+      "title": "中华人民共和国药典 2020年版 一部"
+    }
+  ],
+  "categoryId": "qingre",
+  "categoryTitle": "清热药",
+  "id": "dacheng-659",
+  "summary": "解毒燥湿，杀虫补血",
+  "images": [],
+  "docCount": 1
+}

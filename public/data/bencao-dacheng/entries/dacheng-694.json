@@ -1,0 +1,81 @@
+{
+  "number": 1077,
+  "name": "臭灵丹草",
+  "pinyin": "choulingdancao",
+  "aliases": [],
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "辛",
+      "苦"
+    ],
+    "nature": "寒",
+    "meridianNames": [
+      "肺"
+    ],
+    "effects": "清热解毒，止咳祛痰",
+    "indications": "风热感冒，咽喉肿痛，肺热咳嗽",
+    "dosage": "9～15g。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "pharmacopoeia",
+      "label": "来源",
+      "text": "本品为菊科植物翼齿六棱菊Laggera pterodonta（DC.）Benth.的干燥地上部分。秋季茎叶茂盛时采割，干燥。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性状",
+      "text": "本品长50～150cm，全体密被淡黄色腺毛和柔毛。茎圆柱形，具4～6纵翅，翅缘锯齿状，易折断。叶互生，有短柄；叶片椭圆形，暗绿色，先端短尖或渐尖，基部楔形，下延成翅，边缘有锯齿。头状花序着生于枝端。气特异，味苦。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "鉴别",
+      "text": "取本品粉末3g，加甲醇50ml，加热回流30分钟，滤过，滤液蒸干，残渣加甲醇2ml使溶解，作为供试品溶液。另取洋艾素对照品，加甲醇制成每1ml含1mg的溶液，作为对照品溶液。照薄层色谱法（通则0502）试验，吸取上述两种溶液各5μl，分别点于同一硅胶GF254薄层板上，以二氯甲烷-甲酸乙酯-丙酮（6:0.5:0.3）为展开剂，展开，取出，晾干，置紫外光灯（254nm）下检视。供试品色谱中，在与对照品色谱相应的位置上，显相同颜色的斑点。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性味与归经",
+      "text": "辛、苦，寒；有毒。归肺经。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "功能与主治",
+      "text": "清热解毒，止咳祛痰。用于风热感冒，咽喉肿痛，肺热咳嗽。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "用法与用量",
+      "text": "9～15g。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "贮藏",
+      "text": "置阴凉干燥处。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    }
+  ],
+  "sourceText": "本品为菊科植物翼齿六棱菊Laggera pterodonta（DC.）Benth.的干燥地上部分。秋季茎叶茂盛时采割，干燥。",
+  "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+  "charCount": 440,
+  "documents": [
+    {
+      "file": "chp-447.json",
+      "kind": "pharmacopoeia",
+      "title": "中华人民共和国药典 2020年版 一部"
+    }
+  ],
+  "categoryId": "qingre",
+  "categoryTitle": "清热药",
+  "id": "dacheng-694",
+  "summary": "清热解毒，止咳祛痰",
+  "images": [],
+  "docCount": 1
+}

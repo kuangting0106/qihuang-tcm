@@ -1,0 +1,87 @@
+{
+  "number": 1073,
+  "name": "莲房",
+  "pinyin": "lianfang",
+  "aliases": [],
+  "quote": null,
+  "profile": {
+    "flavorTags": [
+      "苦",
+      "涩"
+    ],
+    "nature": "温",
+    "meridianNames": [
+      "肝"
+    ],
+    "effects": "化瘀止血",
+    "indications": "崩漏，尿血，痔疮出血，产后瘀阻，恶露不尽",
+    "dosage": "5～10g。",
+    "contraindications": ""
+  },
+  "sections": [
+    {
+      "kind": "pharmacopoeia",
+      "label": "来源",
+      "text": "本品为睡莲科植物莲Nelumbo nucifera Gaertn.的干燥花托。秋季果实成熟时采收，除去果实，晒干。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性状",
+      "text": "本品呈倒圆锥状或漏斗状，多撕裂，直径5～8cm，高4.5～6cm。表面灰棕色至紫棕色，具细纵纹和皱纹，顶面有多数圆形孔穴，基部有花梗残基。质疏松，破碎面海绵样，棕色。气微，味微涩。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "鉴别",
+      "text": "（1）本品粉末黄棕色。表皮细胞表面观呈多角形，乳头状突起呈双圆圈状。草酸钙簇晶多见，直径10～54μm。棕色细胞类方形或类圆形，壁稍厚，胞腔内充满红棕色物。螺纹导管、环纹导管直径8～80μm。纤维成束，直径11～35μm，具纹孔。\n（2）取本品粉末0.5g，加乙醇5ml，温热浸泡数分钟，滤过，滤液加镁粉少量与盐酸1～2滴，溶液渐变为红色。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "炮制",
+      "text": "莲房炭　取净莲房，切碎，照煅炭法（通则0213）制炭。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "性味与归经",
+      "text": "苦、涩，温。归肝经。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "功能与主治",
+      "text": "化瘀止血。用于崩漏，尿血，痔疮出血，产后瘀阻，恶露不尽。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "用法与用量",
+      "text": "5～10g。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "pharmacopoeia",
+      "label": "贮藏",
+      "text": "置干燥处，防潮。",
+      "source": "《中华人民共和国药典》2020年版一部"
+    }
+  ],
+  "sourceText": "本品为睡莲科植物莲Nelumbo nucifera Gaertn.的干燥花托。秋季果实成熟时采收，除去果实，晒干。",
+  "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+  "charCount": 396,
+  "documents": [
+    {
+      "file": "chp-431.json",
+      "kind": "pharmacopoeia",
+      "title": "中华人民共和国药典 2020年版 一部"
+    }
+  ],
+  "categoryId": "zhixue",
+  "categoryTitle": "止血药",
+  "id": "dacheng-690",
+  "summary": "化瘀止血",
+  "images": [],
+  "docCount": 1
+}
