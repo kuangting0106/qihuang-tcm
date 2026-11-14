@@ -538,6 +538,12 @@ const ENTRY_NOTES = {
   'nishi-7': '大苏为大苏叶、大苏梗、大苏子的简称，均指紫苏。',
 }
 
+// 下经本草表格中的原注：现代名、别名、同株关系与使用注意，逐条保留。
+Object.assign(
+  ENTRY_NOTES,
+  JSON.parse(fs.readFileSync(path.join(root, 'scripts', 'content', 'bencao-xiajing-notes.json'), 'utf8')),
+)
+
 function readGroup(def) {
   const dir = path.join(sourceDir, def.dir)
   const entries = []
