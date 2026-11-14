@@ -579,7 +579,12 @@ function readGroup(def) {
       charCount: countChars(parsed.sections),
       sections: parsed.sections,
     }
-    const note = fix?.note ?? (number !== null ? ENTRY_NOTES[`${def.id}-${number}`] : '')
+    const sourceNote = ENTRY_NOTES[entry.id] ?? ''
+    const note = fix?.note
+      ? sourceNote && !fix.note.includes(sourceNote)
+        ? `${fix.note} ${sourceNote}`
+        : fix.note
+      : sourceNote
     if (note) entry.note = note
     if (def.id !== 'intro') {
       entry.pinyin = pinyinFor(title)

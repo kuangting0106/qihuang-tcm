@@ -6,6 +6,7 @@ import type {
 } from '@/types/bencao'
 import type { HerbTaxonomy } from '@/types/tcm'
 
+const API_BASE = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/api`
 const DATA_BASE = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/data/bencao-lectures`
 
 export interface BencaoIndexPayload extends BencaoLectureIndex {
@@ -46,6 +47,17 @@ async function requestStatic<T>(path: string): Promise<T> {
   return (await response.json()) as T
 }
 
+async function requestApi<T>(path: string): Promise<T> {
+  const response = await fetch(`${API_BASE}${path}`, {
+    headers: { Accept: 'application/json' },
+  })
+  if (!response.ok) {
+    const hint = response.status === 404 ? '没有找到这条记录' : `HTTP ${response.status}`
+    throw new Error(`讲义加载失败：${hint}`)
+  }
+  return (await response.json()) as T
+}
+
 let indexPromise: Promise<BencaoIndexPayload> | null = null
 const groupPromises = new Map<string, Promise<BencaoGroupPayload>>()
 const entryPromises = new Map<string, Promise<BencaoEntry>>()
@@ -76,17 +88,12 @@ function fetchGroup(groupId: string): Promise<BencaoGroupPayload> {
 function fetchEntry(entryId: string): Promise<BencaoEntry> {
   const cached = entryPromises.get(entryId)
   if (cached) return cached
-  const groupId = entryId.replace(/-\d+$/, '')
-  const promise = fetchGroup(groupId)
-    .then((group) => {
-      const entry = group.entries.find((item) => item.id === entryId)
-      if (!entry) throw new Error('没有找到这条记录')
-      return entry as unknown as BencaoEntry
-    })
-    .catch((error) => {
-      entryPromises.delete(entryId)
-      throw error
-    })
+  const promise = requestApi<BencaoEntry>(
+    `/bencao/entry/${encodeURIComponent(entryId)}`,
+  ).catch((error) => {
+    entryPromises.delete(entryId)
+    throw error
+  })
   entryPromises.set(entryId, promise)
   return promise
 }
