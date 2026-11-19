@@ -9,6 +9,8 @@ const CATALOG_FILE = path.join(ROOT, 'public', 'data', 'bencao-lectures', 'catal
 const IMAGE_CACHE_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-images.json')
 const PROVIDED_IMAGE_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-provided-images.json')
 const EXTRA_ENTRY_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-extra.json')
+const MERGE_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-merge.json')
+const ID_REGISTRY_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-ids.json')
 
 const TYPE_A_NAMES = [
   '紫苏叶', '生姜', '香薷', '白芷', '薄荷', '菊花', '葛根', '淡豆豉', '知母', '天花粉',
@@ -416,6 +418,107 @@ function mergeEntry(base, extra) {
   }
 }
 
+function loadIdRegistry() {
+  if (fs.existsSync(ID_REGISTRY_FILE)) {
+    const data = JSON.parse(fs.readFileSync(ID_REGISTRY_FILE, 'utf8'))
+    return new Map(Object.entries(data.ids ?? {}))
+  }
+  const indexFile = path.join(OUT_DIR, 'index.json')
+  const map = new Map()
+  if (fs.existsSync(indexFile)) {
+    const data = JSON.parse(fs.readFileSync(indexFile, 'utf8'))
+    for (const item of data.items ?? []) map.set(item.name, item.id)
+  }
+  return map
+}
+
+function saveIdRegistry(map) {
+  const ids = Object.fromEntries(
+    [...map.entries()].sort(([a], [b]) => a.localeCompare(b, 'zh-Hans-CN')),
+  )
+  fs.writeFileSync(
+    ID_REGISTRY_FILE,
+    `${JSON.stringify({ generatedAt: new Date().toISOString(), ids }, null, 2)}\n`,
+  )
+}
+
+function loadPreviousImageAltMap() {
+  const map = new Map()
+  const file = process.env.BENCAO_PREVIOUS_INDEX || path.join(OUT_DIR, 'index.json')
+  if (!fs.existsSync(file)) return map
+  try {
+    const data = JSON.parse(fs.readFileSync(file, 'utf8'))
+    for (const item of data.items ?? []) {
+      if (item.image?.url && item.image?.alt) map.set(item.image.url, item.image.alt)
+    }
+  } catch {
+    return map
+  }
+  return map
+}
+
+function variantOf(entry) {
+  return {
+    id: entry.id,
+    name: entry.name,
+    pinyin: entry.pinyin,
+    aliases: entry.aliases,
+    categoryTitle: entry.categoryTitle,
+    summary: entry.summary,
+    profile: entry.profile,
+    sections: entry.sections,
+    sourceText: entry.sourceText,
+    sourceNote: entry.sourceNote,
+    images: entry.images,
+    charCount: entry.charCount,
+  }
+}
+
+function applyMerges(list, mergeConfig) {
+  const byName = new Map(list.map((entry) => [entry.name, entry]))
+  const redirects = []
+  const activeGroups = []
+
+  for (const group of mergeConfig.groups ?? []) {
+    const primary = byName.get(group.primary)
+    if (!primary) {
+      console.warn(`合并跳过：找不到主条目 ${group.primary}`)
+      continue
+    }
+    const variants = []
+    for (const memberName of group.members ?? []) {
+      const member = byName.get(memberName)
+      if (!member) {
+        console.warn(`合并跳过：找不到 ${memberName}`)
+        continue
+      }
+      variants.push(variantOf(member))
+      primary.aliases = [...new Set([...(primary.aliases ?? []), member.name, ...(member.aliases ?? [])])]
+      const seen = new Set(primary.images.map((image) => image.url))
+      for (const image of member.images) {
+        if (seen.has(image.url)) continue
+        primary.images.push(image)
+        seen.add(image.url)
+      }
+      primary.charCount += member.charCount
+      primary.docCount += member.docCount
+      redirects.push({ id: member.id, name: member.name, pinyin: member.pinyin, mergedInto: primary.id })
+      byName.delete(memberName)
+    }
+    if (variants.length) {
+      primary.variants = [...(primary.variants ?? []), ...variants]
+      primary.basis = group.basis ?? ''
+      activeGroups.push({ primary: primary.name, members: variants.map((item) => item.name) })
+    }
+  }
+
+  return {
+    list: list.filter((entry) => byName.get(entry.name) === entry),
+    redirects,
+    activeGroups,
+  }
+}
+
 function main() {
   if (!fs.existsSync(SOURCE_DIR)) throw new Error(`目录不存在：${SOURCE_DIR}`)
   const files = fs.readdirSync(SOURCE_DIR).filter((file) => /^\d+\.txt$/.test(file)).sort((a, b) => Number.parseInt(a, 10) - Number.parseInt(b, 10))
@@ -454,16 +557,33 @@ function main() {
   const imageMap = loadCatalogImageMap()
   const remoteImageMap = loadRemoteImageMap()
   const providedImageMap = loadProvidedImageMap()
+  const previousImageAltMap = loadPreviousImageAltMap()
+  const idRegistry = loadIdRegistry()
+  let nextIdNumber =
+    Math.max(
+      0,
+      ...[...idRegistry.values()].map((id) => Number.parseInt(String(id).replace('dacheng-', ''), 10) || 0),
+    ) + 1
+
   const list = [...entries.values()]
     .sort((a, b) => a.number - b.number)
-    .map((entry, index) => {
-      const id = `dacheng-${String(index + 1).padStart(3, '0')}`
+    .map((entry) => {
+      let id = idRegistry.get(entry.name)
+      if (!id) {
+        id = `dacheng-${String(nextIdNumber).padStart(3, '0')}`
+        nextIdNumber += 1
+        idRegistry.set(entry.name, id)
+      }
       const image =
         providedImageMap.get(normalizeName(entry.name)) ??
         imageMap.get(normalizeName(entry.name)) ??
         remoteImageMap.get(normalizeName(entry.name))
       const imageWithThumb = image
-        ? { ...image, ...(thumbUrlFor(image.url) ? { thumbUrl: thumbUrlFor(image.url) } : {}) }
+        ? {
+            ...image,
+            alt: previousImageAltMap.get(image.url) ?? image.alt,
+            ...(thumbUrlFor(image.url) ? { thumbUrl: thumbUrlFor(image.url) } : {}),
+          }
         : null
       const summarySource = entry.profile.effects || entry.profile.indications || entry.quote?.text || entry.sourceText
       return {
@@ -475,10 +595,18 @@ function main() {
       }
     })
 
+  const mergeConfig = fs.existsSync(MERGE_FILE)
+    ? JSON.parse(fs.readFileSync(MERGE_FILE, 'utf8'))
+    : { groups: [] }
+  const merged = applyMerges(list, mergeConfig)
+  const finalList = merged.list
+  const redirects = merged.redirects
+  saveIdRegistry(idRegistry)
+
   fs.rmSync(OUT_DIR, { recursive: true, force: true })
   fs.mkdirSync(path.join(OUT_DIR, 'entries'), { recursive: true })
 
-  const indexItems = list.map((entry) => ({
+  const indexItems = finalList.map((entry) => ({
     id: entry.id,
     number: entry.number,
     name: entry.name,
@@ -493,41 +621,53 @@ function main() {
   }))
 
   const categories = [...CATEGORY_DEFS, OTHER_CATEGORY]
-    .map((def) => ({ id: def.id, title: def.title, count: list.filter((entry) => entry.categoryId === def.id).length }))
+    .map((def) => ({ id: def.id, title: def.title, count: finalList.filter((entry) => entry.categoryId === def.id).length }))
     .filter((item) => item.count > 0)
 
   fs.writeFileSync(path.join(OUT_DIR, 'index.json'), `${JSON.stringify({
     generatedAt: new Date().toISOString(),
-    total: list.length,
-    withImages: list.filter((entry) => entry.images.length).length,
+    total: finalList.length,
+    withImages: finalList.filter((entry) => entry.images.length).length,
     categories,
     items: indexItems,
   }, null, 2)}\n`)
 
   fs.writeFileSync(path.join(OUT_DIR, 'taxonomy.json'), `${JSON.stringify({
     generatedAt: new Date().toISOString(),
-    total: list.length,
-    chars: list.reduce((sum, entry) => sum + entry.charCount, 0),
-    items: list.map((entry) => ({
+    total: finalList.length,
+    chars: finalList.reduce((sum, entry) => sum + entry.charCount, 0),
+    items: finalList.map((entry) => ({
       name: entry.name,
       aliases: entry.aliases,
       categoryId: entry.categoryId,
     })),
   })}\n`)
 
-  for (const entry of list) {
+  for (const entry of finalList) {
     fs.writeFileSync(path.join(OUT_DIR, 'entries', `${entry.id}.json`), `${JSON.stringify(entry, null, 2)}\n`)
   }
 
-  console.log(`Wrote ${list.length} entries, ${list.filter((entry) => entry.images.length).length} with images`)
+  for (const redirect of redirects) {
+    fs.writeFileSync(
+      path.join(OUT_DIR, 'entries', `${redirect.id}.json`),
+      `${JSON.stringify({ ...redirect, aliases: [] }, null, 2)}\n`,
+    )
+  }
+
+  console.log(`Wrote ${finalList.length} entries, ${finalList.filter((entry) => entry.images.length).length} with images`)
+  console.log(`Merged groups: ${merged.activeGroups.length}, absorbed entries: ${redirects.length}`)
   console.log('Image sources:', `catalog=${imageMap.size}`, `provided=${providedImageMap.size}`, `remote=${remoteImageMap.size}`)
   console.log('Categories:', categories.map((item) => `${item.title} ${item.count}`).join(' / '))
-  const missing = sourceNames.filter((item) => !list.some((entry) => normalizeName(entry.name) === normalizeName(item.name)))
-  console.log('Merged source files:', sourceNames.length - missing.length, 'unique names:', list.length)
+  const allNames = new Set([
+    ...finalList.map((entry) => normalizeName(entry.name)),
+    ...redirects.map((entry) => normalizeName(entry.name)),
+  ])
+  const missing = sourceNames.filter((item) => !allNames.has(normalizeName(item.name)))
+  console.log('Merged source files:', sourceNames.length - missing.length, 'entries:', finalList.length)
   if (missing.length) console.log('Unmerged:', missing.slice(0, 20))
-  const noImage = list.filter((entry) => !entry.images.length).length
+  const noImage = finalList.filter((entry) => !entry.images.length).length
   console.log('Without images:', noImage)
-  console.log('Longest:', list.slice().sort((a, b) => b.charCount - a.charCount).slice(0, 5).map((entry) => `${entry.name} ${entry.charCount}`).join(' / '))
+  console.log('Longest:', finalList.slice().sort((a, b) => b.charCount - a.charCount).slice(0, 5).map((entry) => `${entry.name} ${entry.charCount}`).join(' / '))
 }
 
 main()

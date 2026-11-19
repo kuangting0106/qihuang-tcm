@@ -109,6 +109,15 @@
   ],
   "id": "dacheng-081",
   "summary": "补益心脾，养血安神",
-  "images": [],
+  "images": [
+    {
+      "url": "/images/herbs/lecture/zhongjing/zj-115.jpg",
+      "alt": "龙眼肉（用户提供图片 1）",
+      "credit": "用户提供 / 中经本草表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材"
+    }
+  ],
   "docCount": 2
 }

@@ -4,7 +4,10 @@
   "pinyin": "jingjie",
   "aliases": [
     "假苏",
-    "姜芥"
+    "姜芥",
+    "荆芥炭",
+    "荆芥穗",
+    "荆芥穗炭"
   ],
   "categoryId": "jiebiao",
   "categoryTitle": "解表药",
@@ -68,7 +71,7 @@
     }
   ],
   "sourceText": "唇形科植物裂叶荆芥 Schizonepeta tenuifolia Briq.的干燥地上部分。",
-  "charCount": 1137,
+  "charCount": 2177,
   "documents": [
     {
       "file": "444.txt",
@@ -90,5 +93,207 @@
       "thumbUrl": "/images/herbs/dacheng/thumbs/plant-021.jpg"
     }
   ],
-  "docCount": 1
+  "docCount": 4,
+  "variants": [
+    {
+      "id": "dacheng-613",
+      "name": "荆芥炭",
+      "pinyin": "jingjietan",
+      "aliases": [],
+      "categoryTitle": "止血药",
+      "summary": "收敛止血",
+      "profile": {
+        "flavorTags": [
+          "辛",
+          "涩"
+        ],
+        "nature": "微温",
+        "meridianNames": [
+          "肺经",
+          "肝经"
+        ],
+        "effects": "收敛止血",
+        "indications": "便血，崩漏，产后血晕。",
+        "dosage": "5～10g。",
+        "contraindications": ""
+      },
+      "sections": [
+        {
+          "kind": "source",
+          "label": "来源",
+          "text": "荆芥的炮制加工品。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "processing",
+          "label": "炮制",
+          "text": "取荆芥段，照炒炭法（参见“大蓟炭”项下）炒至表面焦黑色，内部焦黄色，喷淋清水少许，熄灭火星，取出，晾干。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "character",
+          "label": "药材性状",
+          "text": "本品呈不规则段，长5mm。全体黑褐色。茎方柱形，体轻，质脆。断面焦褐色。叶对生，多已脱落。花冠多脱落，宿萼钟状。略具焦香气，味苦而辛。",
+          "source": "《中草药大全》"
+        }
+      ],
+      "sourceText": "荆芥的炮制加工品。",
+      "images": [],
+      "charCount": 179
+    },
+    {
+      "id": "dacheng-676",
+      "name": "荆芥穗",
+      "pinyin": "jingjiesui",
+      "aliases": [],
+      "categoryTitle": "解表药",
+      "summary": "解表散风，透疹，消疮",
+      "profile": {
+        "flavorTags": [
+          "辛"
+        ],
+        "nature": "微温",
+        "meridianNames": [
+          "肺",
+          "肝"
+        ],
+        "effects": "解表散风，透疹，消疮",
+        "indications": "感冒，头痛，麻疹，风疹，疮疡初起",
+        "dosage": "5～10g。",
+        "contraindications": ""
+      },
+      "sections": [
+        {
+          "kind": "pharmacopoeia",
+          "label": "来源",
+          "text": "本品为唇形科植物荆芥Schizonepeta tenuisfolia Briq.的干燥花穗。夏、秋二季花开到顶、穗绿时采摘，除去杂质，晒干。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性状",
+          "text": "本品穗状轮伞花序呈圆柱形，长3～15cm，直径约7mm。花冠多脱落，宿萼黄绿色，钟形，质脆易碎，内有棕黑色小坚果。气芳香，味微涩而辛凉。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "鉴别",
+          "text": "（1）本品粉末黄棕色。宿萼表皮细胞垂周壁深波状弯曲。腺鳞头部8细胞，直径95～110μm，柄单细胞，棕黄色。小腺毛头部1～2个细胞，柄单细胞。非腺毛1～6细胞，大多具壁疣。外果皮细胞表面观多角形，壁黏液化，胞腔含棕色物；断面观细胞类方形或类长方形，胞腔小。内果皮石细胞淡棕色，表面观垂周壁深波状弯曲，密具纹孔。纤维成束，壁平直或微波状。\n（2）取本品粗粉1g，加甲醇10ml，密塞，超声处理15分钟，滤过，滤液作为供试品溶液。另取荆芥穗对照药材1g，同法制成对照药材溶液。再取胡薄荷酮对照品，加石油醚（60～90℃）制成每1ml含4mg的溶液，作为对照品溶液。照薄层色谱法（通则0502）试验，吸取供试品溶液4μl、对照药材溶液6μl和对照品溶液1μl，分别点于同一硅胶G薄层板上，以石油醚（60～90℃）-乙酸乙酯（37:3）为展开剂，展开，取出，晾干，喷以1%香草醛硫酸溶液，加热至斑点显色清晰。供试品色谱中，在与对照药材色谱和对照品色谱相应的位置上，显相同颜色的斑点。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "炮制",
+          "text": "荆芥穗　除去杂质及残梗。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性味与归经",
+          "text": "辛，微温。归肺、肝经。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "功能与主治",
+          "text": "解表散风，透疹，消疮。用于感冒，头痛，麻疹，风疹，疮疡初起。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "用法与用量",
+          "text": "5～10g。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "贮藏",
+          "text": "置阴凉干燥处。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        }
+      ],
+      "sourceText": "本品为唇形科植物荆芥Schizonepeta tenuisfolia Briq.的干燥花穗。夏、秋二季花开到顶、穗绿时采摘，除去杂质，晒干。",
+      "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+      "images": [],
+      "charCount": 641
+    },
+    {
+      "id": "dacheng-677",
+      "name": "荆芥穗炭",
+      "pinyin": "jingjiesuitan",
+      "aliases": [],
+      "categoryTitle": "止血药",
+      "summary": "收涩止血",
+      "profile": {
+        "flavorTags": [
+          "辛",
+          "涩"
+        ],
+        "nature": "微温",
+        "meridianNames": [
+          "肺",
+          "肝"
+        ],
+        "effects": "收涩止血",
+        "indications": "便血，崩漏，产后血晕",
+        "dosage": "5～10g。",
+        "contraindications": ""
+      },
+      "sections": [
+        {
+          "kind": "pharmacopoeia",
+          "label": "来源",
+          "text": "本品为荆芥穗的炮制加工品。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性状",
+          "text": "本品为不规则的段，长约15mm。表面黑褐色。花冠多脱落，宿萼钟状，先端5齿裂，黑褐色。小坚果棕黑色。具焦香气，味苦而辛。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "鉴别",
+          "text": "外果皮细胞表面观多角形，壁黏液化，胞腔含棕色物。内果皮石细胞淡棕色，垂周壁深波状弯曲，密具纹孔。纤维成束。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "炮制",
+          "text": "取荆芥穗段，照炒炭法（通则0213）炒至表面黑褐色，内部焦黄色，喷淋清水少许，熄灭火星，取出，晾干。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性味与归经",
+          "text": "辛、涩，微温。归肺、肝经。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "功能与主治",
+          "text": "收涩止血。用于便血，崩漏，产后血晕。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "用法与用量",
+          "text": "5～10g。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "贮藏",
+          "text": "置阴凉干燥处。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        }
+      ],
+      "sourceText": "本品为荆芥穗的炮制加工品。",
+      "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+      "images": [],
+      "charCount": 220
+    }
+  ],
+  "basis": "荆芥 Schizonepeta tenuifolia"
 }

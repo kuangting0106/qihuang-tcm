@@ -5,7 +5,8 @@
   "aliases": [
     "真盘子",
     "岩黄芪",
-    "黑芪"
+    "黑芪",
+    "炙红芪"
   ],
   "categoryId": "buxu",
   "categoryTitle": "补虚药",
@@ -69,7 +70,7 @@
     }
   ],
   "sourceText": "豆科植物多序岩黄芪 Hedysarum polybotrys Hand.-Mazz.的干燥根。",
-  "charCount": 812,
+  "charCount": 1034,
   "documents": [
     {
       "file": "178.txt",
@@ -80,5 +81,84 @@
   "id": "dacheng-158",
   "summary": "补气升阳，固表止汗，利水消肿。生津养血，行滞通痹，托毒排脓，敛疮生肌",
   "images": [],
-  "docCount": 1
+  "docCount": 2,
+  "variants": [
+    {
+      "id": "dacheng-650",
+      "name": "炙红芪",
+      "pinyin": "zhihongqi",
+      "aliases": [],
+      "categoryTitle": "补虚药",
+      "summary": "补中益气",
+      "profile": {
+        "flavorTags": [
+          "甘"
+        ],
+        "nature": "温",
+        "meridianNames": [
+          "肺",
+          "脾"
+        ],
+        "effects": "补中益气",
+        "indications": "气虚乏力，食少便溏",
+        "dosage": "9～30g。",
+        "contraindications": ""
+      },
+      "sections": [
+        {
+          "kind": "pharmacopoeia",
+          "label": "来源",
+          "text": "本品为红芪的炮制加工品。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性状",
+          "text": "本品呈圆形或椭圆形的厚片，直径0.4～1.5cm，厚0.2～0.4cm。外表皮红棕色，略有光泽，可见纵皱纹和残留少数支根痕。切面皮部浅黄色，形成层环浅棕色，木质部浅黄棕色至浅棕色，可见放射状纹理。具蜜香气，味甜，略带黏性，嚼之有豆腥味。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "鉴别",
+          "text": "取本品粉末1g，照红芪项下的〔鉴别〕（2）项试验，显相同的结果。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "炮制",
+          "text": "取红芪片，照蜜炙法（通则0213）炒至不粘手。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性味与归经",
+          "text": "甘，温。归肺、脾经。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "功能与主治",
+          "text": "补中益气。用于气虚乏力，食少便溏。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "用法与用量",
+          "text": "9～30g。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "贮藏",
+          "text": "同红芪。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        }
+      ],
+      "sourceText": "本品为红芪的炮制加工品。",
+      "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+      "images": [],
+      "charCount": 222
+    }
+  ],
+  "basis": "红芪 Hedysarum polybotrys"
 }

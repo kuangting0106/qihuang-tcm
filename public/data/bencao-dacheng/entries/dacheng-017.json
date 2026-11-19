@@ -2,7 +2,14 @@
   "number": 17,
   "name": "地黄",
   "pinyin": "dihuang",
-  "aliases": [],
+  "aliases": [
+    "生地黄",
+    "鲜地黄",
+    "鲜生地",
+    "山菸根",
+    "熟地黄",
+    "熟地"
+  ],
   "categoryId": "qingre",
   "categoryTitle": "清热药",
   "quote": {
@@ -48,7 +55,7 @@
     }
   ],
   "sourceText": "",
-  "charCount": 1114,
+  "charCount": 3558,
   "documents": [
     {
       "file": "17.txt",
@@ -68,7 +75,201 @@
       "latin": "Rehmannia glutinosa",
       "kind": "原植物",
       "thumbUrl": "/images/herbs/dacheng/thumbs/plant-045.jpg"
+    },
+    {
+      "url": "/images/herbs/dacheng/inat-b76a508400.jpg",
+      "alt": "Rehmannia（Rehmannia glutinosa）",
+      "credit": "(c) Chuangzao, some rights reserved (CC BY-NC), uploaded by Chuangzao",
+      "license": "CC-BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/taxa/544445",
+      "latin": "Rehmannia glutinosa",
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b76a508400.jpg"
+    },
+    {
+      "url": "/images/herbs/lecture/xlsx/xlsx-026.jpg",
+      "alt": "熟地黄（用户提供图片）",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材"
     }
   ],
-  "docCount": 1
+  "docCount": 4,
+  "variants": [
+    {
+      "id": "dacheng-150",
+      "name": "生地黄",
+      "pinyin": "shengdihuang",
+      "aliases": [
+        "鲜地黄",
+        "鲜生地",
+        "山菸根"
+      ],
+      "categoryTitle": "清热药",
+      "summary": "①生地黄：清热凉血，养阴生津",
+      "profile": {
+        "flavorTags": [
+          "①生地黄：甘"
+        ],
+        "nature": "寒",
+        "meridianNames": [
+          "心经",
+          "肝经",
+          "肾经"
+        ],
+        "effects": "①生地黄：清热凉血，养阴生津",
+        "indications": "热入营血，温毒发斑，吐血衄血，热病伤阴，舌绛烦渴，津伤便秘，阴虚发热，骨蒸劳热，内热消渴。 ②鲜地黄：清热生津，凉血，止血。用于热病伤阴，舌绛烦渴，温毒发斑，吐血，衄血，咽喉肿痛。",
+        "dosage": "内服：煎汤，10～30g；捣汁或熬膏。外用：适量，捣烂敷；或取汁涂搽。",
+        "contraindications": "胃虚食少、脾虚有湿者慎服。"
+      },
+      "sections": [
+        {
+          "kind": "source",
+          "label": "来源",
+          "text": "玄参科植物地黄 Rehmannia glutinosa Libosch.的新鲜或干燥块根。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "morphology",
+          "label": "植物形态",
+          "text": "多年生草本，高10～40cm。全株被灰白色长柔毛及腺毛。根肥厚，肉质，呈块状，圆柱形或纺锤形。茎直立，单一或基部分生数枝。基生叶成丛，叶片倒卵状披针形，先端钝，基部渐窄，下延成长叶柄，叶面多皱，边缘有不整齐锯齿；茎生叶较小。花茎直立，被毛，于茎上部呈总状花序；苞片叶状，发达或退化；花萼钟状，先端5裂，裂片三角形，被长柔毛和白色长毛，具脉10条；花冠宽筒状，稍弯曲，外面暗紫色，里面杂以黄色，有明显紫纹，先端5浅裂，略呈二唇形；雄蕊4，二强，花药基部叉开；子房上位，卵形，2室，花后变1室，花柱1，柱头膨大。蒴果卵形或长卵形，先端尖，有宿存花柱，外为宿存花萼所包。种子多数。花期4～5月，果期5～6月。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "habitat",
+          "label": "生境分布",
+          "text": "主要为栽培，亦野生于海拔50～1100m的山坡及路旁荒地等处。分布于辽宁、内蒙古、河北、山西、陕西、山东、江苏、安徽、浙江、河南、湖北、湖南、四川等地。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "collection",
+          "label": "采制",
+          "text": "秋季采挖，除去芦头、须根及泥沙，鲜用；或将地黄缓缓烘焙至约八成干。前者习称“鲜地黄”，后者习称“生地黄”。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "character",
+          "label": "药材性状",
+          "text": "生地黄、多呈不规则的团块状或长圆形，中间膨大，两端稍细，有的细小，长条状，稍扁而扭曲，长6～12cm，直径2～6cm。表面棕黑色或棕灰色，极皱缩，具不规则的横曲纹。体重，质较软而韧，不易折断，断面棕黑色或乌黑色，有光泽，具黏性。气微，味微甜。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "chemistry",
+          "label": "化学成分",
+          "text": "本品含有梓醇、麦角甾苷、地黄苷、5-羟甲基糠醛、酪醇等。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "pharmacology",
+          "label": "药理",
+          "text": "提高免疫功能；具有抗肿瘤、抗炎、抗过敏、降血糖、保护心血管系统、抗真菌等作用。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "formula",
+          "label": "附方",
+          "text": "①治阳明温病，无上焦证，数日不大便，当下之，若其人阴素虚，不可用承气者：元参30g，麦冬（连心）24g，细生地黄24g。水八杯，煎取三杯，口干则与饮令尽。不便，再作服。（《温病条辨》增液汤）\n ②治血热尿血：生地黄6g，黄芩（炒）15g，阿胶（炒）、侧柏叶（炒）各3g。上水煎，食前服。（《赤水玄珠》生地黄散）\n ③治中风四肢拘挛：干生地黄、甘草（炙）、麻黄各30g，去节。上为口咀，用酒三升、水七升煎至四升，去渣，分作八服，不拘时，日进二服。（《证治准绳》地黄汤）\n ④治鼻衄及膈上盛热：干生地黄、龙脑、薄荷等分为末，冷水调下。（《孙兆方》）\n ⑤治妊娠漏胎下血：干姜（炮）30g，干生地黄（切，焙）180g。上二味为散，酒服方寸匕，日三服。（《张氏医通》干姜地黄散）",
+          "source": "《中草药大全》"
+        }
+      ],
+      "sourceText": "玄参科植物地黄 Rehmannia glutinosa Libosch.的新鲜或干燥块根。",
+      "images": [
+        {
+          "url": "/images/herbs/dacheng/inat-b76a508400.jpg",
+          "alt": "Rehmannia（Rehmannia glutinosa）",
+          "credit": "(c) Chuangzao, some rights reserved (CC BY-NC), uploaded by Chuangzao",
+          "license": "CC-BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/taxa/544445",
+          "latin": "Rehmannia glutinosa",
+          "kind": "原植物",
+          "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b76a508400.jpg"
+        }
+      ],
+      "charCount": 1245
+    },
+    {
+      "id": "dacheng-077",
+      "name": "熟地黄",
+      "pinyin": "shudihuang",
+      "aliases": [
+        "熟地"
+      ],
+      "categoryTitle": "补虚药",
+      "summary": "补血滋阴，益精填髓",
+      "profile": {
+        "flavorTags": [
+          "甘"
+        ],
+        "nature": "微温",
+        "meridianNames": [
+          "肝经",
+          "肾经"
+        ],
+        "effects": "补血滋阴，益精填髓",
+        "indications": "血虚萎黄，心悸怔忡，月经不调，崩漏下血，肝肾阴虚，腰膝酸软，骨蒸潮热，盗汗遗精，内热消渴，眩晕，耳鸣，须发早白。",
+        "dosage": "水煎服，9～15克。",
+        "contraindications": "熟地黄适用于贫血、腰肌劳损属精血亏虚者。气滞痰多、脘腹胀痛、食少便溏者忌服；糖尿病患者、单纯性肥胖患者忌单味大量长期服用。忌用铜器煎煮。"
+      },
+      "sections": [
+        {
+          "kind": "processing",
+          "label": "炮制方法",
+          "text": "取整生地黄，除去杂质，洗净，稍晾干，加黄酒拌匀，闷润24～48小时，装入蒸罐内，加水适量，密封，蒸12～24小时，中间倒罐一次，至黄酒被吸尽，色泽黑润时，取出，晒至约八成干时，切厚片，干燥。"
+        },
+        {
+          "kind": "selection",
+          "label": "选购秘笈",
+          "text": "熟地黄呈块状，表面皱缩不平，内外皆黑色，质地柔软黏稠，有时带光泽，油润有黏性，气微香，味甜。以块大而整、色漆黑、质润有光泽、味道甜的为优质品。\n优质熟地黄\n一般熟地黄"
+        },
+        {
+          "kind": "recipe",
+          "label": "家用妙方",
+          "text": "经验方：益气滋阴，降压\n熟地黄20克，生地黄20克，沙参15克，大枣20克，蜂蜜适量。以上四种药，洗净，同放碗中，加入蜂蜜，隔水蒸3小时即可。每日1剂，分3次服用。用于气阴两虚及高血压而出现的口渴多汗、气虚脉弱以及头晕头痛、心悸耳鸣。"
+        },
+        {
+          "kind": "diet",
+          "label": "食疗养生",
+          "text": "熟地牛脊汤\n滋阴补血，强筋壮骨\n熟地黄30克，牛脊骨500克，盐、味精适量。\n将熟地黄洗净，装入纱布袋中封口待用。牛脊骨斩成小块。把熟地黄和牛脊骨放入锅内，加清水1000毫升，用旺火烧沸后，再用小火煎煮1小时。去熟地黄，加盐、味精调味即可。适用于无病体虚、贫血、四肢乏力。食少、痰多不易咯出、腹泻者忌用。忌与萝卜、葱白、韭白、薤白同食。"
+        },
+        {
+          "kind": "source",
+          "label": "来源",
+          "text": "玄参科植物地黄 Rehmannia glutinosa Libosch.的新鲜块根，经加工蒸晒而成。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "morphology",
+          "label": "植物形态",
+          "text": "见“生地黄”项下。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "processing",
+          "label": "炮制",
+          "text": "1.取生地黄，照酒炖法炖至酒吸尽，取出，晾晒至外皮黏液稍干时，切厚片或块，干燥，即得。每100kg生地黄，用黄酒20～30kg。（酒炖法：取待炮炙品按各品种炮制项下的规定，加入酒，置适宜的容器中，密闭，隔水或蒸汽加热炖透，或炖至酒完全被吸尽时，放凉，取出，晾至六成干，切片，干燥。一般每100kg待炮炙品，用酒20～30kg。）\n2.取生地黄，照蒸法蒸至黑润，取出，晒至约八成干时，切厚片或块，干燥，即得。（蒸法参见“制何首乌”项）",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "character",
+          "label": "药材性状",
+          "text": "本品呈不规则的块片、碎块，大小、厚薄不一。表面乌黑色，有光泽，黏性大。质柔软而带韧性，不易折断，断面乌黑色，有光泽。气微，味甜。",
+          "source": "《中草药大全》"
+        }
+      ],
+      "sourceText": "玄参科植物地黄 Rehmannia glutinosa Libosch.的新鲜块根，经加工蒸晒而成。",
+      "images": [
+        {
+          "url": "/images/herbs/lecture/xlsx/xlsx-026.jpg",
+          "alt": "熟地黄（用户提供图片）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ],
+      "charCount": 1199
+    }
+  ],
+  "basis": "地黄 Rehmannia glutinosa"
 }

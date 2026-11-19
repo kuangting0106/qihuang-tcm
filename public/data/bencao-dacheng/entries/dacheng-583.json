@@ -5,7 +5,8 @@
   "aliases": [
     "马牙消",
     "英消",
-    "盆消"
+    "盆消",
+    "玄明粉"
   ],
   "categoryId": "xiexia",
   "categoryTitle": "泻下药",
@@ -64,7 +65,7 @@
     }
   ],
   "sourceText": "硫酸盐类矿物芒硝族芒硝Mirabilite经加工精制而成的结晶体。",
-  "charCount": 836,
+  "charCount": 1031,
   "documents": [
     {
       "file": "680.txt",
@@ -84,5 +85,85 @@
       "kind": "药材"
     }
   ],
-  "docCount": 1
+  "docCount": 2,
+  "variants": [
+    {
+      "id": "dacheng-640",
+      "name": "玄明粉",
+      "pinyin": "xuanmingfen",
+      "aliases": [],
+      "categoryTitle": "泻下药",
+      "summary": "泻下通便，润燥软坚，清火消肿",
+      "profile": {
+        "flavorTags": [
+          "咸",
+          "苦"
+        ],
+        "nature": "寒",
+        "meridianNames": [
+          "胃",
+          "大肠"
+        ],
+        "effects": "泻下通便，润燥软坚，清火消肿",
+        "indications": "实热积滞，大便燥结，腹满胀痛；外治咽喉肿痛，口舌生疮，牙龈肿痛，目赤，痈肿，丹毒",
+        "dosage": "3～9g，溶入煎好的汤液中服用。外用适量。",
+        "contraindications": "孕妇慎用；不宜与硫黄、三棱同用。"
+      },
+      "sections": [
+        {
+          "kind": "pharmacopoeia",
+          "label": "来源",
+          "text": "本品为芒硝经风化干燥制得。主含硫酸钠（Na2SO4）。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性状",
+          "text": "本品为白色粉末。气微，味咸。有引湿性。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "鉴别",
+          "text": "本品的水溶液显钠盐（通则0301）与硫酸盐（通则0301）的鉴别反应。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性味与归经",
+          "text": "咸、苦，寒。归胃、大肠经。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "功能与主治",
+          "text": "泻下通便，润燥软坚，清火消肿。用于实热积滞，大便燥结，腹满胀痛；外治咽喉肿痛，口舌生疮，牙龈肿痛，目赤，痈肿，丹毒。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "用法与用量",
+          "text": "3～9g，溶入煎好的汤液中服用。外用适量。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "注意",
+          "text": "孕妇慎用；不宜与硫黄、三棱同用。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "贮藏",
+          "text": "密封，防潮。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        }
+      ],
+      "sourceText": "本品为芒硝经风化干燥制得。主含硫酸钠（Na2SO4）。",
+      "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+      "images": [],
+      "charCount": 195
+    }
+  ],
+  "basis": "芒硝 Natrii Sulfas"
 }

@@ -5,7 +5,9 @@
   "aliases": [
     "半夏精",
     "野芋头",
-    "山棒子"
+    "山棒子",
+    "制天南星",
+    "胆南星"
   ],
   "categoryId": "gongdu",
   "categoryTitle": "攻毒杀虫止痒药",
@@ -77,7 +79,7 @@
     }
   ],
   "sourceText": "天南星科植物天南星 Arisaema erubes-cens 的干燥块茎。",
-  "charCount": 992,
+  "charCount": 1591,
   "documents": [
     {
       "file": "132.txt",
@@ -89,15 +91,135 @@
   "summary": "散结消肿。外用",
   "images": [
     {
-      "url": "/images/herbs/dacheng/inat-46876a6482.jpg",
-      "alt": "Arisaema erubescens（Arisaema erubescens）",
-      "credit": "(c) desertnaturalist, some rights reserved (CC BY), uploaded by desertnaturalist",
-      "license": "CC-BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/556029",
-      "latin": "Arisaema erubescens",
-      "kind": "原植物",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-46876a6482.jpg"
+      "url": "/images/herbs/lecture/xiajing/xj-015.jpg",
+      "alt": "虎掌南星（用户提供图片 1）",
+      "credit": "用户提供 / 下经本草表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材"
     }
   ],
-  "docCount": 1
+  "docCount": 3,
+  "variants": [
+    {
+      "id": "dacheng-603",
+      "name": "制天南星",
+      "pinyin": "zhitiannanxing",
+      "aliases": [],
+      "categoryTitle": "化湿药",
+      "summary": "燥湿化痰，祛风止痉，散结消肿",
+      "profile": {
+        "flavorTags": [
+          "苦",
+          "辛"
+        ],
+        "nature": "温；有毒",
+        "meridianNames": [
+          "肺经",
+          "肝经",
+          "脾经"
+        ],
+        "effects": "燥湿化痰，祛风止痉，散结消肿",
+        "indications": "顽痰咳嗽，风痰眩晕，中风痰壅，口眼斜，半身不遂，癫痫，惊风，破伤风；外用治痈肿，蛇虫咬伤。",
+        "dosage": "3～9g。",
+        "contraindications": "孕妇慎用。"
+      },
+      "sections": [
+        {
+          "kind": "source",
+          "label": "来源",
+          "text": "天南星的炮制加工品。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "processing",
+          "label": "炮制",
+          "text": "取净天南星，按大小分别用水浸泡，每日换水2～3次，如起白沫时，换水后加白矾（每100kg天南星，加白矾2kg），泡一日后，再进行换水，至切开口尝微有麻舌感时取出。将生姜片、白矾置锅内加适量水煮沸后，倒入天南星共煮至无干心时取出，除去姜片，晾至四至六成干，切薄片，干燥。每100kg天南星，用生姜、白矾各12.5kg。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "character",
+          "label": "药材性状",
+          "text": "本品呈类圆形或不规则形的薄片。黄色或淡棕色，质脆易碎，断面角质状。气微，味涩，微麻。",
+          "source": "《中草药大全》"
+        }
+      ],
+      "sourceText": "天南星的炮制加工品。",
+      "images": [],
+      "charCount": 315
+    },
+    {
+      "id": "dacheng-685",
+      "name": "胆南星",
+      "pinyin": "dannanxing",
+      "aliases": [],
+      "categoryTitle": "清热药",
+      "summary": "清热化痰，息风定惊",
+      "profile": {
+        "flavorTags": [
+          "苦",
+          "微辛"
+        ],
+        "nature": "凉",
+        "meridianNames": [
+          "肺",
+          "肝",
+          "脾"
+        ],
+        "effects": "清热化痰，息风定惊",
+        "indications": "痰热咳嗽，咯痰黄稠，中风痰迷，癫狂惊痫",
+        "dosage": "3～6g。",
+        "contraindications": ""
+      },
+      "sections": [
+        {
+          "kind": "pharmacopoeia",
+          "label": "来源",
+          "text": "本品为制天南星的细粉与牛、羊或猪胆汁经加工而成，或为生天南星细粉与牛、羊或猪胆汁经发酵加工而成。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性状",
+          "text": "本品呈方块状或圆柱状。棕黄色、灰棕色或棕黑色。质硬。气微腥，味苦。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "鉴别",
+          "text": "（1）本品粉末淡黄棕色。薄壁细胞类圆形，充满糊化淀粉粒。草酸钙针晶束长20～90μm。螺纹导管和环纹导管直径8～60μm。\n（2）取本品粉末0.2g，加水5ml，振摇，滤过，取滤液2ml置试管中，加新制的糠醛溶液（1→100）0.5ml，沿管壁加硫酸2ml，两液接界处即显棕红色环。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性味与归经",
+          "text": "苦、微辛，凉。归肺、肝、脾经。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "功能与主治",
+          "text": "清热化痰，息风定惊。用于痰热咳嗽，咯痰黄稠，中风痰迷，癫狂惊痫。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "用法与用量",
+          "text": "3～6g。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "贮藏",
+          "text": "置通风干燥处，防蛀。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        }
+      ],
+      "sourceText": "本品为制天南星的细粉与牛、羊或猪胆汁经加工而成，或为生天南星细粉与牛、羊或猪胆汁经发酵加工而成。",
+      "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+      "images": [],
+      "charCount": 284
+    }
+  ],
+  "basis": "天南星 Arisaema erubescens"
 }

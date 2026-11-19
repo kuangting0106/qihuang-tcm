@@ -117,14 +117,12 @@
   "summary": "清热凉血，活血化瘀",
   "images": [
     {
-      "url": "/images/herbs/dacheng/inat-cebb69617b.jpg",
-      "alt": "Paeonia ostii（Paeonia ostii）",
-      "credit": "(c) novnic, some rights reserved (CC BY-NC)",
-      "license": "CC-BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/923636",
-      "latin": "Paeonia ostii",
-      "kind": "原植物",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-cebb69617b.jpg"
+      "url": "/images/herbs/lecture/zhongjing/zj-082.jpg",
+      "alt": "牡丹皮（用户提供图片 1）",
+      "credit": "用户提供 / 中经本草表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材"
     }
   ],
   "docCount": 2

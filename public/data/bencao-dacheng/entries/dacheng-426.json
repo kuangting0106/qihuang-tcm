@@ -85,6 +85,15 @@
   ],
   "id": "dacheng-426",
   "summary": "祛风除湿，散瘀定痛",
-  "images": [],
+  "images": [
+    {
+      "url": "/images/herbs/lecture/xiajing/xj-040.jpg",
+      "alt": "闹羊花（用户提供图片 1）",
+      "credit": "用户提供 / 下经本草表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材"
+    }
+  ],
   "docCount": 1
 }

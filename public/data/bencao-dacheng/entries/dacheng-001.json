@@ -5,7 +5,12 @@
   "aliases": [
     "苏叶",
     "紫菜",
-    "苏"
+    "苏",
+    "紫苏子",
+    "苏子",
+    "黑苏子",
+    "铁苏子",
+    "紫苏梗"
   ],
   "categoryId": "jiebiao",
   "categoryTitle": "解表药",
@@ -92,7 +97,7 @@
     }
   ],
   "sourceText": "唇形科植物紫苏 Perilla frutescens （L.）Britt.的干燥叶（或带嫩枝）。",
-  "charCount": 1964,
+  "charCount": 3767,
   "documents": [
     {
       "file": "1.txt",
@@ -124,5 +129,173 @@
       "thumbUrl": "/images/herbs/dacheng/thumbs/inat-5827f7f365.jpg"
     }
   ],
-  "docCount": 3
+  "docCount": 5,
+  "variants": [
+    {
+      "id": "dacheng-304",
+      "name": "紫苏子",
+      "pinyin": "zisuzi",
+      "aliases": [
+        "苏子",
+        "黑苏子",
+        "铁苏子"
+      ],
+      "categoryTitle": "化痰止咳平喘药",
+      "summary": "降气化痰，止咳平喘，润肠通便",
+      "profile": {
+        "flavorTags": [
+          "辛"
+        ],
+        "nature": "温",
+        "meridianNames": [
+          "肺经"
+        ],
+        "effects": "降气化痰，止咳平喘，润肠通便",
+        "indications": "痰壅气逆，咳嗽气喘，肠燥 便秘。",
+        "dosage": "内服：煎汤，5～10；或入丸、散。",
+        "contraindications": "肺虚咳喘，脾虚便溏者禁服。"
+      },
+      "sections": [
+        {
+          "kind": "source",
+          "label": "来源",
+          "text": "唇形科植物紫苏 Perilla frutescens （L.）Britt.的干燥成熟果实。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "morphology",
+          "label": "植物形态",
+          "text": "一年生草本，高30～200cm。具有特殊芳香。茎直立，多分枝，紫色、绿紫色或绿色，钝四棱形，密被长柔毛。叶对生；叶柄长3～5cm，紫红色或绿色，被长节毛；叶片阔卵形、卵状圆形或卵状三角形，长4～13cm，宽2.5～10cm，先端渐尖或突尖，有时呈短尾状，基部圆形或阔楔形，边缘具粗锯齿，有时锯齿较深或浅裂，两面紫色或仅下面紫色，上下两面均疏生柔毛，沿叶脉处较密，叶下面有细油腺点；侧脉7～8对，位于下部者稍靠近，斜上升。轮伞花序，由2花组成偏向一侧成假总状花序，顶生和腋生，花序密被长柔毛；苞片卵形、卵状三角形或披针形，全缘，具缘毛，外面有腺点，边缘膜质；花梗长1～1.5mm，密被柔毛；花萼钟状，长约3mm，10脉，外面下部密被长柔毛和有黄色腺点，顶端5齿，2唇，上唇宽大，有3齿，下唇有2齿，结果时增大，基部呈囊状；花冠唇形，长3～4mm，白色或紫红色，花冠筒内有毛环，外面被柔毛，上唇微凹，下唇3裂，裂片近圆形，中裂片较大；雄蕊4，二强，着生于花冠筒内中部，几不伸出花冠外，花药2室；花盘在前边膨大；雌蕊1，子房4裂，花柱基底着生，柱头2裂；花盘在前边膨大；雌蕊1，子房4裂，花柱基底着生，柱头2裂。小坚果近球形，灰棕色或褐色，直径1～1.3mm，有网纹，果萼长约10mm。花期6～8月，果期7～9月。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "habitat",
+          "label": "生境分布",
+          "text": "全国各地广泛栽培。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "collection",
+          "label": "采制",
+          "text": "秋季果实成熟时采收，除去杂质，晒干。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "character",
+          "label": "药材性状",
+          "text": "本品呈卵圆形或类球形，直径约1.5mm。表面灰棕色或灰褐色，有微隆起的暗紫色网纹，基部稍尖，有灰白色点状果梗痕。果皮薄而脆，易压碎。种子黄白色，种皮膜质，子叶2，类白色，有油性。压碎有香气，味微辛。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "chemistry",
+          "label": "化学成分",
+          "text": "本品主要含蛋白质、甘油三亚油酸酯、 α -亚麻酸、甘油三棕榈酸酯、左旋紫苏醛等成分。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "pharmacology",
+          "label": "药理",
+          "text": "抗癌。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "formula",
+          "label": "附方",
+          "text": "①治小儿久咳嗽，喉内痰声如拉锯，老人咳喘：紫苏子3g，杏仁30g（去皮、尖），老年人加白蜜6g。共为末，大人每服9g，小儿每服3g，白滚水送下。（《滇南本草》苏子散）\n ②治久嗽失音：紫苏子60g，杏仁三十枚，诃子三枚，百药煎60g。为末，热酒调下3g。（《赤水玄珠》）\n ③治气结心胀喘急：紫苏子末9g，草豆蔻6g，萝卜子末（炒）9g，橘红末3g。每服3g，姜汤调下。（《心医集》）\n ④治大便不通：紫苏子（去皮研）、橘皮（洗）各60g，知母30g。上为末，用生姜汁调成稀膏，于重汤上煮，不住乎搅。侯可。丸如梧桐子大。蜜汤下三十粒。（《全生指迷方》）\n ⑤治食蟹中毒：紫苏子捣汁饮之。（《金匮要略》）",
+          "source": "《中草药大全》"
+        }
+      ],
+      "sourceText": "唇形科植物紫苏 Perilla frutescens （L.）Britt.的干燥成熟果实。",
+      "images": [
+        {
+          "url": "/images/herbs/dacheng/inat-5827f7f365.jpg",
+          "alt": "beefsteak plant（Perilla frutescens）",
+          "credit": "(c) H. Wilson Montgomery, Jr., some rights reserved (CC BY-NC), uploaded by H. Wilson Montgomery, Jr.",
+          "license": "CC-BY-NC",
+          "sourceUrl": "https://www.inaturalist.org/taxa/119136",
+          "latin": "Perilla frutescens",
+          "kind": "原植物",
+          "thumbUrl": "/images/herbs/dacheng/thumbs/inat-5827f7f365.jpg"
+        }
+      ],
+      "charCount": 1197
+    },
+    {
+      "id": "dacheng-717",
+      "name": "紫苏梗",
+      "pinyin": "zisugeng",
+      "aliases": [],
+      "categoryTitle": "理气药",
+      "summary": "理气宽中，止痛，安胎",
+      "profile": {
+        "flavorTags": [
+          "辛"
+        ],
+        "nature": "温",
+        "meridianNames": [
+          "肺",
+          "脾"
+        ],
+        "effects": "理气宽中，止痛，安胎",
+        "indications": "胸膈痞闷，胃脘疼痛，嗳气呕吐，胎动不安",
+        "dosage": "5～10g。",
+        "contraindications": ""
+      },
+      "sections": [
+        {
+          "kind": "pharmacopoeia",
+          "label": "来源",
+          "text": "本品为唇形科植物紫苏Perilla frutescens（L.）Britt.的干燥茎。秋季果实成熟后采割，除去杂质，晒干，或趁鲜切片，晒干。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性状",
+          "text": "本品呈方柱形，四棱钝圆，长短不一，直径0.5～1.5cm。表面紫棕色或暗紫色，四面有纵沟和细纵纹，节部稍膨大，有对生的枝痕和叶痕。体轻，质硬，断面裂片状。切片厚2～5mm，常呈斜长方形，木部黄白色，射线细密，呈放射状，髓部白色，疏松或脱落。气微香，味淡。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "鉴别",
+          "text": "（1）本品粉末黄白色至灰绿色。木纤维众多，多成束，直径8～45μm。中柱鞘纤维淡黄色或黄棕色，长梭形，直径10～46μm，有的孔沟明显。表皮细胞棕黄色，表面观呈多角形或类方形，垂周壁连珠状增厚。草酸钙针晶细小，充塞于薄壁细胞中。\n（2）取本品粉末1g，加甲醇25ml，超声处理30分钟，滤过，滤液浓缩至干，残渣加甲醇1ml使溶解，作为供试品溶液。另取迷迭香酸对照品，加甲醇制成每1ml含0.2mg的溶液，作为对照品溶液。照薄层色谱法（通则0502）试验，吸取上述两种溶液各2μl，分别点于同一硅胶G薄层板上，以正己烷-乙酸乙酯-甲酸（3:3:0.2）为展开剂，展开，取出，晾干，置紫外光灯（365nm）下检视。供试品色谱中，在与对照品色谱相应的位置上，显相同颜色的荧光斑点。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "炮制",
+          "text": "除去杂质，稍浸，润透，切厚片，干燥。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性味与归经",
+          "text": "辛，温。归肺、脾经。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "功能与主治",
+          "text": "理气宽中，止痛，安胎。用于胸膈痞闷，胃脘疼痛，嗳气呕吐，胎动不安。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "用法与用量",
+          "text": "5～10g。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "贮藏",
+          "text": "置干燥处。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        }
+      ],
+      "sourceText": "本品为唇形科植物紫苏Perilla frutescens（L.）Britt.的干燥茎。秋季果实成熟后采割，除去杂质，晒干，或趁鲜切片，晒干。",
+      "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+      "images": [],
+      "charCount": 606
+    }
+  ],
+  "basis": "紫苏 Perilla frutescens"
 }

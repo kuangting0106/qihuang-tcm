@@ -6,7 +6,8 @@
     "番木鳖",
     "苦实",
     "马前",
-    "马前子"
+    "马前子",
+    "马钱子粉"
   ],
   "categoryId": "huoxue",
   "categoryTitle": "活血化瘀药",
@@ -76,7 +77,7 @@
     }
   ],
   "sourceText": "马钱科植物马钱 Strychnos nux-vomica L.的干燥成熟种子。",
-  "charCount": 1363,
+  "charCount": 1596,
   "documents": [
     {
       "file": "268.txt",
@@ -87,5 +88,90 @@
   "id": "dacheng-230",
   "summary": "通络止痛，散结消肿",
   "images": [],
-  "docCount": 1
+  "docCount": 2,
+  "variants": [
+    {
+      "id": "dacheng-627",
+      "name": "马钱子粉",
+      "pinyin": "maqianzifen",
+      "aliases": [],
+      "categoryTitle": "活血化瘀药",
+      "summary": "通络止痛，散结消肿",
+      "profile": {
+        "flavorTags": [
+          "苦"
+        ],
+        "nature": "温",
+        "meridianNames": [
+          "肝",
+          "脾"
+        ],
+        "effects": "通络止痛，散结消肿",
+        "indications": "跌打损伤，骨折肿痛，风湿顽痹，麻木瘫痪，痈疽疮毒，咽喉肿痛",
+        "dosage": "0.3～0.6g，入丸散用。",
+        "contraindications": "孕妇禁用；不宜多服久服及生用；运动员慎用；有毒成分能经皮肤吸收，外用不宜大面积涂敷。"
+      },
+      "sections": [
+        {
+          "kind": "pharmacopoeia",
+          "label": "来源",
+          "text": "本品为马钱子的炮制加工品。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性状",
+          "text": "本品为黄褐色粉末。气微香，味极苦。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "鉴别",
+          "text": "照马钱子项下的〔鉴别〕（2）项试验，显相同的结果。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "炮制",
+          "text": "取制马钱子，粉碎成细粉，照马钱子〔含量测定〕项下的方法测定士的宁含量后，加适量淀粉，使含量符合规定，混匀，即得。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性味与归经",
+          "text": "苦，温；有大毒。归肝、脾经。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "功能与主治",
+          "text": "通络止痛，散结消肿。用于跌打损伤，骨折肿痛，风湿顽痹，麻木瘫痪，痈疽疮毒，咽喉肿痛。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "用法与用量",
+          "text": "0.3～0.6g，入丸散用。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "注意",
+          "text": "孕妇禁用；不宜多服久服及生用；运动员慎用；有毒成分能经皮肤吸收，外用不宜大面积涂敷。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "贮藏",
+          "text": "密闭保存，置干燥处。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        }
+      ],
+      "sourceText": "本品为马钱子的炮制加工品。",
+      "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+      "images": [],
+      "charCount": 233
+    }
+  ],
+  "basis": "马钱子 Strychnos nux-vomica"
 }

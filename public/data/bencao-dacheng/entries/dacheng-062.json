@@ -105,14 +105,12 @@
   "summary": "益气健脾，生津润肺",
   "images": [
     {
-      "url": "/images/herbs/dacheng/inat-2f01e53a88.jpg",
-      "alt": "Heterophylly false-starwort（Pseudostellaria heterophylla）",
-      "credit": "(c) 李博恒, some rights reserved (CC BY-NC), uploaded by 李博恒",
-      "license": "CC-BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/565423",
-      "latin": "Pseudostellaria heterophylla",
-      "kind": "原植物",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-2f01e53a88.jpg"
+      "url": "/images/herbs/lecture/extra/ex-175.jpg",
+      "alt": "太子参（用户提供图片 1）",
+      "credit": "用户提供 / 本草表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材"
     }
   ],
   "docCount": 2

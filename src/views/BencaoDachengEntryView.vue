@@ -1,10 +1,16 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
-import { RouterLink, useRoute } from 'vue-router'
+import { RouterLink, useRoute, useRouter } from 'vue-router'
 import { loadBencaoDachengEntry, loadBencaoDachengIndex } from '@/composables/useBencaoDacheng'
-import type { BencaoDachengEntry, BencaoDachengIndex } from '@/types/bencao-dacheng'
+import type {
+  BencaoDachengEntry,
+  BencaoDachengIndex,
+  BencaoDachengProfile,
+  BencaoDachengVariant,
+} from '@/types/bencao-dacheng'
 
 const route = useRoute()
+const router = useRouter()
 const entry = ref<BencaoDachengEntry | null>(null)
 const index = ref<BencaoDachengIndex | null>(null)
 const loading = ref(true)
@@ -22,9 +28,9 @@ const next = computed(() => {
 
 const images = computed(() => entry.value?.images ?? [])
 const aliases = computed(() => (entry.value?.aliases ?? []).filter(Boolean))
+const variants = computed(() => entry.value?.variants ?? [])
 
-const profileRows = computed(() => {
-  const profile = entry.value?.profile
+function rowsOf(profile: BencaoDachengProfile | undefined) {
   if (!profile) return []
   return [
     { label: '性味', value: [profile.flavorTags.join('、'), profile.nature].filter(Boolean).join('，') },
@@ -34,22 +40,31 @@ const profileRows = computed(() => {
     { label: '用法用量', value: profile.dosage },
     { label: '使用注意', value: profile.contraindications },
   ].filter((row) => row.value)
-})
+}
+
+const profileRows = computed(() => rowsOf(entry.value?.profile))
+const variantRows = (variant: BencaoDachengVariant) => rowsOf(variant.profile)
 
 function load(id: string) {
   if (!id) return
+  let redirected = false
   loading.value = true
   error.value = ''
   Promise.all([loadBencaoDachengIndex(), loadBencaoDachengEntry(id)])
     .then(([catalog, detail]) => {
       index.value = catalog
+      if (detail.mergedInto) {
+        redirected = true
+        router.replace(`/bencao/dacheng/${detail.mergedInto}`)
+        return
+      }
       entry.value = detail
     })
     .catch((err: unknown) => {
       error.value = err instanceof Error ? err.message : '药材加载失败'
     })
     .finally(() => {
-      loading.value = false
+      if (!redirected) loading.value = false
     })
 }
 
@@ -157,6 +172,55 @@ watch(entryId, (id) => load(id), { immediate: true })
             </div>
             <p class="dacheng-section__text">{{ section.text }}</p>
           </article>
+        </section>
+
+        <section v-if="variants.length" class="dacheng-variants" aria-label="同源药材">
+          <div class="dacheng-variants__head">
+            <p class="eyebrow">SAME SOURCE / 同源药材</p>
+            <p class="dacheng-variants__note">
+              以下为同一基源的不同药用部位、炮制品或近缘同名药材，已并入本页；各条原文、出处与图片分别保留。
+              <span v-if="entry.basis">基源：{{ entry.basis }}。</span>
+            </p>
+          </div>
+          <details v-for="variant in variants" :key="variant.id" class="dacheng-variant paper-panel">
+            <summary class="dacheng-variant__summary">
+              <span class="dacheng-variant__name">{{ variant.name }}</span>
+              <span v-if="variant.aliases.length" class="dacheng-variant__alias">
+                又名：{{ variant.aliases.join('、') }}
+              </span>
+              <span class="dacheng-variant__meta">
+                {{ variant.categoryTitle }}<template v-if="variant.summary"> · {{ variant.summary }}</template>
+              </span>
+            </summary>
+            <div class="dacheng-variant__body">
+              <div v-if="variant.images.length" class="dacheng-variant__gallery">
+                <figure v-for="image in variant.images" :key="image.url">
+                  <img :src="image.url" :alt="image.alt" loading="lazy" />
+                  <figcaption>
+                    {{ image.credit }}<span v-if="image.license"> · {{ image.license }}</span>
+                  </figcaption>
+                </figure>
+              </div>
+              <dl v-if="variantRows(variant).length" class="dacheng-profile__list">
+                <div v-for="row in variantRows(variant)" :key="row.label">
+                  <dt>{{ row.label }}</dt>
+                  <dd>{{ row.value }}</dd>
+                </div>
+              </dl>
+              <div v-if="variant.sections.length" class="dacheng-variant__sections">
+                <article v-for="section in variant.sections" :key="`${section.label}-${section.kind}`">
+                  <div class="dacheng-section__head">
+                    <span class="eyebrow">{{ section.kind.toUpperCase() }} / {{ section.label }}</span>
+                    <span v-if="section.source" class="dacheng-section__source">{{ section.source }}</span>
+                  </div>
+                  <p class="dacheng-section__text">{{ section.text }}</p>
+                </article>
+              </div>
+              <p class="dacheng-profile__source">
+                {{ variant.sourceNote || '据原书资料整理；剂量与用法依原文，未作现代换算。' }}
+              </p>
+            </div>
+          </details>
         </section>
 
         <p class="dacheng-disclaimer">
@@ -406,6 +470,114 @@ watch(entryId, (id) => load(id), { immediate: true })
 .dacheng-pager__empty {
   color: var(--ink-faint);
   font-size: 0.7rem;
+}
+
+.dacheng-variants {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.dacheng-variants__head {
+  display: grid;
+  gap: 5px;
+}
+
+.dacheng-variants__note {
+  max-width: 72ch;
+  margin: 0;
+  color: var(--ink-faint);
+  font-size: 0.7rem;
+  line-height: 1.8;
+}
+
+.dacheng-variant {
+  padding: 0;
+}
+
+.dacheng-variant__summary {
+  display: grid;
+  gap: 4px;
+  padding: 14px 18px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.dacheng-variant__summary::-webkit-details-marker {
+  display: none;
+}
+
+.dacheng-variant__summary::before {
+  content: '＋';
+  float: right;
+  color: var(--cinnabar);
+  font-family: var(--font-serif);
+}
+
+.dacheng-variant[open] .dacheng-variant__summary::before {
+  content: '－';
+}
+
+.dacheng-variant__name {
+  color: var(--cinnabar);
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+}
+
+.dacheng-variant__alias {
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+}
+
+.dacheng-variant__meta {
+  color: var(--ink-faint);
+  font-size: 0.66rem;
+  line-height: 1.6;
+}
+
+.dacheng-variant__body {
+  display: grid;
+  gap: 12px;
+  padding: 0 18px 18px;
+  border-top: 1px dashed var(--line);
+}
+
+.dacheng-variant__gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+  padding-top: 12px;
+}
+
+.dacheng-variant__gallery figure {
+  margin: 0;
+}
+
+.dacheng-variant__gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.dacheng-variant__gallery figcaption {
+  margin-top: 3px;
+  color: var(--ink-faint);
+  font-size: 0.6rem;
+  line-height: 1.5;
+}
+
+.dacheng-variant__sections {
+  display: grid;
+}
+
+.dacheng-variant__sections article {
+  padding: 10px 0;
+  border-top: 1px dashed var(--line);
+}
+
+.dacheng-variant__sections article:first-child {
+  border-top: 0;
 }
 
 @media (max-width: 900px) {

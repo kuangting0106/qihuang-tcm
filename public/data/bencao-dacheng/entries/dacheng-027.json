@@ -6,7 +6,8 @@
     "茯菟",
     "松腴",
     "松薯",
-    "松苓"
+    "松苓",
+    "茯苓皮"
   ],
   "categoryId": "lishui",
   "categoryTitle": "利水渗湿药",
@@ -102,7 +103,7 @@
     }
   ],
   "sourceText": "多孔菌科真菌茯苓 Poria cocos （Schw.）Wolf.的干燥菌核。",
-  "charCount": 1820,
+  "charCount": 2087,
   "documents": [
     {
       "file": "27.txt",
@@ -129,5 +130,80 @@
       "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-user-fuling-whole.jpg"
     }
   ],
-  "docCount": 2
+  "docCount": 3,
+  "variants": [
+    {
+      "id": "dacheng-680",
+      "name": "茯苓皮",
+      "pinyin": "fulingpi",
+      "aliases": [],
+      "categoryTitle": "利水渗湿药",
+      "summary": "利水消肿",
+      "profile": {
+        "flavorTags": [
+          "甘",
+          "淡"
+        ],
+        "nature": "平",
+        "meridianNames": [
+          "肺",
+          "脾",
+          "肾"
+        ],
+        "effects": "利水消肿",
+        "indications": "水肿，小便不利",
+        "dosage": "15～30g。",
+        "contraindications": ""
+      },
+      "sections": [
+        {
+          "kind": "pharmacopoeia",
+          "label": "来源",
+          "text": "本品为多孔菌科真菌茯苓Poria cocos（Schw.）Wolf菌核的干燥外皮。多于7～9月采挖，加工\"茯苓片\"、\"茯苓块\"时，收集削下的外皮，阴干。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性状",
+          "text": "本品呈长条形或不规则块片，大小不一。外表面棕褐色至黑褐色，有疣状突起，内面淡棕色并常带有白色或淡红色的皮下部分。质较松软，略具弹性。气微、味淡，嚼之粘牙。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "鉴别",
+          "text": "（1）本品粉末棕褐色。菌丝淡棕色，细长，直径3～8μm，密集交结成团。\n（2）取本品0.5g，照茯苓项下的〔鉴别〕（3）试验，显相同的结果。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性味与归经",
+          "text": "甘、淡，平。归肺、脾、肾经。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "功能与主治",
+          "text": "利水消肿。用于水肿，小便不利。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "用法与用量",
+          "text": "15～30g。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "贮藏",
+          "text": "置干燥处，防潮。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        }
+      ],
+      "sourceText": "本品为多孔菌科真菌茯苓Poria cocos（Schw.）Wolf菌核的干燥外皮。多于7～9月采挖，加工\"茯苓片\"、\"茯苓块\"时，收集削下的外皮，阴干。",
+      "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+      "images": [],
+      "charCount": 267
+    }
+  ],
+  "basis": "茯苓 Poria cocos"
 }

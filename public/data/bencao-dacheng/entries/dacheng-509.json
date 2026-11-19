@@ -5,7 +5,14 @@
   "aliases": [
     "樟材",
     "香樟木",
-    "吹风散"
+    "吹风散",
+    "樟脑",
+    "韶脑",
+    "油脑",
+    "树脑",
+    "天然冰片",
+    "龙脑",
+    "冰片"
   ],
   "categoryId": "wenli",
   "categoryTitle": "温里药",
@@ -69,7 +76,7 @@
     }
   ],
   "sourceText": "樟科植物樟 Cinnamomum camphora （L.）Presl的干燥木材。",
-  "charCount": 899,
+  "charCount": 2721,
   "documents": [
     {
       "file": "595.txt",
@@ -79,6 +86,167 @@
   ],
   "id": "dacheng-509",
   "summary": "祛风散寒，温中理气，活血通络",
-  "images": [],
-  "docCount": 1
+  "images": [
+    {
+      "url": "/images/herbs/dacheng/inat-fb71af1be7.jpg",
+      "alt": "Camphor（Camphora officinarum）",
+      "credit": "(c) Greg Tasney, some rights reserved (CC BY-SA), uploaded by Greg Tasney",
+      "license": "CC-BY-SA",
+      "sourceUrl": "https://www.inaturalist.org/taxa/1591063",
+      "latin": "Camphora officinarum",
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-fb71af1be7.jpg"
+    }
+  ],
+  "docCount": 3,
+  "variants": [
+    {
+      "id": "dacheng-522",
+      "name": "樟脑",
+      "pinyin": "zhangnao",
+      "aliases": [
+        "韶脑",
+        "油脑",
+        "树脑"
+      ],
+      "categoryTitle": "攻毒杀虫止痒药",
+      "summary": "通关窍，利滞气，辟秽浊，杀虫止痒，消肿止痛",
+      "profile": {
+        "flavorTags": [
+          "辛",
+          "有小毒"
+        ],
+        "nature": "热",
+        "meridianNames": [
+          "心经",
+          "脾经"
+        ],
+        "effects": "通关窍，利滞气，辟秽浊，杀虫止痒，消肿止痛",
+        "indications": "热病神昏、中恶猝倒，痧胀吐泻腹痛，寒湿脚气，疥疮顽癣，秃疮，冻疮，水火烫伤，跌打伤痛，牙痛，风火赤眼。",
+        "dosage": "内服；入丸、散，0.06～0.15g，不入煎剂。外用：适量，研末，或溶于酒中，或入软膏敷搽。",
+        "contraindications": "内服不宜过量，气虚及孕妇禁服。皮肤过敏者慎用。"
+      },
+      "sections": [
+        {
+          "kind": "source",
+          "label": "来源",
+          "text": "樟科植物樟 Cinnarnomum camphora （L.）Presl的根、干、枝、叶经蒸馏精制而成的颗粒状物。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "morphology",
+          "label": "植物形态",
+          "text": "见“樟木”项下。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "collection",
+          "label": "采制",
+          "text": "一般在9～12月砍伐老树，取其树根、树干、树枝，锯劈成碎片（树叶可用），置蒸馏器中进行蒸馏，樟木中含有的樟脑及挥发油随水蒸气馏出，冷却后，即得粗制樟脑。粗制樟脑再经升华精制。即得精制樟脑粉。将此樟脑粉入模型中压榨，则成透明的樟脑块。宜密闭瓷器中，放干燥处。本品以生长50年以上的老树，产量最丰；幼嫩枝叶，含量少。产量低。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "character",
+          "label": "药材性状",
+          "text": "本品为白色的结晶性粉末或为无色透明的硬块，粗制品则略带黄色，有光亮，在常温中易挥发，火试能发生有烟的红色火焰而燃烧。若加少量乙醇、乙醚或氯仿则易研成白粉。具窜透性的特异芳香，味初辛辣而后清凉。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "pharmacology",
+          "label": "药理",
+          "text": "有止痒镇痛、祛风祛痰作用，对中枢神经系统有兴奋作用，还有强心作用。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "formula",
+          "label": "附方",
+          "text": "①治一切风眼热痛：樟脑6g，冰片3g，薄荷9g，防风3g，将樟脑、冰片入碗内，薄荷、防风摊其上，将碗盖纸糊封口，文武火升之碗上，刮下用。（《心医集》仙子丹）\n ②治风火牙痛：樟脑、细辛各6g。细辛切碎，置铁锅内，将樟脑撒铺其上，盖以瓷碗，缝隙用黄泥固封，然后用文火升华，放冷取霜，密封备用。取霜适量，用棉裹如梧桐子大，放患牙处咬定即可。（《全国中草药汇编》）\n ③治一切瘙痒、虫疥及一切顽癣有虫者：樟脑30g，大枫子肉60g（捣膏），大黄、硫黄、胡椒各15g。五味俱微炒为细末，和入大风子膏内，再入樟脑同捣匀，再入水银15g，再研匀，再捣三百下，为丸，弹子大，每临卧时，被内以药周身摸之，不过二三次愈。（《本草汇言》）\n ④治烫火疮，定痛：樟脑合香油研敷。如疮湿，干掺上止痛，火毒不入内也。（《品汇精要》）\n ⑤治冻疮：樟脑9g，猪脂30g。先将猪脂炼好，去渣，再将炼好之猪油入锅内，下樟脑，微火炼十余分钟下锅，冷为膏，用瓶装好，封口备用，敷三五次即愈。［《健康报》1958，10：25］\n ⑥治脚气肿痛：樟脑9g，草乌头6g。为极细末。醋糊丸，弹子大。每置一丸于足下踏之，下以微火烘之，衣被围覆，汗出如涎。即效。（《本草汇言》）\n ⑦治阴疽初起：樟脑、雄黄掺贴。（《药性集要》）",
+          "source": "《中草药大全》"
+        }
+      ],
+      "sourceText": "樟科植物樟 Cinnarnomum camphora （L.）Presl的根、干、枝、叶经蒸馏精制而成的颗粒状物。",
+      "images": [],
+      "charCount": 1117
+    },
+    {
+      "id": "dacheng-513",
+      "name": "天然冰片",
+      "pinyin": "tianranbingpian",
+      "aliases": [
+        "龙脑",
+        "冰片"
+      ],
+      "categoryTitle": "清热药",
+      "summary": "开窍醒神，清热止痛",
+      "profile": {
+        "flavorTags": [
+          "辛",
+          "苦"
+        ],
+        "nature": "凉",
+        "meridianNames": [
+          "心经",
+          "脾经",
+          "肺经"
+        ],
+        "effects": "开窍醒神，清热止痛",
+        "indications": "热病神昏、惊厥，中风痰厥，气郁暴厥，中恶昏迷；胸痹心痛，目赤，口疮，咽喉肿痛；耳道流脓。",
+        "dosage": "内服：入丸、散：0.15～0.3g，不入煎剂。外用：适量，研末撒，或吹、搽，或点，或调敷。",
+        "contraindications": "孕妇及气血虚者均应慎服。"
+      },
+      "sections": [
+        {
+          "kind": "source",
+          "label": "来源",
+          "text": "樟科植物樟 Cinnamomum camphora （L.）Presl的新鲜枝、叶经提取加工制成。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "morphology",
+          "label": "植物形态",
+          "text": "见“樟木”项下。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "character",
+          "label": "药材性状",
+          "text": "本品为白色结晶性粉末或片状结晶。气清香，味辛、凉。具挥发性，点燃时有浓烟。火焰呈黄色。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "chemistry",
+          "label": "化学成分",
+          "text": "本品主要含右旋龙脑。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "pharmacology",
+          "label": "药理",
+          "text": "可抑制中枢神经系统，表现为明显的镇静镇痛作用，促进神经胶质细胞的生长和分裂；有抗炎、抗菌、抗生育作用，能与其他药物如四甲基吡嗪、水杨酸发生相互作用。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "formula",
+          "label": "附方",
+          "text": "①治头脑疼痛：龙脑3g，纸卷作拈，烧烟熏鼻，吐出痰涎，即愈。（《寿域神方》）\n ②治眼生花翳：龙脑3g，川朴硝15g。上件药同研如粉。每以铜箸取如大豆大，点之。（《圣惠方》）\n ③治风热喉痹：灯心草3g，黄柏（并烧存性）1.5g，白矾（煅）2.1g，冰片脑0.9g。为末。每以0.3～0.6g吹患处。（《濒湖集简方》）\n ④治口疮咽燥：龙脑9g，黄柏90g。为蜜丸梧子大，每麦门冬汤下十丸。（《摘玄方》）\n ⑤治痢疾，肛门肿胀如痔状：冰片研乳调搽。（《慎斋遗书》）\n ⑥治痱疮：龙脑（研）0.3g，黄柏（末）15g，白面60g，腊茶（末）30g。上拌匀，每以新绵揾药扑上，破者敷之。（《小儿卫生总微论方》）\n ⑦治内外痔疮：龙脑0.3～0.6g。葱汁化搽之。（《简便单方》）",
+          "source": "《中草药大全》"
+        }
+      ],
+      "sourceText": "樟科植物樟 Cinnamomum camphora （L.）Presl的新鲜枝、叶经提取加工制成。",
+      "images": [
+        {
+          "url": "/images/herbs/dacheng/inat-fb71af1be7.jpg",
+          "alt": "Camphor（Camphora officinarum）",
+          "credit": "(c) Greg Tasney, some rights reserved (CC BY-SA), uploaded by Greg Tasney",
+          "license": "CC-BY-SA",
+          "sourceUrl": "https://www.inaturalist.org/taxa/1591063",
+          "latin": "Camphora officinarum",
+          "kind": "原植物",
+          "thumbUrl": "/images/herbs/dacheng/thumbs/inat-fb71af1be7.jpg"
+        }
+      ],
+      "charCount": 705
+    }
+  ],
+  "basis": "樟 Cinnamomum camphora"
 }

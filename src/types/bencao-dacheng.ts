@@ -28,6 +28,21 @@ export interface BencaoDachengQuote {
   source: string
 }
 
+export interface BencaoDachengVariant {
+  id: string
+  name: string
+  pinyin: string
+  aliases: string[]
+  categoryTitle: string
+  summary: string
+  profile: BencaoDachengProfile
+  sections: BencaoDachengSection[]
+  sourceText: string
+  sourceNote?: string
+  images: BencaoImage[]
+  charCount: number
+}
+
 export interface BencaoDachengEntry {
   id: string
   number: number
@@ -46,6 +61,9 @@ export interface BencaoDachengEntry {
   charCount: number
   docCount: number
   documents: BencaoDachengDocument[]
+  basis?: string
+  variants?: BencaoDachengVariant[]
+  mergedInto?: string
 }
 
 export interface BencaoDachengIndexItem {

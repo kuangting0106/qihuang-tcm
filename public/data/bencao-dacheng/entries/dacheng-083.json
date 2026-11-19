@@ -115,14 +115,12 @@
   "summary": "养阴润肺，清心安神",
   "images": [
     {
-      "url": "/images/herbs/dacheng/inat-1e331445e5.jpg",
-      "alt": "Chinese lily（Lilium brownii）",
-      "credit": "(c) Chen Shu, some rights reserved (CC BY-NC), uploaded by Chen Shu",
-      "license": "CC-BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/556187",
-      "latin": "Lilium brownii",
-      "kind": "原植物",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-1e331445e5.jpg"
+      "url": "/images/herbs/lecture/zhongjing/zj-033.jpg",
+      "alt": "百合（用户提供图片 1）",
+      "credit": "用户提供 / 中经本草表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材"
     }
   ],
   "docCount": 2

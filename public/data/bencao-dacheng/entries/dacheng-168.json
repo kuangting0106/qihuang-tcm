@@ -4,7 +4,15 @@
   "pinyin": "banlangen",
   "aliases": [
     "靛青根",
-    "蓝靛根"
+    "蓝靛根",
+    "大青叶",
+    "蓝叶",
+    "蓝菜",
+    "青黛",
+    "靛花",
+    "青蛤粉",
+    "蓝露",
+    "靛沫花"
   ],
   "categoryId": "qingre",
   "categoryTitle": "清热药",
@@ -74,7 +82,7 @@
     }
   ],
   "sourceText": "十字花科植物菘蓝 Isatis indigotica Fort. 的干燥根。",
-  "charCount": 1012,
+  "charCount": 2555,
   "documents": [
     {
       "file": "193.txt",
@@ -94,7 +102,189 @@
       "latin": "Isatis tinctoria",
       "kind": "原植物",
       "thumbUrl": "/images/herbs/dacheng/thumbs/inat-3931f1a2c3.jpg"
+    },
+    {
+      "url": "/images/herbs/dacheng/plant-001.jpg",
+      "alt": "菘蓝（Isatis indigotica）",
+      "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+      "license": "用户提供，来源网络，版权归原作者所有",
+      "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+      "latin": "Isatis indigotica",
+      "kind": "原植物",
+      "thumbUrl": "/images/herbs/dacheng/thumbs/plant-001.jpg"
+    },
+    {
+      "url": "/images/herbs/lecture/xlsx/xlsx-067.jpg",
+      "alt": "青黛（用户提供图片 1）",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "latin": "",
+      "kind": "药材"
     }
   ],
-  "docCount": 1
+  "docCount": 3,
+  "variants": [
+    {
+      "id": "dacheng-441",
+      "name": "大青叶",
+      "pinyin": "daqingye",
+      "aliases": [
+        "蓝叶",
+        "蓝菜"
+      ],
+      "categoryTitle": "清热药",
+      "summary": "清热解毒，凉血消斑",
+      "profile": {
+        "flavorTags": [
+          "苦"
+        ],
+        "nature": "寒",
+        "meridianNames": [
+          "心经",
+          "胃经"
+        ],
+        "effects": "清热解毒，凉血消斑",
+        "indications": "温病高热，神昏，发斑发疹，痄腮，喉痹，丹毒，痈肿。",
+        "dosage": "煎汤，10～15g，鲜品30～60g；或捣汁服。外用：适量，捣敷；煎水洗。",
+        "contraindications": "脾胃虚寒者禁服。"
+      },
+      "sections": [
+        {
+          "kind": "source",
+          "label": "来源",
+          "text": "十字花科植物菘蓝 Isatis indigotica Fort.的干燥叶。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "morphology",
+          "label": "植物形态",
+          "text": "见“板蓝根”项下。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "collection",
+          "label": "采制",
+          "text": "夏、秋二季分2～3次采收，除去杂质，晒干。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "character",
+          "label": "药材性状",
+          "text": "本品多皱缩卷曲，有的破碎。完整叶片展平后呈长椭圆形至长圆状倒披针形，长5～20cm，宽2～6cm；上表面暗灰绿色，有的可见色较深稍突起的小点；先端钝，全缘或微波状，基部狭窄下延至叶柄呈翼状；叶柄长4～10cm，淡棕黄色。质脆。气微，味微酸、苦、涩。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "chemistry",
+          "label": "化学成分",
+          "text": "本品含靛蓝、菘蓝苷B、靛玉红、呋喃木糖甜酸等成分。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "pharmacology",
+          "label": "药理",
+          "text": "具有抗病原微生物作用，尚具有抗内毒素的作用。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "formula",
+          "label": "附方",
+          "text": "①预防流行性感冒：大青叶、贯众各500g，混合，加水5000ml，煎成2000ml。成人每次100ml，日服3～4次，小儿酌减，连服5天。（《全国中草药汇编》）\n ②治流行性感冒：大青叶、板蓝根各30g，薄荷6g。煎水，当茶饮。（《湖北中草药志》）\n ③治咽炎，急性扁桃体炎，腮腺炎：大青叶、鱼腥草、玄参各30g，水煎，分3次服。（《湖北中草药志》）\n ④治无黄疸型肝炎：大青叶60g，丹参30g，大枣10枚。水煎服。（《山东中草药手册》）\n ⑤治唇边生疮，经年不瘥：取大青叶十斤，绞取汁，洗之。（《圣惠方》）",
+          "source": "《中草药大全》"
+        }
+      ],
+      "sourceText": "十字花科植物菘蓝 Isatis indigotica Fort.的干燥叶。",
+      "images": [
+        {
+          "url": "/images/herbs/dacheng/plant-001.jpg",
+          "alt": "菘蓝（Isatis indigotica）",
+          "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
+          "license": "用户提供，来源网络，版权归原作者所有",
+          "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
+          "latin": "Isatis indigotica",
+          "kind": "原植物",
+          "thumbUrl": "/images/herbs/dacheng/thumbs/plant-001.jpg"
+        }
+      ],
+      "charCount": 631
+    },
+    {
+      "id": "dacheng-536",
+      "name": "青黛",
+      "pinyin": "qingdai",
+      "aliases": [
+        "靛花",
+        "青蛤粉",
+        "蓝露",
+        "靛沫花"
+      ],
+      "categoryTitle": "清热药",
+      "summary": "清热解毒，凉血消斑，泻火定惊",
+      "profile": {
+        "flavorTags": [
+          "咸"
+        ],
+        "nature": "寒",
+        "meridianNames": [
+          "肝经"
+        ],
+        "effects": "清热解毒，凉血消斑，泻火定惊",
+        "indications": "温毒发斑，血热吐衄，胸痛咯血，口疮，痄腮，喉痹，小儿惊痫。",
+        "dosage": "内服：研末，1.5～6g；或入丸、散用。外用：适量，干撒或调敷。",
+        "contraindications": "脾胃虚寒者禁服。"
+      },
+      "sections": [
+        {
+          "kind": "source",
+          "label": "来源",
+          "text": "爵床科植物马蓝 Baphicacanthus cusia （Nees）Bremek.、蓼科植物蓼蓝 Polygonum tinctorium Ait.或十字花科植物菘蓝 Isatis indigotica Fort.的叶或茎叶经加工制得的干燥粉末、团块或颗粒。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "collection",
+          "label": "采制",
+          "text": "夏、秋季采收茎叶，置缸中，加清水浸2～3天，至叶腐烂、茎脱皮时，将茎枝捞出，加入石灰（每100kg加石灰8～10kg），充分搅拌，至浸液由深绿色转为紫红色时，捞出液面泡沫，于烈日下晒干，即得。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "character",
+          "label": "药材性状",
+          "text": "本品为深蓝色的粉末。体轻，易飞扬；或呈不规则多孔的团块、颗粒，用手搓捻即成细末。微有草腥气，味淡。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "chemistry",
+          "label": "化学成分",
+          "text": "本品主要含靛玉红、靛蓝、异靛蓝、 N -苯基-2-荼胺、虫漆蜡醇、青黛酮等成分。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "pharmacology",
+          "label": "药理",
+          "text": "有抗肿瘤、抗菌作用；对肝损伤有一定的保护作用。",
+          "source": "《中草药大全》"
+        },
+        {
+          "kind": "formula",
+          "label": "附方",
+          "text": "①治咯血：青黛、瓜蒌仁、诃子、海粉、山栀。上为末，以蜜同姜汁丸。噙化。（《丹溪心法》）\n ②治膈上凝结老痰：青黛不拘多少。为细末，每用1.5g，甚者3g，凉水调化下。（《众妙仙方》青黛散）\n ③治胃脘痛，病久成郁，郁则成热：青黛以姜汁入汤调服。（《医学正传》）\n ④治口舌生疮：a.青黛（淘净）15g，硼砂1.5g，冰片少许。上为末，干掺。（《疡科选粹》青黛散）b.黄柏120g，甘草（炙）60g，青黛30g。先取二味为末。以青黛研匀干贴。（《国药宗旨》绿袍散）\n ⑤治带状疱疹：青黛粉30g，鲜马齿苋60g（捣为泥）。调匀。涂于患处。［《河南中医学院学报》1980，（3）：49］\n ⑥治面疮有黄水者：青黛9g，松香9g，硫黄3g。上为末，香油调搽，如湿干搽。（《众妙仙方》三金散）",
+          "source": "《中草药大全》"
+        }
+      ],
+      "sourceText": "爵床科植物马蓝 Baphicacanthus cusia （Nees）Bremek.、蓼科植物蓼蓝 Polygonum tinctorium Ait.或十字花科植物菘蓝 Isatis indigotica Fort.的叶或茎叶经加工制得的干燥粉末、团块或颗粒。",
+      "images": [
+        {
+          "url": "/images/herbs/lecture/xlsx/xlsx-067.jpg",
+          "alt": "青黛（用户提供图片 1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "latin": "",
+          "kind": "药材"
+        }
+      ],
+      "charCount": 912
+    }
+  ],
+  "basis": "菘蓝 Isatis indigotica"
 }

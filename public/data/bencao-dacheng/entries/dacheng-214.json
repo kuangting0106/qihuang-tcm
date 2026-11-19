@@ -7,7 +7,9 @@
     "竹木",
     "百枝",
     "土薯蓣",
-    "麻甲头"
+    "麻甲头",
+    "粉萆薢",
+    "绵萆薢"
   ],
   "categoryId": "qufengshi",
   "categoryTitle": "祛风湿药",
@@ -78,7 +80,7 @@
     }
   ],
   "sourceText": "薯蓣科植物粉背薯蓣 Dioscorea collettii Hook.f.var. hypoglauca （Palibin）Pei et Ting的干燥根茎。",
-  "charCount": 1272,
+  "charCount": 2711,
   "documents": [
     {
       "file": "246.txt",
@@ -88,6 +90,158 @@
   ],
   "id": "dacheng-214",
   "summary": "利湿浊，祛风湿",
-  "images": [],
-  "docCount": 1
+  "images": [
+    {
+      "url": "/images/herbs/lecture/zhongjing/zj-066.jpg",
+      "alt": "萆薢（用户提供图片 1）",
+      "credit": "用户提供 / 中经本草表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材"
+    }
+  ],
+  "docCount": 3,
+  "variants": [
+    {
+      "id": "dacheng-696",
+      "name": "粉萆薢",
+      "pinyin": "fenbixie",
+      "aliases": [],
+      "categoryTitle": "祛风湿药",
+      "summary": "利湿去浊，祛风除痹",
+      "profile": {
+        "flavorTags": [
+          "苦"
+        ],
+        "nature": "平",
+        "meridianNames": [
+          "肾",
+          "胃"
+        ],
+        "effects": "利湿去浊，祛风除痹",
+        "indications": "膏淋，白浊，白带过多，风湿痹痛，关节不利，腰膝疼痛",
+        "dosage": "9～15g。",
+        "contraindications": ""
+      },
+      "sections": [
+        {
+          "kind": "pharmacopoeia",
+          "label": "来源",
+          "text": "本品为薯蓣科植物粉背薯蓣Dioscorea hypoglauca Palibin的干燥根茎。秋、冬二季采挖，除去须根，洗净，切片，晒干。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性状",
+          "text": "本品为不规则的薄片，边缘不整齐，大小不一，厚约0.5mm。有的有棕黑色或灰棕色的外皮。切面黄白色或淡灰棕色，维管束呈小点状散在。质松，略有弹性，易折断，新断面近外皮处显淡黄色。气微，味辛、微苦。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "鉴别",
+          "text": "（1）本品横切面：外层为多列木栓化细胞。皮层较窄，细胞多切向延长，壁略增厚，木化壁纹孔明显；黏液细胞散在，内含草酸钙针晶束。中柱散生外韧型维管束和周木型维管束。薄壁细胞壁略增厚，具纹孔，细胞中含淀粉粒。\n本品粉末黄白色。淀粉粒单粒圆形、卵圆形或长椭圆形，直径5～32μm，长至40μm，脐点点状或裂缝状；复粒少数，多由2分粒组成。厚壁细胞众多，壁木化，孔沟明显，有的类似石细胞，多角形、梭形或类长方形，直径40～80μm，长至224μm。草酸钙针晶束长64～84μm。\n（2）取本品粉末0.5g，加甲醇25ml，超声处理30分钟，滤过，滤液蒸干，残渣加甲醇2ml使溶解，作为供试品溶液。另取粉萆薢对照药材0.5g，同法制成对照药材溶液。照薄层色谱法（通则0502）试验，吸取上述两种溶液各1～2μl，分别点于同一硅胶G薄层板上，以三氯甲烷-甲醇-水（13:7:2）10℃以下放置的下层溶液为展开剂，展开，取出，晾干，喷以10%硫酸乙醇溶液，在105℃加热至斑点显色清晰，分别置日光和紫外光灯（365nm）下检视。供试品色谱中，在与对照药材色谱相应的位置上，显相同颜色的斑点或荧光斑点。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性味与归经",
+          "text": "苦，平。归肾、胃经。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "功能与主治",
+          "text": "利湿去浊，祛风除痹。用于膏淋，白浊，白带过多，风湿痹痛，关节不利，腰膝疼痛。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "用法与用量",
+          "text": "9～15g。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "贮藏",
+          "text": "置通风干燥处。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        }
+      ],
+      "sourceText": "本品为薯蓣科植物粉背薯蓣Dioscorea hypoglauca Palibin的干燥根茎。秋、冬二季采挖，除去须根，洗净，切片，晒干。",
+      "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+      "images": [],
+      "charCount": 718
+    },
+    {
+      "id": "dacheng-715",
+      "name": "绵萆薢",
+      "pinyin": "mianbixie",
+      "aliases": [],
+      "categoryTitle": "祛风湿药",
+      "summary": "利湿去浊，祛风除痹",
+      "profile": {
+        "flavorTags": [
+          "苦"
+        ],
+        "nature": "平",
+        "meridianNames": [
+          "肾",
+          "胃"
+        ],
+        "effects": "利湿去浊，祛风除痹",
+        "indications": "膏淋，白浊，白带过多，风湿痹痛，关节不利，腰膝疼痛",
+        "dosage": "9～15g。",
+        "contraindications": ""
+      },
+      "sections": [
+        {
+          "kind": "pharmacopoeia",
+          "label": "来源",
+          "text": "本品为薯蓣科植物绵萆薢Dioscorea spongiosa J.Q.Xi，M.Mizuno et W.L.Zhao或福州薯蓣Dioscorea futschauensis Uline ex R.Kunth的干燥根茎。秋、冬二季采挖，除去须根，洗净，切片，晒干。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性状",
+          "text": "本品为不规则的斜切片，边缘不整齐，大小不一，厚2～5mm。外皮黄棕色至黄褐色，有稀疏的须根残基，呈圆锥状突起。质疏松，略呈海绵状，切面灰白色至浅灰棕色，黄棕色点状维管束散在。气微，味微苦。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "鉴别",
+          "text": "（1）本品粉末淡黄棕色。淀粉粒众多，单粒卵圆形、椭圆形、类圆形、类三角形或不规则形，有的一端尖突，有的呈瘤状，直径10～70μm，脐点裂缝状、人字状、点状，层纹大多不明显。草酸钙针晶多成束，长90～210μm。薄壁细胞壁略增厚，纹孔明显。具缘纹孔导管直径17～84μm，纹孔明显。木栓细胞棕黄色，多角形。\n（2）取本品粉末2g，加甲醇50ml，加热回流1小时，滤过，滤液蒸干，残渣加水25ml使溶解，用乙醚25ml洗涤，弃去乙醚液，水液加盐酸2ml，加热回流1.5小时，放冷，用乙醚振摇提取2次，每次25ml，合并乙醚液，挥干，残渣加三氯甲烷1ml使溶解，作为供试品溶液。另取绵萆薢对照药材2g，同法制成对照药材溶液。照薄层色谱法（通则0502）试验，吸取上述两种溶液各10μl，分别点于同一硅胶G薄层板上，以三氯甲烷-丙酮（9:1）为展开剂，展开，取出，晾干，喷以磷钼酸试液，在105℃加热至斑点显色清晰。供试品色谱中，在与对照药材色谱相应的位置上，显相同颜色的斑点。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "性味与归经",
+          "text": "苦，平。归肾、胃经。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "功能与主治",
+          "text": "利湿去浊，祛风除痹。用于膏淋，白浊，白带过多，风湿痹痛，关节不利，腰膝疼痛。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "用法与用量",
+          "text": "9～15g。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        },
+        {
+          "kind": "pharmacopoeia",
+          "label": "贮藏",
+          "text": "置通风干燥处。",
+          "source": "《中华人民共和国药典》2020年版一部"
+        }
+      ],
+      "sourceText": "本品为薯蓣科植物绵萆薢Dioscorea spongiosa J.Q.Xi，M.Mizuno et W.L.Zhao或福州薯蓣Dioscorea futschauensis Uline ex R.Kunth的干燥根茎。秋、冬二季采挖，除去须根，洗净，切片，晒干。",
+      "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
+      "images": [],
+      "charCount": 721
+    }
+  ],
+  "basis": "萆薢类 Dioscorea spp."
 }

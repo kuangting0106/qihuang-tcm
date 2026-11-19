@@ -1,0 +1,596 @@
+{
+  "generatedAt": "2026-11-19T09:21:37.050Z",
+  "note": "同一基源的不同药用部位、炮制品或近缘同名药材合并为一味；primary 保留原条目与既有链接，members 并入后以 variants 呈现。",
+  "groups": [
+    {
+      "primary": "紫苏叶",
+      "members": [
+        "紫苏子",
+        "紫苏梗"
+      ],
+      "basis": "紫苏 Perilla frutescens"
+    },
+    {
+      "primary": "生姜",
+      "members": [
+        "干姜",
+        "炮姜"
+      ],
+      "basis": "姜 Zingiber officinale"
+    },
+    {
+      "primary": "黑豆",
+      "members": [
+        "淡豆豉",
+        "大豆黄卷"
+      ],
+      "basis": "大豆 Glycine max"
+    },
+    {
+      "primary": "瓜蒌",
+      "members": [
+        "瓜蒌子",
+        "瓜蒌皮",
+        "炒瓜蒌子",
+        "天花粉"
+      ],
+      "basis": "栝楼 Trichosanthes kirilowii"
+    },
+    {
+      "primary": "金银花",
+      "members": [
+        "忍冬藤"
+      ],
+      "basis": "忍冬 Lonicera japonica"
+    },
+    {
+      "primary": "白芍",
+      "members": [
+        "赤芍"
+      ],
+      "basis": "芍药 Paeonia lactiflora"
+    },
+    {
+      "primary": "茯苓",
+      "members": [
+        "茯苓皮"
+      ],
+      "basis": "茯苓 Poria cocos"
+    },
+    {
+      "primary": "车前子",
+      "members": [
+        "车前草"
+      ],
+      "basis": "车前 Plantago asiatica / P. depressa"
+    },
+    {
+      "primary": "肉桂",
+      "members": [
+        "桂枝"
+      ],
+      "basis": "肉桂 Cinnamomum cassia"
+    },
+    {
+      "primary": "陈皮",
+      "members": [
+        "青皮",
+        "橘红",
+        "橘核"
+      ],
+      "basis": "橘 Citrus reticulata"
+    },
+    {
+      "primary": "山楂",
+      "members": [
+        "山楂叶"
+      ],
+      "basis": "山楂 Crataegus pinnatifida"
+    },
+    {
+      "primary": "槐花",
+      "members": [
+        "槐角"
+      ],
+      "basis": "槐 Sophora japonica"
+    },
+    {
+      "primary": "白果",
+      "members": [
+        "银杏",
+        "银杏叶"
+      ],
+      "basis": "银杏 Ginkgo biloba"
+    },
+    {
+      "primary": "柏子仁",
+      "members": [
+        "侧柏叶"
+      ],
+      "basis": "侧柏 Platycladus orientalis"
+    },
+    {
+      "primary": "何首乌",
+      "members": [
+        "首乌藤",
+        "制何首乌"
+      ],
+      "basis": "何首乌 Polygonum multiflorum"
+    },
+    {
+      "primary": "人参",
+      "members": [
+        "人参叶",
+        "红参"
+      ],
+      "basis": "人参 Panax ginseng"
+    },
+    {
+      "primary": "杜仲",
+      "members": [
+        "杜仲叶"
+      ],
+      "basis": "杜仲 Eucommia ulmoides"
+    },
+    {
+      "primary": "地黄",
+      "members": [
+        "生地黄",
+        "熟地黄"
+      ],
+      "basis": "地黄 Rehmannia glutinosa"
+    },
+    {
+      "primary": "枸杞子",
+      "members": [
+        "地骨皮"
+      ],
+      "basis": "枸杞 Lycium barbarum"
+    },
+    {
+      "primary": "乌梅",
+      "members": [
+        "梅花"
+      ],
+      "basis": "梅 Prunus mume"
+    },
+    {
+      "primary": "川乌",
+      "members": [
+        "附子",
+        "制川乌"
+      ],
+      "basis": "乌头 Aconitum carmichaelii"
+    },
+    {
+      "primary": "草乌",
+      "members": [
+        "制草乌",
+        "草乌叶"
+      ],
+      "basis": "北乌头 Aconitum kusnezoffii"
+    },
+    {
+      "primary": "马兜铃",
+      "members": [
+        "青木香",
+        "天仙藤"
+      ],
+      "basis": "马兜铃 Aristolochia debilis / A. contorta"
+    },
+    {
+      "primary": "板蓝根",
+      "members": [
+        "大青叶",
+        "青黛"
+      ],
+      "basis": "菘蓝 Isatis indigotica"
+    },
+    {
+      "primary": "郁金",
+      "members": [
+        "片姜黄"
+      ],
+      "basis": "温郁金 Curcuma wenyujin"
+    },
+    {
+      "primary": "贯众",
+      "members": [
+        "绵马贯众",
+        "绵马贯众炭",
+        "紫萁贯众"
+      ],
+      "basis": "鳞毛蕨 / 紫萁（贯众类）"
+    },
+    {
+      "primary": "麻黄",
+      "members": [
+        "麻黄根"
+      ],
+      "basis": "麻黄 Ephedra sinica"
+    },
+    {
+      "primary": "荷叶",
+      "members": [
+        "藕节",
+        "莲子心",
+        "莲房",
+        "莲须"
+      ],
+      "basis": "莲 Nelumbo nucifera"
+    },
+    {
+      "primary": "槟榔",
+      "members": [
+        "大腹皮",
+        "焦槟榔"
+      ],
+      "basis": "槟榔 Areca catechu"
+    },
+    {
+      "primary": "川楝子",
+      "members": [
+        "苦楝皮"
+      ],
+      "basis": "川楝 Melia toosendan"
+    },
+    {
+      "primary": "西瓜皮",
+      "members": [
+        "西瓜霜"
+      ],
+      "basis": "西瓜 Citrullus lanatus"
+    },
+    {
+      "primary": "丁香",
+      "members": [
+        "母丁香"
+      ],
+      "basis": "丁香 Eugenia caryophyllata"
+    },
+    {
+      "primary": "皂角",
+      "members": [
+        "猪牙皂",
+        "皂角刺"
+      ],
+      "basis": "皂荚 Gleditsia sinensis"
+    },
+    {
+      "primary": "诃子",
+      "members": [
+        "西青果"
+      ],
+      "basis": "诃子 Terminalia chebula"
+    },
+    {
+      "primary": "枳壳",
+      "members": [
+        "枳实"
+      ],
+      "basis": "酸橙 Citrus aurantium"
+    },
+    {
+      "primary": "荜澄茄",
+      "members": [
+        "山鸡椒"
+      ],
+      "basis": "山鸡椒 Litsea cubeba"
+    },
+    {
+      "primary": "桃仁",
+      "members": [
+        "桃枝"
+      ],
+      "basis": "桃 Prunus persica"
+    },
+    {
+      "primary": "木通",
+      "members": [
+        "预知子"
+      ],
+      "basis": "木通 Akebia trifoliata"
+    },
+    {
+      "primary": "桑叶",
+      "members": [
+        "桑椹",
+        "桑葚",
+        "桑白皮",
+        "桑枝"
+      ],
+      "basis": "桑 Morus alba"
+    },
+    {
+      "primary": "黄荆子",
+      "members": [
+        "牡荆叶"
+      ],
+      "basis": "黄荆 Vitex negundo"
+    },
+    {
+      "primary": "甜瓜子",
+      "members": [
+        "甜瓜蒂"
+      ],
+      "basis": "甜瓜 Cucumis melo"
+    },
+    {
+      "primary": "路路通",
+      "members": [
+        "枫香脂"
+      ],
+      "basis": "枫香 Liquidambar formosana"
+    },
+    {
+      "primary": "仙鹤草",
+      "members": [
+        "鹤草芽"
+      ],
+      "basis": "仙鹤草 Agrimonia pilosa"
+    },
+    {
+      "primary": "肿节风",
+      "members": [
+        "草珊瑚"
+      ],
+      "basis": "草珊瑚 Sarcandra glabra"
+    },
+    {
+      "primary": "木槿花",
+      "members": [
+        "木槿皮"
+      ],
+      "basis": "木槿 Hibiscus syriacus"
+    },
+    {
+      "primary": "合欢花",
+      "members": [
+        "合欢皮"
+      ],
+      "basis": "合欢 Albizia julibrissin"
+    },
+    {
+      "primary": "松花粉",
+      "members": [
+        "松节",
+        "松香"
+      ],
+      "basis": "松 Pinus massoniana / P. tabuliformis"
+    },
+    {
+      "primary": "厚朴",
+      "members": [
+        "凹叶厚朴",
+        "厚朴花"
+      ],
+      "basis": "厚朴 Magnolia officinalis"
+    },
+    {
+      "primary": "旋覆花",
+      "members": [
+        "金沸草"
+      ],
+      "basis": "旋覆花 Inula japonica"
+    },
+    {
+      "primary": "十大功劳",
+      "members": [
+        "功劳木"
+      ],
+      "basis": "十大功劳 Mahonia bealei"
+    },
+    {
+      "primary": "川木通",
+      "members": [
+        "小木通"
+      ],
+      "basis": "木通 Clematis armandii"
+    },
+    {
+      "primary": "樟木",
+      "members": [
+        "樟脑",
+        "天然冰片"
+      ],
+      "basis": "樟 Cinnamomum camphora"
+    },
+    {
+      "primary": "竹节参",
+      "members": [
+        "珠子参"
+      ],
+      "basis": "竹节参 Panax japonicus"
+    },
+    {
+      "primary": "巴豆",
+      "members": [
+        "巴豆霜"
+      ],
+      "basis": "巴豆 Croton tiglium"
+    },
+    {
+      "primary": "半夏",
+      "members": [
+        "法半夏",
+        "姜半夏",
+        "清半夏"
+      ],
+      "basis": "半夏 Pinellia ternata"
+    },
+    {
+      "primary": "天南星",
+      "members": [
+        "制天南星",
+        "胆南星"
+      ],
+      "basis": "天南星 Arisaema erubescens"
+    },
+    {
+      "primary": "大蓟",
+      "members": [
+        "大蓟炭"
+      ],
+      "basis": "大蓟 Cirsium japonicum"
+    },
+    {
+      "primary": "千金子",
+      "members": [
+        "千金子霜"
+      ],
+      "basis": "千金子 Euphorbia lathyris"
+    },
+    {
+      "primary": "甘草",
+      "members": [
+        "炙甘草"
+      ],
+      "basis": "甘草 Glycyrrhiza uralensis"
+    },
+    {
+      "primary": "石膏",
+      "members": [
+        "煅石膏"
+      ],
+      "basis": "石膏 Gypsum"
+    },
+    {
+      "primary": "荆芥",
+      "members": [
+        "荆芥炭",
+        "荆芥穗",
+        "荆芥穗炭"
+      ],
+      "basis": "荆芥 Schizonepeta tenuifolia"
+    },
+    {
+      "primary": "栀子",
+      "members": [
+        "焦栀子"
+      ],
+      "basis": "栀子 Gardenia jasminoides"
+    },
+    {
+      "primary": "黄芪",
+      "members": [
+        "炙黄芪"
+      ],
+      "basis": "黄芪 Astragalus membranaceus"
+    },
+    {
+      "primary": "红芪",
+      "members": [
+        "炙红芪"
+      ],
+      "basis": "红芪 Hedysarum polybotrys"
+    },
+    {
+      "primary": "马钱子",
+      "members": [
+        "马钱子粉"
+      ],
+      "basis": "马钱子 Strychnos nux-vomica"
+    },
+    {
+      "primary": "芒硝",
+      "members": [
+        "玄明粉"
+      ],
+      "basis": "芒硝 Natrii Sulfas"
+    },
+    {
+      "primary": "滑石",
+      "members": [
+        "滑石粉"
+      ],
+      "basis": "滑石 Talcum"
+    },
+    {
+      "primary": "葛根",
+      "members": [
+        "粉葛"
+      ],
+      "basis": "葛 Pueraria lobata / P. thomsonii"
+    },
+    {
+      "primary": "萆薢",
+      "members": [
+        "粉萆薢",
+        "绵萆薢"
+      ],
+      "basis": "萆薢类 Dioscorea spp."
+    },
+    {
+      "primary": "水菖蒲",
+      "members": [
+        "藏菖蒲"
+      ],
+      "basis": "菖蒲 Acorus calamus"
+    },
+    {
+      "primary": "鹿茸",
+      "members": [
+        "鹿角",
+        "鹿角霜"
+      ],
+      "basis": "鹿 Cervus nippon / C. elaphus"
+    },
+    {
+      "primary": "龟甲",
+      "members": [
+        "龟甲胶"
+      ],
+      "basis": "龟 Chinemys reevesii"
+    },
+    {
+      "primary": "珍珠",
+      "members": [
+        "珍珠母"
+      ],
+      "basis": "珍珠贝 / 蚌类"
+    },
+    {
+      "primary": "蜂蜜",
+      "members": [
+        "蜂蜡",
+        "蜂胶"
+      ],
+      "basis": "蜜蜂 Apis cerana / A. mellifera"
+    },
+    {
+      "primary": "僵蚕",
+      "members": [
+        "蚕沙"
+      ],
+      "basis": "家蚕 Bombyx mori"
+    },
+    {
+      "primary": "乌骨鸡",
+      "members": [
+        "鸡内金"
+      ],
+      "basis": "家鸡 Gallus gallus domesticus"
+    },
+    {
+      "primary": "佛手",
+      "members": [
+        "香橼"
+      ],
+      "basis": "柑橘属 Citrus medica"
+    },
+    {
+      "primary": "大枣",
+      "members": [
+        "酸枣仁"
+      ],
+      "basis": "枣 Ziziphus jujuba"
+    },
+    {
+      "primary": "竹茹",
+      "members": [
+        "竹沥"
+      ],
+      "basis": "竹 Phyllostachys nigra"
+    }
+  ]
+}

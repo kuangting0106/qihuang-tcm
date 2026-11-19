@@ -1,107 +1,107 @@
 {
-  "generatedAt": "2026-11-14T12:39:19.559Z",
-  "total": 736,
-  "withImages": 259,
+  "generatedAt": "2026-11-19T09:25:22.418Z",
+  "total": 620,
+  "withImages": 300,
   "categories": [
     {
       "id": "jiebiao",
       "title": "解表药",
-      "count": 25
+      "count": 21
     },
     {
       "id": "qingre",
       "title": "清热药",
-      "count": 206
+      "count": 180
     },
     {
       "id": "xiexia",
       "title": "泻下药",
-      "count": 12
+      "count": 9
     },
     {
       "id": "qufengshi",
       "title": "祛风湿药",
-      "count": 39
+      "count": 33
     },
     {
       "id": "huashi",
       "title": "化湿药",
-      "count": 27
+      "count": 20
     },
     {
       "id": "lishui",
       "title": "利水渗湿药",
-      "count": 35
+      "count": 32
     },
     {
       "id": "wenli",
       "title": "温里药",
-      "count": 26
+      "count": 20
     },
     {
       "id": "liqi",
       "title": "理气药",
-      "count": 35
+      "count": 26
     },
     {
       "id": "xiaoshi",
       "title": "消食药",
-      "count": 22
+      "count": 19
     },
     {
       "id": "quchong",
       "title": "驱虫药",
-      "count": 9
+      "count": 7
     },
     {
       "id": "zhixue",
       "title": "止血药",
-      "count": 26
+      "count": 19
     },
     {
       "id": "huoxue",
       "title": "活血化瘀药",
-      "count": 74
+      "count": 64
     },
     {
       "id": "huatan",
       "title": "化痰止咳平喘药",
-      "count": 48
+      "count": 42
     },
     {
       "id": "anshen",
       "title": "安神药",
-      "count": 15
+      "count": 11
     },
     {
       "id": "pinggan",
       "title": "平肝息风药",
-      "count": 15
+      "count": 14
     },
     {
       "id": "buxu",
       "title": "补虚药",
-      "count": 70
+      "count": 58
     },
     {
       "id": "souse",
       "title": "收涩药",
-      "count": 11
+      "count": 9
     },
     {
       "id": "yongtu",
       "title": "涌吐药",
-      "count": 4
+      "count": 3
     },
     {
       "id": "gongdu",
       "title": "攻毒杀虫止痒药",
-      "count": 14
+      "count": 11
     },
     {
       "id": "qita",
       "title": "其他药",
-      "count": 23
+      "count": 22
     }
   ],
   "items": [
@@ -113,7 +113,12 @@
       "aliases": [
         "苏叶",
         "紫菜",
-        "苏"
+        "苏",
+        "紫苏子",
+        "苏子",
+        "黑苏子",
+        "铁苏子",
+        "紫苏梗"
       ],
       "categoryId": "jiebiao",
       "categoryTitle": "解表药",
@@ -128,8 +133,8 @@
         "kind": "原植物",
         "thumbUrl": "/images/herbs/dacheng/thumbs/inat-5827f7f365.jpg"
       },
-      "docCount": 3,
-      "charCount": 1964
+      "docCount": 5,
+      "charCount": 3767
     },
     {
       "id": "dacheng-002",
@@ -138,14 +143,26 @@
       "pinyin": "shengjiang",
       "aliases": [
         "母姜",
-        "鲜生姜"
+        "鲜生姜",
+        "干姜",
+        "白姜",
+        "均姜",
+        "炮姜",
+        "黑姜"
       ],
       "categoryId": "wenli",
       "categoryTitle": "温里药",
       "summary": "解表散寒，温中止呕，化痰止咳，解鱼蟹毒",
-      "image": null,
-      "docCount": 2,
-      "charCount": 1424
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-009.jpg",
+        "alt": "干姜（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
+      "docCount": 4,
+      "charCount": 2817
     },
     {
       "id": "dacheng-003",
@@ -257,7 +274,8 @@
       "aliases": [
         "干葛",
         "甘葛",
-        "黄葛根"
+        "黄葛根",
+        "粉葛"
       ],
       "categoryId": "huoxue",
       "categoryTitle": "活血化瘀药",
@@ -272,34 +290,8 @@
         "kind": "原植物",
         "thumbUrl": "/images/herbs/dacheng/thumbs/plant-084.jpg"
       },
-      "docCount": 2,
-      "charCount": 1625
-    },
-    {
-      "id": "dacheng-008",
-      "number": 8,
-      "name": "淡豆豉",
-      "pinyin": "dandouchi",
-      "aliases": [
-        "香豉",
-        "豉",
-        "大豆豉"
-      ],
-      "categoryId": "jiebiao",
-      "categoryTitle": "解表药",
-      "summary": "解表，除烦，宣发郁热",
-      "image": {
-        "url": "/images/herbs/dacheng/inat-cb709e97f5.jpg",
-        "alt": "Soybean（Glycine max）",
-        "credit": "no rights reserved, uploaded by 葉子",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/122902",
-        "latin": "Glycine max",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-cb709e97f5.jpg"
-      },
-      "docCount": 2,
-      "charCount": 1260
+      "docCount": 3,
+      "charCount": 2318
     },
     {
       "id": "dacheng-009",
@@ -323,32 +315,6 @@
         "sourceUrl": "https://www.inaturalist.org/taxa/785991",
         "latin": "Anemarrhena asphodeloides",
         "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-785991.jpg"
-      },
-      "docCount": 2,
-      "charCount": 1912
-    },
-    {
-      "id": "dacheng-010",
-      "number": 10,
-      "name": "天花粉",
-      "pinyin": "tianhuafen",
-      "aliases": [
-        "栝楼根",
-        "天瓜粉",
-        "栝楼粉"
-      ],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "清热泻火，生津止渴，消肿排脓",
-      "image": {
-        "url": "/images/herbs/dacheng/inat-27ed1d0b79.jpg",
-        "alt": "Chinese cucumber（Trichosanthes kirilowii）",
-        "credit": "(c) tretyakovmiy, some rights reserved (CC BY-NC), uploaded by tretyakovmiy",
-        "license": "CC-BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/62634",
-        "latin": "Trichosanthes kirilowii",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-27ed1d0b79.jpg"
       },
       "docCount": 2,
       "charCount": 1912
@@ -388,7 +354,8 @@
       "aliases": [
         "忍冬花",
         "银花",
-        "双花"
+        "双花",
+        "忍冬藤"
       ],
       "categoryId": "qingre",
       "categoryTitle": "清热药",
@@ -403,8 +370,8 @@
         "kind": "原植物",
         "thumbUrl": "/images/herbs/dacheng/thumbs/plant-075.jpg"
       },
-      "docCount": 2,
-      "charCount": 1722
+      "docCount": 3,
+      "charCount": 2352
     },
     {
       "id": "dacheng-013",
@@ -507,7 +474,14 @@
       "number": 17,
       "name": "地黄",
       "pinyin": "dihuang",
-      "aliases": [],
+      "aliases": [
+        "生地黄",
+        "鲜地黄",
+        "鲜生地",
+        "山菸根",
+        "熟地黄",
+        "熟地"
+      ],
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "鲜地黄： 清热生津，凉血，止血",
@@ -521,8 +495,8 @@
         "kind": "原植物",
         "thumbUrl": "/images/herbs/dacheng/thumbs/plant-045.jpg"
       },
-      "docCount": 1,
-      "charCount": 1114
+      "docCount": 4,
+      "charCount": 3558
     },
     {
       "id": "dacheng-018",
@@ -563,43 +537,15 @@
       "categoryTitle": "清热药",
       "summary": "清热凉血，活血化瘀",
       "image": {
-        "url": "/images/herbs/dacheng/inat-cebb69617b.jpg",
-        "alt": "Paeonia ostii（Paeonia ostii）",
-        "credit": "(c) novnic, some rights reserved (CC BY-NC)",
-        "license": "CC-BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/923636",
-        "latin": "Paeonia ostii",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-cebb69617b.jpg"
+        "url": "/images/herbs/lecture/zhongjing/zj-082.jpg",
+        "alt": "牡丹皮（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 2091
-    },
-    {
-      "id": "dacheng-020",
-      "number": 20,
-      "name": "赤芍",
-      "pinyin": "chishao",
-      "aliases": [
-        "木芍药",
-        "赤芍药",
-        "红芍药"
-      ],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "清热凉血，散瘀止痛",
-      "image": {
-        "url": "/images/herbs/dacheng/inat-80fd6ee684.jpg",
-        "alt": "Chinese peony（Paeonia lactiflora）",
-        "credit": "(c) Светлана Нестерова, some rights reserved (CC BY-NC), uploaded by Светлана Нестерова",
-        "license": "CC-BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/127857",
-        "latin": "Paeonia lactiflora",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-80fd6ee684.jpg"
-      },
-      "docCount": 2,
-      "charCount": 1488
     },
     {
       "id": "dacheng-021",
@@ -759,7 +705,8 @@
         "茯菟",
         "松腴",
         "松薯",
-        "松苓"
+        "松苓",
+        "茯苓皮"
       ],
       "categoryId": "lishui",
       "categoryTitle": "利水渗湿药",
@@ -774,8 +721,8 @@
         "kind": "整块",
         "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-user-fuling-whole.jpg"
       },
-      "docCount": 2,
-      "charCount": 1820
+      "docCount": 3,
+      "charCount": 2087
     },
     {
       "id": "dacheng-028",
@@ -863,7 +810,11 @@
         "车前实",
         "虾蟆衣子",
         "猪耳朵穗子",
-        "凤眼前仁"
+        "凤眼前仁",
+        "车前草",
+        "地胆头",
+        "饭匙草",
+        "灰盆草"
       ],
       "categoryId": "lishui",
       "categoryTitle": "利水渗湿药",
@@ -877,8 +828,8 @@
         "latin": "",
         "kind": "药材"
       },
-      "docCount": 2,
-      "charCount": 2360
+      "docCount": 3,
+      "charCount": 3329
     },
     {
       "id": "dacheng-032",
@@ -889,7 +840,9 @@
         "菌桂",
         "桂",
         "筒桂",
-        "玉桂"
+        "玉桂",
+        "桂枝",
+        "柳桂"
       ],
       "categoryId": "wenli",
       "categoryTitle": "温里药",
@@ -903,8 +856,8 @@
         "latin": "Cinnamomum cassia",
         "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-774822.jpg"
       },
-      "docCount": 2,
-      "charCount": 2275
+      "docCount": 3,
+      "charCount": 3223
     },
     {
       "id": "dacheng-033",
@@ -985,7 +938,10 @@
         "橘皮",
         "红皮",
         "橘子皮",
-        "广橘皮"
+        "广橘皮",
+        "青皮",
+        "橘红",
+        "橘核"
       ],
       "categoryId": "liqi",
       "categoryTitle": "理气药",
@@ -999,8 +955,8 @@
         "latin": "Citrus reticulata",
         "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-1611056.jpg"
       },
-      "docCount": 2,
-      "charCount": 1680
+      "docCount": 5,
+      "charCount": 3807
     },
     {
       "id": "dacheng-037",
@@ -1037,7 +993,10 @@
         "佛手柑",
         "密罗柑",
         "五指柑",
-        "福寿柑"
+        "福寿柑",
+        "香橼",
+        "香泡树",
+        "香橼柑"
       ],
       "categoryId": "liqi",
       "categoryTitle": "理气药",
@@ -1052,8 +1011,8 @@
         "kind": "原植物",
         "thumbUrl": "/images/herbs/dacheng/thumbs/inat-019de1bc88.jpg"
       },
-      "docCount": 2,
-      "charCount": 1800
+      "docCount": 3,
+      "charCount": 2732
     },
     {
       "id": "dacheng-039",
@@ -1081,14 +1040,16 @@
         "槃梅",
         "鼠査",
         "山里红果",
-        "映山红果"
+        "映山红果",
+        "山楂叶",
+        "赤枣子叶"
       ],
       "categoryId": "xiaoshi",
       "categoryTitle": "消食药",
       "summary": "健胃消食，行气散瘀，化浊降脂",
       "image": null,
-      "docCount": 2,
-      "charCount": 2333
+      "docCount": 3,
+      "charCount": 2824
     },
     {
       "id": "dacheng-041",
@@ -1129,37 +1090,16 @@
       "categoryId": "xiaoshi",
       "categoryTitle": "消食药",
       "summary": "消食除胀，降气化痰",
-      "image": null,
-      "docCount": 2,
-      "charCount": 1820
-    },
-    {
-      "id": "dacheng-043",
-      "number": 43,
-      "name": "鸡内金",
-      "pinyin": "jineijin",
-      "aliases": [
-        "鸡黄皮",
-        "鸡食皮",
-        "鸡合子",
-        "鸡中金",
-        "化骨胆"
-      ],
-      "categoryId": "xiaoshi",
-      "categoryTitle": "消食药",
-      "summary": "健胃消食，涩精止遗，通淋化石",
       "image": {
-        "url": "/images/herbs/dacheng/inat-a12e1aa2da.jpg",
-        "alt": "Red Junglefowl（Gallus gallus）",
-        "credit": "(c) Julien Renoult, some rights reserved (CC BY), uploaded by Julien Renoult",
-        "license": "CC-BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/882",
-        "latin": "Gallus gallus",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-a12e1aa2da.jpg"
+        "url": "/images/herbs/lecture/extra/ex-171.jpg",
+        "alt": "莱菔子（用户提供图片 1）",
+        "credit": "用户提供 / 本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
       },
       "docCount": 2,
-      "charCount": 1556
+      "charCount": 1820
     },
     {
       "id": "dacheng-044",
@@ -1167,7 +1107,12 @@
       "name": "槐花",
       "pinyin": "huaihua",
       "aliases": [
-        "槐蕊"
+        "槐蕊",
+        "槐角",
+        "槐实",
+        "槐子",
+        "槐荚",
+        "槐豆"
       ],
       "categoryId": "qingre",
       "categoryTitle": "清热药",
@@ -1182,8 +1127,8 @@
         "kind": "原植物",
         "thumbUrl": "/images/herbs/dacheng/thumbs/inat-872c316330.jpg"
       },
-      "docCount": 2,
-      "charCount": 1779
+      "docCount": 3,
+      "charCount": 2721
     },
     {
       "id": "dacheng-045",
@@ -1306,14 +1251,13 @@
       "categoryTitle": "活血化瘀药",
       "summary": "活血调经，利尿消肿，清热解毒",
       "image": {
-        "url": "/images/herbs/dacheng/inat-db9323c181.jpg",
-        "alt": "Chinese motherwort（Leonurus japonicus）",
-        "credit": "no rights reserved, uploaded by 葉子",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/61479",
-        "latin": "Leonurus japonicus",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-db9323c181.jpg"
+        "url": "/images/herbs/lecture/xlsx/xlsx-033.jpg",
+        "alt": "茺蔚子（用户提供图片 1）",
+        "credit": "用户提供 / 中草药图片自搜表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "latin": "",
+        "kind": "药材"
       },
       "docCount": 3,
       "charCount": 2630
@@ -1425,7 +1369,10 @@
         "鸭脚子",
         "灵眼",
         "佛指甲",
-        "佛指柑"
+        "佛指柑",
+        "银杏",
+        "白果叶",
+        "银杏叶"
       ],
       "categoryId": "qita",
       "categoryTitle": "其他药",
@@ -1440,33 +1387,8 @@
         "kind": "原植物",
         "thumbUrl": "/images/herbs/dacheng/thumbs/inat-7f25a4ca85.jpg"
       },
-      "docCount": 2,
-      "charCount": 1799
-    },
-    {
-      "id": "dacheng-055",
-      "number": 55,
-      "name": "酸枣仁",
-      "pinyin": "suanzaoren",
-      "aliases": [
-        "枣仁",
-        "酸枣核"
-      ],
-      "categoryId": "anshen",
-      "categoryTitle": "安神药",
-      "summary": "养心补肝，宁心安神，敛汗，生津",
-      "image": {
-        "url": "/images/herbs/dacheng/inat-19f2931c27.jpg",
-        "alt": "Jujube（Ziziphus jujuba）",
-        "credit": "(c) oreste83, some rights reserved (CC BY-NC)",
-        "license": "CC-BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/428365",
-        "latin": "Ziziphus jujuba",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-19f2931c27.jpg"
-      },
-      "docCount": 2,
-      "charCount": 1951
+      "docCount": 4,
+      "charCount": 3686
     },
     {
       "id": "dacheng-056",
@@ -1477,7 +1399,11 @@
         "柏实",
         "柏子",
         "柏仁",
-        "侧柏子"
+        "侧柏子",
+        "侧柏叶",
+        "柏叶",
+        "扁柏叶",
+        "丛柏叶"
       ],
       "categoryId": "anshen",
       "categoryTitle": "安神药",
@@ -1491,8 +1417,8 @@
         "latin": "",
         "kind": "药材"
       },
-      "docCount": 2,
-      "charCount": 1567
+      "docCount": 3,
+      "charCount": 2327
     },
     {
       "id": "dacheng-057",
@@ -1520,33 +1446,6 @@
       "charCount": 1882
     },
     {
-      "id": "dacheng-058",
-      "number": 58,
-      "name": "首乌藤",
-      "pinyin": "shouwuteng",
-      "aliases": [
-        "首乌",
-        "夜交藤",
-        "铁秤砣",
-        "何相公"
-      ],
-      "categoryId": "anshen",
-      "categoryTitle": "安神药",
-      "summary": "养血安神，祛风通络",
-      "image": {
-        "url": "/images/herbs/dacheng/inat-c5506eea51.jpg",
-        "alt": "tuber fleeceflower（Reynoutria multiflora）",
-        "credit": "no rights reserved, uploaded by 葉子",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/914501",
-        "latin": "Reynoutria multiflora",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-c5506eea51.jpg"
-      },
-      "docCount": 2,
-      "charCount": 1154
-    },
-    {
       "id": "dacheng-059",
       "number": 59,
       "name": "人参",
@@ -1557,7 +1456,9 @@
         "棒槌",
         "血参",
         "地精",
-        "土精"
+        "土精",
+        "人参叶",
+        "红参"
       ],
       "categoryId": "buxu",
       "categoryTitle": "补虚药",
@@ -1571,8 +1472,8 @@
         "latin": "Panax ginseng",
         "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-366498.jpg"
       },
-      "docCount": 2,
-      "charCount": 2011
+      "docCount": 4,
+      "charCount": 3237
     },
     {
       "id": "dacheng-060",
@@ -1631,14 +1532,12 @@
       "categoryTitle": "补虚药",
       "summary": "益气健脾，生津润肺",
       "image": {
-        "url": "/images/herbs/dacheng/inat-2f01e53a88.jpg",
-        "alt": "Heterophylly false-starwort（Pseudostellaria heterophylla）",
-        "credit": "(c) 李博恒, some rights reserved (CC BY-NC), uploaded by 李博恒",
-        "license": "CC-BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/565423",
-        "latin": "Pseudostellaria heterophylla",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-2f01e53a88.jpg"
+        "url": "/images/herbs/lecture/extra/ex-175.jpg",
+        "alt": "太子参（用户提供图片 1）",
+        "credit": "用户提供 / 本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 1674
@@ -1652,7 +1551,8 @@
         "黄耆",
         "王孙",
         "箭芪",
-        "绵黄芪"
+        "绵黄芪",
+        "炙黄芪"
       ],
       "categoryId": "buxu",
       "categoryTitle": "补虚药",
@@ -1666,8 +1566,8 @@
         "latin": "Astragalus mongholicus",
         "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-138362.jpg"
       },
-      "docCount": 2,
-      "charCount": 2352
+      "docCount": 3,
+      "charCount": 2542
     },
     {
       "id": "dacheng-064",
@@ -1755,7 +1655,8 @@
       "aliases": [
         "美草",
         "蜜甘",
-        "甜草"
+        "甜草",
+        "炙甘草"
       ],
       "categoryId": "buxu",
       "categoryTitle": "补虚药",
@@ -1769,8 +1670,8 @@
         "latin": "Glycyrrhiza uralensis",
         "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-775858.jpg"
       },
-      "docCount": 2,
-      "charCount": 2278
+      "docCount": 3,
+      "charCount": 2559
     },
     {
       "id": "dacheng-068",
@@ -1781,7 +1682,10 @@
         "干枣",
         "美枣",
         "良枣",
-        "红枣"
+        "红枣",
+        "酸枣仁",
+        "枣仁",
+        "酸枣核"
       ],
       "categoryId": "buxu",
       "categoryTitle": "补虚药",
@@ -1795,8 +1699,8 @@
         "latin": "Ziziphus jujuba",
         "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-428365.jpg"
       },
-      "docCount": 2,
-      "charCount": 1944
+      "docCount": 4,
+      "charCount": 3895
     },
     {
       "id": "dacheng-069",
@@ -1807,7 +1711,13 @@
         "石蜜",
         "食蜜",
         "蜜",
-        "白蜜"
+        "白蜜",
+        "蜂蜡",
+        "蜜蜡",
+        "蜡",
+        "蜜跖",
+        "黄蜡",
+        "蜂胶"
       ],
       "categoryId": "qingre",
       "categoryTitle": "清热药",
@@ -1821,8 +1731,8 @@
         "latin": "",
         "kind": "药材"
       },
-      "docCount": 2,
-      "charCount": 1662
+      "docCount": 4,
+      "charCount": 3224
     },
     {
       "id": "dacheng-070",
@@ -1830,23 +1740,23 @@
       "name": "鹿茸",
       "pinyin": "lurong",
       "aliases": [
-        "斑龙珠"
+        "斑龙珠",
+        "鹿角",
+        "鹿角霜"
       ],
       "categoryId": "buxu",
       "categoryTitle": "补虚药",
       "summary": "壮肾阳，益精血，强筋骨，调冲任，托疮毒",
       "image": {
-        "url": "/images/herbs/dacheng/inat-425f399139.jpg",
-        "alt": "Sika Deer（Cervus nippon）",
-        "credit": "(c) stproc, some rights reserved (CC BY-NC)",
-        "license": "CC-BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/42210",
-        "latin": "Cervus nippon",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-425f399139.jpg"
+        "url": "/images/herbs/lecture/zhongjing/zj-121.jpg",
+        "alt": "鹿茸（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
       },
-      "docCount": 2,
-      "charCount": 2226
+      "docCount": 4,
+      "charCount": 3140
     },
     {
       "id": "dacheng-071",
@@ -1882,7 +1792,8 @@
         "扯丝皮",
         "丝连皮",
         "玉丝皮",
-        "丝棉皮"
+        "丝棉皮",
+        "杜仲叶"
       ],
       "categoryId": "buxu",
       "categoryTitle": "补虚药",
@@ -1896,8 +1807,8 @@
         "latin": "Eucommia ulmoides",
         "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-127868.jpg"
       },
-      "docCount": 2,
-      "charCount": 2008
+      "docCount": 3,
+      "charCount": 2647
     },
     {
       "id": "dacheng-073",
@@ -1989,28 +1900,6 @@
       "charCount": 2155
     },
     {
-      "id": "dacheng-077",
-      "number": 77,
-      "name": "熟地黄",
-      "pinyin": "shudihuang",
-      "aliases": [
-        "熟地"
-      ],
-      "categoryId": "buxu",
-      "categoryTitle": "补虚药",
-      "summary": "补血滋阴，益精填髓",
-      "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-026.jpg",
-        "alt": "熟地黄（用户提供图片）",
-        "credit": "用户提供 / 中草药图片自搜表格",
-        "license": "用户提供，版权归原作者所有",
-        "sourceUrl": "",
-        "kind": "药材"
-      },
-      "docCount": 2,
-      "charCount": 1199
-    },
-    {
       "id": "dacheng-078",
       "number": 78,
       "name": "何首乌",
@@ -2018,7 +1907,12 @@
       "aliases": [
         "首乌",
         "夜交藤根",
-        "铁秤陀"
+        "铁秤陀",
+        "首乌藤",
+        "夜交藤",
+        "铁秤砣",
+        "何相公",
+        "制何首乌"
       ],
       "categoryId": "qingre",
       "categoryTitle": "清热药",
@@ -2033,8 +1927,8 @@
         "kind": "原植物",
         "thumbUrl": "/images/herbs/dacheng/thumbs/inat-c5506eea51.jpg"
       },
-      "docCount": 2,
-      "charCount": 2163
+      "docCount": 5,
+      "charCount": 3816
     },
     {
       "id": "dacheng-079",
@@ -2043,23 +1937,26 @@
       "pinyin": "baishao",
       "aliases": [
         "白芍药",
-        "金芍药"
+        "金芍药",
+        "赤芍",
+        "木芍药",
+        "赤芍药",
+        "红芍药"
       ],
       "categoryId": "buxu",
       "categoryTitle": "补虚药",
       "summary": "养血调经，敛阴止汗，柔肝止痛，平抑肝阳",
       "image": {
-        "url": "/images/herbs/dacheng/inat-80fd6ee684.jpg",
-        "alt": "Chinese peony（Paeonia lactiflora）",
-        "credit": "(c) Светлана Нестерова, some rights reserved (CC BY-NC), uploaded by Светлана Нестерова",
-        "license": "CC-BY-NC",
+        "url": "/images/herbs/lecture/127857.jpeg",
+        "alt": "芍药（已有图片）",
+        "credit": "© Анна Васильченко / iNaturalist",
+        "license": "CC BY",
         "sourceUrl": "https://www.inaturalist.org/taxa/127857",
         "latin": "Paeonia lactiflora",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-80fd6ee684.jpg"
+        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-127857.jpg"
       },
-      "docCount": 2,
-      "charCount": 2242
+      "docCount": 4,
+      "charCount": 3730
     },
     {
       "id": "dacheng-080",
@@ -2099,7 +1996,14 @@
       "categoryId": "buxu",
       "categoryTitle": "补虚药",
       "summary": "补益心脾，养血安神",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-115.jpg",
+        "alt": "龙眼肉（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 2,
       "charCount": 1617
     },
@@ -2144,14 +2048,12 @@
       "categoryTitle": "化痰止咳平喘药",
       "summary": "养阴润肺，清心安神",
       "image": {
-        "url": "/images/herbs/dacheng/inat-1e331445e5.jpg",
-        "alt": "Chinese lily（Lilium brownii）",
-        "credit": "(c) Chen Shu, some rights reserved (CC BY-NC), uploaded by Chen Shu",
-        "license": "CC-BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/556187",
-        "latin": "Lilium brownii",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-1e331445e5.jpg"
+        "url": "/images/herbs/lecture/zhongjing/zj-033.jpg",
+        "alt": "百合（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 1847
@@ -2266,7 +2168,12 @@
         "枸杞红实",
         "甜菜子",
         "西枸杞",
-        "枸杞豆"
+        "枸杞豆",
+        "地骨皮",
+        "杞根",
+        "地骨",
+        "枸杞根",
+        "枸杞根皮"
       ],
       "categoryId": "buxu",
       "categoryTitle": "补虚药",
@@ -2281,8 +2188,8 @@
         "kind": "原植物",
         "thumbUrl": "/images/herbs/dacheng/thumbs/inat-3d2d69d787.jpg"
       },
-      "docCount": 2,
-      "charCount": 1754
+      "docCount": 3,
+      "charCount": 2731
     },
     {
       "id": "dacheng-089",
@@ -2309,19 +2216,6 @@
       },
       "docCount": 2,
       "charCount": 1920
-    },
-    {
-      "id": "dacheng-090",
-      "number": 90,
-      "name": "桑椹",
-      "pinyin": "sangshen",
-      "aliases": [],
-      "categoryId": "buxu",
-      "categoryTitle": "补虚药",
-      "summary": "滋阴补血，生津润燥",
-      "image": null,
-      "docCount": 1,
-      "charCount": 557
     },
     {
       "id": "dacheng-091",
@@ -2359,7 +2253,8 @@
         "龟下甲",
         "龟腹甲",
         "乌龟壳",
-        "龟板"
+        "龟板",
+        "龟甲胶"
       ],
       "categoryId": "buxu",
       "categoryTitle": "补虚药",
@@ -2373,8 +2268,8 @@
         "latin": "",
         "kind": "药材"
       },
-      "docCount": 2,
-      "charCount": 1970
+      "docCount": 3,
+      "charCount": 2747
     },
     {
       "id": "dacheng-093",
@@ -2392,14 +2287,12 @@
       "categoryTitle": "平肝息风药",
       "summary": "滋阴潜阳，退热除蒸，软坚散结",
       "image": {
-        "url": "/images/herbs/dacheng/inat-41fe4dd758.jpg",
-        "alt": "Chinese Softshell Turtle（Pelodiscus sinensis）",
-        "credit": "(c) 大俠, some rights reserved (CC BY-NC-SA), uploaded by 大俠",
-        "license": "CC-BY-NC-SA",
-        "sourceUrl": "https://www.inaturalist.org/taxa/68334",
-        "latin": "Pelodiscus sinensis",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-41fe4dd758.jpg"
+        "url": "/images/herbs/lecture/zhongjing/zj-131.jpg",
+        "alt": "鳖甲（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 1572
@@ -2439,14 +2332,18 @@
         "梅实",
         "黑梅",
         "熏梅",
-        "桔梅肉"
+        "桔梅肉",
+        "梅花",
+        "白梅花",
+        "绿萼梅",
+        "绿梅花"
       ],
       "categoryId": "qita",
       "categoryTitle": "其他药",
       "summary": "敛肺，涩肠，生津，安蛔",
       "image": null,
-      "docCount": 2,
-      "charCount": 1550
+      "docCount": 3,
+      "charCount": 2134
     },
     {
       "id": "dacheng-096",
@@ -2634,22 +2531,6 @@
       "image": null,
       "docCount": 1,
       "charCount": 934
-    },
-    {
-      "id": "dacheng-105",
-      "number": 107,
-      "name": "干姜",
-      "pinyin": "ganjiang",
-      "aliases": [
-        "白姜",
-        "均姜"
-      ],
-      "categoryId": "wenli",
-      "categoryTitle": "温里药",
-      "summary": "温中散寒，回阳通脉，温肺化饮",
-      "image": null,
-      "docCount": 1,
-      "charCount": 1067
     },
     {
       "id": "dacheng-106",
@@ -2928,14 +2809,23 @@
       "aliases": [
         "川乌头",
         "乌喙",
-        "草乌"
+        "草乌",
+        "附子",
+        "制川乌"
       ],
       "categoryId": "qufengshi",
       "categoryTitle": "祛风湿药",
       "summary": "祛风除湿，温经止痛",
-      "image": null,
-      "docCount": 1,
-      "charCount": 1378
+      "image": {
+        "url": "/images/herbs/lecture/xiajing/xj-007.jpg",
+        "alt": "附子（用户提供图片 1）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
+      "docCount": 3,
+      "charCount": 3000
     },
     {
       "id": "dacheng-119",
@@ -3116,23 +3006,23 @@
       "aliases": [
         "半夏精",
         "野芋头",
-        "山棒子"
+        "山棒子",
+        "制天南星",
+        "胆南星"
       ],
       "categoryId": "gongdu",
       "categoryTitle": "攻毒杀虫止痒药",
       "summary": "散结消肿。外用",
       "image": {
-        "url": "/images/herbs/dacheng/inat-46876a6482.jpg",
-        "alt": "Arisaema erubescens（Arisaema erubescens）",
-        "credit": "(c) desertnaturalist, some rights reserved (CC BY), uploaded by desertnaturalist",
-        "license": "CC-BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/556029",
-        "latin": "Arisaema erubescens",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-46876a6482.jpg"
+        "url": "/images/herbs/lecture/xiajing/xj-015.jpg",
+        "alt": "虎掌南星（用户提供图片 1）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
       },
-      "docCount": 1,
-      "charCount": 992
+      "docCount": 3,
+      "charCount": 1591
     },
     {
       "id": "dacheng-127",
@@ -3149,14 +3039,12 @@
       "categoryTitle": "祛风湿药",
       "summary": "祛风除湿，通经活络，解毒消肿",
       "image": {
-        "url": "/images/herbs/dacheng/inat-279d118ea9.jpg",
-        "alt": "queen coralbead（Nephroia orbiculata）",
-        "credit": "no rights reserved, uploaded by 葉子",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/1555997",
-        "latin": "Nephroia orbiculata",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-279d118ea9.jpg"
+        "url": "/images/herbs/lecture/zhongjing/zj-077.jpg",
+        "alt": "防己（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1307
@@ -3295,7 +3183,8 @@
       "aliases": [
         "菖蒲",
         "蒲剑",
-        "臭蒲"
+        "臭蒲",
+        "藏菖蒲"
       ],
       "categoryId": "huatan",
       "categoryTitle": "化痰止咳平喘药",
@@ -3310,8 +3199,8 @@
         "kind": "原植物",
         "thumbUrl": "/images/herbs/dacheng/thumbs/inat-0915548c2a.jpg"
       },
-      "docCount": 1,
-      "charCount": 1074
+      "docCount": 2,
+      "charCount": 1652
     },
     {
       "id": "dacheng-134",
@@ -3430,14 +3319,12 @@
       "categoryTitle": "补虚药",
       "summary": "益气养阴，解毒消肿，排脓，通乳",
       "image": {
-        "url": "/images/herbs/dacheng/inat-cad08f5da3.jpg",
-        "alt": "Bonnet Bellflower（Codonopsis lanceolata）",
-        "credit": "(c) 空猫, some rights reserved (CC BY-NC), uploaded by 空猫",
-        "license": "CC-BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/366814",
-        "latin": "Codonopsis lanceolata",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-cad08f5da3.jpg"
+        "url": "/images/herbs/lecture/extra/ex-175.jpg",
+        "alt": "太子参（用户提供图片 1）",
+        "credit": "用户提供 / 本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1155
@@ -3578,14 +3465,12 @@
       "categoryTitle": "清热药",
       "summary": "祛风痰，定惊搐，解毒散结，止痛",
       "image": {
-        "url": "/images/herbs/dacheng/inat-b7c1ee0d68.jpg",
-        "alt": "Sauromatum giganteum（Sauromatum giganteum）",
-        "credit": "(c) zhangqianyi, some rights reserved (CC BY-NC)",
-        "license": "CC-BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/606203",
-        "latin": "Sauromatum giganteum",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b7c1ee0d68.jpg"
+        "url": "/images/herbs/lecture/extra/ex-151.jpg",
+        "alt": "白附子（用户提供图片 1）",
+        "credit": "用户提供 / 本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1036
@@ -3606,14 +3491,12 @@
       "categoryTitle": "清热药",
       "summary": "凉血止血，清热利尿",
       "image": {
-        "url": "/images/herbs/dacheng/inat-bf9ef7fe07.jpg",
-        "alt": "Cogon Grass（Imperata cylindrica）",
-        "credit": "(c) wangleeping, some rights reserved (CC BY-NC), uploaded by wangleeping",
-        "license": "CC-BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/164056",
-        "latin": "Imperata cylindrica",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-bf9ef7fe07.jpg"
+        "url": "/images/herbs/lecture/zhongjing/zj-048.jpg",
+        "alt": "白茅根（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1030
@@ -3695,7 +3578,10 @@
       "aliases": [
         "水玉",
         "麻芋果",
-        "地巴豆"
+        "地巴豆",
+        "法半夏",
+        "姜半夏",
+        "清半夏"
       ],
       "categoryId": "huashi",
       "categoryTitle": "化湿药",
@@ -3709,34 +3595,8 @@
         "latin": "Pinellia ternata",
         "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-166883.jpg"
       },
-      "docCount": 1,
-      "charCount": 1012
-    },
-    {
-      "id": "dacheng-150",
-      "number": 167,
-      "name": "生地黄",
-      "pinyin": "shengdihuang",
-      "aliases": [
-        "鲜地黄",
-        "鲜生地",
-        "山菸根"
-      ],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "①生地黄：清热凉血，养阴生津",
-      "image": {
-        "url": "/images/herbs/dacheng/inat-b76a508400.jpg",
-        "alt": "Rehmannia（Rehmannia glutinosa）",
-        "credit": "(c) Chuangzao, some rights reserved (CC BY-NC), uploaded by Chuangzao",
-        "license": "CC-BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/544445",
-        "latin": "Rehmannia glutinosa",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b76a508400.jpg"
-      },
-      "docCount": 1,
-      "charCount": 1245
+      "docCount": 4,
+      "charCount": 1805
     },
     {
       "id": "dacheng-151",
@@ -3910,14 +3770,12 @@
       "categoryTitle": "利水渗湿药",
       "summary": "利水消肿，祛风止痛",
       "image": {
-        "url": "/images/herbs/dacheng/inat-5e83619067.jpg",
-        "alt": "Stephania tetrandra（Stephania tetrandra）",
-        "credit": "no rights reserved, uploaded by 葉子",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/737284",
-        "latin": "Stephania tetrandra",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-5e83619067.jpg"
+        "url": "/images/herbs/lecture/zhongjing/zj-077.jpg",
+        "alt": "防己（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 968
@@ -3930,14 +3788,15 @@
       "aliases": [
         "真盘子",
         "岩黄芪",
-        "黑芪"
+        "黑芪",
+        "炙红芪"
       ],
       "categoryId": "buxu",
       "categoryTitle": "补虚药",
       "summary": "补气升阳，固表止汗，利水消肿。生津养血，行滞通痹，托毒排脓，敛疮生肌",
       "image": null,
-      "docCount": 1,
-      "charCount": 812
+      "docCount": 2,
+      "charCount": 1034
     },
     {
       "id": "dacheng-159",
@@ -4073,43 +3932,21 @@
       "charCount": 1213
     },
     {
-      "id": "dacheng-166",
-      "number": 191,
-      "name": "附子",
-      "pinyin": "fuzi",
-      "aliases": [],
-      "categoryId": "wenli",
-      "categoryTitle": "温里药",
-      "summary": "回阳救逆，补火助阳，散寒止痛",
-      "image": null,
-      "docCount": 1,
-      "charCount": 1340
-    },
-    {
-      "id": "dacheng-167",
-      "number": 192,
-      "name": "青木香",
-      "pinyin": "qingmuxiang",
-      "aliases": [
-        "马兜铃根",
-        "兜铃根",
-        "青藤香"
-      ],
-      "categoryId": "liqi",
-      "categoryTitle": "理气药",
-      "summary": "行气止痛，解毒消肿，平肝降压",
-      "image": null,
-      "docCount": 1,
-      "charCount": 1086
-    },
-    {
       "id": "dacheng-168",
       "number": 193,
       "name": "板蓝根",
       "pinyin": "banlangen",
       "aliases": [
         "靛青根",
-        "蓝靛根"
+        "蓝靛根",
+        "大青叶",
+        "蓝叶",
+        "蓝菜",
+        "青黛",
+        "靛花",
+        "青蛤粉",
+        "蓝露",
+        "靛沫花"
       ],
       "categoryId": "qingre",
       "categoryTitle": "清热药",
@@ -4124,8 +3961,8 @@
         "kind": "原植物",
         "thumbUrl": "/images/herbs/dacheng/thumbs/inat-3931f1a2c3.jpg"
       },
-      "docCount": 1,
-      "charCount": 1012
+      "docCount": 3,
+      "charCount": 2555
     },
     {
       "id": "dacheng-169",
@@ -4180,7 +4017,8 @@
       "aliases": [
         "五帝足",
         "黄郁",
-        "乌头"
+        "乌头",
+        "片姜黄"
       ],
       "categoryId": "huoxue",
       "categoryTitle": "活血化瘀药",
@@ -4194,8 +4032,8 @@
         "latin": "Curcuma aromatica",
         "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-347672.jpg"
       },
-      "docCount": 1,
-      "charCount": 1006
+      "docCount": 2,
+      "charCount": 1624
     },
     {
       "id": "dacheng-172",
@@ -4400,7 +4238,10 @@
         "贯节",
         "虎卷",
         "药藻",
-        "凤尾草"
+        "凤尾草",
+        "绵马贯众",
+        "绵马贯众炭",
+        "紫萁贯众"
       ],
       "categoryId": "qingre",
       "categoryTitle": "清热药",
@@ -4414,8 +4255,8 @@
         "latin": "Cyrtomium fortunei",
         "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-161570.jpg"
       },
-      "docCount": 1,
-      "charCount": 1009
+      "docCount": 4,
+      "charCount": 3135
     },
     {
       "id": "dacheng-181",
@@ -4497,14 +4338,16 @@
         "草乌头",
         "毒公",
         "竹节乌头",
-        "五毒根"
+        "五毒根",
+        "制草乌",
+        "草乌叶"
       ],
       "categoryId": "qufengshi",
       "categoryTitle": "祛风湿药",
       "summary": "祛风除湿，温经止痛",
       "image": null,
-      "docCount": 1,
-      "charCount": 1361
+      "docCount": 3,
+      "charCount": 2133
     },
     {
       "id": "dacheng-185",
@@ -4582,14 +4425,12 @@
       "categoryTitle": "理气药",
       "summary": "理气解郁，调经止痛，安胎",
       "image": {
-        "url": "/images/herbs/dacheng/inat-72b83c4f10.jpg",
-        "alt": "Purple nutsedge（Cyperus rotundus）",
-        "credit": "no rights reserved, uploaded by 葉子",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/76593",
-        "latin": "Cyperus rotundus",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-72b83c4f10.jpg"
+        "url": "/images/herbs/lecture/extra/ex-184.jpg",
+        "alt": "香附（用户提供图片 1）",
+        "credit": "用户提供 / 本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1029
@@ -4609,7 +4450,14 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热解毒，消肿止痛，凉肝定惊",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/xiajing/xj-053.jpg",
+        "alt": "重楼（用户提供图片 1）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1294
     },
@@ -5045,22 +4893,6 @@
       "charCount": 1417
     },
     {
-      "id": "dacheng-210",
-      "number": 241,
-      "name": "麻黄根",
-      "pinyin": "mahuanggen",
-      "aliases": [
-        "狗骨根",
-        "卑柑根"
-      ],
-      "categoryId": "souse",
-      "categoryTitle": "收涩药",
-      "summary": "固表止汗",
-      "image": null,
-      "docCount": 1,
-      "charCount": 1485
-    },
-    {
       "id": "dacheng-211",
       "number": 242,
       "name": "续断",
@@ -5148,14 +4980,23 @@
         "竹木",
         "百枝",
         "土薯蓣",
-        "麻甲头"
+        "麻甲头",
+        "粉萆薢",
+        "绵萆薢"
       ],
       "categoryId": "qufengshi",
       "categoryTitle": "祛风湿药",
       "summary": "利湿浊，祛风湿",
-      "image": null,
-      "docCount": 1,
-      "charCount": 1272
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-066.jpg",
+        "alt": "萆薢（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
+      "docCount": 3,
+      "charCount": 2711
     },
     {
       "id": "dacheng-215",
@@ -5233,7 +5074,14 @@
       "categoryId": "wenli",
       "categoryTitle": "温里药",
       "summary": "祛风，散寒，除湿，止痛",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-064.jpg",
+        "alt": "藁本（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1278
     },
@@ -5263,22 +5111,6 @@
       },
       "docCount": 1,
       "charCount": 1022
-    },
-    {
-      "id": "dacheng-220",
-      "number": 253,
-      "name": "藕节",
-      "pinyin": "oujie",
-      "aliases": [
-        "光藕节",
-        "藕节巴"
-      ],
-      "categoryId": "zhixue",
-      "categoryTitle": "止血药",
-      "summary": "收敛止血，化瘀",
-      "image": null,
-      "docCount": 1,
-      "charCount": 937
     },
     {
       "id": "dacheng-221",
@@ -5395,23 +5227,6 @@
       "charCount": 1152
     },
     {
-      "id": "dacheng-227",
-      "number": 261,
-      "name": "大腹皮",
-      "pinyin": "dafupi",
-      "aliases": [
-        "槟榔皮",
-        "槟榔壳",
-        "大腹毛"
-      ],
-      "categoryId": "liqi",
-      "categoryTitle": "理气药",
-      "summary": "行气宽中，行水消肿",
-      "image": null,
-      "docCount": 1,
-      "charCount": 1303
-    },
-    {
       "id": "dacheng-228",
       "number": 264,
       "name": "川楝子",
@@ -5420,14 +5235,19 @@
         "楝实",
         "金铃子",
         "楝子",
-        "川楝实"
+        "川楝实",
+        "苦楝皮",
+        "楝木皮",
+        "楝皮",
+        "楝根皮",
+        "苦楝根皮"
       ],
       "categoryId": "liqi",
       "categoryTitle": "理气药",
       "summary": "疏肝泄热，行气止痛，杀虫",
       "image": null,
-      "docCount": 1,
-      "charCount": 974
+      "docCount": 2,
+      "charCount": 2133
     },
     {
       "id": "dacheng-229",
@@ -5438,14 +5258,15 @@
         "千两金",
         "菩萨豆",
         "续随子",
-        "联步"
+        "联步",
+        "千金子霜"
       ],
       "categoryId": "xiexia",
       "categoryTitle": "泻下药",
       "summary": "泻下逐水，破血消癥；外用疗癣蚀疣",
       "image": null,
-      "docCount": 1,
-      "charCount": 1068
+      "docCount": 2,
+      "charCount": 1286
     },
     {
       "id": "dacheng-230",
@@ -5456,14 +5277,15 @@
         "番木鳖",
         "苦实",
         "马前",
-        "马前子"
+        "马前子",
+        "马钱子粉"
       ],
       "categoryId": "huoxue",
       "categoryTitle": "活血化瘀药",
       "summary": "通络止痛，散结消肿",
       "image": null,
-      "docCount": 1,
-      "charCount": 1363
+      "docCount": 2,
+      "charCount": 1596
     },
     {
       "id": "dacheng-231",
@@ -5474,14 +5296,23 @@
         "兜铃",
         "马兜零",
         "马兜苓",
-        "臭铃铛"
+        "臭铃铛",
+        "青木香",
+        "马兜铃根",
+        "兜铃根",
+        "青藤香",
+        "天仙藤",
+        "都淋藤",
+        "青木香藤",
+        "长痧藤",
+        "香藤"
       ],
       "categoryId": "huatan",
       "categoryTitle": "化痰止咳平喘药",
       "summary": "清肺降气，止咳平喘，清肠消痔",
       "image": null,
-      "docCount": 1,
-      "charCount": 825
+      "docCount": 3,
+      "charCount": 2600
     },
     {
       "id": "dacheng-232",
@@ -5497,7 +5328,14 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热利湿，解毒杀虫，止血定痛",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-025.jpg",
+        "alt": "马蔺子（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1221
     },
@@ -5708,7 +5546,8 @@
         "刚子",
         "江子",
         "猛子仁",
-        "巴果"
+        "巴果",
+        "巴豆霜"
       ],
       "categoryId": "qita",
       "categoryTitle": "其他药",
@@ -5722,8 +5561,8 @@
         "latin": "Croton tiglium",
         "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-427400.jpg"
       },
-      "docCount": 1,
-      "charCount": 1472
+      "docCount": 2,
+      "charCount": 1706
     },
     {
       "id": "dacheng-243",
@@ -5779,7 +5618,14 @@
         "地楼",
         "王白",
         "天瓜",
-        "天圆子"
+        "天圆子",
+        "瓜蒌子",
+        "瓜蒌皮",
+        "炒瓜蒌子",
+        "天花粉",
+        "栝楼根",
+        "天瓜粉",
+        "栝楼粉"
       ],
       "categoryId": "qingre",
       "categoryTitle": "清热药",
@@ -5794,8 +5640,8 @@
         "kind": "原植物",
         "thumbUrl": "/images/herbs/dacheng/thumbs/plant-080.jpg"
       },
-      "docCount": 1,
-      "charCount": 750
+      "docCount": 6,
+      "charCount": 4324
     },
     {
       "id": "dacheng-246",
@@ -5886,40 +5732,16 @@
       "aliases": [
         "西瓜青",
         "西瓜翠衣",
-        "西瓜翠"
+        "西瓜翠",
+        "西瓜霜",
+        "西瓜硝"
       ],
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热，解渴，利尿",
       "image": null,
-      "docCount": 1,
-      "charCount": 927
-    },
-    {
-      "id": "dacheng-251",
-      "number": 298,
-      "name": "母丁香",
-      "pinyin": "mudingxiang",
-      "aliases": [
-        "鸡舌香",
-        "亭炅独生",
-        "雌丁香"
-      ],
-      "categoryId": "wenli",
-      "categoryTitle": "温里药",
-      "summary": "温中降逆，补肾助阳",
-      "image": {
-        "url": "/images/herbs/dacheng/inat-3c8d3fdecf.jpg",
-        "alt": "Clove（Syzygium aromaticum）",
-        "credit": "(c) Frédéric LEVIEZ, some rights reserved (CC BY-NC), uploaded by Frédéric LEVIEZ",
-        "license": "CC-BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/122770",
-        "latin": "Syzygium aromaticum",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-3c8d3fdecf.jpg"
-      },
-      "docCount": 1,
-      "charCount": 852
+      "docCount": 2,
+      "charCount": 1416
     },
     {
       "id": "dacheng-252",
@@ -6044,14 +5866,19 @@
         "大皂荚",
         "长皂荚",
         "悬刀",
-        "大皂角"
+        "猪牙皂",
+        "皂角刺",
+        "皂荚刺",
+        "天丁明",
+        "皂角针",
+        "皂针"
       ],
       "categoryId": "huatan",
       "categoryTitle": "化痰止咳平喘药",
       "summary": "祛痰止咳，开窍通闭，杀虫散结",
       "image": null,
-      "docCount": 1,
-      "charCount": 985
+      "docCount": 3,
+      "charCount": 2355
     },
     {
       "id": "dacheng-259",
@@ -6098,7 +5925,8 @@
         "诃黎勒",
         "诃黎",
         "诃梨",
-        "随风子"
+        "随风子",
+        "西青果"
       ],
       "categoryId": "souse",
       "categoryTitle": "收涩药",
@@ -6112,8 +5940,8 @@
         "latin": "Terminalia chebula",
         "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-68671.jpg"
       },
-      "docCount": 1,
-      "charCount": 1151
+      "docCount": 2,
+      "charCount": 1870
     },
     {
       "id": "dacheng-262",
@@ -6155,7 +5983,14 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清肝泻火，明目退翳",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/xiajing/xj-033.jpg",
+        "alt": "青葙子（用户提供图片 1）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 870
     },
@@ -6173,7 +6008,14 @@
       "categoryId": "xiexia",
       "categoryTitle": "泻下药",
       "summary": "润肠通便，下气利水",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/xiajing/xj-066.jpg",
+        "alt": "郁李仁（用户提供图片 1）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 988
     },
@@ -6191,7 +6033,14 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "祛暑涤热，明目，解毒",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/xiajing/xj-095.jpg",
+        "alt": "苦葫芦（用户提供图片 1）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 966
     },
@@ -6281,28 +6130,23 @@
       "number": 327,
       "name": "枳壳",
       "pinyin": "zhike",
-      "aliases": [],
+      "aliases": [
+        "枳实",
+        "鹅眼枳实"
+      ],
       "categoryId": "liqi",
       "categoryTitle": "理气药",
       "summary": "理气宽中，行滞消胀",
-      "image": null,
-      "docCount": 1,
-      "charCount": 1022
-    },
-    {
-      "id": "dacheng-271",
-      "number": 328,
-      "name": "枳实",
-      "pinyin": "zhishi",
-      "aliases": [
-        "鹅眼枳实"
-      ],
-      "categoryId": "xiaoshi",
-      "categoryTitle": "消食药",
-      "summary": "破气消积，化痰散痞",
-      "image": null,
-      "docCount": 1,
-      "charCount": 1213
+      "image": {
+        "url": "/images/herbs/lecture/extra/ex-180.jpg",
+        "alt": "枳壳（用户提供图片 1）",
+        "credit": "用户提供 / 本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
+      "docCount": 2,
+      "charCount": 2235
     },
     {
       "id": "dacheng-272",
@@ -6331,14 +6175,22 @@
         "越桃",
         "山栀子",
         "黄栀子",
-        "山黄栀"
+        "山黄栀",
+        "焦栀子"
       ],
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "泻火除烦，清热利湿，凉血解毒；外用消肿止痛",
-      "image": null,
-      "docCount": 1,
-      "charCount": 1056
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-100.jpg",
+        "alt": "栀子（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
+      "docCount": 2,
+      "charCount": 1238
     },
     {
       "id": "dacheng-274",
@@ -6410,25 +6262,6 @@
       "image": null,
       "docCount": 1,
       "charCount": 857
-    },
-    {
-      "id": "dacheng-278",
-      "number": 336,
-      "name": "山鸡椒",
-      "pinyin": "bichengqie",
-      "aliases": [
-        "山胡椒",
-        "味辣子",
-        "山苍子",
-        "木姜子",
-        "臭樟子"
-      ],
-      "categoryId": "wenli",
-      "categoryTitle": "温里药",
-      "summary": "温中散寒，行气止痛",
-      "image": null,
-      "docCount": 1,
-      "charCount": 581
     },
     {
       "id": "dacheng-279",
@@ -6591,24 +6424,6 @@
       "charCount": 826
     },
     {
-      "id": "dacheng-288",
-      "number": 348,
-      "name": "香橼",
-      "pinyin": "xiangyuan",
-      "aliases": [
-        "香橼",
-        "佛手柑",
-        "香泡树",
-        "香橼柑"
-      ],
-      "categoryId": "liqi",
-      "categoryTitle": "理气药",
-      "summary": "疏肝理气，宽中，化痰",
-      "image": null,
-      "docCount": 1,
-      "charCount": 932
-    },
-    {
       "id": "dacheng-289",
       "number": 350,
       "name": "急性子",
@@ -6630,23 +6445,22 @@
       "name": "桃仁",
       "pinyin": "taoren",
       "aliases": [
-        "桃核仁"
+        "桃核仁",
+        "桃枝"
       ],
       "categoryId": "huoxue",
       "categoryTitle": "活血化瘀药",
       "summary": "活血祛瘀，润肠通便，止咳平喘",
       "image": {
-        "url": "/images/herbs/dacheng/inat-4ac014f162.jpg",
-        "alt": "Peach（Prunus persica）",
-        "credit": "(c) Yair Haklai, some rights reserved (CC BY-SA)",
-        "license": "CC-BY-SA",
-        "sourceUrl": "https://www.inaturalist.org/taxa/78755",
-        "latin": "Prunus persica",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-4ac014f162.jpg"
+        "url": "/images/herbs/lecture/xiajing/xj-092.jpg",
+        "alt": "桃仁（用户提供图片 1）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
       },
-      "docCount": 1,
-      "charCount": 1311
+      "docCount": 2,
+      "charCount": 1937
     },
     {
       "id": "dacheng-291",
@@ -6714,51 +6528,6 @@
       "charCount": 946
     },
     {
-      "id": "dacheng-295",
-      "number": 357,
-      "name": "预知子",
-      "pinyin": "yuzhizi",
-      "aliases": [
-        "燕覆子",
-        "八月楂",
-        "压惊子",
-        "拉拉果"
-      ],
-      "categoryId": "liqi",
-      "categoryTitle": "理气药",
-      "summary": "疏肝理气，活血止痛，散结，利尿",
-      "image": null,
-      "docCount": 1,
-      "charCount": 1585
-    },
-    {
-      "id": "dacheng-296",
-      "number": 358,
-      "name": "桑葚",
-      "pinyin": "sangshen",
-      "aliases": [
-        "桑实",
-        "葚",
-        "文武实",
-        "桑果"
-      ],
-      "categoryId": "buxu",
-      "categoryTitle": "补虚药",
-      "summary": "滋阴补血，生津润燥",
-      "image": {
-        "url": "/images/herbs/dacheng/inat-b7b4638d72.jpg",
-        "alt": "white mulberry（Morus alba）",
-        "credit": "no rights reserved, uploaded by 葉子",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/56090",
-        "latin": "Morus alba",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b7b4638d72.jpg"
-      },
-      "docCount": 1,
-      "charCount": 894
-    },
-    {
       "id": "dacheng-297",
       "number": 359,
       "name": "梧桐子",
@@ -6783,14 +6552,16 @@
       "pinyin": "huangjingzi",
       "aliases": [
         "布荆子",
-        "黄金子"
+        "黄金子",
+        "牡荆叶",
+        "荆叶"
       ],
       "categoryId": "jiebiao",
       "categoryTitle": "解表药",
       "summary": "祛风解表，止咳平喘，理气消食止痛",
       "image": null,
-      "docCount": 1,
-      "charCount": 1000
+      "docCount": 2,
+      "charCount": 2158
     },
     {
       "id": "dacheng-299",
@@ -6827,29 +6598,16 @@
       "aliases": [
         "甘瓜子",
         "甜瓜仁",
-        "甜瓜瓣"
-      ],
-      "categoryId": "xiexia",
-      "categoryTitle": "泻下药",
-      "summary": "清肺，润肠，化瘀，排脓，疗伤止痛",
-      "image": null,
-      "docCount": 1,
-      "charCount": 836
-    },
-    {
-      "id": "dacheng-301",
-      "number": 364,
-      "name": "甜瓜蒂",
-      "pinyin": "tianguadi",
-      "aliases": [
+        "甜瓜瓣",
+        "甜瓜蒂",
         "瓜蒂",
         "瓜丁",
         "苦丁香",
         "甜瓜把"
       ],
-      "categoryId": "yongtu",
-      "categoryTitle": "涌吐药",
-      "summary": "涌吐痰食，除湿退黄",
+      "categoryId": "xiexia",
+      "categoryTitle": "泻下药",
+      "summary": "清肺，润肠，化瘀，排脓，疗伤止痛",
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-165.jpg",
         "alt": "甜瓜地（用户提供图片 1）",
@@ -6859,8 +6617,8 @@
         "latin": "",
         "kind": "药材"
       },
-      "docCount": 1,
-      "charCount": 717
+      "docCount": 2,
+      "charCount": 1553
     },
     {
       "id": "dacheng-302",
@@ -6899,32 +6657,6 @@
       "charCount": 978
     },
     {
-      "id": "dacheng-304",
-      "number": 367,
-      "name": "紫苏子",
-      "pinyin": "zisuzi",
-      "aliases": [
-        "苏子",
-        "黑苏子",
-        "铁苏子"
-      ],
-      "categoryId": "huatan",
-      "categoryTitle": "化痰止咳平喘药",
-      "summary": "降气化痰，止咳平喘，润肠通便",
-      "image": {
-        "url": "/images/herbs/dacheng/inat-5827f7f365.jpg",
-        "alt": "beefsteak plant（Perilla frutescens）",
-        "credit": "(c) H. Wilson Montgomery, Jr., some rights reserved (CC BY-NC), uploaded by H. Wilson Montgomery, Jr.",
-        "license": "CC-BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/119136",
-        "latin": "Perilla frutescens",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-5827f7f365.jpg"
-      },
-      "docCount": 1,
-      "charCount": 1197
-    },
-    {
       "id": "dacheng-305",
       "number": 368,
       "name": "绿豆",
@@ -6938,32 +6670,6 @@
       "image": null,
       "docCount": 1,
       "charCount": 910
-    },
-    {
-      "id": "dacheng-306",
-      "number": 370,
-      "name": "槐角",
-      "pinyin": "huaijiao",
-      "aliases": [
-        "槐实",
-        "槐子",
-        "槐荚",
-        "槐豆"
-      ],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "清热泻火，凉血止血",
-      "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-112.jpg",
-        "alt": "槐实（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
-        "license": "用户提供，版权归原作者所有",
-        "sourceUrl": "",
-        "latin": "",
-        "kind": "药材"
-      },
-      "docCount": 1,
-      "charCount": 942
     },
     {
       "id": "dacheng-307",
@@ -7044,14 +6750,18 @@
         "枫实",
         "枫香果",
         "九空子",
-        "狼目"
+        "狼目",
+        "枫香脂",
+        "白胶香",
+        "枫脂",
+        "胶香"
       ],
       "categoryId": "lishui",
       "categoryTitle": "利水渗湿药",
       "summary": "祛风活络，利水，通经",
       "image": null,
-      "docCount": 1,
-      "charCount": 850
+      "docCount": 2,
+      "charCount": 1582
     },
     {
       "id": "dacheng-311",
@@ -7094,7 +6804,14 @@
       "categoryId": "huatan",
       "categoryTitle": "化痰止咳平喘药",
       "summary": "泻肺平喘，行水消肿",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/xiajing/xj-017.jpg",
+        "alt": "葶苈子（用户提供图片 1）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1019
     },
@@ -7112,7 +6829,14 @@
       "categoryId": "xiaoshi",
       "categoryTitle": "消食药",
       "summary": "杀虫消积，润肺止咳，润燥通便",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/xiajing/xj-098.jpg",
+        "alt": "榧子（用户提供图片 1）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 847
     },
@@ -7125,32 +6849,26 @@
         "洗瘴丹",
         "大腹槟榔",
         "槟榔子",
-        "槟榔玉"
+        "槟榔玉",
+        "大腹皮",
+        "槟榔皮",
+        "槟榔壳",
+        "大腹毛",
+        "焦槟榔"
       ],
       "categoryId": "quchong",
       "categoryTitle": "驱虫药",
       "summary": "杀虫，消积，行气，利水，截疟",
-      "image": null,
-      "docCount": 1,
-      "charCount": 623
-    },
-    {
-      "id": "dacheng-315",
-      "number": 379,
-      "name": "猪牙皂",
-      "pinyin": "zhuyazao",
-      "aliases": [
-        "鸡栖子",
-        "大皂荚",
-        "长皂荚",
-        "悬刀"
-      ],
-      "categoryId": "huatan",
-      "categoryTitle": "化痰止咳平喘药",
-      "summary": "祛痰开窍，散结消肿",
-      "image": null,
-      "docCount": 1,
-      "charCount": 777
+      "image": {
+        "url": "/images/herbs/lecture/extra/ex-132.jpg",
+        "alt": "大腹皮（用户提供图片 1）",
+        "credit": "用户提供 / 本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
+      "docCount": 3,
+      "charCount": 2069
     },
     {
       "id": "dacheng-316",
@@ -7334,7 +7052,8 @@
       "aliases": [
         "马蓟",
         "刺蓟",
-        "草鞋刺"
+        "草鞋刺",
+        "大蓟炭"
       ],
       "categoryId": "qingre",
       "categoryTitle": "清热药",
@@ -7349,8 +7068,8 @@
         "kind": "原植物",
         "thumbUrl": "/images/herbs/dacheng/thumbs/plant-061.jpg"
       },
-      "docCount": 1,
-      "charCount": 995
+      "docCount": 2,
+      "charCount": 1180
     },
     {
       "id": "dacheng-326",
@@ -7633,7 +7352,12 @@
       "aliases": [
         "龙芽草",
         "老鹳嘴",
-        "群兰败毒草"
+        "群兰败毒草",
+        "鹤草芽",
+        "狼牙",
+        "狼齿",
+        "狼牙子",
+        "仙鹤草根芽"
       ],
       "categoryId": "zhixue",
       "categoryTitle": "止血药",
@@ -7648,8 +7372,8 @@
         "kind": "原植物",
         "thumbUrl": "/images/herbs/dacheng/thumbs/plant-024.jpg"
       },
-      "docCount": 1,
-      "charCount": 852
+      "docCount": 2,
+      "charCount": 1665
     },
     {
       "id": "dacheng-342",
@@ -8069,7 +7793,14 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清虚热，除骨蒸，解暑热，截疟，退黄",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/xiajing/xj-020.jpg",
+        "alt": "青蒿（用户提供图片 1）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 916
     },
@@ -8138,7 +7869,14 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热解毒，活血排脓",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-055.jpg",
+        "alt": "败酱草（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 870
     },
@@ -8187,24 +7925,6 @@
       "charCount": 1160
     },
     {
-      "id": "dacheng-369",
-      "number": 438,
-      "name": "草珊瑚",
-      "pinyin": "zhongjiefeng",
-      "aliases": [
-        "接骨木",
-        "九节风",
-        "接骨金粟兰",
-        "竹节茶"
-      ],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "清热凉血，活血消斑，祛风通络",
-      "image": null,
-      "docCount": 1,
-      "charCount": 864
-    },
-    {
       "id": "dacheng-370",
       "number": 440,
       "name": "泽兰",
@@ -8217,7 +7937,14 @@
       "categoryId": "huoxue",
       "categoryTitle": "活血化瘀药",
       "summary": "活血调经，祛瘀消痈，利水消肿",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-076.jpg",
+        "alt": "泽兰（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1072
     },
@@ -8296,7 +8023,10 @@
       "pinyin": "jingjie",
       "aliases": [
         "假苏",
-        "姜芥"
+        "姜芥",
+        "荆芥炭",
+        "荆芥穗",
+        "荆芥穗炭"
       ],
       "categoryId": "jiebiao",
       "categoryTitle": "解表药",
@@ -8311,8 +8041,8 @@
         "kind": "原植物",
         "thumbUrl": "/images/herbs/dacheng/thumbs/plant-021.jpg"
       },
-      "docCount": 1,
-      "charCount": 1137
+      "docCount": 4,
+      "charCount": 2177
     },
     {
       "id": "dacheng-375",
@@ -8629,7 +8359,14 @@
       "categoryId": "lishui",
       "categoryTitle": "利水渗湿药",
       "summary": "利尿通淋，杀虫，止痒",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/xiajing/xj-045.jpg",
+        "alt": "萹蓄（用户提供图片 1）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1064
     },
@@ -8682,7 +8419,14 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热解毒，凉血止血，散瘀消肿",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/xiajing/xj-026.jpg",
+        "alt": "蛇含（用户提供图片 1）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1022
     },
@@ -8921,23 +8665,6 @@
       "charCount": 983
     },
     {
-      "id": "dacheng-406",
-      "number": 480,
-      "name": "车前草",
-      "pinyin": "cheqiancao",
-      "aliases": [
-        "地胆头",
-        "饭匙草",
-        "灰盆草"
-      ],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "清热利尿通淋，祛痰，凉血，解毒",
-      "image": null,
-      "docCount": 1,
-      "charCount": 969
-    },
-    {
       "id": "dacheng-407",
       "number": 482,
       "name": "丁香",
@@ -8945,14 +8672,27 @@
       "aliases": [
         "丁子香",
         "公丁香",
-        "支解香"
+        "支解香",
+        "母丁香",
+        "鸡舌香",
+        "亭炅独生",
+        "雌丁香"
       ],
       "categoryId": "wenli",
       "categoryTitle": "温里药",
       "summary": "温中降逆，补肾助阳",
-      "image": null,
-      "docCount": 1,
-      "charCount": 670
+      "image": {
+        "url": "/images/herbs/dacheng/inat-3c8d3fdecf.jpg",
+        "alt": "Clove（Syzygium aromaticum）",
+        "credit": "(c) Frédéric LEVIEZ, some rights reserved (CC BY-NC), uploaded by Frédéric LEVIEZ",
+        "license": "CC-BY-NC",
+        "sourceUrl": "https://www.inaturalist.org/taxa/122770",
+        "latin": "Syzygium aromaticum",
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-3c8d3fdecf.jpg"
+      },
+      "docCount": 2,
+      "charCount": 1522
     },
     {
       "id": "dacheng-408",
@@ -8992,7 +8732,12 @@
       "aliases": [
         "篱障花",
         "碗盖花",
-        "木红花"
+        "木红花",
+        "木槿皮",
+        "川槿皮",
+        "白槿皮",
+        "芦树皮",
+        "碗盖花皮"
       ],
       "categoryId": "qingre",
       "categoryTitle": "清热药",
@@ -9007,8 +8752,8 @@
         "kind": "原植物",
         "thumbUrl": "/images/herbs/dacheng/thumbs/inat-9ca97b673c.jpg"
       },
-      "docCount": 1,
-      "charCount": 1122
+      "docCount": 2,
+      "charCount": 1909
     },
     {
       "id": "dacheng-411",
@@ -9068,14 +8813,25 @@
       "pinyin": "hehuanhua",
       "aliases": [
         "夜合花",
-        "乌绒"
+        "乌绒",
+        "合欢皮",
+        "合昏皮",
+        "夜合皮",
+        "合欢木皮"
       ],
       "categoryId": "anshen",
       "categoryTitle": "安神药",
       "summary": "解郁安神",
-      "image": null,
-      "docCount": 1,
-      "charCount": 1068
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-118.jpg",
+        "alt": "合欢皮（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
+      "docCount": 2,
+      "charCount": 1713
     },
     {
       "id": "dacheng-415",
@@ -9256,14 +9012,30 @@
       "aliases": [
         "松花",
         "松黄",
-        "松粉"
+        "松粉",
+        "松节",
+        "黄松木节",
+        "油松节",
+        "松榔头",
+        "松香",
+        "松脂",
+        "白松香",
+        "松脂香"
       ],
       "categoryId": "zhixue",
       "categoryTitle": "止血药",
       "summary": "收敛止血，燥湿敛疮",
-      "image": null,
-      "docCount": 1,
-      "charCount": 1557
+      "image": {
+        "url": "/images/herbs/lecture/xlsx/xlsx-105.jpg",
+        "alt": "松香（用户提供图片 1）",
+        "credit": "用户提供 / 中草药图片自搜表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "latin": "",
+        "kind": "药材"
+      },
+      "docCount": 3,
+      "charCount": 3226
     },
     {
       "id": "dacheng-424",
@@ -9323,24 +9095,16 @@
       "categoryId": "qufengshi",
       "categoryTitle": "祛风湿药",
       "summary": "祛风除湿，散瘀定痛",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/xiajing/xj-040.jpg",
+        "alt": "闹羊花（用户提供图片 1）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1430
-    },
-    {
-      "id": "dacheng-427",
-      "number": 504,
-      "name": "凹叶厚朴",
-      "pinyin": "houpuhua",
-      "aliases": [
-        "调羹花"
-      ],
-      "categoryId": "huashi",
-      "categoryTitle": "化湿药",
-      "summary": "芳香化湿，理气宽中",
-      "image": null,
-      "docCount": 1,
-      "charCount": 766
     },
     {
       "id": "dacheng-428",
@@ -9495,7 +9259,8 @@
       "aliases": [
         "金钱菊",
         "六月菊",
-        "金盏花"
+        "金盏花",
+        "金沸草"
       ],
       "categoryId": "qita",
       "categoryTitle": "其他药",
@@ -9509,8 +9274,8 @@
         "latin": "Inula japonica",
         "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-538217.jpg"
       },
-      "docCount": 1,
-      "charCount": 1222
+      "docCount": 2,
+      "charCount": 2076
     },
     {
       "id": "dacheng-436",
@@ -9542,7 +9307,14 @@
       "categoryId": "huatan",
       "categoryTitle": "化痰止咳平喘药",
       "summary": "润肺下气，止咳化痰",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-080.jpg",
+        "alt": "款冬花（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1060
     },
@@ -9572,23 +9344,6 @@
       "charCount": 978
     },
     {
-      "id": "dacheng-439",
-      "number": 518,
-      "name": "梅花",
-      "pinyin": "meihua",
-      "aliases": [
-        "白梅花",
-        "绿萼梅",
-        "绿梅花"
-      ],
-      "categoryId": "liqi",
-      "categoryTitle": "理气药",
-      "summary": "疏肝和中，化痰散结",
-      "image": null,
-      "docCount": 1,
-      "charCount": 584
-    },
-    {
       "id": "dacheng-440",
       "number": 519,
       "name": "十大功劳",
@@ -9598,54 +9353,19 @@
         "土黄连",
         "八角刺",
         "刺黄柏",
-        "黄天竹"
+        "黄天竹",
+        "功劳木",
+        "十大功劳",
+        "老鼠刺",
+        "土黄芩",
+        "羊角黄连"
       ],
       "categoryId": "buxu",
       "categoryTitle": "补虚药",
       "summary": "补肺气，退潮热，益肝肾",
       "image": null,
-      "docCount": 1,
-      "charCount": 707
-    },
-    {
-      "id": "dacheng-441",
-      "number": 520,
-      "name": "大青叶",
-      "pinyin": "daqingye",
-      "aliases": [
-        "蓝叶",
-        "蓝菜"
-      ],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "清热解毒，凉血消斑",
-      "image": {
-        "url": "/images/herbs/dacheng/plant-001.jpg",
-        "alt": "菘蓝（Isatis indigotica）",
-        "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
-        "license": "用户提供，来源网络，版权归原作者所有",
-        "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
-        "latin": "Isatis indigotica",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/plant-001.jpg"
-      },
-      "docCount": 1,
-      "charCount": 631
-    },
-    {
-      "id": "dacheng-442",
-      "number": 521,
-      "name": "山楂叶",
-      "pinyin": "shanzhaye",
-      "aliases": [
-        "赤枣子叶"
-      ],
-      "categoryId": "huoxue",
-      "categoryTitle": "活血化瘀药",
-      "summary": "活血化瘀，理气通脉，化浊降脂",
-      "image": null,
-      "docCount": 1,
-      "charCount": 491
+      "docCount": 2,
+      "charCount": 1738
     },
     {
       "id": "dacheng-443",
@@ -9748,21 +9468,6 @@
       "charCount": 643
     },
     {
-      "id": "dacheng-448",
-      "number": 527,
-      "name": "牡荆叶",
-      "pinyin": "mujingye",
-      "aliases": [
-        "荆叶"
-      ],
-      "categoryId": "huatan",
-      "categoryTitle": "化痰止咳平喘药",
-      "summary": "祛痰，止咳，平喘",
-      "image": null,
-      "docCount": 1,
-      "charCount": 1158
-    },
-    {
       "id": "dacheng-449",
       "number": 528,
       "name": "苦丁茶",
@@ -9850,23 +9555,6 @@
       "charCount": 874
     },
     {
-      "id": "dacheng-454",
-      "number": 533,
-      "name": "侧柏叶",
-      "pinyin": "cebaiye",
-      "aliases": [
-        "柏叶",
-        "扁柏叶",
-        "丛柏叶"
-      ],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "凉血止血，化痰止咳，生发乌发",
-      "image": null,
-      "docCount": 1,
-      "charCount": 760
-    },
-    {
       "id": "dacheng-455",
       "number": 534,
       "name": "臭梧桐",
@@ -9946,13 +9634,20 @@
       "number": 538,
       "name": "荷叶",
       "pinyin": "heye",
-      "aliases": [],
+      "aliases": [
+        "藕节",
+        "光藕节",
+        "藕节巴",
+        "莲子心",
+        "莲房",
+        "莲须"
+      ],
       "categoryId": "huashi",
       "categoryTitle": "化湿药",
       "summary": "清暑化湿，升发清阳，凉血止血",
       "image": null,
-      "docCount": 1,
-      "charCount": 801
+      "docCount": 5,
+      "charCount": 3258
     },
     {
       "id": "dacheng-460",
@@ -9961,29 +9656,35 @@
       "pinyin": "sangye",
       "aliases": [
         "铁扇子",
-        "蚕叶"
+        "蚕叶",
+        "桑椹",
+        "桑葚",
+        "桑实",
+        "葚",
+        "文武实",
+        "桑果",
+        "桑白皮",
+        "桑根白皮",
+        "白桑皮",
+        "桑皮",
+        "桑根皮",
+        "桑枝"
       ],
       "categoryId": "jiebiao",
       "categoryTitle": "解表药",
       "summary": "疏散风热，清肺润燥，清肝明目",
-      "image": null,
-      "docCount": 1,
-      "charCount": 698
-    },
-    {
-      "id": "dacheng-461",
-      "number": 540,
-      "name": "银杏",
-      "pinyin": "yinxinye",
-      "aliases": [
-        "白果叶"
-      ],
-      "categoryId": "huoxue",
-      "categoryTitle": "活血化瘀药",
-      "summary": "活血化瘀，通络止痛，敛肺平喘，化浊降脂",
-      "image": null,
-      "docCount": 1,
-      "charCount": 914
+      "image": {
+        "url": "/images/herbs/dacheng/inat-b7b4638d72.jpg",
+        "alt": "white mulberry（Morus alba）",
+        "credit": "no rights reserved, uploaded by 葉子",
+        "license": "CC0",
+        "sourceUrl": "https://www.inaturalist.org/taxa/56090",
+        "latin": "Morus alba",
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b7b4638d72.jpg"
+      },
+      "docCount": 5,
+      "charCount": 3206
     },
     {
       "id": "dacheng-462",
@@ -10146,27 +9847,16 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热燥湿，祛风解毒",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-057.jpg",
+        "alt": "白鲜皮（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1054
-    },
-    {
-      "id": "dacheng-471",
-      "number": 551,
-      "name": "木槿皮",
-      "pinyin": "mujinpi",
-      "aliases": [
-        "川槿皮",
-        "白槿皮",
-        "芦树皮",
-        "碗盖花皮"
-      ],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "清热利湿，杀虫止痒",
-      "image": null,
-      "docCount": 1,
-      "charCount": 787
     },
     {
       "id": "dacheng-472",
@@ -10182,59 +9872,6 @@
       "charCount": 683
     },
     {
-      "id": "dacheng-473",
-      "number": 553,
-      "name": "地骨皮",
-      "pinyin": "digupi",
-      "aliases": [
-        "杞根",
-        "地骨",
-        "枸杞根",
-        "枸杞根皮"
-      ],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "凉血除蒸，清肺降火",
-      "image": null,
-      "docCount": 1,
-      "charCount": 977
-    },
-    {
-      "id": "dacheng-474",
-      "number": 555,
-      "name": "合欢皮",
-      "pinyin": "hehuanpi",
-      "aliases": [
-        "合昏皮",
-        "夜合皮",
-        "合欢木皮"
-      ],
-      "categoryId": "anshen",
-      "categoryTitle": "安神药",
-      "summary": "解郁安神，活血消肿。用干心神不安，忧郁失眠，肺痈，疮肿，跌扑伤痛",
-      "image": null,
-      "docCount": 1,
-      "charCount": 645
-    },
-    {
-      "id": "dacheng-475",
-      "number": 558,
-      "name": "苦楝皮",
-      "pinyin": "kulianpi",
-      "aliases": [
-        "楝木皮",
-        "楝皮",
-        "楝根皮",
-        "苦楝根皮"
-      ],
-      "categoryId": "quchong",
-      "categoryTitle": "驱虫药",
-      "summary": "杀虫，疗癣",
-      "image": null,
-      "docCount": 1,
-      "charCount": 1159
-    },
-    {
       "id": "dacheng-476",
       "number": 559,
       "name": "厚朴",
@@ -10244,7 +9881,10 @@
         "重皮",
         "赤朴",
         "川朴",
-        "紫油厚朴"
+        "紫油厚朴",
+        "凹叶厚朴",
+        "调羹花",
+        "厚朴花"
       ],
       "categoryId": "huashi",
       "categoryTitle": "化湿药",
@@ -10258,8 +9898,8 @@
         "latin": "Magnolia officinalis",
         "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-431254.jpg"
       },
-      "docCount": 1,
-      "charCount": 1257
+      "docCount": 3,
+      "charCount": 2825
     },
     {
       "id": "dacheng-477",
@@ -10301,7 +9941,14 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热燥湿，收涩止痢，止带，明目",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-105.jpg",
+        "alt": "秦皮（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1073
     },
@@ -10385,24 +10032,6 @@
       "charCount": 963
     },
     {
-      "id": "dacheng-483",
-      "number": 566,
-      "name": "桑白皮",
-      "pinyin": "sangbaipi",
-      "aliases": [
-        "桑根白皮",
-        "白桑皮",
-        "桑皮",
-        "桑根皮"
-      ],
-      "categoryId": "huatan",
-      "categoryTitle": "化痰止咳平喘药",
-      "summary": "泻肺平喘，利水消肿",
-      "image": null,
-      "docCount": 1,
-      "charCount": 621
-    },
-    {
       "id": "dacheng-484",
       "number": 567,
       "name": "丁公藤",
@@ -10438,19 +10067,6 @@
       "charCount": 836
     },
     {
-      "id": "dacheng-486",
-      "number": 569,
-      "name": "小木通",
-      "pinyin": "chuanmutong",
-      "aliases": [],
-      "categoryId": "lishui",
-      "categoryTitle": "利水渗湿药",
-      "summary": "利尿通淋，清心除烦，通经下乳",
-      "image": null,
-      "docCount": 1,
-      "charCount": 523
-    },
-    {
       "id": "dacheng-487",
       "number": 570,
       "name": "小通草",
@@ -10469,24 +10085,6 @@
       "charCount": 925
     },
     {
-      "id": "dacheng-488",
-      "number": 571,
-      "name": "天仙藤",
-      "pinyin": "tianxianteng",
-      "aliases": [
-        "都淋藤",
-        "青木香藤",
-        "长痧藤",
-        "香藤"
-      ],
-      "categoryId": "huoxue",
-      "categoryTitle": "活血化瘀药",
-      "summary": "行气活血，通络止痛",
-      "image": null,
-      "docCount": 1,
-      "charCount": 689
-    },
-    {
       "id": "dacheng-489",
       "number": 572,
       "name": "木通",
@@ -10495,7 +10093,12 @@
         "通草",
         "附支",
         "丁父",
-        "活血藤"
+        "活血藤",
+        "预知子",
+        "燕覆子",
+        "八月楂",
+        "压惊子",
+        "拉拉果"
       ],
       "categoryId": "qingre",
       "categoryTitle": "清热药",
@@ -10509,27 +10112,8 @@
         "latin": "Akebia quinata",
         "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-126249.jpg"
       },
-      "docCount": 1,
-      "charCount": 741
-    },
-    {
-      "id": "dacheng-490",
-      "number": 573,
-      "name": "功劳木",
-      "pinyin": "gonglaomu",
-      "aliases": [
-        "土黄柏",
-        "十大功劳",
-        "老鼠刺",
-        "土黄芩",
-        "羊角黄连"
-      ],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "清热燥湿，泻火解毒",
-      "image": null,
-      "docCount": 1,
-      "charCount": 1031
+      "docCount": 2,
+      "charCount": 2326
     },
     {
       "id": "dacheng-491",
@@ -10560,23 +10144,25 @@
         "青竹茹",
         "淡竹茹",
         "竹二青",
-        "青子竹"
+        "青子竹",
+        "竹沥",
+        "竹汁",
+        "淡竹沥",
+        "竹油"
       ],
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热化痰，除烦，止呕",
       "image": {
-        "url": "/images/herbs/dacheng/inat-444d94bfd2.jpg",
-        "alt": "Black Bamboo（Phyllostachys nigra）",
-        "credit": "(c) onidiras-iNaturalist, some rights reserved (CC BY-NC), uploaded by onidiras-iNaturalist",
-        "license": "CC-BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/166766",
-        "latin": "Phyllostachys nigra",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-444d94bfd2.jpg"
+        "url": "/images/herbs/lecture/extra/ex-169.jpg",
+        "alt": "竹茹（用户提供图片 1）",
+        "credit": "用户提供 / 本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
       },
-      "docCount": 1,
-      "charCount": 1046
+      "docCount": 2,
+      "charCount": 1638
     },
     {
       "id": "dacheng-493",
@@ -10591,7 +10177,14 @@
       "categoryId": "qita",
       "categoryTitle": "其他药",
       "summary": "清心火，利小便",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/extra/ex-130.jpg",
+        "alt": "灯心草（用户提供图片 1）",
+        "credit": "用户提供 / 本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 987
     },
@@ -10686,23 +10279,6 @@
       "charCount": 1021
     },
     {
-      "id": "dacheng-499",
-      "number": 584,
-      "name": "松节",
-      "pinyin": "songjie",
-      "aliases": [
-        "黄松木节",
-        "油松节",
-        "松榔头"
-      ],
-      "categoryId": "huashi",
-      "categoryTitle": "化湿药",
-      "summary": "祛风燥湿，舒筋通络，活血止痛",
-      "image": null,
-      "docCount": 1,
-      "charCount": 776
-    },
-    {
       "id": "dacheng-500",
       "number": 586,
       "name": "钩藤",
@@ -10741,7 +10317,14 @@
       "categoryId": "huoxue",
       "categoryTitle": "活血化瘀药",
       "summary": "破血通经，解毒消肿，杀虫",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-116.jpg",
+        "alt": "鬼箭羽（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1064
     },
@@ -10772,21 +10355,6 @@
       "charCount": 1106
     },
     {
-      "id": "dacheng-503",
-      "number": 589,
-      "name": "桂枝",
-      "pinyin": "guizhi",
-      "aliases": [
-        "柳桂"
-      ],
-      "categoryId": "jiebiao",
-      "categoryTitle": "解表药",
-      "summary": "发汗解肌，温通经脉，助阳化气，平冲降气",
-      "image": null,
-      "docCount": 1,
-      "charCount": 948
-    },
-    {
       "id": "dacheng-504",
       "number": 590,
       "name": "通草",
@@ -10801,14 +10369,12 @@
       "categoryTitle": "清热药",
       "summary": "清热利尿，通气下乳",
       "image": {
-        "url": "/images/herbs/dacheng/inat-38b1cc7a17.jpg",
-        "alt": "Rice paper plant（Tetrapanax papyrifer）",
-        "credit": "(c) 戴勝, some rights reserved (CC BY-NC), uploaded by 戴勝",
-        "license": "CC-BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/372170",
-        "latin": "Tetrapanax papyrifer",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-38b1cc7a17.jpg"
+        "url": "/images/herbs/lecture/zhongjing/zj-022.jpg",
+        "alt": "通草（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1207
@@ -10820,7 +10386,10 @@
       "pinyin": "mahuang",
       "aliases": [
         "狗骨",
-        "卑柑"
+        "卑柑",
+        "麻黄根",
+        "狗骨根",
+        "卑柑根"
       ],
       "categoryId": "jiebiao",
       "categoryTitle": "解表药",
@@ -10834,8 +10403,8 @@
         "latin": "Ephedra sinica",
         "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-135489.jpg"
       },
-      "docCount": 1,
-      "charCount": 1900
+      "docCount": 2,
+      "charCount": 3385
     },
     {
       "id": "dacheng-506",
@@ -10915,14 +10484,30 @@
       "aliases": [
         "樟材",
         "香樟木",
-        "吹风散"
+        "吹风散",
+        "樟脑",
+        "韶脑",
+        "油脑",
+        "树脑",
+        "天然冰片",
+        "龙脑",
+        "冰片"
       ],
       "categoryId": "wenli",
       "categoryTitle": "温里药",
       "summary": "祛风散寒，温中理气，活血通络",
-      "image": null,
-      "docCount": 1,
-      "charCount": 899
+      "image": {
+        "url": "/images/herbs/dacheng/inat-fb71af1be7.jpg",
+        "alt": "Camphor（Camphora officinarum）",
+        "credit": "(c) Greg Tasney, some rights reserved (CC BY-SA), uploaded by Greg Tasney",
+        "license": "CC-BY-SA",
+        "sourceUrl": "https://www.inaturalist.org/taxa/1591063",
+        "latin": "Camphora officinarum",
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-fb71af1be7.jpg"
+      },
+      "docCount": 3,
+      "charCount": 2721
     },
     {
       "id": "dacheng-510",
@@ -10941,24 +10526,6 @@
       "image": null,
       "docCount": 1,
       "charCount": 1084
-    },
-    {
-      "id": "dacheng-511",
-      "number": 597,
-      "name": "皂角刺",
-      "pinyin": "zaojiaoci",
-      "aliases": [
-        "皂荚刺",
-        "天丁明",
-        "皂角针",
-        "皂针"
-      ],
-      "categoryId": "gongdu",
-      "categoryTitle": "攻毒杀虫止痒药",
-      "summary": "消肿托毒，排脓，杀虫",
-      "image": null,
-      "docCount": 1,
-      "charCount": 593
     },
     {
       "id": "dacheng-512",
@@ -10986,48 +10553,6 @@
       "charCount": 1073
     },
     {
-      "id": "dacheng-513",
-      "number": 599,
-      "name": "天然冰片",
-      "pinyin": "tianranbingpian",
-      "aliases": [
-        "龙脑",
-        "冰片"
-      ],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "开窍醒神，清热止痛",
-      "image": {
-        "url": "/images/herbs/dacheng/inat-fb71af1be7.jpg",
-        "alt": "Camphor（Camphora officinarum）",
-        "credit": "(c) Greg Tasney, some rights reserved (CC BY-SA), uploaded by Greg Tasney",
-        "license": "CC-BY-SA",
-        "sourceUrl": "https://www.inaturalist.org/taxa/1591063",
-        "latin": "Camphora officinarum",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-fb71af1be7.jpg"
-      },
-      "docCount": 1,
-      "charCount": 705
-    },
-    {
-      "id": "dacheng-514",
-      "number": 600,
-      "name": "竹沥",
-      "pinyin": "zhuli",
-      "aliases": [
-        "竹汁",
-        "淡竹沥",
-        "竹油"
-      ],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "清热降火，滑痰利窍",
-      "image": null,
-      "docCount": 1,
-      "charCount": 592
-    },
-    {
       "id": "dacheng-515",
       "number": 601,
       "name": "安息香",
@@ -11041,23 +10566,6 @@
       "image": null,
       "docCount": 1,
       "charCount": 1234
-    },
-    {
-      "id": "dacheng-516",
-      "number": 602,
-      "name": "枫香脂",
-      "pinyin": "fengxiangzhi",
-      "aliases": [
-        "白胶香",
-        "枫脂",
-        "胶香"
-      ],
-      "categoryId": "huoxue",
-      "categoryTitle": "活血化瘀药",
-      "summary": "活血止痛，解毒生肌，凉血止血",
-      "image": null,
-      "docCount": 1,
-      "charCount": 732
     },
     {
       "id": "dacheng-517",
@@ -11105,42 +10613,15 @@
       "categoryTitle": "攻毒杀虫止痒药",
       "summary": "散瘀定痛，消肿生肌",
       "image": {
-        "url": "/images/herbs/dacheng/inat-c890f4c25d.jpg",
-        "alt": "Common Myrrh（Commiphora myrrha）",
-        "credit": "\nBrandt, Wilhelm; Gürke, M.; Köhler, F. E.; Pabst, G.; Schellenberg, G.; Vogtherr, Max., no known copyright restrictions (public domain)",
-        "license": "PD",
-        "sourceUrl": "https://www.inaturalist.org/taxa/789240",
-        "latin": "Commiphora myrrha",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-c890f4c25d.jpg"
-      },
-      "docCount": 1,
-      "charCount": 930
-    },
-    {
-      "id": "dacheng-520",
-      "number": 606,
-      "name": "松香",
-      "pinyin": "songxiang",
-      "aliases": [
-        "松脂",
-        "白松香",
-        "松脂香"
-      ],
-      "categoryId": "huashi",
-      "categoryTitle": "化湿药",
-      "summary": "祛风燥湿，排脓拔毒、生肌止痛",
-      "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-105.jpg",
-        "alt": "松香（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "url": "/images/herbs/lecture/extra/ex-111.jpg",
+        "alt": "没药（用户提供图片 1）",
+        "credit": "用户提供 / 本草表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
-        "latin": "",
         "kind": "药材"
       },
       "docCount": 1,
-      "charCount": 893
+      "charCount": 930
     },
     {
       "id": "dacheng-521",
@@ -11156,26 +10637,16 @@
       "categoryId": "huoxue",
       "categoryTitle": "活血化瘀药",
       "summary": "活血定痛，消肿生肌",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/extra/ex-113.jpg",
+        "alt": "乳香（用户提供图片 1）",
+        "credit": "用户提供 / 本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 737
-    },
-    {
-      "id": "dacheng-522",
-      "number": 608,
-      "name": "樟脑",
-      "pinyin": "zhangnao",
-      "aliases": [
-        "韶脑",
-        "油脑",
-        "树脑"
-      ],
-      "categoryId": "gongdu",
-      "categoryTitle": "攻毒杀虫止痒药",
-      "summary": "通关窍，利滞气，辟秽浊，杀虫止痒，消肿止痛",
-      "image": null,
-      "docCount": 1,
-      "charCount": 1117
     },
     {
       "id": "dacheng-523",
@@ -11268,7 +10739,14 @@
       "categoryId": "lishui",
       "categoryTitle": "利水渗湿药",
       "summary": "消痰软坚散结，利水消肿",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-075.jpg",
+        "alt": "海藻（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1085
     },
@@ -11286,7 +10764,14 @@
       "categoryId": "lishui",
       "categoryTitle": "利水渗湿药",
       "summary": "利水渗湿",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-112.jpg",
+        "alt": "猪苓（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1188
     },
@@ -11335,24 +10820,6 @@
       "charCount": 1196
     },
     {
-      "id": "dacheng-531",
-      "number": 620,
-      "name": "大豆黄卷",
-      "pinyin": "dadouhuangjuan",
-      "aliases": [
-        "卷糵",
-        "黄卷皮",
-        "豆糵",
-        "豆黄卷"
-      ],
-      "categoryId": "jiebiao",
-      "categoryTitle": "解表药",
-      "summary": "解表祛暑，清热利湿",
-      "image": null,
-      "docCount": 1,
-      "charCount": 990
-    },
-    {
       "id": "dacheng-532",
       "number": 621,
       "name": "天竺黄",
@@ -11384,7 +10851,14 @@
       "categoryId": "qita",
       "categoryTitle": "其他药",
       "summary": "缓中，补虚，生津，润燥",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/extra/ex-105.jpg",
+        "alt": "饴糖（用户提供图片 1）",
+        "credit": "用户提供 / 本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 437
     },
@@ -11440,32 +10914,6 @@
       "charCount": 890
     },
     {
-      "id": "dacheng-536",
-      "number": 625,
-      "name": "青黛",
-      "pinyin": "qingdai",
-      "aliases": [
-        "靛花",
-        "青蛤粉",
-        "蓝露",
-        "靛沫花"
-      ],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "清热解毒，凉血消斑，泻火定惊",
-      "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-067.jpg",
-        "alt": "青黛（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
-        "license": "用户提供，版权归原作者所有",
-        "sourceUrl": "",
-        "latin": "",
-        "kind": "药材"
-      },
-      "docCount": 1,
-      "charCount": 912
-    },
-    {
       "id": "dacheng-537",
       "number": 628,
       "name": "稻芽",
@@ -11495,27 +10943,16 @@
       "categoryId": "xiaoshi",
       "categoryTitle": "消食药",
       "summary": "消食化积，健脾和胃",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/extra/ex-129.jpg",
+        "alt": "神曲（用户提供图片 1）",
+        "credit": "用户提供 / 本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 830
-    },
-    {
-      "id": "dacheng-539",
-      "number": 630,
-      "name": "鹤草芽",
-      "pinyin": "hecaoya",
-      "aliases": [
-        "狼牙",
-        "狼齿",
-        "狼牙子",
-        "仙鹤草根芽"
-      ],
-      "categoryId": "quchong",
-      "categoryTitle": "驱虫药",
-      "summary": "驱虫，解毒消肿",
-      "image": null,
-      "docCount": 1,
-      "charCount": 813
     },
     {
       "id": "dacheng-540",
@@ -11564,7 +11001,14 @@
       "categoryId": "huoxue",
       "categoryTitle": "活血化瘀药",
       "summary": "破血逐瘀，续筋接骨",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-138.jpg",
+        "alt": "土鳖虫（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 652
     },
@@ -11610,7 +11054,14 @@
       "categoryId": "souse",
       "categoryTitle": "收涩药",
       "summary": "敛肺降火，涩肠止泻，敛汗，止血，收湿敛疮",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/extra/ex-141.jpg",
+        "alt": "五倍子（用户提供图片 1）",
+        "credit": "用户提供 / 本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1049
     },
@@ -11629,51 +11080,16 @@
       "categoryId": "huoxue",
       "categoryTitle": "活血化瘀药",
       "summary": "祛风止痛，攻毒消肿",
-      "image": null,
-      "docCount": 1,
-      "charCount": 913
-    },
-    {
-      "id": "dacheng-546",
-      "number": 637,
-      "name": "蜂蜡",
-      "pinyin": "fengla",
-      "aliases": [
-        "蜜蜡",
-        "蜡",
-        "蜜跖",
-        "黄蜡"
-      ],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "解毒，敛疮，生肌，止痛。外",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-147.jpg",
-        "alt": "蜂蜡（用户提供图片）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "url": "/images/herbs/lecture/zhongjing/zj-127.jpg",
+        "alt": "蜂房（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
       },
       "docCount": 1,
-      "charCount": 909
-    },
-    {
-      "id": "dacheng-547",
-      "number": 639,
-      "name": "蚕沙",
-      "pinyin": "cansha",
-      "aliases": [
-        "蚕砂",
-        "蚕屎",
-        "二蚕沙"
-      ],
-      "categoryId": "qufengshi",
-      "categoryTitle": "祛风湿药",
-      "summary": "祛风除湿，和胃化浊，活血通经",
-      "image": null,
-      "docCount": 1,
-      "charCount": 675
+      "charCount": 913
     },
     {
       "id": "dacheng-548",
@@ -11714,7 +11130,14 @@
       "categoryId": "huoxue",
       "categoryTitle": "活血化瘀药",
       "summary": "破血逐瘀，散结消癥，攻毒蚀疮",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/xiajing/xj-083.jpg",
+        "alt": "斑蝥（用户提供图片 1）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1048
     },
@@ -11733,7 +11156,14 @@
       "categoryId": "lishui",
       "categoryTitle": "利水渗湿药",
       "summary": "利水通淋，消肿解毒",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/xiajing/xj-089.jpg",
+        "alt": "蝼蛄（用户提供图片 1）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 889
     },
@@ -11751,7 +11181,14 @@
       "categoryId": "jiebiao",
       "categoryTitle": "解表药",
       "summary": "疏散风热，利咽，透疹，明目退翳，解痉",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/xiajing/xj-087.jpg",
+        "alt": "雀瓮（用户提供图片 1）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 888
     },
@@ -11763,14 +11200,25 @@
       "aliases": [
         "天虫",
         "僵虫",
-        "白僵虫"
+        "白僵虫",
+        "蚕沙",
+        "蚕砂",
+        "蚕屎",
+        "二蚕沙"
       ],
       "categoryId": "pinggan",
       "categoryTitle": "平肝息风药",
       "summary": "息风止痉，祛风止痛，化痰散结",
-      "image": null,
-      "docCount": 1,
-      "charCount": 1008
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-134.jpg",
+        "alt": "僵蚕（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
+      "docCount": 2,
+      "charCount": 1683
     },
     {
       "id": "dacheng-553",
@@ -11822,14 +11270,29 @@
         "乌鸡",
         "松毛鸡",
         "黑脚鸡",
-        "竹丝鸡"
+        "竹丝鸡",
+        "鸡内金",
+        "鸡黄皮",
+        "鸡食皮",
+        "鸡合子",
+        "鸡中金",
+        "化骨胆"
       ],
       "categoryId": "buxu",
       "categoryTitle": "补虚药",
       "summary": "补肝肾，益气血，退虚热",
-      "image": null,
-      "docCount": 1,
-      "charCount": 573
+      "image": {
+        "url": "/images/herbs/dacheng/inat-a12e1aa2da.jpg",
+        "alt": "Red Junglefowl（Gallus gallus）",
+        "credit": "(c) Julien Renoult, some rights reserved (CC BY), uploaded by Julien Renoult",
+        "license": "CC-BY",
+        "sourceUrl": "https://www.inaturalist.org/taxa/882",
+        "latin": "Gallus gallus",
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-a12e1aa2da.jpg"
+      },
+      "docCount": 3,
+      "charCount": 2129
     },
     {
       "id": "dacheng-556",
@@ -11865,7 +11328,14 @@
       "categoryId": "huoxue",
       "categoryTitle": "活血化瘀药",
       "summary": "破血通经，逐瘀消癥",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/xiajing/xj-081.jpg",
+        "alt": "水蛭（用户提供图片 1）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1195
     },
@@ -11898,7 +11368,14 @@
       "categoryId": "pinggan",
       "categoryTitle": "平肝息风药",
       "summary": "平肝潜阳，清肝明目",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/extra/ex-146.jpg",
+        "alt": "石决明（用户提供图片 1）",
+        "credit": "用户提供 / 本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 990
     },
@@ -11962,7 +11439,14 @@
       "categoryId": "huoxue",
       "categoryTitle": "活血化瘀药",
       "summary": "消痰化瘀，软坚散结，制酸止痛",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/extra/ex-159.jpg",
+        "alt": "瓦楞子（用户提供图片 1）",
+        "credit": "用户提供 / 本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 661
     },
@@ -11997,7 +11481,14 @@
       "categoryId": "pinggan",
       "categoryTitle": "平肝息风药",
       "summary": "息风镇痉，通络止痛，攻毒散结",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/extra/ex-157.jpg",
+        "alt": "全蝎（用户提供图片 1）",
+        "credit": "用户提供 / 本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1121
     },
@@ -12014,7 +11505,14 @@
       "categoryId": "zhixue",
       "categoryTitle": "止血药",
       "summary": "固精缩尿，收敛止血，化瘀止痛",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-125.jpg",
+        "alt": "刺猬皮（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 440
     },
@@ -12027,32 +11525,19 @@
         "蚌珠",
         "真珠",
         "药珠",
-        "珠子"
-      ],
-      "categoryId": "anshen",
-      "categoryTitle": "安神药",
-      "summary": "安神定惊，明目消翳，解毒生肌，润肤祛斑",
-      "image": null,
-      "docCount": 1,
-      "charCount": 883
-    },
-    {
-      "id": "dacheng-567",
-      "number": 662,
-      "name": "珍珠母",
-      "pinyin": "zhenzhumu",
-      "aliases": [
+        "珠子",
+        "珍珠母",
         "珠牡",
         "珠母",
         "真珠母",
         "明珠母"
       ],
-      "categoryId": "pinggan",
-      "categoryTitle": "平肝息风药",
-      "summary": "平肝潜阳，安神定惊，明目退翳",
+      "categoryId": "anshen",
+      "categoryTitle": "安神药",
+      "summary": "安神定惊，明目消翳，解毒生肌，润肤祛斑",
       "image": null,
-      "docCount": 1,
-      "charCount": 747
+      "docCount": 2,
+      "charCount": 1630
     },
     {
       "id": "dacheng-568",
@@ -12121,7 +11606,14 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "祛风，定惊，退翳，解毒",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/xiajing/xj-074.jpg",
+        "alt": "蛇蜕（用户提供图片 1）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 786
     },
@@ -12149,7 +11641,14 @@
       "categoryId": "pinggan",
       "categoryTitle": "平肝息风药",
       "summary": "平肝息风，清肝明目，散血解毒",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-123.jpg",
+        "alt": "羚羊角（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1061
     },
@@ -12283,14 +11782,22 @@
         "寒水石",
         "白虎",
         "玉大石",
-        "冰石"
+        "冰石",
+        "煅石膏"
       ],
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热泻火，除烦止渴",
-      "image": null,
-      "docCount": 1,
-      "charCount": 931
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-004.jpg",
+        "alt": "石膏（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
+      "docCount": 2,
+      "charCount": 1161
     },
     {
       "id": "dacheng-581",
@@ -12339,7 +11846,8 @@
       "aliases": [
         "马牙消",
         "英消",
-        "盆消"
+        "盆消",
+        "玄明粉"
       ],
       "categoryId": "xiexia",
       "categoryTitle": "泻下药",
@@ -12352,8 +11860,8 @@
         "sourceUrl": "",
         "kind": "药材"
       },
-      "docCount": 1,
-      "charCount": 836
+      "docCount": 2,
+      "charCount": 1031
     },
     {
       "id": "dacheng-584",
@@ -12403,7 +11911,14 @@
       "categoryId": "qita",
       "categoryTitle": "其他药",
       "summary": "温肾壮阳",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-006.jpg",
+        "alt": "阳起石（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 925
     },
@@ -12516,7 +12031,14 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "解毒杀虫，燥湿祛痰，截疟",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-001.jpg",
+        "alt": "雄黄（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 620
     },
@@ -12534,7 +12056,14 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "外用解毒杀虫疗疮。内服补火助阳通便。外",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-002.jpg",
+        "alt": "硫黄（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 640
     },
@@ -12565,7 +12094,8 @@
         "液石",
         "夕冷",
         "画石",
-        "活石"
+        "活石",
+        "滑石粉"
       ],
       "categoryId": "lishui",
       "categoryTitle": "利水渗湿药",
@@ -12579,8 +12109,8 @@
         "latin": "",
         "kind": "药材"
       },
-      "docCount": 1,
-      "charCount": 782
+      "docCount": 2,
+      "charCount": 1210
     },
     {
       "id": "dacheng-595",
@@ -12596,7 +12126,14 @@
       "categoryId": "anshen",
       "categoryTitle": "安神药",
       "summary": "镇惊安神，平肝潜阳，聪耳明目，纳气平喘",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-005.jpg",
+        "alt": "磁石（用户提供图片 1）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 649
     },
@@ -12634,257 +12171,6 @@
       "charCount": 666
     },
     {
-      "id": "dacheng-598",
-      "number": 695,
-      "name": "大蓟炭",
-      "pinyin": "dajitan",
-      "aliases": [],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "凉血止血",
-      "image": null,
-      "docCount": 1,
-      "charCount": 185
-    },
-    {
-      "id": "dacheng-599",
-      "number": 696,
-      "name": "千金子霜",
-      "pinyin": "qianjinzishuang",
-      "aliases": [],
-      "categoryId": "xiexia",
-      "categoryTitle": "泻下药",
-      "summary": "泻下逐水，破血消癥；外用疗癣蚀疣",
-      "image": null,
-      "docCount": 1,
-      "charCount": 218
-    },
-    {
-      "id": "dacheng-600",
-      "number": 697,
-      "name": "炮姜",
-      "pinyin": "paojiang",
-      "aliases": [
-        "黑姜"
-      ],
-      "categoryId": "wenli",
-      "categoryTitle": "温里药",
-      "summary": "温中止痛，温经止血",
-      "image": null,
-      "docCount": 1,
-      "charCount": 326
-    },
-    {
-      "id": "dacheng-601",
-      "number": 698,
-      "name": "制川乌",
-      "pinyin": "zhichuanwu",
-      "aliases": [],
-      "categoryId": "qufengshi",
-      "categoryTitle": "祛风湿药",
-      "summary": "祛风除湿，温经止痛",
-      "image": null,
-      "docCount": 1,
-      "charCount": 282
-    },
-    {
-      "id": "dacheng-602",
-      "number": 699,
-      "name": "制草乌",
-      "pinyin": "zhicaowu",
-      "aliases": [],
-      "categoryId": "qufengshi",
-      "categoryTitle": "祛风湿药",
-      "summary": "祛风除湿，温经止痛，",
-      "image": null,
-      "docCount": 1,
-      "charCount": 287
-    },
-    {
-      "id": "dacheng-603",
-      "number": 700,
-      "name": "制天南星",
-      "pinyin": "zhitiannanxing",
-      "aliases": [],
-      "categoryId": "huashi",
-      "categoryTitle": "化湿药",
-      "summary": "燥湿化痰，祛风止痉，散结消肿",
-      "image": null,
-      "docCount": 1,
-      "charCount": 315
-    },
-    {
-      "id": "dacheng-604",
-      "number": 701,
-      "name": "巴豆霜",
-      "pinyin": "badoushuang",
-      "aliases": [],
-      "categoryId": "xiexia",
-      "categoryTitle": "泻下药",
-      "summary": "峻下冷积，逐水退肿，豁痰利咽；外用蚀疮",
-      "image": null,
-      "docCount": 1,
-      "charCount": 234
-    },
-    {
-      "id": "dacheng-605",
-      "number": 702,
-      "name": "炙甘草",
-      "pinyin": "zhigancao",
-      "aliases": [],
-      "categoryId": "buxu",
-      "categoryTitle": "补虚药",
-      "summary": "补脾和胃，益气复脉",
-      "image": null,
-      "docCount": 1,
-      "charCount": 281
-    },
-    {
-      "id": "dacheng-606",
-      "number": 703,
-      "name": "煅石膏",
-      "pinyin": "duanshigao",
-      "aliases": [],
-      "categoryId": "zhixue",
-      "categoryTitle": "止血药",
-      "summary": "收湿，生肌，敛疮，止血。外",
-      "image": null,
-      "docCount": 1,
-      "charCount": 230
-    },
-    {
-      "id": "dacheng-607",
-      "number": 704,
-      "name": "炒瓜蒌子",
-      "pinyin": "chaogualouzi",
-      "aliases": [],
-      "categoryId": "huatan",
-      "categoryTitle": "化痰止咳平喘药",
-      "summary": "润肺化痰，滑肠通便",
-      "image": null,
-      "docCount": 1,
-      "charCount": 310
-    },
-    {
-      "id": "dacheng-608",
-      "number": 705,
-      "name": "法半夏",
-      "pinyin": "fabanxia",
-      "aliases": [],
-      "categoryId": "huashi",
-      "categoryTitle": "化湿药",
-      "summary": "燥湿化痰",
-      "image": null,
-      "docCount": 1,
-      "charCount": 312
-    },
-    {
-      "id": "dacheng-609",
-      "number": 706,
-      "name": "姜半夏",
-      "pinyin": "jiangbanxia",
-      "aliases": [],
-      "categoryId": "wenli",
-      "categoryTitle": "温里药",
-      "summary": "温中化痰，降逆止呕",
-      "image": null,
-      "docCount": 1,
-      "charCount": 240
-    },
-    {
-      "id": "dacheng-610",
-      "number": 707,
-      "name": "清半夏",
-      "pinyin": "qingbanxia",
-      "aliases": [],
-      "categoryId": "huashi",
-      "categoryTitle": "化湿药",
-      "summary": "燥湿化痰",
-      "image": null,
-      "docCount": 1,
-      "charCount": 241
-    },
-    {
-      "id": "dacheng-611",
-      "number": 708,
-      "name": "西瓜霜",
-      "pinyin": "xiguashuang",
-      "aliases": [
-        "西瓜硝"
-      ],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "消毒泻火，消肿止痛",
-      "image": null,
-      "docCount": 1,
-      "charCount": 489
-    },
-    {
-      "id": "dacheng-612",
-      "number": 709,
-      "name": "制何首乌",
-      "pinyin": "zhiheshouwu",
-      "aliases": [],
-      "categoryId": "buxu",
-      "categoryTitle": "补虚药",
-      "summary": "补肝肾，益精血，乌须发，强筋骨，化浊降脂",
-      "image": null,
-      "docCount": 1,
-      "charCount": 499
-    },
-    {
-      "id": "dacheng-613",
-      "number": 710,
-      "name": "荆芥炭",
-      "pinyin": "jingjietan",
-      "aliases": [],
-      "categoryId": "zhixue",
-      "categoryTitle": "止血药",
-      "summary": "收敛止血",
-      "image": null,
-      "docCount": 1,
-      "charCount": 179
-    },
-    {
-      "id": "dacheng-614",
-      "number": 711,
-      "name": "焦栀子",
-      "pinyin": "jiaozhizi",
-      "aliases": [],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "凉血止血",
-      "image": null,
-      "docCount": 1,
-      "charCount": 182
-    },
-    {
-      "id": "dacheng-615",
-      "number": 712,
-      "name": "炙黄芪",
-      "pinyin": "zhihuangqi",
-      "aliases": [],
-      "categoryId": "buxu",
-      "categoryTitle": "补虚药",
-      "summary": "益气补中",
-      "image": null,
-      "docCount": 1,
-      "charCount": 190
-    },
-    {
-      "id": "dacheng-616",
-      "number": 713,
-      "name": "焦槟榔",
-      "pinyin": "jiaobinlang",
-      "aliases": [],
-      "categoryId": "xiaoshi",
-      "categoryTitle": "消食药",
-      "summary": "消食导滞",
-      "image": null,
-      "docCount": 1,
-      "charCount": 143
-    },
-    {
       "id": "dacheng-617",
       "number": 1000,
       "name": "人工牛黄",
@@ -12896,19 +12182,6 @@
       "image": null,
       "docCount": 1,
       "charCount": 936
-    },
-    {
-      "id": "dacheng-618",
-      "number": 1001,
-      "name": "人参叶",
-      "pinyin": "renshenye",
-      "aliases": [],
-      "categoryId": "buxu",
-      "categoryTitle": "补虚药",
-      "summary": "补气，益肺，祛暑，生津",
-      "image": null,
-      "docCount": 1,
-      "charCount": 746
     },
     {
       "id": "dacheng-619",
@@ -12954,13 +12227,15 @@
       "number": 1005,
       "name": "川木通",
       "pinyin": "chuanmutong",
-      "aliases": [],
+      "aliases": [
+        "小木通"
+      ],
       "categoryId": "lishui",
       "categoryTitle": "利水渗湿药",
       "summary": "利尿通淋，清心除烦，通经下乳",
       "image": null,
-      "docCount": 1,
-      "charCount": 749
+      "docCount": 2,
+      "charCount": 1272
     },
     {
       "id": "dacheng-623",
@@ -13015,19 +12290,6 @@
       "charCount": 804
     },
     {
-      "id": "dacheng-627",
-      "number": 1010,
-      "name": "马钱子粉",
-      "pinyin": "maqianzifen",
-      "aliases": [],
-      "categoryId": "huoxue",
-      "categoryTitle": "活血化瘀药",
-      "summary": "通络止痛，散结消肿",
-      "image": null,
-      "docCount": 1,
-      "charCount": 233
-    },
-    {
       "id": "dacheng-628",
       "number": 1011,
       "name": "天山雪莲",
@@ -13065,19 +12327,6 @@
       "image": null,
       "docCount": 1,
       "charCount": 756
-    },
-    {
-      "id": "dacheng-631",
-      "number": 1014,
-      "name": "片姜黄",
-      "pinyin": "pianjianghuang",
-      "aliases": [],
-      "categoryId": "huoxue",
-      "categoryTitle": "活血化瘀药",
-      "summary": "破血行气，通经止痛",
-      "image": null,
-      "docCount": 1,
-      "charCount": 618
     },
     {
       "id": "dacheng-632",
@@ -13161,45 +12410,6 @@
       "charCount": 851
     },
     {
-      "id": "dacheng-638",
-      "number": 1021,
-      "name": "瓜蒌子",
-      "pinyin": "gualouzi",
-      "aliases": [],
-      "categoryId": "huatan",
-      "categoryTitle": "化痰止咳平喘药",
-      "summary": "润肺化痰，滑肠通便",
-      "image": null,
-      "docCount": 1,
-      "charCount": 757
-    },
-    {
-      "id": "dacheng-639",
-      "number": 1022,
-      "name": "瓜蒌皮",
-      "pinyin": "gualoupi",
-      "aliases": [],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "清热化痰，利气宽胸",
-      "image": null,
-      "docCount": 1,
-      "charCount": 595
-    },
-    {
-      "id": "dacheng-640",
-      "number": 1023,
-      "name": "玄明粉",
-      "pinyin": "xuanmingfen",
-      "aliases": [],
-      "categoryId": "xiexia",
-      "categoryTitle": "泻下药",
-      "summary": "泻下通便，润燥软坚，清火消肿",
-      "image": null,
-      "docCount": 1,
-      "charCount": 195
-    },
-    {
       "id": "dacheng-641",
       "number": 1024,
       "name": "亚乎奴（锡生藤）",
@@ -13214,19 +12424,6 @@
       "image": null,
       "docCount": 1,
       "charCount": 687
-    },
-    {
-      "id": "dacheng-642",
-      "number": 1025,
-      "name": "西青果",
-      "pinyin": "xiqingguo",
-      "aliases": [],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "清热生津，解毒",
-      "image": null,
-      "docCount": 1,
-      "charCount": 719
     },
     {
       "id": "dacheng-643",
@@ -13246,13 +12443,15 @@
       "number": 1027,
       "name": "竹节参",
       "pinyin": "zhujiecan",
-      "aliases": [],
+      "aliases": [
+        "珠子参"
+      ],
       "categoryId": "zhixue",
       "categoryTitle": "止血药",
       "summary": "散瘀止血，消肿止痛，祛痰止咳，补虚强壮",
       "image": null,
-      "docCount": 1,
-      "charCount": 832
+      "docCount": 2,
+      "charCount": 1735
     },
     {
       "id": "dacheng-645",
@@ -13323,32 +12522,6 @@
       "charCount": 705
     },
     {
-      "id": "dacheng-650",
-      "number": 1033,
-      "name": "炙红芪",
-      "pinyin": "zhihongqi",
-      "aliases": [],
-      "categoryId": "buxu",
-      "categoryTitle": "补虚药",
-      "summary": "补中益气",
-      "image": null,
-      "docCount": 1,
-      "charCount": 222
-    },
-    {
-      "id": "dacheng-651",
-      "number": 1034,
-      "name": "红参",
-      "pinyin": "hongcan",
-      "aliases": [],
-      "categoryId": "buxu",
-      "categoryTitle": "补虚药",
-      "summary": "大补元气，复脉固脱，益气摄血",
-      "image": null,
-      "docCount": 1,
-      "charCount": 480
-    },
-    {
       "id": "dacheng-652",
       "number": 1035,
       "name": "红粉",
@@ -13386,19 +12559,6 @@
       "image": null,
       "docCount": 1,
       "charCount": 471
-    },
-    {
-      "id": "dacheng-655",
-      "number": 1038,
-      "name": "杜仲叶",
-      "pinyin": "duzhongye",
-      "aliases": [],
-      "categoryId": "buxu",
-      "categoryTitle": "补虚药",
-      "summary": "补肝肾，强筋骨",
-      "image": null,
-      "docCount": 1,
-      "charCount": 639
     },
     {
       "id": "dacheng-656",
@@ -13456,19 +12616,6 @@
       "charCount": 288
     },
     {
-      "id": "dacheng-660",
-      "number": 1043,
-      "name": "龟甲胶",
-      "pinyin": "guijiajiao",
-      "aliases": [],
-      "categoryId": "buxu",
-      "categoryTitle": "补虚药",
-      "summary": "滋阴，养血，止血",
-      "image": null,
-      "docCount": 1,
-      "charCount": 777
-    },
-    {
       "id": "dacheng-661",
       "number": 1044,
       "name": "沙苑子",
@@ -13495,19 +12642,6 @@
       "charCount": 707
     },
     {
-      "id": "dacheng-663",
-      "number": 1046,
-      "name": "忍冬藤",
-      "pinyin": "rendongteng",
-      "aliases": [],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "清热解毒，疏风通络",
-      "image": null,
-      "docCount": 1,
-      "charCount": 630
-    },
-    {
       "id": "dacheng-664",
       "number": 1047,
       "name": "青叶胆",
@@ -13519,19 +12653,6 @@
       "image": null,
       "docCount": 1,
       "charCount": 879
-    },
-    {
-      "id": "dacheng-665",
-      "number": 1048,
-      "name": "青皮",
-      "pinyin": "qingpi",
-      "aliases": [],
-      "categoryId": "liqi",
-      "categoryTitle": "理气药",
-      "summary": "疏肝破气，消积化滞",
-      "image": null,
-      "docCount": 1,
-      "charCount": 968
     },
     {
       "id": "dacheng-666",
@@ -13571,19 +12692,6 @@
       "image": null,
       "docCount": 1,
       "charCount": 682
-    },
-    {
-      "id": "dacheng-669",
-      "number": 1052,
-      "name": "金沸草",
-      "pinyin": "jinfeicao",
-      "aliases": [],
-      "categoryId": "qita",
-      "categoryTitle": "其他药",
-      "summary": "降气，消痰，行水",
-      "image": null,
-      "docCount": 1,
-      "charCount": 854
     },
     {
       "id": "dacheng-670",
@@ -13629,13 +12737,19 @@
       "number": 1056,
       "name": "肿节风",
       "pinyin": "zhongjiefeng",
-      "aliases": [],
+      "aliases": [
+        "草珊瑚",
+        "接骨木",
+        "九节风",
+        "接骨金粟兰",
+        "竹节茶"
+      ],
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热凉血，活血消斑，祛风通络",
       "image": null,
-      "docCount": 1,
-      "charCount": 981
+      "docCount": 2,
+      "charCount": 1845
     },
     {
       "id": "dacheng-674",
@@ -13664,82 +12778,24 @@
       "charCount": 826
     },
     {
-      "id": "dacheng-676",
-      "number": 1059,
-      "name": "荆芥穗",
-      "pinyin": "jingjiesui",
-      "aliases": [],
-      "categoryId": "jiebiao",
-      "categoryTitle": "解表药",
-      "summary": "解表散风，透疹，消疮",
-      "image": null,
-      "docCount": 1,
-      "charCount": 641
-    },
-    {
-      "id": "dacheng-677",
-      "number": 1060,
-      "name": "荆芥穗炭",
-      "pinyin": "jingjiesuitan",
-      "aliases": [],
-      "categoryId": "zhixue",
-      "categoryTitle": "止血药",
-      "summary": "收涩止血",
-      "image": null,
-      "docCount": 1,
-      "charCount": 220
-    },
-    {
       "id": "dacheng-678",
       "number": 1061,
       "name": "荜澄茄",
       "pinyin": "bichengqie",
-      "aliases": [],
+      "aliases": [
+        "山鸡椒",
+        "山胡椒",
+        "味辣子",
+        "山苍子",
+        "木姜子",
+        "臭樟子"
+      ],
       "categoryId": "wenli",
       "categoryTitle": "温里药",
       "summary": "温中散寒，行气止痛",
       "image": null,
-      "docCount": 1,
-      "charCount": 450
-    },
-    {
-      "id": "dacheng-679",
-      "number": 1062,
-      "name": "草乌叶",
-      "pinyin": "caowuye",
-      "aliases": [],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "清热，解毒，止痛",
-      "image": null,
-      "docCount": 1,
-      "charCount": 485
-    },
-    {
-      "id": "dacheng-680",
-      "number": 1063,
-      "name": "茯苓皮",
-      "pinyin": "fulingpi",
-      "aliases": [],
-      "categoryId": "lishui",
-      "categoryTitle": "利水渗湿药",
-      "summary": "利水消肿",
-      "image": null,
-      "docCount": 1,
-      "charCount": 267
-    },
-    {
-      "id": "dacheng-681",
-      "number": 1064,
-      "name": "厚朴花",
-      "pinyin": "houpohua",
-      "aliases": [],
-      "categoryId": "huashi",
-      "categoryTitle": "化湿药",
-      "summary": "芳香化湿，理气宽中",
-      "image": null,
-      "docCount": 1,
-      "charCount": 802
+      "docCount": 2,
+      "charCount": 1031
     },
     {
       "id": "dacheng-682",
@@ -13781,19 +12837,6 @@
       "charCount": 659
     },
     {
-      "id": "dacheng-685",
-      "number": 1068,
-      "name": "胆南星",
-      "pinyin": "dannanxing",
-      "aliases": [],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "清热化痰，息风定惊",
-      "image": null,
-      "docCount": 1,
-      "charCount": 284
-    },
-    {
       "id": "dacheng-686",
       "number": 1069,
       "name": "独一味",
@@ -13818,71 +12861,6 @@
       "image": null,
       "docCount": 1,
       "charCount": 650
-    },
-    {
-      "id": "dacheng-688",
-      "number": 1071,
-      "name": "珠子参",
-      "pinyin": "zhuzican",
-      "aliases": [],
-      "categoryId": "buxu",
-      "categoryTitle": "补虚药",
-      "summary": "补肺养阴，祛瘀止痛，止血",
-      "image": null,
-      "docCount": 1,
-      "charCount": 903
-    },
-    {
-      "id": "dacheng-689",
-      "number": 1072,
-      "name": "莲子心",
-      "pinyin": "lianzixin",
-      "aliases": [],
-      "categoryId": "anshen",
-      "categoryTitle": "安神药",
-      "summary": "清心安神，交通心肾，涩精止血",
-      "image": null,
-      "docCount": 1,
-      "charCount": 532
-    },
-    {
-      "id": "dacheng-690",
-      "number": 1073,
-      "name": "莲房",
-      "pinyin": "lianfang",
-      "aliases": [],
-      "categoryId": "zhixue",
-      "categoryTitle": "止血药",
-      "summary": "化瘀止血",
-      "image": null,
-      "docCount": 1,
-      "charCount": 396
-    },
-    {
-      "id": "dacheng-691",
-      "number": 1074,
-      "name": "莲须",
-      "pinyin": "lianxu",
-      "aliases": [],
-      "categoryId": "souse",
-      "categoryTitle": "收涩药",
-      "summary": "固肾涩精",
-      "image": null,
-      "docCount": 1,
-      "charCount": 592
-    },
-    {
-      "id": "dacheng-692",
-      "number": 1075,
-      "name": "桃枝",
-      "pinyin": "taozhi",
-      "aliases": [],
-      "categoryId": "huoxue",
-      "categoryTitle": "活血化瘀药",
-      "summary": "活血通络，解毒杀虫",
-      "image": null,
-      "docCount": 1,
-      "charCount": 626
     },
     {
       "id": "dacheng-693",
@@ -13924,32 +12902,6 @@
       "charCount": 619
     },
     {
-      "id": "dacheng-696",
-      "number": 1079,
-      "name": "粉萆薢",
-      "pinyin": "fenbixie",
-      "aliases": [],
-      "categoryId": "qufengshi",
-      "categoryTitle": "祛风湿药",
-      "summary": "利湿去浊，祛风除痹",
-      "image": null,
-      "docCount": 1,
-      "charCount": 718
-    },
-    {
-      "id": "dacheng-697",
-      "number": 1080,
-      "name": "粉葛",
-      "pinyin": "fenge",
-      "aliases": [],
-      "categoryId": "huoxue",
-      "categoryTitle": "活血化瘀药",
-      "summary": "解肌退热，生津止渴，透疹，升阳止泻，通经活络，解酒毒",
-      "image": null,
-      "docCount": 1,
-      "charCount": 693
-    },
-    {
       "id": "dacheng-698",
       "number": 1081,
       "name": "海风藤",
@@ -13974,19 +12926,6 @@
       "image": null,
       "docCount": 1,
       "charCount": 692
-    },
-    {
-      "id": "dacheng-700",
-      "number": 1083,
-      "name": "桑枝",
-      "pinyin": "sangzhi",
-      "aliases": [],
-      "categoryId": "qufengshi",
-      "categoryTitle": "祛风湿药",
-      "summary": "祛风湿，利关节",
-      "image": null,
-      "docCount": 1,
-      "charCount": 436
     },
     {
       "id": "dacheng-701",
@@ -14067,19 +13006,6 @@
       "charCount": 823
     },
     {
-      "id": "dacheng-707",
-      "number": 1090,
-      "name": "银杏叶",
-      "pinyin": "yinxingye",
-      "aliases": [],
-      "categoryId": "huoxue",
-      "categoryTitle": "活血化瘀药",
-      "summary": "活血化瘀，通络止痛，敛肺平喘，化浊降脂",
-      "image": null,
-      "docCount": 1,
-      "charCount": 973
-    },
-    {
       "id": "dacheng-708",
       "number": 1091,
       "name": "猪胆粉",
@@ -14106,32 +13032,6 @@
       "charCount": 541
     },
     {
-      "id": "dacheng-710",
-      "number": 1093,
-      "name": "鹿角",
-      "pinyin": "lujiao",
-      "aliases": [],
-      "categoryId": "gongdu",
-      "categoryTitle": "攻毒杀虫止痒药",
-      "summary": "温肾阳，强筋骨，行血消肿",
-      "image": null,
-      "docCount": 1,
-      "charCount": 707
-    },
-    {
-      "id": "dacheng-711",
-      "number": 1094,
-      "name": "鹿角霜",
-      "pinyin": "lujiaoshuang",
-      "aliases": [],
-      "categoryId": "zhixue",
-      "categoryTitle": "止血药",
-      "summary": "温肾助阳，收敛止血",
-      "image": null,
-      "docCount": 1,
-      "charCount": 207
-    },
-    {
       "id": "dacheng-712",
       "number": 1095,
       "name": "断血流",
@@ -14143,45 +13043,6 @@
       "image": null,
       "docCount": 1,
       "charCount": 950
-    },
-    {
-      "id": "dacheng-713",
-      "number": 1096,
-      "name": "绵马贯众",
-      "pinyin": "mianmaguanzhong",
-      "aliases": [],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "清热解毒，驱虫",
-      "image": null,
-      "docCount": 1,
-      "charCount": 902
-    },
-    {
-      "id": "dacheng-714",
-      "number": 1097,
-      "name": "绵马贯众炭",
-      "pinyin": "mianmaguanzhongtan",
-      "aliases": [],
-      "categoryId": "zhixue",
-      "categoryTitle": "止血药",
-      "summary": "收涩止血",
-      "image": null,
-      "docCount": 1,
-      "charCount": 456
-    },
-    {
-      "id": "dacheng-715",
-      "number": 1098,
-      "name": "绵萆薢",
-      "pinyin": "mianbixie",
-      "aliases": [],
-      "categoryId": "qufengshi",
-      "categoryTitle": "祛风湿药",
-      "summary": "利湿去浊，祛风除痹",
-      "image": null,
-      "docCount": 1,
-      "charCount": 721
     },
     {
       "id": "dacheng-716",
@@ -14197,43 +13058,34 @@
       "charCount": 640
     },
     {
-      "id": "dacheng-717",
-      "number": 1100,
-      "name": "紫苏梗",
-      "pinyin": "zisugeng",
-      "aliases": [],
-      "categoryId": "liqi",
-      "categoryTitle": "理气药",
-      "summary": "理气宽中，止痛，安胎",
-      "image": null,
-      "docCount": 1,
-      "charCount": 606
-    },
-    {
-      "id": "dacheng-718",
-      "number": 1101,
-      "name": "紫萁贯众",
-      "pinyin": "ziqiguanzhong",
-      "aliases": [],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "清热解毒，止血，杀虫",
-      "image": null,
-      "docCount": 1,
-      "charCount": 768
-    },
-    {
       "id": "dacheng-719",
       "number": 1102,
       "name": "黑豆",
       "pinyin": "heidou",
-      "aliases": [],
+      "aliases": [
+        "淡豆豉",
+        "香豉",
+        "豉",
+        "大豆豉",
+        "大豆黄卷",
+        "卷糵",
+        "黄卷皮",
+        "豆糵",
+        "豆黄卷"
+      ],
       "categoryId": "buxu",
       "categoryTitle": "补虚药",
       "summary": "益精明目，养血祛风，利水，解毒",
-      "image": null,
-      "docCount": 1,
-      "charCount": 698
+      "image": {
+        "url": "/images/herbs/lecture/extra/ex-109.jpg",
+        "alt": "淡豆豉（用户提供图片 1）",
+        "credit": "用户提供 / 本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
+      "docCount": 4,
+      "charCount": 2948
     },
     {
       "id": "dacheng-720",
@@ -14264,19 +13116,6 @@
       "charCount": 843
     },
     {
-      "id": "dacheng-722",
-      "number": 1105,
-      "name": "滑石粉",
-      "pinyin": "huashifen",
-      "aliases": [],
-      "categoryId": "lishui",
-      "categoryTitle": "利水渗湿药",
-      "summary": "利尿通淋，清热解暑；外用祛湿敛疮",
-      "image": null,
-      "docCount": 1,
-      "charCount": 428
-    },
-    {
       "id": "dacheng-723",
       "number": 1106,
       "name": "蓝布正",
@@ -14288,19 +13127,6 @@
       "image": null,
       "docCount": 1,
       "charCount": 803
-    },
-    {
-      "id": "dacheng-724",
-      "number": 1107,
-      "name": "蜂胶",
-      "pinyin": "fengjiao",
-      "aliases": [],
-      "categoryId": "qingre",
-      "categoryTitle": "清热药",
-      "summary": "补虚弱，化浊脂，止消渴；外用解毒消肿，收敛生肌",
-      "image": null,
-      "docCount": 1,
-      "charCount": 653
     },
     {
       "id": "dacheng-725",
@@ -14394,19 +13220,6 @@
       "charCount": 1411
     },
     {
-      "id": "dacheng-732",
-      "number": 1115,
-      "name": "橘红",
-      "pinyin": "juhong",
-      "aliases": [],
-      "categoryId": "liqi",
-      "categoryTitle": "理气药",
-      "summary": "理气宽中，燥湿化痰",
-      "image": null,
-      "docCount": 1,
-      "charCount": 695
-    },
-    {
       "id": "dacheng-733",
       "number": 1116,
       "name": "颠茄草",
@@ -14418,32 +13231,6 @@
       "image": null,
       "docCount": 1,
       "charCount": 778
-    },
-    {
-      "id": "dacheng-734",
-      "number": 1117,
-      "name": "藏菖蒲",
-      "pinyin": "cangchangpu",
-      "aliases": [],
-      "categoryId": "huoxue",
-      "categoryTitle": "活血化瘀药",
-      "summary": "温胃，消炎止痛",
-      "image": null,
-      "docCount": 1,
-      "charCount": 578
-    },
-    {
-      "id": "dacheng-735",
-      "number": 1118,
-      "name": "橘核",
-      "pinyin": "juhe",
-      "aliases": [],
-      "categoryId": "liqi",
-      "categoryTitle": "理气药",
-      "summary": "理气，散结，止痛",
-      "image": null,
-      "docCount": 1,
-      "charCount": 464
     },
     {
       "id": "dacheng-736",
