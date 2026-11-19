@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-11-19T00:00:00.000Z",
+  "note": "《本草大全》与《神农本草经讲义》同源异名图片对接。仅用于同一基源的不同部位、不同采收阶段或不同称谓；不同种、泛称或基源存疑者不在此列。",
+  "groups": [
+    {
+      "target": "乌梅",
+      "source": "梅实",
+      "basis": "蔷薇科植物梅 Prunus mume",
+      "note": "梅实为梅的果实，讲义用名；乌梅为同株果实经熏制而成。"
+    },
+    {
+      "target": "芦根",
+      "source": "苇茎",
+      "basis": "禾本科植物芦苇 Phragmites australis",
+      "note": "苇茎为芦苇地上茎，芦根为同株根茎。"
+    },
+    {
+      "target": "火麻仁",
+      "source": "麻蕡",
+      "basis": "桑科植物大麻 Cannabis sativa",
+      "note": "麻蕡为大麻果实，火麻仁为同株成熟种仁。"
+    },
+    {
+      "target": "苦杏仁",
+      "source": "杏仁",
+      "basis": "蔷薇科植物杏 Prunus armeniaca",
+      "note": "讲义用名杏仁，苦杏仁为同株味苦的成熟种子。"
+    },
+    {
+      "target": "茵陈蒿",
+      "source": "茵陈",
+      "basis": "菊科植物茵陈蒿 Artemisia capillaris",
+      "note": "茵陈为春季采收的幼嫩茎叶，茵陈蒿为同株地上部分。"
+    },
+    {
+      "target": "赭石",
+      "source": "代赭石",
+      "basis": "赤铁矿矿石",
+      "note": "代赭石为讲义用名，与赭石同一矿物。"
+    }
+  ]
+}

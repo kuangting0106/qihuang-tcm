@@ -8,6 +8,7 @@ const OUT_DIR = path.join(ROOT, 'public', 'data', 'bencao-dacheng')
 const CATALOG_FILE = path.join(ROOT, 'public', 'data', 'bencao-lectures', 'catalog.json')
 const IMAGE_CACHE_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-images.json')
 const PROVIDED_IMAGE_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-provided-images.json')
+const CROSS_IMAGE_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-cross-images.json')
 const EXTRA_ENTRY_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-extra.json')
 const MERGE_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-merge.json')
 const ID_REGISTRY_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-ids.json')
@@ -365,6 +366,24 @@ function loadCatalogImageMap() {
   return map
 }
 
+function applyCrossImages(imageMap) {
+  if (!fs.existsSync(CROSS_IMAGE_FILE)) return
+  const data = JSON.parse(fs.readFileSync(CROSS_IMAGE_FILE, 'utf8'))
+  for (const item of data.groups ?? []) {
+    const targetKey = normalizeName(item.target)
+    if (imageMap.has(targetKey)) continue
+    const sourceImage = imageMap.get(normalizeName(item.source))
+    if (!sourceImage) {
+      console.warn(`cross image: 讲义中找不到 ${item.source} 的图片，跳过 ${item.target}`)
+      continue
+    }
+    imageMap.set(targetKey, {
+      ...sourceImage,
+      alt: `${item.target}（同源：${item.source}）`,
+    })
+  }
+}
+
 function loadRemoteImageMap() {
   if (!fs.existsSync(IMAGE_CACHE_FILE)) return new Map()
   try {
@@ -555,6 +574,7 @@ function main() {
   }
 
   const imageMap = loadCatalogImageMap()
+  applyCrossImages(imageMap)
   const remoteImageMap = loadRemoteImageMap()
   const providedImageMap = loadProvidedImageMap()
   const previousImageAltMap = loadPreviousImageAltMap()

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-19T09:25:22.418Z",
+  "generatedAt": "2026-11-19T10:11:14.279Z",
   "total": 620,
-  "withImages": 300,
+  "withImages": 306,
   "categories": [
     {
       "id": "jiebiao",
@@ -2341,7 +2341,14 @@
       "categoryId": "qita",
       "categoryTitle": "其他药",
       "summary": "敛肺，涩肠，生津，安蛔",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/zhongjing/zj-142.jpg",
+        "alt": "乌梅（同源：梅实）",
+        "credit": "用户提供 / 中经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 3,
       "charCount": 2134
     },
@@ -3884,7 +3891,14 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热泻火，生津止渴，除烦，止呕，利尿",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/extra/ex-135.jpg",
+        "alt": "芦根（同源：苇茎）",
+        "credit": "用户提供 / 本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 927
     },
@@ -5532,7 +5546,15 @@
       "categoryId": "xiexia",
       "categoryTitle": "泻下药",
       "summary": "润肠通便",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/xlsx/xlsx-160.jpg",
+        "alt": "火麻仁（同源：麻蕡）",
+        "credit": "用户提供 / 中草药图片自搜表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "latin": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 745
     },
@@ -6058,7 +6080,14 @@
       "categoryId": "huatan",
       "categoryTitle": "化痰止咳平喘药",
       "summary": "降气止咳平喘，润肠通便",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/xiajing/xj-093.jpg",
+        "alt": "苦杏仁（同源：杏仁）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1370
     },
@@ -8057,7 +8086,15 @@
       "categoryId": "qita",
       "categoryTitle": "其他药",
       "summary": "清利湿热，利胆退黄",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/xlsx/xlsx-061.jpg",
+        "alt": "茵陈蒿（同源：茵陈）",
+        "credit": "用户提供 / 中草药图片自搜表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "latin": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 1268
     },
@@ -12166,7 +12203,14 @@
       "categoryId": "pinggan",
       "categoryTitle": "平肝息风药",
       "summary": "平肝潜阳，重镇降逆，凉血止血",
-      "image": null,
+      "image": {
+        "url": "/images/herbs/lecture/xiajing/xj-004.jpg",
+        "alt": "赭石（同源：代赭石）",
+        "credit": "用户提供 / 下经本草表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
       "docCount": 1,
       "charCount": 666
     },
