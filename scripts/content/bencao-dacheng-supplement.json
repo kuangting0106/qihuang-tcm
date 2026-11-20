@@ -691,6 +691,14 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-91.jpg",
+          "alt": "姜黄（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
         }
       ]
     },
@@ -1541,6 +1549,14 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-47.jpg",
+          "alt": "喜树果（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
         }
       ]
     },
@@ -1667,30 +1683,6 @@
         {
           "file": "/images/herbs/supplement/supp-201.jpg",
           "alt": "三白草（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        }
-      ]
-    },
-    {
-      "id": "dacheng-325",
-      "name": "大蓟",
-      "aliases": [],
-      "note": "",
-      "images": [
-        {
-          "file": "/images/herbs/supplement/supp-83.jpg",
-          "alt": "大蓟（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/supplement/supp-84.jpg",
-          "alt": "大蓟（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -3348,6 +3340,14 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-218.jpg",
+          "alt": "竹节参（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
         }
       ]
     },
@@ -3593,6 +3593,56 @@
           "file": "/images/herbs/supplement/supp-233.jpg",
           "alt": "颠茄草（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "id": "dacheng-632",
+      "name": "水飞蓟",
+      "aliases": [],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-83.jpg",
+          "alt": "水飞蓟（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-84.jpg",
+          "alt": "水飞蓟（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "id": "dacheng-395",
+      "name": "蓍草",
+      "aliases": [
+        "蓍实"
+      ],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-065.jpg",
+          "alt": "蓍草（中草药图片自搜图1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-066.jpg",
+          "alt": "蓍草（中草药图片自搜图2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"

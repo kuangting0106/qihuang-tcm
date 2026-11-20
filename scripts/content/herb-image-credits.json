@@ -7842,6 +7842,65 @@
           "sourceUrl": ""
         }
       ]
+    },
+    {
+      "name": "蜂子，蜂蜜，蜂蜡",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-146.jpg",
+          "alt": "蜂蜜（中草药图片自搜图1）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-147.jpg",
+          "alt": "蜂蜡（中草药图片自搜图2）",
+          "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ],
+      "file": "/images/herbs/lecture/xlsx/xlsx-146.jpg"
+    },
+    {
+      "name": "贝子",
+      "credit": "用户提供 / 下经本草表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xiajing/xj-085.jpg",
+          "alt": "贝子（用户提供图片 1）",
+          "credit": "用户提供 / 下经本草表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ],
+      "file": "/images/herbs/lecture/xiajing/xj-085.jpg"
+    },
+    {
+      "name": "新绛",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-21.jpg",
+          "alt": "新绛（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ],
+      "file": "/images/herbs/supplement/supp-21.jpg"
     }
   ]
 }

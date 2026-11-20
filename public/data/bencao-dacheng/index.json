@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-20T10:37:36.306Z",
+  "generatedAt": "2026-11-20T12:40:28.806Z",
   "total": 620,
-  "withImages": 491,
+  "withImages": 493,
   "categories": [
     {
       "id": "jiebiao",
@@ -9422,12 +9422,21 @@
       "aliases": [
         "蓍",
         "蜈蚣草",
-        "飞天蜈蚣"
+        "飞天蜈蚣",
+        "蓍实"
       ],
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "解毒利湿，活血止痛",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/lecture/xlsx/xlsx-065.jpg",
+        "alt": "蓍草（中草药图片自搜图1）",
+        "credit": "用户提供 / 中草药图片自搜表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/lecture/xlsx/xlsx-065.jpg"
+      },
       "docCount": 1,
       "charCount": 840
     },
@@ -13741,7 +13750,15 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热解毒，疏肝利胆",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-83.jpg",
+        "alt": "水飞蓟（补充本草图1）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-83.jpg"
+      },
       "docCount": 1,
       "charCount": 620
     },

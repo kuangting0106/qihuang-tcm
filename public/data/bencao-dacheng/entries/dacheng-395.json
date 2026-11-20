@@ -5,7 +5,8 @@
   "aliases": [
     "蓍",
     "蜈蚣草",
-    "飞天蜈蚣"
+    "飞天蜈蚣",
+    "蓍实"
   ],
   "categoryId": "qingre",
   "categoryTitle": "清热药",
@@ -81,6 +82,25 @@
   ],
   "id": "dacheng-395",
   "summary": "解毒利湿，活血止痛",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/lecture/xlsx/xlsx-065.jpg",
+      "alt": "蓍草（中草药图片自搜图1）",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-065.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/xlsx/xlsx-066.jpg",
+      "alt": "蓍草（中草药图片自搜图2）",
+      "credit": "用户提供 / 中草药图片自搜表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-066.jpg"
+    }
+  ],
   "docCount": 1
 }
