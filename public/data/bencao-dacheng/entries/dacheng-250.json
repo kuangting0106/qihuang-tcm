@@ -82,7 +82,17 @@
   ],
   "id": "dacheng-250",
   "summary": "清热，解渴，利尿",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-40.jpg",
+      "alt": "西瓜皮（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-40.jpg"
+    }
+  ],
   "docCount": 2,
   "variants": [
     {

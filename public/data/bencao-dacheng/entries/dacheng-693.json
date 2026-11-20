@@ -76,6 +76,16 @@
   "categoryTitle": "清热药",
   "id": "dacheng-693",
   "summary": "益胃生津，滋阴清热",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-85.jpg",
+      "alt": "铁皮石斛（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-85.jpg"
+    }
+  ],
   "docCount": 1
 }

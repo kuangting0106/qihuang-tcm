@@ -68,10 +68,16 @@
       "label": "附方",
       "text": "①治胃痛、牙痛：竹叶椒果3～6g，山姜根9g，研末。温开水送服。（《江西草药》）\n ②治虚寒胃痛：竹叶椒果6g，生姜9g。水煎服。（《全国中草药汇编》）\n ③治腹痛泄泻：竹叶椒6～9g，煎服。（《安徽中草药》）\n ④治蛔虫性腹痛：竹叶椒6g，苦楝皮9g。水煎服。服时兑醋适量。（《安徽中草药》）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "竹叶椒，现在都叫花椒古代叫蜀椒",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "芸香科植物竹叶椒 Zanthoxylum armatum DC.的干燥成熟果实。",
-  "charCount": 883,
+  "charCount": 898,
   "documents": [
     {
       "file": "299.txt",
@@ -81,6 +87,16 @@
   ],
   "id": "dacheng-252",
   "summary": "温中燥湿，散寒止痛，驱虫止痒",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-186.jpg",
+      "alt": "竹叶椒（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-186.jpg"
+    }
+  ],
   "docCount": 1
 }

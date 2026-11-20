@@ -86,6 +86,25 @@
   ],
   "id": "dacheng-286",
   "summary": "清热解毒，截疟，止痢；外用腐蚀赘疣",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-41.jpg",
+      "alt": "鸦胆子（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-41.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-47.jpg",
+      "alt": "鸦胆子（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-47.jpg"
+    }
+  ],
   "docCount": 1
 }

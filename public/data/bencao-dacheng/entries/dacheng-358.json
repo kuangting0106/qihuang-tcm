@@ -68,10 +68,16 @@
       "label": "附方",
       "text": "①利小便，治膀胱结石：a.连钱草、龙须草、车前草各15g，水煎服。（《浙江民间草药》）b.连钱草100g，藕节100g。水煎服。（《吉林中草药》）\n ②治肾及输尿管结石：连钱草120g，煎水冲蜂蜜，日服2次。（《吉林中草药》）\n ③治肾炎水肿：连钱草、萹蓄各30g，荠菜花15g。煎服。（《上海常用中草药》）\n ④治湿热黄疸：连钱草60g，婆婆针75g。水煎服。（《浙江药用植物志》）\n ⑤治胆囊炎，胆石症：连钱草、蒲公英各30g，香附子15g。煎服，每日1剂。（《浙江药用植物志》）\n ⑥治跌打损伤：连钱草（鲜）30g，杜衡根（鲜）3g，捣汁，水酒冲服；药渣捣烂敷患处。（《江西草药》）\n ⑦治痈肿：鲜连钱草、鲜马齿苋等量。煎水熏洗。（《上海常用中草药》）\n ⑧治疮疖，丹毒：鲜连钱草、鲜车前草各等分。捣烂绞汁，加等量白酒，擦患处。（《吉林中草药》）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "连钱草，也叫金钱草、金钱薄荷",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "唇形科植物活血丹 Glechoma longituba （Nakai）Kupr.的干燥地上部分。",
-  "charCount": 1112,
+  "charCount": 1126,
   "documents": [
     {
       "file": "426.txt",
@@ -81,6 +87,25 @@
   ],
   "id": "dacheng-358",
   "summary": "利湿通淋，清热解毒，散瘀消肿",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-203.jpg",
+      "alt": "连钱草（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-203.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-237.jpg",
+      "alt": "连钱草（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-237.jpg"
+    }
+  ],
   "docCount": 1
 }

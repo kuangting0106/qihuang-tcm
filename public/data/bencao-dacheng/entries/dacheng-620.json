@@ -84,6 +84,25 @@
   "categoryTitle": "化痰止咳平喘药",
   "id": "dacheng-620",
   "summary": "养阴生津，润肺清心",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-118.jpg",
+      "alt": "山麦冬（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-118.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-119.jpg",
+      "alt": "山麦冬（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-119.jpg"
+    }
+  ],
   "docCount": 1
 }

@@ -67,10 +67,16 @@
       "label": "药理",
       "text": "具有显著的免疫促进、延缓衰老作用；改善实验性呼吸窘迫综合征；增强耐缺氧能力；镇静、镇痛、抗炎，抗病原微生物等。",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "红芪，与黄芪外层表皮颜色不同",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "豆科植物多序岩黄芪 Hedysarum polybotrys Hand.-Mazz.的干燥根。",
-  "charCount": 1034,
+  "charCount": 1048,
   "documents": [
     {
       "file": "178.txt",
@@ -80,7 +86,17 @@
   ],
   "id": "dacheng-158",
   "summary": "补气升阳，固表止汗，利水消肿。生津养血，行滞通痹，托毒排脓，敛疮生肌",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-132.jpg",
+      "alt": "红芪（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-132.jpg"
+    }
+  ],
   "docCount": 2,
   "variants": [
     {

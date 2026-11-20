@@ -61,10 +61,16 @@
       "label": "附方",
       "text": "①治高血压：豨莶草、臭梧桐、夏枯草各9g。水煎服，每日1次。（《青岛中草药手册》）\n ②治慢性肾炎：豨莶草30g，地耳草15g。水煎冲红糖服。（《浙江药用植物志》）\n ③治神经衰弱：豨莶草、丹参各15g，煎服。（《安徽中草药》）\n ④治肠风下血：豨莶草，酒蒸为末，炼蜜丸。每服4g，白汤下。（《本草汇言》引《方脉正宗》）\n ⑤治风热上攻，牙齿疼痛：豨莶草，霜后收之，晒干为粗末。每用9g，以滚汤泡，任意漱之，醋煎尤妙。（《古今医统》）\n ⑥治急性黄疸型传染性肝炎：豨莶草30g，山栀子9g，车前草、广金钱草各15g。加水1000ml，煎至300ml，分2次服，每日1剂。（《全国中草药汇编》）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "豨莶草，别名粘苍子、肥猪草",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "菊科植物豨莶 Siegesbeckia orientalis L.的干燥地上部分。",
-  "charCount": 994,
+  "charCount": 1007,
   "documents": [
     {
       "file": "472.txt",
@@ -74,6 +80,25 @@
   ],
   "id": "dacheng-399",
   "summary": "祛风湿，利关节，解毒",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-159.jpg",
+      "alt": "豨莶草（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-159.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-160.jpg",
+      "alt": "豨莶草（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-160.jpg"
+    }
+  ],
   "docCount": 1
 }

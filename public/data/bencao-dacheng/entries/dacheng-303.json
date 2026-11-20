@@ -67,10 +67,16 @@
       "label": "附方",
       "text": "①治目昏：楮实子、荆芥穗、地骨皮各等分。上为细末，炼蜜为丸，梧桐子大。每服二十丸，米汤下。（《儒门事亲》）\n ②治石疽，状如痤疖而皮厚，亦治金疮：楮实子敷之。（《千金要方》）\n ③治水肿：楮实子6g，大腹皮9g。水煎服。（《青岛中草药手册》）\n ④治喉痹喉风：楮实子（阴干），每用一个为末，井华水服之，重者两个。（《濒湖集简方》）\n ⑤治骨鲠：楮实子（为末）30g，霜梅肉90g。上为丸，弹子大，噙化咽下。（《丹台玉案》化骨神丹）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "楮实子，就是构树子、也叫构实、楮实",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "桑科植物构树 Broussonetia papyrifera （L.）Vent.的干燥成熟果实。",
-  "charCount": 978,
+  "charCount": 995,
   "documents": [
     {
       "file": "366.txt",
@@ -80,6 +86,25 @@
   ],
   "id": "dacheng-303",
   "summary": "补肾清肝，明目，利尿",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-140.jpg",
+      "alt": "楮实子（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-140.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-141.jpg",
+      "alt": "楮实子（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-141.jpg"
+    }
+  ],
   "docCount": 1
 }

@@ -87,6 +87,25 @@
   ],
   "id": "dacheng-238",
   "summary": "散结消肿，攻毒疗疮",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-96.jpg",
+      "alt": "木鳖子（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-96.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-238.jpg",
+      "alt": "木鳖子（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-238.jpg"
+    }
+  ],
   "docCount": 1
 }

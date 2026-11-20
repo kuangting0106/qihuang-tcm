@@ -75,10 +75,16 @@
       "label": "附方",
       "text": "①治感冒发热，咳嗽，咽喉痛，口干烦渴，维生素C缺乏症（坏血病）：每用（余甘子）鲜果10～30个，水煎服。（广州部队《常用中草药手册》）\n ②治哮喘：余甘子21个，先煮猪心肺，去浮沫再加余甘子煮熟连汤吃。（《昆明民间常用草药》）\n ③治食积呕吐，腹痛，泄泻：余甘子果5～10枚或盐渍果5～8枚嚼食；或盐浸果液1汤匙，开水冲服。（《福建中草药》）\n ④治高血压病：余甘子鲜果5～8枚生食，日服2次。（《福建药物志》）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "余甘子，也叫土橄榄",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "大戟科植物余甘子 Phyllanthus emblica L.的干燥成熟果实。",
-  "charCount": 889,
+  "charCount": 898,
   "documents": [
     {
       "file": "312.txt",
@@ -88,6 +94,25 @@
   ],
   "id": "dacheng-259",
   "summary": "清热凉血，消食健胃，生津止咳",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-31.jpg",
+      "alt": "余甘子（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-31.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-44.jpg",
+      "alt": "余甘子（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-44.jpg"
+    }
+  ],
   "docCount": 1
 }

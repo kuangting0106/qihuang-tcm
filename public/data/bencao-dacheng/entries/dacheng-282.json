@@ -85,6 +85,16 @@
   ],
   "id": "dacheng-282",
   "summary": "杀虫，下乳，利水消肿",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-245.jpg",
+      "alt": "南瓜子（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-245.jpg"
+    }
+  ],
   "docCount": 1
 }

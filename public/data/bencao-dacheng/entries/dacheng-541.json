@@ -61,10 +61,16 @@
       "label": "附方",
       "text": "①利膈间滞气，助肝肾亏损：九香虫（半生半熟）30g，车前子（微炒）12g，陈皮12g，白术15g，杜仲（酥炙）24g。上为细末，炼蜜丸如梧桐子大。每服4.5g，盐白汤或盐酒送下，空心服，临卧仍服一次。（《摄生众妙方》乌龙丸）\n ②治慢性肝炎之胁痛：九香虫150g，参三七200g，炙全蝎100g，研极细末，水泛为丸如苏子大。每服1.5g。早、晚各1次，开水送下。（《虫类药的应用》宁痛丸）\n ③治喘息型慢性气管炎：将九香虫用火焙焦，研成粉与鸡蛋搅匀，再用芝麻油或棉油煎鸡蛋（不用猪油），每日1次，每次用鸡蛋、九香虫各1个。服药期间，忌食猪油和吸烟。［《河南中医学院学报》1979，（4）：66］\n ④治血管瘤：九香虫若干只，以镊子两把，一把夹住九香虫前半部，另一把夹破虫体尾部，挤出其腹腔内容物，涂在血管瘤上。视血管瘤面积的大小，涂布均匀为度，每日3～4次，连用数日［《中医杂志》1987，（11）：40］",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "九香虫，农村叫打屁虫，臭虫。",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "蝽科昆虫九香虫 Aspongopus chinensis Dallas的干燥体。",
-  "charCount": 834,
+  "charCount": 848,
   "documents": [
     {
       "file": "632.txt",
@@ -74,6 +80,34 @@
   ],
   "id": "dacheng-541",
   "summary": "理气止痛，温中助阳",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-165.jpg",
+      "alt": "九香虫（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-165.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-178.jpg",
+      "alt": "九香虫（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-178.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-179.jpg",
+      "alt": "九香虫（补充本草图3）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-179.jpg"
+    }
+  ],
   "docCount": 1
 }

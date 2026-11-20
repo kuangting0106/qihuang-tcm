@@ -84,6 +84,25 @@
   ],
   "id": "dacheng-463",
   "summary": "泻热行滞，通便，利水",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-207.jpg",
+      "alt": "番泻叶（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-207.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-208.jpg",
+      "alt": "番泻叶（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-208.jpg"
+    }
+  ],
   "docCount": 1
 }

@@ -71,10 +71,16 @@
       "label": "附方",
       "text": "①治闭经：穿破石根15～30g。水煎服。（《广西本草选编》）\n ②治肺热咯血：穿破石30g，去粗皮，炒焦，水煎，冲糖服，每日3次。（《浙江药用植物志》）\n ③治疮痈肿：穿破石鲜根皮或鲜叶，捣烂外敷。（《广西本草选编》）\n ④治外痔出血：鲜穿破石120g，水煎服。另用红马蹄草捣烂外敷患处。连续3次。（《浙江民间常用草药》）\n ⑤治胃、十二指肠溃疡疼痛：鲜穿破石60g。水煎，3次分服。（《全国中草药汇编》）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "穿破石，寄生在桑科构棘树上，类似于桑寄生。",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "桑科植物构棘 Maclura cochinchinensis （Lour.）Corner的干燥根。",
-  "charCount": 924,
+  "charCount": 945,
   "documents": [
     {
       "file": "221.txt",
@@ -84,6 +90,16 @@
   ],
   "id": "dacheng-194",
   "summary": "祛风通络，清热除湿，解毒消肿",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-38.jpg",
+      "alt": "穿破石（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-38.jpg"
+    }
+  ],
   "docCount": 1
 }

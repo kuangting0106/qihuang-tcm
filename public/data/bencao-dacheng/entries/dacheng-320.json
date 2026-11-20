@@ -73,10 +73,16 @@
       "label": "附方",
       "text": "①治蛔虫病、绦虫病、蛲虫病：鹤虱6g。研末水调服。（《湖北中草药志》）\n ②治钩虫病：鹤虱45g，浓煎两（次）汁合并，加白糖适量调味，晚上临睡前服，连用2剂。（《浙江药用植物志》）\n ③治虫积腹痛：鹤虱9g，南瓜子、槟榔各15g。水煎服。（《湖北中草药志》）\n ④治蛲虫病肛痒：鹤虱、花椒、白鲜皮各15g，苦楝根皮9g。水煎，趁热熏洗或坐浴。（《浙江药用植物志》）\n ⑤治阴痒：鹤虱6g。煎水熏洗阴部。（《湖北中草药志》）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "鹤虱，也叫鬼虱、野人参。菊科植物的果实种子",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "菊科植物天名精 Carpesium abrotanoides L.的干燥成熟果实。",
-  "charCount": 850,
+  "charCount": 871,
   "documents": [
     {
       "file": "385.txt",
@@ -86,6 +92,16 @@
   ],
   "id": "dacheng-320",
   "summary": "杀虫消积",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-191.jpg",
+      "alt": "鹤虱（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-191.jpg"
+    }
+  ],
   "docCount": 1
 }

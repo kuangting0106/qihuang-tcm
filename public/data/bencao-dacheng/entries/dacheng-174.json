@@ -73,10 +73,16 @@
       "label": "附方",
       "text": "①治急性痢疾：金果榄研细粉。每次服1g，每日3次，连服5～7天。（江西《草药手册》）\n ②治肾炎：金果榄10g，金钱草、车前草各30g。水煎服。（《中国民族药志》）\n ③治痈疖：金果榄磨水，加冰片少量，调匀搽患处。（《中国民族药志》）\n ④治水火烫伤：金果榄、土大黄、生地榆各等量。研细末，麻油调，涂患处。（《安徽中草药》）\n ⑤治接触性皮炎：鲜金果榄，煎水，外洗。（《云南中草药选》）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "金果榄，别名青牛胆",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "防己科植物青牛胆 Tinospora sagittata （Oliv.）Gagnep的干燥块根。",
-  "charCount": 912,
+  "charCount": 921,
   "documents": [
     {
       "file": "200.txt",
@@ -86,6 +92,16 @@
   ],
   "id": "dacheng-174",
   "summary": "清热解毒，利咽，止痛",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-36.jpg",
+      "alt": "金果榄（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-36.jpg"
+    }
+  ],
   "docCount": 1
 }

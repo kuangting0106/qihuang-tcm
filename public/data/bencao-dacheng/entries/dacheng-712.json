@@ -2,7 +2,9 @@
   "number": 1095,
   "name": "断血流",
   "pinyin": "duanxueliu",
-  "aliases": [],
+  "aliases": [
+    "灯笼草"
+  ],
   "quote": null,
   "profile": {
     "flavorTags": [
@@ -66,11 +68,17 @@
       "label": "贮藏",
       "text": "置干燥处，防潮。",
       "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "断血流，现在叫灯笼草",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "本品为唇形科植物灯笼草Clinopodium polycephalum（Vaniot）C.Y.Wu et Hsuan或风轮菜Clinopodium chinense（Benth.）O.Kuntze的干燥地上部分。夏季开花前采收，除去泥沙，晒干。",
   "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
-  "charCount": 950,
+  "charCount": 960,
   "documents": [
     {
       "file": "chp-516.json",
@@ -82,6 +90,16 @@
   "categoryTitle": "止血药",
   "id": "dacheng-712",
   "summary": "收敛止血",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-221.jpg",
+      "alt": "断血流（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-221.jpg"
+    }
+  ],
   "docCount": 1
 }

@@ -75,6 +75,25 @@
   ],
   "id": "dacheng-356",
   "summary": "祛风除湿，舒筋活络",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-157.jpg",
+      "alt": "伸筋草（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-157.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-158.jpg",
+      "alt": "伸筋草（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-158.jpg"
+    }
+  ],
   "docCount": 1
 }

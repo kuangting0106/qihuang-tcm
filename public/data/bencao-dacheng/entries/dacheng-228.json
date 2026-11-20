@@ -79,10 +79,16 @@
       "label": "附方",
       "text": "①治热厥心痛，或发或止，久治不愈者：川楝子、玄胡各30g，上为细末。每服9g，酒调下。（《保命集》金铃子散）\n ②治肋间神经痛：川楝子9g，橘络6g。水煎服。（《浙江药用植物志》）\n ③治妊娠心气痛：川楝子、茴香（炒）各9g，艾叶末（盐炒）4.5g。上作一服，水二钟，煎至一钟。不拘时服。（《卫生宝鉴》火龙散）\n ④治冻疮：川楝子120g。水煎后乘热熏患处，再将药水泡洗。（《湖北中草药志》）　\n ⑤治寒疝疼痛：川楝子12g，木香9g，茴香6g，吴茱萸（汤泡）3g。水煎。（《医方集解》导气汤）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "川楝子，多叫苦楝子、楝实。",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "楝科植物川楝 Melia toosendan Sieb.et Zucc.的干燥成熟果实。",
-  "charCount": 2133,
+  "charCount": 2146,
   "documents": [
     {
       "file": "264.txt",
@@ -92,7 +98,26 @@
   ],
   "id": "dacheng-228",
   "summary": "疏肝泄热，行气止痛，杀虫",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-16.jpg",
+      "alt": "川楝子（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-16.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-17.jpg",
+      "alt": "川楝子（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-17.jpg"
+    }
+  ],
   "docCount": 2,
   "variants": [
     {

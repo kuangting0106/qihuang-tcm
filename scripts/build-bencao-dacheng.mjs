@@ -10,6 +10,7 @@ const IMAGE_CACHE_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-i
 const PROVIDED_IMAGE_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-provided-images.json')
 const CROSS_IMAGE_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-cross-images.json')
 const EXTRA_ENTRY_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-extra.json')
+const SUPPLEMENT_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-supplement.json')
 const MERGE_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-merge.json')
 const ID_REGISTRY_FILE = path.join(ROOT, 'scripts', 'content', 'bencao-dacheng-ids.json')
 
@@ -404,6 +405,16 @@ function loadProvidedImageMap() {
   }
 }
 
+function loadSupplementMap() {
+  if (!fs.existsSync(SUPPLEMENT_FILE)) return new Map()
+  try {
+    const data = JSON.parse(fs.readFileSync(SUPPLEMENT_FILE, 'utf8'))
+    return new Map((data.items ?? []).map((item) => [item.id, item]))
+  } catch {
+    return new Map()
+  }
+}
+
 function mergeEntry(base, extra) {
   if (!base) return extra
   if (!extra) return base
@@ -577,6 +588,7 @@ function main() {
   applyCrossImages(imageMap)
   const remoteImageMap = loadRemoteImageMap()
   const providedImageMap = loadProvidedImageMap()
+  const supplementMap = loadSupplementMap()
   const previousImageAltMap = loadPreviousImageAltMap()
   const idRegistry = loadIdRegistry()
   let nextIdNumber =
@@ -605,12 +617,32 @@ function main() {
             ...(thumbUrlFor(image.url) ? { thumbUrl: thumbUrlFor(image.url) } : {}),
           }
         : null
+      const supplement = supplementMap.get(id)
+      const images = imageWithThumb ? [imageWithThumb] : []
+      for (const supplementImage of supplement?.images ?? []) {
+        if (!images.some((item) => item.url === supplementImage.file)) {
+          images.push({ ...supplementImage, url: supplementImage.file })
+        }
+      }
+      const supplementSections = supplement?.note
+        ? [
+            {
+              kind: 'supplement',
+              label: '补充备注',
+              text: supplement.note,
+              source: '《补充本草》',
+            },
+          ]
+        : []
       const summarySource = entry.profile.effects || entry.profile.indications || entry.quote?.text || entry.sourceText
       return {
         ...entry,
         id,
         summary: oneLine(summarySource).slice(0, 90),
-        images: imageWithThumb ? [imageWithThumb] : [],
+        aliases: [...new Set([...(entry.aliases ?? []), ...(supplement?.aliases ?? [])])],
+        sections: [...entry.sections, ...supplementSections],
+        charCount: entry.charCount + supplementSections.reduce((sum, item) => sum + item.text.length, 0),
+        images,
         docCount: entry.documents.length,
       }
     })

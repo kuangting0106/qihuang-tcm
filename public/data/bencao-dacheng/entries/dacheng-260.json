@@ -89,6 +89,16 @@
   ],
   "id": "dacheng-260",
   "summary": "健脾消食，止咳祛痰，活血散瘀",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-190.jpg",
+      "alt": "沙棘（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-190.jpg"
+    }
+  ],
   "docCount": 1
 }

@@ -1814,6 +1814,14 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-123.jpg",
+          "alt": "秦艽（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
         }
       ]
     },
@@ -4372,6 +4380,22 @@
           "file": "/images/herbs/lecture/xlsx/xlsx-107.jpg",
           "alt": "姑活（用户提供图片 1）",
           "credit": "用户提供 / 中草药图片自搜表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-6.jpg",
+          "alt": "姑活（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-7.jpg",
+          "alt": "姑活（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
@@ -7626,6 +7650,200 @@
           "file": "/images/herbs/lecture/extra/ex-186.jpg",
           "alt": "香附（用户提供图片 2）",
           "credit": "用户提供 / 本草表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "防葵",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-4.jpg",
+          "alt": "防葵（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-5.jpg",
+          "alt": "防葵（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "盖草",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-14.jpg",
+          "alt": "盖草（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-15.jpg",
+          "alt": "盖草（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "松萝",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-11.jpg",
+          "alt": "松萝（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-12.jpg",
+          "alt": "松萝（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "芜荑",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-8.jpg",
+          "alt": "芜荑（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-9.jpg",
+          "alt": "芜荑（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-10.jpg",
+          "alt": "芜荑（补充本草图3）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "青蘘",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-1.jpg",
+          "alt": "青蘘（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "冬葵子",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-6.jpg",
+          "alt": "冬葵子（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-7.jpg",
+          "alt": "冬葵子（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "析蓂子",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-2.jpg",
+          "alt": "析蓂子（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-3.jpg",
+          "alt": "析蓂子（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "川楝子",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-16.jpg",
+          "alt": "川楝子（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-17.jpg",
+          "alt": "川楝子（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "地龙",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-20.jpg",
+          "alt": "地龙（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "蜈蚣",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-242.jpg",
+          "alt": "蜈蚣（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"

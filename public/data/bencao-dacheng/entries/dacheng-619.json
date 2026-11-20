@@ -2,7 +2,11 @@
   "number": 1002,
   "name": "大叶紫珠",
   "pinyin": "dayezizhu",
-  "aliases": [],
+  "aliases": [
+    "紫珠",
+    "大叶斑鸠米",
+    "止血草"
+  ],
   "quote": null,
   "profile": {
     "flavorTags": [
@@ -68,11 +72,17 @@
       "label": "贮藏",
       "text": "置通风干燥处。",
       "source": "《中华人民共和国药典》2020年版一部"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "大叶紫珠，现在多叫紫珠、也叫大叶斑鸠米，止血草",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "本品为马鞭草科植物大叶紫珠Callicarpa macrophylla Vahl的干燥叶或带叶嫩枝。夏、秋二季采摘，晒干。",
   "sourceNote": "据《中华人民共和国药典》2020年版一部“药材和饮片”条目整理；检验、含量测定等实验室项目从略。",
-  "charCount": 689,
+  "charCount": 712,
   "documents": [
     {
       "file": "chp-24.json",
@@ -84,6 +94,16 @@
   "categoryTitle": "止血药",
   "id": "dacheng-619",
   "summary": "散瘀止血，消肿止痛",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-217.jpg",
+      "alt": "大叶紫珠（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-217.jpg"
+    }
+  ],
   "docCount": 1
 }

@@ -82,6 +82,16 @@
   "categoryTitle": "活血化瘀药",
   "id": "dacheng-674",
   "summary": "化瘀止血，理气止痛",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-105.jpg",
+      "alt": "降香（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-105.jpg"
+    }
+  ],
   "docCount": 1
 }

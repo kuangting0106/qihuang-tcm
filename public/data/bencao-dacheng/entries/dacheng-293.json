@@ -4,7 +4,8 @@
   "pinyin": "yizhi",
   "aliases": [
     "益智子",
-    "摘艼子"
+    "摘艼子",
+    "益智仁"
   ],
   "categoryId": "souse",
   "categoryTitle": "收涩药",
@@ -71,10 +72,16 @@
       "label": "附方",
       "text": "①治妊娠遗尿不禁：益智仁、白薇、白芍各等分。为末。每服9g，加盐0.9g，滚白汤调下。（《丹台玉案》）\n ②治小儿遗尿，亦治白浊：益智仁、白茯苓各等分。上为末。每服3g，空心米汤调下。（《补要袖珍小儿方论》益智仁散）\n ③治小便赤浊：益智仁、茯神各60g，远志、甘草（水煮）各240g。为末，酒糊丸，梧桐子大。空心姜汤下五十丸。（《纲目》）\n ④治妇人崩中：益智，炒研细，米饮入盐服3g。（《经效产宝》）\n ⑤治胎漏下血：益智仁15g，缩砂仁30g，为末。每服9g。空心白汤下，日二服。（胡氏《济阴方》）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "益智，现在叫益智仁",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "姜科植物益智 Alpinia oxyphylla Miq.的干燥成熟果实。",
-  "charCount": 1162,
+  "charCount": 1171,
   "documents": [
     {
       "file": "355.txt",
@@ -84,6 +91,16 @@
   ],
   "id": "dacheng-293",
   "summary": "暖肾固精缩尿，温脾止泻摄唾",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-253.jpg",
+      "alt": "益智（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-253.jpg"
+    }
+  ],
   "docCount": 1
 }

@@ -65,6 +65,25 @@
   "categoryTitle": "活血化瘀药",
   "id": "dacheng-628",
   "summary": "维吾尔医：补肾活血，强筋骨，营养神经，调节异常体液",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-102.jpg",
+      "alt": "天山雪莲（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-102.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-103.jpg",
+      "alt": "天山雪莲（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-103.jpg"
+    }
+  ],
   "docCount": 1
 }

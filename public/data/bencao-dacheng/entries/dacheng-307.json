@@ -75,10 +75,16 @@
       "label": "附方",
       "text": "①治胃癌，直肠癌，肝癌，膀胱癌：喜树果研末，每日1次，每次6g。（《辨证施治》）\n ②治白血病：喜树果30g，仙鹤草、鹿衔草、岩株、银花、凤尾草各30g，甘草9g。煎汁代茶饮。（《本草骈比》）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "喜树果，又叫旱莲木",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "蓝果树科植物喜树 Camptotheca acuminata Decne.的干燥成熟果实。",
-  "charCount": 789,
+  "charCount": 798,
   "documents": [
     {
       "file": "371.txt",
@@ -88,6 +94,25 @@
   ],
   "id": "dacheng-307",
   "summary": "清热解毒，散结消癥",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-45.jpg",
+      "alt": "喜树果（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-45.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-48.jpg",
+      "alt": "喜树果（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-48.jpg"
+    }
+  ],
   "docCount": 1
 }

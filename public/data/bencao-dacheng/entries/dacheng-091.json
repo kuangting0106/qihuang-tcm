@@ -6,7 +6,8 @@
     "胡麻",
     "巨胜",
     "狗虱",
-    "脂麻"
+    "脂麻",
+    "芝麻"
   ],
   "categoryId": "buxu",
   "categoryTitle": "补虚药",
@@ -97,10 +98,16 @@
       "label": "附方",
       "text": "①治小便尿血：黑芝麻三升，杵末，以东流水二升浸一宿，平旦绞汁，顿热服。（《千金要方》）\n ②治白发还黑：黑芝麻，九蒸九暴，末之，以枣膏丸服之。（《千金要方》）\n ③治风眩，能返白发为黑：黑芝麻、白茯苓、甘菊花等分，炼蜜丸如梧桐子大，每服9g，清晨白汤下。（《医灯续焰》巨胜丸）\n ④治偶感风寒：黑芝麻炒焦，乘热，擂酒饮之，暖卧取微汗出良。（《纲目》）\n ⑤治妇人乳少：黑芝麻炒研，入盐少许食之。（《纲目》引《唐氏方》）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "芝麻，又叫胡麻。古代叫青蘘",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "脂麻科植物脂麻 Sesamum indicum L.的干燥成熟种子。",
-  "charCount": 2005,
+  "charCount": 2018,
   "documents": [
     {
       "file": "91.txt",
@@ -124,6 +131,15 @@
       "sourceUrl": "",
       "latin": "",
       "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-1.jpg",
+      "alt": "黑芝麻（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-1.jpg"
     }
   ],
   "docCount": 2

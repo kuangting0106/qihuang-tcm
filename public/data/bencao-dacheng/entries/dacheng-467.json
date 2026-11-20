@@ -73,10 +73,16 @@
       "label": "附方",
       "text": "①治皮肤癣疮：土荆皮30g，白酒60g，浸泡7天，搽患处，搽前用老生姜片擦破癣痂。（《安徽中草药》）\n ②治癞：土荆皮1斤，白及、尖槟榔、白芷各30g，研细擦三天。（《疡医大全》）\n ③治癣：土荆皮30g，斑猫二个，鸡心槟榔三个，番木鳖四个，火酒半斤，浸一伏时，蘸搓癣上。（《疡医大全》）\n ④治干癣：土荆皮15g，樟脑3g，白酒60g，浸3天后搽患处。（《青岛草药手册》）\n ⑤治湿疹作痒：土荆皮，煎浓汁，温洗患处。（《安徽中草药》）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "土荆皮，荆芥的根皮",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "松科植物金钱松 Pseudolarix amabilis （Nelson）Rehd.的干燥根皮或近根树皮。",
-  "charCount": 1011,
+  "charCount": 1020,
   "documents": [
     {
       "file": "547.txt",
@@ -86,6 +92,16 @@
   ],
   "id": "dacheng-467",
   "summary": "杀虫，疗癣，止痒",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-13.jpg",
+      "alt": "土荆皮（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-13.jpg"
+    }
+  ],
   "docCount": 1
 }

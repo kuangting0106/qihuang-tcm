@@ -77,10 +77,16 @@
       "label": "附方",
       "text": "①治癣：路路通10个（烧存性），白砒0.15g。共末，香油搽。（《纲目拾遗》引《德胜堂方》）\n ②治荨麻疹：路路通500g，煎浓汁。每日3次，每次18g。空心服。（《湖南药物志》）\n ③治耳内流黄水：路路通15g。煎服。（《浙江民间草药》）\n ④治过敏性鼻炎：路路通12g，苍耳子、防风各9g，辛夷、白芷各6g。水煎服。（《中药临床应用》）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "路路通，又叫枫实子。",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "金缕梅科植物枫香树 Liquidambar formosana Hance 的干燥成熟果序。",
-  "charCount": 1582,
+  "charCount": 1592,
   "documents": [
     {
       "file": "374.txt",
@@ -90,7 +96,17 @@
   ],
   "id": "dacheng-310",
   "summary": "祛风活络，利水，通经",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-198.jpg",
+      "alt": "路路通（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-198.jpg"
+    }
+  ],
   "docCount": 2,
   "variants": [
     {

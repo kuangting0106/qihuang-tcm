@@ -71,10 +71,16 @@
       "label": "附方",
       "text": "①治黄疸：三颗针茎15g。煎水服。（《贵州草药》）\n ②治暴发火眼肿痛：三颗针30g，车前子、光明草、菊花各9g，龙胆草12g。水煎服。（《四川中药志》1960年）\n ③治喉痛：三颗针30g，山慈姑、雪胆各9g。水煎服。（《四川中药志》1960年）\n ④治湿疹、疖肿：三颗针2份、滑石4份、青黛2份、生石膏4份。凡士林调制成25%软膏，涂擦患处。（《陕甘宁青中草药选》）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "三颗针，又叫豪猪刺。刺黄莲",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "小檗科植物拟蠔猪刺 Berberis soulieana Schneid.等同属数种植物的干燥根。",
-  "charCount": 934,
+  "charCount": 947,
   "documents": [
     {
       "file": "106.txt",
@@ -84,6 +90,16 @@
   ],
   "id": "dacheng-104",
   "summary": "清热燥湿，泻火解毒",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-24.jpg",
+      "alt": "三颗针（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-24.jpg"
+    }
+  ],
   "docCount": 1
 }

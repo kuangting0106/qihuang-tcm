@@ -74,10 +74,16 @@
       "label": "附方",
       "text": "①治溃疡病：九里香叶、两面针各2份，海螵蛸5份，干姜、甘草各1份。共研细末，每次3g，温开水送服，每日3次。（《福建药物志》）\n ②治胃痛：九里香叶9g，煅瓦楞子30g。共研末，每服3g，每日3次。（《香港中草药》）\n ③治骨折、痈肿：九里香鲜叶或根捣烂，加鸡蛋清调敷患处。（《云南中草药》）\n ④治蛇伤：九里香叶捣烂外敷。（南药《中草药学》）\n ⑤治湿疹：九里香鲜茎、枝叶水煎汤，擦洗患处。（《福建中草药》）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "九里香，别名七里香、满山香",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "芸香科植物九里香 Murraya exotica L的干燥叶和带叶嫩枝。",
-  "charCount": 1083,
+  "charCount": 1096,
   "documents": [
     {
       "file": "545.txt",
@@ -87,6 +93,34 @@
   ],
   "id": "dacheng-466",
   "summary": "行气止痛，活血散瘀",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-23.jpg",
+      "alt": "九里香（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-23.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-104.jpg",
+      "alt": "九里香（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-104.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-114.jpg",
+      "alt": "九里香（补充本草图3）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-114.jpg"
+    }
+  ],
   "docCount": 1
 }

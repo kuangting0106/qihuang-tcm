@@ -72,10 +72,16 @@
       "label": "附方",
       "text": "①治咽喉肿痛，咽物不得：蛇蜕皮一条（烧令烟尽），马勃0.3g。上件药细研为散，以绵裹3g，含咽津。（《圣惠方》）\n ②治骨鲠于喉：马勃、白矾灰、牛蒡子（炒）、陈皮（去白，焙）各15g。为细末。用浆水丸如樱桃大。口中含化下。（《圣济总录》）\n ③治久嗽：马勃，不以多少，为细末，炼蜜为丸，如梧桐子大，每服二十丸，汤送下。（《普济方》马勃丸）\n ④治失声：马勃、马牙硝等分。研末，砂糖和丸，芡子大。噙之。（《纲目》引《摘玄方》）\n ⑤治积热吐血：马勃，为末，砂糖丸如弹子大，每服半丸，冷水下。（《袖珍方》）\n ⑥治痈疽：马勃擦粉，米醋调敷即消；并入连翘少许，煎服亦可。（《本草汇言》引《外科良方》）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "马勃，又叫马粪包、牛屎菌",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "灰包科真菌脱皮马勃 Lasiosphaera fenzlii Reich.的干燥子实体。",
-  "charCount": 948,
+  "charCount": 960,
   "documents": [
     {
       "file": "609.txt",
@@ -85,6 +91,25 @@
   ],
   "id": "dacheng-523",
   "summary": "清肺利咽，止血",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-107.jpg",
+      "alt": "马勃（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-107.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-214.jpg",
+      "alt": "马勃（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-214.jpg"
+    }
+  ],
   "docCount": 1
 }

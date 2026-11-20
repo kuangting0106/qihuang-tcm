@@ -83,6 +83,25 @@
   "categoryTitle": "理气药",
   "id": "dacheng-633",
   "summary": "理气止痛，开郁醒脾；外用祛湿消肿",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-167.jpg",
+      "alt": "甘松（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-167.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-180.jpg",
+      "alt": "甘松（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-180.jpg"
+    }
+  ],
   "docCount": 1
 }

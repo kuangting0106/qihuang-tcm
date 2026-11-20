@@ -87,6 +87,25 @@
   ],
   "id": "dacheng-496",
   "summary": "活血补血，调经止痛，舒筋活络",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-100.jpg",
+      "alt": "鸡血藤（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-100.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-101.jpg",
+      "alt": "鸡血藤（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-101.jpg"
+    }
+  ],
   "docCount": 1
 }

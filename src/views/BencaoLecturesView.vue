@@ -81,7 +81,7 @@ const totalEntries = computed(() =>
           <span class="dacheng-crosslink__mark" aria-hidden="true">全</span>
           <span>
             <strong>本草大全 · 中草药大全</strong>
-            <small>另收 616 味药材，按功效分类，保留原书引文、炮制、鉴别与附方。</small>
+            <small>另收 620 味药材，按功效分类，保留原书引文、炮制、鉴别与附方。</small>
           </span>
           <span aria-hidden="true">→</span>
         </RouterLink>

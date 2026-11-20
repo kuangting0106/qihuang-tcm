@@ -108,6 +108,25 @@
   ],
   "id": "dacheng-013",
   "summary": "清热解毒，消肿散结，利尿通淋",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-22.jpg",
+      "alt": "蒲公英（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-22.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-63.jpg",
+      "alt": "蒲公英（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-63.jpg"
+    }
+  ],
   "docCount": 2
 }

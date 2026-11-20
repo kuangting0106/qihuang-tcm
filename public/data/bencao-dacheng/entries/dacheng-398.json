@@ -5,7 +5,9 @@
   "aliases": [
     "平地木",
     "叶下红",
-    "矮脚草"
+    "矮脚草",
+    "叶底珠",
+    "紫金牛"
   ],
   "categoryId": "huatan",
   "categoryTitle": "化痰止咳平喘药",
@@ -67,10 +69,16 @@
       "label": "附方",
       "text": "①治支气管炎：矮地茶20g，六月雪、肺经草各10g。每日1剂，水煎分2次服。（《中国民族药志》）\n ②治慢性支气管炎：矮地茶12g，胡颓子叶、鱼腥草各15g，桔梗6g。水煎3次分服，每日1剂。（《全国中草药汇编》）\n ③治肺痈：矮地茶30g，鱼腥草30g。水煎，2次分服。（《江西民间草药》）\n ④治急性黄疸型肝炎：矮地茶、阴行草、车前草各30g，白茅根15g。水煎服。（《安徽中草药》）\n ⑤治肾炎浮肿，尿血尿少：矮地茶、车前草、葎草、鬼针草各9g。水煎服。（《安徽中草药》）\n ⑥治白带：矮地茶30g，白扁豆、椿根白皮各12g，煎服。（《安徽中草药》）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "矮地茶，又叫叶底珠，叶下红、紫金牛",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "紫金牛科植物紫金牛 Ardisia japonica （Thunb.）Bl.的干燥全草。",
-  "charCount": 929,
+  "charCount": 946,
   "documents": [
     {
       "file": "471.txt",
@@ -80,6 +88,16 @@
   ],
   "id": "dacheng-398",
   "summary": "化痰止咳，利湿，活血",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-115.jpg",
+      "alt": "矮地茶（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-115.jpg"
+    }
+  ],
   "docCount": 1
 }

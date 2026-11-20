@@ -89,7 +89,26 @@
   ],
   "id": "dacheng-231",
   "summary": "清肺降气，止咳平喘，清肠消痔",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-109.jpg",
+      "alt": "马兜铃（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-109.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-110.jpg",
+      "alt": "马兜铃（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-110.jpg"
+    }
+  ],
   "docCount": 3,
   "variants": [
     {

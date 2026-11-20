@@ -61,10 +61,16 @@
       "label": "化学成分",
       "text": "本品主要含挥发油，其中有去氢木香内酯、愈创木-4（15），10（14），11（13）-三烯-12，6 α -内酯、3 β -乙酰氧基愈创木-4（15），10（14），11（13）-三烯-12，6 α -内酯、大牻牛儿-1（10）E，4E，11（13）-三烯-12，6 α -内酯等成分。",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "川木香，也叫云木香",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "菊科植物川木香 Vladimiria souliei （Franch.）Ling的干燥根。",
-  "charCount": 854,
+  "charCount": 863,
   "documents": [
     {
       "file": "125.txt",
@@ -74,6 +80,16 @@
   ],
   "id": "dacheng-120",
   "summary": "行气止痛",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-148.jpg",
+      "alt": "川木香（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-148.jpg"
+    }
+  ],
   "docCount": 1
 }

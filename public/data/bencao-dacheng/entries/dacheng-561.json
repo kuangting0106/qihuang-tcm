@@ -64,10 +64,16 @@
       "label": "附方",
       "text": "①治耳聋气闭：蚯蚓、川芎各15g。为末，每服6g，麦门冬汤下，服后低头伏睡，一夜一服，三夜，效。（《圣济总录》）\n ②治打伤：白颈蚯蚓不拘多少。去土洗净，焙干研末。每服6g，葱、姜汤下，衣被盖暖，出汗即愈。亦治痛风。（《伤科汇纂》）\n ③治乳痈：地龙一二条，入生姜于乳钵内，研如泥，涂四旁，纸花贴之。（《普济方》）\n ④治对口毒疮，已溃出脓：蚯蚓，捣细，凉水调敷，日换三四次。（《扶寿精方》）\n ⑤治丹毒：中等活地龙七条，紫背浮萍一碗。研细敷。（《直指方》）\n ⑥治风赤眼：地龙10条（炙干）。捣细罗为散。夜临卧时，以冷茶调下6g。（《圣惠方》）\n ⑦治鼻衄：大蚯蚓十数条，捣烂，井水和稀，患轻澄清饮；重则并渣汁调服。（《古今医鉴》）\n ⑧治咽喉红肿，以防蛾患：蚯蚓七条。用滚水泡，候冷去泥，和荸荠汁饮之。（《喉科金钥》地龙饮）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "地龙，就是蚯蚓",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "钜蚓科动物参环毛蚓 Pheretima aspergillum （E.Perrier）、通俗环毛蚓 Pheretima vulgaris Chen、威廉环毛蚓 Pheretima guillelmi （Michaelsen）或栉盲环毛蚓 Pheretima pectinifera Michaelsen的干燥体。前一种习称“广地龙”，后三种习称“沪地龙”。",
-  "charCount": 1077,
+  "charCount": 1084,
   "documents": [
     {
       "file": "653.txt",
@@ -77,6 +83,16 @@
   ],
   "id": "dacheng-561",
   "summary": "清热定惊，通络，平喘，利尿",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-20.jpg",
+      "alt": "地龙（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-20.jpg"
+    }
+  ],
   "docCount": 1
 }

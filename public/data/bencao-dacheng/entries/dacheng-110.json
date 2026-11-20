@@ -60,10 +60,16 @@
       "label": "附方",
       "text": "①治虚劳：土党参60g，糯米300g。水煎服。（《湖北中草药志》）\n ②治多汗、心悸：土党参15g。水煎服。（《湖北中草药志》）\n ③治脾虚泄泻：土党参15～30g，大枣9～15g。水煎服。（《福建中草药》）\n ④治小儿疳积：鲜土党参30g，白糖适量，水煎服。或取汤冲鲜鸡蛋1枚服。（《福建药物志》）\n ⑤治小儿遗尿：土党参根60～120g，猪瘦肉120g。水炖，服汤食肉。（《江西草药》）",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "土党参，别名南方人参",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "桔梗科植物大花金钱豹 Campanumoea javanica Bl的干燥根。",
-  "charCount": 773,
+  "charCount": 783,
   "documents": [
     {
       "file": "112.txt",
@@ -73,6 +79,16 @@
   ],
   "id": "dacheng-110",
   "summary": "健脾益气，补肺止咳，下乳",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-130.jpg",
+      "alt": "土党参（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-130.jpg"
+    }
+  ],
   "docCount": 1
 }
