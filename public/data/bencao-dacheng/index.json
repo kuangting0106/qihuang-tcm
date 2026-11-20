@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-20T06:35:43.745Z",
+  "generatedAt": "2026-11-20T09:29:19.884Z",
   "total": 620,
-  "withImages": 478,
+  "withImages": 485,
   "categories": [
     {
       "id": "jiebiao",
@@ -2568,13 +2568,13 @@
       "categoryTitle": "祛风湿药",
       "summary": "祛风除湿，舒筋活络，散瘀止痛",
       "image": {
-        "file": "/images/herbs/supplement/supp-145.jpg",
-        "alt": "八角枫（补充本草图1）",
+        "file": "/images/herbs/supplement/supp-146.jpg",
+        "alt": "八角枫（补充本草图2）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材",
-        "url": "/images/herbs/supplement/supp-145.jpg"
+        "url": "/images/herbs/supplement/supp-146.jpg"
       },
       "docCount": 1,
       "charCount": 979
@@ -4555,15 +4555,24 @@
         "毒公",
         "竹节乌头",
         "五毒根",
+        "北乌头",
         "制草乌",
         "草乌叶"
       ],
       "categoryId": "qufengshi",
       "categoryTitle": "祛风湿药",
       "summary": "祛风除湿，温经止痛",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-149.jpg",
+        "alt": "草乌（补充本草图1）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-149.jpg"
+      },
       "docCount": 3,
-      "charCount": 2133
+      "charCount": 2157
     },
     {
       "id": "dacheng-185",
@@ -5293,15 +5302,7 @@
       "categoryId": "qufengshi",
       "categoryTitle": "祛风湿药",
       "summary": "祛风除湿，活血通络，消肿止痛，杀虫解毒。主类风湿关节炎，风湿性关节炎，肾小球肾炎，肾病综合征，红斑狼疮，口眼干燥综合征，白塞病，湿疹，银屑病，麻风病，疥疮，顽癣",
-      "image": {
-        "file": "/images/herbs/supplement/supp-149.jpg",
-        "alt": "雷公藤（补充本草图1）",
-        "credit": "用户提供 / 《补充本草》",
-        "license": "用户提供，版权归原作者所有",
-        "sourceUrl": "",
-        "kind": "药材",
-        "url": "/images/herbs/supplement/supp-149.jpg"
-      },
+      "image": null,
       "docCount": 1,
       "charCount": 1045
     },
@@ -5558,13 +5559,12 @@
       "categoryTitle": "理气药",
       "summary": "疏肝泄热，行气止痛，杀虫",
       "image": {
-        "file": "/images/herbs/supplement/supp-16.jpg",
+        "url": "/images/herbs/supplement/supp-16.jpg",
         "alt": "川楝子（补充本草图1）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
-        "kind": "药材",
-        "url": "/images/herbs/supplement/supp-16.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 2146
@@ -5795,17 +5795,9 @@
       "categoryId": "liqi",
       "categoryTitle": "理气药",
       "summary": "清肺利咽，疏肝和胃",
-      "image": {
-        "file": "/images/herbs/supplement/supp-169.jpg",
-        "alt": "木蝴蝶（补充本草图1）",
-        "credit": "用户提供 / 《补充本草》",
-        "license": "用户提供，版权归原作者所有",
-        "sourceUrl": "",
-        "kind": "药材",
-        "url": "/images/herbs/supplement/supp-169.jpg"
-      },
+      "image": null,
       "docCount": 1,
-      "charCount": 1241
+      "charCount": 1231
     },
     {
       "id": "dacheng-238",
@@ -5821,13 +5813,13 @@
       "categoryTitle": "攻毒杀虫止痒药",
       "summary": "散结消肿，攻毒疗疮",
       "image": {
-        "file": "/images/herbs/supplement/supp-96.jpg",
-        "alt": "木鳖子（补充本草图1）",
+        "file": "/images/herbs/supplement/supp-238.jpg",
+        "alt": "木鳖子（补充本草图2）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材",
-        "url": "/images/herbs/supplement/supp-96.jpg"
+        "url": "/images/herbs/supplement/supp-238.jpg"
       },
       "docCount": 1,
       "charCount": 1176
@@ -5949,12 +5941,21 @@
         "荭草实",
         "河寥子",
         "水红子",
-        "水泻花"
+        "水泻花",
+        "红蓼"
       ],
       "categoryId": "xiaoshi",
       "categoryTitle": "消食药",
       "summary": "散血消癥，消积止痛，利水消肿",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-34.jpg",
+        "alt": "水红花子（补充本草图1）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-34.jpg"
+      },
       "docCount": 1,
       "charCount": 844
     },
@@ -6755,7 +6756,15 @@
       "categoryId": "huashi",
       "categoryTitle": "化湿药",
       "summary": "燥湿温中，截疟除痰",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-96.jpg",
+        "alt": "草果（补充本草图1）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-96.jpg"
+      },
       "docCount": 1,
       "charCount": 1181
     },
@@ -7373,7 +7382,8 @@
         "酸浆实",
         "灯笼儿",
         "王母珠",
-        "红姑娘"
+        "红姑娘",
+        "酸浆"
       ],
       "categoryId": "qingre",
       "categoryTitle": "清热药",
@@ -8947,15 +8957,7 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热解毒，凉血，消肿",
-      "image": {
-        "file": "/images/herbs/supplement/supp-71.jpg",
-        "alt": "穿心莲（补充本草图1）",
-        "credit": "用户提供 / 《补充本草》",
-        "license": "用户提供，版权归原作者所有",
-        "sourceUrl": "",
-        "kind": "药材",
-        "url": "/images/herbs/supplement/supp-71.jpg"
-      },
+      "image": null,
       "docCount": 1,
       "charCount": 997
     },
@@ -8998,7 +9000,15 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热，补虚，解毒",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-71.jpg",
+        "alt": "绞股蓝（补充本草图1）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-71.jpg"
+      },
       "docCount": 1,
       "charCount": 1002
     },
@@ -9554,7 +9564,15 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热解毒；止痢，止血",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-150.jpg",
+        "alt": "翻白草（补充本草图1）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-150.jpg"
+      },
       "docCount": 1,
       "charCount": 1014
     },
@@ -10176,9 +10194,17 @@
       "categoryId": "qita",
       "categoryTitle": "其他药",
       "summary": "滋养肝肾；明目消翳",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-229.jpg",
+        "alt": "蒙花（补充本草图1）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-229.jpg"
+      },
       "docCount": 1,
-      "charCount": 592
+      "charCount": 600
     },
     {
       "id": "dacheng-433",
@@ -10511,7 +10537,15 @@
       "categoryId": "huatan",
       "categoryTitle": "化痰止咳平喘药",
       "summary": "清肺止咳，降逆止呕",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-118.jpg",
+        "alt": "枇杷叶（补充本草图1）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-118.jpg"
+      },
       "docCount": 1,
       "charCount": 1249
     },
@@ -10660,7 +10694,15 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清头目，除烦渴，消食，化痰，利尿，解毒",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-79.jpg",
+        "alt": "茶叶（补充本草图1）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-79.jpg"
+      },
       "docCount": 1,
       "charCount": 1392
     },
@@ -10950,15 +10992,7 @@
       "categoryId": "qufengshi",
       "categoryTitle": "祛风湿药",
       "summary": "祛风除湿，行气止痛",
-      "image": {
-        "file": "/images/herbs/supplement/supp-163.jpg",
-        "alt": "地枫皮（补充本草图1）",
-        "credit": "用户提供 / 《补充本草》",
-        "license": "用户提供，版权归原作者所有",
-        "sourceUrl": "",
-        "kind": "药材",
-        "url": "/images/herbs/supplement/supp-163.jpg"
-      },
+      "image": null,
       "docCount": 1,
       "charCount": 683
     },
@@ -11058,7 +11092,15 @@
       "categoryId": "qufengshi",
       "categoryTitle": "祛风湿药",
       "summary": "祛风除湿，舒筋通络，杀虫止痒",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-163.jpg",
+        "alt": "海桐皮（补充本草图1）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-163.jpg"
+      },
       "docCount": 1,
       "charCount": 1028
     },
@@ -11300,13 +11342,13 @@
       "categoryTitle": "清热药",
       "summary": "祛风利湿，解毒消肿",
       "image": {
-        "file": "/images/herbs/supplement/supp-79.jpg",
-        "alt": "柳枝（补充本草图1）",
+        "file": "/images/herbs/supplement/supp-82.jpg",
+        "alt": "柳枝（补充本草图2）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材",
-        "url": "/images/herbs/supplement/supp-79.jpg"
+        "url": "/images/herbs/supplement/supp-82.jpg"
       },
       "docCount": 1,
       "charCount": 702
@@ -11846,7 +11888,15 @@
       "categoryId": "lishui",
       "categoryTitle": "利水渗湿药",
       "summary": "消痰，软坚散结，利水消肿",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-208.jpg",
+        "alt": "昆布（补充本草图1）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-208.jpg"
+      },
       "docCount": 1,
       "charCount": 907
     },
@@ -12142,13 +12192,13 @@
       "categoryTitle": "理气药",
       "summary": "理气止痛，温中助阳",
       "image": {
-        "file": "/images/herbs/supplement/supp-165.jpg",
-        "alt": "九香虫（补充本草图1）",
+        "file": "/images/herbs/supplement/supp-178.jpg",
+        "alt": "九香虫（补充本草图2）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材",
-        "url": "/images/herbs/supplement/supp-165.jpg"
+        "url": "/images/herbs/supplement/supp-178.jpg"
       },
       "docCount": 1,
       "charCount": 848
@@ -12595,13 +12645,12 @@
       "categoryTitle": "清热药",
       "summary": "清热定惊，通络，平喘，利尿",
       "image": {
-        "file": "/images/herbs/supplement/supp-20.jpg",
+        "url": "/images/herbs/supplement/supp-20.jpg",
         "alt": "地龙（补充本草图1）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
-        "kind": "药材",
-        "url": "/images/herbs/supplement/supp-20.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1084
@@ -12880,13 +12929,12 @@
       "categoryTitle": "平肝息风药",
       "summary": "息风镇痉，通络止痛，攻毒散结",
       "image": {
-        "file": "/images/herbs/supplement/supp-242.jpg",
+        "url": "/images/herbs/supplement/supp-242.jpg",
         "alt": "蜈蚣（补充本草图1）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
-        "kind": "药材",
-        "url": "/images/herbs/supplement/supp-242.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 926
@@ -13478,13 +13526,13 @@
       "categoryTitle": "化痰止咳平喘药",
       "summary": "养阴生津，润肺清心",
       "image": {
-        "file": "/images/herbs/supplement/supp-118.jpg",
-        "alt": "山麦冬（补充本草图1）",
+        "file": "/images/herbs/supplement/supp-119.jpg",
+        "alt": "山麦冬（补充本草图2）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材",
-        "url": "/images/herbs/supplement/supp-118.jpg"
+        "url": "/images/herbs/supplement/supp-119.jpg"
       },
       "docCount": 1,
       "charCount": 960
@@ -13513,7 +13561,15 @@
       "categoryId": "lishui",
       "categoryTitle": "利水渗湿药",
       "summary": "利尿通淋，清心除烦，通经下乳",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-169.jpg",
+        "alt": "川木通（补充本草图1）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-169.jpg"
+      },
       "docCount": 2,
       "charCount": 1272
     },
@@ -13918,7 +13974,15 @@
       "categoryId": "qufengshi",
       "categoryTitle": "祛风湿药",
       "summary": "祛风湿，消痈肿",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-165.jpg",
+        "alt": "两头尖（补充本草图1）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-165.jpg"
+      },
       "docCount": 1,
       "charCount": 687
     },
@@ -14444,23 +14508,13 @@
       "number": 1095,
       "name": "断血流",
       "pinyin": "duanxueliu",
-      "aliases": [
-        "灯笼草"
-      ],
+      "aliases": [],
       "categoryId": "zhixue",
       "categoryTitle": "止血药",
       "summary": "收敛止血",
-      "image": {
-        "file": "/images/herbs/supplement/supp-221.jpg",
-        "alt": "断血流（补充本草图1）",
-        "credit": "用户提供 / 《补充本草》",
-        "license": "用户提供，版权归原作者所有",
-        "sourceUrl": "",
-        "kind": "药材",
-        "url": "/images/herbs/supplement/supp-221.jpg"
-      },
+      "image": null,
       "docCount": 1,
-      "charCount": 960
+      "charCount": 950
     },
     {
       "id": "dacheng-716",

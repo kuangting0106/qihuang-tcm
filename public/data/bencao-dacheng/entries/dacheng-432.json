@@ -63,10 +63,16 @@
       "label": "化学成分",
       "text": "含西瑞香素及东方小翅大蜢酮。",
       "source": "《中草药大全》"
+    },
+    {
+      "kind": "supplement",
+      "label": "补充备注",
+      "text": "蒙花，又名密蒙花",
+      "source": "《补充本草》"
     }
   ],
   "sourceText": "为瑞香科植物结香 Edgeworthia chrysantha Lindl. 的花蕾。",
-  "charCount": 592,
+  "charCount": 600,
   "documents": [
     {
       "file": "509.txt",
@@ -76,6 +82,16 @@
   ],
   "id": "dacheng-432",
   "summary": "滋养肝肾；明目消翳",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-229.jpg",
+      "alt": "蒙花（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-229.jpg"
+    }
+  ],
   "docCount": 1
 }

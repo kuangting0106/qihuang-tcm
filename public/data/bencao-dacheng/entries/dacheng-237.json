@@ -75,16 +75,10 @@
       "label": "附方",
       "text": "①治干咳、声音嘶哑、咽痛喉痛：木蝴蝶2.4g，胖大海9g，蝉蜕3g，甘草5g，冰糖适量。水煎服。（中山医学院《中药临床应用》木蝴蝶汤）\n ②治久咳声哑：a.木蝴蝶5g，玄参9g。水煎调冰糖服。b.木蝴蝶6g，浙贝母3g，菊花9g。和冰糖炖服。（《福建药物志》）\n ③治慢性咽喉炎：木蝴蝶3g，银花、菊花、沙参、麦冬各9g。煎水代茶。（《香港中草药》）\n ④治肝气痛：木蝴蝶二三十张，铜铫上焙燥研细。好酒调服。（《纲目拾遗》）\n ⑤治中心视网膜炎：木蝴蝶6g，截叶铁扫帚30g，鸭肝1个。水炖服。（《福建药物志》）",
       "source": "《中草药大全》"
-    },
-    {
-      "kind": "supplement",
-      "label": "补充备注",
-      "text": "木蝴蝶，荚壳内的种子",
-      "source": "《补充本草》"
     }
   ],
   "sourceText": "紫葳科植物木蝴蝶 Oroxylum indicium （L.）Vent.的干燥成熟种子。",
-  "charCount": 1241,
+  "charCount": 1231,
   "documents": [
     {
       "file": "276.txt",
@@ -94,16 +88,6 @@
   ],
   "id": "dacheng-237",
   "summary": "清肺利咽，疏肝和胃",
-  "images": [
-    {
-      "file": "/images/herbs/supplement/supp-169.jpg",
-      "alt": "木蝴蝶（补充本草图1）",
-      "credit": "用户提供 / 《补充本草》",
-      "license": "用户提供，版权归原作者所有",
-      "sourceUrl": "",
-      "kind": "药材",
-      "url": "/images/herbs/supplement/supp-169.jpg"
-    }
-  ],
+  "images": [],
   "docCount": 1
 }

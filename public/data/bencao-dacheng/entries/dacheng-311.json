@@ -7,7 +7,8 @@
     "酸浆实",
     "灯笼儿",
     "王母珠",
-    "红姑娘"
+    "红姑娘",
+    "酸浆"
   ],
   "categoryId": "qingre",
   "categoryTitle": "清热药",
@@ -96,6 +97,15 @@
       "latin": "Physalis alkekengi L.",
       "kind": "原植物",
       "thumbUrl": "/images/herbs/dacheng/thumbs/plant-017.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-221.jpg",
+      "alt": "锦灯笼（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-221.jpg"
     }
   ],
   "docCount": 1

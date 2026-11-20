@@ -85,7 +85,17 @@
   "categoryTitle": "利水渗湿药",
   "id": "dacheng-622",
   "summary": "利尿通淋，清心除烦，通经下乳",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-169.jpg",
+      "alt": "川木通（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-169.jpg"
+    }
+  ],
   "docCount": 2,
   "variants": [
     {
