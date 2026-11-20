@@ -320,6 +320,13 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xiajing/xj-031.jpg",
+          "alt": "白蔹（用户提供图片 2）",
+          "credit": "用户提供 / 下经本草表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": ""
         }
       ]
     },
@@ -345,6 +352,13 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xiajing/xj-049.jpg",
+          "alt": "白头翁（用户提供图片 2）",
+          "credit": "用户提供 / 下经本草表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": ""
         }
       ]
     },
@@ -371,6 +385,13 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/zhongjing/zj-067.jpg",
+          "alt": "白薇（用户提供图片 2）",
+          "credit": "用户提供 / 中经本草表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": ""
         }
       ]
     },
@@ -880,6 +901,13 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xiajing/xj-029.jpg",
+          "alt": "甘遂（用户提供图片 3）",
+          "credit": "用户提供 / 下经本草表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": ""
         }
       ]
     },
@@ -1409,14 +1437,6 @@
         {
           "file": "/images/herbs/lecture/xiajing/xj-023.jpg",
           "alt": "藜芦（用户提供图片 2）",
-          "credit": "用户提供 / 下经本草表格",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/lecture/xiajing/xj-029.jpg",
-          "alt": "藜芦（用户提供图片 3）",
           "credit": "用户提供 / 下经本草表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -2043,14 +2063,6 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/lecture/xiajing/xj-049.jpg",
-          "alt": "商陆（用户提供图片 3）",
-          "credit": "用户提供 / 下经本草表格",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
         }
       ]
     },
@@ -2114,14 +2126,6 @@
         {
           "file": "/images/herbs/lecture/xiajing/xj-025.jpg",
           "alt": "射干（用户提供图片 1）",
-          "credit": "用户提供 / 下经本草表格",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/lecture/xiajing/xj-031.jpg",
-          "alt": "射干（用户提供图片 2）",
           "credit": "用户提供 / 下经本草表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -3050,6 +3054,13 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xiajing/xj-060.jpg",
+          "alt": "皂荚（用户提供图片 2）",
+          "credit": "用户提供 / 下经本草表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": ""
         }
       ]
     },
@@ -4319,19 +4330,11 @@
     {
       "name": "黑芝麻",
       "latin": "",
-      "file": "/images/herbs/lecture/xlsx/xlsx-101.jpg",
+      "file": "/images/herbs/lecture/xlsx/xlsx-102.jpg",
       "credit": "用户提供 / 中草药图片自搜表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "images": [
-        {
-          "file": "/images/herbs/lecture/xlsx/xlsx-101.jpg",
-          "alt": "胡麻仁（用户提供图片 1）",
-          "credit": "用户提供 / 中草药图片自搜表格",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
         {
           "file": "/images/herbs/lecture/xlsx/xlsx-102.jpg",
           "alt": "黑芝麻（用户提供图片 1）",
@@ -5586,14 +5589,6 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/lecture/zhongjing/zj-067.jpg",
-          "alt": "萆薢（用户提供图片 2）",
-          "credit": "用户提供 / 中经本草表格",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
         }
       ]
     },
@@ -6376,13 +6371,13 @@
     },
     {
       "name": "梅实",
-      "file": "/images/herbs/lecture/zhongjing/zj-142.jpg",
+      "file": "/images/herbs/lecture/zhongjing/zj-143.jpg",
       "credit": "用户提供 / 中经本草表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "images": [
         {
-          "file": "/images/herbs/lecture/zhongjing/zj-142.jpg",
+          "file": "/images/herbs/lecture/zhongjing/zj-143.jpg",
           "alt": "梅实（用户提供图片 1）",
           "credit": "用户提供 / 中经本草表格",
           "license": "用户提供，版权归原作者所有",
@@ -6390,16 +6385,8 @@
           "kind": "药材"
         },
         {
-          "file": "/images/herbs/lecture/zhongjing/zj-143.jpg",
-          "alt": "梅实（用户提供图片 2）",
-          "credit": "用户提供 / 中经本草表格",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
           "file": "/images/herbs/lecture/zhongjing/zj-144.jpg",
-          "alt": "梅实（用户提供图片 3）",
+          "alt": "梅实（用户提供图片 2）",
           "credit": "用户提供 / 中经本草表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -6698,14 +6685,6 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/lecture/xiajing/xj-060.jpg",
-          "alt": "重楼（用户提供图片 3）",
-          "credit": "用户提供 / 下经本草表格",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
         }
       ]
     },
@@ -6803,14 +6782,6 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/lecture/xiajing/xj-076.jpg",
-          "alt": "桐叶（用户提供图片 3）",
-          "credit": "用户提供 / 下经本草表格",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
         }
       ]
     },
@@ -6820,14 +6791,6 @@
         {
           "file": "/images/herbs/lecture/xiajing/xj-072.jpg",
           "alt": "梓白皮（用户提供图片 1）",
-          "credit": "用户提供 / 下经本草表格",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/lecture/xiajing/xj-078.jpg",
-          "alt": "梓白皮（用户提供图片 2）",
           "credit": "用户提供 / 下经本草表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -7847,6 +7810,36 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
+        }
+      ]
+    },
+    {
+      "name": "大豆黄卷",
+      "credit": "用户提供 / 中经本草表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/zhongjing/zj-142.jpg",
+          "alt": "大豆黄卷（用户提供图片 1）",
+          "credit": "用户提供 / 中经本草表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": ""
+        }
+      ]
+    },
+    {
+      "name": "牛角腮",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-13.jpg",
+          "alt": "牛角腮（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": ""
         }
       ]
     }

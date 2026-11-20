@@ -6,7 +6,8 @@
     "大椒",
     "秦椒",
     "蜀椒",
-    "巴椒"
+    "巴椒",
+    "竹叶椒"
   ],
   "categoryId": "wenli",
   "categoryTitle": "温里药",
@@ -118,6 +119,15 @@
       "sourceUrl": "https://www.inaturalist.org/taxa/506467",
       "latin": "Zanthoxylum bungeanum",
       "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-506467.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-186.jpg",
+      "alt": "花椒（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-186.jpg"
     }
   ],
   "docCount": 2

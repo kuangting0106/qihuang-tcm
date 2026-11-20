@@ -75,16 +75,10 @@
       "label": "附方",
       "text": "①治痰嗽并喘：南五味子、白矾等分，为末。每服9g，以生猪肺炙熟，蘸末细嚼，白汤下。（《普济方》）\n ②治阳痿不起：南五味子、菟丝子、蛇床子等分。上三味末之，蜜丸如梧桐子大。饮服三丸，日三。（《千金要方》）\n ③治滑泄：陈米、肉豆蔻（面裹煨）、南五味子、赤石脂（研）各30g。上为末。每服6g，粟米汤饮调下，日进三服。（《世医得效方》豆蔻饮）\n ④治肾泄：南五味子（拣）60g，吴茱萸（细粒绿色者）15g。上二味同炒香为度，细末。每服6g，陈米饮下。（《本事方》五味子散）\n ⑤治睡中盗汗：南五味子30g，研末，以唾调作饼。敷脐上，以布扎定后睡，候天明取下，一二晚汗即止。（《医方一盘珠》）",
       "source": "《中草药大全》"
-    },
-    {
-      "kind": "supplement",
-      "label": "补充备注",
-      "text": "南五味子，现在叫五味子。按地域分为南五味子、北五味子",
-      "source": "《补充本草》"
     }
   ],
   "sourceText": "木兰科植物华中五味子 Schisandra sphenanthera Rehd.et Wils.的干燥成熟果实。",
-  "charCount": 1177,
+  "charCount": 1151,
   "documents": [
     {
       "file": "342.txt",
@@ -94,34 +88,6 @@
   ],
   "id": "dacheng-283",
   "summary": "收敛固涩，益气生津，补肾宁心",
-  "images": [
-    {
-      "file": "/images/herbs/supplement/supp-250.jpg",
-      "alt": "南五味子（补充本草图1）",
-      "credit": "用户提供 / 《补充本草》",
-      "license": "用户提供，版权归原作者所有",
-      "sourceUrl": "",
-      "kind": "药材",
-      "url": "/images/herbs/supplement/supp-250.jpg"
-    },
-    {
-      "file": "/images/herbs/supplement/supp-251.jpg",
-      "alt": "南五味子（补充本草图2）",
-      "credit": "用户提供 / 《补充本草》",
-      "license": "用户提供，版权归原作者所有",
-      "sourceUrl": "",
-      "kind": "药材",
-      "url": "/images/herbs/supplement/supp-251.jpg"
-    },
-    {
-      "file": "/images/herbs/supplement/supp-252.jpg",
-      "alt": "南五味子（补充本草图3）",
-      "credit": "用户提供 / 《补充本草》",
-      "license": "用户提供，版权归原作者所有",
-      "sourceUrl": "",
-      "kind": "药材",
-      "url": "/images/herbs/supplement/supp-252.jpg"
-    }
-  ],
+  "images": [],
   "docCount": 1
 }

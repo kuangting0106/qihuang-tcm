@@ -96,13 +96,31 @@
   "summary": "散瘀止血，消肿止痛",
   "images": [
     {
-      "file": "/images/herbs/supplement/supp-217.jpg",
+      "file": "/images/herbs/supplement/supp-216.jpg",
       "alt": "大叶紫珠（补充本草图1）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
+      "url": "/images/herbs/supplement/supp-216.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-217.jpg",
+      "alt": "大叶紫珠（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
       "url": "/images/herbs/supplement/supp-217.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-218.jpg",
+      "alt": "大叶紫珠（补充本草图3）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-218.jpg"
     }
   ],
   "docCount": 1

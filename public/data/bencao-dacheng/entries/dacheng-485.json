@@ -88,8 +88,17 @@
   "summary": "孕妇慎服",
   "images": [
     {
-      "file": "/images/herbs/supplement/supp-231.jpg",
+      "file": "/images/herbs/supplement/supp-230.jpg",
       "alt": "大血藤（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-230.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-231.jpg",
+      "alt": "大血藤（补充本草图2）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",

@@ -6,7 +6,8 @@
     "地苏木",
     "沙茜秧根",
     "土丹参",
-    "入骨丹"
+    "入骨丹",
+    "新绛"
   ],
   "categoryId": "qingre",
   "categoryTitle": "清热药",
@@ -94,6 +95,15 @@
       "sourceUrl": "https://www.inaturalist.org/taxa/500587",
       "latin": "Rubia cordifolia",
       "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-500587.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-21.jpg",
+      "alt": "茜草（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-21.jpg"
     }
   ],
   "docCount": 1

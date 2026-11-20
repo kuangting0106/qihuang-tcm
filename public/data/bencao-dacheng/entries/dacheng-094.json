@@ -6,7 +6,8 @@
     "玄及",
     "会及",
     "五梅子",
-    "山花椒"
+    "山花椒",
+    "南五味子"
   ],
   "categoryId": "souse",
   "categoryTitle": "收涩药",
@@ -125,6 +126,33 @@
       "sourceUrl": "https://www.inaturalist.org/taxa/431608",
       "latin": "Schisandra chinensis",
       "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-431608.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-250.jpg",
+      "alt": "五味子（补充本草图1）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-250.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-251.jpg",
+      "alt": "五味子（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-251.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-252.jpg",
+      "alt": "五味子（补充本草图3）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-252.jpg"
     }
   ],
   "docCount": 2

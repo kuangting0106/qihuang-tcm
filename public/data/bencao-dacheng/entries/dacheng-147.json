@@ -89,13 +89,22 @@
   "summary": "清热解毒，祛风止痛，凉血止血",
   "images": [
     {
-      "file": "/images/herbs/supplement/supp-21.jpg",
+      "file": "/images/herbs/supplement/supp-27.jpg",
       "alt": "白药子（补充本草图1）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
-      "url": "/images/herbs/supplement/supp-21.jpg"
+      "url": "/images/herbs/supplement/supp-27.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-28.jpg",
+      "alt": "白药子（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-28.jpg"
     }
   ],
   "docCount": 1

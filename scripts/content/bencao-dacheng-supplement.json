@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-20T09:29:01.633Z",
-  "note": "据用户提供的《补充本草》表格整理：图片为用户提供，仅用于对应药材；备注照录，未改写。",
+  "generatedAt": "2026-11-20T10:23:39.910Z",
+  "note": "图片依据《补充本草》图片下方标签与逐图视觉复核重新归属；同源异名/不同部位按《本草大全》主条目归并。",
   "items": [
     {
       "id": "dacheng-013",
@@ -15,10 +15,20 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
-        },
+        }
+      ]
+    },
+    {
+      "id": "dacheng-034",
+      "name": "花椒",
+      "aliases": [
+        "竹叶椒"
+      ],
+      "note": "",
+      "images": [
         {
-          "file": "/images/herbs/supplement/supp-63.jpg",
-          "alt": "蒲公英（补充本草图2）",
+          "file": "/images/herbs/supplement/supp-186.jpg",
+          "alt": "花椒（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -75,13 +85,29 @@
       ]
     },
     {
+      "id": "dacheng-051",
+      "name": "川贝母",
+      "aliases": [],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-107.jpg",
+          "alt": "川贝母（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
       "id": "dacheng-060",
       "name": "西洋参",
       "aliases": [],
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-134.jpg",
+          "file": "/images/herbs/supplement/supp-127.jpg",
           "alt": "西洋参（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -107,22 +133,6 @@
       ]
     },
     {
-      "id": "dacheng-086",
-      "name": "玉竹",
-      "aliases": [],
-      "note": "",
-      "images": [
-        {
-          "file": "/images/herbs/supplement/supp-135.jpg",
-          "alt": "玉竹（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        }
-      ]
-    },
-    {
       "id": "dacheng-091",
       "name": "黑芝麻",
       "aliases": [
@@ -133,6 +143,40 @@
         {
           "file": "/images/herbs/supplement/supp-1.jpg",
           "alt": "黑芝麻（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "id": "dacheng-094",
+      "name": "五味子",
+      "aliases": [
+        "南五味子"
+      ],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-250.jpg",
+          "alt": "五味子（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-251.jpg",
+          "alt": "五味子（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-252.jpg",
+          "alt": "五味子（补充本草图3）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -179,7 +223,7 @@
       "note": "了哥王，多叫地锦皮。",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-30.jpg",
+          "file": "/images/herbs/supplement/supp-23.jpg",
           "alt": "了哥王（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -196,7 +240,7 @@
       "images": [
         {
           "file": "/images/herbs/supplement/supp-146.jpg",
-          "alt": "八角枫（补充本草图2）",
+          "alt": "八角枫（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -221,30 +265,22 @@
       ]
     },
     {
-      "id": "dacheng-108",
-      "name": "土贝母",
-      "aliases": [],
-      "note": "",
-      "images": [
-        {
-          "file": "/images/herbs/supplement/supp-35.jpg",
-          "alt": "土贝母（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        }
-      ]
-    },
-    {
       "id": "dacheng-110",
       "name": "土党参",
       "aliases": [],
       "note": "土党参，别名南方人参",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-130.jpg",
+          "file": "/images/herbs/supplement/supp-129.jpg",
           "alt": "土党参（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-130.jpg",
+          "alt": "土党参（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -261,6 +297,22 @@
         {
           "file": "/images/herbs/supplement/supp-25.jpg",
           "alt": "大蒜（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "id": "dacheng-114",
+      "name": "山豆根",
+      "aliases": [],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-26.jpg",
+          "alt": "山豆根（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -291,7 +343,7 @@
       "note": "川木香，也叫云木香",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-148.jpg",
+          "file": "/images/herbs/supplement/supp-167.jpg",
           "alt": "川木香（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -309,8 +361,16 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-124.jpg",
+          "file": "/images/herbs/supplement/supp-123.jpg",
           "alt": "龙胆（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-124.jpg",
+          "alt": "龙胆（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -341,8 +401,16 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-21.jpg",
+          "file": "/images/herbs/supplement/supp-27.jpg",
           "alt": "白药子（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-28.jpg",
+          "alt": "白药子（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -357,8 +425,16 @@
       "note": "红芪，与黄芪外层表皮颜色不同",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-132.jpg",
+          "file": "/images/herbs/supplement/supp-131.jpg",
           "alt": "红芪（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-132.jpg",
+          "alt": "红芪（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -405,8 +481,16 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-95.jpg",
+          "file": "/images/herbs/supplement/supp-90.jpg",
           "alt": "两面针（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-91.jpg",
+          "alt": "两面针（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -421,16 +505,8 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-227.jpg",
+          "file": "/images/herbs/supplement/supp-235.jpg",
           "alt": "羌活（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/supplement/supp-228.jpg",
-          "alt": "羌活（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -469,7 +545,7 @@
       "note": "刺五加，别名五加参、刺木棒",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-131.jpg",
+          "file": "/images/herbs/supplement/supp-133.jpg",
           "alt": "刺五加（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -477,7 +553,7 @@
           "kind": "药材"
         },
         {
-          "file": "/images/herbs/supplement/supp-133.jpg",
+          "file": "/images/herbs/supplement/supp-134.jpg",
           "alt": "刺五加（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -493,7 +569,7 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-235.jpg",
+          "file": "/images/herbs/supplement/supp-108.jpg",
           "alt": "明党参（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -509,8 +585,34 @@
       "note": "金果榄，别名青牛胆",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-36.jpg",
+          "file": "/images/herbs/supplement/supp-29.jpg",
           "alt": "金果榄（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-30.jpg",
+          "alt": "金果榄（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "id": "dacheng-183",
+      "name": "茜草",
+      "aliases": [
+        "新绛"
+      ],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-21.jpg",
+          "alt": "茜草（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -527,8 +629,24 @@
       "note": "草乌，又叫北乌头。川乌则常叫乌头与附子天雄同株。",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-149.jpg",
+          "file": "/images/herbs/supplement/supp-148.jpg",
           "alt": "草乌（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-149.jpg",
+          "alt": "草乌（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-150.jpg",
+          "alt": "草乌（补充本草图3）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -543,8 +661,16 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-233.jpg",
+          "file": "/images/herbs/supplement/supp-227.jpg",
           "alt": "胡黄连（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-228.jpg",
+          "alt": "胡黄连（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -559,16 +685,8 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-91.jpg",
-          "alt": "姜黄（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
           "file": "/images/herbs/supplement/supp-92.jpg",
-          "alt": "姜黄（补充本草图2）",
+          "alt": "姜黄（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -583,8 +701,16 @@
       "note": "穿破石，寄生在桑科构棘树上，类似于桑寄生。",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-38.jpg",
+          "file": "/images/herbs/supplement/supp-31.jpg",
           "alt": "穿破石（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-32.jpg",
+          "alt": "穿破石（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -599,7 +725,7 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-90.jpg",
+          "file": "/images/herbs/supplement/supp-93.jpg",
           "alt": "莪术（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -607,16 +733,8 @@
           "kind": "药材"
         },
         {
-          "file": "/images/herbs/supplement/supp-93.jpg",
-          "alt": "莪术（补充本草图2）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
           "file": "/images/herbs/supplement/supp-94.jpg",
-          "alt": "莪术（补充本草图3）",
+          "alt": "莪术（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -665,6 +783,46 @@
       ]
     },
     {
+      "id": "dacheng-203",
+      "name": "拳参",
+      "aliases": [],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-34.jpg",
+          "alt": "拳参（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-35.jpg",
+          "alt": "拳参（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "id": "dacheng-204",
+      "name": "浙贝母",
+      "aliases": [],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-36.jpg",
+          "alt": "浙贝母（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
       "id": "dacheng-207",
       "name": "黄药子",
       "aliases": [],
@@ -673,6 +831,14 @@
         {
           "file": "/images/herbs/supplement/supp-37.jpg",
           "alt": "黄药子（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-38.jpg",
+          "alt": "黄药子（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -687,8 +853,24 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-249.jpg",
+          "file": "/images/herbs/supplement/supp-261.jpg",
           "alt": "常山（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "id": "dacheng-215",
+      "name": "雷公藤",
+      "aliases": [],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-151.jpg",
+          "alt": "雷公藤（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -703,8 +885,16 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-136.jpg",
+          "file": "/images/herbs/supplement/supp-135.jpg",
           "alt": "鹿药（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-136.jpg",
+          "alt": "鹿药（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -775,8 +965,24 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-241.jpg",
+          "file": "/images/herbs/supplement/supp-259.jpg",
           "alt": "千金子（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "id": "dacheng-230",
+      "name": "马钱子",
+      "aliases": [],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-95.jpg",
+          "alt": "马钱子（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -825,6 +1031,30 @@
       ]
     },
     {
+      "id": "dacheng-237",
+      "name": "木蝴蝶",
+      "aliases": [],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-168.jpg",
+          "alt": "木蝴蝶（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-169.jpg",
+          "alt": "木蝴蝶（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
       "id": "dacheng-238",
       "name": "木鳖子",
       "aliases": [],
@@ -832,7 +1062,7 @@
       "images": [
         {
           "file": "/images/herbs/supplement/supp-238.jpg",
-          "alt": "木鳖子（补充本草图2）",
+          "alt": "木鳖子（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -847,26 +1077,16 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-32.jpg",
+          "file": "/images/herbs/supplement/supp-170.jpg",
           "alt": "化橘红（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
-        }
-      ]
-    },
-    {
-      "id": "dacheng-243",
-      "name": "水红花子",
-      "aliases": [
-        "红蓼"
-      ],
-      "note": "",
-      "images": [
+        },
         {
-          "file": "/images/herbs/supplement/supp-34.jpg",
-          "alt": "水红花子（补充本草图1）",
+          "file": "/images/herbs/supplement/supp-171.jpg",
+          "alt": "化橘红（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -907,38 +1127,14 @@
       ]
     },
     {
-      "id": "dacheng-252",
-      "name": "竹叶椒",
-      "aliases": [],
-      "note": "竹叶椒，现在都叫花椒古代叫蜀椒",
-      "images": [
-        {
-          "file": "/images/herbs/supplement/supp-186.jpg",
-          "alt": "竹叶椒（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        }
-      ]
-    },
-    {
       "id": "dacheng-255",
       "name": "苍耳子",
       "aliases": [],
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-151.jpg",
-          "alt": "苍耳子（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
           "file": "/images/herbs/supplement/supp-152.jpg",
-          "alt": "苍耳子（补充本草图2）",
+          "alt": "苍耳子（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -953,7 +1149,7 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-26.jpg",
+          "file": "/images/herbs/supplement/supp-111.jpg",
           "alt": "皂角（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -961,24 +1157,8 @@
           "kind": "药材"
         },
         {
-          "file": "/images/herbs/supplement/supp-111.jpg",
-          "alt": "皂角（补充本草图2）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
           "file": "/images/herbs/supplement/supp-112.jpg",
-          "alt": "皂角（补充本草图3）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/supplement/supp-168.jpg",
-          "alt": "皂角（补充本草图4）",
+          "alt": "皂角（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -993,16 +1173,8 @@
       "note": "余甘子，也叫土橄榄",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-31.jpg",
+          "file": "/images/herbs/supplement/supp-41.jpg",
           "alt": "余甘子（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/supplement/supp-44.jpg",
-          "alt": "余甘子（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -1135,14 +1307,6 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/supplement/supp-174.jpg",
-          "alt": "荔枝核（补充本草图2）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
         }
       ]
     },
@@ -1155,38 +1319,6 @@
         {
           "file": "/images/herbs/supplement/supp-245.jpg",
           "alt": "南瓜子（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        }
-      ]
-    },
-    {
-      "id": "dacheng-283",
-      "name": "南五味子",
-      "aliases": [],
-      "note": "南五味子，现在叫五味子。按地域分为南五味子、北五味子",
-      "images": [
-        {
-          "file": "/images/herbs/supplement/supp-250.jpg",
-          "alt": "南五味子（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/supplement/supp-251.jpg",
-          "alt": "南五味子（补充本草图2）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/supplement/supp-252.jpg",
-          "alt": "南五味子（补充本草图3）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -1225,7 +1357,7 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-41.jpg",
+          "file": "/images/herbs/supplement/supp-44.jpg",
           "alt": "鸦胆子（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -1233,7 +1365,7 @@
           "kind": "药材"
         },
         {
-          "file": "/images/herbs/supplement/supp-47.jpg",
+          "file": "/images/herbs/supplement/supp-45.jpg",
           "alt": "鸦胆子（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -1315,7 +1447,7 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-170.jpg",
+          "file": "/images/herbs/supplement/supp-174.jpg",
           "alt": "娑罗子（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -1323,16 +1455,8 @@
           "kind": "药材"
         },
         {
-          "file": "/images/herbs/supplement/supp-171.jpg",
-          "alt": "娑罗子（补充本草图2）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
           "file": "/images/herbs/supplement/supp-175.jpg",
-          "alt": "娑罗子（补充本草图3）",
+          "alt": "娑罗子（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -1393,6 +1517,14 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-47.jpg",
+          "alt": "绿豆（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
         }
       ]
     },
@@ -1403,16 +1535,8 @@
       "note": "喜树果，又叫旱莲木",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-45.jpg",
-          "alt": "喜树果（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
           "file": "/images/herbs/supplement/supp-48.jpg",
-          "alt": "喜树果（补充本草图2）",
+          "alt": "喜树果（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -1429,6 +1553,14 @@
         {
           "file": "/images/herbs/supplement/supp-198.jpg",
           "alt": "路路通（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-199.jpg",
+          "alt": "路路通（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -1483,6 +1615,14 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-192.jpg",
+          "alt": "鹤虱（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
         }
       ]
     },
@@ -1493,24 +1633,8 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-199.jpg",
-          "alt": "葫芦（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
           "file": "/images/herbs/supplement/supp-200.jpg",
-          "alt": "葫芦（补充本草图2）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/supplement/supp-209.jpg",
-          "alt": "葫芦（补充本草图3）",
+          "alt": "葫芦（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -1547,30 +1671,6 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/supplement/supp-216.jpg",
-          "alt": "三白草（补充本草图2）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        }
-      ]
-    },
-    {
-      "id": "dacheng-324",
-      "name": "土荆芥",
-      "aliases": [],
-      "note": "土荆芥，现在叫荆芥。",
-      "images": [
-        {
-          "file": "/images/herbs/supplement/supp-153.jpg",
-          "alt": "土荆芥（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
         }
       ]
     },
@@ -1583,6 +1683,14 @@
         {
           "file": "/images/herbs/supplement/supp-83.jpg",
           "alt": "大蓟（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-84.jpg",
+          "alt": "大蓟（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -1677,16 +1785,8 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-98.jpg",
-          "alt": "马鞭草（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
           "file": "/images/herbs/supplement/supp-99.jpg",
-          "alt": "马鞭草（补充本草图2）",
+          "alt": "马鞭草（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -1765,16 +1865,8 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-129.jpg",
-          "alt": "白花丹（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
           "file": "/images/herbs/supplement/supp-154.jpg",
-          "alt": "白花丹（补充本草图2）",
+          "alt": "白花丹（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -1795,14 +1887,6 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/supplement/supp-61.jpg",
-          "alt": "白花蛇舌草（补充本草图2）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
         }
       ]
     },
@@ -1813,7 +1897,7 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-143.jpg",
+          "file": "/images/herbs/supplement/supp-98.jpg",
           "alt": "刘寄奴（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -1853,8 +1937,16 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-76.jpg",
+          "file": "/images/herbs/supplement/supp-60.jpg",
           "alt": "地耳草（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-61.jpg",
+          "alt": "地耳草（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -1879,6 +1971,30 @@
         {
           "file": "/images/herbs/supplement/supp-156.jpg",
           "alt": "老鹳草（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "id": "dacheng-355",
+      "name": "羊蹄草",
+      "aliases": [],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-62.jpg",
+          "alt": "羊蹄草（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-63.jpg",
+          "alt": "羊蹄草（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -1947,14 +2063,6 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/supplement/supp-237.jpg",
-          "alt": "连钱草（补充本草图2）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
         }
       ]
     },
@@ -2005,7 +2113,7 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-62.jpg",
+          "file": "/images/herbs/supplement/supp-68.jpg",
           "alt": "地胆草（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -2027,10 +2135,18 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
-        },
+        }
+      ]
+    },
+    {
+      "id": "dacheng-368",
+      "name": "金钱草",
+      "aliases": [],
+      "note": "",
+      "images": [
         {
-          "file": "/images/herbs/supplement/supp-75.jpg",
-          "alt": "苦地丁（补充本草图2）",
+          "file": "/images/herbs/supplement/supp-205.jpg",
+          "alt": "金钱草（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -2048,8 +2164,26 @@
       "note": "胡荽，现在叫香菜",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-192.jpg",
+          "file": "/images/herbs/supplement/supp-237.jpg",
           "alt": "胡荽（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "id": "dacheng-374",
+      "name": "荆芥",
+      "aliases": [
+        "土荆芥"
+      ],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-153.jpg",
+          "alt": "荆芥（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -2064,8 +2198,24 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-205.jpg",
+          "file": "/images/herbs/supplement/supp-210.jpg",
           "alt": "荠菜（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "id": "dacheng-377",
+      "name": "穿心莲",
+      "aliases": [],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-70.jpg",
+          "alt": "穿心莲（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -2080,24 +2230,8 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-70.jpg",
-          "alt": "费菜（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/supplement/supp-210.jpg",
-          "alt": "费菜（补充本草图2）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
           "file": "/images/herbs/supplement/supp-211.jpg",
-          "alt": "费菜（补充本草图3）",
+          "alt": "费菜（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -2160,7 +2294,7 @@
       "note": "酢浆草，开粉红色或黄色的小花",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-60.jpg",
+          "file": "/images/herbs/supplement/supp-73.jpg",
           "alt": "酢浆草（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -2168,16 +2302,8 @@
           "kind": "药材"
         },
         {
-          "file": "/images/herbs/supplement/supp-73.jpg",
-          "alt": "酢浆草（补充本草图2）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
           "file": "/images/herbs/supplement/supp-74.jpg",
-          "alt": "酢浆草（补充本草图3）",
+          "alt": "酢浆草（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -2218,7 +2344,7 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-68.jpg",
+          "file": "/images/herbs/supplement/supp-75.jpg",
           "alt": "筋骨草（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -2254,8 +2380,16 @@
       "note": "矮地茶，又叫叶底珠，叶下红、紫金牛",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-115.jpg",
+          "file": "/images/herbs/supplement/supp-114.jpg",
           "alt": "矮地茶（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-115.jpg",
+          "alt": "矮地茶（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -2310,7 +2444,7 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-150.jpg",
+          "file": "/images/herbs/supplement/supp-76.jpg",
           "alt": "翻白草（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -2342,16 +2476,8 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-122.jpg",
-          "alt": "鸡冠花（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
           "file": "/images/herbs/supplement/supp-212.jpg",
-          "alt": "鸡冠花（补充本草图2）",
+          "alt": "鸡冠花（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -2434,7 +2560,9 @@
     {
       "id": "dacheng-436",
       "name": "密蒙花",
-      "aliases": [],
+      "aliases": [
+        "蒙花"
+      ],
       "note": "",
       "images": [
         {
@@ -2454,7 +2582,7 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-126.jpg",
+          "file": "/images/herbs/supplement/supp-143.jpg",
           "alt": "十大功劳（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -2496,22 +2624,6 @@
         {
           "file": "/images/herbs/supplement/supp-161.jpg",
           "alt": "石楠叶（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        }
-      ]
-    },
-    {
-      "id": "dacheng-449",
-      "name": "苦丁茶",
-      "aliases": [],
-      "note": "",
-      "images": [
-        {
-          "file": "/images/herbs/supplement/supp-260.jpg",
-          "alt": "苦丁茶（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -2638,24 +2750,8 @@
       "note": "九里香，别名七里香、满山香",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-23.jpg",
+          "file": "/images/herbs/supplement/supp-126.jpg",
           "alt": "九里香（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/supplement/supp-104.jpg",
-          "alt": "九里香（补充本草图2）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/supplement/supp-114.jpg",
-          "alt": "九里香（补充本草图3）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -2670,8 +2766,16 @@
       "note": "土荆皮，荆芥的根皮",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-13.jpg",
+          "file": "/images/herbs/supplement/supp-248.jpg",
           "alt": "土荆皮（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-249.jpg",
+          "alt": "土荆皮（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -2686,8 +2790,24 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-248.jpg",
+          "file": "/images/herbs/supplement/supp-260.jpg",
           "alt": "乌桕根皮（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "id": "dacheng-472",
+      "name": "地枫皮",
+      "aliases": [],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-162.jpg",
+          "alt": "地枫皮（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -2712,14 +2832,38 @@
       ]
     },
     {
+      "id": "dacheng-484",
+      "name": "丁公藤",
+      "aliases": [],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/supplement/supp-164.jpg",
+          "alt": "丁公藤（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
       "id": "dacheng-485",
       "name": "大血藤",
       "aliases": [],
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-231.jpg",
+          "file": "/images/herbs/supplement/supp-230.jpg",
           "alt": "大血藤（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-231.jpg",
+          "alt": "大血藤（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -2735,7 +2879,7 @@
       "images": [
         {
           "file": "/images/herbs/supplement/supp-82.jpg",
-          "alt": "柳枝（补充本草图2）",
+          "alt": "柳枝（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -2810,16 +2954,8 @@
       "note": "马勃，又叫马粪包、牛屎菌",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-107.jpg",
-          "alt": "马勃（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
           "file": "/images/herbs/supplement/supp-214.jpg",
-          "alt": "马勃（补充本草图2）",
+          "alt": "马勃（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -2883,7 +3019,7 @@
       "images": [
         {
           "file": "/images/herbs/supplement/supp-178.jpg",
-          "alt": "九香虫（补充本草图2）",
+          "alt": "九香虫（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -2891,7 +3027,7 @@
         },
         {
           "file": "/images/herbs/supplement/supp-179.jpg",
-          "alt": "九香虫（补充本草图3）",
+          "alt": "九香虫（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -3086,8 +3222,24 @@
       "note": "大叶紫珠，现在多叫紫珠、也叫大叶斑鸠米，止血草",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-217.jpg",
+          "file": "/images/herbs/supplement/supp-216.jpg",
           "alt": "大叶紫珠（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-217.jpg",
+          "alt": "大叶紫珠（补充本草图2）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-218.jpg",
+          "alt": "大叶紫珠（补充本草图3）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -3103,7 +3255,7 @@
       "images": [
         {
           "file": "/images/herbs/supplement/supp-119.jpg",
-          "alt": "山麦冬（补充本草图2）",
+          "alt": "山麦冬（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -3118,7 +3270,7 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-169.jpg",
+          "file": "/images/herbs/supplement/supp-209.jpg",
           "alt": "川木通（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -3152,38 +3304,14 @@
       ]
     },
     {
-      "id": "dacheng-632",
-      "name": "水飞蓟",
-      "aliases": [],
-      "note": "",
-      "images": [
-        {
-          "file": "/images/herbs/supplement/supp-84.jpg",
-          "alt": "水飞蓟（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        }
-      ]
-    },
-    {
       "id": "dacheng-633",
       "name": "甘松",
       "aliases": [],
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-167.jpg",
-          "alt": "甘松（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
           "file": "/images/herbs/supplement/supp-180.jpg",
-          "alt": "甘松（补充本草图2）",
+          "alt": "甘松（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -3214,24 +3342,8 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-127.jpg",
-          "alt": "竹节参（补充本草图1）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/supplement/supp-218.jpg",
-          "alt": "竹节参（补充本草图2）",
-          "credit": "用户提供 / 《补充本草》",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
           "file": "/images/herbs/supplement/supp-219.jpg",
-          "alt": "竹节参（补充本草图3）",
+          "alt": "竹节参（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -3246,7 +3358,7 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-29.jpg",
+          "file": "/images/herbs/supplement/supp-241.jpg",
           "alt": "红大戟（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -3358,8 +3470,16 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-105.jpg",
+          "file": "/images/herbs/supplement/supp-104.jpg",
           "alt": "降香（补充本草图1）",
+          "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/supplement/supp-105.jpg",
+          "alt": "降香（补充本草图2）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -3454,7 +3574,7 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-108.jpg",
+          "file": "/images/herbs/supplement/supp-122.jpg",
           "alt": "紫花前胡（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",
@@ -3470,7 +3590,7 @@
       "note": "",
       "images": [
         {
-          "file": "/images/herbs/supplement/supp-259.jpg",
+          "file": "/images/herbs/supplement/supp-233.jpg",
           "alt": "颠茄草（补充本草图1）",
           "credit": "用户提供 / 《补充本草》",
           "license": "用户提供，版权归原作者所有",

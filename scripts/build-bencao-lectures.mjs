@@ -300,7 +300,6 @@ const imageCredits = fs.existsSync(creditsFile)
   ? JSON.parse(fs.readFileSync(creditsFile, 'utf8')).items ?? []
   : []
 const imageByName = new Map(imageCredits.map((item) => [item.name, item]))
-
 const extraAliasesFile = path.join(root, 'scripts', 'content', 'bencao-extra-aliases.json')
 const extraAliases = fs.existsSync(extraAliasesFile)
   ? JSON.parse(fs.readFileSync(extraAliasesFile, 'utf8'))
@@ -309,6 +308,7 @@ const extraAliases = fs.existsSync(extraAliasesFile)
 function buildImages(name) {
   const credit = imageByName.get(name) ?? imageByName.get(canonicalName(name))
   if (!credit) return []
+  if (!credit.images?.length && !credit.file) return []
   const list = credit.images?.length
     ? credit.images
     : [
@@ -656,6 +656,12 @@ function mergeAliasEntries(groups) {
     if (primary.title !== canonical) primary.ancientName = primary.title
     primary.title = canonical
     primary.canonicalName = canonical
+    const canonicalGallery = imageForEntry(canonical)
+    if (canonicalGallery.image) {
+      primary.image = canonicalGallery.image
+      if (canonicalGallery.images.length > 1) primary.images = canonicalGallery.images
+      else delete primary.images
+    }
     for (const alias of extraAliases[canonical] ?? []) aliasSet.add(alias)
     primary.alsoKnownAs = [...aliasSet].filter((name) => name && name !== canonical)
     primary.pinyin = pinyinFor(canonical)

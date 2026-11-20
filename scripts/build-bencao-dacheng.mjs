@@ -357,11 +357,14 @@ function loadCatalogImageMap() {
   const catalog = JSON.parse(fs.readFileSync(CATALOG_FILE, 'utf8'))
   for (const item of catalog.items ?? []) {
     if (!item.image) continue
+    const url = item.image.url ?? item.image.file
+    if (!url) continue
+    const image = { ...item.image, url }
     const names = [item.name, item.ancientName, ...(item.aliases ?? []), ...(item.alsoKnownAs ?? [])]
       .map(normalizeName)
       .filter(Boolean)
     for (const name of names) {
-      if (!map.has(name)) map.set(name, item.image)
+      if (!map.has(name)) map.set(name, image)
     }
   }
   return map

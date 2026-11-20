@@ -89,13 +89,22 @@
   "summary": "理气宽中，燥湿化痰",
   "images": [
     {
-      "file": "/images/herbs/supplement/supp-32.jpg",
+      "file": "/images/herbs/supplement/supp-170.jpg",
       "alt": "化橘红（补充本草图1）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
-      "url": "/images/herbs/supplement/supp-32.jpg"
+      "url": "/images/herbs/supplement/supp-170.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-171.jpg",
+      "alt": "化橘红（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-171.jpg"
     }
   ],
   "docCount": 1

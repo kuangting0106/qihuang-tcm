@@ -94,13 +94,22 @@
   "summary": "清热解毒，利咽，止痛",
   "images": [
     {
-      "file": "/images/herbs/supplement/supp-36.jpg",
+      "file": "/images/herbs/supplement/supp-29.jpg",
       "alt": "金果榄（补充本草图1）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
-      "url": "/images/herbs/supplement/supp-36.jpg"
+      "url": "/images/herbs/supplement/supp-29.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-30.jpg",
+      "alt": "金果榄（补充本草图2）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-30.jpg"
     }
   ],
   "docCount": 1
