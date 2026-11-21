@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-21T08:18:12.390Z",
-  "total": 506,
-  "withImages": 506,
+  "generatedAt": "2026-11-21T08:50:00.582Z",
+  "total": 505,
+  "withImages": 505,
   "categories": [
     {
       "id": "jiebiao",
       "title": "解表药",
-      "count": 18
+      "count": 19
     },
     {
       "id": "qingre",
@@ -16,7 +16,7 @@
     {
       "id": "xiexia",
       "title": "泻下药",
-      "count": 8
+      "count": 9
     },
     {
       "id": "qufengshi",
@@ -26,7 +26,7 @@
     {
       "id": "huashi",
       "title": "化湿药",
-      "count": 16
+      "count": 15
     },
     {
       "id": "lishui",
@@ -41,7 +41,7 @@
     {
       "id": "liqi",
       "title": "理气药",
-      "count": 23
+      "count": 22
     },
     {
       "id": "xiaoshi",
@@ -51,12 +51,12 @@
     {
       "id": "quchong",
       "title": "驱虫药",
-      "count": 5
+      "count": 6
     },
     {
       "id": "zhixue",
       "title": "止血药",
-      "count": 17
+      "count": 18
     },
     {
       "id": "huoxue",
@@ -66,7 +66,7 @@
     {
       "id": "huatan",
       "title": "化痰止咳平喘药",
-      "count": 31
+      "count": 30
     },
     {
       "id": "anshen",
@@ -81,7 +81,7 @@
     {
       "id": "buxu",
       "title": "补虚药",
-      "count": 51
+      "count": 50
     },
     {
       "id": "souse",
@@ -91,7 +91,7 @@
     {
       "id": "yongtu",
       "title": "涌吐药",
-      "count": 4
+      "count": 3
     },
     {
       "id": "gongdu",
@@ -5461,30 +5461,6 @@
       "charCount": 1119
     },
     {
-      "id": "dacheng-227",
-      "number": 261,
-      "name": "大腹皮",
-      "pinyin": "dafupi",
-      "aliases": [
-        "槟榔皮",
-        "槟榔壳",
-        "大腹毛"
-      ],
-      "categoryId": "liqi",
-      "categoryTitle": "理气药",
-      "summary": "行气宽中，行水消肿",
-      "image": {
-        "url": "/images/herbs/lecture/xiajing/xj-132.jpg?v=1bd03382",
-        "alt": "大腹皮（下经本草图132）",
-        "credit": "用户提供 / 《下经本草》表格",
-        "license": "用户提供，版权归原作者所有",
-        "sourceUrl": "",
-        "kind": "药材"
-      },
-      "docCount": 1,
-      "charCount": 1303
-    },
-    {
       "id": "dacheng-228",
       "number": 264,
       "name": "川楝子",
@@ -6913,33 +6889,6 @@
       "charCount": 946
     },
     {
-      "id": "dacheng-296",
-      "number": 358,
-      "name": "桑葚",
-      "pinyin": "sangshen",
-      "aliases": [
-        "桑实",
-        "葚",
-        "文武实",
-        "桑果"
-      ],
-      "categoryId": "buxu",
-      "categoryTitle": "补虚药",
-      "summary": "滋阴补血，生津润燥",
-      "image": {
-        "url": "/images/herbs/dacheng/inat-b7b4638d72.jpg?v=cf339a2a",
-        "alt": "white mulberry（Morus alba）",
-        "credit": "no rights reserved, uploaded by 葉子",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/56090",
-        "latin": "Morus alba",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b7b4638d72.jpg?v=79895304"
-      },
-      "docCount": 1,
-      "charCount": 894
-    },
-    {
       "id": "dacheng-298",
       "number": 361,
       "name": "黄荆子",
@@ -6993,19 +6942,23 @@
       "charCount": 1147
     },
     {
-      "id": "dacheng-301",
-      "number": 364,
-      "name": "甜瓜蒂",
-      "pinyin": "tianguadi",
+      "id": "dacheng-300",
+      "number": 363,
+      "name": "甜瓜子",
+      "pinyin": "tianguazi",
       "aliases": [
+        "甘瓜子",
+        "甜瓜仁",
+        "甜瓜瓣",
+        "甜瓜蒂",
         "瓜蒂",
         "瓜丁",
         "苦丁香",
         "甜瓜把"
       ],
-      "categoryId": "yongtu",
-      "categoryTitle": "涌吐药",
-      "summary": "涌吐痰食，除湿退黄",
+      "categoryId": "xiexia",
+      "categoryTitle": "泻下药",
+      "summary": "清肺，润肠，化瘀，排脓，疗伤止痛",
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-166.jpg?v=886edd41",
         "alt": "甜瓜蒂（上经本草图166）",
@@ -7015,8 +6968,8 @@
         "latin": "",
         "kind": "药材"
       },
-      "docCount": 1,
-      "charCount": 717
+      "docCount": 2,
+      "charCount": 1553
     },
     {
       "id": "dacheng-302",
@@ -7278,6 +7231,36 @@
       },
       "docCount": 1,
       "charCount": 847
+    },
+    {
+      "id": "dacheng-314",
+      "number": 378,
+      "name": "槟榔",
+      "pinyin": "binglang",
+      "aliases": [
+        "洗瘴丹",
+        "大腹槟榔",
+        "槟榔子",
+        "槟榔玉",
+        "大腹皮",
+        "槟榔皮",
+        "槟榔壳",
+        "大腹毛",
+        "焦槟榔"
+      ],
+      "categoryId": "quchong",
+      "categoryTitle": "驱虫药",
+      "summary": "杀虫，消积，行气，利水，截疟",
+      "image": {
+        "url": "/images/herbs/lecture/xiajing/xj-132.jpg?v=1bd03382",
+        "alt": "大腹皮（下经本草图132）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材"
+      },
+      "docCount": 3,
+      "charCount": 2069
     },
     {
       "id": "dacheng-316",
@@ -9538,6 +9521,39 @@
       "charCount": 940
     },
     {
+      "id": "dacheng-423",
+      "number": 499,
+      "name": "松花粉",
+      "pinyin": "songhuafen",
+      "aliases": [
+        "松花",
+        "松黄",
+        "松粉",
+        "松节",
+        "黄松木节",
+        "油松节",
+        "松榔头",
+        "松香",
+        "松脂",
+        "白松香",
+        "松脂香"
+      ],
+      "categoryId": "zhixue",
+      "categoryTitle": "止血药",
+      "summary": "收敛止血，燥湿敛疮",
+      "image": {
+        "url": "/images/herbs/lecture/xlsx/xlsx-105.jpg?v=b7371ddd",
+        "alt": "松香（上经本草图105）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "latin": "",
+        "kind": "药材"
+      },
+      "docCount": 3,
+      "charCount": 3226
+    },
+    {
       "id": "dacheng-424",
       "number": 500,
       "name": "茉莉花",
@@ -10175,6 +10191,43 @@
       "charCount": 3258
     },
     {
+      "id": "dacheng-460",
+      "number": 539,
+      "name": "桑叶",
+      "pinyin": "sangye",
+      "aliases": [
+        "铁扇子",
+        "蚕叶",
+        "桑椹",
+        "桑葚",
+        "桑实",
+        "葚",
+        "文武实",
+        "桑果",
+        "桑白皮",
+        "桑根白皮",
+        "白桑皮",
+        "桑皮",
+        "桑根皮",
+        "桑枝"
+      ],
+      "categoryId": "jiebiao",
+      "categoryTitle": "解表药",
+      "summary": "疏散风热，清肺润燥，清肝明目",
+      "image": {
+        "url": "/images/herbs/dacheng/inat-b7b4638d72.jpg?v=cf339a2a",
+        "alt": "white mulberry（Morus alba）",
+        "credit": "no rights reserved, uploaded by 葉子",
+        "license": "CC0",
+        "sourceUrl": "https://www.inaturalist.org/taxa/56090",
+        "latin": "Morus alba",
+        "kind": "原植物",
+        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b7b4638d72.jpg?v=79895304"
+      },
+      "docCount": 5,
+      "charCount": 3206
+    },
+    {
       "id": "dacheng-463",
       "number": 542,
       "name": "番泻叶",
@@ -10505,31 +10558,6 @@
       },
       "docCount": 1,
       "charCount": 1104
-    },
-    {
-      "id": "dacheng-483",
-      "number": 566,
-      "name": "桑白皮",
-      "pinyin": "sangbaipi",
-      "aliases": [
-        "桑根白皮",
-        "白桑皮",
-        "桑皮",
-        "桑根皮"
-      ],
-      "categoryId": "huatan",
-      "categoryTitle": "化痰止咳平喘药",
-      "summary": "泻肺平喘，利水消肿",
-      "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-095.jpg?v=712a8e78",
-        "alt": "桑白皮（中经本草图95）",
-        "credit": "用户提供 / 《中经本草》表格",
-        "license": "用户提供，版权归原作者所有",
-        "sourceUrl": "",
-        "kind": "药材"
-      },
-      "docCount": 1,
-      "charCount": 621
     },
     {
       "id": "dacheng-484",
@@ -11054,31 +11082,6 @@
       },
       "docCount": 1,
       "charCount": 930
-    },
-    {
-      "id": "dacheng-520",
-      "number": 606,
-      "name": "松香",
-      "pinyin": "songxiang",
-      "aliases": [
-        "松脂",
-        "白松香",
-        "松脂香"
-      ],
-      "categoryId": "huashi",
-      "categoryTitle": "化湿药",
-      "summary": "祛风燥湿，排脓拔毒、生肌止痛",
-      "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-105.jpg?v=b7371ddd",
-        "alt": "松香（上经本草图105）",
-        "credit": "用户提供 / 《上经本草》表格",
-        "license": "用户提供，版权归原作者所有",
-        "sourceUrl": "",
-        "latin": "",
-        "kind": "药材"
-      },
-      "docCount": 1,
-      "charCount": 893
     },
     {
       "id": "dacheng-521",
