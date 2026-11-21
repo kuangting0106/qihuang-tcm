@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T09:17:35.590Z",
+  "generatedAt": "2026-11-21T09:43:01.360Z",
   "total": 507,
   "withImages": 507,
   "categories": [
@@ -1277,7 +1277,8 @@
         "小胡麻",
         "臭秽",
         "月母草",
-        "益母艾"
+        "益母艾",
+        "茺蔚子"
       ],
       "categoryId": "huoxue",
       "categoryTitle": "活血化瘀药",
@@ -9542,13 +9543,13 @@
       "categoryTitle": "止血药",
       "summary": "收敛止血，燥湿敛疮",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-105.jpg?v=b7371ddd",
-        "alt": "松香（上经本草图105）",
+        "file": "/images/herbs/lecture/xlsx/xlsx-106.jpg?v=bf23d4ff",
+        "alt": "松树（上经本草图106）",
         "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
-        "latin": "",
-        "kind": "药材"
+        "kind": "药材",
+        "url": "/images/herbs/lecture/xlsx/xlsx-106.jpg?v=bf23d4ff"
       },
       "docCount": 3,
       "charCount": 3226
@@ -10215,14 +10216,13 @@
       "categoryTitle": "解表药",
       "summary": "疏散风热，清肺润燥，清肝明目",
       "image": {
-        "url": "/images/herbs/dacheng/inat-b7b4638d72.jpg?v=cf339a2a",
-        "alt": "white mulberry（Morus alba）",
-        "credit": "no rights reserved, uploaded by 葉子",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/56090",
-        "latin": "Morus alba",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b7b4638d72.jpg?v=79895304"
+        "file": "/images/herbs/lecture/zhongjing/zj-096.jpg?v=ddf1bf2f",
+        "alt": "桑白皮（中经本草图96）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/lecture/zhongjing/zj-096.jpg?v=ddf1bf2f"
       },
       "docCount": 5,
       "charCount": 3206

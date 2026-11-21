@@ -9,7 +9,8 @@
     "小胡麻",
     "臭秽",
     "月母草",
-    "益母艾"
+    "益母艾",
+    "茺蔚子"
   ],
   "categoryId": "huoxue",
   "categoryTitle": "活血化瘀药",
@@ -133,6 +134,15 @@
       "sourceUrl": "",
       "latin": "",
       "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xlsx/xlsx-034.jpg?v=edc4e5fa",
+      "alt": "益母草（植株，上经本草图34）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-034.jpg?v=edc4e5fa"
     }
   ],
   "docCount": 3

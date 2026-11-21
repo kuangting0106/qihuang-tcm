@@ -5827,7 +5827,16 @@
       "name": "桑叶",
       "aliases": [],
       "note": "",
-      "images": []
+      "images": [
+        {
+          "file": "/images/herbs/lecture/zhongjing/zj-096.jpg",
+          "alt": "桑白皮（中经本草图96）",
+          "credit": "用户提供 / 《中经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "id": "dacheng-557",
@@ -6433,7 +6442,16 @@
       "name": "何首乌",
       "aliases": [],
       "note": "",
-      "images": []
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xiajing/xj-164.jpg",
+          "alt": "首乌藤（下经本草图164）",
+          "credit": "用户提供 / 《下经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "id": "dacheng-262",
@@ -6621,6 +6639,14 @@
           "file": "/images/herbs/lecture/xiajing/xj-181.jpg",
           "alt": "枳壳（下经本草图181）",
           "credit": "用户提供 / 《下经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/zhongjing/zj-103.jpg",
+          "alt": "枳实（中经本草图103）",
+          "credit": "用户提供 / 《中经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
@@ -7784,6 +7810,14 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/zhongjing/zj-120.jpg",
+          "alt": "合欢皮（中经本草图120）",
+          "credit": "用户提供 / 《中经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
         }
       ]
     },
@@ -8075,7 +8109,16 @@
       "name": "松花粉",
       "aliases": [],
       "note": "",
-      "images": []
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-106.jpg",
+          "alt": "松树（上经本草图106）",
+          "credit": "用户提供 / 《上经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "id": "dacheng-731",
@@ -8255,6 +8298,56 @@
           "file": "/images/herbs/user/shanjijiao-2.jpg",
           "alt": "荜澄茄（山鸡椒，用户提供图片 2）",
           "credit": "用户提供",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "id": "dacheng-049",
+      "name": "益母草",
+      "aliases": [
+        "茺蔚子"
+      ],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-033.jpg",
+          "alt": "益母草（种子，茺蔚子，上经本草图33）",
+          "credit": "用户提供 / 《上经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-034.jpg",
+          "alt": "益母草（植株，上经本草图34）",
+          "credit": "用户提供 / 《上经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "id": "dacheng-001",
+      "name": "紫苏叶",
+      "aliases": [],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/lecture/xiajing/xj-103.jpg",
+          "alt": "紫苏（下经本草图103）",
+          "credit": "用户提供 / 《下经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xiajing/xj-104.jpg",
+          "alt": "紫苏（下经本草图104）",
+          "credit": "用户提供 / 《下经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
