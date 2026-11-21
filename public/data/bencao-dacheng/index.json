@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-21T08:50:00.582Z",
-  "total": 505,
-  "withImages": 505,
+  "generatedAt": "2026-11-21T09:17:35.590Z",
+  "total": 507,
+  "withImages": 507,
   "categories": [
     {
       "id": "jiebiao",
@@ -11,7 +11,7 @@
     {
       "id": "qingre",
       "title": "清热药",
-      "count": 139
+      "count": 140
     },
     {
       "id": "xiexia",
@@ -36,7 +36,7 @@
     {
       "id": "wenli",
       "title": "温里药",
-      "count": 14
+      "count": 15
     },
     {
       "id": "liqi",
@@ -12862,6 +12862,29 @@
       "charCount": 1288
     },
     {
+      "id": "dacheng-673",
+      "number": 1056,
+      "name": "肿节风",
+      "pinyin": "zhongjiefeng",
+      "aliases": [
+        "草珊瑚"
+      ],
+      "categoryId": "qingre",
+      "categoryTitle": "清热药",
+      "summary": "清热凉血，活血消斑，祛风通络",
+      "image": {
+        "file": "/images/herbs/user/caoshanhu-1.jpg?v=65c98a3d",
+        "alt": "肿节风（草珊瑚，用户提供图片 1）",
+        "credit": "用户提供",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/user/caoshanhu-1.jpg?v=65c98a3d"
+      },
+      "docCount": 1,
+      "charCount": 981
+    },
+    {
       "id": "dacheng-674",
       "number": 1057,
       "name": "降香",
@@ -12881,6 +12904,33 @@
       },
       "docCount": 1,
       "charCount": 747
+    },
+    {
+      "id": "dacheng-678",
+      "number": 1061,
+      "name": "荜澄茄",
+      "pinyin": "bichengqie",
+      "aliases": [
+        "山鸡椒",
+        "木姜子",
+        "山姜子",
+        "木香子",
+        "山苍子"
+      ],
+      "categoryId": "wenli",
+      "categoryTitle": "温里药",
+      "summary": "温中散寒，行气止痛",
+      "image": {
+        "file": "/images/herbs/user/shanjijiao-1.jpg?v=c2731c8b",
+        "alt": "荜澄茄（山鸡椒，用户提供图片 1）",
+        "credit": "用户提供",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/user/shanjijiao-1.jpg?v=c2731c8b"
+      },
+      "docCount": 1,
+      "charCount": 450
     },
     {
       "id": "dacheng-686",

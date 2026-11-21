@@ -8204,6 +8204,62 @@
           "kind": "药材"
         }
       ]
+    },
+    {
+      "id": "dacheng-673",
+      "name": "肿节风",
+      "aliases": [
+        "草珊瑚"
+      ],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/user/caoshanhu-1.jpg",
+          "alt": "肿节风（草珊瑚，用户提供图片 1）",
+          "credit": "用户提供",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/user/caoshanhu-2.jpg",
+          "alt": "肿节风（草珊瑚，用户提供图片 2）",
+          "credit": "用户提供",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "id": "dacheng-678",
+      "name": "荜澄茄",
+      "aliases": [
+        "山鸡椒",
+        "木姜子",
+        "山姜子",
+        "木香子",
+        "山苍子"
+      ],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/user/shanjijiao-1.jpg",
+          "alt": "荜澄茄（山鸡椒，用户提供图片 1）",
+          "credit": "用户提供",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/user/shanjijiao-2.jpg",
+          "alt": "荜澄茄（山鸡椒，用户提供图片 2）",
+          "credit": "用户提供",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     }
   ]
 }

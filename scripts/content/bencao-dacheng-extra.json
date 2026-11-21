@@ -4504,7 +4504,9 @@
       "number": 1056,
       "name": "肿节风",
       "pinyin": "zhongjiefeng",
-      "aliases": [],
+      "aliases": [
+        "草珊瑚"
+      ],
       "quote": null,
       "profile": {
         "flavorTags": [
@@ -4904,7 +4906,13 @@
       "number": 1061,
       "name": "荜澄茄",
       "pinyin": "bichengqie",
-      "aliases": [],
+      "aliases": [
+        "山鸡椒",
+        "木姜子",
+        "山姜子",
+        "木香子",
+        "山苍子"
+      ],
       "quote": null,
       "profile": {
         "flavorTags": [

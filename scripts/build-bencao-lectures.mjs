@@ -682,7 +682,7 @@ function mergeAliasEntries(groups) {
 }
 
 const groups = mergeAliasEntries(GROUP_DEFS.map(readGroup))
-const all = groups.flatMap((g) => g.entries)
+let all = groups.flatMap((g) => g.entries)
 
 const errors = []
 for (const group of groups) {
@@ -713,6 +713,20 @@ if (errors.length) {
 }
 
 fs.mkdirSync(outDir, { recursive: true })
+
+// 无图药材不再保留：仅影响药材组，导读与药性总论不参与筛选。
+const droppedNoImage = []
+for (const group of groups) {
+  if (group.id === 'intro' || group.id === 'yaoxing') continue
+  for (const entry of group.entries) {
+    if (!entry.image) droppedNoImage.push(`${group.id}:${entry.id} ${entry.title}`)
+  }
+  group.entries = group.entries.filter((entry) => Boolean(entry.image))
+}
+if (droppedNoImage.length) {
+  console.log(`移除无图讲义条目 ${droppedNoImage.length} 条：${droppedNoImage.join('、')}`)
+}
+all = groups.flatMap((g) => g.entries)
 
 const catalogItems = groups
   .filter((group) => group.id !== 'intro' && group.id !== 'yaoxing')
@@ -780,7 +794,7 @@ const catalog = {
   items: catalogItems,
 }
 
-if (catalog.total < 360 || catalog.threeRanks < 300) {
+if (catalog.total < 340 || catalog.threeRanks < 280) {
   console.error(
     `本草讲义目录条数异常：total=${catalog.total}，threeRanks=${catalog.threeRanks}`,
   )

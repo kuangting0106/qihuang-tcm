@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T08:49:52.516Z",
+  "generatedAt": "2026-11-21T09:17:29.285Z",
   "source": {
     "id": "nihaixia-bencao",
     "title": "倪海厦《神农本草经》讲义",
@@ -24,32 +24,32 @@
       "title": "上经",
       "subtitle": "上药养命",
       "description": "上药共一百二十种，为君主养命以应天，皆无毒，多服久服不伤人；欲轻身益气、不老延年者，本于上经。",
-      "count": 137,
-      "charCount": 113893
+      "count": 133,
+      "charCount": 113050
     },
     {
       "id": "zhongjing",
       "title": "中经",
       "subtitle": "中药遏病",
       "description": "中药共一百二十种，为臣，主养性以应人，有毒无毒斟酌其宜；欲遏病补虚羸者，本于中经。",
-      "count": 93,
-      "charCount": 53516
+      "count": 88,
+      "charCount": 53059
     },
     {
       "id": "xiajing",
       "title": "下经",
       "subtitle": "下药除邪",
       "description": "下药共一百二十五种，为佐使，主治病以应地，多毒不可久服；欲除寒热邪气、破积聚、愈疾者，本于下经。",
-      "count": 75,
-      "charCount": 37734
+      "count": 69,
+      "charCount": 37118
     },
     {
       "id": "nishi",
       "title": "倪师补充药物",
       "subtitle": "《伤寒》《金匮》所用而《本经》未收",
       "description": "倪海厦按：以下药物原不见于《神农本草经》，但张仲景《伤寒论》《金匮要略》中有使用，另列并附使用说明。",
-      "count": 27,
-      "charCount": 10945
+      "count": 26,
+      "charCount": 10926
     },
     {
       "id": "editor",
