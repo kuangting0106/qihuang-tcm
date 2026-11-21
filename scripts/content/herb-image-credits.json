@@ -1549,6 +1549,14 @@
           "kind": "药材"
         },
         {
+          "file": "/images/herbs/lecture/xlsx/xlsx-053.jpg",
+          "alt": "龙胆（上经本草图53）",
+          "credit": "用户提供 / 《上经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
           "file": "/images/herbs/lecture/508514.jpg",
           "alt": "龙胆（已有图片）",
           "credit": "© ~~ / iNaturalist",
@@ -2222,14 +2230,6 @@
         {
           "file": "/images/herbs/lecture/zhongjing/zj-047.jpg",
           "alt": "石龙芮（中经本草图47）",
-          "credit": "用户提供 / 《中经本草》表格",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/lecture/zhongjing/zj-049.jpg",
-          "alt": "石龙芮（中经本草图49）",
           "credit": "用户提供 / 《中经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -3252,6 +3252,22 @@
         {
           "file": "/images/herbs/lecture/zhongjing/zj-050.jpg",
           "alt": "紫菀（中经本草图50）",
+          "credit": "用户提供 / 《中经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/zhongjing/zj-051.jpg",
+          "alt": "紫菀（中经本草图51）",
+          "credit": "用户提供 / 《中经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/zhongjing/zj-052.jpg",
+          "alt": "紫菀（中经本草图52）",
           "credit": "用户提供 / 《中经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -5503,6 +5519,14 @@
         {
           "file": "/images/herbs/lecture/zhongjing/zj-048.jpg",
           "alt": "白茅根（中经本草图48）",
+          "credit": "用户提供 / 《中经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/zhongjing/zj-049.jpg",
+          "alt": "白茅根（中经本草图49）",
           "credit": "用户提供 / 《中经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",

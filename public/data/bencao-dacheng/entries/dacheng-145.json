@@ -90,12 +90,21 @@
   "summary": "凉血止血，清热利尿",
   "images": [
     {
-      "url": "/images/herbs/lecture/zhongjing/zj-048.jpg",
-      "alt": "白茅根（用户提供图片 1）",
+      "url": "/images/herbs/lecture/zhongjing/zj-048.jpg?v=169aec81",
+      "alt": "白茅根（中经本草图48）",
       "credit": "用户提供 / 《中经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-049.jpg?v=aabc5b7d",
+      "alt": "白茅根（中经本草图49）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-049.jpg?v=aabc5b7d"
     }
   ],
   "docCount": 1

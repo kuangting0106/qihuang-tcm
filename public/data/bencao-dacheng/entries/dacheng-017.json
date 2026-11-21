@@ -67,45 +67,45 @@
   "summary": "鲜地黄： 清热生津，凉血，止血",
   "images": [
     {
-      "url": "/images/herbs/dacheng/plant-045.jpg",
+      "url": "/images/herbs/dacheng/plant-045.jpg?v=0a25cfc2",
       "alt": "地黄（Rehmannia glutinosa）",
       "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
       "license": "用户提供，来源网络，版权归原作者所有",
       "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
       "latin": "Rehmannia glutinosa",
       "kind": "原植物",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/plant-045.jpg"
+      "thumbUrl": "/images/herbs/dacheng/thumbs/plant-045.jpg?v=592862cd"
     },
     {
-      "file": "/images/herbs/lecture/xlsx/xlsx-025.jpg",
+      "file": "/images/herbs/lecture/xlsx/xlsx-025.jpg?v=642d5b8a",
       "alt": "地黄（上经本草图25）",
       "credit": "用户提供 / 《上经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
-      "url": "/images/herbs/lecture/xlsx/xlsx-025.jpg"
+      "url": "/images/herbs/lecture/xlsx/xlsx-025.jpg?v=642d5b8a"
     },
     {
-      "file": "/images/herbs/lecture/xlsx/xlsx-027.jpg",
+      "file": "/images/herbs/lecture/xlsx/xlsx-027.jpg?v=9699b5d4",
       "alt": "地黄（上经本草图27）",
       "credit": "用户提供 / 《上经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
-      "url": "/images/herbs/lecture/xlsx/xlsx-027.jpg"
+      "url": "/images/herbs/lecture/xlsx/xlsx-027.jpg?v=9699b5d4"
     },
     {
-      "url": "/images/herbs/dacheng/inat-b76a508400.jpg",
+      "url": "/images/herbs/dacheng/inat-b76a508400.jpg?v=0cdac53a",
       "alt": "Rehmannia（Rehmannia glutinosa）",
       "credit": "(c) Chuangzao, some rights reserved (CC BY-NC), uploaded by Chuangzao",
       "license": "CC-BY-NC",
       "sourceUrl": "https://www.inaturalist.org/taxa/544445",
       "latin": "Rehmannia glutinosa",
       "kind": "原植物",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b76a508400.jpg"
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b76a508400.jpg?v=ac16dc61"
     },
     {
-      "url": "/images/herbs/lecture/xlsx/xlsx-026.jpg",
+      "url": "/images/herbs/lecture/xlsx/xlsx-026.jpg?v=33e9f661",
       "alt": "熟地黄（用户提供图片）",
       "credit": "用户提供 / 中草药图片自搜表格",
       "license": "用户提供，版权归原作者所有",
@@ -194,14 +194,14 @@
       "sourceText": "玄参科植物地黄 Rehmannia glutinosa Libosch.的新鲜或干燥块根。",
       "images": [
         {
-          "url": "/images/herbs/dacheng/inat-b76a508400.jpg",
+          "url": "/images/herbs/dacheng/inat-b76a508400.jpg?v=0cdac53a",
           "alt": "Rehmannia（Rehmannia glutinosa）",
           "credit": "(c) Chuangzao, some rights reserved (CC BY-NC), uploaded by Chuangzao",
           "license": "CC-BY-NC",
           "sourceUrl": "https://www.inaturalist.org/taxa/544445",
           "latin": "Rehmannia glutinosa",
           "kind": "原植物",
-          "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b76a508400.jpg"
+          "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b76a508400.jpg?v=ac16dc61"
         }
       ],
       "charCount": 1245
@@ -278,7 +278,7 @@
       "sourceText": "玄参科植物地黄 Rehmannia glutinosa Libosch.的新鲜块根，经加工蒸晒而成。",
       "images": [
         {
-          "url": "/images/herbs/lecture/xlsx/xlsx-026.jpg",
+          "url": "/images/herbs/lecture/xlsx/xlsx-026.jpg?v=33e9f661",
           "alt": "熟地黄（用户提供图片）",
           "credit": "用户提供 / 中草药图片自搜表格",
           "license": "用户提供，版权归原作者所有",

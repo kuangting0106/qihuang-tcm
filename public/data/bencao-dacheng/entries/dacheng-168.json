@@ -94,60 +94,60 @@
   "summary": "清热解毒，凉血利咽",
   "images": [
     {
-      "url": "/images/herbs/dacheng/inat-3931f1a2c3.jpg",
+      "url": "/images/herbs/dacheng/inat-3931f1a2c3.jpg?v=526c255e",
       "alt": "woad（Isatis tinctoria）",
       "credit": "(c) reddad, some rights reserved (CC BY-NC), uploaded by reddad",
       "license": "CC-BY-NC",
       "sourceUrl": "https://www.inaturalist.org/taxa/77509",
       "latin": "Isatis tinctoria",
       "kind": "原植物",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-3931f1a2c3.jpg"
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-3931f1a2c3.jpg?v=0f05fd93"
     },
     {
-      "file": "/images/herbs/supplement/supp-18.jpg",
+      "file": "/images/herbs/supplement/supp-18.jpg?v=44ef12c1",
       "alt": "板蓝根（补充本草图18）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
-      "url": "/images/herbs/supplement/supp-18.jpg"
+      "url": "/images/herbs/supplement/supp-18.jpg?v=44ef12c1"
     },
     {
-      "file": "/images/herbs/supplement/supp-19.jpg",
+      "file": "/images/herbs/supplement/supp-19.jpg?v=5bb1c29a",
       "alt": "板蓝根（补充本草图19）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
-      "url": "/images/herbs/supplement/supp-19.jpg"
+      "url": "/images/herbs/supplement/supp-19.jpg?v=5bb1c29a"
     },
     {
-      "file": "/images/herbs/lecture/xlsx/xlsx-067.jpg",
+      "file": "/images/herbs/lecture/xlsx/xlsx-067.jpg?v=d5422422",
       "alt": "板蓝根（上经本草图67）",
       "credit": "用户提供 / 《上经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
-      "url": "/images/herbs/lecture/xlsx/xlsx-067.jpg"
+      "url": "/images/herbs/lecture/xlsx/xlsx-067.jpg?v=d5422422"
     },
     {
-      "file": "/images/herbs/lecture/xlsx/xlsx-068.jpg",
+      "file": "/images/herbs/lecture/xlsx/xlsx-068.jpg?v=d28e0bfa",
       "alt": "板蓝根（上经本草图68）",
       "credit": "用户提供 / 《上经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
-      "url": "/images/herbs/lecture/xlsx/xlsx-068.jpg"
+      "url": "/images/herbs/lecture/xlsx/xlsx-068.jpg?v=d28e0bfa"
     },
     {
-      "url": "/images/herbs/dacheng/plant-001.jpg",
+      "url": "/images/herbs/dacheng/plant-001.jpg?v=95d159c4",
       "alt": "菘蓝（Isatis indigotica）",
       "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
       "license": "用户提供，来源网络，版权归原作者所有",
       "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
       "latin": "Isatis indigotica",
       "kind": "原植物",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/plant-001.jpg"
+      "thumbUrl": "/images/herbs/dacheng/thumbs/plant-001.jpg?v=24d02a58"
     }
   ],
   "docCount": 3,
@@ -223,14 +223,14 @@
       "sourceText": "十字花科植物菘蓝 Isatis indigotica Fort.的干燥叶。",
       "images": [
         {
-          "url": "/images/herbs/dacheng/plant-001.jpg",
+          "url": "/images/herbs/dacheng/plant-001.jpg?v=95d159c4",
           "alt": "菘蓝（Isatis indigotica）",
           "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
           "license": "用户提供，来源网络，版权归原作者所有",
           "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
           "latin": "Isatis indigotica",
           "kind": "原植物",
-          "thumbUrl": "/images/herbs/dacheng/thumbs/plant-001.jpg"
+          "thumbUrl": "/images/herbs/dacheng/thumbs/plant-001.jpg?v=24d02a58"
         }
       ],
       "charCount": 631
@@ -301,7 +301,7 @@
       "sourceText": "爵床科植物马蓝 Baphicacanthus cusia （Nees）Bremek.、蓼科植物蓼蓝 Polygonum tinctorium Ait.或十字花科植物菘蓝 Isatis indigotica Fort.的叶或茎叶经加工制得的干燥粉末、团块或颗粒。",
       "images": [
         {
-          "url": "/images/herbs/lecture/xlsx/xlsx-067.jpg",
+          "url": "/images/herbs/lecture/xlsx/xlsx-067.jpg?v=d5422422",
           "alt": "青黛（上经本草图67）",
           "credit": "用户提供 / 《上经本草》表格",
           "license": "用户提供，版权归原作者所有",

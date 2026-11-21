@@ -78,12 +78,21 @@
   "summary": "清热泻火，除烦止渴",
   "images": [
     {
-      "url": "/images/herbs/lecture/zhongjing/zj-004.jpg",
-      "alt": "石膏（用户提供图片 1）",
+      "url": "/images/herbs/lecture/zhongjing/zj-004.jpg?v=e28f3cc1",
+      "alt": "石膏（中经本草图4）",
       "credit": "用户提供 / 《中经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-007.jpg?v=87aba4bb",
+      "alt": "石膏（中经本草图7）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-007.jpg?v=87aba4bb"
     }
   ],
   "docCount": 2,

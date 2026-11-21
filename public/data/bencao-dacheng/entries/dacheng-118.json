@@ -92,13 +92,40 @@
   "summary": "祛风除湿，温经止痛",
   "images": [
     {
-      "file": "/images/herbs/lecture/xiajing/xj-007.jpg",
+      "file": "/images/herbs/supplement/supp-148.jpg?v=44d551a7",
+      "alt": "川乌（补充本草图148）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-148.jpg?v=44d551a7"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-149.jpg?v=8f33e768",
+      "alt": "川乌（补充本草图149）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-149.jpg?v=8f33e768"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-150.jpg?v=56b3aeee",
+      "alt": "川乌（补充本草图150）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-150.jpg?v=56b3aeee"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-007.jpg?v=64a44045",
       "alt": "川乌（下经本草图7）",
       "credit": "用户提供 / 《下经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
-      "url": "/images/herbs/lecture/xiajing/xj-007.jpg"
+      "url": "/images/herbs/lecture/xiajing/xj-007.jpg?v=64a44045"
     }
   ],
   "docCount": 3,
@@ -173,8 +200,8 @@
       "sourceText": "毛茛科植物乌头 Aconitum carmichaelii Debx.的子根的加工品。",
       "images": [
         {
-          "url": "/images/herbs/lecture/xiajing/xj-007.jpg",
-          "alt": "附子（用户提供图片 1）",
+          "url": "/images/herbs/lecture/xiajing/xj-007.jpg?v=64a44045",
+          "alt": "附子（下经本草图7）",
           "credit": "用户提供 / 《下经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",

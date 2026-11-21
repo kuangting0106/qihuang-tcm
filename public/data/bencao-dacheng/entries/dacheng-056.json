@@ -121,7 +121,7 @@
   "summary": "养心安神，润肠通便，止汗",
   "images": [
     {
-      "url": "/images/herbs/lecture/xlsx/xlsx-113.jpg",
+      "url": "/images/herbs/lecture/xlsx/xlsx-113.jpg?v=7f9c8ff7",
       "alt": "柏子仁（上经本草图113）",
       "credit": "用户提供 / 《上经本草》表格",
       "license": "用户提供，版权归原作者所有",
@@ -130,21 +130,31 @@
       "kind": "药材"
     },
     {
-      "file": "/images/herbs/lecture/xlsx/xlsx-114.jpg",
+      "file": "/images/herbs/lecture/xlsx/xlsx-114.jpg?v=0f929714",
       "alt": "柏子仁（上经本草图114）",
       "credit": "用户提供 / 《上经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
-      "url": "/images/herbs/lecture/xlsx/xlsx-114.jpg"
+      "url": "/images/herbs/lecture/xlsx/xlsx-114.jpg?v=0f929714"
     },
     {
-      "url": "/images/herbs/lecture/xiajing/xj-107.jpg",
-      "alt": "侧柏叶（下经本草图107）",
+      "file": "/images/herbs/lecture/xiajing/xj-107.jpg?v=a244b2d0",
+      "alt": "柏子仁（下经本草图107）",
       "credit": "用户提供 / 《下经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
-      "kind": "药材"
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-107.jpg?v=a244b2d0"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-108.jpg?v=03887c6e",
+      "alt": "柏子仁（下经本草图108）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-108.jpg?v=03887c6e"
     }
   ],
   "docCount": 3,
@@ -223,7 +233,7 @@
       "sourceText": "柏科植物侧柏 Platycladus orientalis （L.）Franco的干燥枝梢和叶。",
       "images": [
         {
-          "url": "/images/herbs/lecture/xiajing/xj-107.jpg",
+          "url": "/images/herbs/lecture/xiajing/xj-107.jpg?v=a244b2d0",
           "alt": "侧柏叶（下经本草图107）",
           "credit": "用户提供 / 《下经本草》表格",
           "license": "用户提供，版权归原作者所有",

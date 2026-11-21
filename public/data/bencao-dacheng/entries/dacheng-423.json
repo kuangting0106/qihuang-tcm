@@ -95,13 +95,13 @@
   "summary": "收敛止血，燥湿敛疮",
   "images": [
     {
-      "file": "/images/herbs/lecture/xlsx/xlsx-105.jpg",
-      "alt": "松花粉（上经本草图105）",
+      "url": "/images/herbs/lecture/xlsx/xlsx-105.jpg?v=87867b6f",
+      "alt": "松香（上经本草图105）",
       "credit": "用户提供 / 《上经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
-      "kind": "药材",
-      "url": "/images/herbs/lecture/xlsx/xlsx-105.jpg"
+      "latin": "",
+      "kind": "药材"
     }
   ],
   "docCount": 3,
@@ -246,8 +246,8 @@
       "sourceText": "松科松属若干植物渗出的油树脂，经蒸馏或提取除去挥发油后所余固体树脂。",
       "images": [
         {
-          "url": "/images/herbs/lecture/xlsx/xlsx-105.jpg",
-          "alt": "松香（用户提供图片 1）",
+          "url": "/images/herbs/lecture/xlsx/xlsx-105.jpg?v=87867b6f",
+          "alt": "松香（上经本草图105）",
           "credit": "用户提供 / 《上经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",

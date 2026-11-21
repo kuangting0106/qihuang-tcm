@@ -91,41 +91,41 @@
   "summary": "清热涤痰，宽胸散结，润燥滑肠",
   "images": [
     {
-      "url": "/images/herbs/dacheng/plant-080.jpg",
+      "url": "/images/herbs/dacheng/plant-080.jpg?v=96bfcabb",
       "alt": "栝楼（Trichosanthes kirilowii）",
       "credit": "用户提供 / 中草药知识汇总（百家号）· 药用植物图鉴（作者：冬凌草）",
       "license": "用户提供，来源网络，版权归原作者所有",
       "sourceUrl": "https://baijiahao.baidu.com/s?id=1846692323081276472",
       "latin": "Trichosanthes kirilowii",
       "kind": "原植物",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/plant-080.jpg"
+      "thumbUrl": "/images/herbs/dacheng/thumbs/plant-080.jpg?v=39f028a5"
     },
     {
-      "file": "/images/herbs/lecture/zhongjing/zj-013.jpg",
+      "file": "/images/herbs/lecture/zhongjing/zj-013.jpg?v=b00cfdcd",
       "alt": "瓜蒌（中经本草图13）",
       "credit": "用户提供 / 《中经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
-      "url": "/images/herbs/lecture/zhongjing/zj-013.jpg"
+      "url": "/images/herbs/lecture/zhongjing/zj-013.jpg?v=b00cfdcd"
     },
     {
-      "file": "/images/herbs/lecture/zhongjing/zj-014.jpg",
+      "file": "/images/herbs/lecture/zhongjing/zj-014.jpg?v=c6049c0c",
       "alt": "瓜蒌（中经本草图14）",
       "credit": "用户提供 / 《中经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
-      "url": "/images/herbs/lecture/zhongjing/zj-014.jpg"
+      "url": "/images/herbs/lecture/zhongjing/zj-014.jpg?v=c6049c0c"
     },
     {
-      "file": "/images/herbs/lecture/zhongjing/zj-017.jpg",
+      "file": "/images/herbs/lecture/zhongjing/zj-017.jpg?v=0fec8518",
       "alt": "瓜蒌（中经本草图17）",
       "credit": "用户提供 / 《中经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
-      "url": "/images/herbs/lecture/zhongjing/zj-017.jpg"
+      "url": "/images/herbs/lecture/zhongjing/zj-017.jpg?v=0fec8518"
     }
   ],
   "docCount": 6,
@@ -440,7 +440,7 @@
       "sourceText": "葫芦科植物栝楼 Trichosanthes kirilowii Maxim的干燥根。",
       "images": [
         {
-          "url": "/images/herbs/lecture/zhongjing/zj-013.jpg",
+          "url": "/images/herbs/lecture/zhongjing/zj-013.jpg?v=b00cfdcd",
           "alt": "天花粉（中经本草图13）",
           "credit": "用户提供 / 《中经本草》表格",
           "license": "用户提供，版权归原作者所有",

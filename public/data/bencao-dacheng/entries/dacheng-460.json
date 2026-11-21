@@ -93,41 +93,41 @@
   "summary": "疏散风热，清肺润燥，清肝明目",
   "images": [
     {
-      "file": "/images/herbs/lecture/xiajing/xj-073.jpg",
+      "file": "/images/herbs/lecture/xiajing/xj-073.jpg?v=886d97e1",
       "alt": "桑叶（下经本草图73）",
       "credit": "用户提供 / 《下经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
-      "url": "/images/herbs/lecture/xiajing/xj-073.jpg"
+      "url": "/images/herbs/lecture/xiajing/xj-073.jpg?v=886d97e1"
     },
     {
-      "file": "/images/herbs/lecture/zhongjing/zj-095.jpg",
+      "file": "/images/herbs/lecture/zhongjing/zj-095.jpg?v=f916df81",
       "alt": "桑叶（中经本草图95）",
       "credit": "用户提供 / 《中经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
-      "url": "/images/herbs/lecture/zhongjing/zj-095.jpg"
+      "url": "/images/herbs/lecture/zhongjing/zj-095.jpg?v=f916df81"
     },
     {
-      "file": "/images/herbs/lecture/zhongjing/zj-096.jpg",
+      "file": "/images/herbs/lecture/zhongjing/zj-096.jpg?v=e2099595",
       "alt": "桑叶（中经本草图96）",
       "credit": "用户提供 / 《中经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
-      "url": "/images/herbs/lecture/zhongjing/zj-096.jpg"
+      "url": "/images/herbs/lecture/zhongjing/zj-096.jpg?v=e2099595"
     },
     {
-      "url": "/images/herbs/dacheng/inat-b7b4638d72.jpg",
+      "url": "/images/herbs/dacheng/inat-b7b4638d72.jpg?v=cf339a2a",
       "alt": "white mulberry（Morus alba）",
       "credit": "no rights reserved, uploaded by 葉子",
       "license": "CC0",
       "sourceUrl": "https://www.inaturalist.org/taxa/56090",
       "latin": "Morus alba",
       "kind": "原植物",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b7b4638d72.jpg"
+      "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b7b4638d72.jpg?v=79895304"
     }
   ],
   "docCount": 5,
@@ -257,14 +257,14 @@
       "sourceText": "桑科植物桑 Morus alba L.的干燥果穗。",
       "images": [
         {
-          "url": "/images/herbs/dacheng/inat-b7b4638d72.jpg",
+          "url": "/images/herbs/dacheng/inat-b7b4638d72.jpg?v=cf339a2a",
           "alt": "white mulberry（Morus alba）",
           "credit": "no rights reserved, uploaded by 葉子",
           "license": "CC0",
           "sourceUrl": "https://www.inaturalist.org/taxa/56090",
           "latin": "Morus alba",
           "kind": "原植物",
-          "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b7b4638d72.jpg"
+          "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b7b4638d72.jpg?v=79895304"
         }
       ],
       "charCount": 894
@@ -341,7 +341,7 @@
       "sourceText": "桑科植物桑 Morus alba L.的干燥根皮。",
       "images": [
         {
-          "url": "/images/herbs/lecture/xiajing/xj-073.jpg",
+          "url": "/images/herbs/lecture/xiajing/xj-073.jpg?v=886d97e1",
           "alt": "桑白皮（下经本草图73）",
           "credit": "用户提供 / 《下经本草》表格",
           "license": "用户提供，版权归原作者所有",
