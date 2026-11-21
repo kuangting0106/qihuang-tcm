@@ -117,13 +117,22 @@
   "summary": "燥湿健脾，祛风散寒，明目",
   "images": [
     {
-      "url": "/images/herbs/lecture/786048.jpeg",
-      "alt": "苍术（Atractylodes lancea）",
-      "credit": "© Kim, Hyun-tae / iNaturalist",
-      "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/786048",
+      "url": "/images/herbs/lecture/xiajing/xj-173.jpg",
+      "alt": "苍术（下经本草图173）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Atractylodes lancea",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-786048.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-174.jpg",
+      "alt": "苍术（下经本草图174）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-174.jpg"
     }
   ],
   "docCount": 2

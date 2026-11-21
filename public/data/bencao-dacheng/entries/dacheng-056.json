@@ -121,18 +121,27 @@
   "summary": "养心安神，润肠通便，止汗",
   "images": [
     {
-      "url": "/images/herbs/lecture/xlsx/xlsx-115.jpg",
-      "alt": "柏子仁（用户提供图片 1）",
-      "credit": "用户提供 / 中草药图片自搜表格",
+      "url": "/images/herbs/lecture/xlsx/xlsx-113.jpg",
+      "alt": "柏子仁（上经本草图113）",
+      "credit": "用户提供 / 《上经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "latin": "",
       "kind": "药材"
     },
     {
-      "url": "/images/herbs/lecture/extra/ex-107.jpg",
-      "alt": "侧柏叶（用户提供图片 1）",
-      "credit": "用户提供 / 本草表格",
+      "file": "/images/herbs/lecture/xlsx/xlsx-114.jpg",
+      "alt": "柏子仁（上经本草图114）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-114.jpg"
+    },
+    {
+      "url": "/images/herbs/lecture/xiajing/xj-107.jpg",
+      "alt": "侧柏叶（下经本草图107）",
+      "credit": "用户提供 / 《下经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材"
@@ -214,9 +223,9 @@
       "sourceText": "柏科植物侧柏 Platycladus orientalis （L.）Franco的干燥枝梢和叶。",
       "images": [
         {
-          "url": "/images/herbs/lecture/extra/ex-107.jpg",
-          "alt": "侧柏叶（用户提供图片 1）",
-          "credit": "用户提供 / 本草表格",
+          "url": "/images/herbs/lecture/xiajing/xj-107.jpg",
+          "alt": "侧柏叶（下经本草图107）",
+          "credit": "用户提供 / 《下经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"

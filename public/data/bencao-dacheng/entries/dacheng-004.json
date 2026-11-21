@@ -116,13 +116,31 @@
   "summary": "解表散寒，祛风止痛，宣通鼻窍，燥湿止带，消肿排脓",
   "images": [
     {
-      "url": "/images/herbs/lecture/501057.jpg",
-      "alt": "白芷（Angelica dahurica）",
-      "credit": "© Lee, seong-won / iNaturalist",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/501057",
+      "url": "/images/herbs/lecture/zhongjing/zj-039.jpg",
+      "alt": "白芷（中经本草图39）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Angelica dahurica",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-501057.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-040.jpg",
+      "alt": "白芷（中经本草图40）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-040.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-041.jpg",
+      "alt": "白芷（中经本草图41）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-041.jpg"
     }
   ],
   "docCount": 2

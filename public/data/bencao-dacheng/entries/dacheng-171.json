@@ -90,13 +90,31 @@
   "summary": "活血止痛，行气解郁，清心凉血，利胆退黄",
   "images": [
     {
-      "url": "/images/herbs/lecture/347672.jpg",
-      "alt": "郁金（Curcuma aromatica）",
-      "credit": "© Purnendu Roy / iNaturalist",
-      "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/347672",
+      "url": "/images/herbs/lecture/xiajing/xj-123.jpg",
+      "alt": "郁金（下经本草图123）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Curcuma aromatica",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-347672.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-010.jpg",
+      "alt": "郁金（下经本草图10）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-010.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-011.jpg",
+      "alt": "郁金（下经本草图11）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-011.jpg"
     }
   ],
   "docCount": 2,

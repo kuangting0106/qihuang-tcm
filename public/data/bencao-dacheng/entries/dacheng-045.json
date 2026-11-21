@@ -117,14 +117,13 @@
   "summary": "散瘀止血，消肿定痛",
   "images": [
     {
-      "url": "/images/herbs/lecture/user-sanqi-plant.jpg",
-      "alt": "三七（植株）",
-      "credit": "用户提供",
-      "license": "仅站内学习",
+      "url": "/images/herbs/lecture/xiajing/xj-119.jpg",
+      "alt": "三七（下经本草图119）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "latin": "Panax notoginseng",
-      "kind": "植株",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-user-sanqi-plant.jpg"
+      "kind": "药材"
     }
   ],
   "docCount": 2

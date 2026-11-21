@@ -91,13 +91,22 @@
   "summary": "涌吐风痰，杀虫",
   "images": [
     {
-      "url": "/images/herbs/lecture/344733.jpg",
-      "alt": "藜芦（Veratrum nigrum）",
-      "credit": "© HermannFalkner/sokol / iNaturalist",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/344733",
+      "url": "/images/herbs/lecture/xiajing/xj-022.jpg",
+      "alt": "藜芦（下经本草图22）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Veratrum nigrum",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-344733.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-023.jpg",
+      "alt": "藜芦（下经本草图23）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-023.jpg"
     }
   ],
   "docCount": 1

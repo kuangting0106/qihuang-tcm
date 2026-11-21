@@ -90,13 +90,22 @@
   "summary": "发汗散寒，宣肺平喘，利水消肿",
   "images": [
     {
-      "url": "/images/herbs/lecture/135489.jpg",
-      "alt": "麻黄（Ephedra sinica）",
-      "credit": "© Daba / iNaturalist",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/135489",
+      "url": "/images/herbs/lecture/zhongjing/zj-020.jpg",
+      "alt": "麻黄（中经本草图20）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Ephedra sinica",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-135489.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-021.jpg",
+      "alt": "麻黄（中经本草图21）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-021.jpg"
     }
   ],
   "docCount": 2,

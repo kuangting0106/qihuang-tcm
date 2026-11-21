@@ -79,10 +79,19 @@
     {
       "url": "/images/herbs/lecture/xiajing/xj-083.jpg",
       "alt": "斑蝥（用户提供图片 1）",
-      "credit": "用户提供 / 下经本草表格",
+      "credit": "用户提供 / 《下经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-084.jpg",
+      "alt": "斑蝥（下经本草图84）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-084.jpg"
     }
   ],
   "docCount": 1

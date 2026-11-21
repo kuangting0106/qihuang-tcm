@@ -88,17 +88,17 @@
   "summary": "清热燥湿，泻肝胆火",
   "images": [
     {
-      "url": "/images/herbs/lecture/508514.jpg",
-      "alt": "龙胆（已有图片）",
-      "credit": "© ~~ / iNaturalist",
-      "license": "CC BY-SA",
-      "sourceUrl": "https://www.inaturalist.org/taxa/508514",
+      "url": "/images/herbs/lecture/xlsx/xlsx-052.jpg",
+      "alt": "龙胆（上经本草图52）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Gentiana scabra",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-508514.jpg"
+      "kind": "药材"
     },
     {
       "file": "/images/herbs/supplement/supp-123.jpg",
-      "alt": "龙胆（补充本草图1）",
+      "alt": "龙胆（补充本草图123）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
@@ -107,12 +107,21 @@
     },
     {
       "file": "/images/herbs/supplement/supp-124.jpg",
-      "alt": "龙胆（补充本草图2）",
+      "alt": "龙胆（补充本草图124）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
       "url": "/images/herbs/supplement/supp-124.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-68.jpg",
+      "alt": "龙胆（补充本草图68）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-68.jpg"
     }
   ],
   "docCount": 1

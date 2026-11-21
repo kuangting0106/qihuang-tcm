@@ -117,13 +117,22 @@
   "summary": "养阴生津，润肺清心",
   "images": [
     {
-      "url": "/images/herbs/lecture/200061.jpeg",
-      "alt": "麦冬（已有图片）",
-      "credit": "© 卢江离 / iNaturalist",
-      "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/200061",
+      "url": "/images/herbs/lecture/xlsx/xlsx-037.jpg",
+      "alt": "麦冬（上经本草图37）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Ophiopogon japonicus",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-200061.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xlsx/xlsx-015.jpg",
+      "alt": "麦冬（上经本草图15）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-015.jpg"
     }
   ],
   "docCount": 2

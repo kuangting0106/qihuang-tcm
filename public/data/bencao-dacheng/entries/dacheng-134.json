@@ -88,13 +88,22 @@
   "summary": "泻水逐饮，消肿散结",
   "images": [
     {
-      "url": "/images/herbs/lecture/1150347.jpeg",
-      "alt": "甘遂（Euphorbia kansui）",
-      "credit": "© zhangyuhong / iNaturalist",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/1150347",
+      "url": "/images/herbs/lecture/xiajing/xj-029.jpg",
+      "alt": "甘遂（下经本草图29）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Euphorbia kansui",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-1150347.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-030.jpg",
+      "alt": "甘遂（下经本草图30）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-030.jpg"
     }
   ],
   "docCount": 1

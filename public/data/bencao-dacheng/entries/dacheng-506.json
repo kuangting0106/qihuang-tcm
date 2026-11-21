@@ -89,13 +89,22 @@
   "summary": "补肝肾，强筋骨，祛风湿，安胎",
   "images": [
     {
-      "url": "/images/herbs/lecture/849502.jpg",
-      "alt": "桑寄生（已有图片）",
-      "credit": "© lchcd / iNaturalist",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/849502",
+      "url": "/images/herbs/lecture/xlsx/xlsx-129.jpg",
+      "alt": "桑寄生（上经本草图129）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Taxillus sutchuenensis",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-849502.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xlsx/xlsx-130.jpg",
+      "alt": "桑寄生（上经本草图130）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-130.jpg"
     }
   ],
   "docCount": 1

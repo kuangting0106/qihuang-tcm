@@ -126,6 +126,33 @@
       "latin": "Pueraria lobata",
       "kind": "原植物",
       "thumbUrl": "/images/herbs/dacheng/thumbs/plant-084.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-010.jpg",
+      "alt": "葛根（中经本草图10）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-010.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-011.jpg",
+      "alt": "葛根（中经本草图11）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-011.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-012.jpg",
+      "alt": "葛根（中经本草图12）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-012.jpg"
     }
   ],
   "docCount": 3,

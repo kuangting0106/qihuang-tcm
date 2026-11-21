@@ -90,13 +90,22 @@
   "summary": "清热凉血，利尿通淋，解毒疗疮",
   "images": [
     {
-      "url": "/images/herbs/lecture/772874.jpeg",
-      "alt": "白薇（Vincetoxicum atratum）",
-      "credit": "© 羅元甫 / iNaturalist",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/772874",
+      "url": "/images/herbs/lecture/zhongjing/zj-067.jpg",
+      "alt": "白薇（中经本草图67）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Vincetoxicum atratum",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-772874.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-068.jpg",
+      "alt": "白薇（中经本草图68）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-068.jpg"
     }
   ],
   "docCount": 1

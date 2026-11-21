@@ -90,13 +90,13 @@
   "summary": "清热燥湿，泻火解毒",
   "images": [
     {
-      "url": "/images/herbs/lecture/497721.jpg",
-      "alt": "黄连（已有图片）",
-      "credit": "© misakinokukuru / iNaturalist",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/497721",
+      "url": "/images/herbs/lecture/xlsx/xlsx-070.jpg",
+      "alt": "黄连（上经本草图70）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Coptis chinensis",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-497721.jpg"
+      "kind": "药材"
     }
   ],
   "docCount": 1

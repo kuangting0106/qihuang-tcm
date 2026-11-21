@@ -113,12 +113,30 @@
   "images": [
     {
       "file": "/images/herbs/supplement/supp-107.jpg",
-      "alt": "川贝母（补充本草图1）",
+      "alt": "川贝母（补充本草图107）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
       "url": "/images/herbs/supplement/supp-107.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-035.jpg",
+      "alt": "川贝母（中经本草图35）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-035.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-036.jpg",
+      "alt": "川贝母（中经本草图36）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-036.jpg"
     }
   ],
   "docCount": 2

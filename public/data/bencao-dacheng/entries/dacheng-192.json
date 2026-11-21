@@ -87,22 +87,22 @@
   "summary": "破血行气，通经止痛",
   "images": [
     {
-      "file": "/images/herbs/supplement/supp-92.jpg",
-      "alt": "姜黄（补充本草图1）",
-      "credit": "用户提供 / 《补充本草》",
-      "license": "用户提供，版权归原作者所有",
-      "sourceUrl": "",
-      "kind": "药材",
-      "url": "/images/herbs/supplement/supp-92.jpg"
-    },
-    {
       "file": "/images/herbs/supplement/supp-91.jpg",
-      "alt": "姜黄（补充本草图2）",
+      "alt": "姜黄（补充本草图91）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
       "url": "/images/herbs/supplement/supp-91.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-92.jpg",
+      "alt": "姜黄（补充本草图92）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-92.jpg"
     }
   ],
   "docCount": 1

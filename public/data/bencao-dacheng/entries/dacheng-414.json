@@ -90,12 +90,22 @@
   "summary": "解郁安神",
   "images": [
     {
-      "url": "/images/herbs/lecture/zhongjing/zj-118.jpg",
-      "alt": "合欢皮（用户提供图片 1）",
-      "credit": "用户提供 / 中经本草表格",
+      "file": "/images/herbs/lecture/zhongjing/zj-119.jpg",
+      "alt": "合欢花（中经本草图119）",
+      "credit": "用户提供 / 《中经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
-      "kind": "药材"
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-119.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-120.jpg",
+      "alt": "合欢花（中经本草图120）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-120.jpg"
     }
   ],
   "docCount": 2,
@@ -173,9 +183,9 @@
       "sourceText": "豆科植物合欢 Albizia julibrissin Durazz.的干燥树皮。",
       "images": [
         {
-          "url": "/images/herbs/lecture/zhongjing/zj-118.jpg",
-          "alt": "合欢皮（用户提供图片 1）",
-          "credit": "用户提供 / 中经本草表格",
+          "url": "/images/herbs/lecture/zhongjing/zj-119.jpg",
+          "alt": "合欢皮（中经本草图119）",
+          "credit": "用户提供 / 《中经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"

@@ -117,13 +117,22 @@
   "summary": "补血活血，调经止痛，润肠通便",
   "images": [
     {
-      "url": "/images/herbs/lecture/785992.jpeg",
-      "alt": "当归（Angelica sinensis）",
-      "credit": "© Ming_Ni / iNaturalist",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/785992",
+      "url": "/images/herbs/lecture/zhongjing/zj-018.jpg",
+      "alt": "当归（中经本草图18）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Angelica sinensis",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-785992.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-019.jpg",
+      "alt": "当归（中经本草图19）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-019.jpg"
     }
   ],
   "docCount": 2

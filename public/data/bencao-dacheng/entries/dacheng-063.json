@@ -117,13 +117,22 @@
   "summary": "补气升阳，固表止汗，利水消肿，生津养血，行滞通痹，托毒排脓，敛疮生肌",
   "images": [
     {
-      "url": "/images/herbs/lecture/138362.jpg",
-      "alt": "黄芪（已有图片）",
-      "credit": "© onidiras-iNaturalist / iNaturalist",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/138362",
+      "url": "/images/herbs/lecture/xlsx/xlsx-075.jpg",
+      "alt": "黄芪（上经本草图75）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Astragalus mongholicus",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-138362.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xlsx/xlsx-076.jpg",
+      "alt": "黄芪（上经本草图76）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-076.jpg"
     }
   ],
   "docCount": 3,

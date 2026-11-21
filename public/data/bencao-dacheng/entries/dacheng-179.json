@@ -90,11 +90,29 @@
     {
       "url": "/images/herbs/lecture/xlsx/xlsx-054.jpg",
       "alt": "细辛（用户提供图片 1）",
-      "credit": "用户提供 / 中草药图片自搜表格",
+      "credit": "用户提供 / 《上经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "latin": "",
       "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xlsx/xlsx-055.jpg",
+      "alt": "细辛（上经本草图55）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-055.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/xlsx/xlsx-056.jpg",
+      "alt": "细辛（上经本草图56）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-056.jpg"
     }
   ],
   "docCount": 1

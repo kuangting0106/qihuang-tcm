@@ -2,6 +2,7 @@
 import { computed, ref, watch } from 'vue'
 import { RouterLink, useRoute, useRouter } from 'vue-router'
 import { loadBencaoDachengEntry, loadBencaoDachengIndex } from '@/composables/useBencaoDacheng'
+import HerbImageCarousel from '@/components/HerbImageCarousel.vue'
 import type {
   BencaoDachengEntry,
   BencaoDachengIndex,
@@ -117,21 +118,7 @@ watch(entryId, (id) => load(id), { immediate: true })
 
         <div class="dacheng-detail-grid">
           <section class="gallery paper-panel" aria-label="药材图片">
-            <div v-if="images.length" class="gallery__grid">
-              <figure v-for="image in images" :key="image.url" class="gallery__item">
-                <div class="gallery__main">
-                  <img :src="image.url" :alt="image.alt" />
-                </div>
-                <figcaption class="gallery__credit">
-                  <p>{{ image.alt }}</p>
-                  <small>
-                    {{ image.credit }}
-                    <span v-if="image.license"> · {{ image.license }}</span>
-                    <a v-if="image.sourceUrl" :href="image.sourceUrl" target="_blank" rel="noreferrer noopener">来源</a>
-                  </small>
-                </figcaption>
-              </figure>
-            </div>
+            <HerbImageCarousel v-if="images.length" :images="images" />
             <div v-else class="gallery__empty">
               <span class="gallery__empty-seal" aria-hidden="true">药</span>
               <p>图片待补</p>

@@ -89,13 +89,22 @@
   "summary": "温肾助阳，纳气平喘，温脾止泻；外用消风祛斑",
   "images": [
     {
-      "url": "/images/herbs/lecture/736663.jpeg",
-      "alt": "补骨脂（Cullen corylifolium）",
-      "credit": "© S.MORE / iNaturalist",
-      "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/736663",
+      "url": "/images/herbs/lecture/xiajing/xj-160.jpg",
+      "alt": "补骨脂（下经本草图160）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Cullen corylifolium",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-736663.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-161.jpg",
+      "alt": "补骨脂（下经本草图161）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-161.jpg"
     }
   ],
   "docCount": 1

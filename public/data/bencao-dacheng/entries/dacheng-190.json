@@ -89,13 +89,13 @@
   "summary": "祛风除湿，通痹止痛",
   "images": [
     {
-      "url": "/images/herbs/lecture/482445.jpg",
-      "alt": "独活（已有图片）",
-      "credit": "© leehsueh / iNaturalist",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/482445",
+      "url": "/images/herbs/lecture/xlsx/xlsx-039.jpg",
+      "alt": "独活（上经本草图39）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Angelica pubescens",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-482445.jpg"
+      "kind": "药材"
     }
   ],
   "docCount": 1

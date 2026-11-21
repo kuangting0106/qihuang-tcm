@@ -95,13 +95,13 @@
   "summary": "收敛止血，燥湿敛疮",
   "images": [
     {
-      "url": "/images/herbs/lecture/xlsx/xlsx-105.jpg",
-      "alt": "松香（用户提供图片 1）",
-      "credit": "用户提供 / 中草药图片自搜表格",
+      "file": "/images/herbs/lecture/xlsx/xlsx-105.jpg",
+      "alt": "松花粉（上经本草图105）",
+      "credit": "用户提供 / 《上经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
-      "latin": "",
-      "kind": "药材"
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-105.jpg"
     }
   ],
   "docCount": 3,
@@ -248,7 +248,7 @@
         {
           "url": "/images/herbs/lecture/xlsx/xlsx-105.jpg",
           "alt": "松香（用户提供图片 1）",
-          "credit": "用户提供 / 中草药图片自搜表格",
+          "credit": "用户提供 / 《上经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "latin": "",

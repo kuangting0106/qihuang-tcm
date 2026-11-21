@@ -133,12 +133,31 @@
       "thumbUrl": "/images/herbs/dacheng/thumbs/inat-c5506eea51.jpg"
     },
     {
-      "url": "/images/herbs/lecture/extra/ex-162.jpg",
-      "alt": "首乌藤（用户提供图片 1）",
-      "credit": "用户提供 / 本草表格",
+      "file": "/images/herbs/lecture/xiajing/xj-162.jpg",
+      "alt": "何首乌（下经本草图162）",
+      "credit": "用户提供 / 《下经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
-      "kind": "药材"
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-162.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-163.jpg",
+      "alt": "何首乌（下经本草图163）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-163.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-164.jpg",
+      "alt": "何首乌（下经本草图164）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-164.jpg"
     }
   ],
   "docCount": 5,
@@ -236,9 +255,9 @@
       "sourceText": "蓼科植物何首乌 Polygonum multiflorum Thunb.的干燥藤茎。",
       "images": [
         {
-          "url": "/images/herbs/lecture/extra/ex-162.jpg",
-          "alt": "首乌藤（用户提供图片 1）",
-          "credit": "用户提供 / 本草表格",
+          "url": "/images/herbs/lecture/xiajing/xj-162.jpg",
+          "alt": "首乌藤（下经本草图162）",
+          "credit": "用户提供 / 《下经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"

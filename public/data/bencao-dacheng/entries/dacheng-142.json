@@ -87,13 +87,22 @@
   "summary": "清热解毒，消痈散结，敛疮生肌",
   "images": [
     {
-      "url": "/images/herbs/lecture/868939.jpeg",
-      "alt": "白蔹（Ampelopsis japonica）",
-      "credit": "© Meng-Ying Tsai / iNaturalist",
-      "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/868939",
+      "url": "/images/herbs/lecture/xiajing/xj-031.jpg",
+      "alt": "白蔹（下经本草图31）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Ampelopsis japonica",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-868939.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-032.jpg",
+      "alt": "白蔹（下经本草图32）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-032.jpg"
     }
   ],
   "docCount": 1

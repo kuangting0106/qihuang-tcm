@@ -2,6 +2,7 @@
 import { computed, ref, watch } from 'vue'
 import { RouterLink, useRoute, useRouter } from 'vue-router'
 import { useBencaoApi } from '@/composables/useBencaoApi'
+import HerbImageCarousel from '@/components/HerbImageCarousel.vue'
 import type { BencaoGroupPayload, BencaoIndexPayload } from '@/composables/useBencaoApi'
 import type { BencaoEntry, BencaoSection } from '@/types/bencao'
 
@@ -225,27 +226,7 @@ const studySections = computed(() =>
 
         <div class="detail-grid">
           <section class="gallery paper-panel" aria-label="药材图片">
-            <div v-if="galleryImages.length" class="gallery__grid" :class="{ 'gallery__grid--pair': galleryImages.length > 1 }">
-              <figure v-for="(image, index) in galleryImages" :key="image.url" class="gallery__item">
-                <div class="gallery__main">
-                  <img :src="image.url" :alt="image.alt" />
-                </div>
-                <figcaption class="gallery__credit">
-                  <p>
-                    <span v-if="image.kind" class="gallery__kind">{{ image.kind }}</span>
-                    {{ image.alt }}
-                  </p>
-                  <small>
-                    {{ image.credit }} · {{ image.license }}
-                    <template v-if="image.sourceUrl">
-                      ·
-                      <a :href="image.sourceUrl" target="_blank" rel="noopener noreferrer">iNaturalist</a>
-                    </template>
-                  </small>
-                  <small v-if="image.latin">学名：{{ image.latin }}</small>
-                </figcaption>
-              </figure>
-            </div>
+            <HerbImageCarousel v-if="galleryImages.length" :images="galleryImages" />
             <div v-else class="gallery__empty">
               <span class="gallery__seal" aria-hidden="true">{{ entry.title.slice(0, 1) }}</span>
               <strong>图片待补</strong>

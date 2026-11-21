@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-20T12:40:28.806Z",
+  "generatedAt": "2026-11-21T05:05:44.772Z",
   "total": 620,
-  "withImages": 493,
+  "withImages": 501,
   "categories": [
     {
       "id": "jiebiao",
@@ -154,12 +154,13 @@
       "categoryTitle": "温里药",
       "summary": "解表散寒，温中止呕，化痰止咳，解鱼蟹毒",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-009.jpg",
-        "alt": "干姜（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "file": "/images/herbs/lecture/zhongjing/zj-009.jpg",
+        "alt": "生姜（中经本草图9）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
-        "kind": "药材"
+        "kind": "药材",
+        "url": "/images/herbs/lecture/zhongjing/zj-009.jpg"
       },
       "docCount": 4,
       "charCount": 2817
@@ -204,13 +205,13 @@
       "categoryTitle": "解表药",
       "summary": "解表散寒，祛风止痛，宣通鼻窍，燥湿止带，消肿排脓",
       "image": {
-        "url": "/images/herbs/lecture/501057.jpg",
-        "alt": "白芷（Angelica dahurica）",
-        "credit": "© Lee, seong-won / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/501057",
+        "url": "/images/herbs/lecture/zhongjing/zj-039.jpg",
+        "alt": "白芷（中经本草图39）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Angelica dahurica",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-501057.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 2073
@@ -229,13 +230,13 @@
       "categoryTitle": "解表药",
       "summary": "疏散风热，清利头目，利咽，透疹，疏肝行气",
       "image": {
-        "url": "/images/herbs/lecture/77991.jpeg",
-        "alt": "薄荷（Mentha canadensis）",
-        "credit": "© elik03 / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/77991",
+        "url": "/images/herbs/lecture/xiajing/xj-150.jpg",
+        "alt": "薄荷（下经本草图150）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Mentha canadensis",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-77991.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 1996
@@ -308,13 +309,13 @@
       "categoryTitle": "清热药",
       "summary": "清热泻火，滋阴润燥",
       "image": {
-        "url": "/images/herbs/lecture/785991.jpg",
-        "alt": "知母（Anemarrhena asphodeloides）",
-        "credit": "© darkflamew / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/785991",
+        "url": "/images/herbs/lecture/zhongjing/zj-037.jpg",
+        "alt": "知母（中经本草图37）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Anemarrhena asphodeloides",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-785991.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 1912
@@ -388,7 +389,7 @@
       "summary": "清热解毒，消肿散结，利尿通淋",
       "image": {
         "file": "/images/herbs/supplement/supp-22.jpg",
-        "alt": "蒲公英（补充本草图1）",
+        "alt": "蒲公英（补充本草图22）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -520,13 +521,13 @@
       "categoryTitle": "清热药",
       "summary": "清热凉血，滋阴降火，解毒散结",
       "image": {
-        "url": "/images/herbs/lecture/425843.jpeg",
-        "alt": "玄参（Scrophularia ningpoensis）",
-        "credit": "© 小铖/Smalltown / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/425843",
+        "url": "/images/herbs/lecture/zhongjing/zj-029.jpg",
+        "alt": "玄参（中经本草图29）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Scrophularia ningpoensis",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-425843.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 1966
@@ -545,9 +546,9 @@
       "categoryTitle": "清热药",
       "summary": "清热凉血，活血化瘀",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-082.jpg",
-        "alt": "牡丹皮（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "url": "/images/herbs/lecture/zhongjing/zj-083.jpg",
+        "alt": "牡丹皮（中经本草图83）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -619,13 +620,13 @@
       "categoryTitle": "化湿药",
       "summary": "芳香化浊，和中止呕，发表解暑",
       "image": {
-        "url": "/images/herbs/lecture/506801.jpg",
-        "alt": "藿香（Agastache rugosa）",
-        "credit": "© Kim, Hyun-tae / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/506801",
+        "url": "/images/herbs/lecture/xiajing/xj-147.jpg",
+        "alt": "藿香（下经本草图147）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Agastache rugosa",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-506801.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 719
@@ -669,13 +670,13 @@
       "categoryTitle": "化湿药",
       "summary": "燥湿健脾，祛风散寒，明目",
       "image": {
-        "url": "/images/herbs/lecture/786048.jpeg",
-        "alt": "苍术（Atractylodes lancea）",
-        "credit": "© Kim, Hyun-tae / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/786048",
+        "url": "/images/herbs/lecture/xiajing/xj-173.jpg",
+        "alt": "苍术（下经本草图173）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Atractylodes lancea",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-786048.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 2248
@@ -693,13 +694,13 @@
       "categoryTitle": "化湿药",
       "summary": "化湿开胃，温脾止泻，理气安胎",
       "image": {
-        "url": "/images/herbs/lecture/1114503.jpeg",
-        "alt": "砂仁（Wurfbainia villosa）",
-        "credit": "© 刘光裕 Liu Guangyu / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/1114503",
+        "url": "/images/herbs/lecture/xiajing/xj-143.jpg",
+        "alt": "砂仁（下经本草图143）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Wurfbainia villosa",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-1114503.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 2046
@@ -720,14 +721,13 @@
       "categoryTitle": "利水渗湿药",
       "summary": "利水渗湿，健脾，宁心",
       "image": {
-        "url": "/images/herbs/lecture/user-fuling-whole.jpg",
-        "alt": "茯苓（整块）",
-        "credit": "用户提供",
-        "license": "仅站内学习",
+        "url": "/images/herbs/lecture/xlsx/xlsx-111.jpg",
+        "alt": "茯苓（上经本草图111）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "Wolfiporia cocos",
-        "kind": "整块",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-user-fuling-whole.jpg"
+        "kind": "药材"
       },
       "docCount": 3,
       "charCount": 2087
@@ -749,7 +749,7 @@
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-046.jpg",
         "alt": "薏仁（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -773,13 +773,13 @@
       "categoryTitle": "利水渗湿药",
       "summary": "利水消肿，解毒排脓",
       "image": {
-        "url": "/images/herbs/lecture/291751.jpeg",
-        "alt": "赤小豆（Vigna umbellata）",
-        "credit": "© Aravinth / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/291751",
+        "url": "/images/herbs/lecture/xiajing/xj-101.jpg",
+        "alt": "赤小豆（下经本草图101）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Vigna umbellata",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-291751.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 1417
@@ -830,7 +830,7 @@
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-040.jpg",
         "alt": "车前子（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -856,13 +856,13 @@
       "categoryTitle": "温里药",
       "summary": "补火助阳，引火归原，散寒止痛，温通经脉，",
       "image": {
-        "url": "/images/herbs/lecture/774822.jpeg",
-        "alt": "肉桂（已有图片）",
-        "credit": "© Yercaud-elango / iNaturalist",
-        "license": "CC BY-SA",
-        "sourceUrl": "https://www.inaturalist.org/taxa/774822",
+        "url": "/images/herbs/lecture/xlsx/xlsx-106.jpg",
+        "alt": "肉桂（上经本草图106）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Cinnamomum cassia",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-774822.jpg"
+        "kind": "药材"
       },
       "docCount": 3,
       "charCount": 3223
@@ -882,13 +882,13 @@
       "categoryTitle": "温里药",
       "summary": "散寒止痛，降逆止呕，助阳止泻",
       "image": {
-        "url": "/images/herbs/lecture/796058.jpeg",
-        "alt": "吴茱萸（Tetradium ruticarpum）",
-        "credit": "© 呂一起(Lyu yi-chi) / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/796058",
+        "url": "/images/herbs/lecture/zhongjing/zj-100.jpg",
+        "alt": "栀子（用户提供图片 1）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Tetradium ruticarpum",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-796058.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 2263
@@ -909,13 +909,13 @@
       "categoryTitle": "温里药",
       "summary": "温中止痛，杀虫止痒",
       "image": {
-        "url": "/images/herbs/lecture/506467.jpg",
-        "alt": "花椒（Zanthoxylum bungeanum）",
-        "credit": "© Marco Mussita / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/506467",
+        "url": "/images/herbs/lecture/zhongjing/zj-108.jpg",
+        "alt": "花椒（中经本草图108）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Zanthoxylum bungeanum",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-506467.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 2201
@@ -936,7 +936,7 @@
       "summary": "散寒止痛，理气和胃",
       "image": {
         "file": "/images/herbs/supplement/supp-181.jpg",
-        "alt": "小茴香（补充本草图1）",
+        "alt": "小茴香（补充本草图181）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -990,13 +990,13 @@
       "categoryTitle": "理气药",
       "summary": "通阳散结，行气导滞",
       "image": {
-        "url": "/images/herbs/lecture/627160.jpg",
-        "alt": "薤白（Allium macrostemon）",
-        "credit": "© 岸本年郎 / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/627160",
+        "url": "/images/herbs/lecture/xiajing/xj-126.jpg",
+        "alt": "薤白（下经本草图126）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Allium macrostemon",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-627160.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 1825
@@ -1046,7 +1046,7 @@
       "summary": "行气解郁，和血，止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-166.jpg",
-        "alt": "玫瑰花（补充本草图1）",
+        "alt": "玫瑰花（补充本草图166）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -1074,7 +1074,7 @@
       "summary": "健胃消食，行气散瘀，化浊降脂",
       "image": {
         "file": "/images/herbs/supplement/supp-189.jpg",
-        "alt": "山楂（补充本草图1）",
+        "alt": "山楂（补充本草图189）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -1124,9 +1124,9 @@
       "categoryTitle": "消食药",
       "summary": "消食除胀，降气化痰",
       "image": {
-        "url": "/images/herbs/lecture/extra/ex-171.jpg",
-        "alt": "莱菔子（用户提供图片 1）",
-        "credit": "用户提供 / 本草表格",
+        "url": "/images/herbs/lecture/xiajing/xj-171.jpg",
+        "alt": "莱菔子（下经本草图171）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -1178,14 +1178,13 @@
       "categoryTitle": "止血药",
       "summary": "散瘀止血，消肿定痛",
       "image": {
-        "url": "/images/herbs/lecture/user-sanqi-plant.jpg",
-        "alt": "三七（植株）",
-        "credit": "用户提供",
-        "license": "仅站内学习",
+        "url": "/images/herbs/lecture/xiajing/xj-119.jpg",
+        "alt": "三七（下经本草图119）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "Panax notoginseng",
-        "kind": "植株",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-user-sanqi-plant.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 2308
@@ -1204,13 +1203,13 @@
       "categoryTitle": "止血药",
       "summary": "收敛止血，消肿生肌",
       "image": {
-        "url": "/images/herbs/lecture/131245.jpg",
-        "alt": "白及（Bletilla striata）",
-        "credit": "© Heidi Hellstern / iNaturalist",
-        "license": "CC BY-SA",
-        "sourceUrl": "https://www.inaturalist.org/taxa/131245",
+        "url": "/images/herbs/lecture/xiajing/xj-035.jpg",
+        "alt": "白及（下经本草图35）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Bletilla striata",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-131245.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 1788
@@ -1286,7 +1285,7 @@
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-033.jpg",
         "alt": "茺蔚子（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -1338,7 +1337,7 @@
       "summary": "清热润肺，化痰止咳，散结消痈",
       "image": {
         "file": "/images/herbs/supplement/supp-107.jpg",
-        "alt": "川贝母（补充本草图1）",
+        "alt": "川贝母（补充本草图107）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -1363,13 +1362,13 @@
       "categoryTitle": "化痰止咳平喘药",
       "summary": "宣肺，利咽，祛痰，排脓",
       "image": {
-        "url": "/images/herbs/lecture/141623.jpg",
-        "alt": "桔梗（Platycodon grandiflorus）",
-        "credit": "© Yi CHEN / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/141623",
+        "url": "/images/herbs/lecture/xiajing/xj-021.jpg",
+        "alt": "桔梗（下经本草图21）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Platycodon grandiflorus",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-141623.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 1795
@@ -1450,9 +1449,9 @@
       "categoryTitle": "安神药",
       "summary": "养心安神，润肠通便，止汗",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-115.jpg",
-        "alt": "柏子仁（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "url": "/images/herbs/lecture/xlsx/xlsx-113.jpg",
+        "alt": "柏子仁（上经本草图113）",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -1531,7 +1530,7 @@
       "summary": "补气养阴，清热生津",
       "image": {
         "file": "/images/herbs/supplement/supp-127.jpg",
-        "alt": "西洋参（补充本草图1）",
+        "alt": "西洋参（补充本草图127）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -1556,13 +1555,13 @@
       "categoryTitle": "补虚药",
       "summary": "健脾益肺，养血生津",
       "image": {
-        "url": "/images/herbs/lecture/706415.jpeg",
-        "alt": "党参（Codonopsis pilosula）",
-        "credit": "© Yao Li / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/706415",
+        "url": "/images/herbs/lecture/xiajing/xj-167.jpg",
+        "alt": "党参（下经本草图167）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Codonopsis pilosula",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-706415.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 1832
@@ -1581,9 +1580,9 @@
       "categoryTitle": "补虚药",
       "summary": "益气健脾，生津润肺",
       "image": {
-        "url": "/images/herbs/lecture/extra/ex-175.jpg",
-        "alt": "太子参（用户提供图片 1）",
-        "credit": "用户提供 / 本草表格",
+        "url": "/images/herbs/lecture/xiajing/xj-175.jpg",
+        "alt": "太子参（下经本草图175）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -1607,13 +1606,13 @@
       "categoryTitle": "补虚药",
       "summary": "补气升阳，固表止汗，利水消肿，生津养血，行滞通痹，托毒排脓，敛疮生肌",
       "image": {
-        "url": "/images/herbs/lecture/138362.jpg",
-        "alt": "黄芪（已有图片）",
-        "credit": "© onidiras-iNaturalist / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/138362",
+        "url": "/images/herbs/lecture/xlsx/xlsx-075.jpg",
+        "alt": "黄芪（上经本草图75）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Astragalus mongholicus",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-138362.jpg"
+        "kind": "药材"
       },
       "docCount": 3,
       "charCount": 2542
@@ -1632,13 +1631,13 @@
       "categoryTitle": "补虚药",
       "summary": "健脾益气，燥湿利水，止汗，安胎",
       "image": {
-        "url": "/images/herbs/lecture/786049.jpeg",
-        "alt": "白术（已有图片）",
-        "credit": "© 江国彬 / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/786049",
+        "url": "/images/herbs/lecture/xlsx/xlsx-028.jpg",
+        "alt": "白术（上经本草图28）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Atractylodes macrocephala",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-786049.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 2003
@@ -1660,7 +1659,7 @@
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-044.jpg",
         "alt": "山药（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -1711,13 +1710,13 @@
       "categoryTitle": "补虚药",
       "summary": "补脾益气，清热解毒，祛痰止咳，缓急止痛，调和诸药",
       "image": {
-        "url": "/images/herbs/lecture/775858.jpg",
-        "alt": "甘草（已有图片）",
-        "credit": "© Tomáš Vrána / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/775858",
+        "url": "/images/herbs/lecture/xlsx/xlsx-023.jpg",
+        "alt": "甘草（上经本草图23）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Glycyrrhiza uralensis",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-775858.jpg"
+        "kind": "药材"
       },
       "docCount": 3,
       "charCount": 2559
@@ -1740,13 +1739,13 @@
       "categoryTitle": "补虚药",
       "summary": "补中益气，养血安神",
       "image": {
-        "url": "/images/herbs/lecture/428365.jpg",
-        "alt": "大枣（已有图片）",
-        "credit": "© oreste83 / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/428365",
+        "url": "/images/herbs/lecture/xlsx/xlsx-155.jpg",
+        "alt": "大枣（上经本草图155）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Ziziphus jujuba",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-428365.jpg"
+        "kind": "药材"
       },
       "docCount": 4,
       "charCount": 3895
@@ -1772,9 +1771,9 @@
       "categoryTitle": "清热药",
       "summary": "补中，润燥，止痛，解毒；外用生肌敛疮",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-146.jpg",
-        "alt": "蜂蜜（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "url": "/images/herbs/lecture/xlsx/xlsx-148.jpg",
+        "alt": "蜂蜜（上经本草图148）",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -1797,9 +1796,9 @@
       "categoryTitle": "补虚药",
       "summary": "壮肾阳，益精血，强筋骨，调冲任，托疮毒",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-121.jpg",
-        "alt": "鹿茸（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "url": "/images/herbs/lecture/zhongjing/zj-122.jpg",
+        "alt": "鹿茸（中经本草图122）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -1821,13 +1820,13 @@
       "categoryTitle": "补虚药",
       "summary": "补肾阳，强筋骨，祛风湿",
       "image": {
-        "url": "/images/herbs/lecture/790618.jpeg",
-        "alt": "巴戟天（已有图片）",
-        "credit": "© 小铖/Smalltown / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/790618",
+        "url": "/images/herbs/lecture/xlsx/xlsx-058.jpg",
+        "alt": "巴戟天（上经本草图58）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Morinda officinalis",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-790618.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 2018
@@ -1848,13 +1847,13 @@
       "categoryTitle": "补虚药",
       "summary": "补肝肾，强筋骨，安胎",
       "image": {
-        "url": "/images/herbs/lecture/127868.jpg",
-        "alt": "杜仲（已有图片）",
-        "credit": "© Kristine Paulus / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/127868",
+        "url": "/images/herbs/lecture/xlsx/xlsx-131.jpg",
+        "alt": "杜仲（上经本草图131）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Eucommia ulmoides",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-127868.jpg"
+        "kind": "药材"
       },
       "docCount": 3,
       "charCount": 2647
@@ -1895,13 +1894,13 @@
       "categoryTitle": "补虚药",
       "summary": "补益肝肾，固精缩尿，安胎，明目，止泻；外用消风祛斑",
       "image": {
-        "url": "/images/herbs/lecture/601626.jpg",
-        "alt": "菟丝子（已有图片）",
-        "credit": "© S.MORE / iNaturalist",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/601626",
+        "url": "/images/herbs/lecture/xlsx/xlsx-029.jpg",
+        "alt": "菟丝子（上经本草图29）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Cuscuta chinensis",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-601626.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 1932
@@ -1921,7 +1920,7 @@
       "summary": "补肾益肺，止血化痰",
       "image": {
         "file": "/images/herbs/supplement/supp-128.jpg",
-        "alt": "冬虫夏草（补充本草图1）",
+        "alt": "冬虫夏草（补充本草图128）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -1945,13 +1944,13 @@
       "categoryTitle": "活血化瘀药",
       "summary": "补血活血，调经止痛，润肠通便",
       "image": {
-        "url": "/images/herbs/lecture/785992.jpeg",
-        "alt": "当归（Angelica sinensis）",
-        "credit": "© Ming_Ni / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/785992",
+        "url": "/images/herbs/lecture/zhongjing/zj-018.jpg",
+        "alt": "当归（中经本草图18）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Angelica sinensis",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-785992.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 2155
@@ -2004,13 +2003,13 @@
       "categoryTitle": "补虚药",
       "summary": "养血调经，敛阴止汗，柔肝止痛，平抑肝阳",
       "image": {
-        "url": "/images/herbs/lecture/127857.jpeg",
-        "alt": "芍药（已有图片）",
-        "credit": "© Анна Васильченко / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/127857",
+        "url": "/images/herbs/lecture/zhongjing/zj-024.jpg",
+        "alt": "芍药（中经本草图24）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Paeonia lactiflora",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-127857.jpg"
+        "kind": "药材"
       },
       "docCount": 4,
       "charCount": 3730
@@ -2028,9 +2027,9 @@
       "categoryTitle": "补虚药",
       "summary": "补血滋阴，润燥，止血",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-143.jpg",
-        "alt": "阿胶（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "url": "/images/herbs/lecture/xlsx/xlsx-144.jpg",
+        "alt": "阿胶（上经本草图144）",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -2054,9 +2053,9 @@
       "categoryTitle": "补虚药",
       "summary": "补益心脾，养血安神",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-115.jpg",
-        "alt": "龙眼肉（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "url": "/images/herbs/lecture/zhongjing/zj-116.jpg",
+        "alt": "鬼箭羽（用户提供图片 1）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -2107,7 +2106,7 @@
       "image": {
         "url": "/images/herbs/lecture/zhongjing/zj-033.jpg",
         "alt": "百合（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -2129,13 +2128,13 @@
       "categoryTitle": "化痰止咳平喘药",
       "summary": "养阴生津，润肺清心",
       "image": {
-        "url": "/images/herbs/lecture/200061.jpeg",
-        "alt": "麦冬（已有图片）",
-        "credit": "© 卢江离 / iNaturalist",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/200061",
+        "url": "/images/herbs/lecture/xlsx/xlsx-037.jpg",
+        "alt": "麦冬（上经本草图37）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Ophiopogon japonicus",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-200061.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 1719
@@ -2154,13 +2153,13 @@
       "categoryTitle": "清热药",
       "summary": "益胃生津，滋阴清热",
       "image": {
-        "url": "/images/herbs/lecture/67756.jpg",
-        "alt": "石斛（已有图片）",
-        "credit": "© Motohiro Sunouchi / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/67756",
+        "url": "/images/herbs/lecture/xlsx/xlsx-057.jpg",
+        "alt": "石斛（上经本草图57）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Dendrobium nobile",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-67756.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 2652
@@ -2179,13 +2178,13 @@
       "categoryTitle": "其他药",
       "summary": "养阴润燥，生津止渴",
       "image": {
-        "url": "/images/herbs/lecture/61454.jpeg",
-        "alt": "玉竹（已有图片）",
-        "credit": "© 空猫 / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/61454",
+        "url": "/images/herbs/lecture/xlsx/xlsx-036.jpg",
+        "alt": "玉竹（上经本草图36）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Polygonatum odoratum",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-61454.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 1641
@@ -2205,13 +2204,13 @@
       "categoryTitle": "补虚药",
       "summary": "补气养阴，健脾，润肺，益肾",
       "image": {
-        "url": "/images/herbs/lecture/862611.jpeg",
-        "alt": "黄精（Polygonatum sibiricum）",
-        "credit": "© Daba / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/862611",
+        "url": "/images/herbs/lecture/xiajing/xj-133.jpg",
+        "alt": "黄精（下经本草图133）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Polygonatum sibiricum",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-862611.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 2166
@@ -2265,7 +2264,7 @@
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-133.jpg",
         "alt": "女贞子（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -2292,7 +2291,7 @@
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-102.jpg",
         "alt": "黑芝麻（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -2318,9 +2317,9 @@
       "categoryTitle": "补虚药",
       "summary": "滋阴潜阳，益肾强骨，养血补心，固经止崩",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-149.jpg",
-        "alt": "龟甲（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "url": "/images/herbs/lecture/xlsx/xlsx-150.jpg",
+        "alt": "桑螵蛸（用户提供图片 1）",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -2345,9 +2344,9 @@
       "categoryTitle": "平肝息风药",
       "summary": "滋阴潜阳，退热除蒸，软坚散结",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-131.jpg",
-        "alt": "鳖甲（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "url": "/images/herbs/lecture/zhongjing/zj-132.jpg",
+        "alt": "鳖甲（中经本草图132）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -2401,9 +2400,9 @@
       "categoryTitle": "其他药",
       "summary": "敛肺，涩肠，生津，安蛔",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-143.jpg",
+        "url": "/images/herbs/lecture/zhongjing/zj-144.jpg",
         "alt": "乌梅（同源：梅实）",
-        "credit": "用户提供 / 中经本草表格",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -2422,7 +2421,7 @@
       "summary": "温中行气，涩肠止泻",
       "image": {
         "file": "/images/herbs/supplement/supp-182.jpg",
-        "alt": "肉豆蔻（补充本草图1）",
+        "alt": "肉豆蔻（补充本草图182）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -2447,13 +2446,13 @@
       "categoryTitle": "补虚药",
       "summary": "补益肝肾，收涩固脱",
       "image": {
-        "url": "/images/herbs/lecture/450254.jpeg",
-        "alt": "山茱萸（Cornus officinalis）",
-        "credit": "© Takashi KOIKE / iNaturalist",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/450254",
+        "url": "/images/herbs/lecture/zhongjing/zj-109.jpg",
+        "alt": "山茱萸（中经本草图109）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Cornus officinalis",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-450254.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 1790
@@ -2474,7 +2473,7 @@
       "summary": "益肾固精缩尿，养肝明目",
       "image": {
         "file": "/images/herbs/supplement/supp-225.jpg",
-        "alt": "覆盆子（补充本草图1）",
+        "alt": "覆盆子（补充本草图225）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -2528,7 +2527,7 @@
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-158.jpg",
         "alt": "芡实（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -2554,7 +2553,7 @@
       "summary": "清热解毒，散结逐瘀，利水杀虫",
       "image": {
         "file": "/images/herbs/supplement/supp-23.jpg",
-        "alt": "了哥王（补充本草图1）",
+        "alt": "了哥王（补充本草图23）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -2579,7 +2578,7 @@
       "summary": "祛风除湿，舒筋活络，散瘀止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-146.jpg",
-        "alt": "八角枫（补充本草图1）",
+        "alt": "八角枫（补充本草图146）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -2628,7 +2627,7 @@
       "summary": "清热燥湿，泻火解毒",
       "image": {
         "file": "/images/herbs/supplement/supp-24.jpg",
-        "alt": "三颗针（补充本草图1）",
+        "alt": "三颗针（补充本草图24）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -2733,13 +2732,13 @@
       "categoryTitle": "清热药",
       "summary": "解毒，除湿，通利关节",
       "image": {
-        "url": "/images/herbs/lecture/556188.jpg",
-        "alt": "土茯苓（Smilax glabra）",
-        "credit": "© 黃美滿 / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/556188",
+        "url": "/images/herbs/lecture/xiajing/xj-137.jpg",
+        "alt": "土茯苓（下经本草图137）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Smilax glabra",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-556188.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1182
@@ -2759,7 +2758,7 @@
       "summary": "健脾益气，补肺止咳，下乳",
       "image": {
         "file": "/images/herbs/supplement/supp-129.jpg",
-        "alt": "土党参（补充本草图1）",
+        "alt": "土党参（补充本草图129）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -2783,13 +2782,13 @@
       "categoryTitle": "泻下药",
       "summary": "泻下攻积，清热泻火，凉血解毒，逐瘀通经，利湿退黄",
       "image": {
-        "url": "/images/herbs/lecture/371577.jpg",
-        "alt": "大黄（Rheum palmatum）",
-        "credit": "© London Permaculture / iNaturalist",
-        "license": "CC BY-NC-SA",
-        "sourceUrl": "https://www.inaturalist.org/taxa/371577",
+        "url": "/images/herbs/lecture/xiajing/xj-019.jpg",
+        "alt": "大黄（下经本草图19）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Rheum palmatum",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-371577.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1573
@@ -2809,7 +2808,7 @@
       "summary": "解毒消肿，杀虫，止痢",
       "image": {
         "file": "/images/herbs/supplement/supp-25.jpg",
-        "alt": "大蒜（补充本草图1）",
+        "alt": "大蒜（补充本草图25）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -2851,7 +2850,7 @@
       "summary": "清热解毒，消肿利咽",
       "image": {
         "file": "/images/herbs/supplement/supp-26.jpg",
-        "alt": "山豆根（补充本草图1）",
+        "alt": "山豆根（补充本草图26）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -2929,7 +2928,7 @@
       "summary": "祛风湿，壮筋骨",
       "image": {
         "file": "/images/herbs/supplement/supp-147.jpg",
-        "alt": "千年健（补充本草图1）",
+        "alt": "千年健（补充本草图147）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -2955,12 +2954,13 @@
       "categoryTitle": "祛风湿药",
       "summary": "祛风除湿，温经止痛",
       "image": {
-        "url": "/images/herbs/lecture/xiajing/xj-007.jpg",
-        "alt": "附子（用户提供图片 1）",
-        "credit": "用户提供 / 下经本草表格",
+        "file": "/images/herbs/lecture/xiajing/xj-007.jpg",
+        "alt": "川乌（下经本草图7）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
-        "kind": "药材"
+        "kind": "药材",
+        "url": "/images/herbs/lecture/xiajing/xj-007.jpg"
       },
       "docCount": 3,
       "charCount": 3000
@@ -3004,7 +3004,7 @@
       "summary": "行气止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-167.jpg",
-        "alt": "川木香（补充本草图1）",
+        "alt": "川木香（补充本草图167）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -3081,9 +3081,9 @@
       "categoryTitle": "其他药",
       "summary": "养阴润燥，清肺生津",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-024.jpg",
-        "alt": "天门冬（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "url": "/images/herbs/lecture/xlsx/xlsx-021.jpg",
+        "alt": "天冬（上经本草图21）",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -3162,7 +3162,7 @@
       "image": {
         "url": "/images/herbs/lecture/xiajing/xj-015.jpg",
         "alt": "虎掌南星（用户提供图片 1）",
-        "credit": "用户提供 / 下经本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -3185,9 +3185,9 @@
       "categoryTitle": "祛风湿药",
       "summary": "祛风除湿，通经活络，解毒消肿",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-077.jpg",
-        "alt": "防己（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "url": "/images/herbs/lecture/zhongjing/zj-078.jpg",
+        "alt": "防己（中经本草图78）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -3209,13 +3209,13 @@
       "categoryTitle": "理气药",
       "summary": "行气止痛，健脾消食",
       "image": {
-        "url": "/images/herbs/lecture/1420140.jpg",
-        "alt": "木香（已有图片）",
-        "credit": "© Cyril Gros / iNaturalist",
-        "license": "CC BY-NC-SA",
-        "sourceUrl": "https://www.inaturalist.org/taxa/1420140",
+        "url": "/images/herbs/lecture/xlsx/xlsx-042.jpg",
+        "alt": "木香（上经本草图42）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Dolomiaea costus",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-1420140.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1088
@@ -3235,13 +3235,13 @@
       "categoryTitle": "活血化瘀药",
       "summary": "逐瘀通经，补肝肾，强筋骨，利尿通淋，引血下行",
       "image": {
-        "url": "/images/herbs/lecture/474181.jpeg",
-        "alt": "牛膝（已有图片）",
-        "credit": "© WATANABE Hitoshi 渡辺仁 / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/474181",
+        "url": "/images/herbs/lecture/xlsx/xlsx-031.jpg",
+        "alt": "牛膝（上经本草图31）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Achyranthes bidentata",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-474181.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1250
@@ -3260,13 +3260,13 @@
       "categoryTitle": "解表药",
       "summary": "发表透疹，清热解毒，升举阳气",
       "image": {
-        "url": "/images/herbs/lecture/742165.jpeg",
-        "alt": "升麻（已有图片）",
-        "credit": "© Сергей Голубев / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/742165",
+        "url": "/images/herbs/lecture/xlsx/xlsx-100.jpg",
+        "alt": "升麻（上经本草图100）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Actaea cimicifuga",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-742165.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1242
@@ -3285,13 +3285,13 @@
       "categoryTitle": "理气药",
       "summary": "行气止痛，温肾散寒",
       "image": {
-        "url": "/images/herbs/lecture/604749.jpg",
-        "alt": "乌药（Lindera aggregata）",
-        "credit": "© Toby Y / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/604749",
+        "url": "/images/herbs/lecture/xiajing/xj-165.jpg",
+        "alt": "乌药（下经本草图165）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Lindera aggregata",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-604749.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1072
@@ -3362,13 +3362,13 @@
       "categoryTitle": "攻毒杀虫止痒药",
       "summary": "泻水逐饮，消肿散结",
       "image": {
-        "url": "/images/herbs/lecture/1150347.jpeg",
-        "alt": "甘遂（Euphorbia kansui）",
-        "credit": "© zhangyuhong / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/1150347",
+        "url": "/images/herbs/lecture/xiajing/xj-029.jpg",
+        "alt": "甘遂（下经本草图29）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Euphorbia kansui",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-1150347.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1136
@@ -3388,13 +3388,13 @@
       "categoryTitle": "清热药",
       "summary": "清热燥湿，泻肝胆火",
       "image": {
-        "url": "/images/herbs/lecture/508514.jpg",
-        "alt": "龙胆（已有图片）",
-        "credit": "© ~~ / iNaturalist",
-        "license": "CC BY-SA",
-        "sourceUrl": "https://www.inaturalist.org/taxa/508514",
+        "url": "/images/herbs/lecture/xlsx/xlsx-052.jpg",
+        "alt": "龙胆（上经本草图52）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Gentiana scabra",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-508514.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1093
@@ -3466,9 +3466,9 @@
       "categoryTitle": "补虚药",
       "summary": "益气养阴，解毒消肿，排脓，通乳",
       "image": {
-        "url": "/images/herbs/lecture/extra/ex-175.jpg",
-        "alt": "太子参（用户提供图片 1）",
-        "credit": "用户提供 / 本草表格",
+        "url": "/images/herbs/lecture/xiajing/xj-175.jpg",
+        "alt": "太子参（下经本草图175）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -3491,7 +3491,7 @@
       "summary": "开窍豁痰，醒神益智，化湿开胃",
       "image": {
         "file": "/images/herbs/supplement/supp-222.jpg",
-        "alt": "石菖蒲（补充本草图1）",
+        "alt": "石菖蒲（补充本草图222）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -3567,13 +3567,13 @@
       "categoryTitle": "清热药",
       "summary": "清热解毒，消痈散结，敛疮生肌",
       "image": {
-        "url": "/images/herbs/lecture/868939.jpeg",
-        "alt": "白蔹（Ampelopsis japonica）",
-        "credit": "© Meng-Ying Tsai / iNaturalist",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/868939",
+        "url": "/images/herbs/lecture/xiajing/xj-031.jpg",
+        "alt": "白蔹（下经本草图31）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Ampelopsis japonica",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-868939.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 992
@@ -3593,13 +3593,13 @@
       "categoryTitle": "清热药",
       "summary": "清热凉血，利尿通淋，解毒疗疮",
       "image": {
-        "url": "/images/herbs/lecture/772874.jpeg",
-        "alt": "白薇（Vincetoxicum atratum）",
-        "credit": "© 羅元甫 / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/772874",
+        "url": "/images/herbs/lecture/zhongjing/zj-067.jpg",
+        "alt": "白薇（中经本草图67）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Vincetoxicum atratum",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-772874.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 977
@@ -3620,9 +3620,9 @@
       "categoryTitle": "清热药",
       "summary": "祛风痰，定惊搐，解毒散结，止痛",
       "image": {
-        "url": "/images/herbs/lecture/extra/ex-151.jpg",
-        "alt": "白附子（用户提供图片 1）",
-        "credit": "用户提供 / 本草表格",
+        "url": "/images/herbs/lecture/xiajing/xj-151.jpg",
+        "alt": "白附子（下经本草图151）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -3648,7 +3648,7 @@
       "image": {
         "url": "/images/herbs/lecture/zhongjing/zj-048.jpg",
         "alt": "白茅根（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -3670,13 +3670,13 @@
       "categoryTitle": "清热药",
       "summary": "清热解毒，凉血止痢，",
       "image": {
-        "url": "/images/herbs/lecture/491582.jpeg",
-        "alt": "白头翁（Pulsatilla chinensis）",
-        "credit": "© mintren / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/491582",
+        "url": "/images/herbs/lecture/xiajing/xj-049.jpg",
+        "alt": "白头翁（下经本草图49）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Pulsatilla chinensis",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-491582.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1070
@@ -3696,7 +3696,7 @@
       "summary": "清热解毒，祛风止痛，凉血止血",
       "image": {
         "file": "/images/herbs/supplement/supp-27.jpg",
-        "alt": "白药子（补充本草图1）",
+        "alt": "白药子（补充本草图27）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -3750,13 +3750,13 @@
       "categoryTitle": "化湿药",
       "summary": "燥湿化痰，降逆止呕，消痞散结",
       "image": {
-        "url": "/images/herbs/lecture/166883.jpg",
-        "alt": "半夏（Pinellia ternata）",
-        "credit": "© 葉子 / iNaturalist",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/166883",
+        "url": "/images/herbs/lecture/xiajing/xj-012.jpg",
+        "alt": "半夏（下经本草图12）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Pinellia ternata",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-166883.jpg"
+        "kind": "药材"
       },
       "docCount": 4,
       "charCount": 1805
@@ -3775,13 +3775,13 @@
       "categoryTitle": "清热药",
       "summary": "凉血止血，解毒敛疮",
       "image": {
-        "url": "/images/herbs/lecture/64549.jpg",
-        "alt": "地榆（Sanguisorba officinalis）",
-        "credit": "© Кирилл Зенин / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/64549",
+        "url": "/images/herbs/lecture/zhongjing/zj-071.jpg",
+        "alt": "地榆（中经本草图71）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Sanguisorba officinalis",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-64549.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1214
@@ -3827,13 +3827,13 @@
       "categoryTitle": "清热药",
       "summary": "清热通便，凉血止血，杀生止痒",
       "image": {
-        "url": "/images/herbs/lecture/556238.jpeg",
-        "alt": "羊蹄（Rumex japonicus）",
-        "credit": "© 葉子 / iNaturalist",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/556238",
+        "url": "/images/herbs/lecture/xiajing/xj-043.jpg",
+        "alt": "羊蹄（下经本草图43）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Rumex japonicus",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-556238.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1015
@@ -3933,9 +3933,9 @@
       "categoryTitle": "利水渗湿药",
       "summary": "利水消肿，祛风止痛",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-077.jpg",
-        "alt": "防己（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "url": "/images/herbs/lecture/zhongjing/zj-078.jpg",
+        "alt": "防己（中经本草图78）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -3959,7 +3959,7 @@
       "summary": "补气升阳，固表止汗，利水消肿。生津养血，行滞通痹，托毒排脓，敛疮生肌",
       "image": {
         "file": "/images/herbs/supplement/supp-131.jpg",
-        "alt": "红芪（补充本草图1）",
+        "alt": "红芪（补充本草图131）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -3980,7 +3980,7 @@
       "summary": "益气活血，通脉平喘",
       "image": {
         "file": "/images/herbs/supplement/supp-88.jpg",
-        "alt": "红景天（补充本草图1）",
+        "alt": "红景天（补充本草图88）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -4004,13 +4004,13 @@
       "categoryTitle": "安神药",
       "summary": "安神益智，交通心肾，祛痰，消肿",
       "image": {
-        "url": "/images/herbs/lecture/520121.jpg",
-        "alt": "远志（已有图片）",
-        "credit": "© Chuangzao / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/520121",
+        "url": "/images/herbs/lecture/xlsx/xlsx-050.jpg",
+        "alt": "泽泻（用户提供图片 1）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Polygala tenuifolia",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-520121.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1006
@@ -4030,7 +4030,7 @@
       "summary": "活血，行气，止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-89.jpg",
-        "alt": "延胡索（补充本草图1）",
+        "alt": "延胡索（补充本草图89）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -4056,7 +4056,7 @@
       "summary": "活血化瘀，行气止痛，祛风通络，解毒消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-90.jpg",
-        "alt": "两面针（补充本草图1）",
+        "alt": "两面针（补充本草图90）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -4080,9 +4080,9 @@
       "categoryTitle": "清热药",
       "summary": "清热泻火，生津止渴，除烦，止呕，利尿",
       "image": {
-        "url": "/images/herbs/lecture/extra/ex-135.jpg",
+        "url": "/images/herbs/lecture/xiajing/xj-135.jpg",
         "alt": "芦根（同源：苇茎）",
-        "credit": "用户提供 / 本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -4131,7 +4131,7 @@
       "summary": "解表散寒，祛风除湿，止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-235.jpg",
-        "alt": "羌活（补充本草图1）",
+        "alt": "羌活（补充本草图235）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -4190,7 +4190,7 @@
       "summary": "益气健脾，补肾安神",
       "image": {
         "file": "/images/herbs/supplement/supp-133.jpg",
-        "alt": "刺五加（补充本草图1）",
+        "alt": "刺五加（补充本草图133）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -4216,13 +4216,13 @@
       "categoryTitle": "清热药",
       "summary": "清热燥湿，祛风杀虫",
       "image": {
-        "url": "/images/herbs/lecture/138582.jpg",
-        "alt": "苦参（Sophora flavescens）",
-        "credit": "© 登坂久雄 / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/138582",
+        "url": "/images/herbs/lecture/zhongjing/zj-015.jpg",
+        "alt": "苦参（中经本草图15）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Sophora flavescens",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-138582.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1062
@@ -4242,13 +4242,13 @@
       "categoryTitle": "活血化瘀药",
       "summary": "活血止痛，行气解郁，清心凉血，利胆退黄",
       "image": {
-        "url": "/images/herbs/lecture/347672.jpg",
-        "alt": "郁金（Curcuma aromatica）",
-        "credit": "© Purnendu Roy / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/347672",
+        "url": "/images/herbs/lecture/xiajing/xj-123.jpg",
+        "alt": "郁金（下经本草图123）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Curcuma aromatica",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-347672.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 1624
@@ -4296,7 +4296,7 @@
       "summary": "润肺化痰，养阴和胃，平肝，解毒",
       "image": {
         "file": "/images/herbs/supplement/supp-108.jpg",
-        "alt": "明党参（补充本草图1）",
+        "alt": "明党参（补充本草图108）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -4322,7 +4322,7 @@
       "summary": "清热解毒，利咽，止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-29.jpg",
-        "alt": "金果榄（补充本草图1）",
+        "alt": "金果榄（补充本草图29）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -4347,13 +4347,13 @@
       "categoryTitle": "祛风湿药",
       "summary": "强腰膝，祛风湿，补肝肾",
       "image": {
-        "url": "/images/herbs/lecture/501651.jpeg",
-        "alt": "狗脊（Woodwardia japonica）",
-        "credit": "© Rafael Medina / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/501651",
+        "url": "/images/herbs/lecture/zhongjing/zj-043.jpg",
+        "alt": "狗脊（中经本草图43）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Woodwardia japonica",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-501651.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1157
@@ -4427,9 +4427,9 @@
       "categoryTitle": "利水渗湿药",
       "summary": "利水渗湿，泄热通淋，化浊降脂",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-050.jpg",
-        "alt": "泽泻（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "url": "/images/herbs/lecture/xlsx/xlsx-048.jpg",
+        "alt": "泽泻（上经本草图48）",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -4454,7 +4454,7 @@
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-054.jpg",
         "alt": "细辛（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -4533,7 +4533,15 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "清热解毒，凉血消斑",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-18.jpg",
+        "alt": "南板蓝根（补充本草图18）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-18.jpg"
+      },
       "docCount": 1,
       "charCount": 1050
     },
@@ -4553,13 +4561,13 @@
       "categoryTitle": "清热药",
       "summary": "凉血，祛瘀，止血，通经",
       "image": {
-        "url": "/images/herbs/lecture/500587.jpeg",
-        "alt": "茜草（已有图片）",
-        "credit": "© Repina Tatyana / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/500587",
+        "url": "/images/herbs/lecture/xlsx/xlsx-085.jpg",
+        "alt": "茜草（上经本草图85）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Rubia cordifolia",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-500587.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1289
@@ -4583,7 +4591,7 @@
       "summary": "祛风除湿，温经止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-148.jpg",
-        "alt": "草乌（补充本草图1）",
+        "alt": "草乌（补充本草图148）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -4626,13 +4634,13 @@
       "categoryTitle": "祛风湿药",
       "summary": "祛风湿，通经络",
       "image": {
-        "url": "/images/herbs/lecture/774403.jpeg",
-        "alt": "威灵仙（Clematis chinensis）",
-        "credit": "© 羅元甫 / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/774403",
+        "url": "/images/herbs/lecture/xiajing/xj-155.jpg",
+        "alt": "威灵仙（下经本草图155）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Clematis chinensis",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-774403.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1073
@@ -4652,7 +4660,7 @@
       "summary": "退虚热，消疳热，清湿热",
       "image": {
         "file": "/images/herbs/supplement/supp-227.jpg",
-        "alt": "胡黄连（补充本草图1）",
+        "alt": "胡黄连（补充本草图227）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -4677,9 +4685,9 @@
       "categoryTitle": "理气药",
       "summary": "理气解郁，调经止痛，安胎",
       "image": {
-        "url": "/images/herbs/lecture/extra/ex-184.jpg",
-        "alt": "香附（用户提供图片 1）",
-        "credit": "用户提供 / 本草表格",
+        "url": "/images/herbs/lecture/xiajing/xj-184.jpg",
+        "alt": "香附（下经本草图184）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -4705,7 +4713,7 @@
       "image": {
         "url": "/images/herbs/lecture/xiajing/xj-053.jpg",
         "alt": "重楼（用户提供图片 1）",
-        "credit": "用户提供 / 下经本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -4728,13 +4736,13 @@
       "categoryTitle": "祛风湿药",
       "summary": "祛风除湿，通痹止痛",
       "image": {
-        "url": "/images/herbs/lecture/482445.jpg",
-        "alt": "独活（已有图片）",
-        "credit": "© leehsueh / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/482445",
+        "url": "/images/herbs/lecture/xlsx/xlsx-039.jpg",
+        "alt": "独活（上经本草图39）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Angelica pubescens",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-482445.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1391
@@ -4774,13 +4782,13 @@
       "categoryTitle": "活血化瘀药",
       "summary": "破血行气，通经止痛",
       "image": {
-        "file": "/images/herbs/supplement/supp-92.jpg",
-        "alt": "姜黄（补充本草图1）",
+        "file": "/images/herbs/supplement/supp-91.jpg",
+        "alt": "姜黄（补充本草图91）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材",
-        "url": "/images/herbs/supplement/supp-92.jpg"
+        "url": "/images/herbs/supplement/supp-91.jpg"
       },
       "docCount": 1,
       "charCount": 1118
@@ -4828,7 +4836,7 @@
       "summary": "祛风通络，清热除湿，解毒消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-31.jpg",
-        "alt": "穿破石（补充本草图1）",
+        "alt": "穿破石（补充本草图31）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -4855,7 +4863,7 @@
       "summary": "行气破血，消积止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-93.jpg",
-        "alt": "莪术（补充本草图1）",
+        "alt": "莪术（补充本草图93）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -4897,13 +4905,13 @@
       "categoryTitle": "理气药",
       "summary": "疏散退热，疏肝解郁，升举阳气",
       "image": {
-        "url": "/images/herbs/lecture/601649.jpeg",
-        "alt": "柴胡（已有图片）",
-        "credit": "© 红梅 / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/601649",
+        "url": "/images/herbs/lecture/xlsx/xlsx-035.jpg",
+        "alt": "柴胡（上经本草图35）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Bupleurum chinense",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-601649.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1218
@@ -4924,7 +4932,7 @@
       "summary": "清虚热，除疳热",
       "image": {
         "file": "/images/herbs/supplement/supp-33.jpg",
-        "alt": "银柴胡（补充本草图1）",
+        "alt": "银柴胡（补充本草图33）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -4949,13 +4957,13 @@
       "categoryTitle": "清热药",
       "summary": "清热解毒，消痰，利咽",
       "image": {
-        "url": "/images/herbs/lecture/204330.jpeg",
-        "alt": "射干（Iris domestica）",
-        "credit": "© 葉子 / iNaturalist",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/204330",
+        "url": "/images/herbs/lecture/xiajing/xj-025.jpg",
+        "alt": "射干（下经本草图25）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Iris domestica",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-204330.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1006
@@ -4974,13 +4982,13 @@
       "categoryTitle": "化湿药",
       "summary": "祛风，化湿，止痛，止痒",
       "image": {
-        "url": "/images/herbs/lecture/1638659.jpg",
-        "alt": "徐长卿（已有图片）",
-        "credit": "© onidiras-iNaturalist / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/1638659",
+        "url": "/images/herbs/lecture/xlsx/xlsx-094.jpg",
+        "alt": "徐长卿（上经本草图94）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Vincetoxicum bungei",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-1638659.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1220
@@ -4999,13 +5007,13 @@
       "categoryTitle": "驱虫药",
       "summary": "散结，杀虫。外",
       "image": {
-        "url": "/images/herbs/lecture/820729.jpg",
-        "alt": "狼毒（Stellera chamaejasme）",
-        "credit": "© Святослав Власенко / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/820729",
+        "url": "/images/herbs/lecture/xiajing/xj-047.jpg",
+        "alt": "狼毒（下经本草图47）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Stellera chamaejasme",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-820729.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 597
@@ -5026,7 +5034,7 @@
       "summary": "温胃止呕，散寒止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-183.jpg",
-        "alt": "高良姜（补充本草图1）",
+        "alt": "高良姜（补充本草图183）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -5052,7 +5060,7 @@
       "summary": "清热解毒，消肿，止血",
       "image": {
         "file": "/images/herbs/supplement/supp-34.jpg",
-        "alt": "拳参（补充本草图1）",
+        "alt": "拳参（补充本草图34）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -5078,7 +5086,7 @@
       "summary": "清热化痰止咳，解毒散结消痈",
       "image": {
         "file": "/images/herbs/supplement/supp-36.jpg",
-        "alt": "浙贝母（补充本草图1）",
+        "alt": "浙贝母（补充本草图36）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -5103,13 +5111,13 @@
       "categoryTitle": "清热药",
       "summary": "清热燥湿，泻火解毒，止血，安胎",
       "image": {
-        "url": "/images/herbs/lecture/565882.jpeg",
-        "alt": "黄芩（Scutellaria baicalensis）",
-        "credit": "© Yao Li / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/565882",
+        "url": "/images/herbs/lecture/zhongjing/zj-045.jpg",
+        "alt": "黄芩（中经本草图45）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Scutellaria baicalensis",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-565882.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1245
@@ -5127,13 +5135,13 @@
       "categoryTitle": "清热药",
       "summary": "清热燥湿，泻火解毒",
       "image": {
-        "url": "/images/herbs/lecture/497721.jpg",
-        "alt": "黄连（已有图片）",
-        "credit": "© misakinokukuru / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/497721",
+        "url": "/images/herbs/lecture/xlsx/xlsx-070.jpg",
+        "alt": "黄连（上经本草图70）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Coptis chinensis",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-497721.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1784
@@ -5154,7 +5162,7 @@
       "summary": "散结消瘿，清热解毒，凉血止血",
       "image": {
         "file": "/images/herbs/supplement/supp-37.jpg",
-        "alt": "黄药子（补充本草图1）",
+        "alt": "黄药子（补充本草图37）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -5181,7 +5189,7 @@
       "summary": "涌吐痰涎，截疟",
       "image": {
         "file": "/images/herbs/supplement/supp-261.jpg",
-        "alt": "常山（补充本草图1）",
+        "alt": "常山（补充本草图261）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -5205,13 +5213,13 @@
       "categoryTitle": "泻下药",
       "summary": "逐水消肿，通利二便；外用解毒散结",
       "image": {
-        "url": "/images/herbs/lecture/155484.jpg",
-        "alt": "商陆（Phytolacca acinosa）",
-        "credit": "© Kim, Hyun-tae / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/155484",
+        "url": "/images/herbs/lecture/xiajing/xj-041.jpg",
+        "alt": "商陆（下经本草图41）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Phytolacca acinosa",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-155484.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1417
@@ -5231,9 +5239,9 @@
       "categoryTitle": "补虚药",
       "summary": "补肝肾，强筋骨，续折伤，止崩漏",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-083.jpg",
-        "alt": "续断（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "url": "/images/herbs/lecture/xlsx/xlsx-080.jpg",
+        "alt": "续断（上经本草图80）",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -5257,13 +5265,13 @@
       "categoryTitle": "清热药",
       "summary": "消热凉血，活血解毒，透疹消斑",
       "image": {
-        "url": "/images/herbs/lecture/715299.jpeg",
-        "alt": "紫草（Lithospermum erythrorhizon）",
-        "credit": "© Repina Tatyana / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/715299",
+        "url": "/images/herbs/lecture/zhongjing/zj-053.jpg",
+        "alt": "紫草（中经本草图53）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Lithospermum erythrorhizon",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-715299.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1004
@@ -5283,13 +5291,13 @@
       "categoryTitle": "化痰止咳平喘药",
       "summary": "润肺下气，消痰止咳",
       "image": {
-        "url": "/images/herbs/lecture/158806.jpg",
-        "alt": "紫菀（Aster tataricus）",
-        "credit": "© Douglas Goldman / iNaturalist",
-        "license": "CC BY-SA",
-        "sourceUrl": "https://www.inaturalist.org/taxa/158806",
+        "url": "/images/herbs/lecture/zhongjing/zj-050.jpg",
+        "alt": "紫菀（中经本草图50）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Aster tataricus",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-158806.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1019
@@ -5314,7 +5322,7 @@
       "image": {
         "url": "/images/herbs/lecture/zhongjing/zj-066.jpg",
         "alt": "萆薢（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -5339,7 +5347,7 @@
       "summary": "祛风除湿，活血通络，消肿止痛，杀虫解毒。主类风湿关节炎，风湿性关节炎，肾小球肾炎，肾病综合征，红斑狼疮，口眼干燥综合征，白塞病，湿疹，银屑病，麻风病，疥疮，顽癣",
       "image": {
         "file": "/images/herbs/supplement/supp-151.jpg",
-        "alt": "雷公藤（补充本草图1）",
+        "alt": "雷公藤（补充本草图151）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -5365,7 +5373,7 @@
       "summary": "补肾壮阳，活血祛瘀，祛风止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-135.jpg",
-        "alt": "鹿药（补充本草图1）",
+        "alt": "鹿药（补充本草图135）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -5390,13 +5398,13 @@
       "categoryTitle": "清热药",
       "summary": "清热解毒，消痈，下乳，舒筋通脉",
       "image": {
-        "url": "/images/herbs/lecture/1498021.jpg",
-        "alt": "漏芦（已有图片）",
-        "credit": "© Ryzhkov Oleg / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/1498021",
+        "url": "/images/herbs/lecture/xlsx/xlsx-079.jpg",
+        "alt": "漏芦（上经本草图79）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Rhaponticum uniflorum",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-1498021.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1093
@@ -5417,7 +5425,7 @@
       "image": {
         "url": "/images/herbs/lecture/zhongjing/zj-064.jpg",
         "alt": "藁本（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -5441,13 +5449,13 @@
       "categoryTitle": "涌吐药",
       "summary": "涌吐风痰，杀虫",
       "image": {
-        "url": "/images/herbs/lecture/344733.jpg",
-        "alt": "藜芦（Veratrum nigrum）",
-        "credit": "© HermannFalkner/sokol / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/344733",
+        "url": "/images/herbs/lecture/xiajing/xj-022.jpg",
+        "alt": "藜芦（下经本草图22）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Veratrum nigrum",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-344733.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1022
@@ -5511,7 +5519,7 @@
       "summary": "发表，通阳，解毒，杀虫",
       "image": {
         "file": "/images/herbs/supplement/supp-234.jpg",
-        "alt": "葱白（补充本草图1）",
+        "alt": "葱白（补充本草图234）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -5537,7 +5545,7 @@
       "summary": "温阳散寒，理气止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-185.jpg",
-        "alt": "八角茴香（补充本草图1）",
+        "alt": "八角茴香（补充本草图185）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -5602,9 +5610,9 @@
       "categoryTitle": "理气药",
       "summary": "疏肝泄热，行气止痛，杀虫",
       "image": {
-        "url": "/images/herbs/supplement/supp-16.jpg",
-        "alt": "川楝子（补充本草图1）",
-        "credit": "用户提供 / 《补充本草》",
+        "url": "/images/herbs/lecture/xiajing/xj-064.jpg",
+        "alt": "川楝子（下经本草图64）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -5629,7 +5637,7 @@
       "summary": "泻下逐水，破血消癥；外用疗癣蚀疣",
       "image": {
         "file": "/images/herbs/supplement/supp-259.jpg",
-        "alt": "千金子（补充本草图1）",
+        "alt": "千金子（补充本草图259）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -5656,7 +5664,7 @@
       "summary": "通络止痛，散结消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-95.jpg",
-        "alt": "马钱子（补充本草图1）",
+        "alt": "马钱子（补充本草图95）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -5691,7 +5699,7 @@
       "summary": "清肺降气，止咳平喘，清肠消痔",
       "image": {
         "file": "/images/herbs/supplement/supp-109.jpg",
-        "alt": "马兜铃（补充本草图1）",
+        "alt": "马兜铃（补充本草图109）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -5718,7 +5726,7 @@
       "image": {
         "url": "/images/herbs/lecture/zhongjing/zj-025.jpg",
         "alt": "马蔺子（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -5795,7 +5803,7 @@
       "summary": "清热生津，健脾开胃，解毒消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-39.jpg",
-        "alt": "无花果（补充本草图1）",
+        "alt": "无花果（补充本草图39）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -5848,7 +5856,7 @@
       "summary": "清肺利咽，疏肝和胃",
       "image": {
         "file": "/images/herbs/supplement/supp-168.jpg",
-        "alt": "木蝴蝶（补充本草图1）",
+        "alt": "木蝴蝶（补充本草图168）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -5873,7 +5881,7 @@
       "summary": "散结消肿，攻毒疗疮",
       "image": {
         "file": "/images/herbs/supplement/supp-238.jpg",
-        "alt": "木鳖子（补充本草图1）",
+        "alt": "木鳖子（补充本草图238）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -5927,7 +5935,7 @@
       "summary": "理气宽中，燥湿化痰",
       "image": {
         "file": "/images/herbs/supplement/supp-170.jpg",
-        "alt": "化橘红（补充本草图1）",
+        "alt": "化橘红（补充本草图170）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -5952,9 +5960,9 @@
       "categoryTitle": "泻下药",
       "summary": "润肠通便",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-160.jpg",
+        "url": "/images/herbs/lecture/xlsx/xlsx-159.jpg",
         "alt": "火麻仁（同源：麻蕡）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -5980,13 +5988,13 @@
       "categoryTitle": "其他药",
       "summary": "外用蚀疮",
       "image": {
-        "url": "/images/herbs/lecture/427400.jpeg",
-        "alt": "巴豆（Croton tiglium）",
-        "credit": "© 葉子 / iNaturalist",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/427400",
+        "url": "/images/herbs/lecture/xiajing/xj-058.jpg",
+        "alt": "巴豆（下经本草图58）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Croton tiglium",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-427400.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 1706
@@ -6124,7 +6132,7 @@
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-089.jpg",
         "alt": "地肤子（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -6149,7 +6157,7 @@
       "summary": "润燥通便，养血祛风",
       "image": {
         "file": "/images/herbs/supplement/supp-137.jpg",
-        "alt": "亚麻子（补充本草图1）",
+        "alt": "亚麻子（补充本草图137）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -6176,7 +6184,7 @@
       "summary": "清热，解渴，利尿",
       "image": {
         "file": "/images/herbs/supplement/supp-40.jpg",
-        "alt": "西瓜皮（补充本草图1）",
+        "alt": "西瓜皮（补充本草图40）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -6200,7 +6208,15 @@
       "categoryId": "wenli",
       "categoryTitle": "温里药",
       "summary": "温中燥湿，散寒止痛，驱虫止痒",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-186.jpg",
+        "alt": "竹叶椒（补充本草图186）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-186.jpg"
+      },
       "docCount": 1,
       "charCount": 883
     },
@@ -6254,7 +6270,7 @@
       "summary": "散风寒，通鼻窍，祛风湿",
       "image": {
         "file": "/images/herbs/supplement/supp-152.jpg",
-        "alt": "苍耳子（补充本草图1）",
+        "alt": "苍耳子（补充本草图152）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -6296,13 +6312,13 @@
       "categoryTitle": "清热药",
       "summary": "清热解毒，消肿散结，疏散风热",
       "image": {
-        "url": "/images/herbs/lecture/163058.jpg",
-        "alt": "连翘（Forsythia suspensa）",
-        "credit": "© Douglas Goldman / iNaturalist",
-        "license": "CC BY-SA",
-        "sourceUrl": "https://www.inaturalist.org/taxa/163058",
+        "url": "/images/herbs/lecture/xiajing/xj-051.jpg",
+        "alt": "连翘（下经本草图51）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Forsythia suspensa",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-163058.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1131
@@ -6329,7 +6345,7 @@
       "summary": "祛痰止咳，开窍通闭，杀虫散结",
       "image": {
         "file": "/images/herbs/supplement/supp-111.jpg",
-        "alt": "皂角（补充本草图1）",
+        "alt": "皂角（补充本草图111）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -6355,7 +6371,7 @@
       "summary": "清热凉血，消食健胃，生津止咳",
       "image": {
         "file": "/images/herbs/supplement/supp-41.jpg",
-        "alt": "余甘子（补充本草图1）",
+        "alt": "余甘子（补充本草图41）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -6381,7 +6397,7 @@
       "summary": "健脾消食，止咳祛痰，活血散瘀",
       "image": {
         "file": "/images/herbs/supplement/supp-190.jpg",
-        "alt": "沙棘（补充本草图1）",
+        "alt": "沙棘（补充本草图190）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -6433,13 +6449,13 @@
       "categoryTitle": "化痰止咳平喘药",
       "summary": "温肾助阳，纳气平喘，温脾止泻；外用消风祛斑",
       "image": {
-        "url": "/images/herbs/lecture/736663.jpeg",
-        "alt": "补骨脂（Cullen corylifolium）",
-        "credit": "© S.MORE / iNaturalist",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/736663",
+        "url": "/images/herbs/lecture/xiajing/xj-160.jpg",
+        "alt": "补骨脂（下经本草图160）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Cullen corylifolium",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-736663.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1127
@@ -6461,7 +6477,7 @@
       "image": {
         "url": "/images/herbs/lecture/xiajing/xj-033.jpg",
         "alt": "青葙子（用户提供图片 1）",
-        "credit": "用户提供 / 下经本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -6486,7 +6502,7 @@
       "image": {
         "url": "/images/herbs/lecture/xiajing/xj-066.jpg",
         "alt": "郁李仁（用户提供图片 1）",
-        "credit": "用户提供 / 下经本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -6511,7 +6527,7 @@
       "image": {
         "url": "/images/herbs/lecture/xiajing/xj-095.jpg",
         "alt": "苦葫芦（用户提供图片 1）",
-        "credit": "用户提供 / 下经本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -6536,7 +6552,7 @@
       "image": {
         "url": "/images/herbs/lecture/xiajing/xj-093.jpg",
         "alt": "苦杏仁（同源：杏仁）",
-        "credit": "用户提供 / 下经本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -6560,7 +6576,7 @@
       "summary": "清热解毒，利湿，退翳",
       "image": {
         "file": "/images/herbs/supplement/supp-42.jpg",
-        "alt": "苘麻子（补充本草图1）",
+        "alt": "苘麻子（补充本草图42）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -6586,7 +6602,7 @@
       "summary": "清热润肺，利咽开音，滑肠通便",
       "image": {
         "file": "/images/herbs/supplement/supp-43.jpg",
-        "alt": "罗汉果（补充本草图1）",
+        "alt": "罗汉果（补充本草图43）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -6636,9 +6652,9 @@
       "categoryTitle": "理气药",
       "summary": "理气宽中，行滞消胀",
       "image": {
-        "url": "/images/herbs/lecture/extra/ex-180.jpg",
-        "alt": "枳壳（用户提供图片 1）",
-        "credit": "用户提供 / 本草表格",
+        "url": "/images/herbs/lecture/xiajing/xj-180.jpg",
+        "alt": "枳壳（下经本草图180）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -6680,9 +6696,9 @@
       "categoryTitle": "清热药",
       "summary": "泻火除烦，清热利湿，凉血解毒；外用消肿止痛",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-100.jpg",
-        "alt": "栀子（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "url": "/images/herbs/lecture/zhongjing/zj-101.jpg",
+        "alt": "栀子（中经本草图101）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -6706,7 +6722,7 @@
       "summary": "降逆止呃",
       "image": {
         "file": "/images/herbs/supplement/supp-172.jpg",
-        "alt": "柿蒂（补充本草图1）",
+        "alt": "柿蒂（补充本草图172）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -6731,7 +6747,7 @@
       "summary": "温中散寒，下气，消痰",
       "image": {
         "file": "/images/herbs/supplement/supp-187.jpg",
-        "alt": "胡椒（补充本草图1）",
+        "alt": "胡椒（补充本草图187）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -6775,7 +6791,7 @@
       "summary": "温中散寒，下气止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-188.jpg",
-        "alt": "荜茇（补充本草图1）",
+        "alt": "荜茇（补充本草图188）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -6844,7 +6860,7 @@
       "summary": "行气散结，祛寒止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-173.jpg",
-        "alt": "荔枝核（补充本草图1）",
+        "alt": "荔枝核（补充本草图173）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -6870,7 +6886,7 @@
       "summary": "杀虫，下乳，利水消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-245.jpg",
-        "alt": "南瓜子（补充本草图1）",
+        "alt": "南瓜子（补充本草图245）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -6894,7 +6910,15 @@
       "categoryId": "souse",
       "categoryTitle": "收涩药",
       "summary": "收敛固涩，益气生津，补肾宁心",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-250.jpg",
+        "alt": "南五味子（补充本草图250）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-250.jpg"
+      },
       "docCount": 1,
       "charCount": 1151
     },
@@ -6911,7 +6935,15 @@
       "categoryId": "xiaoshi",
       "categoryTitle": "消食药",
       "summary": "杀虫消积",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-191.jpg",
+        "alt": "南鹤虱（补充本草图191）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-191.jpg"
+      },
       "docCount": 1,
       "charCount": 984
     },
@@ -6933,7 +6965,7 @@
       "summary": "泻水通便，消痰涤饮，杀虫攻积",
       "image": {
         "file": "/images/herbs/supplement/supp-246.jpg",
-        "alt": "牵牛子（补充本草图1）",
+        "alt": "牵牛子（补充本草图246）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -6959,7 +6991,7 @@
       "summary": "清热解毒，截疟，止痢；外用腐蚀赘疣",
       "image": {
         "file": "/images/herbs/supplement/supp-44.jpg",
-        "alt": "鸦胆子（补充本草图1）",
+        "alt": "鸦胆子（补充本草图44）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -6983,7 +7015,7 @@
       "summary": "温补肝肾，壮阳固精",
       "image": {
         "file": "/images/herbs/supplement/supp-138.jpg",
-        "alt": "韭菜子（补充本草图1）",
+        "alt": "韭菜子（补充本草图138）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7024,7 +7056,7 @@
       "image": {
         "url": "/images/herbs/lecture/xiajing/xj-092.jpg",
         "alt": "桃仁（用户提供图片 1）",
-        "credit": "用户提供 / 下经本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -7046,7 +7078,7 @@
       "summary": "补肾，温肺，润肠",
       "image": {
         "file": "/images/herbs/supplement/supp-139.jpg",
-        "alt": "核桃仁（补充本草图1）",
+        "alt": "核桃仁（补充本草图139）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7069,7 +7101,7 @@
       "summary": "除虚热，止汗",
       "image": {
         "file": "/images/herbs/supplement/supp-226.jpg",
-        "alt": "浮小麦（补充本草图1）",
+        "alt": "浮小麦（补充本草图226）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7094,7 +7126,7 @@
       "summary": "暖肾固精缩尿，温脾止泻摄唾",
       "image": {
         "file": "/images/herbs/supplement/supp-253.jpg",
-        "alt": "益智（补充本草图1）",
+        "alt": "益智（补充本草图253）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7120,7 +7152,7 @@
       "summary": "疏肝理气，和胃止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-174.jpg",
-        "alt": "娑罗子（补充本草图1）",
+        "alt": "娑罗子（补充本草图174）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7164,7 +7196,7 @@
       "summary": "祛风解表，止咳平喘，理气消食止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-236.jpg",
-        "alt": "黄荆子（补充本草图1）",
+        "alt": "黄荆子（补充本草图236）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7220,13 +7252,13 @@
       "categoryTitle": "泻下药",
       "summary": "清肺，润肠，化瘀，排脓，疗伤止痛",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-165.jpg",
-        "alt": "甜瓜地（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "file": "/images/herbs/lecture/xlsx/xlsx-166.jpg",
+        "alt": "甜瓜子（上经本草图166）",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
-        "latin": "",
-        "kind": "药材"
+        "kind": "药材",
+        "url": "/images/herbs/lecture/xlsx/xlsx-166.jpg"
       },
       "docCount": 2,
       "charCount": 1553
@@ -7265,7 +7297,7 @@
       "summary": "补肾清肝，明目，利尿",
       "image": {
         "file": "/images/herbs/supplement/supp-140.jpg",
-        "alt": "楮实子（补充本草图1）",
+        "alt": "楮实子（补充本草图140）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7288,7 +7320,7 @@
       "summary": "清热，消暑，利水、解毒",
       "image": {
         "file": "/images/herbs/supplement/supp-46.jpg",
-        "alt": "绿豆（补充本草图1）",
+        "alt": "绿豆（补充本草图46）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7313,13 +7345,13 @@
       "categoryTitle": "清热药",
       "summary": "清热解毒，散结消癥",
       "image": {
-        "file": "/images/herbs/supplement/supp-48.jpg",
-        "alt": "喜树果（补充本草图1）",
+        "file": "/images/herbs/supplement/supp-47.jpg",
+        "alt": "喜树果（补充本草图47）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材",
-        "url": "/images/herbs/supplement/supp-48.jpg"
+        "url": "/images/herbs/supplement/supp-47.jpg"
       },
       "docCount": 1,
       "charCount": 798
@@ -7365,13 +7397,13 @@
       "categoryTitle": "平肝息风药",
       "summary": "平肝解郁，活血祛风，明目，止痒",
       "image": {
-        "url": "/images/herbs/lecture/64238.jpg",
-        "alt": "蒺藜（已有图片）",
-        "credit": "© lanechaffin / iNaturalist",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/64238",
+        "url": "/images/herbs/lecture/xlsx/xlsx-073.jpg",
+        "alt": "蒺藜（上经本草图73）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Tribulus terrestris",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-64238.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1057
@@ -7396,7 +7428,7 @@
       "summary": "祛风活络，利水，通经",
       "image": {
         "file": "/images/herbs/supplement/supp-198.jpg",
-        "alt": "路路通（补充本草图1）",
+        "alt": "路路通（补充本草图198）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7451,7 +7483,7 @@
       "image": {
         "url": "/images/herbs/lecture/xiajing/xj-017.jpg",
         "alt": "葶苈子（用户提供图片 1）",
-        "credit": "用户提供 / 下经本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -7476,7 +7508,7 @@
       "image": {
         "url": "/images/herbs/lecture/xiajing/xj-098.jpg",
         "alt": "榧子（用户提供图片 1）",
-        "credit": "用户提供 / 下经本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -7504,12 +7536,13 @@
       "categoryTitle": "驱虫药",
       "summary": "杀虫，消积，行气，利水，截疟",
       "image": {
-        "url": "/images/herbs/lecture/extra/ex-132.jpg",
-        "alt": "大腹皮（用户提供图片 1）",
-        "credit": "用户提供 / 本草表格",
+        "file": "/images/herbs/lecture/xiajing/xj-132.jpg",
+        "alt": "槟榔（下经本草图132）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
-        "kind": "药材"
+        "kind": "药材",
+        "url": "/images/herbs/lecture/xiajing/xj-132.jpg"
       },
       "docCount": 3,
       "charCount": 2069
@@ -7557,7 +7590,7 @@
       "summary": "敛肺，涩肠，止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-97.jpg",
-        "alt": "罂粟壳（补充本草图1）",
+        "alt": "罂粟壳（补充本草图97）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7599,7 +7632,7 @@
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-137.jpg",
         "alt": "蕤仁（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -7623,7 +7656,7 @@
       "summary": "杀虫消积",
       "image": {
         "file": "/images/herbs/supplement/supp-191.jpg",
-        "alt": "鹤虱（补充本草图1）",
+        "alt": "鹤虱（补充本草图191）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7649,13 +7682,13 @@
       "categoryTitle": "利水渗湿药",
       "summary": "利水，消肿，通淋，散结",
       "image": {
-        "file": "/images/herbs/supplement/supp-200.jpg",
-        "alt": "葫芦（补充本草图1）",
+        "file": "/images/herbs/supplement/supp-199.jpg",
+        "alt": "葫芦（补充本草图199）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材",
-        "url": "/images/herbs/supplement/supp-200.jpg"
+        "url": "/images/herbs/supplement/supp-199.jpg"
       },
       "docCount": 1,
       "charCount": 1032
@@ -7676,7 +7709,7 @@
       "summary": "清热解毒，疏散风热",
       "image": {
         "file": "/images/herbs/supplement/supp-49.jpg",
-        "alt": "一枝黄花（补充本草图1）",
+        "alt": "一枝黄花（补充本草图49）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7701,7 +7734,7 @@
       "summary": "利尿消肿，清热解毒",
       "image": {
         "file": "/images/herbs/supplement/supp-201.jpg",
-        "alt": "三白草（补充本草图1）",
+        "alt": "三白草（补充本草图201）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7724,7 +7757,15 @@
       "categoryId": "qufengshi",
       "categoryTitle": "祛风湿药",
       "summary": "祛风除湿，杀虫止痒，活血消肿",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-153.jpg",
+        "alt": "土荆芥（补充本草图153）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-153.jpg"
+      },
       "docCount": 1,
       "charCount": 931
     },
@@ -7770,7 +7811,7 @@
       "summary": "凉血止血，散瘀解毒消痈",
       "image": {
         "file": "/images/herbs/supplement/supp-50.jpg",
-        "alt": "小蓟（补充本草图1）",
+        "alt": "小蓟（补充本草图50）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7813,7 +7854,7 @@
       "summary": "清热解毒，明目，利湿",
       "image": {
         "file": "/images/herbs/supplement/supp-51.jpg",
-        "alt": "千里光（补充本草图1）",
+        "alt": "千里光（补充本草图51）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7837,7 +7878,7 @@
       "summary": "芳香化浊，和中止呕，发表解暑",
       "image": {
         "file": "/images/herbs/supplement/supp-223.jpg",
-        "alt": "广藿香（补充本草图1）",
+        "alt": "广藿香（补充本草图223）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7862,7 +7903,7 @@
       "summary": "利湿退黄，利尿通淋",
       "image": {
         "file": "/images/herbs/supplement/supp-202.jpg",
-        "alt": "广金钱草（补充本草图1）",
+        "alt": "广金钱草（补充本草图202）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7887,7 +7928,7 @@
       "summary": "凉血止血，清热利湿，解毒消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-52.jpg",
-        "alt": "马兰（补充本草图1）",
+        "alt": "马兰（补充本草图52）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7912,7 +7953,7 @@
       "summary": "活血散瘀，解毒，利水，退黄，截疟",
       "image": {
         "file": "/images/herbs/supplement/supp-99.jpg",
-        "alt": "马鞭草（补充本草图1）",
+        "alt": "马鞭草（补充本草图99）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7937,7 +7978,7 @@
       "summary": "清热利湿，解毒消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-53.jpg",
-        "alt": "天胡荽（补充本草图1）",
+        "alt": "天胡荽（补充本草图53）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -7962,7 +8003,7 @@
       "summary": "凉血止血，解毒，敛疮",
       "image": {
         "file": "/images/herbs/supplement/supp-54.jpg",
-        "alt": "瓦松（补充本草图1）",
+        "alt": "瓦松（补充本草图54）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -8013,7 +8054,7 @@
       "summary": "解毒抗癌，清热平肝",
       "image": {
         "file": "/images/herbs/supplement/supp-55.jpg",
-        "alt": "长春花（补充本草图1）",
+        "alt": "长春花（补充本草图55）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -8038,7 +8079,7 @@
       "summary": "清热利湿，解毒消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-56.jpg",
-        "alt": "乌蔹莓（补充本草图1）",
+        "alt": "乌蔹莓（补充本草图56）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -8062,13 +8103,13 @@
       "categoryTitle": "利水渗湿药",
       "summary": "利尿通淋，清肺止咳，凉血止血",
       "image": {
-        "url": "/images/herbs/lecture/428723.jpg",
-        "alt": "石韦（Pyrrosia lingua）",
-        "credit": "© Nova Patch / iNaturalist",
-        "license": "CC BY-SA",
-        "sourceUrl": "https://www.inaturalist.org/taxa/428723",
+        "url": "/images/herbs/lecture/zhongjing/zj-065.jpg",
+        "alt": "石韦（中经本草图65）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Pyrrosia lingua",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-428723.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 953
@@ -8179,7 +8220,7 @@
       "summary": "祛风除湿，行气活血，解毒消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-154.jpg",
-        "alt": "白花丹（补充本草图1）",
+        "alt": "白花丹（补充本草图154）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -8204,7 +8245,7 @@
       "summary": "清热解毒，利湿",
       "image": {
         "file": "/images/herbs/supplement/supp-57.jpg",
-        "alt": "白花蛇舌草（补充本草图1）",
+        "alt": "白花蛇舌草（补充本草图57）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -8308,7 +8349,7 @@
       "summary": "破瘀通经，止血消肿，消食化积",
       "image": {
         "file": "/images/herbs/supplement/supp-98.jpg",
-        "alt": "刘寄奴（补充本草图1）",
+        "alt": "刘寄奴（补充本草图98）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -8351,7 +8392,7 @@
       "summary": "清热解毒，活血止血",
       "image": {
         "file": "/images/herbs/supplement/supp-58.jpg",
-        "alt": "地稔（补充本草图1）",
+        "alt": "地稔（补充本草图58）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -8376,7 +8417,7 @@
       "summary": "清热利湿，解毒，散瘀消肿，止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-60.jpg",
-        "alt": "地耳草（补充本草图1）",
+        "alt": "地耳草（补充本草图60）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -8427,7 +8468,7 @@
       "summary": "祛风湿，通经络，止泻痢",
       "image": {
         "file": "/images/herbs/supplement/supp-155.jpg",
-        "alt": "老鹳草（补充本草图1）",
+        "alt": "老鹳草（补充本草图155）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -8469,7 +8510,7 @@
       "summary": "清热解毒，散瘀消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-62.jpg",
-        "alt": "羊蹄草（补充本草图1）",
+        "alt": "羊蹄草（补充本草图62）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -8494,7 +8535,7 @@
       "summary": "祛风除湿，舒筋活络",
       "image": {
         "file": "/images/herbs/supplement/supp-157.jpg",
-        "alt": "伸筋草（补充本草图1）",
+        "alt": "伸筋草（补充本草图157）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -8519,7 +8560,7 @@
       "summary": "清热解毒，利水消肿，止咳",
       "image": {
         "file": "/images/herbs/supplement/supp-64.jpg",
-        "alt": "杠板归（补充本草图1）",
+        "alt": "杠板归（补充本草图64）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -8544,7 +8585,7 @@
       "summary": "利湿通淋，清热解毒，散瘀消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-203.jpg",
-        "alt": "连钱草（补充本草图1）",
+        "alt": "连钱草（补充本草图203）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -8596,7 +8637,7 @@
       "summary": "利湿退黄，清热解毒，疏肝止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-204.jpg",
-        "alt": "鸡骨草（补充本草图1）",
+        "alt": "鸡骨草（补充本草图204）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -8648,7 +8689,7 @@
       "image": {
         "url": "/images/herbs/lecture/xiajing/xj-020.jpg",
         "alt": "青蒿（用户提供图片 1）",
-        "credit": "用户提供 / 下经本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -8671,7 +8712,7 @@
       "summary": "疏风，清热，凉血，解毒",
       "image": {
         "file": "/images/herbs/supplement/supp-66.jpg",
-        "alt": "虎耳草（补充本草图1）",
+        "alt": "虎耳草（补充本草图66）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -8696,7 +8737,7 @@
       "summary": "清热，凉血，解毒，利湿",
       "image": {
         "file": "/images/herbs/supplement/supp-68.jpg",
-        "alt": "地胆草（补充本草图1）",
+        "alt": "地胆草（补充本草图68）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -8722,7 +8763,7 @@
       "summary": "清热解毒，散结消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-69.jpg",
-        "alt": "苦地丁（补充本草图1）",
+        "alt": "苦地丁（补充本草图69）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -8748,7 +8789,7 @@
       "image": {
         "url": "/images/herbs/lecture/zhongjing/zj-055.jpg",
         "alt": "败酱草（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -8798,7 +8839,7 @@
       "summary": "利湿退黄、利尿通淋，解毒消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-205.jpg",
-        "alt": "金钱草（补充本草图1）",
+        "alt": "金钱草（补充本草图205）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -8822,9 +8863,9 @@
       "categoryTitle": "活血化瘀药",
       "summary": "活血调经，祛瘀消痈，利水消肿",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-076.jpg",
-        "alt": "泽兰（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "url": "/images/herbs/lecture/zhongjing/zj-077.jpg",
+        "alt": "防己（用户提供图片 1）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -8846,13 +8887,13 @@
       "categoryTitle": "攻毒杀虫止痒药",
       "summary": "行水消肿，化痰止咳，解毒杀虫",
       "image": {
-        "url": "/images/herbs/lecture/56292.jpg",
-        "alt": "泽漆（Euphorbia helioscopia）",
-        "credit": "© portioid / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/56292",
+        "url": "/images/herbs/lecture/xiajing/xj-038.jpg",
+        "alt": "泽漆（下经本草图38）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Euphorbia helioscopia",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-56292.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1107
@@ -8898,7 +8939,7 @@
       "summary": "发表透疹，消食开胃，止痛解毒",
       "image": {
         "file": "/images/herbs/supplement/supp-237.jpg",
-        "alt": "胡荽（补充本草图1）",
+        "alt": "胡荽（补充本草图237）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -8951,9 +8992,9 @@
       "categoryTitle": "其他药",
       "summary": "清利湿热，利胆退黄",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-061.jpg",
+        "url": "/images/herbs/lecture/xlsx/xlsx-062.jpg",
         "alt": "茵陈蒿（同源：茵陈）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -8977,7 +9018,7 @@
       "summary": "凉肝止血，平肝明目，清热利湿",
       "image": {
         "file": "/images/herbs/supplement/supp-210.jpg",
-        "alt": "荠菜（补充本草图1）",
+        "alt": "荠菜（补充本草图210）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -9002,7 +9043,7 @@
       "summary": "清热解毒，凉血，消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-70.jpg",
-        "alt": "穿心莲（补充本草图1）",
+        "alt": "穿心莲（补充本草图70）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -9028,7 +9069,7 @@
       "summary": "散瘀，止血，宁心安神，解毒",
       "image": {
         "file": "/images/herbs/supplement/supp-211.jpg",
-        "alt": "费菜（补充本草图1）",
+        "alt": "费菜（补充本草图211）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -9053,7 +9094,7 @@
       "summary": "清热，补虚，解毒",
       "image": {
         "file": "/images/herbs/supplement/supp-71.jpg",
-        "alt": "绞股蓝（补充本草图1）",
+        "alt": "绞股蓝（补充本草图71）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -9137,13 +9178,13 @@
       "categoryTitle": "清热药",
       "summary": "清热利湿，解毒消肿",
       "image": {
-        "url": "/images/herbs/lecture/160294.jpeg",
-        "alt": "积雪草（Centella asiatica）",
-        "credit": "© 葉子 / iNaturalist",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/160294",
+        "url": "/images/herbs/lecture/zhongjing/zj-087.jpg",
+        "alt": "积雪草（中经本草图87）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Centella asiatica",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-160294.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 904
@@ -9181,13 +9222,13 @@
       "categoryTitle": "利水渗湿药",
       "summary": "宣散风热，透疹，利尿",
       "image": {
-        "url": "/images/herbs/lecture/54518.jpeg",
-        "alt": "浮萍（Lemna minor）",
-        "credit": "© Philipp / iNaturalist",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/54518",
+        "url": "/images/herbs/lecture/zhongjing/zj-069.jpg",
+        "alt": "浮萍（中经本草图69）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Lemna minor",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-54518.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 916
@@ -9227,7 +9268,7 @@
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-096.jpg",
         "alt": "薇衔（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -9250,13 +9291,13 @@
       "categoryTitle": "补虚药",
       "summary": "补肾阳，强筋骨，祛风湿",
       "image": {
-        "url": "/images/herbs/lecture/881454.jpg",
-        "alt": "淫羊藿（Epimedium brevicornu）",
-        "credit": "© taiyi / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/881454",
+        "url": "/images/herbs/lecture/zhongjing/zj-042.jpg",
+        "alt": "淫羊藿（中经本草图42）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Epimedium brevicornu",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-881454.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1281
@@ -9275,13 +9316,13 @@
       "categoryTitle": "清热药",
       "summary": "清热泻火，除烦止渴，利尿通淋",
       "image": {
-        "file": "/images/herbs/supplement/supp-72.jpg",
-        "alt": "淡竹叶（补充本草图1）",
-        "credit": "用户提供 / 《补充本草》",
+        "file": "/images/herbs/lecture/zhongjing/zj-098.jpg",
+        "alt": "淡竹叶（中经本草图98）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材",
-        "url": "/images/herbs/supplement/supp-72.jpg"
+        "url": "/images/herbs/lecture/zhongjing/zj-098.jpg"
       },
       "docCount": 1,
       "charCount": 869
@@ -9303,7 +9344,7 @@
       "image": {
         "url": "/images/herbs/lecture/xiajing/xj-045.jpg",
         "alt": "萹蓄（用户提供图片 1）",
-        "credit": "用户提供 / 下经本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -9325,13 +9366,13 @@
       "categoryTitle": "清热药",
       "summary": "清热利湿，凉血散瘀，解毒消肿",
       "image": {
-        "file": "/images/herbs/supplement/supp-73.jpg",
-        "alt": "酢浆草（补充本草图1）",
-        "credit": "用户提供 / 《补充本草》",
+        "file": "/images/herbs/lecture/zhongjing/zj-059.jpg",
+        "alt": "酢浆草（中经本草图59）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材",
-        "url": "/images/herbs/supplement/supp-73.jpg"
+        "url": "/images/herbs/lecture/zhongjing/zj-059.jpg"
       },
       "docCount": 1,
       "charCount": 881
@@ -9353,7 +9394,7 @@
       "summary": "清肝明目，和中利湿，解毒消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-2.jpg",
-        "alt": "菥蓂（补充本草图1）",
+        "alt": "菥蓂（补充本草图2）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -9380,7 +9421,7 @@
       "image": {
         "url": "/images/herbs/lecture/xiajing/xj-026.jpg",
         "alt": "蛇含（用户提供图片 1）",
-        "credit": "用户提供 / 下经本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -9404,7 +9445,7 @@
       "summary": "清热解毒，凉血消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-75.jpg",
-        "alt": "筋骨草（补充本草图1）",
+        "alt": "筋骨草（补充本草图75）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -9430,8 +9471,8 @@
       "summary": "解毒利湿，活血止痛",
       "image": {
         "file": "/images/herbs/lecture/xlsx/xlsx-065.jpg",
-        "alt": "蓍草（中草药图片自搜图1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "alt": "蓍草（上经本草图65）",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材",
@@ -9481,7 +9522,7 @@
       "summary": "发散风寒，通鼻窍，止咳",
       "image": {
         "file": "/images/herbs/supplement/supp-113.jpg",
-        "alt": "鹅不食草（补充本草图1）",
+        "alt": "鹅不食草（补充本草图113）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -9508,7 +9549,7 @@
       "summary": "化痰止咳，利湿，活血",
       "image": {
         "file": "/images/herbs/supplement/supp-114.jpg",
-        "alt": "矮地茶（补充本草图1）",
+        "alt": "矮地茶（补充本草图114）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -9533,7 +9574,7 @@
       "summary": "祛风湿，利关节，解毒",
       "image": {
         "file": "/images/herbs/supplement/supp-159.jpg",
-        "alt": "豨莶草（补充本草图1）",
+        "alt": "豨莶草（补充本草图159）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -9574,7 +9615,7 @@
       "summary": "滋补肝肾，凉血止血",
       "image": {
         "file": "/images/herbs/supplement/supp-142.jpg",
-        "alt": "墨旱莲（补充本草图1）",
+        "alt": "墨旱莲（补充本草图142）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -9598,13 +9639,13 @@
       "categoryTitle": "利水渗湿药",
       "summary": "利尿通淋，活血通经",
       "image": {
-        "url": "/images/herbs/lecture/447244.jpeg",
-        "alt": "瞿麦（Dianthus superbus）",
-        "credit": "© Federico Biguzzi / iNaturalist",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/447244",
+        "url": "/images/herbs/lecture/zhongjing/zj-028.jpg",
+        "alt": "瞿麦（中经本草图28）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Dianthus superbus",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-447244.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 942
@@ -9626,7 +9667,7 @@
       "summary": "清热解毒；止痢，止血",
       "image": {
         "file": "/images/herbs/supplement/supp-76.jpg",
-        "alt": "翻白草（补充本草图1）",
+        "alt": "翻白草（补充本草图76）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -9821,7 +9862,7 @@
       "summary": "利尿消肿，清肝利胆",
       "image": {
         "file": "/images/herbs/supplement/supp-206.jpg",
-        "alt": "玉米须（补充本草图1）",
+        "alt": "玉米须（补充本草图206）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -9848,12 +9889,13 @@
       "categoryTitle": "安神药",
       "summary": "解郁安神",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-118.jpg",
-        "alt": "合欢皮（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "file": "/images/herbs/lecture/zhongjing/zj-119.jpg",
+        "alt": "合欢花（中经本草图119）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
-        "kind": "药材"
+        "kind": "药材",
+        "url": "/images/herbs/lecture/zhongjing/zj-119.jpg"
       },
       "docCount": 2,
       "charCount": 1713
@@ -9923,13 +9965,13 @@
       "categoryTitle": "驱虫药",
       "summary": "泻水逐饮；外用杀虫疗疮",
       "image": {
-        "url": "/images/herbs/lecture/703850.jpg",
-        "alt": "芫花（Daphne genkwa）",
-        "credit": "© 葉子 / iNaturalist",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/703850",
+        "url": "/images/herbs/lecture/xiajing/xj-002.jpg",
+        "alt": "芫花（下经本草图2）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Daphne genkwa",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-703850.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1155
@@ -9950,7 +9992,7 @@
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-128.jpg",
         "alt": "辛夷（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -10010,7 +10052,7 @@
       "summary": "收敛止血，止带，止痢",
       "image": {
         "file": "/images/herbs/supplement/supp-212.jpg",
-        "alt": "鸡冠花（补充本草图1）",
+        "alt": "鸡冠花（补充本草图212）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -10059,13 +10101,13 @@
       "categoryTitle": "止血药",
       "summary": "收敛止血，燥湿敛疮",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-105.jpg",
-        "alt": "松香（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "file": "/images/herbs/lecture/xlsx/xlsx-105.jpg",
+        "alt": "松花粉（上经本草图105）",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
-        "latin": "",
-        "kind": "药材"
+        "kind": "药材",
+        "url": "/images/herbs/lecture/xlsx/xlsx-105.jpg"
       },
       "docCount": 3,
       "charCount": 3226
@@ -10085,7 +10127,7 @@
       "summary": "理气止痛，辟秽开郁",
       "image": {
         "file": "/images/herbs/supplement/supp-176.jpg",
-        "alt": "茉莉花（补充本草图1）",
+        "alt": "茉莉花（补充本草图176）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -10139,7 +10181,7 @@
       "image": {
         "url": "/images/herbs/lecture/xiajing/xj-040.jpg",
         "alt": "闹羊花（用户提供图片 1）",
-        "credit": "用户提供 / 下经本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -10161,13 +10203,13 @@
       "categoryTitle": "化痰止咳平喘药",
       "summary": "平喘止咳，解痉定痛，解痉止搐",
       "image": {
-        "file": "/images/herbs/supplement/supp-116.jpg",
-        "alt": "洋金花（补充本草图1）",
+        "file": "/images/herbs/supplement/supp-115.jpg",
+        "alt": "洋金花（补充本草图115）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材",
-        "url": "/images/herbs/supplement/supp-116.jpg"
+        "url": "/images/herbs/supplement/supp-115.jpg"
       },
       "docCount": 1,
       "charCount": 1356
@@ -10201,13 +10243,13 @@
       "categoryTitle": "清热药",
       "summary": "清肝泻火，明目，散结消肿",
       "image": {
-        "url": "/images/herbs/lecture/52764.jpeg",
-        "alt": "夏枯草（Prunella vulgaris）",
-        "credit": "© Brady Reed / iNaturalist",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/52764",
+        "url": "/images/herbs/lecture/xiajing/xj-056.jpg",
+        "alt": "夏枯草（下经本草图56）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Prunella vulgaris",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-52764.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1042
@@ -10256,7 +10298,7 @@
       "summary": "滋养肝肾；明目消翳",
       "image": {
         "file": "/images/herbs/supplement/supp-229.jpg",
-        "alt": "蒙花（补充本草图1）",
+        "alt": "蒙花（补充本草图229）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -10306,7 +10348,7 @@
       "summary": "健胃消食，利尿安神，抗痨消炎",
       "image": {
         "file": "/images/herbs/supplement/supp-193.jpg",
-        "alt": "啤酒花（补充本草图1）",
+        "alt": "啤酒花（补充本草图193）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -10358,7 +10400,7 @@
       "summary": "清热泻火，养肝明目，退翳",
       "image": {
         "file": "/images/herbs/supplement/supp-229.jpg",
-        "alt": "密蒙花（补充本草图1）",
+        "alt": "密蒙花（补充本草图229）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -10382,9 +10424,9 @@
       "categoryTitle": "化痰止咳平喘药",
       "summary": "润肺下气，止咳化痰",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-080.jpg",
-        "alt": "款冬花（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "url": "/images/herbs/lecture/zhongjing/zj-081.jpg",
+        "alt": "款冬花（中经本草图81）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -10406,9 +10448,9 @@
       "categoryTitle": "止血药",
       "summary": "止血，化瘀，利尿",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-076.jpg",
-        "alt": "蒲黄（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "url": "/images/herbs/lecture/xlsx/xlsx-077.jpg",
+        "alt": "蒲黄（上经本草图77）",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -10439,7 +10481,7 @@
       "summary": "补肺气，退潮热，益肝肾",
       "image": {
         "file": "/images/herbs/supplement/supp-143.jpg",
-        "alt": "十大功劳（补充本草图1）",
+        "alt": "十大功劳（补充本草图143）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -10464,7 +10506,7 @@
       "summary": "清肺凉血，解毒消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-77.jpg",
-        "alt": "木芙蓉叶（补充本草图1）",
+        "alt": "木芙蓉叶（补充本草图77）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -10513,7 +10555,7 @@
       "summary": "祛风湿，止痒，强筋骨，益肝肾",
       "image": {
         "file": "/images/herbs/supplement/supp-161.jpg",
-        "alt": "石楠叶（补充本草图1）",
+        "alt": "石楠叶（补充本草图161）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -10574,7 +10616,15 @@
       "categoryId": "qingre",
       "categoryTitle": "清热药",
       "summary": "疏风清热，明目生津",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-79.jpg",
+        "alt": "苦丁茶（补充本草图79）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-79.jpg"
+      },
       "docCount": 1,
       "charCount": 887
     },
@@ -10592,7 +10642,7 @@
       "summary": "清肺止咳，降逆止呕",
       "image": {
         "file": "/images/herbs/supplement/supp-118.jpg",
-        "alt": "枇杷叶（补充本草图1）",
+        "alt": "枇杷叶（补充本草图118）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -10642,7 +10692,7 @@
       "summary": "清热养阴，益肾，平肝",
       "image": {
         "file": "/images/herbs/supplement/supp-80.jpg",
-        "alt": "枸骨叶（补充本草图1）",
+        "alt": "枸骨叶（补充本草图80）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -10666,7 +10716,7 @@
       "summary": "清热利湿，泻火，解毒",
       "image": {
         "file": "/images/herbs/supplement/supp-81.jpg",
-        "alt": "南天竹叶（补充本草图1）",
+        "alt": "南天竹叶（补充本草图81）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -10777,7 +10827,7 @@
       "summary": "清暑化湿，升发清阳，凉血止血",
       "image": {
         "file": "/images/herbs/supplement/supp-224.jpg",
-        "alt": "荷叶（补充本草图1）",
+        "alt": "荷叶（补充本草图224）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -10812,14 +10862,13 @@
       "categoryTitle": "解表药",
       "summary": "疏散风热，清肺润燥，清肝明目",
       "image": {
-        "url": "/images/herbs/dacheng/inat-b7b4638d72.jpg",
-        "alt": "white mulberry（Morus alba）",
-        "credit": "no rights reserved, uploaded by 葉子",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/56090",
-        "latin": "Morus alba",
-        "kind": "原植物",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/inat-b7b4638d72.jpg"
+        "file": "/images/herbs/lecture/xiajing/xj-073.jpg",
+        "alt": "桑叶（下经本草图73）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/lecture/xiajing/xj-073.jpg"
       },
       "docCount": 5,
       "charCount": 3206
@@ -10855,7 +10904,7 @@
       "summary": "泻热行滞，通便，利水",
       "image": {
         "file": "/images/herbs/supplement/supp-207.jpg",
-        "alt": "番泻叶（补充本草图1）",
+        "alt": "番泻叶（补充本草图207）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -10898,7 +10947,7 @@
       "summary": "收敛止血",
       "image": {
         "file": "/images/herbs/supplement/supp-213.jpg",
-        "alt": "棕榈（补充本草图1）",
+        "alt": "棕榈（补充本草图213）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -10924,7 +10973,7 @@
       "summary": "行气止痛，活血散瘀",
       "image": {
         "file": "/images/herbs/supplement/supp-126.jpg",
-        "alt": "九里香（补充本草图1）",
+        "alt": "九里香（补充本草图126）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -10950,7 +10999,7 @@
       "summary": "杀虫，疗癣，止痒",
       "image": {
         "file": "/images/herbs/supplement/supp-248.jpg",
-        "alt": "土荆皮（补充本草图1）",
+        "alt": "土荆皮（补充本草图248）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -10976,7 +11025,7 @@
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-123.jpg",
         "alt": "五加皮（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -11001,7 +11050,7 @@
       "summary": "泻下逐水，消肿散结，解蛇虫毒",
       "image": {
         "file": "/images/herbs/supplement/supp-260.jpg",
-        "alt": "乌桕根皮（补充本草图1）",
+        "alt": "乌桕根皮（补充本草图260）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -11028,7 +11077,7 @@
       "image": {
         "url": "/images/herbs/lecture/zhongjing/zj-057.jpg",
         "alt": "白鲜皮（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -11047,7 +11096,7 @@
       "summary": "祛风除湿，行气止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-162.jpg",
-        "alt": "地枫皮（补充本草图1）",
+        "alt": "地枫皮（补充本草图162）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -11076,13 +11125,13 @@
       "categoryTitle": "化湿药",
       "summary": "燥湿消痰，下气除满",
       "image": {
-        "url": "/images/herbs/lecture/431254.jpg",
-        "alt": "厚朴（Magnolia officinalis）",
-        "credit": "© Wendy Cutler / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/431254",
+        "url": "/images/herbs/lecture/zhongjing/zj-105.jpg",
+        "alt": "秦皮（用户提供图片 1）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Magnolia officinalis",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-431254.jpg"
+        "kind": "药材"
       },
       "docCount": 3,
       "charCount": 2825
@@ -11128,9 +11177,9 @@
       "categoryTitle": "清热药",
       "summary": "清热燥湿，收涩止痢，止带，明目",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-105.jpg",
-        "alt": "秦皮（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "url": "/images/herbs/lecture/zhongjing/zj-106.jpg",
+        "alt": "秦皮（中经本草图106）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -11155,7 +11204,7 @@
       "summary": "祛风除湿，舒筋通络，杀虫止痒",
       "image": {
         "file": "/images/herbs/supplement/supp-163.jpg",
-        "alt": "海桐皮（补充本草图1）",
+        "alt": "海桐皮（补充本草图163）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -11181,7 +11230,7 @@
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-121.jpg",
         "alt": "黄柏（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -11240,7 +11289,7 @@
       "summary": "祛风除湿，消肿止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-164.jpg",
-        "alt": "丁公藤（补充本草图1）",
+        "alt": "丁公藤（补充本草图164）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -11266,7 +11315,7 @@
       "summary": "孕妇慎服",
       "image": {
         "file": "/images/herbs/supplement/supp-230.jpg",
-        "alt": "大血藤（补充本草图1）",
+        "alt": "大血藤（补充本草图230）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -11314,13 +11363,13 @@
       "categoryTitle": "清热药",
       "summary": "清热利尿，活血通脉",
       "image": {
-        "url": "/images/herbs/lecture/126249.jpg",
-        "alt": "木通（Akebia quinata）",
-        "credit": "© ashley CHILE baz / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/126249",
+        "url": "/images/herbs/lecture/xiajing/xj-124.jpg",
+        "alt": "木通（下经本草图124）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Akebia quinata",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-126249.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 2326
@@ -11364,9 +11413,9 @@
       "categoryTitle": "清热药",
       "summary": "清热化痰，除烦，止呕",
       "image": {
-        "url": "/images/herbs/lecture/extra/ex-169.jpg",
-        "alt": "竹茹（用户提供图片 1）",
-        "credit": "用户提供 / 本草表格",
+        "url": "/images/herbs/lecture/xiajing/xj-169.jpg",
+        "alt": "竹茹（下经本草图169）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -11388,9 +11437,9 @@
       "categoryTitle": "其他药",
       "summary": "清心火，利小便",
       "image": {
-        "url": "/images/herbs/lecture/extra/ex-130.jpg",
-        "alt": "灯心草（用户提供图片 1）",
-        "credit": "用户提供 / 本草表格",
+        "url": "/images/herbs/lecture/xiajing/xj-130.jpg",
+        "alt": "灯心草（下经本草图130）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -11412,7 +11461,7 @@
       "summary": "祛风利湿，解毒消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-82.jpg",
-        "alt": "柳枝（补充本草图1）",
+        "alt": "柳枝（补充本草图82）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -11457,7 +11506,7 @@
       "summary": "活血补血，调经止痛，舒筋活络",
       "image": {
         "file": "/images/herbs/supplement/supp-100.jpg",
-        "alt": "鸡血藤（补充本草图1）",
+        "alt": "鸡血藤（补充本草图100）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -11518,13 +11567,13 @@
       "categoryTitle": "平肝息风药",
       "summary": "息风定惊，清热平肝",
       "image": {
-        "url": "/images/herbs/lecture/809168.jpeg",
-        "alt": "钩藤（Uncaria rhynchophylla）",
-        "credit": "© Nuraishah Bazilah Affandi / iNaturalist",
-        "license": "CC BY",
-        "sourceUrl": "https://www.inaturalist.org/taxa/809168",
+        "url": "/images/herbs/lecture/xiajing/xj-153.jpg",
+        "alt": "钩藤（下经本草图153）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Uncaria rhynchophylla",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-809168.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1100
@@ -11544,9 +11593,9 @@
       "categoryTitle": "活血化瘀药",
       "summary": "破血通经，解毒消肿，杀虫",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-116.jpg",
-        "alt": "鬼箭羽（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "url": "/images/herbs/lecture/zhongjing/zj-117.jpg",
+        "alt": "鬼箭羽（中经本草图117）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -11569,9 +11618,9 @@
       "categoryTitle": "活血化瘀药",
       "summary": "通络止痛，凉血清热，解毒消肿",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-072.jpg",
-        "alt": "络石藤（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "url": "/images/herbs/lecture/xlsx/xlsx-071.jpg",
+        "alt": "络石藤（上经本草图71）",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -11597,7 +11646,7 @@
       "image": {
         "url": "/images/herbs/lecture/zhongjing/zj-022.jpg",
         "alt": "通草（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -11621,13 +11670,13 @@
       "categoryTitle": "解表药",
       "summary": "发汗散寒，宣肺平喘，利水消肿",
       "image": {
-        "url": "/images/herbs/lecture/135489.jpg",
-        "alt": "麻黄（Ephedra sinica）",
-        "credit": "© Daba / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/135489",
+        "url": "/images/herbs/lecture/zhongjing/zj-020.jpg",
+        "alt": "麻黄（中经本草图20）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Ephedra sinica",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-135489.jpg"
+        "kind": "药材"
       },
       "docCount": 2,
       "charCount": 3385
@@ -11647,13 +11696,13 @@
       "categoryTitle": "补虚药",
       "summary": "补肝肾，强筋骨，祛风湿，安胎",
       "image": {
-        "url": "/images/herbs/lecture/849502.jpg",
-        "alt": "桑寄生（已有图片）",
-        "credit": "© lchcd / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/849502",
+        "url": "/images/herbs/lecture/xlsx/xlsx-129.jpg",
+        "alt": "桑寄生（上经本草图129）",
+        "credit": "用户提供 / 《上经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Taxillus sutchuenensis",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-849502.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1161
@@ -11673,13 +11722,13 @@
       "categoryTitle": "补虚药",
       "summary": "补肾阳，益精血，润肠通便",
       "image": {
-        "url": "/images/herbs/lecture/50906.jpeg",
-        "alt": "锁阳（Cynomorium songaricum）",
-        "credit": "© Vojtech Tlaskal / iNaturalist",
-        "license": "CC BY-NC",
-        "sourceUrl": "https://www.inaturalist.org/taxa/50906",
+        "url": "/images/herbs/lecture/xiajing/xj-182.jpg",
+        "alt": "锁阳（下经本草图182）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Cynomorium songaricum",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-50906.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 1045
@@ -11767,9 +11816,9 @@
       "categoryTitle": "消食药",
       "summary": "破瘀，消积，杀虫",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-119.jpg",
-        "alt": "干漆（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "url": "/images/herbs/lecture/xlsx/xlsx-117.jpg",
+        "alt": "干漆（上经本草图117）",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -11810,7 +11859,7 @@
       "summary": "活血定痛，化瘀止血，生肌敛疮",
       "image": {
         "file": "/images/herbs/supplement/supp-125.jpg",
-        "alt": "血竭（补充本草图1）",
+        "alt": "血竭（补充本草图125）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -11835,7 +11884,7 @@
       "summary": "行气止痛，温中止呕，纳气平喘",
       "image": {
         "file": "/images/herbs/supplement/supp-177.jpg",
-        "alt": "沉香（补充本草图1）",
+        "alt": "沉香（补充本草图177）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -11857,9 +11906,9 @@
       "categoryTitle": "攻毒杀虫止痒药",
       "summary": "散瘀定痛，消肿生肌",
       "image": {
-        "url": "/images/herbs/lecture/extra/ex-111.jpg",
-        "alt": "没药（用户提供图片 1）",
-        "credit": "用户提供 / 本草表格",
+        "url": "/images/herbs/lecture/xiajing/xj-111.jpg",
+        "alt": "没药（下经本草图111）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -11882,9 +11931,9 @@
       "categoryTitle": "活血化瘀药",
       "summary": "活血定痛，消肿生肌",
       "image": {
-        "url": "/images/herbs/lecture/extra/ex-113.jpg",
-        "alt": "乳香（用户提供图片 1）",
-        "credit": "用户提供 / 本草表格",
+        "url": "/images/herbs/lecture/xiajing/xj-113.jpg",
+        "alt": "乳香（下经本草图113）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -11908,7 +11957,7 @@
       "summary": "清肺利咽，止血",
       "image": {
         "file": "/images/herbs/supplement/supp-214.jpg",
-        "alt": "马勃（补充本草图1）",
+        "alt": "马勃（补充本草图214）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -11959,7 +12008,7 @@
       "summary": "消痰，软坚散结，利水消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-208.jpg",
-        "alt": "昆布（补充本草图1）",
+        "alt": "昆布（补充本草图208）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -11984,7 +12033,7 @@
       "summary": "滋补生津，润肺养胃",
       "image": {
         "file": "/images/herbs/supplement/supp-120.jpg",
-        "alt": "银耳（补充本草图1）",
+        "alt": "银耳（补充本草图120）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -12008,9 +12057,9 @@
       "categoryTitle": "利水渗湿药",
       "summary": "消痰软坚散结，利水消肿",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-075.jpg",
-        "alt": "海藻（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "url": "/images/herbs/lecture/zhongjing/zj-076.jpg",
+        "alt": "泽兰（用户提供图片 1）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -12033,9 +12082,9 @@
       "categoryTitle": "利水渗湿药",
       "summary": "利水渗湿",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-112.jpg",
-        "alt": "猪苓（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "url": "/images/herbs/lecture/zhongjing/zj-113.jpg",
+        "alt": "猪苓（中经本草图113）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -12120,9 +12169,9 @@
       "categoryTitle": "其他药",
       "summary": "缓中，补虚，生津，润燥",
       "image": {
-        "url": "/images/herbs/lecture/extra/ex-105.jpg",
-        "alt": "饴糖（用户提供图片 1）",
-        "credit": "用户提供 / 本草表格",
+        "url": "/images/herbs/lecture/xiajing/xj-105.jpg",
+        "alt": "饴糖（下经本草图105）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -12170,13 +12219,13 @@
       "categoryTitle": "利水渗湿药",
       "summary": "清利湿热，通淋止痛",
       "image": {
-        "url": "/images/herbs/lecture/164985.jpeg",
-        "alt": "海金沙（Lygodium japonicum）",
-        "credit": "© 葉子 / iNaturalist",
-        "license": "CC0",
-        "sourceUrl": "https://www.inaturalist.org/taxa/164985",
+        "url": "/images/herbs/lecture/xiajing/xj-139.jpg",
+        "alt": "海金沙（下经本草图139）",
+        "credit": "用户提供 / 《下经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
         "latin": "Lygodium japonicum",
-        "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-164985.jpg"
+        "kind": "药材"
       },
       "docCount": 1,
       "charCount": 890
@@ -12197,7 +12246,7 @@
       "summary": "消食和中，健脾开胃",
       "image": {
         "file": "/images/herbs/supplement/supp-194.jpg",
-        "alt": "稻芽（补充本草图1）",
+        "alt": "稻芽（补充本草图194）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -12220,9 +12269,9 @@
       "categoryTitle": "消食药",
       "summary": "消食化积，健脾和胃",
       "image": {
-        "url": "/images/herbs/lecture/extra/ex-129.jpg",
-        "alt": "神曲（用户提供图片 1）",
-        "credit": "用户提供 / 本草表格",
+        "url": "/images/herbs/lecture/xiajing/xj-129.jpg",
+        "alt": "神曲（下经本草图129）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -12262,7 +12311,7 @@
       "summary": "理气止痛，温中助阳",
       "image": {
         "file": "/images/herbs/supplement/supp-178.jpg",
-        "alt": "九香虫（补充本草图1）",
+        "alt": "九香虫（补充本草图178）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -12286,9 +12335,9 @@
       "categoryTitle": "活血化瘀药",
       "summary": "破血逐瘀，续筋接骨",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-138.jpg",
-        "alt": "土鳖虫（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "url": "/images/herbs/lecture/zhongjing/zj-139.jpg",
+        "alt": "土鳖虫（中经本草图139）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -12339,9 +12388,9 @@
       "categoryTitle": "收涩药",
       "summary": "敛肺降火，涩肠止泻，敛汗，止血，收湿敛疮",
       "image": {
-        "url": "/images/herbs/lecture/extra/ex-141.jpg",
-        "alt": "五倍子（用户提供图片 1）",
-        "credit": "用户提供 / 本草表格",
+        "url": "/images/herbs/lecture/xiajing/xj-141.jpg",
+        "alt": "五倍子（下经本草图141）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -12365,9 +12414,9 @@
       "categoryTitle": "活血化瘀药",
       "summary": "祛风止痛，攻毒消肿",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-127.jpg",
-        "alt": "蜂房（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "url": "/images/herbs/lecture/zhongjing/zj-128.jpg",
+        "alt": "蜂房（中经本草图128）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -12389,9 +12438,9 @@
       "categoryTitle": "补虚药",
       "summary": "固精缩尿，补肾助阳",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-150.jpg",
-        "alt": "桑螵蛸（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "url": "/images/herbs/lecture/xlsx/xlsx-151.jpg",
+        "alt": "牡蛎（用户提供图片 1）",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -12417,7 +12466,7 @@
       "image": {
         "url": "/images/herbs/lecture/xiajing/xj-083.jpg",
         "alt": "斑蝥（用户提供图片 1）",
-        "credit": "用户提供 / 下经本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -12443,7 +12492,7 @@
       "image": {
         "url": "/images/herbs/lecture/xiajing/xj-089.jpg",
         "alt": "蝼蛄（用户提供图片 1）",
-        "credit": "用户提供 / 下经本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -12468,7 +12517,7 @@
       "image": {
         "url": "/images/herbs/lecture/xiajing/xj-087.jpg",
         "alt": "雀瓮（用户提供图片 1）",
-        "credit": "用户提供 / 下经本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -12494,9 +12543,9 @@
       "categoryTitle": "平肝息风药",
       "summary": "息风止痉，祛风止痛，化痰散结",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-134.jpg",
-        "alt": "僵蚕（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "url": "/images/herbs/lecture/zhongjing/zj-135.jpg",
+        "alt": "僵蚕（中经本草图135）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -12534,9 +12583,9 @@
       "categoryTitle": "清热药",
       "summary": "清心，豁痰，开窍，凉肝，息风，解毒",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-141.jpg",
-        "alt": "牛黄（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "url": "/images/herbs/lecture/xlsx/xlsx-142.jpg",
+        "alt": "麝香（用户提供图片 1）",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -12596,7 +12645,7 @@
       "summary": "本品为游蛇科动物乌梢蛇 Zaocys dhumnades （ Cantor ）的干燥体。",
       "image": {
         "file": "/images/herbs/supplement/supp-232.jpg",
-        "alt": "乌梢蛇（补充本草图1）",
+        "alt": "乌梢蛇（补充本草图232）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -12623,7 +12672,7 @@
       "image": {
         "url": "/images/herbs/lecture/xiajing/xj-081.jpg",
         "alt": "水蛭（用户提供图片 1）",
-        "credit": "用户提供 / 下经本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -12661,9 +12710,9 @@
       "categoryTitle": "平肝息风药",
       "summary": "平肝潜阳，清肝明目",
       "image": {
-        "url": "/images/herbs/lecture/extra/ex-146.jpg",
-        "alt": "石决明（用户提供图片 1）",
-        "credit": "用户提供 / 本草表格",
+        "url": "/images/herbs/lecture/xiajing/xj-146.jpg",
+        "alt": "石决明（下经本草图146）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -12686,9 +12735,9 @@
       "categoryTitle": "安神药",
       "summary": "重镇安神，潜阳补阴，软坚散结",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-151.jpg",
-        "alt": "牡蛎（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "url": "/images/herbs/lecture/xlsx/xlsx-149.jpg",
+        "alt": "龟甲（用户提供图片 1）",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -12714,9 +12763,9 @@
       "categoryTitle": "清热药",
       "summary": "清热定惊，通络，平喘，利尿",
       "image": {
-        "url": "/images/herbs/supplement/supp-20.jpg",
-        "alt": "地龙（补充本草图1）",
-        "credit": "用户提供 / 《补充本草》",
+        "url": "/images/herbs/lecture/xiajing/xj-076.jpg",
+        "alt": "地龙（下经本草图76）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -12739,9 +12788,9 @@
       "categoryTitle": "活血化瘀药",
       "summary": "消痰化瘀，软坚散结，制酸止痛",
       "image": {
-        "url": "/images/herbs/lecture/extra/ex-159.jpg",
-        "alt": "瓦楞子（用户提供图片 1）",
-        "credit": "用户提供 / 本草表格",
+        "url": "/images/herbs/lecture/xiajing/xj-159.jpg",
+        "alt": "瓦楞子（下经本草图159）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -12765,7 +12814,7 @@
       "summary": "收敛止血，化瘀，利尿",
       "image": {
         "file": "/images/herbs/supplement/supp-215.jpg",
-        "alt": "血余炭（补充本草图1）",
+        "alt": "血余炭（补充本草图215）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -12789,9 +12838,9 @@
       "categoryTitle": "平肝息风药",
       "summary": "息风镇痉，通络止痛，攻毒散结",
       "image": {
-        "url": "/images/herbs/lecture/extra/ex-157.jpg",
-        "alt": "全蝎（用户提供图片 1）",
-        "credit": "用户提供 / 本草表格",
+        "url": "/images/herbs/lecture/xiajing/xj-157.jpg",
+        "alt": "全蝎（下经本草图157）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -12813,9 +12862,9 @@
       "categoryTitle": "止血药",
       "summary": "固精缩尿，收敛止血，化瘀止痛",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-125.jpg",
-        "alt": "刺猬皮（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "url": "/images/herbs/lecture/zhongjing/zj-126.jpg",
+        "alt": "刺猬皮（中经本草图126）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -12844,7 +12893,7 @@
       "summary": "安神定惊，明目消翳，解毒生肌，润肤祛斑",
       "image": {
         "file": "/images/herbs/supplement/supp-256.jpg",
-        "alt": "珍珠（补充本草图1）",
+        "alt": "珍珠（补充本草图256）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -12889,7 +12938,7 @@
       "summary": "温肾壮阳，散结消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-239.jpg",
-        "alt": "海马（补充本草图1）",
+        "alt": "海马（补充本草图239）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -12912,7 +12961,7 @@
       "summary": "温肾壮阳，散结消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-240.jpg",
-        "alt": "海龙（补充本草图1）",
+        "alt": "海龙（补充本草图240）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -12940,7 +12989,7 @@
       "image": {
         "url": "/images/herbs/lecture/xiajing/xj-074.jpg",
         "alt": "蛇蜕（用户提供图片 1）",
-        "credit": "用户提供 / 下经本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -12973,9 +13022,9 @@
       "categoryTitle": "平肝息风药",
       "summary": "平肝息风，清肝明目，散血解毒",
       "image": {
-        "url": "/images/herbs/lecture/zhongjing/zj-123.jpg",
-        "alt": "羚羊角（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "url": "/images/herbs/lecture/zhongjing/zj-124.jpg",
+        "alt": "羚羊角（中经本草图124）",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -12998,9 +13047,9 @@
       "categoryTitle": "平肝息风药",
       "summary": "息风镇痉，通络止痛，攻毒散结",
       "image": {
-        "url": "/images/herbs/supplement/supp-242.jpg",
-        "alt": "蜈蚣（补充本草图1）",
-        "credit": "用户提供 / 《补充本草》",
+        "url": "/images/herbs/lecture/xiajing/xj-080.jpg",
+        "alt": "蜈蚣（下经本草图80）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -13058,7 +13107,7 @@
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-152.jpg",
         "alt": "蛤壳（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -13083,9 +13132,9 @@
       "categoryTitle": "活血化瘀药",
       "summary": "开窍醒神，活血通经，消肿止痛",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-142.jpg",
-        "alt": "麝香（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "url": "/images/herbs/lecture/xlsx/xlsx-141.jpg",
+        "alt": "牛黄（用户提供图片 1）",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -13109,7 +13158,7 @@
       "summary": "温肾补精，益气养血",
       "image": {
         "file": "/images/herbs/supplement/supp-144.jpg",
-        "alt": "紫河车（补充本草图1）",
+        "alt": "紫河车（补充本草图144）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -13137,7 +13186,7 @@
       "image": {
         "url": "/images/herbs/lecture/zhongjing/zj-004.jpg",
         "alt": "石膏（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -13157,7 +13206,7 @@
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-140.jpg",
         "alt": "龙骨（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -13225,7 +13274,7 @@
       "summary": "清心镇惊，安神，明目，解毒，",
       "image": {
         "file": "/images/herbs/supplement/supp-257.jpg",
-        "alt": "朱砂（补充本草图1）",
+        "alt": "朱砂（补充本草图257）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -13268,7 +13317,7 @@
       "image": {
         "url": "/images/herbs/lecture/zhongjing/zj-006.jpg",
         "alt": "阳起石（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -13310,7 +13359,7 @@
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-006.jpg",
         "alt": "钟乳石（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -13336,7 +13385,7 @@
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-015.jpg",
         "alt": "禹余粮（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -13362,7 +13411,7 @@
       "image": {
         "url": "/images/herbs/lecture/xlsx/xlsx-012.jpg",
         "alt": "胆矾（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -13388,7 +13437,7 @@
       "image": {
         "url": "/images/herbs/lecture/zhongjing/zj-001.jpg",
         "alt": "雄黄（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -13413,7 +13462,7 @@
       "image": {
         "url": "/images/herbs/lecture/zhongjing/zj-002.jpg",
         "alt": "硫黄（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -13437,7 +13486,7 @@
       "summary": "镇惊安神，散瘀止血，利水通淋，去翳明目",
       "image": {
         "file": "/images/herbs/supplement/supp-258.jpg",
-        "alt": "琥珀（补充本草图1）",
+        "alt": "琥珀（补充本草图258）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -13463,9 +13512,9 @@
       "categoryTitle": "利水渗湿药",
       "summary": "利尿通淋，清热解暑；外用祛湿敛疮",
       "image": {
-        "url": "/images/herbs/lecture/xlsx/xlsx-010.jpg",
-        "alt": "滑石（用户提供图片 1）",
-        "credit": "用户提供 / 中草药图片自搜表格",
+        "url": "/images/herbs/lecture/xlsx/xlsx-011.jpg",
+        "alt": "滑石（上经本草图11）",
+        "credit": "用户提供 / 《上经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "latin": "",
@@ -13491,7 +13540,7 @@
       "image": {
         "url": "/images/herbs/lecture/zhongjing/zj-005.jpg",
         "alt": "磁石（用户提供图片 1）",
-        "credit": "用户提供 / 中经本草表格",
+        "credit": "用户提供 / 《中经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -13512,7 +13561,7 @@
       "summary": "坠痰下气，平肝镇惊，消食攻积",
       "image": {
         "file": "/images/herbs/supplement/supp-244.jpg",
-        "alt": "青礞石（补充本草图1）",
+        "alt": "青礞石（补充本草图244）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -13539,7 +13588,7 @@
       "image": {
         "url": "/images/herbs/lecture/xiajing/xj-004.jpg",
         "alt": "赭石（同源：代赭石）",
-        "credit": "用户提供 / 下经本草表格",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材"
@@ -13575,7 +13624,7 @@
       "summary": "散瘀止血，消肿止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-216.jpg",
-        "alt": "大叶紫珠（补充本草图1）",
+        "alt": "大叶紫珠（补充本草图216）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -13596,7 +13645,7 @@
       "summary": "养阴生津，润肺清心",
       "image": {
         "file": "/images/herbs/supplement/supp-119.jpg",
-        "alt": "山麦冬（补充本草图1）",
+        "alt": "山麦冬（补充本草图119）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -13632,7 +13681,7 @@
       "summary": "利尿通淋，清心除烦，通经下乳",
       "image": {
         "file": "/images/herbs/supplement/supp-209.jpg",
-        "alt": "川木通（补充本草图1）",
+        "alt": "川木通（补充本草图209）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -13705,7 +13754,7 @@
       "summary": "维吾尔医：补肾活血，强筋骨，营养神经，调节异常体液",
       "image": {
         "file": "/images/herbs/supplement/supp-102.jpg",
-        "alt": "天山雪莲（补充本草图1）",
+        "alt": "天山雪莲（补充本草图102）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -13752,7 +13801,7 @@
       "summary": "清热解毒，疏肝利胆",
       "image": {
         "file": "/images/herbs/supplement/supp-83.jpg",
-        "alt": "水飞蓟（补充本草图1）",
+        "alt": "水飞蓟（补充本草图83）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -13773,7 +13822,7 @@
       "summary": "理气止痛，开郁醒脾；外用祛湿消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-180.jpg",
-        "alt": "甘松（补充本草图1）",
+        "alt": "甘松（补充本草图180）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -13865,7 +13914,7 @@
       "summary": "清湿热，健胃",
       "image": {
         "file": "/images/herbs/supplement/supp-195.jpg",
-        "alt": "当药（补充本草图1）",
+        "alt": "当药（补充本草图195）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -13887,13 +13936,13 @@
       "categoryTitle": "止血药",
       "summary": "散瘀止血，消肿止痛，祛痰止咳，补虚强壮",
       "image": {
-        "file": "/images/herbs/supplement/supp-219.jpg",
-        "alt": "竹节参（补充本草图1）",
+        "file": "/images/herbs/supplement/supp-218.jpg",
+        "alt": "竹节参（补充本草图218）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
         "kind": "药材",
-        "url": "/images/herbs/supplement/supp-219.jpg"
+        "url": "/images/herbs/supplement/supp-218.jpg"
       },
       "docCount": 2,
       "charCount": 1735
@@ -13951,7 +14000,7 @@
       "summary": "泻水逐饮，消肿散结",
       "image": {
         "file": "/images/herbs/supplement/supp-241.jpg",
-        "alt": "红大戟（补充本草图1）",
+        "alt": "红大戟（补充本草图241）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -13998,7 +14047,7 @@
       "summary": "化瘀止血",
       "image": {
         "file": "/images/herbs/supplement/supp-220.jpg",
-        "alt": "花蕊石（补充本草图1）",
+        "alt": "花蕊石（补充本草图220）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -14045,7 +14094,7 @@
       "summary": "祛风湿，消痈肿",
       "image": {
         "file": "/images/herbs/supplement/supp-165.jpg",
-        "alt": "两头尖（补充本草图1）",
+        "alt": "两头尖（补充本草图165）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -14108,7 +14157,7 @@
       "summary": "消积，化癥，散痞，杀虫",
       "image": {
         "file": "/images/herbs/supplement/supp-196.jpg",
-        "alt": "阿魏（补充本草图1）",
+        "alt": "阿魏（补充本草图196）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -14155,7 +14204,7 @@
       "summary": "收敛止泻，止血止咳，舒筋活络",
       "image": {
         "file": "/images/herbs/supplement/supp-254.jpg",
-        "alt": "岩白菜（补充本草图1）",
+        "alt": "岩白菜（补充本草图254）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -14189,7 +14238,7 @@
       "summary": "祛风，通络，止痉",
       "image": {
         "file": "/images/herbs/supplement/supp-243.jpg",
-        "alt": "金钱白花蛇（补充本草图1）",
+        "alt": "金钱白花蛇（补充本草图243）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -14255,7 +14304,7 @@
       "summary": "化瘀止血，理气止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-104.jpg",
-        "alt": "降香（补充本草图1）",
+        "alt": "降香（补充本草图104）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -14348,7 +14397,7 @@
       "summary": "活血止血，祛风止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-106.jpg",
-        "alt": "独一味（补充本草图1）",
+        "alt": "独一味（补充本草图106）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -14382,7 +14431,7 @@
       "summary": "益胃生津，滋阴清热",
       "image": {
         "file": "/images/herbs/supplement/supp-85.jpg",
-        "alt": "铁皮石斛（补充本草图1）",
+        "alt": "铁皮石斛（补充本草图85）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -14403,7 +14452,7 @@
       "summary": "清热解毒，止咳祛痰",
       "image": {
         "file": "/images/herbs/supplement/supp-86.jpg",
-        "alt": "臭灵丹草（补充本草图1）",
+        "alt": "臭灵丹草（补充本草图86）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -14502,7 +14551,7 @@
       "summary": "清热解毒，利湿止痛",
       "image": {
         "file": "/images/herbs/supplement/supp-87.jpg",
-        "alt": "救必应（补充本草图1）",
+        "alt": "救必应（补充本草图87）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -14562,7 +14611,7 @@
       "summary": "化痰散结，解毒消肿",
       "image": {
         "file": "/images/herbs/supplement/supp-121.jpg",
-        "alt": "猫爪草（补充本草图1）",
+        "alt": "猫爪草（补充本草图121）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -14581,7 +14630,15 @@
       "categoryId": "zhixue",
       "categoryTitle": "止血药",
       "summary": "收敛止血",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/supplement/supp-221.jpg",
+        "alt": "断血流（补充本草图221）",
+        "credit": "用户提供 / 《补充本草》",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/supplement/supp-221.jpg"
+      },
       "docCount": 1,
       "charCount": 950
     },
@@ -14596,7 +14653,7 @@
       "summary": "降气化痰，散风清热",
       "image": {
         "file": "/images/herbs/supplement/supp-122.jpg",
-        "alt": "紫花前胡（补充本草图1）",
+        "alt": "紫花前胡（补充本草图122）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
@@ -14626,12 +14683,13 @@
       "categoryTitle": "补虚药",
       "summary": "益精明目，养血祛风，利水，解毒",
       "image": {
-        "url": "/images/herbs/lecture/extra/ex-109.jpg",
-        "alt": "淡豆豉（用户提供图片 1）",
-        "credit": "用户提供 / 本草表格",
+        "file": "/images/herbs/lecture/xiajing/xj-109.jpg",
+        "alt": "黑豆（下经本草图109）",
+        "credit": "用户提供 / 《下经本草》表格",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",
-        "kind": "药材"
+        "kind": "药材",
+        "url": "/images/herbs/lecture/xiajing/xj-109.jpg"
       },
       "docCount": 4,
       "charCount": 2948
@@ -14660,7 +14718,15 @@
       "categoryId": "huatan",
       "categoryTitle": "化痰止咳平喘药",
       "summary": "清热化痰，止咳，散结",
-      "image": null,
+      "image": {
+        "file": "/images/herbs/lecture/zhongjing/zj-035.jpg",
+        "alt": "湖北贝母（中经本草图35）",
+        "credit": "用户提供 / 《中经本草》表格",
+        "license": "用户提供，版权归原作者所有",
+        "sourceUrl": "",
+        "kind": "药材",
+        "url": "/images/herbs/lecture/zhongjing/zj-035.jpg"
+      },
       "docCount": 1,
       "charCount": 843
     },
@@ -14779,7 +14845,7 @@
       "summary": "本品为茄科植物颠茄Atropa belladonna L.的干燥全草。在开花至结果期内采挖，除去粗茎和泥沙，切段干燥。",
       "image": {
         "file": "/images/herbs/supplement/supp-233.jpg",
-        "alt": "颠茄草（补充本草图1）",
+        "alt": "颠茄草（补充本草图233）",
         "credit": "用户提供 / 《补充本草》",
         "license": "用户提供，版权归原作者所有",
         "sourceUrl": "",

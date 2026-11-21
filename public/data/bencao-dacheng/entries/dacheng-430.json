@@ -88,13 +88,22 @@
   "summary": "清肝泻火，明目，散结消肿",
   "images": [
     {
-      "url": "/images/herbs/lecture/52764.jpeg",
-      "alt": "夏枯草（Prunella vulgaris）",
-      "credit": "© Brady Reed / iNaturalist",
-      "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/52764",
+      "url": "/images/herbs/lecture/xiajing/xj-056.jpg",
+      "alt": "夏枯草（下经本草图56）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Prunella vulgaris",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-52764.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-057.jpg",
+      "alt": "夏枯草（下经本草图57）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-057.jpg"
     }
   ],
   "docCount": 1

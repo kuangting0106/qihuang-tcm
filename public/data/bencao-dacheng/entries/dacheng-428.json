@@ -87,8 +87,17 @@
   "summary": "平喘止咳，解痉定痛，解痉止搐",
   "images": [
     {
+      "file": "/images/herbs/supplement/supp-115.jpg",
+      "alt": "洋金花（补充本草图115）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-115.jpg"
+    },
+    {
       "file": "/images/herbs/supplement/supp-116.jpg",
-      "alt": "洋金花（补充本草图1）",
+      "alt": "洋金花（补充本草图116）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
@@ -97,7 +106,7 @@
     },
     {
       "file": "/images/herbs/supplement/supp-117.jpg",
-      "alt": "洋金花（补充本草图2）",
+      "alt": "洋金花（补充本草图117）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",

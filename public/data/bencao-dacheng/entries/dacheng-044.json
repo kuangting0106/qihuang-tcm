@@ -117,13 +117,22 @@
       "thumbUrl": "/images/herbs/dacheng/thumbs/inat-872c316330.jpg"
     },
     {
-      "url": "/images/herbs/lecture/xlsx/xlsx-112.jpg",
-      "alt": "槐实（用户提供图片 1）",
-      "credit": "用户提供 / 中草药图片自搜表格",
+      "file": "/images/herbs/lecture/xlsx/xlsx-108.jpg",
+      "alt": "槐花（上经本草图108）",
+      "credit": "用户提供 / 《上经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
-      "latin": "",
-      "kind": "药材"
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-108.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/xlsx/xlsx-109.jpg",
+      "alt": "槐花（上经本草图109）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-109.jpg"
     }
   ],
   "docCount": 3,
@@ -207,9 +216,9 @@
       "sourceText": "豆科植物槐 Sophora japonica L.的干燥成熟果实。",
       "images": [
         {
-          "url": "/images/herbs/lecture/xlsx/xlsx-112.jpg",
-          "alt": "槐实（用户提供图片 1）",
-          "credit": "用户提供 / 中草药图片自搜表格",
+          "url": "/images/herbs/lecture/xlsx/xlsx-108.jpg",
+          "alt": "槐角（上经本草图108）",
+          "credit": "用户提供 / 《上经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "latin": "",

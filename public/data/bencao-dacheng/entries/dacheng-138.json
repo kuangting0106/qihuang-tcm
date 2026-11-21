@@ -88,12 +88,30 @@
   "summary": "益气养阴，解毒消肿，排脓，通乳",
   "images": [
     {
-      "url": "/images/herbs/lecture/extra/ex-175.jpg",
-      "alt": "太子参（用户提供图片 1）",
-      "credit": "用户提供 / 本草表格",
+      "url": "/images/herbs/lecture/xiajing/xj-175.jpg",
+      "alt": "太子参（下经本草图175）",
+      "credit": "用户提供 / 《下经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-129.jpg",
+      "alt": "四叶参（补充本草图129）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-129.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-130.jpg",
+      "alt": "四叶参（补充本草图130）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-130.jpg"
     }
   ],
   "docCount": 1

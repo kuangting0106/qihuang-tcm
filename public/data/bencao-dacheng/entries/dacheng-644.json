@@ -88,22 +88,22 @@
   "summary": "散瘀止血，消肿止痛，祛痰止咳，补虚强壮",
   "images": [
     {
-      "file": "/images/herbs/supplement/supp-219.jpg",
-      "alt": "竹节参（补充本草图1）",
-      "credit": "用户提供 / 《补充本草》",
-      "license": "用户提供，版权归原作者所有",
-      "sourceUrl": "",
-      "kind": "药材",
-      "url": "/images/herbs/supplement/supp-219.jpg"
-    },
-    {
       "file": "/images/herbs/supplement/supp-218.jpg",
-      "alt": "竹节参（补充本草图2）",
+      "alt": "竹节参（补充本草图218）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
       "url": "/images/herbs/supplement/supp-218.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-219.jpg",
+      "alt": "竹节参（补充本草图219）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-219.jpg"
     }
   ],
   "docCount": 2,

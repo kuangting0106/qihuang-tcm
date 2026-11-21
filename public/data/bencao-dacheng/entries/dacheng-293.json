@@ -94,12 +94,30 @@
   "images": [
     {
       "file": "/images/herbs/supplement/supp-253.jpg",
-      "alt": "益智（补充本草图1）",
+      "alt": "益智（补充本草图253）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
       "url": "/images/herbs/supplement/supp-253.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-185.jpg",
+      "alt": "益智（下经本草图185）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-185.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-187.jpg",
+      "alt": "益智（下经本草图187）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-187.jpg"
     }
   ],
   "docCount": 1

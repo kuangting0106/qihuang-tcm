@@ -91,13 +91,22 @@
   "summary": "燥湿化痰，降逆止呕，消痞散结",
   "images": [
     {
-      "url": "/images/herbs/lecture/166883.jpg",
-      "alt": "半夏（Pinellia ternata）",
-      "credit": "© 葉子 / iNaturalist",
-      "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/166883",
+      "url": "/images/herbs/lecture/xiajing/xj-012.jpg",
+      "alt": "半夏（下经本草图12）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Pinellia ternata",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-166883.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-013.jpg",
+      "alt": "半夏（下经本草图13）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-013.jpg"
     }
   ],
   "docCount": 4,

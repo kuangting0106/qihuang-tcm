@@ -81,13 +81,22 @@
   "summary": "散结，杀虫。外",
   "images": [
     {
-      "url": "/images/herbs/lecture/820729.jpg",
-      "alt": "狼毒（Stellera chamaejasme）",
-      "credit": "© Святослав Власенко / iNaturalist",
-      "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/820729",
+      "url": "/images/herbs/lecture/xiajing/xj-047.jpg",
+      "alt": "狼毒（下经本草图47）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Stellera chamaejasme",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-820729.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-048.jpg",
+      "alt": "狼毒（下经本草图48）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-048.jpg"
     }
   ],
   "docCount": 1

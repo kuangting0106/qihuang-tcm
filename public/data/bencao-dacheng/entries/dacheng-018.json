@@ -118,13 +118,22 @@
   "summary": "清热凉血，滋阴降火，解毒散结",
   "images": [
     {
-      "url": "/images/herbs/lecture/425843.jpeg",
-      "alt": "玄参（Scrophularia ningpoensis）",
-      "credit": "© 小铖/Smalltown / iNaturalist",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/425843",
+      "url": "/images/herbs/lecture/zhongjing/zj-029.jpg",
+      "alt": "玄参（中经本草图29）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Scrophularia ningpoensis",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-425843.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-030.jpg",
+      "alt": "玄参（中经本草图30）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-030.jpg"
     }
   ],
   "docCount": 2

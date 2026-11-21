@@ -115,13 +115,13 @@
   "summary": "益胃生津，滋阴清热",
   "images": [
     {
-      "url": "/images/herbs/lecture/67756.jpg",
-      "alt": "石斛（已有图片）",
-      "credit": "© Motohiro Sunouchi / iNaturalist",
-      "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/67756",
+      "url": "/images/herbs/lecture/xlsx/xlsx-057.jpg",
+      "alt": "石斛（上经本草图57）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Dendrobium nobile",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-67756.jpg"
+      "kind": "药材"
     }
   ],
   "docCount": 2

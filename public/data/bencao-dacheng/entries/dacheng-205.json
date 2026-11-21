@@ -91,13 +91,22 @@
   "summary": "清热燥湿，泻火解毒，止血，安胎",
   "images": [
     {
-      "url": "/images/herbs/lecture/565882.jpeg",
-      "alt": "黄芩（Scutellaria baicalensis）",
-      "credit": "© Yao Li / iNaturalist",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/565882",
+      "url": "/images/herbs/lecture/zhongjing/zj-045.jpg",
+      "alt": "黄芩（中经本草图45）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Scutellaria baicalensis",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-565882.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-046.jpg",
+      "alt": "黄芩（中经本草图46）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-046.jpg"
     }
   ],
   "docCount": 1

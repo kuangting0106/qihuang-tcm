@@ -87,13 +87,22 @@
   "summary": "息风定惊，清热平肝",
   "images": [
     {
-      "url": "/images/herbs/lecture/809168.jpeg",
-      "alt": "钩藤（Uncaria rhynchophylla）",
-      "credit": "© Nuraishah Bazilah Affandi / iNaturalist",
-      "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/809168",
+      "url": "/images/herbs/lecture/xiajing/xj-153.jpg",
+      "alt": "钩藤（下经本草图153）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Uncaria rhynchophylla",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-809168.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-154.jpg",
+      "alt": "钩藤（下经本草图154）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-154.jpg"
     }
   ],
   "docCount": 1

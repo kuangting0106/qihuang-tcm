@@ -114,12 +114,13 @@
   "summary": "解表散寒，温中止呕，化痰止咳，解鱼蟹毒",
   "images": [
     {
-      "url": "/images/herbs/lecture/zhongjing/zj-009.jpg",
-      "alt": "干姜（用户提供图片 1）",
-      "credit": "用户提供 / 中经本草表格",
+      "file": "/images/herbs/lecture/zhongjing/zj-009.jpg",
+      "alt": "生姜（中经本草图9）",
+      "credit": "用户提供 / 《中经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
-      "kind": "药材"
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-009.jpg"
     }
   ],
   "docCount": 4,
@@ -206,7 +207,7 @@
         {
           "url": "/images/herbs/lecture/zhongjing/zj-009.jpg",
           "alt": "干姜（用户提供图片 1）",
-          "credit": "用户提供 / 中经本草表格",
+          "credit": "用户提供 / 《中经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"

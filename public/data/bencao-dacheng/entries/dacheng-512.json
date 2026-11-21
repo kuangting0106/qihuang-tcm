@@ -82,13 +82,22 @@
   "summary": "破瘀，消积，杀虫",
   "images": [
     {
-      "url": "/images/herbs/lecture/xlsx/xlsx-119.jpg",
-      "alt": "干漆（用户提供图片 1）",
-      "credit": "用户提供 / 中草药图片自搜表格",
+      "url": "/images/herbs/lecture/xlsx/xlsx-117.jpg",
+      "alt": "干漆（上经本草图117）",
+      "credit": "用户提供 / 《上经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "latin": "",
       "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xlsx/xlsx-118.jpg",
+      "alt": "干漆（上经本草图118）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-118.jpg"
     }
   ],
   "docCount": 1

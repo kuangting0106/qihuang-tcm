@@ -88,13 +88,22 @@
   "summary": "平肝解郁，活血祛风，明目，止痒",
   "images": [
     {
-      "url": "/images/herbs/lecture/64238.jpg",
-      "alt": "蒺藜（已有图片）",
-      "credit": "© lanechaffin / iNaturalist",
-      "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/64238",
+      "url": "/images/herbs/lecture/xlsx/xlsx-073.jpg",
+      "alt": "蒺藜（上经本草图73）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Tribulus terrestris",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-64238.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xlsx/xlsx-074.jpg",
+      "alt": "蒺藜（上经本草图74）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-074.jpg"
     }
   ],
   "docCount": 1

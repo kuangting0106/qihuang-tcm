@@ -119,13 +119,13 @@
   "summary": "养血调经，敛阴止汗，柔肝止痛，平抑肝阳",
   "images": [
     {
-      "url": "/images/herbs/lecture/127857.jpeg",
-      "alt": "芍药（已有图片）",
-      "credit": "© Анна Васильченко / iNaturalist",
-      "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/127857",
+      "url": "/images/herbs/lecture/zhongjing/zj-024.jpg",
+      "alt": "芍药（中经本草图24）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Paeonia lactiflora",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-127857.jpg"
+      "kind": "药材"
     }
   ],
   "docCount": 4,
@@ -221,13 +221,13 @@
       "sourceText": "毛茛科植物芍药 Paeonia lactiflora Pal的干燥根。",
       "images": [
         {
-          "url": "/images/herbs/lecture/127857.jpeg",
-          "alt": "芍药（已有图片）",
-          "credit": "© Анна Васильченко / iNaturalist",
-          "license": "CC BY",
-          "sourceUrl": "https://www.inaturalist.org/taxa/127857",
+          "url": "/images/herbs/lecture/zhongjing/zj-024.jpg",
+          "alt": "芍药（中经本草图24）",
+          "credit": "用户提供 / 《中经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
           "latin": "Paeonia lactiflora",
-          "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-127857.jpg"
+          "kind": "药材"
         }
       ],
       "charCount": 1488

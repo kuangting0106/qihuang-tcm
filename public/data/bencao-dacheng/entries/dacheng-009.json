@@ -118,13 +118,22 @@
   "summary": "清热泻火，滋阴润燥",
   "images": [
     {
-      "url": "/images/herbs/lecture/785991.jpg",
-      "alt": "知母（Anemarrhena asphodeloides）",
-      "credit": "© darkflamew / iNaturalist",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/785991",
+      "url": "/images/herbs/lecture/zhongjing/zj-037.jpg",
+      "alt": "知母（中经本草图37）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Anemarrhena asphodeloides",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-785991.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-038.jpg",
+      "alt": "知母（中经本草图38）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-038.jpg"
     }
   ],
   "docCount": 2

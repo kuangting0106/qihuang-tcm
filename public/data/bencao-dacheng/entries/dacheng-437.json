@@ -87,12 +87,21 @@
   "summary": "润肺下气，止咳化痰",
   "images": [
     {
-      "url": "/images/herbs/lecture/zhongjing/zj-080.jpg",
-      "alt": "款冬花（用户提供图片 1）",
-      "credit": "用户提供 / 中经本草表格",
+      "url": "/images/herbs/lecture/zhongjing/zj-081.jpg",
+      "alt": "款冬花（中经本草图81）",
+      "credit": "用户提供 / 《中经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-082.jpg",
+      "alt": "款冬花（中经本草图82）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-082.jpg"
     }
   ],
   "docCount": 1

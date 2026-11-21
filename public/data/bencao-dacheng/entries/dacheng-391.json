@@ -82,8 +82,17 @@
   "summary": "清热利湿，凉血散瘀，解毒消肿",
   "images": [
     {
+      "file": "/images/herbs/lecture/zhongjing/zj-059.jpg",
+      "alt": "酢浆草（中经本草图59）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-059.jpg"
+    },
+    {
       "file": "/images/herbs/supplement/supp-73.jpg",
-      "alt": "酢浆草（补充本草图1）",
+      "alt": "酢浆草（补充本草图73）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
@@ -92,7 +101,7 @@
     },
     {
       "file": "/images/herbs/supplement/supp-74.jpg",
-      "alt": "酢浆草（补充本草图2）",
+      "alt": "酢浆草（补充本草图74）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",

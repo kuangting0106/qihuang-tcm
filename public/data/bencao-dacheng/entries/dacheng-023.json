@@ -59,13 +59,22 @@
   "summary": "芳香化浊，和中止呕，发表解暑",
   "images": [
     {
-      "url": "/images/herbs/lecture/506801.jpg",
-      "alt": "藿香（Agastache rugosa）",
-      "credit": "© Kim, Hyun-tae / iNaturalist",
-      "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/506801",
+      "url": "/images/herbs/lecture/xiajing/xj-147.jpg",
+      "alt": "藿香（下经本草图147）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Agastache rugosa",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-506801.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-148.jpg",
+      "alt": "藿香（下经本草图148）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-148.jpg"
     }
   ],
   "docCount": 1

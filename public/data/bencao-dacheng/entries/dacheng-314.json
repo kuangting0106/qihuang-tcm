@@ -88,12 +88,13 @@
   "summary": "杀虫，消积，行气，利水，截疟",
   "images": [
     {
-      "url": "/images/herbs/lecture/extra/ex-132.jpg",
-      "alt": "大腹皮（用户提供图片 1）",
-      "credit": "用户提供 / 本草表格",
+      "file": "/images/herbs/lecture/xiajing/xj-132.jpg",
+      "alt": "槟榔（下经本草图132）",
+      "credit": "用户提供 / 《下经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
-      "kind": "药材"
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-132.jpg"
     }
   ],
   "docCount": 3,
@@ -178,9 +179,9 @@
       "sourceText": "棕榈科植物槟榔 Areca catechu L.的干燥果皮。",
       "images": [
         {
-          "url": "/images/herbs/lecture/extra/ex-132.jpg",
-          "alt": "大腹皮（用户提供图片 1）",
-          "credit": "用户提供 / 本草表格",
+          "url": "/images/herbs/lecture/xiajing/xj-132.jpg",
+          "alt": "大腹皮（下经本草图132）",
+          "credit": "用户提供 / 《下经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"

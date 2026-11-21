@@ -101,12 +101,31 @@
       "thumbUrl": "/images/herbs/dacheng/thumbs/plant-080.jpg"
     },
     {
-      "url": "/images/herbs/lecture/zhongjing/zj-013.jpg",
-      "alt": "天花粉（用户提供图片 1）",
-      "credit": "用户提供 / 中经本草表格",
+      "file": "/images/herbs/lecture/zhongjing/zj-013.jpg",
+      "alt": "瓜蒌（中经本草图13）",
+      "credit": "用户提供 / 《中经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
-      "kind": "药材"
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-013.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-014.jpg",
+      "alt": "瓜蒌（中经本草图14）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-014.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-017.jpg",
+      "alt": "瓜蒌（中经本草图17）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-017.jpg"
     }
   ],
   "docCount": 6,
@@ -422,8 +441,8 @@
       "images": [
         {
           "url": "/images/herbs/lecture/zhongjing/zj-013.jpg",
-          "alt": "天花粉（用户提供图片 1）",
-          "credit": "用户提供 / 中经本草表格",
+          "alt": "天花粉（中经本草图13）",
+          "credit": "用户提供 / 《中经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"

@@ -110,13 +110,22 @@
   "summary": "健脾益肺，养血生津",
   "images": [
     {
-      "url": "/images/herbs/lecture/706415.jpeg",
-      "alt": "党参（Codonopsis pilosula）",
-      "credit": "© Yao Li / iNaturalist",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/706415",
+      "url": "/images/herbs/lecture/xiajing/xj-167.jpg",
+      "alt": "党参（下经本草图167）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Codonopsis pilosula",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-706415.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-168.jpg",
+      "alt": "党参（下经本草图168）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-168.jpg"
     }
   ],
   "docCount": 2

@@ -112,17 +112,17 @@
   "summary": "温中止痛，杀虫止痒",
   "images": [
     {
-      "url": "/images/herbs/lecture/506467.jpg",
-      "alt": "花椒（Zanthoxylum bungeanum）",
-      "credit": "© Marco Mussita / iNaturalist",
-      "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/506467",
+      "url": "/images/herbs/lecture/zhongjing/zj-108.jpg",
+      "alt": "花椒（中经本草图108）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Zanthoxylum bungeanum",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-506467.jpg"
+      "kind": "药材"
     },
     {
       "file": "/images/herbs/supplement/supp-186.jpg",
-      "alt": "花椒（补充本草图1）",
+      "alt": "花椒（补充本草图186）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",

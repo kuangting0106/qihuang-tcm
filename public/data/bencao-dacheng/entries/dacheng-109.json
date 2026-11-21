@@ -89,13 +89,22 @@
   "summary": "解毒，除湿，通利关节",
   "images": [
     {
-      "url": "/images/herbs/lecture/556188.jpg",
-      "alt": "土茯苓（Smilax glabra）",
-      "credit": "© 黃美滿 / iNaturalist",
-      "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/556188",
+      "url": "/images/herbs/lecture/xiajing/xj-137.jpg",
+      "alt": "土茯苓（下经本草图137）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Smilax glabra",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-556188.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xlsx/xlsx-015.jpg",
+      "alt": "土茯苓（上经本草图15）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-015.jpg"
     }
   ],
   "docCount": 1

@@ -117,13 +117,22 @@
   "summary": "补益肝肾，收涩固脱",
   "images": [
     {
-      "url": "/images/herbs/lecture/450254.jpeg",
-      "alt": "山茱萸（Cornus officinalis）",
-      "credit": "© Takashi KOIKE / iNaturalist",
-      "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/450254",
+      "url": "/images/herbs/lecture/zhongjing/zj-109.jpg",
+      "alt": "山茱萸（中经本草图109）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Cornus officinalis",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-450254.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-110.jpg",
+      "alt": "山茱萸（中经本草图110）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-110.jpg"
     }
   ],
   "docCount": 2

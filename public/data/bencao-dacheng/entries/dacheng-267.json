@@ -84,12 +84,30 @@
   "images": [
     {
       "file": "/images/herbs/supplement/supp-42.jpg",
-      "alt": "苘麻子（补充本草图1）",
+      "alt": "苘麻子（补充本草图42）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
       "url": "/images/herbs/supplement/supp-42.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-6.jpg",
+      "alt": "苘麻子（补充本草图6）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-6.jpg"
+    },
+    {
+      "file": "/images/herbs/supplement/supp-7.jpg",
+      "alt": "苘麻子（补充本草图7）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-7.jpg"
     }
   ],
   "docCount": 1

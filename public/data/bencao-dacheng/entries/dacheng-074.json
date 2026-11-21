@@ -113,13 +113,22 @@
   "summary": "补益肝肾，固精缩尿，安胎，明目，止泻；外用消风祛斑",
   "images": [
     {
-      "url": "/images/herbs/lecture/601626.jpg",
-      "alt": "菟丝子（已有图片）",
-      "credit": "© S.MORE / iNaturalist",
-      "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/601626",
+      "url": "/images/herbs/lecture/xlsx/xlsx-029.jpg",
+      "alt": "菟丝子（上经本草图29）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Cuscuta chinensis",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-601626.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xlsx/xlsx-030.jpg",
+      "alt": "菟丝子（上经本草图30）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-030.jpg"
     }
   ],
   "docCount": 2

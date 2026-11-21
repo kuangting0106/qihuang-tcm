@@ -92,13 +92,22 @@
   "summary": "清热燥湿，祛风杀虫",
   "images": [
     {
-      "url": "/images/herbs/lecture/138582.jpg",
-      "alt": "苦参（Sophora flavescens）",
-      "credit": "© 登坂久雄 / iNaturalist",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/138582",
+      "url": "/images/herbs/lecture/zhongjing/zj-015.jpg",
+      "alt": "苦参（中经本草图15）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Sophora flavescens",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-138582.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-016.jpg",
+      "alt": "苦参（中经本草图16）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-016.jpg"
     }
   ],
   "docCount": 1

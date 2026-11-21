@@ -91,13 +91,22 @@
   "summary": "行气止痛，健脾消食",
   "images": [
     {
-      "url": "/images/herbs/lecture/1420140.jpg",
-      "alt": "木香（已有图片）",
-      "credit": "© Cyril Gros / iNaturalist",
-      "license": "CC BY-NC-SA",
-      "sourceUrl": "https://www.inaturalist.org/taxa/1420140",
+      "url": "/images/herbs/lecture/xlsx/xlsx-042.jpg",
+      "alt": "木香（上经本草图42）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Dolomiaea costus",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-1420140.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xlsx/xlsx-043.jpg",
+      "alt": "木香（上经本草图43）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-043.jpg"
     }
   ],
   "docCount": 1

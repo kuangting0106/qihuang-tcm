@@ -105,12 +105,21 @@
   "summary": "滋阴潜阳，退热除蒸，软坚散结",
   "images": [
     {
-      "url": "/images/herbs/lecture/zhongjing/zj-131.jpg",
-      "alt": "鳖甲（用户提供图片 1）",
-      "credit": "用户提供 / 中经本草表格",
+      "url": "/images/herbs/lecture/zhongjing/zj-132.jpg",
+      "alt": "鳖甲（中经本草图132）",
+      "credit": "用户提供 / 《中经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-133.jpg",
+      "alt": "鳖甲（中经本草图133）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-133.jpg"
     }
   ],
   "docCount": 2

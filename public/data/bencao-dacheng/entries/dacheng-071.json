@@ -116,13 +116,31 @@
   "summary": "补肾阳，强筋骨，祛风湿",
   "images": [
     {
-      "url": "/images/herbs/lecture/790618.jpeg",
-      "alt": "巴戟天（已有图片）",
-      "credit": "© 小铖/Smalltown / iNaturalist",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/790618",
+      "url": "/images/herbs/lecture/xlsx/xlsx-058.jpg",
+      "alt": "巴戟天（上经本草图58）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Morinda officinalis",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-790618.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xlsx/xlsx-059.jpg",
+      "alt": "巴戟天（上经本草图59）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-059.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/xlsx/xlsx-060.jpg",
+      "alt": "巴戟天（上经本草图60）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-060.jpg"
     }
   ],
   "docCount": 2

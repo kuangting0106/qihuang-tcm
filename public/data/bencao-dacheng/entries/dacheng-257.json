@@ -89,13 +89,22 @@
   "summary": "清热解毒，消肿散结，疏散风热",
   "images": [
     {
-      "url": "/images/herbs/lecture/163058.jpg",
-      "alt": "连翘（Forsythia suspensa）",
-      "credit": "© Douglas Goldman / iNaturalist",
-      "license": "CC BY-SA",
-      "sourceUrl": "https://www.inaturalist.org/taxa/163058",
+      "url": "/images/herbs/lecture/xiajing/xj-051.jpg",
+      "alt": "连翘（下经本草图51）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Forsythia suspensa",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-163058.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-052.jpg",
+      "alt": "连翘（下经本草图52）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-052.jpg"
     }
   ],
   "docCount": 1

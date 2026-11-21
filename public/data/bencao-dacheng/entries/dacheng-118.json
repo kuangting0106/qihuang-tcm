@@ -92,12 +92,13 @@
   "summary": "祛风除湿，温经止痛",
   "images": [
     {
-      "url": "/images/herbs/lecture/xiajing/xj-007.jpg",
-      "alt": "附子（用户提供图片 1）",
-      "credit": "用户提供 / 下经本草表格",
+      "file": "/images/herbs/lecture/xiajing/xj-007.jpg",
+      "alt": "川乌（下经本草图7）",
+      "credit": "用户提供 / 《下经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
-      "kind": "药材"
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-007.jpg"
     }
   ],
   "docCount": 3,
@@ -174,7 +175,7 @@
         {
           "url": "/images/herbs/lecture/xiajing/xj-007.jpg",
           "alt": "附子（用户提供图片 1）",
-          "credit": "用户提供 / 下经本草表格",
+          "credit": "用户提供 / 《下经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"

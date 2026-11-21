@@ -88,13 +88,31 @@
   "summary": "凉血止血，解毒敛疮",
   "images": [
     {
-      "url": "/images/herbs/lecture/64549.jpg",
-      "alt": "地榆（Sanguisorba officinalis）",
-      "credit": "© Кирилл Зенин / iNaturalist",
-      "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/64549",
+      "url": "/images/herbs/lecture/zhongjing/zj-071.jpg",
+      "alt": "地榆（中经本草图71）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Sanguisorba officinalis",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-64549.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-072.jpg",
+      "alt": "地榆（中经本草图72）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-072.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-073.jpg",
+      "alt": "地榆（中经本草图73）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-073.jpg"
     }
   ],
   "docCount": 1

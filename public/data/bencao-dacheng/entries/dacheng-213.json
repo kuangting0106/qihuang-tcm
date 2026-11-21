@@ -88,13 +88,13 @@
   "summary": "润肺下气，消痰止咳",
   "images": [
     {
-      "url": "/images/herbs/lecture/158806.jpg",
-      "alt": "紫菀（Aster tataricus）",
-      "credit": "© Douglas Goldman / iNaturalist",
-      "license": "CC BY-SA",
-      "sourceUrl": "https://www.inaturalist.org/taxa/158806",
+      "url": "/images/herbs/lecture/zhongjing/zj-050.jpg",
+      "alt": "紫菀（中经本草图50）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Aster tataricus",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-158806.jpg"
+      "kind": "药材"
     }
   ],
   "docCount": 1

@@ -105,7 +105,7 @@
     },
     {
       "file": "/images/herbs/supplement/supp-18.jpg",
-      "alt": "板蓝根（补充本草图1）",
+      "alt": "板蓝根（补充本草图18）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
@@ -114,12 +114,30 @@
     },
     {
       "file": "/images/herbs/supplement/supp-19.jpg",
-      "alt": "板蓝根（补充本草图2）",
+      "alt": "板蓝根（补充本草图19）",
       "credit": "用户提供 / 《补充本草》",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
       "url": "/images/herbs/supplement/supp-19.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/xlsx/xlsx-067.jpg",
+      "alt": "板蓝根（上经本草图67）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-067.jpg"
+    },
+    {
+      "file": "/images/herbs/lecture/xlsx/xlsx-068.jpg",
+      "alt": "板蓝根（上经本草图68）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-068.jpg"
     },
     {
       "url": "/images/herbs/dacheng/plant-001.jpg",
@@ -130,15 +148,6 @@
       "latin": "Isatis indigotica",
       "kind": "原植物",
       "thumbUrl": "/images/herbs/dacheng/thumbs/plant-001.jpg"
-    },
-    {
-      "url": "/images/herbs/lecture/xlsx/xlsx-067.jpg",
-      "alt": "青黛（用户提供图片 1）",
-      "credit": "用户提供 / 中草药图片自搜表格",
-      "license": "用户提供，版权归原作者所有",
-      "sourceUrl": "",
-      "latin": "",
-      "kind": "药材"
     }
   ],
   "docCount": 3,
@@ -293,8 +302,8 @@
       "images": [
         {
           "url": "/images/herbs/lecture/xlsx/xlsx-067.jpg",
-          "alt": "青黛（用户提供图片 1）",
-          "credit": "用户提供 / 中草药图片自搜表格",
+          "alt": "青黛（上经本草图67）",
+          "credit": "用户提供 / 《上经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "latin": "",

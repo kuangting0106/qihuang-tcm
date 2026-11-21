@@ -81,6 +81,16 @@
   ],
   "id": "dacheng-252",
   "summary": "温中燥湿，散寒止痛，驱虫止痒",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-186.jpg",
+      "alt": "竹叶椒（补充本草图186）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-186.jpg"
+    }
+  ],
   "docCount": 1
 }

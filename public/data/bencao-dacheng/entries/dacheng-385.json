@@ -80,13 +80,13 @@
   "summary": "宣散风热，透疹，利尿",
   "images": [
     {
-      "url": "/images/herbs/lecture/54518.jpeg",
-      "alt": "浮萍（Lemna minor）",
-      "credit": "© Philipp / iNaturalist",
-      "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/54518",
+      "url": "/images/herbs/lecture/zhongjing/zj-069.jpg",
+      "alt": "浮萍（中经本草图69）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Lemna minor",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-54518.jpg"
+      "kind": "药材"
     }
   ],
   "docCount": 1

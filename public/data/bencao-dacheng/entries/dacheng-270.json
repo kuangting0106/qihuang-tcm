@@ -88,17 +88,26 @@
   "summary": "理气宽中，行滞消胀",
   "images": [
     {
-      "url": "/images/herbs/lecture/extra/ex-180.jpg",
-      "alt": "枳壳（用户提供图片 1）",
-      "credit": "用户提供 / 本草表格",
+      "url": "/images/herbs/lecture/xiajing/xj-180.jpg",
+      "alt": "枳壳（下经本草图180）",
+      "credit": "用户提供 / 《下经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材"
     },
     {
-      "url": "/images/herbs/lecture/zhongjing/zj-101.jpg",
-      "alt": "枳实（用户提供图片 1）",
-      "credit": "用户提供 / 中经本草表格",
+      "file": "/images/herbs/lecture/xiajing/xj-181.jpg",
+      "alt": "枳壳（下经本草图181）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-181.jpg"
+    },
+    {
+      "url": "/images/herbs/lecture/zhongjing/zj-102.jpg",
+      "alt": "枳实（中经本草图102）",
+      "credit": "用户提供 / 《中经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材"
@@ -184,9 +193,9 @@
       "sourceText": "芸香科植物酸橙 Citrus aurantium L.及其栽培变种或甜橙 Citrus sinensis Osbeck的干燥幼果。",
       "images": [
         {
-          "url": "/images/herbs/lecture/zhongjing/zj-101.jpg",
-          "alt": "枳实（用户提供图片 1）",
-          "credit": "用户提供 / 中经本草表格",
+          "url": "/images/herbs/lecture/zhongjing/zj-102.jpg",
+          "alt": "枳实（中经本草图102）",
+          "credit": "用户提供 / 《中经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"

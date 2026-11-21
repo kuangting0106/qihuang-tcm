@@ -117,13 +117,22 @@
   "summary": "补肝肾，强筋骨，安胎",
   "images": [
     {
-      "url": "/images/herbs/lecture/127868.jpg",
-      "alt": "杜仲（已有图片）",
-      "credit": "© Kristine Paulus / iNaturalist",
-      "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/127868",
+      "url": "/images/herbs/lecture/xlsx/xlsx-131.jpg",
+      "alt": "杜仲（上经本草图131）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Eucommia ulmoides",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-127868.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xlsx/xlsx-132.jpg",
+      "alt": "杜仲（上经本草图132）",
+      "credit": "用户提供 / 《上经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xlsx/xlsx-132.jpg"
     }
   ],
   "docCount": 3,

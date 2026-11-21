@@ -87,13 +87,22 @@
   "summary": "清热解毒，凉血止痢，",
   "images": [
     {
-      "url": "/images/herbs/lecture/491582.jpeg",
-      "alt": "白头翁（Pulsatilla chinensis）",
-      "credit": "© mintren / iNaturalist",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/491582",
+      "url": "/images/herbs/lecture/xiajing/xj-049.jpg",
+      "alt": "白头翁（下经本草图49）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
       "latin": "Pulsatilla chinensis",
-      "thumbUrl": "/images/herbs/dacheng/thumbs/lecture-491582.jpg"
+      "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-050.jpg",
+      "alt": "白头翁（下经本草图50）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-050.jpg"
     }
   ],
   "docCount": 1
