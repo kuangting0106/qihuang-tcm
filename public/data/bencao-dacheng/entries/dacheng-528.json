@@ -89,12 +89,30 @@
   "summary": "利水渗湿",
   "images": [
     {
-      "url": "/images/herbs/lecture/zhongjing/zj-113.jpg?v=7a883812",
+      "url": "/images/herbs/lecture/zhongjing/zj-113.jpg?v=77f66806",
       "alt": "猪苓（中经本草图113）",
       "credit": "用户提供 / 《中经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-114.jpg?v=1f42db0a",
+      "alt": "猪苓（中经本草图114）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-114.jpg?v=1f42db0a"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-115.jpg?v=e4575d35",
+      "alt": "猪苓（中经本草图115）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-115.jpg?v=e4575d35"
     }
   ],
   "docCount": 1

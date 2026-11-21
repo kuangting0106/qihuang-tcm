@@ -107,7 +107,10 @@
       "members": [
         "侧柏叶"
       ],
-      "basis": "侧柏 Platycladus orientalis"
+      "basis": "侧柏 Platycladus orientalis",
+      "excludeMemberImages": [
+        "侧柏叶"
+      ]
     },
     {
       "primary": "何首乌",
@@ -115,7 +118,10 @@
         "首乌藤",
         "制何首乌"
       ],
-      "basis": "何首乌 Polygonum multiflorum"
+      "basis": "何首乌 Polygonum multiflorum",
+      "excludeMemberImages": [
+        "首乌藤"
+      ]
     },
     {
       "primary": "人参",
@@ -225,7 +231,10 @@
         "大腹皮",
         "焦槟榔"
       ],
-      "basis": "槟榔 Areca catechu"
+      "basis": "槟榔 Areca catechu",
+      "excludeMemberImages": [
+        "大腹皮"
+      ]
     },
     {
       "primary": "川楝子",
@@ -299,7 +308,13 @@
         "桑白皮",
         "桑枝"
       ],
-      "basis": "桑 Morus alba"
+      "basis": "桑 Morus alba",
+      "excludeMemberImages": [
+        "桑白皮",
+        "桑枝",
+        "桑椹",
+        "桑葚"
+      ]
     },
     {
       "primary": "黄荆子",
@@ -313,7 +328,10 @@
       "members": [
         "甜瓜蒂"
       ],
-      "basis": "甜瓜 Cucumis melo"
+      "basis": "甜瓜 Cucumis melo",
+      "excludeMemberImages": [
+        "甜瓜蒂"
+      ]
     },
     {
       "primary": "路路通",
@@ -348,7 +366,10 @@
       "members": [
         "合欢皮"
       ],
-      "basis": "合欢 Albizia julibrissin"
+      "basis": "合欢 Albizia julibrissin",
+      "excludeMemberImages": [
+        "合欢皮"
+      ]
     },
     {
       "primary": "松花粉",
@@ -356,7 +377,12 @@
         "松节",
         "松香"
       ],
-      "basis": "松 Pinus massoniana / P. tabuliformis"
+      "basis": "松 Pinus massoniana / P. tabuliformis",
+      "excludeMemberImages": [
+        "松香",
+        "松节"
+      ],
+      "note": "松花粉为花粉，松香为树脂、松节为枝节，均不同药用部位；主条目只显示松花粉自身图片。"
     },
     {
       "primary": "厚朴",

@@ -99,10 +99,11 @@
       "name": "陈皮",
       "latin": "Citrus reticulata",
       "taxonId": 1611056,
-      "file": "/images/herbs/lecture/1611056.jpg",
       "credit": "© patanat / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/1611056"
+      "sourceUrl": "https://www.inaturalist.org/taxa/1611056",
+      "images": [],
+      "file": "/images/herbs/lecture/1611056.jpg"
     },
     {
       "name": "枸杞",
@@ -134,10 +135,11 @@
       "name": "丹参",
       "latin": "Salvia miltiorrhiza",
       "taxonId": 715830,
-      "file": "/images/herbs/lecture/715830.jpg",
       "credit": "© fhvc / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/715830"
+      "sourceUrl": "https://www.inaturalist.org/taxa/715830",
+      "images": [],
+      "file": "/images/herbs/lecture/715830.jpg"
     },
     {
       "name": "大黄",
@@ -407,28 +409,21 @@
       "name": "白英",
       "latin": "Solanum lyratum",
       "taxonId": 367802,
-      "file": "/images/herbs/lecture/367802.jpg",
       "credit": "© Timur Kalininsky / iNaturalist",
       "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/367802"
+      "sourceUrl": "https://www.inaturalist.org/taxa/367802",
+      "images": [],
+      "file": "/images/herbs/lecture/367802.jpg"
     },
     {
       "name": "白芷",
       "latin": "Angelica dahurica",
       "taxonId": 501057,
-      "file": "/images/herbs/lecture/zhongjing/zj-039.jpg",
+      "file": "/images/herbs/lecture/zhongjing/zj-040.jpg",
       "credit": "© Lee, seong-won / iNaturalist",
       "license": "CC BY-NC",
       "sourceUrl": "https://www.inaturalist.org/taxa/501057",
       "images": [
-        {
-          "file": "/images/herbs/lecture/zhongjing/zj-039.jpg",
-          "alt": "白芷（中经本草图39）",
-          "credit": "用户提供 / 《中经本草》表格",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
         {
           "file": "/images/herbs/lecture/zhongjing/zj-040.jpg",
           "alt": "白芷（中经本草图40）",
@@ -538,6 +533,14 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xiajing/xj-162.jpg",
+          "alt": "补骨脂（下经本草图162）",
+          "credit": "用户提供 / 《下经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
         }
       ]
     },
@@ -605,10 +608,11 @@
       "name": "菖蒲",
       "latin": "Acorus calamus",
       "taxonId": 82306,
-      "file": "/images/herbs/lecture/82306.jpg",
       "credit": "© Eduard Garin / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/82306"
+      "sourceUrl": "https://www.inaturalist.org/taxa/82306",
+      "images": [],
+      "file": "/images/herbs/lecture/82306.jpg"
     },
     {
       "name": "常山",
@@ -1053,10 +1057,11 @@
       "name": "贯众",
       "latin": "Cyrtomium fortunei",
       "taxonId": 161570,
-      "file": "/images/herbs/lecture/161570.jpeg",
       "credit": "© Yoshihiro Tokue / iNaturalist",
       "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/161570"
+      "sourceUrl": "https://www.inaturalist.org/taxa/161570",
+      "images": [],
+      "file": "/images/herbs/lecture/161570.jpeg"
     },
     {
       "name": "海金沙",
@@ -1096,29 +1101,39 @@
       "name": "诃子",
       "latin": "Terminalia chebula",
       "taxonId": 68671,
-      "file": "/images/herbs/lecture/68671.jpg",
       "credit": "© Satish Nikam / iNaturalist",
       "license": "CC BY-NC-SA",
-      "sourceUrl": "https://www.inaturalist.org/taxa/68671"
+      "sourceUrl": "https://www.inaturalist.org/taxa/68671",
+      "images": [],
+      "file": "/images/herbs/lecture/68671.jpg"
     },
     {
       "name": "红花",
       "latin": "Carthamus tinctorius",
       "taxonId": 76135,
-      "file": "/images/herbs/lecture/76135.jpeg",
       "credit": "© 葉子 / iNaturalist",
       "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/76135"
+      "sourceUrl": "https://www.inaturalist.org/taxa/76135",
+      "images": [],
+      "file": "/images/herbs/lecture/76135.jpeg"
     },
     {
       "name": "厚朴",
       "latin": "Magnolia officinalis",
       "taxonId": 431254,
-      "file": "/images/herbs/lecture/zhongjing/zj-105.jpg",
+      "file": "/images/herbs/lecture/zhongjing/zj-104.jpg",
       "credit": "© Wendy Cutler / iNaturalist",
       "license": "CC BY",
       "sourceUrl": "https://www.inaturalist.org/taxa/431254",
       "images": [
+        {
+          "file": "/images/herbs/lecture/zhongjing/zj-104.jpg",
+          "alt": "厚朴（中经本草图104）",
+          "credit": "用户提供 / 《中经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
         {
           "file": "/images/herbs/lecture/zhongjing/zj-105.jpg",
           "alt": "厚朴（中经本草图105）",
@@ -1268,11 +1283,19 @@
       "name": "积雪草",
       "latin": "Centella asiatica",
       "taxonId": 160294,
-      "file": "/images/herbs/lecture/zhongjing/zj-087.jpg",
+      "file": "/images/herbs/lecture/zhongjing/zj-080.jpg",
       "credit": "© 葉子 / iNaturalist",
       "license": "CC0",
       "sourceUrl": "https://www.inaturalist.org/taxa/160294",
       "images": [
+        {
+          "file": "/images/herbs/lecture/zhongjing/zj-080.jpg",
+          "alt": "积雪草（中经本草图80）",
+          "credit": "用户提供 / 《中经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
         {
           "file": "/images/herbs/lecture/zhongjing/zj-087.jpg",
           "alt": "积雪草（中经本草图87）",
@@ -1328,10 +1351,11 @@
       "name": "接骨草",
       "latin": "Sambucus javanica",
       "taxonId": 474166,
-      "file": "/images/herbs/lecture/474166.jpeg",
       "credit": "© 方伊琳(阿鈣) / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/474166"
+      "sourceUrl": "https://www.inaturalist.org/taxa/474166",
+      "images": [],
+      "file": "/images/herbs/lecture/474166.jpeg"
     },
     {
       "name": "桔梗",
@@ -1363,19 +1387,21 @@
       "name": "卷柏",
       "latin": "Selaginella tamariscina",
       "taxonId": 366348,
-      "file": "/images/herbs/lecture/366348.jpg",
       "credit": "© Gularjanz Grigoryi Mihajlovich / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/366348"
+      "sourceUrl": "https://www.inaturalist.org/taxa/366348",
+      "images": [],
+      "file": "/images/herbs/lecture/366348.jpg"
     },
     {
       "name": "爵床",
       "latin": "Justicia procumbens",
       "taxonId": 354064,
-      "file": "/images/herbs/lecture/354064.jpg",
       "credit": "© Himanshu Pandav / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/354064"
+      "sourceUrl": "https://www.inaturalist.org/taxa/354064",
+      "images": [],
+      "file": "/images/herbs/lecture/354064.jpg"
     },
     {
       "name": "苦参",
@@ -1449,10 +1475,11 @@
       "name": "雷丸",
       "latin": "Laccocephalum mylittae",
       "taxonId": 382846,
-      "file": "/images/herbs/lecture/382846.jpeg",
       "credit": "© sicilelleth / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/382846"
+      "sourceUrl": "https://www.inaturalist.org/taxa/382846",
+      "images": [],
+      "file": "/images/herbs/lecture/382846.jpeg"
     },
     {
       "name": "藜芦",
@@ -1526,10 +1553,11 @@
       "name": "灵芝",
       "latin": "Ganoderma lucidum",
       "taxonId": 125932,
-      "file": "/images/herbs/lecture/125932.jpeg",
       "credit": "© Ilya Filippov / iNaturalist",
       "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/125932"
+      "sourceUrl": "https://www.inaturalist.org/taxa/125932",
+      "images": [],
+      "file": "/images/herbs/lecture/125932.jpeg"
     },
     {
       "name": "龙胆",
@@ -1595,10 +1623,11 @@
       "name": "鹿藿",
       "latin": "Rhynchosia volubilis",
       "taxonId": 474975,
-      "file": "/images/herbs/lecture/474975.jpg",
       "credit": "© 岸本年郎 / iNaturalist",
       "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/474975"
+      "sourceUrl": "https://www.inaturalist.org/taxa/474975",
+      "images": [],
+      "file": "/images/herbs/lecture/474975.jpg"
     },
     {
       "name": "麻黄",
@@ -1792,10 +1821,11 @@
       "name": "佩兰",
       "latin": "Eupatorium fortunei",
       "taxonId": 447266,
-      "file": "/images/herbs/lecture/447266.png",
       "credit": "© Agnes Trekker / iNaturalist",
       "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/447266"
+      "sourceUrl": "https://www.inaturalist.org/taxa/447266",
+      "images": [],
+      "file": "/images/herbs/lecture/447266.png"
     },
     {
       "name": "葡萄",
@@ -1913,37 +1943,31 @@
       "name": "荛花",
       "latin": "Wikstroemia canescens",
       "taxonId": 824454,
-      "file": "/images/herbs/lecture/824454.jpeg",
       "credit": "© Siddarth Machado / iNaturalist",
       "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/824454"
+      "sourceUrl": "https://www.inaturalist.org/taxa/824454",
+      "images": [],
+      "file": "/images/herbs/lecture/824454.jpeg"
     },
     {
       "name": "人参",
       "latin": "Panax ginseng",
       "taxonId": 366498,
-      "file": "/images/herbs/lecture/366498.jpg",
       "credit": "© Elena_Sherehora / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/366498"
+      "sourceUrl": "https://www.inaturalist.org/taxa/366498",
+      "images": [],
+      "file": "/images/herbs/lecture/366498.jpg"
     },
     {
       "name": "肉桂",
       "latin": "Cinnamomum cassia",
       "taxonId": 774822,
-      "file": "/images/herbs/lecture/xlsx/xlsx-106.jpg",
+      "file": "/images/herbs/lecture/xlsx/xlsx-107.jpg",
       "credit": "© Yercaud-elango / iNaturalist",
       "license": "CC BY-SA",
       "sourceUrl": "https://www.inaturalist.org/taxa/774822",
       "images": [
-        {
-          "file": "/images/herbs/lecture/xlsx/xlsx-106.jpg",
-          "alt": "肉桂（上经本草图106）",
-          "credit": "用户提供 / 《上经本草》表格",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
         {
           "file": "/images/herbs/lecture/xlsx/xlsx-107.jpg",
           "alt": "肉桂（上经本草图107）",
@@ -1999,10 +2023,11 @@
       "name": "沙参",
       "latin": "Adenophora stricta",
       "taxonId": 916581,
-      "file": "/images/herbs/lecture/916581.png",
       "credit": "© onidiras-iNaturalist / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/916581"
+      "sourceUrl": "https://www.inaturalist.org/taxa/916581",
+      "images": [],
+      "file": "/images/herbs/lecture/916581.png"
     },
     {
       "name": "砂仁",
@@ -2058,6 +2083,14 @@
         {
           "file": "/images/herbs/lecture/zhongjing/zj-110.jpg",
           "alt": "山茱萸（中经本草图110）",
+          "credit": "用户提供 / 《中经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/zhongjing/zj-111.jpg",
+          "alt": "山茱萸（中经本草图111）",
           "credit": "用户提供 / 《中经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -2274,10 +2307,11 @@
       "name": "鼠李",
       "latin": "Rhamnus davurica",
       "taxonId": 167788,
-      "file": "/images/herbs/lecture/167788.jpg",
       "credit": "© Alan Weakley / iNaturalist",
       "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/167788"
+      "sourceUrl": "https://www.inaturalist.org/taxa/167788",
+      "images": [],
+      "file": "/images/herbs/lecture/167788.jpg"
     },
     {
       "name": "水芹",
@@ -2317,10 +2351,11 @@
       "name": "溲疏",
       "latin": "Deutzia scabra",
       "taxonId": 161761,
-      "file": "/images/herbs/lecture/161761.jpeg",
       "credit": "© Mason Brock / iNaturalist",
       "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/taxa/161761"
+      "sourceUrl": "https://www.inaturalist.org/taxa/161761",
+      "images": [],
+      "file": "/images/herbs/lecture/161761.jpeg"
     },
     {
       "name": "酸浆",
@@ -2394,10 +2429,11 @@
       "name": "天麻",
       "latin": "Gastrodia elata",
       "taxonId": 429605,
-      "file": "/images/herbs/lecture/429605.jpg",
       "credit": "© VanLap Hoàng / iNaturalist",
       "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/429605"
+      "sourceUrl": "https://www.inaturalist.org/taxa/429605",
+      "images": [],
+      "file": "/images/herbs/lecture/429605.jpg"
     },
     {
       "name": "天名精",
@@ -2429,10 +2465,11 @@
       "name": "天仙子",
       "latin": "Hyoscyamus niger",
       "taxonId": 163951,
-      "file": "/images/herbs/lecture/163951.jpeg",
       "credit": "© Antoine Guilbaud / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/163951"
+      "sourceUrl": "https://www.inaturalist.org/taxa/163951",
+      "images": [],
+      "file": "/images/herbs/lecture/163951.jpeg"
     },
     {
       "name": "土茯苓",
@@ -2553,6 +2590,14 @@
           "kind": "药材"
         },
         {
+          "file": "/images/herbs/lecture/xiajing/xj-156.jpg",
+          "alt": "威灵仙（下经本草图156）",
+          "credit": "用户提供 / 《下经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
           "file": "/images/herbs/lecture/774403.jpeg",
           "alt": "威灵仙（已有图片）",
           "credit": "© 羅元甫 / iNaturalist",
@@ -2660,10 +2705,11 @@
       "name": "五味子",
       "latin": "Schisandra chinensis",
       "taxonId": 431608,
-      "file": "/images/herbs/lecture/431608.jpg",
       "credit": "© Tatters ❀ / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/431608"
+      "sourceUrl": "https://www.inaturalist.org/taxa/431608",
+      "images": [],
+      "file": "/images/herbs/lecture/431608.jpg"
     },
     {
       "name": "夏枯草",
@@ -2703,19 +2749,21 @@
       "name": "香蒲",
       "latin": "Typha orientalis",
       "taxonId": 341639,
-      "file": "/images/herbs/lecture/341639.jpg",
       "credit": "© nick_goldwater / iNaturalist",
       "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/341639"
+      "sourceUrl": "https://www.inaturalist.org/taxa/341639",
+      "images": [],
+      "file": "/images/herbs/lecture/341639.jpg"
     },
     {
       "name": "小麦",
       "latin": "Triticum aestivum",
       "taxonId": 64161,
-      "file": "/images/herbs/lecture/64161.jpeg",
       "credit": "© Cole Shoemaker / iNaturalist",
       "license": "CC BY",
-      "sourceUrl": "https://www.inaturalist.org/taxa/64161"
+      "sourceUrl": "https://www.inaturalist.org/taxa/64161",
+      "images": [],
+      "file": "/images/herbs/lecture/64161.jpeg"
     },
     {
       "name": "薤白",
@@ -2807,10 +2855,11 @@
       "name": "旋覆花",
       "latin": "Inula japonica",
       "taxonId": 538217,
-      "file": "/images/herbs/lecture/538217.jpg",
       "credit": "© Chuangzao / iNaturalist",
       "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/taxa/538217"
+      "sourceUrl": "https://www.inaturalist.org/taxa/538217",
+      "images": [],
+      "file": "/images/herbs/lecture/538217.jpg"
     },
     {
       "name": "芫花",
@@ -3158,6 +3207,14 @@
         {
           "file": "/images/herbs/lecture/zhongjing/zj-038.jpg",
           "alt": "知母（中经本草图38）",
+          "credit": "用户提供 / 《中经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/zhongjing/zj-039.jpg",
+          "alt": "知母（中经本草图39）",
           "credit": "用户提供 / 《中经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -4407,6 +4464,14 @@
         {
           "file": "/images/herbs/lecture/xlsx/xlsx-105.jpg",
           "alt": "松香（上经本草图105）",
+          "credit": "用户提供 / 《上经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xlsx/xlsx-106.jpg",
+          "alt": "松香（上经本草图106）",
           "credit": "用户提供 / 《上经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -5699,14 +5764,6 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/lecture/zhongjing/zj-080.jpg",
-          "alt": "防己（中经本草图80）",
-          "credit": "用户提供 / 《中经本草》表格",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
         }
       ]
     },
@@ -5875,14 +5932,6 @@
       "sourceUrl": "",
       "images": [
         {
-          "file": "/images/herbs/lecture/xiajing/xj-073.jpg",
-          "alt": "桑白皮（下经本草图73）",
-          "credit": "用户提供 / 《下经本草》表格",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
           "file": "/images/herbs/lecture/zhongjing/zj-095.jpg",
           "alt": "桑白皮（中经本草图95）",
           "credit": "用户提供 / 《中经本草》表格",
@@ -5897,9 +5946,17 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xiajing/xj-073.jpg",
+          "alt": "桑白皮（下经本草图73）",
+          "credit": "用户提供 / 《下经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
         }
       ],
-      "file": "/images/herbs/lecture/xiajing/xj-073.jpg"
+      "file": "/images/herbs/lecture/zhongjing/zj-095.jpg"
     },
     {
       "name": "竹叶",
@@ -5957,14 +6014,6 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
-        },
-        {
-          "file": "/images/herbs/lecture/zhongjing/zj-104.jpg",
-          "alt": "枳实（中经本草图104）",
-          "credit": "用户提供 / 《中经本草》表格",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
         }
       ]
     },
@@ -5995,19 +6044,11 @@
     },
     {
       "name": "凌霄花",
-      "file": "/images/herbs/lecture/zhongjing/zj-111.jpg",
+      "file": "/images/herbs/lecture/zhongjing/zj-112.jpg",
       "credit": "用户提供 / 中经本草表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "images": [
-        {
-          "file": "/images/herbs/lecture/zhongjing/zj-111.jpg",
-          "alt": "凌霄花（中经本草图111）",
-          "credit": "用户提供 / 《中经本草》表格",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
         {
           "file": "/images/herbs/lecture/zhongjing/zj-112.jpg",
           "alt": "凌霄花（中经本草图112）",
@@ -6028,6 +6069,22 @@
         {
           "file": "/images/herbs/lecture/zhongjing/zj-113.jpg",
           "alt": "猪苓（中经本草图113）",
+          "credit": "用户提供 / 《中经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/zhongjing/zj-114.jpg",
+          "alt": "猪苓（中经本草图114）",
+          "credit": "用户提供 / 《中经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/zhongjing/zj-115.jpg",
+          "alt": "猪苓（中经本草图115）",
           "credit": "用户提供 / 《中经本草》表格",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
@@ -6533,6 +6590,14 @@
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/lecture/xiajing/xj-008.jpg",
+          "alt": "附子（下经本草图8）",
+          "credit": "用户提供 / 《下经本草》表格",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
         }
       ],
       "file": "/images/herbs/lecture/xiajing/xj-007.jpg"
@@ -6540,14 +6605,6 @@
     {
       "name": "天雄",
       "images": [
-        {
-          "file": "/images/herbs/lecture/xiajing/xj-008.jpg",
-          "alt": "天雄（下经本草图8）",
-          "credit": "用户提供 / 《下经本草》表格",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
         {
           "file": "/images/herbs/lecture/xiajing/xj-009.jpg",
           "alt": "天雄（下经本草图9）",
@@ -6557,7 +6614,7 @@
           "kind": "药材"
         }
       ],
-      "file": "/images/herbs/lecture/xiajing/xj-008.jpg"
+      "file": "/images/herbs/lecture/xiajing/xj-009.jpg"
     },
     {
       "name": "虎掌南星",
@@ -7533,14 +7590,6 @@
       "name": "首乌藤",
       "images": [
         {
-          "file": "/images/herbs/lecture/xiajing/xj-162.jpg",
-          "alt": "首乌藤（下经本草图162）",
-          "credit": "用户提供 / 《下经本草》表格",
-          "license": "用户提供，版权归原作者所有",
-          "sourceUrl": "",
-          "kind": "药材"
-        },
-        {
           "file": "/images/herbs/lecture/xiajing/xj-163.jpg",
           "alt": "首乌藤（下经本草图163）",
           "credit": "用户提供 / 《下经本草》表格",
@@ -7557,7 +7606,7 @@
           "kind": "药材"
         }
       ],
-      "file": "/images/herbs/lecture/xiajing/xj-162.jpg"
+      "file": "/images/herbs/lecture/xiajing/xj-163.jpg"
     },
     {
       "name": "莱菔子",

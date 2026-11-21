@@ -117,7 +117,7 @@
   "summary": "补益肝肾，收涩固脱",
   "images": [
     {
-      "url": "/images/herbs/lecture/zhongjing/zj-109.jpg?v=5bc821ee",
+      "url": "/images/herbs/lecture/zhongjing/zj-109.jpg?v=0720af4b",
       "alt": "山茱萸（中经本草图109）",
       "credit": "用户提供 / 《中经本草》表格",
       "license": "用户提供，版权归原作者所有",
@@ -126,13 +126,22 @@
       "kind": "药材"
     },
     {
-      "file": "/images/herbs/lecture/zhongjing/zj-110.jpg?v=a895b842",
+      "file": "/images/herbs/lecture/zhongjing/zj-110.jpg?v=a089f839",
       "alt": "山茱萸（中经本草图110）",
       "credit": "用户提供 / 《中经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
-      "url": "/images/herbs/lecture/zhongjing/zj-110.jpg?v=a895b842"
+      "url": "/images/herbs/lecture/zhongjing/zj-110.jpg?v=a089f839"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-111.jpg?v=61e0351b",
+      "alt": "山茱萸（中经本草图111）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-111.jpg?v=61e0351b"
     }
   ],
   "docCount": 2

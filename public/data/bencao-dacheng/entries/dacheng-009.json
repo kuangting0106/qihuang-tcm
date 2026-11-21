@@ -118,7 +118,7 @@
   "summary": "清热泻火，滋阴润燥",
   "images": [
     {
-      "url": "/images/herbs/lecture/zhongjing/zj-037.jpg?v=d77d7cf2",
+      "url": "/images/herbs/lecture/zhongjing/zj-037.jpg?v=19407a3d",
       "alt": "知母（中经本草图37）",
       "credit": "用户提供 / 《中经本草》表格",
       "license": "用户提供，版权归原作者所有",
@@ -127,13 +127,22 @@
       "kind": "药材"
     },
     {
-      "file": "/images/herbs/lecture/zhongjing/zj-038.jpg?v=27c95d5f",
+      "file": "/images/herbs/lecture/zhongjing/zj-038.jpg?v=0f069ca8",
       "alt": "知母（中经本草图38）",
       "credit": "用户提供 / 《中经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "kind": "药材",
-      "url": "/images/herbs/lecture/zhongjing/zj-038.jpg?v=27c95d5f"
+      "url": "/images/herbs/lecture/zhongjing/zj-038.jpg?v=0f069ca8"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-039.jpg?v=91a19ff0",
+      "alt": "知母（中经本草图39）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-039.jpg?v=91a19ff0"
     }
   ],
   "docCount": 2

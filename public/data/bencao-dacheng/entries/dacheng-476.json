@@ -89,13 +89,22 @@
   "summary": "燥湿消痰，下气除满",
   "images": [
     {
-      "url": "/images/herbs/lecture/zhongjing/zj-105.jpg?v=8e1f7bc9",
-      "alt": "厚朴（中经本草图105）",
+      "url": "/images/herbs/lecture/zhongjing/zj-104.jpg?v=538e3564",
+      "alt": "厚朴（中经本草图104）",
       "credit": "用户提供 / 《中经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "latin": "Magnolia officinalis",
       "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/zhongjing/zj-105.jpg?v=098398cc",
+      "alt": "厚朴（中经本草图105）",
+      "credit": "用户提供 / 《中经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/zhongjing/zj-105.jpg?v=098398cc"
     }
   ],
   "docCount": 3,

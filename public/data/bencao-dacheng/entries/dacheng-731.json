@@ -82,6 +82,16 @@
   "categoryTitle": "平肝息风药",
   "id": "dacheng-731",
   "summary": "祛风，通络，止痉",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/supplement/supp-267.jpg?v=94012882",
+      "alt": "蕲蛇（补充本草图267）",
+      "credit": "用户提供 / 《补充本草》",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/supplement/supp-267.jpg?v=94012882"
+    }
+  ],
   "docCount": 1
 }

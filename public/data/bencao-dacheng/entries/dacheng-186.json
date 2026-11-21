@@ -88,13 +88,22 @@
   "summary": "祛风湿，通经络",
   "images": [
     {
-      "url": "/images/herbs/lecture/xiajing/xj-155.jpg?v=736c1616",
+      "url": "/images/herbs/lecture/xiajing/xj-155.jpg?v=0794870e",
       "alt": "威灵仙（下经本草图155）",
       "credit": "用户提供 / 《下经本草》表格",
       "license": "用户提供，版权归原作者所有",
       "sourceUrl": "",
       "latin": "Clematis chinensis",
       "kind": "药材"
+    },
+    {
+      "file": "/images/herbs/lecture/xiajing/xj-156.jpg?v=77ee5cbb",
+      "alt": "威灵仙（下经本草图156）",
+      "credit": "用户提供 / 《下经本草》表格",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/lecture/xiajing/xj-156.jpg?v=77ee5cbb"
     }
   ],
   "docCount": 1

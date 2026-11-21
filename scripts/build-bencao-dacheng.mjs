@@ -527,11 +527,14 @@ function applyMerges(list, mergeConfig) {
       }
       variants.push(variantOf(member))
       primary.aliases = [...new Set([...(primary.aliases ?? []), member.name, ...(member.aliases ?? [])])]
-      const seen = new Set(primary.images.map((image) => image.url))
-      for (const image of member.images) {
-        if (seen.has(image.url)) continue
-        primary.images.push(image)
-        seen.add(image.url)
+      const skipMemberImages = (group.excludeMemberImages ?? []).includes(memberName)
+      const seen = skipMemberImages ? new Set() : new Set(primary.images.map((image) => image.url))
+      if (!skipMemberImages) {
+        for (const image of member.images) {
+          if (seen.has(image.url)) continue
+          primary.images.push(image)
+          seen.add(image.url)
+        }
       }
       primary.charCount += member.charCount
       primary.docCount += member.docCount
