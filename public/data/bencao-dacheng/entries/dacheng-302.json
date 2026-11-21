@@ -88,6 +88,16 @@
   ],
   "id": "dacheng-302",
   "summary": "解热，止渴，健胃，通淋",
-  "images": [],
+  "images": [
+    {
+      "file": "/images/herbs/user/mihoutao.jpg?v=a64397ba",
+      "alt": "猕猴桃（用户提供图片 1）",
+      "credit": "用户提供",
+      "license": "用户提供，版权归原作者所有",
+      "sourceUrl": "",
+      "kind": "药材",
+      "url": "/images/herbs/user/mihoutao.jpg?v=a64397ba"
+    }
+  ],
   "docCount": 1
 }

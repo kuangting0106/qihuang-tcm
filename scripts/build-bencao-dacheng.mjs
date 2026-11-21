@@ -518,6 +518,17 @@ function applyMerges(list, mergeConfig) {
       console.warn(`合并跳过：找不到主条目 ${group.primary}`)
       continue
     }
+    const excludedMembers = new Set(group.excludeMemberImages ?? [])
+    const hasUsableMemberImage = (group.members ?? []).some((memberName) => {
+      if (excludedMembers.has(memberName)) return false
+      return (byName.get(memberName)?.images.length ?? 0) > 0
+    })
+    if (!primary.images.length && !hasUsableMemberImage) {
+      // 主条目本身无图，且成员的图片都属不同药用部位被排除时，
+      // 不再合并，让有图的成员保留为独立条目（其余无图条目会在构建末尾删除）。
+      console.warn(`合并跳过：主条目 ${group.primary} 没有可用图片`)
+      continue
+    }
     const variants = []
     for (const memberName of group.members ?? []) {
       const member = byName.get(memberName)
@@ -657,7 +668,12 @@ function main() {
     ? JSON.parse(fs.readFileSync(MERGE_FILE, 'utf8'))
     : { groups: [] }
   const merged = applyMerges(list, mergeConfig)
-  const finalList = merged.list
+  // 无图条目按用户要求整味移除，不再保留“图片待补”的占位条目。
+  const droppedNoImage = merged.list.filter((entry) => !entry.images.length)
+  const finalList = merged.list.filter((entry) => entry.images.length > 0)
+  if (droppedNoImage.length) {
+    console.warn(`移除无图条目 ${droppedNoImage.length} 味`)
+  }
   const redirects = merged.redirects
   saveIdRegistry(idRegistry)
 

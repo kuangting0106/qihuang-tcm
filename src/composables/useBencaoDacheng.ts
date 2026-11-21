@@ -17,6 +17,8 @@ const entryCache = new Map<string, BencaoDachengEntry>()
 async function fetchJson<T>(url: string): Promise<T> {
   const response = await fetch(url, { cache: 'no-cache' })
   if (!response.ok) throw new Error(`数据读取失败：${response.status}`)
+  const contentType = response.headers.get('content-type') ?? ''
+  if (!contentType.includes('json')) throw new Error('这味药材暂未收录或已下架')
   return (await response.json()) as T
 }
 

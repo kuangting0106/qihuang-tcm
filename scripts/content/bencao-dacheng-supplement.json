@@ -1354,7 +1354,16 @@
       "name": "草果",
       "aliases": [],
       "note": "",
-      "images": []
+      "images": [
+        {
+          "file": "/images/herbs/user/caoguo.jpg",
+          "alt": "草果（用户提供图片 1）",
+          "credit": "用户提供",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "id": "dacheng-281",
@@ -7767,7 +7776,16 @@
       "name": "合欢花",
       "aliases": [],
       "note": "",
-      "images": []
+      "images": [
+        {
+          "file": "/images/herbs/user/hehuanhua.jpg",
+          "alt": "合欢花（用户提供图片 1）",
+          "credit": "用户提供",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
     },
     {
       "id": "dacheng-545",
@@ -8109,6 +8127,78 @@
           "file": "/images/herbs/supplement/supp-265.jpg",
           "alt": "枳椇子（补充本草图265）",
           "credit": "用户提供 / 《补充本草》",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "id": "dacheng-280",
+      "name": "草豆蔻",
+      "aliases": [],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/user/caodoukou-1.jpg",
+          "alt": "草豆蔻（用户提供图片 1，植株）",
+          "credit": "用户提供",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        },
+        {
+          "file": "/images/herbs/user/caodoukou-2.jpg",
+          "alt": "草豆蔻（用户提供图片 2，药材）",
+          "credit": "用户提供",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "id": "dacheng-302",
+      "name": "猕猴桃",
+      "aliases": [],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/user/mihoutao.jpg",
+          "alt": "猕猴桃（用户提供图片 1）",
+          "credit": "用户提供",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "id": "dacheng-411",
+      "name": "木棉花",
+      "aliases": [],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/user/mumianhua.jpg",
+          "alt": "木棉花（用户提供图片 1）",
+          "credit": "用户提供",
+          "license": "用户提供，版权归原作者所有",
+          "sourceUrl": "",
+          "kind": "药材"
+        }
+      ]
+    },
+    {
+      "id": "dacheng-419",
+      "name": "谷精草",
+      "aliases": [],
+      "note": "",
+      "images": [
+        {
+          "file": "/images/herbs/user/gujingcao.jpg",
+          "alt": "谷精草（用户提供图片 1）",
+          "credit": "用户提供",
           "license": "用户提供，版权归原作者所有",
           "sourceUrl": "",
           "kind": "药材"
