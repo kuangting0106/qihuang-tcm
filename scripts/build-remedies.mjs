@@ -39,7 +39,19 @@ const onlyQz = argv.includes('--only-qz')
 const SKIP_BOOK_NUMBERS = new Set([47, 72, 78, 82, 87, 89, 91, 92, 93, 94, 95, 96, 102, 118, 121, 122, 357, 639, 657, 659])
 // 非方书：本草、药性、食疗、针灸、脉学、医籍考、医论/医话、经典理论书不作为偏方主源。
 const SKIP_BOOK_TITLE_RE =
-  /(本草|药性|食性|食物|救荒|炮炙|炮制|针灸|脉经|脉诀|脉学|医籍考|医论|医话|素问|灵枢|难经)/
+  /(本草|药性|食性|食物|救荒|炮炙|炮制|针灸|脉经|脉诀|脉学|医籍考|医论|医话|素问|灵枢|难经|子午流注|明堂灸经|奇经八脉|经穴汇解|经络全书|经络考|经络汇编|铜人指穴|神灸经纶|刺灸心法)/
+
+// 书名不含「针灸」的经络专书、或方书中的经络/腧穴章节，不能当偏方入库。
+// 同时保护「冲脉饮子」这类以经络名起首的方剂名。
+const MERIDIAN_SECTION_RE =
+  /^(手|足)?(太阴|少阴|厥阴|太阳|阳明|少阳)?[^，。；]{0,6}经([五六七八九十]+穴|穴分寸|穴歌|分寸歌|步穴歌|诸穴歌|穴$)|^(任|督|冲|带|阴维|阳维|阴跷|阳跷)脉|^奇经八脉$|^十二别络|^经正六合|^卧针迎随|^催气手法|分寸歌$/
+const FORMULA_NAME_RE = /(饮子|汤|丸|散|膏|丹|煎|方)$/
+
+function isMeridianSection(title) {
+  const text = String(title ?? '').trim()
+  if (!text || FORMULA_NAME_RE.test(text)) return false
+  return MERIDIAN_SECTION_RE.test(text)
+}
 
 const ERA = [
   ['现代', 100],
@@ -786,6 +798,8 @@ function parseTcmoc() {
     for (const section of sections) {
       // 跳过序、凡例、目录、本草、脉法等明显非方剂段
       if (/^(序|自序|原序|凡例|目录|跋|后序|进书表|校勘|重刊|出版|说明|前言|缘起|索引)/.test(section.title)) continue
+      // 经络/腧穴章节移交经络页，不混入偏方
+      if (isMeridianSection(section.title)) continue
       const recs = extractFromSection(section, meta, era)
       for (const rec of recs) {
         rec.id = `gx-${sha1(`${file}|${section.title}|${rec.raw}`).slice(0, 12)}`

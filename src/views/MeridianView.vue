@@ -7,6 +7,7 @@ import CitationBadge from '@/components/CitationBadge.vue'
 import SourcedText from '@/components/SourcedText.vue'
 import { fetchMeridianData } from '@/composables/useMeridianApi'
 import { meridianPlates } from '@/data/meridian-plates'
+import { MERIDIAN_CLASSICS, type MeridianClassicExcerpt } from '@/data/meridian-classics'
 import type { Acupoint, Meridian, Region } from '@/types/tcm'
 import { REGION_LABELS } from '@/types/tcm'
 
@@ -53,6 +54,52 @@ const platePoints = computed(() => {
     .map((id) => acupointsById.value.get(id))
     .filter((point): point is Acupoint => Boolean(point))
 })
+
+const classicExcerpts = computed<MeridianClassicExcerpt[]>(() =>
+  activeMeridian.value ? MERIDIAN_CLASSICS[activeMeridian.value.id] ?? [] : [],
+)
+const expandedClassics = ref<Record<string, boolean>>({})
+
+function classicKey(excerpt: MeridianClassicExcerpt) {
+  return `${excerpt.book}:${excerpt.chapter}`
+}
+
+function classicExpanded(excerpt: MeridianClassicExcerpt) {
+  return Boolean(expandedClassics.value[classicKey(excerpt)])
+}
+
+function toggleClassic(excerpt: MeridianClassicExcerpt) {
+  const key = classicKey(excerpt)
+  expandedClassics.value = { ...expandedClassics.value, [key]: !expandedClassics.value[key] }
+}
+
+/**
+ * 古籍原本逐条分段，OCR 有时把一句话拆成多段。
+ * 以「一、少商（井穴）」和「部位 / 证治 / 针灸 / 按」为段首，其余无标号短句并回上一段。
+ */
+function classicBlocks(excerpt: MeridianClassicExcerpt) {
+  const blocks: string[] = []
+  for (const raw of excerpt.passages) {
+    const text = String(raw ?? '').trim()
+    if (!text) continue
+    const startsSection = /^([一二三四五六七八九十百]+、|部位|证治|针灸|禁|〔)/.test(text)
+    if (startsSection || !blocks.length) blocks.push(text)
+    else blocks[blocks.length - 1] += text
+  }
+  return blocks
+}
+
+function visibleClassicBlocks(excerpt: MeridianClassicExcerpt) {
+  const blocks = classicBlocks(excerpt)
+  if (classicExpanded(excerpt)) return blocks
+  const preview = excerpt.book === '奇经八脉考' ? 2 : 3
+  return blocks.slice(0, preview)
+}
+
+function classicHasMore(excerpt: MeridianClassicExcerpt) {
+  const preview = excerpt.book === '奇经八脉考' ? 2 : 3
+  return classicBlocks(excerpt).length > preview
+}
 
 function chineseCount(value: number) {
   const digits = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九']
@@ -275,6 +322,7 @@ watch(
   () => activeMeridian.value?.id,
   (id) => {
     setDefaultViewForMeridian(id)
+    expandedClassics.value = {}
   },
 )
 </script>
@@ -700,6 +748,53 @@ watch(
           </div>
           <p class="meridian-detail__note">{{ activePlate.overview.note }}</p>
           <p class="meridian-detail__credit">{{ activePlate.credit }}</p>
+        </section>
+
+        <section v-if="classicExcerpts.length" id="meridian-classics" class="meridian-classics">
+          <header class="meridian-classics__head">
+            <div>
+              <span class="eyebrow">CLASSICAL TEXTS</span>
+              <h2>{{ activeMeridian?.name }}古籍原文</h2>
+            </div>
+            <p class="meridian-classics__lead">
+              摘录古籍中与本经相关的原文，保留书名、作者与卷次，未作改写。
+            </p>
+          </header>
+          <div class="meridian-classics__list">
+            <article
+              v-for="excerpt in classicExcerpts"
+              :key="classicKey(excerpt)"
+              class="meridian-classic"
+            >
+              <header class="meridian-classic__head">
+                <h3>{{ excerpt.heading }}</h3>
+                <p class="meridian-classic__cite">
+                  《{{ excerpt.book }}》{{ excerpt.author }} · {{ excerpt.dynasty }}
+                  <span>{{ excerpt.chapter }}</span>
+                </p>
+              </header>
+              <div class="meridian-classic__body">
+                <p v-for="(block, index) in visibleClassicBlocks(excerpt)" :key="index">{{ block }}</p>
+              </div>
+              <button
+                v-if="classicHasMore(excerpt)"
+                type="button"
+                class="meridian-classic__more"
+                @click="toggleClassic(excerpt)"
+              >
+                {{ classicExpanded(excerpt) ? '收起原文' : '展开全文' }}
+              </button>
+              <blockquote v-if="excerpt.poem" class="meridian-classic__poem">
+                <p class="meridian-classic__poem-title">
+                  {{ excerpt.poem.title }}<span>（{{ excerpt.poem.note }}）</span>
+                </p>
+                <p v-for="(line, index) in excerpt.poem.lines" :key="index">{{ line }}。</p>
+              </blockquote>
+            </article>
+          </div>
+          <p class="meridian-classics__warn">
+            古籍中的针刺深浅、留针时间与艾灸壮数均为原文记载，仅供学习核对；针灸操作须由执业医师完成。
+          </p>
         </section>
 
         <p class="model-disclaimer">
@@ -1266,6 +1361,149 @@ watch(
   opacity: 0.8;
 }
 
+.meridian-classics {
+  margin-top: 22px;
+  padding: 26px 28px 22px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 88% 0%, rgba(192, 57, 43, 0.05), transparent 42%),
+    var(--paper);
+  box-shadow: inset 0 0 60px rgba(92, 66, 44, 0.04);
+}
+
+.meridian-classics__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px 24px;
+  margin-bottom: 16px;
+}
+
+.meridian-classics__head h2 {
+  margin: 3px 0 0;
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  letter-spacing: 0.06em;
+}
+
+.meridian-classics__lead {
+  max-width: 30em;
+  margin: 0;
+  color: var(--ink-faint);
+  font-size: 0.72rem;
+  line-height: 1.85;
+}
+
+.meridian-classics__list {
+  display: grid;
+  gap: 16px;
+}
+
+.meridian-classic {
+  min-width: 0;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 252, 244, 0.62);
+}
+
+.meridian-classic__head h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.meridian-classic__cite {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+  margin: 6px 0 0;
+  color: var(--ink-faint);
+  font-size: 0.66rem;
+}
+
+.meridian-classic__cite span {
+  padding: 1px 7px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.62rem;
+}
+
+.meridian-classic__body p {
+  margin: 10px 0 0;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  line-height: 2;
+  text-align: justify;
+  overflow-wrap: anywhere;
+}
+
+.meridian-classic__body p:first-child {
+  margin-top: 12px;
+}
+
+.meridian-classic__more {
+  margin-top: 12px;
+  padding: 3px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--cinnabar);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.68rem;
+  transition:
+    border-color 0.16s ease,
+    background 0.16s ease;
+}
+
+.meridian-classic__more:hover {
+  border-color: var(--cinnabar);
+  background: rgba(192, 57, 43, 0.05);
+}
+
+.meridian-classic__poem {
+  margin: 16px 0 0;
+  padding: 12px 16px;
+  border-left: 2px solid var(--cinnabar);
+  background: rgba(192, 57, 43, 0.04);
+}
+
+.meridian-classic__poem p {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 0.85rem;
+  line-height: 1.95;
+  letter-spacing: 0.06em;
+}
+
+.meridian-classic__poem-title {
+  color: var(--cinnabar);
+  font-size: 0.9rem;
+}
+
+.meridian-classic__poem-title span {
+  color: var(--ink-faint);
+  font-family: inherit;
+  font-size: 0.66rem;
+  letter-spacing: 0.02em;
+}
+
+.meridian-classics__warn {
+  margin: 16px 0 0;
+  padding-top: 12px;
+  border-top: 1px dashed var(--line);
+  color: var(--ink-faint);
+  font-size: 0.7rem;
+  line-height: 1.85;
+}
+
 .stage-scroll {
   position: absolute;
   top: 78px;
@@ -1716,6 +1954,18 @@ watch(
   .meridian-detail__grid {
     grid-template-columns: 1fr 1fr;
     gap: 14px;
+  }
+
+  .meridian-classics {
+    padding: 20px 16px 18px;
+  }
+
+  .meridian-classics__head h2 {
+    font-size: 1.2rem;
+  }
+
+  .meridian-classic {
+    padding: 14px;
   }
 
   .point-panel {
