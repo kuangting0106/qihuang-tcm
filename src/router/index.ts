@@ -165,22 +165,40 @@ const router = createRouter({
       meta: { title: '古法锻炼 · 收藏页' },
     },
     {
-      path: '/lectures',
-      name: 'lectures',
-      component: () => import('@/views/LecturesView.vue'),
-      meta: { title: '名家讲堂' },
+      path: '/remedies',
+      name: 'remedies',
+      component: () => import('@/views/RemediesView.vue'),
+      meta: { title: '民间偏方集录' },
     },
     {
-      path: '/lectures/li-ke',
+      path: '/remedies/:id',
+      name: 'remedy-detail',
+      component: () => import('@/views/RemedyDetailView.vue'),
+      meta: { title: '民间偏方 · 原文' },
+    },
+    {
+      path: '/lectures',
+      redirect: { name: 'remedies' },
+    },
+    {
+      path: '/reading/li-ke',
       name: 'li-ke-outline',
       component: () => import('@/views/LiKeOutlineView.vue'),
       meta: { title: '李可医书经验提纲' },
     },
     {
-      path: '/lectures/li-ke/:detailId',
+      path: '/reading/li-ke/:detailId',
       name: 'li-ke-detail',
       component: () => import('@/views/LiKeDetailView.vue'),
       meta: { title: '李可医书经验提纲 · 全文详解' },
+    },
+    {
+      path: '/lectures/li-ke',
+      redirect: { name: 'li-ke-outline' },
+    },
+    {
+      path: '/lectures/li-ke/:detailId',
+      redirect: (to) => ({ name: 'li-ke-detail', params: { detailId: to.params.detailId } }),
     },
     {
       path: '/processing',

@@ -456,6 +456,165 @@ const server = createServer(async (req, res) => {
     return
   }
 
+  // ---- 民间偏方 ----
+  if (url.pathname === '/api/remedies/meta' && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      const where = `duplicate_of = ''`
+      const total = db.prepare(`SELECT COUNT(*) AS n FROM remedies WHERE ${where}`).get().n
+      const categories = db
+        .prepare(
+          `SELECT category AS name, COUNT(*) AS count FROM remedies WHERE ${where}
+           GROUP BY category ORDER BY count DESC`,
+        )
+        .all()
+      const eras = db
+        .prepare(
+          `SELECT era AS name, COUNT(*) AS count FROM remedies WHERE ${where}
+           GROUP BY era ORDER BY MAX(era_rank) DESC, count DESC`,
+        )
+        .all()
+      const safety = db
+        .prepare(
+          `SELECT safety_level AS level, COUNT(*) AS count FROM remedies WHERE ${where}
+           GROUP BY safety_level`,
+        )
+        .all()
+      sendCached(req, res, 200, {
+        total,
+        categories,
+        eras,
+        safety: safety.map((item) => ({
+          level: item.level,
+          label: item.level === 'high' ? '高风险' : item.level === 'medium' ? '需谨慎' : '一般',
+          count: item.count,
+        })),
+      })
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  if (url.pathname === '/api/remedies' && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      const q = (url.searchParams.get('q') ?? '').trim()
+      const category = (url.searchParams.get('category') ?? '').trim()
+      const era = (url.searchParams.get('era') ?? '').trim()
+      const safety = (url.searchParams.get('safety') ?? '').trim()
+      const page = Math.max(1, Number(url.searchParams.get('page') ?? 1) || 1)
+      const pageSize = Math.min(
+        60,
+        Math.max(1, Number(url.searchParams.get('pageSize') ?? 24) || 24),
+      )
+      const conditions = ["duplicate_of = ''"]
+      const params = []
+      if (category) {
+        conditions.push('category = ?')
+        params.push(category)
+      }
+      if (era) {
+        conditions.push('era = ?')
+        params.push(era)
+      }
+      if (safety) {
+        conditions.push('safety_level = ?')
+        params.push(safety)
+      }
+      if (q) {
+        conditions.push('search_text LIKE ?')
+        params.push(`%${q}%`)
+      }
+      const where = conditions.join(' AND ')
+      const total = db.prepare(`SELECT COUNT(*) AS n FROM remedies WHERE ${where}`).get(...params).n
+      const orderBy = q
+        ? `CASE WHEN title = ? THEN 0 WHEN title LIKE ? THEN 1 WHEN indications LIKE ? THEN 2 ELSE 3 END,
+           era_rank DESC, id`
+        : `era_rank DESC, id`
+      const orderParams = q ? [q, `%${q}%`, `%${q}%`] : []
+      const rows = db
+        .prepare(
+          `SELECT id, title, category, subcategory, era, book, dynasty, safety_level,
+                  indications, formula, usage, section
+           FROM remedies WHERE ${where}
+           ORDER BY ${orderBy}
+           LIMIT ? OFFSET ?`,
+        )
+        .all(...params, ...orderParams, pageSize, (page - 1) * pageSize)
+      sendCached(req, res, 200, {
+        total,
+        page,
+        pageSize,
+        pages: Math.ceil(total / pageSize),
+        items: rows.map((row) => ({
+          id: row.id,
+          title: row.title,
+          category: row.category,
+          subcategory: row.subcategory,
+          era: row.era,
+          book: row.book,
+          dynasty: row.dynasty,
+          safetyLevel: row.safety_level,
+          indications: row.indications,
+          formula: row.formula,
+          usage: row.usage,
+          section: row.section,
+        })),
+      })
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
+  const remedyMatch = url.pathname.match(/^\/api\/remedies\/([^/]+)$/)
+  if (remedyMatch && req.method === 'GET') {
+    const db = getDb()
+    if (!db) {
+      sendDbUnavailable(res)
+      return
+    }
+    try {
+      const id = decodeParam(remedyMatch[1])
+      const row = db.prepare('SELECT * FROM remedies WHERE id = ?').get(id)
+      if (!row) {
+        send(res, 404, { error: 'not-found' })
+        return
+      }
+      const extras = jsonParse(row.data_json) ?? {}
+      sendCached(req, res, 200, {
+        ...extras,
+        id: row.id,
+        title: row.title,
+        category: row.category,
+        subcategory: row.subcategory,
+        era: row.era,
+        eraRank: row.era_rank,
+        book: row.book,
+        dynasty: row.dynasty,
+        safetyLevel: row.safety_level,
+        indications: row.indications,
+        formula: row.formula,
+        usage: row.usage,
+        section: row.section,
+        duplicateOf: row.duplicate_of,
+        raw: row.raw,
+      })
+    } catch {
+      send(res, 500, { error: 'db-query-failed' })
+    }
+    return
+  }
+
   // ---- 只读数据接口（SQLite） ----
   if (url.pathname === '/api/sources' && req.method === 'GET') {
     const db = getDb()

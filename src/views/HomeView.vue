@@ -143,32 +143,32 @@ const modules = computed(() => [
       <div class="section-head">
         <div>
           <p class="eyebrow">COLLECTIONS / 新栏目</p>
-          <h2>名家讲堂与药材炮制</h2>
+          <h2>民间偏方与药材炮制</h2>
         </div>
-        <p>视频课件与炮制方法都按“来源先于内容”收录；未核来源的条目先标待收录。</p>
+        <p>偏方按病症归档并保留原文出处；炮制方法回引药典与规范，未核来源的条目先标待收录。</p>
       </div>
 
       <div class="collection-grid">
-        <RouterLink to="/lectures" class="collection-card collection-card--lectures">
+        <RouterLink to="/remedies" class="collection-card collection-card--lectures">
           <div class="collection-card__top">
-            <span class="collection-card__kicker">LECTURE HALL / 名家讲堂</span>
-            <span class="collection-card__status">8 集已收录</span>
+            <span class="collection-card__kicker">FOLK REMEDIES / 民间偏方</span>
+            <span class="collection-card__status">原文摘录</span>
           </div>
-          <h3>名家讲堂</h3>
+          <h3>民间偏方集录</h3>
           <p>
-            按“医家 + 课程”收录视频。视频或下方直接注明是哪位医家的什么课程，
-            不再拆成伤寒论、傅青主女科等小类。
+            收录《泉州民间偏方验方选辑》与历代方书中的方剂，按病症重新分类，
+            现代、近代条目排在前面；每条都保留原书栏目与完整原文。
           </p>
           <ul>
-            <li>倪海厦 · 针灸大成</li>
-            <li>已收 01–07、12 集</li>
-            <li>第 08–11 集待补</li>
+            <li>内科 · 外科 · 妇科 · 儿科 · 五官</li>
+            <li>现代与历代方书合编</li>
+            <li>高风险方保留原文并显著警示</li>
           </ul>
           <div class="collection-card__foot">
-            <span>进入讲堂</span>
+            <span>进入偏方栏</span>
             <span aria-hidden="true">→</span>
           </div>
-          <span class="collection-card__seal" aria-hidden="true">讲</span>
+          <span class="collection-card__seal" aria-hidden="true">方</span>
         </RouterLink>
 
         <RouterLink to="/processing" class="collection-card collection-card--processing">

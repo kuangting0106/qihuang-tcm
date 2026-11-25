@@ -108,9 +108,9 @@ watch(detailId, load, { immediate: true })
   <div class="page detail-page">
     <div class="container">
       <nav class="detail-breadcrumb" aria-label="面包屑">
-        <RouterLink to="/lectures">名家讲堂</RouterLink>
+        <RouterLink to="/reading/li-ke">研读提纲</RouterLink>
         <span>/</span>
-        <RouterLink to="/lectures/li-ke">李可医书经验提纲</RouterLink>
+        <RouterLink to="/reading/li-ke">李可医书经验提纲</RouterLink>
         <span>/</span>
         <em>{{ detail?.title || '全文详解' }}</em>
       </nav>
@@ -120,7 +120,7 @@ watch(detailId, load, { immediate: true })
       <div v-else-if="error" class="detail-state detail-state--error paper-panel" role="alert">
         <strong>没有找到这篇全文</strong>
         <p>{{ error }}。请返回学习纲要重新选择。</p>
-        <RouterLink class="btn btn--primary btn--small" to="/lectures/li-ke">
+        <RouterLink class="btn btn--primary btn--small" to="/reading/li-ke">
           返回学习纲要
         </RouterLink>
       </div>
@@ -160,7 +160,7 @@ watch(detailId, load, { immediate: true })
                 {{ section.title }}
               </a>
             </nav>
-            <RouterLink class="detail-toc__back" to="/lectures/li-ke">← 返回学习纲要</RouterLink>
+            <RouterLink class="detail-toc__back" to="/reading/li-ke">← 返回学习纲要</RouterLink>
           </aside>
 
           <div class="detail-content">
@@ -183,7 +183,7 @@ watch(detailId, load, { immediate: true })
               <RouterLink
                 v-if="previous"
                 class="detail-pager__item detail-pager__item--prev"
-                :to="`/lectures/li-ke/${previous.id}`"
+                :to="`/reading/li-ke/${previous.id}`"
               >
                 <small>上一篇 · {{ previous.number }}</small>
                 <strong>← {{ previous.title }}</strong>
@@ -193,7 +193,7 @@ watch(detailId, load, { immediate: true })
               <RouterLink
                 v-if="next"
                 class="detail-pager__item detail-pager__item--next"
-                :to="`/lectures/li-ke/${next.id}`"
+                :to="`/reading/li-ke/${next.id}`"
               >
                 <small>下一篇 · {{ next.number }}</small>
                 <strong>{{ next.title }} →</strong>

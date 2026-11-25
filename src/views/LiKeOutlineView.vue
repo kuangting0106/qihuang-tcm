@@ -75,7 +75,7 @@ import { pulseMediaHref } from '@/data/pulse-media'
               <RouterLink
                 v-for="module in stage.modules"
                 :key="module.id"
-                :to="`/lectures/li-ke/${module.id}`"
+                :to="`/reading/li-ke/${module.id}`"
                 :title="`查看《${module.title}》全文`"
               >
                 <span>{{ module.number }}</span>
@@ -102,7 +102,7 @@ import { pulseMediaHref } from '@/data/pulse-media'
               <span class="module-card__number">{{ module.number }}</span>
               <div>
                 <h3>
-                  <RouterLink :to="`/lectures/li-ke/${module.id}`" :title="`查看《${module.title}》全文`">
+                  <RouterLink :to="`/reading/li-ke/${module.id}`" :title="`查看《${module.title}》全文`">
                     {{ module.title }}
                   </RouterLink>
                 </h3>
@@ -126,7 +126,7 @@ import { pulseMediaHref } from '@/data/pulse-media'
               <div class="module-card__links">
                 <RouterLink
                   class="module-card__link module-card__link--detail"
-                  :to="`/lectures/li-ke/${module.id}`"
+                  :to="`/reading/li-ke/${module.id}`"
                 >
                   查看全文 →
                 </RouterLink>
@@ -214,7 +214,7 @@ import { pulseMediaHref } from '@/data/pulse-media'
       <footer class="like-foot">
         <p>
           继续读：
-          <RouterLink to="/lectures">名家讲堂</RouterLink>
+          <RouterLink to="/reading/li-ke">研读提纲</RouterLink>
           <span>·</span>
           <RouterLink to="/methods/pulse">脉诊篇</RouterLink>
           <span>·</span>

@@ -18,6 +18,31 @@ const bencaoDir = path.join(root, 'public', 'data', 'bencao-lectures')
 const classicsDir = path.join(root, 'public', 'data', 'classics')
 const schemaPath = path.join(root, 'scripts', 'schema.sql')
 const dbPath = process.env.QIHUANG_DB_FILE ?? path.join(root, 'data', 'qihuang.db')
+const remediesPath = path.join(root, 'data', 'remedies.jsonl')
+
+function forEachJsonl(file, onRecord) {
+  const fd = fs.openSync(file, 'r')
+  const chunk = Buffer.allocUnsafe(4 * 1024 * 1024)
+  let rest = ''
+  try {
+    for (;;) {
+      const bytes = fs.readSync(fd, chunk, 0, chunk.length, null)
+      if (!bytes) break
+      rest += chunk.toString('utf8', 0, bytes)
+      let index = rest.indexOf('\n')
+      while (index !== -1) {
+        const line = rest.slice(0, index).trim()
+        rest = rest.slice(index + 1)
+        if (line) onRecord(JSON.parse(line))
+        index = rest.indexOf('\n')
+      }
+    }
+    const last = rest.trim()
+    if (last) onRecord(JSON.parse(last))
+  } finally {
+    fs.closeSync(fd)
+  }
+}
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'))
@@ -157,6 +182,12 @@ const insertCase = db.prepare(
      (id, title, category, summary, source_work, source_locator, sort_order, data_json)
    VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
 )
+const insertRemedy = db.prepare(
+  `INSERT OR IGNORE INTO remedies
+     (id, title, category, subcategory, era, era_rank, book, dynasty, safety_level,
+      indications, formula, usage, section, search_text, duplicate_of, raw, data_json)
+   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+)
 
 const counts = {
   sources: 0,
@@ -171,6 +202,7 @@ const counts = {
   classicBooks: 0,
   classicSections: 0,
   cases: 0,
+  remedies: 0,
   mijingziFormulas: 0,
 }
 
@@ -465,6 +497,58 @@ try {
     counts.cases += 1
   })
 
+  if (fs.existsSync(remediesPath)) {
+    forEachJsonl(remediesPath, (item) => {
+      const { raw = '' } = item
+      const extras = {
+        origin: item.origin ?? '',
+        author: item.author ?? '',
+        year: item.year ?? '',
+        chapter: item.chapter ?? '',
+        cautions: item.cautions ?? '',
+        appendix: item.appendix ?? '',
+        source: item.source ?? '',
+        sourceNote: item.sourceNote ?? '',
+        toxicTags: item.toxicTags ?? [],
+        groupKey: item.groupKey ?? '',
+      }
+      const searchText = [
+        item.title,
+        item.category,
+        item.subcategory,
+        item.indications,
+        item.formula,
+        item.book,
+        item.section,
+      ]
+        .filter(Boolean)
+        .join(' ')
+        .slice(0, 300)
+      const inserted = insertRemedy.run(
+        item.id,
+        item.title ?? item.id,
+        item.category ?? '',
+        item.subcategory ?? '',
+        item.era ?? '',
+        item.eraRank ?? 0,
+        item.book ?? '',
+        item.dynasty ?? '',
+        item.safetyLevel ?? 'low',
+        item.indications ?? '',
+        item.formula ?? '',
+        item.usage ?? '',
+        item.section ?? '',
+        searchText,
+        item.duplicateOf ?? '',
+        raw,
+        JSON.stringify(extras),
+      )
+      if (inserted.changes) counts.remedies += 1
+    })
+  } else {
+    console.warn(`未找到 ${path.relative(root, remediesPath)}，跳过偏方入库。`)
+  }
+
   insertMeta.run('classic_index', JSON.stringify(classicIndex))
 
   db.exec('COMMIT')
@@ -494,6 +578,7 @@ console.log(
     `classicBooks=${counts.classicBooks}`,
     `classicSections=${counts.classicSections}`,
     `cases=${counts.cases}`,
+    `remedies=${counts.remedies}`,
     `mijingzi=${counts.mijingziFormulas}`,
   ].join('  '),
 )

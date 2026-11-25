@@ -173,6 +173,27 @@ CREATE TABLE cases (
   data_json TEXT NOT NULL
 );
 
+-- 民间偏方：泉州民间验方与古籍方，按病症分类。
+CREATE TABLE remedies (
+  id TEXT PRIMARY KEY,
+  title TEXT NOT NULL,
+  category TEXT NOT NULL DEFAULT '',
+  subcategory TEXT NOT NULL DEFAULT '',
+  era TEXT NOT NULL DEFAULT '',
+  era_rank INTEGER NOT NULL DEFAULT 0,
+  book TEXT NOT NULL DEFAULT '',
+  dynasty TEXT NOT NULL DEFAULT '',
+  safety_level TEXT NOT NULL DEFAULT 'low',
+  indications TEXT NOT NULL DEFAULT '',
+  formula TEXT NOT NULL DEFAULT '',
+  usage TEXT NOT NULL DEFAULT '',
+  section TEXT NOT NULL DEFAULT '',
+  search_text TEXT NOT NULL DEFAULT '',
+  duplicate_of TEXT NOT NULL DEFAULT '',
+  raw TEXT NOT NULL DEFAULT '',
+  data_json TEXT NOT NULL
+);
+
 CREATE INDEX idx_formulas_name ON formulas(name);
 CREATE INDEX idx_formulas_pinyin ON formulas(pinyin);
 CREATE INDEX idx_formula_composition_formula ON formula_composition(formula_id);
@@ -183,3 +204,7 @@ CREATE INDEX idx_sources_id ON sources(id);
 CREATE INDEX idx_meridians_category ON meridians(category);
 CREATE INDEX idx_acupoints_meridian ON acupoints(meridian_id);
 CREATE INDEX idx_classic_sections_book ON classic_sections(book_id);
+CREATE INDEX idx_remedies_category ON remedies(category, subcategory);
+CREATE INDEX idx_remedies_era ON remedies(era_rank DESC, id);
+CREATE INDEX idx_remedies_safety ON remedies(safety_level);
+CREATE INDEX idx_remedies_book ON remedies(book);
