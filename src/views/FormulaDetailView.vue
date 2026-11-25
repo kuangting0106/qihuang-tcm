@@ -414,14 +414,14 @@ const effectiveNote = computed(() => {
   if (published) {
     return { text: published, local: false, citationIds: [] as string[] }
   }
-  if (formula.value?.modernExplanation) {
-    return {
-      text: formula.value.modernExplanation.text,
-      local: false,
-      citationIds: formula.value.modernExplanation.citationIds,
-    }
-  }
+  // 讲义原文已合并到上方「病症解说和用药思路」，这里不再回退，避免两处重复。
   return null
+})
+
+const hasSpecificEffects = computed(() => {
+  const text = formula.value?.effects?.text?.trim() ?? ''
+  if (!text) return false
+  return !/讲义未单列功效概括|详见下方方证与讲解/.test(text)
 })
 
 const noteCode = computed(() => {
@@ -660,8 +660,18 @@ watch(
 
       <section class="symptom-layout">
         <div class="effect-card">
-          <span class="eyebrow">EFFECT / 功效</span>
-          <SourcedText :claim="formula.effects" block />
+          <span class="eyebrow">LECTURE / 病症解说和用药思路</span>
+          <div v-if="hasSpecificEffects" class="effect-specific">
+            <span class="effect-specific__label">功效</span>
+            <SourcedText :claim="formula.effects" block />
+          </div>
+          <SourcedText
+            v-if="formula.modernExplanation?.text"
+            :claim="formula.modernExplanation"
+            label="讲义原文"
+            block
+          />
+          <SourcedText v-else-if="!hasSpecificEffects" :claim="formula.effects" block />
           <dl class="effect-meta">
             <div><dt>药味</dt><dd>{{ formula.composition.length ? `${formula.composition.length} 味` : '原方见原文' }}</dd></div>
             <div><dt>出处</dt><dd>{{ sourceFullLabel }}</dd></div>
@@ -785,25 +795,6 @@ watch(
             <span v-else>症状与方名均回引《伤寒论》相关条文；带下划线的词可悬停看注解，点“划线标注”可补充注解并发布到网页。</span>
           </div>
         </div>
-      </section>
-
-      <section v-if="formula.modernExplanation?.text" class="explanation-section paper-panel">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">LECTURE / 讲义讲解</p>
-            <h2>病症解说与用药思路</h2>
-          </div>
-          <CitationBadge
-            :citation-ids="formula.modernExplanation.citationIds"
-            label="讲义原文"
-            tone="muted"
-            compact
-          />
-        </div>
-        <SourcedText :claim="formula.modernExplanation" block />
-        <p class="explanation-note">
-          以上为讲义讲解整理，用来说明当时的辨证与用药思路，不是诊断标准，也不构成自行用药建议。
-        </p>
       </section>
 
       <div v-if="isLarge" class="large-hint paper-panel">
@@ -1266,6 +1257,18 @@ watch(
   line-height: 1.9;
 }
 
+.effect-specific {
+  margin-top: 4px;
+}
+
+.effect-specific__label {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--ink-faint);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+}
+
 .effect-meta {
   display: grid;
   gap: 8px;
@@ -1553,27 +1556,6 @@ watch(
   margin-top: 3px;
   color: var(--ink-soft);
   font-size: 0.8rem;
-}
-
-.explanation-section {
-  margin-top: 18px;
-  padding: 18px 20px;
-}
-
-.explanation-section :deep(.sourced-text__content) {
-  color: var(--ink);
-  font-family: var(--serif);
-  font-size: 0.95rem;
-  line-height: 1.95;
-}
-
-.explanation-note {
-  margin-top: 10px;
-  padding-top: 9px;
-  border-top: 1px dashed var(--line);
-  color: var(--ink-faint);
-  font-size: 0.68rem;
-  line-height: 1.6;
 }
 
 .modification-section,
