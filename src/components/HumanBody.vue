@@ -14,12 +14,14 @@ const props = withDefaults(
     selectedId?: string | null
     labelMode?: 'auto' | 'all' | 'selected'
     showThrough?: boolean
+    meridianNames?: Record<string, string>
   }>(),
   {
     activeMeridian: null,
     selectedId: null,
     labelMode: 'auto',
     showThrough: true,
+    meridianNames: () => ({}),
   },
 )
 
@@ -34,6 +36,47 @@ const labelLines = ref<SVGSVGElement | null>(null)
 const webglError = ref('')
 const modelLoading = ref(true)
 const hoverId = ref<string | null>(null)
+const tipPos = ref({ x: 0, y: 0 })
+
+const hoverPoint = computed(() =>
+  hoverId.value ? props.allAcupoints.find((p) => p.id === hoverId.value) ?? null : null,
+)
+const hoverMeridian = computed(() =>
+  hoverPoint.value ? props.meridianNames[hoverPoint.value.meridianId] ?? '' : '',
+)
+const hoverTypes = computed(() =>
+  hoverPoint.value ? hoverPoint.value.pointTypes.map((t) => t.label).join(' · ') : '',
+)
+const tipStyle = computed(() => {
+  const w = host.value?.clientWidth ?? 640
+  const h = host.value?.clientHeight ?? 640
+  const tipW = 258
+  const tipH = 196
+  let x = tipPos.value.x + 18
+  let y = tipPos.value.y + 18
+  if (x + tipW > w - 8) x = tipPos.value.x - tipW - 18
+  if (y + tipH > h - 8) y = h - tipH - 8
+  return {
+    left: `${Math.max(8, x)}px`,
+    top: `${Math.max(8, y)}px`,
+  }
+})
+
+function setTipFromPointer(event: PointerEvent) {
+  const rect = host.value?.getBoundingClientRect()
+  if (!rect) return
+  tipPos.value = { x: event.clientX - rect.left, y: event.clientY - rect.top }
+}
+
+function setTipFromElement(element: HTMLElement) {
+  const hostRect = host.value?.getBoundingClientRect()
+  const rect = element.getBoundingClientRect()
+  if (!hostRect) return
+  tipPos.value = {
+    x: rect.left - hostRect.left + rect.width / 2,
+    y: rect.top - hostRect.top + rect.height / 2,
+  }
+}
 
 const visibleSet = computed(() => new Set(props.visibleIds))
 const autoLabelIds = computed(() => new Set(props.activeMeridian?.acupointIds ?? []))
@@ -64,7 +107,26 @@ const labelOffsets: Record<string, [number, number]> = {
   LU6: [124, -34],
   LU7: [152, 18],
   LU9: [164, 78],
-  LI4: [-24, 12],
+  LI1: [-78, 60],
+  LI2: [-78, 48],
+  LI3: [-78, 36],
+  LI4: [-78, 24],
+  LI5: [-78, 12],
+  LI6: [-78, 2],
+  LI7: [-78, -6],
+  LI8: [-78, -14],
+  LI9: [-78, -20],
+  LI10: [-78, -26],
+  LI11: [-78, -32],
+  LI12: [-78, -38],
+  LI13: [-78, -44],
+  LI14: [-78, -50],
+  LI15: [-78, -56],
+  LI16: [-84, -62],
+  LI17: [-88, -66],
+  LI18: [-88, -72],
+  LI19: [-90, -78],
+  LI20: [-90, -84],
   HT7: [-28, -8],
   SI3: [-24, 16],
   PC6: [-24, -18],
@@ -112,6 +174,16 @@ function updateLabels() {
   const height = host.value.clientHeight
   const offsetScale = Math.min(1, width / 700)
   const projected = new THREE.Vector3()
+  const entries: Array<{
+    id: string
+    btn: HTMLButtonElement
+    line: SVGLineElement
+    sx: number
+    sy: number
+    lx: number
+    ly: number
+    isRight: boolean
+  }> = []
 
   for (const p of props.allAcupoints) {
     const btn = labels.get(p.id)
@@ -161,20 +233,43 @@ function updateLabels() {
       : Math.max(labelWidth + 10, Math.min(width - 8, lx))
     ly = Math.min(height - 16, Math.max(18, ly))
 
-    btn.style.display = ''
-    btn.classList.toggle('point-label--left', !isRight)
-    btn.classList.toggle('point-label--right', isRight)
-    btn.classList.toggle('point-label--selected', props.selectedId === p.id)
-    btn.classList.toggle('point-label--hover', hoverId.value === p.id)
-    btn.style.left = `${lx}px`
-    btn.style.top = `${ly}px`
+    entries.push({ id: p.id, btn, line, sx, sy, lx, ly, isRight })
+  }
 
-    line.style.display = ''
-    line.setAttribute('x1', sx.toFixed(1))
-    line.setAttribute('y1', sy.toFixed(1))
-    line.setAttribute('x2', (isRight ? lx - 3 : lx + 3).toFixed(1))
-    line.setAttribute('y2', ly.toFixed(1))
-    line.classList.toggle('label-line--selected', props.selectedId === p.id)
+  // 同侧标签按纵向顺序避让，引线仍指回原穴位。
+  const gap = Math.max(15, Math.round(19 * Math.max(0.82, offsetScale)))
+  for (const side of [true, false]) {
+    const column = entries.filter((entry) => entry.isRight === side).sort((a, b) => a.ly - b.ly)
+    if (column.length === 0) continue
+    for (let i = 1; i < column.length; i++) {
+      if (column[i].ly < column[i - 1].ly + gap) column[i].ly = column[i - 1].ly + gap
+    }
+    const overflow = column[column.length - 1].ly - (height - 16)
+    if (overflow > 0) {
+      const usable = Math.max(0, height - 34)
+      const step = Math.min(gap, usable / Math.max(1, column.length - 1))
+      const start = Math.max(16, height - 16 - step * (column.length - 1))
+      column.forEach((entry, index) => {
+        entry.ly = start + index * step
+      })
+    }
+  }
+
+  for (const entry of entries) {
+    entry.btn.style.display = ''
+    entry.btn.classList.toggle('point-label--left', !entry.isRight)
+    entry.btn.classList.toggle('point-label--right', entry.isRight)
+    entry.btn.classList.toggle('point-label--selected', props.selectedId === entry.id)
+    entry.btn.classList.toggle('point-label--hover', hoverId.value === entry.id)
+    entry.btn.style.left = `${entry.lx}px`
+    entry.btn.style.top = `${entry.ly}px`
+
+    entry.line.style.display = ''
+    entry.line.setAttribute('x1', entry.sx.toFixed(1))
+    entry.line.setAttribute('y1', entry.sy.toFixed(1))
+    entry.line.setAttribute('x2', (entry.isRight ? entry.lx - 3 : entry.lx + 3).toFixed(1))
+    entry.line.setAttribute('y2', entry.ly.toFixed(1))
+    entry.line.classList.toggle('label-line--selected', props.selectedId === entry.id)
   }
 }
 
@@ -186,7 +281,8 @@ function updateMarkers() {
     if (markerGroup) markerGroup.visible = visible
     const selected = props.selectedId === id
     const hovered = hoverId.value === id
-    marker.scale.setScalar(selected ? 1.65 : hovered ? 1.35 : 1)
+    const scaleFactor = (marker.userData.scaleFactor as number) ?? 1
+    marker.scale.setScalar((selected ? 1.65 : hovered ? 1.35 : 1) * scaleFactor)
     const mat = marker.material as THREE.MeshStandardMaterial
     if (mat) {
       mat.emissiveIntensity = selected ? 1.7 : hovered ? 1.3 : 0.9
@@ -195,7 +291,9 @@ function updateMarkers() {
     const halo = marker.userData.halo as THREE.Sprite | undefined
     if (halo) {
       halo.material.opacity = selected ? 0.9 : hovered ? 0.72 : 0.48
-      halo.scale.setScalar(selected ? 0.12 : 0.085)
+      halo.scale.setScalar(
+        (selected ? 0.12 : 0.085) * ((marker.userData.haloFactor as number) ?? 1),
+      )
     }
   }
   updateLabels()
@@ -249,33 +347,36 @@ function createMarkers() {
   const texture = haloTexture()
 
   for (const p of props.allAcupoints) {
+    if (p.plateOnly) continue
     const group = new THREE.Group()
     group.position.set(...p.coordinates)
 
     const material = new THREE.MeshStandardMaterial({
-      color: 0xb23a2a,
-      emissive: 0x5a1c12,
-      emissiveIntensity: 0.9,
-      roughness: 0.3,
-      metalness: 0.32,
+      color: 0x9e3a2a,
+      emissive: 0x3a120c,
+      emissiveIntensity: 0.45,
+      roughness: 0.52,
+      metalness: 0.12,
       transparent: true,
-      opacity: 0.98,
+      opacity: 0.97,
     })
     const marker = new THREE.Mesh(markerGeometry, material)
     marker.userData.pointId = p.id
+    marker.userData.scaleFactor = p.region === 'head-neck' ? 0.42 : 1
+    marker.userData.haloFactor = p.region === 'head-neck' ? 0.28 : 1
     group.add(marker)
 
     const halo = new THREE.Sprite(
       new THREE.SpriteMaterial({
         map: texture,
-        color: 0xd55a3a,
+        color: 0xc4573c,
         transparent: true,
-        opacity: 0.38,
+        opacity: 0.22,
         depthWrite: false,
         blending: THREE.AdditiveBlending,
       }),
     )
-    halo.scale.setScalar(0.085)
+    halo.scale.setScalar(0.075 * (marker.userData.haloFactor as number))
     group.add(halo)
     marker.userData.halo = halo
     marker.userData.group = group
@@ -298,6 +399,7 @@ function createMarkers() {
     })
     btn.addEventListener('pointerenter', () => {
       hoverId.value = p.id
+      setTipFromElement(btn)
       emit('hover', p.id)
       updateMarkers()
     })
@@ -339,15 +441,15 @@ function buildPath(meridian: Meridian | null | undefined) {
   if (!meridian?.path || meridian.path.length < 2) return
   const points = meridian.path.map((p) => new THREE.Vector3(...p))
   const curve = new THREE.CatmullRomCurve3(points, false, 'catmullrom', 0.35)
-  const geometry = new THREE.TubeGeometry(curve, 80, 0.0055, 6, false)
+  const geometry = new THREE.TubeGeometry(curve, 80, 0.0048, 6, false)
   const material = new THREE.MeshStandardMaterial({
-    color: 0xb23a2a,
-    emissive: 0x5a1c12,
-    emissiveIntensity: 1.1,
-    roughness: 0.3,
-    metalness: 0.3,
+    color: 0x9e3a2a,
+    emissive: 0x3a120c,
+    emissiveIntensity: 0.45,
+    roughness: 0.5,
+    metalness: 0.12,
     transparent: true,
-    opacity: 0.9,
+    opacity: 0.92,
     depthWrite: false,
   })
   pathGroup = new THREE.Group()
@@ -355,11 +457,11 @@ function buildPath(meridian: Meridian | null | undefined) {
   tube.renderOrder = 6
   pathGroup.add(tube)
 
-  const glowGeometry = new THREE.TubeGeometry(curve, 80, 0.013, 6, false)
+  const glowGeometry = new THREE.TubeGeometry(curve, 80, 0.011, 6, false)
   const glowMaterial = new THREE.MeshBasicMaterial({
-    color: 0xd55a3a,
+    color: 0xc4573c,
     transparent: true,
-    opacity: 0.1,
+    opacity: 0.055,
     depthWrite: false,
     blending: THREE.AdditiveBlending,
   })
@@ -370,7 +472,7 @@ function buildPath(meridian: Meridian | null | undefined) {
   for (const t of [0.25, 0.5, 0.75]) {
     const point = curve.getPointAt(t)
     const tangent = curve.getTangentAt(t).normalize()
-    const cone = new THREE.Mesh(new THREE.ConeGeometry(0.0075, 0.022, 8), material)
+    const cone = new THREE.Mesh(new THREE.ConeGeometry(0.0065, 0.018, 8), material)
     cone.position.copy(point)
     cone.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), tangent)
     cone.renderOrder = 6
@@ -390,6 +492,7 @@ function buildPath(meridian: Meridian | null | undefined) {
 
 function onPointerMove(event: PointerEvent) {
   if (!renderer) return
+  setTipFromPointer(event)
   const id = pickMarker(event)
   if (id !== hoverId.value) {
     hoverId.value = id
@@ -401,6 +504,11 @@ function onPointerMove(event: PointerEvent) {
 
 function onPointerDown(event: PointerEvent) {
   pointerDownAt = { x: event.clientX, y: event.clientY }
+  if (hoverId.value) {
+    hoverId.value = null
+    emit('hover', null)
+    updateMarkers()
+  }
 }
 
 function onPointerUp(event: PointerEvent) {
@@ -522,7 +630,7 @@ function init() {
     renderer.setSize(el.clientWidth, el.clientHeight)
     renderer.setClearColor(0x000000, 0)
     renderer.outputColorSpace = THREE.SRGBColorSpace
-    renderer.toneMapping = THREE.ACESFilmicToneMapping
+    renderer.toneMapping = THREE.NoToneMapping
     renderer.toneMappingExposure = 1.0
     renderer.domElement.style.display = 'block'
     renderer.domElement.style.width = '100%'
@@ -543,19 +651,22 @@ function init() {
     controls.autoRotateSpeed = 0.7
     controls.update()
 
-    scene.add(new THREE.HemisphereLight(0xfff7ea, 0x3a2c21, 1.25))
-    const key = new THREE.DirectionalLight(0xffe8c8, 1.7)
+    scene.add(new THREE.HemisphereLight(0xfff5e6, 0x4a372a, 1.05))
+    const key = new THREE.DirectionalLight(0xffe9c9, 1.5)
     key.position.set(2.2, 3.2, 3.2)
     scene.add(key)
-    const rim = new THREE.DirectionalLight(0x9cc8bc, 0.9)
+    const rim = new THREE.DirectionalLight(0x9cc8bc, 0.4)
     rim.position.set(-2.8, 1.8, -2.4)
     scene.add(rim)
-    const fill = new THREE.DirectionalLight(0xffffff, 0.95)
+    const fill = new THREE.DirectionalLight(0xffffff, 0.5)
     fill.position.set(0, 0.6, 3)
     scene.add(fill)
-    const backFill = new THREE.DirectionalLight(0xffe8c8, 1.1)
+    const backFill = new THREE.DirectionalLight(0xffe8c8, 0.65)
     backFill.position.set(0, 2.4, -3.2)
     scene.add(backFill)
+    const warmBounce = new THREE.DirectionalLight(0xffd6ab, 0.35)
+    warmBounce.position.set(0, -1.2, 1.6)
+    scene.add(warmBounce)
 
     void loadBodyModel()
 
@@ -569,7 +680,10 @@ function init() {
         const selected = props.selectedId === id
         const hovered = hoverId.value === id
         const base = selected ? 1.65 : hovered ? 1.35 : 1
-        marker.scale.setScalar(base + Math.sin(t * 2.6 + id.length) * (selected ? 0.06 : 0.025))
+        const factor = (marker.userData.scaleFactor as number) ?? 1
+        marker.scale.setScalar(
+          (base + Math.sin(t * 2.6 + id.length) * (selected ? 0.06 : 0.025)) * factor,
+        )
       }
       controls?.update()
       renderer.render(scene, camera)
@@ -661,6 +775,26 @@ defineExpose({ setView, resetView, focusPoint, toggleAutoRotate })
       <div ref="labelLayer" class="label-layer">
         <svg ref="labelLines" class="label-lines" aria-hidden="true"></svg>
       </div>
+      <div v-if="hoverPoint" class="point-tip" :style="tipStyle" role="tooltip">
+        <div class="point-tip__head">
+          <strong>{{ hoverPoint.name }}</strong>
+          <span class="point-tip__pinyin">{{ hoverPoint.pinyin }}</span>
+          <span class="point-tip__tag">{{ hoverPoint.annotation }}</span>
+        </div>
+        <div class="point-tip__meta">
+          <span v-if="hoverMeridian">{{ hoverMeridian }}</span>
+          <span v-if="hoverTypes">{{ hoverTypes }}</span>
+        </div>
+        <p class="point-tip__row">
+          <b>定位</b>
+          <span>{{ hoverPoint.location.text }}</span>
+        </p>
+        <p class="point-tip__row">
+          <b>主治</b>
+          <span>{{ hoverPoint.indications.text }}</span>
+        </p>
+        <div class="point-tip__hint">点击穴位查看完整详情</div>
+      </div>
       <div v-if="modelLoading" class="model-loading">
         <span class="seal-loader seal-loader--small">人</span>
         <span>正在展开人体图卷…</span>
@@ -684,6 +818,98 @@ defineExpose({ setView, resetView, focusPoint, toggleAutoRotate })
 
 .human-body :deep(canvas) {
   display: block;
+}
+
+.point-tip {
+  position: absolute;
+  z-index: 7;
+  width: 258px;
+  max-width: calc(100% - 16px);
+  padding: 12px 14px 10px;
+  border: 1px solid rgba(178, 58, 42, 0.26);
+  border-radius: 14px;
+  background: rgba(249, 244, 232, 0.96);
+  box-shadow:
+    0 18px 40px rgba(63, 42, 28, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  color: var(--ink);
+  font-size: 0.72rem;
+  line-height: 1.6;
+  pointer-events: none;
+  backdrop-filter: blur(8px);
+}
+
+.point-tip__head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.point-tip__head strong {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+}
+
+.point-tip__pinyin {
+  color: var(--ink-faint);
+  font-size: 0.62rem;
+  letter-spacing: 0.02em;
+}
+
+.point-tip__tag {
+  margin-left: auto;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: rgba(178, 58, 42, 0.1);
+  color: var(--cinnabar);
+  font-size: 0.6rem;
+}
+
+.point-tip__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 3px 0 8px;
+  color: var(--ink-soft);
+  font-size: 0.64rem;
+}
+
+.point-tip__row {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 6px;
+  margin: 4px 0;
+  color: var(--ink-soft);
+}
+
+.point-tip__row b {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-weight: 600;
+}
+
+.point-tip__row span {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.point-tip__hint {
+  margin-top: 8px;
+  padding-top: 7px;
+  border-top: 1px dashed var(--line);
+  color: var(--cinnabar);
+  font-size: 0.62rem;
+  letter-spacing: 0.03em;
+}
+
+@media (hover: none) {
+  .point-tip {
+    display: none;
+  }
 }
 
 .viewer-hint {
@@ -756,7 +982,7 @@ defineExpose({ setView, resetView, focusPoint, toggleAutoRotate })
 }
 
 :global(.label-line) {
-  stroke: rgba(178, 58, 42, 0.55);
+  stroke: rgba(74, 52, 38, 0.42);
   stroke-width: 1;
   vector-effect: non-scaling-stroke;
 }

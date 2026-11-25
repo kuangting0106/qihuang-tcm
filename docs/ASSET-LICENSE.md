@@ -47,6 +47,24 @@
 - 病症常针、31 条透针透穴及医案来自用户提供的 `215条针灸经验穴位和31条透针透穴.md`，仓库副本在 `scripts/content/nihaixia-acupuncture-quickref.md`。
 - 倪海厦针灸教程文本据用户提供的《倪海厦人纪系列之针灸教程》PDF 文本层整理，中间数据在 `scripts/content/nihaixia-acupuncture-pages.json` 与 `nihaixia-acupuncture-toc.json`；页面只作学习与文献整理，不构成操作指导。
 
+## 经络图版
+
+- `public/images/acupuncture/kidney-meridian.jpg` 为用户提供的《足少阴肾经之图》书页照片，仅用于本站学习原型；版权与再分发授权待确认，未经授权不得单独提取使用。
+- `public/images/acupuncture/lung-meridian.jpg` 为用户自制并提供的《手太阴肺经》图，授权本站用于学习原型展示；如需再分发请另行取得作者同意。
+- `public/images/acupuncture/large-intestine-meridian.jpg` 为用户自制并提供的《手阳明大肠经》图，授权本站用于学习原型展示；如需再分发请另行取得作者同意。
+- `public/images/acupuncture/stomach-meridian.jpg` 为用户自制并提供的《足阳明胃经》图，授权本站用于学习原型展示；如需再分发请另行取得作者同意。
+- `public/images/acupuncture/heart-meridian.jpg` 为用户自制并提供的《手少阴心经》图，授权本站用于学习原型展示；如需再分发请另行取得作者同意。
+- `public/images/acupuncture/small-intestine-meridian.jpg` 为用户自制并提供的《手太阳小肠经》图，授权本站用于学习原型展示；如需再分发请另行取得作者同意。
+- `public/images/acupuncture/spleen-meridian.jpg` 为用户自制并提供的《足太阴脾经》图，授权本站用于学习原型展示；如需再分发请另行取得作者同意。
+- `public/images/acupuncture/pericardium-meridian.jpg` 为用户自制并提供的《手厥阴心包经》图，授权本站用于学习原型展示；如需再分发请另行取得作者同意。
+- `public/images/acupuncture/gallbladder-meridian.jpg` 为用户自制并提供的《足少阳胆经》图，授权本站用于学习原型展示；如需再分发请另行取得作者同意。
+- `public/images/acupuncture/triple-burner-meridian.jpg` 为用户自制并提供的《手少阳三焦经》图，授权本站用于学习原型展示；如需再分发请另行取得作者同意。
+- `public/images/acupuncture/liver-meridian.jpg` 为用户自制并提供的《足厥阴肝经》图，授权本站用于学习原型展示；如需再分发请另行取得作者同意。
+- `public/images/acupuncture/ren-meridian.jpg` 为用户自制并提供的《任脉》图，授权本站用于学习原型展示；如需再分发请另行取得作者同意。
+- `public/images/acupuncture/du-meridian.jpg` 为用户自制并提供的《督脉》图，授权本站用于学习原型展示；如需再分发请另行取得作者同意。
+- `public/images/acupuncture/bladder-meridian.jpg` 为用户自制并提供的《足太阳膀胱经》图，授权本站用于学习原型展示；如需再分发请另行取得作者同意。
+- 图上的穴位定位与主治文字另据 GB/T 12346-2021 与《针灸学》整理，不随图版授权。
+
 ## 字体
 
 页面使用系统字体回退：

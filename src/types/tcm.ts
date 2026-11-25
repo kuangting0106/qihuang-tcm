@@ -337,6 +337,7 @@ export interface Acupoint {
   orderFromDistal?: number
   annotation: string
   safety?: string
+  plateOnly?: boolean
   verification: 'verified' | 'reference' | 'pending'
 }
 

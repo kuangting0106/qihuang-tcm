@@ -208,7 +208,9 @@ const router = createRouter({
     },
     {
       path: '/meridians',
-      redirect: '/meridians/lung',
+      name: 'meridians',
+      component: () => import('@/views/MeridianIndexView.vue'),
+      meta: { title: '经络图' },
     },
     {
       path: '/meridians/:id',

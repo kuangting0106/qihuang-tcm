@@ -76,7 +76,7 @@ function retry() {
 
           <nav class="site-nav" :class="{ 'site-nav--open': menuOpen }" aria-label="主导航">
             <RouterLink to="/methods">治疗法门篇</RouterLink>
-            <RouterLink to="/meridians/lung">经络图</RouterLink>
+            <RouterLink to="/meridians">经络图</RouterLink>
             <RouterLink to="/herbs">本草</RouterLink>
             <RouterLink to="/formulas">方剂</RouterLink>
             <RouterLink to="/exercises">古法锻炼</RouterLink>
@@ -102,7 +102,7 @@ function retry() {
         </div>
         <div class="footer-links">
           <RouterLink to="/methods">治疗法门篇</RouterLink>
-          <RouterLink to="/meridians/lung">经络图</RouterLink>
+          <RouterLink to="/meridians">经络图</RouterLink>
           <RouterLink to="/herbs">本草</RouterLink>
           <RouterLink to="/formulas">方剂</RouterLink>
           <RouterLink to="/exercises">古法锻炼</RouterLink>

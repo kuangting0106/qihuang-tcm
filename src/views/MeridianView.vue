@@ -2,9 +2,11 @@
 import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute, useRouter } from 'vue-router'
 import HumanBody from '@/components/HumanBody.vue'
+import MeridianPlate from '@/components/MeridianPlate.vue'
 import CitationBadge from '@/components/CitationBadge.vue'
 import SourcedText from '@/components/SourcedText.vue'
 import { fetchMeridianData } from '@/composables/useMeridianApi'
+import { meridianPlates } from '@/data/meridian-plates'
 import type { Acupoint, Meridian, Region } from '@/types/tcm'
 import { REGION_LABELS } from '@/types/tcm'
 
@@ -16,6 +18,9 @@ const loading = ref(true)
 const loadError = ref('')
 const meridiansById = computed(
   () => new Map(meridianList.value.map((meridian) => [meridian.id, meridian])),
+)
+const meridianNames = computed<Record<string, string>>(() =>
+  Object.fromEntries(meridianList.value.map((meridian) => [meridian.id, meridian.name])),
 )
 const acupointsById = computed(
   () => new Map(acupointList.value.map((acupoint) => [acupoint.id, acupoint])),
@@ -37,6 +42,34 @@ const activeMeridian = computed<Meridian | null>(() =>
   routeId.value === 'all' ? null : meridiansById.value.get(routeId.value) ?? null,
 )
 const invalidMeridian = computed(() => routeId.value !== 'all' && !activeMeridian.value)
+
+const activePlate = computed(() =>
+  activeMeridian.value ? meridianPlates[activeMeridian.value.id] ?? null : null,
+)
+const platePoints = computed(() => {
+  const meridian = activeMeridian.value
+  if (!meridian || !activePlate.value) return []
+  return meridian.acupointIds
+    .map((id) => acupointsById.value.get(id))
+    .filter((point): point is Acupoint => Boolean(point))
+})
+
+function chineseCount(value: number) {
+  const digits = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九']
+  if (value <= 10) return value === 10 ? '十' : digits[value]
+  if (value < 20) return `十${digits[value % 10]}`
+  if (value < 100) {
+    return `${digits[Math.floor(value / 10)]}十${value % 10 ? digits[value % 10] : ''}`
+  }
+  return String(value)
+}
+
+const scrollCount = computed(() => {
+  const meridian = activeMeridian.value
+  if (!meridian) return ''
+  const count = meridian.totalPoints ?? meridian.acupointIds.length
+  return `凡${chineseCount(count)}穴`
+})
 
 const region = ref<Region | ''>('')
 const typeFilter = ref('')
@@ -96,6 +129,9 @@ const visiblePoints = computed(() => {
 })
 
 const visibleIds = computed(() => visiblePoints.value.map((p) => p.id))
+const bodyPoints = computed(() =>
+  activeMeridian.value ? allPoints.value : allPoints.value.filter((point) => !point.plateOnly),
+)
 
 const regionGroups = computed(() => {
   const order: Region[] = ['head-neck', 'trunk', 'upper-limb', 'lower-limb']
@@ -249,7 +285,7 @@ watch(
       <nav class="breadcrumbs" aria-label="面包屑">
         <RouterLink to="/">首页</RouterLink>
         <span>/</span>
-        <RouterLink to="/meridians/lung">经络图</RouterLink>
+        <RouterLink to="/meridians">经络图</RouterLink>
         <span>/</span>
         <span>{{ activeMeridian?.name ?? '全身重点穴' }}</span>
       </nav>
@@ -417,15 +453,47 @@ watch(
             </div>
           </aside>
 
-          <section class="meridian-stage">
+          <section
+            class="meridian-stage"
+            :class="{
+              'meridian-stage--plate': activePlate,
+              'meridian-stage--landscape': activePlate && activePlate.width > activePlate.height,
+            }"
+          >
+            <template v-if="activePlate">
+              <MeridianPlate
+                :plate="activePlate"
+                :points="platePoints"
+                :meridian-name="activeMeridian?.name ?? ''"
+                :meridian-description="activeMeridian?.description.text ?? ''"
+                :selected-id="selectedPointId"
+                @select="selectPoint($event, false)"
+              />
+              <p class="plate-hint">
+                <span class="plate-hint__wide">
+                  悬停图上空白看经络<span class="plate-hint__dot">·</span>悬停穴名看穴位<span class="plate-hint__dot">·</span>点击看详情
+                </span>
+                <span class="plate-hint__touch">
+                  <template v-if="activePlate && activePlate.width > activePlate.height">左右滑动查看 · 点击穴名看详情</template>
+                  <template v-else>点击图上穴名查看完整资料</template>
+                </span>
+              </p>
+            </template>
+            <template v-else>
+            <div v-if="activeMeridian" class="stage-scroll" aria-hidden="true">
+              <span class="stage-scroll__name">{{ activeMeridian.name }}之图</span>
+              <span class="stage-scroll__count">{{ scrollCount }}</span>
+              <span class="stage-scroll__seal">岐黄</span>
+            </div>
             <HumanBody
               ref="bodyRef"
-              :all-acupoints="allPoints"
+              :all-acupoints="bodyPoints"
               :visible-ids="visibleIds"
               :active-meridian="activeMeridian"
               :selected-id="selectedPointId"
               :label-mode="labelMode"
               :show-through="showThrough"
+              :meridian-names="meridianNames"
               @select="selectPoint"
             />
 
@@ -474,6 +542,7 @@ watch(
                 </span>
               </div>
             </div>
+            </template>
           </section>
 
           <div v-if="selectedPoint" class="panel-scrim" aria-hidden="true" @click="closePanel"></div>
@@ -567,21 +636,79 @@ watch(
                 <div class="panel-empty__seal">穴</div>
                 <p class="eyebrow">SELECT A POINT</p>
                 <h2>点一个穴位</h2>
-                <p>
+                <p v-if="activePlate">
+                  点击图上的穴名，或左侧目录里的穴位，查看定位、主治、针刺、艾灸与出处。
+                </p>
+                <p v-else>
                   点击 3D 上的发光点，或左侧目录里的穴位，查看定位、主治、针刺、艾灸与出处。
                 </p>
                 <div class="panel-empty__hints">
-                  <span>拖动旋转</span>
-                  <span>滚轮缩放</span>
-                  <span>透视可看背面穴位</span>
+                  <template v-if="activePlate">
+                    <span>悬停看简介</span>
+                    <span>点击看详情</span>
+                    <span>按经络查穴</span>
+                  </template>
+                  <template v-else>
+                    <span>拖动旋转</span>
+                    <span>滚轮缩放</span>
+                    <span>透视可看背面穴位</span>
+                  </template>
                 </div>
               </div>
             </template>
           </aside>
         </div>
 
+        <section v-if="activePlate" id="meridian-detail" class="meridian-detail">
+          <header class="meridian-detail__head">
+            <div>
+              <span class="eyebrow">MERIDIAN NOTES</span>
+              <h2>{{ activeMeridian?.name }}详解</h2>
+              <span v-if="activePlate.flow" class="meridian-detail__flow">流注 {{ activePlate.flow }}</span>
+            </div>
+            <CitationBadge :citation-ids="activePlate.overview.citationIds" label="出处" compact />
+          </header>
+          <div class="meridian-detail__grid">
+            <article class="meridian-detail__card">
+              <h3>循行</h3>
+              <p>{{ activeMeridian?.description.text }}</p>
+            </article>
+            <article class="meridian-detail__card">
+              <h3>脏腑络属</h3>
+              <p>{{ activePlate.overview.viscera }}</p>
+            </article>
+            <article class="meridian-detail__card">
+              <h3>主治概要</h3>
+              <p>{{ activePlate.overview.indications }}</p>
+            </article>
+            <article class="meridian-detail__card">
+              <h3>五输穴</h3>
+              <div class="five-shu">
+                <button
+                  v-for="shu in activePlate.overview.fiveShu"
+                  :key="shu.id"
+                  type="button"
+                  class="five-shu__item"
+                  :class="{ 'five-shu__item--active': selectedPointId === shu.id }"
+                  @click="selectPoint(shu.id, false)"
+                >
+                  <strong>{{ shu.name }}</strong>
+                  <small>{{ shu.label }}</small>
+                </button>
+              </div>
+            </article>
+          </div>
+          <p class="meridian-detail__note">{{ activePlate.overview.note }}</p>
+          <p class="meridian-detail__credit">{{ activePlate.credit }}</p>
+        </section>
+
         <p class="model-disclaimer">
-          3D 模型为针灸铜人风格人体：青色腰布与头巾、裸露上身、无性器官细节，仅用于经络穴位学习；穴位坐标来自离线坐标表，运行时不做人体表面映射。
+          <template v-if="activePlate">
+            图为用户提供的经络图版，仅用于本原型学习；图上线路为示意，穴位标注按解剖关系校正，定位以 GB/T 12346-2021 为准，主治参考《针灸学》。悬停图上空白看经络，悬停穴名看穴位，点击查看完整资料。
+          </template>
+          <template v-else>
+            3D 模型为针灸铜人风格人体：青色腰布与头巾、裸露上身、无性器官细节，仅用于经络穴位学习；穴位坐标来自离线坐标表，运行时不做人体表面映射。
+          </template>
         </p>
       </template>
     </div>
@@ -954,8 +1081,238 @@ watch(
   border-radius: 16px;
   background:
     radial-gradient(circle at 50% 42%, rgba(255, 246, 226, 0.9), rgba(235, 226, 210, 0.3) 48%, rgba(244, 239, 228, 0.05) 72%),
+    radial-gradient(ellipse at 50% 102%, rgba(112, 86, 56, 0.08), transparent 58%),
+    repeating-linear-gradient(0deg, rgba(96, 72, 48, 0.018) 0 1px, transparent 1px 4px),
+    repeating-linear-gradient(90deg, rgba(96, 72, 48, 0.012) 0 1px, transparent 1px 6px),
     var(--paper);
+  box-shadow: inset 0 0 90px rgba(92, 66, 44, 0.07);
   overflow: hidden;
+}
+
+.meridian-stage--plate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 660px;
+  padding: 46px 18px 30px;
+}
+
+.meridian-stage--landscape {
+  min-height: 760px;
+}
+
+.plate-hint {
+  position: absolute;
+  top: 13px;
+  left: 16px;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  padding: 5px 11px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(248, 243, 232, 0.86);
+  color: var(--ink-faint);
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+  transition: opacity 0.16s ease;
+}
+
+.meridian-stage--plate:has(.plate-tip) .plate-hint {
+  opacity: 0;
+}
+
+.plate-hint span {
+  color: inherit;
+}
+
+.plate-hint__dot {
+  margin: 0 6px;
+  color: var(--cinnabar) !important;
+}
+
+.plate-hint__touch {
+  display: none;
+}
+
+@media (hover: none) {
+  .plate-hint__wide {
+    display: none;
+  }
+
+  .plate-hint__touch {
+    display: inline;
+  }
+}
+
+.meridian-detail {
+  margin-top: 22px;
+  padding: 26px 28px 22px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(255, 248, 232, 0.8), transparent 46%),
+    var(--paper);
+  box-shadow: inset 0 0 60px rgba(92, 66, 44, 0.04);
+}
+
+.meridian-detail__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.meridian-detail__head h2 {
+  margin: 3px 0 0;
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  letter-spacing: 0.06em;
+}
+
+.meridian-detail__flow {
+  display: inline-block;
+  margin-top: 5px;
+  color: var(--cinnabar);
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
+}
+
+.meridian-detail__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.meridian-detail__card {
+  min-width: 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.meridian-detail__card h3 {
+  margin: 0 0 7px;
+  color: var(--cinnabar);
+  font-family: var(--serif);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.meridian-detail__card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  line-height: 1.85;
+}
+
+.five-shu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.five-shu__item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 4px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 252, 244, 0.7);
+  color: var(--ink);
+  cursor: pointer;
+  font-family: inherit;
+  transition:
+    border-color 0.16s ease,
+    color 0.16s ease;
+}
+
+.five-shu__item strong {
+  font-family: var(--serif);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.five-shu__item small {
+  color: var(--ink-faint);
+  font-size: 0.6rem;
+}
+
+.five-shu__item:hover,
+.five-shu__item--active {
+  border-color: var(--cinnabar);
+  color: var(--cinnabar);
+}
+
+.meridian-detail__note {
+  margin: 18px 0 0;
+  padding-top: 12px;
+  border-top: 1px dashed var(--line);
+  color: var(--ink-faint);
+  font-size: 0.74rem;
+  line-height: 1.8;
+}
+
+.meridian-detail__credit {
+  margin: 6px 0 0;
+  color: var(--ink-faint);
+  font-size: 0.64rem;
+  opacity: 0.8;
+}
+
+.stage-scroll {
+  position: absolute;
+  top: 78px;
+  right: 14px;
+  bottom: 78px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #3b2b22;
+  font-family: var(--serif);
+  opacity: 0.82;
+  pointer-events: none;
+}
+
+.stage-scroll__name,
+.stage-scroll__count {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.stage-scroll__name {
+  font-size: 1.02rem;
+  letter-spacing: 0.16em;
+}
+
+.stage-scroll__count {
+  color: var(--ink-faint);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+}
+
+.stage-scroll__seal {
+  display: grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  border-radius: 3px;
+  background: #a33a2b;
+  box-shadow: inset 0 0 0 1px rgba(255, 246, 232, 0.32);
+  color: #f6efe1;
+  font-size: 0.5rem;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  text-align: center;
 }
 
 .stage-top {
@@ -1330,6 +1687,37 @@ watch(
     order: 1;
   }
 
+  .meridian-stage--plate {
+    min-height: 0;
+    padding: 42px 10px 18px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .meridian-stage--plate .plate-frame--wide {
+    width: 700px;
+    max-width: none;
+    flex: 0 0 auto;
+  }
+
+  .meridian-stage--plate .plate-frame--dense .plate-hot--label {
+    font-size: 0.55rem;
+  }
+
+  .meridian-detail {
+    padding: 20px 16px 18px;
+  }
+
+  .meridian-detail__head h2 {
+    font-size: 1.2rem;
+  }
+
+  .meridian-detail__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
   .point-panel {
     order: 3;
   }
@@ -1370,6 +1758,19 @@ watch(
 
   .stage-options {
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 560px) {
+  .meridian-detail__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plate-hint {
+    right: 12px;
+    left: 12px;
+    justify-content: center;
+    font-size: 0.6rem;
   }
 }
 </style>

@@ -18,7 +18,7 @@ const counts = computed(() => ({
 
 const modules = computed(() => [
   {
-    to: '/meridians/lung',
+    to: '/meridians',
     kicker: 'MERIDIAN / 经络',
     title: '经络图',
     desc: `在可旋转的人体上查看 ${counts.value.points} 个常用重点穴，按经络、区域、穴位类型筛选。`,
@@ -56,14 +56,14 @@ const modules = computed(() => [
           <span class="hero__plain">小白也能看懂中医</span>
         </p>
         <div class="hero__actions">
-          <RouterLink class="btn btn--primary" to="/meridians/lung">进入经络图</RouterLink>
+          <RouterLink class="btn btn--primary" to="/meridians">进入经络图</RouterLink>
           <RouterLink class="btn" to="/formulas/guizhi-tang">从桂枝汤开始</RouterLink>
         </div>
 
         <nav class="hero-index" aria-label="首页主导航">
           <span class="hero-index__label">图鉴目录</span>
           <RouterLink to="/methods">治疗法门篇</RouterLink>
-          <RouterLink to="/meridians/lung">经络图</RouterLink>
+          <RouterLink to="/meridians">经络图</RouterLink>
           <RouterLink to="/herbs">本草</RouterLink>
           <RouterLink to="/formulas">方剂</RouterLink>
           <RouterLink to="/exercises">古法锻炼</RouterLink>
