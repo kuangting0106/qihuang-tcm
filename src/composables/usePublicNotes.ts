@@ -115,6 +115,21 @@ function writeKey(key: string) {
   }
 }
 
+const editKey = ref(readKey())
+
+export function setEditKey(key: string) {
+  const value = key.trim()
+  writeKey(value)
+  editKey.value = value
+}
+
+export function clearEditKey() {
+  writeKey('')
+  editKey.value = ''
+}
+
+export const hasEditKey = computed(() => Boolean(editKey.value))
+
 let keyPrompt: Promise<string> | null = null
 
 function askKey() {
@@ -124,7 +139,7 @@ function askKey() {
   )
   if (!entered) return ''
   const key = entered.trim()
-  if (key) writeKey(key)
+  if (key) setEditKey(key)
   return key
 }
 
@@ -152,18 +167,20 @@ async function post(op: PublicNoteOp, key: string) {
 
 let saveQueue: Promise<unknown> = Promise.resolve()
 
-async function performSave(op: PublicNoteOp) {
+async function performSave(op: PublicNoteOp, explicitKey = '') {
   if (!available.value) {
     return { ok: false, message: '发布服务不可用，内容只保存在本机浏览器。' }
   }
-  let key = readKey()
+  let key = explicitKey || editKey.value
   if (!key) key = await askKeyOnce()
   if (!key) return { ok: false, message: '未输入编辑口令，内容只保存在本机。' }
 
   try {
     let response = await post(op, key)
     if (response.status === 401) {
-      writeKey('')
+      clearEditKey()
+      // 页面内已提供口令时不再弹系统对话框，直接把错误交回调用方。
+      if (explicitKey) return { ok: false, message: '编辑口令不正确，内容只保存在本机。' }
       key = await askKeyOnce()
       if (!key) return { ok: false, message: '编辑口令不正确，内容只保存在本机。' }
       response = await post(op, key)
@@ -177,6 +194,7 @@ async function performSave(op: PublicNoteOp) {
     }
     notes.value = normalize(await response.json())
     available.value = true
+    editKey.value = key
     status.value = '已发布，所有访客可见。'
     return { ok: true, message: status.value }
   } catch {
@@ -185,8 +203,8 @@ async function performSave(op: PublicNoteOp) {
   }
 }
 
-export function savePublicNote(op: PublicNoteOp) {
-  const task = saveQueue.then(() => performSave(op))
+export function savePublicNote(op: PublicNoteOp, explicitKey = '') {
+  const task = saveQueue.then(() => performSave(op, explicitKey))
   saveQueue = task.then(
     () => undefined,
     () => undefined,
@@ -220,6 +238,10 @@ export function usePublicNotes() {
     loading: computed(() => loading.value),
     available: computed(() => available.value),
     status,
+    editKey,
+    hasEditKey,
+    setEditKey,
+    clearEditKey,
     loadPublicNotes,
     savePublicNote,
     publicAnnotationsFor,

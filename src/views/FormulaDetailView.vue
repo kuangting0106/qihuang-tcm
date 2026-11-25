@@ -34,6 +34,9 @@ const {
   publicHerbRoles,
   savePublicNote,
   publicModernNotes,
+  hasEditKey,
+  editKey,
+  setEditKey,
 } = usePublicNotes()
 
 const formulaList = ref<FormulaSummary[]>([])
@@ -120,7 +123,7 @@ watch(
   formula,
   (f) => {
     const count = f?.composition?.length ?? 0
-    showGraph.value = count > 0 && count <= 20
+    showGraph.value = count > 0 && count <= 24
   },
   { immediate: true },
 )
@@ -235,6 +238,13 @@ function baseRoleFor(herbId: string): FormulaRole {
 
 const saveHint = ref('')
 
+watch(
+  () => route.params.id,
+  () => {
+    saveHint.value = ''
+  },
+)
+
 function clearLocalHerbNote(formulaId: string, herbId: string) {
   const book = { ...(herbNotes.value[formulaId] ?? {}) }
   delete book[herbId]
@@ -253,58 +263,84 @@ function clearLocalHerbRole(formulaId: string, herbId: string) {
   persistHerbRoles(next)
 }
 
-function setHerbNote(herbId: string, text: string) {
-  const current = formula.value
-  if (!current) return
-  const note = text.trim()
-  void (async () => {
-    const result = await savePublicNote({
-      op: 'herb-note',
-      formulaId: current.id,
-      herbId,
-      note,
-    })
-    if (result.ok) {
-      clearLocalHerbNote(current.id, herbId)
-      saveHint.value = '已发布到网页，所有访客可见。'
-      return
-    }
-    const book = { ...(herbNotes.value[current.id] ?? {}) }
-    if (note) book[herbId] = note
-    else delete book[herbId]
-    const next = { ...herbNotes.value }
-    if (Object.keys(book).length) next[current.id] = book
-    else delete next[current.id]
-    persistHerbNotes(next)
-    saveHint.value = '公开保存未成功，已保存到本机浏览器。'
-  })()
+const herbSaving = ref(false)
+
+function persistLocalHerbNote(formulaId: string, herbId: string, note: string) {
+  const book = { ...(herbNotes.value[formulaId] ?? {}) }
+  if (note) book[herbId] = note
+  else delete book[herbId]
+  const next = { ...herbNotes.value }
+  if (Object.keys(book).length) next[formulaId] = book
+  else delete next[formulaId]
+  persistHerbNotes(next)
 }
 
-function setHerbRole(herbId: string, role: FormulaRole) {
+function persistLocalHerbRole(formulaId: string, herbId: string, role: FormulaRole, baseRole: FormulaRole) {
+  const book = { ...(herbRoles.value[formulaId] ?? {}) }
+  if (role === baseRole || role === '未标注') delete book[herbId]
+  else book[herbId] = role
+  const next = { ...herbRoles.value }
+  if (Object.keys(book).length) next[formulaId] = book
+  else delete next[formulaId]
+  persistHerbRoles(next)
+}
+
+/**
+ * 一次保存「方中角色 + 方中作用」：先写公开接口，成功后清掉本机副本；
+ * 接口失败（含口令错误）才回退到 localStorage，并明确提示当前状态。
+ */
+async function saveHerbEdit(payload: { herbId: string; role: FormulaRole; note: string; key: string }) {
   const current = formula.value
   if (!current) return
-  const isBase = role === baseRoleFor(herbId)
-  void (async () => {
-    const result = await savePublicNote({
-      op: 'herb-role',
-      formulaId: current.id,
-      herbId,
-      role: isBase ? '未标注' : role,
-    })
-    if (result.ok) {
-      clearLocalHerbRole(current.id, herbId)
-      saveHint.value = '已发布到网页，所有访客可见。'
-      return
+  if (payload.key) setEditKey(payload.key)
+  const baseRole = baseRoleFor(payload.herbId)
+  const role = payload.role === baseRole ? '未标注' : payload.role
+  const note = payload.note.trim()
+  const key = payload.key || editKey.value
+  herbSaving.value = true
+  saveHint.value = ''
+  try {
+    const roleResult = await savePublicNote(
+      {
+        op: 'herb-role',
+        formulaId: current.id,
+        herbId: payload.herbId,
+        role,
+      },
+      key,
+    )
+    if (roleResult.ok) {
+      clearLocalHerbRole(current.id, payload.herbId)
+    } else {
+      persistLocalHerbRole(current.id, payload.herbId, payload.role, baseRole)
     }
-    const book = { ...(herbRoles.value[current.id] ?? {}) }
-    if (isBase) delete book[herbId]
-    else book[herbId] = role
-    const next = { ...herbRoles.value }
-    if (Object.keys(book).length) next[current.id] = book
-    else delete next[current.id]
-    persistHerbRoles(next)
-    saveHint.value = '公开保存未成功，已保存到本机浏览器。'
-  })()
+
+    const noteResult = await savePublicNote(
+      {
+        op: 'herb-note',
+        formulaId: current.id,
+        herbId: payload.herbId,
+        note,
+      },
+      key,
+    )
+    if (noteResult.ok) {
+      clearLocalHerbNote(current.id, payload.herbId)
+    } else {
+      persistLocalHerbNote(current.id, payload.herbId, note)
+    }
+
+    const failure = !noteResult.ok ? noteResult : !roleResult.ok ? roleResult : null
+    if (!failure) {
+      saveHint.value = '已保存到网页，所有访客可见；可随时回来修改。'
+    } else if (failure.message.includes('口令')) {
+      saveHint.value = '编辑口令不正确，请重新输入后再保存。'
+    } else {
+      saveHint.value = `${failure.message}已暂存本机，联网后可再次保存。`
+    }
+  } finally {
+    herbSaving.value = false
+  }
 }
 
 function resetHerb(herbId: string) {
@@ -834,22 +870,23 @@ watch(
               :show-pairs="showPairs"
               :herb-notes="currentHerbNotes"
               :herb-roles="currentHerbRoles"
+              :edit-key-ready="hasEditKey"
+              :saving="herbSaving"
+              :save-hint="saveHint"
               :source-note="graphNote"
               :unlabeled-label="isMijingzi ? '原书未标' : '待补'"
               @select="selectHerb"
-              @update-role="setHerbRole"
-              @update-note="setHerbNote"
+              @save="saveHerbEdit"
               @reset="resetHerb"
             />
             <p class="graph-caption">
               {{ graphNote }}
               <template v-if="isMijingzi">
-                点药材可查看原文药名与用量；备注保存后会发布到网页，所有访客可见。
+                点药材可查看原文药名与用量；填写方中作用并保存后，文字会显示在图上，所有访客可见。
               </template>
               <template v-else>
-                节点显示君臣佐使与作用摘要，悬停看完整说明；点药材可修改角色或补充方中作用。
-                保存后发布到网页，所有访客可见；公开保存失败时自动存本机。
-                君臣佐使据《方剂学》教材通例归纳，不是讲义原文。
+                点药材可修改君臣佐使、填写方中作用；保存后文字直接显示在节点下方，所有访客可见。
+                第一次保存输入一次编辑口令，之后本机记住，可反复修改。
               </template>
             </p>
             <p v-if="saveHint" class="graph-publish-hint">{{ saveHint }}</p>

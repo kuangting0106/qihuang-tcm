@@ -12,6 +12,9 @@ const props = withDefaults(
     showPairs?: boolean
     herbNotes?: Record<string, string>
     herbRoles?: Record<string, FormulaRole>
+    editKeyReady?: boolean
+    saving?: boolean
+    saveHint?: string
     sourceNote?: string
     unlabeledLabel?: string
   }>(),
@@ -20,6 +23,9 @@ const props = withDefaults(
     showPairs: true,
     herbNotes: () => ({}),
     herbRoles: () => ({}),
+    editKeyReady: false,
+    saving: false,
+    saveHint: '',
     sourceNote: '君臣佐使据《方剂学》教材通例归纳，非讲义原文；点击图中药材名，可填写方中作用与角色。',
     unlabeledLabel: '待补',
   },
@@ -27,8 +33,7 @@ const props = withDefaults(
 
 const emit = defineEmits<{
   select: [herbId: string]
-  'update-role': [herbId: string, role: FormulaRole]
-  'update-note': [herbId: string, note: string]
+  save: [payload: { herbId: string; role: FormulaRole; note: string; key: string }]
   reset: [herbId: string]
 }>()
 
@@ -268,7 +273,7 @@ function isInferredRole(node: GraphNode) {
 
 function nodeRoleText(node: GraphNode) {
   if (isInferredRole(node)) return `${node.role} · 按用量`
-  const detail = summaryText(herbNote(node.herbId) || node.action || '')
+  const detail = summaryText(node.action || '')
   const role =
     node.role === '未标注'
       ? herbNote(node.herbId)
@@ -276,6 +281,13 @@ function nodeRoleText(node: GraphNode) {
         : props.unlabeledLabel
       : node.role
   return detail ? `${role} · ${detail}` : role
+}
+
+function nodeNoteText(node: GraphNode) {
+  const note = herbNote(node.herbId)
+  if (!note) return ''
+  const clean = note.replace(/[\s，。；、,;：:]/g, '')
+  return clean.length > 9 ? `${clean.slice(0, 9)}…` : clean
 }
 
 function nodeActionText(node: GraphNode) {
@@ -395,6 +407,8 @@ const selectedHerb = computed(() =>
 
 const editorRole = ref<FormulaRole>('未标注')
 const editorNote = ref('')
+const keyDraft = ref('')
+const keyMessage = ref('')
 
 watch(
   selectedNode,
@@ -402,15 +416,42 @@ watch(
     if (!node) return
     editorRole.value = node.role
     editorNote.value = herbNote(node.herbId)
+    keyMessage.value = ''
   },
   { immediate: true },
+)
+
+watch(
+  () => props.editKeyReady,
+  (ready) => {
+    if (ready) keyDraft.value = ''
+  },
+)
+
+// 公开保存成功后，父组件传入的备注会更新；编辑框跟着同步，避免仍显示旧稿。
+watch(
+  () => (props.selectedHerbId ? herbNote(props.selectedHerbId) : ''),
+  (note) => {
+    if (props.saving) return
+    editorNote.value = note
+  },
 )
 
 function saveEditor() {
   const node = selectedNode.value
   if (!node) return
-  emit('update-role', node.herbId, editorRole.value)
-  emit('update-note', node.herbId, editorNote.value)
+  const key = keyDraft.value.trim()
+  if (!props.editKeyReady && !key) {
+    keyMessage.value = '第一次保存需要填写编辑口令；口令只留在本机，之后不用再输。'
+    return
+  }
+  keyMessage.value = ''
+  emit('save', {
+    herbId: node.herbId,
+    role: editorRole.value,
+    note: editorNote.value,
+    key,
+  })
 }
 
 function cancelEditor() {
@@ -418,6 +459,7 @@ function cancelEditor() {
   if (!node) return
   editorRole.value = node.role
   editorNote.value = herbNote(node.herbId)
+  keyMessage.value = ''
 }
 
 function resetEditor() {
@@ -538,6 +580,23 @@ function resetEditor() {
             />
             <text :x="node.x" :y="node.y + 5" text-anchor="middle" class="graph-node__name">{{ node.name }}</text>
             <text :x="node.x" :y="node.y + 46" text-anchor="middle" class="graph-node__role">{{ nodeRoleText(node) }}</text>
+            <text
+              v-if="nodeNoteText(node)"
+              :x="node.x"
+              :y="node.y + 60"
+              text-anchor="middle"
+              class="graph-node__note"
+            >
+              {{ nodeNoteText(node) }}
+            </text>
+            <g
+              v-if="herbNote(node.herbId)"
+              :transform="`translate(${node.x + 21} ${node.y - 21})`"
+              aria-hidden="true"
+            >
+              <circle r="7.5" fill="#c0392b" />
+              <text y="3.4" text-anchor="middle" class="graph-node__badge">注</text>
+            </g>
           </g>
         </g>
       </svg>
@@ -565,6 +624,7 @@ function resetEditor() {
       <div class="graph-editor__head">
         <strong>{{ selectedHerb?.name ?? selectedNode.name }}</strong>
         <span class="graph-editor__badge">{{ nodeRoleBadge(selectedNode) }}</span>
+        <span v-if="herbNote(selectedNode.herbId)" class="graph-editor__published">已保存到网页</span>
         <button type="button" class="graph-editor__reset" @click="resetEditor">清除备注与角色</button>
       </div>
       <div class="graph-editor__grid">
@@ -575,7 +635,7 @@ function resetEditor() {
           </select>
         </label>
         <label class="graph-editor__field graph-editor__field--wide">
-          <span>方中作用（可自行填写）</span>
+          <span>方中作用（可多次修改）</span>
           <textarea
             v-model="editorNote"
             rows="2"
@@ -583,19 +643,38 @@ function resetEditor() {
             placeholder="例如：解肌发表，温通卫阳"
           ></textarea>
         </label>
+        <label
+          v-if="!editKeyReady"
+          class="graph-editor__field graph-editor__field--wide graph-editor__field--key"
+        >
+          <span>编辑口令（只需输入一次）</span>
+          <input
+            v-model="keyDraft"
+            type="password"
+            autocomplete="current-password"
+            placeholder="输入后保存在本机，以后点保存即可发布"
+          />
+        </label>
       </div>
       <div class="graph-editor__actions">
-        <button type="button" class="graph-editor__save" @click="saveEditor">保存并发布</button>
+        <button type="button" class="graph-editor__save" :disabled="saving" @click="saveEditor">
+          {{ saving ? '保存中…' : '保存到网页' }}
+        </button>
         <button type="button" @click="cancelEditor">取消</button>
-        <span>保存后发布到网页，所有访客可见；公开保存失败时自动存本机。</span>
+        <span class="graph-editor__hint" :class="{ 'graph-editor__hint--warn': keyMessage }">
+          {{ keyMessage || saveHint || '保存后所有访客都能看到；可随时回来修改。' }}
+        </span>
       </div>
     </div>
 
     <div class="graph-foot">
       <p v-if="selectedNode">
         已选 <strong>{{ selectedHerb?.name ?? selectedNode.name }}</strong>
-        <span v-if="selectedNode.action || herbNote(selectedNode.herbId)" class="graph-foot__action">
-          {{ selectedNode.action || herbNote(selectedNode.herbId) }}
+        <span v-if="herbNote(selectedNode.herbId)" class="graph-foot__action">
+          {{ herbNote(selectedNode.herbId) }}
+        </span>
+        <span v-else-if="selectedNode.action" class="graph-foot__action">
+          {{ selectedNode.action }}
         </span>
         <span v-else class="graph-foot__empty">教材未逐味说明，可点击药材名填写方中作用</span>
         <RouterLink v-if="selectedHerb" class="text-link" :to="`/herbs/${selectedHerb.id}`">查看药材 →</RouterLink>
@@ -789,7 +868,24 @@ function resetEditor() {
 
 .graph-node__role {
   fill: var(--ink-soft);
-  font-size: 8.5px;
+  font-size: 9.5px;
+  pointer-events: none;
+}
+
+.graph-node__note {
+  fill: var(--cinnabar);
+  font-size: 10.5px;
+  paint-order: stroke;
+  stroke: rgba(255, 252, 245, 0.95);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+.graph-node__badge {
+  fill: #fff;
+  font-family: var(--serif);
+  font-size: 8px;
   pointer-events: none;
 }
 
@@ -885,6 +981,14 @@ function resetEditor() {
   color: var(--cinnabar);
 }
 
+.graph-editor__published {
+  padding: 1px 7px;
+  border-radius: 4px;
+  background: rgba(192, 57, 43, 0.08);
+  color: var(--cinnabar);
+  font-size: 0.62rem;
+}
+
 .graph-editor__grid {
   display: grid;
   grid-template-columns: 120px minmax(0, 1fr);
@@ -901,7 +1005,8 @@ function resetEditor() {
 }
 
 .graph-editor__field select,
-.graph-editor__field textarea {
+.graph-editor__field textarea,
+.graph-editor__field input {
   width: 100%;
   border: 1px solid var(--line);
   border-radius: 7px;
@@ -909,6 +1014,11 @@ function resetEditor() {
   color: var(--ink);
   font-family: inherit;
   font-size: 0.76rem;
+}
+
+.graph-editor__field input {
+  height: 32px;
+  padding: 0 9px;
 }
 
 .graph-editor__field select {
@@ -939,6 +1049,25 @@ function resetEditor() {
 .graph-editor__actions span {
   color: var(--ink-faint);
   font-size: 0.62rem;
+}
+
+.graph-editor__actions .graph-editor__hint {
+  color: var(--ink-faint);
+  font-size: 0.62rem;
+  line-height: 1.5;
+}
+
+.graph-editor__actions .graph-editor__hint--warn {
+  color: var(--cinnabar);
+}
+
+.graph-editor__actions button.graph-editor__save:disabled {
+  opacity: 0.65;
+  cursor: progress;
+}
+
+.graph-editor__field--key {
+  grid-column: 1 / -1;
 }
 
 .graph-hint {
