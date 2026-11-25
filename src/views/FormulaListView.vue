@@ -60,7 +60,8 @@ const junchenQuotes = [
 
 async function load() {
   try {
-    formulas.value = await fetchFormulaList()
+    const list = await fetchFormulaList()
+    formulas.value = list.filter((formula) => bookOf(formula) !== 'mijingzi')
   } catch {
     formulas.value = []
   }
@@ -123,15 +124,15 @@ function submitSearch() {
           <p class="eyebrow">FORMULA / 方剂</p>
           <h1>方剂</h1>
           <p class="page-hero__lead">
-            原文、症状、组成、君臣佐使与加减放在同一页。
-            图谱与原文出处双轨呈现；桂枝汤没有加减，就写“原文未列”，不硬编。
+            以《伤寒论》《金匮要略》经方为主，讲药物配伍思路。
+            原文、症状、组成、君臣佐使与加减放在同一页；图谱与原文出处双轨呈现。
           </p>
-          <p class="page-hero__note">药方重在：治症思路、药材选取、用量</p>
+          <p class="page-hero__note">读经方重在：药物配伍、剂量比例、煎服法</p>
         </div>
         <div class="page-hero__aside">
           <div class="page-hero__stat">
             <span>{{ formulas.length }}</span>
-            <small>首方剂</small>
+            <small>首经方</small>
             <span>{{ totalComposition }}</span>
             <small>条组成记录</small>
           </div>
@@ -219,7 +220,7 @@ function submitSearch() {
             <input v-model="query" type="search" placeholder="输入方名、拼音或药材…" />
           </label>
           <button class="btn btn--primary" type="submit">搜索</button>
-          <p class="filter-hint">输入方名后进入检索页；也可按《伤寒论》《金匮要略》《米晶子济世良方》篇章或主药类方浏览。</p>
+          <p class="filter-hint">输入方名后进入检索页；也可按《伤寒论》《金匮要略》篇章或主药类方浏览。</p>
         </form>
 
           <section class="browse-panel" aria-label="按经典出处分类">
@@ -246,15 +247,6 @@ function submitSearch() {
                   @click="selectBook('jingui')"
                 >
                   金匮要略 <span>{{ bookCounts.jingui }}</span>
-                </button>
-                <button
-                  type="button"
-                  role="tab"
-                  :aria-selected="activeBook === 'mijingzi'"
-                  :class="{ 'is-active': activeBook === 'mijingzi' }"
-                  @click="selectBook('mijingzi')"
-                >
-                  米晶子济世良方 <span>{{ bookCounts.mijingzi }}</span>
                 </button>
               </div>
             </div>
@@ -309,9 +301,6 @@ function submitSearch() {
             《伤寒论》原文只列症状、药味与用量，不标君臣佐使。页面把“原文”和“后世方解”分开，
             点击出处能看到书名、条号与原文；方剂加减也逐条回到原条。
             详情页另按“一两 = 现今的一钱”列今用参考剂量，可一键切换古籍原方；方义解说逐味说明该药在方中作用。
-          </p>
-          <p>
-            《米晶子济世良方》条目据扫描本 OCR 整理，未逐字校勘；方药、剂量与用法以原书为准。
           </p>
         </div>
       </aside>

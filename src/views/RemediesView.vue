@@ -137,6 +137,9 @@ onMounted(loadMeta)
             收录《泉州民间偏方验方选辑》与历代方书中的方剂，按病症分类，现代、近代在前。
             每一条都保留原文与出处；方药、用法为原文摘录，未经现代临床验证。
           </p>
+          <RouterLink class="remedies-hero__scan" to="/remedies/scans">
+            浏览原书扫描页附录 · OCR 机器识别·待校 →
+          </RouterLink>
         </div>
         <div class="remedies-hero__stat">
           <strong>{{ totalText }}</strong>
@@ -301,6 +304,15 @@ onMounted(loadMeta)
   margin: 0;
   color: var(--muted);
   line-height: 1.85;
+}
+
+.remedies-hero__scan {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--cinnabar);
+  font-size: 0.8rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .remedies-hero__stat {

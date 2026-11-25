@@ -69,7 +69,12 @@ function categoryTitle(categoryId: string) {
       </header>
 
       <section class="processing-grid" aria-label="药材炮制类别">
-        <article v-for="group in groups" :key="group.id" class="processing-card">
+        <RouterLink
+          v-for="group in groups"
+          :key="group.id"
+          class="processing-card"
+          :to="`/processing/category/${group.id}`"
+        >
           <div class="processing-card__top">
             <span class="processing-card__kicker">{{ group.kicker }}</span>
             <span class="processing-card__status">{{ group.totalCount ? '已收录' : '待收录' }}</span>
@@ -78,7 +83,8 @@ function categoryTitle(categoryId: string) {
           <p class="processing-card__scope">{{ group.scope }}</p>
           <div class="processing-card__count">{{ group.totalCount }} 味已收录</div>
           <p class="processing-card__note">{{ group.note }}</p>
-        </article>
+          <span class="processing-card__more">查看全部 →</span>
+        </RouterLink>
       </section>
 
       <ProcessingClassics />
@@ -289,6 +295,20 @@ function categoryTitle(categoryId: string) {
   border: 1px solid var(--line);
   border-radius: 18px;
   background: rgba(255, 252, 245, 0.55);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.processing-card:hover {
+  border-color: var(--cinnabar);
+  transform: translateY(-1px);
+}
+
+.processing-card__more {
+  margin-top: 2px;
+  color: var(--cinnabar);
+  font-size: 0.72rem;
 }
 
 .processing-card__top {

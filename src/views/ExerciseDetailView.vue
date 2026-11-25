@@ -35,12 +35,13 @@ const item = computed(() => findExercise(String(route.params.id)))
         <div class="exercise-detail-layout">
           <section class="exercise-media paper-panel">
             <div class="exercise-media__frame">
-              <img :src="item.poster" :alt="`${item.title}视频/图片占位`" />
-              <span class="exercise-media__play" aria-hidden="true">▷</span>
+              <img :src="item.poster" :alt="`${item.title}动作图`" />
+              <span v-if="item.media === 'video'" class="exercise-media__play" aria-hidden="true">▷</span>
             </div>
             <div class="exercise-media__caption">
-              <strong>视频 / 图片待收录</strong>
-              <p>只嵌入自有、授权或官方公开素材；来源不明的视频不放进页面。</p>
+              <strong>{{ item.media === 'image' ? '原书动作图' : '视频 / 图片待收录' }}</strong>
+              <p v-if="item.intro">{{ item.intro }}</p>
+              <p v-else>只嵌入自有、授权或官方公开素材；来源不明的视频不放进页面。</p>
             </div>
           </section>
 
@@ -56,7 +57,33 @@ const item = computed(() => findExercise(String(route.params.id)))
           </aside>
         </div>
 
-        <section class="exercise-outline paper-panel">
+        <section v-if="item.steps?.length" class="exercise-steps" aria-label="功法步骤">
+          <div class="exercise-steps__head">
+            <div>
+              <span class="eyebrow">PRACTICE STEPS / 功法步骤</span>
+              <h2>按原书顺序分步练习</h2>
+            </div>
+            <p>图示为原书扫描页，含页码与图注；动作细节以师传与原书为准。</p>
+          </div>
+
+          <article v-for="(step, index) in item.steps" :key="step.title" class="exercise-step paper-panel">
+            <div class="exercise-step__head">
+              <span class="exercise-step__no">{{ String(index + 1).padStart(2, '0') }}</span>
+              <h3>{{ step.title }}</h3>
+            </div>
+            <p class="exercise-step__text">{{ step.text }}</p>
+            <div v-if="step.images?.length" class="exercise-step__images">
+              <figure v-for="image in step.images" :key="image.src">
+                <img :src="image.src" :alt="image.caption" loading="lazy" />
+                <figcaption>{{ image.caption }}</figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <p v-if="item.sourceNote" class="exercise-source">{{ item.sourceNote }}</p>
+        </section>
+
+        <section v-else class="exercise-outline paper-panel">
           <div>
             <span class="eyebrow">COLLECTION OUTLINE</span>
             <h2>这个收藏页会放什么</h2>
@@ -139,7 +166,7 @@ const item = computed(() => findExercise(String(route.params.id)))
 
 .exercise-media__frame {
   position: relative;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   border-radius: 10px;
   background: var(--paper-2);
@@ -148,7 +175,7 @@ const item = computed(() => findExercise(String(route.params.id)))
 .exercise-media__frame img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .exercise-media__play {
@@ -235,6 +262,107 @@ const item = computed(() => findExercise(String(route.params.id)))
 .exercise-outline span {
   color: var(--ink-faint);
   font-size: 0.74rem;
+}
+
+.exercise-steps {
+  margin-top: 26px;
+}
+
+.exercise-steps__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-end;
+  margin-bottom: 14px;
+}
+
+.exercise-steps__head h2 {
+  margin-top: 4px;
+  font-size: 1.5rem;
+}
+
+.exercise-steps__head > p {
+  max-width: 28rem;
+  color: var(--ink-faint);
+  font-size: 0.76rem;
+  line-height: 1.8;
+  text-align: right;
+}
+
+.exercise-step {
+  margin-bottom: 14px;
+  padding: 22px 24px;
+}
+
+.exercise-step__head {
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+}
+
+.exercise-step__no {
+  color: var(--cinnabar);
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+}
+
+.exercise-step h3 {
+  margin: 0;
+  font-size: 1.22rem;
+}
+
+.exercise-step__text {
+  margin-top: 10px;
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+  line-height: 2;
+}
+
+.exercise-step__images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.exercise-step__images figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper-2);
+}
+
+.exercise-step__images img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.exercise-step__images figcaption {
+  padding: 8px 10px;
+  color: var(--ink-faint);
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+.exercise-source {
+  margin-top: 10px;
+  color: var(--ink-faint);
+  font-size: 0.72rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .exercise-steps__head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .exercise-steps__head > p {
+    text-align: left;
+  }
 }
 
 .exercise-disclaimer {

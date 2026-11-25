@@ -1,0 +1,6344 @@
+{
+  "books": [
+    {
+      "id": "QZ01",
+      "title": "泉州民间偏方验方选辑",
+      "totalPages": 279,
+      "imageDir": "/images/remedy-scans/QZ01",
+      "hasImages": true,
+      "note": "扫描页 OCR 为 Windows.Media.Ocr 机器识别，未逐字校对；页码为扫描图片顺序，页内印刷页码可能不同。"
+    },
+    {
+      "id": "CJ_HN1970",
+      "title": "赤脚医生手册（湖南 1970）",
+      "totalPages": 847,
+      "imageDir": "",
+      "hasImages": false,
+      "note": "扫描页 OCR，机器识别·待校；原图尚未入库。"
+    },
+    {
+      "id": "CJ_JL1970",
+      "title": "赤脚医生手册（吉林 1970）",
+      "totalPages": 651,
+      "imageDir": "",
+      "hasImages": false,
+      "note": "扫描页 OCR，机器识别·待校；原图尚未入库。"
+    },
+    {
+      "id": "CJ_SH1969",
+      "title": "赤脚医生手册（上海 1969）",
+      "totalPages": 766,
+      "imageDir": "",
+      "hasImages": false,
+      "note": "扫描页 OCR，机器识别·待校；原图尚未入库。"
+    },
+    {
+      "id": "CQ1960",
+      "title": "重庆草药（1960）",
+      "totalPages": 280,
+      "imageDir": "",
+      "hasImages": false,
+      "note": "扫描页 OCR，机器识别·待校；原图尚未入库。"
+    },
+    {
+      "id": "TYDXF",
+      "title": "TYDXF 扫描本（书名待核）",
+      "totalPages": 167,
+      "imageDir": "",
+      "hasImages": false,
+      "note": "扫描页 OCR，机器识别·待校；原图尚未入库。"
+    }
+  ],
+  "remedyPages": {
+    "qz-0001": {
+      "page": 10,
+      "mode": "text",
+      "score": 1.526
+    },
+    "qz-0002": {
+      "page": 10,
+      "mode": "text",
+      "score": 1.089
+    },
+    "qz-0003": {
+      "page": 10,
+      "mode": "text",
+      "score": 0.714
+    },
+    "qz-0004": {
+      "page": 10,
+      "mode": "text",
+      "score": 1.932
+    },
+    "qz-0005": {
+      "page": 11,
+      "mode": "text",
+      "score": 1.518
+    },
+    "qz-0006": {
+      "page": 11,
+      "mode": "text",
+      "score": 1.533
+    },
+    "qz-0007": {
+      "page": 11,
+      "mode": "text",
+      "score": 1.174
+    },
+    "qz-0008": {
+      "page": 11,
+      "mode": "text",
+      "score": 3.319
+    },
+    "qz-0009": {
+      "page": 12,
+      "mode": "text",
+      "score": 1.176
+    },
+    "qz-0010": {
+      "page": 12,
+      "mode": "text",
+      "score": 4.014
+    },
+    "qz-0011": {
+      "page": 12,
+      "mode": "text",
+      "score": 0.741
+    },
+    "qz-0012": {
+      "page": 12,
+      "mode": "text",
+      "score": 1.521
+    },
+    "qz-0013": {
+      "page": 12,
+      "mode": "text",
+      "score": 1.046
+    },
+    "qz-0014": {
+      "page": 13,
+      "mode": "text",
+      "score": 1.544
+    },
+    "qz-0015": {
+      "page": 13,
+      "mode": "text",
+      "score": 3.687
+    },
+    "qz-0016": {
+      "page": 13,
+      "mode": "text",
+      "score": 1.985
+    },
+    "qz-0017": {
+      "page": 14,
+      "mode": "text",
+      "score": 1.506
+    },
+    "qz-0018": {
+      "page": 14,
+      "mode": "text",
+      "score": 1.62
+    },
+    "qz-0019": {
+      "page": 14,
+      "mode": "text",
+      "score": 2.347
+    },
+    "qz-0020": {
+      "page": 14,
+      "mode": "text",
+      "score": 1.904
+    },
+    "qz-0021": {
+      "page": 14,
+      "mode": "text",
+      "score": 2.339
+    },
+    "qz-0022": {
+      "page": 15,
+      "mode": "text",
+      "score": 1.557
+    },
+    "qz-0023": {
+      "page": 15,
+      "mode": "text",
+      "score": 2.319
+    },
+    "qz-0024": {
+      "page": 15,
+      "mode": "text",
+      "score": 0.706
+    },
+    "qz-0025": {
+      "page": 15,
+      "mode": "text",
+      "score": 1.603
+    },
+    "qz-0026": {
+      "page": 15,
+      "mode": "text",
+      "score": 1.985
+    },
+    "qz-0027": {
+      "page": 15,
+      "mode": "text",
+      "score": 0.857
+    },
+    "qz-0028": {
+      "page": 16,
+      "mode": "text",
+      "score": 1.188
+    },
+    "qz-0029": {
+      "page": 16,
+      "mode": "text",
+      "score": 1.57
+    },
+    "qz-0030": {
+      "page": 16,
+      "mode": "text",
+      "score": 1.959
+    },
+    "qz-0031": {
+      "page": 16,
+      "mode": "text",
+      "score": 1.207
+    },
+    "qz-0032": {
+      "page": 16,
+      "mode": "text",
+      "score": 2.248
+    },
+    "qz-0033": {
+      "page": 16,
+      "mode": "text",
+      "score": 2.178
+    },
+    "qz-0034": {
+      "page": 17,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-0035": {
+      "page": 17,
+      "mode": "text",
+      "score": 1.907
+    },
+    "qz-0036": {
+      "page": 17,
+      "mode": "text",
+      "score": 1.232
+    },
+    "qz-0037": {
+      "page": 17,
+      "mode": "text",
+      "score": 2.344
+    },
+    "qz-0038": {
+      "page": 18,
+      "mode": "text",
+      "score": 2.34
+    },
+    "qz-0039": {
+      "page": 18,
+      "mode": "text",
+      "score": 1.136
+    },
+    "qz-0040": {
+      "page": 18,
+      "mode": "text",
+      "score": 1.283
+    },
+    "qz-0041": {
+      "page": 18,
+      "mode": "text",
+      "score": 0.875
+    },
+    "qz-0042": {
+      "page": 18,
+      "mode": "text",
+      "score": 1.58
+    },
+    "qz-0043": {
+      "page": 19,
+      "mode": "text",
+      "score": 1.593
+    },
+    "qz-0044": {
+      "page": 19,
+      "mode": "text",
+      "score": 1.5
+    },
+    "qz-0045": {
+      "page": 19,
+      "mode": "text",
+      "score": 1.58
+    },
+    "qz-0046": {
+      "page": 19,
+      "mode": "text",
+      "score": 9.714
+    },
+    "qz-0047": {
+      "page": 19,
+      "mode": "text",
+      "score": 0.833
+    },
+    "qz-0048": {
+      "page": 20,
+      "mode": "text",
+      "score": 1.255
+    },
+    "qz-0049": {
+      "page": 20,
+      "mode": "text",
+      "score": 1.985
+    },
+    "qz-0050": {
+      "page": 20,
+      "mode": "text",
+      "score": 1.567
+    },
+    "qz-0051": {
+      "page": 20,
+      "mode": "text",
+      "score": 1.609
+    },
+    "qz-0052": {
+      "page": 20,
+      "mode": "text",
+      "score": 1.843
+    },
+    "qz-0053": {
+      "page": 21,
+      "mode": "text",
+      "score": 1.983
+    },
+    "qz-0054": {
+      "page": 21,
+      "mode": "text",
+      "score": 1.115
+    },
+    "qz-0055": {
+      "page": 21,
+      "mode": "text",
+      "score": 1.214
+    },
+    "qz-0056": {
+      "page": 21,
+      "mode": "text",
+      "score": 2.284
+    },
+    "qz-0057": {
+      "page": 21,
+      "mode": "text",
+      "score": 1.542
+    },
+    "qz-0058": {
+      "page": 22,
+      "mode": "text",
+      "score": 1.1
+    },
+    "qz-0059": {
+      "page": 22,
+      "mode": "text",
+      "score": 1.087
+    },
+    "qz-0060": {
+      "page": 22,
+      "mode": "text",
+      "score": 0.727
+    },
+    "qz-0061": {
+      "page": 22,
+      "mode": "text",
+      "score": 1.526
+    },
+    "qz-0062": {
+      "page": 23,
+      "mode": "text",
+      "score": 2.977
+    },
+    "qz-0063": {
+      "page": 23,
+      "mode": "text",
+      "score": 1.508
+    },
+    "qz-0064": {
+      "page": 23,
+      "mode": "text",
+      "score": 1.056
+    },
+    "qz-0065": {
+      "page": 23,
+      "mode": "text",
+      "score": 1.15
+    },
+    "qz-0066": {
+      "page": 23,
+      "mode": "text",
+      "score": 1.902
+    },
+    "qz-0067": {
+      "page": 23,
+      "mode": "text",
+      "score": 1.894
+    },
+    "qz-0068": {
+      "page": 23,
+      "mode": "text",
+      "score": 1.802
+    },
+    "qz-0069": {
+      "page": 24,
+      "mode": "text",
+      "score": 1.128
+    },
+    "qz-0070": {
+      "page": 24,
+      "mode": "text",
+      "score": 2.26
+    },
+    "qz-0071": {
+      "page": 24,
+      "mode": "text",
+      "score": 5.133
+    },
+    "qz-0072": {
+      "page": 24,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-0073": {
+      "page": 25,
+      "mode": "text",
+      "score": 1.929
+    },
+    "qz-0074": {
+      "page": 25,
+      "mode": "text",
+      "score": 2.2
+    },
+    "qz-0075": {
+      "page": 25,
+      "mode": "text",
+      "score": 0.714
+    },
+    "qz-0076": {
+      "page": 25,
+      "mode": "text",
+      "score": 1.168
+    },
+    "qz-0077": {
+      "page": 25,
+      "mode": "text",
+      "score": 1.575
+    },
+    "qz-0078": {
+      "page": 25,
+      "mode": "text",
+      "score": 0.865
+    },
+    "qz-0079": {
+      "page": 26,
+      "mode": "text",
+      "score": 1.15
+    },
+    "qz-0080": {
+      "page": 26,
+      "mode": "text",
+      "score": 1.883
+    },
+    "qz-0081": {
+      "page": 26,
+      "mode": "text",
+      "score": 6.135
+    },
+    "qz-0082": {
+      "page": 26,
+      "mode": "text",
+      "score": 5.477
+    },
+    "qz-0083": {
+      "page": 27,
+      "mode": "text",
+      "score": 1.123
+    },
+    "qz-0084": {
+      "page": 27,
+      "mode": "text",
+      "score": 1.589
+    },
+    "qz-0085": {
+      "page": 27,
+      "mode": "text",
+      "score": 0.708
+    },
+    "qz-0086": {
+      "page": 27,
+      "mode": "text",
+      "score": 5.111
+    },
+    "qz-0087": {
+      "page": 28,
+      "mode": "text",
+      "score": 0.818
+    },
+    "qz-0088": {
+      "page": 28,
+      "mode": "text",
+      "score": 1.626
+    },
+    "qz-0089": {
+      "page": 28,
+      "mode": "text",
+      "score": 2.346
+    },
+    "qz-0090": {
+      "page": 28,
+      "mode": "text",
+      "score": 1.112
+    },
+    "qz-0091": {
+      "page": 28,
+      "mode": "text",
+      "score": 1.139
+    },
+    "qz-0092": {
+      "page": 28,
+      "mode": "text",
+      "score": 1.609
+    },
+    "qz-0093": {
+      "page": 29,
+      "mode": "text",
+      "score": 1.163
+    },
+    "qz-0094": {
+      "page": 29,
+      "mode": "text",
+      "score": 2.705
+    },
+    "qz-0095": {
+      "page": 29,
+      "mode": "text",
+      "score": 0.762
+    },
+    "qz-0096": {
+      "page": 29,
+      "mode": "text",
+      "score": 1.979
+    },
+    "qz-0097": {
+      "page": 29,
+      "mode": "text",
+      "score": 2.328
+    },
+    "qz-0098": {
+      "page": 30,
+      "mode": "text",
+      "score": 1.976
+    },
+    "qz-0099": {
+      "page": 30,
+      "mode": "text",
+      "score": 2.284
+    },
+    "qz-0100": {
+      "page": 30,
+      "mode": "text",
+      "score": 1.225
+    },
+    "qz-0101": {
+      "page": 30,
+      "mode": "text",
+      "score": 1.589
+    },
+    "qz-0102": {
+      "page": 30,
+      "mode": "text",
+      "score": 5.879
+    },
+    "qz-0103": {
+      "page": 30,
+      "mode": "text",
+      "score": 1.064
+    },
+    "qz-0104": {
+      "page": 31,
+      "mode": "text",
+      "score": 1.579
+    },
+    "qz-0105": {
+      "page": 31,
+      "mode": "text",
+      "score": 2.963
+    },
+    "qz-0106": {
+      "page": 31,
+      "mode": "text",
+      "score": 1.925
+    },
+    "qz-0107": {
+      "page": 31,
+      "mode": "text",
+      "score": 1.585
+    },
+    "qz-0108": {
+      "page": 32,
+      "mode": "text",
+      "score": 6.152
+    },
+    "qz-0109": {
+      "page": 32,
+      "mode": "text",
+      "score": 1.91
+    },
+    "qz-0110": {
+      "page": 32,
+      "mode": "text",
+      "score": 1.128
+    },
+    "qz-0111": {
+      "page": 32,
+      "mode": "text",
+      "score": 1.174
+    },
+    "qz-0112": {
+      "page": 33,
+      "mode": "text",
+      "score": 10.375
+    },
+    "qz-0113": {
+      "page": 33,
+      "mode": "text",
+      "score": 10.733
+    },
+    "qz-0114": {
+      "page": 34,
+      "mode": "text",
+      "score": 13.214
+    },
+    "qz-0115": {
+      "page": 34,
+      "mode": "text",
+      "score": 1.492
+    },
+    "qz-0116": {
+      "page": 34,
+      "mode": "text",
+      "score": 8.637
+    },
+    "qz-0117": {
+      "page": 35,
+      "mode": "text",
+      "score": 0.906
+    },
+    "qz-0118": {
+      "page": 35,
+      "mode": "text",
+      "score": 2.686
+    },
+    "qz-0119": {
+      "page": 35,
+      "mode": "text",
+      "score": 4.074
+    },
+    "qz-0120": {
+      "page": 35,
+      "mode": "text",
+      "score": 3.731
+    },
+    "qz-0121": {
+      "page": 35,
+      "mode": "text",
+      "score": 1.533
+    },
+    "qz-0122": {
+      "page": 36,
+      "mode": "text",
+      "score": 4.079
+    },
+    "qz-0123": {
+      "page": 36,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-0124": {
+      "page": 36,
+      "mode": "text",
+      "score": 3.762
+    },
+    "qz-0125": {
+      "page": 36,
+      "mode": "text",
+      "score": 1.564
+    },
+    "qz-0126": {
+      "page": 36,
+      "mode": "text",
+      "score": 2.268
+    },
+    "qz-0127": {
+      "page": 36,
+      "mode": "text",
+      "score": 3.748
+    },
+    "qz-0128": {
+      "page": 37,
+      "mode": "text",
+      "score": 3.371
+    },
+    "qz-0129": {
+      "page": 37,
+      "mode": "text",
+      "score": 1.55
+    },
+    "qz-0130": {
+      "page": 37,
+      "mode": "text",
+      "score": 1.626
+    },
+    "qz-0131": {
+      "page": 37,
+      "mode": "text",
+      "score": 1.267
+    },
+    "qz-0132": {
+      "page": 37,
+      "mode": "text",
+      "score": 2.63
+    },
+    "qz-0133": {
+      "page": 37,
+      "mode": "text",
+      "score": 3.388
+    },
+    "qz-0134": {
+      "page": 38,
+      "mode": "text",
+      "score": 7.561
+    },
+    "qz-0135": {
+      "page": 38,
+      "mode": "text",
+      "score": 4.746
+    },
+    "qz-0136": {
+      "page": 38,
+      "mode": "text",
+      "score": 0.583
+    },
+    "qz-0137": {
+      "page": 38,
+      "mode": "text",
+      "score": 1.493
+    },
+    "qz-0138": {
+      "page": 39,
+      "mode": "text",
+      "score": 1.4
+    },
+    "qz-0139": {
+      "page": 39,
+      "mode": "text",
+      "score": 1.817
+    },
+    "qz-0140": {
+      "page": 39,
+      "mode": "text",
+      "score": 1.54
+    },
+    "qz-0141": {
+      "page": 39,
+      "mode": "text",
+      "score": 1.142
+    },
+    "qz-0142": {
+      "page": 39,
+      "mode": "text",
+      "score": 3.103
+    },
+    "qz-0143": {
+      "page": 40,
+      "mode": "text",
+      "score": 0.99
+    },
+    "qz-0144": {
+      "page": 40,
+      "mode": "text",
+      "score": 3.305
+    },
+    "qz-0145": {
+      "page": 40,
+      "mode": "text",
+      "score": 3.015
+    },
+    "qz-0146": {
+      "page": 40,
+      "mode": "text",
+      "score": 3.006
+    },
+    "qz-0147": {
+      "page": 40,
+      "mode": "text",
+      "score": 1.15
+    },
+    "qz-0148": {
+      "page": 40,
+      "mode": "text",
+      "score": 0.957
+    },
+    "qz-0149": {
+      "page": 41,
+      "mode": "text",
+      "score": 1.2
+    },
+    "qz-0150": {
+      "page": 41,
+      "mode": "text",
+      "score": 1.962
+    },
+    "qz-0151": {
+      "page": 41,
+      "mode": "text",
+      "score": 2.705
+    },
+    "qz-0152": {
+      "page": 41,
+      "mode": "text",
+      "score": 9.344
+    },
+    "qz-0153": {
+      "page": 42,
+      "mode": "text",
+      "score": 0.846
+    },
+    "qz-0154": {
+      "page": 42,
+      "mode": "text",
+      "score": 3.749
+    },
+    "qz-0155": {
+      "page": 42,
+      "mode": "text",
+      "score": 3.393
+    },
+    "qz-0156": {
+      "page": 42,
+      "mode": "text",
+      "score": 1.124
+    },
+    "qz-0157": {
+      "page": 42,
+      "mode": "text",
+      "score": 1.629
+    },
+    "qz-0158": {
+      "page": 42,
+      "mode": "text",
+      "score": 2.705
+    },
+    "qz-0159": {
+      "page": 43,
+      "mode": "text",
+      "score": 1.925
+    },
+    "qz-0160": {
+      "page": 43,
+      "mode": "text",
+      "score": 1.435
+    },
+    "qz-0161": {
+      "page": 43,
+      "mode": "text",
+      "score": 2.315
+    },
+    "qz-0162": {
+      "page": 43,
+      "mode": "text",
+      "score": 0.733
+    },
+    "qz-0163": {
+      "page": 44,
+      "mode": "text",
+      "score": 10.702
+    },
+    "qz-0164": {
+      "page": 44,
+      "mode": "text",
+      "score": 1.5
+    },
+    "qz-0165": {
+      "page": 44,
+      "mode": "text",
+      "score": 1.5
+    },
+    "qz-0166": {
+      "page": 44,
+      "mode": "text",
+      "score": 1.174
+    },
+    "qz-0167": {
+      "page": 44,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-0168": {
+      "page": 45,
+      "mode": "text",
+      "score": 3.041
+    },
+    "qz-0169": {
+      "page": 45,
+      "mode": "text",
+      "score": 0.882
+    },
+    "qz-0170": {
+      "page": 45,
+      "mode": "text",
+      "score": 1.561
+    },
+    "qz-0171": {
+      "page": 45,
+      "mode": "text",
+      "score": 1.631
+    },
+    "qz-0172": {
+      "page": 46,
+      "mode": "text",
+      "score": 2.634
+    },
+    "qz-0173": {
+      "page": 46,
+      "mode": "text",
+      "score": 1.921
+    },
+    "qz-0174": {
+      "page": 46,
+      "mode": "text",
+      "score": 1.171
+    },
+    "qz-0175": {
+      "page": 46,
+      "mode": "text",
+      "score": 1.9
+    },
+    "qz-0176": {
+      "page": 46,
+      "mode": "text",
+      "score": 0.727
+    },
+    "qz-0177": {
+      "page": 46,
+      "mode": "text",
+      "score": 1.128
+    },
+    "qz-0178": {
+      "page": 47,
+      "mode": "text",
+      "score": 1.973
+    },
+    "qz-0179": {
+      "page": 47,
+      "mode": "text",
+      "score": 1.546
+    },
+    "qz-0180": {
+      "page": 47,
+      "mode": "text",
+      "score": 2.318
+    },
+    "qz-0181": {
+      "page": 47,
+      "mode": "text",
+      "score": 4.091
+    },
+    "qz-0182": {
+      "page": 48,
+      "mode": "text",
+      "score": 4.583
+    },
+    "qz-0183": {
+      "page": 48,
+      "mode": "text",
+      "score": 6.861
+    },
+    "qz-0184": {
+      "page": 48,
+      "mode": "text",
+      "score": 1.847
+    },
+    "qz-0185": {
+      "page": 48,
+      "mode": "text",
+      "score": 5.513
+    },
+    "qz-0186": {
+      "page": 48,
+      "mode": "text",
+      "score": 2.344
+    },
+    "qz-0187": {
+      "page": 49,
+      "mode": "text",
+      "score": 4.21
+    },
+    "qz-0188": {
+      "page": 49,
+      "mode": "text",
+      "score": 0.867
+    },
+    "qz-0189": {
+      "page": 49,
+      "mode": "text",
+      "score": 1.247
+    },
+    "qz-0190": {
+      "page": 49,
+      "mode": "text",
+      "score": 7.923
+    },
+    "qz-0191": {
+      "page": 49,
+      "mode": "text",
+      "score": 1.58
+    },
+    "qz-0192": {
+      "page": 50,
+      "mode": "text",
+      "score": 4.161
+    },
+    "qz-0193": {
+      "page": 50,
+      "mode": "text",
+      "score": 0.8
+    },
+    "qz-0194": {
+      "page": 50,
+      "mode": "text",
+      "score": 0.76
+    },
+    "qz-0195": {
+      "page": 50,
+      "mode": "text",
+      "score": 2.952
+    },
+    "qz-0196": {
+      "page": 50,
+      "mode": "text",
+      "score": 1.119
+    },
+    "qz-0197": {
+      "page": 51,
+      "mode": "text",
+      "score": 1.217
+    },
+    "qz-0198": {
+      "page": 51,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-0199": {
+      "page": 51,
+      "mode": "text",
+      "score": 1.038
+    },
+    "qz-0200": {
+      "page": 51,
+      "mode": "text",
+      "score": 3.035
+    },
+    "qz-0201": {
+      "page": 51,
+      "mode": "text",
+      "score": 0.769
+    },
+    "qz-0202": {
+      "page": 51,
+      "mode": "text",
+      "score": 0.789
+    },
+    "qz-0203": {
+      "page": 51,
+      "mode": "text",
+      "score": 1.15
+    },
+    "qz-0204": {
+      "page": 52,
+      "mode": "text",
+      "score": 0.55
+    },
+    "qz-0205": {
+      "page": 52,
+      "mode": "text",
+      "score": 1.089
+    },
+    "qz-0206": {
+      "page": 52,
+      "mode": "text",
+      "score": 1.174
+    },
+    "qz-0207": {
+      "page": 52,
+      "mode": "text",
+      "score": 4.106
+    },
+    "qz-0208": {
+      "page": 52,
+      "mode": "text",
+      "score": 1.07
+    },
+    "qz-0209": {
+      "page": 53,
+      "mode": "text",
+      "score": 1.038
+    },
+    "qz-0210": {
+      "page": 53,
+      "mode": "text",
+      "score": 2.291
+    },
+    "qz-0211": {
+      "page": 53,
+      "mode": "text",
+      "score": 1.081
+    },
+    "qz-0212": {
+      "page": 53,
+      "mode": "text",
+      "score": 1.945
+    },
+    "qz-0213": {
+      "page": 53,
+      "mode": "text",
+      "score": 2.67
+    },
+    "qz-0214": {
+      "page": 54,
+      "mode": "text",
+      "score": 1.533
+    },
+    "qz-0215": {
+      "page": 54,
+      "mode": "text",
+      "score": 0.778
+    },
+    "qz-0216": {
+      "page": 54,
+      "mode": "text",
+      "score": 1.605
+    },
+    "qz-0217": {
+      "page": 54,
+      "mode": "text",
+      "score": 1.613
+    },
+    "qz-0218": {
+      "page": 54,
+      "mode": "text",
+      "score": 1.297
+    },
+    "qz-0219": {
+      "page": 54,
+      "mode": "text",
+      "score": 1.183
+    },
+    "qz-0220": {
+      "page": 55,
+      "mode": "text",
+      "score": 1.25
+    },
+    "qz-0221": {
+      "page": 55,
+      "mode": "text",
+      "score": 1.168
+    },
+    "qz-0222": {
+      "page": 55,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-0223": {
+      "page": 55,
+      "mode": "text",
+      "score": 1.883
+    },
+    "qz-0224": {
+      "page": 56,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-0225": {
+      "page": 56,
+      "mode": "text",
+      "score": 1.626
+    },
+    "qz-0226": {
+      "page": 56,
+      "mode": "text",
+      "score": 0.833
+    },
+    "qz-0227": {
+      "page": 56,
+      "mode": "text",
+      "score": 0.786
+    },
+    "qz-0228": {
+      "page": 56,
+      "mode": "text",
+      "score": 1.115
+    },
+    "qz-0229": {
+      "page": 56,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-0230": {
+      "page": 57,
+      "mode": "text",
+      "score": 1.255
+    },
+    "qz-0231": {
+      "page": 57,
+      "mode": "text",
+      "score": 1.609
+    },
+    "qz-0232": {
+      "page": 57,
+      "mode": "text",
+      "score": 1.613
+    },
+    "qz-0233": {
+      "page": 57,
+      "mode": "text",
+      "score": 1.225
+    },
+    "qz-0234": {
+      "page": 57,
+      "mode": "text",
+      "score": 0.714
+    },
+    "qz-0235": {
+      "page": 57,
+      "mode": "text",
+      "score": 2.339
+    },
+    "qz-0236": {
+      "page": 57,
+      "mode": "text",
+      "score": 1.077
+    },
+    "qz-0237": {
+      "page": 58,
+      "mode": "text",
+      "score": 10.029
+    },
+    "qz-0238": {
+      "page": 58,
+      "mode": "text",
+      "score": 2.313
+    },
+    "qz-0239": {
+      "page": 58,
+      "mode": "text",
+      "score": 1.168
+    },
+    "qz-0240": {
+      "page": 58,
+      "mode": "text",
+      "score": 5.121
+    },
+    "qz-0241": {
+      "page": 59,
+      "mode": "text",
+      "score": 0.789
+    },
+    "qz-0242": {
+      "page": 59,
+      "mode": "text",
+      "score": 1.589
+    },
+    "qz-0243": {
+      "page": 59,
+      "mode": "text",
+      "score": 1.494
+    },
+    "qz-0244": {
+      "page": 59,
+      "mode": "text",
+      "score": 2.652
+    },
+    "qz-0245": {
+      "page": 59,
+      "mode": "text",
+      "score": 2.659
+    },
+    "qz-0246": {
+      "page": 60,
+      "mode": "text",
+      "score": 3.017
+    },
+    "qz-0247": {
+      "page": 60,
+      "mode": "text",
+      "score": 1.128
+    },
+    "qz-0248": {
+      "page": 60,
+      "mode": "text",
+      "score": 0.818
+    },
+    "qz-0249": {
+      "page": 60,
+      "mode": "text",
+      "score": 3.694
+    },
+    "qz-0250": {
+      "page": 60,
+      "mode": "text",
+      "score": 0.965
+    },
+    "qz-0251": {
+      "page": 61,
+      "mode": "text",
+      "score": 1.894
+    },
+    "qz-0252": {
+      "page": 61,
+      "mode": "text",
+      "score": 3.732
+    },
+    "qz-0253": {
+      "page": 61,
+      "mode": "text",
+      "score": 0.722
+    },
+    "qz-0254": {
+      "page": 61,
+      "mode": "text",
+      "score": 2.639
+    },
+    "qz-0255": {
+      "page": 61,
+      "mode": "text",
+      "score": 1.526
+    },
+    "qz-0256": {
+      "page": 62,
+      "mode": "text",
+      "score": 2.292
+    },
+    "qz-0257": {
+      "page": 62,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-0258": {
+      "page": 62,
+      "mode": "text",
+      "score": 2.261
+    },
+    "qz-0259": {
+      "page": 62,
+      "mode": "text",
+      "score": 1.038
+    },
+    "qz-0260": {
+      "page": 62,
+      "mode": "text",
+      "score": 4.413
+    },
+    "qz-0261": {
+      "page": 62,
+      "mode": "text",
+      "score": 2.27
+    },
+    "qz-0262": {
+      "page": 62,
+      "mode": "text",
+      "score": 1.929
+    },
+    "qz-0263": {
+      "page": 63,
+      "mode": "text",
+      "score": 1.54
+    },
+    "qz-0264": {
+      "page": 63,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-0265": {
+      "page": 63,
+      "mode": "text",
+      "score": 1.163
+    },
+    "qz-0266": {
+      "page": 63,
+      "mode": "text",
+      "score": 0.789
+    },
+    "qz-0267": {
+      "page": 63,
+      "mode": "text",
+      "score": 1.207
+    },
+    "qz-0268": {
+      "page": 64,
+      "mode": "text",
+      "score": 2.615
+    },
+    "qz-0269": {
+      "page": 64,
+      "mode": "text",
+      "score": 4.79
+    },
+    "qz-0270": {
+      "page": 64,
+      "mode": "text",
+      "score": 1.875
+    },
+    "qz-0271": {
+      "page": 64,
+      "mode": "text",
+      "score": 1.947
+    },
+    "qz-0272": {
+      "page": 64,
+      "mode": "text",
+      "score": 1.904
+    },
+    "qz-0273": {
+      "page": 65,
+      "mode": "section",
+      "score": 0.118
+    },
+    "qz-0274": {
+      "page": 65,
+      "mode": "text",
+      "score": 3.303
+    },
+    "qz-0275": {
+      "page": 65,
+      "mode": "text",
+      "score": 1.128
+    },
+    "qz-0276": {
+      "page": 65,
+      "mode": "text",
+      "score": 2.646
+    },
+    "qz-0277": {
+      "page": 65,
+      "mode": "text",
+      "score": 1.089
+    },
+    "qz-0278": {
+      "page": 66,
+      "mode": "text",
+      "score": 1.168
+    },
+    "qz-0279": {
+      "page": 66,
+      "mode": "text",
+      "score": 3.044
+    },
+    "qz-0280": {
+      "page": 66,
+      "mode": "text",
+      "score": 1.171
+    },
+    "qz-0281": {
+      "page": 66,
+      "mode": "text",
+      "score": 5.079
+    },
+    "qz-0282": {
+      "page": 66,
+      "mode": "text",
+      "score": 1.176
+    },
+    "qz-0283": {
+      "page": 67,
+      "mode": "text",
+      "score": 1.183
+    },
+    "qz-0284": {
+      "page": 67,
+      "mode": "text",
+      "score": 1.914
+    },
+    "qz-0285": {
+      "page": 67,
+      "mode": "text",
+      "score": 1.533
+    },
+    "qz-0286": {
+      "page": 67,
+      "mode": "text",
+      "score": 1.217
+    },
+    "qz-0287": {
+      "page": 67,
+      "mode": "text",
+      "score": 1.232
+    },
+    "qz-0288": {
+      "page": 67,
+      "mode": "text",
+      "score": 2.3
+    },
+    "qz-0289": {
+      "page": 68,
+      "mode": "text",
+      "score": 1.929
+    },
+    "qz-0290": {
+      "page": 68,
+      "mode": "text",
+      "score": 1.263
+    },
+    "qz-0291": {
+      "page": 68,
+      "mode": "text",
+      "score": 1.22
+    },
+    "qz-0292": {
+      "page": 68,
+      "mode": "text",
+      "score": 0.643
+    },
+    "qz-0293": {
+      "page": 68,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-0294": {
+      "page": 69,
+      "mode": "text",
+      "score": 1.115
+    },
+    "qz-0295": {
+      "page": 69,
+      "mode": "text",
+      "score": 1.115
+    },
+    "qz-0296": {
+      "page": 69,
+      "mode": "text",
+      "score": 1.494
+    },
+    "qz-0297": {
+      "page": 69,
+      "mode": "text",
+      "score": 0.692
+    },
+    "qz-0298": {
+      "page": 69,
+      "mode": "text",
+      "score": 1.189
+    },
+    "qz-0299": {
+      "page": 69,
+      "mode": "text",
+      "score": 1.585
+    },
+    "qz-0300": {
+      "page": 70,
+      "mode": "text",
+      "score": 0.722
+    },
+    "qz-0301": {
+      "page": 70,
+      "mode": "text",
+      "score": 12.14
+    },
+    "qz-0302": {
+      "page": 70,
+      "mode": "text",
+      "score": 0.636
+    },
+    "qz-0303": {
+      "page": 70,
+      "mode": "text",
+      "score": 1.683
+    },
+    "qz-0304": {
+      "page": 71,
+      "mode": "text",
+      "score": 5.431
+    },
+    "qz-0305": {
+      "page": 71,
+      "mode": "text",
+      "score": 1.017
+    },
+    "qz-0306": {
+      "page": 71,
+      "mode": "text",
+      "score": 1.902
+    },
+    "qz-0307": {
+      "page": 71,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-0308": {
+      "page": 71,
+      "mode": "text",
+      "score": 1.54
+    },
+    "qz-0309": {
+      "page": 72,
+      "mode": "text",
+      "score": 1.115
+    },
+    "qz-0310": {
+      "page": 72,
+      "mode": "text",
+      "score": 1.54
+    },
+    "qz-0311": {
+      "page": 72,
+      "mode": "text",
+      "score": 5.115
+    },
+    "qz-0312": {
+      "page": 72,
+      "mode": "text",
+      "score": 1.515
+    },
+    "qz-0313": {
+      "page": 72,
+      "mode": "text",
+      "score": 1.042
+    },
+    "qz-0314": {
+      "page": 73,
+      "mode": "text",
+      "score": 2.272
+    },
+    "qz-0315": {
+      "page": 73,
+      "mode": "text",
+      "score": 1.174
+    },
+    "qz-0316": {
+      "page": 73,
+      "mode": "text",
+      "score": 2.297
+    },
+    "qz-0317": {
+      "page": 73,
+      "mode": "text",
+      "score": 0.72
+    },
+    "qz-0318": {
+      "page": 73,
+      "mode": "text",
+      "score": 2.655
+    },
+    "qz-0319": {
+      "page": 73,
+      "mode": "text",
+      "score": 2.314
+    },
+    "qz-0320": {
+      "page": 73,
+      "mode": "text",
+      "score": 2.978
+    },
+    "qz-0321": {
+      "page": 74,
+      "mode": "text",
+      "score": 5.139
+    },
+    "qz-0322": {
+      "page": 73,
+      "mode": "text",
+      "score": 0.571
+    },
+    "qz-0323": {
+      "page": 74,
+      "mode": "text",
+      "score": 1.445
+    },
+    "qz-0324": {
+      "page": 74,
+      "mode": "text",
+      "score": 0.727
+    },
+    "qz-0325": {
+      "page": 74,
+      "mode": "text",
+      "score": 1.017
+    },
+    "qz-0326": {
+      "page": 74,
+      "mode": "text",
+      "score": 0.435
+    },
+    "qz-0327": {
+      "page": 75,
+      "mode": "text",
+      "score": 1.483
+    },
+    "qz-0328": {
+      "page": 75,
+      "mode": "text",
+      "score": 1.5
+    },
+    "qz-0329": {
+      "page": 75,
+      "mode": "text",
+      "score": 2.254
+    },
+    "qz-0330": {
+      "page": 75,
+      "mode": "text",
+      "score": 1.932
+    },
+    "qz-0331": {
+      "page": 75,
+      "mode": "text",
+      "score": 1.863
+    },
+    "qz-0332": {
+      "page": 75,
+      "mode": "text",
+      "score": 1.528
+    },
+    "qz-0333": {
+      "page": 76,
+      "mode": "text",
+      "score": 2.253
+    },
+    "qz-0334": {
+      "page": 76,
+      "mode": "text",
+      "score": 0.818
+    },
+    "qz-0335": {
+      "page": 76,
+      "mode": "text",
+      "score": 1.979
+    },
+    "qz-0336": {
+      "page": 76,
+      "mode": "text",
+      "score": 0.867
+    },
+    "qz-0337": {
+      "page": 77,
+      "mode": "text",
+      "score": 1.562
+    },
+    "qz-0338": {
+      "page": 77,
+      "mode": "text",
+      "score": 1.564
+    },
+    "qz-0339": {
+      "page": 77,
+      "mode": "text",
+      "score": 1.546
+    },
+    "qz-0340": {
+      "page": 77,
+      "mode": "text",
+      "score": 2.28
+    },
+    "qz-0341": {
+      "page": 77,
+      "mode": "text",
+      "score": 1.15
+    },
+    "qz-0342": {
+      "page": 78,
+      "mode": "text",
+      "score": 2.292
+    },
+    "qz-0343": {
+      "page": 78,
+      "mode": "text",
+      "score": 2.192
+    },
+    "qz-0344": {
+      "page": 78,
+      "mode": "text",
+      "score": 1.422
+    },
+    "qz-0345": {
+      "page": 78,
+      "mode": "text",
+      "score": 0.524
+    },
+    "qz-0346": {
+      "page": 78,
+      "mode": "text",
+      "score": 0.813
+    },
+    "qz-0347": {
+      "page": 79,
+      "mode": "text",
+      "score": 1.92
+    },
+    "qz-0348": {
+      "page": 79,
+      "mode": "text",
+      "score": 1.947
+    },
+    "qz-0349": {
+      "page": 79,
+      "mode": "text",
+      "score": 2.344
+    },
+    "qz-0350": {
+      "page": 80,
+      "mode": "text",
+      "score": 1.225
+    },
+    "qz-0351": {
+      "page": 80,
+      "mode": "text",
+      "score": 1.524
+    },
+    "qz-0352": {
+      "page": 80,
+      "mode": "text",
+      "score": 2.014
+    },
+    "qz-0353": {
+      "page": 80,
+      "mode": "text",
+      "score": 1.267
+    },
+    "qz-0354": {
+      "page": 81,
+      "mode": "text",
+      "score": 1.017
+    },
+    "qz-0355": {
+      "page": 81,
+      "mode": "text",
+      "score": 1.529
+    },
+    "qz-0356": {
+      "page": 81,
+      "mode": "text",
+      "score": 1.528
+    },
+    "qz-0357": {
+      "page": 81,
+      "mode": "text",
+      "score": 1.506
+    },
+    "qz-0358": {
+      "page": 81,
+      "mode": "text",
+      "score": 5.193
+    },
+    "qz-0359": {
+      "page": 82,
+      "mode": "text",
+      "score": 5.173
+    },
+    "qz-0360": {
+      "page": 82,
+      "mode": "text",
+      "score": 2.707
+    },
+    "qz-0361": {
+      "page": 82,
+      "mode": "text",
+      "score": 0.833
+    },
+    "qz-0362": {
+      "page": 82,
+      "mode": "text",
+      "score": 2.296
+    },
+    "qz-0363": {
+      "page": 82,
+      "mode": "text",
+      "score": 0.846
+    },
+    "qz-0364": {
+      "page": 82,
+      "mode": "text",
+      "score": 0.875
+    },
+    "qz-0365": {
+      "page": 83,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-0366": {
+      "page": 83,
+      "mode": "text",
+      "score": 2.329
+    },
+    "qz-0367": {
+      "page": 83,
+      "mode": "text",
+      "score": 0.72
+    },
+    "qz-0368": {
+      "page": 83,
+      "mode": "text",
+      "score": 0.688
+    },
+    "qz-0369": {
+      "page": 83,
+      "mode": "text",
+      "score": 0.875
+    },
+    "qz-0370": {
+      "page": 83,
+      "mode": "text",
+      "score": 1.207
+    },
+    "qz-0371": {
+      "page": 83,
+      "mode": "text",
+      "score": 1.03
+    },
+    "qz-0372": {
+      "page": 84,
+      "mode": "text",
+      "score": 1.575
+    },
+    "qz-0373": {
+      "page": 84,
+      "mode": "text",
+      "score": 1.557
+    },
+    "qz-0374": {
+      "page": 84,
+      "mode": "text",
+      "score": 1.912
+    },
+    "qz-0375": {
+      "page": 84,
+      "mode": "text",
+      "score": 2.204
+    },
+    "qz-0376": {
+      "page": 84,
+      "mode": "text",
+      "score": 1.207
+    },
+    "qz-0377": {
+      "page": 84,
+      "mode": "text",
+      "score": 1.97
+    },
+    "qz-0378": {
+      "page": 85,
+      "mode": "text",
+      "score": 3.357
+    },
+    "qz-0379": {
+      "page": 85,
+      "mode": "text",
+      "score": 0.833
+    },
+    "qz-0380": {
+      "page": 85,
+      "mode": "text",
+      "score": 4.058
+    },
+    "qz-0381": {
+      "page": 85,
+      "mode": "text",
+      "score": 1.976
+    },
+    "qz-0382": {
+      "page": 85,
+      "mode": "text",
+      "score": 0.778
+    },
+    "qz-0383": {
+      "page": 86,
+      "mode": "text",
+      "score": 0.829
+    },
+    "qz-0384": {
+      "page": 86,
+      "mode": "text",
+      "score": 1.239
+    },
+    "qz-0385": {
+      "page": 86,
+      "mode": "text",
+      "score": 1.486
+    },
+    "qz-0386": {
+      "page": 86,
+      "mode": "text",
+      "score": 1.1
+    },
+    "qz-0387": {
+      "page": 87,
+      "mode": "text",
+      "score": 2.319
+    },
+    "qz-0388": {
+      "page": 87,
+      "mode": "text",
+      "score": 1.976
+    },
+    "qz-0389": {
+      "page": 87,
+      "mode": "text",
+      "score": 1.283
+    },
+    "qz-0390": {
+      "page": 87,
+      "mode": "text",
+      "score": 0.647
+    },
+    "qz-0391": {
+      "page": 87,
+      "mode": "text",
+      "score": 1.225
+    },
+    "qz-0392": {
+      "page": 87,
+      "mode": "text",
+      "score": 1.947
+    },
+    "qz-0393": {
+      "page": 88,
+      "mode": "text",
+      "score": 4.047
+    },
+    "qz-0394": {
+      "page": 88,
+      "mode": "text",
+      "score": 1.947
+    },
+    "qz-0395": {
+      "page": 88,
+      "mode": "text",
+      "score": 1.255
+    },
+    "qz-0396": {
+      "page": 88,
+      "mode": "text",
+      "score": 1.245
+    },
+    "qz-0397": {
+      "page": 88,
+      "mode": "text",
+      "score": 1.868
+    },
+    "qz-0398": {
+      "page": 89,
+      "mode": "text",
+      "score": 1.017
+    },
+    "qz-0399": {
+      "page": 89,
+      "mode": "text",
+      "score": 1.903
+    },
+    "qz-0400": {
+      "page": 89,
+      "mode": "text",
+      "score": 0.615
+    },
+    "qz-0401": {
+      "page": 89,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-0402": {
+      "page": 89,
+      "mode": "text",
+      "score": 1.163
+    },
+    "qz-0403": {
+      "page": 89,
+      "mode": "text",
+      "score": 1.115
+    },
+    "qz-0404": {
+      "page": 89,
+      "mode": "text",
+      "score": 0.959
+    },
+    "qz-0405": {
+      "page": 90,
+      "mode": "text",
+      "score": 2.246
+    },
+    "qz-0406": {
+      "page": 90,
+      "mode": "text",
+      "score": 0.688
+    },
+    "qz-0407": {
+      "page": 90,
+      "mode": "text",
+      "score": 1.58
+    },
+    "qz-0408": {
+      "page": 90,
+      "mode": "text",
+      "score": 1.115
+    },
+    "qz-0409": {
+      "page": 90,
+      "mode": "text",
+      "score": 1.017
+    },
+    "qz-0410": {
+      "page": 91,
+      "mode": "text",
+      "score": 4.321
+    },
+    "qz-0411": {
+      "page": 91,
+      "mode": "text",
+      "score": 4.779
+    },
+    "qz-0412": {
+      "page": 91,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-0413": {
+      "page": 91,
+      "mode": "text",
+      "score": 8.319
+    },
+    "qz-0414": {
+      "page": 91,
+      "mode": "text",
+      "score": 0.444
+    },
+    "qz-0415": {
+      "page": 92,
+      "mode": "text",
+      "score": 1.828
+    },
+    "qz-0416": {
+      "page": 92,
+      "mode": "text",
+      "score": 0.652
+    },
+    "qz-0417": {
+      "page": 92,
+      "mode": "text",
+      "score": 1.58
+    },
+    "qz-0418": {
+      "page": 92,
+      "mode": "text",
+      "score": 1.521
+    },
+    "qz-0419": {
+      "page": 92,
+      "mode": "text",
+      "score": 0.647
+    },
+    "qz-0420": {
+      "page": 92,
+      "mode": "text",
+      "score": 0.571
+    },
+    "qz-0421": {
+      "page": 93,
+      "mode": "text",
+      "score": 1.4
+    },
+    "qz-0422": {
+      "page": 93,
+      "mode": "text",
+      "score": 0.6
+    },
+    "qz-0423": {
+      "page": 93,
+      "mode": "text",
+      "score": 5.087
+    },
+    "qz-0424": {
+      "page": 94,
+      "mode": "text",
+      "score": 2.178
+    },
+    "qz-0425": {
+      "page": 94,
+      "mode": "text",
+      "score": 0.704
+    },
+    "qz-0426": {
+      "page": 94,
+      "mode": "text",
+      "score": 3.333
+    },
+    "qz-0427": {
+      "page": 94,
+      "mode": "text",
+      "score": 2.655
+    },
+    "qz-0428": {
+      "page": 94,
+      "mode": "text",
+      "score": 0.714
+    },
+    "qz-0429": {
+      "page": 95,
+      "mode": "text",
+      "score": 1.912
+    },
+    "qz-0430": {
+      "page": 95,
+      "mode": "text",
+      "score": 0.556
+    },
+    "qz-0431": {
+      "page": 95,
+      "mode": "text",
+      "score": 4.82
+    },
+    "qz-0432": {
+      "page": 96,
+      "mode": "text",
+      "score": 2.295
+    },
+    "qz-0433": {
+      "page": 96,
+      "mode": "text",
+      "score": 1.939
+    },
+    "qz-0434": {
+      "page": 96,
+      "mode": "text",
+      "score": 0.773
+    },
+    "qz-0435": {
+      "page": 96,
+      "mode": "text",
+      "score": 3.362
+    },
+    "qz-0436": {
+      "page": 96,
+      "mode": "text",
+      "score": 6.211
+    },
+    "qz-0437": {
+      "page": 97,
+      "mode": "text",
+      "score": 8.302
+    },
+    "qz-0438": {
+      "page": 97,
+      "mode": "text",
+      "score": 2.3
+    },
+    "qz-0439": {
+      "page": 97,
+      "mode": "text",
+      "score": 2.978
+    },
+    "qz-0440": {
+      "page": 98,
+      "mode": "text",
+      "score": 1.1
+    },
+    "qz-0441": {
+      "page": 98,
+      "mode": "text",
+      "score": 5.441
+    },
+    "qz-0442": {
+      "page": 98,
+      "mode": "text",
+      "score": 0.778
+    },
+    "qz-0443": {
+      "page": 98,
+      "mode": "text",
+      "score": 1.27
+    },
+    "qz-0444": {
+      "page": 98,
+      "mode": "text",
+      "score": 4.104
+    },
+    "qz-0445": {
+      "page": 99,
+      "mode": "text",
+      "score": 1.6
+    },
+    "qz-0446": {
+      "page": 99,
+      "mode": "text",
+      "score": 1.225
+    },
+    "qz-0447": {
+      "page": 99,
+      "mode": "text",
+      "score": 0.6
+    },
+    "qz-0448": {
+      "page": 99,
+      "mode": "text",
+      "score": 3.613
+    },
+    "qz-0449": {
+      "page": 100,
+      "mode": "text",
+      "score": 1.613
+    },
+    "qz-0450": {
+      "page": 100,
+      "mode": "text",
+      "score": 3.033
+    },
+    "qz-0451": {
+      "page": 100,
+      "mode": "text",
+      "score": 1.964
+    },
+    "qz-0452": {
+      "page": 100,
+      "mode": "text",
+      "score": 0.654
+    },
+    "qz-0453": {
+      "page": 101,
+      "mode": "text",
+      "score": 4.73
+    },
+    "qz-0454": {
+      "page": 101,
+      "mode": "text",
+      "score": 4.368
+    },
+    "qz-0455": {
+      "page": 101,
+      "mode": "text",
+      "score": 5.114
+    },
+    "qz-0456": {
+      "page": 101,
+      "mode": "text",
+      "score": 0.706
+    },
+    "qz-0457": {
+      "page": 102,
+      "mode": "text",
+      "score": 0.429
+    },
+    "qz-0458": {
+      "page": 102,
+      "mode": "text",
+      "score": 2.267
+    },
+    "qz-0459": {
+      "page": 102,
+      "mode": "text",
+      "score": 3.673
+    },
+    "qz-0460": {
+      "page": 102,
+      "mode": "text",
+      "score": 1.871
+    },
+    "qz-0461": {
+      "page": 102,
+      "mode": "text",
+      "score": 0.727
+    },
+    "qz-0462": {
+      "page": 103,
+      "mode": "text",
+      "score": 1.115
+    },
+    "qz-0463": {
+      "page": 103,
+      "mode": "text",
+      "score": 5.486
+    },
+    "qz-0464": {
+      "page": 103,
+      "mode": "text",
+      "score": 3.032
+    },
+    "qz-0465": {
+      "page": 103,
+      "mode": "text",
+      "score": 1.163
+    },
+    "qz-0466": {
+      "page": 103,
+      "mode": "text",
+      "score": 1.133
+    },
+    "qz-0467": {
+      "page": 104,
+      "mode": "text",
+      "score": 1.492
+    },
+    "qz-0468": {
+      "page": 104,
+      "mode": "text",
+      "score": 1.883
+    },
+    "qz-0469": {
+      "page": 104,
+      "mode": "text",
+      "score": 3.679
+    },
+    "qz-0470": {
+      "page": 104,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-0471": {
+      "page": 104,
+      "mode": "text",
+      "score": 1.879
+    },
+    "qz-0472": {
+      "page": 105,
+      "mode": "text",
+      "score": 2.646
+    },
+    "qz-0473": {
+      "page": 105,
+      "mode": "text",
+      "score": 3.376
+    },
+    "qz-0474": {
+      "page": 105,
+      "mode": "text",
+      "score": 3.392
+    },
+    "qz-0475": {
+      "page": 105,
+      "mode": "text",
+      "score": 1.192
+    },
+    "qz-0476": {
+      "page": 105,
+      "mode": "text",
+      "score": 0.769
+    },
+    "qz-0477": {
+      "page": 106,
+      "mode": "text",
+      "score": 0.733
+    },
+    "qz-0478": {
+      "page": 106,
+      "mode": "text",
+      "score": 1.136
+    },
+    "qz-0479": {
+      "page": 106,
+      "mode": "text",
+      "score": 0.714
+    },
+    "qz-0480": {
+      "page": 107,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-0481": {
+      "page": 107,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-0482": {
+      "page": 107,
+      "mode": "text",
+      "score": 4.779
+    },
+    "qz-0483": {
+      "page": 108,
+      "mode": "text",
+      "score": 1.115
+    },
+    "qz-0484": {
+      "page": 108,
+      "mode": "text",
+      "score": 1.217
+    },
+    "qz-0485": {
+      "page": 108,
+      "mode": "text",
+      "score": 0.714
+    },
+    "qz-0486": {
+      "page": 109,
+      "mode": "text",
+      "score": 0.778
+    },
+    "qz-0487": {
+      "page": 109,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-0488": {
+      "page": 109,
+      "mode": "text",
+      "score": 1.279
+    },
+    "qz-0489": {
+      "page": 109,
+      "mode": "text",
+      "score": 1.225
+    },
+    "qz-0490": {
+      "page": 109,
+      "mode": "text",
+      "score": 2.336
+    },
+    "qz-0491": {
+      "page": 110,
+      "mode": "text",
+      "score": 1.936
+    },
+    "qz-0492": {
+      "page": 110,
+      "mode": "text",
+      "score": 0.889
+    },
+    "qz-0493": {
+      "page": 110,
+      "mode": "text",
+      "score": 1.188
+    },
+    "qz-0494": {
+      "page": 110,
+      "mode": "text",
+      "score": 1.557
+    },
+    "qz-0495": {
+      "page": 111,
+      "mode": "text",
+      "score": 0.615
+    },
+    "qz-0496": {
+      "page": 111,
+      "mode": "text",
+      "score": 0.773
+    },
+    "qz-0497": {
+      "page": 111,
+      "mode": "text",
+      "score": 4.079
+    },
+    "qz-0498": {
+      "page": 111,
+      "mode": "text",
+      "score": 4.45
+    },
+    "qz-0499": {
+      "page": 111,
+      "mode": "text",
+      "score": 1.947
+    },
+    "qz-0500": {
+      "page": 112,
+      "mode": "text",
+      "score": 4.264
+    },
+    "qz-0501": {
+      "page": 112,
+      "mode": "text",
+      "score": 5.118
+    },
+    "qz-0502": {
+      "page": 112,
+      "mode": "text",
+      "score": 2.291
+    },
+    "qz-0503": {
+      "page": 112,
+      "mode": "text",
+      "score": 3.732
+    },
+    "qz-0504": {
+      "page": 112,
+      "mode": "text",
+      "score": 2.691
+    },
+    "qz-0505": {
+      "page": 113,
+      "mode": "text",
+      "score": 3.392
+    },
+    "qz-0506": {
+      "page": 113,
+      "mode": "text",
+      "score": 2.352
+    },
+    "qz-0507": {
+      "page": 113,
+      "mode": "text",
+      "score": 2.349
+    },
+    "qz-0508": {
+      "page": 113,
+      "mode": "text",
+      "score": 2.318
+    },
+    "qz-0509": {
+      "page": 113,
+      "mode": "text",
+      "score": 1.526
+    },
+    "qz-0510": {
+      "page": 113,
+      "mode": "text",
+      "score": 1.5
+    },
+    "qz-0511": {
+      "page": 113,
+      "mode": "text",
+      "score": 1.038
+    },
+    "qz-0512": {
+      "page": 114,
+      "mode": "text",
+      "score": 1.969
+    },
+    "qz-0513": {
+      "page": 114,
+      "mode": "text",
+      "score": 1.232
+    },
+    "qz-0514": {
+      "page": 114,
+      "mode": "text",
+      "score": 1.595
+    },
+    "qz-0515": {
+      "page": 114,
+      "mode": "text",
+      "score": 1.526
+    },
+    "qz-0516": {
+      "page": 114,
+      "mode": "text",
+      "score": 2.312
+    },
+    "qz-0517": {
+      "page": 115,
+      "mode": "text",
+      "score": 7.24
+    },
+    "qz-0518": {
+      "page": 115,
+      "mode": "text",
+      "score": 1.136
+    },
+    "qz-0519": {
+      "page": 115,
+      "mode": "text",
+      "score": 1.25
+    },
+    "qz-0520": {
+      "page": 115,
+      "mode": "text",
+      "score": 1.196
+    },
+    "qz-0521": {
+      "page": 115,
+      "mode": "text",
+      "score": 7.366
+    },
+    "qz-0522": {
+      "page": 116,
+      "mode": "text",
+      "score": 7.92
+    },
+    "qz-0523": {
+      "page": 116,
+      "mode": "text",
+      "score": 1.518
+    },
+    "qz-0524": {
+      "page": 116,
+      "mode": "text",
+      "score": 0.611
+    },
+    "qz-0525": {
+      "page": 116,
+      "mode": "text",
+      "score": 3.023
+    },
+    "qz-0526": {
+      "page": 117,
+      "mode": "text",
+      "score": 0.71
+    },
+    "qz-0527": {
+      "page": 117,
+      "mode": "text",
+      "score": 3.007
+    },
+    "qz-0528": {
+      "page": 117,
+      "mode": "text",
+      "score": 3.376
+    },
+    "qz-0529": {
+      "page": 117,
+      "mode": "text",
+      "score": 1.16
+    },
+    "qz-0530": {
+      "page": 117,
+      "mode": "text",
+      "score": 10.316
+    },
+    "qz-0531": {
+      "page": 118,
+      "mode": "text",
+      "score": 0.571
+    },
+    "qz-0532": {
+      "page": 118,
+      "mode": "text",
+      "score": 1.546
+    },
+    "qz-0533": {
+      "page": 118,
+      "mode": "text",
+      "score": 0.778
+    },
+    "qz-0534": {
+      "page": 118,
+      "mode": "text",
+      "score": 1.567
+    },
+    "qz-0535": {
+      "page": 118,
+      "mode": "text",
+      "score": 0.722
+    },
+    "qz-0536": {
+      "page": 119,
+      "mode": "text",
+      "score": 1.089
+    },
+    "qz-0537": {
+      "page": 119,
+      "mode": "text",
+      "score": 1.6
+    },
+    "qz-0538": {
+      "page": 119,
+      "mode": "text",
+      "score": 3.044
+    },
+    "qz-0539": {
+      "page": 119,
+      "mode": "text",
+      "score": 1.202
+    },
+    "qz-0540": {
+      "page": 120,
+      "mode": "text",
+      "score": 1.925
+    },
+    "qz-0541": {
+      "page": 120,
+      "mode": "text",
+      "score": 0.692
+    },
+    "qz-0542": {
+      "page": 120,
+      "mode": "text",
+      "score": 2.233
+    },
+    "qz-0543": {
+      "page": 120,
+      "mode": "text",
+      "score": 2.21
+    },
+    "qz-0544": {
+      "page": 120,
+      "mode": "text",
+      "score": 1.529
+    },
+    "qz-0545": {
+      "page": 121,
+      "mode": "text",
+      "score": 0.737
+    },
+    "qz-0546": {
+      "page": 121,
+      "mode": "text",
+      "score": 6.161
+    },
+    "qz-0547": {
+      "page": 121,
+      "mode": "text",
+      "score": 6.173
+    },
+    "qz-0548": {
+      "page": 121,
+      "mode": "text",
+      "score": 6.179
+    },
+    "qz-0549": {
+      "page": 122,
+      "mode": "text",
+      "score": 1.07
+    },
+    "qz-0550": {
+      "page": 122,
+      "mode": "text",
+      "score": 1.561
+    },
+    "qz-0551": {
+      "page": 122,
+      "mode": "text",
+      "score": 1.95
+    },
+    "qz-0552": {
+      "page": 123,
+      "mode": "text",
+      "score": 1.034
+    },
+    "qz-0553": {
+      "page": 123,
+      "mode": "text",
+      "score": 4.444
+    },
+    "qz-0554": {
+      "page": 123,
+      "mode": "text",
+      "score": 1.23
+    },
+    "qz-0555": {
+      "page": 123,
+      "mode": "text",
+      "score": 2.701
+    },
+    "qz-0556": {
+      "page": 123,
+      "mode": "text",
+      "score": 1.255
+    },
+    "qz-0557": {
+      "page": 124,
+      "mode": "text",
+      "score": 3.052
+    },
+    "qz-0558": {
+      "page": 124,
+      "mode": "text",
+      "score": 3.729
+    },
+    "qz-0559": {
+      "page": 124,
+      "mode": "text",
+      "score": 2.018
+    },
+    "qz-0560": {
+      "page": 124,
+      "mode": "text",
+      "score": 1.619
+    },
+    "qz-0561": {
+      "page": 125,
+      "mode": "text",
+      "score": 4.069
+    },
+    "qz-0562": {
+      "page": 124,
+      "mode": "text",
+      "score": 0.5
+    },
+    "qz-0563": {
+      "page": 125,
+      "mode": "text",
+      "score": 0.583
+    },
+    "qz-0564": {
+      "page": 125,
+      "mode": "text",
+      "score": 1.1
+    },
+    "qz-0565": {
+      "page": 125,
+      "mode": "text",
+      "score": 0.625
+    },
+    "qz-0566": {
+      "page": 126,
+      "mode": "text",
+      "score": 5.464
+    },
+    "qz-0567": {
+      "page": 126,
+      "mode": "text",
+      "score": 0.786
+    },
+    "qz-0568": {
+      "page": 126,
+      "mode": "text",
+      "score": 1.582
+    },
+    "qz-0569": {
+      "page": 126,
+      "mode": "text",
+      "score": 0.737
+    },
+    "qz-0570": {
+      "page": 126,
+      "mode": "text",
+      "score": 5.455
+    },
+    "qz-0571": {
+      "page": 127,
+      "mode": "text",
+      "score": 1.217
+    },
+    "qz-0572": {
+      "page": 127,
+      "mode": "text",
+      "score": 1.935
+    },
+    "qz-0573": {
+      "page": 127,
+      "mode": "text",
+      "score": 3.03
+    },
+    "qz-0574": {
+      "page": 127,
+      "mode": "text",
+      "score": 1.25
+    },
+    "qz-0575": {
+      "page": 127,
+      "mode": "text",
+      "score": 1.6
+    },
+    "qz-0576": {
+      "page": 128,
+      "mode": "text",
+      "score": 0.867
+    },
+    "qz-0577": {
+      "page": 128,
+      "mode": "text",
+      "score": 4.392
+    },
+    "qz-0578": {
+      "page": 128,
+      "mode": "text",
+      "score": 0.867
+    },
+    "qz-0579": {
+      "page": 128,
+      "mode": "text",
+      "score": 0.882
+    },
+    "qz-0580": {
+      "page": 128,
+      "mode": "text",
+      "score": 1.225
+    },
+    "qz-0581": {
+      "page": 128,
+      "mode": "text",
+      "score": 1.533
+    },
+    "qz-0582": {
+      "page": 129,
+      "mode": "text",
+      "score": 4.782
+    },
+    "qz-0583": {
+      "page": 129,
+      "mode": "text",
+      "score": 1.168
+    },
+    "qz-0584": {
+      "page": 129,
+      "mode": "text",
+      "score": 1.25
+    },
+    "qz-0585": {
+      "page": 129,
+      "mode": "text",
+      "score": 0.857
+    },
+    "qz-0586": {
+      "page": 129,
+      "mode": "text",
+      "score": 2.707
+    },
+    "qz-0587": {
+      "page": 129,
+      "mode": "text",
+      "score": 4.421
+    },
+    "qz-0588": {
+      "page": 130,
+      "mode": "text",
+      "score": 3.398
+    },
+    "qz-0589": {
+      "page": 130,
+      "mode": "text",
+      "score": 1.243
+    },
+    "qz-0590": {
+      "page": 130,
+      "mode": "text",
+      "score": 1.15
+    },
+    "qz-0591": {
+      "page": 130,
+      "mode": "text",
+      "score": 3.245
+    },
+    "qz-0592": {
+      "page": 131,
+      "mode": "text",
+      "score": 0.647
+    },
+    "qz-0593": {
+      "page": 131,
+      "mode": "text",
+      "score": 1.038
+    },
+    "qz-0594": {
+      "page": 131,
+      "mode": "text",
+      "score": 1.207
+    },
+    "qz-0595": {
+      "page": 131,
+      "mode": "text",
+      "score": 8.676
+    },
+    "qz-0596": {
+      "page": 132,
+      "mode": "text",
+      "score": 1.16
+    },
+    "qz-0597": {
+      "page": 132,
+      "mode": "text",
+      "score": 0.833
+    },
+    "qz-0598": {
+      "page": 132,
+      "mode": "text",
+      "score": 0.833
+    },
+    "qz-0599": {
+      "page": 132,
+      "mode": "text",
+      "score": 1.25
+    },
+    "qz-0600": {
+      "page": 132,
+      "mode": "text",
+      "score": 1.907
+    },
+    "qz-0601": {
+      "page": 132,
+      "mode": "text",
+      "score": 0.722
+    },
+    "qz-0602": {
+      "page": 133,
+      "mode": "text",
+      "score": 2.967
+    },
+    "qz-0603": {
+      "page": 133,
+      "mode": "text",
+      "score": 0.737
+    },
+    "qz-0604": {
+      "page": 133,
+      "mode": "text",
+      "score": 2.265
+    },
+    "qz-0605": {
+      "page": 133,
+      "mode": "text",
+      "score": 1.212
+    },
+    "qz-0606": {
+      "page": 133,
+      "mode": "text",
+      "score": 1.936
+    },
+    "qz-0607": {
+      "page": 134,
+      "mode": "text",
+      "score": 4.047
+    },
+    "qz-0608": {
+      "page": 134,
+      "mode": "text",
+      "score": 3.714
+    },
+    "qz-0609": {
+      "page": 134,
+      "mode": "text",
+      "score": 0.8
+    },
+    "qz-0610": {
+      "page": 134,
+      "mode": "text",
+      "score": 1.174
+    },
+    "qz-0611": {
+      "page": 134,
+      "mode": "text",
+      "score": 0.727
+    },
+    "qz-0612": {
+      "page": 135,
+      "mode": "text",
+      "score": 2.656
+    },
+    "qz-0613": {
+      "page": 135,
+      "mode": "text",
+      "score": 5.504
+    },
+    "qz-0614": {
+      "page": 135,
+      "mode": "text",
+      "score": 9.692
+    },
+    "qz-0615": {
+      "page": 135,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-0616": {
+      "page": 136,
+      "mode": "text",
+      "score": 1.136
+    },
+    "qz-0617": {
+      "page": 136,
+      "mode": "text",
+      "score": 0.588
+    },
+    "qz-0618": {
+      "page": 136,
+      "mode": "text",
+      "score": 0.636
+    },
+    "qz-0619": {
+      "page": 136,
+      "mode": "text",
+      "score": 3.018
+    },
+    "qz-0620": {
+      "page": 136,
+      "mode": "text",
+      "score": 4.053
+    },
+    "qz-0621": {
+      "page": 137,
+      "mode": "text",
+      "score": 1.575
+    },
+    "qz-0622": {
+      "page": 137,
+      "mode": "text",
+      "score": 0.773
+    },
+    "qz-0623": {
+      "page": 137,
+      "mode": "text",
+      "score": 0.789
+    },
+    "qz-0624": {
+      "page": 137,
+      "mode": "text",
+      "score": 2.233
+    },
+    "qz-0625": {
+      "page": 138,
+      "mode": "text",
+      "score": 1.064
+    },
+    "qz-0626": {
+      "page": 138,
+      "mode": "text",
+      "score": 3.666
+    },
+    "qz-0627": {
+      "page": 138,
+      "mode": "text",
+      "score": 1.589
+    },
+    "qz-0628": {
+      "page": 138,
+      "mode": "text",
+      "score": 1.1
+    },
+    "qz-0629": {
+      "page": 138,
+      "mode": "text",
+      "score": 1.528
+    },
+    "qz-0630": {
+      "page": 138,
+      "mode": "text",
+      "score": 2.28
+    },
+    "qz-0631": {
+      "page": 139,
+      "mode": "text",
+      "score": 1.86
+    },
+    "qz-0632": {
+      "page": 139,
+      "mode": "text",
+      "score": 0.815
+    },
+    "qz-0633": {
+      "page": 139,
+      "mode": "text",
+      "score": 3.359
+    },
+    "qz-0634": {
+      "page": 139,
+      "mode": "text",
+      "score": 1.921
+    },
+    "qz-0635": {
+      "page": 139,
+      "mode": "text",
+      "score": 1.279
+    },
+    "qz-0636": {
+      "page": 140,
+      "mode": "text",
+      "score": 1.077
+    },
+    "qz-0637": {
+      "page": 140,
+      "mode": "text",
+      "score": 0.556
+    },
+    "qz-0638": {
+      "page": 140,
+      "mode": "text",
+      "score": 0.625
+    },
+    "qz-0639": {
+      "page": 141,
+      "mode": "text",
+      "score": 4.359
+    },
+    "qz-0640": {
+      "page": 141,
+      "mode": "text",
+      "score": 5.111
+    },
+    "qz-0641": {
+      "page": 141,
+      "mode": "text",
+      "score": 0.818
+    },
+    "qz-0642": {
+      "page": 141,
+      "mode": "text",
+      "score": 1.196
+    },
+    "qz-0643": {
+      "page": 141,
+      "mode": "text",
+      "score": 1.225
+    },
+    "qz-0644": {
+      "page": 141,
+      "mode": "text",
+      "score": 2.233
+    },
+    "qz-0645": {
+      "page": 142,
+      "mode": "text",
+      "score": 1.03
+    },
+    "qz-0646": {
+      "page": 142,
+      "mode": "text",
+      "score": 1.483
+    },
+    "qz-0647": {
+      "page": 142,
+      "mode": "text",
+      "score": 1.25
+    },
+    "qz-0648": {
+      "page": 142,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-0649": {
+      "page": 143,
+      "mode": "text",
+      "score": 2.746
+    },
+    "qz-0650": {
+      "page": 143,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-0651": {
+      "page": 143,
+      "mode": "text",
+      "score": 1.115
+    },
+    "qz-0652": {
+      "page": 143,
+      "mode": "text",
+      "score": 1.176
+    },
+    "qz-0653": {
+      "page": 143,
+      "mode": "text",
+      "score": 5.501
+    },
+    "qz-0654": {
+      "page": 143,
+      "mode": "text",
+      "score": 1.471
+    },
+    "qz-0655": {
+      "page": 144,
+      "mode": "text",
+      "score": 1.43
+    },
+    "qz-0656": {
+      "page": 144,
+      "mode": "text",
+      "score": 1.133
+    },
+    "qz-0657": {
+      "page": 144,
+      "mode": "text",
+      "score": 1.903
+    },
+    "qz-0658": {
+      "page": 144,
+      "mode": "text",
+      "score": 0.692
+    },
+    "qz-0659": {
+      "page": 144,
+      "mode": "text",
+      "score": 1.929
+    },
+    "qz-0660": {
+      "page": 145,
+      "mode": "text",
+      "score": 0.813
+    },
+    "qz-0661": {
+      "page": 145,
+      "mode": "text",
+      "score": 1.609
+    },
+    "qz-0662": {
+      "page": 145,
+      "mode": "text",
+      "score": 12.872
+    },
+    "qz-0663": {
+      "page": 145,
+      "mode": "text",
+      "score": 2.985
+    },
+    "qz-0664": {
+      "page": 146,
+      "mode": "text",
+      "score": 0.8
+    },
+    "qz-0665": {
+      "page": 146,
+      "mode": "text",
+      "score": 11.112
+    },
+    "qz-0666": {
+      "page": 146,
+      "mode": "text",
+      "score": 1.11
+    },
+    "qz-0667": {
+      "page": 146,
+      "mode": "text",
+      "score": 1.27
+    },
+    "qz-0668": {
+      "page": 146,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-0669": {
+      "page": 147,
+      "mode": "text",
+      "score": 5.856
+    },
+    "qz-0670": {
+      "page": 147,
+      "mode": "text",
+      "score": 1.115
+    },
+    "qz-0671": {
+      "page": 147,
+      "mode": "text",
+      "score": 1.54
+    },
+    "qz-0672": {
+      "page": 147,
+      "mode": "text",
+      "score": 0.6
+    },
+    "qz-0673": {
+      "page": 148,
+      "mode": "text",
+      "score": 10.323
+    },
+    "qz-0674": {
+      "page": 148,
+      "mode": "text",
+      "score": 5.48
+    },
+    "qz-0675": {
+      "page": 148,
+      "mode": "text",
+      "score": 2.012
+    },
+    "qz-0676": {
+      "page": 149,
+      "mode": "text",
+      "score": 8.162
+    },
+    "qz-0677": {
+      "page": 149,
+      "mode": "text",
+      "score": 1.15
+    },
+    "qz-0678": {
+      "page": 149,
+      "mode": "text",
+      "score": 0.818
+    },
+    "qz-0679": {
+      "page": 149,
+      "mode": "text",
+      "score": 0.8
+    },
+    "qz-0680": {
+      "page": 150,
+      "mode": "text",
+      "score": 2.679
+    },
+    "qz-0681": {
+      "page": 150,
+      "mode": "text",
+      "score": 1.589
+    },
+    "qz-0682": {
+      "page": 150,
+      "mode": "text",
+      "score": 5.439
+    },
+    "qz-0683": {
+      "page": 150,
+      "mode": "text",
+      "score": 1.168
+    },
+    "qz-0684": {
+      "page": 150,
+      "mode": "text",
+      "score": 2.302
+    },
+    "qz-0685": {
+      "page": 150,
+      "mode": "text",
+      "score": 1.196
+    },
+    "qz-0686": {
+      "page": 151,
+      "mode": "text",
+      "score": 2.291
+    },
+    "qz-0687": {
+      "page": 151,
+      "mode": "text",
+      "score": 0.8
+    },
+    "qz-0688": {
+      "page": 151,
+      "mode": "text",
+      "score": 1.196
+    },
+    "qz-0689": {
+      "page": 151,
+      "mode": "text",
+      "score": 3.035
+    },
+    "qz-0690": {
+      "page": 151,
+      "mode": "text",
+      "score": 3.329
+    },
+    "qz-0691": {
+      "page": 152,
+      "mode": "text",
+      "score": 0.688
+    },
+    "qz-0692": {
+      "page": 152,
+      "mode": "text",
+      "score": 4.75
+    },
+    "qz-0693": {
+      "page": 152,
+      "mode": "text",
+      "score": 2.289
+    },
+    "qz-0694": {
+      "page": 152,
+      "mode": "text",
+      "score": 1.15
+    },
+    "qz-0695": {
+      "page": 152,
+      "mode": "text",
+      "score": 4.06
+    },
+    "qz-0696": {
+      "page": 153,
+      "mode": "text",
+      "score": 3.379
+    },
+    "qz-0697": {
+      "page": 153,
+      "mode": "text",
+      "score": 2.646
+    },
+    "qz-0698": {
+      "page": 153,
+      "mode": "text",
+      "score": 2.251
+    },
+    "qz-0699": {
+      "page": 153,
+      "mode": "text",
+      "score": 2.216
+    },
+    "qz-0700": {
+      "page": 153,
+      "mode": "text",
+      "score": 7.201
+    },
+    "qz-0701": {
+      "page": 154,
+      "mode": "text",
+      "score": 1.168
+    },
+    "qz-0702": {
+      "page": 154,
+      "mode": "text",
+      "score": 1.922
+    },
+    "qz-0703": {
+      "page": 154,
+      "mode": "text",
+      "score": 1.903
+    },
+    "qz-0704": {
+      "page": 154,
+      "mode": "text",
+      "score": 0.789
+    },
+    "qz-0705": {
+      "page": 154,
+      "mode": "text",
+      "score": 3.341
+    },
+    "qz-0706": {
+      "page": 155,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-0707": {
+      "page": 155,
+      "mode": "text",
+      "score": 1.15
+    },
+    "qz-0708": {
+      "page": 155,
+      "mode": "text",
+      "score": 1.58
+    },
+    "qz-0709": {
+      "page": 155,
+      "mode": "text",
+      "score": 1.58
+    },
+    "qz-0710": {
+      "page": 155,
+      "mode": "text",
+      "score": 3.329
+    },
+    "qz-0711": {
+      "page": 156,
+      "mode": "text",
+      "score": 2.211
+    },
+    "qz-0712": {
+      "page": 156,
+      "mode": "text",
+      "score": 0.571
+    },
+    "qz-0713": {
+      "page": 156,
+      "mode": "text",
+      "score": 1.207
+    },
+    "qz-0714": {
+      "page": 156,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-0715": {
+      "page": 156,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-0716": {
+      "page": 156,
+      "mode": "text",
+      "score": 0.583
+    },
+    "qz-0717": {
+      "page": 157,
+      "mode": "text",
+      "score": 1.139
+    },
+    "qz-0718": {
+      "page": 157,
+      "mode": "text",
+      "score": 10.395
+    },
+    "qz-0719": {
+      "page": 157,
+      "mode": "text",
+      "score": 1.064
+    },
+    "qz-0720": {
+      "page": 157,
+      "mode": "text",
+      "score": 0.993
+    },
+    "qz-0721": {
+      "page": 157,
+      "mode": "text",
+      "score": 1.717
+    },
+    "qz-0722": {
+      "page": 158,
+      "mode": "text",
+      "score": 0.975
+    },
+    "qz-0723": {
+      "page": 158,
+      "mode": "text",
+      "score": 3.734
+    },
+    "qz-0724": {
+      "page": 158,
+      "mode": "text",
+      "score": 0.857
+    },
+    "qz-0725": {
+      "page": 158,
+      "mode": "text",
+      "score": 9.685
+    },
+    "qz-0726": {
+      "page": 159,
+      "mode": "text",
+      "score": 0.833
+    },
+    "qz-0727": {
+      "page": 159,
+      "mode": "text",
+      "score": 1.239
+    },
+    "qz-0728": {
+      "page": 159,
+      "mode": "text",
+      "score": 0.857
+    },
+    "qz-0729": {
+      "page": 159,
+      "mode": "text",
+      "score": 1.217
+    },
+    "qz-0730": {
+      "page": 160,
+      "mode": "text",
+      "score": 1.136
+    },
+    "qz-0731": {
+      "page": 160,
+      "mode": "text",
+      "score": 1.136
+    },
+    "qz-0732": {
+      "page": 160,
+      "mode": "text",
+      "score": 0.625
+    },
+    "qz-0733": {
+      "page": 160,
+      "mode": "text",
+      "score": 3.373
+    },
+    "qz-0734": {
+      "page": 160,
+      "mode": "text",
+      "score": 0.818
+    },
+    "qz-0735": {
+      "page": 161,
+      "mode": "text",
+      "score": 6.887
+    },
+    "qz-0736": {
+      "page": 161,
+      "mode": "text",
+      "score": 1.183
+    },
+    "qz-0737": {
+      "page": 161,
+      "mode": "text",
+      "score": 0.813
+    },
+    "qz-0738": {
+      "page": 161,
+      "mode": "text",
+      "score": 1.163
+    },
+    "qz-0739": {
+      "page": 162,
+      "mode": "text",
+      "score": 1.964
+    },
+    "qz-0740": {
+      "page": 163,
+      "mode": "text",
+      "score": 1.168
+    },
+    "qz-0741": {
+      "page": 163,
+      "mode": "text",
+      "score": 0.857
+    },
+    "qz-0742": {
+      "page": 163,
+      "mode": "text",
+      "score": 0.929
+    },
+    "qz-0743": {
+      "page": 163,
+      "mode": "text",
+      "score": 1.985
+    },
+    "qz-0744": {
+      "page": 163,
+      "mode": "text",
+      "score": 0.833
+    },
+    "qz-0745": {
+      "page": 163,
+      "mode": "text",
+      "score": 2.706
+    },
+    "qz-0746": {
+      "page": 164,
+      "mode": "text",
+      "score": 4.37
+    },
+    "qz-0747": {
+      "page": 164,
+      "mode": "text",
+      "score": 2.93
+    },
+    "qz-0748": {
+      "page": 164,
+      "mode": "text",
+      "score": 2.121
+    },
+    "qz-0749": {
+      "page": 164,
+      "mode": "text",
+      "score": 0.982
+    },
+    "qz-0750": {
+      "page": 164,
+      "mode": "text",
+      "score": 0.636
+    },
+    "qz-0751": {
+      "page": 164,
+      "mode": "text",
+      "score": 1.557
+    },
+    "qz-0752": {
+      "page": 165,
+      "mode": "text",
+      "score": 0.688
+    },
+    "qz-0753": {
+      "page": 165,
+      "mode": "text",
+      "score": 13.584
+    },
+    "qz-0754": {
+      "page": 165,
+      "mode": "text",
+      "score": 0.65
+    },
+    "qz-0755": {
+      "page": 165,
+      "mode": "text",
+      "score": 1.533
+    },
+    "qz-0756": {
+      "page": 166,
+      "mode": "text",
+      "score": 3.102
+    },
+    "qz-0757": {
+      "page": 166,
+      "mode": "text",
+      "score": 1.54
+    },
+    "qz-0758": {
+      "page": 166,
+      "mode": "text",
+      "score": 1.462
+    },
+    "qz-0759": {
+      "page": 166,
+      "mode": "text",
+      "score": 0.875
+    },
+    "qz-0760": {
+      "page": 166,
+      "mode": "text",
+      "score": 1.589
+    },
+    "qz-0761": {
+      "page": 167,
+      "mode": "text",
+      "score": 1.843
+    },
+    "qz-0762": {
+      "page": 167,
+      "mode": "text",
+      "score": 1.1
+    },
+    "qz-0763": {
+      "page": 167,
+      "mode": "text",
+      "score": 1.929
+    },
+    "qz-0764": {
+      "page": 167,
+      "mode": "text",
+      "score": 1.232
+    },
+    "qz-0765": {
+      "page": 167,
+      "mode": "text",
+      "score": 6.184
+    },
+    "qz-0766": {
+      "page": 168,
+      "mode": "text",
+      "score": 0.769
+    },
+    "qz-0767": {
+      "page": 168,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-0768": {
+      "page": 168,
+      "mode": "text",
+      "score": 1.613
+    },
+    "qz-0769": {
+      "page": 168,
+      "mode": "text",
+      "score": 0.739
+    },
+    "qz-0770": {
+      "page": 168,
+      "mode": "text",
+      "score": 0.714
+    },
+    "qz-0771": {
+      "page": 169,
+      "mode": "text",
+      "score": 1.95
+    },
+    "qz-0772": {
+      "page": 169,
+      "mode": "text",
+      "score": 1.96
+    },
+    "qz-0773": {
+      "page": 170,
+      "mode": "text",
+      "score": 1.038
+    },
+    "qz-0774": {
+      "page": 170,
+      "mode": "text",
+      "score": 0.5
+    },
+    "qz-0775": {
+      "page": 170,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-0776": {
+      "page": 170,
+      "mode": "text",
+      "score": 1.139
+    },
+    "qz-0777": {
+      "page": 170,
+      "mode": "text",
+      "score": 1.932
+    },
+    "qz-0778": {
+      "page": 171,
+      "mode": "text",
+      "score": 0.846
+    },
+    "qz-0779": {
+      "page": 171,
+      "mode": "text",
+      "score": 1.183
+    },
+    "qz-0780": {
+      "page": 171,
+      "mode": "text",
+      "score": 2.622
+    },
+    "qz-0781": {
+      "page": 171,
+      "mode": "text",
+      "score": 2.963
+    },
+    "qz-0782": {
+      "page": 172,
+      "mode": "text",
+      "score": 1.238
+    },
+    "qz-0783": {
+      "page": 172,
+      "mode": "text",
+      "score": 0.8
+    },
+    "qz-0784": {
+      "page": 172,
+      "mode": "text",
+      "score": 1.953
+    },
+    "qz-0785": {
+      "page": 172,
+      "mode": "text",
+      "score": 3.056
+    },
+    "qz-0786": {
+      "page": 172,
+      "mode": "text",
+      "score": 1.617
+    },
+    "qz-0787": {
+      "page": 173,
+      "mode": "text",
+      "score": 4.768
+    },
+    "qz-0788": {
+      "page": 173,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-0789": {
+      "page": 173,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-0790": {
+      "page": 173,
+      "mode": "text",
+      "score": 2.281
+    },
+    "qz-0791": {
+      "page": 173,
+      "mode": "text",
+      "score": 0.905
+    },
+    "qz-0792": {
+      "page": 174,
+      "mode": "text",
+      "score": 3.735
+    },
+    "qz-0793": {
+      "page": 174,
+      "mode": "text",
+      "score": 1.083
+    },
+    "qz-0794": {
+      "page": 174,
+      "mode": "text",
+      "score": 1.467
+    },
+    "qz-0795": {
+      "page": 174,
+      "mode": "text",
+      "score": 1.936
+    },
+    "qz-0796": {
+      "page": 175,
+      "mode": "text",
+      "score": 0.706
+    },
+    "qz-0797": {
+      "page": 175,
+      "mode": "text",
+      "score": 1.932
+    },
+    "qz-0798": {
+      "page": 175,
+      "mode": "text",
+      "score": 1.183
+    },
+    "qz-0799": {
+      "page": 175,
+      "mode": "text",
+      "score": 1.083
+    },
+    "qz-0800": {
+      "page": 176,
+      "mode": "text",
+      "score": 1.115
+    },
+    "qz-0801": {
+      "page": 176,
+      "mode": "text",
+      "score": 1.064
+    },
+    "qz-0802": {
+      "page": 176,
+      "mode": "text",
+      "score": 1.15
+    },
+    "qz-0803": {
+      "page": 176,
+      "mode": "text",
+      "score": 1.115
+    },
+    "qz-0804": {
+      "page": 177,
+      "mode": "text",
+      "score": 1.613
+    },
+    "qz-0805": {
+      "page": 177,
+      "mode": "text",
+      "score": 1.939
+    },
+    "qz-0806": {
+      "page": 177,
+      "mode": "text",
+      "score": 3.05
+    },
+    "qz-0807": {
+      "page": 177,
+      "mode": "text",
+      "score": 1.245
+    },
+    "qz-0808": {
+      "page": 178,
+      "mode": "text",
+      "score": 7.231
+    },
+    "qz-0809": {
+      "page": 178,
+      "mode": "text",
+      "score": 0.7
+    },
+    "qz-0810": {
+      "page": 178,
+      "mode": "text",
+      "score": 1.907
+    },
+    "qz-0811": {
+      "page": 178,
+      "mode": "text",
+      "score": 1.192
+    },
+    "qz-0812": {
+      "page": 179,
+      "mode": "text",
+      "score": 1.615
+    },
+    "qz-0813": {
+      "page": 179,
+      "mode": "text",
+      "score": 1.183
+    },
+    "qz-0814": {
+      "page": 179,
+      "mode": "text",
+      "score": 1.183
+    },
+    "qz-0815": {
+      "page": 179,
+      "mode": "text",
+      "score": 0.769
+    },
+    "qz-0816": {
+      "page": 179,
+      "mode": "text",
+      "score": 1.15
+    },
+    "qz-0817": {
+      "page": 179,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-0818": {
+      "page": 179,
+      "mode": "text",
+      "score": 1.064
+    },
+    "qz-0819": {
+      "page": 180,
+      "mode": "text",
+      "score": 1.183
+    },
+    "qz-0820": {
+      "page": 180,
+      "mode": "text",
+      "score": 1.046
+    },
+    "qz-0821": {
+      "page": 180,
+      "mode": "text",
+      "score": 1.51
+    },
+    "qz-0822": {
+      "page": 180,
+      "mode": "text",
+      "score": 1.139
+    },
+    "qz-0823": {
+      "page": 180,
+      "mode": "text",
+      "score": 1.163
+    },
+    "qz-0824": {
+      "page": 180,
+      "mode": "text",
+      "score": 0.647
+    },
+    "qz-0825": {
+      "page": 181,
+      "mode": "text",
+      "score": 1.112
+    },
+    "qz-0826": {
+      "page": 181,
+      "mode": "text",
+      "score": 2.27
+    },
+    "qz-0827": {
+      "page": 181,
+      "mode": "text",
+      "score": 1.929
+    },
+    "qz-0828": {
+      "page": 181,
+      "mode": "text",
+      "score": 2.251
+    },
+    "qz-0829": {
+      "page": 181,
+      "mode": "text",
+      "score": 1.934
+    },
+    "qz-0830": {
+      "page": 182,
+      "mode": "text",
+      "score": 1.175
+    },
+    "qz-0831": {
+      "page": 182,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-0832": {
+      "page": 182,
+      "mode": "text",
+      "score": 0.773
+    },
+    "qz-0833": {
+      "page": 182,
+      "mode": "text",
+      "score": 2.078
+    },
+    "qz-0834": {
+      "page": 183,
+      "mode": "text",
+      "score": 2.312
+    },
+    "qz-0835": {
+      "page": 183,
+      "mode": "text",
+      "score": 0.6
+    },
+    "qz-0836": {
+      "page": 183,
+      "mode": "text",
+      "score": 11.82
+    },
+    "qz-0837": {
+      "page": 184,
+      "mode": "text",
+      "score": 1.529
+    },
+    "qz-0838": {
+      "page": 184,
+      "mode": "text",
+      "score": 3.345
+    },
+    "qz-0839": {
+      "page": 184,
+      "mode": "text",
+      "score": 1.176
+    },
+    "qz-0840": {
+      "page": 184,
+      "mode": "text",
+      "score": 0.864
+    },
+    "qz-0841": {
+      "page": 185,
+      "mode": "text",
+      "score": 1.207
+    },
+    "qz-0842": {
+      "page": 185,
+      "mode": "text",
+      "score": 1.623
+    },
+    "qz-0843": {
+      "page": 185,
+      "mode": "text",
+      "score": 1.529
+    },
+    "qz-0844": {
+      "page": 186,
+      "mode": "text",
+      "score": 5.438
+    },
+    "qz-0845": {
+      "page": 186,
+      "mode": "text",
+      "score": 0.467
+    },
+    "qz-0846": {
+      "page": 186,
+      "mode": "text",
+      "score": 4.77
+    },
+    "qz-0847": {
+      "page": 186,
+      "mode": "text",
+      "score": 2.583
+    },
+    "qz-0848": {
+      "page": 186,
+      "mode": "text",
+      "score": 2.631
+    },
+    "qz-0849": {
+      "page": 187,
+      "mode": "text",
+      "score": 0.737
+    },
+    "qz-0850": {
+      "page": 187,
+      "mode": "text",
+      "score": 0.84
+    },
+    "qz-0851": {
+      "page": 187,
+      "mode": "text",
+      "score": 0.727
+    },
+    "qz-0852": {
+      "page": 187,
+      "mode": "text",
+      "score": 1.2
+    },
+    "qz-0853": {
+      "page": 188,
+      "mode": "text",
+      "score": 3.065
+    },
+    "qz-0854": {
+      "page": 188,
+      "mode": "text",
+      "score": 0.739
+    },
+    "qz-0855": {
+      "page": 188,
+      "mode": "text",
+      "score": 1.575
+    },
+    "qz-0856": {
+      "page": 188,
+      "mode": "text",
+      "score": 4.044
+    },
+    "qz-0857": {
+      "page": 189,
+      "mode": "text",
+      "score": 0.6
+    },
+    "qz-0858": {
+      "page": 189,
+      "mode": "text",
+      "score": 1.5
+    },
+    "qz-0859": {
+      "page": 189,
+      "mode": "text",
+      "score": 4.042
+    },
+    "qz-0860": {
+      "page": 189,
+      "mode": "text",
+      "score": 3.358
+    },
+    "qz-0861": {
+      "page": 190,
+      "mode": "text",
+      "score": 0.902
+    },
+    "qz-0862": {
+      "page": 190,
+      "mode": "text",
+      "score": 1.046
+    },
+    "qz-0863": {
+      "page": 190,
+      "mode": "text",
+      "score": 1.054
+    },
+    "qz-0864": {
+      "page": 190,
+      "mode": "text",
+      "score": 1.115
+    },
+    "qz-0865": {
+      "page": 190,
+      "mode": "text",
+      "score": 1.034
+    },
+    "qz-0866": {
+      "page": 190,
+      "mode": "text",
+      "score": 6.51
+    },
+    "qz-0867": {
+      "page": 191,
+      "mode": "text",
+      "score": 0.5
+    },
+    "qz-0868": {
+      "page": 191,
+      "mode": "text",
+      "score": 0.769
+    },
+    "qz-0869": {
+      "page": 191,
+      "mode": "text",
+      "score": 0.643
+    },
+    "qz-0870": {
+      "page": 191,
+      "mode": "text",
+      "score": 1.15
+    },
+    "qz-0871": {
+      "page": 191,
+      "mode": "text",
+      "score": 4.843
+    },
+    "qz-0872": {
+      "page": 192,
+      "mode": "text",
+      "score": 0.714
+    },
+    "qz-0873": {
+      "page": 192,
+      "mode": "text",
+      "score": 0.818
+    },
+    "qz-0874": {
+      "page": 193,
+      "mode": "text",
+      "score": 2.37
+    },
+    "qz-0875": {
+      "page": 193,
+      "mode": "text",
+      "score": 1.283
+    },
+    "qz-0876": {
+      "page": 193,
+      "mode": "text",
+      "score": 1.245
+    },
+    "qz-0877": {
+      "page": 193,
+      "mode": "text",
+      "score": 1.232
+    },
+    "qz-0878": {
+      "page": 193,
+      "mode": "text",
+      "score": 3.412
+    },
+    "qz-0879": {
+      "page": 193,
+      "mode": "text",
+      "score": 1.145
+    },
+    "qz-0880": {
+      "page": 194,
+      "mode": "text",
+      "score": 2.249
+    },
+    "qz-0881": {
+      "page": 194,
+      "mode": "text",
+      "score": 1.97
+    },
+    "qz-0882": {
+      "page": 194,
+      "mode": "text",
+      "score": 1.19
+    },
+    "qz-0883": {
+      "page": 195,
+      "mode": "text",
+      "score": 3.297
+    },
+    "qz-0884": {
+      "page": 195,
+      "mode": "text",
+      "score": 3.71
+    },
+    "qz-0885": {
+      "page": 195,
+      "mode": "text",
+      "score": 1.161
+    },
+    "qz-0886": {
+      "page": 195,
+      "mode": "text",
+      "score": 3.663
+    },
+    "qz-0887": {
+      "page": 195,
+      "mode": "text",
+      "score": 1.883
+    },
+    "qz-0888": {
+      "page": 195,
+      "mode": "text",
+      "score": 2.541
+    },
+    "qz-0889": {
+      "page": 196,
+      "mode": "text",
+      "score": 6.167
+    },
+    "qz-0890": {
+      "page": 196,
+      "mode": "text",
+      "score": 0.69
+    },
+    "qz-0891": {
+      "page": 196,
+      "mode": "text",
+      "score": 3.04
+    },
+    "qz-0892": {
+      "page": 196,
+      "mode": "text",
+      "score": 2.703
+    },
+    "qz-0893": {
+      "page": 197,
+      "mode": "text",
+      "score": 1.176
+    },
+    "qz-0894": {
+      "page": 197,
+      "mode": "text",
+      "score": 1.11
+    },
+    "qz-0895": {
+      "page": 197,
+      "mode": "text",
+      "score": 6.152
+    },
+    "qz-0896": {
+      "page": 197,
+      "mode": "text",
+      "score": 1.156
+    },
+    "qz-0897": {
+      "page": 197,
+      "mode": "text",
+      "score": 5.825
+    },
+    "qz-0898": {
+      "page": 198,
+      "mode": "text",
+      "score": 1.591
+    },
+    "qz-0899": {
+      "page": 198,
+      "mode": "text",
+      "score": 2.622
+    },
+    "qz-0900": {
+      "page": 198,
+      "mode": "text",
+      "score": 0.619
+    },
+    "qz-0901": {
+      "page": 198,
+      "mode": "text",
+      "score": 1.108
+    },
+    "qz-0902": {
+      "page": 198,
+      "mode": "text",
+      "score": 1.112
+    },
+    "qz-0903": {
+      "page": 199,
+      "mode": "text",
+      "score": 3.358
+    },
+    "qz-0904": {
+      "page": 199,
+      "mode": "text",
+      "score": 4.1
+    },
+    "qz-0905": {
+      "page": 199,
+      "mode": "text",
+      "score": 4.805
+    },
+    "qz-0906": {
+      "page": 199,
+      "mode": "text",
+      "score": 1.192
+    },
+    "qz-0907": {
+      "page": 200,
+      "mode": "text",
+      "score": 1.064
+    },
+    "qz-0908": {
+      "page": 200,
+      "mode": "text",
+      "score": 1.291
+    },
+    "qz-0909": {
+      "page": 200,
+      "mode": "text",
+      "score": 3.008
+    },
+    "qz-0910": {
+      "page": 200,
+      "mode": "text",
+      "score": 1.232
+    },
+    "qz-0911": {
+      "page": 201,
+      "mode": "text",
+      "score": 1.192
+    },
+    "qz-0912": {
+      "page": 201,
+      "mode": "text",
+      "score": 6.187
+    },
+    "qz-0913": {
+      "page": 201,
+      "mode": "text",
+      "score": 3.365
+    },
+    "qz-0914": {
+      "page": 201,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-0915": {
+      "page": 202,
+      "mode": "text",
+      "score": 2.939
+    },
+    "qz-0916": {
+      "page": 202,
+      "mode": "text",
+      "score": 1.54
+    },
+    "qz-0917": {
+      "page": 202,
+      "mode": "text",
+      "score": 6.529
+    },
+    "qz-0918": {
+      "page": 202,
+      "mode": "text",
+      "score": 1.5
+    },
+    "qz-0919": {
+      "page": 202,
+      "mode": "text",
+      "score": 1.138
+    },
+    "qz-0920": {
+      "page": 203,
+      "mode": "text",
+      "score": 2.237
+    },
+    "qz-0921": {
+      "page": 203,
+      "mode": "text",
+      "score": 1.017
+    },
+    "qz-0922": {
+      "page": 203,
+      "mode": "text",
+      "score": 3.714
+    },
+    "qz-0923": {
+      "page": 47,
+      "mode": "text",
+      "score": 0.158
+    },
+    "qz-0924": {
+      "page": 47,
+      "mode": "section",
+      "score": 0.061
+    },
+    "qz-0925": {
+      "page": 204,
+      "mode": "text",
+      "score": 1.161
+    },
+    "qz-0926": {
+      "page": 204,
+      "mode": "text",
+      "score": 9.724
+    },
+    "qz-0927": {
+      "page": 204,
+      "mode": "text",
+      "score": 1.168
+    },
+    "qz-0928": {
+      "page": 204,
+      "mode": "text",
+      "score": 1.158
+    },
+    "qz-0929": {
+      "page": 205,
+      "mode": "text",
+      "score": 1.95
+    },
+    "qz-0930": {
+      "page": 205,
+      "mode": "text",
+      "score": 4.065
+    },
+    "qz-0931": {
+      "page": 205,
+      "mode": "text",
+      "score": 1.163
+    },
+    "qz-0932": {
+      "page": 205,
+      "mode": "text",
+      "score": 3.332
+    },
+    "qz-0933": {
+      "page": 205,
+      "mode": "text",
+      "score": 4.397
+    },
+    "qz-0934": {
+      "page": 205,
+      "mode": "text",
+      "score": 2.306
+    },
+    "qz-0935": {
+      "page": 206,
+      "mode": "text",
+      "score": 0.556
+    },
+    "qz-0936": {
+      "page": 206,
+      "mode": "text",
+      "score": 3.341
+    },
+    "qz-0937": {
+      "page": 206,
+      "mode": "text",
+      "score": 0.714
+    },
+    "qz-0938": {
+      "page": 206,
+      "mode": "text",
+      "score": 2.683
+    },
+    "qz-0939": {
+      "page": 206,
+      "mode": "text",
+      "score": 0.842
+    },
+    "qz-0940": {
+      "page": 206,
+      "mode": "text",
+      "score": 0.583
+    },
+    "qz-0941": {
+      "page": 207,
+      "mode": "text",
+      "score": 1.017
+    },
+    "qz-0942": {
+      "page": 207,
+      "mode": "text",
+      "score": 1.526
+    },
+    "qz-0943": {
+      "page": 207,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-0944": {
+      "page": 207,
+      "mode": "text",
+      "score": 1.527
+    },
+    "qz-0945": {
+      "page": 208,
+      "mode": "text",
+      "score": 1.861
+    },
+    "qz-0946": {
+      "page": 208,
+      "mode": "text",
+      "score": 6.508
+    },
+    "qz-0947": {
+      "page": 208,
+      "mode": "text",
+      "score": 1.521
+    },
+    "qz-0948": {
+      "page": 208,
+      "mode": "text",
+      "score": 2.25
+    },
+    "qz-0949": {
+      "page": 209,
+      "mode": "text",
+      "score": 12.501
+    },
+    "qz-0950": {
+      "page": 209,
+      "mode": "text",
+      "score": 4.076
+    },
+    "qz-0951": {
+      "page": 209,
+      "mode": "text",
+      "score": 0.778
+    },
+    "qz-0952": {
+      "page": 209,
+      "mode": "text",
+      "score": 1.192
+    },
+    "qz-0953": {
+      "page": 210,
+      "mode": "text",
+      "score": 1.1
+    },
+    "qz-0954": {
+      "page": 210,
+      "mode": "text",
+      "score": 1.889
+    },
+    "qz-0955": {
+      "page": 210,
+      "mode": "text",
+      "score": 0.6
+    },
+    "qz-0956": {
+      "page": 210,
+      "mode": "text",
+      "score": 1.51
+    },
+    "qz-0957": {
+      "page": 211,
+      "mode": "text",
+      "score": 3.689
+    },
+    "qz-0958": {
+      "page": 211,
+      "mode": "text",
+      "score": 2.969
+    },
+    "qz-0959": {
+      "page": 211,
+      "mode": "text",
+      "score": 8.64
+    },
+    "qz-0960": {
+      "page": 211,
+      "mode": "text",
+      "score": 0.918
+    },
+    "qz-0961": {
+      "page": 212,
+      "mode": "text",
+      "score": 1.15
+    },
+    "qz-0962": {
+      "page": 212,
+      "mode": "text",
+      "score": 1.868
+    },
+    "qz-0963": {
+      "page": 212,
+      "mode": "text",
+      "score": 1.1
+    },
+    "qz-0964": {
+      "page": 212,
+      "mode": "text",
+      "score": 3.356
+    },
+    "qz-0965": {
+      "page": 212,
+      "mode": "text",
+      "score": 1.983
+    },
+    "qz-0966": {
+      "page": 213,
+      "mode": "text",
+      "score": 4.037
+    },
+    "qz-0967": {
+      "page": 213,
+      "mode": "text",
+      "score": 1.471
+    },
+    "qz-0968": {
+      "page": 213,
+      "mode": "text",
+      "score": 1.878
+    },
+    "qz-0969": {
+      "page": 213,
+      "mode": "text",
+      "score": 0.731
+    },
+    "qz-0970": {
+      "page": 213,
+      "mode": "text",
+      "score": 0.647
+    },
+    "qz-0971": {
+      "page": 214,
+      "mode": "text",
+      "score": 2.281
+    },
+    "qz-0972": {
+      "page": 214,
+      "mode": "text",
+      "score": 2.949
+    },
+    "qz-0973": {
+      "page": 214,
+      "mode": "text",
+      "score": 3.673
+    },
+    "qz-0974": {
+      "page": 13,
+      "mode": "text",
+      "score": 0.357
+    },
+    "qz-0975": {
+      "page": 14,
+      "mode": "text",
+      "score": 0.2
+    },
+    "qz-0976": {
+      "page": 216,
+      "mode": "text",
+      "score": 0.625
+    },
+    "qz-0977": {
+      "page": 215,
+      "mode": "text",
+      "score": 0.556
+    },
+    "qz-0978": {
+      "page": 215,
+      "mode": "text",
+      "score": 0.986
+    },
+    "qz-0979": {
+      "page": 215,
+      "mode": "text",
+      "score": 0.765
+    },
+    "qz-0980": {
+      "page": 215,
+      "mode": "text",
+      "score": 1.017
+    },
+    "qz-0981": {
+      "page": 216,
+      "mode": "text",
+      "score": 5.807
+    },
+    "qz-0982": {
+      "page": 216,
+      "mode": "text",
+      "score": 0.882
+    },
+    "qz-0983": {
+      "page": 216,
+      "mode": "text",
+      "score": 4.467
+    },
+    "qz-0984": {
+      "page": 216,
+      "mode": "text",
+      "score": 2.343
+    },
+    "qz-0985": {
+      "page": 22,
+      "mode": "text",
+      "score": 0.135
+    },
+    "qz-0986": {
+      "page": 17,
+      "mode": "text",
+      "score": 0.313
+    },
+    "qz-0987": {
+      "page": 17,
+      "mode": "text",
+      "score": 0.208
+    },
+    "qz-0988": {
+      "page": 217,
+      "mode": "text",
+      "score": 1.58
+    },
+    "qz-0989": {
+      "page": 217,
+      "mode": "text",
+      "score": 1.557
+    },
+    "qz-0990": {
+      "page": 218,
+      "mode": "text",
+      "score": 1.575
+    },
+    "qz-0991": {
+      "page": 218,
+      "mode": "text",
+      "score": 2.673
+    },
+    "qz-0992": {
+      "page": 218,
+      "mode": "text",
+      "score": 1.158
+    },
+    "qz-0993": {
+      "page": 218,
+      "mode": "text",
+      "score": 0.857
+    },
+    "qz-0994": {
+      "page": 218,
+      "mode": "text",
+      "score": 1.109
+    },
+    "qz-0995": {
+      "page": 218,
+      "mode": "text",
+      "score": 1.564
+    },
+    "qz-0996": {
+      "page": 219,
+      "mode": "text",
+      "score": 4.737
+    },
+    "qz-0997": {
+      "page": 219,
+      "mode": "text",
+      "score": 0.688
+    },
+    "qz-0998": {
+      "page": 220,
+      "mode": "text",
+      "score": 3.431
+    },
+    "qz-0999": {
+      "page": 220,
+      "mode": "text",
+      "score": 1.056
+    },
+    "qz-1000": {
+      "page": 220,
+      "mode": "text",
+      "score": 1.032
+    },
+    "qz-1001": {
+      "page": 220,
+      "mode": "text",
+      "score": 2.985
+    },
+    "qz-1002": {
+      "page": 220,
+      "mode": "text",
+      "score": 1.819
+    },
+    "qz-1003": {
+      "page": 220,
+      "mode": "text",
+      "score": 7.251
+    },
+    "qz-1004": {
+      "page": 221,
+      "mode": "text",
+      "score": 1.4
+    },
+    "qz-1005": {
+      "page": 221,
+      "mode": "text",
+      "score": 0.818
+    },
+    "qz-1006": {
+      "page": 221,
+      "mode": "text",
+      "score": 9.009
+    },
+    "qz-1007": {
+      "page": 221,
+      "mode": "text",
+      "score": 0.733
+    },
+    "qz-1008": {
+      "page": 221,
+      "mode": "text",
+      "score": 2.628
+    },
+    "qz-1009": {
+      "page": 222,
+      "mode": "text",
+      "score": 0.6
+    },
+    "qz-1010": {
+      "page": 222,
+      "mode": "text",
+      "score": 1.493
+    },
+    "qz-1011": {
+      "page": 222,
+      "mode": "text",
+      "score": 0.997
+    },
+    "qz-1012": {
+      "page": 222,
+      "mode": "text",
+      "score": 2.614
+    },
+    "qz-1013": {
+      "page": 222,
+      "mode": "text",
+      "score": 2.233
+    },
+    "qz-1014": {
+      "page": 223,
+      "mode": "text",
+      "score": 2.343
+    },
+    "qz-1015": {
+      "page": 223,
+      "mode": "text",
+      "score": 2.273
+    },
+    "qz-1016": {
+      "page": 223,
+      "mode": "text",
+      "score": 1.038
+    },
+    "qz-1017": {
+      "page": 223,
+      "mode": "text",
+      "score": 1.623
+    },
+    "qz-1018": {
+      "page": 224,
+      "mode": "text",
+      "score": 4.401
+    },
+    "qz-1019": {
+      "page": 224,
+      "mode": "text",
+      "score": 10.414
+    },
+    "qz-1020": {
+      "page": 224,
+      "mode": "text",
+      "score": 3.393
+    },
+    "qz-1021": {
+      "page": 224,
+      "mode": "text",
+      "score": 1.585
+    },
+    "qz-1022": {
+      "page": 225,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-1023": {
+      "page": 225,
+      "mode": "text",
+      "score": 0.824
+    },
+    "qz-1024": {
+      "page": 225,
+      "mode": "text",
+      "score": 5.481
+    },
+    "qz-1025": {
+      "page": 225,
+      "mode": "text",
+      "score": 1.469
+    },
+    "qz-1026": {
+      "page": 226,
+      "mode": "text",
+      "score": 1.6
+    },
+    "qz-1027": {
+      "page": 226,
+      "mode": "text",
+      "score": 1.15
+    },
+    "qz-1028": {
+      "page": 226,
+      "mode": "text",
+      "score": 1.168
+    },
+    "qz-1029": {
+      "page": 227,
+      "mode": "text",
+      "score": 0.5
+    },
+    "qz-1030": {
+      "page": 227,
+      "mode": "text",
+      "score": 0.722
+    },
+    "qz-1031": {
+      "page": 227,
+      "mode": "text",
+      "score": 0.583
+    },
+    "qz-1032": {
+      "page": 227,
+      "mode": "text",
+      "score": 1.183
+    },
+    "qz-1033": {
+      "page": 227,
+      "mode": "text",
+      "score": 5.083
+    },
+    "qz-1034": {
+      "page": 228,
+      "mode": "text",
+      "score": 1.45
+    },
+    "qz-1035": {
+      "page": 228,
+      "mode": "text",
+      "score": 1.038
+    },
+    "qz-1036": {
+      "page": 228,
+      "mode": "text",
+      "score": 0.786
+    },
+    "qz-1037": {
+      "page": 228,
+      "mode": "text",
+      "score": 0.824
+    },
+    "qz-1038": {
+      "page": 228,
+      "mode": "text",
+      "score": 0.818
+    },
+    "qz-1039": {
+      "page": 228,
+      "mode": "text",
+      "score": 0.563
+    },
+    "qz-1040": {
+      "page": 229,
+      "mode": "text",
+      "score": 0.778
+    },
+    "qz-1041": {
+      "page": 229,
+      "mode": "text",
+      "score": 1.2
+    },
+    "qz-1042": {
+      "page": 229,
+      "mode": "text",
+      "score": 0.733
+    },
+    "qz-1043": {
+      "page": 230,
+      "mode": "text",
+      "score": 1.15
+    },
+    "qz-1044": {
+      "page": 230,
+      "mode": "text",
+      "score": 1.128
+    },
+    "qz-1045": {
+      "page": 230,
+      "mode": "text",
+      "score": 0.556
+    },
+    "qz-1046": {
+      "page": 231,
+      "mode": "text",
+      "score": 1.458
+    },
+    "qz-1047": {
+      "page": 231,
+      "mode": "text",
+      "score": 0.692
+    },
+    "qz-1048": {
+      "page": 231,
+      "mode": "text",
+      "score": 2.922
+    },
+    "qz-1049": {
+      "page": 231,
+      "mode": "text",
+      "score": 1.235
+    },
+    "qz-1050": {
+      "page": 231,
+      "mode": "text",
+      "score": 3.015
+    },
+    "qz-1051": {
+      "page": 232,
+      "mode": "text",
+      "score": 4.398
+    },
+    "qz-1052": {
+      "page": 232,
+      "mode": "text",
+      "score": 4.397
+    },
+    "qz-1053": {
+      "page": 232,
+      "mode": "text",
+      "score": 0.636
+    },
+    "qz-1054": {
+      "page": 232,
+      "mode": "text",
+      "score": 1.915
+    },
+    "qz-1055": {
+      "page": 232,
+      "mode": "text",
+      "score": 1.064
+    },
+    "qz-1056": {
+      "page": 233,
+      "mode": "text",
+      "score": 0.636
+    },
+    "qz-1057": {
+      "page": 233,
+      "mode": "text",
+      "score": 0.571
+    },
+    "qz-1058": {
+      "page": 233,
+      "mode": "text",
+      "score": 4.451
+    },
+    "qz-1059": {
+      "page": 233,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-1060": {
+      "page": 233,
+      "mode": "text",
+      "score": 2.297
+    },
+    "qz-1061": {
+      "page": 234,
+      "mode": "text",
+      "score": 0.615
+    },
+    "qz-1062": {
+      "page": 234,
+      "mode": "text",
+      "score": 1.557
+    },
+    "qz-1063": {
+      "page": 234,
+      "mode": "text",
+      "score": 1.072
+    },
+    "qz-1064": {
+      "page": 235,
+      "mode": "text",
+      "score": 11.439
+    },
+    "qz-1065": {
+      "page": 235,
+      "mode": "text",
+      "score": 2.329
+    },
+    "qz-1066": {
+      "page": 235,
+      "mode": "text",
+      "score": 1.245
+    },
+    "qz-1067": {
+      "page": 235,
+      "mode": "text",
+      "score": 1.907
+    },
+    "qz-1068": {
+      "page": 236,
+      "mode": "text",
+      "score": 0.7
+    },
+    "qz-1069": {
+      "page": 236,
+      "mode": "text",
+      "score": 1.176
+    },
+    "qz-1070": {
+      "page": 236,
+      "mode": "text",
+      "score": 0.636
+    },
+    "qz-1071": {
+      "page": 236,
+      "mode": "text",
+      "score": 1.207
+    },
+    "qz-1072": {
+      "page": 236,
+      "mode": "text",
+      "score": 1.575
+    },
+    "qz-1073": {
+      "page": 237,
+      "mode": "text",
+      "score": 0.6
+    },
+    "qz-1074": {
+      "page": 237,
+      "mode": "text",
+      "score": 0.737
+    },
+    "qz-1075": {
+      "page": 237,
+      "mode": "text",
+      "score": 1.85
+    },
+    "qz-1076": {
+      "page": 237,
+      "mode": "text",
+      "score": 1.123
+    },
+    "qz-1077": {
+      "page": 237,
+      "mode": "text",
+      "score": 1.914
+    },
+    "qz-1078": {
+      "page": 238,
+      "mode": "text",
+      "score": 1.979
+    },
+    "qz-1079": {
+      "page": 238,
+      "mode": "text",
+      "score": 1.183
+    },
+    "qz-1080": {
+      "page": 238,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-1081": {
+      "page": 238,
+      "mode": "text",
+      "score": 1.291
+    },
+    "qz-1082": {
+      "page": 239,
+      "mode": "text",
+      "score": 2.659
+    },
+    "qz-1083": {
+      "page": 239,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-1084": {
+      "page": 239,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-1085": {
+      "page": 239,
+      "mode": "text",
+      "score": 0.714
+    },
+    "qz-1086": {
+      "page": 239,
+      "mode": "text",
+      "score": 0.714
+    },
+    "qz-1087": {
+      "page": 240,
+      "mode": "text",
+      "score": 4.765
+    },
+    "qz-1088": {
+      "page": 240,
+      "mode": "text",
+      "score": 1.225
+    },
+    "qz-1089": {
+      "page": 240,
+      "mode": "text",
+      "score": 1.092
+    },
+    "qz-1090": {
+      "page": 240,
+      "mode": "text",
+      "score": 1.65
+    },
+    "qz-1091": {
+      "page": 240,
+      "mode": "text",
+      "score": 1.25
+    },
+    "qz-1092": {
+      "page": 240,
+      "mode": "text",
+      "score": 0.688
+    },
+    "qz-1093": {
+      "page": 241,
+      "mode": "text",
+      "score": 1.575
+    },
+    "qz-1094": {
+      "page": 241,
+      "mode": "text",
+      "score": 1.935
+    },
+    "qz-1095": {
+      "page": 241,
+      "mode": "text",
+      "score": 1.198
+    },
+    "qz-1096": {
+      "page": 241,
+      "mode": "text",
+      "score": 1.16
+    },
+    "qz-1097": {
+      "page": 241,
+      "mode": "text",
+      "score": 2.327
+    },
+    "qz-1098": {
+      "page": 241,
+      "mode": "text",
+      "score": 4.434
+    },
+    "qz-1099": {
+      "page": 242,
+      "mode": "text",
+      "score": 8.954
+    },
+    "qz-1100": {
+      "page": 242,
+      "mode": "text",
+      "score": 0.615
+    },
+    "qz-1101": {
+      "page": 242,
+      "mode": "text",
+      "score": 1.124
+    },
+    "qz-1102": {
+      "page": 242,
+      "mode": "text",
+      "score": 4.408
+    },
+    "qz-1103": {
+      "page": 242,
+      "mode": "text",
+      "score": 1.056
+    },
+    "qz-1104": {
+      "page": 243,
+      "mode": "text",
+      "score": 0.767
+    },
+    "qz-1105": {
+      "page": 243,
+      "mode": "text",
+      "score": 1.16
+    },
+    "qz-1106": {
+      "page": 243,
+      "mode": "text",
+      "score": 1.171
+    },
+    "qz-1107": {
+      "page": 243,
+      "mode": "text",
+      "score": 1.652
+    },
+    "qz-1108": {
+      "page": 243,
+      "mode": "text",
+      "score": 2.339
+    },
+    "qz-1109": {
+      "page": 244,
+      "mode": "text",
+      "score": 1.932
+    },
+    "qz-1110": {
+      "page": 244,
+      "mode": "text",
+      "score": 1.488
+    },
+    "qz-1111": {
+      "page": 244,
+      "mode": "text",
+      "score": 5.455
+    },
+    "qz-1112": {
+      "page": 244,
+      "mode": "text",
+      "score": 2.983
+    },
+    "qz-1113": {
+      "page": 245,
+      "mode": "text",
+      "score": 13.579
+    },
+    "qz-1114": {
+      "page": 245,
+      "mode": "text",
+      "score": 0.818
+    },
+    "qz-1115": {
+      "page": 245,
+      "mode": "text",
+      "score": 1.533
+    },
+    "qz-1116": {
+      "page": 246,
+      "mode": "text",
+      "score": 1.192
+    },
+    "qz-1117": {
+      "page": 246,
+      "mode": "text",
+      "score": 0.727
+    },
+    "qz-1118": {
+      "page": 246,
+      "mode": "text",
+      "score": 1.217
+    },
+    "qz-1119": {
+      "page": 246,
+      "mode": "text",
+      "score": 0.8
+    },
+    "qz-1120": {
+      "page": 247,
+      "mode": "text",
+      "score": 0.813
+    },
+    "qz-1121": {
+      "page": 245,
+      "mode": "text",
+      "score": 0.778
+    },
+    "qz-1122": {
+      "page": 247,
+      "mode": "text",
+      "score": 2.655
+    },
+    "qz-1123": {
+      "page": 247,
+      "mode": "text",
+      "score": 3.734
+    },
+    "qz-1124": {
+      "page": 245,
+      "mode": "text",
+      "score": 0.538
+    },
+    "qz-1125": {
+      "page": 248,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-1126": {
+      "page": 248,
+      "mode": "text",
+      "score": 1.911
+    },
+    "qz-1127": {
+      "page": 248,
+      "mode": "text",
+      "score": 2.65
+    },
+    "qz-1128": {
+      "page": 248,
+      "mode": "text",
+      "score": 0.8
+    },
+    "qz-1129": {
+      "page": 249,
+      "mode": "text",
+      "score": 3.706
+    },
+    "qz-1130": {
+      "page": 249,
+      "mode": "text",
+      "score": 1.174
+    },
+    "qz-1131": {
+      "page": 249,
+      "mode": "text",
+      "score": 1.578
+    },
+    "qz-1132": {
+      "page": 249,
+      "mode": "text",
+      "score": 2.298
+    },
+    "qz-1133": {
+      "page": 249,
+      "mode": "text",
+      "score": 2.347
+    },
+    "qz-1134": {
+      "page": 250,
+      "mode": "text",
+      "score": 1.165
+    },
+    "qz-1135": {
+      "page": 250,
+      "mode": "text",
+      "score": 1.174
+    },
+    "qz-1136": {
+      "page": 250,
+      "mode": "text",
+      "score": 6.834
+    },
+    "qz-1137": {
+      "page": 249,
+      "mode": "text",
+      "score": 1.112
+    },
+    "qz-1138": {
+      "page": 249,
+      "mode": "text",
+      "score": 0.921
+    },
+    "qz-1139": {
+      "page": 251,
+      "mode": "text",
+      "score": 4.747
+    },
+    "qz-1140": {
+      "page": 251,
+      "mode": "text",
+      "score": 0.5
+    },
+    "qz-1141": {
+      "page": 251,
+      "mode": "text",
+      "score": 1.064
+    },
+    "qz-1142": {
+      "page": 251,
+      "mode": "text",
+      "score": 0.519
+    },
+    "qz-1143": {
+      "page": 251,
+      "mode": "text",
+      "score": 5.162
+    },
+    "qz-1144": {
+      "page": 252,
+      "mode": "text",
+      "score": 2.271
+    },
+    "qz-1145": {
+      "page": 252,
+      "mode": "text",
+      "score": 0.769
+    },
+    "qz-1146": {
+      "page": 252,
+      "mode": "text",
+      "score": 0.813
+    },
+    "qz-1147": {
+      "page": 252,
+      "mode": "text",
+      "score": 0.417
+    },
+    "qz-1148": {
+      "page": 252,
+      "mode": "text",
+      "score": 1.474
+    },
+    "qz-1149": {
+      "page": 253,
+      "mode": "text",
+      "score": 2.227
+    },
+    "qz-1150": {
+      "page": 253,
+      "mode": "text",
+      "score": 1.437
+    },
+    "qz-1151": {
+      "page": 253,
+      "mode": "text",
+      "score": 1.5
+    },
+    "qz-1152": {
+      "page": 253,
+      "mode": "text",
+      "score": 1.15
+    },
+    "qz-1153": {
+      "page": 253,
+      "mode": "text",
+      "score": 1.439
+    },
+    "qz-1154": {
+      "page": 254,
+      "mode": "text",
+      "score": 0.722
+    },
+    "qz-1155": {
+      "page": 254,
+      "mode": "text",
+      "score": 2.648
+    },
+    "qz-1156": {
+      "page": 254,
+      "mode": "text",
+      "score": 2.594
+    },
+    "qz-1157": {
+      "page": 255,
+      "mode": "text",
+      "score": 1.1
+    },
+    "qz-1158": {
+      "page": 255,
+      "mode": "text",
+      "score": 5.472
+    },
+    "qz-1159": {
+      "page": 255,
+      "mode": "text",
+      "score": 1.03
+    },
+    "qz-1160": {
+      "page": 255,
+      "mode": "text",
+      "score": 0.959
+    },
+    "qz-1161": {
+      "page": 255,
+      "mode": "text",
+      "score": 1.5
+    },
+    "qz-1162": {
+      "page": 256,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-1163": {
+      "page": 256,
+      "mode": "text",
+      "score": 3.747
+    },
+    "qz-1164": {
+      "page": 256,
+      "mode": "text",
+      "score": 1.585
+    },
+    "qz-1165": {
+      "page": 256,
+      "mode": "text",
+      "score": 1.552
+    },
+    "qz-1166": {
+      "page": 256,
+      "mode": "text",
+      "score": 1.232
+    },
+    "qz-1167": {
+      "page": 257,
+      "mode": "text",
+      "score": 3.371
+    },
+    "qz-1168": {
+      "page": 257,
+      "mode": "text",
+      "score": 5.176
+    },
+    "qz-1169": {
+      "page": 257,
+      "mode": "text",
+      "score": 1.489
+    },
+    "qz-1170": {
+      "page": 258,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-1171": {
+      "page": 259,
+      "mode": "text",
+      "score": 1.174
+    },
+    "qz-1172": {
+      "page": 259,
+      "mode": "text",
+      "score": 1.567
+    },
+    "qz-1173": {
+      "page": 259,
+      "mode": "text",
+      "score": 4.703
+    },
+    "qz-1174": {
+      "page": 259,
+      "mode": "text",
+      "score": 0.714
+    },
+    "qz-1175": {
+      "page": 259,
+      "mode": "text",
+      "score": 4.089
+    },
+    "qz-1176": {
+      "page": 260,
+      "mode": "text",
+      "score": 0.8
+    },
+    "qz-1177": {
+      "page": 260,
+      "mode": "text",
+      "score": 0.533
+    },
+    "qz-1178": {
+      "page": 260,
+      "mode": "text",
+      "score": 1.25
+    },
+    "qz-1179": {
+      "page": 260,
+      "mode": "text",
+      "score": 2.32
+    },
+    "qz-1180": {
+      "page": 260,
+      "mode": "text",
+      "score": 1.605
+    },
+    "qz-1181": {
+      "page": 261,
+      "mode": "text",
+      "score": 0.692
+    },
+    "qz-1182": {
+      "page": 261,
+      "mode": "text",
+      "score": 1.904
+    },
+    "qz-1183": {
+      "page": 261,
+      "mode": "text",
+      "score": 1.05
+    },
+    "qz-1184": {
+      "page": 261,
+      "mode": "text",
+      "score": 0.8
+    },
+    "qz-1185": {
+      "page": 261,
+      "mode": "text",
+      "score": 1.22
+    },
+    "qz-1186": {
+      "page": 261,
+      "mode": "text",
+      "score": 0.667
+    },
+    "qz-1187": {
+      "page": 262,
+      "mode": "text",
+      "score": 1.85
+    },
+    "qz-1188": {
+      "page": 262,
+      "mode": "text",
+      "score": 0.846
+    },
+    "qz-1189": {
+      "page": 262,
+      "mode": "text",
+      "score": 3.748
+    },
+    "qz-1190": {
+      "page": 262,
+      "mode": "text",
+      "score": 1.139
+    },
+    "qz-1191": {
+      "page": 263,
+      "mode": "text",
+      "score": 1.156
+    },
+    "qz-1192": {
+      "page": 263,
+      "mode": "text",
+      "score": 1.113
+    },
+    "qz-1193": {
+      "page": 263,
+      "mode": "text",
+      "score": 0.733
+    },
+    "qz-1194": {
+      "page": 263,
+      "mode": "text",
+      "score": 1.163
+    },
+    "qz-1195": {
+      "page": 263,
+      "mode": "text",
+      "score": 1.552
+    },
+    "qz-1196": {
+      "page": 263,
+      "mode": "text",
+      "score": 0.692
+    },
+    "qz-1197": {
+      "page": 264,
+      "mode": "text",
+      "score": 1.575
+    },
+    "qz-1198": {
+      "page": 264,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-1199": {
+      "page": 264,
+      "mode": "text",
+      "score": 2.254
+    },
+    "qz-1200": {
+      "page": 264,
+      "mode": "text",
+      "score": 0.786
+    },
+    "qz-1201": {
+      "page": 264,
+      "mode": "text",
+      "score": 1.943
+    },
+    "qz-1202": {
+      "page": 265,
+      "mode": "text",
+      "score": 2.586
+    },
+    "qz-1203": {
+      "page": 265,
+      "mode": "text",
+      "score": 1.207
+    },
+    "qz-1204": {
+      "page": 265,
+      "mode": "text",
+      "score": 2.641
+    },
+    "qz-1205": {
+      "page": 265,
+      "mode": "text",
+      "score": 1.183
+    },
+    "qz-1206": {
+      "page": 266,
+      "mode": "text",
+      "score": 0.727
+    },
+    "qz-1207": {
+      "page": 266,
+      "mode": "text",
+      "score": 6.182
+    },
+    "qz-1208": {
+      "page": 266,
+      "mode": "text",
+      "score": 5.761
+    },
+    "qz-1209": {
+      "page": 266,
+      "mode": "text",
+      "score": 1.217
+    },
+    "qz-1210": {
+      "page": 266,
+      "mode": "text",
+      "score": 0.786
+    },
+    "qz-1211": {
+      "page": 267,
+      "mode": "text",
+      "score": 1.083
+    },
+    "qz-1212": {
+      "page": 267,
+      "mode": "text",
+      "score": 3.692
+    },
+    "qz-1213": {
+      "page": 267,
+      "mode": "text",
+      "score": 1.917
+    },
+    "qz-1214": {
+      "page": 267,
+      "mode": "text",
+      "score": 0.769
+    },
+    "qz-1215": {
+      "page": 267,
+      "mode": "text",
+      "score": 0.727
+    },
+    "qz-1216": {
+      "page": 268,
+      "mode": "text",
+      "score": 1.585
+    },
+    "qz-1217": {
+      "page": 268,
+      "mode": "text",
+      "score": 0.846
+    },
+    "qz-1218": {
+      "page": 268,
+      "mode": "text",
+      "score": 4.093
+    },
+    "qz-1219": {
+      "page": 268,
+      "mode": "text",
+      "score": 1.533
+    },
+    "qz-1220": {
+      "page": 269,
+      "mode": "text",
+      "score": 5.805
+    },
+    "qz-1221": {
+      "page": 269,
+      "mode": "text",
+      "score": 1.579
+    },
+    "qz-1222": {
+      "page": 269,
+      "mode": "text",
+      "score": 3.047
+    },
+    "qz-1223": {
+      "page": 270,
+      "mode": "text",
+      "score": 1.973
+    },
+    "qz-1224": {
+      "page": 270,
+      "mode": "text",
+      "score": 3.025
+    },
+    "qz-1225": {
+      "page": 270,
+      "mode": "text",
+      "score": 6.878
+    },
+    "qz-1226": {
+      "page": 270,
+      "mode": "text",
+      "score": 5.927
+    },
+    "qz-1227": {
+      "page": 271,
+      "mode": "text",
+      "score": 2.333
+    },
+    "qz-1228": {
+      "page": 271,
+      "mode": "text",
+      "score": 4.099
+    },
+    "qz-1229": {
+      "page": 271,
+      "mode": "text",
+      "score": 1.247
+    },
+    "qz-1230": {
+      "page": 271,
+      "mode": "text",
+      "score": 3.026
+    },
+    "qz-1231": {
+      "page": 272,
+      "mode": "text",
+      "score": 4.437
+    },
+    "qz-1232": {
+      "page": 272,
+      "mode": "text",
+      "score": 0.824
+    },
+    "qz-1233": {
+      "page": 272,
+      "mode": "text",
+      "score": 5.13
+    },
+    "qz-1234": {
+      "page": 272,
+      "mode": "text",
+      "score": 1.45
+    },
+    "qz-1235": {
+      "page": 272,
+      "mode": "text",
+      "score": 3.006
+    },
+    "qz-1236": {
+      "page": 273,
+      "mode": "text",
+      "score": 1.047
+    },
+    "qz-1237": {
+      "page": 273,
+      "mode": "text",
+      "score": 1.276
+    },
+    "qz-1238": {
+      "page": 273,
+      "mode": "text",
+      "score": 13.234
+    },
+    "qz-1239": {
+      "page": 273,
+      "mode": "text",
+      "score": 1.629
+    },
+    "qz-1240": {
+      "page": 274,
+      "mode": "text",
+      "score": 1.006
+    },
+    "qz-1241": {
+      "page": 274,
+      "mode": "text",
+      "score": 0.8
+    },
+    "qz-1242": {
+      "page": 274,
+      "mode": "text",
+      "score": 0.571
+    },
+    "qz-1243": {
+      "page": 274,
+      "mode": "text",
+      "score": 0.769
+    },
+    "qz-1244": {
+      "page": 274,
+      "mode": "text",
+      "score": 2.3
+    },
+    "qz-1245": {
+      "page": 274,
+      "mode": "text",
+      "score": 3.384
+    },
+    "qz-1246": {
+      "page": 274,
+      "mode": "text",
+      "score": 0.778
+    },
+    "qz-1247": {
+      "page": 275,
+      "mode": "text",
+      "score": 1.939
+    },
+    "qz-1248": {
+      "page": 275,
+      "mode": "text",
+      "score": 1.136
+    },
+    "qz-1249": {
+      "page": 275,
+      "mode": "text",
+      "score": 0.625
+    },
+    "qz-1250": {
+      "page": 275,
+      "mode": "text",
+      "score": 0.75
+    },
+    "qz-1251": {
+      "page": 275,
+      "mode": "text",
+      "score": 0.733
+    },
+    "qz-1252": {
+      "page": 276,
+      "mode": "text",
+      "score": 2.257
+    },
+    "qz-1253": {
+      "page": 276,
+      "mode": "text",
+      "score": 1.214
+    },
+    "qz-1254": {
+      "page": 276,
+      "mode": "text",
+      "score": 4.807
+    },
+    "qz-1255": {
+      "page": 276,
+      "mode": "text",
+      "score": 0.864
+    },
+    "qz-1256": {
+      "page": 276,
+      "mode": "text",
+      "score": 1.207
+    },
+    "qz-1257": {
+      "page": 276,
+      "mode": "text",
+      "score": 1.585
+    },
+    "qz-1258": {
+      "page": 277,
+      "mode": "text",
+      "score": 0.714
+    }
+  }
+}

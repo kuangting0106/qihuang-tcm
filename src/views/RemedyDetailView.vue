@@ -6,9 +6,11 @@ import {
   safetyLabel,
   type RemedyDetail,
 } from '@/composables/useRemedyApi'
+import { fetchScanIndex, type RemedyScanPageRef } from '@/composables/useRemedyScan'
 
 const route = useRoute()
 const remedy = ref<RemedyDetail | null>(null)
+const scanRef = ref<RemedyScanPageRef | null>(null)
 const loading = ref(true)
 const error = ref('')
 
@@ -38,8 +40,14 @@ async function load(id: string) {
   loading.value = true
   error.value = ''
   remedy.value = null
+  scanRef.value = null
   try {
-    remedy.value = await fetchRemedy(id)
+    const [detail, scanIndex] = await Promise.all([
+      fetchRemedy(id),
+      fetchScanIndex().catch(() => null),
+    ])
+    remedy.value = detail
+    scanRef.value = scanIndex?.remedyPages[id] ?? null
   } catch (err) {
     error.value = err instanceof Error ? err.message : '偏方读取失败'
   } finally {
@@ -151,6 +159,25 @@ watch(
             <p v-if="sourceLine" class="remedy-cite">{{ sourceLine }}</p>
             <p v-if="remedy.sourceNote" class="remedy-cite">{{ remedy.sourceNote }}</p>
             <p class="remedy-cite">原书栏目：{{ remedy.section || '未标注' }}</p>
+            <div v-if="scanRef" class="remedy-scan">
+              <RouterLink
+                class="remedy-scan__link"
+                :to="{
+                  name: 'remedy-scan-page',
+                  params: { bookId: 'QZ01', page: String(scanRef.page) },
+                  query: { remedy: remedy.id },
+                }"
+              >
+                查看原书扫描页 · 第 {{ scanRef.page }} 页 →
+              </RouterLink>
+              <p class="remedy-scan__note">
+                {{
+                  scanRef.mode === 'section'
+                    ? '该条按所在章节定位，扫描页可能不是这一方的确切页；请结合左侧原图与完整原文核对。'
+                    : '扫描页为 OCR 自动匹配，可能因识别误差偏移；请以原图为准。'
+                }}
+              </p>
+            </div>
           </section>
         </article>
 
@@ -351,6 +378,28 @@ watch(
 
 .remedy-cite:last-child {
   margin-bottom: 0;
+}
+
+.remedy-scan {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--line);
+}
+
+.remedy-scan__link {
+  display: inline-block;
+  color: var(--cinnabar);
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.remedy-scan__note {
+  margin-top: 6px;
+  color: var(--ink-faint);
+  font-size: 0.72rem;
+  line-height: 1.7;
 }
 
 .remedy-disclaimer {

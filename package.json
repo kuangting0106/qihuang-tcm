@@ -12,6 +12,7 @@
     "build:lectures": "node scripts/build-bencao-lectures.mjs",
     "build:search-index": "node scripts/build-herb-search-index.mjs",
     "build:acupuncture": "node scripts/build-acupuncture-data.mjs && node scripts/build-acupuncture-content.mjs && node scripts/build-moxibustion-data.mjs",
+    "build:remedy-scans": "node scripts/build-remedy-scans.mjs",
     "build:profiles": "node scripts/build-bencao-profiles.mjs",
     "precompute:body": "tsx scripts/precompute-body.mts",
     "preview": "vite preview",

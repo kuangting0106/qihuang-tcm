@@ -171,6 +171,26 @@ const router = createRouter({
       meta: { title: '民间偏方集录' },
     },
     {
+      path: '/remedies/scans',
+      name: 'remedy-scans',
+      component: () => import('@/views/RemedyScanIndexView.vue'),
+      meta: { title: '民间偏方 · 原书扫描页' },
+    },
+    {
+      path: '/remedies/scans/:bookId/:page',
+      name: 'remedy-scan-page',
+      component: () => import('@/views/RemedyScanView.vue'),
+      meta: { title: '民间偏方 · 原书页附录' },
+    },
+    {
+      path: '/remedies/scans/:bookId',
+      redirect: (to) => ({
+        name: 'remedy-scan-page',
+        params: { bookId: to.params.bookId, page: '1' },
+        query: to.query,
+      }),
+    },
+    {
       path: '/remedies/:id',
       name: 'remedy-detail',
       component: () => import('@/views/RemedyDetailView.vue'),
@@ -205,6 +225,12 @@ const router = createRouter({
       name: 'processing',
       component: () => import('@/views/ProcessingView.vue'),
       meta: { title: '药材的炮制' },
+    },
+    {
+      path: '/processing/category/:categoryId',
+      name: 'processing-category',
+      component: () => import('@/views/ProcessingCategoryView.vue'),
+      meta: { title: '药材炮制分类' },
     },
     {
       path: '/processing/book/:bookId',
