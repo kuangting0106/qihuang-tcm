@@ -24,6 +24,7 @@ const EMPTY = () => ({
   herbRoles: {},
   herbDoses: {},
   modernNotes: {},
+  formulaNotes: {},
   updatedAt: null,
 })
 
@@ -80,6 +81,7 @@ async function readStore() {
       herbRoles: parsed.herbRoles ?? {},
       herbDoses: parsed.herbDoses ?? {},
       modernNotes: parsed.modernNotes ?? {},
+      formulaNotes: parsed.formulaNotes ?? {},
     }
   } catch {
     cache = EMPTY()
@@ -429,6 +431,14 @@ function setModernNote(store, body) {
   const text = cleanText(body.text, 12000)
   if (text) store.modernNotes[formulaId] = text
   else delete store.modernNotes[formulaId]
+}
+
+function setFormulaNote(store, body) {
+  const formulaId = cleanId(body.formulaId)
+  if (!formulaId) throw new Error('invalid-formula')
+  const note = cleanText(body.note, 240)
+  if (note) store.formulaNotes[formulaId] = note
+  else delete store.formulaNotes[formulaId]
 }
 
 function resetHerb(store, body) {
@@ -1585,11 +1595,6 @@ const server = createServer(async (req, res) => {
     return
   }
 
-  if ((req.headers['x-qihuang-key'] ?? '') !== EDIT_KEY) {
-    send(res, 401, { error: 'invalid-edit-key' })
-    return
-  }
-
   let body
   try {
     body = JSON.parse(await readBody(req))
@@ -1598,9 +1603,19 @@ const server = createServer(async (req, res) => {
     return
   }
 
+  // 方剂备注为公开写入：站点主人要求免口令，直接保存并发布。
+  const publicOp = body?.op === 'formula-note'
+  if (!publicOp && (req.headers['x-qihuang-key'] ?? '') !== EDIT_KEY) {
+    send(res, 401, { error: 'invalid-edit-key' })
+    return
+  }
+
   const store = await readStore()
   try {
     switch (body?.op) {
+      case 'formula-note':
+        setFormulaNote(store, body)
+        break
       case 'symptom-upsert':
         upsertSymptom(store, body)
         break

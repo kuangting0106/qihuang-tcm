@@ -15,6 +15,7 @@ export interface PublicNotes {
   herbRoles: Record<string, Record<string, FormulaRole>>
   herbDoses: Record<string, Record<string, string>>
   modernNotes: Record<string, string>
+  formulaNotes: Record<string, string>
   updatedAt?: string | null
 }
 
@@ -30,6 +31,7 @@ export type PublicNoteOp =
   | { op: 'herb-reset'; formulaId: string; herbId: string }
   | { op: 'herb-dose'; formulaId: string; herbId: string; dose: string }
   | { op: 'modern-note'; formulaId: string; text: string }
+  | { op: 'formula-note'; formulaId: string; note: string }
 
 const API_URL = '/api/notes'
 const KEY_STORAGE = 'qihuang.editKey'
@@ -40,6 +42,7 @@ const empty = (): PublicNotes => ({
   herbRoles: {},
   herbDoses: {},
   modernNotes: {},
+  formulaNotes: {},
   updatedAt: null,
 })
 
@@ -72,6 +75,10 @@ function normalize(raw: unknown): PublicNotes {
     modernNotes:
       data.modernNotes && typeof data.modernNotes === 'object'
         ? (data.modernNotes as PublicNotes['modernNotes'])
+        : {},
+    formulaNotes:
+      data.formulaNotes && typeof data.formulaNotes === 'object'
+        ? (data.formulaNotes as PublicNotes['formulaNotes'])
         : {},
     updatedAt: typeof data.updatedAt === 'string' ? data.updatedAt : null,
   }
@@ -212,6 +219,42 @@ export function savePublicNote(op: PublicNoteOp, explicitKey = '') {
   return task
 }
 
+async function postPublic(op: PublicNoteOp) {
+  return fetch(API_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(op),
+  })
+}
+
+async function performFormulaNoteSave(formulaId: string, note: string) {
+  if (!available.value) {
+    return { ok: false, message: '发布服务暂不可用，请稍后再试。' }
+  }
+  try {
+    const response = await postPublic({ op: 'formula-note', formulaId, note })
+    if (!response.ok) {
+      return { ok: false, message: '发布服务暂不可用，请稍后再试。' }
+    }
+    notes.value = normalize(await response.json())
+    available.value = true
+    return { ok: true, message: '已保存到网页，所有访客可见。' }
+  } catch {
+    available.value = false
+    return { ok: false, message: '无法连接发布服务，请稍后再试。' }
+  }
+}
+
+/** 方剂备注：按站点要求免口令公开写入，保存即发布。 */
+export function saveFormulaNote(formulaId: string, note: string) {
+  const task = saveQueue.then(() => performFormulaNoteSave(formulaId, note))
+  saveQueue = task.then(
+    () => undefined,
+    () => undefined,
+  )
+  return task
+}
+
 export function publicAnnotationsFor(scopeKey: string) {
   return notes.value.symptomAnnotations[scopeKey] ?? []
 }
@@ -232,6 +275,10 @@ export function publicModernNotes(formulaId: string) {
   return notes.value.modernNotes[formulaId] ?? ''
 }
 
+export function publicFormulaNote(formulaId: string) {
+  return notes.value.formulaNotes[formulaId] ?? ''
+}
+
 export function usePublicNotes() {
   return {
     notes,
@@ -244,10 +291,12 @@ export function usePublicNotes() {
     clearEditKey,
     loadPublicNotes,
     savePublicNote,
+    saveFormulaNote,
     publicAnnotationsFor,
     publicHerbNotes,
     publicHerbRoles,
     publicHerbDoses,
     publicModernNotes,
+    publicFormulaNote,
   }
 }

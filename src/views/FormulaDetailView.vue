@@ -34,6 +34,8 @@ const {
   publicHerbRoles,
   savePublicNote,
   publicModernNotes,
+  publicFormulaNote,
+  saveFormulaNote,
   hasEditKey,
   editKey,
   setEditKey,
@@ -244,6 +246,65 @@ watch(
     saveHint.value = ''
   },
 )
+
+const formulaNote = computed(() => {
+  const id = formula.value?.id
+  return id ? publicFormulaNote(id) : ''
+})
+const formulaNoteEditing = ref(false)
+const formulaNoteDraft = ref('')
+const formulaNoteSaving = ref(false)
+const formulaNoteHint = ref('')
+
+watch(
+  () => route.params.id,
+  () => {
+    formulaNoteEditing.value = false
+    formulaNoteDraft.value = ''
+    formulaNoteHint.value = ''
+  },
+)
+
+function startNoteEdit() {
+  if (formulaNoteSaving.value) return
+  formulaNoteDraft.value = formulaNote.value
+  formulaNoteHint.value = ''
+  formulaNoteEditing.value = true
+}
+
+function cancelNoteEdit() {
+  formulaNoteEditing.value = false
+  formulaNoteHint.value = ''
+}
+
+async function submitNote() {
+  const current = formula.value
+  if (!current || formulaNoteSaving.value) return
+  formulaNoteSaving.value = true
+  formulaNoteHint.value = ''
+  const result = await saveFormulaNote(current.id, formulaNoteDraft.value.trim())
+  formulaNoteSaving.value = false
+  formulaNoteHint.value = result.message
+  if (result.ok) {
+    formulaNoteEditing.value = false
+    formulaNoteHint.value = ''
+  }
+}
+
+async function clearFormulaNote() {
+  const current = formula.value
+  if (!current || formulaNoteSaving.value) return
+  formulaNoteSaving.value = true
+  formulaNoteHint.value = ''
+  const result = await saveFormulaNote(current.id, '')
+  formulaNoteSaving.value = false
+  if (result.ok) {
+    formulaNoteEditing.value = false
+    formulaNoteHint.value = ''
+  } else {
+    formulaNoteHint.value = result.message
+  }
+}
 
 function clearLocalHerbNote(formulaId: string, herbId: string) {
   const book = { ...(herbNotes.value[formulaId] ?? {}) }
@@ -560,8 +621,58 @@ watch(
         <div>
           <p class="eyebrow">FORMULA / 方剂</p>
           <div class="detail-title-row">
-            <h1>{{ formula.name }}</h1>
+            <h1
+              class="detail-title"
+              role="button"
+              tabindex="0"
+              title="点击添加或修改方剂备注"
+              @click="startNoteEdit"
+              @keydown.enter.prevent="startNoteEdit"
+              @keydown.space.prevent="startNoteEdit"
+            >
+              {{ formula.name }}
+            </h1>
             <span class="detail-pinyin">{{ formula.pinyin }}</span>
+            <button type="button" class="detail-note-trigger" @click.stop="startNoteEdit">
+              {{ formulaNote ? '修改备注' : '＋ 添加备注' }}
+            </button>
+          </div>
+
+          <p v-if="formulaNote && !formulaNoteEditing" class="detail-note">
+            <span class="detail-note__label">备注</span>
+            <span class="detail-note__text">{{ formulaNote }}</span>
+            <button type="button" class="detail-note__clear" @click="clearFormulaNote">删除</button>
+          </p>
+
+          <div v-if="formulaNoteEditing" class="detail-note-editor">
+            <label class="detail-note-editor__label" for="formula-note-input">
+              方剂备注 · 保存后立即发布到网页
+            </label>
+            <textarea
+              id="formula-note-input"
+              v-model="formulaNoteDraft"
+              rows="2"
+              maxlength="240"
+              placeholder="例如：本方用于太阳阳明合病，临床见…"
+              @keydown.ctrl.enter.prevent="submitNote"
+              @keydown.meta.enter.prevent="submitNote"
+            ></textarea>
+            <div class="detail-note-editor__actions">
+              <button
+                type="button"
+                class="btn btn--primary btn--small"
+                :disabled="formulaNoteSaving"
+                @click="submitNote"
+              >
+                {{ formulaNoteSaving ? '保存中…' : '保存并发布' }}
+              </button>
+              <button type="button" class="btn btn--ghost btn--small" @click="cancelNoteEdit">
+                取消
+              </button>
+              <span class="detail-note-editor__hint">
+                {{ formulaNoteHint || '不需要口令；保存后所有访客可见，可随时修改。' }}
+              </span>
+            </div>
           </div>
         </div>
         <div class="detail-head__source">
@@ -1038,6 +1149,125 @@ watch(
   font-family: var(--serif);
   font-size: 1rem;
   letter-spacing: 0.08em;
+}
+
+.detail-title {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.detail-title:hover {
+  color: var(--cinnabar);
+}
+
+.detail-note-trigger {
+  align-self: center;
+  padding: 4px 11px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-soft);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.detail-note-trigger:hover {
+  border-color: var(--cinnabar);
+  color: var(--cinnabar);
+}
+
+.detail-note {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 10px 14px;
+  border-left: 3px solid var(--jade);
+  border-radius: 0 8px 8px 0;
+  background: rgba(47, 111, 107, 0.06);
+  max-width: 880px;
+  color: var(--ink);
+  font-size: 0.84rem;
+  line-height: 1.85;
+}
+
+.detail-note__label {
+  flex: none;
+  color: var(--jade);
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+}
+
+.detail-note__text {
+  flex: 1;
+  min-width: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.detail-note__clear {
+  flex: none;
+  padding: 1px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-faint);
+  font-size: 0.62rem;
+  cursor: pointer;
+}
+
+.detail-note__clear:hover {
+  border-color: var(--cinnabar);
+  color: var(--cinnabar);
+}
+
+.detail-note-editor {
+  margin-top: 16px;
+  max-width: 880px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--cinnabar);
+  border-radius: 10px;
+  background: rgba(255, 252, 245, 0.72);
+}
+
+.detail-note-editor__label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--ink-soft);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+}
+
+.detail-note-editor textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 252, 245, 0.92);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 0.84rem;
+  line-height: 1.7;
+  resize: vertical;
+}
+
+.detail-note-editor__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.detail-note-editor__hint {
+  color: var(--ink-faint);
+  font-size: 0.66rem;
+  line-height: 1.5;
 }
 
 .detail-head__source {
