@@ -26,6 +26,12 @@ const rest = computed(() => herbNames.value.length - visibleNames.value.length)
 
 const hasComposition = computed(() => props.formula.composition.length > 0)
 
+// 讲义未单列功效的方剂，原数据用同一句占位；列表卡片不再显示这句，留白交给药材与角色。
+const effectText = computed(() => {
+  const text = props.formula.effectsText?.trim() ?? ''
+  return /^讲义未单列功效概括[，,]\s*详见下方方证与讲解。?$/.test(text) ? '' : text
+})
+
 const roleCounts = computed(() => {
   const map = new Map<string, number>()
   for (const c of props.formula.composition) {
@@ -47,7 +53,7 @@ const roleCounts = computed(() => {
       <span class="formula-card__count">{{ hasComposition ? `${formula.composition.length} 味` : '原方见原文' }}</span>
     </div>
 
-    <p class="formula-card__effect">{{ formula.effectsText }}</p>
+    <p v-if="effectText" class="formula-card__effect">{{ effectText }}</p>
 
     <div v-if="hasComposition" class="formula-card__herbs">
       <span v-for="name in visibleNames" :key="name" class="chip chip--jade">{{ name }}</span>
